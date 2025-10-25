@@ -1,0 +1,6 @@
+# Generated figures (reproducible from data/)
+outputs/*.png
+outputs/*.svg
+
+# Keep README
+!outputs/README_embeds.md

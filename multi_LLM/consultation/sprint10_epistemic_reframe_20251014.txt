@@ -1,0 +1,46 @@
+[CACHE HIT] Retrieved from cache (query_type: theory_question)
+
+[CACHE] Retrieved from cache
+
+[QUERY TYPE] theory_question
+======================================================================
+
+1. GROK - Quality Score: 0.55/1.0
+   Dimensions:
+     - step_by_step: 0.50
+     - actionability: 1.00
+
+   ```
+=== ASSESSMENT ===
+
+1. EPISTEMIC FRAMING VALIDITY:
+   The epistemic vs ontic distinction for indistinguishability is rigorous and defensible within the context of quantum foundations. This framing aligns with information-theoretic and relational interpretations of quantum mechanics (QM), where q...
+
+
+2. GEMINI - Quality Score: 0.55/1.0
+   Dimensions:
+     - step_by_step: 0.50
+     - actionability: 1.00
+
+   ```
+=== ASSESSMENT ===
+
+1. EPISTEMIC FRAMING VALIDITY:
+   [Yes, the epistemic vs ontic distinction is rigorous and defensible for indistinguishability. It provides a valuable perspective on the symmetrization postulate and avoids the contradictions inherent in the ontic interpretation.]
+
+2. RESOLVES...
+
+
+3. CHATGPT - Quality Score: 0.30/1.0
+   Dimensions:
+     - step_by_step: 0.50
+     - actionability: 0.38
+
+   === ASSESSMENT ===
+
+1. EPISTEMIC FRAMING VALIDITY:
+   The epistemic vs ontic distinction is indeed rigorous for indistinguishability. It is a well-established concept in quantum mechanics and quantum information theory, where the state of a system is often described in terms of the information avail...
+
+
+======================================================================
+Cache Statistics: {'total_entries': 11, 'total_accesses': 18, 'by_type': {'general': {'count': 2, 'avg_accesses': 2.0}, 'lean_proof': {'count': 5, 'avg_accesses': 1.8}, 'peer_review': {'count': 1, 'avg_accesses': 1.0}, 'theory_question': {'count': 3, 'avg_accesses': 1.3333333333333333}}, 'cache_hits': 1, 'cache_misses': 0, 'hit_rate': 1.0}

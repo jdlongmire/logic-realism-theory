@@ -1,0 +1,205 @@
+{
+  "N3_K1": {
+    "N": 3,
+    "K": 1,
+    "num_time_slices": 2,
+    "time_slices": {
+      "0": 1,
+      "1": 2
+    },
+    "spatial_analysis": {
+      "0": {
+        "dimension": 0,
+        "connectivity": 1.0,
+        "diameter": 0.0,
+        "num_states": 1
+      },
+      "1": {
+        "dimension": 1.0,
+        "connectivity": 1.0,
+        "diameter": 2.23606797749979,
+        "num_states": 2,
+        "distances": [
+          [
+            0.0,
+            2.23606797749979
+          ],
+          [
+            2.23606797749979,
+            0.0
+          ]
+        ],
+        "coords": [
+          [
+            1.0,
+            3.0
+          ],
+          [
+            2.0,
+            1.0
+          ]
+        ]
+      }
+    },
+    "metric_signature": {
+      "temporal_fraction_timelike": null,
+      "spatial_fraction_spacelike": 1.0,
+      "mixed_timelike_fraction": 0.0,
+      "mixed_spacelike_fraction": 0.5
+    },
+    "lorentz_test": {
+      "lorentz_like": true,
+      "interval_consistency": 0.0,
+      "sample_intervals": [
+        0.0
+      ]
+    }
+  },
+  "N4_K2": {
+    "N": 4,
+    "K": 2,
+    "num_time_slices": 3,
+    "time_slices": {
+      "0": 1,
+      "1": 3,
+      "2": 5
+    },
+    "spatial_analysis": {
+      "0": {
+        "dimension": 0,
+        "connectivity": 1.0,
+        "diameter": 0.0,
+        "num_states": 1
+      },
+      "1": {
+        "dimension": 0.0,
+        "connectivity": 1.0,
+        "diameter": 2.449489742783178,
+        "num_states": 3,
+        "distances": [
+          [
+            0.0,
+            2.23606797749979,
+            1.7320508075688772
+          ],
+          [
+            2.23606797749979,
+            0.0,
+            2.449489742783178
+          ],
+          [
+            1.7320508075688772,
+            2.449489742783178,
+            0.0
+          ]
+        ],
+        "coords": [
+          [
+            1.0,
+            2.0,
+            4.0
+          ],
+          [
+            1.0,
+            3.0,
+            2.0
+          ],
+          [
+            2.0,
+            1.0,
+            3.0
+          ]
+        ]
+      },
+      "2": {
+        "dimension": 3.159611997016239,
+        "connectivity": 1.0,
+        "diameter": 3.7416573867739413,
+        "num_states": 5,
+        "distances": [
+          [
+            0.0,
+            2.23606797749979,
+            2.23606797749979,
+            3.1622776601683795,
+            3.4641016151377544
+          ],
+          [
+            2.23606797749979,
+            0.0,
+            3.7416573867739413,
+            1.7320508075688772,
+            3.605551275463989
+          ],
+          [
+            2.23606797749979,
+            3.7416573867739413,
+            0.0,
+            3.605551275463989,
+            2.23606797749979
+          ],
+          [
+            3.1622776601683795,
+            1.7320508075688772,
+            3.605551275463989,
+            0.0,
+            2.449489742783178
+          ],
+          [
+            3.4641016151377544,
+            3.605551275463989,
+            2.23606797749979,
+            2.449489742783178,
+            0.0
+          ]
+        ],
+        "coords": [
+          [
+            1.0,
+            3.0,
+            4.0
+          ],
+          [
+            1.0,
+            4.0,
+            2.0
+          ],
+          [
+            2.0,
+            1.0,
+            4.0
+          ],
+          [
+            2.0,
+            3.0,
+            1.0
+          ],
+          [
+            3.0,
+            1.0,
+            2.0
+          ]
+        ]
+      }
+    },
+    "metric_signature": {
+      "temporal_fraction_timelike": null,
+      "spatial_fraction_spacelike": 1.0,
+      "mixed_timelike_fraction": 0.0,
+      "mixed_spacelike_fraction": 0.6666666666666666
+    },
+    "lorentz_test": {
+      "lorentz_like": true,
+      "interval_consistency": 0.0,
+      "sample_intervals": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "metadata": {
+    "date": "2025-10-06T09:57:44.468396",
+    "hypothesis": "Spacetime = Space (geometry) x Time (sequential logic)",
+    "test_version": "2.0"
+  }
+}

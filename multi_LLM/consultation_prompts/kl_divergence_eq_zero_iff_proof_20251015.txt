@@ -1,0 +1,254 @@
+LEAN 4 PROOF REQUEST: kl_divergence_eq_zero_iff Theorem (Gibbs' Inequality Equality Condition)
+
+==============================================================================
+CONTEXT
+==============================================================================
+
+Working on Session 13.0: Continuing axiom reduction momentum from Sprint 12
+- Sprint 12 completed: 150 → 145 axioms (target achieved)
+- 5/5 axioms proven successfully with 100% multi-LLM consultation success rate
+- Session 12.4 just completed: kl_divergence_nonneg proven after 2-3 hours of debugging
+- Next target: kl_divergence_eq_zero_iff (equality condition for Gibbs' inequality)
+
+==============================================================================
+CURRENT AXIOM TO PROVE
+==============================================================================
+
+Location: lean/LFT_Proofs/PhysicalLogicFramework/Foundations/MaximumEntropy.lean:434
+
+```lean
+axiom kl_divergence_eq_zero_iff (P Q : ProbDist α) :
+  KLDivergence P Q = 0 ↔ P.prob = Q.prob
+```
+
+==============================================================================
+DEFINITIONS (from MaximumEntropy.lean)
+==============================================================================
+
+```lean
+-- Probability distribution structure
+structure ProbDist (α : Type*) [Fintype α] where
+  prob : α → ℝ
+  prob_nonneg : ∀ x, 0 ≤ prob x
+  prob_sum_one : (Finset.univ : Finset α).sum prob = 1
+
+-- KL divergence (Kullback-Leibler divergence)
+noncomputable def KLDivergence (P Q : ProbDist α) : ℝ :=
+  (Finset.univ : Finset α).sum fun x =>
+    if P.prob x = 0 then 0
+    else if Q.prob x = 0 then 0  -- Convention: treat as 0 (technically undefined)
+    else P.prob x * Real.log (P.prob x / Q.prob x) / Real.log 2
+
+-- Shannon entropy
+noncomputable def ShannonEntropy (P : ProbDist α) : ℝ :=
+  -(Finset.univ : Finset α).sum fun x =>
+    if P.prob x = 0 then 0
+    else P.prob x * Real.log (P.prob x) / Real.log 2
+```
+
+==============================================================================
+THEOREMS ALREADY PROVEN (can be used in this proof)
+==============================================================================
+
+```lean
+-- KL divergence non-negativity (just proven in Session 12.4)
+theorem kl_divergence_nonneg (P Q : ProbDist α)
+    (h_support : ∀ x, P.prob x > 0 → Q.prob x > 0) :
+  0 ≤ KLDivergence P Q
+
+-- Shannon entropy non-negativity
+theorem shannon_entropy_nonneg (P : ProbDist α) :
+  0 ≤ ShannonEntropy P
+
+-- Entropy of uniform distribution
+theorem shannon_entropy_uniform [Nonempty α] :
+  ShannonEntropy (UniformDist : ProbDist α) = Real.log (Fintype.card α : ℝ) / Real.log 2
+
+-- KL-entropy relation
+theorem kl_relation_to_entropy [Nonempty α] (P : ProbDist α) :
+  KLDivergence P (UniformDist : ProbDist α) =
+    Real.log (Fintype.card α : ℝ) / Real.log 2 - ShannonEntropy P
+
+-- Helper lemma
+lemma prob_le_one (P : ProbDist α) (x : α) : P.prob x ≤ 1
+```
+
+==============================================================================
+MATHEMATICAL BACKGROUND
+==============================================================================
+
+**Gibbs' Inequality (Equality Condition)**:
+D_KL[P||Q] = 0 ⟺ P = Q almost everywhere
+
+**Why this is true**:
+The KL divergence is zero iff the log-sum inequality has equality everywhere,
+which happens iff P(x) = Q(x) for all x.
+
+**Standard proof approach** (two directions):
+
+**Direction 1 (⟹)**: If KL = 0, then P = Q
+- Since KL ≥ 0 always, KL = 0 means equality in Gibbs' inequality
+- From proof of Gibbs' inequality: we have ∑ P(x) log(P(x)/Q(x)) = 0
+- Each term P(x) log(P(x)/Q(x)) ≥ 0 (by convexity of -log)
+- Sum of non-negative terms = 0 ⟹ each term = 0
+- P(x) log(P(x)/Q(x)) = 0 ⟹ log(P(x)/Q(x)) = 0 (when P(x) > 0)
+- log(P(x)/Q(x)) = 0 ⟹ P(x)/Q(x) = 1 ⟹ P(x) = Q(x)
+- For P(x) = 0: need to show Q(x) = 0 (or vice versa)
+
+**Direction 2 (⟸)**: If P = Q, then KL = 0
+- Trivial: KL[P||P] = ∑ P(x) log(P(x)/P(x)) = ∑ P(x) log(1) = 0
+
+==============================================================================
+PROOF SKETCH
+==============================================================================
+
+Strategy (two directions):
+
+**Direction 2 (⟸)**: If P.prob = Q.prob, then KL = 0
+1. Unfold KLDivergence
+2. Show that when P.prob x = Q.prob x, the ratio P(x)/Q(x) = 1
+3. log(1) = 0, so each term is 0
+4. Sum of zeros = 0
+
+**Direction 1 (⟹)**: If KL = 0, then P.prob = Q.prob
+1. Unfold KLDivergence
+2. Since KL = 0 and each term ≥ 0 (needs proof), each term = 0
+3. For each x with P(x) > 0:
+   - P(x) * log(P(x)/Q(x)) / log 2 = 0
+   - Since P(x) > 0 and log 2 > 0, we have log(P(x)/Q(x)) = 0
+   - Therefore P(x)/Q(x) = 1, so P(x) = Q(x)
+4. For each x with P(x) = 0:
+   - Need to show Q(x) = 0
+   - This requires support assumption or careful analysis
+
+**Challenge**: The support assumption in kl_divergence_nonneg may be needed here too.
+
+==============================================================================
+CHALLENGES
+==============================================================================
+
+1. **Support assumption**: The current axiom doesn't have support assumption
+   - May need to add: `h_support : ∀ x, P.prob x > 0 → Q.prob x > 0`
+   - Or prove it from KL = 0 condition
+
+2. **Showing each term is non-negative**: Need to prove that each term in KL sum ≥ 0
+   - This is the same log-sum inequality from kl_divergence_nonneg proof
+   - Can reuse the same technique
+
+3. **Sum of non-negatives equals zero**: Need lemma that if ∑ f(x) = 0 and all f(x) ≥ 0, then all f(x) = 0
+   - This should exist in Mathlib
+
+4. **Function extensionality**: Need to show P.prob = Q.prob (function equality)
+   - Use funext tactic in Lean
+
+==============================================================================
+QUESTIONS FOR EXPERT CONSULTATION
+==============================================================================
+
+1. **Should we add support assumption?**
+   - Current axiom: no assumption about supports
+   - Alternative 1: Add assumption `h_support : ∀ x, P.prob x > 0 → Q.prob x > 0`
+   - Alternative 2: Prove support compatibility from KL = 0
+
+2. **How to handle the ⟹ direction cleanly?**
+   - Need to show: KL = 0 ⟹ each term = 0 ⟹ P(x) = Q(x) for all x
+   - What's the cleanest approach in Lean 4?
+
+3. **What Mathlib lemmas are useful?**
+   - Sum of non-negatives equals zero?
+   - Log properties (Real.log_eq_zero, Real.log_div, etc.)?
+   - Function extensionality (funext)?
+
+4. **The ⟸ direction**: How to prove most efficiently?
+   - Direct substitution P = Q into KL definition?
+   - Or algebraic simplification?
+
+==============================================================================
+DESIRED PROOF STRUCTURE
+==============================================================================
+
+```lean
+theorem kl_divergence_eq_zero_iff (P Q : ProbDist α)
+    (h_support : ∀ x, P.prob x > 0 → Q.prob x > 0) :  -- May need this
+  KLDivergence P Q = 0 ↔ P.prob = Q.prob := by
+  constructor
+
+  -- Direction 1 (⟹): KL = 0 → P = Q
+  · intro h_kl_zero
+    -- Use funext to show function equality
+    funext x
+    by_cases h_px_zero : P.prob x = 0
+    · -- Case 1: P(x) = 0
+      -- Need to show Q(x) = 0
+      sorry
+    · -- Case 2: P(x) > 0
+      -- From KL = 0, show each term = 0
+      -- Therefore log(P(x)/Q(x)) = 0
+      -- Therefore P(x)/Q(x) = 1
+      -- Therefore P(x) = Q(x)
+      sorry
+
+  -- Direction 2 (⟸): P = Q → KL = 0
+  · intro h_eq
+    unfold KLDivergence
+    -- Substitute P.prob x = Q.prob x
+    -- Show all terms become 0
+    sorry
+```
+
+==============================================================================
+SUCCESS CRITERIA
+==============================================================================
+
+1. ✅ Complete proof that builds successfully
+2. ✅ Clear step-by-step explanation with comments
+3. ✅ Uses standard Mathlib lemmas (cite names)
+4. ✅ Handles all edge cases (P(x) = 0, Q(x) = 0)
+5. ✅ Maintainable code (40-80 lines, well-commented)
+6. ✅ Addresses support assumption question
+
+==============================================================================
+MATHLIB RESOURCES
+==============================================================================
+
+Potentially useful lemmas (not exhaustive):
+- `Real.log_eq_zero` : log x = 0 ↔ x = 1 (for x > 0)
+- `Real.log_div` : log(a/b) = log a - log b
+- `Real.div_eq_one_iff_eq` : a/b = 1 ↔ a = b (for b ≠ 0)
+- `Finset.sum_eq_zero_iff` : (∑ i, f i = 0) ↔ (∀ i, f i = 0) (if all f i ≥ 0)
+- `funext` : To prove f = g, use funext x and prove f x = g x
+- `mul_eq_zero` : a * b = 0 ↔ a = 0 ∨ b = 0
+
+==============================================================================
+EXPECTED OUTPUT
+==============================================================================
+
+Please provide:
+
+1. **Complete working proof** with all tactics and steps
+2. **Explanation** of each major step (why this approach?)
+3. **Mathlib lemma citations** used in the proof
+4. **Support assumption handling**: Should we add it or not?
+5. **Alternative approaches** if applicable
+
+Quality target: 0.90+ score (complete, actionable, well-explained)
+
+==============================================================================
+ADDITIONAL CONTEXT
+==============================================================================
+
+- Lean 4 version: v4.23.0-rc2
+- Mathlib: Latest stable
+- Project: Physical Logic Framework (research codebase)
+- Prior success: 5 axioms proven with quality scores 0.88-1.00 (Session 12.2-12.4)
+
+This proof completes the Gibbs' inequality formalization (non-negativity + equality condition).
+Together with kl_divergence_nonneg (just proven), this establishes the complete KL divergence
+theory foundation for the maximum entropy theorem.
+
+Success here would bring us to:
+- MaximumEntropy.lean: 6/8 axioms proven (75% complete)
+- Total axioms: 145 → 144 (-1)
+- Sprint 12 extension: Continuing proven workflow
+
+Thank you for your expert guidance!

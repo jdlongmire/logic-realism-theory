@@ -1,0 +1,183 @@
+{
+  "results": [
+    {
+      "N": 3,
+      "K": 1,
+      "h": 1,
+      "num_states": 2,
+      "correlation": {
+        "dimension": 0.0,
+        "method": "correlation",
+        "status": "insufficient_data",
+        "num_points": 2
+      },
+      "persistent_homology": {
+        "dimension": 0.0,
+        "method": "persistent_homology",
+        "status": "insufficient_data",
+        "num_points": 2
+      },
+      "graph_theoretic": {
+        "dimension": 0.0,
+        "method": "graph_theoretic",
+        "status": "insufficient_data",
+        "num_points": 2
+      },
+      "consensus_dimension": null,
+      "dimension_std": null
+    },
+    {
+      "N": 4,
+      "K": 2,
+      "h": 2,
+      "num_states": 5,
+      "correlation": {
+        "dimension": 3.159611997016239,
+        "method": "correlation",
+        "fit_quality": 0.7399877764768654,
+        "num_points": 5,
+        "status": "success"
+      },
+      "persistent_homology": {
+        "dimension": 0.0,
+        "method": "persistent_homology",
+        "betti_numbers": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "num_points": 5,
+        "status": "success"
+      },
+      "graph_theoretic": {
+        "dimension": 0.5693530567677347,
+        "method": "graph_theoretic",
+        "spectral_dimension": 0.13870611353546958,
+        "path_length_dimension": 1.0,
+        "num_points": 5,
+        "graph_connected": true,
+        "status": "success"
+      },
+      "consensus_dimension": 1.2429883512613245,
+      "dimension_std": 1.3750455448003254
+    },
+    {
+      "N": 5,
+      "K": 3,
+      "h": 3,
+      "num_states": 15,
+      "correlation": {
+        "dimension": 2.379888398698232,
+        "method": "correlation",
+        "fit_quality": 0.9827591317188125,
+        "num_points": 15,
+        "status": "success"
+      },
+      "persistent_homology": {
+        "dimension": 0.4444444444444444,
+        "method": "persistent_homology",
+        "betti_numbers": [
+          6,
+          2,
+          1,
+          0
+        ],
+        "num_points": 15,
+        "status": "success"
+      },
+      "graph_theoretic": {
+        "dimension": 2.4942609864498344,
+        "method": "graph_theoretic",
+        "spectral_dimension": 0.11377054277909418,
+        "path_length_dimension": 4.8747514301205745,
+        "num_points": 15,
+        "graph_connected": true,
+        "status": "success"
+      },
+      "consensus_dimension": 1.7728646098641703,
+      "dimension_std": 0.9404946833546618
+    },
+    {
+      "N": 6,
+      "K": 4,
+      "h": 4,
+      "num_states": 49,
+      "correlation": {
+        "dimension": 2.69409296482102,
+        "method": "correlation",
+        "fit_quality": 0.995290786011577,
+        "num_points": 49,
+        "status": "success"
+      },
+      "persistent_homology": {
+        "dimension": 1.0,
+        "method": "persistent_homology",
+        "betti_numbers": [
+          3,
+          12,
+          3,
+          0
+        ],
+        "num_points": 49,
+        "status": "success"
+      },
+      "graph_theoretic": {
+        "dimension": 1.9224292532203635,
+        "method": "graph_theoretic",
+        "spectral_dimension": 0.14193152208840887,
+        "path_length_dimension": 3.702926984352318,
+        "num_points": 49,
+        "graph_connected": true,
+        "status": "success"
+      },
+      "consensus_dimension": 1.8721740726804612,
+      "dimension_std": 0.6925228904723858
+    },
+    {
+      "N": 7,
+      "K": 5,
+      "h": 5,
+      "num_states": 169,
+      "correlation": {
+        "dimension": 2.98147483817697,
+        "method": "correlation",
+        "fit_quality": 0.9885673929709705,
+        "num_points": 169,
+        "status": "success"
+      },
+      "persistent_homology": {
+        "dimension": 1.3670886075949369,
+        "method": "persistent_homology",
+        "betti_numbers": [
+          3,
+          51,
+          18,
+          7
+        ],
+        "num_points": 169,
+        "status": "success"
+      },
+      "graph_theoretic": {
+        "dimension": 1.8630433012987182,
+        "method": "graph_theoretic",
+        "spectral_dimension": 0.15540779786015277,
+        "path_length_dimension": 3.5706788047372835,
+        "num_points": 169,
+        "graph_connected": true,
+        "status": "success"
+      },
+      "consensus_dimension": 2.070535582356875,
+      "dimension_std": 0.6752039249477421
+    }
+  ],
+  "metadata": {
+    "date": "2025-10-07T09:20:20.642337",
+    "methods": [
+      "correlation",
+      "persistent_homology",
+      "graph_theoretic"
+    ],
+    "test_version": "Sprint 9 Phase 2"
+  }
+}

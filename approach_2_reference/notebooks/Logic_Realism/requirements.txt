@@ -1,0 +1,22 @@
+# Logic Realism Computational Notebooks - Core Dependencies
+# Minimal requirements for running all notebooks in this directory
+#
+# Install with: pip install -r requirements.txt
+# For exact reproducibility, use: pip install -r requirements.lock.txt
+
+# Core scientific computing
+numpy>=1.26.0
+scipy>=1.11.0
+matplotlib>=3.8.0
+pandas>=2.0.0
+
+# Graph algorithms
+networkx>=3.0
+
+# Jupyter environment
+jupyter>=1.0.0
+ipykernel>=6.25.0
+nbformat>=5.9.0
+
+# Optional but recommended
+notebook>=7.0.0

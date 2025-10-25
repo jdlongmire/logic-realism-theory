@@ -1,0 +1,6 @@
+usage: enhanced_llm_bridge.py [-h] [--query QUERY]
+                              [--mode {lean,review,theory,general,auto}]
+                              [--models MODELS] [--no-cache] [--health-check]
+                              [--cache-stats] [--cleanup-cache]
+                              [--output {full,best,json}]
+enhanced_llm_bridge.py: error: unrecognized arguments: --prompt-file consultation_prompts/program_auditor_comprehensive_20251014.txt --query-type peer_review

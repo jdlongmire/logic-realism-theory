@@ -1,0 +1,191 @@
+LEAN 4 PROOF REQUEST: shannon_entropy_nonneg Theorem
+
+==============================================================================
+CONTEXT
+==============================================================================
+
+Working on Sprint 12: Axiom Reduction in Physical Logic Framework
+- Successfully proved 3 axioms: identity_zero_inversions, kl_relation_to_entropy, shannon_entropy_uniform
+- Current axiom count: 147 (targeting 143-145 by sprint end)
+- Multi-LLM consultation success rate: 3/3 with quality scores 0.92+
+- Next target: shannon_entropy_nonneg (fundamental entropy property)
+
+==============================================================================
+CURRENT AXIOM TO PROVE
+==============================================================================
+
+Location: lean/LFT_Proofs/PhysicalLogicFramework/Foundations/MaximumEntropy.lean:223
+
+```lean
+axiom shannon_entropy_nonneg (P : ProbDist α) :
+  0 ≤ ShannonEntropy P
+```
+
+==============================================================================
+DEFINITIONS (from MaximumEntropy.lean)
+==============================================================================
+
+```lean
+-- Probability distribution structure
+structure ProbDist (α : Type*) [Fintype α] where
+  prob : α → ℝ
+  prob_nonneg : ∀ x, 0 ≤ prob x
+  prob_sum_one : (Finset.univ : Finset α).sum prob = 1
+
+-- Shannon entropy
+noncomputable def ShannonEntropy (P : ProbDist α) : ℝ :=
+  -(Finset.univ : Finset α).sum fun x =>
+    if P.prob x = 0 then 0
+    else P.prob x * Real.log (P.prob x) / Real.log 2
+```
+
+==============================================================================
+MATHEMATICAL BACKGROUND
+==============================================================================
+
+**Key Insight**: The function f(x) = -x log x is non-negative for 0 ≤ x ≤ 1
+
+**Why this is true**:
+1. When x = 0: We use convention 0 log 0 = 0, so f(0) = 0
+2. When 0 < x < 1: log x < 0 (since log 1 = 0), so -x log x > 0
+3. When x = 1: log 1 = 0, so f(1) = -1 * 0 = 0
+4. Since probabilities satisfy 0 ≤ P(x) ≤ 1 and ∑ P(x) = 1, each term is non-negative
+
+**Therefore**: H[P] = -∑ P(x) log P(x) ≥ 0
+
+==============================================================================
+PROOF SKETCH
+==============================================================================
+
+Strategy:
+1. Unfold ShannonEntropy definition
+2. Show that each term in the sum is non-negative:
+   - If P.prob x = 0: term is 0 (by if-then-else)
+   - If P.prob x > 0: Show -P.prob x * log(P.prob x) / log 2 ≥ 0
+3. Use Finset.sum_nonneg to conclude that the negation of a sum of non-negative terms has the right sign
+4. Result: 0 ≤ -∑ ... = ShannonEntropy P
+
+**Key lemma needed**: For 0 < x ≤ 1, we have -x * log x ≥ 0
+  - Equivalently: x * log x ≤ 0 for 0 < x ≤ 1
+  - This follows because log x ≤ 0 when 0 < x ≤ 1
+
+==============================================================================
+CHALLENGES
+==============================================================================
+
+1. **Probability bounds**: Need to use prob_sum_one and prob_nonneg to establish 0 ≤ P(x) ≤ 1
+2. **Logarithm properties**: Need lemmas about log x ≤ 0 for 0 < x ≤ 1
+3. **Division by log 2**: Need to handle the / log 2 factor correctly
+4. **Sum manipulation**: Need to show sum of non-negative terms is non-negative
+5. **Outer negation**: The definition has -∑, need to track signs carefully
+
+==============================================================================
+QUESTIONS FOR EXPERT CONSULTATION
+==============================================================================
+
+1. **What Mathlib lemmas establish -x log x ≥ 0 for 0 < x ≤ 1?**
+   - Is there a direct lemma for this?
+   - Or do we need to combine lemmas about log x ≤ 0 with multiplication?
+
+2. **How to prove 0 ≤ P(x) ≤ 1 from prob_nonneg and prob_sum_one?**
+   - We have ∀ x, 0 ≤ P(x)
+   - We have ∑ P(x) = 1
+   - Can we deduce P(x) ≤ 1 from these?
+
+3. **What's the correct approach for the division by log 2?**
+   - log 2 > 0, so dividing by it preserves inequalities
+   - Is there a clean way to handle this?
+
+4. **How to handle the if-then-else in the sum?**
+   - The if-then-else makes the term 0 when P(x) = 0
+   - This is exactly what we want (0 log 0 = 0 convention)
+   - How to prove this cleanly?
+
+==============================================================================
+DESIRED PROOF STRUCTURE
+==============================================================================
+
+```lean
+theorem shannon_entropy_nonneg (P : ProbDist α) :
+  0 ≤ ShannonEntropy P := by
+  unfold ShannonEntropy
+
+  -- Step 1: Show each term is non-positive (so negation is non-negative)
+  have h_terms_nonpos : ∀ x : α,
+      (if P.prob x = 0 then 0
+       else P.prob x * Real.log (P.prob x) / Real.log 2) ≤ 0 := by
+    intro x
+    by_cases h : P.prob x = 0
+    · simp [h]
+    · -- Show P.prob x * log(P.prob x) / log 2 ≤ 0
+      -- Since 0 < P.prob x ≤ 1, we have log(P.prob x) ≤ 0
+      -- Therefore P.prob x * log(P.prob x) ≤ 0
+      -- Since log 2 > 0, dividing preserves inequality
+      sorry
+
+  -- Step 2: Sum of non-positive terms is non-positive
+  have h_sum_nonpos :
+      (Finset.univ : Finset α).sum (fun x =>
+        if P.prob x = 0 then 0
+        else P.prob x * Real.log (P.prob x) / Real.log 2) ≤ 0 := by
+    apply Finset.sum_nonpos
+    intro x _
+    exact h_terms_nonpos x
+
+  -- Step 3: Therefore the negation is non-negative
+  linarith [h_sum_nonpos]
+```
+
+==============================================================================
+SUCCESS CRITERIA
+==============================================================================
+
+1. ✅ Complete proof that builds successfully
+2. ✅ Clear step-by-step explanation with comments
+3. ✅ Uses standard Mathlib lemmas (cite names)
+4. ✅ Handles all edge cases (P(x) = 0, bounds on P(x))
+5. ✅ Maintainable code (40-80 lines, well-commented)
+
+==============================================================================
+MATHLIB RESOURCES
+==============================================================================
+
+Potentially useful lemmas (not exhaustive):
+- `Real.log_nonpos_of_le_one` : log x ≤ 0 when 0 < x ≤ 1
+- `Real.log_pos` : log x > 0 when x > 1
+- `Real.log_neg` : log x < 0 when 0 < x < 1
+- `mul_nonpos_of_nonneg_of_nonpos` : a ≥ 0 ∧ b ≤ 0 → a * b ≤ 0
+- `div_nonpos_of_nonpos_of_nonneg` : a ≤ 0 ∧ b > 0 → a / b ≤ 0
+- `Finset.sum_nonpos` : (∀ i ∈ s, f i ≤ 0) → ∑ i in s, f i ≤ 0
+- `Finset.sum_nonneg` : (∀ i ∈ s, 0 ≤ f i) → 0 ≤ ∑ i in s, f i
+
+==============================================================================
+EXPECTED OUTPUT
+==============================================================================
+
+Please provide:
+
+1. **Complete working proof** with all tactics and steps
+2. **Explanation** of each major step (why this approach?)
+3. **Mathlib lemma citations** used in the proof
+4. **Probability bounds proof**: How to show 0 ≤ P(x) ≤ 1
+5. **Alternative approaches** if applicable
+
+Quality target: 0.90+ score (complete, actionable, well-explained)
+
+==============================================================================
+ADDITIONAL CONTEXT
+==============================================================================
+
+- Lean 4 version: v4.23.0-rc2
+- Mathlib: Latest stable
+- Project: Physical Logic Framework (research codebase)
+- Prior success: 3 axioms proven with quality scores 0.92-1.00
+
+This proof is more subtle than previous ones because it requires:
+1. Careful handling of probability bounds (0 ≤ P(x) ≤ 1)
+2. Properties of logarithm on (0,1]
+3. Sign tracking through multiplication and division
+4. Sum of non-positive terms
+
+Thank you for your expert guidance! This proof will reduce our axiom count from 147 to 146 and continues our systematic axiom reduction strategy.

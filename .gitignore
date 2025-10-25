@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+.ipynb_checkpoints/
+
+# Lean
+.lake/
+build/
+*.olean
+*.trace
+
+# Multi-LLM
+multi_LLM/api_config.json
+multi_LLM/llm_cache.db
+multi_LLM/__pycache__/
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Outputs
+notebooks/outputs/*.png
+notebooks/outputs/*.csv
+notebooks/outputs/*.json
+!notebooks/outputs/.gitkeep

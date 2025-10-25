@@ -1,0 +1,79 @@
+{
+  "N3_K1": {
+    "test1": {
+      "num_spatial": 1,
+      "num_temporal": 2,
+      "test_passed": true
+    },
+    "test2": {
+      "num_pairs": 3,
+      "test_passed": true
+    },
+    "test3": {
+      "ground_state_energy": -4.440892098500626e-16,
+      "residual": 4.710277376051326e-16,
+      "evolution_error": 0.0001498921809610075,
+      "eigenvalues": [
+        -4.440892098500626e-16,
+        1.0,
+        3.0
+      ],
+      "test_passed": true
+    },
+    "test4": {
+      "reversible_fraction": 1.0,
+      "h_changes": {
+        "preserved": 0,
+        "increased": 4,
+        "decreased": 2
+      },
+      "test_passed": true
+    }
+  },
+  "N4_K2": {
+    "test1": {
+      "num_spatial": 10,
+      "num_temporal": 12,
+      "test_passed": true
+    },
+    "test2": {
+      "num_pairs": 15,
+      "test_passed": true
+    },
+    "test3": {
+      "ground_state_energy": 4.935768934250597e-16,
+      "residual": 1.4315621067842655e-15,
+      "evolution_error": 0.00015780654326054855,
+      "eigenvalues": [
+        4.935768934250597e-16,
+        0.2865623901954073,
+        0.5857864376269051,
+        1.0,
+        1.357321885850176,
+        2.303451642547174,
+        3.414213562373095,
+        3.896131144257127,
+        5.156532937150115
+      ],
+      "test_passed": true
+    },
+    "test4": {
+      "reversible_fraction": 1.0,
+      "h_changes": {
+        "preserved": 0,
+        "increased": 18,
+        "decreased": 9
+      },
+      "test_passed": true
+    }
+  },
+  "metadata": {
+    "date": "2025-10-06T10:34:01.105333",
+    "tests": [
+      "Information metric ds\u00b2 = -dt\u00b2 + dl\u00b2",
+      "Fisher metric = embedding distance",
+      "Hamiltonian = time generator",
+      "Reversible (space) vs Irreversible (time)"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "_comment": "TEMPLATE FILE - Replace placeholder API keys with your actual keys. Copy to api_config.json for use.",
+  "api_keys": {
+    "grok": "xai-YOUR_GROK_API_KEY_HERE",
+    "chatgpt": "sk-proj-YOUR_OPENAI_API_KEY_HERE", 
+    "gemini": "YOUR_GEMINI_API_KEY_HERE"
+  },
+  "endpoints": {
+    "grok": "https://api.x.ai/v1/chat/completions",
+    "chatgpt": "https://api.openai.com/v1/chat/completions",
+    "gemini": "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent"
+  },
+  "default_settings": {
+    "temperature": 0.1,
+    "max_tokens": 4000,
+    "timeout_seconds": 30
+  },
+  "lean_specific_prompts": {
+    "system_prompt": "You are an expert in formal verification, Lean 4, mathematical logic, and quantum mechanics. Provide detailed, technically accurate solutions with working code examples.",
+    "compilation_error_template": "LEAN 4 COMPILATION ERROR RESOLUTION\n\nError Message:\n{error_message}\n\nProblematic Code:\n```lean\n{lean_code}\n```\n\nPlease provide:\n1. Root cause analysis\n2. Specific fixes with corrected code\n3. Alternative approaches\n4. Best practices",
+    "formalization_template": "LEAN 4 MATHEMATICAL FORMALIZATION\n\nTheorem: {theorem_description}\nDomain: {mathematical_domain}\n\nPlease provide complete Lean 4 formalization with proper types and imports."
+  }
+}

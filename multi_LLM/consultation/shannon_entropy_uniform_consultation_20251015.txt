@@ -1,0 +1,36 @@
+Consulting expert LLMs (query_type: lean_proof)...
+
+[QUERY TYPE] lean_proof
+======================================================================
+
+1. GROK - Quality Score: 0.92/1.0
+   Dimensions:
+     - lean_code_quality: 1.00
+     - mathlib_citations: 1.00
+     - step_by_step: 1.00
+     - actionability: 0.60
+
+   Below is a detailed, technically accurate solution to prove that the Shannon entropy of a uniform distribution over `n` outcomes is `log₂(n)` using Lean 4. I will provide a step-by-step explanation of the problem, the mathematical background, and a complete, working Lean 4 code example that formaliz...
+
+
+2. GEMINI - Quality Score: 0.80/1.0
+   Dimensions:
+     - lean_code_quality: 0.70
+     - mathlib_citations: 1.00
+     - step_by_step: 0.50
+     - actionability: 1.00
+
+   Okay, I've reviewed the consultation prompt.  Based on the file name `shannon_entropy_uniform_proof_20251015.txt` and the context of my expertise, I'm assuming the prompt asks for a formal proof in Lean 4 that the Shannon entropy of a uniform probability distribution is maximal for a given number of...
+
+
+3. CHATGPT - Quality Score: 0.06/1.0
+   Dimensions:
+     - actionability: 0.30
+
+   It seems like there's a misunderstanding here. The file you're referring to, `consultation_prompts/shannon_entropy_uniform_proof_20251015.txt`, is not accessible to me. However, I can provide a proof of the Shannon entropy for a uniform distribution.
+
+Shannon entropy is a measure of the uncertainty ...
+
+
+======================================================================
+Cache Statistics: {'total_entries': 18, 'total_accesses': 28, 'by_type': {'general': {'count': 2, 'avg_accesses': 2.0}, 'lean_proof': {'count': 8, 'avg_accesses': 1.625}, 'peer_review': {'count': 5, 'avg_accesses': 1.4}, 'theory_question': {'count': 3, 'avg_accesses': 1.3333333333333333}}, 'cache_hits': 0, 'cache_misses': 1, 'hit_rate': 0.0}

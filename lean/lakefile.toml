@@ -1,0 +1,14 @@
+name = "LogicRealismTheory"
+version = "0.1.0"
+defaultTargets = ["logicrealismtheory"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+
+[[lean_lib]]
+name = "LogicRealismTheory"
+
+[[lean_exe]]
+name = "logicrealismtheory"
+root = "Main"
