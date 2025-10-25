@@ -163,24 +163,39 @@ structure ResolutionMap (Index : Type*) where
 R applied to I (resolution map for LRT).
 
 This is the concrete instantiation of the resolution map for LRT.
-Note: We define the structure; specific resolutions depend on measurement context.
+Note: We use Classical.choice to select an arbitrary element for resolution.
+Specific resolutions in actual measurements depend on interaction context.
 -/
-def R_abstract : ResolutionMap I := {
-  resolve := fun _ => 0  -- Abstract definition: default to 0 (no resolution yet)
-  normalization := by
-    -- Existence and uniqueness of resolution
-    use default  -- Use default element of I
-    constructor
-    · -- Prove resolve(default) = 1 (abstract placeholder)
-      decide
-    · -- Prove uniqueness (abstract)
-      intro y hy
-      sorry  -- TODO: Implement proper normalization proof
-  binary := by
-    intro i
-    left  -- resolve i = 0 (abstract default)
-    decide
-}
+noncomputable def R_abstract : ResolutionMap I := by
+  -- Use Classical.choice to pick an arbitrary element of I that will resolve to 1
+  -- This represents the abstract fact that SOME outcome is selected
+  have h_nonempty : Nonempty I := by
+    -- I is infinite, so it's nonempty
+    have : Infinite I := I_infinite
+    exact inferInstance
+  let chosen := Classical.choice h_nonempty
+  exact {
+    resolve := fun i => if i = chosen then 1 else 0
+    normalization := by
+      use chosen
+      constructor
+      · -- Prove resolve(chosen) = 1
+        simp
+      · -- Prove uniqueness: if resolve(y) = 1 then y = chosen
+        intro y hy
+        simp at hy
+        split at hy
+        · assumption  -- y = chosen
+        · -- Contradiction: hy says 0 = 1
+          exact absurd hy (Fin.zero_ne_one)
+    binary := by
+      intro i
+      by_cases h : i = chosen
+      · right
+        simp [h]
+      · left
+        simp [h]
+  }
 
 -- ═══════════════════════════════════════════════════════════════════════════
 -- COMPOSITION: L = EM ∘ NC ∘ Id
@@ -250,10 +265,10 @@ def L : ConstraintComposition I I := {
 
 **Axiom Count**: 0 (this file defines structures and instances, adds NO axioms)
 
-**Sorry Count**: 1 (in R_abstract.normalization proof)
-- This is a placeholder for the proper normalization proof
-- Will be resolved when we have concrete Hilbert space structure from Mathlib
-- The mathematical content is correct; the proof is deferred
+**Sorry Count**: 0 (all proofs complete)
+- R_abstract uses Classical.choice to select arbitrary element for resolution
+- Marked as noncomputable (uses choice)
+- Normalization proof complete: exactly one element resolves to 1
 
 **Abstract vs. Concrete**:
 - These are ABSTRACT definitions modeling the operators
@@ -282,8 +297,7 @@ def L : ConstraintComposition I I := {
 - Born rule derivation (Derivations/BornRule.lean)
 
 **Next Steps**:
-1. Resolve the 1 sorry in R_abstract.normalization
-2. Add Mathlib Hilbert space imports
-3. Define concrete measurement operators
-4. Prove derivations as theorems in Derivations/
+1. Add Mathlib Hilbert space imports (for concrete implementations)
+2. Define concrete measurement operators
+3. Prove derivations as theorems in Derivations/
 -/

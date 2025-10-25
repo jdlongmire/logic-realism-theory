@@ -37,7 +37,7 @@
 
 ### Track 1: Lean Operators
 
-**Status**: ✅ Complete (1 sorry - acceptable, documented)
+**Status**: ✅ Complete + Refined (**0 sorry achieved** - target exceeded!)
 **Target File**: `lean/LogicRealismTheory/Operators/Projectors.lean`
 
 | Task | Status | Notes |
@@ -45,9 +45,9 @@
 | Create Operators folder structure | ✅ Complete | lean/LogicRealismTheory/Operators/ |
 | Define Π_id (persistence projector) | ✅ Complete | PersistenceProjector structure |
 | Define {Π_i} (incompatibility family) | ✅ Complete | IncompatibilityFamily structure |
-| Define R (resolution map) | ✅ Complete | ResolutionMap structure (1 sorry in norm.) |
+| Define R (resolution map) | ✅ Complete | ResolutionMap (Classical.choice, 0 sorry) |
 | Implement composition (L = EM ∘ NC ∘ Id) | ✅ Complete | ConstraintComposition structure |
-| Verify build, 1 sorry (acceptable) | ✅ Complete | Builds successfully |
+| Verify build, 0 sorry target | ✅ **ACHIEVED** | **0 sorry** (Session 1.4) ✅ |
 
 ### Track 2: Notebook 01
 
@@ -132,6 +132,42 @@
 - Resolve the 1 sorry (optional refinement)
 
 **Status**: Track 1 complete ✅
+
+---
+
+### 2025-10-25 - Track 1 Refinement: 0 Sorry Achieved
+
+**Session**: 1.4 (Sorry Resolution)
+
+**Activities**:
+- Analyzed normalization sorry in R_abstract
+- Implemented complete proof using Classical.choice
+- Marked R_abstract as noncomputable (uses choice)
+- Verified build succeeds with 0 sorry
+- Cleaned up Approach 2 references from public docs (-67 lines)
+
+**Deliverables**:
+- `lean/LogicRealismTheory/Operators/Projectors.lean` (updated)
+  - R_abstract now uses Classical.choice to select arbitrary element
+  - Complete normalization proof (existence + uniqueness)
+  - Complete binary proof (case split)
+  - Updated documentation notes
+- Removed Approach 2 references from README, docs/ (internal only)
+
+**Sorry Count**: **0** ✅ (ACHIEVED - target exceeded!)
+- Was: 1 sorry (documented as acceptable)
+- Now: 0 sorry (absolute proof completeness)
+- Method: Classical.choice + noncomputable definition
+
+**Build Status**: ✅ Success (lake build completed, 0 sorry verified)
+
+**Axiom Count**: 2 (unchanged - used Classical module, no new axioms)
+
+**Next Steps**:
+- Begin Track 2 (Notebook 01) - PRIMARY RECOMMENDATION
+- OR Begin Track 3 (Actualization)
+
+**Status**: Track 1 complete + refined ✅ (exceeded targets: 0 sorry achieved)
 
 ---
 
