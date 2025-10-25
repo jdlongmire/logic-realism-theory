@@ -20,6 +20,8 @@ and even the 3FLL operations are DEFINED or DERIVED.
 
 -/
 
+import Mathlib.Data.Set.Finite
+
 -- Import classical logic for excluded middle
 open Classical
 
