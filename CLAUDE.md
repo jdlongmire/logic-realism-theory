@@ -456,7 +456,7 @@ Sprint tracking complements session logs:
 - ✅ Present the correct approach directly and professionally
 - ✅ If multiple approaches exist, present them as alternatives, not as corrections
 
-See Notebook 08 (`notebooks/08_Energy_Level_Structure.ipynb`) for reference template.
+See `theory/Logic-realism-theory-foundational.md` for complete theoretical framework (notebooks to be developed following this structure).
 
 ---
 

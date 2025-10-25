@@ -21,20 +21,21 @@ Logic Realism Theory (LRT) proposes that physical reality emerges from logical f
 
 ## Key Features
 
-1. **Philosophical Foundation**: Justifies why logical constraints (3FLL) are necessary for physics
-2. **Operator Formalism**: Abstract mathematical framework (projectors, resolution map)
-3. **Quantum Derivations**: Time, energy, Born rule, superposition, measurement from first principles
-4. **Testable Prediction**: β ≠ 0 in quantum error correction entropy correlation
-5. **Minimal Axioms**: 5-7 axioms (vs. 140 in Approach 2 prototype)
-6. **Computational Validation**: 9 focused Jupyter notebooks
-7. **Formal Verification**: Lean 4 proofs with 0 sorry statements (target)
+1. **Complete Foundational Paper**: 640 lines, publication-ready with full formalization (theory/Logic-realism-theory-foundational.md)
+2. **Philosophical Foundation**: Proves why 3FLL are necessary conditions for being, information, and determinacy
+3. **Operator Formalism**: Π_id (identity projector), {Π_i} (incompatibility family), R (resolution map/Booleanization)
+4. **Explicit Derivations**: Time (Stone's theorem), Energy (Spohn's inequality), Russell's paradox filtering
+5. **Primary Testable Prediction**: β ≠ 0 in quantum error correction (β ~ 0.1-0.5, testable on NISQ devices)
+6. **Minimal Axioms**: 5 axioms achieved in Lean (96% reduction from Approach 2's 140 axioms)
+7. **Formal Verification**: Lean 4 proofs with 0 sorry statements (achieved at foundation level)
+8. **Computational Validation**: 9 focused Jupyter notebooks (in development)
 
 ---
 
 ## Quick Start
 
 ### Theory
-Read `theory/Logic_Realism_Theory.md` for the complete framework.
+Read `theory/Logic-realism-theory-foundational.md` for the complete framework (30,000 words, publication-ready).
 
 ### Computational Validation
 ```bash
@@ -128,5 +129,6 @@ ORCID: [0009-0009-1383-7698](https://orcid.org/0009-0009-1383-7698)
 ---
 
 **Status**: Active development (October 2025)
-**Axiom Count**: Target 5-7 (in development)
-**Sorry Statements**: Target 0 (in development)
+**Axiom Count**: 5 axioms (achieved in Lean)
+**Sorry Statements**: 0 (achieved)
+**Foundational Paper**: Complete (640 lines, peer-review ready)

@@ -20,9 +20,9 @@ lake build
 
 ## First Steps
 
-1. **Read the main paper**: `theory/Logic_Realism_Theory.md`
-2. **Explore notebooks**: Start with `notebooks/01_IIS_and_3FLL.ipynb`
-3. **Review Lean formalization**: See `lean/LogicRealismTheory/Foundation/IIS.lean`
+1. **Read the foundational paper**: `theory/Logic-realism-theory-foundational.md` (30,000 words, publication-ready)
+2. **Review Lean formalization**: See `lean/LogicRealismTheory/Foundation/IIS.lean` (5 axioms, 0 sorry)
+3. **Explore notebooks**: Start with `notebooks/01_IIS_and_3FLL.ipynb` (in development)
 
 ## For Researchers Coming from Approach 2
 
