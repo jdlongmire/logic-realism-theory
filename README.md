@@ -46,18 +46,70 @@ jupyter notebook
 # Start with 01_IIS_and_3FLL.ipynb
 ```
 
-### Formal Proofs
+### Formal Proofs (Lean 4)
+
+**Prerequisites**:
+- Install [Lean 4](https://leanprover.github.io/lean4/doc/setup.html) via elan (Lean version manager)
+- Lake build tool (comes with Lean 4)
+
+**Setup**:
 ```bash
-cd lean
+# Install elan (Lean version manager) if not already installed
+# On Linux/macOS:
+curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh
+
+# On Windows:
+# Download and run: https://github.com/leanprover/elan/releases
+
+# Clone repository
+git clone https://github.com/jdlongmire/logic-realism-theory
+cd logic-realism-theory/lean
+
+# Update dependencies (downloads Mathlib and other packages)
+lake update
+
+# Build the project (may take several minutes on first run due to Mathlib)
 lake build
 ```
+
+**Current Status**:
+- **Axioms**: 2 (I exists, I infinite)
+- **Sorry**: 0 (absolute proof completeness)
+- **Modules**: Foundation (IIS, 3FLL), Operators (Π_id, {Π_i}, R, L)
+
+**File Structure**:
+```
+lean/LogicRealismTheory/
+├── Foundation/
+│   └── IIS.lean           # 2 axioms, 3FLL proven as theorems
+└── Operators/
+    └── Projectors.lean    # Π_id, {Π_i}, R, L operators (0 sorry)
+```
+
+**Lean Configuration**:
+- Project: `LogicRealismTheory`
+- Lean version: 4.25.0-rc2 (managed by elan)
+- Dependencies: Mathlib (for Hilbert space theory, classical logic)
+
+**Troubleshooting**:
+- **First build is slow**: Mathlib download and compilation can take 10-30 minutes on first run. Subsequent builds are much faster.
+- **Build errors after git pull**: Run `lake update` to refresh dependencies, then `lake build`
+- **Missing Mathlib**: Ensure you ran `lake update` before `lake build`
+- **Elan not found**: Add elan to your PATH or restart your terminal after installation
+- **Checking proof status**: Run `grep -r "sorry" lean/LogicRealismTheory --include="*.lean"` to verify 0 sorry statements
+
+**VS Code Integration** (recommended):
+1. Install [VS Code](https://code.visualstudio.com/)
+2. Install the [Lean 4 extension](https://marketplace.visualstudio.com/items?itemName=leanprover.lean4)
+3. Open `lean/` folder in VS Code
+4. Lean extension will provide syntax highlighting, error checking, and interactive theorem proving
 
 ---
 
 ## Repository Structure
 
 - `theory/`: Papers and publications
-- `lean/`: Formal Lean 4 proofs (5-7 axioms, 0 sorry target)
+- `lean/`: Formal Lean 4 proofs (2 axioms, 0 sorry achieved)
 - `notebooks/`: Computational validation (9 notebooks)
 - `multi_LLM/`: Team consultation system (Grok-3, GPT-4, Gemini-2.0)
 - `archive/`: Historical development artifacts
