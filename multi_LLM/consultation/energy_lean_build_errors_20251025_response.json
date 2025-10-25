@@ -1,0 +1,23 @@
+Error: Configuration file ./api_config.json not found.
+Traceback (most recent call last):
+  File "C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\multi_LLM\enhanced_llm_bridge.py", line 1065, in <module>
+    asyncio.run(cli_main())
+  File "C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\multi_LLM\enhanced_llm_bridge.py", line 956, in cli_main
+    bridge = EnhancedMultiLLMBridge()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\multi_LLM\enhanced_llm_bridge.py", line 416, in __init__
+    self.config = self._load_config()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\multi_LLM\enhanced_llm_bridge.py", line 426, in _load_config
+    with open(self.config_path, 'r') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './api_config.json'

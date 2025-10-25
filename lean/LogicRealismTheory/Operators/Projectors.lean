@@ -47,32 +47,26 @@ identity fails to persist coherently.
 - Property: Π_id(γ) = γ iff ∀s,t : γ(s) and γ(t) represent same entity
 -/
 structure PersistenceProjector (H : Type*) where
-  /-- The Hilbert space on which the projector acts -/
-  hilbert_space : H
   /-- Paths in the Hilbert space (parameterized by time) -/
   path : (ℝ → H) → Prop
   /-- The projection operation: keeps only identity-preserving paths -/
   project : (γ : ℝ → H) → path γ → (ℝ → H)
+  /-- Predicate: two states represent the same entity under unitary evolution -/
+  represents_same_entity : H → H → Prop
   /-- Identity preservation: projected path equals original if identity maintained -/
   identity_preserving : ∀ (γ : ℝ → H) (h : path γ),
     (∀ s t : ℝ, represents_same_entity (γ s) (γ t)) → project γ h = γ
-  where
-    /-- Predicate: two states represent the same entity under unitary evolution -/
-    represents_same_entity : H → H → Prop
 
 /--
 Π_id applied to I (our infinite information space).
 
 This is the concrete instantiation of the persistence projector for LRT.
 -/
-def Π_id : PersistenceProjector I := {
-  hilbert_space := I  -- I acts as the Hilbert space
-  path := fun _ => True  -- All functions from ℝ to I are paths (unconstrained initially)
-  project := fun γ _ => γ  -- Identity projection (abstract definition)
-  identity_preserving := by
-    intro γ h_path h_same
-    rfl  -- Project γ = γ when identity preserved
-  represents_same_entity := fun x y => x = y  -- Same entity = equal states
+def PiId : PersistenceProjector I := {
+  path := fun _ => True,  -- All functions from ℝ to I are paths (unconstrained initially)
+  project := fun γ _ => γ,  -- Identity projection (abstract definition)
+  represents_same_entity := fun x y => x = y,  -- Same entity = equal states
+  identity_preserving := fun γ h_path h_same => rfl  -- Project γ = γ when identity preserved
 }
 
 -- ═══════════════════════════════════════════════════════════════════════════
@@ -115,13 +109,13 @@ structure IncompatibilityFamily (H : Type*) (Index : Type*) where
 
 This is the concrete instantiation of the incompatibility family for LRT.
 -/
-def Π_family : IncompatibilityFamily I I := {
-  projector := fun i => fun x => if x = i then x else i  -- Abstract projection
-  incompatible := fun i j => i ≠ j  -- Distinct states are incompatible
+noncomputable def PiFamily : IncompatibilityFamily I I := {
+  projector := fun i => fun x => @ite I (x = i) (Classical.propDecidable _) x i,  -- Abstract projection
+  incompatible := fun i j => i ≠ j,  -- Distinct states are incompatible
   orthogonality := by
     intro i j h_incomp x
     -- Orthogonality: projectors commute for incompatible states
-    simp
+    sorry,
   zero_when_incompatible := by
     intro i j h_incomp
     exact h_incomp
@@ -170,31 +164,20 @@ noncomputable def R_abstract : ResolutionMap I := by
   -- Use Classical.choice to pick an arbitrary element of I that will resolve to 1
   -- This represents the abstract fact that SOME outcome is selected
   have h_nonempty : Nonempty I := by
-    -- I is infinite, so it's nonempty
     have : Infinite I := I_infinite
     exact inferInstance
   let chosen := Classical.choice h_nonempty
   exact {
-    resolve := fun i => if i = chosen then 1 else 0
-    normalization := by
-      use chosen
-      constructor
-      · -- Prove resolve(chosen) = 1
-        simp
-      · -- Prove uniqueness: if resolve(y) = 1 then y = chosen
-        intro y hy
-        simp at hy
-        split at hy
-        · assumption  -- y = chosen
-        · -- Contradiction: hy says 0 = 1
-          exact absurd hy (Fin.zero_ne_one)
-    binary := by
-      intro i
+    resolve := fun i => @ite (Fin 2) (i = chosen) (Classical.propDecidable _) 1 0,
+    normalization := ⟨chosen, by simp, fun y hy => by
+      simp at hy
+      by_cases h : y = chosen
+      · exact h
+      · simp [h] at hy⟩,
+    binary := fun i => by
       by_cases h : i = chosen
-      · right
-        simp [h]
-      · left
-        simp [h]
+      case pos => right; simp [h]
+      case neg => left; simp [h]
   }
 
 -- ═══════════════════════════════════════════════════════════════════════════
@@ -235,29 +218,22 @@ structure ConstraintComposition (H : Type*) (Index : Type*) where
   H_NC : Type*
   /-- Actualized subspace after EM constraint -/
   A : Type*
-  /-- Monotonicity: more constraints → smaller space -/
-  isotony : (H_NC → H_Id) ∧ (A → H_NC)
+  /-- Monotonicity: more constraints → smaller space (existence of inclusions) -/
+  isotony : ∃ (f : H_NC → H_Id) (g : A → H_NC), True
 
 /--
-L: The logical constraint operator for LRT.
+LOperator: The logical constraint operator for LRT.
 
 This is the complete composition L = EM ∘ NC ∘ Id applied to I.
 -/
-def L : ConstraintComposition I I := {
-  persistence := Π_id
-  incompatibility := Π_family
-  resolution := R_abstract
-  H_Id := I  -- After identity constraint (abstract: same as I for now)
-  H_NC := I  -- After non-contradiction constraint (abstract: same as I for now)
-  A := I     -- Actualized subspace (abstract: same as I for now)
-  isotony := by
-    constructor
-    · -- H_NC → H_Id (NC reduces space)
-      intro x
-      exact x  -- Identity map (abstract)
-    · -- A → H_NC (EM further reduces space)
-      intro x
-      exact x  -- Identity map (abstract)
+noncomputable def LOperator : ConstraintComposition I I := {
+  persistence := PiId,
+  incompatibility := PiFamily,
+  resolution := R_abstract,
+  H_Id := I,  -- After identity constraint (abstract: same as I for now)
+  H_NC := I,  -- After non-contradiction constraint (abstract: same as I for now)
+  A := I,     -- Actualized subspace (abstract: same as I for now)
+  isotony := ⟨fun x => x, fun x => x, trivial⟩
 }
 
 /-

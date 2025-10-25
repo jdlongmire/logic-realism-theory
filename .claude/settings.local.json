@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(lake build:*)",
+      "Bash(git fetch:*)",
+      "Bash(git ls-tree:*)",
+      "Bash(git pull:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(python:*)",
+      "Bash(jupyter nbconvert:*)",
+      "Bash(lake exe cache:*)",
+      "Bash(git mv:*)",
+      "Bash(lake clean:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

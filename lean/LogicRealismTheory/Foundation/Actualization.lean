@@ -107,8 +107,7 @@ theorem A_to_I_injective : Function.Injective A_to_I := by
   -- a₁.val = a₂.val → a₁ = a₂
   cases a₁
   cases a₂
-  simp at h
-  simp [h]
+  congr
 
 -- ═══════════════════════════════════════════════════════════════════════════
 -- CONNECTION TO L OPERATOR
