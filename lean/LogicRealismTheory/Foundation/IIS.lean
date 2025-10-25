@@ -20,7 +20,8 @@ and even the 3FLL operations are DEFINED or DERIVED.
 
 -/
 
-import Mathlib.Data.Set.Finite
+-- Imports
+import Mathlib.Algebra.CharZero.Infinite
 
 -- Import classical logic for excluded middle
 open Classical
@@ -48,16 +49,16 @@ theorem non_contradiction_law (P : I → Prop) (x : I) : ¬(P x ∧ ¬P x) :=
 
 -- Excluded Middle: Available via Classical logic
 theorem excluded_middle_law (P : I → Prop) (x : I) : P x ∨ ¬P x :=
-  em (P x)
+  Classical.em (P x)
 
 -- The 3FLL as a unified structure (L operator - not an axiom, a definition)
-structure LogicalConstraints (I : Type*) where
+structure LogicalConstraints where
   identity : ∀ (x : I), x = x
   non_contradiction : ∀ (P : I → Prop) (x : I), ¬(P x ∧ ¬P x)
   excluded_middle : ∀ (P : I → Prop) (x : I), P x ∨ ¬P x
 
 -- L is DEFINED (not axiomatized) as the application of 3FLL to I
-def L : LogicalConstraints I := {
+def L : LogicalConstraints := {
   identity := identity_law
   non_contradiction := non_contradiction_law
   excluded_middle := excluded_middle_law
