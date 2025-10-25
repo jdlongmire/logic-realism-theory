@@ -1,0 +1,71 @@
+name: Lean Build
+
+on:
+  push:
+    branches: [ master, main ]
+    paths:
+      - 'lean/**'
+      - '.github/workflows/lean-build.yml'
+  pull_request:
+    branches: [ master, main ]
+    paths:
+      - 'lean/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Install Elan
+      run: |
+        curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- -y
+        echo "$HOME/.elan/bin" >> $GITHUB_PATH
+
+    - name: Get Lean version
+      run: |
+        cd lean
+        cat lean-toolchain
+
+    - name: Cache Mathlib
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/.elan
+          lean/.lake
+        key: ${{ runner.os }}-lean-${{ hashFiles('lean/lean-toolchain') }}-${{ hashFiles('lean/lake-manifest.json') }}
+        restore-keys: |
+          ${{ runner.os }}-lean-${{ hashFiles('lean/lean-toolchain') }}-
+          ${{ runner.os }}-lean-
+
+    - name: Build Lean project
+      run: |
+        cd lean
+        lake update
+        lake build
+
+    - name: Check for sorry statements
+      run: |
+        SORRY_COUNT=$(grep -r "sorry" lean/LogicRealismTheory --include="*.lean" | grep -v "^.*--.*sorry" | grep -v "^.*/-.*sorry" | wc -l)
+        echo "Sorry statements found: $SORRY_COUNT"
+        if [ "$SORRY_COUNT" -gt 0 ]; then
+          echo "ERROR: Found $SORRY_COUNT sorry statements in Lean code"
+          grep -rn "sorry" lean/LogicRealismTheory --include="*.lean" | grep -v "^.*--.*sorry" | grep -v "^.*/-.*sorry"
+          exit 1
+        else
+          echo "SUCCESS: 0 sorry statements (target maintained)"
+        fi
+
+    - name: Report axiom count
+      run: |
+        AXIOM_COUNT=$(grep -r "^axiom " lean/LogicRealismTheory --include="*.lean" | wc -l)
+        echo "Total axioms in LRT: $AXIOM_COUNT"
+        echo "Target: 2 axioms (I, I_infinite)"
+        if [ "$AXIOM_COUNT" -gt 2 ]; then
+          echo "WARNING: More than 2 axioms found!"
+          grep -rn "^axiom " lean/LogicRealismTheory --include="*.lean"
+        else
+          echo "SUCCESS: Axiom minimalism maintained (≤2 axioms)"
+        fi

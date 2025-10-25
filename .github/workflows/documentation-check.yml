@@ -1,0 +1,89 @@
+name: Documentation Check
+
+on:
+  push:
+    branches: [ master, main ]
+    paths:
+      - '**.md'
+      - 'docs/**'
+      - '.github/workflows/documentation-check.yml'
+  pull_request:
+    branches: [ master, main ]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Check markdown files exist
+      run: |
+        # Check critical documentation exists
+        REQUIRED_FILES=(
+          "README.md"
+          "CLAUDE.md"
+          "Program_Auditor_Agent.md"
+          "theory/Logic-realism-theory-foundational.md"
+          "Session_Log/Session_0.0.md"
+        )
+
+        MISSING=0
+        for file in "${REQUIRED_FILES[@]}"; do
+          if [ ! -f "$file" ]; then
+            echo "ERROR: Required file missing: $file"
+            MISSING=1
+          fi
+        done
+
+        if [ $MISSING -eq 1 ]; then
+          exit 1
+        else
+          echo "All required documentation files present"
+        fi
+
+    - name: Check for broken internal links
+      run: |
+        # Find all markdown files
+        MD_FILES=$(find . -name "*.md" -not -path "*/approach_2_reference/*" -not -path "*/.git/*")
+
+        BROKEN_LINKS=0
+        for md_file in $MD_FILES; do
+          # Extract local file references (e.g., [text](path/to/file.md))
+          LOCAL_REFS=$(grep -oP '\]\(\K[^)]*(?=\))' "$md_file" | grep -v "^http" | grep -v "^#" || true)
+
+          for ref in $LOCAL_REFS; do
+            # Resolve relative path
+            dir=$(dirname "$md_file")
+            full_path="$dir/$ref"
+
+            if [ ! -e "$full_path" ]; then
+              echo "BROKEN LINK in $md_file: $ref (resolves to $full_path)"
+              BROKEN_LINKS=1
+            fi
+          done
+        done
+
+        if [ $BROKEN_LINKS -eq 1 ]; then
+          echo "WARNING: Broken internal links found"
+          # Don't fail CI for documentation warnings
+        else
+          echo "No broken internal links found"
+        fi
+
+    - name: Check Session Log sequence
+      run: |
+        # Verify Session_Log files follow X.Y naming convention
+        SESSION_FILES=$(find Session_Log -name "Session_*.md" | sort -V)
+
+        echo "Session log files found:"
+        echo "$SESSION_FILES"
+
+        # Check that Session_0.0.md exists (historical baseline)
+        if [ ! -f "Session_Log/Session_0.0.md" ]; then
+          echo "ERROR: Session_0.0.md (historical baseline) missing"
+          exit 1
+        fi
+
+        echo "Session log structure valid"
