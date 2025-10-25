@@ -87,11 +87,6 @@ def L : LogicalConstraints I := {
 - **Superposition**: THEOREM (partial constraint)
 - **Measurement collapse**: THEOREM (full constraint)
 
-**Axiom Reduction**:
-- Approach 2 (Physical Logic Framework): 140 axioms, 0 sorry
-- Logic Realism Theory (this repository): **2 axioms**, 0 sorry
-- **Reduction: 98.6% fewer axioms** (140 → 2)
-
 **Philosophical Significance**:
 The entire framework derives from just TWO ontological commitments:
 1. An infinite informational substrate exists
@@ -99,11 +94,6 @@ The entire framework derives from just TWO ontological commitments:
 
 The 3FLL are not additional axioms but inherent features of reasoning itself,
 already present in Lean's type theory and classical logic.
-
-**Reference**:
-For computational validation, see Approach 2 archive:
-- `approach_2_reference/lean/` (complete 140-axiom formalization)
-- `approach_2_reference/notebooks/` (25 computational notebooks)
 
 **Next Steps**:
 1. Define actualization A in `Foundation/Actualization.lean`

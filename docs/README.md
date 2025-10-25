@@ -15,17 +15,11 @@ This folder contains detailed documentation for Logic Realism Theory (LRT).
 ### Main Paper
 
 The primary theoretical exposition is in:
-- `../theory/Logic_Realism_Theory.md` (north star document)
-
-### Approach 2 Reference
-
-For historical context and computational validation:
-- `../approach_2_reference/` - Complete Physical Logic Framework archive
+- `../theory/Logic-realism-theory-foundational.md` (foundational paper, 640 lines, peer-review ready)
 
 ## Quick Links
 
 - **GitHub**: https://github.com/jdlongmire/logic-realism-theory
-- **Approach 2 Archive**: https://github.com/jdlongmire/physical-logic-framework
 - **Author**: James D. (JD) Longmire
 - **ORCID**: [0009-0009-1383-7698](https://orcid.org/0009-0009-1383-7698)
 

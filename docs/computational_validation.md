@@ -4,7 +4,7 @@
 
 ## Validation Strategy
 
-LRT's computational validation focuses on verifying derivations and testable predictions, not exhaustive exploration (see Approach 2 archive for that).
+LRT's computational validation focuses on verifying core derivations and testable predictions.
 
 ## Planned Notebook Suite (9 notebooks)
 
@@ -20,9 +20,7 @@ LRT's computational validation focuses on verifying derivations and testable pre
 8. **08_Beta_Prediction.ipynb** - QEC entropy correlation simulation
 9. **09_Comparative_Analysis.ipynb** - LRT vs. MUH, pancomputationalism, structural realism
 
-**Total**: ~42,000 words (vs. 80,000 in Approach 2's 25 notebooks)
-
-**Reduction**: 64% fewer notebooks, focused on core derivations and primary prediction
+**Total**: ~42,000 words estimated
 
 ## Notebook Standards
 
@@ -32,16 +30,5 @@ LRT's computational validation focuses on verifying derivations and testable pre
 - Self-contained (imports, explanations, results in single file)
 - References foundational paper sections
 - Cross-references Lean formalization where applicable
-
-## Approach 2 Reference Archive
-
-For comprehensive computational exploration (proof of concept that LRT builds on):
-- `../approach_2_reference/notebooks/` - 25 notebooks, ~80,000 words
-- Complete S_N hierarchy analysis (K(N) = N-2 derivation)
-- Permutohedron geometry visualizations
-- Finite-N quantum corrections (~10^-8 effects)
-- Extensive worked examples (N=3,4,5,6)
-
-LRT notebooks reference Approach 2 results without duplicating exploratory work.
 
 See: `../notebooks/README.md` for current development status

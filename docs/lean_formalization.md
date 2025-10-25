@@ -24,8 +24,6 @@ def L : LogicalConstraints I := {
 
 **Everything else**: Definitions or theorems (to be developed)
 
-**Axiom Reduction**: 98.6% reduction from Approach 2 (140 axioms → 2 axioms)
-
 ## Current Module Structure
 
 **Implemented**:

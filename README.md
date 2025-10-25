@@ -26,9 +26,9 @@ Logic Realism Theory (LRT) proposes that physical reality emerges from logical f
 3. **Operator Formalism**: Π_id (identity projector), {Π_i} (incompatibility family), R (resolution map/Booleanization)
 4. **Explicit Derivations**: Time (Stone's theorem), Energy (Spohn's inequality), Russell's paradox filtering
 5. **Primary Testable Prediction**: β ≠ 0 in quantum error correction (β ~ 0.1-0.5, testable on NISQ devices)
-6. **Ultra-Minimal Axioms**: 2 axioms achieved in Lean (98.6% reduction from Approach 2's 140 axioms)
+6. **Ultra-Minimal Axioms**: 2 axioms only (I exists, I infinite)
 7. **3FLL as Theorems**: Identity, Non-Contradiction, Excluded Middle proven using Lean's built-in logic (not axiomatized!)
-8. **Formal Verification**: Lean 4 proofs with 0 sorry statements (achieved)
+8. **Formal Verification**: Lean 4 proofs with 0 sorry statements (target)
 9. **Computational Validation**: 9 focused Jupyter notebooks (in development)
 
 ---
@@ -60,30 +60,12 @@ lake build
 - `lean/`: Formal Lean 4 proofs (5-7 axioms, 0 sorry target)
 - `notebooks/`: Computational validation (9 notebooks)
 - `multi_LLM/`: Team consultation system (Grok-3, GPT-4, Gemini-2.0)
-- `approach_2_reference/`: Archive of prototype (Physical Logic Framework)
+- `archive/`: Historical development artifacts
 - `docs/`: Extended documentation
 - `Session_Log/`: Development history
 
 ---
 
-## Approach 2 Archive
-
-This repository builds on lessons learned from a prototype implementation (Physical Logic Framework, 2025). Key achievements archived in `approach_2_reference/`:
-- 140 axioms, 0 sorry statements
-- 25 computational notebooks
-- Symmetric group realization (K(N) = N-2)
-- Finite-N corrections (~10^-8 effects)
-
-LRT is a clean rebuild focusing on:
-- Ultra-minimal axioms (2 only: I exists, I infinite)
-- 3FLL proven from Lean's logic (not axiomatized)
-- Focused scope (9 core derivations)
-- Philosophical clarity (why logic?)
-- Primary testable prediction (β ≠ 0)
-
-See `approach_2_reference/LESSONS_LEARNED.md` for detailed analysis.
-
----
 
 ## Key Results
 
@@ -131,7 +113,6 @@ ORCID: [0009-0009-1383-7698](https://orcid.org/0009-0009-1383-7698)
 ---
 
 **Status**: Active development (October 2025)
-**Axiom Count**: 2 axioms (absolute minimum achieved in Lean)
-**Sorry Statements**: 0 (achieved)
+**Axiom Count**: 2 axioms (I exists, I infinite)
+**Sorry Statements**: 1 (in abstract definitions, documented)
 **Foundational Paper**: Complete (640 lines, peer-review ready)
-**Axiom Reduction**: 98.6% (140 → 2 from Approach 2)
