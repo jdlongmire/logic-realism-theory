@@ -17,7 +17,7 @@
 - Compared "contradiction circuits" vs "control circuits"
 - Result: Fatal flaw - doesn't differentiate LRT from QM, definition ambiguous
 
-**Root Cause (Grok's insight):**
+**Root Cause (Gemini's insight):**
 > "Any test comparing two different circuits is likely doomed."
 
 **Why:** Circuit A vs Circuit B introduces confounds (duration, gates, noise) that cause multicollinearity.
