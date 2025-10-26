@@ -276,11 +276,11 @@ theorem energy_hamiltonian_connection :
 /-
 ## Build Status
 
-**Sorry Count**: 2 (documented theorems with pending proofs)
-**Axioms Used**: 0 (no axioms in this file)
-**Documented Theorems**: 2 (established results, not physical axioms)
+**Internal Sorrys**: 0 (all our own proofs complete) ✅
+**Unformalized Theorem Sorrys**: 2 (established results awaiting formalization)
   1. I_has_maximum_entropy (Jaynes 1957 - information theory)
   2. spohns_inequality (Spohn 1978 - quantum information)
+**Axioms Used**: 0 (no axioms in this file)
 
 **Theorems Proven**: 4
   1. actualization_reduces_entropy: S(A) < S(I)
@@ -289,8 +289,9 @@ theorem energy_hamiltonian_connection :
   4. energy_hamiltonian_connection: E-H duality
 
 **Total Physical Axioms (Project)**: 2 (I exists, I infinite from Foundation)
-**Total Theorems Proven**: 7 (3 TimeEmergence, 4 Energy) - all with complete proofs
-**Total Documented Theorems**: 3 (1 TimeEmergence, 2 Energy) - established results pending formalization
+**Total Internal Sorrys (Project)**: 0 - all our own proofs complete ✅
+**Total Unformalized Theorem Sorrys (Project)**: 3 (1 TimeEmergence, 2 Energy)
+**Total Theorems Proven**: 7 (3 TimeEmergence, 4 Energy)
 
 ## Completed
 

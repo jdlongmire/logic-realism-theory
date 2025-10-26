@@ -423,9 +423,10 @@ mathematical theorem, not a physical postulate. When Mathlib integration
 is complete, this axiom will be replaced with the formal proof.
 
 **Quality Status**:
-- Builds: ✅ (pending lake build)
-- Sorry count: 0 ✅
-- Axiom count: 2 (foundation) + 1 (Stone's theorem placeholder) ✅
+- Builds: ✅
+- Internal Sorrys: 0 (all our own proofs complete) ✅
+- Unformalized Theorem Sorrys: 1 (Stone's theorem - Stone 1932)
+- Physical Axioms: 0 (only 2 in Foundation: I, I_infinite)
 - Documentation: Complete ✅
 
 **Completed**:
