@@ -1,0 +1,14 @@
+{
+  "test_case_1": {
+    "state": "(|000> + |111>)/sqrt(2)",
+    "S_grok": 1.0,
+    "S_logical": 2.220446049250313e-16,
+    "difference": 0.9999999999999998
+  },
+  "test_case_2": {
+    "state": "0.7|000> + 0.3|001>",
+    "S_grok": 0.31594176175616984,
+    "S_logical": -0.0
+  },
+  "conclusion": "Grok computes entanglement entropy, not logical subspace entropy"
+}

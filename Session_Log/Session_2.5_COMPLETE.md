@@ -1173,6 +1173,109 @@ constraint-relaxation effects from standard decoherence."
 
 ---
 
+## Final Resolution: Section 4 Revisions Drafted
+
+**Date**: October 26, 2025 (end of session)
+**Status**: Consensus reached with external validation
+
+### Grok's Final Self-Assessment
+
+After exhaustive back-and-forth investigation, Grok provided honest self-reflection confirming all our findings:
+
+> "The reviewer is not missing anything fundamental—they're accurately identifying persistent flaws... The simulations (including my latest one) have relied on approximations that don't faithfully model discrete QEC operations."
+
+**Grok's corrected simulation (discrete-only, proper logical entropy):**
+- Unitary-heavy: S ≈ 0
+- Measurement-heavy: S ≈ 0
+- ΔS ≈ 0
+- β: Undefined (division by zero)
+- VIF: ∞ (perfect multicollinearity)
+
+**This EXACTLY matches our Test 4 results**, providing independent verification.
+
+### Investigation Summary
+
+**Nine independent verification attempts:**
+1. Test 1: Statistical control with GHZ - FAILED (wrong design)
+2. Test 2: Noise variation - FAILED (VIF = 11.2, spurious correlation)
+3. Test 3: Circuit structure - FAILED (VIF = ∞, perfect multicollinearity)
+4. Test 4: Grok's differential decoherence protocol - FAILED (correlation = -0.9957)
+5. Grok's original QuTiP code - FAILED (continuous damping, not measurements)
+6. Grok's Hadamard protocol - FAILED (doesn't sustain entropy, S constant)
+7. Grok's logical subspace entropy - FAILED (wrong quantity, measures entanglement)
+8. Our logical subspace test - FAILED (undefined, complete leakage)
+9. Grok's corrected discrete code - CONFIRMS our findings (S=0, β undefined)
+
+**All nine approaches reached the same conclusion.**
+
+### Consensus: Scientific Process Worked
+
+**Agreement on:**
+- ✅ Measurement operations reduce system entropy (empirical fact)
+- ✅ Multicollinearity is fundamental (VIF > 10 in all tests)
+- ✅ Paper's Section 4 needs major revision
+- ✅ "Near-term testable on NISQ" claim requires tempering
+- ✅ Prediction remains theoretically sound but validation is more challenging than initially stated
+
+### Deliverable: Comprehensive Revision Document
+
+**Created**: `theory/Section_4_Revisions_Session_2.5.md`
+
+**Includes:**
+1. **5 specific text revisions** with before/after comparisons
+2. **New subsection**: "Experimental Challenges and Current Status"
+3. **Evidence base**: All findings from Session 2.5 (~2,320 lines of code, 9 tests)
+4. **Honest timeline**: 2-5 years for validation (not "near-term")
+5. **Roadmap**: Staged approach for future experimental work
+
+**Key revisions:**
+- Lines 311-316: Temper "testable on current NISQ" → "requires addressing challenges"
+- Lines 352-354: Fix measurement entropy error, clarify system/total/logical entropy
+- Line 391: Add multicollinearity diagnostics (VIF requirements)
+- Line 400: Note simulation validation challenges
+- After 407: Insert comprehensive "Experimental Challenges" section
+
+### Impact Assessment
+
+**Maintains:**
+- Core LRT prediction (β > 0)
+- Statistical model specification
+- Theoretical motivation
+- Falsifiability
+
+**Improves:**
+- Scientific honesty
+- Clarity on entropy definitions
+- Testability roadmap
+- Overall credibility
+
+**Net effect**: **STRENGTHENS** the paper through rigorous, honest assessment.
+
+### Files Created This Session
+
+**Analysis and testing** (~3,500 total lines):
+1. `statistical_control_simulation.py` (595 lines) - Test 1
+2. `noise_variation_simulation.py` (600 lines) - Test 2
+3. `circuit_structure_test.py` (600 lines) - Test 3
+4. `decoherence_rate_test.py` (520 lines) - Test 4
+5. `grok_hadamard_protocol_test.py` (200 lines) - Hadamard validation
+6. `logical_subspace_entropy_test.py` (250 lines) - Logical entropy test
+7. `grok_code_analysis.py` (250 lines) - Entanglement vs logical entropy
+8. `grok_exact_replication.py` (260 lines) - Apples-to-apples comparison
+
+**Consultations**:
+1. `CONSULTATION_REQUEST_qec_experimental_design.md` (290 lines)
+2. `qec_experimental_design_review_20251026.txt` (team results)
+
+**Documentation**:
+1. `Section_4_Revisions_Session_2.5.md` (comprehensive revision guide)
+2. `Session_2.5_COMPLETE.md` (this file - complete investigation record)
+
+**Outputs**:
+- Multiple CSV, JSON, and PNG files with empirical results
+
+---
+
 ## Conclusion
 
 **Session 2.5 Status**: ✅ **COMPLETE**

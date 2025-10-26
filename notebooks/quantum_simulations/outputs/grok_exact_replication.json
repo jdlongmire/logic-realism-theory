@@ -1,0 +1,6 @@
+{
+  "test_case_1": {
+    "state": "|000> (logical |0>)",
+    "S_grok": 0.0,
+    "S_logical": -0.0,
+    "match": 
