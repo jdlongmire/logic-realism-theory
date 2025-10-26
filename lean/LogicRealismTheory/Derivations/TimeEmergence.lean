@@ -235,14 +235,15 @@ Annals of Mathematics, 33(3), 643-648.
 - Reed & Simon, "Methods of Modern Mathematical Physics, Vol. I", Theorem VIII.8
 - Mathlib integration: Awaiting Analysis.NormedSpace.UnboundedOperator
 -/
-theorem stones_theorem :
+axiom stones_theorem :
   ∀ (U : EvolutionOperator),
   ∃ (H : Generator),
-  ∃ (exponential_form : Prop), exponential_form := by
+  ∃ (exponential_form : Prop), exponential_form
   -- Full statement: U.U t = exp(-i * H.H * t / ℏ)
-  sorry  -- Established result (Stone 1932), formalization pending Mathlib
+  -- Axiomatized as established mathematical result (Stone 1932)
 
--- Note: This file now has 0 axioms beyond the 2 physical axioms (I exists, I infinite)
+-- Note: This file has 1 axiom for established mathematical result (Stone's theorem)
+-- Physical axioms: 2 (I exists, I infinite) - defined in Foundation/IIS.lean
 
 -- ═══════════════════════════════════════════════════════════════════════════
 -- TIME EMERGENCE
