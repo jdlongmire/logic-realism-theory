@@ -1,0 +1,74 @@
+qiskit_runtime_service._discover_account:WARNING:2025-10-26 07:52:42,522: Loading account with the given token. A saved account will not be used.
+C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\site-packages\qiskit\circuit\duration.py:37: UserWarning: Duration is rounded to 367 [dt] = 1.468000e-06 [s] from 1.467799e-06 [s]
+  warnings.warn(
+C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\site-packages\qiskit\circuit\duration.py:37: UserWarning: Duration is rounded to 539 [dt] = 2.156000e-06 [s] from 2.154435e-06 [s]
+  warnings.warn(
+C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\site-packages\qiskit\circuit\duration.py:37: UserWarning: Duration is rounded to 791 [dt] = 3.164000e-06 [s] from 3.162278e-06 [s]
+  warnings.warn(
+C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\site-packages\qiskit\circuit\duration.py:37: UserWarning: Duration is rounded to 1160 [dt] = 4.640000e-06 [s] from 4.641589e-06 [s]
+  warnings.warn(
+C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\site-packages\qiskit\circuit\duration.py:37: UserWarning: Duration is rounded to 1703 [dt] = 6.812000e-06 [s] from 6.812921e-06 [s]
+  warnings.warn(
+C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\site-packages\qiskit\circuit\duration.py:37: UserWarning: Duration is rounded to 3669 [dt] = 1.467600e-05 [s] from 1.467799e-05 [s]
+  warnings.warn(
+C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\site-packages\qiskit\circuit\duration.py:37: UserWarning: Duration is rounded to 5386 [dt] = 2.154400e-05 [s] from 2.154435e-05 [s]
+  warnings.warn(
+C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\site-packages\qiskit\circuit\duration.py:37: UserWarning: Duration is rounded to 7906 [dt] = 3.162400e-05 [s] from 3.162278e-05 [s]
+  warnings.warn(
+C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\site-packages\qiskit\circuit\duration.py:37: UserWarning: Duration is rounded to 11604 [dt] = 4.641600e-05 [s] from 4.641589e-05 [s]
+  warnings.warn(
+C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\site-packages\qiskit\circuit\duration.py:37: UserWarning: Duration is rounded to 17032 [dt] = 6.812800e-05 [s] from 6.812921e-05 [s]
+  warnings.warn(
+C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\site-packages\qiskit\circuit\duration.py:37: UserWarning: Duration is rounded to 33333 [dt] = 1.333320e-04 [s] from 1.333333e-04 [s]
+  warnings.warn(
+C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\site-packages\qiskit\circuit\duration.py:37: UserWarning: Duration is rounded to 41667 [dt] = 1.666680e-04 [s] from 1.666667e-04 [s]
+  warnings.warn(
+C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\site-packages\qiskit\circuit\duration.py:37: UserWarning: Duration is rounded to 58333 [dt] = 2.333320e-04 [s] from 2.333333e-04 [s]
+  warnings.warn(
+C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\site-packages\qiskit\circuit\duration.py:37: UserWarning: Duration is rounded to 66667 [dt] = 2.666680e-04 [s] from 2.666667e-04 [s]
+  warnings.warn(
+C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\site-packages\qiskit\circuit\duration.py:37: UserWarning: Duration is rounded to 83333 [dt] = 3.333320e-04 [s] from 3.333333e-04 [s]
+  warnings.warn(
+C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\site-packages\qiskit\circuit\duration.py:37: UserWarning: Duration is rounded to 91667 [dt] = 3.666680e-04 [s] from 3.666667e-04 [s]
+  warnings.warn(
+C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\site-packages\qiskit\circuit\duration.py:37: UserWarning: Duration is rounded to 108333 [dt] = 4.333320e-04 [s] from 4.333333e-04 [s]
+  warnings.warn(
+C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\site-packages\qiskit\circuit\duration.py:37: UserWarning: Duration is rounded to 116667 [dt] = 4.666680e-04 [s] from 4.666667e-04 [s]
+  warnings.warn(
+======================================================================
+HARDWARE LRT TEST - IBM ibm_torino
+======================================================================
+Start time: 2025-10-26 07:52:42
+
+Connecting to IBM Quantum Platform...
+Connected successfully to instance: LFT-1.0
+
+Backend: ibm_torino
+Status: active
+Queue: 413 pending jobs
+
+Test Parameters:
+  Shots: 2,500 per circuit
+  Duration points: 25
+  Total shots: 62,500
+  Estimated time: ~5-7 minutes
+
+Building Ramsey circuits...
+Built 25 circuits
+
+Transpiling for ibm_torino...
+Transpilation complete (0.8s)
+
+======================================================================
+SUBMITTING TO HARDWARE
+======================================================================
+This will use ~5-7 minutes of quantum time
+Current queue: 413 jobs
+
+Press Enter to confirm submission (or Ctrl+C to cancel)...
+Submitting job in job mode (no session)...
+Traceback (most recent call last):
+  File "C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\notebooks\quantum_simulations\run_hardware_test.py", line 98, in <module>
+    sampler = Sampler(backend=backend)
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SamplerV2.__init__() got an unexpected keyword argument 'backend'

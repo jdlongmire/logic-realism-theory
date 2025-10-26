@@ -36,3 +36,5 @@ notebooks/outputs/*.json
 !notebooks/outputs/.gitkeep
 theory/predictions/IBM_Q_API.txt
 IBM_Q_API.txt
+IBM_Q_CRN.txt
+IBM_Q_Instance.png

@@ -1,0 +1,31 @@
+======================================================================
+HARDWARE LRT TEST - IBM ibm_torino
+======================================================================
+Start time: 2025-10-26 07:48:23
+
+Connecting to IBM Quantum Platform...
+Connection failed: 'channel' can only be 'ibm_cloud', or 'ibm_quantum_platform
+Trying with saved credentials...
+Traceback (most recent call last):
+  File "C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\notebooks\quantum_simulations\run_hardware_test.py", line 27, in <module>
+    service = QiskitRuntimeService(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\site-packages\qiskit_ibm_runtime\qiskit_runtime_service.py", line 196, in __init__
+    self._account = self._discover_account(
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\site-packages\qiskit_ibm_runtime\qiskit_runtime_service.py", line 391, in _discover_account
+    raise ValueError("'channel' can only be 'ibm_cloud', or 'ibm_quantum_platform")
+ValueError: 'channel' can only be 'ibm_cloud', or 'ibm_quantum_platform
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\notebooks\quantum_simulations\run_hardware_test.py", line 36, in <module>
+    service = QiskitRuntimeService(channel="ibm_quantum")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\site-packages\qiskit_ibm_runtime\qiskit_runtime_service.py", line 196, in __init__
+    self._account = self._discover_account(
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\site-packages\qiskit_ibm_runtime\qiskit_runtime_service.py", line 391, in _discover_account
+    raise ValueError("'channel' can only be 'ibm_cloud', or 'ibm_quantum_platform")
+ValueError: 'channel' can only be 'ibm_cloud', or 'ibm_quantum_platform
