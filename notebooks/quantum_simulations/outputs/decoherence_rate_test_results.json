@@ -1,0 +1,8 @@
+{
+  "correlation_duration_deltaS": -0.9957315678498149,
+  "unitary_rate": 0.027793982513046427,
+  "measurement_rate": 0.0,
+  "rate_ratio": null,
+  "conclusion": "MULTICOLLINEARITY",
+  "groks_hypothesis": "NOT CONFIRMED"
+}
