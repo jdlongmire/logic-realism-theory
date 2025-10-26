@@ -1,0 +1,42 @@
+{
+  "n_samples": 1000,
+  "simple_regression": {
+    "beta": -4.030294913434771,
+    "beta_se": 0.00954919948840653,
+    "p_value": 0.0,
+    "R2": 0.9944285988902624
+  },
+  "multivariate_regression": {
+    "beta": 384145270631.2688,
+    "beta_se": 1073998655929.5547,
+    "theta": -384145270632.6577,
+    "theta_se": 1073998655929.5543,
+    "gamma": 0.0,
+    "beta_p_value": 0.7206602960317243,
+    "R2": 0.9943911275459058
+  },
+  "vif_diagnostics": {
+    "max_vif": Infinity,
+    "vif_values": [
+      {
+        "Variable": "Delta_S",
+        "VIF": Infinity
+      },
+      {
+        "Variable": "duration",
+        "VIF": Infinity
+      },
+      {
+        "Variable": "qubit_count",
+        "VIF": NaN
+      }
+    ]
+  },
+  "validation": {
+    "beta_in_range": false,
+    "significant": false,
+    "duration_dominant": true,
+    "sufficient_samples": true,
+    "overall_pass": false
+  }
+}

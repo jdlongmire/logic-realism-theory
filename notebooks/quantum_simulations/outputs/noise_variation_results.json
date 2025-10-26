@@ -1,0 +1,23 @@
+{
+  "n_samples": 1000,
+  "simple_regression": {
+    "beta": 11.10927946301506,
+    "beta_se": 0.13054369996358622,
+    "p_value": 0.0,
+    "R2": 0.8788838451916968
+  },
+  "multivariate_regression": {
+    "beta": -0.007524902607044253,
+    "beta_se": 0.015573750021080874,
+    "eta": 0.7976440602557681,
+    "theta": -0.01145219821107195,
+    "beta_p_value": 0.6290751265281364,
+    "R2": 0.9667770693072101
+  },
+  "validation": {
+    "beta_positive": false,
+    "beta_in_range": false,
+    "significant": false,
+    "overall_pass": false
+  }
+}

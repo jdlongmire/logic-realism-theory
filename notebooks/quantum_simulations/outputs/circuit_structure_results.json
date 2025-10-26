@@ -1,0 +1,28 @@
+{
+  "n_samples": 1000,
+  "circuit_durations_us": {
+    "unitary": 6.099999999999999,
+    "measurement": 16.5
+  },
+  "mean_error_rates": {
+    "unitary": 0.038972,
+    "measurement": 0.095592
+  },
+  "ttest": {
+    "t_statistic": -116.75446511818564,
+    "p_value": 0.0,
+    "mean_difference": 0.05662
+  },
+  "regression": {
+    "beta_measurement": 1.647681133890626,
+    "beta_se": 0.004274422893725248,
+    "p_value": 0.0,
+    "R2": 0.9251630747859569,
+    "effect_size_percent": 419.49195266416615
+  },
+  "validation": {
+    "significant": true,
+    "beta_positive": true,
+    "supports_lrt": true
+  }
+}
