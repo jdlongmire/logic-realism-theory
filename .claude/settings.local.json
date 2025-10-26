@@ -12,7 +12,10 @@
       "Bash(jupyter nbconvert:*)",
       "Bash(lake exe cache:*)",
       "Bash(git mv:*)",
-      "Bash(lake clean:*)"
+      "Bash(lake clean:*)",
+      "Read(//c/Users/jdlon/OneDrive/Documents/**)",
+      "Bash(cat:*)",
+      "Bash(find:*)"
     ],
     "deny": [],
     "ask": []
