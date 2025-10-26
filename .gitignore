@@ -34,3 +34,5 @@ notebooks/outputs/*.png
 notebooks/outputs/*.csv
 notebooks/outputs/*.json
 !notebooks/outputs/.gitkeep
+theory/predictions/IBM_Q_API.txt
+IBM_Q_API.txt
