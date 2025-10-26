@@ -425,7 +425,8 @@ is complete, this axiom will be replaced with the formal proof.
 **Quality Status**:
 - Builds: ✅
 - Internal Sorrys: 0 (all our own proofs complete) ✅
-- Unformalized Theorem Sorrys: 1 (Stone's theorem - Stone 1932)
+- Unformalized But Established Theorem Sorrys: 1
+  - Stone's theorem (Stone 1932 - proven, awaiting formalization)
 - Physical Axioms: 0 (only 2 in Foundation: I, I_infinite)
 - Documentation: Complete ✅
 

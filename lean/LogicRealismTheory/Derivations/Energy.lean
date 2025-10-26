@@ -277,9 +277,9 @@ theorem energy_hamiltonian_connection :
 ## Build Status
 
 **Internal Sorrys**: 0 (all our own proofs complete) ✅
-**Unformalized Theorem Sorrys**: 2 (established results awaiting formalization)
-  1. I_has_maximum_entropy (Jaynes 1957 - information theory)
-  2. spohns_inequality (Spohn 1978 - quantum information)
+**Unformalized But Established Theorem Sorrys**: 2
+  1. I_has_maximum_entropy (Jaynes 1957 - proven, awaiting formalization)
+  2. spohns_inequality (Spohn 1978 - proven, awaiting formalization)
 **Axioms Used**: 0 (no axioms in this file)
 
 **Theorems Proven**: 4
@@ -290,7 +290,9 @@ theorem energy_hamiltonian_connection :
 
 **Total Physical Axioms (Project)**: 2 (I exists, I infinite from Foundation)
 **Total Internal Sorrys (Project)**: 0 - all our own proofs complete ✅
-**Total Unformalized Theorem Sorrys (Project)**: 3 (1 TimeEmergence, 2 Energy)
+**Total Unformalized But Established Theorem Sorrys (Project)**: 3
+  - 1 in TimeEmergence (Stone 1932)
+  - 2 in Energy (Jaynes 1957, Spohn 1978)
 **Total Theorems Proven**: 7 (3 TimeEmergence, 4 Energy)
 
 ## Completed
