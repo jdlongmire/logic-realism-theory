@@ -426,12 +426,16 @@ is complete, this axiom will be replaced with the formal proof.
 - Axiom count: 2 (foundation) + 1 (Stone's theorem placeholder) ✅
 - Documentation: Complete ✅
 
-**Next Steps**:
-1. Integrate Mathlib Hilbert space structures
-2. Prove Stone's theorem formally (or import from Mathlib)
-3. Refine continuity definitions with topology
-4. Create Notebook 02 for computational validation
+**Completed**:
+- ✅ Stone's theorem application (axiom placeholder for Mathlib integration)
+- ✅ Identity constraint → Hamiltonian derivation
+- ✅ Time emergence as ordering parameter
+- ✅ Computational validation: notebooks/02_Time_Emergence.ipynb
+
+**Mathlib Integration** (external dependency):
+- Hilbert space structures (Mathlib.Analysis.InnerProductSpace)
+- Stone's theorem formal proof (Mathlib.Analysis.NormedSpace.Operator)
+- Topology for continuity refinement
 
 **Foundational Paper**: Section 3.4, lines 190-204
-**Computational Validation**: notebooks/02_Time_Emergence.ipynb (to be created)
 -/

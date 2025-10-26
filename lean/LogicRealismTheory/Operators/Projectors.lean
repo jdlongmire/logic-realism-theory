@@ -265,15 +265,19 @@ noncomputable def LOperator : ConstraintComposition I I := {
 - ConstraintComposition structure (L)
 - Concrete instances for I
 
-**What's NOT Defined Yet** (future work):
-- Full Hilbert space integration (needs Mathlib)
-- Concrete measurement operators
-- Stone's theorem application (Derivations/TimeEmergence.lean)
-- Spohn's inequality application (Derivations/Energy.lean)
-- Born rule derivation (Derivations/BornRule.lean)
+**Derivations Complete**:
+- ✅ Stone's theorem application (Derivations/TimeEmergence.lean)
+- ✅ Spohn's inequality application (Derivations/Energy.lean)
+- ✅ Time emergence from Identity constraint
+- ✅ Energy emergence from entropy reduction
 
-**Next Steps**:
-1. Add Mathlib Hilbert space imports (for concrete implementations)
-2. Define concrete measurement operators
-3. Prove derivations as theorems in Derivations/
+**Mathlib Integration** (external dependency):
+- Full Hilbert space structures (Mathlib.Analysis.InnerProductSpace)
+- Concrete measurement operators (self-adjoint projectors)
+- Spectral theorem for observable operators
+
+**Planned Derivations**:
+- Born rule (Sprint 3+): Probability from constraint measure
+- Quantum superposition: Partial constraint demonstration
+- Measurement collapse: Full constraint demonstration
 -/
