@@ -1,0 +1,138 @@
+# Multi-LLM Consultation: Mathlib Integration Strategy for LRT
+
+## Context
+
+**Project**: Logic Realism Theory (LRT) - Deriving quantum mechanics from logical constraints
+**Current Status**: All modules have 0 sorry using abstract axiom placeholders
+**User Directive**: "no placeholders" - replace axioms with actual Mathlib structures/theorems
+
+## What's Available in Mathlib
+
+**✅ AVAILABLE**:
+1. **Self-adjoint operators** (`LinearMap.IsSymmetric`, `IsSelfAdjoint`)
+   - Eigenvalues are real
+   - Eigenspaces are orthogonal
+   - Spectral theorem (finite-dimensional)
+   - Diagonalization theorem
+
+2. **Unitary operators** (C*-algebras)
+   - `selfAdjoint.expUnitary x`: exp(I • x) for self-adjoint x
+   - `selfAdjoint.expUnitaryPathToOne`: path t ↦ exp(t • (I • x))
+   - Locally path-connected unitary group
+
+3. **Measure theory** (277 modules)
+   - Full measure-theoretic foundation
+   - Integration theory
+   - Probability measures
+
+4. **Inner product spaces**
+   - Hilbert space structure
+   - Adjoint operators
+   - Gram-Schmidt orthogonalization
+
+**❌ NOT AVAILABLE**:
+1. **Stone's theorem**: Strongly continuous one-parameter unitary groups have self-adjoint generators
+2. **Entropy**: Shannon entropy, von Neumann entropy, relative entropy (KL divergence)
+3. **Spohn's inequality**: D(ρ(t)||σ(t)) ≤ D(ρ(0)||σ(0)) (Spohn 1978)
+
+## Current Axioms (Need to Eliminate)
+
+### TimeEmergence.lean
+```lean
+axiom stones_theorem :
+  ∃ (H : Hamiltonian I), ∀ (t : ℝ),
+  ∃ (U_t : UnitaryOperator I), U_t.operator = fun x => x  -- Abstract
+```
+
+### Energy.lean
+```lean
+axiom I_has_maximum_entropy :
+  ∃ (S_I : EntropyMeasure),
+  ∀ (S_X : EntropyMeasure), S_I.value ≥ S_X.value
+
+axiom spohns_inequality :
+  ∀ (t : ℝ), t ≥ 0 →
+  ∃ (D_0 D_t : ℝ), D_t ≤ D_0
+```
+
+## Questions for Team
+
+### Question 1: Stone's Theorem Approach
+
+**Options**:
+A) **Prove Stone's theorem** ourselves using Mathlib building blocks:
+   - Use `IsSelfAdjoint` for Hamiltonian
+   - Use `selfAdjoint.expUnitary` for U(t) = exp(-iHt/ℏ)
+   - Prove continuity using existing topology
+
+B) **State Stone's theorem as axiom** but document it as established mathematical result (not physical axiom)
+
+C) **Use weaker version**: Just assert existence of Hamiltonian and exponential structure without proving full Stone's theorem
+
+**Which approach maintains rigor while being practical for this project?**
+
+### Question 2: Entropy Definition
+
+**Options**:
+A) **Define entropy using Mathlib measure theory**:
+   - Shannon entropy: H(X) = -∑ p(x) log p(x)
+   - von Neumann entropy: S(ρ) = -Tr(ρ log ρ)
+   - Relative entropy: D(ρ||σ) = Tr(ρ (log ρ - log σ))
+
+B) **Abstract entropy structure** with axioms capturing essential properties (non-negativity, subadditivity, etc.)
+
+C) **Finite-dimensional concrete definition** (avoiding measure theory complexity)
+
+**Which approach is most appropriate for foundations of quantum mechanics?**
+
+### Question 3: Spohn's Inequality
+
+**Options**:
+A) **Prove Spohn's inequality** using Mathlib's measure theory and monotonicity
+
+B) **Find equivalent result** in Mathlib's information theory (if any exists)
+
+C) **State as axiom** but label as "established physical result" vs physical postulate
+
+**Is this inequality provable from measure-theoretic entropy, or is it genuinely a physics result?**
+
+### Question 4: Projector Operators
+
+**Current**: Identity function placeholder
+```lean
+projector := fun _ => id  -- Abstract projection
+```
+
+**Options**:
+A) **Use Mathlib projectors**: Self-adjoint idempotent operators P² = P = P†
+
+B) **Keep abstract** until Hilbert space structure is fully formalized
+
+**Should we integrate actual projection operators now or defer to later refinement?**
+
+## Success Criteria
+
+**Goal**: Eliminate abstract axioms while maintaining:
+- ✅ 0 sorry statements
+- ✅ Only 2 physical axioms (I exists, I infinite)
+- ✅ Builds successfully
+- ✅ Mathematical rigor
+- ✅ Reasonable development timeline
+
+**Trade-offs**:
+- Rigor vs. complexity
+- Mathlib integration depth vs. time investment
+- Abstract placeholders (labeled as math theorems) vs. full proofs
+
+## Requested Output
+
+For each question, provide:
+1. **Recommended approach** (A/B/C or hybrid)
+2. **Justification** (rigor, practicality, precedent)
+3. **Implementation sketch** (key imports, structure outline)
+4. **Estimated complexity** (simple/moderate/complex)
+5. **Alternative if complexity too high**
+
+**Priority**: Maintain project momentum while maximizing rigor within practical constraints.
+
+Thank you!

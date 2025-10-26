@@ -15,7 +15,8 @@
       "Bash(lake clean:*)",
       "Read(//c/Users/jdlon/OneDrive/Documents/**)",
       "Bash(cat:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(lean test_mathlib_imports.lean:*)"
     ],
     "deny": [],
     "ask": []
