@@ -24,7 +24,13 @@
       "Bash(for file in lean/LogicRealismTheory/Derivations/*.lean)",
       "Bash(for file in lean/LogicRealismTheory/**/*.lean)",
       "Bash(do sed -i 's/Logic Realism Theory: Deriving Quantum Mechanics from Logical Consistency/Logic Realism Theory: A Research Program for Ontological Logic in Informational Reality/g' \"$file\")",
-      "Bash(for file in notebooks/*.ipynb)"
+      "Bash(for file in notebooks/*.ipynb)",
+      "Bash(/dev/null)",
+      "WebSearch",
+      "WebFetch(domain:docs.quantum.ibm.com)",
+      "WebFetch(domain:quantum.cloud.ibm.com)",
+      "WebFetch(domain:qiskit-community.github.io)",
+      "WebFetch(domain:qiskit.org)"
     ],
     "deny": [],
     "ask": []
