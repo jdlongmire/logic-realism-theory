@@ -9,7 +9,9 @@
 
 ## Executive Summary
 
-This report documents the **first experimental test of Logic Realism Theory (LRT) on real quantum hardware**. We executed a Ramsey decoherence experiment on IBM's ibm_torino quantum processor, collecting 62,500 measurements across 25 duration points to search for deviations from standard quantum mechanics (QM) predictions.
+This report documents a **small-scale proof-of-concept test** of Logic Realism Theory (LRT) on real quantum hardware - the first attempt to experimentally validate LRT predictions using IBM's quantum processors. We executed a Ramsey decoherence experiment on IBM's ibm_torino, collecting 62,500 measurements across 25 duration points to search for deviations from standard quantum mechanics (QM) predictions.
+
+**Scope**: This is a preliminary test with limited statistical power (2,500 shots per point, ~2.8% noise level) designed to validate methodology and establish baseline measurements. **This is not a definitive test of LRT.**
 
 **Result**: No LRT signal detected. Hardware data is consistent with standard quantum mechanical predictions within measurement uncertainty.
 
@@ -206,9 +208,54 @@ Three possible explanations:
 
 ---
 
+## Limitations of This Proof-of-Concept
+
+### What This Test Was
+
+✓ **Proof-of-Concept**: Validated that hardware testing of LRT is feasible
+✓ **Methodology Validation**: Confirmed Phase 3 simulation accurately predicted workflow
+✓ **Baseline Measurement**: Established noise floor and required precision for future tests
+✓ **Technical Demonstration**: Successfully used IBM Quantum platform for LRT testing
+
+### What This Test Was NOT
+
+✗ **Definitive LRT Test**: Limited statistical power (2,500 shots vs 10,000+ needed)
+✗ **Comprehensive**: Single observable (T2), single backend, single run
+✗ **High Precision**: 2.8% RMS noise vs <1% needed to detect small effects
+✗ **Theory Validation**: Cannot definitively rule out LRT deviations
+
+### Key Limitations
+
+1. **Statistical Power**:
+   - **This Test**: 62,500 total shots (25 points × 2,500 shots)
+   - **Phase 3 Validated Design**: ~1,000,000 total shots (49 points × 10,000 shots × 2 experiments)
+   - **Scaling Factor**: This test used only **6.25%** of the validated shot count
+   - **Precision Achieved**: 2.8% RMS noise
+   - **Precision Needed**: <1% RMS for detecting 0.5% LRT deviations
+
+2. **Single Backend**: Hardware-specific effects not controlled. Need measurements on multiple backends for comparison.
+
+3. **Single Observable**: Tested only T2 decoherence. LRT might show signals in other observables (entanglement, thermalization, etc.).
+
+4. **Single Run**: No repeated measurements to control for drift and validate reproducibility.
+
+5. **Free Tier Constraints**:
+   - Limited to 10 minutes quantum time on IBM Quantum Open Plan
+   - Full validated design would require ~100-150 minutes of quantum time
+   - This test used ~7 minutes (7% of free tier monthly allocation)
+   - Full test would require **enhanced access** (Researchers/Educators Program)
+
+### What We Can Conclude
+
+**Conservative Claim**: At 2.8% measurement precision, no LRT deviation from QM was detected in T2 decoherence on one IBM qubit.
+
+**Cannot Claim**: "LRT has been experimentally ruled out" or "LRT equals QM" - the test was not comprehensive enough for such conclusions.
+
+---
+
 ## Conclusions
 
-This hardware test represents a **milestone for Logic Realism Theory** - the first experimental investigation on real quantum hardware. While no LRT signal was detected, the test was scientifically successful:
+This hardware test represents a **proof-of-concept milestone for Logic Realism Theory** - the first experimental investigation on real quantum hardware. While no LRT signal was detected, the test was scientifically successful:
 
 ✓ **Methodology Validated**: Phase 3 simulation accurately predicted analysis workflow
 ✓ **Hardware Quality Good**: T2 = 211.59 µs, baseline error 9.29%
@@ -216,7 +263,7 @@ This hardware test represents a **milestone for Logic Realism Theory** - the fir
 ✓ **Reproducible**: All code, data, and analysis publicly available
 ✓ **Honest Reporting**: Negative result reported transparently
 
-**Scientific Verdict**: At current measurement precision (~2.8% RMS), **Logic Realism Theory is experimentally indistinguishable from standard quantum mechanics** for T2 decoherence in superconducting qubits.
+**Scientific Verdict (Proof-of-Concept)**: This small-scale test found no LRT deviations from QM at 2.8% precision for T2 decoherence on one IBM qubit. **This is not a definitive test** - it demonstrates feasibility and validates methodology for future comprehensive testing.
 
 ---
 
