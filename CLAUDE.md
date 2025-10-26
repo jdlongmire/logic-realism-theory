@@ -69,6 +69,67 @@ cd lean && lake build
 **Rule 3**: Quantify with numbers, not qualitative statements
 **Rule 4**: Start with what's wrong, not what works
 **Rule 5**: Puncture hype with facts
+**Rule 6**: Pass simulation results to LLM team before claiming victory
+
+### Computational Validation Protocol (NEW)
+
+**CRITICAL**: All simulation results claiming to validate LRT predictions MUST be reviewed by the multi-LLM team before making any claims.
+
+**Mandatory team review triggers**:
+- ✅ Before claiming any simulation "validates" or "supports" LRT predictions
+- ✅ Before claiming statistical significance of results
+- ✅ Before reporting effect sizes as "consistent with predictions"
+- ✅ Before preparing results for publication or external sharing
+- ✅ After implementing fixes to failed simulations
+
+**Team Review Process**:
+1. **Prepare Review Package**:
+   - Simulation code (notebook or script)
+   - Results summary (statistical output, plots)
+   - Comparison to paper's predictions (expected vs observed)
+   - Known limitations and potential issues
+   - Implementation details (model, sample size, controls)
+
+2. **Submit to Multi-LLM Team**:
+   ```bash
+   # Use multi-LLM consultation system
+   cd multi_LLM
+   python enhanced_llm_bridge.py --mode consultation \
+       --topic "simulation_validation" \
+       --files "../notebooks/quantum_simulations/results_summary.md" \
+       --output "../multi_LLM/consultation/sim_validation_YYYYMMDD.txt"
+   ```
+
+3. **Team Review Questions**:
+   - Does the effect size match paper's prediction?
+   - Is sample size sufficient for statistical power?
+   - Are controls properly implemented?
+   - Are there obvious confounds or artifacts?
+   - Does the model match the theoretical framework?
+   - What are alternative explanations for the results?
+
+4. **Quality Gate**:
+   - ❌ **DO NOT CLAIM VALIDATION** if team quality score < 0.70
+   - ❌ **DO NOT CLAIM VALIDATION** if any team member raises critical issues
+   - ❌ **DO NOT CLAIM VALIDATION** if effect size differs by >2x from prediction
+   - ✅ **MAY CLAIM VALIDATION** only if: Quality score ≥ 0.70 + team consensus + effect size matches prediction
+
+5. **Document Team Review**:
+   - Save consultation results to `multi_LLM/consultation/`
+   - Include quality score and team consensus in session log
+   - Address any issues raised before making claims
+   - If issues found, implement fixes and re-submit for review
+
+**Example (Session 2.4 Lesson)**:
+- ❌ **WRONG**: "Excellent results! Evidence for LRT prediction!" (claimed without team review)
+- ✅ **CORRECT**: "Initial signal detected (β > 0). INCONCLUSIVE - β 100x too large, requires investigation and team review."
+
+**Why This Matters**:
+- Prevents overclaiming based on flawed models
+- Catches discrepancies early (e.g., β 100x too large)
+- Ensures effect sizes are physically reasonable
+- External validation before public claims
+- Documents review trail for scientific credibility
 
 ### Red Flag Language
 
