@@ -95,6 +95,8 @@ class DurationMatchedSequences(EntropySequences):
         """
         Calculate entropy change for a circuit using density matrix simulation.
 
+        CRITICAL FIX: Remove measurements before density matrix calculation.
+
         Args:
             circuit: QuantumCircuit to analyze
             simulator: AerSimulator with noise model
@@ -109,8 +111,11 @@ class DurationMatchedSequences(EntropySequences):
         S_in = entropy(initial_state, base=np.e)
 
         # Evolve through circuit with noise
+        # CRITICAL: Remove final measurements before density matrix save
         qc_copy = circuit.copy()
+        qc_copy.remove_final_measurements()
         qc_copy.save_density_matrix()
+
         result = simulator.run(qc_copy, shots=1).result()
         rho_out = result.data()['density_matrix']
 
