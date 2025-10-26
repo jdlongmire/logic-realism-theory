@@ -16,7 +16,15 @@
       "Read(//c/Users/jdlon/OneDrive/Documents/**)",
       "Bash(cat:*)",
       "Bash(find:*)",
-      "Bash(lean test_mathlib_imports.lean:*)"
+      "Bash(lean test_mathlib_imports.lean:*)",
+      "Bash(awk:*)",
+      "Bash(for file in lean/LogicRealismTheory/Foundation/*.lean)",
+      "Bash(do echo \"  $file:\")",
+      "Bash(done)",
+      "Bash(for file in lean/LogicRealismTheory/Derivations/*.lean)",
+      "Bash(for file in lean/LogicRealismTheory/**/*.lean)",
+      "Bash(do sed -i 's/Logic Realism Theory: Deriving Quantum Mechanics from Logical Consistency/Logic Realism Theory: A Research Program for Ontological Logic in Informational Reality/g' \"$file\")",
+      "Bash(for file in notebooks/*.ipynb)"
     ],
     "deny": [],
     "ask": []

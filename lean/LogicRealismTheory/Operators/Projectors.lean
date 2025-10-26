@@ -1,7 +1,7 @@
 /-
 Copyright © 2025 James D. (JD) Longmire
 License: Apache License 2.0
-Citation: Longmire, J.D. (2025). Logic Realism Theory: Deriving Quantum Mechanics from Logical Consistency. Logic Realism Theory Repository.
+Citation: Longmire, J.D. (2025). Logic Realism Theory: A Research Program for Ontological Logic in Informational Reality. Logic Realism Theory Repository.
 
 # Operators: Projectors and Constraint Application
 
