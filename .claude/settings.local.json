@@ -9,7 +9,15 @@
       "Bash(for file in Foundation/*.lean Operators/*.lean Derivations/*.lean)",
       "Bash(do echo \"$file:\")",
       "Bash(timeout 60 lake build:*)",
-      "Bash(timeout 90 lake build:*)"
+      "Bash(timeout 90 lake build:*)",
+      "Bash(for file in LogicRealismTheory/Derivations/Energy.lean LogicRealismTheory/Derivations/RussellParadox.lean LogicRealismTheory/Derivations/TimeEmergence.lean LogicRealismTheory/Foundation/Actualization.lean)",
+      "Bash(find:*)",
+      "Bash(lake build:*)",
+      "Bash(for file in LogicRealismTheory/Foundation/Actualization.lean LogicRealismTheory/Derivations/Energy.lean LogicRealismTheory/Derivations/RussellParadox.lean LogicRealismTheory/Derivations/TimeEmergence.lean)",
+      "Bash(do echo \"=== $file ===\")",
+      "Bash(done)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
