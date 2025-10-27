@@ -1,9 +1,13 @@
 # Path 3 Experimental Protocol: T1 vs T2 Comparison Test
 
 **Prediction Path**: Path 3 - Logical State-Dependent Error (Gemini Idea 1)
-**Status**: Ready for Implementation
+**Status**: Ready for Implementation (Quantitative Predictions Added)
 **Date**: October 26, 2025
-**Version**: 1.0
+**Version**: 1.2 (Quantitative Prediction + Statistical Analysis)
+**Previous Versions**:
+- v1.0 (October 26, 2025): Initial protocol
+- v1.1 (October 27, 2025): Multi-LLM peer review added
+- v1.2 (October 27, 2025): Quantitative predictions from first principles
 
 ---
 
@@ -12,8 +16,9 @@
 This protocol describes a comprehensive experimental test of Logic Realism Theory (LRT) using standard quantum relaxation measurements to detect state-dependent decoherence. The test compares amplitude relaxation time (T1) with phase coherence time (T2) to determine if superposition states are fundamentally less stable than classical states.
 
 **Key Hypothesis**:
-- **LRT Prediction**: T2 < T1 (superposition decays faster due to relaxed logical constraints)
+- **LRT Prediction**: T2 < T1 with **T2/T1 ≈ 0.7-0.9** (10-30% faster decoherence due to relaxed EM constraint)
 - **QM Prediction**: T2 ≈ T1 (no fundamental preference between state types)
+- **Quantitative Derivation**: See `theory/predictions/Quantitative_Predictions_Derivation.md`
 
 **Why This Test**:
 - Clear prediction difference between theories
@@ -53,7 +58,12 @@ This protocol describes a comprehensive experimental test of Logic Realism Theor
 
 **Prediction**: The relaxed logical constraint in superposition states causes:
 - **T2 < T1**: Phase coherence decays faster than amplitude
-- **Measurable ratio**: T2/T1 < 1 - δ, where δ > 0 is LRT deviation
+- **Quantitative Prediction**: T2/T1 ≈ 0.7-0.9 (10-30% faster decoherence)
+  - Derived from constraint thermodynamics (see `Quantitative_Predictions_Derivation.md`)
+  - Lower bound (0.5): Strong EM constraint
+  - Upper bound (0.95): Weak EM constraint
+  - Best estimate (0.7-0.9): Moderate EM constraint cost
+  - Free parameter: EM constraint weight (w_EM) - requires empirical calibration
 
 ### Standard QM Prediction
 
@@ -240,10 +250,13 @@ T_all = np.unique(np.concatenate([T_short, T_long]))
 
 ### Requirements
 
-**Goal**: Detect T2/T1 ratio deviation of 10% with high confidence
-- LRT prediction: T2/T1 < 0.9 (at least 10% difference)
-- QM prediction: T2/T1 ≈ 1.0
-- Required sensitivity: ~5% measurement precision
+**Goal**: Detect T2/T1 ratio deviation of 10-30% with high confidence
+- **LRT prediction**: T2/T1 ≈ 0.7-0.9 (10-30% difference, from first-principles derivation)
+  - Best estimate: T2/T1 ≈ 0.8 (20% difference)
+  - Conservative estimate: T2/T1 ≈ 0.9 (10% difference)
+  - See `Quantitative_Predictions_Derivation.md` Section 2 for full derivation
+- **QM prediction**: T2/T1 ≈ 1.0 (no systematic difference)
+- **Required sensitivity**: ~0.5-1% measurement precision to detect 10% difference with 95% power
 
 ### Shot Count Calculation
 
@@ -251,10 +264,15 @@ T_all = np.unique(np.concatenate([T_short, T_long]))
 - For p ≈ 0.5 (mid-decay): σ ≈ 0.5/√N
 - Target: σ < 0.01 (1% error) → N > 2500
 
-**Recommended**: **10,000 shots per point**
-- Gives σ ≈ 0.5% for mid-range probabilities
-- Provides 2× margin over minimum requirement
-- Consistent with Phase 3 validation (10K shots)
+**Updated Recommendation (Post-Quantitative Derivation)**: **40,000-50,000 shots per point**
+- Target precision: ~0.5% (to detect T2/T1 = 0.8-0.9 reliably)
+- Previous 10,000 shots: σ ≈ 0.5% (marginal for 10% effect)
+- New 40,000 shots: σ ≈ 0.25% (robust for 10-30% effect)
+- Justification: Multi-LLM team identified need for higher statistical power
+
+**Alternative (Conservative)**: **10,000 shots per point** (if detecting T2/T1 ≈ 0.7-0.8 range)
+- Sufficient for large effects (≥20% difference)
+- Risk: May miss smaller LRT effects (10-15% range)
 
 ### Total Resource Budget
 
@@ -272,20 +290,37 @@ T_all = np.unique(np.concatenate([T_short, T_long]))
 - 3 × 30 hours = **90 hours total quantum time**
 - Within range of Researchers Program allocation (100+ hours/month)
 
-### Statistical Power Analysis
+### Statistical Power Analysis (Updated with Quantitative Predictions)
 
-**Effect Size**:
-- LRT: T2/T1 = 0.85 (15% deviation)
-- QM: T2/T1 = 1.00
-- Cohen's d ≈ 1.5 (large effect)
+**Effect Sizes** (from first-principles derivation):
+- **Scenario 1 (Best estimate)**: T2/T1 = 0.8 (20% deviation from QM)
+- **Scenario 2 (Conservative)**: T2/T1 = 0.9 (10% deviation from QM)
+- **Scenario 3 (Lower bound)**: T2/T1 = 0.7 (30% deviation from QM)
+- QM baseline: T2/T1 = 1.00
 
-**Power Calculation** (t-test for ratio):
+**Power Calculation (Scenario 1: T2/T1 = 0.8)**:
 - N = 49 points each (df = 96)
-- Shots = 10,000 per point (σ ≈ 0.5%)
-- Effect = 15% difference
-- **Power > 99%** to detect at α = 0.05
+- Shots = 40,000 per point (σ ≈ 0.25%)
+- Effect = 20% difference
+- Cohen's d ≈ 2.0 (very large effect)
+- **Power > 99.9%** to detect at α = 0.05
 
-**Interpretation**: If LRT is correct (T2/T1 < 0.9), this design will detect it with near certainty.
+**Power Calculation (Scenario 2: T2/T1 = 0.9, Conservative)**:
+- N = 49 points each (df = 96)
+- Shots = 40,000 per point (σ ≈ 0.25%)
+- Effect = 10% difference
+- Cohen's d ≈ 1.0 (large effect)
+- **Power ≈ 95%** to detect at α = 0.05
+
+**Power Calculation (Scenario 2 with 10K shots)**:
+- Shots = 10,000 per point (σ ≈ 0.5%)
+- Effect = 10% difference
+- **Power ≈ 70-80%** to detect at α = 0.05 (marginal)
+
+**Interpretation**:
+- If LRT is correct at T2/T1 ≈ 0.7-0.8: Design will detect with >99% power (40K shots)
+- If LRT is correct at T2/T1 ≈ 0.9: Need 40K shots for 95% power; 10K shots only ~75% power
+- **Recommendation**: Use 40K shots to robustly detect full LRT prediction range (0.7-0.9)
 
 ---
 

@@ -1,9 +1,12 @@
 # Path 5 Experimental Protocol: Hamiltonian Frequency Shift Test
 
 **Prediction Path**: Path 5 - State-Dependent Hamiltonian Energy (Gemini Contribution)
-**Status**: Protocol Outline (Unfunded Documentation)
+**Status**: Protocol Outline with Quantitative Predictions
 **Date**: October 27, 2025
-**Version**: 1.0
+**Version**: 1.1 (Quantitative Predictions Added)
+**Previous Versions**:
+- v1.0 (October 27, 2025): Initial protocol outline
+- v1.1 (October 27, 2025): Quantitative predictions from first principles
 
 ---
 
@@ -12,7 +15,11 @@
 This protocol outline describes an experimental test of Logic Realism Theory (LRT) using Ramsey interferometry to detect state-dependent frequency shifts. The test compares the Hamiltonian energy (frequency) of superposition states versus classical states to determine if superposition represents a different logical status with measurable energetic consequences.
 
 **Key Hypothesis**:
-- **LRT Prediction**: ω(|+⟩) ≠ ω(|0⟩) - Superposition has different energy due to relaxed Excluded Middle constraint
+- **LRT Prediction**: ω(|+⟩) ≠ ω(|0⟩) with **δω/ω ≈ 10⁻⁴ - 10⁻³** (0.01-0.1% frequency shift)
+  - Derived from entropy-energy coupling: ΔE = α * k_B T ln(2)
+  - Predicted magnitude: δω ≈ 100 kHz - 10 MHz (at T = 15 mK, α = 0.01-1.0)
+  - Temperature-dependent signature: δω ∝ T
+  - See `Quantitative_Predictions_Derivation.md` Section 3 for full derivation
 - **QM Prediction**: ω(|+⟩) = ω(|0⟩) - Energy is state-independent in standard Hamiltonian framework
 
 **Why This Test**:
@@ -25,6 +32,8 @@ This protocol outline describes an experimental test of Logic Realism Theory (LR
 **Key Advantage Over Path 3**:
 - **Higher potential precision**: Ramsey frequency measurements can achieve 0.01-0.1% precision (vs 1-2% for T1/T2)
 - **Direct energy probe**: Measures fundamental property (Hamiltonian) rather than derived quantity (decay)
+- **Distinct signature**: Temperature dependence (δω ∝ T) distinguishes from AC Stark shift
+- **Predicted effect size**: δω/ω ≈ 10⁻⁴ - 10⁻³ well within Ramsey precision
 
 **Resource Requirements** (Estimated):
 - ~500,000 total shots (250K per state × 2 states)
@@ -275,6 +284,17 @@ d = δω / sqrt((σ(ω₀)² + σ(ω₊)²)/2)
 - Measure AC Stark shift independently (vary drive power, measure frequency)
 - Subtract known Stark contribution from observed δω
 - **Residual shift after correction** is candidate for LRT effect
+
+**Distinguishing LRT from AC Stark** (Temperature-Dependence Test):
+- **LRT signature**: δω ∝ T (frequency shift scales linearly with temperature)
+  - From derivation: δω = (α * k_B T ln(2))/ℏ
+  - Predicted slope: dδω/dT = (α * k_B ln(2))/ℏ ≈ 90 kHz/mK (for α = 0.1)
+- **AC Stark signature**: δω independent of T (drive pulse power constant)
+- **Protocol**: Sweep T from 10 mK to 100 mK (10× range), measure δω(T)
+- **Fit**: δω(T) = slope * T + offset
+  - LRT: slope > 0 (linear T-dependence)
+  - AC Stark: slope ≈ 0 (T-independent offset only)
+- **Advantage**: Unambiguous signature - AC Stark cannot mimic linear T-dependence
 
 **2. State Preparation Fidelity**
 
