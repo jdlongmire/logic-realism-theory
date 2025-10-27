@@ -1,80 +1,149 @@
-# LRT Predictions Testing
+# LRT Experimental Predictions
 
 This folder contains all work related to testing LRT's falsifiable predictions.
 
-## Purpose
+---
 
-Testing specific predictions from Logic Realism Theory to provide computational validation before hardware experiments.
+## Active Prediction Paths
 
-## Organization
+### Path 3: T1 vs T2 Comparison (Primary - In Progress)
 
-### Active Test Designs
+**Status**: Simulation-validated, ready for team re-review (Session 3.6)
 
-- **Logical_State_Dependent_Error_Test_Design.md** - CURRENT DESIGN (approved for Phase 2)
-  - Tests if superposition states have excess error beyond T2 decoherence
-  - Status: Multi-LLM approved (quality 0.69, unanimous "Proceed")
-  - Next: Phase 2 minimal implementation
+**Core Documents**:
+- **[`T1_vs_T2_Protocol.md`](T1_vs_T2_Protocol.md)** - Complete experimental protocol (v1.2)
+- **[`T1_vs_T2_Error_Budget.md`](T1_vs_T2_Error_Budget.md)** - Comprehensive error analysis
+- **[`Quantitative_Predictions_Derivation.md`](Quantitative_Predictions_Derivation.md)** - First-principles derivation
 
-### Previous Attempts (Learning Archive)
+**QuTiP Validation**:
+- **[`../../notebooks/Path3_T1_vs_T2_QuTiP_Validation.ipynb`](../../notebooks/Path3_T1_vs_T2_QuTiP_Validation.ipynb)** - Simulation validation
 
-- **No_Actualized_Contradictions_Test_Design.md** - Design iteration 1 (abandoned)
-  - Fatal flaw: Doesn't differentiate LRT from QM
-  - Lesson: Avoid A/B circuit comparisons
+**Implementation Scripts**:
+- **[`../../scripts/path3_t1_vs_t2/`](../../scripts/path3_t1_vs_t2/)** - Circuit generation scripts
 
-- **Contradiction_Test_Consultation_Analysis.md** - Consultation results for iteration 1
-  - Quality: 0.68 (fatal flaw identified)
-  - Team feedback led to superior design
+**Key Hypothesis**:
+- **LRT**: T2/T1 ≈ 0.7-0.9 (superposition states less stable due to relaxed EM constraint)
+- **QM**: T2/T1 ≈ 1.0 (no fundamental state preference)
 
-### Session 2.5 Results
+**Quantitative Predictions** (from first principles):
+- T2/T1 ≈ 0.8 (best estimate, 20% effect)
+- T2/T1 ≈ 0.9 (conservative, 10% effect)
+- T2/T1 ≈ 0.7 (lower bound, 30% effect)
 
-- **Section_4_Revisions_Session_2.5.md** - QEC entropy-error test analysis
-  - Comprehensive investigation of Section 4 testability
-  - Result: Fundamental challenges identified, 2-5 year timeline
-  - Recommendations for paper revisions
+**Validation Results** (Session 3.6):
+- Error budget: ±2.8% on T2/T1 ratio
+- Signal-to-noise: 3.6-10.7σ (highly significant)
+- Statistical power: >95% with 40,000 shots per point
+- QuTiP simulation: LRT effect detectable at >4σ significance
 
-## Current Status
+**Multi-LLM Review** (Session 3.6):
+- Team scores: Grok 0.805, Gemini 0.62, ChatGPT 0.595 (avg: 0.673)
+- Decision: NO-GO (below 0.70 threshold) but very close
+- Critical gaps identified and addressed:
+  - ✅ Error budget created
+  - ✅ QuTiP simulation completed
+  - ✅ Statistical power justified
+  - ✅ Quantitative predictions emphasized
+- **Next**: Re-submit for review with expected quality >0.75
 
-**Active Test:** Logical State-Dependent Error
-**Phase:** 3 COMPLETE - Ready for Phase 4 (final documentation)
-**Quality Score:** 0.69 (Grok 0.81, Gemini 0.74, ChatGPT 0.52)
-**Phase 2 Results:** VIF = 1.0 verified, all criteria validated
-**Phase 3 Results:** 7/8 criteria passed, MDE = 0.5% (can detect 0.5% excess error)
-**Decision:** PROCEED TO PHASE 4 (test ready for hardware implementation)
+**Resource Requirements**:
+- 450 hours total quantum time (3 backends, including T2_echo)
+- 40,000 shots per point (justified by power analysis)
+- Enhanced IBM Quantum access recommended
 
-## Key Lessons Learned
+### Path 5: Hamiltonian Frequency Shift (Planned)
 
-1. **Avoid A/B circuit comparison** - Causes multicollinearity (VIF = ∞)
-2. **Use residual analysis** - Compare measurement vs QM baseline prediction
-3. **Design-first methodology** - Validate with multi-LLM before coding
-4. **VIF diagnostics mandatory** - Must confirm VIF = 1 in Phase 2
+**Status**: Protocol drafted, awaiting Path 3 completion
 
-## Methodology
+**Core Documents**:
+- **[`Hamiltonian_Frequency_Shift_Protocol.md`](Hamiltonian_Frequency_Shift_Protocol.md)** - Frequency shift test protocol (v1.1)
 
-**Phase 1:** Rigorous protocol design + multi-LLM validation
-**Phase 2:** Minimal implementation + VIF validation
-**Phase 3:** Full simulation (only if Phase 2 succeeds)
-**Phase 4:** Documentation and paper integration
+**Key Hypothesis**:
+- **LRT**: ω(|+⟩) ≠ ω(|0⟩) with δω/ω ≈ 10⁻⁴ - 10⁻³
+- **QM**: ω(|+⟩) = ω(|0⟩) (no state-dependent frequency)
 
-## File Naming Convention
-
-- Test designs: `[Prediction_Name]_Test_Design.md`
-- Consultation results: `[Test_Name]_Consultation_Analysis.md`
-- Session revisions: `Section_[N]_Revisions_Session_[X.Y].md`
-
-## Related Folders
-
-- `../../notebooks/quantum_simulations/` - Implementation code (when Phase 2 begins)
-- `../../multi_LLM/consultation/` - Multi-LLM team reviews
-- `../../Session_Log/` - Complete session history
-
-## References
-
-**Main Theory Paper:** `../Logic-realism-theory-foundational.md`
-**Testable Predictions:** Lines 280-552 of main paper
-**Current Focus:** Logical state stability (superposition vs classical)
+**Temperature-Dependence Signature**:
+- **LRT**: δω ∝ T (linear scaling)
+- **AC Stark**: δω independent of T
+- **Distinguishing Test**: Temperature sweep (10-100 mK)
 
 ---
 
-**Last Updated:** 2025-10-26
-**Current Session:** 2.7
-**Status:** Phase 3 COMPLETE - Ready for Phase 4 (final documentation and hardware readiness)
+## Master Planning Documents
+
+- **[`Prediction_Paths_Master.md`](Prediction_Paths_Master.md)** - Overview of all 8 prediction paths
+- **[`Quantitative_Predictions_Derivation.md`](Quantitative_Predictions_Derivation.md)** - First-principles derivations
+
+---
+
+## Historical Test Designs (Learning Archive)
+
+### Logical State-Dependent Error Test (Superseded by Path 3)
+
+- **[`Logical_State_Dependent_Error_Test_Design.md`](Logical_State_Dependent_Error_Test_Design.md)** - Initial design (Phase 3 complete)
+- **Status**: Superseded by Path 3 (T1 vs T2) protocol
+- **Lessons**: VIF diagnostics essential, avoid A/B circuit comparison
+
+### No Actualized Contradictions Test (Abandoned)
+
+- **[`No_Actualized_Contradictions_Test_Design.md`](No_Actualized_Contradictions_Test_Design.md)** - Design iteration 1 (abandoned)
+- **[`Contradiction_Test_Consultation_Analysis.md`](Contradiction_Test_Consultation_Analysis.md)** - Consultation results
+- **Fatal Flaw**: Doesn't differentiate LRT from QM
+- **Lesson**: Avoid A/B circuit comparisons (multicollinearity)
+
+### Section 4 QEC Entropy-Error Test (Deferred)
+
+- **[`Section_4_Revisions_Session_2.5.md`](Section_4_Revisions_Session_2.5.md)** - QEC analysis
+- **Result**: Fundamental challenges identified, 2-5 year timeline
+- **Status**: Deferred to future funded work
+
+---
+
+## Key Lessons Learned
+
+1. **Avoid A/B Circuit Comparison**: Causes multicollinearity (VIF = ∞)
+2. **Use Residual Analysis**: Compare measurement vs QM baseline prediction
+3. **Design-First Methodology**: Validate with multi-LLM before coding
+4. **VIF Diagnostics Mandatory**: Confirm VIF = 1.0 in protocol design
+5. **Quantitative Predictions Essential**: Derive from first principles, not assumptions
+6. **Error Budget Critical**: Must quantify all error sources before execution
+7. **Simulation De-Risks**: QuTiP validation catches design flaws before expensive hardware runs
+
+---
+
+## Development Timeline
+
+- **Session 2.4-2.5**: Initial contradiction test designs (abandoned after multi-LLM review)
+- **Session 3.1-3.4**: Path 3 protocol development and multi-LLM review
+- **Session 3.5**: Quantitative predictions derived from first principles
+- **Session 3.6**: QuTiP validation + error budget created, all gaps addressed
+
+---
+
+## Related Documentation
+
+- **Foundational Theory**: [`../Logic-realism-theory-foundational.md`](../Logic-realism-theory-foundational.md)
+- **Session History**: [`../../Session_Log/`](../../Session_Log/)
+  - [Session 3.6](../../Session_Log/Session_3.6.md) - Multi-LLM review + gap remediation
+- **QuTiP Validation**: [`../../notebooks/Path3_T1_vs_T2_QuTiP_Validation.ipynb`](../../notebooks/Path3_T1_vs_T2_QuTiP_Validation.ipynb)
+- **Implementation**: [`../../scripts/path3_t1_vs_t2/`](../../scripts/path3_t1_vs_t2/)
+- **Multi-LLM Review**: [`../../multi_LLM/consultation/path3_t1_vs_t2_review_20251027.txt`](../../multi_LLM/consultation/path3_t1_vs_t2_review_20251027.txt)
+
+---
+
+## Next Steps
+
+**Immediate** (Session 3.7):
+1. Update Path 3 protocol to v1.3 (reference new validation documents)
+2. Re-submit to multi-LLM team (expected quality >0.75)
+3. Mark protocol as validated if team approves
+
+**Future**:
+4. Implement Path 5 (frequency shift) using same rigorous methodology
+5. Consider additional paths once Path 3 is validated/executed
+
+---
+
+**Last Updated**: 2025-10-27 (Session 3.6)
+**Primary Focus**: Path 3 T1 vs T2 protocol
+**Status**: Simulation-validated, ready for team re-review

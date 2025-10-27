@@ -2,20 +2,32 @@
 
 This folder contains detailed documentation for Logic Realism Theory (LRT).
 
-## Documentation Structure
+---
 
-### Core Documents
-- **getting_started.md** - Quick start guide for new users
-- **philosophical_foundations.md** - A = L(I) principle and Three Fundamental Laws
-- **mathematical_details.md** - Rigorous mathematical formulation
-- **computational_validation.md** - Notebook suite and validation approach
-- **lean_formalization.md** - Lean 4 formal verification strategy
-- **predictions_and_tests.md** - Testable predictions (β ≠ 0, etc.)
+## Primary Documentation
 
-### Main Paper
+**Main Theoretical Framework**: [`../theory/Logic-realism-theory-foundational.md`](../theory/Logic-realism-theory-foundational.md)
 
-The primary theoretical exposition is in:
-- `../theory/Logic-realism-theory-foundational.md` (foundational paper, 640 lines, peer-review ready)
+This is the canonical source for LRT theory (publication-ready, 640 lines).
+
+---
+
+## Development Documentation
+
+**Session History**: [`../Session_Log/`](../Session_Log/)
+- Complete development history with git commits and file changes
+- **Latest**: [Session 3.6](../Session_Log/Session_3.6.md) - Multi-LLM Team Review + Gap Remediation
+
+**Experimental Protocols**: [`../theory/predictions/`](../theory/predictions/)
+- Path 3: T1 vs T2 protocol (primary testable prediction)
+- QuTiP validation simulations
+- Error budget analysis
+
+**Formal Verification**: [`../lean/README.md`](../lean/README.md)
+- Lean 4 proofs with 2 axioms
+- Development protocols and CI/CD
+
+---
 
 ## Quick Links
 
@@ -23,8 +35,14 @@ The primary theoretical exposition is in:
 - **Author**: James D. (JD) Longmire
 - **ORCID**: [0009-0009-1383-7698](https://orcid.org/0009-0009-1383-7698)
 
+---
+
 ## Status
 
-**Current Stage**: Initial repository setup (Session 0.0-0.1)
+**Current Stage**: Active research (Session 3.6, October 2025)
+**Primary Focus**: Path 3 T1 vs T2 experimental protocol
+**Latest Work**: QuTiP validation + comprehensive error budget
 
-Documentation files are stubs and will be developed progressively as theory content is created.
+---
+
+**Last Updated**: 2025-10-27 (Session 3.6)
