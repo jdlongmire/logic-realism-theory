@@ -62,13 +62,15 @@ Please read the full consultation request for complete details and context."
 echo "Submitting to multi-LLM team (Grok-3, GPT-4, Gemini-2.0)..."
 echo ""
 
-# Submit via enhanced_llm_bridge.py
-python multi_LLM/enhanced_llm_bridge.py \
+# Submit via enhanced_llm_bridge.py (must run from multi_LLM directory)
+cd multi_LLM
+python enhanced_llm_bridge.py \
     --query "$QUERY" \
     --mode review \
     --models all \
     --output full \
-    2>&1 | tee "multi_LLM/consultation/path3_protocol_review_results_$(date +%Y%m%d_%H%M%S).txt"
+    2>&1 | tee "consultation/path3_protocol_review_results_$(date +%Y%m%d_%H%M%S).txt"
+cd ..
 
 EXIT_CODE=$?
 

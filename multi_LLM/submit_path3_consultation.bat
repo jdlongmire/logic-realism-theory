@@ -28,8 +28,10 @@ set "QUERY=# Path 3 Protocol Review Request. Please review the complete Path 3 e
 echo Submitting to multi-LLM team (Grok-3, GPT-4, Gemini-2.0)...
 echo.
 
-REM Submit via enhanced_llm_bridge.py
-python multi_LLM\enhanced_llm_bridge.py --query "%QUERY%" --mode review --models all --output full > "multi_LLM\consultation\path3_protocol_review_results_%date:~-4,4%%date:~-10,2%%date:~-7,2%_%time:~0,2%%time:~3,2%%time:~6,2%.txt" 2>&1
+REM Submit via enhanced_llm_bridge.py (must run from multi_LLM directory)
+cd multi_LLM
+python enhanced_llm_bridge.py --query "%QUERY%" --mode review --models all --output full > "consultation\path3_protocol_review_results_%date:~-4,4%%date:~-10,2%%date:~-7,2%_%time:~0,2%%time:~3,2%%time:~6,2%.txt" 2>&1
+cd ..
 
 if %ERRORLEVEL% equ 0 (
     echo.
