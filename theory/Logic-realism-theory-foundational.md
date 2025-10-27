@@ -27,7 +27,7 @@ Logic Realism Theory (LRT) posits that the three fundamental laws of logic (3FLL
 
 ## 1. Introduction
 
-The metaphysics of logic has long debated whether logical laws are human constructs or reflections of reality's structure (Tahko 2019). Logic Realism Theory (LRT) takes a definitive position: the 3FLL—identity (A is A), non-contradiction (A cannot be both A and not-A), and excluded middle (A is either A or not-A)—exist as **mind-independent, ontological operators** that constrain an infinite information space to produce coherent physical actualization. These laws operated before humans existed, operate now regardless of human thought, and would continue to operate in the absence of any observers. This view aligns with Wheeler's "it from bit" hypothesis, which posits that physical reality emerges from informational processes (Wheeler 1990).
+The metaphysics of logic has long debated whether logical laws are human constructs or reflections of reality's structure (Tahko 2019). Logic Realism Theory (LRT) takes a definitive position: the 3FLL—identity (A is A), non-contradiction (A cannot be both A and not-A), and excluded middle (A is either A or not-A)—exist as **human mind-independent, ontological operators** that constrain an infinite information space to produce coherent physical actualization. These laws operated before humans existed, operate now regardless of human thought, and would continue to operate in the absence of human minds. This view aligns with Wheeler's "it from bit" hypothesis, which posits that physical reality emerges from informational processes (Wheeler 1990).
 
 In an era where quantum computing manipulates informational states at unprecedented scales (Preskill 2018) and quantum gravity research suggests emergent spacetime (Rovelli 2018), LRT provides a unified framework: logical laws prescribe reality's emergence, much like physical constants govern specific phenomena. This paper presents LRT as a research program, emphasizing its axiomatic foundations, operator-algebraic structure, formal models, explicit derivations, empirical tests, and future directions. It addresses critiques of logical realism as overly abstract (MacFarlane 2018) by outlining methodologies for validation, including quantum simulations and gravity experiments, and by demonstrating that the 3FLL are not arbitrary axioms but necessary conditions for any possible reality.
 
@@ -61,17 +61,17 @@ Physical reality is fundamentally informational, emerging from binary choices an
 
 **Critical Premise: Human Mind-Independence**
 
-The 3FLL are **mind-independent ontological features of reality**, not human constructions or conventions. This means:
+The 3FLL are **human mind-independent ontological features of reality**, not human constructions or conventions. This means:
 
-1. **Pre-Human Existence**: The 3FLL operated for 13.8 billion years before humans evolved. Cosmic processes—star formation, nuclear fusion, gravitational collapse—adhered to logical coherence without any observers (Tahko 2019).
+1. **Pre-Human Existence**: The 3FLL operated for 13.8 billion years before humans evolved. Cosmic processes—star formation, nuclear fusion, gravitational collapse—adhered to logical coherence without human observers (Tahko 2019).
 
-2. **Observer-Independence**: The 3FLL would continue to operate identically if all conscious beings ceased to exist. Physical laws remain consistent not because we think them so, but because logical constraints actualize consistency.
+2. **Human Observer-Independence**: The 3FLL would continue to operate identically if all human minds ceased to exist. Physical laws remain consistent not because humans think them so, but because logical constraints actualize consistency independent of human cognition.
 
 3. **Discovery, Not Invention**: Humans discover the 3FLL through reasoning; we do not create them. Our logical systems (mathematics, formal logic) are epistemic tools that approximate these ontological constraints, similar to how physics equations approximate natural laws.
 
 4. **Pre-Mathematical Status**: L operates ontologically prior to any formal mathematical system, thus avoiding Gödel's incompleteness theorems (which apply only to sufficiently powerful formal systems encoding arithmetic) (Gödel 1931). The 3FLL constrain what mathematics can actualize: paradoxes like Russell's set R = {x | x ∉ x} can be formulated in information space I but cannot actualize in physical reality A due to non-contradiction (Tarski 1944).
 
-This aligns with strong metaphysical logical realism: logical facts obtain objectively, irrespective of observers, minds, or linguistic conventions (Cook 2018). The 3FLL are not "in our heads"—they structure what can physically exist.
+This aligns with strong metaphysical logical realism: logical facts obtain objectively, irrespective of human observers, human minds, or linguistic conventions (Cook 2018). The 3FLL are not "in our heads"—they structure what can physically exist. LRT remains neutral on questions beyond physics, such as whether logical laws themselves derive from or depend upon any ultimate metaphysical ground.
 
 ### 2.4 The Necessity of the 3FLL
 
@@ -132,12 +132,12 @@ With the model/reality distinction clarified, we can now axiomatize LRT:
 
 1. **Axiom of Infinite Space (I)**: I is an unbounded, pre-mathematical informational substrate whose structure is faithfully represented by an infinite-dimensional Hilbert space ℋ. I exists ontologically prior to mathematics, but its internal structure—the relationships between informational possibilities—is isomorphic to the mathematical structure of ℋ.
 
-2. **Axiom of Logical Operators (L)**: L comprises three **mind-independent, ontologically prior, pre-formal constraints** that operated before any observers existed and would continue to operate in their absence. Their operations can be modeled as:
+2. **Axiom of Logical Operators (L)**: L comprises three **human mind-independent, ontologically prior, pre-formal constraints** that operated before humans existed and would continue to operate in the absence of human minds. Their operations can be modeled as:
    - **Id (Identity)**: Enforces self-sameness and persistence of entities across states
    - **NC (Non-Contradiction)**: Excludes simultaneous actualization of incompatible states
    - **EM (Excluded Middle)**: Forces binary resolution of indeterminate states
 
-   These are not human constructions but features of reality itself, discovered through reasoning rather than invented by minds.
+   These are not human constructions but features of reality itself, discovered by humans through reasoning rather than invented by human minds.
 
 3. **Axiom of Actualization (A)**: A = L(I) represents the ontological process by which L's constraints filter I to yield coherent, observable physical reality. The image of ℋ under L's representation yields a subspace 𝒜 ⊂ ℋ modeling actualized states, with reduced entropy and determinate properties, deriving mathematics, geometry, and physical phenomena (e.g., emergent spacetime from entanglement sequences).
 
