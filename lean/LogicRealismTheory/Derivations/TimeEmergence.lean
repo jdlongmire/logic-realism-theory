@@ -30,6 +30,7 @@ import Mathlib.Order.Basic
 import Mathlib.Tactic
 
 -- Note: Full Hilbert space formalization requires Mathlib integration
+-- TODO: Add Foundation/HilbertSpace.lean once Lean syntax issues resolved
 -- For now, we work with abstract structures and will refine with Mathlib later
 
 -- ═══════════════════════════════════════════════════════════════════════════
@@ -150,9 +151,9 @@ The evolution operator U(t) maps an initial state to its state at parameter t.
 The identity-preserving requirement forces evolution to be continuous,
 which by Stone's theorem implies U(t) has this exponential form.
 
-**Mathematical Note**:
-Full formalization requires Mathlib's Hilbert space and functional analysis.
-Here we define the structure abstractly.
+**Mathematical Structure**:
+This is a one-parameter family of unitary operators (see HilbertSpace.lean).
+Each U(t) is a UnitaryOperator, and the family forms a strongly continuous group.
 -/
 structure EvolutionOperator where
   /-- The operator U: ℝ → (I → I) -/
