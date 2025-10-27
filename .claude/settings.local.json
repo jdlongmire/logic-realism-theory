@@ -3,7 +3,13 @@
     "allow": [
       "Bash(git rm:*)",
       "Bash($env:PYTHONIOENCODING=\"utf-8\")",
-      "Bash(tee:*)"
+      "Bash(tee:*)",
+      "Bash(for nb in 02_Time_Emergence.ipynb 03_Energy_Derivation.ipynb 04_Russell_Paradox_Filtering.ipynb)",
+      "Bash(do echo \"=== Testing $nb ===\")",
+      "Bash(for file in Foundation/*.lean Operators/*.lean Derivations/*.lean)",
+      "Bash(do echo \"$file:\")",
+      "Bash(timeout 60 lake build:*)",
+      "Bash(timeout 90 lake build:*)"
     ],
     "deny": [],
     "ask": []
