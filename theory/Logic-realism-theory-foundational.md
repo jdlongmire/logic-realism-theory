@@ -1,9 +1,13 @@
 # Logic Realism Theory: A Research Program for Ontological Logic in Informational Reality
 
 **James D. (JD) Longmire**
+
 Northrop Grumman Fellow (unaffiliated research)
+
 Email: longmire.jd@gmail.com
+
 ORCID: 0009-0009-1383-7698
+
 Repository: https://github.com/jdlongmire/logic-realism-theory
 
 ## Abstract
