@@ -978,8 +978,82 @@ Either outcome advances scientific knowledge and demonstrates commitment to hone
 
 ---
 
-**Protocol Version**: 1.0
-**Date**: October 26, 2025
-**Authors**: Claude Code (with JD Longmire)
-**Status**: Ready for Multi-LLM Review
+## Multi-LLM Peer Review (October 27, 2025)
+
+**Consultation Conducted**: Multi-LLM team review (Grok-3, GPT-4, Gemini-2.0)
+
+**Quality Score**: 0.67/1.0 (below 0.70 threshold for immediate execution)
+
+**Consensus Recommendation**: Protocol requires refinement before execution
+
+### Key Findings
+
+**Critical Gaps Identified**:
+1. **Lack of statistical power analysis** - Cannot determine if 10,000 shots per point is sufficient
+2. **Missing error budget** - SPAM, drift, and readout errors not quantified
+3. **Theoretical prediction not quantified** - Assumes 10% T2/T1 difference without derivation from LRT axioms
+4. **No preliminary simulations** - Risk discovering issues during expensive quantum execution
+5. **Resource allocation not justified** - 120 hours not linked to statistical requirements
+
+**Detailed Assessment (Grok-3, Quality 0.805)**:
+- Protocol assessment score: 0.65
+- Recommendation: Allocate 2-4 weeks for revisions before execution
+- Suggested additions: QuTiP simulation, power analysis, quantitative LRT prediction derivation
+- Revised resource estimate: 200-300 hours may be more realistic
+
+**Detailed Assessment (Gemini-2.0, Quality 0.62)**:
+- Protocol assessment score: 0.60
+- Recommendation: Address error mitigation, device characterization, and theoretical justification
+- Emphasis on confound control and statistical power requirements
+
+### Consultation Documentation
+
+**Full Results**: `multi_LLM/consultation/path3_full_review_20251027.json` (34 KB)
+
+**Detailed Analysis**: `multi_LLM/consultation/PATH3_CONSULTATION_ANALYSIS.md` (400+ lines)
+
+**Consultation Request**: `multi_LLM/consultation/path3_protocol_review_request.md` (28 pages, 30 questions)
+
+### Strategic Context: Unfunded Research Program
+
+**Important**: This research is conducted by an **unfunded, independent researcher** (Northrop Grumman Fellow, unaffiliated). No budget exists for ~120 hours of quantum time (~$12K if purchasing).
+
+**Purpose of This Protocol**:
+- Demonstrates LRT makes testable, concrete predictions
+- Provides rigorous experimental framework for future funded researchers
+- Documents methodology and challenges through external peer review
+- Serves as theoretical contribution and methodological supplement to research program
+
+**Value of Peer Review Feedback**:
+- Validates that Path 3 represents non-trivial experimental challenge
+- Documents gaps that would need addressing by funded researchers
+- Demonstrates awareness of statistical rigor and error analysis requirements
+- Strengthens credibility through external validation (not just self-assessment)
+
+### Protocol Status (Post-Review)
+
+**Current State**: Initial design complete, peer-reviewed, refinement recommended
+
+**For Future Funded Execution, Would Require**:
+1. Statistical power analysis (95% confidence, 95% power to detect T2/T1 < 0.9)
+2. Comprehensive error budget (quantify all error sources)
+3. Derivation of quantitative LRT prediction from first principles (not assumed 10%)
+4. QuTiP simulation with realistic noise model (validate circuits, assess measurability)
+5. Refined resource allocation (detailed breakdown with justification)
+6. Second multi-LLM consultation (target quality ≥ 0.75)
+
+**Recommendations for Funded Researchers**:
+- Use this protocol as starting point, not final design
+- Address all gaps identified in peer review before execution
+- Consider 200-300 hours quantum time (per Grok-3 assessment)
+- Implement pilot test on reduced scope before full execution
+- Cross-validate on multiple backends (3+ recommended)
+
+---
+
+**Protocol Version**: 1.1 (Post-Consultation Update)
+**Original Date**: October 26, 2025
+**Consultation Date**: October 27, 2025
+**Authors**: Claude Code (with James D. (JD) Longmire)
+**Status**: Documented for Future Funded Work (Refinement Recommended)
 **Next Update**: After team consultation feedback

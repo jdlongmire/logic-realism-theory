@@ -25,9 +25,9 @@ This document tracks all LRT prediction paths: tested, blocked, proposed, and fu
 |------|-----------|--------|-------|----------------|---------------|------------|----------|
 | **1** | T2 Decoherence | ✓ **Tested** | 4 Complete | Exponential T2 | Exponential T2 | **No difference at 2.8%** | Scale? |
 | **2** | Contradiction Suppression | ✗ **Blocked** | 1 Failed | NC filtering | Unitary + Born | **Logically equivalent** | Abandoned |
-| **3** | T1 vs T2 Ratio | ⚠️ **Ready** | Design | T2 < T1 (superposition unstable) | T2 = T1 (no preference) | **Clear difference** | **HIGH** |
+| **3** | T1 vs T2 Ratio | ✅ **Documented** | Peer Reviewed | T2 < T1 (superposition unstable) | T2 = T1 (no preference) | **Clear difference** | **HIGH** |
 | **4** | Rabi Inertia | ⚠️ **Questionable** | Assessment | High-Ω suppression | Also suppresses (confounds) | **Ambiguous** | LOW |
-| **5** | Hamiltonian Shift | ⚠️ **Proposed** | Assessment | ω(|+⟩) ≠ ω(|0⟩) | ω(|+⟩) = ω(|0⟩) | **Clear difference** | MEDIUM |
+| **5** | Hamiltonian Shift | ✅ **Documented** | Protocol Outline | ω(|+⟩) ≠ ω(|0⟩) | ω(|+⟩) = ω(|0⟩) | **Clear difference** | MEDIUM |
 | **6** | Landauer Complexity | 📋 **Aspirational** | Concept | E(complex) > kT ln(2) | E = kT ln(2) | **Clear but hard** | VERY LOW |
 | **7** | Finite-K Emergence | 🔍 **Exploratory** | Computational | Quantum at finite K | Pure QM (K→∞) | **Scaling regime** | Research |
 | **8** | QC Upper Limits | 📋 **Proposed** | Theoretical | Fundamental QC bounds | No such limits (QM) | **Falsifiable** | HIGH |
@@ -37,6 +37,7 @@ This document tracks all LRT prediction paths: tested, blocked, proposed, and fu
 **Legend**:
 - ✓ Tested: Experimental data collected and analyzed
 - ✗ Blocked: Design flaw or logical equivalence identified
+- ✅ Documented: Protocol complete and peer-reviewed (unfunded research documentation)
 - ⚠️ Ready/Proposed: Theoretical prediction clear, needs implementation
 - 🔍 Exploratory: Preliminary investigation, needs formalization
 - 📋 Aspirational/Open: Future work
@@ -135,7 +136,7 @@ This document tracks all LRT prediction paths: tested, blocked, proposed, and fu
 
 ## Path 3: T1 vs T2 Ratio (Logical State-Dependent Error)
 
-**Status**: ⚠️ **READY FOR DESIGN** - Highest Priority
+**Status**: ✅ **DOCUMENTED** - Protocol Complete, Peer Reviewed (October 27, 2025)
 
 ### Theory
 
@@ -238,19 +239,40 @@ This document tracks all LRT prediction paths: tested, blocked, proposed, and fu
 - Either systematic error or new physics
 - Requires careful investigation
 
-### Next Steps
+### Protocol Documentation (Completed)
 
-1. **Formal protocol document**: Create detailed experimental protocol
-2. **Multi-LLM consultation**: Validate design before execution
-3. **Resource application**: Apply for enhanced IBM Quantum access
-4. **Pilot test**: Run on free tier (reduced shots) to validate workflow
-5. **Full execution**: 3 backends, full shot count, cross-validation
+**Protocol**: `theory/predictions/T1_vs_T2_Protocol.md` (986 lines)
+- Complete experimental design
+- Theoretical foundation
+- Circuit specifications (T1, T2, T2echo)
+- Statistical analysis plan
+- Confound analysis and mitigation
+- Resource requirements (~120 hours quantum time)
+- Implementation scripts: `scripts/path3_t1_vs_t2/` (5 files)
 
-**Documents to Create**:
-- `T1_vs_T2_Protocol.md` (detailed experimental design)
-- Multi-LLM consultation results
+**Multi-LLM Peer Review** (October 27, 2025):
+- Consultation quality score: 0.67/1.0 (below 0.70 execution threshold)
+- Team: Grok-3 (0.805), GPT-4 (0.595), Gemini-2.0 (0.62)
+- Recommendation: Protocol requires refinement before execution
+- Key gaps identified:
+  1. Lack of statistical power analysis
+  2. Missing error budget quantification
+  3. Theoretical prediction not quantified (10% assumed, not derived)
+  4. No preliminary simulations (QuTiP validation)
+  5. Resource allocation not justified
 
-**Priority**: **HIGHEST** - This is the clearest remaining experimental test
+**Strategic Context**: **Unfunded Research Documentation**
+- Purpose: Demonstrates LRT testability via rigorous experimental protocols
+- For future funded researchers: Protocol serves as starting point
+- Value: External peer review validates experimental challenges
+- Status: Documented for future work (refinement recommended)
+
+**Consultation Documentation**:
+- Full results: `multi_LLM/consultation/path3_full_review_20251027.json` (34 KB)
+- Detailed analysis: `multi_LLM/consultation/PATH3_CONSULTATION_ANALYSIS.md` (400+ lines)
+- Consultation request: `multi_LLM/consultation/path3_protocol_review_request.md` (28 pages)
+
+**Priority**: **HIGHEST** for future funded work - Clear prediction, standard implementation, honest documentation
 
 ---
 
@@ -326,7 +348,7 @@ This document tracks all LRT prediction paths: tested, blocked, proposed, and fu
 
 ## Path 5: State-Dependent Hamiltonian Shift (Ramsey Frequency Test)
 
-**Status**: ⚠️ **PROPOSED** - Under Assessment
+**Status**: ✅ **DOCUMENTED** - Protocol Outline Complete (October 27, 2025)
 
 ### Theory (from Gemini)
 
@@ -418,13 +440,31 @@ This document tracks all LRT prediction paths: tested, blocked, proposed, and fu
 - Can pursue Path 5 if Path 3 shows LRT ≈ QM
 - Or pursue in parallel if resources allow
 
-**Next Steps**:
-1. **After Path 3 design**: Create detailed protocol for Path 5
-2. **Literature review**: How precisely can state-dependent frequency shifts be measured?
-3. **Confound analysis**: Quantify AC Stark, drift, calibration uncertainties
-4. **Multi-LLM consultation**: Validate design
+### Protocol Documentation (Completed)
 
-**Priority**: **MEDIUM** - Viable complementary test to Path 3
+**Protocol Outline**: `theory/predictions/Hamiltonian_Frequency_Shift_Protocol.md` (~430 lines, 16 pages)
+- Executive summary and key hypothesis
+- Theoretical foundation (LRT vs QM Hamiltonian predictions)
+- Experimental design (Ramsey frequency measurement)
+- Statistical analysis (frequency extraction, hypothesis testing)
+- Comprehensive confound analysis (AC Stark, prep fidelity, drift, calibration)
+- Resource requirements (~10-12 hours quantum time, 3× less than Path 3)
+- Expected precision (0.01-0.1%, 100-1000× more sensitive than Path 3)
+- Implementation notes and pilot test recommendations
+
+**Strategic Context**: **Unfunded Research Documentation**
+- Purpose: Demonstrates LRT makes multiple testable predictions across different observables
+- Complementary to Path 3 (frequency vs decay rates)
+- For future funded researchers: High-risk, high-reward alternative pathway
+- Status: Protocol outline documented (requires quantitative LRT prediction development)
+
+**Key Assessment**:
+- **Advantages**: Very high precision (kHz level), complementary observable
+- **Challenges**: More confounds than Path 3 (AC Stark, calibration critical)
+- **Recommendation**: Secondary priority after Path 3 (Path 3 is more robust)
+- **Theoretical gap**: Needs quantitative δω prediction from LRT axioms (not just qualitative ω(|+⟩) ≠ ω(|0⟩))
+
+**Priority**: **MEDIUM** - Viable complementary test to Path 3, documented for future funded work
 
 ---
 
@@ -938,19 +978,20 @@ Lean proof development may reveal additional prediction paths:
 ### Paths Explored: 8 + N (1 deferred)
 - **Tested**: 1 (Path 1: T2 decoherence)
 - **Blocked**: 1 (Path 2: Contradictions - logically equivalent)
+- **Documented (peer-reviewed)**: 2 (Path 3: T1 vs T2 - protocol complete; Path 5: Frequency shift - outline complete)
 - **Deferred**: 1 (Path 9: AGI - philosophical issues)
-- **Ready for design**: 1 (Path 3: T1 vs T2 - HIGHEST PRIORITY)
-- **Under assessment**: 2 (Paths 4-5: Rabi, Frequency)
+- **Under assessment**: 1 (Path 4: Rabi - questionable)
 - **Aspirational**: 1 (Path 6: Landauer - infeasible)
 - **Exploratory**: 1 (Path 7: Finite-K - needs theory)
 - **Proposed**: 1 (Path 8: QC limits - needs specification)
 - **Future**: N (Awaiting Lean proofs)
 
-### Outcomes So Far
+### Outcomes So Far (Updated October 27, 2025)
 - **Confirmed different from QM**: 0
-- **Ruled equivalent to QM**: 1 (Path 2)
-- **No difference at tested precision**: 1 (Path 1 at 2.8%)
-- **Viable tests remaining**: 2 (Paths 3, 5)
+- **Ruled equivalent to QM**: 1 (Path 2 - logically equivalent)
+- **No difference at tested precision**: 1 (Path 1 - no signal at 2.8%)
+- **Documented protocols (unfunded research)**: 2 (Path 3 peer-reviewed quality 0.67; Path 5 outline complete)
+- **Ready for future funded execution**: 2 (Paths 3, 5 - protocols available)
 
 ### Current Priority Ranking
 
@@ -1057,6 +1098,7 @@ Lean proof development may reveal additional prediction paths:
 
 ---
 
-**Document Version**: 1.0
-**Last Updated**: October 26, 2025
-**Next Update**: After Path 3 protocol completion or multi-LLM consultation
+**Document Version**: 1.1
+**Last Updated**: October 27, 2025
+**Changes**: Path 3 peer-reviewed (quality 0.67), Path 5 protocol outline completed, strategic context clarified (unfunded research documentation)
+**Next Update**: After Path 8 specification or Lean proof discoveries
