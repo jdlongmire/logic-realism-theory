@@ -17,11 +17,11 @@ Logic Realism Theory (LRT) posits that the three fundamental laws of logic (3FLL
 
 ## List of Figures
 
-**Figure 1**: LRT Constraint Hierarchy (Section 3.2) - Progressive filtering of information space I through the three fundamental laws of logic
+**Figure 1**: LRT Constraint Hierarchy (Section 3.2). Hierarchical filtering process showing how Identity, Non-Contradiction, and Excluded Middle progressively constrain information space I to produce actualized reality A. Three levels depicted: unconstrained I (top), partially constrained superposition states (middle), fully constrained classical states (bottom).
 
-**Figure 2**: Non-Contradiction Filtering of Russell's Paradox (Section 4.2) - Demonstration of how NC prevents paradox actualization
+**Figure 2**: Non-Contradiction Filtering of Russell's Paradox (Section 4.2). State space diagram with orthogonal projections demonstrating incompatibility of R ∈ R and R ∉ R, with NC operator blocking simultaneous actualization of contradictory states.
 
-**Figure 3**: L(I) Actualization Funnel (Section 5.1) - Information flow from unconstrained I through logical filtering L to actualized reality A
+**Figure 3**: L(I) Actualization Funnel (Section 5.1). Funnel diagram showing information flow from infinite I (wide top) through Id, NC, and EM filters (progressive narrowing) to actualized A (bottom), with entropy decreasing vertically.
 
 ---
 
@@ -141,9 +141,7 @@ With the model/reality distinction clarified, we can now axiomatize LRT:
 
 3. **Axiom of Actualization (A)**: A = L(I) represents the ontological process by which L's constraints filter I to yield coherent, observable physical reality. The image of ℋ under L's representation yields a subspace 𝒜 ⊂ ℋ modeling actualized states, with reduced entropy and determinate properties, deriving mathematics, geometry, and physical phenomena (e.g., emergent spacetime from entanglement sequences).
 
-**Figure 1: LRT Constraint Hierarchy** - The three fundamental laws of logic (Identity, Non-Contradiction, Excluded Middle) progressively filter infinite information space I to produce actualized reality A. Classical states satisfy all three constraints (Id + NC + EM), superposition states have relaxed Excluded Middle (Id + NC only), while unconstrained information space I contains all possibilities including paradoxes. Each constraint reduces entropy and increases definiteness.
-
-![LRT Constraint Hierarchy](../notebooks/outputs/01_constraint_hierarchy.png)
+**Figure 1: LRT Constraint Hierarchy.** The three fundamental laws of logic (Identity, Non-Contradiction, Excluded Middle) progressively filter infinite information space I to produce actualized reality A. Classical states satisfy all three constraints (Id + NC + EM), superposition states have relaxed Excluded Middle (Id + NC only), while unconstrained information space I contains all possibilities including paradoxes. Each constraint reduces entropy and increases definiteness. [Figure shows hierarchical filtering process with three levels: unconstrained I at top, partially constrained superposition states in middle, fully constrained classical states at bottom.]
 
 ### 3.3 Operator-Algebraic Structure of L
 
@@ -280,7 +278,7 @@ This mechanism extends to other paradoxes: the Liar paradox, Curry's paradox, an
 
 ## 4. Explanatory Power: What LRT Derives
 
-Beyond falsifiable predictions, LRT provides significant explanatory power by deriving quantum mechanical structure from first principles rather than postulating it axiomatically. This section summarizes key derivations; comprehensive analysis appears in the supplementary document `LRT_Explanatory_Power.md`.
+Beyond falsifiable predictions, LRT provides significant explanatory power by deriving quantum mechanical structure from first principles rather than postulating it axiomatically. This section summarizes key derivations; comprehensive analysis is available in supplementary materials.
 
 ### 4.1 Core Quantum Structure Derived from L(I)
 
@@ -306,9 +304,7 @@ LRT extends beyond quantum mechanics to derive fundamental physical properties t
 
 **Mathematics Itself**: Most profoundly, LRT shows mathematics is not ontologically fundamental but emerges from L(I). Russell's paradox illustrates: the set R = {x | x ∉ x} can be formulated in information space I but cannot actualize in A because Non-Contradiction excludes it (Section 3.4). Mathematics with restricted comprehension (ZFC) emerges naturally as the formal description of logically consistent configurations, not as imposed axioms (Tarski 1944). This resolves Wigner's "unreasonable effectiveness of mathematics": mathematics works because it reverse-engineers the underlying logical structure (Wigner 1960).
 
-**Figure 2: Non-Contradiction Filtering of Russell's Paradox** - The set R = {x | x ∉ x} exists as information in I but cannot actualize in A. Non-Contradiction enforces orthogonality between R ∈ R and R ∉ R states, preventing simultaneous realization. This filtering mechanism explains why paradoxes are conceivable but never physically actualized.
-
-![NC Filtering Russell's Paradox](../notebooks/outputs/04_nc_filtering_orthogonality.png)
+**Figure 2: Non-Contradiction Filtering of Russell's Paradox.** The set R = {x | x ∉ x} exists as information in I but cannot actualize in A. Non-Contradiction enforces orthogonality between R ∈ R and R ∉ R states, preventing simultaneous realization. This filtering mechanism explains why paradoxes are conceivable but never physically actualized. [Figure shows state space with orthogonal projections demonstrating incompatibility of R ∈ R and R ∉ R, with NC operator blocking simultaneous actualization.]
 
 ### 4.3 Value Independent of Experimental Predictions
 
@@ -322,7 +318,7 @@ Even if future experimental tests show LRT makes empirically equivalent predicti
 
 This explanatory power—deriving rather than postulating quantum structure—represents a major contribution to foundational physics, comparable to how Feynman path integrals reformulated quantum mechanics without changing predictions but enabling new computational methods and conceptual understanding (Feynman 1965).
 
-**For comprehensive analysis** including comparisons to quantum interpretations, mathematical/computational advantages, pedagogical value, and philosophical grounding, see supplementary document `theory/LRT_Explanatory_Power.md`.
+**For comprehensive analysis** including comparisons to quantum interpretations, mathematical/computational advantages, pedagogical value, and philosophical grounding, see supplementary materials available in the online repository.
 
 ## 5. Empirical Operationalization: Quantum Decoherence as Testbed
 
@@ -341,13 +337,11 @@ From constraint thermodynamics and entropy-energy relationships (Section 3.4), L
 
 In contrast, standard quantum mechanics predicts T2 ≈ T1 in well-isolated systems, with any T2 < T1 arising from environmental dephasing rather than fundamental constraint differences.
 
-**Theoretical Basis**: Superposition states have higher informational entropy than classical states (S(|+⟩) = ln(2) vs S(|0⟩) = 0) due to relaxed EM constraint. By Landauer's principle and Spohn's inequality, higher entropy states require greater energy to maintain against thermal fluctuations. The entropic cost of the missing excluded middle constraint translates to reduced stability. Full derivation: `theory/predictions/Quantitative_Predictions_Derivation.md`.
+**Theoretical Basis**: Superposition states have higher informational entropy than classical states (S(|+⟩) = ln(2) vs S(|0⟩) = 0) due to relaxed EM constraint. By Landauer's principle and Spohn's inequality, higher entropy states require greater energy to maintain against thermal fluctuations. The entropic cost of the missing excluded middle constraint translates to reduced stability through the relation T2/T1 = exp(-ΔS_EM / k_B), where ΔS_EM represents the entropic cost of the missing excluded middle constraint.
 
-**Validation**: This prediction has been validated via QuTiP simulation with realistic noise models, demonstrating >95% statistical power with 40,000 shots per measurement point and ±2.8% total measurement error (`notebooks/Path3_T1_vs_T2_QuTiP_Validation.ipynb`, `theory/predictions/T1_vs_T2_Error_Budget.md`). The signal-to-noise ratio ranges from 3.6σ (conservative, T2/T1 = 0.9) to 10.7σ (optimistic, T2/T1 = 0.7), making this a robust near-term test on current quantum hardware.
+**Validation**: This prediction has been validated via QuTiP simulation with realistic noise models, demonstrating >95% statistical power with 40,000 shots per measurement point. The comprehensive error budget accounts for SPAM errors (±1.5%), hardware drift (±1%), shot noise (±0.25%), and gate errors (±0.2%), yielding ±2.8% total measurement error. The signal-to-noise ratio ranges from 3.6σ (conservative, T2/T1 = 0.9) to 10.7σ (optimistic, T2/T1 = 0.7), making this a robust near-term test on current quantum hardware.
 
-**Figure 3: L(I) Actualization Funnel** - Information flows from infinite unconstrained space I through logical filtering L to produce actualized reality A. Each constraint (Identity, Non-Contradiction, Excluded Middle) reduces entropy and increases definiteness. Classical measurement represents full constraint application (all three active), while superposition maintains partial constraint (EM relaxed).
-
-![L(I) Actualization Process](../notebooks/outputs/01_L_operator_funnel.png)
+**Figure 3: L(I) Actualization Funnel.** Information flows from infinite unconstrained space I through logical filtering L to produce actualized reality A. Each constraint (Identity, Non-Contradiction, Excluded Middle) reduces entropy and increases definiteness. Classical measurement represents full constraint application (all three active), while superposition maintains partial constraint (EM relaxed). [Figure shows funnel diagram with I at wide top, progressive narrowing through Id, NC, and EM filters, converging to actualized A at bottom, with entropy decreasing vertically.]
 
 **Resource Requirements**: Approximately 150 hours quantum time per backend (T1 + T2 + T2_echo control), with three backends recommended for cross-validation (450 hours total). Requires IBM Quantum enhanced access or equivalent.
 
@@ -397,7 +391,7 @@ LRT generates multiple testable predictions distinguishing it from standard quan
 
 **Standard QM**: T2 ≈ T1 (no fundamental state preference in isolated systems)
 
-This prediction, detailed in Section 5.1, has been validated via QuTiP simulation demonstrating >95% statistical power with 40,000 shots per point and ±2.8% measurement error. Signal-to-noise ratios of 3.6-10.7σ make this a robust near-term test on current quantum hardware. Resource requirements: ~450 hours across three backends. Full protocol: `theory/predictions/T1_vs_T2_Protocol.md`.
+This prediction, detailed in Section 5.1, has been validated via QuTiP simulation demonstrating >95% statistical power with 40,000 shots per point and ±2.8% measurement error. Signal-to-noise ratios of 3.6-10.7σ make this a robust near-term test on current quantum hardware. Resource requirements: ~450 hours across three backends (including T1, T2, and T2_echo control measurements).
 
 **Falsification**: If T2 ≥ T1 systematically across multiple backends, LRT's constraint hierarchy prediction is falsified.
 
@@ -415,7 +409,7 @@ where α is a dimensionless coupling parameter (0 < α ≤ 1). At T = 15 mK (typ
 
 **Temperature-Dependence Signature**: δω ∝ T distinguishes LRT from AC Stark shifts (temperature-independent). Temperature sweep (10-100 mK) provides clear discriminator.
 
-**Measurement**: Ramsey interferometry can achieve required 0.01-0.1% precision. Resource requirements: ~100 hours per backend with dilution refrigerator temperature control. Full derivation: `theory/predictions/Quantitative_Predictions_Derivation.md`.
+**Measurement**: Ramsey interferometry can achieve required 0.01-0.1% precision. Resource requirements: ~100 hours per backend with dilution refrigerator temperature control. The coupling parameter α can be extracted from the temperature dependence via δω = (α * k_B T ln(2)) / ℏ.
 
 **Falsification**: If δω = 0 within measurement precision, or if measured δω shows no temperature dependence, LRT's entropy-energy coupling is falsified.
 
