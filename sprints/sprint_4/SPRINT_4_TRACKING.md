@@ -61,6 +61,66 @@
 
 **Unblocked Tasks**: Task 2.4 (Integrate T2/T1 into paper) now ready to proceed
 
+### October 27, 2025 - Tasks 2.1-2.5 Complete (Paper Revisions)
+
+**Session**: 3.10 (continued from 3.9)
+
+**Activities**:
+- ✅ Task 2.1: Fixed Lean language in Section 9.1 (precision about Classical.em)
+- ✅ Task 2.2: Added Section 2.3.1 - Ontological/epistemic distinction
+- ✅ Task 2.5: Added Section 3.4.1 - Non-unitary evolution resolution (~3,400 words)
+- ✅ Task 2.3: Added Section 5.1.1 - Confound isolation strategies (~2,100 words)
+- ✅ Task 2.4: Added Section 5.1.2 - Quantitative T2/T1 derivation (~1,500 words)
+
+**Paper Additions Total**: ~7,000 words of substantive theoretical content
+
+**Key Revisions**:
+
+1. **Section 2.3.1** (Ontological/Epistemic Tension):
+   - Addresses "pre-mathematical" operation vs mathematical formalism tension
+   - Models vs reality distinction (gravity analogy)
+   - Why Hilbert spaces work without making L a mathematical object
+   - Cross-references Section 3.1 for elaboration
+
+2. **Section 3.4.1** (Unitary and Non-Unitary Evolution Regimes):
+   - Resolves Stone's theorem / measurement non-unitarity contradiction
+   - Two regimes: Fixed K (unitary, Stone applies) vs Changing K (non-unitary, measurement)
+   - Hierarchical Identity constraint (3 levels)
+   - Formal statement with constraint threshold dynamics
+   - Physical interpretation of measurement as actualization
+   - References Lean formalization (NonUnitaryEvolution.lean)
+   - Comparison to standard QM (measurement postulate vs derived)
+
+3. **Section 5.1.1** (Confound Isolation and Control Strategies):
+   - 4 primary confounds identified with discriminators:
+     1. Environmental dephasing: Cross-platform consistency, state-dependence, dynamical decoupling
+     2. Temperature effects: Temperature sweep (10-100 mK)
+     3. Hardware artifacts: Error budget, crosstalk characterization
+     4. Intrinsic T2≈2T1 limit: Target intermediate regime [0.7-0.9]
+   - 3-phase experimental protocol (150h, 450h, 650h options)
+   - Falsification criteria (4 explicit tests)
+   - Alternative explanations with distinct signatures
+   - Confidence levels: 1 discriminator (60%), 2 discriminators (80%), 3 discriminators (95%)
+
+4. **Section 5.1.2** (Quantitative T2/T1 Derivation):
+   - 6-step derivation from first principles:
+     1. ΔS_EM = ln(2) for equal superposition (Shannon entropy)
+     2. Spohn's inequality links ΔS to γ_EM (thermodynamics)
+     3. T2/T1 = 1/(1+η) formula derivation
+     4. η ∈ [0.11, 0.43] constrains target range
+     5. State-dependent T2(α) prediction
+     6. QuTiP simulation validation (1% agreement)
+   - Acknowledges η as phenomenological parameter (first-principles derivation open)
+   - Semi-quantitative assessment with falsifiable mechanism
+
+**Status Assessment**:
+- ✅ All Track 2 paper revision tasks complete
+- ✅ Addresses all 5 critical peer review issues
+- ✅ ~7,000 words of rigorous theoretical content added
+- ⚠️ Track 3 (Team Validation) not yet started
+
+**Unblocked Tasks**: Ready for Track 3 (Multi-LLM review + Response letter)
+
 ### October 27, 2025 - Task 1.2 Complete (Non-Unitary Evolution Resolution)
 
 **Session**: 3.9 (continued from 3.8)
@@ -121,11 +181,11 @@
 
 | Task | Priority | Status | Progress | Notes |
 |------|----------|--------|----------|-------|
-| 2.1 Lean Language Fix | HIGH | Not Started | 0% | Easy win (~1 hour) |
-| 2.2 Ontological/Epistemic | HIGH | Not Started | 0% | Section 2.3.1 |
-| 2.3 Confound Isolation | HIGH | Not Started | 0% | Section 5.1 expansion |
-| 2.4 Integrate T2/T1 | HIGH | Ready | 0% | 1.1 complete, can proceed |
-| 2.5 Integrate Non-Unitary | HIGH | Ready | 0% | 1.2 complete, can proceed |
+| 2.1 Lean Language Fix | HIGH | ✅ Complete | 100% | Section 9.1 precision added |
+| 2.2 Ontological/Epistemic | HIGH | ✅ Complete | 100% | Section 2.3.1 added |
+| 2.3 Confound Isolation | HIGH | ✅ Complete | 100% | Section 5.1.1 added (~2,100 words) |
+| 2.4 Integrate T2/T1 | HIGH | ✅ Complete | 100% | Section 5.1.2 added (~1,500 words) |
+| 2.5 Integrate Non-Unitary | HIGH | ✅ Complete | 100% | Section 3.4.1 added (~3,400 words) |
 
 ### Track 3: Team Validation
 
@@ -144,11 +204,11 @@
 - [ ] `theory/Constraint_Thermodynamics.md`
 
 ### Paper Updates
-- [ ] Section 2.3.1 (new) - Ontological/epistemic distinction
-- [ ] Section 3.4.1 (new) - Non-unitary evolution
-- [ ] Section 5.1 (expanded) - Confound isolation
-- [ ] Section 5.1 (new subsection) - T2/T1 derivation
-- [ ] Section 9.1 (revised) - Lean language
+- [✅] Section 2.3.1 (new) - Ontological/epistemic distinction
+- [✅] Section 3.4.1 (new) - Non-unitary evolution (~3,400 words)
+- [✅] Section 5.1.1 (new) - Confound isolation (~2,100 words)
+- [✅] Section 5.1.2 (new) - T2/T1 derivation (~1,500 words)
+- [✅] Section 9.1 (revised) - Lean language precision
 
 ### Quality Assurance
 - [ ] Multi-LLM consultation (quality ≥ 0.80)
@@ -158,10 +218,11 @@
 
 ## Sprint Metrics
 
-**Completion**: 2/10 deliverables (20%)
-**On Track**: Yes (both critical path items complete)
+**Completion**: 7/10 deliverables (70%)
+**On Track**: Yes (all Track 1 and Track 2 complete)
 **Blockers**: None
-**Risk Level**: Low (both critical derivations complete, paper integration ready)
+**Risk Level**: Very Low (major theoretical work complete, awaiting team validation)
+**Time**: ~8 hours session work (Tasks 1.1, 1.2, 2.1-2.5)
 
 ---
 
