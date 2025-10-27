@@ -21,7 +21,8 @@
       "Bash(git push:*)",
       "Bash(python:*)",
       "Bash(chmod:*)",
-      "Bash(bash:*)"
+      "Bash(bash:*)",
+      "Bash(jupyter nbconvert:*)"
     ],
     "deny": [],
     "ask": []

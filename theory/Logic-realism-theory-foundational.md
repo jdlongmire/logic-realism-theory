@@ -15,6 +15,16 @@ Logic Realism Theory (LRT) posits that the three fundamental laws of logic (3FLL
 
 ---
 
+## List of Figures
+
+**Figure 1**: LRT Constraint Hierarchy (Section 3.2) - Progressive filtering of information space I through the three fundamental laws of logic
+
+**Figure 2**: Non-Contradiction Filtering of Russell's Paradox (Section 4.2) - Demonstration of how NC prevents paradox actualization
+
+**Figure 3**: L(I) Actualization Funnel (Section 5.1) - Information flow from unconstrained I through logical filtering L to actualized reality A
+
+---
+
 ## 1. Introduction
 
 The metaphysics of logic has long debated whether logical laws are human constructs or reflections of reality's structure (Tahko 2019). Logic Realism Theory (LRT) extends this by proposing that the 3FLL—identity (A is A), non-contradiction (A cannot be both A and not-A), and excluded middle (A is either A or not-A)—are ontological operators that constrain an infinite information space to produce coherent physical actualization. This view aligns with Wheeler's "it from bit" hypothesis, which posits that physical reality emerges from informational processes (Wheeler 1990).
@@ -118,6 +128,10 @@ With the model/reality distinction clarified, we can now axiomatize LRT:
    - **EM (Excluded Middle)**: Forces binary resolution of indeterminate states
 
 3. **Axiom of Actualization (A)**: A = L(I) represents the ontological process by which L's constraints filter I to yield coherent, observable physical reality. The image of ℋ under L's representation yields a subspace 𝒜 ⊂ ℋ modeling actualized states, with reduced entropy and determinate properties, deriving mathematics, geometry, and physical phenomena (e.g., emergent spacetime from entanglement sequences).
+
+**Figure 1: LRT Constraint Hierarchy** - The three fundamental laws of logic (Identity, Non-Contradiction, Excluded Middle) progressively filter infinite information space I to produce actualized reality A. Classical states satisfy all three constraints (Id + NC + EM), superposition states have relaxed Excluded Middle (Id + NC only), while unconstrained information space I contains all possibilities including paradoxes. Each constraint reduces entropy and increases definiteness.
+
+![LRT Constraint Hierarchy](../notebooks/outputs/01_constraint_hierarchy.png)
 
 ### 3.3 Operator-Algebraic Structure of L
 
@@ -280,6 +294,10 @@ LRT extends beyond quantum mechanics to derive fundamental physical properties t
 
 **Mathematics Itself**: Most profoundly, LRT shows mathematics is not ontologically fundamental but emerges from L(I). Russell's paradox illustrates: the set R = {x | x ∉ x} can be formulated in information space I but cannot actualize in A because Non-Contradiction excludes it (Section 3.4). Mathematics with restricted comprehension (ZFC) emerges naturally as the formal description of logically consistent configurations, not as imposed axioms (Tarski 1944). This resolves Wigner's "unreasonable effectiveness of mathematics": mathematics works because it reverse-engineers the underlying logical structure (Wigner 1960).
 
+**Figure 2: Non-Contradiction Filtering of Russell's Paradox** - The set R = {x | x ∉ x} exists as information in I but cannot actualize in A. Non-Contradiction enforces orthogonality between R ∈ R and R ∉ R states, preventing simultaneous realization. This filtering mechanism explains why paradoxes are conceivable but never physically actualized.
+
+![NC Filtering Russell's Paradox](../notebooks/outputs/04_nc_filtering_orthogonality.png)
+
 ### 4.3 Value Independent of Experimental Predictions
 
 Even if future experimental tests show LRT makes empirically equivalent predictions to standard QM—like de Broglie-Bohm mechanics or Feynman path integrals—LRT provides independent value through:
@@ -314,6 +332,10 @@ In contrast, standard quantum mechanics predicts T2 ≈ T1 in well-isolated syst
 **Theoretical Basis**: Superposition states have higher informational entropy than classical states (S(|+⟩) = ln(2) vs S(|0⟩) = 0) due to relaxed EM constraint. By Landauer's principle and Spohn's inequality, higher entropy states require greater energy to maintain against thermal fluctuations. The entropic cost of the missing excluded middle constraint translates to reduced stability. Full derivation: `theory/predictions/Quantitative_Predictions_Derivation.md`.
 
 **Validation**: This prediction has been validated via QuTiP simulation with realistic noise models, demonstrating >95% statistical power with 40,000 shots per measurement point and ±2.8% total measurement error (`notebooks/Path3_T1_vs_T2_QuTiP_Validation.ipynb`, `theory/predictions/T1_vs_T2_Error_Budget.md`). The signal-to-noise ratio ranges from 3.6σ (conservative, T2/T1 = 0.9) to 10.7σ (optimistic, T2/T1 = 0.7), making this a robust near-term test on current quantum hardware.
+
+**Figure 3: L(I) Actualization Funnel** - Information flows from infinite unconstrained space I through logical filtering L to produce actualized reality A. Each constraint (Identity, Non-Contradiction, Excluded Middle) reduces entropy and increases definiteness. Classical measurement represents full constraint application (all three active), while superposition maintains partial constraint (EM relaxed).
+
+![L(I) Actualization Process](../notebooks/outputs/01_L_operator_funnel.png)
 
 **Resource Requirements**: Approximately 150 hours quantum time per backend (T1 + T2 + T2_echo control), with three backends recommended for cross-validation (450 hours total). Requires IBM Quantum enhanced access or equivalent.
 
