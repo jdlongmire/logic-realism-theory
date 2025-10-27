@@ -323,15 +323,15 @@ In contrast, standard quantum mechanics predicts T2 ≈ T1 in well-isolated syst
 
 Beyond this primary prediction, quantum computing broadly operationalizes A = L(I): qubits embody I (superpositions), measurements apply L to yield 𝒜 (definite outcomes) (Nielsen and Chuang 2010). In Grover's algorithm, the oracle explores I via amplitude amplification but resolves via EM to a single search result, constrained by NC to avoid paradoxes (Brassard et al. 1997). Recent advancements in error-corrected logical qubits demonstrate NC's role in enforcing code-space constraints (Quantinuum 2025), with the need for active error correction confirming that logical coherence is imposed rather than automatic (Preskill 2018).
 
-## 5. LRT as a Research Program
+## 6. LRT as a Research Program
 
 LRT is presented as a research program, following Lakatos's methodology: a hard core of axioms (L and I's status), protective belt of hypotheses (derivations like energy, spacetime), and progressive problemshifts (new predictions) (Lakatos 1978).
 
-### 5.1 Hard Core and Protective Belt
+### 6.1 Hard Core and Protective Belt
 
 The hard core includes the 3FLL as pre-physical, necessary constraints and I as informational substrate. The protective belt encompasses derivations (e.g., mathematics from L(I), gravity as emergent). This structure allows empirical testing while protecting the core.
 
-### 5.2 Methodologies for Inquiry
+### 6.2 Methodologies for Inquiry
 
 - **Theoretical**: Use category theory and quantum information models to derive new predictions (e.g., logical constraints in quantum gravity) (Mac Lane 1998).
 
@@ -341,7 +341,7 @@ The hard core includes the 3FLL as pre-physical, necessary constraints and I as 
 
 - **Interdisciplinary**: Collaborate with philosophers on logical realism (Tahko 2019) and physicists on information-based models (Vedral 2010).
 
-### 5.3 Open Questions and Directions
+### 6.3 Open Questions and Directions
 
 **Theoretical Directions**
 - How does L(I) derive consciousness or cosmological features?
@@ -355,19 +355,51 @@ The hard core includes the 3FLL as pre-physical, necessary constraints and I as 
 
 **Novel Predictions**
 
-**1. Information Dominance at Planck Scale**
+LRT generates multiple testable predictions distinguishing it from standard quantum mechanics and alternative information-based frameworks. These predictions span quantum decoherence, state-dependent energetics, cosmology, and quantum computing limits.
+
+**1. T1 vs T2 Decoherence Ratio (Path 3 - PRIMARY NEAR-TERM TEST)**
+
+**LRT Prediction**: T2/T1 ≈ 0.7-0.9 (superposition states decohere 10-30% faster than classical states)
+
+**Standard QM**: T2 ≈ T1 (no fundamental state preference in isolated systems)
+
+This prediction, detailed in Section 5.1, has been validated via QuTiP simulation demonstrating >95% statistical power with 40,000 shots per point and ±2.8% measurement error. Signal-to-noise ratios of 3.6-10.7σ make this a robust near-term test on current quantum hardware. Resource requirements: ~450 hours across three backends. Full protocol: `theory/predictions/T1_vs_T2_Protocol.md`.
+
+**Falsification**: If T2 ≥ T1 systematically across multiple backends, LRT's constraint hierarchy prediction is falsified.
+
+**2. State-Dependent Hamiltonian Frequency Shift (Path 5 - SECONDARY TEST)**
+
+**LRT Prediction**: ω(|+⟩) ≠ ω(|0⟩) with δω/ω ≈ 10⁻⁴ - 10⁻³ (frequency shift from logical status)
+
+**Standard QM**: ω(|+⟩) = ω(|0⟩) (energy independent of logical state)
+
+In LRT, the Hamiltonian emerges from Identity constraints (Section 3.4, Stone's theorem). Superposition states with relaxed Excluded Middle have higher informational entropy, coupling to energy via Spohn's inequality. This manifests as a measurable frequency shift:
+
+δω = (α * k_B T ln(2)) / ℏ
+
+where α is a dimensionless coupling parameter (0 < α ≤ 1). At T = 15 mK (typical superconducting qubit): δω ≈ 0.2-20 MHz, δω/ω ≈ 10⁻⁵ - 10⁻³.
+
+**Temperature-Dependence Signature**: δω ∝ T distinguishes LRT from AC Stark shifts (temperature-independent). Temperature sweep (10-100 mK) provides clear discriminator.
+
+**Measurement**: Ramsey interferometry can achieve required 0.01-0.1% precision. Resource requirements: ~100 hours per backend with dilution refrigerator temperature control. Full derivation: `theory/predictions/Quantitative_Predictions_Derivation.md`.
+
+**Falsification**: If δω = 0 within measurement precision, or if measured δω shows no temperature dependence, LRT's entropy-energy coupling is falsified.
+
+**3. Information Dominance at Planck Scale**
 
 LRT predicts that at the Planck scale, information-theoretic constraints (L) govern physics more fundamentally than energy constraints. This differs from approaches where energy density determines Planck-scale behavior.
 
-**2. No Actualized Contradictions at Any Energy Scale**
+**4. No Actualized Contradictions at Any Energy Scale**
 
 Unlike frameworks that might allow exotic states at extreme energies, LRT predicts that NC forbids actualized contradictions regardless of energy scale. If reproducible contradiction (not superposition, not measurement error) appears at LHC energies or in quantum computers, LRT is falsified.
 
-**3. Constraint-Based Cosmology**
+**5. Constraint-Based Cosmology**
 
 Early universe conditions should show minimal constraint (high entropy, maximal I), with increasing constraint over time producing structure. This predicts specific patterns in cosmic microwave background that differ from inflation-only models.
 
-**4. Entropy-Conditioned Scaling in Quantum Error Correction**
+**6. Entropy-Conditioned Scaling in Quantum Error Correction (Alternative Test)**
+
+**Note**: This represents an alternative testing approach to Paths 3 and 5. While scientifically interesting, it requires more complex experimental control and interpretation.
 
 ---
 
@@ -481,7 +513,7 @@ As a research program, LRT makes progress if it:
 2. Successfully derives phenomena other frameworks assume (time, energy, mathematics)
 3. Resolves existing paradoxes (Russell's, information paradox) through constraint mechanisms
 
-## 6. Falsifiability and Anticipated Objections
+## 7. Falsifiability and Anticipated Objections
 
 LRT is falsifiable on two fronts:
 
@@ -491,7 +523,7 @@ LRT is falsifiable on two fronts:
 
 No violations observed to date affirm LRT's viability (Tahko 2019). The consistency of physical laws with the 3FLL and the success of information-theoretic approaches in quantum mechanics and gravity research support the framework.
 
-### 6.1 Pre-Empting Philosophical Objections
+### 7.1 Pre-Empting Philosophical Objections
 
 **Objection 1: Paraconsistency and Dialetheia**
 
@@ -530,11 +562,11 @@ LRT's response is strengthened by the entropy-error correlation prediction (β �
 
 This is testable because decoherence and constraint relaxation make different predictions about error rates in controlled entropy-manipulation experiments.
 
-## 7. LRT in Context: Comparative Analysis
+## 8. LRT in Context: Comparative Analysis
 
 To clarify LRT's distinctive ontological commitments, this section contrasts it with three prominent information-based or logic-centered frameworks: Tegmark's Mathematical Universe Hypothesis (MUH), pancomputationalism, and logical-structural realism.
 
-### 7.1 LRT vs. Tegmark's Mathematical Universe Hypothesis
+### 8.1 LRT vs. Tegmark's Mathematical Universe Hypothesis
 
 **Tegmark's MUH** proposes that physical reality *is* a mathematical structure—that the universe doesn't just admit mathematical description but literally is mathematics (Tegmark 2008). Every mathematically consistent structure exists in the ensemble of all possible universes.
 
@@ -545,7 +577,7 @@ To clarify LRT's distinctive ontological commitments, this section contrasts it 
 
 **Empirical Distinction**: MUH implies all mathematical structures exist equally; our universe's specific laws are anthropically selected. LRT predicts unique constraint signatures (like the entropy-error correlation in quantum computing with β ≠ 0) that follow from L's specific operations, not from arbitrary mathematical structure selection.
 
-### 7.2 LRT vs. Pancomputationalism
+### 8.2 LRT vs. Pancomputationalism
 
 **Pancomputationalism** (exemplified by Wolfram's computational universe and Lloyd's quantum computational universe) holds that physical processes are computations, with the universe operating as a computational system executing algorithms (Wolfram 2002; Lloyd 2006).
 
@@ -567,7 +599,7 @@ LRT's constraints imply:
 
 **Methodological Difference**: Wolfram seeks fundamental computational rules (cellular automaton-like). LRT seeks fundamental constraints (logical operators). One asks "what rules?"; the other asks "what constraints?"
 
-### 7.3 LRT vs. Logical-Structural Realism
+### 8.3 LRT vs. Logical-Structural Realism
 
 **Logical-structural realism** (ontic structural realism with emphasis on logical structure) holds that reality's fundamental nature is structural, with objects being nodes in structural relations, and logic describing these structural relationships (Ladyman and Ross 2007; French 2014).
 
@@ -587,7 +619,7 @@ LRT emphasizes:
 
 **Empirical Distinction**: Structural realism struggles to explain why particular structures obtain rather than others—it's descriptive rather than explanatory. LRT derives structure from constraint necessity: the structures in 𝒜 are those satisfying L's constraints. This generates predictions about impossible structures (paradoxes cannot actualize) and necessary structures (3FLL-compliant mathematics must emerge).
 
-### 7.4 Summary of Distinctions and Discriminators
+### 8.4 Summary of Distinctions and Discriminators
 
 | Framework | Ontological Primitive | Role of Logic | Physics Emerges From | Distinct Empirical Signal |
 |-----------|----------------------|---------------|---------------------|---------------------------|
@@ -606,15 +638,15 @@ The entropy-error correlation is the key empirical discriminator. Neither MUH, p
 
 These distinctions position LRT as neither pure mathematical realism (Tegmark), computational realism (Wolfram/Lloyd), nor structural realism (Ladyman/French), but as a constraint-based informational realism where logical operators play an active, prescriptive ontological role.
 
-## 8. Conclusion
+## 9. Conclusion
 
 LRT reframes logic as prescriptive ontology, with A = L(I) unifying metaphysical realism and informational physics as a research program. By demonstrating that the 3FLL are necessary conditions for being, information, and determinacy, the theory elevates logical realism from philosophical speculation to foundational necessity. The explicit derivation of time via Stone's theorem (linking identity constraints to continuous unitary evolution) and energy via Spohn's inequality (linking constraint application to entropy production) shows that fundamental physical phenomena emerge from logical operations on information rather than being assumed as brute facts.
 
-The operator-algebraic formulation (Π_id, {Π_i}, R) provides mathematical precision while maintaining the model/reality distinction that preserves LRT's metaphysical realism. The explicit mechanism for filtering paradoxes (Russell's) via NC's incompatibility projectors and the taxonomic clarification of quantum superposition as partial constraint strengthen the framework's explanatory power. The comparative analysis (Section 7) distinguishes LRT from alternative information-based ontologies, positioning it uniquely as constraint-based informational realism where logical operators actualize rather than describe, compute, or select.
+The operator-algebraic formulation (Π_id, {Π_i}, R) provides mathematical precision while maintaining the model/reality distinction that preserves LRT's metaphysical realism. The explicit mechanism for filtering paradoxes (Russell's) via NC's incompatibility projectors and the taxonomic clarification of quantum superposition as partial constraint strengthen the framework's explanatory power. The comparative analysis (Section 8) distinguishes LRT from alternative information-based ontologies, positioning it uniquely as constraint-based informational realism where logical operators actualize rather than describe, compute, or select.
 
-Future inquiries in quantum computing and gravity will refine LRT, particularly through the entropy-conditioned error scaling prediction (β ≠ 0), which offers near-term empirical validation using current quantum hardware across multiple device types and code distances. This device-independent signature provides concrete falsification criteria that distinguish LRT from decoherence-only frameworks and alternative information-based ontologies.
+Near-term experimental validation focuses on the T1 vs T2 decoherence comparison (Path 3), which predicts T2/T1 ≈ 0.7-0.9 due to superposition states' relaxed Excluded Middle constraint. QuTiP simulation validation and comprehensive error budget analysis demonstrate >95% statistical power with ~450 hours of quantum time across three backends (Section 5.1). This provides a robust, device-independent signature distinguishing LRT from standard quantum mechanics, with expected signal-to-noise ratios of 3.6-10.7σ. Additional near-term tests include state-dependent Hamiltonian frequency shifts (Path 5: δω/ω ≈ 10⁻⁴ - 10⁻³ with temperature-dependent signature) and entropy-conditioned error scaling in quantum error correction. Future inquiries will extend to quantum gravity experiments and cosmological observations, refining LRT's predictive power across scales.
 
-By grounding reality in logically necessary constraints operating on information, LRT offers a foundational paradigm for 21st-century science, inviting collaborative exploration across philosophy, physics, mathematics, and information theory. The research program's falsifiability criteria, novel predictions (information dominance at Planck scale, entropy-error correlations with β ≠ 0, no contradictions in any physical record, constraint-based cosmology), explicit derivations, and operator-algebraic precision position it as a viable and testable alternative to existing metaphysical and physical frameworks.
+By grounding reality in logically necessary constraints operating on information, LRT offers a foundational paradigm for 21st-century science, inviting collaborative exploration across philosophy, physics, mathematics, and information theory. The research program combines significant explanatory power—deriving quantum structure from first principles rather than postulating it—with concrete falsifiability criteria. Novel predictions span quantum decoherence (T2 < T1), state-dependent energetics (ω dependent on logical status), information dominance at Planck scale, and constraint-based cosmology. Explicit derivations of fundamental properties (time, energy, spacetime, mathematics itself from L(I)) and operator-algebraic precision position LRT as a viable and testable alternative to existing metaphysical and physical frameworks.
 
 ## References
 
