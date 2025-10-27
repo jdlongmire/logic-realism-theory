@@ -8,14 +8,38 @@
 
 ## Framework Overview
 
-Logic Realism Theory (LRT) is a falsifiable scientific theory that derives quantum mechanics from first principles of logical consistency and information theory. Rather than asking the binary question "Does LRT differ from QM?", we systematically explore **prediction paths** - specific observables where LRT might make distinct predictions.
+Logic Realism Theory (LRT) is a falsifiable scientific theory that derives quantum mechanics from first principles of logical consistency and information theory. **Importantly, LRT is intended to ground and enhance QM, not replace it.** Rather than asking the binary question "Does LRT differ from QM?", we systematically explore **prediction paths** - specific observables where LRT might make distinct predictions or provide deeper understanding.
 
-**Key Insight**: A theory can be scientifically rigorous even if some prediction paths show equivalence to QM, as long as the theory:
-1. Makes concrete, falsifiable predictions
-2. Can be experimentally tested
-3. Survives or fails experimental scrutiny
+### The Challenge of Finding Distinct Predictions
 
-This document tracks all LRT prediction paths: tested, blocked, proposed, and future.
+**Critical Context**: Since LRT aims to provide a foundational explanation for *why* QM works (deriving it from logical principles), identifying quantitative predictions that differ from QM is **extremely challenging**. This is a feature, not a bug:
+
+1. **Foundational vs Replacement Theory**:
+   - LRT is not attempting to replace QM (like a competitor theory)
+   - Instead, it provides logical grounding for QM's structure
+   - Similar to: Statistical mechanics grounds thermodynamics, but makes nearly identical predictions
+   - Most successful foundational theories *reproduce* the phenomenon they explain
+
+2. **Expected Outcome**:
+   - Many (perhaps most) LRT predictions will match QM exactly
+   - This doesn't invalidate LRT - it validates that LRT successfully recovers QM
+   - Distinct predictions, if they exist, likely appear in subtle edge cases or limiting regimes
+   - The primary value may be conceptual (explaining *why* QM) rather than predictive (finding new phenomena)
+
+3. **Scientific Rigor**:
+   - A theory can be scientifically rigorous even if most predictions match QM
+   - What matters: Makes concrete, falsifiable predictions
+   - Can be experimentally tested (even if result is "matches QM")
+   - Provides conceptual advantages (understanding, unification, derivation)
+
+**Analogy**: Bohm's pilot-wave theory makes identical predictions to standard QM in almost all cases, yet remains a valid scientific interpretation providing conceptual insights. LRT may occupy a similar position.
+
+### Systematic Prediction Path Exploration
+
+This document tracks all LRT prediction paths: tested, blocked, proposed, and future. We expect:
+- **Most paths**: LRT ≈ QM (successful grounding)
+- **Few paths**: LRT ≠ QM (new phenomena or edge cases)
+- **Goal**: Honest, systematic exploration to determine which category each path belongs to
 
 ---
 
@@ -1098,7 +1122,9 @@ Lean proof development may reveal additional prediction paths:
 
 ---
 
-**Document Version**: 1.1
+**Document Version**: 1.2
 **Last Updated**: October 27, 2025
-**Changes**: Path 3 peer-reviewed (quality 0.67), Path 5 protocol outline completed, strategic context clarified (unfunded research documentation)
+**Changes**:
+- v1.2: Added critical framing - LRT grounds/enhances QM (not replaces), finding distinct predictions is extremely challenging
+- v1.1: Path 3 peer-reviewed (quality 0.67), Path 5 protocol outline completed, strategic context clarified (unfunded research documentation)
 **Next Update**: After Path 8 specification or Lean proof discoveries
