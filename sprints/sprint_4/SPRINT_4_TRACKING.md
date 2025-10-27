@@ -34,6 +34,33 @@
 - Begin Task 1.1 (T2/T1 derivation) - CRITICAL PATH
 - Quick win: Task 2.1 (Lean language fix)
 
+### October 27, 2025 - Task 1.1 Complete (T2/T1 Derivation)
+
+**Session**: 3.8 (continued)
+
+**Activities**:
+- ✅ Created comprehensive T2/T1 derivation notebook (`05_T2_T1_Derivation.ipynb`)
+- ✅ Installed required dependencies (seaborn, qutip)
+- ✅ Executed full notebook with all validation steps
+- ✅ Verified key results with QuTiP simulation
+
+**Key Results**:
+- **ΔS_EM = ln(2) ≈ 0.693 nats** for equal superposition
+- **Phenomenological model**: γ_EM = η · γ_1 · (ΔS_EM / ln2)^α
+- **Analytical formula**: T2/T1 = 1/(1+η) for ΔS_EM = ln(2), α = 1
+- **Parameter constraint**: η ∈ [0.111, 0.429] gives T2/T1 ∈ [0.7, 0.9]
+- **QuTiP validation**: Simulation confirms analytical model
+
+**Status Assessment**:
+- ✅ Mathematical framework solid
+- ✅ Numerical range achievable (0.7-0.9)
+- ✅ Simulation validates model
+- ⚠️ η remains phenomenological (not first-principles)
+
+**Recommendation**: Use this derivation for paper revision with caveat that η is a coupling parameter to be determined experimentally. Frame as semi-quantitative prediction.
+
+**Unblocked Tasks**: Task 2.4 (Integrate T2/T1 into paper) now ready to proceed
+
 ---
 
 ## Track Status
@@ -42,7 +69,7 @@
 
 | Task | Priority | Status | Progress | Notes |
 |------|----------|--------|----------|-------|
-| 1.1 T2/T1 Derivation | HIGHEST | Not Started | 0% | Blocks resubmission |
+| 1.1 T2/T1 Derivation | HIGHEST | ✅ Complete | 100% | Notebook validated, η phenomenological |
 | 1.2 Non-Unitary Resolution | HIGH | Not Started | 0% | Choose Option A/B/C |
 | 1.3 Thermodynamics Framework | MEDIUM | Not Started | 0% | Strengthens foundation |
 
@@ -53,7 +80,7 @@
 | 2.1 Lean Language Fix | HIGH | Not Started | 0% | Easy win (~1 hour) |
 | 2.2 Ontological/Epistemic | HIGH | Not Started | 0% | Section 2.3.1 |
 | 2.3 Confound Isolation | HIGH | Not Started | 0% | Section 5.1 expansion |
-| 2.4 Integrate T2/T1 | HIGH | Blocked | 0% | Depends on 1.1 |
+| 2.4 Integrate T2/T1 | HIGH | Ready | 0% | 1.1 complete, can proceed |
 | 2.5 Integrate Non-Unitary | HIGH | Blocked | 0% | Depends on 1.2 |
 
 ### Track 3: Team Validation
@@ -68,7 +95,7 @@
 ## Deliverables Checklist
 
 ### Core Theoretical Work
-- [ ] `notebooks/Logic_Realism/05_T2_T1_Derivation.ipynb`
+- [✅] `notebooks/Logic_Realism/05_T2_T1_Derivation.ipynb`
 - [ ] `theory/Non_Unitary_Resolution.md`
 - [ ] `theory/Constraint_Thermodynamics.md`
 
@@ -87,10 +114,10 @@
 
 ## Sprint Metrics
 
-**Completion**: 0/10 deliverables (0%)
-**On Track**: Yes (just started)
-**Blockers**: None yet
-**Risk Level**: Medium (T2/T1 derivation complexity)
+**Completion**: 1/10 deliverables (10%)
+**On Track**: Yes (critical path item complete)
+**Blockers**: None
+**Risk Level**: Low-Medium (critical blocker resolved, η phenomenological caveat)
 
 ---
 
@@ -135,4 +162,4 @@
 
 ---
 
-**Last Updated**: October 27, 2025
+**Last Updated**: October 27, 2025 (Task 1.1 complete)
