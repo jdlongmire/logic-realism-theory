@@ -435,3 +435,275 @@ The next section formalizes this hierarchical structure mathematically, introduc
 
 ---
 
+## 4. Mathematical Formalization
+
+### 4.1 Hilbert Space as Epistemic Tool
+
+Sections 2-3 used Hilbert space notation ($\mathcal{H}_\infty$, $\langle \psi | \phi \rangle$, operators) to describe the information space $\mathcal{I}$ and logical filtering $\mathfrak{L}$. We now formalize this distinction between ontology (what exists) and epistemology (how we model it).
+
+**Ontological Reality**:
+- $\mathcal{I}$: Pre-physical information space with relational structure (distinguishability between states)
+- $\mathfrak{L}_k$: Logical constraint operators that filter $\mathcal{I}$ hierarchically
+- $\mathcal{A}$: Actualized subspace satisfying all constraints
+
+**Epistemic Model**:
+- Hilbert space $\mathcal{H}$: Mathematical representation of relational structure in $\mathcal{I}$
+- Inner product $\langle \psi | \phi \rangle$: Quantifies distinguishability (ontological feature)
+- Operators: Mathematical objects that represent filtering actions
+
+**Key Distinction**: The Hilbert space formalism is our best current mathematical language for describing the relational structure of $\mathcal{I}$, but it is not identical to $\mathcal{I}$ itself. Just as Newton's equations model gravity without being gravity, Hilbert spaces model information space structure without being the structure itself.
+
+**Why Hilbert Spaces?**: They naturally encode:
+1. **Distinguishability**: Inner product $\langle \psi | \phi \rangle$ measures overlap/distinguishability
+2. **Superposition**: Linear combinations represent undetermined states
+3. **Completeness**: Infinite-dimensional spaces allow unbounded possibility
+4. **Projections**: Natural representation of filtering operations
+
+We use this mathematical formalism not because reality *is* Hilbert space, but because Hilbert spaces provide an optimal epistemic framework for the relational structure that $\mathcal{I}$ ontologically possesses.
+
+### 4.2 Constraint Operator Algebra
+
+The logical filtering operator $\mathfrak{L}$ has algebraic structure that can be formalized mathematically.
+
+#### 4.2.1 Single-Layer Operators
+
+Each layer $\mathfrak{L}_k$ is a **projection operator** with:
+
+**Idempotence**: $\mathfrak{L}_k^2 = \mathfrak{L}_k$
+
+This ensures repeated application does not change the result—states that pass through once will continue to pass through.
+
+**Hermiticity**: $\mathfrak{L}_k^\dagger = \mathfrak{L}_k$
+
+This ensures the operator preserves reality (no imaginary eigenvalues for projection).
+
+**Bounded Norm**: $||\mathfrak{L}_k|| \leq 1$
+
+This ensures filtering reduces or preserves, but never amplifies, states.
+
+**Spectrum**: Eigenvalues $\lambda \in \{0, 1\}$
+
+States either satisfy constraints ($\lambda = 1$, pass through) or fail ($\lambda = 0$, annihilated).
+
+#### 4.2.2 Composition of Constraints
+
+The full filtering $\mathfrak{L} = \mathfrak{L}_n \circ \cdots \circ \mathfrak{L}_1 \circ \mathfrak{L}_0$ has properties:
+
+**Nested Subspaces**:
+$$\text{Image}(\mathfrak{L}_0) \supset \text{Image}(\mathfrak{L}_1 \circ \mathfrak{L}_0) \supset \cdots \supset \text{Image}(\mathfrak{L}_n \circ \cdots \circ \mathfrak{L}_0)$$
+
+Each layer further restricts the filtered space.
+
+**Non-Commutativity**: Generally $\mathfrak{L}_k \circ \mathfrak{L}_j \neq \mathfrak{L}_j \circ \mathfrak{L}_k$ for $j \neq k$.
+
+The order matters: identity must precede non-contradiction, which must precede excluded middle. Reversing the order would produce different physics.
+
+**Monotonic Constraint Accumulation**:
+$$C_{\text{total}} = \sum_{k=0}^n C_k$$
+
+where $C_k$ is the number of independent constraints at layer $k$. Total constraints accumulate as layers compose.
+
+#### 4.2.3 Layer 0 Decomposition
+
+The fundamental logical operator $\mathfrak{L}_0$ decomposes as:
+
+$$\mathfrak{L}_0 = \mathfrak{L}_{\text{EM}} \circ \mathfrak{L}_{\text{NC}} \circ \mathfrak{L}_{\text{Id}}$$
+
+Each sub-operator is itself a projection with specific action:
+
+**Identity Projector** $\mathfrak{L}_{\text{Id}}$:
+$$\mathfrak{L}_{\text{Id}}|\psi(\tau)\rangle = \begin{cases}
+|\psi(\tau)\rangle & \text{if } \langle \psi(\tau) | \psi(\tau + \delta\tau) \rangle \approx 1 \\
+0 & \text{otherwise}
+\end{cases}$$
+
+Projects out states that fail to maintain identity across logical time steps.
+
+**Non-Contradiction Projector** $\mathfrak{L}_{\text{NC}}$:
+$$\mathfrak{L}_{\text{NC}}|\psi\rangle = \begin{cases}
+|\psi\rangle & \text{if } \sum_i |\langle \psi_i | \psi \rangle|^2 = 1 \\
+0 & \text{otherwise}
+\end{cases}$$
+
+Projects out states that violate probability normalization (Born rule, Section 5.1).
+
+**Excluded Middle Projector** $\mathfrak{L}_{\text{EM}}$:
+$$\mathfrak{L}_{\text{EM}}|\psi\rangle = \begin{cases}
+|\psi\rangle & \text{if definite outcome upon measurement-like interaction} \\
+|\psi\rangle \text{ with decoherence} & \text{if superposition encounters resolution context}
+\end{cases}$$
+
+Forces definite states upon measurement, inducing decoherence in superpositions (Section 6).
+
+### 4.3 Information Geometry and Fisher Metric
+
+The information space $\mathcal{I}$ has geometric structure beyond the Hilbert space inner product. Constraint filtering can be understood as dynamics on this geometric space.
+
+#### 4.3.1 Fisher Information Metric
+
+For a parametrized family of states $|\psi(\theta)\rangle$ (where $\theta$ represents degrees of freedom in $\mathcal{I}$), the **Fisher information metric** is:
+
+$$g_{\mu\nu}(\theta) = \text{Re}\left[\langle \partial_\mu \psi | \partial_\nu \psi \rangle - \langle \partial_\mu \psi | \psi \rangle \langle \psi | \partial_\nu \psi \rangle\right]$$
+
+where $\partial_\mu = \partial / \partial \theta^\mu$.
+
+This metric quantifies how distinguishable infinitesimally nearby states are. It provides a notion of "distance" in information space:
+
+$$ds^2 = g_{\mu\nu}(\theta) d\theta^\mu d\theta^\nu$$
+
+**Physical Interpretation**: States that are far apart in Fisher metric are highly distinguishable; states that are close are nearly indistinguishable. Constraint filtering preferentially selects states with specific Fisher geometry.
+
+#### 4.3.2 Fisher Information and Constraints
+
+The Fisher information $\mathcal{J}(\theta)$ (scalar) is the trace of the Fisher metric:
+
+$$\mathcal{J}(\theta) = g_{\mu\nu} g^{\mu\nu}$$
+
+For a state $|\psi\rangle$ under constraints $\mathfrak{L}_k$, the Fisher information quantifies how much the constraints affect the state:
+
+**High Fisher Information**: State is sensitive to constraint variations → strong coupling to $\mathfrak{L}$
+**Low Fisher Information**: State is insensitive to constraint variations → weak coupling to $\mathfrak{L}$
+
+This will be critical for the T2/T1 prediction (Section 6): superposition states have higher Fisher information with respect to $\mathfrak{L}_{\text{EM}}$ than ground states, leading to stronger Excluded Middle coupling and faster decoherence.
+
+#### 4.3.3 Information-Theoretic Entropy
+
+For a density matrix $\rho$ representing a quantum state, the **von Neumann entropy** is:
+
+$$S(\rho) = -\text{Tr}[\rho \ln \rho]$$
+
+For a pure state $\rho = |\psi\rangle\langle\psi|$, $S(\rho) = 0$. For mixed states (superpositions after partial tracing), $S(\rho) > 0$.
+
+**Constraint Filtering and Entropy**: Each layer $\mathfrak{L}_k$ reduces the effective entropy of accessible states:
+
+$$S(\mathcal{H}^{(k+1)}) < S(\mathcal{H}^{(k)})$$
+
+This monotonic entropy reduction formalizes "filtering" quantitatively.
+
+### 4.4 The K-Threshold Framework
+
+A critical mathematical distinction: when do constraints act *unitarily* (preserving superposition) versus *non-unitarily* (collapsing superposition)? This is the K-threshold framework.
+
+#### 4.4.1 The Constraint Parameter K
+
+Define **K** as the number of active micro-constraints at any given moment. Each layer $\mathfrak{L}_k$ imposes $C_k$ constraints, but not all are always "active" on a given quantum system.
+
+Examples:
+- Isolated qubit: $K \approx 3$ (only 3FLL actively filtering, no environmental interactions)
+- Qubit + measurement apparatus: $K \gg 3$ (many additional constraints from environment)
+
+**K determines the regime**:
+
+**Regime 1 (Fixed K)**: Closed quantum systems
+- $K$ remains constant: no new constraints introduced
+- Evolution is **unitary**: $U(t) = e^{-iHt/\hbar}$
+- Superposition preserved
+- Schrödinger equation governs dynamics
+- Stone's theorem applies: continuous unitary group
+
+**Regime 2 (Changing K)**: Open systems and measurement
+- $K \rightarrow K - \Delta K$: constraints reduced via measurement
+- Evolution is **non-unitary**: projection $\Pi = |\psi_i\rangle\langle\psi_i|$
+- Superposition collapses
+- Born rule governs probabilities
+- Stone's theorem does not apply: discrete non-unitary transition
+
+#### 4.4.2 Mathematical Formalism
+
+For a state $|\psi\rangle$ under constraint level $K$:
+
+**Fixed K (Unitary Regime)**:
+$$i\hbar \frac{\partial}{\partial t} |\psi(t)\rangle = H_K |\psi(t)\rangle$$
+
+where $H_K$ is the Hamiltonian encoding the $K$ constraints. The solution:
+
+$$|\psi(t)\rangle = U_K(t) |\psi(0)\rangle, \quad U_K(t) = e^{-iH_K t / \hbar}$$
+
+is unitary: $U_K^\dagger U_K = I$.
+
+**Changing K (Non-Unitary Regime)**:
+Measurement interaction causes $K \rightarrow K - \Delta K$. The state undergoes non-unitary projection:
+
+$$|\psi\rangle \rightarrow |\psi_i\rangle \text{ with probability } p_i = |\langle \psi_i | \psi \rangle|^2$$
+
+The density matrix evolves:
+
+$$\rho \rightarrow \sum_i p_i |\psi_i\rangle\langle\psi_i| = \sum_i \Pi_i \rho \Pi_i$$
+
+This is **not** unitary ($\Pi_i \Pi_j \neq \delta_{ij} I$).
+
+#### 4.4.3 Resolving the Stone's Theorem Tension
+
+Stone's theorem states: every strongly continuous one-parameter unitary group has a self-adjoint generator (Hamiltonian). But measurement is not unitary—how is this consistent?
+
+**LRT Resolution**:
+- **Regime 1 (Fixed K)**: Stone's theorem applies. Identity constraint $\mathfrak{L}_{\text{Id}}$ generates continuous unitary evolution with Hamiltonian $H_K$.
+- **Regime 2 (Changing K)**: Stone's theorem does not apply. The K-transition is not a continuous one-parameter group—it's a discrete, non-unitary event.
+
+The apparent contradiction arises from conflating two distinct dynamical regimes. LRT resolves this by explicitly distinguishing them via the K-threshold parameter.
+
+**Philosophical Clarification**: The 3FLL do not "violate" Stone's theorem. Identity generates unitary evolution (satisfying Stone) when constraints are fixed. Excluded Middle introduces non-unitary collapse when constraints change via measurement. These are different processes, governed by different operators, in different regimes.
+
+### 4.5 Logical Time and Pre-Physical Dynamics
+
+The hierarchical emergence formalism (Section 3.6) introduced a "logical time" parameter $\tau$ indexing the sequence of constraint applications:
+
+$$\frac{\partial \mathfrak{L}_k}{\partial \tau} = -\alpha_k [\mathfrak{L}_k, [\mathfrak{L}_k, \mathfrak{L}_{k-1}]] + \beta_k \nabla^2 \mathfrak{L}_k$$
+
+This $\tau$ is **not** physical time $t$. It is a pre-physical ordering parameter that sequences the emergence of constraints.
+
+#### 4.5.1 Distinction: $\tau$ vs $t$
+
+**Logical Time $\tau$**:
+- Orders constraint layer emergence: Layer 0 ($\tau_0$) → Layer 1 ($\tau_1$) → ...
+- Pre-physical: exists before spacetime
+- Not measurable by clocks (no clocks before physics!)
+- Represents sequential crystallization of constraints
+
+**Physical Time $t$**:
+- Emerges from Identity constraint $\mathfrak{L}_{\text{Id}}$ (Section 5.3)
+- Conjugate to energy via Fourier transform
+- Measurable by clocks and periodic systems
+- Parametrizes unitary evolution in Regime 1
+
+**Relationship**: Once physical time $t$ emerges (Layer 4), it can be related to $\tau$ via:
+
+$$t \sim \int_{\tau_4}^\tau d\tau' \, f(\mathfrak{L}_4(\tau'))$$
+
+where $f$ is a functional relating constraint density to physical time flow. This will be formalized in Lean 4 proofs (Section 7).
+
+#### 4.5.2 Emergence Dynamics
+
+The differential equation governing constraint crystallization:
+
+$$\frac{\partial \mathfrak{L}_k}{\partial \tau} = -\alpha_k [\mathfrak{L}_k, [\mathfrak{L}_k, \mathfrak{L}_{k-1}]] + \beta_k \nabla^2 \mathfrak{L}_k$$
+
+has physical interpretation:
+
+**First Term** (double commutator): Ensures layer $k$ is consistent with layer $k-1$. The coupling strength $\alpha_k$ determines how strongly new constraints must respect prior constraints.
+
+**Second Term** (diffusion): Allows constraints to propagate through information space. The diffusion rate $\beta_k$ determines how quickly constraint structures spread.
+
+**Fixed Points**: Solutions where $\partial \mathfrak{L}_k / \partial \tau = 0$ represent stable constraint configurations. These correspond to emergent physical laws (Layer 4+).
+
+**Testable Consequence**: Different layers have different decoherence rates in Regime 2. Systems governed primarily by Layer 0 (superposition under $\mathfrak{L}_{\text{EM}}$) decohere faster than systems governed by Layer 4 (environmental noise). This predicts:
+
+$$\gamma_{\text{Layer 0}} > \gamma_{\text{Layer 4}}$$
+
+where $\gamma$ is the decoherence rate. This is the origin of T2/T1 < 1 (Section 6).
+
+### 4.6 Summary: Mathematical Infrastructure for Quantum Emergence
+
+This section established the formal mathematical framework:
+
+1. **Hilbert spaces**: Epistemic tools representing ontological relational structure in $\mathcal{I}$
+2. **Constraint operators $\mathfrak{L}_k$**: Projection operators with idempotence, hermiticity, nested composition
+3. **Fisher information geometry**: Quantifies distinguishability and constraint coupling strength
+4. **K-threshold framework**: Distinguishes unitary (fixed K) from non-unitary (changing K) regimes, resolving Stone's theorem tension
+5. **Logical time $\tau$**: Pre-physical ordering parameter for constraint emergence, distinct from physical time $t$
+6. **Emergence dynamics PDE**: Formalizes how constraints crystallize through double commutator + diffusion
+
+With this infrastructure in place, Section 5 will demonstrate that quantum mechanics—Born rule, Hilbert space structure, unitary evolution, measurement collapse—emerges from the 3FLL acting on $\mathcal{I}$ through this mathematical framework.
+
+---
+
