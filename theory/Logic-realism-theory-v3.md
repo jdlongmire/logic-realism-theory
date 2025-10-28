@@ -707,3 +707,216 @@ With this infrastructure in place, Section 5 will demonstrate that quantum mecha
 
 ---
 
+## 5. Quantum Mechanics as Logical Emergence
+
+We now demonstrate that the core structure of quantum mechanics—postulates in standard QM—emerges as logical consequences in LRT. This section shows explicitly how Born rule, Hilbert space, unitary evolution, and measurement collapse derive from the 3FLL constraints.
+
+### 5.1 Born Rule from Maximum Entropy + Non-Contradiction
+
+The Born rule—the probability of measuring outcome $i$ is $p_i = |\langle \psi_i | \psi \rangle|^2$—is postulated in standard quantum mechanics. In LRT, it emerges from combining maximum entropy principles with non-contradiction.
+
+#### 5.1.1 Maximum Entropy Principle
+
+Given a state $|\psi\rangle \in \mathcal{I}$ and incomplete information about which basis state will actualize, the maximum entropy principle (Jaynes 1957) states: choose the probability distribution that maximizes entropy subject to known constraints.
+
+For a pure state expanded in basis $\{|\psi_i\rangle\}$:
+
+$$|\psi\rangle = \sum_i c_i |\psi_i\rangle$$
+
+where $c_i = \langle \psi_i | \psi \rangle$ are complex amplitudes. The probability distribution $\{p_i\}$ must satisfy:
+
+**Normalization**: $\sum_i p_i = 1$
+**Information constraint**: Probabilities relate to amplitudes in a way that respects distinguishability
+
+The entropy functional to maximize is:
+
+$$S = -\sum_i p_i \ln p_i$$
+
+subject to normalization and the constraint that total probability amplitude is conserved.
+
+#### 5.1.2 Non-Contradiction Constraint
+
+The Non-Contradiction operator $\mathfrak{L}_{\text{NC}}$ (Section 4.2.3) requires that contradictory states cannot simultaneously actualize. For a probability distribution over outcomes, this translates to:
+
+$$\sum_i p_i = 1 \quad \text{(exactly, not approximately)}$$
+
+Additionally, the probabilities must respect the inner product structure of $\mathcal{I}$. If two states are orthogonal ($\langle \psi_i | \psi_j \rangle = 0$), they are maximally distinguishable and must have independent probabilities. If they overlap ($|\langle \psi_i | \psi_j \rangle| > 0$), their probabilities are correlated.
+
+#### 5.1.3 Derivation
+
+**Theorem (Born Rule Emergence)**: Under maximum entropy with normalization and inner product constraints, the probability distribution for measurement outcomes is:
+
+$$p_i = |\langle \psi_i | \psi \rangle|^2$$
+
+**Proof Sketch**:
+1. Expand $|\psi\rangle = \sum_i c_i |\psi_i\rangle$ in orthonormal basis
+2. Maxim
+
+ize $S = -\sum_i p_i \ln p_i$ subject to $\sum_i p_i = 1$
+3. Include constraint that probabilities must be functions of amplitudes: $p_i = f(c_i)$
+4. Require consistency with distinguishability: $f$ must respect $|\langle \psi_i | \psi_j \rangle|^2$
+5. The unique solution satisfying all constraints is $f(c_i) = |c_i|^2$
+
+This has been formalized in Lean 4 using Jaynes' MaxEnt theorem as a building block (Section 7).
+
+**Physical Interpretation**: The squared amplitude $|c_i|^2$ is not an arbitrary rule—it is the unique probability measure consistent with maximum entropy under logical constraints. The Born rule is a logical consequence of how distinguishability structure in $\mathcal{I}$ translates to actualization probabilities under $\mathfrak{L}_{\text{NC}}$.
+
+### 5.2 Hilbert Space Structure from Information Geometry
+
+Why does quantum mechanics use Hilbert spaces rather than other mathematical structures? This is postulated in standard QM. In LRT, Hilbert space structure emerges from the geometry of constraint-filtered information space.
+
+#### 5.2.1 Inner Product from Distinguishability
+
+The information space $\mathcal{I}$ has primitive relational structure: some states are more distinguishable than others (Section 2.2). The inner product $\langle \psi | \phi \rangle$ quantifies this:
+
+$$|\langle \psi | \phi \rangle|^2 = 1 - d(\psi, \phi)$$
+
+where $d(\psi, \phi)$ is a distinguishability distance. States with $d = 0$ are indistinguishable (identical); states with $d = 1$ are maximally distinguishable (orthogonal).
+
+**Constraint Requirement**: For the 3FLL to act consistently, the distinguishability measure must satisfy:
+
+1. **Symmetry**: $d(\psi, \phi) = d(\phi, \psi)$ (from Identity: if A = A, then relation to B is symmetric)
+2. **Triangle inequality**: $d(\psi, \chi) \leq d(\psi, \phi) + d(\phi, \chi)$ (logical consistency of distinguishability)
+3. **Positive definiteness**: $d(\psi, \phi) \geq 0$, with equality iff $\psi = \phi$ (from Non-Contradiction: distinct states are distinguishable)
+
+These are precisely the metric space axioms. The inner product structure follows from converting the metric into a bilinear form.
+
+#### 5.2.2 Linearity from Superposition
+
+The Identity constraint $\mathfrak{L}_{\text{Id}}$ requires that states maintain coherence across logical time steps. For a state in superposition $|\psi\rangle = \alpha |\phi_1\rangle + \beta |\phi_2\rangle$, identity preservation demands:
+
+$$\langle \psi(\tau) | \psi(\tau + \delta\tau) \rangle \approx 1$$
+
+For this to hold for arbitrary superpositions, the space must be **linear**: linear combinations of states are themselves valid states. This is the vector space structure.
+
+**Combining Inner Product + Linearity = Hilbert Space**: A linear vector space with an inner product satisfying completeness (all Cauchy sequences converge) is a Hilbert space. The completeness follows from the fact that $\mathcal{I}$ must contain all logically possible states—there are no "missing" states to which sequences could converge outside the space.
+
+**Conclusion**: Hilbert space is not an arbitrary choice for quantum mechanics. It is the unique mathematical structure that encodes distinguishability (inner product), coherent superposition (linearity), and completeness of possibilities (Hilbert property) required by the 3FLL constraints on $\mathcal{I}$.
+
+### 5.3 Time Evolution from Identity Constraint
+
+Physical time and its associated evolution equations emerge from the Identity constraint $\mathfrak{L}_{\text{Id}}$.
+
+#### 5.3.1 Time as Ordering Parameter
+
+The Identity law ($A = A$) requires that entities persist: a quantum state at logical step $\tau$ must be "the same" state at $\tau + \delta\tau$. Formally:
+
+$$\langle \psi(\tau) | \psi(\tau + \delta\tau) \rangle \approx 1 \quad \text{for small } \delta\tau$$
+
+This coherence requirement generates a continuous ordering parameter, which we identify as **physical time** $t$ (distinct from pre-physical logical time $\tau$, Section 4.5).
+
+**Physical Time Emergence**: Once Layers 3-4 crystallize (Section 3.5), the constraint density stabilizes, and logical time $\tau$ maps to physical time $t$ via:
+
+$$dt \sim \langle \psi(\tau) | \frac{\partial \psi(\tau)}{\partial \tau} \rangle d\tau$$
+
+This integral converts the discrete logical steps into continuous physical time flow.
+
+#### 5.3.2 Unitary Evolution (Regime 1)
+
+In Regime 1 (fixed K, Section 4.4), the Identity constraint generates **unitary evolution**:
+
+**Theorem (Schrödinger Equation)**: For a state $|\psi(t)\rangle$ under fixed constraint level $K$, Identity requires:
+
+$$i\hbar \frac{\partial}{\partial t} |\psi(t)\rangle = H_K |\psi(t)\rangle$$
+
+where $H_K$ is a Hermitian operator (the Hamiltonian) encoding the constraint structure.
+
+**Proof Sketch**:
+1. Identity demands $\langle \psi(t) | \psi(t) \rangle = 1$ for all $t$ (norm preservation)
+2. This requires infinitesimal evolution to be unitary: $|\psi(t+dt)\rangle = U(dt) |\psi(t)\rangle$ with $U^\dagger U = I$
+3. For continuous evolution, $U(dt) = I - \frac{i}{\hbar} H_K dt + O(dt^2)$ (Stone's theorem, Section 4.4.3)
+4. Expanding to first order yields the Schrödinger equation
+
+The Hamiltonian $H_K$ represents the "energy" associated with maintaining identity under $K$ constraints. Energy emerges as the generator of time translation symmetry—a consequence of Identity, not a postulate.
+
+**Noether's Theorem Connection**: Continuous time-translation symmetry (from Identity) implies energy conservation via Noether's theorem. This has been formally verified in Lean 4 (Section 7).
+
+#### 5.3.3 Non-Unitary Collapse (Regime 2)
+
+In Regime 2 (changing K, measurement, Section 4.4), Identity operates differently. When $K \rightarrow K - \Delta K$ via measurement interaction, the continuity requirement breaks: the state undergoes **projection**, not unitary evolution.
+
+The measurement postulate in standard QM becomes a logical consequence of how Identity behaves when constraint levels change discontinuously.
+
+### 5.4 Measurement as K-Transition
+
+Measurement collapse—the most mysterious aspect of quantum mechanics—emerges naturally as a K-transition in LRT.
+
+#### 5.4.1 The Measurement Process
+
+When a quantum system encounters a measurement apparatus, the joint system has many more constraints:
+
+$$K_{\text{system}} \ll K_{\text{system+apparatus}}$$
+
+The apparatus enforces additional constraints (pointer states, macroscopic degrees of freedom, environmental decoherence) that increase $K$ dramatically.
+
+However, once the measurement is complete and the apparatus is "read," the system-apparatus entanglement is broken, effectively reducing $K$ back to $K_{\text{system}}$ but now in a definite eigenstate:
+
+$$K_{\text{superposition}} \rightarrow K_{\text{entangled}} \rightarrow K_{\text{definite}}$$
+
+This is a **discrete, non-unitary transition**.
+
+#### 5.4.2 Excluded Middle Forces Resolution
+
+The Excluded Middle operator $\mathfrak{L}_{\text{EM}}$ (Section 4.2.3) enforces definiteness: upon measurement-like interaction, superposition states must resolve to definite outcomes. There is no third option—no "partial measurement."
+
+Mathematically, this projects the state:
+
+$$|\psi\rangle = \sum_i c_i |\psi_i\rangle \quad \xrightarrow{\mathfrak{L}_{\text{EM}}} \quad |\psi_i\rangle \text{ with probability } p_i = |c_i|^2$$
+
+The measurement postulate in standard QM (superposition collapses to eigenstate with Born rule probabilities) is the direct action of $\mathfrak{L}_{\text{EM}}$ during K-transitions.
+
+#### 5.4.3 Decoherence and Preferred Basis
+
+The question "which basis does measurement select?" is answered by the constraint structure. The measurement apparatus imposes specific constraints that commute with certain operators (observables). The eigenbasis of those operators forms the **pointer basis**—the basis in which $\mathfrak{L}_{\text{EM}}$ acts.
+
+Decoherence (environmental entanglement) suppresses coherence in non-pointer bases, effectively forcing the system into configurations where $\mathfrak{L}_{\text{EM}}$ can act definitively. This resolves the preferred basis problem: the basis is selected by which constraints the environment/apparatus imposes.
+
+### 5.5 Comparison: LRT Derives What QM Postulates
+
+The following table summarizes the key distinction between Logic Realism Theory and standard quantum mechanics:
+
+| **Quantum Phenomenon** | **Standard QM** | **Logic Realism Theory** |
+|------------------------|-----------------|--------------------------|
+| **Born Rule** ($p_i = \vert c_i \vert^2$) | Postulated | Derived from MaxEnt + Non-Contradiction ($\mathfrak{L}_{\text{NC}}$) |
+| **Hilbert Space Structure** | Postulated | Derived from distinguishability metric + Identity |
+| **Superposition** | Postulated | Consequence of linear vector space structure |
+| **Unitary Evolution** (Schrödinger) | Postulated | Derived from Identity ($\mathfrak{L}_{\text{Id}}$) in Regime 1 (fixed K) |
+| **Hamiltonian** | Postulated | Generator of time translation symmetry (Identity constraint) |
+| **Energy Conservation** | Postulated (or from symmetry) | Noether's theorem applied to Identity constraint |
+| **Measurement Collapse** | Postulated (or "interpretation") | Excluded Middle ($\mathfrak{L}_{\text{EM}}$) in Regime 2 (changing K) |
+| **Preferred Basis Problem** | Unresolved / Decoherence interpretation | Basis selected by constraint structure of apparatus |
+| **Wave Function Ontology** | Unclear (Copenhagen, Many-Worlds, etc.) | Epistem
+
+ic: represents state in $\mathcal{I}$ under constraints |
+| **Time** | Absolute parameter | Emergent from Identity constraint ordering |
+| **Probability Interpretation** | Frequentist or subjective | Objective: constraint-induced actualization from $\mathcal{I}$ |
+
+**Key Insight**: What standard quantum mechanics introduces as axioms, LRT derives as logical consequences of coherence requirements (3FLL) on information space. This explanatory power comes at the cost of introducing $\mathcal{I}$ and $\mathfrak{L}$ as foundational—but these are pre-physical, not physical postulates.
+
+### 5.6 Quantum Phenomena Explained
+
+Beyond the core formalism, LRT provides natural explanations for several quantum phenomena:
+
+**Entanglement**: States $|\psi\rangle_{AB}$ that cannot be factorized as $|\psi_A\rangle \otimes |\psi_B\rangle$ reflect constraint correlations in $\mathcal{I}$. The non-separability arises from $\mathfrak{L}$ acting on joint configurations, not independent subsystems.
+
+**Uncertainty Principle**: Non-commuting observables $[A, B] \neq 0$ correspond to incompatible constraint structures. Perfect knowledge of $A$ (one filtering) prevents perfect knowledge of $B$ (different filtering). The Heisenberg uncertainty $\Delta A \Delta B \geq \frac{1}{2}|\langle [A,B] \rangle|$ emerges from the inner product structure.
+
+**Quantum Tunneling**: Classically forbidden transitions (insufficient energy to overcome potential barrier) can occur in quantum mechanics because constraints in $\mathcal{I}$ do not respect classical energy barriers—they respect logical consistency. If a configuration is logically consistent (passes through $\mathfrak{L}$), it can actualize regardless of classical energetics.
+
+**No-Cloning Theorem**: The impossibility of perfectly copying an unknown quantum state $|\psi\rangle$ follows from the structure of $\mathfrak{L}_{\text{NC}}$. Perfect cloning would require creating two identical states from one without measuring it, violating the constraint structure that requires definite states upon interaction.
+
+### 5.7 Summary: Quantum Mechanics is Logical Mechanics
+
+This section demonstrated that quantum mechanics is not a sui generis physical theory requiring unexplained postulates. Rather, it is the mathematical framework that emerges when logical coherence requirements (Identity, Non-Contradiction, Excluded Middle) filter infinite information space.
+
+**Born rule**: Maximum entropy + Non-Contradiction → $p_i = |c_i|^2$
+**Hilbert space**: Distinguishability metric + Linearity → Inner product space
+**Unitary evolution**: Identity constraint + Fixed K → Schrödinger equation
+**Measurement collapse**: Excluded Middle + Changing K → Projection postulate
+
+The mystery of quantum mechanics shifts from "why these axioms?" to "why these logical laws?" But the 3FLL are not arbitrary—they are the minimal necessary constraints for coherent actuality (Section 2.1). Therefore, quantum mechanics is not contingent; it is logically necessary for any coherent physical reality.
+
+Section 6 extends this framework to a testable prediction: superposition states decohere faster than conventional quantum mechanics predicts due to Excluded Middle coupling.
+
+---
+
