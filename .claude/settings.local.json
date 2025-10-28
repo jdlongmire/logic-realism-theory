@@ -22,7 +22,13 @@
       "Bash(python:*)",
       "Bash(chmod:*)",
       "Bash(bash:*)",
-      "Bash(jupyter nbconvert:*)"
+      "Bash(jupyter nbconvert:*)",
+      "Bash(for file in LogicRealismTheory/Foundation/*.lean LogicRealismTheory/Operators/*.lean LogicRealismTheory/Derivations/*.lean)",
+      "Bash(pip install:*)",
+      "Bash(git reset:*)",
+      "Bash(iconv:*)",
+      "Bash(PYTHONIOENCODING=utf-8 python:*)",
+      "Bash(for:*)"
     ],
     "deny": [],
     "ask": []
