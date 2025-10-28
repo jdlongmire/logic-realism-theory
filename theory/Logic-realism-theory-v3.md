@@ -533,7 +533,7 @@ $$\mathfrak{L}_{\text{EM}}|\psi\rangle = \begin{cases}
 |\psi\rangle \text{ with decoherence} & \text{if superposition encounters resolution context}
 \end{cases}$$
 
-Forces definite states upon measurement, inducing decoherence in superpositions (Section 6).
+Forces definite states upon measurement, inducing decoherence in superpositions (Section 6). The action of $\mathfrak{L}_{\text{EM}}$ is governed by the K-threshold framework (Section 4.4): when constraint level $K$ changes during measurement, $\mathfrak{L}_{\text{EM}}$ enforces non-unitary projection to definite eigenstates.
 
 ### 4.3 Information Geometry and Fisher Metric
 
@@ -586,11 +586,27 @@ A critical mathematical distinction: when do constraints act *unitarily* (preser
 
 #### 4.4.1 The Constraint Parameter K
 
-Define **K** as the number of active micro-constraints at any given moment. Each layer $\mathfrak{L}_k$ imposes $C_k$ constraints, but not all are always "active" on a given quantum system.
+The constraint parameter **K** quantifies how many logical constraint violations are tolerated in a quantum system's state space. It is formally defined in our Lean 4 formalization (`NonUnitaryEvolution.lean`) as:
 
-Examples:
-- Isolated qubit: $K \approx 3$ (only 3FLL actively filtering, no environmental interactions)
-- Qubit + measurement apparatus: $K \gg 3$ (many additional constraints from environment)
+**Formal Definition**: K is a natural number (K ∈ ℕ) defining the constraint threshold:
+
+$$\text{StateSpace}(K) = \{\sigma \in \mathcal{V} \mid \text{ConstraintViolations}(\sigma) \leq K\}$$
+
+where:
+- $\mathcal{V}$ is the full configuration space
+- ConstraintViolations($\sigma$) counts how many logical constraints (Identity, Non-Contradiction) configuration $\sigma$ violates
+- StateSpace(K) contains all configurations with **at most K violations**
+
+**Physical Interpretation**:
+- **K = 0**: Fully actualized, no violations allowed (classical definite states)
+- **K small** (1-10): Highly constrained, few superposition states accessible
+- **K large** (100+): Weakly constrained, many superposition states accessible
+
+For quantum systems:
+- **Isolated qubit**: $K \sim 1$ (minimal constraints, allows superposition)
+- **Qubit + measurement apparatus**: $K_{\text{interaction}} \gg 1$ initially, then $K_{\text{final}} \sim 0$ (collapses to definite state)
+
+**Monotonicity**: Smaller K → fewer valid states. Formally: $K' \leq K \implies \text{StateSpace}(K') \subseteq \text{StateSpace}(K)$.
 
 **K determines the regime**:
 
@@ -602,7 +618,10 @@ Examples:
 - Stone's theorem applies: continuous unitary group
 
 **Regime 2 (Changing K)**: Open systems and measurement
-- $K \rightarrow K - \Delta K$: constraints reduced via measurement
+- **Measurement dynamics**: $K_{\text{system}} \rightarrow K_{\text{system+apparatus}} \rightarrow K_{\text{final}}$
+  - *During interaction*: K increases dramatically (system entangles with apparatus)
+  - *After readout*: Entanglement breaks, system projects to eigenstate with $K_{\text{final}} \approx 0$ (definite state, no violations)
+  - Net effect for system: $K \rightarrow K - \Delta K$ (superposition → definite)
 - Evolution is **non-unitary**: projection $\Pi = |\psi_i\rangle\langle\psi_i|$
 - Superposition collapses
 - Born rule governs probabilities
