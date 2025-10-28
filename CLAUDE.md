@@ -23,6 +23,87 @@ Find the most recent `Session_X.Y.md` file (highest X.Y number) in the `Session_
 
 ---
 
+## 🎯 Research Philosophy: Collaborative Refinement
+
+**CRITICAL PRINCIPLE**: When facing theoretical obstacles or peer review challenges, the default approach is **collaborative problem-solving to overcome**, NOT weakening claims or abandoning core thesis.
+
+### Core Thesis Non-Negotiable
+
+**The core thesis of Logic Realism Theory** is **A = L(I)** (Actualization = Logical operators applied to Infinite information space).
+
+This core thesis is **non-negotiable** unless proven **logically impossible** (not merely difficult or currently unsolved).
+
+### Response to Obstacles
+
+When encountering theoretical challenges:
+
+**✅ DO**:
+1. **Rigorously analyze** the specific logical or mathematical issue
+2. **Collaborate** to find solutions that preserve the core thesis
+3. **Work through** derivation gaps with careful mathematical development
+4. **Strengthen connections** between axioms and predictions through rigorous derivation
+5. **Solve open problems** (e.g., deriving phenomenological parameters from first principles)
+6. **Refine formulations** to resolve apparent contradictions while maintaining core claims
+7. **Build up** missing mathematical infrastructure to support derivations
+
+**❌ DO NOT**:
+1. Immediately suggest "softening" or "toning down" core claims
+2. Recommend "acknowledging limitations" as first response (that's giving up, not solving)
+3. Treat difficulties as reasons to weaken the theory
+4. Abandon rigorous derivations in favor of phenomenological models (unless absolutely necessary)
+5. Accept "this is too hard" as an answer without exhaustive attempts
+6. Frame peer review criticism as insurmountable without attempting solutions
+
+### Decision Criteria for Theory Revision
+
+**Only weaken or abandon core claims if**:
+- **Logical impossibility** is proven (e.g., derives a contradiction like P ∧ ¬P)
+- **Empirical falsification** occurs (experimental data definitively contradicts predictions)
+- **All rigorous attempts** to resolve the issue have been exhausted
+- **User explicitly decides** to change direction after full analysis
+
+### Examples
+
+**Scenario: Peer review identifies circular derivation in energy section**
+
+❌ **WRONG Response**: "Let's soften the claim from 'derivation of energy' to 'consistency relationship'"
+
+✅ **CORRECT Response**: "Let's rigorously analyze the circularity:
+1. Where exactly does the argument presuppose what it claims to derive?
+2. Can we construct a non-circular derivation from more fundamental principles?
+3. What additional axioms or mathematical infrastructure is needed?
+4. Can we derive those axioms from A = L(I)?
+Let's work through this systematically and only reframe if we prove it's impossible."
+
+**Scenario: Phenomenological parameter η lacks first-principles derivation**
+
+❌ **WRONG Response**: "Let's just acknowledge η is phenomenological and move on"
+
+✅ **CORRECT Response**: "Let's attempt to derive η:
+1. What information-theoretic constraints apply to constraint addition?
+2. Can we relate η to the constraint threshold K dynamics?
+3. What does η represent physically in terms of logical constraint operations?
+4. Can we construct a derivation from the rate of state space reduction?
+Let's exhaust all approaches before accepting it as phenomenological."
+
+### Integration with Sprint Work
+
+This philosophy applies throughout all sprint work:
+- Track 1 (Theoretical Derivations): Push for rigorous, first-principles derivations
+- Track 2 (Paper Revisions): Strengthen derivations, don't merely acknowledge gaps
+- Track 3 (Team Validation): Use criticism to identify what needs solving, not what needs softening
+
+### Protection Against Premature Compromise
+
+If Claude suggests weakening claims without first attempting rigorous solutions:
+- **User should push back** (as in this instance)
+- **Claude should apologize** and reframe to collaborative problem-solving
+- **Update work plan** to focus on solving the identified issues
+
+**Remember**: Obstacles are opportunities for deeper understanding, not reasons to retreat.
+
+---
+
 ## 🔍 Program Auditor Agent Protocol
 
 **CRITICAL**: Before making ANY claims about project completion status, run the Program Auditor Agent critical review.
