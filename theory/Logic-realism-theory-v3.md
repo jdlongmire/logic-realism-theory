@@ -190,3 +190,173 @@ The next section presents the full hierarchical emergence mechanism, showing pre
 
 ---
 
+## 3. Hierarchical Emergence: From Logic to Physics
+
+### 3.1 The Layered Structure
+
+Section 2 established that the 3FLL ($\mathfrak{L}_0$) are necessary but not sufficient for physical reality. We now formalize how richer structures emerge through a hierarchical process. The full LRT thesis is not the simple $\mathcal{A} = \mathfrak{L}(\mathcal{I})$, but rather:
+
+$$\mathcal{A} = \mathfrak{L}_n \circ \mathfrak{L}_{n-1} \circ \cdots \circ \mathfrak{L}_2 \circ \mathfrak{L}_1 \circ \mathfrak{L}_0(\mathcal{I})$$
+
+where each layer $\mathfrak{L}_k$ applies constraints that:
+1. Are consistent with all prior layers $\mathfrak{L}_{0}, \ldots, \mathfrak{L}_{k-1}$
+2. Reduce entropy of the filtered information space
+3. Exhibit stability under perturbations
+
+The layers are:
+- **$\mathfrak{L}_0$ (Layer 0)**: 3FLL bootstrap constraints
+- **$\mathfrak{L}_1$ (Layer 1)**: Proto-mathematical primitives
+- **$\mathfrak{L}_2$ (Layer 2)**: Mathematical structures (co-emergence of geometry, arithmetic, algebra)
+- **$\mathfrak{L}_3$ (Layer 3)**: Physics-enabling mathematics (Lie groups, manifolds, Hilbert spaces)
+- **$\mathfrak{L}_{4+}$ (Layers 4+)**: Physical laws, constants, and specific solutions
+
+**Crucially**: Each layer emerges from the prior layer, not from $\mathfrak{L}_0$ directly. The 3FLL do not generate mathematics; they enable proto-primitives, which enable mathematics, which enables physics.
+
+### 3.2 Layer 0 → Layer 1: Proto-Mathematical Primitives
+
+The 3FLL establish coherence, but coherence alone is not mathematics. What immediately follows from coherence are **proto-mathematical primitives**—pre-formal concepts that make mathematics possible:
+
+#### Distinction
+From Identity ($A = A$) comes the possibility of distinguishing $A$ from $B$. If entities persist with identity, they can be different from other entities. This is not yet set theory (which is Layer 2), but the precondition for it: you cannot have sets without first being able to distinguish elements.
+
+#### Membership
+From Excluded Middle ($A \lor \neg A$) comes definite inclusion/exclusion. An element is either in a collection or not; no third option. This proto-primitive enables set membership, but it is not yet formalized set theory—it is the logical prerequisite for it.
+
+#### Relation
+From all three laws together comes the concept of connection between entities. If $A$ and $B$ are identifiable and non-contradictory, we can ask whether they are related (causally, spatially, temporally). Relation is not yet a mathematical function; it is the proto-concept that enables functions to be defined.
+
+#### Succession
+From Identity applied iteratively comes the concept of "next." If $A$ maintains identity across logical steps, we can speak of $A$ at step 1, step 2, step 3, etc. This is the proto-concept that enables counting, ordering, and eventually number theory—but it is not yet the natural numbers $\mathbb{N}$; it is the logical precondition for $\mathbb{N}$ to emerge.
+
+These four proto-primitives are not mathematical objects. They are logical structures that crystallize once coherence is established, and they provide the substrate from which mathematics emerges.
+
+### 3.3 Layer 1 → Layer 2: Mathematical Co-Emergence
+
+From the four proto-primitives, mathematics emerges as a **unified, interconnected structure**. Importantly, different branches of mathematics arise simultaneously by interpreting the same primitives in different ways. There is no privileging of geometry over arithmetic, or vice versa—both co-emerge from the same logical substrate.
+
+#### Arithmetic (Discrete Branch)
+- **Proto-primitive**: Succession + Identity
+- **Emergence**: Counting: 1, 2, 3, ... → Natural numbers $\mathbb{N}$ → Integers $\mathbb{Z}$ → Rationals $\mathbb{Q}$
+- **Key operations**: Addition (iterate succession), multiplication (repeated addition)
+- **Constraints**: Non-contradiction blocks inconsistent arithmetic (e.g., $1 \neq 2$)
+
+#### Geometry (Continuous Branch)
+- **Proto-primitives**: Distinction + Relation in continuous space
+- **Emergence**: Points (distinguished entities) → Lines (relations between points) → Distances (quantified relations) → Metric spaces
+- **Key structures**: Euclidean space, manifolds, curvature
+- **Constraints**: Identity ensures geometric objects persist; Excluded Middle forces definite positions
+
+#### Set Theory (Foundational Branch)
+- **Proto-primitives**: Membership + Non-Contradiction
+- **Emergence**: Collections of elements → Sets → Set operations (union, intersection, complement)
+- **Key constraint**: Non-Contradiction blocks Russell's paradox: sets cannot contain themselves in ways that lead to contradiction
+- **Note**: LRT's Lean 4 formalization (Section 7) includes explicit proof that $\mathfrak{L}_{\text{NC}}$ filters Russell's paradox
+
+#### Algebra (Abstract Branch)
+- **Proto-primitives**: Succession + Relation + abstract operations
+- **Emergence**: Binary operations → Groups → Rings → Fields
+- **Key structures**: Symmetry groups, Lie algebras
+- **Constraints**: Identity forces existence of identity elements; Non-Contradiction forces associativity, commutativity where applicable
+
+#### Formal Logic (Meta-Mathematical Branch)
+- **Proto-primitives**: Codification of $\mathfrak{L}_0$ itself
+- **Emergence**: Propositional logic → Predicate logic → Modal logic
+- **Key structures**: Axioms, inference rules, proofs
+- **Important distinction**: Formal logic (Layer 2) is our symbolic representation of the ontological constraints (Layer 0). Gödel's incompleteness applies to formal systems (Layer 2), not to the ontological operation of $\mathfrak{L}_0$ itself (Section 2.5).
+
+**Interconnections**: These branches are not independent. They inform and constrain each other:
+$$\begin{align*}
+\text{Arithmetic} \times \text{Geometry} &\rightarrow \text{Analytic geometry (coordinates)} \\
+\text{Algebra} \times \text{Geometry} &\rightarrow \text{Algebraic geometry} \\
+\text{Set Theory} \times \text{Relation} &\rightarrow \text{Functions, mappings} \\
+\text{Formal Logic} \times \text{Set Theory} &\rightarrow \text{Model theory}
+\end{align*}$$
+
+**Resolution of the Geometry Question**: Geometry is neither pre-logical (it does not precede $\mathfrak{L}_0$) nor post-physical (it does not require physics to exist). Geometry is mathematical (Layer 2), emerging alongside arithmetic from proto-primitives. The question "Is geometry fundamental or emergent?" dissolves: geometry and arithmetic co-emerge as complementary interpretations of the same logical substrate.
+
+### 3.4 Layer 2 → Layer 3: Physics-Enabling Mathematics
+
+Physics requires specialized mathematical structures that emerge from Layer 2 foundations:
+
+#### Lie Groups and Continuous Symmetries
+- **Layer 2 basis**: Algebra (group structure) + Geometry (continuous manifold)
+- **Emergence**: Rotation groups $SO(3)$, Lorentz group $SO(3,1)$, gauge groups $SU(N)$
+- **Physical role**: Continuous symmetries → Conservation laws via Noether's theorem (Section 5.4)
+
+#### Differential Geometry
+- **Layer 2 basis**: Geometry + Calculus (from arithmetic + continuous limits)
+- **Emergence**: Manifolds, tangent spaces, curvature, covariant derivatives
+- **Physical role**: Spacetime structure, general relativity, gauge field theories
+
+#### Hilbert Spaces
+- **Layer 2 basis**: Geometry (inner products) + Algebra (vector space structure) + Analysis (completeness)
+- **Emergence**: Infinite-dimensional vector spaces with inner product
+- **Physical role**: Quantum state spaces, superposition, entanglement, unitary evolution
+
+#### Tensor Calculus
+- **Layer 2 basis**: Algebra (multilinear maps) + Geometry (coordinate transformations)
+- **Emergence**: Tensors, covariant/contravariant indices, Einstein summation
+- **Physical role**: Coordinate-independent physical descriptions
+
+These Layer 3 structures are not themselves physical; they are mathematical frameworks that physics uses. But they are more specialized than Layer 2 mathematics—they crystallize specifically because they enable physical descriptions under constraints.
+
+### 3.5 Layers 3 → 4+: Physical Laws and Constants
+
+Physical laws emerge when Layer 3 mathematical structures combine with logical constraints under specific boundary conditions:
+
+#### Conservation Laws (Layer 4)
+- **Layer 3 input**: Lie groups (continuous symmetries)
+- **Logical constraint**: Identity requires invariance under continuous transformations
+- **Physical output**: Energy conservation (time-translation symmetry), momentum conservation (spatial-translation symmetry), angular momentum conservation (rotational symmetry)
+- **Formalism**: Noether's theorem connects symmetries to conserved quantities
+
+#### Quantum Mechanics (Layer 4)
+- **Layer 3 input**: Hilbert spaces, operators, inner products
+- **Logical constraints**:
+  - Identity → Unitary evolution ($U^\dagger U = I$)
+  - Non-Contradiction → Born rule ($\sum_i |\langle \psi_i | \psi \rangle|^2 = 1$)
+  - Excluded Middle → Measurement collapse (superposition → definite outcome)
+- **Physical output**: Schrödinger equation, commutation relations, uncertainty principle
+
+#### Gauge Theories (Layer 4)
+- **Layer 3 input**: Lie groups, differential geometry, fiber bundles
+- **Logical constraints**: Identity applied locally (gauge invariance)
+- **Physical output**: Electromagnetism (U(1) gauge), weak force (SU(2) gauge), strong force (SU(3) gauge)
+
+#### Specific Constants (Layer 5+)
+- **Examples**: Fine structure constant $\alpha \approx 1/137$, cosmological constant $\Lambda$, Higgs vacuum expectation value
+- **Status**: Contingent. These are specific solutions to Layer 4 equations under our universe's boundary conditions. Alternative values might be consistent with logical constraints but yield different physical phenomenology.
+
+The hierarchy thus explains both universality and contingency:
+- **Universal**: Layers 0-3 are shared by all possible realities (logical + mathematical necessities)
+- **Nearly universal**: Layer 4 physical frameworks (quantum mechanics, relativity) emerge from logical constraints + symmetries
+- **Contingent**: Layer 5+ specific constants and initial conditions vary across possible universes
+
+### 3.6 Entropy Reduction Through Layers
+
+Each layer reduces entropy of the filtered information space. Formally, let $S(\mathcal{H}^{(k)})$ denote the entropy of the information space after applying layers 0 through $k$:
+
+$$S(\mathcal{I}) > S(\mathcal{H}^{(0)}) > S(\mathcal{H}^{(1)}) > S(\mathcal{H}^{(2)}) > \cdots > S(\mathcal{A})$$
+
+This monotonic entropy reduction reflects increasing coherence and structure. Physical actualization $\mathcal{A}$ is the final, highly constrained subset of $\mathcal{I}$.
+
+**Testable implication**: Different layers should exhibit different decoherence timescales. Systems governed primarily by Layer 0 constraints (e.g., superposition under Excluded Middle) should decohere faster than systems governed only by Layer 4 physics (e.g., amplitude damping). This is the origin of the T2/T1 < 1 prediction (Section 6).
+
+### 3.7 Philosophical Resolutions
+
+The hierarchical emergence framework resolves several philosophical challenges:
+
+**Complexity from simplicity**: Three simple laws do not directly generate infinite complexity. Rather, they bootstrap coherence, enabling proto-primitives, enabling mathematics, enabling physics. Complexity emerges through layered iteration.
+
+**Geometry vs. logic priority**: Neither has priority. Logic (Layer 0) enables proto-primitives (Layer 1), which enable geometry and arithmetic simultaneously (Layer 2). Geometry is neither pre-logical nor post-logical; it co-emerges at the mathematical layer.
+
+**Gödel's incompleteness**: Applies to formal logic (Layer 2), not to ontological operation of $\mathfrak{L}_0$. Our formal models may be incomplete, but the filtering mechanism is not a formal system—it operates ontologically, prior to formalization.
+
+**Necessity vs. contingency**: Layers 0-1 are necessary, Layer 2 admits variations but is highly constrained, Layers 3-4 crystallize from symmetries and consistency requirements, Layer 5+ is contingent on specific universe parameters.
+
+**Why privilege logic?**: The hierarchy clarifies this is not arbitrary: Layer 0 is necessarily foundational (coherence is impossible without it), while geometry, symmetry, and information theory emerge at later layers as consequences, not presuppositions.
+
+The next section formalizes this hierarchical structure mathematically, introducing the constraint operator algebra and K-threshold framework that will be used to derive quantum mechanics (Section 5) and the T2/T1 prediction (Section 6).
+
+---
+
