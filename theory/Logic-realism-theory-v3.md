@@ -1427,6 +1427,8 @@ Logic Realism Theory occupies a distinctive position in the landscape of quantum
 
 **Philosophical Alignment**: LRT can be viewed as a rigorous formalization of structural realism's core insights, with the added feature of deriving structure from logical necessity rather than inferring it from physics.
 
+**Ontological Commitment**: LRT shares LSR's rejection of fundamental substance ontology. However, LRT allows for **emergent objects** as stable patterns within the structure defined by $\mathfrak{L}$. At Layers 0-1 (3FLL and proto-primitives), only relational structure exists. By Layers 3-4 (physics), what we call "particles," "fields," or "systems" are stable configurations that satisfy $\mathfrak{L}$ and exhibit persistent identity (via $\mathfrak{L}_{\text{Id}}$). These emergent objects are real but derivative—their existence depends on the underlying logical-relational structure, not vice versa. Thus, LRT is a **moderate structural realism**: structure is ontologically fundamental, but objects emerge as higher-layer patterns.
+
 ### 8.4 Quantum Bayesianism (QBism)
 
 **Core Claim**: "Quantum states are personal degrees of belief, not objective physical properties" (Fuchs, Mermin, & Schack, 2014). Measurement outcomes are subjective experiences; probabilities are Bayesian credences, not objective frequencies.
