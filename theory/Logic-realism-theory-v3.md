@@ -1974,9 +1974,9 @@ If confirmed, LRT would represent a paradigm shift: logic as the foundation of p
 
 ### Repository and Code Availability
 
-**Longmire, J. D.** (2025). *Logic Realism Theory: Lean 4 Formalization and Computational Validation*. GitHub repository. Available at: https://github.com/[username]/logic-realism-theory
+**Longmire, J. D.** (2025). *Logic Realism Theory: Lean 4 Formalization and Computational Validation*. GitHub repository. Available at: https://github.com/jdlongmire/logic-realism-theory
 
-[Note: Repository to be made public upon paper submission. Contains:
+[Note: Repository contains:
 - Lean 4 formalization (~2,400 lines): `lean/LogicRealismTheory/`
 - Python validation scripts: `scripts/eta_information_derivation.py`, `scripts/energy_noether_derivation.py`
 - Jupyter notebooks: `notebooks/Logic_Realism/`
