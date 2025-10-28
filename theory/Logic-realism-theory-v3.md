@@ -111,34 +111,76 @@ Therefore, the three fundamental laws of logic (3FLL) constitute the irreducible
 
 ### 2.2 The Information Space
 
-The information space $\mathcal{I}$ is not a physical container but a pre-physical logical structure: the totality of distinguishable states before actualization. Formally, we model $\mathcal{I}$ as an infinite-dimensional Hilbert space $\mathcal{H}_\infty$, though this mathematical representation is epistemic (our best tool for analysis), not ontological (the thing itself).
+The information space $\mathcal{I}$ is not a physical container but a pre-physical logical structure: the totality of distinguishable states before actualization. Formally, we model $\mathcal{I}$ as an infinite-dimensional Hilbert space $\mathcal{H}_\infty$.
 
-Key properties of $\mathcal{I}$:
+**Ontological vs. Epistemic**: This requires careful distinction. The Hilbert space formalism ($\mathcal{H}_\infty$, $\langle \psi | \phi \rangle$, operators) is our epistemic tool—the mathematical language we use to describe $\mathcal{I}$. However, the *relational structure* it captures—distinguishability between states—is ontological. $\mathcal{I}$ itself has a proto-geometric structure: states can be "near" or "far" from each other in terms of distinguishability. The inner product $\langle \psi | \phi \rangle$ represents this pre-existing relational structure, not an imposed one.
+
+**Key Properties of $\mathcal{I}$**:
 - **Dimensionality**: $\dim(\mathcal{I}) = \infty$. There is no a priori bound on the number of distinguishable configurations.
 - **Completeness**: $\mathcal{I}$ contains all logically possible states, including those filtered out by $\mathfrak{L}$.
-- **Pre-geometric**: $\mathcal{I}$ does not presuppose spatial geometry. Geometric structure emerges later through the hierarchical process (Section 3).
-- **Pre-temporal**: Time does not flow within $\mathcal{I}$ itself. Temporal ordering emerges from identity constraints on actualized states.
+- **Proto-geometric**: $\mathcal{I}$ has relational structure (distinguishability, "distance" between states) but not spatial geometry. Physical space emerges at Layers 2-3 when geometric mathematics crystallizes (Section 3.3-3.4).
+- **Pre-temporal**: Time does not flow within $\mathcal{I}$ itself. Temporal ordering emerges from identity constraints on actualized states (Section 5.3).
 
-The inner product structure $\langle \psi | \phi \rangle$ on $\mathcal{I}$ represents distinguishability: states are identical when $|\langle \psi | \phi \rangle|^2 = 1$, orthogonal when $|\langle \psi | \phi \rangle|^2 = 0$, and partially distinguishable otherwise. This structure does not assume quantum mechanics; rather, quantum mechanics will emerge as the optimal way to navigate $\mathcal{I}$ under logical constraints.
+**Distinguishability Structure**: The inner product $\langle \psi | \phi \rangle$ ontologically represents how distinguishable two states are:
+- $|\langle \psi | \phi \rangle|^2 = 1$: States are identical (indistinguishable)
+- $|\langle \psi | \phi \rangle|^2 = 0$: States are orthogonal (maximally distinguishable)
+- $0 < |\langle \psi | \phi \rangle|^2 < 1$: States are partially distinguishable
+
+This distinguishability is a primitive feature of $\mathcal{I}$ that exists prior to quantum mechanics. Quantum mechanics emerges (Section 5) as the mathematical framework that optimally navigates this distinguishability structure under the 3FLL constraints. The Hilbert space formalism is not *creating* this structure; it is *representing* it.
+
+**Clarification on "Pre-geometric"**: By "proto-geometric" we mean $\mathcal{I}$ has relational/metric structure (Layer 1.5: emergent from distinction + relation proto-primitives) but not the full geometric structures of Layer 2 mathematics (manifolds, curvature, coordinate systems). This resolves an apparent tension: geometry emerges hierarchically, but the information space itself has primitive relational structure that *enables* geometry to crystallize.
 
 ### 2.3 The Logical Filtering Operator
 
-The logical operator $\mathfrak{L}$ is a functional mapping $\mathfrak{L}: \mathcal{I} \rightarrow \mathcal{I}$ that imposes coherence requirements on information states. It is composed of three sub-operators corresponding to the 3FLL:
+The logical operator $\mathfrak{L}$ is a **projection operator** that filters information space by imposing coherence requirements. Formally:
+
+$$\mathfrak{L}: \mathcal{I} \rightarrow \mathcal{I}$$
+
+with the projection property:
+
+$$\mathfrak{L}^2 = \mathfrak{L}$$
+
+This idempotence ensures $\mathfrak{L}$ acts as identity on actualized states (those already satisfying coherence) and annihilates non-coherent states. The image of $\mathfrak{L}$ is the actualized subspace:
+
+$$\mathcal{A} = \text{Image}(\mathfrak{L}) \subset \mathcal{I}$$
+
+$\mathfrak{L}$ is composed of three sub-projectors corresponding to the 3FLL:
 
 $$\mathfrak{L} = \mathfrak{L}_{\text{EM}} \circ \mathfrak{L}_{\text{NC}} \circ \mathfrak{L}_{\text{Id}}$$
 
 where:
-- **$\mathfrak{L}_{\text{Id}}$ (Identity)**: Enforces persistence. For a state $|\psi\rangle$ at logical step $\tau$ and $\tau + \delta\tau$, identity requires continuous evolution: $\langle \psi(\tau) | \psi(\tau + \delta\tau) \rangle \approx 1$ for small $\delta\tau$. This constraint generates time evolution (Section 5.3) and conservation laws via Noether's theorem.
 
-- **$\mathfrak{L}_{\text{NC}}$ (Non-Contradiction)**: Enforces consistency. States $|\psi\rangle$ and $|\neg\psi\rangle$ (logical opposites) cannot simultaneously have actualization measure greater than zero in the same localized context. Mathematically, this is expressed as Born rule constraints on probability amplitudes: $\sum_i |\langle \psi_i | \psi \rangle|^2 = 1$ (Section 5.1).
+**$\mathfrak{L}_{\text{Id}}$ (Identity Constraint)**:
+Enforces persistence. For a state $|\psi\rangle$ at logical step $\tau$ and $\tau + \delta\tau$, identity requires continuous evolution:
 
-- **$\mathfrak{L}_{\text{EM}}$ (Excluded Middle)**: Enforces definiteness. Upon measurement-like interactions, superposition states must resolve to definite outcomes. This produces decoherence and measurement collapse as logical necessities, not additional postulates. The coupling of $\mathfrak{L}_{\text{EM}}$ to superposition states generates the T2/T1 < 1 prediction (Section 6).
+$$\langle \psi(\tau) | \psi(\tau + \delta\tau) \rangle \approx 1 \text{ for small } \delta\tau$$
 
-The composition order matters: identity establishes entities, non-contradiction prevents logical explosion, and excluded middle forces resolution. Together, these operators reduce the infinite information space $\mathcal{I}$ to the finite actualized space $\mathcal{A}$:
+This projects out states that fail to maintain identity across time steps. It generates time evolution (Section 5.3) and conservation laws via Noether's theorem. States satisfying identity form a coherent subspace $\mathcal{H}^{(0)} = \text{Image}(\mathfrak{L}_{\text{Id}}) \subset \mathcal{I}$.
 
-$$\mathcal{A} = \mathfrak{L}(\mathcal{I})$$
+**$\mathfrak{L}_{\text{NC}}$ (Non-Contradiction Constraint)**:
+Enforces consistency. States $|\psi\rangle$ and $|\neg\psi\rangle$ (logical opposites) cannot simultaneously have actualization measure greater than zero in the same localized context. Mathematically:
 
-Critically, $\mathfrak{L}$ does not *create* physical reality; it *filters* possibility space to reveal coherent actuality. Physical laws and constants emerge downstream of this filtering process (Section 3).
+$$\sum_i |\langle \psi_i | \psi \rangle|^2 = 1$$
+
+This normalization constraint (Born rule, Section 5.1) ensures probability amplitudes are consistent. $\mathfrak{L}_{\text{NC}}$ projects out self-contradictory superpositions.
+
+**$\mathfrak{L}_{\text{EM}}$ (Excluded Middle Constraint)**:
+Enforces definiteness. Upon measurement-like interactions, superposition states must resolve to definite outcomes. This produces decoherence and measurement collapse as logical necessities. The coupling of $\mathfrak{L}_{\text{EM}}$ to superposition states generates the T2/T1 < 1 prediction (Section 6).
+
+**Composition and Filtering**: The composition order matters:
+1. $\mathfrak{L}_{\text{Id}}$ establishes persistent entities → $\mathcal{H}^{(0)}$
+2. $\mathfrak{L}_{\text{NC}}$ removes contradictions → $\mathcal{H}^{(0,1)} \subset \mathcal{H}^{(0)}$
+3. $\mathfrak{L}_{\text{EM}}$ forces resolution → $\mathcal{A} \subset \mathcal{H}^{(0,1)}$
+
+Together, these operators progressively filter the infinite information space $\mathcal{I}$ to the finite actualized space $\mathcal{A}$:
+
+$$\mathcal{I} \supset \mathcal{H}^{(0)} \supset \mathcal{H}^{(0,1)} \supset \mathcal{A}$$
+
+**Critically**: $\mathfrak{L}$ does not *create* physical reality; it *filters* possibility space to reveal coherent actuality. For any state $|\psi\rangle \in \mathcal{I}$:
+- If $|\psi\rangle \in \mathcal{A}$: $\mathfrak{L}|\psi\rangle = |\psi\rangle$ (actualized states pass through)
+- If $|\psi\rangle \notin \mathcal{A}$: $\mathfrak{L}|\psi\rangle = 0$ (non-coherent states are annihilated)
+
+Physical laws and constants emerge downstream of this filtering process (Section 3), as additional layers of constraints refine $\mathcal{A}$ further.
 
 ### 2.4 Bootstrap Function: Constraints as Enablers
 
@@ -332,15 +374,46 @@ The hierarchy thus explains both universality and contingency:
 - **Nearly universal**: Layer 4 physical frameworks (quantum mechanics, relativity) emerge from logical constraints + symmetries
 - **Contingent**: Layer 5+ specific constants and initial conditions vary across possible universes
 
-### 3.6 Entropy Reduction Through Layers
+### 3.6 Constraint Accumulation and Information Space Reduction
 
-Each layer reduces entropy of the filtered information space. Formally, let $S(\mathcal{H}^{(k)})$ denote the entropy of the information space after applying layers 0 through $k$:
+Each layer applies additional constraints that progressively restrict the information space. Formally, the hierarchical filtering creates a nested sequence of subspaces:
 
-$$S(\mathcal{I}) > S(\mathcal{H}^{(0)}) > S(\mathcal{H}^{(1)}) > S(\mathcal{H}^{(2)}) > \cdots > S(\mathcal{A})$$
+$$\mathcal{I} \supset \mathcal{H}^{(0)} \supset \mathcal{H}^{(1)} \supset \mathcal{H}^{(2)} \supset \cdots \supset \mathcal{A}$$
 
-This monotonic entropy reduction reflects increasing coherence and structure. Physical actualization $\mathcal{A}$ is the final, highly constrained subset of $\mathcal{I}$.
+where:
+- $\mathcal{H}^{(k)} = \text{Image}(\mathfrak{L}_k \circ \cdots \circ \mathfrak{L}_1 \circ \mathfrak{L}_0)$
+- Each $\mathcal{H}^{(k)}$ is the **coherent subspace** after applying layers 0 through $k$
+- $\mathcal{A} = \mathcal{H}^{(n)}$ is the final actualized subspace
 
-**Testable implication**: Different layers should exhibit different decoherence timescales. Systems governed primarily by Layer 0 constraints (e.g., superposition under Excluded Middle) should decohere faster than systems governed only by Layer 4 physics (e.g., amplitude damping). This is the origin of the T2/T1 < 1 prediction (Section 6).
+**Constraint Accumulation**: Define $C(k)$ as the number of independent constraints applied through layer $k$:
+- $C(0) = 3$ (the 3FLL)
+- $C(1) = 7$ (3FLL + 4 proto-primitives: distinction, membership, relation, succession)
+- $C(2) \gg C(1)$ (mathematical structures impose infinite constraints)
+- $C(k+1) > C(k)$ (monotonic increase)
+
+**Information-Theoretic Measure**: Rather than ill-defined entropy on infinite spaces, we measure **constraint density** as the effective dimensionality reduction:
+
+$$\dim(\mathcal{H}^{(k+1)}) < \dim(\mathcal{H}^{(k)})$$
+
+This monotonic dimensional reduction reflects increasing coherence. The ratio $\dim(\mathcal{H}^{(k+1)}) / \dim(\mathcal{H}^{(k)})$ quantifies how much possibility space each layer filters.
+
+**Emergence Dynamics** (formal): The time evolution of constraints at each layer follows:
+
+$$\frac{\partial \mathfrak{L}_k}{\partial \tau} = -\alpha_k [\mathfrak{L}_k, [\mathfrak{L}_k, \mathfrak{L}_{k-1}]] + \beta_k \nabla^2 \mathfrak{L}_k$$
+
+where:
+- $\tau$ is "logical time" (a pre-physical parameter indexing the sequence of constraint application)
+- $\alpha_k$ is the coupling strength between layer $k$ and layer $k-1$
+- $\beta_k$ is the diffusion rate for structure propagation at layer $k$
+- The double commutator $[\mathfrak{L}_k, [\mathfrak{L}_k, \mathfrak{L}_{k-1}]]$ ensures consistency with prior constraints
+
+This differential equation formalizes how each layer "crystallizes" from the prior layer through a stability-seeking dynamics.
+
+**Testable Implication**: Different layers exhibit different decoherence timescales. Systems governed primarily by Layer 0 constraints (e.g., superposition under Excluded Middle) decohere faster than systems governed only by Layer 4 physics (e.g., amplitude damping). This predicts:
+
+$$T_2^{(\text{Layer 0})} < T_2^{(\text{Layer 4})}$$
+
+which is the origin of the T2/T1 < 1 prediction (Section 6). The differential equation above predicts the decoherence rate should scale with $\alpha_0$ (Excluded Middle coupling strength), making this relationship quantitatively testable.
 
 ### 3.7 Philosophical Resolutions
 

@@ -23,6 +23,63 @@ Find the most recent `Session_X.Y.md` file (highest X.Y number) in the `Session_
 
 ---
 
+## 📚 Key Theoretical Documents
+
+**When working on paper revisions or theoretical derivations, reference these canonical documents:**
+
+### Primary Theory Documents
+
+1. **`theory/LRT_Hierarchical_Emergence_Framework.md`** ⚠️ CRITICAL REFERENCE
+   - **Purpose**: Formal mathematical framework for hierarchical emergence
+   - **Contains**:
+     - Rigorous definitions of information space structure
+     - Constraint operator hierarchy (L_0 → L_1 → L_2 → ...)
+     - Emergence dynamics differential equations
+     - Entropy reduction formalism
+     - Proto-mathematical primitive specifications
+   - **When to use**:
+     - Formalizing any claims about emergence
+     - Defining operators mathematically
+     - Addressing "hand-wavy" critiques with rigorous math
+     - Writing Sections 3-4 of papers
+   - **Key insight**: This document provides the mathematical rigor that underlies qualitative descriptions in papers
+
+2. **`theory/Logic-realism-theory-foundational.md`** (old paper - reference only)
+   - **Purpose**: Source material for content extraction during rewrites
+   - **Status**: Being replaced by v3 rewrite, use as content source but not structure model
+   - **Contains**: Existing derivations, philosophical arguments, experimental protocols
+
+3. **`theory/Logic-realism-theory-v3.md`** (NEW - work in progress)
+   - **Purpose**: Clean slate rewrite with standard physics paper structure
+   - **Status**: Actively being written (Session 4.0+)
+   - **Target**: Peer-review ready manuscript with predictions by ~50% mark
+
+### Sprint-Specific Documents
+
+4. **`sprints/sprint_5/SPRINT_5_TRACKING.md`**
+   - **Purpose**: Current sprint progress, daily logs, deliverables
+   - **Contains**: Track 1 (Energy), Track 2 (η), Track 3 (Pre-mathematical), Track 4 (Lean honesty)
+
+5. **`NEXT_SESSION_TODOS.md`**
+   - **Purpose**: Immediate priorities for next session
+   - **Contains**: Priority-ordered task list with time estimates
+
+### Usage Protocol
+
+**Before making any claims about emergence, operators, or mathematical structure:**
+1. ✅ Check `LRT_Hierarchical_Emergence_Framework.md` for existing formal definitions
+2. ✅ Use the rigorous formalism from that document in papers
+3. ✅ Cross-reference between qualitative paper text and quantitative framework doc
+4. ❌ DO NOT redevelop formalism from scratch - it's already done
+
+**Paper writing workflow:**
+1. Draft qualitative narrative in paper (e.g., "proto-primitives enable mathematics")
+2. Pull formal definitions from `LRT_Hierarchical_Emergence_Framework.md`
+3. Integrate formalism into paper sections
+4. Ensure consistency between narrative and mathematics
+
+---
+
 ## 🎯 Research Philosophy: Collaborative Refinement
 
 **CRITICAL PRINCIPLE**: When facing theoretical obstacles or peer review challenges, the default approach is **collaborative problem-solving to overcome**, NOT weakening claims or abandoning core thesis.
@@ -1121,3 +1178,4 @@ This repository implements active theoretical research in fundamental physics. A
 - validate all notebooks, Lean proofs, code, etc with the multi-LLM team
 - Always add key insights gained and lessons learn for each session closeout
 - all sprints documentation goes into the sprints folder
+- 1 priority- discuss emergence framework artifact in the theory folder
