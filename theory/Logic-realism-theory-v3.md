@@ -14,7 +14,7 @@ Repository: https://github.com/jdlongmire/logic-realism-theory
 
 ## Abstract
 
-We present Logic Realism Theory (LRT), a framework in which quantum mechanics emerges from information-theoretic constraints imposed by three fundamental logical laws: identity, non-contradiction, and excluded middle (3FLL). Formalized as **$\mathcal{A} = \mathfrak{L}(\mathcal{I})$**—where $\mathcal{A}$ represents physical actualization, $\mathfrak{L}$ the logical constraints, and $\mathcal{I}$ an infinite information space—LRT derives quantum phenomena that standard quantum mechanics postulates. The theory predicts an intrinsic decoherence asymmetry due to Excluded Middle coupling to superposition states, yielding a testable signature: **T2/T1 ≈ 0.99** (vs. ≈1.0 in conventional quantum mechanics), a ~1% deviation derived from first principles using Fisher information geometry on constraint-filtered state spaces. This prediction is falsifiable on current quantum hardware across superconducting, trapped-ion, and topological platforms. We present the mathematical framework, key derivations (Born rule, Hilbert space structure, time evolution), hierarchical emergence mechanism (logic → proto-mathematics → mathematics → physics), and formal verification via Lean 4 proof assistant (~1,500 lines; 3FLL proven from classical logic without LRT-specific axioms). Experimental protocols demonstrate >95% statistical power with 150 hours per quantum backend. Additional predictions include state-dependent Hamiltonian shifts and entropy-conditioned scaling in quantum error correction.
+We present Logic Realism Theory (LRT), a framework in which quantum mechanics emerges from information-theoretic constraints imposed by three fundamental logical laws: identity, non-contradiction, and excluded middle (3FLL). Formalized as **$\mathcal{A} = \mathfrak{L}(\mathcal{I})$**—where $\mathcal{A}$ represents physical actualization, $\mathfrak{L}$ the logical constraints, and $\mathcal{I}$ an infinite information space—LRT derives quantum phenomena that standard quantum mechanics postulates. The theory predicts an intrinsic decoherence asymmetry due to Excluded Middle coupling to superposition states, yielding a testable signature: **T2/T1 ≈ 0.99** (vs. ≈1.0 in conventional quantum mechanics), a ~1% deviation derived from first principles using Fisher information geometry on constraint-filtered state spaces. This prediction is falsifiable on current quantum hardware across superconducting, trapped-ion, and topological platforms. We present the mathematical framework, key derivations (Born rule, Hilbert space structure, time evolution), hierarchical emergence mechanism (logic → proto-mathematics → mathematics → physics), and formal verification via Lean 4 proof assistant (~2,400 lines; 3FLL proven from classical logic without LRT-specific axioms). Experimental protocols demonstrate >95% statistical power with 150 hours per quantum backend. Additional predictions include state-dependent Hamiltonian shifts and entropy-conditioned scaling in quantum error correction.
 
 **Keywords:** quantum foundations, information theory, logical realism, emergent spacetime, quantum decoherence, formal verification
 
@@ -80,7 +80,7 @@ This paper proceeds as follows:
 
 **Section 6** derives the T2/T1 ≈ 0.99 prediction from first principles using Fisher information geometry on constraint-filtered state spaces, yielding η = 0.0099 from the Fisher information ratio and Shannon entropy. We address the phenomenological parameter critique from peer review by presenting a non-circular derivation, discuss potential discrepancies with literature values (0.7-0.9), and present confound isolation strategies and experimental protocols.
 
-**Section 7** documents formal verification via Lean 4 proof assistant: ~1,500 lines of verified code. The 3FLL are proven from Lean's classical logic foundation without LRT-specific axioms. Established mathematical theorems (Stone, Jaynes MaxEnt, Spohn) are used as building blocks. Key LRT theorems include time emergence from identity, energy from Noether's theorem, and Russell's paradox filtering by non-contradiction.
+**Section 7** documents formal verification via Lean 4 proof assistant: ~2,400 lines of verified code. The 3FLL are proven from Lean's classical logic foundation without LRT-specific axioms. Established mathematical theorems (Stone, Jaynes MaxEnt, Spohn) are used as building blocks. Key LRT theorems include time emergence from identity, energy from Noether's theorem, and Russell's paradox filtering by non-contradiction.
 
 **Section 8** provides comparative analysis distinguishing LRT from Tegmark's Mathematical Universe Hypothesis, pancomputationalism, and logical-structural realism, emphasizing discriminating predictions.
 
@@ -1353,26 +1353,7 @@ warning: LogicRealismTheory/Derivations/TimeEmergence.lean:277:8: declaration us
 
 All other modules build without warnings. The 3 `sorry` statements are clearly documented and do not affect the validity of core theorems.
 
-### 7.8 Comparison to Other Approaches
-
-**Tegmark's Mathematical Universe Hypothesis (MUH)**:
-- **Approach**: "All mathematical structures exist physically."
-- **Formalization**: No known Lean formalization of MUH exists.
-- **LRT Difference**: LRT formalizes *which* mathematical structures are actualized (those satisfying $\mathfrak{L}$), not all structures equally.
-
-**Pancomputationalism** (Wolfram, Deutsch):
-- **Approach**: "Reality is computational; universe is a Turing machine."
-- **Formalization**: Cellular automaton models, not formal proofs.
-- **LRT Difference**: LRT derives computation as emergent (Layer 3-4), not fundamental (Layer 0).
-
-**Logical-Structural Realism** (Ladyman & Ross):
-- **Approach**: "Structure, not objects, is fundamental."
-- **Formalization**: Philosophical framework, minimal formal mathematics.
-- **LRT Difference**: LRT provides explicit formal structure ($\mathcal{A} = \mathfrak{L}(\mathcal{I})$) with verified proofs in Lean.
-
-**LRT Contribution**: To our knowledge, LRT is the **first** ontological theory of physical reality to provide machine-verified proofs of core claims in a modern proof assistant (Lean 4).
-
-### 7.9 Summary
+### 7.8 Summary
 
 Section 7 presented the Lean 4 formalization of Logic Realism Theory, demonstrating:
 
@@ -1383,8 +1364,8 @@ Section 7 presented the Lean 4 formalization of Logic Realism Theory, demonstrat
 
 The formalization serves as a **proof of concept** that LRT's central mathematical claims are logically sound. It does not replace the informal exposition (Sections 2-6) but complements it by providing absolute verification of key arguments.
 
-**Philosophical Significance**: By formalizing ontological claims in a proof assistant, LRT demonstrates that metaphysical questions about reality's structure can be subjected to the same rigorous standards as mathematical theorems. The boundary between philosophy and mathematics is not as sharp as traditionally assumed.
+**Philosophical Significance**: By formalizing ontological claims in a proof assistant, LRT demonstrates that metaphysical questions about reality's structure can be subjected to the same rigorous standards as mathematical theorems. The boundary between philosophy and mathematics is not as sharp as traditionally assumed. To our knowledge, this formal verification makes LRT the first ontological framework of its kind to be machine-checked, distinguishing it from other metaphysical proposals (Section 8).
 
-**Next Steps**: Section 8 compares LRT to competing frameworks, Section 9 addresses objections, and Section 10 concludes.
+**Next Steps**: Section 8 provides comparative analysis, Section 9 addresses objections, and Section 10 concludes.
 
 ---
