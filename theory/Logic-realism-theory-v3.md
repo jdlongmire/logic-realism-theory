@@ -274,6 +274,8 @@ These four proto-primitives are not mathematical objects. They are logical struc
 
 ### 3.3 Layer 1 → Layer 2: Mathematical Co-Emergence
 
+**Scope Note**: The formal derivation of mathematical structures from proto-primitives (Layer 1 → Layer 2) represents a major research direction. While we have formalized Layer 0 → Layer 1 transitions and Layers 3-4 derivations in Lean 4 (Section 7), the logicist program of deriving all mathematics from logic (Frege, Russell, Whitehead) remains incomplete in the philosophy of mathematics. Our current Lean formalization focuses on: (1) Layer 0: 3FLL proven from classical logic, and (2) Layers 3-4: quantum mechanics from Hilbert space + 3FLL constraints. The Layer 1 → 2 transition presented here is a conceptual framework showing how proto-primitives enable mathematics, rather than a complete formal derivation. This represents important future work.
+
 From the four proto-primitives, mathematics emerges as a **unified, interconnected structure**. Importantly, different branches of mathematics arise simultaneously by interpreting the same primitives in different ways. There is no privileging of geometry over arithmetic, or vice versa—both co-emerge from the same logical substrate.
 
 #### Arithmetic (Discrete Branch)
@@ -423,7 +425,7 @@ The hierarchical emergence framework resolves several philosophical challenges:
 
 **Geometry vs. logic priority**: Neither has priority. Logic (Layer 0) enables proto-primitives (Layer 1), which enable geometry and arithmetic simultaneously (Layer 2). Geometry is neither pre-logical nor post-logical; it co-emerges at the mathematical layer.
 
-**Gödel's incompleteness**: Applies to formal logic (Layer 2), not to ontological operation of $\mathfrak{L}_0$. Our formal models may be incomplete, but the filtering mechanism is not a formal system—it operates ontologically, prior to formalization.
+**Gödel's incompleteness**: Applies to formal logic (Layer 2), not to ontological operation of $\mathfrak{L}_0$. Our formal models may be incomplete, but the filtering mechanism is not a formal system—it operates ontologically, prior to formalization. **Epistemic limitation acknowledged**: If our Layer 2 mathematical tools are provably incomplete (Gödel's theorem), we cannot prove they fully capture Layer 0's operation. However, this is not unique to LRT—all physics relies on mathematical models that may be incomplete representations. The T2/T1 prediction provides an empirical test of whether our Layer 2 → Layer 4 derivation captures reality, independent of Layer 2's formal completeness.
 
 **Necessity vs. contingency**: Layers 0-1 are necessary, Layer 2 admits variations but is highly constrained, Layers 3-4 crystallize from symmetries and consistency requirements, Layer 5+ is contingent on specific universe parameters.
 
