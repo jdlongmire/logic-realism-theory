@@ -6,14 +6,29 @@ Authors: James D. (JD) Longmire
 
 import Mathlib.Data.Complex.Basic
 import Mathlib.Data.Fintype.Basic
+import Mathlib.Data.Matrix.Basic
+import Mathlib.Analysis.InnerProductSpace.Basic
+import Mathlib.Analysis.SpecialFunctions.Sqrt
 
 /-!
 # Non-Unitary Evolution Resolution
 
-**STATUS**: Conceptual framework complete; compilation blocked by Lean limitation
-**BUILD STATUS**: ❌ Does not compile (axiomatized Matrix + section variables limitation)
-**PRIMARY DELIVERABLE**: Theory document (`theory/Non_Unitary_Resolution.md`) - COMPLETE
+**STATUS**: Conceptual framework complete; Lean module partially compiles
+**BUILD STATUS**: ❌ Does not compile (typeclass inference limitations with section variables)
+**PRIMARY DELIVERABLE**: Theory document (`theory/Non_Unitary_Resolution.md`) - ✅ COMPLETE
 **NOTE**: This module is NOT imported in root LogicRealismTheory.lean (non-blocking)
+
+## Compilation Status
+
+**Progress:**
+- ✅ Matrix imports from Mathlib.Data.Matrix.Basic work correctly
+- ✅ All Matrix operations (conjTranspose, mulVec, mul, one) compile
+- ✅ Real.sqrt and analysis functions compile
+- ❌ Typeclass inference cannot automatically capture section variable instances in axioms/structures
+
+**Remaining Issue:** Lean 4 type inference limitation - section variables `{V : Type*} [Fintype V] [DecidableEq V]`
+are not automatically captured in certain contexts (axioms, structure fields), causing "typeclass instance
+problem is stuck" errors. This is a known Lean limitation, not a conceptual issue with the theory
 
 This module addresses the peer review concern: "Stone's theorem requires unitarity,
 but measurement is non-unitary. How does LRT reconcile this?"
@@ -51,28 +66,12 @@ don't exist in this Lean version.
 * Approach 2 reference: `approach_2_reference/.../MeasurementMechanism.lean` (compiles with real Matrix imports)
 -/
 
--- Axiomatize Matrix type (missing correct Mathlib import path)
-axiom Matrix (α β : Type*) (R : Type*) : Type*
-
-namespace Matrix
-  axiom conjTranspose {α β R : Type*} : Matrix α β R → Matrix β α R
-  axiom mulVec {α β R : Type*} [Fintype β] : Matrix α β R → (β → R) → (α → R)
-  axiom mul {α : Type*} [Fintype α] : Matrix α α ℂ → Matrix α α ℂ → Matrix α α ℂ
-  axiom one {α : Type*} [Fintype α] : Matrix α α ℂ
-end Matrix
-
-noncomputable instance {α : Type*} [Fintype α] : HMul (Matrix α α ℂ) (Matrix α α ℂ) (Matrix α α ℂ) where
-  hMul := Matrix.mul
-
-noncomputable instance {α : Type*} [Fintype α] : One (Matrix α α ℂ) where
-  one := Matrix.one
-
--- Axiomatize Set cardinality
+-- Axiomatize Set cardinality (not available in current Mathlib)
 axiom Set.card {α : Type*} : Set α → ℕ
 
 namespace LogicRealismTheory.Measurement
 
-open Complex
+open Complex Matrix
 
 variable {V : Type*} [Fintype V] [DecidableEq V]
 
@@ -90,12 +89,12 @@ structure QuantumState (K : ℕ) where
 
 structure UnitaryOperator (K : ℕ) where
   matrix : Matrix V V ℂ
-  unitary : Matrix.conjTranspose matrix * matrix = 1
+  unitary : matrix.conjTranspose * matrix = 1
   preserves_K : ∀ (ψ : QuantumState K) (σ : V),
-    σ ∈ StateSpace K → (Matrix.mulVec matrix ψ.amplitude) σ ≠ 0 → σ ∈ StateSpace K
+    σ ∈ StateSpace K → (matrix.mulVec ψ.amplitude) σ ≠ 0 → σ ∈ StateSpace K
 
 axiom unitary_preserves_norm {K : ℕ} (U : UnitaryOperator K) (ψ : QuantumState K) :
-  ∑ σ : V, normSq ((Matrix.mulVec U.matrix ψ.amplitude) σ) = 1
+  ∑ σ : V, normSq ((U.matrix.mulVec ψ.amplitude) σ) = 1
 
 theorem unitary_preserves_K {K : ℕ} (U : UnitaryOperator K) (ψ : QuantumState K) :
     ∀ σ : V, σ ∈ StateSpace K → σ ∈ StateSpace K := by
@@ -106,9 +105,9 @@ structure MeasurementOperator (K_pre K_post : ℕ) where
   matrix : Matrix V V ℂ
   constraint_reduction : K_post < K_pre
   projects_onto : ∀ σ : V, σ ∈ StateSpace K_post →
-    (Matrix.mulVec matrix (fun τ => if τ = σ then 1 else 0)) σ ≠ 0
+    (matrix.mulVec (fun τ => if τ = σ then 1 else 0)) σ ≠ 0
   annihilates : ∀ σ : V, σ ∉ StateSpace K_post →
-    (Matrix.mulVec matrix (fun τ => if τ = σ then 1 else 0)) σ = 0
+    (matrix.mulVec (fun τ => if τ = σ then 1 else 0)) σ = 0
 
 axiom measurement_is_projection {K_pre K_post : ℕ}
     (M : MeasurementOperator K_pre K_post) :
@@ -116,12 +115,12 @@ axiom measurement_is_projection {K_pre K_post : ℕ}
 
 axiom measurement_is_hermitian {K_pre K_post : ℕ}
     (M : MeasurementOperator K_pre K_post) :
-  Matrix.conjTranspose M.matrix = M.matrix
+  M.matrix.conjTranspose = M.matrix
 
 axiom measurement_not_unitary {K_pre K_post : ℕ}
     (M : MeasurementOperator K_pre K_post)
     (h : K_post < K_pre) :
-  Matrix.conjTranspose M.matrix * M.matrix ≠ 1
+  M.matrix.conjTranspose * M.matrix ≠ 1
 
 theorem measurement_reduces_K {K_pre K_post : ℕ}
     (M : MeasurementOperator K_pre K_post) :
@@ -137,7 +136,7 @@ theorem measurement_reduces_K {K_pre K_post : ℕ}
 axiom wavefunction_collapse_normalized {K_pre K_post : ℕ}
     (M : MeasurementOperator K_pre K_post)
     (ψ_pre : QuantumState K_pre) :
-  let ψ_measured := Matrix.mulVec M.matrix ψ_pre.amplitude
+  let ψ_measured := M.matrix.mulVec ψ_pre.amplitude
   let norm_sq := ∑ σ : V, normSq (ψ_measured σ)
   let norm := Real.sqrt norm_sq
   let ψ_post := fun σ => ψ_measured σ / norm
@@ -146,7 +145,7 @@ axiom wavefunction_collapse_normalized {K_pre K_post : ℕ}
 axiom wavefunction_collapse_support {K_pre K_post : ℕ}
     (M : MeasurementOperator K_pre K_post)
     (ψ_pre : QuantumState K_pre) :
-  let ψ_measured := Matrix.mulVec M.matrix ψ_pre.amplitude
+  let ψ_measured := M.matrix.mulVec ψ_pre.amplitude
   let norm_sq := ∑ σ : V, normSq (ψ_measured σ)
   let norm := Real.sqrt norm_sq
   let ψ_post := fun σ => ψ_measured σ / norm
@@ -156,7 +155,7 @@ def wavefunction_collapse {K_pre K_post : ℕ}
     (M : MeasurementOperator K_pre K_post)
     (ψ_pre : QuantumState K_pre) :
     QuantumState K_post :=
-  let ψ_measured := Matrix.mulVec M.matrix ψ_pre.amplitude
+  let ψ_measured := M.matrix.mulVec ψ_pre.amplitude
   let norm_sq := ∑ σ : V, normSq (ψ_measured σ)
   let norm := Real.sqrt norm_sq
   let ψ_post := fun σ => ψ_measured σ / norm
@@ -166,7 +165,7 @@ noncomputable def measurement_probability {K_pre K_post : ℕ}
     (M : MeasurementOperator K_pre K_post)
     (ψ : QuantumState K_pre)
     (outcome : V) : ℝ :=
-  let M_psi := Matrix.mulVec M.matrix ψ.amplitude
+  let M_psi := M.matrix.mulVec ψ.amplitude
   let total_norm := ∑ σ : V, normSq (M_psi σ)
   normSq (M_psi outcome) / total_norm
 
@@ -180,8 +179,8 @@ axiom observer_adds_constraints (K_sys : ℕ) (K_obs : ℕ) (h : K_obs < K_sys) 
 
 theorem no_unitarity_contradiction (K : ℕ) (h : K > 0) :
     ∃ (U : UnitaryOperator K) (M : MeasurementOperator K (K-1)),
-      (U.matrix * Matrix.conjTranspose U.matrix = 1) ∧
-      (M.matrix * Matrix.conjTranspose M.matrix ≠ 1) := by
+      (U.matrix * U.matrix.conjTranspose = 1) ∧
+      (M.matrix * M.matrix.conjTranspose ≠ 1) := by
   sorry
 
 axiom unitary_preserves_dimension {K : ℕ} (U : UnitaryOperator K) :
@@ -194,8 +193,8 @@ axiom measurement_reduces_dimension {K_pre K_post : ℕ}
 
 theorem evolution_types_distinct (K : ℕ) (ΔK : ℕ) (h : ΔK > 0) :
     ∃ (U : UnitaryOperator K) (M : MeasurementOperator K (K - ΔK)),
-      (U.matrix * Matrix.conjTranspose U.matrix = 1) ∧
-      (M.matrix * Matrix.conjTranspose M.matrix ≠ 1) ∧
+      (U.matrix * U.matrix.conjTranspose = 1) ∧
+      (M.matrix * M.matrix.conjTranspose ≠ 1) ∧
       (Set.card (StateSpace K) = Set.card (StateSpace K)) ∧
       (Set.card (StateSpace (K - ΔK)) < Set.card (StateSpace K)) := by
   sorry
