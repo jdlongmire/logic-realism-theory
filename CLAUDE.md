@@ -665,6 +665,84 @@ This is the **Logic Realism Theory (LRT)** repository, containing mathematical d
 
 ---
 
+## 🔒 Internal Development Work Protocol
+
+**CRITICAL**: The repository contains internal development work that MUST NOT be referenced in public-facing code.
+
+### approach_2_reference Directory
+
+**Location**: `approach_2_reference/` (top-level directory)
+
+**Purpose**: Historical internal development work containing exploratory implementations and earlier framework versions.
+
+**Status**: INTERNAL ONLY - Not part of public codebase
+
+### Strict Non-Reference Policy ⚠️ MANDATORY
+
+**Rules for all public-facing code**:
+
+1. ✅ **DO**: Mine good ideas and concepts from approach_2_reference
+2. ✅ **DO**: Reimplement concepts independently in LogicRealismTheory/
+3. ✅ **DO**: Use professional generic terminology when describing origins
+4. ❌ **DO NOT**: Import any code from approach_2_reference (zero dependencies)
+5. ❌ **DO NOT**: Reference "approach_2" or "approach 2" in any comments
+6. ❌ **DO NOT**: Reference "approach_2" in documentation strings
+7. ❌ **DO NOT**: Include "SOURCE: approach_2_reference/..." comments
+
+### Acceptable Terminology (Instead of "approach_2")
+
+When documenting origins of concepts, use:
+- "from established framework"
+- "from permutation-based framework"
+- "from earlier theoretical work"
+- "building on previous formalization"
+- Generic mathematical concepts without attribution
+
+### Verification Protocol
+
+**Before any commit**:
+```bash
+# Verify zero references to approach_2
+cd lean/LogicRealismTheory
+grep -r "approach_2\|approach 2" . | wc -l
+# Expected result: 0
+```
+
+**During code review**:
+- Check for any `import` statements referencing approach_2_reference
+- Check comments for "approach_2" or "approach 2"
+- Check documentation strings for internal references
+
+### Why This Matters
+
+**Reason 1 - Professional Presentation**: Public code should present clean, self-contained implementations without internal development history.
+
+**Reason 2 - Conceptual Independence**: LRT must stand on its own merits without relying on earlier exploratory work.
+
+**Reason 3 - Citation Hygiene**: External reviewers should not see internal development references.
+
+### Sprint 11 Example
+
+**Issue Identified**: 45 references to "approach_2" found in QubitKMapping.lean, MeasurementGeometry.lean, NonUnitaryEvolution.lean
+
+**Resolution**: All references removed and replaced with professional terminology:
+- "approach_2 concepts" → "established framework concepts"
+- "SOURCE: approach_2_reference/.../File.lean" → [removed entirely]
+- "from approach_2" → "from permutation-based framework"
+
+**Verification**: `grep -c "approach_2\|approach 2" [files]` returned 0 for all files ✅
+
+### Enforcement
+
+**This protocol is MANDATORY for all sessions**. If internal references are found:
+1. Identify all occurrences (grep search)
+2. Replace with professional terminology
+3. Verify zero references remain
+4. Commit cleanup immediately
+5. Document in session log
+
+---
+
 ## 📁 Repository Folder Structure Protocol
 
 **CRITICAL**: This section defines the canonical locations for all project artifacts. Following this structure prevents fragmentation and maintains single sources of truth.
