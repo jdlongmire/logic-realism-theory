@@ -20,6 +20,36 @@
 
 **Direction Change**: User redirected focus to Lean proof completion instead of paper work. This was the right call - the proofs needed attention.
 
+**Driving Context**: All October 29 Lean proof work was in response to an **external Gemini review** of the v3 theory paper, specifically focused on the K-threshold framework gap. The review (documented in `theory/K_Threshold_Gap_Analysis.md`, created Oct 29 at 5:20am) identified K-values (K=0.1, K=1.0) as arbitrary/unjustified and called for first-principles derivation. The QubitKMapping.lean proof marathon was a direct attempt to provide quantum state → K mapping foundations to address these gaps.
+
+---
+
+## External Review Context: K-Threshold Gap Analysis
+
+**Critical Document**: [`theory/K_Threshold_Gap_Analysis.md`](../theory/K_Threshold_Gap_Analysis.md) (526 lines, Oct 29 2025, 5:20am)
+
+**Review Source**: External Gemini review of v3 theory paper (NOT multi-LLM consultation)
+
+**Key Quote from Review**:
+> "The choice of K-values (K=0.1 for ground state, K=1.0 for superposition) appears somewhat arbitrary. While you describe them conceptually, there's no explicit derivation showing why these particular values emerge from the formalism."
+
+**Six Major Gaps Identified**:
+1. **ConstraintViolations(σ) axiomatized, not implemented** - No computational K(ψ) function
+2. **No quantum state → K mapping** - Missing K(|ψ⟩) = ConstraintViolations(ρ_ψ) implementation
+3. **State space size model |V_K| ~ K^d not justified** - Scaling assumption lacks foundation
+4. **K-scale undefined** - Dimensionless? Units? Physical meaning unclear
+5. **Fisher information not formalized in Lean** - Alternative K-mapping lacks formal grounding
+6. **No experimental K measurement protocol** - K remains theoretical construct
+
+**Recommended Approach**: "Option C: Hybrid" - Honest phenomenological framing for current paper submission, first-principles K-theory as future research program.
+
+**Session 4.1 Response**: The QubitKMapping.lean proof marathon (Phase 1) was a direct attempt to address Gaps #1, #2, and #5 by providing:
+- Quantum state → K mappings (K_purity, K_entropy, K_fisher)
+- Formal proofs of K-value ranges and properties
+- Foundation for first-principles K-theory
+
+**Status**: 10 proofs completed (0 sorry), theoretical foundations established, but practical K-threshold framework remains phenomenological pending further development.
+
 ---
 
 ## Current Build Status (End of Session 4.1)
@@ -40,6 +70,8 @@
 ---
 
 ## Phase 1: QubitKMapping.lean Proof Marathon (6am-3pm)
+
+**Context**: This intensive proof session directly addressed Gaps #1, #2, and #5 from the external Gemini K-threshold review (see "External Review Context" section above). The goal was to provide first-principles quantum state → K mappings to replace arbitrary K-values.
 
 ### Accomplishments
 
@@ -402,11 +434,11 @@ cd lean && lake build
 
 **What Happened**: User redirected to Lean proof work instead.
 
-**Justification**: QubitKMapping proofs were closer to completion, needed focused attention.
+**Justification**: QubitKMapping proofs were addressing **external Gemini review** (K_Threshold_Gap_Analysis.md) that identified K-values as arbitrary/unjustified. This critique was more critical than the η derivation paper integration - it challenged the foundation of the K-threshold framework itself. QubitKMapping work was an attempt to provide first-principles quantum state → K mappings to replace phenomenological K-values.
 
-**Result**: Correct decision. QubitKMapping now 0 sorry, major milestone achieved.
+**Result**: Correct decision. QubitKMapping now 0 sorry (addressing Gaps #1, #2, #5 from review), major milestone achieved, though practical K-threshold framework remains phenomenological pending further development.
 
-**Lesson**: Be flexible when user expertise identifies better priorities. Paper integration can resume when proofs stable.
+**Lesson**: Be flexible when user expertise identifies better priorities. External peer review critique of theoretical foundations takes precedence over paper polish. Paper integration can resume when proofs stable.
 
 ---
 
