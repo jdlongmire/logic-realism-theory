@@ -34,7 +34,10 @@
       "Bash(do echo \"File: $file\")",
       "Bash(git diff:*)",
       "Bash(paste:*)",
-      "Bash(sort:*)"
+      "Bash(sort:*)",
+      "Read(//c/Users/jdlon/.elan/toolchains/**)",
+      "Bash(lake exe cache:*)",
+      "Bash(claude doctor)"
     ],
     "deny": [],
     "ask": []

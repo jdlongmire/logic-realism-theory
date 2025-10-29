@@ -271,22 +271,24 @@ K = S / log(2) = 1 ✓
 -/
 theorem K_entropy_superposition :
     K_entropy ket_plus = 1 := by
-  unfold K_entropy ket_plus prob_0 prob_1
-  simp [normSq]
-  -- After simplification: p0 = p1 = 1/2, need to show:
-  -- (if 1/2 = 0 ∨ 1/2 = 0 then 0 else -(1/2 * log(1/2) + 1/2 * log(1/2)) / log 2) = 1
-
+  unfold K_entropy ket_plus
   -- Goal: -(1/2 * log(1/2) + 1/2 * log(1/2)) / log 2 = 1
-  -- Strategy:
-  --   1. Simplify: 1/2 * log(1/2) + 1/2 * log(1/2) = log(1/2)
-  --   2. Apply Real.log_inv: log(1/2) = log(2⁻¹) = -log(2)
-  --   3. Therefore: -log(1/2) / log 2 = -(-log 2) / log 2 = log 2 / log 2 = 1
-
-  sorry  -- TODO: Available lemmas (verified in Mathlib):
-         -- - Real.log_inv (x : ℝ) : log x⁻¹ = -log x
-         -- - Real.log_one : log 1 = 0
-         -- - Real.log_div (hx : x ≠ 0) (hy : y ≠ 0) : log (x / y) = log x - log y
-         -- Need to handle if-then-else, apply log_inv, and field arithmetic
+  --
+  -- Strategy (verified lemmas available):
+  --   1. Show normSq(1/sqrt 2) = 1/2 using normSq_div, normSq_ofReal
+  --   2. Apply Real.log_div: log(1/2) = log(1) - log(2) = -log(2)
+  --   3. Simplify: -(1/2*(-log 2) + 1/2*(-log 2)) / log 2 = log 2 / log 2
+  --   4. Apply div_self: log 2 / log 2 = 1
+  --
+  -- Issue: `simp only [normSq]` unfolds to raw definition preventing pattern match
+  -- Alternative approach needed: avoid simp, use direct calc chain with specific rewrites
+  --
+  -- Available lemmas:
+  --   - Real.log_inv (x : ℝ) : log x⁻¹ = -log x
+  --   - Real.log_one : log 1 = 0
+  --   - Real.log_div (hx : x ≠ 0) (hy : y ≠ 0) : log (x / y) = log x - log y
+  --   - normSq_div, normSq_ofReal, sq_sqrt
+  sorry
 
 /--
 K_entropy is bounded: K ∈ [0, 1] for all qubits.
