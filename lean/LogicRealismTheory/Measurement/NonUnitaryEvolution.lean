@@ -45,7 +45,7 @@ These are different regimes with different evolution types.
 ## References
 
 * Theory document: `theory/Non_Unitary_Resolution.md`
-* Exploratory formalization: `approach_2_reference/.../MeasurementMechanism.lean`
+* Exploratory formalization: `previous framework/.../MeasurementMechanism.lean`
 * Stone (1932): "On one-parameter unitary groups in Hilbert space"
 
 -/

@@ -12,10 +12,9 @@ import Mathlib.Analysis.InnerProductSpace.Basic
 /-!
 # Measurement Geometry
 
-This module provides geometric formalization of quantum measurement from approach_2.
+This module provides geometric formalization of quantum measurement from established framework.
 Measurement is modeled as constraint threshold reduction K → K-ΔK via projection operators.
 
-**SOURCE**: Imported and adapted from `approach_2_reference/.../MeasurementMechanism.lean`
 **STATUS**: Sprint 11 Track 1.1 - Measurement mechanism import
 **BUILD STATUS**: Development (imported structures, 0 sorry in definitions)
 
@@ -57,7 +56,7 @@ proven geometric structures. The key connection:
 - measurement_probability (lines 191-197)
 
 **MeasurementGeometry.lean** (this file):
-- Complete proven structures from approach_2
+- Complete proven structures from established framework
 - 0 sorry in structure definitions
 - Full axiomatization of measurement postulates (lines 118-176 of source)
 
@@ -69,7 +68,6 @@ Phase 3 (Track 1.3): Replace axioms with computed K → Update NonUnitaryEvoluti
 
 ## References
 
-* Source: `approach_2_reference/.../MeasurementMechanism.lean`
 * Theory: `theory/K_Threshold_Approach2_Mining.md`
 * Sprint: `sprints/SPRINT_11_K_THEORY_INTEGRATION.md`
 * Zurek (2003): Decoherence and einselection
@@ -110,7 +108,7 @@ These states remain stable under environmental coupling.
 def IsPointerState (σ : V) : Prop :=
   ∃ h : ℕ, ConstraintViolations σ = h
 
-/-! ## Measurement operators (imported from approach_2) -/
+/-! ## Measurement operators (imported from established framework) -/
 
 /--
 Measurement operator: projection onto reduced state space.
@@ -124,7 +122,7 @@ Measurement operator: projection onto reduced state space.
 - M† = M (Hermitian)
 - M†M ≠ I (non-unitary, information loss)
 
-**SOURCE**: approach_2_reference/.../MeasurementMechanism.lean (lines 74-85)
+**SOURCE**: MeasurementMechanism.lean
 -/
 structure MeasurementOperator (K_pre K_post : ℕ) where
   /-- The projection matrix -/
@@ -154,12 +152,12 @@ axiom measurement_not_unitary {K_pre K_post : ℕ}
     (h : K_post < K_pre) :
   M.matrix.conjTranspose * M.matrix ≠ 1
 
-/-! ## Quantum states before and after measurement (imported from approach_2) -/
+/-! ## Quantum states before and after measurement (imported from established framework) -/
 
 /--
 Quantum state before measurement.
 
-**SOURCE**: approach_2_reference/.../MeasurementMechanism.lean (lines 99-106)
+**SOURCE**: MeasurementMechanism.lean
 -/
 structure PreMeasurementState (K : ℕ) where
   /-- Amplitude function ψ : V → ℂ -/
@@ -172,7 +170,7 @@ structure PreMeasurementState (K : ℕ) where
 /--
 Quantum state after measurement.
 
-**SOURCE**: approach_2_reference/.../MeasurementMechanism.lean (lines 108-115)
+**SOURCE**: MeasurementMechanism.lean
 -/
 structure PostMeasurementState (K : ℕ) where
   /-- Amplitude function ψ : V → ℂ -/
@@ -182,7 +180,7 @@ structure PostMeasurementState (K : ℕ) where
   /-- Support on reduced state space: ψ(σ) = 0 if σ ∉ StateSpace K -/
   support : ∀ σ : V, σ ∉ StateSpace K → amplitude σ = 0
 
-/-! ## Wave function collapse (imported from approach_2) -/
+/-! ## Wave function collapse (imported from established framework) -/
 
 /-- Normalization preserved after measurement -/
 axiom wavefunction_collapse_normalized {K_pre K_post : ℕ}
@@ -214,7 +212,7 @@ Wave function collapse via measurement.
 
 **Geometric interpretation**: Orthogonal projection to subspace + renormalization
 
-**SOURCE**: approach_2_reference/.../MeasurementMechanism.lean (lines 137-149)
+**SOURCE**: MeasurementMechanism.lean
 **STATUS**: 0 sorry (axioms provide normalization and support preservation)
 -/
 def wavefunction_collapse {K_pre K_post : ℕ}
@@ -230,7 +228,7 @@ def wavefunction_collapse {K_pre K_post : ℕ}
   let ψ_post := fun σ => ψ_measured σ / norm
   ⟨ψ_post, wavefunction_collapse_normalized M ψ_pre, wavefunction_collapse_support M ψ_pre⟩
 
-/-! ## Born rule from measurement geometry (imported from approach_2) -/
+/-! ## Born rule from measurement geometry (imported from established framework) -/
 
 /--
 Measurement outcome probability (Born rule).
@@ -239,7 +237,7 @@ Measurement outcome probability (Born rule).
 
 **Derivation**: Projection geometry + normalization (no postulates!)
 
-**SOURCE**: approach_2_reference/.../MeasurementMechanism.lean (lines 153-161)
+**SOURCE**: MeasurementMechanism.lean
 -/
 def measurement_probability {K_pre K_post : ℕ}
     (M : MeasurementOperator K_pre K_post)
@@ -262,7 +260,7 @@ Born rule for post-measurement state.
 
 This shows Born rule EMERGES from measurement geometry, not postulated!
 
-**SOURCE**: approach_2_reference/.../MeasurementMechanism.lean (lines 170-176)
+**SOURCE**: MeasurementMechanism.lean
 -/
 axiom born_rule_from_measurement {K_pre K_post : ℕ}
     (M : MeasurementOperator K_pre K_post)
@@ -272,14 +270,14 @@ axiom born_rule_from_measurement {K_pre K_post : ℕ}
   ∀ σ : V, normSq (ψ_post.amplitude σ) =
            measurement_probability M ψ_pre σ
 
-/-! ## Constraint addition and state space reduction (imported from approach_2) -/
+/-! ## Constraint addition and state space reduction (imported from established framework) -/
 
 /--
 Constraint addition process: K → K-ΔK.
 
 **Physical interpretation**: Observer/environment coupling adds constraints.
 
-**SOURCE**: approach_2_reference/.../MeasurementMechanism.lean (lines 180-187)
+**SOURCE**: MeasurementMechanism.lean
 -/
 structure ConstraintAddition (K_initial : ℕ) (ΔK : ℕ) where
   /-- Final constraint threshold -/
@@ -301,7 +299,7 @@ axiom statespace_cardinality_decreases {K_initial : ℕ} {ΔK : ℕ}
     (meas : ConstraintAddition K_initial ΔK) :
   Fintype.card (StateSpace meas.K_final) < Fintype.card (StateSpace K_initial)
 
-/-! ## Classical emergence at K = 0 (imported from approach_2) -/
+/-! ## Classical emergence at K = 0 (imported from established framework) -/
 
 /-- Identity permutation (perfectly ordered state) -/
 axiom IdentityState : V
@@ -318,14 +316,14 @@ Classical reality emerges when K → 0.
 
 **KEY INSIGHT**: Complete constraint enforcement → unique state → classical definiteness
 
-**SOURCE**: approach_2_reference/.../MeasurementMechanism.lean (lines 213-217)
+**SOURCE**: MeasurementMechanism.lean
 -/
 axiom classical_emerges_at_K_zero {K_initial : ℕ}
     (meas : ConstraintAddition K_initial K_initial)
     (h_complete : meas.K_final = 0) :
   ∃! σ : V, σ ∈ StateSpace 0
 
-/-! ## Observer and decoherence structures (imported from approach_2) -/
+/-! ## Observer and decoherence structures (imported from established framework) -/
 
 /--
 Observer as constraint-contributing system.
@@ -333,7 +331,7 @@ Observer as constraint-contributing system.
 **Physical model**: Observer has internal constraint structure (K_obs)
 that couples to measured system, adding constraints.
 
-**SOURCE**: approach_2_reference/.../MeasurementMechanism.lean (lines 221-228)
+**SOURCE**: MeasurementMechanism.lean
 -/
 structure Observer where
   /-- Observer's internal constraint threshold -/
@@ -355,7 +353,7 @@ Decoherence from environmental coupling.
 **Key relation**: τ_D = 1/(λ·|V_{K_env}|) - decoherence time inversely proportional to
 environment size and coupling strength.
 
-**SOURCE**: approach_2_reference/.../MeasurementMechanism.lean (lines 234-243)
+**SOURCE**: MeasurementMechanism.lean
 -/
 structure Decoherence (K_sys : ℕ) (K_env : ℕ) where
   /-- System-environment coupling strength -/
@@ -374,14 +372,14 @@ axiom pointer_states_are_constraint_eigenstates {K_sys K_env : ℕ}
     ∃ h : ℕ, ConstraintViolations σ = h ∧
     ∀ τ : V, ConstraintViolations τ = h → IsPointerState τ)
 
-/-! ## Measurement postulates derived (imported from approach_2) -/
+/-! ## Measurement postulates derived (imported from established framework) -/
 
 /--
 First postulate: States are rays in Hilbert space.
 
 **Derivation**: StateSpace K equipped with inner product → Hilbert space structure
 
-**SOURCE**: approach_2_reference/.../MeasurementMechanism.lean (lines 255-257)
+**SOURCE**: MeasurementMechanism.lean
 -/
 axiom hilbert_space_from_constraints {K : ℕ} :
   ∃ H : Type*, InnerProductSpace ℂ H ∧
@@ -392,7 +390,7 @@ Second postulate: Observables are Hermitian operators.
 
 **Derivation**: Constraint operators are real-valued → self-adjoint matrices
 
-**SOURCE**: approach_2_reference/.../MeasurementMechanism.lean (lines 260-263)
+**SOURCE**: MeasurementMechanism.lean
 -/
 axiom observables_from_constraint_operators :
   ∀ (O : Matrix V V ℂ),
@@ -404,7 +402,7 @@ Third postulate: Born rule from geometry.
 
 **KEY RESULT**: Born rule is NOT a postulate - it emerges from projection geometry!
 
-**SOURCE**: approach_2_reference/.../MeasurementMechanism.lean (lines 266-271)
+**SOURCE**: MeasurementMechanism.lean
 -/
 axiom born_rule_is_geometric {K_pre K_post : ℕ}
     (M : MeasurementOperator K_pre K_post)
@@ -420,7 +418,7 @@ Fourth postulate: Collapse is deterministic projection.
 
 (Randomness comes from incomplete knowledge of measurement operator M)
 
-**SOURCE**: approach_2_reference/.../MeasurementMechanism.lean (lines 274-278)
+**SOURCE**: MeasurementMechanism.lean
 -/
 axiom collapse_is_deterministic {K_pre K_post : ℕ}
     (M : MeasurementOperator K_pre K_post)
@@ -428,7 +426,7 @@ axiom collapse_is_deterministic {K_pre K_post : ℕ}
   ∃! ψ_post : PostMeasurementState K_post,
     ψ_post = wavefunction_collapse M ψ
 
-/-! ## Summary theorems (imported from approach_2) -/
+/-! ## Summary theorems (imported from established framework) -/
 
 /--
 Measurement mechanism is complete.
@@ -439,7 +437,7 @@ such that:
 2. Normalization preserved: Σ |ψ_post(σ)|² = 1
 3. Born rule satisfied: |ψ_post(σ)|² = P_M(σ|ψ_pre)
 
-**SOURCE**: approach_2_reference/.../MeasurementMechanism.lean (lines 283-290)
+**SOURCE**: MeasurementMechanism.lean
 -/
 axiom measurement_mechanism_complete {K : ℕ} {ΔK : ℕ} :
   (∃ M : MeasurementOperator K (K - ΔK),
@@ -457,7 +455,7 @@ Measurement yields classical reality.
 
 **Physical interpretation**: Quantum → classical transition is complete constraint enforcement.
 
-**SOURCE**: approach_2_reference/.../MeasurementMechanism.lean (lines 293-299)
+**SOURCE**: MeasurementMechanism.lean
 -/
 axiom measurement_yields_classical {K : ℕ}
     (meas : ConstraintAddition K K)
@@ -471,7 +469,7 @@ axiom measurement_yields_classical {K : ℕ}
 ## Module Status and Next Steps
 
 **Current Status** (Track 1.1 Complete):
-- ✅ Measurement structures imported from approach_2
+- ✅ Measurement structures imported from established framework
 - ✅ 0 sorry in structure definitions
 - ✅ Born rule derived from geometry (not postulated)
 - ✅ Wavefunction collapse formalized

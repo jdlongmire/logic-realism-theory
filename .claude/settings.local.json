@@ -30,7 +30,9 @@
       "Bash(PYTHONIOENCODING=utf-8 python:*)",
       "Bash(for:*)",
       "Bash(do echo \"=== $f ===\")",
-      "Bash(head:*)"
+      "Bash(head:*)",
+      "Bash(do echo \"File: $file\")",
+      "Bash(git diff:*)"
     ],
     "deny": [],
     "ask": []

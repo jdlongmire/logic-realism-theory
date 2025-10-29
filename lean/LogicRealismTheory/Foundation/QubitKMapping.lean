@@ -20,7 +20,7 @@ constraint threshold values K. This is the KEY missing piece identified in the g
 
 ## The K-Mapping Problem
 
-**Previous approach_2**: K(N) = N-2 for N-element permutation systems (discrete)
+**Previous permutation-based framework**: K(N) = N-2 for N-element permutation systems (discrete)
 
 **Current paper**: Uses K ∈ [0.1, 1.0] for qubits (continuous Hilbert space)
 
@@ -89,9 +89,9 @@ where J(ψ) is quantum Fisher information
 4. Standard information-theoretic foundation
 5. Computationally tractable
 
-## Connection to approach_2
+## Connection to permutation-based framework
 
-**approach_2**: K(N) = N-2 from triple proof (Coxeter, Mahonian, MaxEnt)
+**permutation-based framework**: K(N) = N-2 from triple proof (Coxeter, Mahonian, MaxEnt)
 
 **This module**: K(|ψ⟩) = S(ρ)/ln(2) from MaxEnt principle
 
@@ -219,7 +219,7 @@ where log is natural logarithm, with convention 0·log(0) = 0
 2. Correct limiting values
 3. Matches paper's K range [0, 1]
 4. Computationally tractable
-5. Connects to MaxEnt principle (like approach_2's K(N)=N-2)
+5. Connects to MaxEnt principle (like permutation-based framework's K(N)=N-2)
 
 **TODO**: Handle 0·log(0) = 0 convention properly
 -/
@@ -460,7 +460,7 @@ theorem K_superposition_justified :
 2. ✅ Natural interpretation (entropy = uncertainty = constraint violations)
 3. ✅ Matches paper's K range [0, 1]
 4. ✅ Information-theoretically founded (MaxEnt principle)
-5. ✅ Connects to approach_2's K(N)=N-2 (both from MaxEnt)
+5. ✅ Connects to permutation-based framework's K(N)=N-2 (both from MaxEnt)
 6. ✅ Computationally tractable
 7. ✅ Standard in quantum information theory
 
@@ -493,7 +493,7 @@ This module REPLACES the axiomatized `ConstraintViolations` function in:
 **Paper** (Track 3.1):
 1. Rewrite Section 6.3.2 with K_entropy justification
 2. Add entropy formula K(α,β) = S(ρ)/ln(2)
-3. Cite approach_2's K(N)=N-2 as inspiration (triple convergence)
+3. Cite permutation-based framework's K(N)=N-2 as inspiration (triple convergence)
 4. Add validation theorems to paper
 -/
 
@@ -528,7 +528,7 @@ This module REPLACES the axiomatized `ConstraintViolations` function in:
 **Track 3.1** (Paper update):
 - Rewrite Section 6.3.2 with full K justification
 - Add entropy formula and derivation
-- Connect to approach_2's K(N)=N-2 (triple convergence credibility)
+- Connect to permutation-based framework's K(N)=N-2 (triple convergence credibility)
 
 **References**:
 - Sprint plan: `sprints/SPRINT_11_K_THEORY_INTEGRATION.md`
