@@ -200,7 +200,7 @@ cd lean && lake build
 - ❌ **NOT complete** if any imported dependency has `sorry` statements
 - ✅ **Complete** ONLY if: 0 sorry + builds successfully + all dependencies complete
 
-### Validation Rules (from Program_Auditor_Agent.md)
+### Validation Rules (from audit/Program_Auditor_Agent.md)
 
 **Rule 1**: Stop using "complete," "validated," "finished" without verification
 **Rule 2**: Cross-validate Lean proofs ↔ computational notebooks
@@ -208,6 +208,8 @@ cd lean && lake build
 **Rule 4**: Start with what's wrong, not what works
 **Rule 5**: Puncture hype with facts
 **Rule 6**: Pass simulation results to LLM team before claiming victory
+
+**Full Audit Protocol**: See [`audit/Program_Auditor_Agent.md`](audit/Program_Auditor_Agent.md) for comprehensive audit procedures
 
 ### Computational Validation Protocol (NEW)
 
