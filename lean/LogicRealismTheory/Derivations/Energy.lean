@@ -707,7 +707,18 @@ theorem energy_from_noether_has_physical_properties :
       H := H_struct.H * (N : ℝ),  -- Scale energy
       hamiltonian_def := by
         -- H scales linearly with N
-        sorry,  -- Would require proving scaling structure
+        -- Need: H·N = (p·N)² / (2·m·N) + V·N
+        --
+        -- Strategy: Substitute H = p²/(2m) + V, then show scaled version equals goal
+        -- Key algebraic step: p²/(2m) · N = (p·N)²/(2·(m·N))
+        --   LHS: p²·N/(2m)
+        --   RHS: p²·N²/(2m·N) = p²·N/(2m) (cancel N from num/denom)
+        --
+        -- Requires division algebra lemmas (div_mul_eq_mul_div, mul_pow, field_simp)
+        -- or explicit cancellation argument with nonzero hypotheses
+        --
+        -- TODO: Complete with proper division lemmas or field_simp
+        sorry
       positive_mass := by
         apply mul_pos H_struct.positive_mass
         exact Nat.cast_pos.mpr hN
