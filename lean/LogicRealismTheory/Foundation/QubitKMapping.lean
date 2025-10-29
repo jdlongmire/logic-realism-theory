@@ -273,11 +273,20 @@ theorem K_entropy_superposition :
     K_entropy ket_plus = 1 := by
   unfold K_entropy ket_plus prob_0 prob_1
   simp [normSq]
-  -- After simplification: p0 = p1 = 1/2
-  -- Need to show: -(1/2 * log(1/2) + 1/2 * log(1/2)) / log 2 = 1
-  sorry  -- TODO: Complete with logarithm algebra
-         -- Key step: log(1/2) = log(1) - log(2) = 0 - log(2) = -log(2)
-         -- Then: -(1/2·(-log 2) + 1/2·(-log 2)) / log 2 = log 2 / log 2 = 1
+  -- After simplification: p0 = p1 = 1/2, need to show:
+  -- (if 1/2 = 0 ∨ 1/2 = 0 then 0 else -(1/2 * log(1/2) + 1/2 * log(1/2)) / log 2) = 1
+
+  -- Goal: -(1/2 * log(1/2) + 1/2 * log(1/2)) / log 2 = 1
+  -- Strategy:
+  --   1. Simplify: 1/2 * log(1/2) + 1/2 * log(1/2) = log(1/2)
+  --   2. Apply Real.log_inv: log(1/2) = log(2⁻¹) = -log(2)
+  --   3. Therefore: -log(1/2) / log 2 = -(-log 2) / log 2 = log 2 / log 2 = 1
+
+  sorry  -- TODO: Available lemmas (verified in Mathlib):
+         -- - Real.log_inv (x : ℝ) : log x⁻¹ = -log x
+         -- - Real.log_one : log 1 = 0
+         -- - Real.log_div (hx : x ≠ 0) (hy : y ≠ 0) : log (x / y) = log x - log y
+         -- Need to handle if-then-else, apply log_inv, and field arithmetic
 
 /--
 K_entropy is bounded: K ∈ [0, 1] for all qubits.
