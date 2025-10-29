@@ -272,24 +272,10 @@ K = S / log(2) = 1 ✓
 -/
 theorem K_entropy_superposition :
     K_entropy ket_plus = 1 := by
-  unfold K_entropy ket_plus
-  -- Goal: -(1/2 * log(1/2) + 1/2 * log(1/2)) / log 2 = 1
-  --
-  -- Strategy (verified lemmas available):
-  --   1. Show normSq(1/sqrt 2) = 1/2 using normSq_div, normSq_ofReal
-  --   2. Apply Real.log_div: log(1/2) = log(1) - log(2) = -log(2)
-  --   3. Simplify: -(1/2*(-log 2) + 1/2*(-log 2)) / log 2 = log 2 / log 2
-  --   4. Apply div_self: log 2 / log 2 = 1
-  --
-  -- Issue: simp tactics change goal state unpredictably after unfold
-  -- The if-then-else needs careful handling to avoid goal state changes
-  -- Alternative approach needed: manual rewrites without simp, or rfl-based calc chain
-  --
-  -- Available lemmas:
-  --   - Real.log_inv (x : ℝ) : log x⁻¹ = -log x
-  --   - Real.log_one : log 1 = 0
-  --   - Real.log_div (hx : x ≠ 0) (hy : y ≠ 0) : log (x / y) = log x - log y
-  --   - normSq_div, normSq_ofReal, sq_sqrt
+  -- Direct computation using norm_num
+  unfold K_entropy ket_plus prob_0 prob_1
+  norm_num [normSq_ofReal, Real.log_div, Real.log_one]
+  -- If norm_num doesn't fully solve it, use ring/field_simp
   sorry
 
 /--
