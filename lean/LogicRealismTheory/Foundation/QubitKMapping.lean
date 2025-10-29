@@ -509,8 +509,36 @@ theorem K_fisher_superposition :
 theorem K_fisher_range (ψ : QubitState) :
     0 ≤ K_fisher ψ ∧ K_fisher ψ ≤ 1 := by
   constructor
-  · sorry  -- TODO: K_fisher ≥ 0 (square roots are non-negative)
-  · sorry  -- TODO: AM-GM inequality: 2·√a·√b ≤ a+b = 1
+  · -- Lower bound: K_fisher ≥ 0
+    unfold K_fisher
+    have h1 : 0 ≤ sqrt (normSq ψ.alpha) := sqrt_nonneg _
+    have h2 : 0 ≤ sqrt (normSq ψ.beta) := sqrt_nonneg _
+    have h3 : 0 ≤ sqrt (normSq ψ.alpha) * sqrt (normSq ψ.beta) := mul_nonneg h1 h2
+    linarith
+  · -- Upper bound: K_fisher ≤ 1, using AM-GM: 2·√a·√b ≤ a+b = 1
+    unfold K_fisher
+    set a := normSq ψ.alpha with ha_def
+    set b := normSq ψ.beta with hb_def
+    have h_norm : a + b = 1 := ψ.normalized
+    have ha_nn : 0 ≤ a := normSq_nonneg _
+    have hb_nn : 0 ≤ b := normSq_nonneg _
+    -- Need: 2 * sqrt a * sqrt b ≤ 1
+    -- By AM-GM: 2·√a·√b ≤ a+b
+    -- Proof: (√a - √b)² ≥ 0 ⟹ a - 2√a√b + b ≥ 0 ⟹ 2√a√b ≤ a+b
+    have h_am_gm : 2 * sqrt a * sqrt b ≤ a + b := by
+      have h_sqrt_a : 0 ≤ sqrt a := sqrt_nonneg _
+      have h_sqrt_b : 0 ≤ sqrt b := sqrt_nonneg _
+      -- Use (√a - √b)² ≥ 0
+      have h_sq : 0 ≤ (sqrt a - sqrt b) ^ 2 := sq_nonneg _
+      -- Expand: (√a - √b)² = a - 2√a√b + b (when a,b ≥ 0)
+      have h_expand : (sqrt a - sqrt b) ^ 2 = a + b - 2 * sqrt a * sqrt b := by
+        rw [sub_sq, sq_sqrt ha_nn, sq_sqrt hb_nn]
+        ring
+      rw [h_expand] at h_sq
+      linarith
+    calc 2 * sqrt a * sqrt b
+        ≤ a + b := h_am_gm
+      _ = 1 := h_norm
 
 /-! ## Justifying paper's K-values -/
 
