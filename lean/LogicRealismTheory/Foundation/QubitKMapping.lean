@@ -7,6 +7,7 @@ Authors: James D. (JD) Longmire
 import Mathlib.Data.Complex.Basic
 import Mathlib.Data.Real.Basic
 import Mathlib.Analysis.SpecialFunctions.Log.Basic
+import Mathlib.Analysis.SpecialFunctions.Log.NegMulLog
 
 /-!
 # Qubit K-Mapping: From Quantum States to Constraint Thresholds
@@ -229,7 +230,7 @@ noncomputable def K_entropy (ψ : QubitState) : ℝ :=
   if p0 = 0 ∨ p1 = 0 then
     0  -- Pure basis state
   else
-    -(p0 * log p0 + p1 * log p1) / log 2
+    -(p0 * Real.log p0 + p1 * Real.log p1) / Real.log 2
 
 /-! ## Validation theorems for K_entropy -/
 
@@ -301,7 +302,46 @@ giving S_max = log(2), hence K_max = 1.
 theorem K_entropy_range (ψ : QubitState) :
     0 ≤ K_entropy ψ ∧ K_entropy ψ ≤ 1 := by
   constructor
-  · sorry  -- TODO: Shannon entropy H(p) ≥ 0
+  · -- Lower bound: K_entropy ψ ≥ 0
+    unfold K_entropy prob_0 prob_1
+    -- Set up helpers
+    set p0 := normSq ψ.alpha with hp0_def
+    set p1 := normSq ψ.beta with hp1_def
+    have hp0_nonneg : 0 ≤ p0 := normSq_nonneg _
+    have hp1_nonneg : 0 ≤ p1 := normSq_nonneg _
+    have hp0_le_one : p0 ≤ 1 := by
+      have := ψ.normalized
+      rw [← hp0_def, ← hp1_def] at this
+      linarith [hp1_nonneg]
+    have hp1_le_one : p1 ≤ 1 := by
+      have := ψ.normalized
+      rw [← hp0_def, ← hp1_def] at this
+      linarith [hp0_nonneg]
+    have h_log2_pos : 0 < Real.log 2 := Real.log_pos (by norm_num : 1 < (2:ℝ))
+
+    -- Handle the if-then-else
+    by_cases h : p0 = 0 ∨ p1 = 0
+    · -- Case: p0 = 0 ∨ p1 = 0 → K = 0 ≥ 0
+      simp [h]
+    · -- Case: p0 ≠ 0 ∧ p1 ≠ 0 → show -(p0*log p0 + p1*log p1)/log 2 ≥ 0
+      simp [h]
+      -- Apply negMulLog_nonneg: -x * log x ≥ 0 for x ∈ [0,1]
+      have h_term0 : 0 ≤ Real.negMulLog p0 :=
+        Real.negMulLog_nonneg hp0_nonneg hp0_le_one
+      have h_term1 : 0 ≤ Real.negMulLog p1 :=
+        Real.negMulLog_nonneg hp1_nonneg hp1_le_one
+
+      -- Sum of non-negative terms is non-negative
+      have h_sum : 0 ≤ Real.negMulLog p0 + Real.negMulLog p1 :=
+        add_nonneg h_term0 h_term1
+
+      -- Rewrite negMulLog back to -x * log x
+      rw [Real.negMulLog, Real.negMulLog] at h_sum
+
+      -- Division by positive preserves inequality
+      -- Convert to goal format using ring normalization
+      convert div_nonneg h_sum (le_of_lt h_log2_pos) using 2
+      ring
   · sorry  -- TODO: Shannon entropy H(p,1-p) ≤ log(2) (max at p=1/2)
 
 /-! ## Approach 2: Purity-Based K-Mapping (Alternative) -/
