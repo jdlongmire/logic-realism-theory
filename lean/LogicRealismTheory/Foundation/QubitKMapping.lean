@@ -330,15 +330,33 @@ theorem K_entropy_range (ψ : QubitState) :
       convert div_nonneg h_sum (le_of_lt h_log2_pos) using 2
       ring
   · -- Upper bound: K_entropy ψ ≤ 1
-    -- TODO: Shannon entropy H(p, 1-p) ≤ log(2) with equality at p=1/2
-    -- Strategy: Use concavity of negMulLog or direct calculus argument
-    -- Maximum entropy occurs at equal probabilities (equal superposition)
-    -- Note: Mathlib.Analysis.SpecialFunctions.Log.BinaryEntropy doesn't exist in current version
-    -- Alternative approaches:
-    --   1. Prove concavity of f(p) = -p*log(p) - (1-p)*log(1-p) and show maximum at p=1/2
-    --   2. Use Lagrange multipliers for constrained optimization
-    --   3. Manual calculus: df/dp = 0 at p=1/2, check second derivative < 0
-    sorry
+    -- Strategy: Show -(p*log p + q*log q)/log 2 ≤ 1 where p+q=1
+    -- Equivalent to: p*log p + q*log q ≥ -log 2
+    -- This is maximized when p = q = 1/2
+    unfold K_entropy prob_0 prob_1
+    set p0 := normSq ψ.alpha with hp0_def
+    set p1 := normSq ψ.beta with hp1_def
+    have h_norm : p0 + p1 = 1 := ψ.normalized
+    have hp0_nonneg : 0 ≤ p0 := normSq_nonneg _
+    have hp1_nonneg : 0 ≤ p1 := normSq_nonneg _
+
+    by_cases h : p0 = 0 ∨ p1 = 0
+    · -- Case: p0 = 0 ∨ p1 = 0 → K = 0 ≤ 1
+      simp [h]
+    · -- Case: p0 ≠ 0 ∧ p1 ≠ 0
+      simp [h]
+      -- Need: -(p0*log p0 + p1*log p1)/log 2 ≤ 1
+      -- This is a well-known information theory result
+      -- Binary Shannon entropy H(p, 1-p) achieves maximum log(2) at p=1/2
+      --
+      -- Without specialized Mathlib lemmas for entropy concavity,
+      -- this requires either:
+      -- 1. Manual calculus proof (show f'(1/2)=0 and f''<0)
+      -- 2. Axiomatizing the well-known result
+      -- 3. Finding negMulLog maximum lemmas in Mathlib
+      --
+      -- This is similar complexity to K_entropy_superposition
+      sorry
 
 /-! ## Approach 2: Purity-Based K-Mapping (Alternative) -/
 
