@@ -556,27 +556,36 @@ theorem K_fisher_basis_zero (ψ : QubitState) (h : prob_0 ψ = 1 ∨ prob_1 ψ =
 /-- |+⟩ has K_fisher = 1 -/
 theorem K_fisher_superposition :
     K_fisher ket_plus = 1 := by
+  -- Strategy: Same approach as K_entropy_superposition
+  --   1. Show normSq(1/sqrt 2 : ℂ) = 1/2 using normSq_div + normSq_ofReal
+  --   2. Substitute into goal: 2 * sqrt(1/2) * sqrt(1/2)
+  --   3. Simplify: sqrt(1/2) * sqrt(1/2) = 1/2, so 2 * (1/2) = 1
+
   unfold K_fisher ket_plus
-  -- Goal: 2 * sqrt(normSq(1/sqrt 2)) * sqrt(normSq(1/sqrt 2)) = 1
-  --
-  -- Strategy:
-  --   1. Show normSq(1/sqrt 2 : ℂ) = 1/2
-  --   2. Then: 2 * sqrt(1/2) * sqrt(1/2) = 2 * (1/2) = 1
-  --
-  -- Challenge: Complex normSq simplification with type coercions
-  -- Multiple approaches attempted:
-  --   - Direct rewrite with h_normsq: failed (type mismatch with ↑√2)
-  --   - simp only [normSq_ofReal]: made no progress
-  --   - field_simp + ring: didn't resolve normSq
-  --
-  -- Issue: After unfold, goal has normSq (↑(1/√2) : ℂ) but normSq_ofReal
-  -- expects exact pattern match. Type coercion ↑ prevents pattern matching.
-  --
-  -- Needed: Either find correct coercion lemma, or axiomatize this well-known result.
-  -- Similar difficulty to K_entropy_superposition - requires LLM team expert guidance.
-  --
-  -- TODO: Submit to LLM team for proof assistance
-  sorry
+
+  -- Key fact: normSq (1/sqrt 2 : ℂ) = 1/2
+  have h_normsq : normSq (1/sqrt 2 : ℂ) = 1/2 := by
+    rw [normSq_div, normSq_one, normSq_ofReal]
+    simp
+
+  -- Substitute the normSq values
+  simp only [h_normsq]
+
+  -- Goal is now: 2 * sqrt(1/2) * sqrt(1/2) = 1
+
+  -- Use Real.sq_sqrt directly: sqrt(x) ^ 2 = x for x ≥ 0
+  have h_sqrt_sq : (sqrt ((1:ℝ)/2))^2 = (1:ℝ)/2 :=
+    Real.sq_sqrt (by norm_num : (0:ℝ) ≤ 1/2)
+
+  -- sqrt(1/2) * sqrt(1/2) = sqrt(1/2)^2
+  have h_mul_eq_sq : sqrt ((1:ℝ)/2) * sqrt ((1:ℝ)/2) = (sqrt ((1:ℝ)/2))^2 := by
+    ring
+
+  -- Combine: 2 * (sqrt(1/2))^2 = 2 * (1/2) = 1
+  calc 2 * sqrt ((1:ℝ)/2) * sqrt ((1:ℝ)/2)
+      = 2 * (sqrt ((1:ℝ)/2))^2 := by rw [← h_mul_eq_sq]; ring
+    _ = 2 * ((1:ℝ)/2) := by rw [h_sqrt_sq]
+    _ = 1 := by norm_num
 
 /-- K_fisher range: [0, 1] -/
 theorem K_fisher_range (ψ : QubitState) :
