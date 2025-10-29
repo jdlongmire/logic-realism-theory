@@ -24,7 +24,8 @@ This is the canonical source for LRT theory (publication-ready, 640 lines).
 - Error budget analysis
 
 **Formal Verification**: [`../lean/README.md`](../lean/README.md)
-- Lean 4 proofs with 2 axioms
+- Lean 4 proofs with 6 axioms (2 foundation + 4 established principles), 0 sorry statements
+- Complete axiom documentation: [`../lean/AXIOMS.md`](../lean/AXIOMS.md)
 - Development protocols and CI/CD
 
 ---

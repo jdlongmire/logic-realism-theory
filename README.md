@@ -22,7 +22,7 @@ Logic Realism Theory (LRT) proposes that physical reality emerges from logical f
 ## Key Features
 
 1. **Foundational Paper**: [`theory/Logic-realism-theory-foundational.md`](theory/Logic-realism-theory-foundational.md) (publication-ready)
-2. **Ultra-Minimal Axioms**: 2 axioms only (I exists, I infinite)
+2. **Transparent Axiomatization**: 6 axioms total (2 foundation + 4 established principles) - see [`lean/AXIOMS.md`](lean/AXIOMS.md)
 3. **3FLL as Theorems**: Identity, Non-Contradiction, Excluded Middle proven using Lean's built-in logic
 4. **Explicit Derivations**: Time (Stone's theorem), Energy (Spohn's inequality), Born Rule (MaxEnt + 3FLL)
 5. **Primary Testable Prediction**: **T2/T1 ≈ 0.7-0.9** (superposition decoherence)
@@ -179,7 +179,7 @@ ORCID: [0009-0009-1383-7698](https://orcid.org/0009-0009-1383-7698)
 - Ready for team re-review with expected quality >0.75
 
 **Theory**: Publication-ready foundational paper
-**Formal Verification**: Lean 4 framework with 2 axioms
+**Formal Verification**: Lean 4 framework with 6 axioms, 0 sorry statements - see [`lean/AXIOMS.md`](lean/AXIOMS.md) for complete inventory
 **Experimental Validation**: QuTiP-validated protocol with >95% statistical power
 
 **Quick Navigation**:

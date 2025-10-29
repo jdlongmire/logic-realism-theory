@@ -38,9 +38,13 @@ lean/
 ## Current Status
 
 **Build Status**: Run `lake build` to verify
-**Axiom Count**: 2 (I exists, I infinite)
+**Sorry Count**: 0 (all proofs complete in main build)
+**Axiom Count**: 6 total (2 foundation + 4 established principles)
+- **Foundation**: I exists, I infinite
+- **Derivations**: Stone's theorem, Jaynes MaxEnt, Spohn's inequality, Energy additivity
+- **Complete Documentation**: See [`AXIOMS.md`](AXIOMS.md) for full axiom inventory and justification
 **Development**: See [`DEVELOPMENT.md`](DEVELOPMENT.md) for CI/CD protocol
-**Last Updated**: 2025-10-27
+**Last Updated**: 2025-10-29
 
 ---
 
