@@ -32,7 +32,9 @@
       "Bash(do echo \"=== $f ===\")",
       "Bash(head:*)",
       "Bash(do echo \"File: $file\")",
-      "Bash(git diff:*)"
+      "Bash(git diff:*)",
+      "Bash(paste:*)",
+      "Bash(sort:*)"
     ],
     "deny": [],
     "ask": []

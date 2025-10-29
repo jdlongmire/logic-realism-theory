@@ -271,8 +271,13 @@ K = S / log(2) = 1 ✓
 -/
 theorem K_entropy_superposition :
     K_entropy ket_plus = 1 := by
-  sorry  -- TODO: Prove -(1/2·log(1/2) + 1/2·log(1/2)) / log(2) = 1
-         -- Key steps: log(1/2) = -log(2), simplify to log(2)/log(2) = 1
+  unfold K_entropy ket_plus prob_0 prob_1
+  simp [normSq]
+  -- After simplification: p0 = p1 = 1/2
+  -- Need to show: -(1/2 * log(1/2) + 1/2 * log(1/2)) / log 2 = 1
+  sorry  -- TODO: Complete with logarithm algebra
+         -- Key step: log(1/2) = log(1) - log(2) = 0 - log(2) = -log(2)
+         -- Then: -(1/2·(-log 2) + 1/2·(-log 2)) / log 2 = log 2 / log 2 = 1
 
 /--
 K_entropy is bounded: K ∈ [0, 1] for all qubits.
@@ -392,12 +397,32 @@ noncomputable def K_fisher (ψ : QubitState) : ℝ :=
 /-- Basis states have K_fisher = 0 -/
 theorem K_fisher_basis_zero (ψ : QubitState) (h : prob_0 ψ = 1 ∨ prob_1 ψ = 1) :
     K_fisher ψ = 0 := by
-  sorry  -- TODO: One probability is 1 → other is 0 → product is 0
+  unfold K_fisher prob_0 prob_1 at *
+  cases h with
+  | inl h0 =>
+    -- prob_0 = 1 → prob_1 = 0 (from normalization)
+    have h1 : normSq ψ.beta = 0 := by
+      have := ψ.normalized
+      linarith
+    rw [h1]
+    simp [sqrt_zero, mul_zero]
+  | inr h1 =>
+    -- prob_1 = 1 → prob_0 = 0 (from normalization)
+    have h0 : normSq ψ.alpha = 0 := by
+      have := ψ.normalized
+      linarith
+    rw [h0]
+    simp [sqrt_zero, zero_mul]
 
 /-- |+⟩ has K_fisher = 1 -/
 theorem K_fisher_superposition :
     K_fisher ket_plus = 1 := by
-  sorry  -- TODO: Both probabilities 1/2 → 2·√(1/2)·√(1/2) = 1
+  unfold K_fisher ket_plus
+  simp [normSq]
+  -- Need to show: 2 * sqrt(1/2) * sqrt(1/2) = 1
+  -- sqrt(1/2) * sqrt(1/2) = sqrt(1/2 * 1/2) = sqrt(1/4) = 1/2
+  -- Therefore: 2 * 1/2 = 1
+  sorry  -- TODO: Complete with sqrt arithmetic
 
 /-- K_fisher range: [0, 1] -/
 theorem K_fisher_range (ψ : QubitState) :
