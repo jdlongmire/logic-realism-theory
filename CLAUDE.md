@@ -1159,6 +1159,66 @@ lean --make LFT_Proofs/
 
 Note: Lean/Lake may not be available in all environments. The repository can be used without Lean for computational work.
 
+#### Lean File Header Requirements
+
+**MANDATORY**: Every Lean file in the main build (Foundation, Operators, Derivations) must include an axiom inventory reference.
+
+**Template**:
+```lean
+/-
+Copyright © 2025 James D. (JD) Longmire
+License: Apache License 2.0
+Citation: Longmire, J.D. (2025). [Title]. Logic Realism Theory Repository.
+
+# [Module Name]
+
+[Module description]
+
+**Core Result**: [Main result]
+
+**Derivation Path**:
+[Steps]
+
+**Foundational Paper Reference**: [Section reference]
+
+**Axiom Count**: X ([description of axioms used])
+- [Details about axioms]
+
+**AXIOM INVENTORY**: For complete axiom documentation, see: lean/AXIOMS.md
+This module uses X axioms:
+- [List specific axioms used]
+-/
+
+import [imports]
+```
+
+**Key Points**:
+- **Axiom inventory reference**: Every file must reference `lean/AXIOMS.md`
+- **Specific axiom list**: List the exact axioms used in this module
+- **Placement**: After copyright block, before imports
+- **Transparency**: Makes axiom usage immediately visible to reviewers
+
+**Example (0 axioms)**:
+```lean
+**Axiom Count**: 0 (this file defines structures, adds NO axioms)
+
+**AXIOM INVENTORY**: For complete axiom documentation, see: lean/AXIOMS.md
+This module uses 0 axioms.
+```
+
+**Example (with axioms)**:
+```lean
+**Axiom Count**: 3 (Stone's theorem, Jaynes MaxEnt, Spohn's inequality)
+
+**AXIOM INVENTORY**: For complete axiom documentation, see: lean/AXIOMS.md
+This module uses 3 axioms:
+- Stone's theorem (unitary groups ↔ self-adjoint generators)
+- Jaynes Maximum Entropy Principle
+- Spohn's inequality (entropy change bounds)
+```
+
+**Purpose**: Ensures peer reviewers can quickly identify and verify axiomatic assumptions in any file, supporting the transparency commitment in `lean/AXIOMS.md`.
+
 ## Computational Parameters
 
 ### Safe Operating Ranges

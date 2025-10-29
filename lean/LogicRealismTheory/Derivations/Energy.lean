@@ -21,6 +21,10 @@ This file derives energy as a measure of constraint application (entropy reducti
 
 **Axiom Count**: 1 (energy additivity for independent systems - physical postulate)
 - Physical axioms: 1 (energy additivity) + 2 from Foundation (I exists, I infinite) = 3 total
+
+**AXIOM INVENTORY**: For complete axiom documentation, see: lean/AXIOMS.md
+This module uses 1 axiom:
+- Energy additivity for independent systems (E_total = E₁ + E₂)
 -/
 
 import LogicRealismTheory.Foundation.IIS

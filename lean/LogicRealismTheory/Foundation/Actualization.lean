@@ -19,6 +19,9 @@ This file defines the actualized subspace A as the result of logical filtering.
 **Foundational Paper Reference**: Section 3.2 (Actualization as Filtering)
 
 **Axiom Count**: 0 (this file defines structures, adds NO axioms)
+
+**AXIOM INVENTORY**: For complete axiom documentation, see: lean/AXIOMS.md
+This module uses 0 axioms.
 -/
 
 import LogicRealismTheory.Foundation.IIS

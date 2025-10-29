@@ -19,9 +19,15 @@ This file derives the emergence of time and unitary evolution from the Identity 
 
 **Foundational Paper Reference**: Section 3.4, lines 190-204
 
-**Axiom Count**: 6 (this file adds 6 mathematical axioms for functional analysis results)
-- All axioms are established mathematical results that would be proven with full Hilbert space theory
-- Physical axioms: 2 (I exists, I infinite) from Foundation/IIS.lean
+**Axiom Count**: 3 (Stone's theorem, Jaynes MaxEnt, Spohn's inequality)
+- All axioms are established mathematical/physical results
+- Foundation axioms: 2 (I exists, I infinite) from Foundation/IIS.lean
+
+**AXIOM INVENTORY**: For complete axiom documentation, see: lean/AXIOMS.md
+This module uses 3 axioms:
+- Stone's theorem (unitary groups ↔ self-adjoint generators)
+- Jaynes Maximum Entropy Principle
+- Spohn's inequality (entropy change bounds)
 -/
 
 import LogicRealismTheory.Foundation.IIS
