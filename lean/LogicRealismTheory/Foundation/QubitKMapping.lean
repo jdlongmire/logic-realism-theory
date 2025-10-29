@@ -281,8 +281,9 @@ theorem K_entropy_superposition :
   --   3. Simplify: -(1/2*(-log 2) + 1/2*(-log 2)) / log 2 = log 2 / log 2
   --   4. Apply div_self: log 2 / log 2 = 1
   --
-  -- Issue: `simp only [normSq]` unfolds to raw definition preventing pattern match
-  -- Alternative approach needed: avoid simp, use direct calc chain with specific rewrites
+  -- Issue: simp tactics change goal state unpredictably after unfold
+  -- The if-then-else needs careful handling to avoid goal state changes
+  -- Alternative approach needed: manual rewrites without simp, or rfl-based calc chain
   --
   -- Available lemmas:
   --   - Real.log_inv (x : ℝ) : log x⁻¹ = -log x
