@@ -154,11 +154,17 @@ def ket_1 : QubitState :=
 
 /-- |+⟩ = (|0⟩ + |1⟩)/√2 equal superposition state -/
 noncomputable def ket_plus : QubitState :=
-  ⟨1/sqrt 2, 1/sqrt 2, by sorry⟩  -- TODO: Prove (1/√2)² + (1/√2)² = 1
+  ⟨1/sqrt 2, 1/sqrt 2, by
+    simp [normSq_ofReal, sq_sqrt (by norm_num : (0:ℝ) ≤ 2)]
+    norm_num
+  ⟩
 
 /-- |-⟩ = (|0⟩ - |1⟩)/√2 complementary superposition -/
 noncomputable def ket_minus : QubitState :=
-  ⟨1/sqrt 2, -1/sqrt 2, by sorry⟩  -- TODO: Prove (1/√2)² + (-1/√2)² = 1
+  ⟨1/sqrt 2, -1/sqrt 2, by
+    simp [normSq_ofReal, sq_sqrt (by norm_num : (0:ℝ) ≤ 2)]
+    norm_num
+  ⟩
 
 /-! ## Density matrix and probabilities -/
 
@@ -234,7 +240,9 @@ Basis state |0⟩ has K = 0.
 -/
 theorem K_entropy_basis_0_zero :
     K_entropy ket_0 = 0 := by
-  sorry  -- TODO: p0=1, p1=0 → if branch → K=0
+  unfold K_entropy ket_0 prob_0 prob_1
+  simp [normSq]
+  -- p0 = 1, p1 = 0, so right branch of disjunction holds
 
 /--
 Basis state |1⟩ has K = 0.
@@ -243,7 +251,9 @@ Basis state |1⟩ has K = 0.
 -/
 theorem K_entropy_basis_1_zero :
     K_entropy ket_1 = 0 := by
-  sorry  -- TODO: p0=0, p1=1 → if branch → K=0
+  unfold K_entropy ket_1 prob_0 prob_1
+  simp [normSq]
+  -- p0 = 0, p1 = 1, so left branch of disjunction holds
 
 /--
 Equal superposition |+⟩ has K = 1.
@@ -261,14 +271,8 @@ K = S / log(2) = 1 ✓
 -/
 theorem K_entropy_superposition :
     K_entropy ket_plus = 1 := by
-  unfold K_entropy ket_plus prob_0 prob_1
-  simp [normSq]
-  -- p0 = p1 = 1/2
-  -- K = -(2 · (1/2) · log(1/2)) / log(2)
-  --   = -log(1/2) / log(2)
-  --   = log(2) / log(2)
-  --   = 1
-  sorry  -- TODO: Complete proof (straightforward algebra + log properties)
+  sorry  -- TODO: Prove -(1/2·log(1/2) + 1/2·log(1/2)) / log(2) = 1
+         -- Key steps: log(1/2) = -log(2), simplify to log(2)/log(2) = 1
 
 /--
 K_entropy is bounded: K ∈ [0, 1] for all qubits.
@@ -280,7 +284,9 @@ giving S_max = log(2), hence K_max = 1.
 -/
 theorem K_entropy_range (ψ : QubitState) :
     0 ≤ K_entropy ψ ∧ K_entropy ψ ≤ 1 := by
-  sorry  -- TODO: Prove using Shannon entropy bounds
+  constructor
+  · sorry  -- TODO: Shannon entropy H(p) ≥ 0
+  · sorry  -- TODO: Shannon entropy H(p,1-p) ≤ log(2) (max at p=1/2)
 
 /-! ## Approach 2: Purity-Based K-Mapping (Alternative) -/
 
@@ -316,12 +322,39 @@ noncomputable def K_purity (ψ : QubitState) : ℝ :=
 /-- Basis states have K_purity = 0 -/
 theorem K_purity_basis_zero (ψ : QubitState) (h : prob_0 ψ = 1 ∨ prob_1 ψ = 1) :
     K_purity ψ = 0 := by
-  sorry  -- TODO: Straightforward algebra
+  unfold K_purity
+  cases h with
+  | inl h0 =>
+    -- prob_0 = 1 → prob_1 = 0 (from normalization)
+    have h1 : prob_1 ψ = 0 := by
+      have := prob_sum_one ψ
+      linarith
+    rw [h0, h1]
+    norm_num
+  | inr h1 =>
+    -- prob_1 = 1 → prob_0 = 0 (from normalization)
+    have h0 : prob_0 ψ = 0 := by
+      have := prob_sum_one ψ
+      linarith
+    rw [h0, h1]
+    norm_num
 
 /-- K_purity range: [0, 1/2] -/
 theorem K_purity_range (ψ : QubitState) :
     0 ≤ K_purity ψ ∧ K_purity ψ ≤ 1/2 := by
-  sorry  -- TODO: Prove using Cauchy-Schwarz
+  constructor
+  · -- K_purity ≥ 0: follows from 1 - (p²+q²) ≥ 0 when p²+q² ≤ 1
+    unfold K_purity prob_0 prob_1
+    have h := ψ.normalized
+    -- From Cauchy-Schwarz: (p²+q²) ≤ (p+q)² = 1² = 1, with equality when p=q
+    -- Therefore 1 - (p²+q²) ≥ 0
+    sorry  -- Requires Cauchy-Schwarz or direct proof
+  · -- K_purity ≤ 1/2: maximum at p = q = 1/2
+    unfold K_purity prob_0 prob_1
+    have h := ψ.normalized
+    -- At p=q=1/2: K = 1 - (1/4 + 1/4) = 1/2
+    -- Derivative analysis shows this is maximum
+    sorry  -- Requires calculus or direct optimization
 
 /-! ## Approach 3: Fisher Information-Based K-Mapping (Alternative) -/
 
@@ -364,12 +397,14 @@ theorem K_fisher_basis_zero (ψ : QubitState) (h : prob_0 ψ = 1 ∨ prob_1 ψ =
 /-- |+⟩ has K_fisher = 1 -/
 theorem K_fisher_superposition :
     K_fisher ket_plus = 1 := by
-  sorry  -- TODO: Both probabilities 1/2 → √(1/2)·√(1/2) = 1/2 → 2·(1/2) = 1
+  sorry  -- TODO: Both probabilities 1/2 → 2·√(1/2)·√(1/2) = 1
 
 /-- K_fisher range: [0, 1] -/
 theorem K_fisher_range (ψ : QubitState) :
     0 ≤ K_fisher ψ ∧ K_fisher ψ ≤ 1 := by
-  sorry  -- TODO: Prove using AM-GM inequality
+  constructor
+  · sorry  -- TODO: K_fisher ≥ 0 (square roots are non-negative)
+  · sorry  -- TODO: AM-GM inequality: 2·√a·√b ≤ a+b = 1
 
 /-! ## Justifying paper's K-values -/
 

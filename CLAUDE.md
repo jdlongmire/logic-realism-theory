@@ -1179,3 +1179,4 @@ This repository implements active theoretical research in fundamental physics. A
 - Always add key insights gained and lessons learn for each session closeout
 - all sprints documentation goes into the sprints folder
 - 1 priority- discuss emergence framework artifact in the theory folder
+- always follow best CI/CD practices
