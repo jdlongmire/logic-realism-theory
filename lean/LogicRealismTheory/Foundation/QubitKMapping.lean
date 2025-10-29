@@ -154,19 +154,11 @@ def ket_1 : QubitState :=
 
 /-- |+⟩ = (|0⟩ + |1⟩)/√2 equal superposition state -/
 noncomputable def ket_plus : QubitState :=
-  ⟨1/sqrt 2, 1/sqrt 2, by
-    simp [normSq]
-    ring_nf
-    sorry  -- TODO: Prove 1/2 + 1/2 = 1
-  ⟩
+  ⟨1/sqrt 2, 1/sqrt 2, by sorry⟩  -- TODO: Prove (1/√2)² + (1/√2)² = 1
 
 /-- |-⟩ = (|0⟩ - |1⟩)/√2 complementary superposition -/
 noncomputable def ket_minus : QubitState :=
-  ⟨1/sqrt 2, -1/sqrt 2, by
-    simp [normSq]
-    ring_nf
-    sorry  -- TODO: Prove 1/2 + 1/2 = 1
-  ⟩
+  ⟨1/sqrt 2, -1/sqrt 2, by sorry⟩  -- TODO: Prove (1/√2)² + (-1/√2)² = 1
 
 /-! ## Density matrix and probabilities -/
 
@@ -242,10 +234,7 @@ Basis state |0⟩ has K = 0.
 -/
 theorem K_entropy_basis_0_zero :
     K_entropy ket_0 = 0 := by
-  unfold K_entropy ket_0 prob_0 prob_1
-  simp [normSq]
-  -- p0 = 1, p1 = 0, so p1 = 0 branch triggers
-  sorry  -- TODO: Complete proof
+  sorry  -- TODO: p0=1, p1=0 → if branch → K=0
 
 /--
 Basis state |1⟩ has K = 0.
@@ -254,10 +243,7 @@ Basis state |1⟩ has K = 0.
 -/
 theorem K_entropy_basis_1_zero :
     K_entropy ket_1 = 0 := by
-  unfold K_entropy ket_1 prob_0 prob_1
-  simp [normSq]
-  -- p0 = 0, p1 = 1, so p0 = 0 branch triggers
-  sorry  -- TODO: Complete proof
+  sorry  -- TODO: p0=0, p1=1 → if branch → K=0
 
 /--
 Equal superposition |+⟩ has K = 1.
@@ -447,15 +433,14 @@ theorem K_superposition_justified :
 
 **Alternative**: K_fisher may be preferable for multi-qubit systems (future work)
 -/
-def K : QubitState → ℝ := K_entropy
+noncomputable def K : QubitState → ℝ := K_entropy
 
 /-- The canonical K-mapping agrees with entropy-based definition -/
 theorem K_eq_K_entropy :
     K = K_entropy := rfl
 
-/-! ## Integration with existing framework -/
+/-! ## Integration with existing framework
 
-/--
 This module REPLACES the axiomatized `ConstraintViolations` function in:
 - `MeasurementGeometry.lean` (axiom line 54)
 - `NonUnitaryEvolution.lean` (axiom line 63)
