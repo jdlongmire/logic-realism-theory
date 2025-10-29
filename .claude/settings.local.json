@@ -37,7 +37,8 @@
       "Bash(sort:*)",
       "Read(//c/Users/jdlon/.elan/toolchains/**)",
       "Bash(lake exe cache:*)",
-      "Bash(claude doctor)"
+      "Bash(claude doctor)",
+      "Bash(lake env lean:*)"
     ],
     "deny": [],
     "ask": []

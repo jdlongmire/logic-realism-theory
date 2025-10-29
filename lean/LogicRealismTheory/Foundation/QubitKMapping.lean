@@ -342,7 +342,16 @@ theorem K_entropy_range (ψ : QubitState) :
       -- Convert to goal format using ring normalization
       convert div_nonneg h_sum (le_of_lt h_log2_pos) using 2
       ring
-  · sorry  -- TODO: Shannon entropy H(p,1-p) ≤ log(2) (max at p=1/2)
+  · -- Upper bound: K_entropy ψ ≤ 1
+    -- TODO: Shannon entropy H(p, 1-p) ≤ log(2) with equality at p=1/2
+    -- Strategy: Use concavity of negMulLog or direct calculus argument
+    -- Maximum entropy occurs at equal probabilities (equal superposition)
+    -- Note: Mathlib.Analysis.SpecialFunctions.Log.BinaryEntropy doesn't exist in current version
+    -- Alternative approaches:
+    --   1. Prove concavity of f(p) = -p*log(p) - (1-p)*log(1-p) and show maximum at p=1/2
+    --   2. Use Lagrange multipliers for constrained optimization
+    --   3. Manual calculus: df/dp = 0 at p=1/2, check second derivative < 0
+    sorry
 
 /-! ## Approach 2: Purity-Based K-Mapping (Alternative) -/
 
