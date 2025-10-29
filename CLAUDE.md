@@ -1197,6 +1197,57 @@ import [imports]
 **Key Points**:
 - **Axiom inventory reference**: Every file must reference `lean/AXIOMS.md`
 - **Specific axiom list**: List the exact axioms used in this module
+
+#### Lean Root Import File Protocol
+
+**CRITICAL**: The file `lean/LogicRealismTheory.lean` is the **source of truth** for the main build.
+
+**Protocol**:
+1. **All new Lean files** must be added to `lean/LogicRealismTheory.lean` immediately after creation
+2. **Non-compiling files** must be commented out with explanation of build error
+3. **Experimental files** must be commented out with status note
+4. **File status summary** must be kept updated in the header comments
+
+**When creating a new Lean file**:
+```bash
+# 1. Create the file in appropriate subfolder
+touch lean/LogicRealismTheory/[Module]/NewFile.lean
+
+# 2. Immediately add import to LogicRealismTheory.lean
+# Add under appropriate section (Foundation/Operators/Derivations)
+import LogicRealismTheory.[Module].NewFile
+
+# 3. Verify build succeeds
+cd lean && lake build
+
+# 4. If build fails, comment out import with explanation
+-- NewFile: COMMENTED OUT - [Reason for failure]
+-- Status: [Work in progress / Needs debugging / etc.]
+-- import LogicRealismTheory.[Module].NewFile
+```
+
+**When commenting out a file**:
+- Always include reason (build failure, sorry statements, experimental)
+- Include current status (what needs to be fixed)
+- Update the "CURRENT MAIN BUILD STATUS" comment block
+
+**Audit Protocol**:
+- Before making any claims about axiom count or sorry count, verify against `lean/LogicRealismTheory.lean`
+- Only count axioms/sorrys from files that are actively imported (not commented out)
+- Run `lake build LogicRealismTheory` to verify what's actually compiled
+
+**Example** (from LogicRealismTheory.lean):
+```lean
+-- Measurement.NonUnitaryEvolution: COMMENTED OUT - Contains 3 sorry statements + 13 axioms
+-- Status: Work in progress, incomplete proofs at lines 141, 193, 211
+-- import LogicRealismTheory.Measurement.NonUnitaryEvolution
+```
+
+**Why This Matters**:
+- Prevents axiom count drift (claiming "6 axioms" when actual count is different)
+- Maintains single source of truth for build status
+- Documents experimental vs production-ready modules
+- Enables accurate Program Auditor checks
 - **Placement**: After copyright block, before imports
 - **Transparency**: Makes axiom usage immediately visible to reviewers
 
