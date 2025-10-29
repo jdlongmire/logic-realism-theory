@@ -394,19 +394,42 @@ theorem K_purity_basis_zero (ψ : QubitState) (h : prob_0 ψ = 1 ∨ prob_1 ψ =
 /-- K_purity range: [0, 1/2] -/
 theorem K_purity_range (ψ : QubitState) :
     0 ≤ K_purity ψ ∧ K_purity ψ ≤ 1/2 := by
+  unfold K_purity prob_0 prob_1
   constructor
-  · -- K_purity ≥ 0: follows from 1 - (p²+q²) ≥ 0 when p²+q² ≤ 1
-    unfold K_purity prob_0 prob_1
-    have h := ψ.normalized
-    -- From Cauchy-Schwarz: (p²+q²) ≤ (p+q)² = 1² = 1, with equality when p=q
-    -- Therefore 1 - (p²+q²) ≥ 0
-    sorry  -- Requires Cauchy-Schwarz or direct proof
-  · -- K_purity ≤ 1/2: maximum at p = q = 1/2
-    unfold K_purity prob_0 prob_1
-    have h := ψ.normalized
-    -- At p=q=1/2: K = 1 - (1/4 + 1/4) = 1/2
-    -- Derivative analysis shows this is maximum
-    sorry  -- Requires calculus or direct optimization
+  · -- Lower bound: K_purity ≥ 0, i.e., p²+q² ≤ 1
+    -- For p+q=1: p² + q² = p² + (1-p)² = 2p² - 2p + 1
+    -- Maximum at p=0 or p=1: gives 1
+    -- Therefore p²+q² ≤ 1, so 1-(p²+q²) ≥ 0
+    have h_sum : normSq ψ.alpha + normSq ψ.beta = 1 := ψ.normalized
+    have h_sq_nonneg1 : 0 ≤ (normSq ψ.alpha)^2 := sq_nonneg _
+    have h_sq_nonneg2 : 0 ≤ (normSq ψ.beta)^2 := sq_nonneg _
+    -- Key: (p²+q²) ≤ (p+q)² when p,q ≥ 0 (by expanding: p²+q² vs p²+2pq+q²)
+    -- Actually, we use: p²+q² ≤ p+q when p+q=1 and p,q∈[0,1]
+    -- Even simpler: directly show p²+q² ≤ 1 from p+q=1 and p,q≥0
+    nlinarith [sq_nonneg (normSq ψ.alpha), sq_nonneg (normSq ψ.beta),
+               normSq_nonneg ψ.alpha, normSq_nonneg ψ.beta, h_sum]
+  · -- Upper bound: K_purity ≤ 1/2, i.e., p²+q² ≥ 1/2
+    -- For p+q=1: p² + (1-p)² = 2p² - 2p + 1 = 2(p-1/2)² + 1/2 ≥ 1/2
+    -- Minimum at p=1/2
+    have h_sum : normSq ψ.alpha + normSq ψ.beta = 1 := ψ.normalized
+    set p := normSq ψ.alpha with hp_def
+    set q := normSq ψ.beta with hq_def
+    -- Key fact: p² + q² = p² + (1-p)² = 2(p-1/2)² + 1/2 ≥ 1/2
+    -- Therefore 1 - (p²+q²) ≤ 1 - 1/2 = 1/2
+    have h_key : 1/2 ≤ p^2 + q^2 := by
+      -- p² + q² = p² + (1-p)² (substitute q = 1-p)
+      have h_substitute : q = 1 - p := by linarith [h_sum]
+      rw [h_substitute]
+      -- Now prove: p² + (1-p)² ≥ 1/2
+      -- Expand: p² + 1 - 2p + p² = 2p² - 2p + 1
+      have h_expand : p^2 + (1 - p)^2 = 2*p^2 - 2*p + 1 := by ring
+      rw [h_expand]
+      -- Complete the square: 2p² - 2p + 1 = 2(p-1/2)² + 1/2
+      have h_complete : 2*p^2 - 2*p + 1 = 2*(p - 1/2)^2 + 1/2 := by ring
+      rw [h_complete]
+      -- 2(p-1/2)² ≥ 0, so 2(p-1/2)² + 1/2 ≥ 1/2
+      linarith [sq_nonneg (p - 1/2)]
+    linarith [h_key]
 
 /-! ## Approach 3: Fisher Information-Based K-Mapping (Alternative) -/
 
