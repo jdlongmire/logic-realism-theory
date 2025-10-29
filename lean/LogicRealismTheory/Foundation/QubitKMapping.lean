@@ -419,10 +419,10 @@ theorem K_fisher_superposition :
     K_fisher ket_plus = 1 := by
   unfold K_fisher ket_plus
   simp [normSq]
-  -- Need to show: 2 * sqrt(1/2) * sqrt(1/2) = 1
-  -- sqrt(1/2) * sqrt(1/2) = sqrt(1/2 * 1/2) = sqrt(1/4) = 1/2
-  -- Therefore: 2 * 1/2 = 1
-  sorry  -- TODO: Complete with sqrt arithmetic
+  -- Goal: 2 * sqrt (normSq (1 / sqrt 2)) * sqrt (normSq (1 / sqrt 2)) = 1
+  -- normSq (1 / sqrt 2) = (1 / sqrt 2)² = 1/2
+  -- Therefore: 2 * sqrt(1/2) * sqrt(1/2) = 2 * sqrt(1/2 * 1/2) = 2 * sqrt(1/4) = 2 * 1/2 = 1
+  sorry  -- TODO: Need Real.sqrt_mul or mul_self_sqrt lemma
 
 /-- K_fisher range: [0, 1] -/
 theorem K_fisher_range (ψ : QubitState) :
