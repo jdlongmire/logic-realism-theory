@@ -272,11 +272,62 @@ K = S / log(2) = 1 ✓
 -/
 theorem K_entropy_superposition :
     K_entropy ket_plus = 1 := by
-  -- Direct computation using norm_num
+  -- Strategy:
+  -- 1. Unfold definitions but work with let-bound variables
+  -- 2. Show p0 = p1 = 1/2 from normSq(1/√2) = 1/2
+  -- 3. Show neither probability is zero, so else branch executes
+  -- 4. Simplify entropy: -(1/2·log(1/2) + 1/2·log(1/2)) / log(2)
+  -- 5. Use log(1/2) = -log(2) to get: -(-log(2)) / log(2) = 1
+
   unfold K_entropy ket_plus prob_0 prob_1
-  norm_num [normSq_ofReal, Real.log_div, Real.log_one]
-  -- If norm_num doesn't fully solve it, use ring/field_simp
-  sorry
+
+  -- Key fact: normSq (1/sqrt 2 : ℂ) = 1/2
+  -- Computing directly: |1/√2|² = (1/√2)² = 1/2
+  have h_normsq : normSq (1/sqrt 2 : ℂ) = 1/2 := by
+    rw [normSq_div, normSq_one, normSq_ofReal]
+    -- simp automatically uses sq_sqrt to simplify (√2)² = 2
+    simp
+
+  -- After unfold, goal has structure:
+  -- let p0 := normSq ...; let p1 := normSq ...;
+  -- if p0 = 0 ∨ p1 = 0 then 0 else ...
+
+  -- Show the goal by direct computation using h_normsq
+  show (let p0 := normSq (1/sqrt 2 : ℂ);
+        let p1 := normSq (1/sqrt 2 : ℂ);
+        if p0 = 0 ∨ p1 = 0 then 0
+        else -(p0 * Real.log p0 + p1 * Real.log p1) / Real.log 2) = 1
+
+  -- Substitute the normSq values
+  simp only [h_normsq]
+
+  -- Now we have: if 1/2 = 0 ∨ 1/2 = 0 then 0 else ...
+  -- The condition is false, so we take the else branch
+
+  -- Show 1/2 ≠ 0
+  have h_half_ne_zero : (1:ℝ)/2 ≠ 0 := by norm_num
+
+  -- Simplify the if-then-else
+  simp only [h_half_ne_zero, false_or, if_false]
+
+  -- Goal is now: -(1/2 * log(1/2) + 1/2 * log(1/2)) / log(2) = 1
+
+  -- Simplify the sum: 1/2·log(1/2) + 1/2·log(1/2) = log(1/2)
+  have h_sum : (1:ℝ)/2 * Real.log ((1:ℝ)/2) + (1:ℝ)/2 * Real.log ((1:ℝ)/2) = Real.log ((1:ℝ)/2) := by ring
+  rw [h_sum]
+
+  -- Use log(1/2) = -log(2)
+  have h_log_half : Real.log ((1:ℝ)/2) = -Real.log 2 := by
+    rw [Real.log_div (by norm_num : (1:ℝ) ≠ 0) (by norm_num : (2:ℝ) ≠ 0)]
+    simp [Real.log_one]
+
+  rw [h_log_half]
+
+  -- Goal: -(-log(2)) / log(2) = 1, which simplifies to log(2) / log(2) = 1
+  have h_log2_ne_zero : Real.log 2 ≠ 0 :=
+    ne_of_gt (Real.log_pos (by norm_num : 1 < (2:ℝ)))
+
+  field_simp [h_log2_ne_zero]
 
 /--
 K_entropy is bounded: K ∈ [0, 1] for all qubits.
