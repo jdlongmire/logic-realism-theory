@@ -512,15 +512,19 @@ theorem K_fisher_superposition :
   --   1. Show normSq(1/sqrt 2 : ℂ) = 1/2
   --   2. Then: 2 * sqrt(1/2) * sqrt(1/2) = 2 * (1/2) = 1
   --
-  -- Challenge: Complex normSq simplification interacts poorly with simp
-  -- Need careful handling of: Complex.normSq_ofReal, sqrt_sq, field_simp
+  -- Challenge: Complex normSq simplification with type coercions
+  -- Multiple approaches attempted:
+  --   - Direct rewrite with h_normsq: failed (type mismatch with ↑√2)
+  --   - simp only [normSq_ofReal]: made no progress
+  --   - field_simp + ring: didn't resolve normSq
   --
-  -- Available lemmas:
-  --   - Complex.normSq_ofReal, normSq_div
-  --   - sqrt_sq, sq_sqrt, sqrt_mul
-  --   - field_simp, ring, norm_num
+  -- Issue: After unfold, goal has normSq (↑(1/√2) : ℂ) but normSq_ofReal
+  -- expects exact pattern match. Type coercion ↑ prevents pattern matching.
   --
-  -- TODO: Similar difficulty to K_entropy_superposition - may benefit from LLM team review
+  -- Needed: Either find correct coercion lemma, or axiomatize this well-known result.
+  -- Similar difficulty to K_entropy_superposition - requires LLM team expert guidance.
+  --
+  -- TODO: Submit to LLM team for proof assistance
   sorry
 
 /-- K_fisher range: [0, 1] -/
