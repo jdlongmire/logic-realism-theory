@@ -428,10 +428,16 @@ theorem K_fisher_superposition :
     K_fisher ket_plus = 1 := by
   unfold K_fisher ket_plus
   simp [normSq]
-  -- Goal: 2 * sqrt (normSq (1 / sqrt 2)) * sqrt (normSq (1 / sqrt 2)) = 1
-  -- normSq (1 / sqrt 2) = (1 / sqrt 2)² = 1/2
-  -- Therefore: 2 * sqrt(1/2) * sqrt(1/2) = 2 * sqrt(1/2 * 1/2) = 2 * sqrt(1/4) = 2 * 1/2 = 1
-  sorry  -- TODO: Need Real.sqrt_mul or mul_self_sqrt lemma
+  -- Goal: 2 * sqrt(normSq(1/sqrt 2)) * sqrt(normSq(1/sqrt 2)) = 1
+  --
+  -- Strategy:
+  --   1. Show normSq(1/sqrt 2) = 1/2 using normSq_ofReal and sq properties
+  --   2. Then: 2 * sqrt(1/2) * sqrt(1/2) = 2 * (sqrt(1/2))² = 2 * (1/2) = 1
+  --   3. Key lemmas: Real.mul_self_sqrt, sq_sqrt, or direct calculation with norm_num
+  --
+  -- Note: After simp, goal state depends on how normSq expands for complex division
+  sorry  -- TODO: Requires careful handling of complex normSq for 1/sqrt(2)
+         -- Available approach: normSq (x / y) = normSq x / normSq y
 
 /-- K_fisher range: [0, 1] -/
 theorem K_fisher_range (ψ : QubitState) :
