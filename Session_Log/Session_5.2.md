@@ -225,18 +225,91 @@ bdf00eb - Axiom transparency (Section 7.3)
 
 ---
 
+## Phase 5: Lean Build Audit and Refactoring Analysis ✅ COMPLETE
+
+### Accomplishments
+
+1. **Complete Lean File Audit**
+   - Discovered all 10 .lean files in LogicRealismTheory/
+   - Verified import status: 8 active, 2 not in build
+   - Accurate sorry count: 1 (not 14 as previously documented!)
+   - Created `scripts/count_sorry.py` for accurate counting (excludes comments)
+
+2. **Updated LogicRealismTheory.lean with Accurate Status**
+   - Build status: ✅ SUCCESS (not FAILED)
+   - Imported modules: 8 active (corrected from 9)
+   - Sorry count: 1 in MeasurementGeometry (corrected from 14)
+   - Linter warnings: 26 (documented by file)
+   - Identified orphaned Common.lean and commented-out NonUnitaryEvolution.lean
+
+3. **Analyzed Measurement Module Architecture**
+   - Discovered type signature mismatch between modules:
+     - Common.lean: Low-level `V → ℂ` signatures
+     - MeasurementGeometry.lean: High-level `PreMeasurementState` signatures
+   - Attempted automatic refactoring: FAILED (type mismatches)
+   - Studied approach_2_reference architecture for best practices
+
+4. **Documented Refactoring Strategy**
+   - Created `lean/MEASUREMENT_REFACTORING_NOTES.md` (comprehensive analysis)
+   - Identified approach_2 pattern: ONE consolidated module > multiple duplicates
+   - Recommended: LLM team consultation for next session
+   - Preserved working build state (reverted failed refactoring)
+
+### Key Findings
+
+**Build Health**:
+- ✅ Current build: **HEALTHY** (0 errors, 26 linter warnings only)
+- ✅ Sorry statements: **1 total** (MeasurementGeometry.lean)
+- ⚠️ Documentation drift: **SEVERE** (claims were 3-14x inflated)
+
+**Duplication Analysis**:
+- 12 duplicate definitions across Common/MeasurementGeometry/NonUnitaryEvolution
+- Type signature incompatibility prevents simple consolidation
+- Approach_2 uses ONE comprehensive module (better pattern)
+
+### Files Created/Modified
+
+**Created**:
+- `scripts/count_sorry.py` - Accurate sorry counter
+- `lean/MEASUREMENT_REFACTORING_NOTES.md` - Comprehensive refactoring analysis
+- `scripts/refactor_measurement_geometry.py` - Attempted refactoring (reverted)
+- `scripts/refactor_nonunitary_evolution.py` - Attempted refactoring (reverted)
+- `scripts/fix_measurement_calls.py` - Type fix attempt (reverted)
+
+**Modified**:
+- `lean/LogicRealismTheory.lean` - Accurate build status documentation
+
+### Commits Made
+
+```
+db94dee - Update LogicRealismTheory.lean with accurate build status
+          - Build: SUCCESS (not FAILED)
+          - Sorry: 1 (not 14)
+          - Modules: 8 active (not 9)
+          - Created count_sorry.py tool
+```
+
+---
+
 ## Next Session Priorities
 
-**Immediate tasks** (if work continues):
+**Immediate tasks**:
 1. ✅ Push all commits to GitHub (Session 5.2 complete)
-2. Multi-LLM team review of synthesized v3 paper
-3. Consider Sprint 12 planning (next development phase)
+2. **Lean refactoring** (next session):
+   - Consult LLM team on consolidation strategy (see `lean/MEASUREMENT_REFACTORING_NOTES.md`)
+   - Implement chosen approach (consolidate to ONE module or type-safe wrappers)
+   - Get NonUnitaryEvolution.lean into build
+   - Verify 0 duplicate definitions, clean build
+
+3. Multi-LLM team review of synthesized v3 paper
+4. Consider Sprint 12 planning (next development phase)
 
 **Strategic direction**:
-- v3 paper now complete with both predictions (T2/T1 and Landauer)
-- v3/Branch-2 synthesis complete (all high-value additions integrated)
-- Ready for comprehensive team review before external submission
-- Consider experimental validation pathway planning
+- v3 paper: ✅ COMPLETE with both predictions (T2/T1 and Landauer)
+- v3/Branch-2 synthesis: ✅ COMPLETE (all high-value additions integrated)
+- Lean build: ✅ HEALTHY but needs refactoring (duplication removal)
+- Ready for: Team review before external submission
+- Consider: Experimental validation pathway planning
 
 ---
 
@@ -244,15 +317,27 @@ bdf00eb - Axiom transparency (Section 7.3)
 
 ### Created
 
+**Paper Synthesis** (Phase 1-4):
 - `Session_Log/Session_5.2.md` (this file)
-- `scripts/update_section_7_3_axioms.py`
-- `scripts/add_section_5_5_measurement.py`
-- `scripts/add_section_2_4_energy.py`
-- `scripts/add_section_1_philosophy.py`
+- `scripts/update_section_7_3_axioms.py` - Section 7.3 axiom transparency
+- `scripts/add_section_5_5_measurement.py` - Section 5.5 intuitive measurement
+- `scripts/add_section_2_4_energy.py` - Section 2.4 energy as work
+- `scripts/add_section_1_philosophy.py` - Section 1 prescriptive logic
+
+**Lean Audit** (Phase 5):
+- `scripts/count_sorry.py` - Accurate sorry counter (excludes comments)
+- `lean/MEASUREMENT_REFACTORING_NOTES.md` - Comprehensive refactoring analysis
+- `scripts/refactor_measurement_geometry.py` - Attempted refactoring (reverted)
+- `scripts/refactor_nonunitary_evolution.py` - Attempted refactoring (reverted)
+- `scripts/fix_measurement_calls.py` - Type fix attempt (reverted)
 
 ### Modified
 
+**Paper Synthesis**:
 - `theory/papers/Logic-realism-theory-v3.md` (4 major additions across Sections 1, 2, 5, 7)
+
+**Lean Audit**:
+- `lean/LogicRealismTheory.lean` - Accurate build status documentation
 
 ---
 
