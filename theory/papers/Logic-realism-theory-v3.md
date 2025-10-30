@@ -45,6 +45,11 @@ where:
 
 This is not merely a metaphor. LRT provides explicit mathematical mappings showing how quantum mechanics emerges from $\mathfrak{L}$'s action on $\mathcal{I}$ through a hierarchical process: logical constraints → proto-mathematical primitives → mathematical structures → physical laws. Crucially, geometry and arithmetic co-emerge at the mathematical layer; neither is privileged or presupposed.
 
+
+**Prescriptive vs Descriptive Logic**: A critical distinction underpins this work. Traditional philosophy treats logic as **descriptive**—rules that govern valid reasoning about an independent reality. LRT proposes logic is **prescriptive and ontological**—the fundamental laws (Identity, Non-Contradiction, Excluded Middle) are **operators** that actively actualize reality from information space. This is not a semantic shift but a foundational claim: logic does not merely describe "what can be"; it **enforces what is**.
+
+This approach builds on Wheeler's (1990) information-theoretic program ("it from bit") while providing novel testable predictions. Where Wheeler proposed information as foundational, LRT specifies the mechanism: logical constraints filter infinite information space I into finite actuality A. The result is a parsimonious framework grounding physics in a single axiom $\mathcal{A} = \mathfrak{L}(\mathcal{I})$ rather than QM's multiple postulates (Hilbert space, Born rule, unitary evolution, measurement collapse).
+
 ### 1.3 Key Result: A First-Principles Prediction
 
 Unlike purely philosophical approaches, LRT makes quantitative predictions about quantum systems. The Excluded Middle constraint, which forces binary resolution during measurement, couples to quantum superposition states. This coupling produces an additional decoherence channel beyond environmental effects.
