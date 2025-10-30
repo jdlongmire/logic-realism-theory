@@ -3,6 +3,8 @@ Copyright © 2025 James D. (JD) Longmire
 License: Apache License 2.0
 Citation: Longmire, J.D. (2025). Logic Realism Theory: A Research Program for Ontological Logic in Informational Reality. Logic Realism Theory Repository.
 
+**Axiom Approach**: See lean/AXIOMS.md for justification of all axioms in this formalization.
+
 # Derivation: Russell Paradox Filtering via Non-Contradiction
 
 This file proves that Non-Contradiction (NC) prevents Russell's paradox from actualizing.

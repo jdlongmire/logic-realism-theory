@@ -2,6 +2,8 @@
 Copyright (c) 2025 James D. (JD) Longmire. All rights reserved.
 Released under Apache 2.0 license.
 Authors: James D. (JD) Longmire
+
+**Axiom Approach**: See lean/AXIOMS.md for justification of all axioms in this formalization.
 -/
 
 import Mathlib.Data.Complex.Basic

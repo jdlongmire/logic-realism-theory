@@ -3,6 +3,8 @@ Copyright © 2025 James D. (JD) Longmire
 License: Apache License 2.0
 Citation: Longmire, J.D. (2025). Logic Realism Theory: A Research Program for Ontological Logic in Informational Reality. Logic Realism Theory Repository.
 
+**Axiom Approach**: See lean/AXIOMS.md for justification of all axioms in this formalization.
+
 # Foundation: Infinite Information Space (I)
 
 This file establishes the MINIMAL axiomatic foundation for Logic Realism Theory.

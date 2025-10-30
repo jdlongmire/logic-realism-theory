@@ -40,7 +40,13 @@
       "Bash(claude doctor)",
       "Bash(lake env lean:*)",
       "Bash(awk:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(lsof:*)",
+      "Bash(lake clean:*)",
+      "Bash(do echo \"=== $module ===\")",
+      "Read(//c/Users/jdlon/OneDrive/Documents/**)",
+      "Bash(git mv:*)",
+      "Bash(git log:*)"
     ],
     "deny": [],
     "ask": []
