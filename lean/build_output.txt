@@ -1,0 +1,329 @@
+⚠ [2100/2235] Replayed LogicRealismTheory.Foundation.QubitKMapping
+warning: LogicRealismTheory/Foundation/QubitKMapping.lean:193:25: This simp argument is unused:
+  sq_sqrt (by norm_num : (0 : ℝ) ≤ 2)
+
+Hint: Omit it from the simp argument list.
+  simp [normSq_ofReal,̵ ̵s̵q̵_̵s̵q̵r̵t̵ ̵(̵b̵y̵ ̵n̵o̵r̵m̵_̵n̵u̵m̵ ̵:̵ ̵(̵0̵:̵ℝ̵)̵ ̵≤̵ ̵2̵)̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LogicRealismTheory/Foundation/QubitKMapping.lean:200:25: This simp argument is unused:
+  sq_sqrt (by norm_num : (0 : ℝ) ≤ 2)
+
+Hint: Omit it from the simp argument list.
+  simp [normSq_ofReal,̵ ̵s̵q̵_̵s̵q̵r̵t̵ ̵(̵b̵y̵ ̵n̵o̵r̵m̵_̵n̵u̵m̵ ̵:̵ ̵(̵0̵:̵ℝ̵)̵ ̵≤̵ ̵2̵)̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2101/2235] Replayed LogicRealismTheory.Derivations.Energy
+warning: LogicRealismTheory/Derivations/Energy.lean:237:5: unused variable `S`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/Energy.lean:237:29: unused variable `D`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/Energy.lean:328:5: unused variable `S`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/Energy.lean:612:6: unused variable `t`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/Energy.lean:620:5: unused variable `t₁`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/Energy.lean:620:8: unused variable `t₂`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/Energy.lean:715:6: unused variable `t₁`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/Energy.lean:715:9: unused variable `t₂`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/Energy.lean:810:5: unused variable `t₁`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/Energy.lean:810:8: unused variable `t₂`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/Energy.lean:836:18: unused variable `states`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3003/3011] Replayed LogicRealismTheory.Derivations.TimeEmergence
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:70:26: unused variable `t₁`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:70:29: unused variable `t₂`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:177:18: unused variable `t`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:226:5: unused variable `t`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:277:5: unused variable `U`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:278:5: unused variable `H`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:341:5: unused variable `γ`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:342:5: unused variable `U`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:343:5: unused variable `H`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:398:5: unused variable `U`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:399:5: unused variable `t`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:422:5: unused variable `U`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:423:5: unused variable `H`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:447:5: unused variable `a`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:447:13: unused variable `U`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:447:37: unused variable `t`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [5988/6006] Built Mathlib.Analysis.SpecialFunctions.Sqrt:c.o (234ms)
+✔ [5989/6006] Built Mathlib.Analysis.Calculus.LocalExtr.Basic:c.o (5.3s)
+✔ [5990/6006] Built Mathlib.Topology.ExtendFrom:c.o (5.3s)
+✔ [5991/6006] Built Mathlib.Topology.Order.ExtendFrom:c.o (5.3s)
+✔ [5992/6006] Built Mathlib.Topology.Order.Rolle:c.o (5.3s)
+✔ [5993/6006] Built Mathlib.Analysis.Calculus.LocalExtr.Rolle:c.o (5.3s)
+✔ [5994/6006] Built Mathlib.Analysis.Calculus.Deriv.MeanValue:c.o (5.3s)
+✔ [5995/6006] Built Mathlib.Analysis.Convex.Deriv:c.o (5.3s)
+✔ [5996/6006] Built Mathlib.Analysis.SpecialFunctions.Log.NegMulLog:c.o (5.3s)
+✔ [5997/6006] Built LogicRealismTheory.Foundation.QubitKMapping:c.o (5.3s)
+⚠ [5998/6006] Built LogicRealismTheory.Measurement.NonUnitaryEvolution (16s)
+warning: LogicRealismTheory/Measurement/NonUnitaryEvolution.lean:107:5: unused variable `U`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Measurement/NonUnitaryEvolution.lean:107:31: unused variable `ψ`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Measurement/NonUnitaryEvolution.lean:133:8: declaration uses 'sorry'
+warning: LogicRealismTheory/Measurement/NonUnitaryEvolution.lean:186:23: unused variable `ca`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Measurement/NonUnitaryEvolution.lean:188:8: declaration uses 'sorry'
+warning: LogicRealismTheory/Measurement/NonUnitaryEvolution.lean:204:8: declaration uses 'sorry'
+✖ [5999/6006] Building LogicRealismTheory.Measurement.MeasurementGeometry (16s)
+trace: .> LEAN_PATH=C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\packages\Cli\.lake\build\lib\lean;C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\packages\batteries\.lake\build\lib\lean;C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\packages\Qq\.lake\build\lib\lean;C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\packages\aesop\.lake\build\lib\lean;C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\packages\importGraph\.lake\build\lib\lean;C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\packages\plausible\.lake\build\lib\lean;C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\packages\mathlib\.lake\build\lib\lean;C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\build\lib\lean c:\Users\jdlon\.elan\toolchains\leanprover--lean4---v4.25.0-rc2\bin\lean.exe C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\LogicRealismTheory\Measurement\MeasurementGeometry.lean -o C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\build\lib\lean\LogicRealismTheory\Measurement\MeasurementGeometry.olean -i C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\build\lib\lean\LogicRealismTheory\Measurement\MeasurementGeometry.ilean -c C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\build\ir\LogicRealismTheory\Measurement\MeasurementGeometry.c --setup C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\build\ir\LogicRealismTheory\Measurement\MeasurementGeometry.setup.json --json
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:102:2: don't know how to synthesize implicit argument `α`
+  @Subset (Set (?m.8 h)) Set.instHasSubset (StateSpace K') (StateSpace K)
+context:
+V : Type u_1
+inst✝¹ : Fintype V
+inst✝ : DecidableEq V
+K K' : ℕ
+h : K' ≤ K
+⊢ Type u_2
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:102:18: don't know how to synthesize implicit argument `V`
+  @StateSpace (?m.8 h) K
+context:
+V : Type u_1
+inst✝¹ : Fintype V
+inst✝ : DecidableEq V
+K K' : ℕ
+h : K' ≤ K
+⊢ Type u_2
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:102:2: don't know how to synthesize implicit argument `V`
+  @StateSpace (?m.8 h) K'
+context:
+V : Type u_1
+inst✝¹ : Fintype V
+inst✝ : DecidableEq V
+K K' : ℕ
+h : K' ≤ K
+⊢ Type u_2
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:142:2: typeclass instance problem is stuck, it is often due to metavariables
+  HMul (Matrix ?m.25 ?m.25 ℂ) (Matrix ?m.25 ?m.25 ℂ) (Matrix ?m.25 ?m.25 ℂ)
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:147:27: typeclass instance problem is stuck, it is often due to metavariables
+  DecidableEq ?m.23
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:153:2: typeclass instance problem is stuck, it is often due to metavariables
+  HMul (Matrix ?m.25 ?m.25 ℂ) (Matrix ?m.25 ?m.25 ℂ) (Matrix ?m.25 ?m.25 ℂ)
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:221:4: typeclass instance problem is stuck, it is often due to metavariables
+  Fintype ?m.6
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:244:9: typeclass instance problem is stuck, it is often due to metavariables
+  Fintype ?m.4
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:254:11: Function expected at
+  measurement_probability
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  M
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:269:18: Function expected at
+  wavefunction_collapse
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  M
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:271:11: Function expected at
+  measurement_probability
+but this term has type
+  ?m.2
+
+Note: Expected a function because this term is being applied to the argument
+  M
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:294:2: don't know how to synthesize implicit argument `α`
+  @SSubset (Set (?m.12 h_pos meas)) Set.instHasSSubset (StateSpace meas.K_final) (StateSpace K_initial)
+context:
+V : Type u_1
+inst✝¹ : Fintype V
+inst✝ : DecidableEq V
+K_initial ΔK : ℕ
+h_pos : ΔK > 0
+meas : ConstraintAddition K_initial ΔK
+⊢ Type u_2
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:294:28: don't know how to synthesize implicit argument `V`
+  @StateSpace (?m.12 h_pos meas) K_initial
+context:
+V : Type u_1
+inst✝¹ : Fintype V
+inst✝ : DecidableEq V
+K_initial ΔK : ℕ
+h_pos : ΔK > 0
+meas : ConstraintAddition K_initial ΔK
+⊢ Type u_2
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:294:2: don't know how to synthesize implicit argument `V`
+  @StateSpace (?m.12 h_pos meas) meas.K_final
+context:
+V : Type u_1
+inst✝¹ : Fintype V
+inst✝ : DecidableEq V
+K_initial ΔK : ℕ
+h_pos : ΔK > 0
+meas : ConstraintAddition K_initial ΔK
+⊢ Type u_2
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:300:2: failed to synthesize
+  Fintype ↑(StateSpace meas.K_final)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:300:43: failed to synthesize
+  Fintype ↑(StateSpace K_initial)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:308:39: don't know how to synthesize implicit argument `V`
+  @ConstraintViolations ?m.6 IdentityState
+context:
+V : Type u_1
+inst✝¹ : Fintype V
+inst✝ : DecidableEq V
+⊢ Type u_2
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:308:60: don't know how to synthesize implicit argument `V`
+  @IdentityState ?m.6
+context:
+V : Type u_1
+inst✝¹ : Fintype V
+inst✝ : DecidableEq V
+⊢ Type u_2
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:312:17: don't know how to synthesize implicit argument `β`
+  @singleton ?m.11 (Set ?m.11) Set.instSingletonSet IdentityState
+context:
+V : Type u_1
+inst✝¹ : Fintype V
+inst✝ : DecidableEq V
+⊢ Type u_2
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:312:17: don't know how to synthesize implicit argument `α`
+  @singleton ?m.11 (Set ?m.11) Set.instSingletonSet IdentityState
+context:
+V : Type u_1
+inst✝¹ : Fintype V
+inst✝ : DecidableEq V
+⊢ outParam (Type u_2)
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:312:18: don't know how to synthesize implicit argument `V`
+  @IdentityState ?m.11
+context:
+V : Type u_1
+inst✝¹ : Fintype V
+inst✝ : DecidableEq V
+⊢ Type u_2
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:312:2: don't know how to synthesize implicit argument `α`
+  @Eq (Set ?m.11) (StateSpace 0) {IdentityState}
+context:
+V : Type u_1
+inst✝¹ : Fintype V
+inst✝ : DecidableEq V
+⊢ Type u_2
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:312:2: don't know how to synthesize implicit argument `V`
+  @StateSpace ?m.11 0
+context:
+V : Type u_1
+inst✝¹ : Fintype V
+inst✝ : DecidableEq V
+⊢ Type u_2
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:346:4: typeclass instance problem is stuck, it is often due to metavariables
+  DecidableEq ?m.3
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:359:45: unexpected token 'λ'; expected 'lemma'
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:361:32: unexpected identifier; expected 'lemma'
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:363:25: unexpected identifier; expected 'lemma'
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:365:56: unexpected identifier; expected 'lemma'
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:385:15: failed to synthesize
+  SeminormedAddCommGroup H
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:386:29: failed to synthesize
+  Norm H
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:412:7: failed to synthesize
+  Fintype ↑(StateSpace K_post)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:410:11: Function expected at
+  measurement_probability
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  M
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:427:13: Function expected at
+  wavefunction_collapse
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  M
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:446:17: Function expected at
+  wavefunction_collapse
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  M
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:449:10: Function expected at
+  measurement_probability
+but this term has type
+  ?m.2
+
+Note: Expected a function because this term is being applied to the argument
+  M
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:465:20: Function expected at
+  wavefunction_collapse
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  M
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:466:16: Invalid field notation: Type of
+  ψ_post
+is not known; cannot resolve field `amplitude`
+error: Lean exited with code 1
+✔ [6004/6006] Built LogicRealismTheory.Measurement.NonUnitaryEvolution:c.o (187ms)
+Some required targets logged failures:
+- LogicRealismTheory.Measurement.MeasurementGeometry
+error: build failed

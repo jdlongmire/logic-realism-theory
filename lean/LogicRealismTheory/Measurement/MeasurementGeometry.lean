@@ -91,17 +91,17 @@ Measures how many logical constraints (Identity, Non-Contradiction) are violated
 
 **TODO**: Replace axiom with computed function from QubitKMapping (Track 1.2)
 -/
-axiom ConstraintViolations : V → ℕ
+axiom ConstraintViolations {V : Type*} : V → ℕ
 
 /--
 State space for constraint threshold K.
 Contains all configurations with at most K constraint violations.
 -/
-def StateSpace (K : ℕ) : Set V := {σ : V | ConstraintViolations σ ≤ K}
+def StateSpace {V : Type*} (K : ℕ) : Set V := {σ : V | ConstraintViolations σ ≤ K}
 
 /-- State space inclusion: V_{K'} ⊆ V_K when K' ≤ K -/
-axiom statespace_monotone {K K' : ℕ} (h : K' ≤ K) :
-  StateSpace K' ⊆ StateSpace K
+axiom statespace_monotone {V : Type*} {K K' : ℕ} (h : K' ≤ K) :
+  (StateSpace K' : Set V) ⊆ (StateSpace K : Set V)
 
 /--
 A pointer state is an eigenstate of the decoherence process.
@@ -126,7 +126,7 @@ Measurement operator: projection onto reduced state space.
 
 **SOURCE**: MeasurementMechanism.lean
 -/
-structure MeasurementOperator (K_pre K_post : ℕ) where
+structure MeasurementOperator (V : Type*) [Fintype V] [DecidableEq V] (K_pre K_post : ℕ) where
   /-- The projection matrix -/
   matrix : Matrix V V ℂ
   /-- Measurement reduces constraint threshold -/
@@ -139,18 +139,18 @@ structure MeasurementOperator (K_pre K_post : ℕ) where
     (matrix.mulVec (fun τ => if τ = σ then 1 else 0)) σ = 0
 
 /-- Measurement operator is a projection: M² = M -/
-axiom measurement_is_projection {K_pre K_post : ℕ}
-    (M : MeasurementOperator K_pre K_post) :
+axiom measurement_is_projection {V : Type*} [Fintype V] [DecidableEq V] {K_pre K_post : ℕ}
+    (M : MeasurementOperator V K_pre K_post) :
   M.matrix * M.matrix = M.matrix
 
 /-- Measurement operator is Hermitian: M† = M -/
-axiom measurement_is_hermitian {K_pre K_post : ℕ}
-    (M : MeasurementOperator K_pre K_post) :
+axiom measurement_is_hermitian {V : Type*} [Fintype V] [DecidableEq V] {K_pre K_post : ℕ}
+    (M : MeasurementOperator V K_pre K_post) :
   M.matrix.conjTranspose = M.matrix
 
 /-- Measurement is NOT unitary: M†M ≠ I (information loss) -/
-axiom measurement_not_unitary {K_pre K_post : ℕ}
-    (M : MeasurementOperator K_pre K_post)
+axiom measurement_not_unitary {V : Type*} [Fintype V] [DecidableEq V] {K_pre K_post : ℕ}
+    (M : MeasurementOperator V K_pre K_post)
     (h : K_post < K_pre) :
   M.matrix.conjTranspose * M.matrix ≠ 1
 
@@ -161,7 +161,7 @@ Quantum state before measurement.
 
 **SOURCE**: MeasurementMechanism.lean
 -/
-structure PreMeasurementState (K : ℕ) where
+structure PreMeasurementState (V : Type*) [Fintype V] [DecidableEq V] (K : ℕ) where
   /-- Amplitude function ψ : V → ℂ -/
   amplitude : V → ℂ
   /-- Normalization: Σ |ψ(σ)|² = 1 -/
@@ -174,7 +174,7 @@ Quantum state after measurement.
 
 **SOURCE**: MeasurementMechanism.lean
 -/
-structure PostMeasurementState (K : ℕ) where
+structure PostMeasurementState (V : Type*) [Fintype V] [DecidableEq V] (K : ℕ) where
   /-- Amplitude function ψ : V → ℂ -/
   amplitude : V → ℂ
   /-- Normalization: Σ |ψ(σ)|² = 1 -/
@@ -185,9 +185,9 @@ structure PostMeasurementState (K : ℕ) where
 /-! ## Wave function collapse (imported from established framework) -/
 
 /-- Normalization preserved after measurement -/
-axiom wavefunction_collapse_normalized {K_pre K_post : ℕ}
-    (M : MeasurementOperator K_pre K_post)
-    (ψ_pre : PreMeasurementState K_pre) :
+axiom wavefunction_collapse_normalized {V : Type*} [Fintype V] [DecidableEq V] {K_pre K_post : ℕ}
+    (M : MeasurementOperator V K_pre K_post)
+    (ψ_pre : PreMeasurementState V K_pre) :
   let ψ_measured := M.matrix.mulVec ψ_pre.amplitude
   let norm_sq := ∑ σ : V, normSq (ψ_measured σ)
   let norm := Real.sqrt norm_sq
@@ -195,9 +195,9 @@ axiom wavefunction_collapse_normalized {K_pre K_post : ℕ}
   ∑ σ : V, normSq (ψ_post σ) = 1
 
 /-- Support preservation after measurement -/
-axiom wavefunction_collapse_support {K_pre K_post : ℕ}
-    (M : MeasurementOperator K_pre K_post)
-    (ψ_pre : PreMeasurementState K_pre) :
+axiom wavefunction_collapse_support {V : Type*} [Fintype V] [DecidableEq V] {K_pre K_post : ℕ}
+    (M : MeasurementOperator V K_pre K_post)
+    (ψ_pre : PreMeasurementState V K_pre) :
   let ψ_measured := M.matrix.mulVec ψ_pre.amplitude
   let norm_sq := ∑ σ : V, normSq (ψ_measured σ)
   let norm := Real.sqrt norm_sq
@@ -217,10 +217,10 @@ Wave function collapse via measurement.
 **SOURCE**: MeasurementMechanism.lean
 **STATUS**: 0 sorry (axioms provide normalization and support preservation)
 -/
-def wavefunction_collapse {K_pre K_post : ℕ}
-    (M : MeasurementOperator K_pre K_post)
-    (ψ_pre : PreMeasurementState K_pre) :
-    PostMeasurementState K_post :=
+noncomputable def wavefunction_collapse {V : Type*} [Fintype V] [DecidableEq V] {K_pre K_post : ℕ}
+    (M : MeasurementOperator V K_pre K_post)
+    (ψ_pre : PreMeasurementState V K_pre) :
+    PostMeasurementState V K_post :=
   -- Apply measurement operator
   let ψ_measured := M.matrix.mulVec ψ_pre.amplitude
   -- Compute norm
@@ -241,18 +241,18 @@ Measurement outcome probability (Born rule).
 
 **SOURCE**: MeasurementMechanism.lean
 -/
-def measurement_probability {K_pre K_post : ℕ}
-    (M : MeasurementOperator K_pre K_post)
-    (ψ : PreMeasurementState K_pre)
+noncomputable def measurement_probability {V : Type*} [Fintype V] [DecidableEq V] {K_pre K_post : ℕ}
+    (M : MeasurementOperator V K_pre K_post)
+    (ψ : PreMeasurementState V K_pre)
     (outcome : V) : ℝ :=
   let M_psi := M.matrix.mulVec ψ.amplitude
   let total_norm := ∑ σ : V, normSq (M_psi σ)
   normSq (M_psi outcome) / total_norm
 
 /-- Born rule: measurement probabilities sum to 1 -/
-axiom born_rule_normalized {K_pre K_post : ℕ}
-    (M : MeasurementOperator K_pre K_post)
-    (ψ : PreMeasurementState K_pre) :
+axiom born_rule_normalized {V : Type*} [Fintype V] [DecidableEq V] {K_pre K_post : ℕ}
+    (M : MeasurementOperator V K_pre K_post)
+    (ψ : PreMeasurementState V K_pre) :
   ∑ σ : V, measurement_probability M ψ σ = 1
 
 /--
@@ -290,16 +290,16 @@ structure ConstraintAddition (K_initial : ℕ) (ΔK : ℕ) where
   nonneg : K_final ≥ 0
 
 /-- Measurement reduces state space: V_{K-ΔK} ⊂ V_K -/
-axiom measurement_reduces_statespace {K_initial : ℕ} {ΔK : ℕ}
+axiom measurement_reduces_statespace {V : Type*} [Fintype V] [DecidableEq V] {K_initial : ℕ} {ΔK : ℕ}
     (h_pos : ΔK > 0)
     (meas : ConstraintAddition K_initial ΔK) :
-  StateSpace meas.K_final ⊂ StateSpace K_initial
+  (StateSpace meas.K_final : Set V) ⊂ (StateSpace K_initial : Set V)
 
 /-- State space cardinality decreases: |V_{K-ΔK}| < |V_K| -/
-axiom statespace_cardinality_decreases {K_initial : ℕ} {ΔK : ℕ}
+axiom statespace_cardinality_decreases {V : Type*} [Fintype V] [DecidableEq V] {K_initial : ℕ} {ΔK : ℕ}
     (h_pos : ΔK > 0)
     (meas : ConstraintAddition K_initial ΔK) :
-  Fintype.card (StateSpace meas.K_final) < Fintype.card (StateSpace K_initial)
+  Fintype.card (StateSpace meas.K_final : Set V) < Fintype.card (StateSpace K_initial : Set V)
 
 /-! ## Classical emergence at K = 0 (imported from established framework) -/
 
@@ -357,19 +357,19 @@ environment size and coupling strength.
 
 **SOURCE**: MeasurementMechanism.lean
 -/
-structure Decoherence (K_sys : ℕ) (K_env : ℕ) where
+structure Decoherence (V : Type*) [Fintype V] [DecidableEq V] (K_sys : ℕ) (K_env : ℕ) where
   /-- System-environment coupling strength -/
-  λ : ℝ
+  coupling : ℝ
   /-- Constraint leakage rate -/
   leakage_rate : ℝ
   /-- Decoherence time -/
-  τ_D : ℝ
+  tau_D : ℝ
   /-- Decoherence time scales inversely with coupling -/
-  time_scaling : τ_D = 1 / (λ * Fintype.card (StateSpace K_env))
+  time_scaling : tau_D = 1 / (coupling * Fintype.card (StateSpace K_env : Set V))
 
 /-- Pointer states are constraint eigenstates -/
-axiom pointer_states_are_constraint_eigenstates {K_sys K_env : ℕ}
-    (dec : Decoherence K_sys K_env) :
+axiom pointer_states_are_constraint_eigenstates {V : Type*} [Fintype V] [DecidableEq V] {K_sys K_env : ℕ}
+    (dec : Decoherence V K_sys K_env) :
   ∀ σ : V, (IsPointerState σ ↔
     ∃ h : ℕ, ConstraintViolations σ = h ∧
     ∀ τ : V, ConstraintViolations τ = h → IsPointerState τ)
@@ -383,9 +383,9 @@ First postulate: States are rays in Hilbert space.
 
 **SOURCE**: MeasurementMechanism.lean
 -/
-axiom hilbert_space_from_constraints {K : ℕ} :
+axiom hilbert_space_from_constraints {V : Type*} [Fintype V] [DecidableEq V] {K : ℕ} :
   ∃ H : Type*, InnerProductSpace ℂ H ∧
-    (StateSpace K ≃ {ψ : H | ‖ψ‖ = 1})
+    ((StateSpace K : Set V) ≃ {ψ : H | ‖ψ‖ = 1})
 
 /--
 Second postulate: Observables are Hermitian operators.
@@ -394,7 +394,7 @@ Second postulate: Observables are Hermitian operators.
 
 **SOURCE**: MeasurementMechanism.lean
 -/
-axiom observables_from_constraint_operators :
+axiom observables_from_constraint_operators {V : Type*} [Fintype V] [DecidableEq V] :
   ∀ (O : Matrix V V ℂ),
     (IsSelfAdjoint O) ↔
     (∃ f : V → ℕ, ∀ σ τ : V, O σ τ = if σ = τ then f σ else 0)
@@ -406,12 +406,12 @@ Third postulate: Born rule from geometry.
 
 **SOURCE**: MeasurementMechanism.lean
 -/
-axiom born_rule_is_geometric {K_pre K_post : ℕ}
-    (M : MeasurementOperator K_pre K_post)
-    (ψ : PreMeasurementState K_pre) :
+axiom born_rule_is_geometric {V : Type*} [Fintype V] [DecidableEq V] {K_pre K_post : ℕ}
+    (M : MeasurementOperator V K_pre K_post)
+    (ψ : PreMeasurementState V K_pre) :
   ∀ σ : V, measurement_probability M ψ σ =
     (normSq (ψ.amplitude σ)) /
-    (∑ τ ∈ StateSpace K_post, normSq (ψ.amplitude τ))
+    (∑ τ ∈ (StateSpace K_post : Set V), normSq (ψ.amplitude τ))
 
 /--
 Fourth postulate: Collapse is deterministic projection.
