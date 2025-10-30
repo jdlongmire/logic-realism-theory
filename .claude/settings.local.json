@@ -46,7 +46,9 @@
       "Bash(do echo \"=== $module ===\")",
       "Read(//c/Users/jdlon/OneDrive/Documents/**)",
       "Bash(git mv:*)",
-      "Bash(git log:*)"
+      "Bash(git log:*)",
+      "Bash(timeout 30 lake build:*)",
+      "Bash(export PYTHONIOENCODING=utf-8)"
     ],
     "deny": [],
     "ask": []

@@ -1,0 +1,194 @@
+⚠ [2100/2128] Replayed LogicRealismTheory.Foundation.QubitKMapping
+warning: LogicRealismTheory/Foundation/QubitKMapping.lean:195:25: This simp argument is unused:
+  sq_sqrt (by norm_num : (0 : ℝ) ≤ 2)
+
+Hint: Omit it from the simp argument list.
+  simp [normSq_ofReal,̵ ̵s̵q̵_̵s̵q̵r̵t̵ ̵(̵b̵y̵ ̵n̵o̵r̵m̵_̵n̵u̵m̵ ̵:̵ ̵(̵0̵:̵ℝ̵)̵ ̵≤̵ ̵2̵)̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LogicRealismTheory/Foundation/QubitKMapping.lean:202:25: This simp argument is unused:
+  sq_sqrt (by norm_num : (0 : ℝ) ≤ 2)
+
+Hint: Omit it from the simp argument list.
+  simp [normSq_ofReal,̵ ̵s̵q̵_̵s̵q̵r̵t̵ ̵(̵b̵y̵ ̵n̵o̵r̵m̵_̵n̵u̵m̵ ̵:̵ ̵(̵0̵:̵ℝ̵)̵ ̵≤̵ ̵2̵)̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2101/2128] Replayed LogicRealismTheory.Derivations.Energy
+warning: LogicRealismTheory/Derivations/Energy.lean:237:5: unused variable `S`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/Energy.lean:237:29: unused variable `D`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/Energy.lean:328:5: unused variable `S`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/Energy.lean:612:6: unused variable `t`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/Energy.lean:620:5: unused variable `t₁`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/Energy.lean:620:8: unused variable `t₂`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/Energy.lean:715:6: unused variable `t₁`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/Energy.lean:715:9: unused variable `t₂`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/Energy.lean:810:5: unused variable `t₁`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/Energy.lean:810:8: unused variable `t₂`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/Energy.lean:836:18: unused variable `states`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3003/3011] Replayed LogicRealismTheory.Derivations.TimeEmergence
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:70:26: unused variable `t₁`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:70:29: unused variable `t₂`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:177:18: unused variable `t`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:226:5: unused variable `t`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:277:5: unused variable `U`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:278:5: unused variable `H`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:341:5: unused variable `γ`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:342:5: unused variable `U`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:343:5: unused variable `H`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:398:5: unused variable `U`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:399:5: unused variable `t`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:422:5: unused variable `U`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:423:5: unused variable `H`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:447:5: unused variable `a`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:447:13: unused variable `U`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Derivations/TimeEmergence.lean:447:37: unused variable `t`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3006/3011] Replayed LogicRealismTheory.Measurement.NonUnitaryEvolution
+warning: LogicRealismTheory/Measurement/NonUnitaryEvolution.lean:109:5: unused variable `U`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Measurement/NonUnitaryEvolution.lean:109:31: unused variable `ψ`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Measurement/NonUnitaryEvolution.lean:135:8: declaration uses 'sorry'
+warning: LogicRealismTheory/Measurement/NonUnitaryEvolution.lean:188:23: unused variable `ca`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LogicRealismTheory/Measurement/NonUnitaryEvolution.lean:190:8: declaration uses 'sorry'
+warning: LogicRealismTheory/Measurement/NonUnitaryEvolution.lean:206:8: declaration uses 'sorry'
+✖ [6000/6006] Building LogicRealismTheory.Measurement.MeasurementGeometry (13s)
+trace: .> LEAN_PATH=C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\packages\Cli\.lake\build\lib\lean;C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\packages\batteries\.lake\build\lib\lean;C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\packages\Qq\.lake\build\lib\lean;C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\packages\aesop\.lake\build\lib\lean;C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\packages\importGraph\.lake\build\lib\lean;C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\packages\plausible\.lake\build\lib\lean;C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\packages\mathlib\.lake\build\lib\lean;C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\build\lib\lean c:\Users\jdlon\.elan\toolchains\leanprover--lean4---v4.25.0-rc2\bin\lean.exe C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\LogicRealismTheory\Measurement\MeasurementGeometry.lean -o C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\build\lib\lean\LogicRealismTheory\Measurement\MeasurementGeometry.olean -i C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\build\lib\lean\LogicRealismTheory\Measurement\MeasurementGeometry.ilean -c C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\build\ir\LogicRealismTheory\Measurement\MeasurementGeometry.c --setup C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\lean\.lake\build\ir\LogicRealismTheory\Measurement\MeasurementGeometry.setup.json --json
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:81:6: `Set.card` has already been declared
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:98:6: `LogicRealismTheory.Measurement.ConstraintViolations` has already been declared
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:104:4: `LogicRealismTheory.Measurement.StateSpace` has already been declared
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:107:6: `LogicRealismTheory.Measurement.statespace_monotone` has already been declared
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:133:10: `LogicRealismTheory.Measurement.MeasurementOperator` has already been declared
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:146:6: `LogicRealismTheory.Measurement.measurement_is_projection` has already been declared
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:151:6: `LogicRealismTheory.Measurement.measurement_is_hermitian` has already been declared
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:156:6: `LogicRealismTheory.Measurement.measurement_not_unitary` has already been declared
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:192:6: `LogicRealismTheory.Measurement.wavefunction_collapse_normalized` has already been declared
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:202:6: `LogicRealismTheory.Measurement.wavefunction_collapse_support` has already been declared
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:224:18: `LogicRealismTheory.Measurement.wavefunction_collapse` has already been declared
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:248:18: `LogicRealismTheory.Measurement.measurement_probability` has already been declared
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:260:37: Application type mismatch: The argument
+  ψ
+has type
+  PreMeasurementState V K_pre
+but is expected to have type
+  QuantumState V K_pre
+in the application
+  measurement_probability M ψ
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:275:42: Application type mismatch: The argument
+  ψ_pre
+has type
+  PreMeasurementState V K_pre
+but is expected to have type
+  QuantumState V K_pre
+in the application
+  wavefunction_collapse M ψ_pre
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:277:37: Application type mismatch: The argument
+  ψ_pre
+has type
+  PreMeasurementState V K_pre
+but is expected to have type
+  QuantumState V K_pre
+in the application
+  measurement_probability M ψ_pre
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:289:2: unexpected token '/--'; expected 'lemma'
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:411:37: Application type mismatch: The argument
+  ψ
+has type
+  PreMeasurementState V K_pre
+but is expected to have type
+  QuantumState V K_pre
+in the application
+  measurement_probability M ψ
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:428:37: Application type mismatch: The argument
+  ψ
+has type
+  PreMeasurementState V K_pre
+but is expected to have type
+  QuantumState V K_pre
+in the application
+  wavefunction_collapse M ψ
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:447:41: Application type mismatch: The argument
+  ψ
+has type
+  PreMeasurementState V K
+but is expected to have type
+  QuantumState V K
+in the application
+  wavefunction_collapse M ψ
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:450:36: Application type mismatch: The argument
+  ψ
+has type
+  PreMeasurementState V K
+but is expected to have type
+  QuantumState V K
+in the application
+  measurement_probability M ψ
+error: LogicRealismTheory/Measurement/MeasurementGeometry.lean:466:44: Application type mismatch: The argument
+  ψ
+has type
+  PreMeasurementState V K
+but is expected to have type
+  QuantumState V K
+in the application
+  wavefunction_collapse M ψ
+error: Lean exited with code 1
+Some required targets logged failures:
+- LogicRealismTheory.Measurement.MeasurementGeometry
+error: build failed
