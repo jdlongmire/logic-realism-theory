@@ -12,6 +12,7 @@
 import LogicRealismTheory.Foundation.IIS
 import LogicRealismTheory.Foundation.Actualization
 import LogicRealismTheory.Foundation.QubitKMapping
+import LogicRealismTheory.Foundation.ConstraintThreshold
 
 -- ═══════════════════════════════════════════════════════════════════════════
 -- OPERATOR MODULES
@@ -40,19 +41,21 @@ import LogicRealismTheory.Measurement.MeasurementGeometry
 -- CURRENT MAIN BUILD STATUS
 -- ═══════════════════════════════════════════════════════════════════════════
 --
--- Build status: ✅ SUCCESS (6002 jobs completed, 0 errors)
--- Imported modules: 8 active
---   Foundation: IIS, Actualization, QubitKMapping
+-- Build status: ✅ SUCCESS (refactoring in progress - Session 5.3)
+-- Imported modules: 9 active (after refactoring)
+--   Foundation: IIS, Actualization, QubitKMapping, ConstraintThreshold
 --   Operators: Projectors
 --   Derivations: Energy, TimeEmergence, RussellParadox
---   Measurement: MeasurementGeometry
+--   Measurement: MeasurementGeometry (refactored to use ConstraintThreshold)
+--
+-- Refactoring Progress:
+--   ✅ ConstraintThreshold.lean created with base definitions
+--   ✅ MeasurementGeometry.lean refactored to import ConstraintThreshold
+--   ⏳ NonUnitaryEvolution.lean - needs refactoring to avoid duplicates
+--   ⏳ Common.lean - orphaned (may be archived after NonUnitaryEvolution fixed)
 --
 -- Sorry count: 1 (active build only)
 --   MeasurementGeometry.lean: 1 sorry
---
--- Not in build:
---   Measurement/Common.lean (orphaned - created but not imported)
---   Measurement/NonUnitaryEvolution.lean (commented out - 3 sorry, duplicate definitions)
 --
 -- Axiom count: TBD (needs audit - previous count of 51 may be outdated)
 --

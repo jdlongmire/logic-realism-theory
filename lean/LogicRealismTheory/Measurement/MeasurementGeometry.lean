@@ -10,6 +10,8 @@ import Mathlib.Data.Complex.Basic
 import Mathlib.Data.Fintype.Basic
 import Mathlib.Data.Matrix.Basic
 import Mathlib.Analysis.InnerProductSpace.Basic
+import LogicRealismTheory.Foundation.ConstraintThreshold
+import LogicRealismTheory.Foundation.ConstraintThreshold
 
 /-!
 # Measurement Geometry
@@ -76,35 +78,16 @@ Phase 3 (Track 1.3): Replace axioms with computed K → Update NonUnitaryEvoluti
 * Piron-Solèr theorem: Hilbert space from orthomodular lattice
 -/
 
--- Axiomatize Set cardinality (not available in current Mathlib)
-axiom Set.card {α : Type*} : Set α → ℕ
-
 namespace LogicRealismTheory.Measurement
 
 open Complex
 open Matrix
+open LogicRealismTheory.Foundation
+open LogicRealismTheory.Foundation
 
 variable {V : Type*} [Fintype V] [DecidableEq V]
 
 /-! ## Core constraint definitions -/
-
-/--
-Constraint violations for configuration σ.
-Measures how many logical constraints (Identity, Non-Contradiction) are violated.
-
-**TODO**: Replace axiom with computed function from QubitKMapping (Track 1.2)
--/
-axiom ConstraintViolations {V : Type*} : V → ℕ
-
-/--
-State space for constraint threshold K.
-Contains all configurations with at most K constraint violations.
--/
-def StateSpace {V : Type*} (K : ℕ) : Set V := {σ : V | ConstraintViolations σ ≤ K}
-
-/-- State space inclusion: V_{K'} ⊆ V_K when K' ≤ K -/
-axiom statespace_monotone {V : Type*} {K K' : ℕ} (h : K' ≤ K) :
-  (StateSpace K' : Set V) ⊆ (StateSpace K : Set V)
 
 /--
 A pointer state is an eigenstate of the decoherence process.

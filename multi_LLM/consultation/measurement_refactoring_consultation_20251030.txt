@@ -1,0 +1,212 @@
+# LLM Team Consultation: Lean Measurement Module Refactoring Architecture
+
+**Date**: 2025-10-30
+**Session**: Post-5.2
+**Consultation Type**: Architectural Decision
+**Priority**: HIGH - Blocking further Lean development
+
+---
+
+## Context
+
+We are formalizing Logic Realism Theory (LRT) in Lean 4. The measurement module currently has:
+- 3 separate .lean files with 12 duplicate definitions
+- Type signature incompatibility between low-level and high-level approaches
+- 2 files not in active build due to these issues
+
+**Current Build Status**:
+- ✅ SUCCESS (0 errors, 1 sorry)
+- ✅ MeasurementGeometry.lean: Active (high-level structured types)
+- ⚠️ Common.lean: Orphaned (low-level bare functions, not imported)
+- ⚠️ NonUnitaryEvolution.lean: Commented out (duplicate definitions)
+
+**Goal**: Get all 10 modules in active build with 0 duplicate definitions
+
+---
+
+## The Problem
+
+### Type Signature Mismatch
+
+**Common.lean** uses low-level signatures:
+```lean
+def wavefunction_collapse (M : MeasurementOperator V K_pre K_post)
+    (amplitude : V → ℂ) : V → ℂ
+```
+- Bare amplitude functions
+- No proof obligations
+- Simple but lacks structure
+
+**MeasurementGeometry.lean** uses high-level signatures:
+```lean
+def wavefunction_collapse (M : MeasurementOperator V K_pre K_post)
+    (ψ_pre : PreMeasurementState V K_pre) : PostMeasurementState V K_post
+```
+- Structured types with `.amplitude`, `.normalized`, `.support` fields
+- Carries normalization and support proofs
+- More expressive but requires proof infrastructure
+
+**Issue**: Cannot directly call low-level functions from high-level code without conversion wrappers.
+
+### Duplicate Definitions (12 total)
+
+1. `ConstraintViolations` axiom
+2. `StateSpace` definition
+3. `statespace_monotone` axiom
+4. `MeasurementOperator` structure
+5. `measurement_is_projection` axiom
+6. `measurement_is_hermitian` axiom
+7. `measurement_not_unitary` axiom
+8. `wavefunction_collapse_normalized` axiom
+9. `wavefunction_collapse_support` axiom
+10. `wavefunction_collapse` definition
+11. `measurement_probability` definition
+12. `ConstraintAddition` structure
+
+---
+
+## Reference: approach_2 Architecture Pattern
+
+The `approach_2_reference` folder contains a working implementation that uses:
+
+**Structure**:
+```
+Foundations/
+  └── ConstraintThreshold.lean        # Base: StateSpace, ConstraintViolations
+
+QuantumEmergence/
+  └── MeasurementMechanism.lean       # ONE comprehensive module
+```
+
+**Key Pattern**: ONE consolidated module, not multiple separate modules
+- All measurement definitions in single file
+- Base definitions in Foundation
+- No duplication by design
+- Uses high-level structured types
+
+---
+
+## OPTION A: Consolidation (approach_2 pattern) [RECOMMENDED]
+
+### Strategy
+
+1. **Move base definitions to Foundation**:
+   - Create `LogicRealismTheory/Foundation/ConstraintThreshold.lean`
+   - Move: `ConstraintViolations`, `StateSpace`, `statespace_monotone`
+
+2. **Create ONE comprehensive measurement module**:
+   - Enhance `MeasurementGeometry.lean` to be comprehensive OR
+   - Rename `Common.lean` → `Mechanism.lean` and rebuild
+   - Contains ALL measurement definitions (no splits)
+   - Uses high-level structured types
+
+3. **Handle NonUnitaryEvolution**:
+   - Extract unique content (QuantumState, UnitaryOperator, theorems)
+   - Integrate into comprehensive module OR separate UnitaryEvolution.lean
+   - Goal: No duplicate definitions
+
+### Pros
+✅ Follows proven approach_2 pattern
+✅ Eliminates duplication at source
+✅ Cleaner architecture (one import)
+✅ No type conversion overhead
+✅ Easier maintenance
+
+### Cons
+⚠️ Requires reorganizing existing code
+⚠️ Need to decide canonical module
+
+---
+
+## OPTION B: Type-Safe Wrapper Approach
+
+### Strategy
+
+1. **Keep Common.lean with low-level functions**:
+   - Pure functions: `V → ℂ` signatures
+   - Imported by higher-level modules
+
+2. **MeasurementGeometry.lean becomes wrapper**:
+   ```lean
+   def wavefunction_collapse_hl (M : MeasurementOperator V K_pre K_post)
+       (ψ_pre : PreMeasurementState V K_pre) : PostMeasurementState V K_post :=
+     let ψ_post_raw := Common.wavefunction_collapse M ψ_pre.amplitude
+     ⟨ψ_post_raw, proof_normalized, proof_support⟩
+   ```
+
+3. **NonUnitaryEvolution uses appropriate layer**:
+   - Import Common for low-level OR MeasurementGeometry for high-level
+
+### Pros
+✅ Preserves low-level/high-level separation
+✅ Minimal reorganization
+✅ Common.lean remains usable
+
+### Cons
+⚠️ More complex (two layers)
+⚠️ Type conversion overhead
+⚠️ Need proofs for wrapper properties
+⚠️ Duplication still exists at different levels
+
+---
+
+## CONSULTATION QUESTIONS
+
+### PRIMARY QUESTION
+**Which approach do you recommend?**
+- Option A: Consolidation (approach_2 pattern)
+- Option B: Type-safe wrapper approach
+- Other: Alternative approach?
+
+### IF OPTION A (Consolidation):
+1. Should we enhance MeasurementGeometry.lean OR rename Common.lean → Mechanism.lean?
+2. Should base definitions go to new ConstraintThreshold.lean or existing Foundation module?
+3. How to handle NonUnitaryEvolution unique content? (Integrate vs separate file?)
+
+### IF OPTION B (Wrappers):
+1. How to minimize proof burden for wrapper conversions?
+2. Should wrappers use `axiom` for properties or provide actual proofs?
+3. Is two-layer complexity worth the separation?
+
+### GENERAL:
+1. Are there Lean 4 best practices for this situation?
+2. What are long-term maintenance implications?
+3. Any hybrid approach worth considering?
+
+---
+
+## Success Criteria (After Implementation)
+
+✅ All 10 .lean modules actively imported in LogicRealismTheory.lean
+✅ 0 duplicate definition errors
+✅ Build succeeds: `lake build LogicRealismTheory`
+✅ All measurement files in active build
+✅ Sorry count documented and accurate
+
+---
+
+## Request for Team
+
+Please provide:
+1. **Clear recommendation**: Option A, B, or alternative
+2. **Justification**: Why this approach is best for Lean 4 / LRT
+3. **Specific guidance**: Implementation steps for chosen approach
+4. **Potential pitfalls**: What to watch out for
+5. **Consensus indicator**: Do all models agree?
+
+**Quality requirement**: Team quality score ≥ 0.70 for implementation approval
+
+---
+
+## Context Files Available
+
+1. `lean/MEASUREMENT_REFACTORING_NOTES.md` - Full analysis
+2. `lean/LogicRealismTheory/Measurement/Common.lean` (169 lines)
+3. `lean/LogicRealismTheory/Measurement/MeasurementGeometry.lean` (509 lines)
+4. `lean/LogicRealismTheory/Measurement/NonUnitaryEvolution.lean` (216 lines)
+5. `approach_2_reference/.../MeasurementMechanism.lean` (reference)
+6. `lean/LogicRealismTheory.lean` (build status)
+
+---
+
+**END CONSULTATION REQUEST**
