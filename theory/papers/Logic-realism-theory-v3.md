@@ -1108,9 +1108,7 @@ The following table summarizes the key distinction between Logic Realism Theory 
 | **Energy Conservation** | Postulated (or from symmetry) | Noether's theorem applied to Identity constraint |
 | **Measurement Collapse** | Postulated (or "interpretation") | Excluded Middle ($\mathfrak{L}_{\text{EM}}$) in Regime 2 (changing K) |
 | **Preferred Basis Problem** | Unresolved / Decoherence interpretation | Basis selected by constraint structure of apparatus |
-| **Wave Function Ontology** | Unclear (Copenhagen, Many-Worlds, etc.) | Epistem
-
-ic: represents state in $\mathcal{I}$ under constraints |
+| **Wave Function Ontology** | Unclear (Copenhagen, Many-Worlds, etc.) | Epistemic: represents state in $\mathcal{I}$ under constraints |
 | **Time** | Absolute parameter | Emergent from Identity constraint ordering |
 | **Probability Interpretation** | Frequentist or subjective | Objective: constraint-induced actualization from $\mathcal{I}$ |
 
@@ -2273,7 +2271,7 @@ If confirmed, LRT would represent a paradigm shift: logic as the foundation of p
 
 ---
 
-**Acknowledgments**: The author thanks the Lean 4 community for proof assistant support, IBM Quantum and Rigetti Computing for open-access quantum hardware, and the philosophical physics community for critical feedback on earlier drafts.
+**Acknowledgments**: The author thanks the Lean 4 community for proof assistant support, IBM Quantum for open-access quantum hardware, and commercial AI systems (Claude as prime, ChatGPT, Gemini, Grok) for feedback, development, and research assistance.
 
 ---
 ## References
