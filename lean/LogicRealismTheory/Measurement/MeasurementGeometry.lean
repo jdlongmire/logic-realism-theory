@@ -76,6 +76,9 @@ Phase 3 (Track 1.3): Replace axioms with computed K → Update NonUnitaryEvoluti
 * Piron-Solèr theorem: Hilbert space from orthomodular lattice
 -/
 
+-- Axiomatize Set cardinality (not available in current Mathlib)
+axiom Set.card {α : Type*} : Set α → ℕ
+
 namespace LogicRealismTheory.Measurement
 
 open Complex
@@ -264,10 +267,10 @@ This shows Born rule EMERGES from measurement geometry, not postulated!
 
 **SOURCE**: MeasurementMechanism.lean
 -/
-axiom born_rule_from_measurement {K_pre K_post : ℕ}
-    (M : MeasurementOperator K_pre K_post)
-    (ψ_pre : PreMeasurementState K_pre)
-    (ψ_post : PostMeasurementState K_post)
+axiom born_rule_from_measurement {V : Type*} [Fintype V] [DecidableEq V] {K_pre K_post : ℕ}
+    (M : MeasurementOperator V K_pre K_post)
+    (ψ_pre : PreMeasurementState V K_pre)
+    (ψ_post : PostMeasurementState V K_post)
     (h : ψ_post = wavefunction_collapse M ψ_pre) :
   ∀ σ : V, normSq (ψ_post.amplitude σ) =
            measurement_probability M ψ_pre σ
@@ -299,19 +302,19 @@ axiom measurement_reduces_statespace {V : Type*} [Fintype V] [DecidableEq V] {K_
 axiom statespace_cardinality_decreases {V : Type*} [Fintype V] [DecidableEq V] {K_initial : ℕ} {ΔK : ℕ}
     (h_pos : ΔK > 0)
     (meas : ConstraintAddition K_initial ΔK) :
-  Fintype.card (StateSpace meas.K_final : Set V) < Fintype.card (StateSpace K_initial : Set V)
+  Set.card (StateSpace meas.K_final : Set V) < Set.card (StateSpace K_initial : Set V)
 
 /-! ## Classical emergence at K = 0 (imported from established framework) -/
 
 /-- Identity permutation (perfectly ordered state) -/
-axiom IdentityState : V
+axiom IdentityState {V : Type*} : V
 
 /-- Identity state has zero constraint violations -/
-axiom identity_state_zero_violations : ConstraintViolations IdentityState = 0
+axiom identity_state_zero_violations {V : Type*} : ConstraintViolations (@IdentityState V) = 0
 
 /-- At K = 0, only identity state is valid -/
-axiom k_zero_unique_state :
-  StateSpace 0 = {IdentityState}
+axiom k_zero_unique_state {V : Type*} :
+  (StateSpace 0 : Set V) = {(@IdentityState V)}
 
 /--
 Classical reality emerges when K → 0.
@@ -344,8 +347,8 @@ structure Observer where
   adds_constraints : ℕ
 
 /-- Measurement is observer coupling that reduces K -/
-axiom observer_measurement (obs : Observer) {K_sys : ℕ} (h : obs.adds_constraints < K_sys) :
-    MeasurementOperator K_sys (K_sys - obs.adds_constraints)
+axiom observer_measurement {V : Type*} [Fintype V] [DecidableEq V] (obs : Observer) {K_sys : ℕ} (h : obs.adds_constraints < K_sys) :
+    MeasurementOperator V K_sys (K_sys - obs.adds_constraints)
 
 /--
 Decoherence from environmental coupling.
@@ -365,7 +368,7 @@ structure Decoherence (V : Type*) [Fintype V] [DecidableEq V] (K_sys : ℕ) (K_e
   /-- Decoherence time -/
   tau_D : ℝ
   /-- Decoherence time scales inversely with coupling -/
-  time_scaling : tau_D = 1 / (coupling * Fintype.card (StateSpace K_env : Set V))
+  time_scaling : tau_D = 1 / (coupling * Set.card (StateSpace K_env : Set V))
 
 /-- Pointer states are constraint eigenstates -/
 axiom pointer_states_are_constraint_eigenstates {V : Type*} [Fintype V] [DecidableEq V] {K_sys K_env : ℕ}
@@ -384,8 +387,8 @@ First postulate: States are rays in Hilbert space.
 **SOURCE**: MeasurementMechanism.lean
 -/
 axiom hilbert_space_from_constraints {V : Type*} [Fintype V] [DecidableEq V] {K : ℕ} :
-  ∃ H : Type*, InnerProductSpace ℂ H ∧
-    ((StateSpace K : Set V) ≃ {ψ : H | ‖ψ‖ = 1})
+  ∃ (H : Type*) (_ : NormedAddCommGroup H) (_ : InnerProductSpace ℂ H),
+    Nonempty ((StateSpace K : Set V) ≃ {ψ : H | ‖ψ‖ = 1})
 
 /--
 Second postulate: Observables are Hermitian operators.
@@ -411,7 +414,7 @@ axiom born_rule_is_geometric {V : Type*} [Fintype V] [DecidableEq V] {K_pre K_po
     (ψ : PreMeasurementState V K_pre) :
   ∀ σ : V, measurement_probability M ψ σ =
     (normSq (ψ.amplitude σ)) /
-    (∑ τ ∈ (StateSpace K_post : Set V), normSq (ψ.amplitude τ))
+    (∑ τ : V, @ite ℝ (τ ∈ StateSpace K_post) (Classical.propDecidable _) (normSq (ψ.amplitude τ)) 0)
 
 /--
 Fourth postulate: Collapse is deterministic projection.
@@ -422,10 +425,10 @@ Fourth postulate: Collapse is deterministic projection.
 
 **SOURCE**: MeasurementMechanism.lean
 -/
-axiom collapse_is_deterministic {K_pre K_post : ℕ}
-    (M : MeasurementOperator K_pre K_post)
-    (ψ : PreMeasurementState K_pre) :
-  ∃! ψ_post : PostMeasurementState K_post,
+axiom collapse_is_deterministic {V : Type*} [Fintype V] [DecidableEq V] {K_pre K_post : ℕ}
+    (M : MeasurementOperator V K_pre K_post)
+    (ψ : PreMeasurementState V K_pre) :
+  ∃! ψ_post : PostMeasurementState V K_post,
     ψ_post = wavefunction_collapse M ψ
 
 /-! ## Summary theorems (imported from established framework) -/
@@ -441,10 +444,10 @@ such that:
 
 **SOURCE**: MeasurementMechanism.lean
 -/
-axiom measurement_mechanism_complete {K : ℕ} {ΔK : ℕ} :
-  (∃ M : MeasurementOperator K (K - ΔK),
-    ∀ ψ : PreMeasurementState K,
-      ∃ ψ_post : PostMeasurementState (K - ΔK),
+axiom measurement_mechanism_complete {V : Type*} [Fintype V] [DecidableEq V] {K : ℕ} {ΔK : ℕ} :
+  (∃ M : MeasurementOperator V K (K - ΔK),
+    ∀ ψ : PreMeasurementState V K,
+      ∃ ψ_post : PostMeasurementState V (K - ΔK),
         ψ_post = wavefunction_collapse M ψ ∧
         ∑ σ : V, normSq (ψ_post.amplitude σ) = 1 ∧
         ∀ σ : V, normSq (ψ_post.amplitude σ) =
@@ -459,11 +462,11 @@ Measurement yields classical reality.
 
 **SOURCE**: MeasurementMechanism.lean
 -/
-axiom measurement_yields_classical {K : ℕ}
+axiom measurement_yields_classical {V : Type*} [Fintype V] [DecidableEq V] {K : ℕ}
     (meas : ConstraintAddition K K)
     (h : meas.K_final = 0) :
-  ∀ ψ : PreMeasurementState K,
-    ∃ M : MeasurementOperator K 0,
+  ∀ ψ : PreMeasurementState V K,
+    ∃ M : MeasurementOperator V K 0,
       let ψ_post := wavefunction_collapse M ψ
       ∃! σ : V, ψ_post.amplitude σ ≠ 0
 
