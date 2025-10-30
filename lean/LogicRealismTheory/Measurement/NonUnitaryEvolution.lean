@@ -11,6 +11,8 @@ import Mathlib.Data.Fintype.Basic
 import Mathlib.Data.Matrix.Basic
 import Mathlib.Analysis.InnerProductSpace.Basic
 import Mathlib.Analysis.SpecialFunctions.Sqrt
+import LogicRealismTheory.Foundation.ConstraintThreshold
+import LogicRealismTheory.Measurement.MeasurementGeometry
 
 /-!
 # Non-Unitary Evolution Resolution
@@ -74,21 +76,12 @@ don't exist in this Lean version.
 * Approach 2 reference: `approach_2_reference/.../MeasurementMechanism.lean` (compiles with real Matrix imports)
 -/
 
--- Axiomatize Set cardinality (not available in current Mathlib)
-axiom Set.card {α : Type*} : Set α → ℕ
-
 namespace LogicRealismTheory.Measurement
 
 open Complex Matrix
+open LogicRealismTheory.Foundation
 
 variable {V : Type*} [Fintype V] [DecidableEq V]
-
-axiom ConstraintViolations {V : Type*} : V → ℕ
-
-def StateSpace {V : Type*} (K : ℕ) : Set V := {σ : V | ConstraintViolations σ ≤ K}
-
-axiom statespace_monotone {V : Type*} {K K' : ℕ} (h : K' ≤ K) :
-  (StateSpace K' : Set V) ⊆ (StateSpace K : Set V)
 
 structure QuantumState (V : Type*) [Fintype V] [DecidableEq V] (K : ℕ) where
   amplitude : V → ℂ
@@ -111,27 +104,6 @@ theorem unitary_preserves_K {V : Type*} [Fintype V] [DecidableEq V] {K : ℕ}
   intro σ h
   exact h
 
-structure MeasurementOperator (V : Type*) [Fintype V] [DecidableEq V] (K_pre K_post : ℕ) where
-  matrix : Matrix V V ℂ
-  constraint_reduction : K_post < K_pre
-  projects_onto : ∀ σ : V, σ ∈ StateSpace K_post →
-    (matrix.mulVec (fun τ => if τ = σ then 1 else 0)) σ ≠ 0
-  annihilates : ∀ σ : V, σ ∉ StateSpace K_post →
-    (matrix.mulVec (fun τ => if τ = σ then 1 else 0)) σ = 0
-
-axiom measurement_is_projection {V : Type*} [Fintype V] [DecidableEq V]
-    {K_pre K_post : ℕ} (M : MeasurementOperator V K_pre K_post) :
-  M.matrix * M.matrix = M.matrix
-
-axiom measurement_is_hermitian {V : Type*} [Fintype V] [DecidableEq V]
-    {K_pre K_post : ℕ} (M : MeasurementOperator V K_pre K_post) :
-  M.matrix.conjTranspose = M.matrix
-
-axiom measurement_not_unitary {V : Type*} [Fintype V] [DecidableEq V]
-    {K_pre K_post : ℕ} (M : MeasurementOperator V K_pre K_post)
-    (h : K_post < K_pre) :
-  M.matrix.conjTranspose * M.matrix ≠ 1
-
 theorem measurement_reduces_K {V : Type*} [Fintype V] [DecidableEq V]
     {K_pre K_post : ℕ} (M : MeasurementOperator V K_pre K_post) :
     (StateSpace K_post : Set V) ⊂ (StateSpace K_pre : Set V) := by
@@ -142,46 +114,6 @@ theorem measurement_reduces_K {V : Type*} [Fintype V] [DecidableEq V]
     have : K_post = K_pre := by
       sorry
     exact Nat.lt_irrefl K_post (h.trans_eq this.symm)
-
-axiom wavefunction_collapse_normalized {V : Type*} [Fintype V] [DecidableEq V]
-    {K_pre K_post : ℕ} (M : MeasurementOperator V K_pre K_post)
-    (ψ_pre : QuantumState V K_pre) :
-  let ψ_measured := M.matrix.mulVec ψ_pre.amplitude
-  let norm_sq := ∑ σ : V, normSq (ψ_measured σ)
-  let norm := Real.sqrt norm_sq
-  let ψ_post := fun σ => ψ_measured σ / norm
-  ∑ σ : V, normSq (ψ_post σ) = 1
-
-axiom wavefunction_collapse_support {V : Type*} [Fintype V] [DecidableEq V]
-    {K_pre K_post : ℕ} (M : MeasurementOperator V K_pre K_post)
-    (ψ_pre : QuantumState V K_pre) :
-  let ψ_measured := M.matrix.mulVec ψ_pre.amplitude
-  let norm_sq := ∑ σ : V, normSq (ψ_measured σ)
-  let norm := Real.sqrt norm_sq
-  let ψ_post := fun σ => ψ_measured σ / norm
-  ∀ σ : V, σ ∉ StateSpace K_post → ψ_post σ = 0
-
-noncomputable def wavefunction_collapse {V : Type*} [Fintype V] [DecidableEq V]
-    {K_pre K_post : ℕ} (M : MeasurementOperator V K_pre K_post)
-    (ψ_pre : QuantumState V K_pre) :
-    QuantumState V K_post :=
-  let ψ_measured := M.matrix.mulVec ψ_pre.amplitude
-  let norm_sq := ∑ σ : V, normSq (ψ_measured σ)
-  let norm := Real.sqrt norm_sq
-  let ψ_post := fun σ => ψ_measured σ / norm
-  ⟨ψ_post, wavefunction_collapse_normalized M ψ_pre, wavefunction_collapse_support M ψ_pre⟩
-
-noncomputable def measurement_probability {V : Type*} [Fintype V] [DecidableEq V]
-    {K_pre K_post : ℕ} (M : MeasurementOperator V K_pre K_post)
-    (ψ : QuantumState V K_pre) (outcome : V) : ℝ :=
-  let M_psi := M.matrix.mulVec ψ.amplitude
-  let total_norm := ∑ σ : V, normSq (M_psi σ)
-  normSq (M_psi outcome) / total_norm
-
-structure ConstraintAddition (K_initial : ℕ) (ΔK : ℕ) where
-  K_final : ℕ
-  tightening : K_final = K_initial - ΔK
-  nonneg : ΔK ≤ K_initial
 
 axiom observer_adds_constraints {V : Type*} [Fintype V] [DecidableEq V]
     (K_sys : ℕ) (K_obs : ℕ) (h : K_obs < K_sys) :

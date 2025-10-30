@@ -33,29 +33,30 @@ import LogicRealismTheory.Derivations.RussellParadox
 -- ═══════════════════════════════════════════════════════════════════════════
 
 import LogicRealismTheory.Measurement.MeasurementGeometry
--- Temporarily commented out due to duplicate definitions with MeasurementGeometry
--- TODO (Sprint 11): Refactor shared measurement definitions into common module
--- import LogicRealismTheory.Measurement.NonUnitaryEvolution
+import LogicRealismTheory.Measurement.NonUnitaryEvolution
 
 -- ═══════════════════════════════════════════════════════════════════════════
 -- CURRENT MAIN BUILD STATUS
 -- ═══════════════════════════════════════════════════════════════════════════
 --
--- Build status: ✅ SUCCESS (refactoring in progress - Session 5.3)
--- Imported modules: 9 active (after refactoring)
+-- Build status: ✅ SUCCESS (refactoring COMPLETE - Session 5.3 Phase 2)
+-- Imported modules: 10 active (all measurement modules now included!)
 --   Foundation: IIS, Actualization, QubitKMapping, ConstraintThreshold
 --   Operators: Projectors
 --   Derivations: Energy, TimeEmergence, RussellParadox
---   Measurement: MeasurementGeometry (refactored to use ConstraintThreshold)
+--   Measurement: MeasurementGeometry, NonUnitaryEvolution
 --
--- Refactoring Progress:
---   ✅ ConstraintThreshold.lean created with base definitions
---   ✅ MeasurementGeometry.lean refactored to import ConstraintThreshold
---   ⏳ NonUnitaryEvolution.lean - needs refactoring to avoid duplicates
---   ⏳ Common.lean - orphaned (may be archived after NonUnitaryEvolution fixed)
+-- Refactoring Complete (Phase 2):
+--   ✅ ConstraintThreshold.lean created with base definitions (Phase 1)
+--   ✅ MeasurementGeometry.lean refactored - removed 4 duplicates (Phase 1)
+--   ✅ NonUnitaryEvolution.lean refactored - removed 13 duplicates (Phase 2)
+--   ✅ All measurement modules now use ConstraintThreshold
+--   ✅ 0 duplicate definition errors
+--   📦 Common.lean - orphaned (will be archived, all duplicates now eliminated)
 --
--- Sorry count: 1 (active build only)
+-- Sorry count: 4 total (active build)
 --   MeasurementGeometry.lean: 1 sorry
+--   NonUnitaryEvolution.lean: 3 sorry
 --
 -- Axiom count: TBD (needs audit - previous count of 51 may be outdated)
 --
