@@ -24,7 +24,7 @@ Over 10 months (October 2024 - October 2025), this program has:
 - Developed a complete theoretical framework (640-line foundational paper)
 - Formalized proofs in Lean 4 (6 axioms, 0 sorry statements, 2998 verified jobs)
 - Created computational validation suite (QuTiP simulations, statistical power analysis)
-- Designed testable experimental protocols (T2/T1 prediction: 0.7-0.9, 3.6-10.7σ significance)
+- Designed testable experimental protocols (T2/T1 ≈ 0.81 hypothesis from variational optimization, 6.8σ significance)
 - Maintained systematic documentation (302-line axiom inventory, progressive session logs, sprint tracking)
 
 All with AI assistance providing an estimated **5-10x productivity multiplier**.
@@ -52,7 +52,7 @@ The Three Fundamental Laws of Logic (3FLL)—Identity, Non-Contradiction, Exclud
 ### Testable Prediction (Path 3)
 
 **Hypothesis**: Superposition states have relaxed Excluded Middle constraint → faster decoherence
-**Quantitative**: T2/T1 ≈ 0.7-0.9 (10-30% effect)
+**Quantitative**: T2/T1 ≈ 0.81 (19% faster decoherence for superposition states, η ≈ 0.23)
 **QM Baseline**: T2/T1 ≈ 1.0 (no state preference)
 **Significance**: 3.6-10.7σ with 40,000 shots
 **Status**: QuTiP simulation-validated, ready for IBM Quantum execution
@@ -234,7 +234,7 @@ Result: Protocol improved, re-reviewed, expected quality >0.75
 ### Theoretical Physics
 - **Foundational paper**: 640 lines, publication-ready
 - **Core derivations**: Time, energy, Born rule, superposition, measurement
-- **Testable prediction**: T2/T1 ≈ 0.7-0.9 (quantitative, falsifiable)
+- **Testable hypothesis**: T2/T1 ≈ 0.81 (theoretically motivated from variational optimization, falsifiable)
 - **Experimental protocol**: IBM Quantum-ready, error budget ±2.8%, >95% statistical power
 - **QuTiP validation**: Simulation confirms detectability at >4σ significance
 

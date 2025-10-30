@@ -1777,7 +1777,7 @@ The Lean formalization is a **proof of concept**, not a complete axiomatization 
 
 **What is NOT yet formalized**:
 - Full quantum mechanics derivation (Born rule, Hilbert space structure, Schrödinger equation)
-- T2/T1 prediction and η parameter (requires integration of Fisher information geometry)
+- T2/T1 prediction and η parameter (requires integration of variational optimization and measurement thermodynamics)
 - Hierarchical emergence framework (Layer 0 → 1 → 2 → 3+ transitions)
 
 **Reason**: Formalizing all of LRT would require thousands of additional lines and deep integration with Mathlib's measure theory, functional analysis, and information theory modules. The current formalization demonstrates that the **core logical framework is rigorous**, leaving full formalization as future work.
@@ -1991,16 +1991,16 @@ The comparative analysis reveals complementary research trajectories:
 
 - **If T2/T1 ≈ 1.0**: LRT falsified; Excluded Middle coupling does not exist. Focus shifts to MWI (no fundamental asymmetry), QBism (subjective probabilities), or standard decoherence theory.
 
-- **If T2/T1 ≈ 0.7-0.9**: LRT confirmed; logical constraints produce observable effects. Investigate:
+- **If T2/T1 ≈ 0.81**: LRT variational hypothesis validated; logical constraints produce observable effects via optimization principles. Investigate:
   - Hierarchical emergence mechanism (how do proto-primitives crystallize?)
   - η parameter state-dependence (does it vary with superposition angle?)
   - Extensions to multi-qubit systems (does η scale?)
   - Philosophical implications (does logic constrain all physical constants?)
 
-- **If T2/T1 ≈ 0.7-0.9**: LRT framework supported, but Fisher geometry calculation incomplete. Refine:
-  - Fisher information metric (alternative normalizations?)
-  - Entropy weighting scheme (beyond Shannon entropy?)
-  - Non-perturbative corrections (higher-order terms in K?)
+- **If T2/T1 ≈ 0.81**: LRT variational hypothesis confirmed. Pursue:
+  - State-dependence (non-equal superpositions, multi-qubit systems)
+  - Universal validation (consistency across all quantum platforms)
+  - Refinements (higher-order corrections, alternative entropies)
 
 LRT's falsifiability and formal rigor distinguish it as a scientific research program, not merely a philosophical interpretation. The T2/T1 prediction provides a decisive experimental test.
 
@@ -2029,31 +2029,34 @@ Logic Realism Theory makes strong claims about the relationship between logic an
 
 2. **Alternative logics are epistemic**: Paraconsistent logic (tolerating contradictions) is useful for modeling incomplete information; intuitionistic logic (rejecting excluded middle) captures constructive reasoning. These are **epistemic frameworks** for representing knowledge, not ontological claims about reality's structure. LRT concerns the latter.
 
-3. **Empirical test**: If the 3FLL are mere human constructs, alternative logics should produce equally valid physics. But LRT predicts T2/T1 ≈ 0.7-0.9 from Excluded Middle coupling (Section 6). If confirmed, this supports the ontological status of $\mathfrak{L}_{\text{EM}}$ independent of human cognition.
+3. **Empirical test**: If the 3FLL are mere human constructs, alternative logics should produce equally valid physics. But LRT predicts T2/T1 ≈ 0.81 from Excluded Middle coupling (Section 6). If confirmed, this supports the ontological status of $\mathfrak{L}_{\text{EM}}$ independent of human cognition.
 
 **Open question**: Could a weaker form of Excluded Middle (fuzzy logic's continuum of truth values) produce different predictions? Future work could explore alternative constraint formulations.
 
 ### 9.3 Objection: Fine-Tuning Problem
 
-**Claim**: "LRT derives η ∈ [0.11, 0.43] from Fisher information geometry, but this involves specific metric choices, normalization conventions, and entropy weightings. Doesn't this just relocate the fine-tuning problem?"
+**Claim**: "LRT derives η ≈ 0.23 from variational optimization, but this involves specific assumptions about measurement cycles, thermal resonance, and constraint functionals. Doesn't this just relocate the fine-tuning problem?"
 
 **Response**: This is a valid concern. Our derivation (Section 6.3) makes several assumptions:
 
 **Assumptions in current derivation**:
-1. Fisher information metric: $g_{\mu\nu} = 4 \langle \partial_\mu \psi | \partial_\nu \psi \rangle$
-2. Shannon entropy for superposition: $\Delta S_{\text{EM}} = \ln(2)$
-3. Linear coupling: $\eta \propto R_{\mathcal{J}} \times (\Delta S_{\text{EM}} / \ln 2)$
+1. 4-step measurement cycle (pre-measurement, extraction, decoherence, reset)
+2. Thermal resonance: $kT \approx \hbar\omega$
+3. Constraint functional: $K_{\text{total}}[g] = (\ln 2)/g + 1/g^2 + 4g^2$
+4. Shannon entropy for superposition: $\Delta S_{\text{EM}} = \ln(2)$
 
 **Why this is not arbitrary fine-tuning**:
-- Each assumption follows standard information geometry (Fisher metric, canonical entropy definition)
+- Each assumption follows standard thermodynamic reasoning (Landauer erasure, thermal equilibrium)
+- Variational principle (minimize constraint violations) is a general optimization criterion
 - No free parameters were adjusted to match experimental data
-- Prediction (η ∈ [0.11, 0.43]) emerged *before* comparison to literature values (0.11-0.43)
+- Prediction (η ≈ 0.23 → T2/T1 ≈ 0.81) emerged from optimization, not data fitting
 
-**Honest assessment**: The discrepancy between our prediction (T2/T1 ≈ 0.7-0.9) and some experimental reports (T2/T1 ≈ 0.7-0.9) suggests either:
-1. **Outcome 1**: η ≈ 0.01 is correct; 0.7-0.9 values arise from environmental confounds (Section 6.4)
-2. **Outcome 2**: Fisher geometry calculation incomplete; alternative metrics or higher-order corrections needed
+**Honest assessment**: This is a **theoretically motivated hypothesis**, not a pure first-principles derivation. It requires environmental parameters (temperature T) and measurement cycle assumptions. However, it represents an improvement over purely phenomenological approaches by providing:
+1. **Optimization principle**: Total constraint minimization
+2. **Specific prediction**: β = 3/4 (75% enforcement efficiency)
+3. **Testable hypothesis**: T2/T1 ≈ 0.81 (universal across platforms)
 
-**Falsifiability**: The three-outcome experimental framework (Section 6.5) distinguishes these possibilities. If T2/T1 ≈ 0.7-0.9 confirmed with all 4 discriminators, we refine the Fisher metric calculation. This is standard scientific practice, not ad hoc adjustment.
+**Falsifiability**: The three-outcome experimental framework (Section 6.5) distinguishes these possibilities. If T2/T1 values cluster near 0.81 with all 4 discriminators, the variational approach is validated. This is standard scientific practice, not ad hoc adjustment.
 
 ### 9.4 Objection: Explanatory Regress
 
@@ -2103,7 +2106,7 @@ Logic Realism Theory makes strong claims about the relationship between logic an
 
 **What LRT adds**:
 1. **Formal definition**: StateSpace(K) = {σ | ConstraintViolations(σ) ≤ K} (Section 4.4, verified in Lean)
-2. **Prediction**: Excluded Middle coupling η ∈ [0.11, 0.43] produces T2/T1 ≈ 0.7-0.9 asymmetry
+2. **Prediction**: Excluded Middle coupling η ≈ 0.23 produces T2/T1 ≈ 0.81 asymmetry
 3. **Falsifiability**: If T2/T1 ≈ 1.0, the K-threshold interpretation is wrong
 
 **Honest limitation**: LRT has not yet provided a fully microscopic derivation of *how* constraint violations propagate during measurement (analogous to quantum field theory deriving scattering amplitudes). This is **open research** requiring:
@@ -2134,27 +2137,28 @@ Logic Realism Theory makes strong claims about the relationship between logic an
 
 ### 9.8 Objection: Underdetermination
 
-**Claim**: "Even if T2/T1 ≈ 0.7-0.9 is confirmed, this doesn't uniquely establish LRT. Alternative theories could be constructed to produce the same prediction (e.g., modified decoherence theory with ad hoc asymmetry term)."
+**Claim**: "Even if T2/T1 ≈ 0.81 is confirmed, this doesn't uniquely establish LRT. Alternative theories could be constructed to produce the same prediction (e.g., modified decoherence theory with ad hoc asymmetry term)."
 
 **Response**: Underdetermination is an ineliminable feature of empirical science (Quine-Duhem thesis). However, LRT is distinguishable via:
 
-**1. Explanatory depth**: LRT derives T2/T1 ≈ 0.7-0.9 from:
+**1. Explanatory depth**: LRT derives T2/T1 ≈ 0.81 from:
    - Excluded Middle constraint (ontological necessity)
-   - Fisher information geometry (information-theoretic principles)
+   - Variational optimization (minimize total constraint violations)
    - Shannon entropy of superposition (canonical measure)
+   - Quantum measurement thermodynamics (Landauer erasure)
 
-   An ad hoc decoherence term γ_asym = 0.01γ_1 would *fit* the data but lacks explanatory grounding.
+   An ad hoc decoherence term γ_asym = 0.23γ_1 would *fit* the data but lacks explanatory grounding.
 
 **2. Additional predictions**: LRT makes further testable claims:
    - **State-dependence**: T2/T1 should depend on superposition angle for non-equal states (future extension of η derivation)
-   - **Universal coupling**: η ≈ 0.01 should hold across all qubit implementations (superconducting, ion trap, topological)
+   - **Universal coupling**: η ≈ 0.23 should hold across all qubit implementations (superconducting, ion trap, topological)
    - **Hierarchical emergence**: Proto-primitives (distinction, membership, relation, succession) provide framework for future predictions about mathematical structure's role in physics
 
 **3. Formal verification**: The Lean 4 formalization (~2,400 lines) provides rigorous proofs of core claims. Competing theories would need comparable formalization to match LRT's rigor.
 
 **4. Parsimony**: Occam's razor favors LRT if it derives T2/T1 asymmetry from ontological constraints without adding new physics. Modified decoherence theory would require unexplained asymmetry postulate.
 
-**Honest assessment**: Confirming T2/T1 ≈ 0.7-0.9 would not *prove* LRT, but it would establish LRT as a **viable research program** warranting further investigation. Disconfirmation (T2/T1 ≈ 1.0) would falsify LRT's core claim about Excluded Middle coupling.
+**Honest assessment**: Confirming T2/T1 ≈ 0.81 would not *prove* LRT, but it would establish LRT as a **viable research program** warranting further investigation. Disconfirmation (T2/T1 ≈ 1.0) would falsify LRT's core claim about Excluded Middle coupling.
 
 ### 9.9 Open Research Questions
 
@@ -2190,15 +2194,16 @@ LRT should not be overclaimed. Current limitations:
    - **Particle masses**: Standard Model parameters not addressed
    - **Dark matter/energy**: No LRT prediction
 
-**2. Phenomenological Elements**: Despite first-principles η derivation (Section 6.3), some aspects remain phenomenological:
-   - **Metric choice** in Fisher information geometry
-   - **Entropy weighting** scheme (Shannon entropy assumed, not derived)
-   - **Coupling form** (linear approximation η ∝ R_J × ΔS)
+**2. Theoretically Motivated Elements**: η ≈ 0.23 derivation (Section 6.3) requires assumptions:
+   - **4-step measurement cycle** (pre-measurement, extraction, decoherence, reset)
+   - **Thermal resonance** (kT ≈ ℏω)
+   - **Constraint functional** form (K_total = violations + enforcement)
+   - **Shannon entropy** (assumed canonical, not derived from 3FLL)
 
-**3. Experimental Validation**: T2/T1 ≈ 0.7-0.9 prediction is **untested**. Until experimental confirmation:
+**3. Experimental Validation**: T2/T1 ≈ 0.81 prediction is **untested**. Until experimental confirmation:
    - LRT remains a **theoretical framework**, not established physics
    - Falsification (T2/T1 ≈ 1.0) would require major revision or abandonment
-   - Partial confirmation (T2/T1 ≈ 0.7-0.9) would require model refinement
+   - Confirmation (T2/T1 ≈ 0.81) would validate variational hypothesis
 
 **4. Philosophical Assumptions**: LRT assumes:
    - **Logical realism**: Logical constraints exist independently of minds
@@ -2253,13 +2258,13 @@ This paper has developed LRT across multiple dimensions:
 
 A comparison table (Section 5.5) demonstrates that LRT **derives** what conventional quantum mechanics **postulates** (Hilbert spaces, Born rule, unitary evolution, measurement collapse).
 
-**First-Principles Prediction (Section 6)**: We derived the Excluded Middle coupling strength η ∈ [0.11, 0.43] from Fisher information geometry on constraint-filtered state spaces, yielding the falsifiable prediction **T2/T1 ≈ 0.7-0.9** for equal superposition states. This prediction:
-- Is **non-circular**: Derived before comparison to experimental data, not fitted
+**Testable Hypothesis (Section 6)**: We derived the Excluded Middle coupling strength η ≈ 0.23 via variational optimization (minimizing total constraint violations), yielding the falsifiable prediction **T2/T1 ≈ 0.81** for equal superposition states. This hypothesis:
+- Is **theoretically motivated**: Derived from optimization principle with explicit assumptions
 - Is **universal**: Independent of qubit implementation (superconducting, ion trap, topological)
 - Is **falsifiable**: Values T2/T1 ≈ 1.0 ± 0.03 would invalidate LRT
 - Is **testable with current technology**: ~150-650 hours quantum computing time
 
-Three experimental outcomes discriminate between scenarios: (1) T2/T1 ≈ 1.0 falsifies LRT, (2) T2/T1 ≈ 0.7-0.9 confirms first-principles model, (3) T2/T1 ≈ 0.7-0.9 validates framework but requires Fisher geometry refinement.
+Three experimental outcomes discriminate between scenarios: (1) T2/T1 ≈ 1.0 falsifies LRT, (2) T2/T1 ≈ 0.81 validates variational hypothesis, (3) T2/T1 significantly different requires model refinement.
 
 **Formal Verification (Section 7)**: We formalized LRT in Lean 4 (~2,400 lines), providing machine-checked proofs of:
 - Time emergence from Identity constraint
@@ -2272,8 +2277,8 @@ Crucially, the 3FLL are proven from Lean's classical logic foundation **without 
 **Comparative Positioning (Section 8)**: We distinguished LRT from six major frameworks in quantum foundations and metaphysics. LRT uniquely combines:
 1. Logical foundations (not mathematical structures, computation, or empirical patterns)
 2. Machine-verified rigor (~2,400 lines Lean 4)
-3. Testable deviations from quantum mechanics (T2/T1 ≈ 0.7-0.9)
-4. Non-circular derivation (Born rule, η parameter derived before data fitting)
+3. Testable deviations from quantum mechanics (T2/T1 ≈ 0.81 from variational optimization)
+4. Theoretically motivated prediction (η ≈ 0.23 from constraint minimization)
 5. K-threshold mechanism for measurement (without collapse postulate or multiverse)
 6. Hierarchical emergence framework (distinguishing necessary, emergent, and contingent features)
 7. Resolution of philosophical tensions (ontology/epistemology, Gödel incompleteness, explanatory regress)
@@ -2292,13 +2297,13 @@ We identified 10 open research questions (multi-qubit scaling, state-dependence,
 
 ### 10.2 Implications for Physics
 
-If experimental tests confirm T2/T1 ≈ 0.7-0.9, the implications are profound:
+If experimental tests confirm T2/T1 ≈ 0.81, the implications are profound:
 
 **Ontological**: Physical reality is not a collection of entities obeying laws; it is the actualization of coherent configurations from infinite possibility via logical filtering. "Laws of physics" are not fundamental—they emerge from logical necessity at higher layers of the hierarchical structure.
 
 **Methodological**: Fundamental physics should seek not just equations describing phenomena, but **derivations from logical constraints**. The question shifts from "What are the laws?" to "What must the laws be, given coherence requirements?"
 
-**Predictive**: LRT provides a framework for deriving physical constants, not just describing them. If η ≈ 0.01 is confirmed, this validates the program of deriving other constants (fine-structure constant α, particle masses, coupling strengths) from information-theoretic principles applied to constraint-filtered state spaces.
+**Predictive**: LRT provides a framework for deriving physical parameters via optimization principles. If η ≈ 0.23 is confirmed, this validates the program of deriving other constants (fine-structure constant α, particle masses, coupling strengths) from variational principles applied to constraint-filtered state spaces.
 
 **Unifying**: The hierarchical emergence framework suggests a path toward unification: proto-primitives (Layer 1) → mathematics (Layer 2) → gauge symmetries, renormalization, effective field theory (Layer 3) → Standard Model, gravity (Layer 4). Each layer builds on the previous without additional postulates.
 
@@ -2331,20 +2336,21 @@ LRT's distinctive claim: **Logic, not information, mathematics, or computation, 
 
 ### 10.5 A Testable Paradigm
 
-The most important feature of LRT is its **falsifiability**. Many ontological theories (panpsychism, idealism, neutral monism) make no empirical predictions distinguishing them from alternatives. LRT predicts T2/T1 ≈ 0.7-0.9, testable with ~150-650 hours of quantum computing time on current hardware (IBM Quantum, Rigetti, IonQ).
+The most important feature of LRT is its **falsifiability**. Many ontological theories (panpsychism, idealism, neutral monism) make no empirical predictions distinguishing them from alternatives. LRT predicts T2/T1 ≈ 0.81, testable with ~150-650 hours of quantum computing time on current hardware (IBM Quantum, Rigetti, IonQ).
 
 **If T2/T1 ≈ 1.0 across all platforms**: LRT is falsified. Excluded Middle coupling does not exist. Return to standard quantum mechanics or pursue alternative interpretations (Many-Worlds, QBism, objective collapse theories).
 
-**If T2/T1 ≈ 0.7-0.9 with discriminators**: LRT is confirmed. Logical constraints produce observable physical effects. Pursue:
+**If T2/T1 ≈ 0.81 with discriminators**: LRT variational hypothesis is validated. Logical constraints produce observable physical effects via optimization principles. Pursue:
 - η state-dependence (multi-qubit, non-equal superpositions)
-- Derivation of additional constants (α, masses, coupling strengths)
+- Derivation of additional parameters via variational principles
 - Quantum field theory from hierarchical emergence
 - Cosmological implications (initial conditions, arrow of time)
 - Quantum gravity from information geometry
 
-**If T2/T1 ≈ 0.7-0.9 with discriminators**: LRT framework validated, but Fisher information calculation incomplete. Refine:
-- Alternative metrics (Rényi entropy, von Neumann entropy)
-- Non-perturbative corrections (higher-order terms in K)
+**If T2/T1 differs significantly from 0.81**: LRT framework requires refinement:
+- Alternative constraint functionals (beyond K_total = violations + enforcement)
+- Different measurement cycle assumptions (beyond 4-step model)
+- Non-perturbative corrections (higher-order terms in constraint dynamics)
 - Dynamical environment coupling (microscopic derivation of K-transitions)
 
 In all cases, **nature decides**. The experimental test of T2/T1 will determine whether logic truly constrains reality at the quantum scale, or whether LRT's philosophical coherence and formal rigor are insufficient to capture the physical world.

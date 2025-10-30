@@ -27,10 +27,10 @@ theory/
 - **`Logic-realism-theory-v3.md`** (1,986 lines) ⚠️ **PRIMARY WORKING PAPER**
   - Clean slate rewrite with standard physics paper structure
   - Complete 10-section manuscript
-  - Includes T2/T1 ≈ 0.99 prediction with full derivation
+  - Includes η ≈ 0.23 (T2/T1 ≈ 0.81) hypothesis from variational optimization
   - Formal verification documentation (~2,400 lines Lean 4)
   - Target: Peer-review ready manuscript
-  - **Status**: Work in progress (Session 4.0+)
+  - **Status**: Work in progress (Session 4.0+, updated Sprint 8 with variational derivation)
 
 - **`Logic_Realism_Theory_Branch-2.md`** (390 lines) 🔄 **TO SYNTHESIZE WITH V3**
   - Alternative philosophical approach
@@ -87,7 +87,8 @@ theory/
 - **`Eta_Parameter_Analysis.md`** (383 lines)
   - Analysis of η (Excluded Middle coupling strength) parameter
   - Derivation approaches: Fisher information, constraint threshold dynamics
-  - Phenomenological vs first-principles status
+  - **Status**: Resolved in Sprint 7 via variational optimization (β = 3/4 → η ≈ 0.23)
+  - See: Notebook 07_Variational_Beta_Derivation.ipynb for implementation
 
 - **`K_Threshold_Gap_Analysis.md`** (525 lines)
   - Analysis of K-threshold dynamics (constraint count transitions)

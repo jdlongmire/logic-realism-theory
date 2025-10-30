@@ -31,11 +31,13 @@ This is a **proposed framework** with testable predictions, not yet empirically 
 
 1. **Theoretical Framework**: Proposes derivations of time (Stone's theorem), energy (Spohn's inequality), and Born rule (MaxEnt + 3FLL)
 2. **Formal Verification**: Lean 4 proofs with documented axiomatization - see [`lean/AXIOMS.md`](lean/AXIOMS.md)
-3. **Testable Predictions**: **T2/T1 ≈ 0.7-0.9** (superposition decoherence asymmetry)
+3. **Testable Hypothesis**: **η ≈ 0.23 (T2/T1 ≈ 0.81)** from variational optimization
+   - **Derivation**: η derived from minimizing constraint violations (β = 3/4 optimal coupling)
+   - **Status**: Theoretically motivated hypothesis (requires assumptions: 4-step measurement, thermal resonance)
    - **Protocol**: [`theory/predictions/T1_vs_T2_Protocol.md`](theory/predictions/T1_vs_T2_Protocol.md)
    - **Error Budget**: [`theory/predictions/T1_vs_T2_Error_Budget.md`](theory/predictions/T1_vs_T2_Error_Budget.md)
+   - **Notebooks**: [`07_Variational_Beta_Derivation.ipynb`](notebooks/Logic_Realism/07_Variational_Beta_Derivation.ipynb) (derivation), [`05_T2_T1_Derivation.ipynb`](notebooks/Logic_Realism/05_T2_T1_Derivation.ipynb) (validation)
    - **QuTiP Validation**: [`notebooks/Path3_T1_vs_T2_QuTiP_Validation.ipynb`](notebooks/Path3_T1_vs_T2_QuTiP_Validation.ipynb)
-   - **Status**: Simulation-validated, awaiting quantum hardware execution
 4. **Computational Validation**: [QuTiP simulations](notebooks/) and [experimental protocols](theory/predictions/)
 5. **AI-Enabled Development**: Multi-paradigm research combining formal verification, computational validation, and multi-LLM quality control
 
@@ -84,10 +86,11 @@ jupyter notebook Path3_T1_vs_T2_QuTiP_Validation.ipynb
 ```
 
 **Predicted vs. Baseline**:
-- **LRT Prediction**: T2/T1 ≈ 0.7-0.9 (10-30% faster decoherence for superposition states)
+- **LRT Hypothesis**: η ≈ 0.23 → T2/T1 ≈ 0.81 (19% faster decoherence for superposition states)
 - **QM Baseline**: T2/T1 ≈ 1.0 (no state preference)
+- **Derivation**: Variational optimization (β = 3/4 optimal coupling from minimizing K_total)
 - **Error Budget**: ±2.8% measurement precision
-- **Signal-to-Noise**: 3.6-10.7σ (if prediction is correct)
+- **Signal-to-Noise**: ~6.8σ (if hypothesis correct)
 - **Statistical Power**: >95% with 40,000 shots per point
 
 **Status**: Protocol ready, simulation-validated, awaiting quantum hardware execution.
@@ -152,8 +155,10 @@ See [`lean/README.md`](lean/README.md) for details.
 - **Latest Work**: [Session 5.3](Session_Log/Session_5.3.md) - Measurement module refactoring (0 duplicate definitions, clean architecture)
 
 ### Experimental Predictions
-- **Path 3 Protocol**: T2/T1 ≈ 0.7-0.9 (ready for quantum hardware)
+- **Hypothesis**: η ≈ 0.23 → T2/T1 ≈ 0.81 (from variational optimization)
+- **Path 3 Protocol**: Ready for quantum hardware validation
 - **QuTiP Validation**: >95% statistical power confirmed
+- **Derivation**: Notebook 07 (variational), validated in Notebook 05
 - **Error Budget**: Comprehensive analysis (±2.8% precision)
 - **Multi-LLM Review**: Quality control completed, gaps addressed
 

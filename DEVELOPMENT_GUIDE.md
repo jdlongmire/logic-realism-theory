@@ -144,7 +144,7 @@ gh issue list --repo jdlongmire/logic-realism-theory --limit 10
 **Repository**: https://github.com/jdlongmire/logic-realism-theory/issues
 
 **Active Issues**:
-- **#5**: Add Null hypothesis (H₀: T2/T1 ≈ 1.0 vs H₁: T2/T1 ≈ 0.7-0.9)
+- **#5**: Add Null hypothesis (H₀: T2/T1 ≈ 1.0 vs H₁: T2/T1 ≈ 0.81)
 - **#4**: Paper v3 review (hierarchical emergence, QM comparison, axiom transparency)
 - **#3**: Prediction paths - additions (10+ testable predictions, 2025-2035 timeline)
 - **#2**: don't forget Lagrangian and Hamiltonian (empty description - needs filling)
