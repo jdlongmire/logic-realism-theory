@@ -32,7 +32,9 @@ import LogicRealismTheory.Derivations.RussellParadox
 -- ═══════════════════════════════════════════════════════════════════════════
 
 import LogicRealismTheory.Measurement.MeasurementGeometry
-import LogicRealismTheory.Measurement.NonUnitaryEvolution
+-- Temporarily commented out due to duplicate definitions with MeasurementGeometry
+-- TODO (Sprint 11): Refactor shared measurement definitions into common module
+-- import LogicRealismTheory.Measurement.NonUnitaryEvolution
 
 -- ═══════════════════════════════════════════════════════════════════════════
 -- CURRENT MAIN BUILD STATUS

@@ -283,14 +283,17 @@ Constraint addition process: K → K-ΔK.
 **Physical interpretation**: Observer/environment coupling adds constraints.
 
 **SOURCE**: MeasurementMechanism.lean
+
+NOTE: ConstraintAddition is defined identically in NonUnitaryEvolution.lean
+(both modules cannot be imported simultaneously in root file)
 -/
 structure ConstraintAddition (K_initial : ℕ) (ΔK : ℕ) where
   /-- Final constraint threshold -/
   K_final : ℕ
   /-- Constraint tightening -/
   tightening : K_final = K_initial - ΔK
-  /-- Ensures non-negative threshold -/
-  nonneg : K_final ≥ 0
+  /-- Ensures ΔK doesn't exceed K_initial (non-negative result) -/
+  nonneg : ΔK ≤ K_initial
 
 /-- Measurement reduces state space: V_{K-ΔK} ⊂ V_K -/
 axiom measurement_reduces_statespace {V : Type*} [Fintype V] [DecidableEq V] {K_initial : ℕ} {ΔK : ℕ}
