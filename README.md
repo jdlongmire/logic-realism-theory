@@ -19,6 +19,12 @@ Logic Realism Theory (LRT) proposes that physical reality emerges from logical f
 
 ---
 
+## 📄 Main Paper
+
+**[Logic_Realism_Theory_Main.md](Logic_Realism_Theory_Main.md)** - Complete technical framework with quantum mechanics derivations, testable predictions (T2/T1 decoherence asymmetry), Lean 4 formal verification, and experimental protocols.
+
+---
+
 ## Key Features
 
 1. **Foundational Paper**: [`theory/Logic-realism-theory-foundational.md`](theory/Logic-realism-theory-foundational.md) (publication-ready)
