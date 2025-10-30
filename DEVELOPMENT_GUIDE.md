@@ -89,6 +89,71 @@ lean --make LFT_Proofs/
 
 ---
 
+## GitHub Issue Management
+
+### Accessing Issues Programmatically
+
+When `gh` CLI is not available, use the WebFetch tool to access GitHub issues:
+
+**Method 1: List all issues**
+```
+WebFetch(url: "https://github.com/jdlongmire/logic-realism-theory/issues",
+         prompt: "List all open issues with their titles, numbers, and descriptions.")
+```
+
+**Result**: Summary of all issues with titles, numbers, labels, dates
+**Limitation**: Descriptions may be truncated or missing in summary view
+
+**Method 2: Get full issue details**
+```
+WebFetch(url: "https://github.com/jdlongmire/logic-realism-theory/issues/[N]",
+         prompt: "Extract the full issue title, description/body, labels, and any comments.")
+```
+
+**Result**: Complete issue body, all comments, full context
+**Use when**: Need detailed description or comments for a specific issue
+
+### Example Workflow
+
+```bash
+# Step 1: Try gh CLI first (may not be installed)
+gh issue list --repo jdlongmire/logic-realism-theory --limit 10
+
+# Step 2: If gh not available, use WebFetch to get issue list
+# (See Method 1 above)
+
+# Step 3: For each issue of interest, fetch full details
+# (See Method 2 above, replace [N] with issue number)
+```
+
+### When to Use Each Method
+
+**Use summary view (Method 1) when**:
+- Getting overview of all open issues
+- Checking issue counts and labels
+- Quick triage of what needs attention
+
+**Use individual fetch (Method 2) when**:
+- Issue description appears empty in summary
+- Need to see comments or discussion
+- Writing response or making updates
+- Detailed review required
+
+### Current Issues (as of Oct 30, 2025)
+
+**Repository**: https://github.com/jdlongmire/logic-realism-theory/issues
+
+**Active Issues**:
+- **#5**: Add Null hypothesis (H₀: T2/T1 ≈ 1.0 vs H₁: T2/T1 ≈ 0.7-0.9)
+- **#4**: Paper v3 review (hierarchical emergence, QM comparison, axiom transparency)
+- **#3**: Prediction paths - additions (10+ testable predictions, 2025-2035 timeline)
+- **#2**: don't forget Lagrangian and Hamiltonian (empty description - needs filling)
+- **#1**: Lean dependencies into structured .olean provenance tree (tamper-evident system)
+
+**Note**: Issue summaries may not show full descriptions. Always fetch individual issues for complete context.
+
+---
+
 ## Computational Parameters
 
 ### Safe Operating Ranges
