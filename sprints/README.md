@@ -30,54 +30,76 @@
 
 ## Active Sprints
 
-### Sprint 6: Lagrangian and Hamiltonian Formulation 🟡 **PLANNING**
+### Sprint 7: Derive η from First Principles 🔴 **CRITICAL/URGENT**
 
-**Status**: Planning (Ready to Start)
+**Status**: Planning → Ready to Start
 **Created**: October 30, 2025 (Session 5.3)
-**Target Completion**: November 13-20, 2025
+**Priority**: 🔴 CRITICAL (supersedes all other sprints)
+**Target Completion**: November 27, 2025
+**Duration**: 2-4 weeks
+**GitHub Issue**: TBD
+
+**Objective**: Derive the Excluded Middle coupling parameter η from LRT first principles without fitting to observational data, resolving circular reasoning issue in T2/T1 prediction
+
+**Critical Issue**: Reddit commenter correctly identified that current T2/T1 ≈ 0.7-0.9 "prediction" is circular reasoning (η is fitted to achieve desired ratio, not derived from first principles per Section 6.3.5)
+
+**Major Deliverables**:
+- [ ] η derivation from LRT axioms (NO data fitting)
+- [ ] T2/T1 = 1/(1+η) calculated from derived η
+- [ ] Fisher information discrepancy resolved (why η ≈ 0.01 vs needed 0.11-0.43)
+- [ ] Lean formalization: ExcludedMiddleCoupling.lean (0 sorry)
+- [ ] Update paper Section 6.3.5 with derivation OR honest acknowledgment of limitation
+- [ ] Scientific integrity restored (either outcome acceptable)
+
+**Phases**:
+- Phase 1: Constraint violation rate analysis
+- Phase 2: Thermodynamic cost (Landauer's principle)
+- Phase 3: Fisher information geometry resolution
+- Phase 4: Decoherence rate scaling
+- Phase 5: Integration & validation
+
+**Two Acceptable Outcomes**:
+1. ✅ Successfully derive η → Legitimate prediction confirmed
+2. ✅ Cannot derive η → Revise all claims honestly to acknowledge phenomenological parameter
+
+See: [`sprint_7/SPRINT_7_PLAN.md`](sprint_7/SPRINT_7_PLAN.md) for full details
+
+---
+
+### Sprint 6: Lagrangian and Hamiltonian Formulation 🟡 **DEFERRED**
+
+**Status**: Planning (Deferred pending Sprint 7)
+**Created**: October 30, 2025 (Session 5.3)
+**Priority**: Medium (lower than Sprint 7)
+**Target Completion**: TBD (after Sprint 7 complete)
 **Duration**: 2-3 weeks
 **GitHub Issue**: [#2 - don't forget Lagrangian and Hamiltonian](https://github.com/jdlongmire/logic-realism-theory/issues/2)
 
 **Objective**: Derive Lagrangian and Hamiltonian formalisms from LRT first principles
 
-**Major Deliverables**:
-- [ ] Lagrangian derivation (from constraint dynamics)
-- [ ] Hamiltonian derivation (via Legendre transform)
-- [ ] Lean formalization (Lagrangian.lean, Hamiltonian.lean)
-- [ ] Integration with Energy.lean and TimeEmergence.lean
-- [ ] Theory documentation (Logic_Realism_Theory_Main.md)
-
-**Phases**:
-- Phase 1: Kinetic Energy (T) from state space dynamics
-- Phase 2: Potential Energy (V) from constraint violations
-- Phase 3: Lagrangian formulation (variational principle)
-- Phase 4: Hamiltonian formulation (Legendre transform)
-- Phase 5: Integration & verification
+**Status Note**: Sprint 6 planning complete, but deferred to allow Sprint 7 (critical scientific integrity issue) to take priority.
 
 See: [`sprint_6/SPRINT_6_PLAN.md`](sprint_6/SPRINT_6_PLAN.md) for full details
 
 ---
 
-### Sprint 4: Peer Review Response - Major Revisions 🔄 **IN PROGRESS**
+### Sprint 4: Peer Review Response - Major Revisions ⏸️ **ON HOLD**
 
-**Status**: Planning → In Progress
+**Status**: ON HOLD (blocked by Sprint 7)
 **Started**: October 27, 2025 (Session 3.8)
-**Target Completion**: November 24, 2025
+**Target Completion**: TBD (resume after Sprint 7)
 **Duration**: 4 weeks
 
 **Objective**: Address critical peer review feedback for foundational paper
 
 **Major Deliverables**:
-- [ ] T2/T1 quantitative derivation (complete mathematical proof)
+- [ ] T2/T1 quantitative derivation (BLOCKED - requires η derivation from Sprint 7)
 - [ ] Non-unitary evolution resolution (theoretical framework)
 - [ ] Confound isolation strategies (experimental design)
 - [ ] Paper revisions (5 new/updated sections)
 - [ ] Multi-LLM validation (quality ≥ 0.80)
 
-**Tracks**:
-- Track 1: Theoretical Derivations (Weeks 1-3)
-- Track 2: Paper Revisions (Weeks 2-4)
-- Track 3: Team Validation (Week 4)
+**Status Note**: Sprint 4 Track 1 (T2/T1 quantitative derivation) is blocked by the η derivation issue addressed in Sprint 7. Sprint 4 will resume after Sprint 7 resolves the circular reasoning problem.
 
 See: [`sprint_4/SPRINT_4_PLAN.md`](sprint_4/SPRINT_4_PLAN.md) for full details
 
@@ -105,11 +127,13 @@ See: [`sprint_1/SPRINT_1_TRACKING.md`](sprint_1/SPRINT_1_TRACKING.md)
 | Sprint | Status | Started | Completed | Focus | Sessions |
 |--------|--------|---------|-----------|-------|----------|
 | Sprint 1 | ✅ Complete | Oct 25 | Oct 25 | Lean + Notebook 01 | 1.2-1.6 |
-| Sprint 4 | 🔄 In Progress | Oct 27 | Nov 24 (target) | Peer Review Response | 3.8+ |
-| Sprint 6 | 🟡 Planning | Oct 30 | Nov 13-20 (target) | Lagrangian/Hamiltonian | 5.3+ |
+| Sprint 4 | ⏸️ On Hold | Oct 27 | TBD | Peer Review Response | 3.8+ |
+| Sprint 6 | 🟡 Deferred | Oct 30 | TBD | Lagrangian/Hamiltonian | 5.3+ |
+| **Sprint 7** | 🔴 **CRITICAL** | Oct 30 | Nov 27 (target) | **Derive η from First Principles** | **5.3+** |
 
 ---
 
-**Active Sprints**: Sprint 4 (Peer Review), Sprint 6 (Lagrangian/Hamiltonian - Planning)
+**Active Sprints**: Sprint 7 (η Derivation - CRITICAL PRIORITY)
+**On Hold**: Sprint 4 (blocked by Sprint 7), Sprint 6 (deferred)
 **Current Session**: [Session 5.3](../Session_Log/Session_5.3.md)
-**Status**: Multiple sprints active (Session 5.3 created Sprint 6, Sprint 4 ongoing)
+**Status**: Critical pivot - Sprint 7 created to address circular reasoning issue in T2/T1 prediction
