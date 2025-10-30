@@ -4,7 +4,7 @@
 
 **Session System**: [`Session_Log/`](../Session_Log/) tracks **individual work sessions** within and across sprints
 
-**Latest Session**: [Session 3.8](../Session_Log/Session_3.8.md) - Foundational Paper Rev 2 + Lean Documentation
+**Latest Session**: [Session 5.3](../Session_Log/Session_5.3.md) - Measurement Module Refactoring Complete
 
 ---
 
@@ -29,6 +29,34 @@
 ---
 
 ## Active Sprints
+
+### Sprint 6: Lagrangian and Hamiltonian Formulation 🟡 **PLANNING**
+
+**Status**: Planning (Ready to Start)
+**Created**: October 30, 2025 (Session 5.3)
+**Target Completion**: November 13-20, 2025
+**Duration**: 2-3 weeks
+**GitHub Issue**: [#2 - don't forget Lagrangian and Hamiltonian](https://github.com/jdlongmire/logic-realism-theory/issues/2)
+
+**Objective**: Derive Lagrangian and Hamiltonian formalisms from LRT first principles
+
+**Major Deliverables**:
+- [ ] Lagrangian derivation (from constraint dynamics)
+- [ ] Hamiltonian derivation (via Legendre transform)
+- [ ] Lean formalization (Lagrangian.lean, Hamiltonian.lean)
+- [ ] Integration with Energy.lean and TimeEmergence.lean
+- [ ] Theory documentation (Logic_Realism_Theory_Main.md)
+
+**Phases**:
+- Phase 1: Kinetic Energy (T) from state space dynamics
+- Phase 2: Potential Energy (V) from constraint violations
+- Phase 3: Lagrangian formulation (variational principle)
+- Phase 4: Hamiltonian formulation (Legendre transform)
+- Phase 5: Integration & verification
+
+See: [`sprint_6/SPRINT_6_PLAN.md`](sprint_6/SPRINT_6_PLAN.md) for full details
+
+---
 
 ### Sprint 4: Peer Review Response - Major Revisions 🔄 **IN PROGRESS**
 
@@ -78,9 +106,10 @@ See: [`sprint_1/SPRINT_1_TRACKING.md`](sprint_1/SPRINT_1_TRACKING.md)
 |--------|--------|---------|-----------|-------|----------|
 | Sprint 1 | ✅ Complete | Oct 25 | Oct 25 | Lean + Notebook 01 | 1.2-1.6 |
 | Sprint 4 | 🔄 In Progress | Oct 27 | Nov 24 (target) | Peer Review Response | 3.8+ |
+| Sprint 6 | 🟡 Planning | Oct 30 | Nov 13-20 (target) | Lagrangian/Hamiltonian | 5.3+ |
 
 ---
 
-**Current Sprint**: Sprint 4 (Peer Review Response)
-**Current Session**: [Session 3.8](../Session_Log/Session_3.8.md)
-**Status**: Active and tracking
+**Active Sprints**: Sprint 4 (Peer Review), Sprint 6 (Lagrangian/Hamiltonian - Planning)
+**Current Session**: [Session 5.3](../Session_Log/Session_5.3.md)
+**Status**: Multiple sprints active (Session 5.3 created Sprint 6, Sprint 4 ongoing)
