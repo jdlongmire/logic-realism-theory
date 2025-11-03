@@ -53,7 +53,7 @@ See: [`sprint_9/SPRINT_9_PLAN.md`](sprint_9/SPRINT_9_PLAN.md) for full details
 
 ### Sprint 10: K-Theory Integration 🟡 **PLANNING**
 
-**Status**: 🟡 PLANNING (blocked by protocol violation)
+**Status**: 🟡 PLANNING (not yet started)
 **Created**: November 3, 2025 (renumbered from Sprint 11)
 **Priority**: HIGH (addresses Gemini's #1 peer review critique)
 **Duration**: 2 weeks (estimated)
@@ -66,7 +66,7 @@ See: [`sprint_9/SPRINT_9_PLAN.md`](sprint_9/SPRINT_9_PLAN.md) for full details
 3. Paper updates (Section 6.3.2 rewrite)
 4. Multi-LLM review
 
-**Critical Issue**: ⚠️ Plan requires revision to remove approach_2 references per CLAUDE.md protocol
+**Note**: Plan uses "from approach_2" language that will be cleaned up during execution (extract structures and incorporate as native code)
 
 See: [`sprint_10/SPRINT_10_PLAN.md`](sprint_10/SPRINT_10_PLAN.md) for full details
 

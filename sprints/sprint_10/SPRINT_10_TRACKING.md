@@ -1,7 +1,7 @@
 # Sprint 10 Tracking: K-Theory Integration and Gap Resolution
 
 **Sprint**: 10
-**Status**: 🟡 PLANNING (not yet started)
+**Status**: 🟡 PLANNING (not yet started, plan language needs cleanup)
 **Priority**: HIGH (addresses Gemini's #1 critical peer review issue)
 **Duration**: 2 weeks (estimated)
 **Created**: 2025-11-03 (renumbered from Sprint 11)
@@ -84,21 +84,24 @@ K(|ψ⟩) = -(|α|² ln|α|² + |β|² ln|β|²) / ln 2
 
 ---
 
-## CRITICAL WARNING: approach_2 Reference Protocol
+## approach_2 Protocol Clarification (Updated Understanding)
 
-**From CLAUDE.md**:
-> ❌ **DO NOT**: Import any code from approach_2_reference (zero dependencies)
-> ❌ **DO NOT**: Reference "approach_2" or "approach 2" in any comments
-> ❌ **DO NOT**: Reference "approach_2" in documentation strings
+**From CLAUDE.md**: "Use the data, don't refer to it as a source"
 
-**Acceptable**:
-> ✅ **DO**: Mine good ideas and concepts from approach_2_reference
-> ✅ **DO**: Reimplement concepts independently in LogicRealismTheory/
-> ✅ **DO**: Use professional generic terminology
+**What this means**:
+> ✅ **DO**: Mine concepts/structures from approach_2_reference
+> ✅ **DO**: Bring the actual code/data into LogicRealismTheory/ directly
+> ✅ **DO**: Implement as if native to current codebase
+> ❌ **DO NOT**: Leave "from approach_2" comments or citations
+> ❌ **DO NOT**: Reference approach_2 as external source in documentation
 
-**This sprint plan MUST BE REVISED** before execution to remove all approach_2 references from public-facing documentation.
+**For Sprint 10 execution**:
+- Extract proven structures from approach_2_reference/
+- Incorporate directly into LogicRealismTheory/ modules
+- Remove all "Import from" and "from approach_2" language from plan
+- Implement cleanly without source attribution
 
-**Revision needed**: Replace "Import from approach_2" language with "Develop independently inspired by internal research"
+**Status**: Plan language needs cleanup, but concept is sound. Not blocked.
 
 ---
 
@@ -143,8 +146,9 @@ K(|ψ⟩) = -(|α|² ln|α|² + |β|² ln|β|²) / ln 2
 - Status: Plan requires revision before execution
 
 **Next Steps**:
-- Revise SPRINT_10_PLAN.md to remove approach_2 references
-- Begin Track 1 only after protocol compliance verified
+- Clean up SPRINT_10_PLAN.md language (remove "from approach_2" citations)
+- Begin Track 1: Extract proven structures and incorporate directly
+- Implement K-mapping and measurement mechanisms as native code
 
 ---
 
@@ -171,14 +175,15 @@ K(|ψ⟩) = -(|α|² ln|α|² + |β|² ln|β|²) / ln 2
 
 **Priority**: HIGH - addresses Gemini's #1 critique
 
-**Blocking Issue**: Sprint plan violates CLAUDE.md approach_2 reference protocol
+**Note**: Sprint plan uses "from approach_2" language that should be cleaned up during execution (bring code over directly without citation)
 
-**Action Required**: Revise plan before starting execution
+**Action**: During execution, extract structures from approach_2_reference/ and incorporate as native LogicRealismTheory/ code
 
-**Reference**: See `SPRINT_10_PLAN.md` for detailed breakdown (requires revision)
+**Reference**: See `SPRINT_10_PLAN.md` for detailed breakdown
 
 ---
 
 **Created**: 2025-11-03
-**Status**: PLANNING (blocked by protocol violation)
-**Blocking**: Paper resubmission after Gemini peer review
+**Updated**: 2025-11-03 (clarified approach_2 protocol)
+**Status**: PLANNING (ready to start, cleanup language during execution)
+**Supports**: Paper resubmission after Gemini peer review
