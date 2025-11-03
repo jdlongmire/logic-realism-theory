@@ -326,16 +326,37 @@ cd lean && lake build
 
 ## 🔄 Git Synchronization Protocol
 
-**IMPORTANT**: Keep the remote repository synchronized to ensure work is backed up and accessible.
+**CRITICAL**: All commits must be pushed to remote repository to ensure work is backed up and accessible.
+
+### Commit and Push Requirements
+
+**MANDATORY**: Every `git commit` must be followed by `git push origin master` unless explicitly batching multiple commits.
+
+**Standard workflow**:
+```bash
+git add [files]
+git commit -m "message"
+git push origin master  # ⚠️ REQUIRED - Do not skip!
+```
+
+**Why this matters**:
+- Ensures work is backed up to GitHub
+- Makes progress visible and recoverable
+- Prevents loss if local session terminates unexpectedly
 
 ### When to Push to Remote
 
-**Push commits to GitHub**:
+**Push commits to GitHub** (minimum frequency):
+- ✅ **After EVERY commit** (preferred - ensures nothing is lost)
 - ✅ After completing major phases/milestones (every Session_X.Y update)
 - ✅ Before ending a work session (final safety backup)
 - ✅ After significant breakthroughs or research results
 
-**Standard Push Command**: `git push origin main`
+**Batch commits only when**:
+- Multiple related changes happening in rapid succession
+- Still push within same session before moving to different task
+
+**Standard Push Command**: `git push origin master`
 
 ### Integration with Session Workflow
 
@@ -343,8 +364,11 @@ cd lean && lake build
 1. ✅ Make final rename to highest Y value
 2. ✅ Complete all sections in current session log
 3. ✅ Ensure session log includes updated status, viability, next steps
-4. ✅ **Push all commits to GitHub** (`git push origin main`)
-5. ✅ Archive any old/superseded session files to `archive/` if needed
+4. ✅ **Verify all commits pushed to GitHub** (`git status` should show "Your branch is up to date")
+5. ✅ **If commits remain unpushed, push now** (`git push origin master`)
+6. ✅ Archive any old/superseded session files to `archive/` if needed
+
+**Note**: If you've been pushing after each commit (recommended), step 4 will confirm you're already synced.
 
 ---
 
