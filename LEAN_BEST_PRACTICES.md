@@ -184,6 +184,55 @@ axiom property_name [parameters] : [statement]
 
 ---
 
+### 8. Internal Development Work: approach_2_reference/ Protocol
+
+**Protocol**: "Use the data, don't refer to it as a source"
+
+**Context**: The `approach_2_reference/` directory contains internal research with proven results (K(N)=N-2 formula, measurement mechanisms, Born rule structures). These can inform LogicRealismTheory/ development.
+
+**Guidelines for incorporating approach_2 structures**:
+
+**✅ DO**:
+- Extract proven structures and incorporate into LogicRealismTheory/
+- Rewrite as native code (no import dependencies)
+- Document in LogicRealismTheory/ context
+- Remove all internal development references
+
+**❌ DO NOT**:
+- Import from approach_2_reference/ (zero dependencies)
+- Leave "from approach_2" or "based on approach_2" comments
+- Reference approach_2 as source in documentation
+- Point readers to internal development directories
+
+**Clean Incorporation Pattern**:
+
+**WRONG** (leaves breadcrumbs):
+```lean
+-- Imported from approach_2_reference/MeasurementMechanism.lean
+structure Observer where
+  K_obs : ℕ
+  -- Based on approach_2 observer model
+```
+
+**RIGHT** (clean professional code):
+```lean
+-- Observer as constraint-contributing system
+structure Observer where
+  K_obs : ℕ
+  coupling : ℝ
+```
+
+**Why**: Public Lean code should be self-contained and professional. Extract the refined concepts, incorporate cleanly, present as native LogicRealismTheory/ work.
+
+**Example Use Cases**:
+- Extracting Born rule normalization axioms → Incorporate into Measurement/MeasurementGeometry.lean
+- Using K-mapping entropy formulas → Incorporate into Foundation/QubitKMapping.lean
+- Adopting observer coupling structures → Rewrite in Measurement/ modules
+
+When mining approach_2: take the gold, leave the mine behind.
+
+---
+
 ## Lean File Header Requirements
 
 **MANDATORY**: Every Lean file in the main build (Foundation, Operators, Derivations) must include an axiom inventory reference.

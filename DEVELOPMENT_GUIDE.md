@@ -51,6 +51,66 @@
 
 ---
 
+## Internal Development Work: approach_2_reference/
+
+**Status**: Internal development directory (not part of public codebase)
+
+**Protocol**: "Use the data, don't refer to it as a source"
+
+### Purpose
+
+The `approach_2_reference/` directory contains internal research and development work exploring alternative mathematical frameworks, particularly:
+- Discrete permutation-based information spaces
+- Constraint threshold formula K(N) = N-2 from multiple derivations
+- Measurement mechanisms and Born rule structures
+- Classical emergence (K=0 limit)
+
+This work has produced proven results that can inform the public LogicRealismTheory/ codebase.
+
+### Usage Guidelines
+
+When extracting ideas or structures from approach_2_reference/:
+
+**✅ DO**:
+- Mine good concepts and proven structures
+- Extract actual code/data and incorporate into LogicRealismTheory/
+- Implement as if native to the current codebase
+- Rewrite documentation to reflect LogicRealismTheory/ context
+- Use professional generic terminology
+
+**❌ DO NOT**:
+- Create import dependencies from approach_2_reference/ (zero dependencies allowed)
+- Leave "from approach_2" comments or citations in code
+- Reference "approach_2" as a source in documentation strings
+- Point to approach_2 in public-facing materials
+
+### Clean Incorporation Pattern
+
+**WRONG** (leaves internal dev breadcrumbs):
+```lean
+-- Import from: approach_2_reference/MeasurementMechanism.lean
+axiom born_rule_normalized ...
+```
+
+**RIGHT** (clean professional code):
+```lean
+-- Born rule: measurement probabilities sum to 1
+axiom born_rule_normalized ...
+```
+
+**Analogy**: Extract the refined gold and present it professionally. Don't include the internal mining operation documentation in the final product.
+
+### Why This Protocol Exists
+
+- **Professional presentation**: Public code should stand on its own
+- **Clean architecture**: No dependencies on internal development directories
+- **Maintainability**: Clear separation between public codebase and internal research
+- **Focus**: Readers see the theory, not the development process
+
+When incorporating approach_2 results: bring the data over, incorporate it cleanly, remove all internal references. The goal is clean, professional, self-contained code.
+
+---
+
 ## Development Commands
 
 ### Python/Jupyter Environment

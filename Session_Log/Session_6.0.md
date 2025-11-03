@@ -286,7 +286,7 @@ sprints/
    - Complete session documentation
    - AI profile creation + sprint renumbering
 
-### Modified (2 files)
+### Modified (4 files)
 
 1. **CLAUDE.md** (lines 1-23)
    - Added "TOP PRIORITY: AI Collaboration Profile" section at top
@@ -299,6 +299,18 @@ sprints/
    - Updated Sprint Status Table (1-10 complete)
    - Added Sprint 3 (deferred) to completed section
    - Updated status line with renumbering note
+
+3. **DEVELOPMENT_GUIDE.md** (added approach_2 protocol section)
+   - New section: "Internal Development Work: approach_2_reference/"
+   - Protocol guidance: "Use the data, don't refer to it as a source"
+   - Clean incorporation patterns with examples
+   - 58 lines added
+
+4. **LEAN_BEST_PRACTICES.md** (added as Key Insight #8)
+   - New subsection: "Internal Development Work: approach_2_reference/ Protocol"
+   - Guidelines for incorporating approach_2 structures
+   - Clean vs wrong patterns with Lean examples
+   - 48 lines added
 
 ---
 
@@ -364,6 +376,7 @@ sprints/
 
 **Short-Term (Next Session)**:
 - ✅ Sprint 10 protocol clarified (NOT blocked, cleanup language during execution)
+- ✅ Added approach_2 guidance to DEVELOPMENT_GUIDE.md and LEAN_BEST_PRACTICES.md
 - Decide: Start Sprint 9 (Lean cleanup) or Sprint 10 (K-theory)?
 - When executing Sprint 10: Extract approach_2 structures and incorporate without citation
 
