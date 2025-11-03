@@ -1,3 +1,19 @@
+---
+**⚠️ DEPRECATED - November 2025**
+
+This document has been superseded by [`Logic_Realism_Theory_AI_Experiment.md`](Logic_Realism_Theory_AI_Experiment.md), which provides:
+- Honest assessment of current status (51 axioms, 3 sorry statements, hybrid derivation)
+- Transparent risks and opportunities analysis
+- Dual research program framework (AI-enabled physics + primitive systems foundations)
+- Updated methodology reflecting lessons learned
+
+**Reason for deprecation**: This document contains outdated claims (October 2025) that do not reflect the honest assessment standards established in Session 6.0 (November 2025). Specifically, claims of "6 axioms, 0 sorry statements, publication-ready" are inconsistent with current project status.
+
+**Archived**: November 3, 2025
+**Replaced by**: Logic_Realism_Theory_AI_Experiment.md
+
+---
+
 # AI-Enabled Theoretical Physics: A Case Study in Multi-Paradigm Research
 
 **James D. (JD) Longmire**
