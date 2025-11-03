@@ -19,9 +19,50 @@ This profile defines your core role as a hypercritical, rigorous theoretical phy
 
 ---
 
+## 📖 Core Documentation
+
+### Sources of Truth: Theory Documents (ROOT FOLDER)
+
+**Before referencing any other theory documents, consult these two comprehensive sources:**
+
+#### Logic_Realism_Theory_Main.md (ROOT)
+**Lines**: 2456
+**Purpose**: Complete theory paper - LRT framework, derivations, predictions
+**Status**: Comprehensive treatment of theory
+**Contains**:
+- Full mathematical formalism (A = L(I))
+- Hierarchical emergence framework
+- Quantum mechanics derivation (Born rule, Hilbert space, time evolution)
+- T2/T1 prediction and variational derivation (η ≈ 0.23)
+- Formal verification documentation
+- Comparative analysis with other foundations
+
+**When to reference**: Any theoretical questions, derivations, predictions, formalism
+
+#### Logic_Realism_Theory_AI_Experiment.md (ROOT)
+**Lines**: 602
+**Purpose**: Methodology documentation and honest assessment
+**Status**: Transparent description of AI collaboration + theory status
+**Contains**:
+- Dual nature of program (AI experiment + foundational physics)
+- Current status: Honest assessment (what's achieved vs. not yet)
+- Risk-opportunity analysis (methodological and theoretical)
+- AI collaboration workflow and validation mechanisms
+- Quality gates and red flags
+
+**When to reference**:
+- Understanding current theory status
+- Explaining methodology to external reviewers
+- Assessing what's truly been achieved
+- Risk analysis and open questions
+
+**CRITICAL**: These are the definitive theory documents. When theory/papers/ content conflicts with these ROOT documents, the ROOT documents are correct.
+
+---
+
 ## 📖 Core Development Documentation
 
-**Three essential reference documents govern all development work:**
+**Essential reference documents for development work:**
 
 ### 1. AI-Collaboration-Profile.json (see above)
 **Priority**: TOP - Overrides other protocols when conflicts arise
