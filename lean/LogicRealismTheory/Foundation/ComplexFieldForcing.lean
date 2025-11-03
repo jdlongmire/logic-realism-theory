@@ -234,7 +234,7 @@ theorem decoherence_selects_complex :
     ∀ s : MathStructure, K_physics s = some s → ∃ n : ℕ, s = MathStructure.ComplexProjective n := by
   intro s h
   simp [K_physics] at h
-  sorry  -- Proof requires showing: if K_physics s = some s, then is_physical s, then complex_unique
+  exact complex_unique s h
 
 /-!
 # Multi-LLM Validation Results
