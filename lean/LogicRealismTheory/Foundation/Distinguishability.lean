@@ -242,10 +242,60 @@ This is deferred to allow the structural theorems to be proven first.
 theorem distinguishability_emerges_from_3FLL
   (L : LogicalConstraints)  -- 3FLL structure from IIS.lean
   : ∃ (dist : Distinguishability I), True := by
-  -- This is existence statement: distinguishability structure can be constructed
-  -- The actual construction requires defining D based on logical properties
-  -- For now, we assert existence (will be refined in Track 1.3)
-  sorry  -- TODO Track 1.3: Construct explicit D function from logical properties
+  -- Construct discrete distinguishability from logical equality using classical logic
+  -- D(s₁,s₂) = 0 if s₁ = s₂ (Identity), 1 if s₁ ≠ s₂ (distinction)
+  -- This grounds distinguishability in pure logic (equality is decidable classically)
+  classical
+  use {
+    D := fun s₁ s₂ => if s₁ = s₂ then (0 : ℝ) else (1 : ℝ)
+    bounded_below := by
+      intro s₁ s₂
+      by_cases h : s₁ = s₂
+      · rw [if_pos h]
+      · rw [if_neg h]; norm_num
+    bounded_above := by
+      intro s₁ s₂
+      by_cases h : s₁ = s₂
+      · rw [if_pos h]; norm_num
+      · rw [if_neg h]
+    reflexive := by
+      intro s
+      rw [if_pos rfl]
+    symmetric := by
+      intro s₁ s₂
+      by_cases h : s₁ = s₂
+      · rw [if_pos h, if_pos h.symm]
+      · have h' : s₂ ≠ s₁ := fun h₂ => h h₂.symm
+        rw [if_neg h, if_neg h']
+    weak_triangle := by
+      intro s₁ s₂ s₃
+      by_cases h12 : s₁ = s₂
+      · by_cases h23 : s₂ = s₃
+        · -- s₁ = s₂ = s₃, so s₁ = s₃
+          have h13 : s₁ = s₃ := h12.trans h23
+          rw [if_pos h13, if_pos h12, if_pos h23]
+          norm_num
+        · -- s₁ = s₂ ≠ s₃, so s₁ ≠ s₃
+          have h13 : s₁ ≠ s₃ := by
+            intro heq
+            apply h23
+            exact h12.symm.trans heq
+          rw [if_neg h13, if_pos h12, if_neg h23]
+          norm_num
+      · by_cases h23 : s₂ = s₃
+        · -- s₁ ≠ s₂ = s₃, so s₁ ≠ s₃
+          have h13 : s₁ ≠ s₃ := by
+            intro heq
+            apply h12
+            exact heq.trans h23.symm
+          rw [if_neg h13, if_neg h12, if_pos h23]
+          norm_num
+        · -- s₁ ≠ s₂, s₂ ≠ s₃, D(s₁,s₂) + D(s₂,s₃) = 2
+          rw [if_neg h12, if_neg h23]
+          by_cases h13 : s₁ = s₃
+          · rw [if_pos h13]; norm_num
+          · rw [if_neg h13]; norm_num
+  }
 
 -- ═══════════════════════════════════════════════════════════════════════════
 -- PHYSICAL INTERPRETATION AND NEXT STEPS
