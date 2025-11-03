@@ -394,15 +394,169 @@ Develop comprehensive sprint plan with 5 tracks to address Issue #6's fundamenta
 
 ---
 
+## Phase 3: User Approval and Scope Clarification ✅ COMPLETE
+
+### User Decision
+
+**User response**: "I agree with your assessment and plan - proceed with all rigor"
+
+**User question**: "am I correct that this will require tuning of the existing lean proofs and notebooks as well as new development?"
+
+**Answer**: YES - This is a major undertaking requiring both new development AND significant revision.
+
+### Full Scope of Sprint 11 Work
+
+#### 1. New Lean Development (Track 1-4)
+
+**New modules to create**:
+- `RepresentationTheorem.lean` (Track 1) - Forcing theorem: 3FLL → ℂℙⁿ
+- `NonCircularBornRule.lean` (Track 2) - Gleason → density operators → Born rule
+- `DynamicsFromSymmetry.lean` (Track 3) - Symmetry → unitarity chain
+- `MeasurementCPTP.lean` (Track 4) - Operational collapse model
+
+**These are foundational modules** that will provide rigorous proofs currently missing.
+
+#### 2. Revision of Existing Lean Proofs
+
+**Modules requiring major revision** (if tracks succeed):
+
+**Foundation/** modules:
+- `Actualization.lean` - May need to incorporate representation theorem results
+- `QubitKMapping.lean` - Update to use non-circular Born rule
+- Current axiom count: 51 → target: significantly reduced after tracks complete
+
+**Measurement/** modules:
+- `BornRule.lean` (if exists) - Complete rewrite using Track 2 Gleason approach
+- `MeasurementGeometry.lean` - Currently has ~20 compilation errors, needs Track 1 foundations
+- Integrate Track 4 CPTP operational model
+
+**Derivations/** modules:
+- `TimeEmergence.lean` - Update to use Track 3 symmetry → unitarity derivation
+- `Energy.lean` - May need revision based on Track 3 results
+- `RussellParadox.lean` - May be unaffected or need minor updates
+
+**Impact**: Many current **axioms will become theorems** (51 axioms → potentially 20-30 axioms after Sprint 11)
+
+**Current sorry statements**: 3 → target 0 after cleanup
+
+#### 3. Notebook Revisions and New Development
+
+**Current notebooks requiring revision**:
+
+**Foundational notebooks** (00-02):
+- `00_Core_Thesis.ipynb` - Update to reflect non-circular foundations
+- `01_Information_Space.ipynb` - May need minor updates
+- `02_Time_Emergence.ipynb` - Update to reflect Track 3 symmetry derivation
+
+**Born Rule / Measurement notebooks**:
+- Any notebook using Born rule - Update to show Gleason approach, not assume |⟨x|ψ⟩|²
+- Create **new notebook**: `XX_Gleason_Born_Rule.ipynb` demonstrating Track 2
+
+**Quantum Mechanics notebooks** (10-13):
+- `10_Quantum_Mechanics.ipynb` - Major revision to reflect non-circular derivations
+- Other QM notebooks - Update as needed
+
+**Prediction notebooks**:
+- `05_Predictions.ipynb` (if exists) - Update T₂/T₁ to reflect Track 5 results (microscopic or scaling law)
+- Create **new notebook**: `XX_T2T1_Scaling_Law.ipynb` if Track 5 → phenomenological
+
+**New notebooks to create**:
+- `XX_Representation_Theorem_Validation.ipynb` (Track 1 computational checks)
+- `XX_Gleason_Born_Rule.ipynb` (Track 2 demonstration)
+- `XX_Symmetry_Unitarity.ipynb` (Track 3 validation)
+- `XX_CPTP_Collapse.ipynb` (Track 4 timescale calculations)
+- `XX_T2T1_Scaling_Law.ipynb` (Track 5 if phenomenological)
+
+#### 4. Paper Revisions
+
+**Major sections requiring rewrite** (if tracks succeed):
+
+**Section 3: Hierarchical Emergence Framework**
+- Update to incorporate Track 1 representation theorem
+- Show ℂℙⁿ emerges necessarily from 3FLL
+
+**Section 5: Born Rule Derivation**
+- Complete rewrite using Track 2 Gleason approach
+- Remove circular reasoning (no |⟨x|ψ⟩|² in setup)
+
+**Section 6: Dynamics / Time Emergence**
+- Update to Track 3 symmetry → unitarity derivation
+- Document Stone's theorem status (derived or axiomatized)
+
+**Section 7: Measurement / Collapse**
+- Incorporate Track 4 CPTP operational model
+- Add testable timescale predictions
+
+**Section 8: T₂/T₁ Prediction**
+- Update to Track 5 results (microscopic derivation or scaling law)
+- If scaling law: honest framing as "phenomenological hypothesis"
+
+#### 5. Documentation Updates
+
+**AXIOMS.md**:
+- Major revision after Sprint 11 (51 axioms → potentially 20-30)
+- Document which axioms remain and why (deep theorems like Gleason, Stone if can't be derived)
+- Update axiom inventory in all Lean file headers
+
+**lean/LogicRealismTheory.lean** (root import file):
+- Add new modules (RepresentationTheorem, NonCircularBornRule, etc.)
+- Update build status as modules complete
+
+**Sprint tracking**:
+- Sprint 9 (Lean Cleanup) - Will be partially superseded by Sprint 11 work
+- Sprint 10 (K-Theory) - May integrate with Track 5
+
+### Estimated Work Breakdown
+
+**New Development**: 40% of effort
+- New Lean modules (Tracks 1-4)
+- New notebooks (5+ new notebooks)
+
+**Revision of Existing**: 60% of effort
+- Lean module updates (Foundation, Measurement, Derivations)
+- Notebook updates (00-02, 10-13, predictions)
+- Paper rewrites (Sections 3, 5, 6, 7, 8)
+- Documentation (AXIOMS.md, headers, tracking)
+
+### Why This Is Necessary
+
+**Issue #6 identified circularity in foundations.** We can't just "add" new proofs - we must **revise the circular parts** to use non-circular foundations.
+
+**Example cascade** (if Track 1 + 2 succeed):
+1. Track 1: Prove 3FLL → ℂℙⁿ necessarily
+2. Update Foundation/ modules to use representation theorem
+3. Track 2: Derive Born rule using Gleason (non-circular)
+4. Revise Measurement/ modules to use Gleason approach
+5. Update notebooks to demonstrate non-circular derivations
+6. Rewrite paper sections to reflect rigorous foundations
+7. Update AXIOMS.md (51 → potentially 20-30 axioms)
+
+**This is why Sprint 11 is 8-12 weeks (potentially 6+ months).** It's not just new proofs - it's **restructuring the foundations** to be non-circular.
+
+### Sprint 11 Execution Strategy
+
+**Phase 1: Prove the Forcing Theorems** (Weeks 1-6)
+- Focus on NEW development (Tracks 1-4)
+- Don't revise existing work yet (foundations may change)
+- Checkpoint at Week 6: Which tracks are viable?
+
+**Phase 2: Integrate into Existing Work** (Weeks 7-9)
+- Revise Lean modules to use forcing theorems
+- Update notebooks to reflect non-circular approach
+- Begin paper rewrites
+
+**Phase 3: Documentation and Cleanup** (Weeks 10-12)
+- Update AXIOMS.md and headers
+- Ensure all references consistent
+- Multi-LLM validation of integrated system
+
+**Rationale**: Don't revise existing work until we know which forcing theorems succeed. If Track 1 fails, we may need to pivot approach.
+
 ## Next Steps
 
-**Immediate** (Awaiting User Decision):
-- ❓ User approval to proceed with Sprint 11
-- ❓ Answer 5 blocking questions about time commitment, expertise gaps, partial success acceptance
-- ❓ Decide: Pause Sprint 9/10 or continue in parallel?
-
-**After User Approval**:
-- Create sprint_11/ directory
+**Immediate** (Starting Now):
+- ✅ User approved Sprint 11 execution
+- ✅ Scope clarified (new development + major revisions)
 - Update sprints/README.md with Sprint 11 as active
 - Begin Track 1 (Representation Theorem) - most foundational
 - First multi-LLM consultation: "Can 3FLL force complex Hilbert space uniquely?"
