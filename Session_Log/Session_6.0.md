@@ -286,12 +286,14 @@ sprints/
    - Complete session documentation
    - AI profile creation + sprint renumbering
 
-### Modified (4 files)
+### Modified (5 files)
 
-1. **CLAUDE.md** (lines 1-23)
-   - Added "TOP PRIORITY: AI Collaboration Profile" section at top
-   - References AI-Collaboration-Profile.json
-   - Lists 5 core mandates
+1. **CLAUDE.md** (multiple updates)
+   - Added "TOP PRIORITY: AI Collaboration Profile" section at top (lines 5-19)
+   - Added "Core Development Documentation" section (lines 22-63)
+   - References all three key documents: AI-Collaboration-Profile.json, DEVELOPMENT_GUIDE.md, LEAN_BEST_PRACTICES.md
+   - Clear guidance on when to reference each document
+   - Updated buried references to point back to comprehensive section
 
 2. **sprints/README.md** (217 lines)
    - Updated Active Sprints (Sprint 9 & 10 added)
@@ -377,6 +379,7 @@ sprints/
 **Short-Term (Next Session)**:
 - ✅ Sprint 10 protocol clarified (NOT blocked, cleanup language during execution)
 - ✅ Added approach_2 guidance to DEVELOPMENT_GUIDE.md and LEAN_BEST_PRACTICES.md
+- ✅ Added "Core Development Documentation" section to CLAUDE.md (references all 3 key docs)
 - Decide: Start Sprint 9 (Lean cleanup) or Sprint 10 (K-theory)?
 - When executing Sprint 10: Extract approach_2 structures and incorporate without citation
 

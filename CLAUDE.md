@@ -19,6 +19,50 @@ This profile defines your core role as a hypercritical, rigorous theoretical phy
 
 ---
 
+## 📖 Core Development Documentation
+
+**Three essential reference documents govern all development work:**
+
+### 1. AI-Collaboration-Profile.json (see above)
+**Priority**: TOP - Overrides other protocols when conflicts arise
+**Purpose**: Defines rigorous critical review standards, escalation protocol, quality gates
+**When to reference**: Always - this is your core operating mode
+
+### 2. DEVELOPMENT_GUIDE.md
+**Purpose**: Architecture, development commands, workflows, approach_2 protocol
+**When to reference**:
+- Understanding repository structure and architecture
+- Running development commands (Python, Jupyter, Lean)
+- Incorporating structures from approach_2_reference/
+- GitHub issue management
+- File organization and common workflows
+
+**Key sections**:
+- Architecture (Core components, mathematical concepts)
+- Internal Development Work: approach_2_reference/ protocol
+- Development Commands (Python/Jupyter, Lean 4)
+- Computational parameters and workflows
+
+### 3. LEAN_BEST_PRACTICES.md
+**Purpose**: Lean 4 proof development lessons, axiom guidelines, tactics best practices
+**When to reference**:
+- Writing or modifying Lean 4 proofs
+- Deciding when to axiomatize vs prove
+- Using field_simp and other tactics
+- Incorporating approach_2 structures into Lean code
+- File header requirements and axiom documentation
+
+**Key sections**:
+- Physical axioms vs mathematical theorems
+- field_simp for division algebra
+- Documentation standards for axioms
+- "No sorrys if we can help it" principle
+- approach_2_reference/ protocol for Lean
+
+**Critical**: Reference these documents BEFORE starting development work. They contain hard-won lessons and established protocols.
+
+---
+
 ## 🚀 Session Startup Protocol
 
 **When starting a new session, you will be asked to read this file (CLAUDE.md).**
@@ -147,7 +191,7 @@ grep -c sorry lean/LogicRealismTheory/Dynamics/*.lean 2>/dev/null || echo "0"
 cd lean && lake build
 ```
 
-**For Lean development guidelines**: See [`LEAN_BEST_PRACTICES.md`](LEAN_BEST_PRACTICES.md)
+**For Lean development guidelines**: See LEAN_BEST_PRACTICES.md (referenced in "Core Development Documentation" above)
 
 **Completion Criteria**:
 - ❌ **NOT complete** if file contains ANY `sorry` statements
@@ -351,9 +395,11 @@ sprints/
 
 This is the **Logic Realism Theory (LRT)** repository, containing mathematical derivations and computational simulations for Logic Realism Theory (LRT) - a theoretical physics framework that proposes physical reality emerges from logical filtering of information: **A = L(I)**.
 
-**For detailed architecture, development commands, and workflows**: See [`DEVELOPMENT_GUIDE.md`](DEVELOPMENT_GUIDE.md)
+**For detailed architecture, development commands, and workflows**: See DEVELOPMENT_GUIDE.md
 
-**For Lean 4 proof development best practices**: See [`LEAN_BEST_PRACTICES.md`](LEAN_BEST_PRACTICES.md)
+**For Lean 4 proof development best practices**: See LEAN_BEST_PRACTICES.md
+
+**Both documents are detailed in "Core Development Documentation" section above.**
 
 ---
 
