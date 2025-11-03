@@ -159,6 +159,27 @@ Before starting any work:
 2. ✅ Use the rigorous formalism from that document in papers
 3. ❌ DO NOT redevelop formalism from scratch - it's already done
 
+**⚠️ CRITICAL: When deriving emergence chains or working on forcing theorems:**
+1. ✅ **ALWAYS read** `LRT_Hierarchical_Emergence_Framework.md` **FIRST** before starting derivation work
+2. ✅ Map your derivation to the formal hierarchy layers:
+   - **Layer 0**: 3FLL (bootstrap constraints)
+   - **Layer 1**: Proto-mathematical primitives (distinction, membership, relation, succession)
+   - **Layer 2**: Mathematical structures (arithmetic, geometry, algebra - CO-EMERGE)
+   - **Layer 3**: Physics-enabling math (Lie groups, differential geometry, Hilbert spaces)
+   - **Layer 4+**: Physical laws (conservation laws, gauge theories, QM, relativity)
+3. ✅ Identify which layer transitions your work addresses
+4. ✅ Use the framework's terminology and structure in documentation
+5. ❌ DO NOT assume geometry or mathematics pre-exists 3FLL - they emerge at Layer 2
+
+**Key Framework Insight**: The emergence sequence is:
+```
+3FLL + IIS → Proto-primitives → Mathematics → Physics-enabling math → Physical laws → QM
+```
+NOT:
+```
+3FLL + IIS → Geometry → QM  (WRONG - skips critical layers)
+```
+
 ---
 
 ## 🎯 Research Philosophy: Collaborative Refinement
