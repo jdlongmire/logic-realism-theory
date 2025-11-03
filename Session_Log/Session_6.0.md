@@ -291,6 +291,9 @@ sprints/
 1. **CLAUDE.md** (multiple updates)
    - Added "TOP PRIORITY: AI Collaboration Profile" section at top (lines 5-19)
    - Added "Core Development Documentation" section (lines 22-63)
+   - Restructured "Session Startup Protocol - Priority Order" (lines 66-120)
+   - Added Priority 3: Sprint Documentation review guidance
+   - Added "Startup Checklist" with all review steps
    - References all three key documents: AI-Collaboration-Profile.json, DEVELOPMENT_GUIDE.md, LEAN_BEST_PRACTICES.md
    - Clear guidance on when to reference each document
    - Updated buried references to point back to comprehensive section
@@ -380,6 +383,8 @@ sprints/
 - ✅ Sprint 10 protocol clarified (NOT blocked, cleanup language during execution)
 - ✅ Added approach_2 guidance to DEVELOPMENT_GUIDE.md and LEAN_BEST_PRACTICES.md
 - ✅ Added "Core Development Documentation" section to CLAUDE.md (references all 3 key docs)
+- ✅ Added "Session Startup Protocol - Priority Order" with sprint documentation review
+- ✅ Added startup checklist to CLAUDE.md
 - Decide: Start Sprint 9 (Lean cleanup) or Sprint 10 (K-theory)?
 - When executing Sprint 10: Extract approach_2 structures and incorporate without citation
 

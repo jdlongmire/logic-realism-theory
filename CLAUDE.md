@@ -63,13 +63,19 @@ This profile defines your core role as a hypercritical, rigorous theoretical phy
 
 ---
 
-## 🚀 Session Startup Protocol
+## 🚀 Session Startup Protocol - Priority Order
 
-**When starting a new session, you will be asked to read this file (CLAUDE.md).**
+**When starting a new session, follow this exact sequence:**
 
-**Upon reading CLAUDE.md, immediately read the latest session file in `Session_Log/`**
+### Priority 1: Core Documentation (above)
+1. ✅ **AI-Collaboration-Profile.json** - Your operating mode
+2. ✅ **DEVELOPMENT_GUIDE.md** - Architecture and workflows
+3. ✅ **LEAN_BEST_PRACTICES.md** - Lean proof development
 
-Find the most recent `Session_X.Y.md` file (highest X.Y number) in the `Session_Log/` directory. This file contains everything needed to resume:
+### Priority 2: Session Context
+**Read the latest session file in `Session_Log/`**
+
+Find the most recent `Session_X.Y.md` file (highest X.Y number). This file contains:
 - ✅ Complete session history and accomplishments
 - 🎯 Current research focus and strategic direction
 - 📊 Honest theory viability assessment
@@ -78,9 +84,40 @@ Find the most recent `Session_X.Y.md` file (highest X.Y number) in the `Session_
 - 🎬 Specific next tasks (with clear options)
 - 📁 Guide to all key documents
 
-**After reading the latest session file, you will have complete context and can continue work immediately.**
+**After reading the latest session file, you will have complete context.**
 
 **Note**: Session_0.0.md is a historical snapshot and should not be updated.
+
+### Priority 3: Sprint Documentation (if active sprint exists)
+**Check `sprints/README.md` for active sprints, then read relevant tracking:**
+
+1. **sprints/README.md** - Overview of all sprints, current status
+2. **sprints/sprint_X/SPRINT_X_TRACKING.md** - Active sprint progress
+3. **sprints/sprint_X/SPRINT_X_PLAN.md** - Sprint objectives and phases
+
+**What to extract from sprint docs**:
+- Current phase and deliverables
+- Blockers or issues flagged
+- Daily progress log (last entry)
+- Next immediate tasks
+- Success criteria and completion status
+
+**Session log takes precedence**: If session and sprint docs conflict, trust the session log (more recent).
+
+---
+
+## Startup Checklist
+
+Before starting any work:
+- [ ] Read AI-Collaboration-Profile.json (your operating mode)
+- [ ] Skim DEVELOPMENT_GUIDE.md (architecture reference)
+- [ ] Skim LEAN_BEST_PRACTICES.md (if Lean work expected)
+- [ ] Read latest Session_X.Y.md file (complete context)
+- [ ] Check sprints/README.md for active sprints
+- [ ] Read active sprint tracking if applicable
+- [ ] Review specific next tasks from session log
+
+**Total startup time**: ~5-10 minutes of reading for full context
 
 ---
 
