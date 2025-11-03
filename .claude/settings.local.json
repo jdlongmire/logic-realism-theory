@@ -52,7 +52,8 @@
       "Bash(git checkout:*)",
       "Bash(git restore:*)",
       "Bash(gh issue list:*)",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "Bash(timeout 120 lake build:*)"
     ],
     "deny": [],
     "ask": []
