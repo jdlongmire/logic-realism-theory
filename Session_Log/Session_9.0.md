@@ -165,12 +165,13 @@
 
 **Purpose**: Mandatory verification checklist to invoke after each track completion
 
-**5 Quick Checks**:
+**6 Quick Checks**:
 1. **Build Verification**: `lake build` with 0 errors?
 2. **Proof Verification**: Real proofs vs `trivial` vs `sorry`?
 3. **Import Verification**: Integrated in `LogicRealismTheory.lean` or orphaned?
 4. **Axiom Count Reality**: Did count go UP (more assumptions) or DOWN (real reduction)?
 5. **Deliverable Reality Check**: Documentation vs structure vs proofs?
+6. **Professional Tone Verification**: No celebration language, emojis, or superlatives before peer review?
 
 **Stop Words** (forbidden without verification):
 - ❌ "Verified", "Proven", "Complete", "Formalized", "Derived"
@@ -188,31 +189,74 @@
 - Added to `CLAUDE.md` Section 2 (Critical Protocols - MANDATORY)
 - Marked as required after EVERY track completion
 
-**Git Commit**: 78d6b46 - "Session 9.0: Add Sanity Check Protocol (AI-assistant challenge mitigation)"
+**Git Commits**:
+- 78d6b46 - "Session 9.0: Add Sanity Check Protocol (AI-assistant challenge mitigation)"
+- c040770 - "Session 9.0: Add professionalism verification to Sanity Check Protocol"
 
 **Mitigation Addressed**: Weaknesses #1, #3, #4, #5
 - #1: Overclaiming success (distinguishes build from verification)
 - #3: Volume over depth (checks for real proofs vs docs)
 - #4: False precision (forces honest assessment)
-- #5: Celebration before verification (stop words, reality checks)
+- #5: Celebration before verification (stop words, reality checks, professional tone check)
+
+---
+
+---
+
+## Deliverable 2: Sprint 12 Track 2 Expansion ✅
+
+**Expanded**: `sprints/sprint_12/SPRINT_12_TRACKING.md` Track 2 section (~230 lines added)
+
+**Purpose**: Comprehensive bottoms-up refactor plan for Lean axiom reduction
+
+**Strategy**: 9 levels of refactoring from foundations to derived results
+- Level 1-4: Foundations (ontology, constraints, fields, qubits) - 14 axioms
+- Level 5-6: Quick wins (duplicates, placeholders) - 8 axioms
+- Level 7-8: Derivations (time, energy) - 11 axioms
+- Level 9: Measurement dynamics - 25 axioms (major refactor opportunity)
+
+**Work Plan**:
+- Phase 2.1: Foundations review (1-2 hours)
+- Phase 2.2: Quick wins - placeholder removal (2-3 hours)
+- Phase 2.3: Derivations refactor (3-4 hours)
+- Phase 2.4: Measurement Born rule derivation (8-12 hours)
+- **Total**: 14-21 hours estimated
+
+**Target**: Reduce 57 → 35-38 axioms
+- Quick wins: -8 to -9 axioms (helpers, placeholders, duplicates)
+- Major work: -8 to -12 axioms (Born rule derivation, consolidation)
+
+**Integration**:
+- Aligns with Option C plan from `LRT_Comprehensive_Lean_Plan.md`
+- Each level has clear actions and reduction targets
+- Execution order: foundations → derived (prevents breaking dependencies)
+
+**Mitigation Addressed**: Weaknesses #2, #3, #6, #8
+- #2: Avoiding hard work (explicit Born rule derivation in Phase 2.4)
+- #3: Volume over depth (focus on proofs, not docs)
+- #6: Scope expansion (structured plan prevents adding new tracks)
+- #8: Unknown capability (Phase 2.4 tests formal derivation ability)
 
 ---
 
 ## Session Status
 
 **Status**: 🟢 IN PROGRESS
-**Completed**: Sanity Check Protocol created and integrated
-**Next**: User direction on next mitigation strategy or continue Sprint 12
+**Completed**:
+1. Sanity Check Protocol created and integrated
+2. Sprint 12 Track 2 expanded with bottoms-up refactor plan
+
+**Next**: Begin Track 2 execution or await user direction
 
 **Mitigation Progress**:
 - ✅ Process intervention created (Sanity Check Protocol)
-- ⏸️ Capability assessment (attempt hard proof) - pending user decision
-- ⏸️ Sprint 12 revision - pending strategy decision
+- ✅ Sprint 12 Track 2 structured with capability testing built-in
+- ⏸️ Track 2 execution - ready to start Phase 2.1
 
 ---
 
 **Session 9.0 Created**: 2025-11-04
-**Session 9.0 Updated**: 2025-11-04 (Sanity Check Protocol complete)
+**Session 9.0 Updated**: 2025-11-04 (Track 2 expansion complete)
 **Purpose**: Implement AI-assistant weakness mitigation strategies
 **Parent Session**: Session 8 complete (8.0-8.5)
-**Next**: Await user direction on capability testing or Sprint 12 continuation
+**Next**: Ready to begin Track 2 Phase 2.1 (Foundations) or await user direction

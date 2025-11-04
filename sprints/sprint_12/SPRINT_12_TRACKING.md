@@ -167,21 +167,235 @@ theorem evolution_types_distinct ... :
 
 ## Track 2: Reduce Axiom Count (Priority 2)
 
-**Goal**: Reduce from 57 to ~35 axioms
+**Goal**: Reduce from 57 to ~35 axioms via bottoms-up refactor
 
-**Current Status**: Not started
+**Strategy**: Bottoms-up proof refactor from foundations to derived results
 
-**Quick Wins Identified**:
-- Remove 5 Layer3.lean placeholders (-5 axioms)
-- Convert 4 computational helpers to definitions (-4 axioms)
-- Total quick wins: -9 axioms (57 → 48)
+**Current Status**: In progress - comprehensive refactor plan defined
 
-**Major Tasks**:
-- Formalize Born rule derivation (-5 to -7 axioms)
-- Consolidate measurement axioms (-3 to -5 axioms)
-- Estimated reduction: -13 to -22 axioms total
+### Bottoms-Up Refactor Levels
 
-**Status**: ⏸️ Pending Track 1 completion
+**Approach**: Start at foundational axioms, work upward attempting to:
+1. Convert computational helpers to definitions
+2. Remove placeholder axioms
+3. Derive theorems from more fundamental axioms
+4. Consolidate redundant axioms
+
+---
+
+#### Level 1: Core Ontology (Foundation/IIS.lean) - 2 axioms
+
+**Files**: `Foundation/IIS.lean`
+
+**Axioms**:
+- `I` - Infinite Information Space exists (KEEP - theory-defining)
+- `I_infinite` - I is infinite (KEEP - theory-defining)
+
+**Action**: No changes (core ontological postulates)
+
+**Reduction**: 0 axioms
+
+---
+
+#### Level 2: Constraint Mechanism (Foundation/ConstraintThreshold.lean) - 3 axioms
+
+**Files**: `Foundation/ConstraintThreshold.lean`
+
+**Current Axioms**:
+1. `Set.card` - Cardinality function (Computational_helper)
+2. `ConstraintViolations` - K counting function (Computational_helper)
+3. `statespace_monotone` - K' ≤ K → StateSpace(K') ⊆ StateSpace(K) (LRT_foundational)
+
+**Actions**:
+- [ ] Try converting `Set.card` to definition (use Mathlib cardinality)
+- [ ] Try converting `ConstraintViolations` to computable definition
+- [ ] Keep `statespace_monotone` (core K mechanism)
+
+**Target Reduction**: -2 axioms (3 → 1)
+
+---
+
+#### Level 3: Field Structure (Foundation/ComplexFieldForcing.lean) - 7 axioms
+
+**Files**: `Foundation/ComplexFieldForcing.lean`
+
+**K_math Axioms** (algebraic properties):
+1. `real_no_continuous_phase`
+2. `complex_continuous_phase`
+3. `quaternion_noncommutative`
+4. `complex_tensor_associative`
+5. `quaternion_tensor_order_dependent`
+6. `complex_time_reversal`
+7. `quaternion_time_ambiguous`
+
+**Action**: Keep all as K_math (standard algebraic properties)
+
+**Reduction**: 0 axioms
+
+---
+
+#### Level 4: Qubit Mapping (Foundation/QubitKMapping.lean) - 2 axioms
+
+**Files**: `Foundation/QubitKMapping.lean`
+
+**Current Axioms**:
+1. `binary_entropy_bound` (K_math)
+2. `K_ground_justified` (LRT_foundational)
+
+**Action**: Keep both (information theory + LRT ground state)
+
+**Reduction**: 0 axioms
+
+---
+
+#### Level 5: Inner Product Structure - 1 axiom
+
+**Files**: `Foundation/InnerProduct.lean`, `Foundation/Track1_*.lean`
+
+**Current Axioms**:
+1. `jordan_von_neumann_inner_product` (K_math, converted from sorry in Track 1)
+2. `hermitian_real_spectrum` (Track1_13, K_math spectral theorem)
+3. `stones_theorem` (Track1_12, K_math - duplicate with TimeEmergence)
+
+**Actions**:
+- [ ] Keep jordan_von_neumann (K_math infrastructure)
+- [ ] Review Track1_12/13 for duplication with other modules
+- [ ] Remove duplicate stones_theorem if exists elsewhere
+
+**Target Reduction**: -1 axiom (potential duplicate removal)
+
+---
+
+#### Level 6: Placeholder Removal (Layer3.lean) - 5 axioms
+
+**Files**: `Layer3.lean`
+
+**Current Placeholders**:
+1. `track_1_9_inner_product` (Placeholder)
+2. `track_1_10_hilbert_space` (Placeholder)
+3. `track_1_11_tensor_products` (Placeholder)
+4. `track_1_12_unitary_operators` (Placeholder)
+5. `track_1_13_hermitian_operators` (Placeholder)
+
+**Actions**:
+- [ ] Remove all 5 placeholder axioms
+- [ ] Reference actual Track1_9-13 implementations instead
+- [ ] Update Layer3.lean imports to point to real modules
+
+**Target Reduction**: -5 axioms
+
+---
+
+#### Level 7: Time Emergence (Derivations/TimeEmergence.lean) - 6 axioms
+
+**Files**: `Derivations/TimeEmergence.lean`
+
+**Current Axioms**:
+1. `trajectory_to_evolution` (Computational_helper)
+2. `trajectory_to_evolution_identity_at_zero` (K_math)
+3. `trajectory_to_evolution_group_property` (K_math)
+4. `trajectory_to_evolution_continuous` (K_math)
+5. `stones_theorem` (K_math)
+6. `time_emergence_from_identity` (LRT_foundational)
+
+**Actions**:
+- [ ] Try converting `trajectory_to_evolution` to computable definition
+- [ ] Keep K_math infrastructure (evolution properties, Stone's theorem)
+- [ ] Attempt deriving `time_emergence_from_identity` from I + Identity constraint?
+
+**Target Reduction**: -1 to -2 axioms (helper → definition, possibly derive time emergence)
+
+---
+
+#### Level 8: Energy Emergence (Derivations/Energy.lean) - 5 axioms
+
+**Files**: `Derivations/Energy.lean`
+
+**Current Axioms**:
+1. `I_has_maximum_entropy` (LRT_foundational)
+2. `actualization_strictly_reduces_entropy` (LRT_foundational)
+3. `I_has_large_entropy` (LRT_foundational)
+4. `spohns_inequality` (K_math)
+5. `energy_additivity_for_independent_systems` (Physical_postulate)
+
+**Actions**:
+- [ ] Check if `I_has_large_entropy` is redundant with `I_has_maximum_entropy`
+- [ ] Keep `actualization_strictly_reduces_entropy` (core LRT mechanism)
+- [ ] Keep `spohns_inequality` (K_math)
+- [ ] Keep `energy_additivity` (physical principle)
+
+**Target Reduction**: -1 axiom (potential redundancy)
+
+---
+
+#### Level 9: Measurement Dynamics (Measurement/*.lean) - 25 axioms
+
+**Files**: `Measurement/MeasurementGeometry.lean`, `Measurement/NonUnitaryEvolution.lean`
+
+**Current Status**: 21 + 4 = 25 axioms (15 Measurement_dynamics, others mixed)
+
+**Major Refactor Opportunity**: Derive Born rule from MaxEnt + Non-Contradiction
+
+**Actions**:
+- [ ] Implement Section 5.1 derivation (Born rule from MaxEnt)
+- [ ] Try deriving projection postulate from constraint geometry
+- [ ] Consolidate redundant measurement properties
+- [ ] Keep `IdentityState` or convert to definition
+- [ ] Target: Reduce 15 measurement axioms to ~7-8 fundamental ones
+
+**Target Reduction**: -7 to -10 axioms (derive Born rule + consolidate)
+
+---
+
+### Track 2 Summary
+
+**Current**: 57 axioms (58 - 1 false positive)
+
+**Quick Wins** (Levels 2, 5, 6):
+- Remove 5 Layer3 placeholders: -5
+- Convert 2-3 computational helpers: -2 to -3
+- Remove 1 duplicate: -1
+- **Subtotal**: -8 to -9 axioms → **48-49 axioms**
+
+**Major Work** (Levels 7, 8, 9):
+- Energy redundancy: -1
+- Time emergence derivation: -0 to -1
+- Measurement consolidation: -7 to -10
+- **Subtotal**: -8 to -12 axioms → **36-41 axioms**
+
+**Target**: 35-38 axioms (matches Option C plan from LRT_Comprehensive_Lean_Plan.md)
+
+---
+
+### Track 2 Work Plan (Bottoms-Up Execution)
+
+**Phase 2.1**: Foundations (Levels 1-4) - 1-2 hours
+- Review core ontology (no changes needed)
+- Attempt computational helper conversions (Level 2)
+- Document K_math field axioms (Level 3)
+- No changes to qubit mapping (Level 4)
+
+**Phase 2.2**: Quick Wins (Levels 5-6) - 2-3 hours
+- Remove Layer3 placeholders
+- Check for duplicate axioms in Track1_* files
+- Verify build success after removals
+
+**Phase 2.3**: Derivations (Levels 7-8) - 3-4 hours
+- Refactor TimeEmergence (trajectory_to_evolution)
+- Check Energy redundancies
+- Attempt deriving time emergence from Identity
+
+**Phase 2.4**: Measurement Refactor (Level 9) - 8-12 hours
+- Implement Born rule derivation from MaxEnt
+- Consolidate measurement dynamics axioms
+- Derive projection postulate if possible
+- Final build verification
+
+**Total Estimated Time**: 14-21 hours
+
+---
+
+**Status**: 🟢 Ready to start - comprehensive plan complete
 
 ---
 
