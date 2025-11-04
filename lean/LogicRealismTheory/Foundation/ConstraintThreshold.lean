@@ -83,16 +83,26 @@ def StateSpace {V : Type*} (K : ℕ) : Set V := {σ : V | ConstraintViolations �
 /--
 Monotonicity: Lower constraint thresholds yield smaller state spaces.
 
-**AXIOM**: K' ≤ K implies StateSpace(K') ⊆ StateSpace(K)
+**THEOREM** (proven from StateSpace definition): K' ≤ K implies StateSpace(K') ⊆ StateSpace(K)
 
-**Justification**: If K' ≤ K, then any configuration with ≤ K' violations also has ≤ K violations.
-This is a direct consequence of the definition of StateSpace, but we axiomatize it for use in
-measurement operator proofs.
+**Proof**: If K' ≤ K, then any configuration σ with ConstraintViolations(σ) ≤ K' also satisfies
+ConstraintViolations(σ) ≤ K by transitivity of ≤ on natural numbers.
 
 **Physical Interpretation**: Tightening constraints (lowering K) reduces the allowed configurations.
 This is the mechanism of wavefunction collapse in LRT: measurement adds constraints, reducing K.
+
+**Status**: ✅ PROVEN (Session 9.0, Phase 1 Step 1)
+**Axiom Count**: -1 (was axiom, now theorem)
 -/
-axiom statespace_monotone {V : Type*} {K K' : ℕ} (h : K' ≤ K) :
-  (StateSpace K' : Set V) ⊆ (StateSpace K : Set V)
+theorem statespace_monotone {V : Type*} {K K' : ℕ} (h : K' ≤ K) :
+    (StateSpace K' : Set V) ⊆ (StateSpace K : Set V) := by
+  -- Prove subset inclusion: ∀ σ ∈ StateSpace(K'), σ ∈ StateSpace(K)
+  intro σ hσ
+  -- Unfold StateSpace definition
+  -- hσ : σ ∈ StateSpace K' means ConstraintViolations σ ≤ K'
+  -- goal: σ ∈ StateSpace K means ConstraintViolations σ ≤ K
+  unfold StateSpace at hσ ⊢
+  -- Apply transitivity: ConstraintViolations σ ≤ K' ≤ K
+  exact Nat.le_trans hσ h
 
 end LogicRealismTheory.Foundation
