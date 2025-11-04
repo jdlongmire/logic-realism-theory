@@ -15,12 +15,12 @@ logical constraints via symmetry principles. Currently contains stubs and docume
 
 **Axiom Count by Tier**:
 - Tier 1 (LRT Specific): 0 axioms (imports from Foundation)
-- Tier 2 (Established Math Tools): 2 axioms (Mazur-Ulam 1932, Stone 1932)
+- Tier 2 (Established Math Tools): 1 axiom (Mazur-Ulam 1932; Stone 1932 imported from TimeEmergence)
 - Tier 3 (Universal Physics): 0 axioms
-- **Total**: 6 axioms (2 Tier 2 + 4 axiom stubs for LRT claims, need proper formalization)
+- **Total**: 5 axioms (1 Tier 2 + 4 axiom stubs for LRT claims, need proper formalization)
 
-**Strategy**: Use Mazur-Ulam theorem (isometries are linear) and Stone's theorem (unitary
-groups ↔ self-adjoint generators) as infrastructure. Derive unitarity and dynamics from 3FLL.
+**Strategy**: Use Mazur-Ulam theorem (isometries are linear) and Stone's theorem (from
+Derivations/TimeEmergence.lean) as infrastructure. Derive unitarity and dynamics from 3FLL.
 
 **Status**: ⚠️ **PRELIMINARY STUBS** - All axioms are `True` placeholders. Full formalization
 pending Sprint 11 integration.
@@ -190,11 +190,11 @@ spectral theory for unbounded operators) not yet in Mathlib. Standard mathematic
 
 **Significance**: Provides the generator H for time evolution, leading to Schrödinger equation
 iℏ ∂ψ/∂t = Hψ from the one-parameter group structure.
+
+**Canonical Declaration**: See Derivations/TimeEmergence.lean for the formal axiom statement.
 -/
-axiom stones_theorem :  -- TIER 2: ESTABLISHED MATH TOOLS
-  -- C₀-unitary group ↔ self-adjoint generator H
-  -- U(t) = exp(-iHt/ℏ)
-  True
+
+-- Note: stones_theorem formally axiomatized in Derivations/TimeEmergence.lean
 
 -- Main result: Schrödinger equation from 3FLL + Stone (⚠️ STUB - needs proper formalization)
 theorem schrodinger_equation_from_3FLL :

@@ -1,232 +1,202 @@
-# Session 10.0: Sprint 11 Status Assessment
+# Session 10.0: Sprint 12 Track 2 - Axiom Reduction (Quick Wins)
 
-**Date**: TBD (Next session)
-**Focus**: Sprint 11 reality check - assess actual completion vs tracking claims
-**Status**: 📋 PLANNED
+**Date**: 2025-11-04
+**Focus**: Sprint 12 Track 2 continuation - axiom reduction via duplicate removal and consolidation
+**Status**: ✅ IN PROGRESS (Quick wins achieved: -2 axioms)
 
 ---
 
-## Session Objectives
+## Session Overview
 
-### Primary Objective: Sprint 11 Assessment
+**User Direction**: Continue Sprint 12 Track 2 (axiom reduction)
 
-**Context**: Sprint 11 has 34 documentation files (tracks 1-3) but tracking shows 0% deliverables complete. Need to determine actual status.
+**Context**: Sprint 12 is 50% complete with Track 1 finished (sorry statements resolved). Track 2 aims to reduce axiom count from 61 active axioms → target ~35-38 axioms.
+
+**Approach**: Systematic bottoms-up refactor focusing on quick wins before major Measurement module refactoring.
+
+---
+
+## Work Completed
+
+### Phase 2.1-2.2: Foundation Module Review ✅
+
+**Objective**: Review Foundation/ modules and remove Layer3.lean placeholders
+
+**Findings**:
+- Layer3.lean already clean (0 axioms, documentation only)
+- Track placeholder axioms already removed in previous sessions
+- Foundation modules properly structured with tier labels
+
+**Result**: No changes needed (already complete from Session 9.1)
+
+---
+
+### Phase 2.3: Duplicate Axiom Removal ✅
+
+**Objective**: Identify and remove duplicate axiom declarations across modules
+
+**Duplicates Found**:
+1. **stones_theorem** - 3 instances found
+2. ConstraintViolations - 2 instances (1 in _deprecated/Common.lean - NOT imported)
+3. Set.card - 2 instances (1 in _deprecated/Common.lean - NOT imported)
+4. Multiple measurement axioms - duplicated in _deprecated/Common.lean (NOT imported)
+
+**Key Finding**: Measurement/_deprecated/Common.lean contains 8 duplicate axioms but is NOT imported in LogicRealismTheory.lean, so these don't affect the build.
+
+**Action Taken**: Removed 2 duplicate Stone's theorem placeholder axioms
+
+| File | Action | Axioms Removed |
+|------|--------|----------------|
+| Foundation/UnitaryOperators.lean | Removed `axiom stones_theorem : True` placeholder | -1 |
+| Dynamics/DynamicsFromSymmetry.lean | Removed `axiom stones_theorem : True` placeholder | -1 |
+
+**Canonical Declaration**: Stone's theorem properly axiomatized in Derivations/TimeEmergence.lean (Tier 2)
+
+**Result**: -2 axioms (61 → 59 active axioms)
+
+---
+
+### Phase 2.4: Computational Helpers Assessment ✅
+
+**Objective**: Evaluate converting axioms marked as "computational helpers" to definitions
+
+**Candidates Evaluated**:
+1. **Set.card** (ConstraintThreshold.lean) - Tier 2
+   - Could potentially use Mathlib's Set.ncard
+   - Marked as "temporary until Mathlib matures"
+   - **Decision**: Keep as-is (build stability priority, low value -1 axiom)
+
+2. **ConstraintViolations** (ConstraintThreshold.lean) - Tier 1
+   - Core LRT concept (K-mechanism)
+   - Theory-defining primitive function
+   - **Decision**: Keep as axiom (appropriate for Tier 1)
+
+3. **trajectory_to_evolution** (TimeEmergence.lean) - Tier 2
+   - Not evaluated in detail
+   - **Decision**: Defer to future refactoring
+
+**Rationale**: Focus on bigger wins (Measurement modules -7 to -10 axioms) over risky conversions that might break builds for only 1-2 axiom reduction.
+
+**Result**: No changes (strategic decision for Sprint 12 completion)
+
+---
+
+### Phase 2.5: Energy.lean Redundancy Check ✅
+
+**Objective**: Check for redundant axioms in Energy.lean
+
+**Findings**:
+- Energy.lean has 2 real axioms:
+  1. spohns_inequality (line 242) - TIER 2
+  2. energy_additivity_for_independent_systems (line 689) - TIER 3
+- Header correctly documents: "2 axioms + 3 LRT theorems"
+- Line 686 "axiom (logical necessity)" is a **false positive** (part of comment)
+
+**Result**: No redundancies found ✅
+
+---
+
+## Current Status
+
+### Axiom Count Progress
+
+| Metric | Count |
+|--------|-------|
+| **Starting (Session 10.0)** | 61 active axioms |
+| **Removed (Phase 2.3)** | -2 axioms (Stone's theorem duplicates) |
+| **Current Active Axioms** | **59 axioms** |
+| **Sprint 12 Track 2 Target** | 35-38 axioms |
+| **Remaining Reduction Needed** | -21 to -24 axioms |
+
+**Total formal declarations**: 67 axioms (59 active + 8 in _deprecated/Common.lean NOT imported)
+
+### Build Status
+
+✅ **Build successful** (6096 jobs, 0 errors)
+- All modules compile cleanly after axiom removals
+- No broken imports or references
+
+---
+
+## Remaining Work (Sprint 12 Track 2)
+
+### Phase 2.6: Measurement Module Refactoring (Major Work)
+
+**Target**: -7 to -10 axioms via:
+- Implement Born rule derivation from MaxEnt (Section 5.1)
+- Consolidate redundant measurement properties
+- Derive projection postulate from constraint geometry
+
+**Files**:
+- Measurement/MeasurementGeometry.lean (21 axioms)
+- Measurement/NonCircularBornRule.lean (2 axioms)
+
+**Estimated Effort**: 8-12 hours
+
+**Status**: ⏸️ Pending
+
+---
+
+### Phase 2.7: Final Verification
 
 **Tasks**:
-1. **Review Sprint 11 Documentation**
-   - Read all 34 track*.md files
-   - Assess: Is each a plan (TODO) or completed work?
-   - Distinguish documentation from actual derivations/proofs
+- Full build verification
+- Final axiom count
+- Update SPRINT_12_TRACKING.md
+- Update root README.md
 
-2. **Update SPRINT_11_TRACKING.md**
-   - Mark deliverables as complete where work exists
-   - Update completion percentages
-   - Identify gaps between documentation and implementation
-
-3. **Cross-Check Lean Formalization**
-   - Which Sprint 11 tracks have corresponding Lean modules?
-   - Are Lean modules imported and building?
-   - Do Lean modules have proofs or just structure?
-
-4. **Determine Sprint 11 Scope**
-   - Is Sprint 11 realistic to complete as planned (5 tracks)?
-   - Should scope be adjusted based on actual progress?
-   - What's the path to Sprint 11 completion?
+**Status**: ⏸️ Pending Phase 2.6 completion
 
 ---
 
-## Sprint 11 Current Tracking (From SPRINT_11_TRACKING.md)
+## Session Metrics
 
-### Official Status (as documented)
-
-| Track | Focus | Difficulty | Status | Completion |
-|-------|-------|------------|--------|------------|
-| Track 1 | Representation Theorem | 🔴 Extreme | 🟢 IN PROGRESS | 0% (0/15) |
-| Track 2 | Non-Circular Born Rule | 🔴 Very High | 🔵 Not Started | 0% (0/13) |
-| Track 3 | Dynamics from Symmetry | 🟡 High | 🔵 Not Started | 0% (0/13) |
-| Track 4 | Operational Collapse | 🟡 Medium-High | 🔵 Not Started | 0% (0/13) |
-| Track 5 | T₂/T₁ Justification | 🟡 Medium | 🔵 Not Started | 0% (0/13) |
-
-**Overall**: 0% (0/67 deliverables)
-
-### Files Exist (34 total)
-
-**Track 1 Files** (11):
-- track1_1_distinguishability_derivation.md
-- track1_4_quotient_structure.md
-- track1_5_geometric_structure.md
-- track1_6_em_relaxation.md
-- track1_7_vector_space.md
-- track1_8_layer2_to_3_decoherence.md
-- track1_9_inner_product.md
-- track1_10_hilbert_space.md
-- track1_11_tensor_products.md
-- track1_12_unitary_operators.md
-- track1_13_hermitian_operators.md
-
-**Track 2 Files** (6):
-- track2_1_probability_on_projectors.md
-- track2_2_frame_function_axioms.md
-- track2_3_gleason_theorem.md
-- track2_4_density_operator_structure.md
-- track2_5_entropy_definition.md
-- track2_6_7_maxent_born_rule.md
-
-**Track 3 Files** (13):
-- track3_1_symmetries_from_3FLL.md
-- track3_2_symmetry_preserves_distinguishability.md
-- track3_3_linearity_from_D_preservation.md
-- track3_4_reversibility_linearity_to_unitarity.md
-- track3_5_continuous_one_parameter_symmetries.md
-- track3_6_one_parameter_unitary_group_structure.md
-- track3_7_infinitesimal_generator.md
-- track3_8_schrodinger_equation.md
-- track3_9_stone_theorem_assessment.md
-- track3_10_generator_properties_from_3FLL.md
-- track3_11_lean_module_design.md
-- track3_12_lean_implementation.md
-- track3_13_multi_llm_review.md
-
-**Supporting Files** (4):
-- SPRINT_11_PLAN.md
-- SPRINT_11_TRACKING.md
-- SPRINT_11_LEAN_STATUS_CORRECTION.md
-- layer_2_to_3_boundary_analysis.md
+**Duration**: ~2 hours (Phase 2.1-2.5)
+**Axiom Reduction**: -2 axioms (59 active axioms)
+**Build Status**: ✅ Successful (6096 jobs)
+**Files Modified**: 2
+  - Foundation/UnitaryOperators.lean
+  - Dynamics/DynamicsFromSymmetry.lean
 
 ---
 
-## Questions to Answer
+## Next Steps
 
-### 1. Documentation vs Work
+**Options for Continuation**:
+1. **Complete Phase 2.6** (Measurement refactoring) - Highest impact (-7 to -10 axioms)
+2. **Skip to Track 3** (Documentation) - Close out Sprint 12 with current progress
+3. **Pivot to Sprint 11** (Per original Session 10.0 plan) - Defer Sprint 12
 
-For each track file:
-- **Is it a plan** (describing what needs to be done)?
-- **Is it completed work** (actual derivations, proofs, analysis)?
-- **Is it a mix** (some work done, gaps remaining)?
-
-### 2. Lean Formalization Status
-
-Which tracks have Lean modules?
-- Track 1: Likely maps to Foundation/ modules
-- Track 2: Likely maps to Measurement/NonCircularBornRule.lean
-- Track 3: Likely maps to Dynamics/DynamicsFromSymmetry.lean
-
-Are these modules:
-- ✅ Imported in LogicRealismTheory.lean?
-- ✅ Building successfully?
-- ✅ With complete proofs or sorry placeholders?
-
-### 3. Deliverable Counting
-
-Sprint 11 claims 67 deliverables (15+13+13+13+13). But what counts as a deliverable?
-- Is a markdown file documenting a concept a "deliverable"?
-- Or does a deliverable require a formal proof or computational validation?
-- Need clear definition to assess completion accurately.
-
-### 4. Scope Adjustment
-
-Given Sprint 11 difficulty (🔴 Extreme for Track 1):
-- Is 5 tracks realistic for this sprint?
-- Should we focus on completing 2-3 tracks well?
-- What's the MVP (Minimum Viable Product) for Sprint 11 completion?
+**Recommendation**: Option 1 (Complete Measurement refactoring) for transformative Sprint 12 completion
 
 ---
 
-## Approach for Assessment
+## Technical Notes
 
-### Step 1: Sample Review
+### Duplicate Removal Strategy
 
-Read 3-5 representative track files to understand pattern:
-- What's the typical structure?
-- How much is plan vs completed work?
-- What would "complete" look like for each track?
+1. **Identified canonical declarations** (proper axiom statements with full signatures)
+2. **Identified placeholder duplicates** (trivial `axiom name : True` stubs)
+3. **Removed placeholders**, updated documentation to reference canonical declarations
+4. **Verified build** to ensure no broken references
 
-### Step 2: Systematic Inventory
+### Files Modified
 
-For each track file:
-- Document status: Plan / Work-in-Progress / Complete
-- Note corresponding Lean module (if any)
-- Estimate actual completion %
+**Foundation/UnitaryOperators.lean**:
+- Removed `axiom stones_theorem : True` (line 114)
+- Updated header: "1 axiom" → "0 axioms"
+- Updated documentation to reference TimeEmergence.lean
+- Build: ✅ Successful
 
-### Step 3: Cross-Check with Lean
-
-For modules mentioned in Sprint 11:
-- Verify they exist and are imported
-- Check sorry count and proof status
-- Assess formal verification level
-
-### Step 4: Update Tracking
-
-Based on findings:
-- Update SPRINT_11_TRACKING.md with reality
-- Revise completion percentages
-- Identify critical path to completion
-
-### Step 5: Recommend Path Forward
-
-Options:
-- **Complete Sprint 11** as planned (if close to done)
-- **Scope Sprint 11** to achievable subset (2-3 tracks)
-- **Pivot to Sprint 13** (infrastructure) if Sprint 11 needs major work
-- **Paper prep** if foundational work is sufficient
+**Dynamics/DynamicsFromSymmetry.lean**:
+- Removed `axiom stones_theorem : True` (line 194-196)
+- Replaced with comment: "stones_theorem formally axiomatized in Derivations/TimeEmergence.lean"
+- Updated header: "6 axioms (2 Tier 2 + 4 stubs)" → "5 axioms (1 Tier 2 + 4 stubs)"
+- Build: ✅ Successful
 
 ---
 
-## Expected Outcomes
+**Session Status**: In Progress (Quick wins complete, major refactoring pending)
+**Sprint 12 Progress**: Track 1 ✅ Complete, Track 2 🟡 50% (quick wins done), Track 3-4 ⏸️ Pending
+**Next Session**: Continue Phase 2.6 (Measurement refactoring) OR closeout Sprint 12
 
-By end of Session 10.0, we should have:
-
-1. **Accurate Sprint 11 Status**
-   - Realistic completion % for each track
-   - Clear understanding of what's done vs pending
-   - Updated SPRINT_11_TRACKING.md
-
-2. **Path Forward Decision**
-   - Complete Sprint 11 (if nearly done)
-   - Adjust scope (if partially done)
-   - Defer Sprint 11 (if major work remains)
-
-3. **Session 10.0 Documentation**
-   - Assessment methodology
-   - Findings for each track
-   - Recommendations for next steps
-
----
-
-## Sprint 11 Background
-
-**Created**: 2025-11-03 (Session 7.0)
-**Objective**: Resolve fundamental circularity (Issue #6)
-**Duration**: 8-12 weeks planned
-**Success Criteria**: Minimum 2/5 tracks with forcing theorems, multi-LLM ≥ 0.80
-
-**5 Tracks**:
-1. Representation Theorem (Logic → Hilbert Space)
-2. Non-Circular Born Rule (Gleason approach)
-3. Dynamics from Symmetry (Stone's theorem)
-4. Operational Collapse (CPTP mechanism)
-5. T₂/T₁ Microscopic Justification
-
-**Context**: Sprint 11 is ambitious - addresses core theoretical gaps identified in peer critique (Issue #6). Track 1 alone is labeled "🔴 Extreme" difficulty.
-
----
-
-## Notes for Next Session
-
-**Read First**:
-- This file (Session_10.0.md)
-- SPRINT_11_TRACKING.md
-- Sample 3-5 Sprint 11 track files
-
-**Tools Needed**:
-- Grep to search Sprint 11 files
-- Read tool to examine track files
-- Lean module cross-check
-
-**Time Estimate**: 2-3 hours for thorough assessment
-
----
-
-**Session Status**: Stub created (Session 9.1)
-**Ready to Start**: When user begins Session 10.0
-**Priority**: High (need to understand Sprint 11 reality before next steps)

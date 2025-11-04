@@ -15,16 +15,16 @@ Time-reversal symmetry forces unitary group structure.
 
 **Axiom Count by Tier**:
 - Tier 1 (LRT Specific): 0 axioms
-- Tier 2 (Established Math Tools): 1 axiom (stones_theorem)
+- Tier 2 (Established Math Tools): 0 axioms (imports from Derivations/TimeEmergence.lean)
 - Tier 3 (Universal Physics): 0 axioms
-- **Total**: 1 axiom (Stone 1932, unbounded operator theory not in current Mathlib)
+- **Total**: 0 axioms
 
-**Strategy**: Use Mathlib for unitary properties. Axiomatize Stone's theorem (Tier 2) as mathematical
-infrastructure for unbounded self-adjoint operators.
+**Strategy**: Use Mathlib for unitary properties. Stone's theorem (Tier 2) is axiomatized in
+Derivations/TimeEmergence.lean as mathematical infrastructure for unbounded self-adjoint operators.
 
 ## Key Result
 
-- `stones_theorem`: Unitary groups ↔ self-adjoint generators (AXIOM Tier 2 - Stone 1932)
+- Stone's theorem: Unitary groups ↔ self-adjoint generators (see Derivations/TimeEmergence.lean)
 
 **Track 1.12**: Unitary operators from K_time
 
@@ -61,24 +61,23 @@ Basic unitary properties are PROVEN in Mathlib:
 3. **Inverse**: Unitary operators are invertible with U⁻¹ = U†
    - Follows from UU† = I
 
-## Stone's Theorem (1 sorry)
+## Stone's Theorem (Axiomatized in TimeEmergence.lean)
 
 The KEY theorem connecting continuous unitary groups to self-adjoint generators:
 
 **Statement**: Every strongly continuous one-parameter unitary group U(t)
 has a unique self-adjoint generator H such that U(t) = exp(-iHt).
 
-**Status**: NOT in Mathlib for unbounded operators on infinite-dimensional spaces
+**Status**: Axiomatized in Derivations/TimeEmergence.lean (Tier 2)
 **Reference**: Stone, M.H. (1932)
 **Classification**: K_math (standard functional analysis infrastructure)
-**Formalization effort**: Estimated 1000+ lines (requires spectral theory for unbounded operators)
 
 This theorem is fundamental to quantum mechanics (Hamiltonian generates time evolution)
 and is accepted as part of mathematical infrastructure (K_math).
 
 ## Track 1.12 Result
 
-**Sorry Count**: 1 (Stone's theorem)
+**Axiom Count**: 0 (Stone's theorem imported from TimeEmergence.lean)
 
 Derivation complete:
 K_time (physical principle)
@@ -87,31 +86,6 @@ K_time (physical principle)
   → Unitary operators U(t) = exp(-iHt) (Stone's theorem)
   → Hamiltonian H generates dynamics
 -/
-
-/-! ### Stone's Theorem -/
-
-/-- **Stone's Theorem**: Strongly continuous unitary groups ↔ self-adjoint generators
-
-    **TIER 2: ESTABLISHED MATH TOOLS**
-
-    **Established Result**: Every strongly continuous one-parameter unitary group U(t) on a Hilbert
-    space H has a unique unbounded self-adjoint operator A (generator) such that U(t) = exp(-itA).
-
-    **Original Reference**: Stone, M.H. (1932). "On one-parameter unitary groups in Hilbert space."
-    Annals of Mathematics, 33(3), 643-648.
-
-    **Why Axiomatized**: Full formalization requires unbounded operator theory (domains, closures,
-    spectral theory for unbounded operators) not yet in Mathlib. Standard mathematical infrastructure.
-
-    **Mathlib Status**: Bounded operator theory exists, unbounded self-adjoint operators underdeveloped
-
-    **Revisit**: Replace with full proof when Mathlib formalizes unbounded operator theory
-
-    **Status**: Fundamental functional analysis result (Stone 1932), not novel LRT claim
-
-    **Significance**: Guarantees K_time (reversible evolution) forces unitary group U(t) = exp(-itH)
-    with self-adjoint Hamiltonian H. -/
-axiom stones_theorem : True  -- TIER 2: ESTABLISHED MATH TOOLS
 
 /-! ### Track 1.12 Summary -/
 
@@ -128,7 +102,7 @@ axiom stones_theorem : True  -- TIER 2: ESTABLISHED MATH TOOLS
     - Continuous unitary groups: U(s+t) = U(s)U(t)
     - Self-adjoint generator via Stone's theorem: U(t) = exp(-iHt)
 
-    **Sorry Count**: 1 (Stone's theorem, K_math)
+    **Axiom Count**: 0 (Stone's theorem axiomatized in Derivations/TimeEmergence.lean)
     **Result**: Complete unitary evolution structure with Hamiltonian generator
 
     From K_time → Unitary operators U(t) with self-adjoint generator H ✓ -/
