@@ -8,7 +8,7 @@
 
 ## Quick Checklist
 
-Run through these 5 checks before claiming "complete":
+Run through these 6 checks before claiming "complete":
 
 ### ☐ 1. Build Verification
 ```bash
@@ -53,6 +53,27 @@ For each claimed deliverable:
 - **Lean structure**: Type signatures, axioms, imports (scaffolding)
 - **Lean proof**: Theorem with non-trivial proof body (actual verification)
 - **Check**: Which category does each deliverable actually fall into?
+
+### ☐ 6. Professional Tone Verification
+Review all documentation and commit messages for professionalism:
+- **No celebration language**: Avoid 🎉, "amazing", "breakthrough", "historic" before peer review
+- **No emojis**: Unless explicitly requested by user
+- **No superlatives**: "significant", "important", "notable" instead of "groundbreaking", "revolutionary"
+- **Measured claims**: "This appears to..." not "This proves..."
+- **Honest assessment**: Lead with limitations, not achievements
+- **Check**: Would a peer reviewer find this tone appropriate for academic work?
+
+**Red flags**:
+- ❌ Excessive enthusiasm (🎉 COMPLETE! AMAZING! BREAKTHROUGH!)
+- ❌ Premature celebration (claiming success before verification)
+- ❌ Marketing language ("revolutionary", "paradigm shift", "game-changing")
+- ❌ Overconfident claims ("definitively proves", "conclusively shows")
+
+**Acceptable tone**:
+- ✅ Technical and measured ("results suggest", "appears consistent with")
+- ✅ Explicit about limitations ("pending verification", "preliminary results")
+- ✅ Professional restraint (state facts, not excitement)
+- ✅ Academic standard (like arxiv preprints, not press releases)
 
 ---
 
@@ -153,6 +174,7 @@ After running sanity check, report:
   - Documentation: N files
   - Lean structure: N files
   - Lean proofs: N theorems with real proof bodies
+**Professional Tone**: ✅/❌ [Measured and appropriate] / [Excessive enthusiasm detected]
 
 **Honest Assessment**: [1-2 sentence summary of what was actually achieved]
 

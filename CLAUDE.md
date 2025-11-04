@@ -83,8 +83,9 @@ This file provides essential guidance for Claude Code working in this repository
 ### Sanity Check Protocol ⚠️ MANDATORY
 - **Run after EVERY track completion** before claiming success
 - See **`SANITY_CHECK_PROTOCOL.md`** for full checklist
-- 5 quick checks: Build, Proofs, Imports, Axiom count, Deliverable reality
+- 6 quick checks: Build, Proofs, Imports, Axiom count, Deliverable reality, Professional tone
 - Prevents overclaiming: Distinguishes docs vs structure vs proofs
+- Ensures professionalism: No celebration language, emojis, or superlatives before peer review
 - Stop words: "Verified", "Proven", "Complete", "Formalized" (without verification)
 - **When in doubt**: Run the check, report results to user BEFORE claiming completion
 
