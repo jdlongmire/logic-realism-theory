@@ -18,6 +18,8 @@ This file provides essential guidance for Claude Code working in this repository
 ### Lean Formalization Status (lean/ folder)
 - **`lean/AXIOM_CLASSIFICATION_SYSTEM.md`** - **⚠️ ACTIVE** 3-Tier axiom framework: Tier 1 (LRT Specific), Tier 2 (Established Math Tools), Tier 3 (Universal Physics)
 - **`lean/PROOF_REFACTOR_STRATEGY.md`** - **⚠️ ACTIVE** Revised tier-based strategy: Prove ~30-35 LRT theorems from 2 foundation axioms using ~16 math tools
+- **`lean/STANDARD_FILE_HEADER.md`** - **⚠️ ACTIVE** Required header format for all Lean files (exemplar: IIS.lean)
+- **`lean/TIER_LABELING_QUICK_START.md`** - Quick reference for tier classification and inline labels
 - **`lean/LRT_Comprehensive_Lean_Plan.md`** - Option C roadmap: 57 → 35-38 axioms (Sprints 13-15)
 - **`lean/Ongoing_Axiom_Count_Classification.md`** - Complete 58 axiom inventory, classifications, **⚠️ AXIOM COUNT FRAMING**
 - **`lean/LogicRealismTheory.lean`** - Root import file showing all modules
