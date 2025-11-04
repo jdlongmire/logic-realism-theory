@@ -104,6 +104,78 @@ This profile defines your core role as a hypercritical, rigorous theoretical phy
 
 ---
 
+## 📐 Lean Formalization Status (Critical Reference)
+
+**When working on Lean formalization or axiom questions, these are your primary references:**
+
+### 1. lean/LRT_Comprehensive_Lean_Plan.md
+**Purpose**: Complete roadmap for axiom reduction (Option C implementation)
+**Status**: Current plan (Sprints 13-15)
+**Contains**:
+- Axiom reduction journey: 57 → 35-38 declarations
+- Sprint-by-sprint breakdown (Sprints 13, 14, 15)
+- Target: 7-11 theory axioms (2-3 core + 5-8 additional)
+- Comparison to other QM reconstructions (Hardy, Chiribella, Dakic)
+- Formalization timeline and effort estimates
+- Success criteria and risk assessment
+
+**When to reference**:
+- Planning Lean work or sprint activities
+- Understanding axiom reduction strategy
+- Comparing LRT to other QM reconstruction programs
+- Estimating effort for formalization tasks
+
+### 2. lean/Ongoing_Axiom_Count_Classification.md
+**Purpose**: Complete inventory of all axiom declarations with classifications
+**Lines**: 15,216 (comprehensive)
+**Contains**:
+- Full 58 axiom table (file, name, classification, justification)
+- Breakdown by type: K_math (16), LRT_foundational (14), Measurement_dynamics (15), etc.
+- What's acceptable, what can be reduced, what should NOT be reduced
+- Comparison: LRT vs. QM axiomatization
+- Action items for axiom reduction
+
+**When to reference**:
+- Checking current axiom status
+- Classifying new axioms
+- Understanding which axioms to reduce
+- Documenting axiom justifications
+- Peer review preparation
+
+### 3. lean/LogicRealismTheory.lean
+**Purpose**: Root import file - defines all modules in the library
+**Status**: Updated with Layer 3 complete
+**Contains**:
+- All Foundation modules (Layers 1-3)
+- All Operators, Derivations, Measurement modules
+- Layer summaries
+- Current build status comment block (axioms, sorrys, lines)
+
+**When to reference**:
+- Understanding codebase structure
+- Adding new modules
+- Checking what's currently imported
+- Verifying build status
+
+### 4. lean/README.md
+**Purpose**: Project overview for the Lean formalization
+**When to reference**: Quick overview of the Lean project
+
+**Quick Status** (as of 2025-11-03):
+- Total files: 20 active (1 deprecated)
+- Total lines: 5,288
+- Sorry count: 4
+- Axiom count: 57 (current), target: 35-38 (7-11 theory + 16 infrastructure)
+- Build: ✓ All files compile successfully
+
+**CRITICAL NOTE**: When discussing axiom counts, always reference the Option C framing:
+- **NOT "57 axioms"** - this includes infrastructure
+- **USE "30-34 theory axioms (current), target 7-11"** - honest accounting
+- **Separate K_math (16)** - mathematical infrastructure, not LRT axioms
+- **See LRT_Comprehensive_Lean_Plan.md** for complete strategy
+
+---
+
 ## 🚀 Session Startup Protocol - Priority Order
 
 **When starting a new session, follow this exact sequence:**
@@ -153,12 +225,14 @@ Before starting any work:
 - [ ] Read AI-Collaboration-Profile.json (your operating mode)
 - [ ] Skim DEVELOPMENT_GUIDE.md (architecture reference)
 - [ ] Skim LEAN_BEST_PRACTICES.md (if Lean work expected)
+- [ ] **Skim lean/LRT_Comprehensive_Lean_Plan.md (if Lean/axiom work expected)**
+- [ ] **Skim lean/Ongoing_Axiom_Count_Classification.md (for axiom status)**
 - [ ] Read latest Session_X.Y.md file (complete context)
 - [ ] Check sprints/README.md for active sprints
 - [ ] Read active sprint tracking if applicable
 - [ ] Review specific next tasks from session log
 
-**Total startup time**: ~5-10 minutes of reading for full context
+**Total startup time**: ~5-15 minutes of reading for full context (depends on task type)
 
 ---
 
