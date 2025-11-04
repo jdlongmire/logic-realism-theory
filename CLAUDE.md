@@ -88,6 +88,125 @@ This file provides essential guidance for Claude Code working in this repository
 - Use generic terminology: "established framework", "permutation-based framework"
 - Zero dependencies on approach_2_reference in LogicRealismTheory/
 
+### Lean Formalization Verification Protocol ⚠️ CRITICAL
+
+**NEVER claim work is "formalized," "verified," or "proven in Lean" without running these checks:**
+
+#### Status Verification Checklist
+
+Before claiming ANY of these terms, you MUST verify:
+
+**❌ FORBIDDEN TERMS** (unless ALL checks pass):
+- "formalized in Lean"
+- "verified in Lean"
+- "proven in Lean"
+- "formally verified"
+- "Lean proof complete"
+- "derivation verified"
+
+**✅ SAFE TERMS** (for work in progress):
+- "structured in Lean"
+- "axiomatized in Lean"
+- "type-checked in Lean"
+- "builds successfully"
+- "formal structure defined"
+- "proof sketch documented"
+
+#### Mandatory Verification Steps
+
+**Before claiming "formalized/verified/proven":**
+
+1. **Check for sorry statements**:
+   ```bash
+   grep -r "sorry" lean/LogicRealismTheory/path/to/file.lean
+   ```
+   - If ANY `sorry` found → NOT formalized, it's a STUB
+   - Status: "Structured with proof obligations remaining"
+
+2. **Check for trivial True proofs**:
+   ```bash
+   grep -A2 "theorem.*True :=" lean/LogicRealismTheory/path/to/file.lean
+   ```
+   - If theorem proves `True` with `trivial` → NOT the real theorem
+   - Status: "Conceptual structure, formal proof needed"
+
+3. **Verify theorem statements match claims**:
+   - Does the theorem statement actually say what we claim?
+   - Example: `theorem unitarity_from_3FLL : True` does NOT prove unitarity
+   - Real theorem would be: `theorem unitarity_from_3FLL : ∀ U, U†U = I`
+
+4. **Count actual axioms vs theorems**:
+   ```bash
+   grep "^axiom " file.lean | wc -l
+   grep "^theorem" file.lean | wc -l
+   # Theorems with 'sorry' or proving 'True' count as axioms!
+   ```
+
+#### Honest Status Reporting
+
+**What "BUILD SUCCESS" actually means**:
+- ✅ Lean syntax is valid
+- ✅ Type checking passes
+- ✅ No compilation errors
+- ✅ Imports resolve correctly
+- ❌ **DOES NOT MEAN** proofs are complete
+- ❌ **DOES NOT MEAN** theorems are proven
+- ❌ **DOES NOT MEAN** formal verification
+
+**Correct phrasing examples**:
+
+❌ **WRONG**: "Track 3 complete - Schrödinger equation formalized and verified in Lean"
+✅ **RIGHT**: "Track 3 complete - Schrödinger equation derivation structured in Lean with axioms documented. Formal proofs: 0/3 complete (all use placeholders)."
+
+❌ **WRONG**: "Born rule proven from 3FLL in Lean"
+✅ **RIGHT**: "Born rule derivation chain documented. Lean structure: 4 axioms + 3 theorems with sorry placeholders. Informal arguments in markdown."
+
+❌ **WRONG**: "100% formalized, 0 sorries"
+✅ **RIGHT**: "Axiom structure complete, builds successfully. Formal proofs: pending (3 sorry statements)."
+
+#### Axiom Counting Rules
+
+**If a theorem uses `sorry` or proves `True` trivially**:
+- It MUST be counted as an effective axiom
+- Axiom count includes: `axiom` declarations + unproven `theorem` declarations
+- Be transparent: "X axioms declared, Y theorems with proof obligations"
+
+#### Session Documentation Rules
+
+**When documenting Lean work, you MUST**:
+1. Distinguish "structure" from "proof"
+2. Report sorry count explicitly
+3. Report trivial True theorem count explicitly
+4. Never say "verified" unless proofs are complete
+5. Use accurate language: "axiomatized," not "proven"
+
+**Session log template**:
+```markdown
+## Lean Status
+
+**File**: Module.lean (X lines)
+**Build Status**: ✅ Compiles (X jobs)
+**Structure**:
+- X axiom declarations
+- Y theorem declarations (Z with sorry, W with trivial True proofs)
+- Actual formal proofs complete: N/Y
+
+**Honest Assessment**:
+- Axiom structure documented ✅
+- Type signatures defined ✅
+- Formal verification: ⏸️ Pending (Y proof obligations)
+```
+
+#### Why This Matters
+
+**Credibility risk**: Claiming "formal verification" when only axioms + placeholders exist:
+- Undermines trust in all claims
+- Misrepresents state of formalization
+- Creates vulnerability in peer review
+- Conflates "builds" with "proves"
+
+**Philosophy**: Honest documentation of limitations is strength, not weakness. Better to say "structured with proof obligations" than claim false verification.
+
 ---
 
 ## 📋 Quick Reference
