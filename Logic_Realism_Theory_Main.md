@@ -1,4 +1,4 @@
-# Logic Realism Theory: Deriving Quantum Mechanics from Information-Theoretic Constraints
+# Logic Realism Theory: Towards A Full-Scope Information-Theoretic Model
 
 **James D. (JD) Longmire**
 
