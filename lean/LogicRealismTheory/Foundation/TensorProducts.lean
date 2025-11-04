@@ -10,7 +10,7 @@ Track 1.11: Tensor Products for Composite Systems
 -/
 
 import Mathlib.Analysis.InnerProductSpace.TensorProduct
-import LogicRealismTheory.Foundation.Track1_10_HilbertSpace
+import LogicRealismTheory.Foundation.HilbertSpace
 
 namespace LogicRealismTheory
 

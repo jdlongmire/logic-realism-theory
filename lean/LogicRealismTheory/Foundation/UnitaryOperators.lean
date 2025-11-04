@@ -11,7 +11,7 @@ Track 1.12: Unitary Operators from K_time
 
 import Mathlib.Analysis.InnerProductSpace.Adjoint
 import Mathlib.Analysis.InnerProductSpace.Basic
-import LogicRealismTheory.Foundation.Track1_10_HilbertSpace
+import LogicRealismTheory.Foundation.HilbertSpace
 
 namespace LogicRealismTheory
 

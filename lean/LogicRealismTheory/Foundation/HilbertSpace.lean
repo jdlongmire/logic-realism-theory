@@ -10,7 +10,7 @@ Track 1.10: Hilbert Space via Completeness
 -/
 
 import Mathlib.Analysis.InnerProductSpace.Completion
-import LogicRealismTheory.Foundation.Track1_9_InnerProduct
+import LogicRealismTheory.Foundation.InnerProduct
 
 namespace LogicRealismTheory
 
