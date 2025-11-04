@@ -17,7 +17,7 @@ involves K → K-ΔK reduction via observer/environment coupling (non-unitary M)
 - Tier 1 (LRT Specific): 0 axioms (imports from Foundation)
 - Tier 2 (Established Math Tools): 0 axioms
 - Tier 3 (Universal Physics): 0 axioms
-- **Total**: 0 axioms + 7 LRT theorems (mathematical consequences/LRT claims, all with sorry)
+- **Total**: 0 axioms + 7 theorems (1 proven with rfl, 6 with sorry)
 
 **Strategy**: Prove all claims from StateSpace structure and measurement mechanism. All 7 former
 axioms are mathematical properties or LRT claims that should be proven.

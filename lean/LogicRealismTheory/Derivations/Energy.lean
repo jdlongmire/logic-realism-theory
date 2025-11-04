@@ -874,11 +874,11 @@ def total_energy (states : List I) (S : EntropyFunctional) : Energy :=
 **Additional Axioms**: 2 (mathematical theorems pending Mathlib)
   - I_has_maximum_entropy (definition of "maximal" information space)
   - spohns_inequality (thermodynamic theorem)
-**Sorry Statements**: 4 (abstract proofs pending Mathlib measure theory)
+**Sorry Statements**: 3 (abstract proofs pending Mathlib measure theory)
 
 **Quality Status**:
 - Builds: ✅ (pending lake build)
-- Sorry count: 4 (abstract structures pending Mathlib)
+- Sorry count: 3 (abstract structures pending Mathlib)
 - Axiom count: 2 (physical) + 2 (math placeholders) ✅
 - Documentation: Complete ✅
 

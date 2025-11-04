@@ -17,7 +17,7 @@ Gleason's theorem and Maximum Entropy principle.
 - Tier 1 (LRT Specific): 0 axioms (imports from Foundation)
 - Tier 2 (Established Math Tools): 2 axioms (Gleason 1957, von Neumann entropy)
 - Tier 3 (Universal Physics): 0 axioms
-- **Total**: 2 axioms + 2 LRT theorems (with sorry placeholders) + 3 proven theorems in progress
+- **Total**: 2 axioms + 5 theorems (4 with sorry, 1 trivial True placeholder)
 
 **Strategy**: Use Gleason's theorem (frame functions → density operators) and von Neumann entropy
 as mathematical infrastructure. Derive frame functions from 3FLL, apply MaxEnt to force pure state

@@ -17,7 +17,7 @@ logical constraints via symmetry principles. Currently contains stubs and docume
 - Tier 1 (LRT Specific): 0 axioms (imports from Foundation)
 - Tier 2 (Established Math Tools): 2 axioms (Mazur-Ulam 1932, Stone 1932)
 - Tier 3 (Universal Physics): 0 axioms
-- **Total**: 2 axioms + 4 LRT stubs (need proper formalization)
+- **Total**: 6 axioms (2 Tier 2 + 4 axiom stubs for LRT claims, need proper formalization)
 
 **Strategy**: Use Mazur-Ulam theorem (isometries are linear) and Stone's theorem (unitary
 groups ↔ self-adjoint generators) as infrastructure. Derive unitarity and dynamics from 3FLL.

@@ -858,7 +858,7 @@ This module REPLACES the axiomatized `ConstraintViolations` function in:
 **Track 1.3** (Integration):
 - Update MeasurementGeometry.lean to use QubitKMapping
 - Replace ConstraintViolations axiom with K computation
-- Resolve 2 sorry statements in NonUnitaryEvolution.lean
+- Resolve 6 sorry statements in NonUnitaryEvolution.lean
 
 **Track 2.1** (Computational validation):
 - Create notebook `08_Qubit_K_Mapping_Validation.ipynb`

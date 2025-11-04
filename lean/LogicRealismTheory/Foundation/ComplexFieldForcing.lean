@@ -17,7 +17,7 @@ collapsing {ℝℙⁿ, ℂℙⁿ, ℍℙⁿ} to ℂℙⁿ as the unique physical
 - Tier 1 (LRT Specific): 0 axioms (imports from IIS.lean)
 - Tier 2 (Established Math Tools): 7 axioms (field properties)
 - Tier 3 (Universal Physics): 0 axioms
-- **Total**: 7 axioms (established field properties, not novel LRT claims) + 3 proven theorems
+- **Total**: 7 axioms (established field properties, not novel LRT claims) + 4 proven theorems (+ 1 trivial marker)
 
 **Strategy**: Use established properties of ℝ, ℂ, ℍ to prove forcing theorem. Three physical
 principles (K_interference, K_compositionality, K_time) constrain field selection. Prove ℂ is
