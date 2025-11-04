@@ -29,14 +29,47 @@ import Mathlib.Algebra.CharZero.Infinite
 open Classical
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- AXIOMS (2 total - absolute minimum)
+-- AXIOMS (2 total - TIER 1: LRT SPECIFIC)
 -- ═══════════════════════════════════════════════════════════════════════════
 
--- Axiom 1: Infinite Information Space exists
-axiom I : Type*
+/--
+Axiom 1: Infinite Information Space exists
 
--- Axiom 2: I is infinite (prevents trivial finite spaces)
-axiom I_infinite : Infinite I
+**TIER 1: LRT SPECIFIC**
+
+**Theory-Defining Assumption**: The existence of an infinite information space is the
+foundational postulate of Logic Realism Theory.
+
+**Justification**: LRT posits that physical reality (A) emerges from logical filtering (L)
+of an infinite information space (I). This axiom asserts I exists as a type.
+
+**Analogous to**: QM's postulate "Hilbert space exists" or ZFC's "Set exists"
+
+**Status**: Novel LRT foundational axiom
+
+**References**: Logic_Realism_Theory_Main.md Section 2.2 (Information Space I)
+-/
+axiom I : Type*  -- TIER 1: LRT SPECIFIC
+
+/--
+Axiom 2: I is infinite
+
+**TIER 1: LRT SPECIFIC**
+
+**Theory-Defining Assumption**: The information space I is infinite, not finite.
+
+**Justification**: Prevents trivial finite spaces. If I were finite, actualization would be
+trivial enumeration rather than filtering via logical constraints. The infinite nature of I
+is essential for quantum superposition (multiple possibilities) and continuous physical
+quantities to emerge.
+
+**Analogous to**: QM's postulate "Hilbert space is infinite-dimensional"
+
+**Status**: Novel LRT foundational axiom
+
+**References**: Logic_Realism_Theory_Main.md Section 2.2 (I Infinite)
+-/
+axiom I_infinite : Infinite I  -- TIER 1: LRT SPECIFIC
 
 -- ═══════════════════════════════════════════════════════════════════════════
 -- 3FLL (Definitions using Lean's built-in logic - NOT axioms)
