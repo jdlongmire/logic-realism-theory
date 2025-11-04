@@ -20,7 +20,7 @@
 /--
 [Axiom Name]
 
-**TIER 1: FOUNDATIONAL POSTULATE**
+**TIER 1: LRT SPECIFIC**
 
 **Theory-Defining Assumption**: This is a core ontological commitment of Logic Realism Theory.
 
@@ -32,7 +32,7 @@
 
 **References**: Logic_Realism_Theory_Main.md Section X.Y
 -/
-axiom [name] : [type]
+axiom [name] : [type]  -- TIER 1: LRT SPECIFIC
 ```
 
 **Current Count**: 2-3 axioms
@@ -55,7 +55,7 @@ axiom [name] : [type]
 /--
 [Theorem Name]
 
-**TIER 2: MATHEMATICAL INFRASTRUCTURE (K_math)**
+**TIER 2: ESTABLISHED MATH TOOLS**
 
 **Established Result**: This theorem has a published proof in the mathematics literature.
 
@@ -70,10 +70,12 @@ without adding physical insight to LRT. Standard practice in quantum foundations
 
 **Status**: Axiomatized established result (not novel LRT axiom)
 
+**Revisit**: As Mathlib matures, this may become available for import.
+
 **Analogous Approach**: Hardy (2001), Chiribella et al. (2011), Dakic et al. (2009) similarly
 use established mathematical theorems as building blocks without re-proving from ZFC.
 -/
-axiom [name] : [type]
+axiom [name] : [type]  -- TIER 2: ESTABLISHED MATH TOOLS
 ```
 
 **Examples**:
@@ -105,7 +107,7 @@ axiom [name] : [type]
 /--
 [Postulate Name]
 
-**TIER 3: PHYSICAL POSTULATE (Domain-Standard)**
+**TIER 3: UNIVERSAL PHYSICS ASSUMPTIONS**
 
 **Fundamental Physical Principle**: This is a domain-standard assumption used across physics.
 
@@ -117,7 +119,7 @@ axiom [name] : [type]
 
 **References**: [Standard physics textbooks]
 -/
-axiom [name] : [type]
+axiom [name] : [type]  -- TIER 3: UNIVERSAL PHYSICS ASSUMPTIONS
 ```
 
 **Examples**:
@@ -367,3 +369,85 @@ In Lean formalization:
 ---
 
 **Next Step**: Update all current axiom declarations with tier classification and references.
+
+---
+
+## Implementation Rule: Inline Tier Labels
+
+**Every `axiom` declaration in Lean MUST include tier label as inline comment:**
+
+```lean
+axiom I : Type*                              -- TIER 1: LRT SPECIFIC
+axiom I_infinite : Infinite I                -- TIER 1: LRT SPECIFIC
+
+axiom stones_theorem : ...                   -- TIER 2: ESTABLISHED MATH TOOLS
+axiom gleason_theorem : ...                  -- TIER 2: ESTABLISHED MATH TOOLS
+
+axiom energy_additivity : ...                -- TIER 3: UNIVERSAL PHYSICS ASSUMPTIONS
+```
+
+**Purpose**: Instant visual identification of axiom tier when reading code.
+
+**Rule of Thumb**:
+- See "TIER 1" → Novel LRT claim, should be minimal (target: 2-3 total)
+- See "TIER 2" → Established math, keep as axiom, revisit as Mathlib matures
+- See "TIER 3" → Universal physics, keep as axiom
+- See no tier label → **Needs classification** or should be `theorem` instead!
+
+**Revisit Policy for Tier 2**:
+- Periodically check Mathlib updates (annually or at major Lean releases)
+- If Tier 2 axiom becomes available in Mathlib, replace with import
+- Document substitution: "Previously axiomatized, now imported from Mathlib.X.Y.Z"
+- This keeps formalization current as ecosystem matures
+
+**Examples from codebase**:
+
+```lean
+-- CORRECT: Tier 1 (only 2 foundational axioms)
+axiom I : Type*                              -- TIER 1: LRT SPECIFIC
+axiom I_infinite : Infinite I                -- TIER 1: LRT SPECIFIC
+
+-- CORRECT: Tier 2 (established results, properly labeled)
+axiom stones_theorem {ℋ : Type*} ...         -- TIER 2: ESTABLISHED MATH TOOLS
+axiom hermitian_real_spectrum : ...          -- TIER 2: ESTABLISHED MATH TOOLS
+
+-- CORRECT: Tier 3 (universal physics)
+axiom energy_additivity_for_independent_systems : ...  -- TIER 3: UNIVERSAL PHYSICS ASSUMPTIONS
+
+-- WRONG: Missing tier label
+axiom some_new_claim : ...
+-- ^ Needs classification! Is this LRT-specific (should prove) or established math (add reference)?
+
+-- WRONG: Should be theorem, not axiom
+axiom statespace_monotone : ...
+-- ^ This was provable from definitions! See ConstraintThreshold.lean for correct version.
+```
+
+---
+
+## Quick Reference Card
+
+**When adding new axiom declaration:**
+
+1. ✅ **Check**: Can this be proven from existing axioms?
+   - Yes → Use `theorem`, not `axiom`
+   - No → Continue to step 2
+
+2. ✅ **Classify**: Which tier?
+   - Novel LRT claim → TIER 1 (but LRT should only have 2-3!)
+   - Established math result (Stone's, Gleason's, etc.) → TIER 2
+   - Universal physics principle → TIER 3
+
+3. ✅ **Document**: Add full header with references (see templates above)
+
+4. ✅ **Label**: Add inline tier comment: `-- TIER X: [LABEL]`
+
+5. ✅ **Verify**: Run build, update axiom count tracking
+
+**Golden Rule**: LRT should have **only 2-3 Tier 1 axioms**. Everything else is either Tier 2/3 (kept as infrastructure) or **proven as theorem**.
+
+---
+
+**Implementation Status**: Active protocol for all new axiom declarations
+**Last Updated**: 2025-11-04
+**See Also**: PROOF_REFACTOR_STRATEGY.md for proof execution plan
