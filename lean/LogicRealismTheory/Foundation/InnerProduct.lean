@@ -1,12 +1,34 @@
 /-
-Copyright (c) 2025 James D. (JD) Longmire. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: James D. (JD) Longmire
+Copyright © 2025 James D. (JD) Longmire
+License: Apache License 2.0
+Citation: Longmire, J.D. (2025). Logic Realism Theory: A Research Program for Ontological Logic in Informational Reality. Logic Realism Theory Repository.
 
-Track 1.9: Inner Product from Parallelogram Law
+**Axiom Approach**: See lean/AXIOMS.md for justification of all axioms in this formalization.
 
-**Approach**: Hybrid - Use Mathlib where available, minimal sorrys for gaps
-**Sorry Count**: 1 (Jordan-von Neumann theorem - not in Mathlib)
+# Foundation: Inner Product from Parallelogram Law (Layer 2→3 Transition)
+
+This module derives inner product structure from metric D̃ via parallelogram law. Metric induces
+norm, ℂ-linearity forces parallelogram law, Jordan-von Neumann theorem gives inner product.
+
+**Core Concept**: Inner product ⟨·,·⟩ emerges from metric structure via parallelogram law.
+Not postulated - derived from Layer 2 geometry.
+
+**Axiom Count by Tier**:
+- Tier 1 (LRT Specific): 0 axioms (imports from earlier layers)
+- Tier 2 (Established Math Tools): 1 axiom (jordan_von_neumann theorem)
+- Tier 3 (Universal Physics): 0 axioms
+- **Total**: 1 axiom (von Neumann & Jordan 1935, not in current Mathlib)
+
+**Strategy**: Use Mathlib inner product properties where available. Axiomatize Jordan-von Neumann
+theorem (parallelogram law → inner product exists) as Tier 2 infrastructure. Future: replace with
+full proof when Mathlib formalizes this theorem (~500 lines estimated).
+
+## Key Result
+
+- `jordan_von_neumann`: Parallelogram law → inner product exists (AXIOM Tier 2 - von Neumann & Jordan 1935)
+
+**Track 1.9**: Inner product emergence
+
 -/
 
 import Mathlib.Analysis.InnerProductSpace.Basic
@@ -61,41 +83,36 @@ to accepting ZFC set theory axioms.
 
     **AXIOM CLASSIFICATION**: K_math (Mathematical Infrastructure)
 
-    **STATUS**: Accepted as established mathematical result (converted from sorry)
+    **TIER 2: ESTABLISHED MATH TOOLS**
 
-    **REFERENCE**: von Neumann, J., & Jordan, P. (1935). "On inner products in linear, metric spaces."
+    **Established Result**: Jordan-von Neumann theorem (1935) - Parallelogram law → inner product exists
+
+    **Original Reference**: von Neumann, J., & Jordan, P. (1935). "On inner products in linear, metric spaces."
     Annals of Mathematics, 36(3), 719-723. DOI: 10.2307/1968653
 
-    **JUSTIFICATION**:
-    This is a fundamental theorem in functional analysis establishing that any normed space
-    satisfying the parallelogram law admits an inner product structure. The theorem is:
-    - 89 years old (established 1935)
-    - Standard result in functional analysis textbooks
-    - Not yet in Mathlib (would require 500+ lines to formalize from scratch)
-    - Pure mathematics (no LRT-specific content)
+    **Mathematical Statement**: Any normed space satisfying the parallelogram law admits an inner
+    product structure. The theorem is 89 years old, standard in functional analysis textbooks.
 
-    **PROOF SKETCH** (for reference):
+    **Proof Sketch**:
     1. Define candidate inner product via polarization identity:
        ⟨x,y⟩ = (‖x+y‖² - ‖x-y‖²)/4 + i(‖x+iy‖² - ‖x-iy‖²)/4
     2. Verify sesquilinearity using parallelogram law
     3. Verify positivity and definiteness from norm properties
     4. Show induced norm matches original: ‖x‖² = ⟨x,x⟩
 
-    **WHY AXIOM**:
-    - Formalizing from scratch requires extensive development of polarization identity theory,
-      complex sesquilinear form properties, and norm-inner product correspondence
-    - Time investment (~40-60 hours) not justified for established result
-    - Better to use as K_math infrastructure and move forward
+    **Why Axiomatized**: Full formalization requires 500+ lines developing polarization identity
+    theory, complex sesquilinear form properties, norm-inner product correspondence. Standard practice
+    in quantum foundations to use established functional analysis results as infrastructure.
 
-    **ANALOGOUS TO**: Accepting Stone's theorem, spectral theorem, Mazur-Ulam in LRT
+    **Mathlib Status**: Not yet formalized (complex infrastructure needed)
 
-    **PEER REVIEW STANCE**: Transparent about accepting this as mathematical infrastructure.
-    No quantum foundations program derives functional analysis from first principles.
+    **Revisit**: Replace with Mathlib theorem when available (~40-60 hour formalization effort)
 
-    The theorem guarantees that Layer 2's metric-induced norm forces
-    inner product structure, completing the Track 1.9 derivation. -/
+    **Status**: Fundamental functional analysis result (von Neumann & Jordan 1935), not novel LRT claim
 
-axiom jordan_von_neumann
+    **Significance**: Guarantees Layer 2's metric-induced norm forces inner product structure. -/
+
+axiom jordan_von_neumann  -- TIER 2: ESTABLISHED MATH TOOLS
     {V : Type*} [NormedAddCommGroup V] [NormedSpace ℂ V]
     (h_parallelogram : ∀ x y : V, ‖x + y‖ ^ 2 + ‖x - y‖ ^ 2 = 2 * (‖x‖ ^ 2 + ‖y‖ ^ 2)) :
     ∃ (inner : V → V → ℂ),

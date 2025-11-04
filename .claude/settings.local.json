@@ -5,7 +5,10 @@
       "Bash(git commit:*)",
       "Bash(lake build:*)",
       "Bash(PROOF_REFACTOR_STRATEGY_REVISED.md)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(for file in InnerProduct.lean HilbertSpace.lean TensorProducts.lean UnitaryOperators.lean HermitianOperators.lean)",
+      "Bash(do echo \"=== $file ===\")",
+      "Bash(done)"
     ],
     "deny": [],
     "ask": []

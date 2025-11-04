@@ -1,9 +1,38 @@
 /-
-Copyright (c) 2025 James D. (JD) Longmire. All rights reserved.
-Released under Apache 2.0 license.
-Authors: James D. (JD) Longmire
+Copyright © 2025 James D. (JD) Longmire
+License: Apache License 2.0
+Citation: Longmire, J.D. (2025). Logic Realism Theory: A Research Program for Ontological Logic in Informational Reality. Logic Realism Theory Repository.
 
 **Axiom Approach**: See lean/AXIOMS.md for justification of all axioms in this formalization.
+
+# Foundation: Qubit K-Mapping (Quantum States → Constraint Thresholds)
+
+This module defines the K-mapping from continuous quantum states (qubits) to discrete constraint
+threshold values K. Resolves the gap between discrete K(N)=N-2 and continuous K-values for qubits.
+
+**Core Concept**: K(|ψ⟩) = S(ρ)/ln(2) where S is von Neumann entropy. Ground states have K≈0.1,
+equal superposition has K=1.0 (proven). This connects information-theoretic entropy to LRT's
+constraint threshold framework.
+
+**Axiom Count by Tier**:
+- Tier 1 (LRT Specific): 1 axiom (K_ground_justified - phenomenological ground state assumption)
+- Tier 2 (Established Math Tools): 1 axiom (binary_entropy_bound - Shannon 1948)
+- Tier 3 (Universal Physics): 0 axioms
+- **Total**: 2 axioms + 1 proven theorem (K_superposition_justified)
+
+**Strategy**: Define three candidate K-mappings (entropy-based, purity-based, distinguishability-based).
+Prove K_entropy(|+⟩)=1 exactly. Axiomatize K_ground≈0.1 as phenomenological (TODO: derive from
+Lindblad environment model). Use Shannon's entropy bound (Tier 2) as mathematical infrastructure.
+
+## Key Results
+
+- `K_entropy_superposition`: K_entropy(|+⟩) = 1 (PROVEN - equal superposition has maximal K)
+- `K_superposition_justified`: K_superposition = 1.0 is exact, not arbitrary (PROVEN)
+- `K_ground_justified`: Ground state K ≈ 0.1 exists (AXIOM Tier 1 - phenomenological)
+- `binary_entropy_bound`: Shannon's binary entropy bound (AXIOM Tier 2 - Shannon 1948)
+
+**Sprint 11, Track 1.2**: Resolves Gemini's #1 critique (K-value arbitrariness)
+
 -/
 
 import Mathlib.Data.Complex.Basic
@@ -11,8 +40,12 @@ import Mathlib.Data.Real.Basic
 import Mathlib.Analysis.SpecialFunctions.Log.Basic
 import Mathlib.Analysis.SpecialFunctions.Log.NegMulLog
 
+-- ═══════════════════════════════════════════════════════════════════════════
+-- AXIOMS (2 total: 1 Tier 1 + 1 Tier 2)
+-- ═══════════════════════════════════════════════════════════════════════════
+
 /-!
-# Binary Entropy Bound (Axiomatized)
+# Binary Entropy Bound (Axiomatized - Tier 2)
 
 The following axiom captures Shannon's fundamental result that binary entropy
 is maximized at the uniform distribution.
@@ -21,10 +54,12 @@ is maximized at the uniform distribution.
 /--
 **Binary Shannon Entropy Bound**
 
-For probabilities p, q ∈ (0,1) with p + q = 1, the binary Shannon entropy
+**TIER 2: ESTABLISHED MATH TOOLS**
+
+**Established Result**: For probabilities p, q ∈ (0,1) with p + q = 1, the binary Shannon entropy
 H(p) = -(p·log p + q·log q) is bounded by log(2), with equality when p = q = 1/2.
 
-**Mathematical Statement**: H(p, 1-p) ≤ log 2 for all p ∈ (0,1)
+**Original Reference**: Shannon, C.E. (1948). "A Mathematical Theory of Communication"
 
 **Proof Sketch** (requires calculus):
 1. Define f(p) = -p·log(p) - (1-p)·log(1-p)
@@ -34,16 +69,18 @@ H(p) = -(p·log p + q·log q) is bounded by log(2), with equality when p = q = 1
 5. Therefore f achieves maximum at p = 1/2
 6. f(1/2) = -(1/2)·log(1/2) - (1/2)·log(1/2) = log(2)
 
-**Reference**: Shannon, C.E. (1948). "A Mathematical Theory of Communication"
+**Why Axiomatized**: Full proof requires calculus lemmas (derivatives, concavity) not readily
+accessible in current Mathlib for this application. Standard result in information theory.
 
-**Status**: This is a well-established theorem in information theory. We axiomatize it
-here because proving it from first principles requires calculus lemmas (derivatives,
-concavity) that are not readily accessible in the current Mathlib for this specific
-application. Future work may replace this with a full formal proof.
+**Mathlib Status**: Partial (Real.log exists, but specific entropy bound not formalized)
+
+**Revisit**: As Mathlib analysis matures, could prove from calculus foundations
+
+**Status**: Fundamental information theory result (Shannon 1948), not novel LRT claim
 -/
 axiom binary_entropy_bound (p q : ℝ) (h_norm : p + q = 1)
     (hp_pos : 0 < p) (hq_pos : 0 < q) (hp_le : p ≤ 1) (hq_le : q ≤ 1) :
-  -(p * Real.log p + q * Real.log q) ≤ Real.log 2
+  -(p * Real.log p + q * Real.log q) ≤ Real.log 2  -- TIER 2: ESTABLISHED MATH TOOLS
 
 /-!
 # Qubit K-Mapping: From Quantum States to Constraint Thresholds
@@ -720,13 +757,25 @@ For ε = 0.15: S ≈ 0.1·ln(2)
 
 **Therefore**: K_ground ≈ 0.1 ✓
 
-**Status**: Phenomenological justification, not yet fully derived
-**TODO**: Connect to microscopic environment model (Lindblad equation)
+**TIER 1: LRT SPECIFIC**
+
+**Theory-Defining Assumption**: Ground states in physical systems have non-zero but small
+constraint threshold K ≈ 0.1 due to environmental decoherence.
+
+**Justification**: Pure ground state |0⟩ would have K=0 (zero entropy), but realistic ground
+states have slight mixing from environment interactions, giving K≈0.1. This is phenomenological;
+future work will derive from Lindblad master equation.
+
+**Status**: LRT-specific phenomenological axiom (not arbitrary choice, but not yet derived)
+
+**TODO**: Replace with theorem proven from Lindblad environment model
+
+**References**: Logic_Realism_Theory_Main.md Section 4.4 (K-threshold framework)
 -/
 axiom K_ground_justified :
     ∃ ψ_ground : QubitState,
       (0.08 ≤ K_entropy ψ_ground ∧ K_entropy ψ_ground ≤ 0.12) ∧
-      (prob_0 ψ_ground ≥ 0.9)  -- Mostly in ground state
+      (prob_0 ψ_ground ≥ 0.9)  -- TIER 1: LRT SPECIFIC (phenomenological ground state)
 
 /--
 K_superposition = 1.0 is EXACT for equal superposition.
