@@ -3,31 +3,34 @@ Copyright © 2025 James D. (JD) Longmire
 License: Apache License 2.0
 Citation: Longmire, J.D. (2025). Logic Realism Theory: A Research Program for Ontological Logic in Informational Reality. Logic Realism Theory Repository.
 
-# Derivation: Time Emergence from Identity Constraint
+**Axiom Approach**: See lean/AXIOMS.md for justification of all axioms in this formalization.
 
-This file derives the emergence of time and unitary evolution from the Identity constraint.
+# Derivations: Time Emergence from Identity Constraint
 
-**Core Result**: U(t) = e^(-iHt/ℏ)
+This file derives the emergence of time and unitary evolution from the Identity constraint (Π_id).
+The key result is U(t) = e^(-iHt/ℏ) with time t as an emergent ordering parameter.
 
-**Derivation Path**:
-1. Identity constraint (Π_id) → persistent entities
-2. Persistent entities → continuous trajectories in Hilbert space
-3. Continuous trajectories → one-parameter unitary group
-4. Stone's theorem → generator H (Hamiltonian)
-5. U(t) = e^(-iHt/ℏ) → Schrödinger equation
-6. Time t emerges as ordering parameter
+**Core Concept**: Identity preservation (Π_id) → persistent entities → continuous trajectories →
+one-parameter unitary group → Stone's theorem → Hamiltonian generator H → time emerges as parameter t.
 
-**Foundational Paper Reference**: Section 3.4, lines 190-204
+**Axiom Count by Tier**:
+- Tier 1 (LRT Specific): 0 axioms (imports from Foundation)
+- Tier 2 (Established Math Tools): 5 axioms (trajectory construction + Stone's theorem)
+- Tier 3 (Universal Physics): 0 axioms
+- **Total**: 5 axioms + 1 LRT theorem (with sorry placeholder)
 
-**Axiom Count**: 3 (Stone's theorem, Jaynes MaxEnt, Spohn's inequality)
-- All axioms are established mathematical/physical results
-- Foundation axioms: 2 (I exists, I infinite) from Foundation/IIS.lean
+**Strategy**: Use functional analysis infrastructure (trajectory construction, Stone's theorem)
+to derive time evolution from Identity constraint. Convert logical consequences to theorems.
 
-**AXIOM INVENTORY**: For complete axiom documentation, see: lean/AXIOMS.md
-This module uses 3 axioms:
-- Stone's theorem (unitary groups ↔ self-adjoint generators)
-- Jaynes Maximum Entropy Principle
-- Spohn's inequality (entropy change bounds)
+## Key Results
+
+- Time emergence from Identity constraint (theorem - LRT claim)
+- Unitary evolution U(t) = e^(-iHt/ℏ) (derived from Stone's theorem)
+- Schrödinger equation emergence (placeholder)
+- Time ordering properties (proven)
+
+**Reference**: Logic_Realism_Theory_Main.md Section 3.4 (Time Emergence)
+
 -/
 
 import LogicRealismTheory.Foundation.IIS
@@ -177,52 +180,42 @@ structure EvolutionOperator where
   continuous : ∀ (t : ℝ), ∃ (cont : Prop), cont
 
 /--
-**Axiom**: Every identity-preserving trajectory induces an evolution operator.
+Every identity-preserving trajectory induces an evolution operator.
 
-**Physical Significance**:
-The identity constraint (Π_id) → trajectories → evolution operators.
-This is the emergence of dynamics from logical constraints.
+**TIER 2: ESTABLISHED MATH TOOLS**
 
-**Mathematical Content**:
-Given a trajectory γ: ℝ → I, there exists a one-parameter family of operators
-U(t): I → I such that:
-1. U(0) = id (identity at zero)
-2. U(t₁ + t₂) = U(t₁) ∘ U(t₂) (group property)
-3. U(t) is continuous in t
+**Established Result**: Continuous trajectories in Hilbert space induce strongly continuous
+one-parameter groups of unitary operators via standard functional analysis construction.
 
-**Justification**:
-This construction requires:
-- Hilbert space structure on the state space
-- Continuous one-parameter unitary groups (Stone's theorem framework)
-- Proper treatment of topology and functional analysis
+**Original References**:
+- Reed & Simon (1975). "Methods of Modern Mathematical Physics, Vol. I", Ch. VIII
+- Kadison & Ringrose (1983). "Fundamentals of the Theory of Operator Algebras", Vol. I
+- Hall (2013). "Quantum Theory for Mathematicians", Ch. 9-10
 
-In full Hilbert space theory, this would be proven via:
-- Embedding I into a Hilbert space H
-- Showing trajectories induce continuous curves in H
-- Applying Stone's theorem to get evolution operators
-- Proof length: ~50-100 lines with full Mathlib infrastructure
+**Why Axiomatized**: Full formalization requires Hilbert space embedding, topology, and
+continuous group construction not yet fully integrated with Mathlib. Standard functional
+analysis infrastructure.
 
-**Status**: Established mathematical construction (functional analysis)
-**References**:
-- Reed & Simon, "Methods of Modern Mathematical Physics, Vol. I", Ch. VIII
-- Kadison & Ringrose, "Fundamentals of the Theory of Operator Algebras", Vol. I
-- Hall, "Quantum Theory for Mathematicians", Ch. 9-10
+**Mathlib Status**: Partial (basic topology exists, full trajectory→operator construction pending)
 
-**Note**: This is NOT a physical assumption - it's a mathematical construction
-that would be proven in full Hilbert space formalism. Axiomatized here to
-maintain building state while avoiding Lean 4 type class complexity.
+**Revisit**: Replace with Mathlib proof when unbounded operator theory complete
+
+**Status**: Textbook functional analysis (Reed & Simon 1975), not novel LRT claim
+
+**Significance**: Provides mathematical infrastructure for deriving time evolution from
+identity-preserving trajectories.
 -/
-axiom trajectory_to_evolution (γ : IdentityPreservingTrajectory) : EvolutionOperator
+axiom trajectory_to_evolution (γ : IdentityPreservingTrajectory) : EvolutionOperator  -- TIER 2: ESTABLISHED MATH TOOLS
 
 -- Properties of the trajectory-to-evolution construction (follow from axiom)
-axiom trajectory_to_evolution_identity_at_zero (γ : IdentityPreservingTrajectory) :
+axiom trajectory_to_evolution_identity_at_zero (γ : IdentityPreservingTrajectory) :  -- TIER 2: ESTABLISHED MATH TOOLS
   (trajectory_to_evolution γ).U 0 = id
 
-axiom trajectory_to_evolution_group_property (γ : IdentityPreservingTrajectory) :
+axiom trajectory_to_evolution_group_property (γ : IdentityPreservingTrajectory) :  -- TIER 2: ESTABLISHED MATH TOOLS
   ∀ (t₁ t₂ : ℝ), (trajectory_to_evolution γ).U (t₁ + t₂) =
     (trajectory_to_evolution γ).U t₁ ∘ (trajectory_to_evolution γ).U t₂
 
-axiom trajectory_to_evolution_continuous (γ : IdentityPreservingTrajectory) :
+axiom trajectory_to_evolution_continuous (γ : IdentityPreservingTrajectory) :  -- TIER 2: ESTABLISHED MATH TOOLS
   ∀ (t : ℝ), ∃ (cont : Prop), cont
 
 -- ═══════════════════════════════════════════════════════════════════════════
@@ -251,43 +244,44 @@ structure Generator where
   self_adjoint : ∃ (sa : Prop), sa
 
 /--
-**Stone's Theorem** (Stone 1932): One-parameter unitary groups ↔ self-adjoint generators.
+Stone's Theorem: One-parameter unitary groups ↔ self-adjoint generators.
 
-**Statement**: Every strongly continuous one-parameter unitary group U(t) on a
+**TIER 2: ESTABLISHED MATH TOOLS**
+
+**Established Result**: Every strongly continuous one-parameter unitary group U(t) on a
 Hilbert space has a unique (possibly unbounded) self-adjoint generator H such that
 U(t) = e^(-iHt/ℏ).
 
-**Physical Significance**:
-- Identity constraint → continuous evolution
-- Continuous evolution → unitary group
-- Unitary group → Hamiltonian generator (by Stone's theorem)
-- Therefore: Identity → Hamiltonian
-
-**Status**: Established mathematical result (proven theorem)
-**Citation**: Stone, M.H. (1932). "On one-parameter unitary groups in Hilbert space."
+**Original Reference**: Stone, M.H. (1932). "On one-parameter unitary groups in Hilbert space."
 Annals of Mathematics, 33(3), 643-648.
-**Proof**: Pending Mathlib integration (requires unbounded operator theory)
-**Note**: This is NOT a physical axiom - it's a proven mathematical theorem
 
-**References**:
-- Reed & Simon, "Methods of Modern Mathematical Physics, Vol. I", Theorem VIII.8
-- Mathlib integration: Awaiting Analysis.NormedSpace.UnboundedOperator
+**Why Axiomatized**: Full formalization requires unbounded operator theory (domains, closures,
+spectral theory for unbounded operators) not yet in Mathlib. Standard mathematical infrastructure.
+
+**Mathlib Status**: Bounded operator theory exists, unbounded self-adjoint operators underdeveloped
+
+**Revisit**: Replace with full proof when Mathlib formalizes unbounded operator theory
+
+**Status**: Fundamental functional analysis result (Stone 1932), not novel LRT claim
+
+**Significance**: Guarantees Identity constraint (continuous evolution) forces unitary group U(t)
+with self-adjoint Hamiltonian H generating time evolution.
 -/
-axiom stones_theorem :
+axiom stones_theorem :  -- TIER 2: ESTABLISHED MATH TOOLS
   ∀ (U : EvolutionOperator),
   ∃ (H : Generator),
   ∃ (exponential_form : Prop), exponential_form
   -- Full statement: U.U t = exp(-i * H.H * t / ℏ)
   -- Axiomatized as established mathematical result (Stone 1932)
 
--- Note: This file has 5 axioms (all for established mathematical results):
--- 1. trajectory_to_evolution: Trajectories induce evolution operators
+-- Note: This file has 5 axioms (all TIER 2: ESTABLISHED MATH TOOLS):
+-- 1. trajectory_to_evolution: Trajectories induce evolution operators (Reed & Simon 1975)
 -- 2. trajectory_to_evolution_identity_at_zero: U(0) = id property
 -- 3. trajectory_to_evolution_group_property: U(t₁+t₂) = U(t₁)∘U(t₂) property
 -- 4. trajectory_to_evolution_continuous: Continuity property
 -- 5. stones_theorem: Stone's theorem (1932) - one-parameter groups ↔ generators
--- 6. time_emergence_from_identity: Logical consequence of (1) + (5)
--- Total: 6 mathematical axioms (would be proven with full Hilbert space formalism)
+-- Plus 1 LRT theorem with sorry placeholder:
+-- - time_emergence_from_identity: Logical consequence of (1) + (5) - TO BE PROVEN
 -- Physical axioms: 2 (I exists, I infinite) - defined in Foundation/IIS.lean
 
 -- ═══════════════════════════════════════════════════════════════════════════
@@ -295,13 +289,16 @@ axiom stones_theorem :
 -- ═══════════════════════════════════════════════════════════════════════════
 
 /--
-**Axiom**: Time emergence from identity-preserving trajectories.
+Time emergence from identity-preserving trajectories.
+
+**LRT Theorem**: This is a logical consequence that should be proven from trajectory_to_evolution
++ stones_theorem axioms.
 
 **Derivation Summary**:
 1. Identity constraint → trajectories γ(t)
-2. Trajectories → evolution operators U(t)
+2. Trajectories → evolution operators U(t) (via trajectory_to_evolution)
 3. U(t) forms one-parameter group
-4. Stone's theorem → U(t) = e^(-iHt/ℏ)
+4. Stone's theorem → U(t) = e^(-iHt/ℏ) with generator H
 5. Parameter t is what we call "time"
 
 **Physical Significance**:
@@ -310,40 +307,22 @@ axiom stones_theorem :
 - Time evolution is consequence of identity preservation
 - ℏ emerges as natural unit relating generator to parameter
 
-**Philosophical Significance**:
-Time is derived, not assumed. No "time" exists in I (information space).
-Time emerges from the logical necessity of identity preservation.
-
-**Physical Content**:
-Given any identity-preserving trajectory γ, there exists:
-1. An evolution operator U (from trajectory_to_evolution axiom)
-2. A generator H (from Stone's theorem)
-3. A time ordering that matches the real number ordering
-
-**Justification**:
-This encapsulates the full derivation chain:
-- trajectory_to_evolution (axiom) constructs U from γ
-- stones_theorem (axiom) provides H for any U
-- Time ordering is defined as the parameter ordering
-
-In full formalism, this would be proven by:
-1. Apply trajectory_to_evolution to get U
+**Proof Strategy**:
+1. Apply trajectory_to_evolution to γ to get U
 2. Apply stones_theorem to U to get H
 3. Define time_ordering := (·<·) on ℝ
 4. Prove the equivalence (trivial by definition)
 
-Proof length: ~5-10 lines once universe polymorphism is properly handled
-
-**Status**: Logical consequence of trajectory_to_evolution + stones_theorem
-**Note**: Axiomatized to avoid Lean 4 universe level metavariable issues
+Expected proof length: ~5-10 lines once universe polymorphism properly handled
 -/
-axiom time_emergence_from_identity :
+theorem time_emergence_from_identity :
   ∀ (γ : IdentityPreservingTrajectory),
   ∃ (U : EvolutionOperator),
   ∃ (H : Generator),
   ∃ (time_ordering : ℝ → ℝ → Prop),
   -- t₁ < t₂ means U(t₁) is "before" U(t₂) along trajectory
-  (∀ t₁ t₂, time_ordering t₁ t₂ ↔ t₁ < t₂)
+  (∀ t₁ t₂, time_ordering t₁ t₂ ↔ t₁ < t₂) := by
+  sorry  -- TODO: Prove from trajectory_to_evolution + stones_theorem
 
 /--
 The parameter t has properties of physical time.
@@ -458,10 +437,10 @@ theorem actualized_states_evolve_unitarily :
 **Derivation Steps**:
 1. Identity → persistent entities
 2. Persistent entities → continuous trajectories γ(t)
-3. Trajectories → evolution operators U(t)
+3. Trajectories → evolution operators U(t) (trajectory_to_evolution - Tier 2)
 4. U(t) forms one-parameter unitary group
-5. Stone's theorem → U(t) = e^(-iHt/ℏ) with generator H
-6. Parameter t emerges as time (ordering parameter)
+5. Stone's theorem → U(t) = e^(-iHt/ℏ) with generator H (Tier 2)
+6. Parameter t emerges as time (time_emergence_from_identity - LRT theorem)
 7. Differentiation → Schrödinger equation iℏ d|ψ⟩/dt = H|ψ⟩
 
 **Physical Results Derived**:
@@ -471,33 +450,36 @@ theorem actualized_states_evolve_unitarily :
 - Schrödinger equation as differential form
 - Time has ordering properties (transitivity, continuity, etc.)
 
-**Axioms Used**: 2 (from Foundation: I exists, I infinite)
-**Sorry Statements**: 0 (all proofs complete or using placeholders for Mathlib)
+**Axiom Count by Tier**:
+- Tier 1 (LRT Specific): 0 axioms (imports I, I_infinite from Foundation)
+- Tier 2 (Established Math Tools): 5 axioms
+  * trajectory_to_evolution (Reed & Simon 1975)
+  * trajectory_to_evolution_identity_at_zero (property)
+  * trajectory_to_evolution_group_property (property)
+  * trajectory_to_evolution_continuous (property)
+  * stones_theorem (Stone 1932)
+- Tier 3 (Universal Physics): 0 axioms
+- **Total**: 5 axioms + 1 LRT theorem with sorry placeholder
 
-**Note on Stone's Theorem Axiom**:
-We axiomatized Stone's theorem here because full proof requires extensive
-Mathlib integration (functional analysis, spectral theory). This is a
-mathematical theorem, not a physical postulate. When Mathlib integration
-is complete, this axiom will be replaced with the formal proof.
+**LRT Theorems** (to be proven from axioms):
+1. time_emergence_from_identity (logical consequence of trajectory_to_evolution + stones_theorem)
 
-**Quality Status**:
+**Build Status**:
 - Builds: ✅
-- Internal Sorrys: 0 (all our own proofs complete) ✅
-- Unformalized But Established Theorem Sorrys: 1
-  - Stone's theorem (Stone 1932 - textbook functional analysis)
-- Physical Axioms: 0 (only 2 in Foundation: I, I_infinite)
-- Documentation: Complete ✅
+- Internal Sorrys: 1 (time_emergence_from_identity - LRT claim to prove)
+- All Tier 2 axioms documented with references
+- Physical Axioms: 2 in Foundation (I, I_infinite)
 
 **Completed**:
-- ✅ Stone's theorem application (axiom placeholder for Mathlib integration)
-- ✅ Identity constraint → Hamiltonian derivation
-- ✅ Time emergence as ordering parameter
+- ✅ Tier classification complete
+- ✅ Identity constraint → Hamiltonian derivation structure
+- ✅ Time emergence as ordering parameter (structure)
 - ✅ Computational validation: notebooks/02_Time_Emergence.ipynb
 
 **Mathlib Integration** (external dependency):
 - Hilbert space structures (Mathlib.Analysis.InnerProductSpace)
 - Stone's theorem formal proof (Mathlib.Analysis.NormedSpace.Operator)
-- Topology for continuity refinement
+- Trajectory construction (topology + functional analysis)
 
 **Foundational Paper**: Section 3.4, lines 190-204
 -/
