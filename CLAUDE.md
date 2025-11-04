@@ -94,6 +94,47 @@ This file provides essential guidance for Claude Code working in this repository
 - Stop words: "Verified", "Proven", "Complete", "Formalized" (without verification)
 - **When in doubt**: Run the check, report results to user BEFORE claiming completion
 
+### Lean Formalization Best Practices (Sprint 12 Lessons)
+
+**Proven strategies from Session 9.1 for effective formal verification:**
+
+1. **Mandatory Sanity Check After Every Track**
+   - Run SANITY_CHECK_PROTOCOL.md after completing ANY track
+   - Prevents overclaiming before it happens
+   - Distinguishes "builds successfully" from "formally verified"
+   - **NOT optional** - make it habit
+
+2. **Infrastructure First, Then Proofs**
+   - Complete structure implementations before attempting proofs
+   - Missing infrastructure (DensityOperator fields, EntropyFunctional, etc.) blocks theorem completion
+   - Systematic refactoring more productive than piecemeal proof attempts
+   - **Lesson**: 14 sorry statements in Session 9.1 were infrastructure-blocked, not proof-difficulty-blocked
+
+3. **Axiom Reformulation (Existentials → Functions)**
+   - Avoid existential statements in axioms (`∃ H, ...`)
+   - Use functions instead: `axiom stone_generator : EvolutionOperator → Generator`
+   - **Reason**: Existentials cause universe polymorphism errors in Lean 4
+   - **Evidence**: time_emergence_from_identity blocked by this issue
+
+4. **Test-Driven Proofs (Find Blockers Early)**
+   - Attempt proving a theorem early to discover infrastructure gaps
+   - Don't assume structures are complete until proof is attempted
+   - Document blockers when found (don't hide them)
+   - **Benefit**: Exposes systematic problems (axiom formulation), not isolated issues
+
+5. **Outcome Metrics (Not Output Volume)**
+   - Track axiom reductions and theorems proven (outcomes)
+   - NOT lines of code written or files created (outputs)
+   - **Evidence**: Session 9.1 achieved -13 axioms (real progress), not just documentation volume
+   - **Warning**: AI can produce impressive documentation volume while avoiding hard technical work
+
+**Sprint 12 Results Using These Practices**:
+- ✅ -13 effective axioms (32 → 19)
+- ✅ First module with 0 axioms (NonUnitaryEvolution.lean)
+- ✅ 10+ theorems with complete proofs (Foundation/)
+- ✅ Infrastructure blockers identified and documented
+- ✅ Professional tone maintained (sanity check verified)
+
 ### Repository Structure
 - Everything has ONE canonical location (see DEVELOPMENT_GUIDE.md for full structure)
 - Never create alternative folders without updating CLAUDE.md
