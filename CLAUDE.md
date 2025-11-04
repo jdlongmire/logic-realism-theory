@@ -39,17 +39,24 @@ This file provides essential guidance for Claude Code working in this repository
 
 ### Session Startup (Priority Order)
 1. Read `AI-Collaboration-Profile.json` (your operating mode)
-2. Skim `DEVELOPMENT_GUIDE.md` and `LEAN_BEST_PRACTICES.md` (if relevant)
-3. Skim `lean/LRT_Comprehensive_Lean_Plan.md` (if Lean work expected)
-4. Read latest `Session_Log/Session_X.Y.md` (complete context)
-5. Check `sprints/README.md` for active sprints
+2. Read latest `Session_Log/Session_X.Y.md` (complete context - tells you what's needed)
+3. Based on session context, skim relevant guides:
+   - `DEVELOPMENT_GUIDE.md` or `LEAN_BEST_PRACTICES.md` (architecture/Lean work)
+   - `lean/LRT_Comprehensive_Lean_Plan.md` (axiom/formalization work)
+   - `sprints/README.md` + active sprint tracking (if sprint active)
 
 ### Session Logging
 - Create `Session_X.0.md` at session start
 - **Update progressively** during work (rename to X.1, X.2, etc.)
 - **DO NOT wait for user to ask** - update after each major task
-- Final update before ending session
-- Push commits to GitHub at major milestones
+- **End of major session**: Update READMEs with current status:
+  - Root `README.md`
+  - `lean/README.md`
+  - `notebooks/README.md` (if relevant)
+  - `Session_Log/README.md` (session summary)
+  - `sprints/README.md` (if sprint active)
+- Final session log update before ending
+- Push all commits to GitHub
 
 ### Sprint Documentation
 - Sprint folders contain **ONLY tracking documents** (no deliverables)
@@ -57,7 +64,8 @@ This file provides essential guidance for Claude Code working in this repository
 - Update sprint tracking daily
 
 ### Git Commits
-- Only create commits when user requests
+- Make incremental commits naturally during work (don't wait for permission)
+- Push to GitHub at major milestones and end of session
 - Follow git safety protocol (see DEVELOPMENT_GUIDE.md)
 - Always include Claude Code attribution
 
@@ -86,10 +94,7 @@ This file provides essential guidance for Claude Code working in this repository
 
 **Author**: James D. (JD) Longmire (ORCID: 0009-0009-1383-7698)
 
-**Current Status** (2025-11-03):
-- Lean: 20 active files, 5,288 lines, 4 sorrys, 57 declarations (30-34 theory + 16 infrastructure)
-- Target: 35-38 declarations (7-11 theory + 16 infrastructure) via Sprints 13-15
-- Build: ✓ All files compile
+**Current Status**: See `lean/LogicRealismTheory.lean` (build status comments) and `lean/Ongoing_Axiom_Count_Classification.md`
 
 **For detailed information on ANY topic, see the Critical Artifacts section above.**
 
