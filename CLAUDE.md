@@ -16,6 +16,7 @@ This file provides essential guidance for Claude Code working in this repository
 - **`Logic_Realism_Theory_AI_Experiment.md`** (602 lines) - Methodology, honest status assessment
 
 ### Lean Formalization Status (lean/ folder)
+- **`lean/PROOF_REFACTOR_STRATEGY.md`** - **⚠️ ACTIVE** Complete proof refactor: 88 → 30-35 axioms, 5-phase bottom-up program from 2 foundation axioms
 - **`lean/LRT_Comprehensive_Lean_Plan.md`** - Option C roadmap: 57 → 35-38 axioms (Sprints 13-15)
 - **`lean/Ongoing_Axiom_Count_Classification.md`** - Complete 58 axiom inventory, classifications, **⚠️ AXIOM COUNT FRAMING**
 - **`lean/LogicRealismTheory.lean`** - Root import file showing all modules
