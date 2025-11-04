@@ -42,9 +42,16 @@ import LogicRealismTheory.Derivations.TimeEmergence
 import LogicRealismTheory.Derivations.RussellParadox
 
 -- ═══════════════════════════════════════════════════════════════════════════
+-- DYNAMICS MODULES
+-- ═══════════════════════════════════════════════════════════════════════════
+
+import LogicRealismTheory.Dynamics.DynamicsFromSymmetry
+
+-- ═══════════════════════════════════════════════════════════════════════════
 -- MEASUREMENT MODULES (EXPERIMENTAL - Contains sorry statements)
 -- ═══════════════════════════════════════════════════════════════════════════
 
+import LogicRealismTheory.Measurement.NonCircularBornRule
 import LogicRealismTheory.Measurement.MeasurementGeometry
 import LogicRealismTheory.Measurement.NonUnitaryEvolution
 
@@ -58,12 +65,12 @@ import LogicRealismTheory.Layer3
 -- CURRENT MAIN BUILD STATUS
 -- ═══════════════════════════════════════════════════════════════════════════
 --
--- Build status: ✅ SUCCESS (Layer 3 complete, file consolidation complete)
--- Total Lean files: 20 active (1 deprecated)
--- Total lines: 5,288
--- Build jobs: 6008
+-- Build status: ⏳ BUILDING (Layer 3 + Dynamics + NonCircularBornRule complete)
+-- Total Lean files: 22 active (1 deprecated)
+-- Total lines: ~5,900 (estimated)
+-- Build jobs: TBD
 --
--- Imported modules: 20 active
+-- Imported modules: 22 active
 --   Foundation (11):
 --     Layer 1: IIS, Actualization
 --     Layer 2: QuotientMetric, Distinguishability, QubitKMapping,
@@ -72,7 +79,8 @@ import LogicRealismTheory.Layer3
 --              UnitaryOperators, HermitianOperators
 --   Operators (1): Projectors
 --   Derivations (3): Energy, TimeEmergence, RussellParadox
---   Measurement (2): MeasurementGeometry, NonUnitaryEvolution
+--   Dynamics (1): DynamicsFromSymmetry (NEW - Sprint 11 Track 3)
+--   Measurement (3): NonCircularBornRule (Track 2), MeasurementGeometry, NonUnitaryEvolution
 --   Layer Summaries (1): Layer3
 --   Deprecated (1): Measurement/Common.lean (archived)
 --
