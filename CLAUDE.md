@@ -16,7 +16,8 @@ This file provides essential guidance for Claude Code working in this repository
 - **`Logic_Realism_Theory_AI_Experiment.md`** (602 lines) - Methodology, honest status assessment
 
 ### Lean Formalization Status (lean/ folder)
-- **`lean/AXIOM_CLASSIFICATION_SYSTEM.md`** - **⚠️ ACTIVE** 3-Tier axiom framework: Tier 1 (LRT Specific), Tier 2 (Established Math Tools), Tier 3 (Universal Physics)
+- **`lean/AXIOMS.md`** - **⚠️ ACTIVE** LRT axiom approach summary: 2 Tier 1 + ~16 Tier 2 + 1 Tier 3 = ~19 axioms, honest paper framing
+- **`lean/AXIOM_CLASSIFICATION_SYSTEM.md`** - **⚠️ ACTIVE** Complete 3-tier framework documentation with templates and examples
 - **`lean/PROOF_REFACTOR_STRATEGY.md`** - **⚠️ ACTIVE** Revised tier-based strategy: Prove ~30-35 LRT theorems from 2 foundation axioms using ~16 math tools
 - **`lean/STANDARD_FILE_HEADER.md`** - **⚠️ ACTIVE** Required header format for all Lean files (exemplar: IIS.lean)
 - **`lean/TIER_LABELING_QUICK_START.md`** - Quick reference for tier classification and inline labels
