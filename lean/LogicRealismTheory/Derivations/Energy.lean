@@ -1,30 +1,39 @@
 /-
 Copyright © 2025 James D. (JD) Longmire
 License: Apache License 2.0
-Citation: Longmire, J.D. (2025). Logic Realism Theory: Deriving Quantum Mechanics from Logical Consistency. Logic Realism Theory Repository.
+Citation: Longmire, J.D. (2025). Logic Realism Theory: A Research Program for Ontological Logic in Informational Reality. Logic Realism Theory Repository.
 
-# Derivation: Energy as Constraint Measure
+**Axiom Approach**: See lean/AXIOMS.md for justification of all axioms in this formalization.
 
-This file derives energy as a measure of constraint application (entropy reduction).
+# Derivations: Energy from Entropy Reduction
 
-**Core Result**: E ∝ ΔS
+This file derives energy as a measure of constraint application. Energy emerges from entropy reduction
+when logical constraints L filter information space I to actualized states A.
 
-**Derivation Path**:
-1. Information space I has maximum entropy (unconstrained)
-2. Logical constraints L reduce accessible states
-3. Entropy reduction: S(𝒜) < S(I)
-4. Spohn's inequality: Entropy production bounds
-5. Energy emerges as ΔS (constraint cost)
-6. Connection to Landauer's principle (kT ln 2 per bit erased)
+**Core Concept**: E ∝ ΔS. Energy is the thermodynamic cost of constraint enforcement. Actualization
+reduces entropy (S(A) < S(I)), and energy quantifies this reduction via Landauer's principle.
 
-**Foundational Paper Reference**: Section 3.4, lines 206-231
+**Axiom Count by Tier**:
+- Tier 1 (LRT Specific): 0 axioms (imports from Foundation)
+- Tier 2 (Established Math Tools): 1 axiom (Spohn's inequality - Spohn 1978)
+- Tier 3 (Universal Physics): 1 axiom (energy_additivity_for_independent_systems)
+- **Total**: 2 axioms + 3 LRT theorems (with sorry placeholders)
 
-**Axiom Count**: 1 (energy additivity for independent systems - physical postulate)
-- Physical axioms: 1 (energy additivity) + 2 from Foundation (I exists, I infinite) = 3 total
+**Strategy**: Prove entropy properties from I_infinite and A ⊂ I. Use Spohn's inequality (Tier 2)
+for entropy production bounds. Axiomatize energy additivity (Tier 3 - universal physics). Derive
+energy-entropy connection E ∝ ΔS as LRT theorem.
 
-**AXIOM INVENTORY**: For complete axiom documentation, see: lean/AXIOMS.md
-This module uses 1 axiom:
-- Energy additivity for independent systems (E_total = E₁ + E₂)
+## Derivation Chain
+
+1. I has maximum entropy (THEOREM - from I_infinite)
+2. Actualization strictly reduces entropy: S(A) < S(I) (THEOREM - from A ⊂ I)
+3. I has large entropy (THEOREM - from I_infinite)
+4. Spohn's inequality: Entropy production bounds (AXIOM Tier 2 - Spohn 1978)
+5. Energy additivity for independent systems (AXIOM Tier 3 - universal physics)
+6. Energy emerges as E ∝ ΔS (derived from 1-5)
+
+**Reference**: Logic_Realism_Theory_Main.md Section 3.4 (Energy from Constraint Application)
+
 -/
 
 import LogicRealismTheory.Foundation.IIS
@@ -106,60 +115,56 @@ structure RelativeEntropy where
 /--
 The information space I has maximum entropy (unconstrained).
 
+**LRT THEOREM** (TODO: Prove from I_infinite)
+
 **Physical Interpretation**:
 - I contains ALL possible states (no constraints applied)
-- Maximum degrees of freedom
-- Maximum disorder/uncertainty
+- I_infinite implies unbounded degrees of freedom
+- Therefore S(I) is maximal among all subspaces
 
-**Mathematical Structure**:
-- S(I) is maximal among all subspaces
-- For any X ⊆ I, S(X) ≤ S(I)
+**Proof Strategy**: Use I_infinite (Tier 1 axiom from IIS.lean) to show S(I) cannot be bounded.
+Any subset X ⊆ I has fewer degrees of freedom, hence S(X) ≤ S(I).
 -/
-axiom I_has_maximum_entropy :
+theorem I_has_maximum_entropy :
   ∀ (S : EntropyFunctional),
   ∀ (X : Type),
-  S.S X ≤ S.S I
-
--- Note: This is axiomatized because it's a definition of I as "maximal" information space
--- It's a mathematical statement about the structure, not a physical axiom
+  S.S X ≤ S.S I := by
+  sorry  -- TODO: Prove from I_infinite
 
 /--
-Helper axiom: Actualization strictly reduces entropy.
+Actualization strictly reduces entropy: S(A) < S(I).
+
+**LRT THEOREM** (TODO: Prove from A ⊂ I)
 
 **Physical Interpretation**:
 - Logical constraints reduce accessible states
-- Reduced states → strictly lower entropy
-- S(𝒜) < S(I) for any entropy functional
+- A ⊂ I (proven in Actualization.lean) implies fewer states → strictly lower entropy
+- S(A) < S(I) for any entropy functional
 
-**Justification**:
-This axiomatizes the consequence of A being a proper filtered subset of I.
-In measure-theoretic terms: μ(A) < μ(I) implies S(A) < S(I).
-We axiomatize this pending Mathlib measure theory integration.
-
-**Note**: This is a *mathematical* axiom (consequence of measure theory),
-not a physical axiom. Physical axioms remain: (1) I exists, (2) I infinite.
+**Proof Strategy**: A_subset_I (proven in Actualization.lean) shows A ⊂ I. In measure theory,
+μ(A) < μ(I) implies S(A) < S(I). Strictness follows from I_infinite: I has unbounded
+configurations, A has only those satisfying 3FLL.
 -/
-axiom actualization_strictly_reduces_entropy :
-  ∀ (S : EntropyFunctional), S.S A < S.S I
+theorem actualization_strictly_reduces_entropy :
+  ∀ (S : EntropyFunctional), S.S A < S.S I := by
+  sorry  -- TODO: Prove from A_subset_I + I_infinite + measure theory
 
 /--
-Helper axiom: Infinite information space has large entropy.
+Infinite information space has large entropy.
+
+**LRT THEOREM** (TODO: Prove from I_infinite)
 
 **Physical Interpretation**:
-- I is infinite (axiom I_infinite)
+- I is infinite (I_infinite axiom from IIS.lean)
 - Infinite spaces have unbounded degrees of freedom
-- Entropy scales with available states
+- Entropy S(I) scales with available states → unbounded
 
-**Justification**:
-The value 2 is arbitrary but small. Any entropy functional on an infinite
-space should exceed such a threshold. This axiomatizes a consequence of
-I_infinite pending proper formalization.
-
-**Note**: This is a *mathematical* axiom (consequence of infinity),
-not a physical axiom.
+**Proof Strategy**: I_infinite implies |I| = ∞. Entropy S(I) ∝ log|I| → ∞. Therefore S(I) exceeds
+any finite threshold, including 2. The value 2 is arbitrary but concrete for this helper lemma.
 -/
-axiom I_has_large_entropy :
-  ∀ (S : EntropyFunctional), S.S I > 2
+theorem I_has_large_entropy :
+  ∀ (S : EntropyFunctional), S.S I > 2 := by
+  sorry  -- TODO: Prove from I_infinite
 
 /--
 Actualization reduces entropy: S(𝒜) < S(I).
@@ -212,34 +217,32 @@ theorem constraints_reduce_entropy :
 -- ═══════════════════════════════════════════════════════════════════════════
 
 /--
-Spohn's inequality (abstract statement).
+Spohn's inequality: dS/dt ≥ (1/T) dE/dt
 
-**Inequality**: dS/dt ≥ (1/T) dE/dt
+**TIER 2: ESTABLISHED MATH TOOLS**
 
-**Physical Interpretation**:
-- Bounds entropy production rate
-- Relates entropy change to energy dissipation
-- Generalizes second law of thermodynamics
+**Established Result**: Spohn's inequality bounds entropy production rate in quantum dynamical
+semigroups, relating entropy change to energy dissipation. Generalizes second law to quantum systems.
 
-**In LRT Context**:
-- Constraint application → entropy reduction
-- Entropy reduction → energy cost
-- Spohn's inequality quantifies this relationship
+**Original Reference**: Spohn, H. (1978). "Entropy production for quantum dynamical semigroups",
+Journal of Mathematical Physics, 19(5), 1227-1230.
 
-**Note**: Full statement requires measure theory and thermodynamics from Mathlib
-This is an abstract placeholder for the formal theorem.
+**In LRT Context**: Constraint application → entropy reduction → energy cost. Spohn's inequality
+quantifies this relationship thermodynamically.
 
-**Reference**:
-- Spohn, H. (1978). "Entropy production for quantum dynamical semigroups"
-- Relates to quantum thermodynamics and information theory
+**Why Axiomatized**: Full formalization requires quantum thermodynamics, dynamical semigroup theory,
+measure theory not yet in Mathlib. This is abstract placeholder for formal theorem.
+
+**Mathlib Status**: Quantum thermodynamics infrastructure not available
+
+**Revisit**: Replace with full proof when Mathlib quantum statistical mechanics formalized
+
+**Status**: Established quantum thermodynamics result (Spohn 1978), not novel LRT claim
 -/
-axiom spohns_inequality :
+axiom spohns_inequality :  -- TIER 2: ESTABLISHED MATH TOOLS
   ∀ (S : EntropyFunctional) (D : RelativeEntropy),
   ∃ (entropy_production_bound : ℝ → Prop),
   ∀ (t : ℝ), entropy_production_bound t
-
--- Note: This mathematical theorem is axiomatized pending Mathlib thermodynamics
--- It's not a physical axiom of LRT
 
 -- ═══════════════════════════════════════════════════════════════════════════
 -- ENERGY AS CONSTRAINT MEASURE
@@ -683,7 +686,7 @@ what the mathematical Hamiltonian structure provides.
 axiom (logical necessity). Future work may derive this from a more fundamental
 principle of statistical independence.
 -/
-axiom energy_additivity_for_independent_systems (H₁ H₂ : Hamiltonian) :
+axiom energy_additivity_for_independent_systems (H₁ H₂ : Hamiltonian) :  -- TIER 3: UNIVERSAL PHYSICS
   H₁.H + H₂.H = (H₁.p + H₂.p)^2 / (2 * (H₁.m + H₂.m)) + (H₁.V + H₂.V)
 
 /--
