@@ -655,13 +655,21 @@ Generator H → iℏ ∂ψ/∂t = Hψ
 
 **Implementation**:
 - Created: `lean/LogicRealismTheory/Dynamics/DynamicsFromSymmetry.lean` (211 lines)
-- Build Status: ✅ Clean build (6096 jobs, no errors)
+- Build Status: ✅ Clean build (6096 jobs, no errors, syntax valid)
 - Total axioms: 6 new (2 K_math + 4 LRT_foundational)
 
+**⚠️ IMPORTANT STATUS NOTE** (discovered 2025-11-04):
+- Axioms: ✅ 6 axioms properly documented
+- Theorems: ⚠️ 3 theorems prove `True` with `trivial` (NOT actual statements)
+  - `theorem unitarity_from_3FLL : True := by trivial` (NOT proving U†U = I)
+  - `theorem schrodinger_equation_from_3FLL : True := by trivial` (NOT proving iℏ∂ψ/∂t = Hψ)
+  - `theorem generator_properties_from_3FLL : True := by trivial` (NOT proving H† = H)
+- **Accurate status**: Axiom structure documented, formal verification 0% complete (conceptual placeholders)
+
 **Module Structure** (3 phases):
-- **Phase1**: Symmetries → Unitarity (axioms 1-4, theorem: unitarity_from_3FLL)
-- **Phase2**: C₀-group → Schrödinger (axioms 5-6, theorem: schrodinger_equation_from_3FLL)
-- **Phase3**: Generator properties (theorem: generator_properties_from_3FLL)
+- **Phase1**: Symmetries → Unitarity (axioms 1-4, theorem placeholder)
+- **Phase2**: C₀-group → Schrödinger (axioms 5-6, theorem placeholder)
+- **Phase3**: Generator properties (theorem placeholder)
 
 **Six Axioms Implemented**:
 1. `identity_forces_basis_independence` (LRT_foundational)
@@ -682,10 +690,11 @@ Generator H → iℏ ∂ψ/∂t = Hψ
 - Rationale: Conceptual structure captures derivation, detailed proofs in markdown
 - Focus: Axiom tracking, logical structure, buildability
 
-**Significance**:
-- Schrödinger equation derivation now in Lean 4! ✅
-- Non-circular structure formalized ✅
-- Build verification successful ✅
+**Significance** (Corrected 2025-11-04):
+- Schrödinger equation axiom structure documented in Lean 4! ✅
+- Non-circular conceptual structure documented ✅
+- Build verification successful (type checking) ✅
+- Formal proofs: ⏸️ Pending (theorems are placeholders proving `True`)
 
 ---
 
@@ -1013,18 +1022,24 @@ SCHRÖDINGER EQUATION: iℏ ∂ψ/∂t = Hψ
 ```
 
 **Formalized in**:
-- ✅ Markdown: 12 comprehensive derivation documents (~5,800 lines)
-- ✅ Lean 4: DynamicsFromSymmetry.lean (211 lines, BUILD SUCCESS)
+- ✅ Markdown: 12 comprehensive derivation documents (~5,800 lines informal arguments)
+- ⚠️ Lean 4: DynamicsFromSymmetry.lean (211 lines, BUILD SUCCESS, axiom structure only)
 - ✅ Consultation: External peer review request ready
 
-**Philosophical achievement**:
-- Schrödinger equation is **THEOREM**, not axiom
-- Quantum evolution **forced** by logical consistency
-- Non-circularity maintained throughout
+**⚠️ Corrected Status** (discovered 2025-11-04):
+- Markdown derivations: ✅ Complete informal arguments (~6,000 lines)
+- Lean structure: ✅ Axioms documented (6 axioms)
+- Lean theorems: ⏸️ Prove `True` with `trivial` (NOT actual statements)
+- Formal verification: ⏸️ 0% complete (conceptual structure only)
+
+**Philosophical achievement** (conceptual, not yet formally proven):
+- Schrödinger equation **derived** in informal arguments (THEOREM status conceptual)
+- Quantum evolution emergence from logical consistency (documented, not formally verified)
+- Non-circularity maintained throughout conceptual derivation
 
 **Scope clarified** (honest, transparent):
-- **Logic (3FLL)** → Physics structure (why quantum mechanics?)
-- **Mathematics** → Computational tools (Stone, Mazur-Ulam)
+- **Logic (3FLL)** → Physics structure (why quantum mechanics?) - using standard mathematical machinery
+- **Mathematics** → Computational tools (Stone, Mazur-Ulam) - ~25% from established theorems
 - **Experiments** → Numerical values (ℏ, H)
 
 ### Next Steps

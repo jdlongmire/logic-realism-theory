@@ -21,11 +21,20 @@ Completed **Sprint 11, Track 2**: Non-Circular Born Rule Derivation from 3FLL
 ### Track 2: Born Rule Derivation ✅
 
 **Phases**:
-1. **Phase 1** (Tracks 2.1-2.4): Gleason framework ✅ COMPLETE
-2. **Phase 2** (Tracks 2.5-2.7): MaxEnt → Born rule ✅ COMPLETE
-3. **Phase 3** (Tracks 2.8-2.12): Lean formalization ✅ COMPLETE
+1. **Phase 1** (Tracks 2.1-2.4): Gleason framework ✅ COMPLETE (markdown derivation)
+2. **Phase 2** (Tracks 2.5-2.7): MaxEnt → Born rule ✅ COMPLETE (markdown derivation)
+3. **Phase 3** (Tracks 2.8-2.12): Lean structure ✅ COMPLETE (axioms + theorems declared)
 
-**Result**: **Born rule is OUTPUT, not INPUT!**
+**Result**: **Born rule derived conceptually (informal arguments complete), Lean proofs pending**
+
+**⚠️ IMPORTANT STATUS NOTE** (discovered 2025-11-04):
+- Markdown derivation (~2,770 lines): ✅ Complete informal arguments
+- Lean file (440 lines): ✅ Builds successfully, axioms inventoried
+- Formal proofs: ⏸️ 0/3 complete (all theorems use `sorry`)
+  - `maxent_pure_state`: Uses sorry
+  - `pure_state_representation`: Uses sorry
+  - `born_rule`: Uses sorry
+- **Accurate status**: Derivation documented, axioms inventoried, formal verification pending
 
 ---
 
@@ -516,16 +525,16 @@ LogicRealismTheory.Measurement.NonCircularBornRule
 
 **Significance**: First derivation from explicit logical foundation
 
-### 3. Complete Lean Formalization ✅
+### 3. Lean Structure Documented ✅
 
 **NonCircularBornRule.lean**:
 - 440 lines of Lean 4 code
-- Complete 7-step derivation documented
-- 3 axioms (all justified)
-- Build successful ✅
-- Conceptual proofs in comments
+- Complete 7-step derivation structure
+- 3 axioms (all justified) + 3 theorems (all use `sorry`)
+- Build successful ✅ (syntax/type checking)
+- Conceptual proofs in markdown comments
 
-**Significance**: First formal verification of Born rule derivation from logic
+**⚠️ Corrected Significance** (2025-11-04): Axiom inventory and structure documented, formal proof verification pending (0/3 theorems proven)
 
 ### 4. Sprint 11 Minimum Success ✅
 
