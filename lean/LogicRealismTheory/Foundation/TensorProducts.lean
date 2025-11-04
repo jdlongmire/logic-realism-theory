@@ -1,12 +1,28 @@
 /-
-Copyright (c) 2025 James D. (JD) Longmire. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: James D. (JD) Longmire
+Copyright © 2025 James D. (JD) Longmire
+License: Apache License 2.0
+Citation: Longmire, J.D. (2025). Logic Realism Theory: A Research Program for Ontological Logic in Informational Reality. Logic Realism Theory Repository.
 
-Track 1.11: Tensor Products for Composite Systems
+**Axiom Approach**: See lean/AXIOMS.md for justification of all axioms in this formalization.
 
-**Approach**: Use Mathlib tensor product library
-**Sorry Count**: 0 (all in Mathlib)
+# Foundation: Tensor Products (Layer 3)
+
+This module formalizes tensor product structure H₁ ⊗ H₂ for composite quantum systems. Enables
+entanglement and multi-particle states.
+
+**Core Concept**: Tensor products emerge from K_compositionality principle - composite systems
+form product spaces. Not postulated - standard multilinear algebra.
+
+**Axiom Count by Tier**:
+- Tier 1 (LRT Specific): 0 axioms
+- Tier 2 (Established Math Tools): 0 axioms (uses Mathlib tensor product theory)
+- Tier 3 (Universal Physics): 0 axioms
+- **Total**: 0 axioms (pure Mathlib, no new assumptions)
+
+**Strategy**: Use Mathlib's LinearAlgebra.TensorProduct. All theorems proven in Mathlib.
+
+**Track 1.11**: Tensor product structure
+
 -/
 
 import Mathlib.Analysis.InnerProductSpace.TensorProduct
