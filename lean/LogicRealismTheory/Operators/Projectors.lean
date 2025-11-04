@@ -8,18 +8,30 @@ Citation: Longmire, J.D. (2025). Logic Realism Theory: A Research Program for On
 # Operators: Projectors and Constraint Application
 
 This file defines the three fundamental operators that implement L's constraint application:
-- Π_id (persistence projector): Identity constraint
-- {Π_i} (incompatibility family): Non-Contradiction constraint
-- R (resolution map): Excluded Middle constraint
+Π_id (persistence), {Π_i} (incompatibility), R (resolution) corresponding to Identity, Non-Contradiction,
+and Excluded Middle.
 
-**Reference**: Foundational paper Section 3.3 (Operator-Algebraic Structure of L)
+**Core Concept**: L = EM ∘ NC ∘ Id is the composition of three constraint operators. Each operator
+implements one of the 3FLL, progressively filtering I to produce A.
 
-**Composition**: L = EM ∘ NC ∘ Id (right-to-left application)
-- Id: ℋ → ℋ_Id (restrict to persistent entities)
-- NC: ℋ_Id → ℋ_NC (exclude incompatible states)
-- EM: ℋ_NC → 𝒜 (force binary resolution)
+**Axiom Count by Tier**:
+- Tier 1 (LRT Specific): 0 axioms (imports from Foundation)
+- Tier 2 (Established Math Tools): 0 axioms
+- Tier 3 (Universal Physics): 0 axioms
+- **Total**: 0 axioms (pure definitions and structure)
 
-**Axiom Count**: 0 (all definitions, no new axioms)
+**Strategy**: Define three operator families corresponding to 3FLL constraints. All definitions,
+no axioms. The composition L = EM ∘ NC ∘ Id formalizes A = L(I).
+
+## Operator Structure
+
+- **Π_id**: Persistence projector (Identity constraint)
+- **{Π_i}**: Incompatibility family (Non-Contradiction constraint)
+- **R**: Resolution map (Excluded Middle constraint)
+- **L**: Composition EM ∘ NC ∘ Id (full logical filtering)
+
+**Reference**: Logic_Realism_Theory_Main.md Section 3.3 (Operator-Algebraic Structure)
+
 -/
 
 import LogicRealismTheory.Foundation.IIS
