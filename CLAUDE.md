@@ -23,6 +23,7 @@ This file provides essential guidance for Claude Code working in this repository
 ### Development Guides
 - **`DEVELOPMENT_GUIDE.md`** - Architecture, commands, workflows, approach_2 protocol
 - **`LEAN_BEST_PRACTICES.md`** - Lean 4 proof development lessons
+- **`SANITY_CHECK_PROTOCOL.md`** - **⚠️ MANDATORY** track completion verification checklist
 
 ### Session Context
 - **`Session_Log/Session_X.Y.md`** - Read LATEST session file (highest X.Y) for complete context
@@ -78,6 +79,14 @@ This file provides essential guidance for Claude Code working in this repository
 - Run before ANY claims about completion status
 - Stop using "complete" without verification
 - Cross-validate Lean ↔ computational ↔ theory claims
+
+### Sanity Check Protocol ⚠️ MANDATORY
+- **Run after EVERY track completion** before claiming success
+- See **`SANITY_CHECK_PROTOCOL.md`** for full checklist
+- 5 quick checks: Build, Proofs, Imports, Axiom count, Deliverable reality
+- Prevents overclaiming: Distinguishes docs vs structure vs proofs
+- Stop words: "Verified", "Proven", "Complete", "Formalized" (without verification)
+- **When in doubt**: Run the check, report results to user BEFORE claiming completion
 
 ### Repository Structure
 - Everything has ONE canonical location (see DEVELOPMENT_GUIDE.md for full structure)
