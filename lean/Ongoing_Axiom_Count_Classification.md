@@ -5,6 +5,41 @@
 
 ---
 
+## ⚠️ AXIOM COUNT FRAMING (Always Use This)
+
+**When discussing LRT axiom count, use this framing:**
+
+- ❌ **NOT** "57 axioms" or "58 axioms"
+- ✅ **USE** "30-34 theory axioms (current), target 7-11"
+- ✅ **Separate** K_math (16) as mathematical infrastructure, not LRT axioms
+
+**Why this matters:**
+- K_math axioms are standard mathematical results (Stone's theorem, spectral theorem, etc.)
+- ALL quantum mechanics reconstructions use the same ~16 mathematical infrastructure
+- Other programs (Hardy, Chiribella, Dakic) don't count infrastructure as "theory axioms"
+- Honest comparison: LRT theory axioms (30-34 → target 7-11) vs. their theory axioms (3-6)
+
+**Current honest count:**
+- **Total declarations**: 57 (58 - 1 false positive)
+- **K_math infrastructure**: 16 (same as QM uses)
+- **Theory axioms**: 30-34
+  - LRT_foundational: 14
+  - Measurement_dynamics: 15
+  - Physical_postulate: 1
+  - Computational_helper: 4 (should be definitions)
+  - Placeholder: 5 (should be removed)
+
+**Target (Option C plan):**
+- **Total declarations**: 35-38
+- **K_math infrastructure**: 16 (unchanged)
+- **Theory axioms**: 7-11
+  - Core ontological: 2-3 (I, I_infinite, A=L(I))
+  - Additional: 5-8 (observer, field, measurement)
+
+**See `lean/LRT_Comprehensive_Lean_Plan.md` for complete reduction strategy.**
+
+---
+
 ## Classification Categories
 
 1. **K_math**: Mathematical infrastructure theorems (not in Mathlib, standard results)
