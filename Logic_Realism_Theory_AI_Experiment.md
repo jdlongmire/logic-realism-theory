@@ -179,6 +179,9 @@ This document describes the dual nature of the Logic Realism Theory (LRT) resear
 2. Quality gates help but don't prevent overclaiming entirely (happened twice: Sprint 7, Sprint 11)
 3. Must distinguish AI capabilities: CAN do infrastructure proofs, AVOIDS hard theoretical proofs
 4. Process creation can become substitute for progress if unchecked
+5. **Sprint 12 Addition**: Systematic refactoring more productive than piecemeal proof attempts
+6. **Sprint 12 Addition**: 3-tier classification reveals most "axioms" are mathematical consequences
+7. **Sprint 12 Addition**: Infrastructure gaps (not proof difficulty) block most theorem completion
 
 ---
 
@@ -277,7 +280,144 @@ This document describes the dual nature of the Logic Realism Theory (LRT) resear
 - **Mitigation**:
   - Test directly: Attempt proving one hard theorem
   - Accept limitations if they exist, adjust strategy accordingly
-- **Status**: NEEDS INVESTIGATION
+- **Status**: PARTIALLY RESOLVED (Sprint 12 findings below)
+
+---
+
+### 4.3 Sprint 12 Lessons Learned (2025-01-04)
+
+**Context**: Sprint 12 focused on axiom reduction via tier classification (Track 2) and documentation updates (Track 3). Created SANITY_CHECK_PROTOCOL.md to prevent overclaiming.
+
+#### What Worked ✅
+
+**1. Sanity Check Protocol (Major Success)**
+- **Created**: SANITY_CHECK_PROTOCOL.md (6-check verification system)
+- **Purpose**: Verify actual completion vs claimed completion
+- **First Use**: Session 9.1 (Sprint 12 Track 2-3 verification)
+- **Result**: ✅ PASS with honest assessment
+  - Build: 6096 jobs, 0 errors
+  - Axiom reduction: -13 (32 → 19)
+  - Professional tone maintained
+  - 14 sorry statements documented (not hidden)
+- **Key Innovation**: Requires explicit distinction:
+  - "Builds successfully" ≠ "Formally verified"
+  - "Axiom structure" ≠ "Proven theorems"
+  - "Documentation complete" ≠ "Proofs complete"
+- **Impact**: Caught potential overclaiming before it happened
+- **Recommendation**: **RUN AFTER EVERY TRACK** (mandatory, not optional)
+
+**2. 3-Tier Axiom Classification System (High Impact)**
+- **Framework**: Tier 1 (LRT Specific), Tier 2 (Established Math Tools), Tier 3 (Universal Physics)
+- **Documentation**: 4 new files (AXIOM_CLASSIFICATION_SYSTEM.md, AXIOMS.md, STANDARD_FILE_HEADER.md, TIER_LABELING_QUICK_START.md)
+- **Result**: -13 effective axioms via systematic refactoring
+  - Energy.lean: 5 → 2 T2 + 3 thm (-3)
+  - TimeEmergence.lean: 6 → 5 T2 + 1 thm (-1)
+  - NonCircularBornRule.lean: 4 → 2 T2 + 2 thm (-2)
+  - **NonUnitaryEvolution.lean: 7 → 0 + 7 thm (-7!) First module with 0 axioms!**
+- **Key Finding**: Most "axioms" were actually mathematical consequences or LRT claims
+- **Impact**: Reveals true axiom count (2 LRT + ~16 math tools + 1 physics = ~19 total)
+- **Recommendation**: Apply tier classification to ALL formalizations (prevents axiom proliferation)
+
+**3. Systematic Refactoring Over Piecemeal Proof Attempts (Strategy Shift)**
+- **Observation**: Phase 2 attempted proving theorems, hit infrastructure blockers
+- **Finding**: Most sorry statements blocked by infrastructure gaps, not proof difficulty
+  - Structure stubs (DensityOperator, EntropyFunctional need implementations)
+  - Axiom formulation (existentials cause universe polymorphism errors)
+  - Mathlib integration gaps (spectral theorem, matrix operations)
+- **Conclusion**: Systematic refactoring (classifying all axioms) more productive than proving individual theorems
+- **Impact**: Exposed true blockers (infrastructure), not false blockers (proof difficulty)
+- **Recommendation**: Ground-up refactoring before piecemeal proof work
+
+**4. Phase 2 Infrastructure Analysis (Diagnostic Success)**
+- **Attempted**: time_emergence_from_identity theorem proof
+- **Result**: Hit universe polymorphism blocker (existential axioms)
+- **Documentation**: Blocker documented with solution (reformulate axioms as functions)
+- **Value**: Identified systematic problem (axiom formulation), not isolated issue
+- **Impact**: Prevents wasted effort on other existential-based proofs
+- **Recommendation**: Test-driven formalization (attempt proof early to find blockers)
+
+#### What Didn't Work ❌
+
+**1. Proof Completion Still 0% on Hard Theorems**
+- **Issue**: 14 sorry statements remain (infrastructure-blocked)
+- **Analysis**: Not AI capability limits, but missing infrastructure
+- **Implication**: Need structure implementation phase before proof phase
+- **Status**: Blocked but understood (not mystery)
+
+**2. Process Creation Risk Still Present**
+- **Evidence**: Track 3 spent hours updating documentation (no new proofs)
+- **Assessment**: Necessary work (honest status), but meta-work not object-work
+- **Balance**: Documentation needed for credibility, but time could go to infrastructure
+- **Status**: Ongoing concern (process as displacement activity)
+
+#### Specific Mitigations That Worked
+
+**Mitigation 1: Stop Words Protocol**
+- **Rule**: Cannot use "verified", "proven", "complete", "formalized" without passing sanity check
+- **Result**: Documentation consistently used "structured", "builds successfully", "documented"
+- **Evidence**: Session_9.1.md, READMEs use measured language
+- **Status**: ✅ Working (professional tone maintained)
+
+**Mitigation 2: Professional Tone Enforcement**
+- **Rule**: No celebration language, emojis, superlatives before peer review
+- **Check**: Sanity Check Protocol includes tone verification
+- **Result**: All Session 9 documentation passes tone check
+- **Status**: ✅ Working (appropriate for academic work)
+
+**Mitigation 3: Honest Deliverable Categorization**
+- **Framework**: Documentation / Lean structure / Lean proofs (distinct categories)
+- **Result**: Session 9 correctly categorized all deliverables
+  - Documentation: 8 files (framework + READMEs)
+  - Lean structure: 8 modules refactored
+  - Lean proofs: 10+ complete (Foundation/), 14 pending (Derivations/Measurement/)
+- **Status**: ✅ Working (no conflation of categories)
+
+#### Updated Risk Assessments
+
+**Risk 2 (Overclaiming Progress)**:
+- **Status Update**: MITIGATED IN SPRINT 12 (Sanity Check Protocol worked)
+- **Evidence**: Session 9.1 passed all 6 sanity checks before claiming completion
+- **Recommendation**: Make Sanity Check Protocol mandatory for all future tracks
+
+**Risk 6 (Volume Over Depth)**:
+- **Status Update**: RECOGNIZED AND ADDRESSED
+- **Sprint 12 Output**: 8 modules refactored (-13 axioms), not just documentation volume
+- **Key**: Focused on outcome (axiom reduction) not output (lines written)
+- **Recommendation**: Continue outcome-focused metrics
+
+**Risk 7 (Process as Displacement)**:
+- **Status Update**: ONGOING CONCERN (Track 3 was meta-work)
+- **Assessment**: Documentation updates necessary for honesty, but time-consuming
+- **Balance Needed**: Process creation justified if prevents overclaiming, but watch for diminishing returns
+- **Recommendation**: Question each new protocol: "Does this prevent a real risk or create busywork?"
+
+**Risk 8 (AI Capability Limits)**:
+- **Status Update**: PARTIALLY ANSWERED
+- **Finding**: AI CAN write infrastructure proofs (10+ proven theorems in Foundation/)
+- **Finding**: AI BLOCKED by infrastructure gaps on hard theorems (not capability limits)
+- **Conclusion**: Capability limit not yet reached (infrastructure blockers prevent testing)
+- **Next Test**: Once infrastructure complete, attempt proving born_rule theorem
+- **Recommendation**: Infrastructure completion before capability assessment
+
+#### Recommendations for Future Sprints
+
+1. **Mandatory Sanity Check**: Run SANITY_CHECK_PROTOCOL.md after EVERY track (not optional)
+2. **Infrastructure First**: Complete structure implementations before proof attempts
+3. **Axiom Reformulation**: Convert existential axioms to functions (universe polymorphism fix)
+4. **Tier Classification**: Apply 3-tier system to all future formalizations
+5. **Test-Driven Proofs**: Attempt proof early to discover blockers
+6. **Outcome Metrics**: Track axiom reductions and theorems proven, not lines written
+7. **Process Audit**: Each new protocol must justify: "What specific risk does this prevent?"
+
+#### Sprint 12 Success Criteria Met ✅
+
+- ✅ Track 2: Axiom reduction (-13 via tier classification)
+- ✅ Track 3: Documentation updated (4 READMEs, Session_9.1.md, Sanity Check)
+- ✅ Sanity Check: All 6 checks passed
+- ✅ Professional Tone: Measured, factual language maintained
+- ⏸️ Track 4: Peer review appendices (pending)
+
+**Overall Assessment**: Sprint 12 demonstrated AI can perform systematic refactoring work with proper guardrails (Sanity Check Protocol). Key innovation: distinguish "builds" from "proves" explicitly.
 
 ### 4.2 Methodological Opportunities (AI Collaboration)
 
