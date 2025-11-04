@@ -3,25 +3,38 @@ Copyright © 2025 James D. (JD) Longmire
 License: Apache License 2.0
 Citation: Longmire, J.D. (2025). Logic Realism Theory: A Research Program for Ontological Logic in Informational Reality. Logic Realism Theory Repository.
 
-# Foundation: Actualization (A)
+**Axiom Approach**: See lean/AXIOMS.md for justification of all axioms in this formalization.
 
-This file defines the actualized subspace A as the result of logical filtering.
+# Foundation: Actualization (A = L(I))
 
-**Core Equation**: A = L(I)
+This file defines the actualized subspace A as the result of logical filtering of the infinite
+information space I. This formalizes the core LRT equation A = L(I).
 
-**Conceptual Structure**:
-- I: Infinite Information Space (all possibilities)
-- L: Logical constraint operator (3FLL composition)
-- A: Actualized reality (physically realized states)
+**Core Equation**: A = L(I) where L = EM ∘ NC ∘ Id (composition of 3FLL)
 
-**Key Result**: A ⊂ I (actualization is proper subset of information space)
+**Axiom Count by Tier**:
+- Tier 1 (LRT Specific): 0 axioms (imports I, I_infinite from IIS.lean)
+- Tier 2 (Established Math Tools): 0 axioms
+- Tier 3 (Universal Physics): 0 axioms
+- **Total**: 0 axioms + 4 proven theorems
 
-**Foundational Paper Reference**: Section 3.2 (Actualization as Filtering)
+**Strategy**: Define A as subtype of I satisfying actualization predicate (3FLL constraints).
+Prove key theorems: A ⊂ I (subset), A_to_I injective, A = L(I) (image), 3FLL satisfaction.
+All results derived from definitions, no new axioms.
 
-**Axiom Count**: 0 (this file defines structures, adds NO axioms)
+## Conceptual Structure
 
-**AXIOM INVENTORY**: For complete axiom documentation, see: lean/AXIOMS.md
-This module uses 0 axioms.
+- **I**: Infinite Information Space (all possibilities)
+- **L**: Logical constraint operator (3FLL composition: EM ∘ NC ∘ Id)
+- **A**: Actualized reality (physically realized states satisfying 3FLL)
+
+## Key Theorems
+
+- `A_subset_I`: Every actualized state is an information state (PROVEN)
+- `A_to_I_injective`: Different actualized states are distinct (PROVEN)
+- `actualization_is_L_image`: A is the image of L operator (PROVEN)
+- `actualized_satisfies_3FLL`: All actualized elements satisfy 3FLL (PROVEN)
+
 -/
 
 import LogicRealismTheory.Foundation.IIS

@@ -1,74 +1,92 @@
 /-
-Copyright (c) 2025 James D. (JD) Longmire. All rights reserved.
-Released under Apache 2.0 license.
-Authors: James D. (JD) Longmire
+Copyright © 2025 James D. (JD) Longmire
+License: Apache License 2.0
+Citation: Longmire, J.D. (2025). Logic Realism Theory: A Research Program for Ontological Logic in Informational Reality. Logic Realism Theory Repository.
 
 **Axiom Approach**: See lean/AXIOMS.md for justification of all axioms in this formalization.
+
+# Foundation: Constraint Threshold and K-Mechanism
+
+This module defines the constraint threshold (K) mechanism that distinguishes quantum superposition
+from classical definiteness in LRT.
+
+**Core Concept**: K quantifies constraint violations. K=0 → classical (fully constrained, in A).
+K>0 → quantum (partially constrained, in I but not yet A).
+
+**Axiom Count by Tier**:
+- Tier 1 (LRT Specific): 1 axiom (ConstraintViolations - may be definable in future)
+- Tier 2 (Established Math Tools): 1 axiom (Set.card - revisit when Mathlib matures)
+- Tier 3 (Universal Physics): 0 axioms
+- **Total**: 2 axioms + 1 proven theorem (statespace_monotone)
+
+**Strategy**: Define StateSpace from ConstraintViolations, prove monotonicity from definition.
+The K-mechanism is a core LRT concept that explains measurement (K → K-ΔK) vs. unitary evolution (K fixed).
+
+## Key Definitions and Theorems
+
+* `ConstraintViolations σ` - Axiom (Tier 1): Counts constraint violations
+* `StateSpace K` - Definition: Configurations with ≤ K violations
+* `statespace_monotone` - Theorem: K' ≤ K implies StateSpace(K') ⊆ StateSpace(K) ✅ PROVEN
+
+## Connection to LRT Core Thesis
+
+In A = L(I), the logical operator L enforces constraints (Identity, Non-Contradiction, Excluded Middle).
+K measures how many constraints are violated. Full enforcement (K=0) produces classical reality (A).
+Partial enforcement (K>0) allows quantum superposition (elements still in I, not fully actualized to A).
+
 -/
 
+-- Imports
 import Mathlib.Data.Fintype.Basic
-
-/-!
-# Constraint Threshold Foundations
-
-This module defines the foundational concepts of constraint thresholds in Logic Realism Theory.
-
-**Core Concepts**:
-- ConstraintViolations: Counts logical inconsistencies in a configuration
-- StateSpace: Valid configurations at a given constraint threshold K
-- Monotonicity: Lower thresholds yield smaller state spaces
-
-**Refactoring Context**: This module was created during Session 5.3 refactoring to consolidate
-measurement modules. Base definitions extracted from Common.lean into Foundation layer following
-the approach_2_reference pattern.
-
-## Main definitions
-
-* `ConstraintViolations σ` - Number of constraint violations for configuration σ
-* `StateSpace K` - Set of configurations with at most K violations
-* `statespace_monotone` - Axiom: K' ≤ K implies StateSpace K' ⊆ StateSpace K
-
-## Foundational Theory
-
-In Logic Realism Theory, information space I contains all possible configurations. The logical
-operator L filters I based on constraint satisfaction. Constraint threshold K determines how many
-constraint violations are tolerated, with K=0 being fully consistent with actuality A.
-
-**AXIOM INVENTORY**: For complete axiom documentation, see: lean/AXIOMS.md
-This module uses 3 foundational axioms:
-- Set.card (cardinality for mathematical infrastructure)
-- ConstraintViolations (foundational structure of LRT)
-- statespace_monotone (monotonicity principle)
--/
 
 namespace LogicRealismTheory.Foundation
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- FUNDAMENTAL CONSTRAINT THRESHOLD DEFINITIONS
+-- AXIOMS (2 total: 1 Tier 1 + 1 Tier 2)
 -- ═══════════════════════════════════════════════════════════════════════════
 
 /--
-Axiomatize Set cardinality (not available in current Mathlib version).
+Set cardinality function
 
-**STATUS**: Mathematical infrastructure axiom
-**JUSTIFICATION**: Standard set theory, axiomatized until we upgrade to Mathlib version with Set.ncard
+**TIER 2: ESTABLISHED MATH TOOLS**
+
+**Established Result**: Set cardinality is standard in set theory and Mathlib.
+
+**Why Axiomatized**: Current Mathlib version doesn't expose Set.ncard in the needed form.
+This is a temporary axiom until we upgrade to a Mathlib version with complete set cardinality API.
+
+**Mathlib Status**: Partially available (Finset.card exists, Set.ncard exists but may have
+different signature). Will be replaced with direct import when Mathlib API stabilizes.
+
+**Revisit**: Check Mathlib changelog at each Lean 4 update for Set.ncard availability.
+
+**Status**: Temporary mathematical infrastructure axiom (not novel LRT claim)
 -/
-axiom Set.card {α : Type*} : Set α → ℕ
+axiom Set.card {α : Type*} : Set α → ℕ  -- TIER 2: ESTABLISHED MATH TOOLS
 
 /--
-Number of constraint violations for a configuration.
+Constraint violations counting function
 
-**FOUNDATIONAL AXIOM**: This is the core structure in LRT measurement theory.
+**TIER 1: LRT SPECIFIC**
 
-**Physical Interpretation**: Each configuration σ in information space I has a certain number
-of logical constraint violations. When K=0, the configuration is fully consistent (in actuality A).
-As K increases, more "near-miss" configurations are included in the state space.
+**Theory-Defining Concept**: This is the core K-mechanism of LRT. Each configuration σ has a
+number of logical constraint violations (violations of Identity, Non-Contradiction, Excluded Middle).
 
-**Implementation Note**: The specific constraints depend on the physical system being modeled.
-This axiom establishes the existence of such a counting function without specifying the
-constraint details.
+**Physical Interpretation**:
+- K=0: Configuration fully satisfies all constraints (classical, in A)
+- K>0: Configuration violates K constraints (quantum superposition, in I but not A)
+
+**Justification**: The K-threshold is what distinguishes LRT's explanation of quantum vs. classical.
+Measurement reduces K (adds constraints). Unitary evolution preserves K.
+
+**May Be Definable**: Future work could define this from 3FLL constraint structure rather than
+axiomatize. For now, treated as primitive function establishing the K-mechanism.
+
+**Status**: LRT-specific axiom (core to theory)
+
+**References**: Logic_Realism_Theory_Main.md Section 4.4 (K-Threshold Framework)
 -/
-axiom ConstraintViolations {V : Type*} : V → ℕ
+axiom ConstraintViolations {V : Type*} : V → ℕ  -- TIER 1: LRT SPECIFIC
 
 /--
 State space at constraint threshold K: all configurations with ≤ K violations.

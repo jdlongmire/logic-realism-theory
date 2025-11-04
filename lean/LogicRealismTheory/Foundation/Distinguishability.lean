@@ -3,32 +3,43 @@ Copyright © 2025 James D. (JD) Longmire
 License: Apache License 2.0
 Citation: Longmire, J.D. (2025). Logic Realism Theory: A Research Program for Ontological Logic in Informational Reality. Logic Realism Theory Repository.
 
-# Foundation: Distinguishability
+**Axiom Approach**: See lean/AXIOMS.md for justification of all axioms in this formalization.
 
-This file formalizes the emergence of distinguishability as a proto-mathematical primitive
-from the Three Fundamental Laws of Logic (3FLL).
+# Foundation: Distinguishability (Layer 0→1 Emergence)
 
-**Sprint 11, Track 1.2**: Non-Circular Representation Theorem
-**Session 7.0**: Derivation from pure logic (Layers 0→1 of LRT Hierarchical Framework)
+This file formalizes the emergence of distinguishability as a proto-mathematical primitive from the
+Three Fundamental Laws of Logic (3FLL). This proves the Layer 0→1 transition in LRT's hierarchical
+framework.
 
-**Hierarchical Emergence**:
-- **Layer 0**: 3FLL (Identity, Non-Contradiction, Excluded Middle)
-- **Layer 1**: Proto-primitives including Distinguishability D(s₁, s₂)
-- This file proves Layer 0 → Layer 1 transition
+**Core Concept**: Distinguishability D(s₁, s₂) ∈ [0,1] emerges from 3FLL applied to information
+elements. Reflexivity from Identity, symmetry from logical symmetry, weak transitivity from
+Non-Contradiction. This is proto-mathematical: before metrics, before geometry.
 
-**Key Results**:
-1. Distinguishability as primitive binary relation D : I → I → ℝ
-2. Reflexivity from Identity: D(s,s) = 0
-3. Symmetry from logical symmetry: D(s₁,s₂) = D(s₂,s₁)
-4. Weak transitivity from Non-Contradiction
-5. Boundedness: 0 ≤ D(s₁,s₂) ≤ 1
+**Axiom Count by Tier**:
+- Tier 1 (LRT Specific): 0 axioms (imports I, I_infinite from IIS.lean)
+- Tier 2 (Established Math Tools): 0 axioms
+- Tier 3 (Universal Physics): 0 axioms
+- **Total**: 0 axioms (pure structure definition with 3FLL-derived properties)
 
-**Axiom Count**: 0 (this file adds NO axioms, derives from 3FLL)
+**Strategy**: Define Distinguishability structure with properties derived from 3FLL. Reflexivity
+from Identity (s = s → D(s,s) = 0), symmetry from logical symmetry, weak triangle from NC. All
+properties are structural requirements, not axioms.
 
-**AXIOM INVENTORY**: For complete axiom documentation, see: lean/AXIOMS.md
-This module uses 0 axioms (derives from IIS axioms via 3FLL).
+## Hierarchical Emergence
 
-**Reference**: `sprints/sprint_11/track1_1_distinguishability_derivation.md` (Steps 1-6)
+- **Layer 0**: 3FLL (Identity, Non-Contradiction, Excluded Middle) - proven in IIS.lean
+- **Layer 1**: Distinguishability D(s₁, s₂) as proto-primitive
+- **Transition**: Logical laws → Proto-mathematical structure (this file)
+
+## Key Properties
+
+- Reflexivity: D(s,s) = 0 (from Identity law)
+- Symmetry: D(s₁,s₂) = D(s₂,s₁) (from logical symmetry)
+- Weak triangle: D(s₁,s₃) ≤ D(s₁,s₂) + D(s₂,s₃) (from Non-Contradiction)
+- Boundedness: 0 ≤ D ≤ 1 (normalization)
+
+**Reference**: Sprint 11, Track 1.2 (sprints/sprint_11/track1_1_distinguishability_derivation.md)
+
 -/
 
 import LogicRealismTheory.Foundation.IIS
