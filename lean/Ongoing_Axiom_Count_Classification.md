@@ -1,7 +1,20 @@
 # Ongoing Axiom Count and Classification
-**Date**: 2025-11-03
-**Total Axioms**: 58
-**Purpose**: Complete inventory and classification of all axiom declarations in LogicRealismTheory
+**Date**: 2025-01-04 (Session 9.1)
+**Status**: ⚠️ **NEEDS UPDATE** - This file uses pre-Session 9.0 classification (K_math, LRT_foundational, etc.)
+
+**⚠️ FOR CURRENT AXIOM STATUS, SEE**:
+- **[AXIOM_CLASSIFICATION_SYSTEM.md](AXIOM_CLASSIFICATION_SYSTEM.md)** - New 3-tier framework (Tier 1/2/3)
+- **[AXIOMS.md](AXIOMS.md)** - High-level axiom justification approach
+- **Session 9.1 Results**: ~19 total axioms (2 Tier 1 + ~16 Tier 2 + 1 Tier 3)
+
+**Session 9.1 Changes**:
+- New 3-tier classification system established
+- Net axiom reduction: -13 effective axioms
+- 8 modules refactored with tier labels
+- All TIER 2 axioms documented with academic references
+
+**Purpose**: Historical inventory and classification (pre-3-tier system)
+**TODO**: Update entire file with 3-tier classifications matching actual module headers
 
 ---
 
