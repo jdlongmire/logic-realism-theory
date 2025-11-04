@@ -322,7 +322,20 @@ theorem time_emergence_from_identity :
   ∃ (time_ordering : ℝ → ℝ → Prop),
   -- t₁ < t₂ means U(t₁) is "before" U(t₂) along trajectory
   (∀ t₁ t₂, time_ordering t₁ t₂ ↔ t₁ < t₂) := by
-  sorry  -- TODO: Prove from trajectory_to_evolution + stones_theorem
+  -- CONCEPTUAL PROOF (blocked by universe polymorphism):
+  -- 1. Use trajectory_to_evolution to get U from γ
+  -- 2. Use stones_theorem to get H from U
+  -- 3. Define time_ordering := (·<·)
+  -- 4. Prove equivalence (Iff.rfl)
+  --
+  -- TECHNICAL BLOCKER: stones_theorem uses ∃, and extracting witness with `obtain`
+  -- causes universe metavariables that Lean 4 cannot resolve. Axiom reformulation
+  -- needed (return function instead of ∃).
+  --
+  -- TODO: Refactor axioms to use functions instead of existentials:
+  --   axiom stone_generator : EvolutionOperator → Generator
+  --   axiom stone_property : ∀ U, exponential_form (stone_generator U)
+  sorry
 
 /--
 The parameter t has properties of physical time.
