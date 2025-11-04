@@ -1,9 +1,44 @@
 /-
-Copyright (c) 2025 James D. (JD) Longmire. All rights reserved.
-Released under Apache 2.0 license.
-Authors: James D. (JD) Longmire
+Copyright © 2025 James D. (JD) Longmire
+License: Apache License 2.0
+Citation: Longmire, J.D. (2025). Logic Realism Theory: A Research Program for Ontological Logic in Informational Reality. Logic Realism Theory Repository.
 
 **Axiom Approach**: See lean/AXIOMS.md for justification of all axioms in this formalization.
+
+# Measurement: Measurement Geometry
+
+This module formalizes quantum measurement as geometric projection with constraint threshold reduction.
+The key insight is that measurement = constraint addition = K → K-ΔK projection.
+
+**Core Concept**: Measurement adds constraints (observer coupling), reducing state space via projection
+operators. Born rule and wavefunction collapse emerge from geometry, not postulates.
+
+**Axiom Count by Tier**:
+- Tier 1 (LRT Specific): 0 axioms (imports from Foundation)
+- Tier 2 (Established Math Tools): ~2 axioms (estimate - needs detailed review)
+- Tier 3 (Universal Physics): 0 axioms
+- **Total**: 21 axioms (⚠️ MOST SHOULD BE THEOREMS - needs major refactoring)
+
+**Strategy**: ⚠️ **MAJOR REFACTORING NEEDED** - This file was imported from approach_2 framework.
+Most of the 21 axioms are either:
+1. Mathematical consequences (should be theorems to prove)
+2. LRT claims about Born rule emergence (should be theorems to prove)
+3. Definitions misclassified as axioms (should be def/structure)
+
+**Status**: ⚠️ **PRELIMINARY IMPORT** - Contains approach_2 dependencies. Needs conversion:
+- ~15 axioms → theorems (mathematical/LRT consequences)
+- ~4 axioms → definitions (IdentityState, pointer states)
+- ~2 axioms → TIER 2 labels (Hilbert space, observables)
+
+## Key Results (Currently Axiomatized, Should Be Theorems)
+
+- Born rule emergence from projection geometry (axiom → theorem)
+- Wavefunction collapse as deterministic projection (axiom → theorem)
+- Classical reality at K=0 (axiom → theorem)
+- Measurement mechanism completeness (axiom → theorem)
+
+**Reference**: Sprint 11 Track 1 (Measurement Mechanism)
+
 -/
 
 import Mathlib.Data.Complex.Basic
@@ -457,36 +492,54 @@ axiom measurement_yields_classical {V : Type*} [Fintype V] [DecidableEq V] {K : 
       ∃! σ : V, ψ_post.amplitude σ ≠ 0
 
 /-!
-## Module Status and Next Steps
+## Tier Classification Summary
 
-**Current Status** (Track 1.1 Complete):
-- ✅ Measurement structures imported from established framework
-- ✅ 0 sorry in structure definitions
-- ✅ Born rule derived from geometry (not postulated)
-- ✅ Wavefunction collapse formalized
-- ✅ Observer and decoherence structures included
+**⚠️ REFACTORING REQUIRED** - This module needs substantial rework to align with 3-tier axiom approach.
 
-**Remaining Work**:
+**21 Axioms - Proposed Classification**:
 
-**Track 1.2** (Develop qubit K-mapping):
-- Create `QubitKMapping.lean`
-- Replace axiom `ConstraintViolations` with computed function
-- Define K(|ψ⟩) = S(ρ)/ln(2) for qubits
+**Group 1: Mathematical Consequences → Convert to Theorems (9 axioms)**:
+1. measurement_is_projection (M² = M) - Projector property
+2. measurement_is_hermitian (M† = M) - Projector property
+3. measurement_not_unitary (M†M ≠ I) - Follows from K reduction
+4. wavefunction_collapse_normalized - Normalization math
+5. wavefunction_collapse_support - Support math
+6. born_rule_normalized - Probability normalization
+8. measurement_reduces_statespace - Follows from StateSpace definition
+9. statespace_cardinality_decreases - Follows from subset relation
+15. pointer_states_are_constraint_eigenstates - Definitional equivalence
 
-**Track 1.3** (Integration):
-- Update `NonUnitaryEvolution.lean` to use these structures
-- Replace 2 sorry statements with proven results
-- Connect to K-threshold framework
+**Group 2: LRT Claims → Convert to Theorems (8 axioms)**:
+7. born_rule_from_measurement - KEY: Born rule emergence
+13. classical_emerges_at_K_zero - Quantum→classical transition
+18. born_rule_is_geometric - Born rule not postulated
+19. collapse_is_deterministic - Collapse from geometry
+20. measurement_mechanism_complete - Completeness claim
+21. measurement_yields_classical - K→0 classical limit
+14. observer_measurement - Observer coupling mechanism
+(12. k_zero_unique_state - Possibly theorem from StateSpace)
 
-**Track 1.4** (Documentation):
-- Module documentation
-- Build verification
-- Integration report
+**Group 3: Definitions → Convert to def/structure (3 axioms)**:
+10. IdentityState - Should be definition
+11. identity_state_zero_violations - Should be definition property
+
+**Group 4: TIER 2 Candidates (2 axioms)**:
+16. hilbert_space_from_constraints - Related to Piron-Solèr theorem?
+17. observables_from_constraint_operators - Self-adjoint operator theory
+
+**Next Steps**:
+1. Review Sprint 11 Track 1 documentation for proof strategies
+2. Convert 17 axioms to theorems with sorry placeholders
+3. Convert 3 definitions misclassified as axioms
+4. Label 2 TIER 2 axioms with references
+5. Eliminate approach_2_reference dependencies
+
+**Build Status**: ✅ Compiles (all axioms)
+**Formalization Status**: ⚠️ Structures imported, proofs pending
 
 **References**:
-- Sprint plan: `sprints/SPRINT_11_K_THEORY_INTEGRATION.md`
-- Gap analysis: `theory/K_Threshold_Gap_Analysis.md`
-- Mining report: `theory/K_Threshold_Approach2_Mining.md`
+- Sprint 11 Track 1: sprints/sprint_11/track1_*.md
+- Approach 2 mining: theory/K_Threshold_Approach2_Mining.md
 -/
 
 end LogicRealismTheory.Measurement
