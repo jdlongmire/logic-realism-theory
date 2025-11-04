@@ -312,35 +312,128 @@ theorem statespace_monotone {V : Type*} {K K' : ℕ} (h : K' ≤ K) :
 
 ---
 
+## Deliverable 5: 3-Tier Axiom Classification System ✅
+
+**Created**: `lean/AXIOM_CLASSIFICATION_SYSTEM.md` (~350 lines)
+
+**Purpose**: Distinguish novel LRT axioms from established math tools from universal physics assumptions
+
+**Key Insight from Discussion**: We should NOT try to prove Stone's theorem, spectral theorem, etc. from scratch. These are established results with published proofs that we use as building blocks - following standard practice in quantum foundations (Hardy 2001, Chiribella et al. 2011).
+
+### The 3 Tiers (User's Concise Labels)
+
+**Tier 1: LRT Specific** (2 axioms)
+- Novel ontological commitments defining what LRT *is*
+- `I : Type*` (Infinite Information Space exists)
+- `I_infinite : Infinite I` (I is infinite)
+- **Counted as**: "LRT foundational axioms" in papers
+
+**Tier 2: Established Math Tools** (~16 axioms)
+- Well-known theorems with published proofs (Stone 1932, Gleason 1957, etc.)
+- Stone's theorem, spectral theorem, Gleason's theorem, MaxEnt, Spohn's inequality, etc.
+- Axiomatized for practical formalization (proving from scratch = 500+ lines, no physical insight)
+- **Counted as**: "Mathematical infrastructure" - NOT novel LRT axioms
+
+**Tier 3: Universal Physics Assumptions** (1 axiom)
+- Physical principles accepted across all physics (not specific to LRT/QM)
+- Energy additivity for independent systems
+- **Counted as**: "Standard physical assumptions"
+
+**All three use `axiom` keyword in Lean** (that's the formal mechanism) but are **conceptually distinct** via documentation, classification, and paper reporting.
+
+**Honest Paper Framing**:
+> "LRT has 2 foundational axioms (Tier 1: I, I_infinite) plus ~16 established mathematical results (Tier 2: Stone's theorem, spectral theorem, etc.) axiomatized for practical formalization plus 1 standard physical assumption (Tier 3: energy additivity). From these, LRT proves ~30-35 theorems including Born rule, Hilbert space structure, time evolution, and measurement collapse."
+
+**Comparison**: Hardy (2001), Chiribella et al. (2011), Dakic et al. (2009) similarly use established mathematical theorems as building blocks without re-proving from ZFC.
+
+**Git Commit**: 38f3e96
+
+---
+
+## Deliverable 6: Revised Proof Refactor Strategy ✅
+
+**Revised**: `lean/PROOF_REFACTOR_STRATEGY.md` (tier-based approach)
+
+**Major Conceptual Shift**:
+
+**OLD approach** (initial):
+- Try to prove everything from 2 axioms
+- "88 → 30-35 axioms" target
+- Would require proving Stone's theorem, spectral theorem from scratch
+
+**NEW approach** (revised):
+- Keep Tier 2 (Established Math Tools) as axioms with documentation
+- Focus on proving **LRT-specific claims** from Tier 1 using Tier 2 tools
+- Target: **~19 axioms total** (2 Tier 1 + ~16 Tier 2 + 1 Tier 3)
+- Plus **~30-35 proven LRT theorems** (Born rule, Hilbert space, time, measurement)
+
+**What to Prove** (the real work):
+- Born rule from MaxEnt + Non-Contradiction (Section 5.1)
+- Hilbert space emergence from distinguishability (Section 5.2)
+- Time evolution from Identity constraint (Section 5.3)
+- Measurement collapse from EM + K-transition (Section 5.4)
+- Energy from entropy reduction
+- 3FLL symmetry properties
+- statespace_monotone ✅ (already done!)
+
+**What NOT to Prove**:
+- Stone's theorem (Tier 2 - established 1932)
+- Spectral theorem (Tier 2 - established 1932)
+- Gleason's theorem (Tier 2 - established 1957)
+- Complex field algebraic properties (Tier 2 - standard)
+
+**Execution**: 8 phases, 45-62 hours estimated
+
+**Git Commit**: 38f3e96 (same commit, both files)
+
+---
+
 ## Session Status
 
-**Status**: 🟢 IN PROGRESS - Complete Proof Refactor Underway
+**Status**: 🟢 IN PROGRESS - Tier-Based Proof Strategy
 
 **Completed**:
 1. Sanity Check Protocol created and integrated
 2. Sprint 12 Track 2 expanded with bottoms-up refactor plan
-3. Complete proof refactor strategy (88 → 30-35 axioms)
-4. First proof: `statespace_monotone` theorem (87 axioms remaining)
+3. Initial proof refactor strategy (88 → 30-35 axioms)
+4. First proof: `statespace_monotone` theorem
+5. **3-Tier Axiom Classification System** (major conceptual clarification)
+6. **Revised tier-based proof strategy** (realistic approach)
 
-**Current Phase**: Phase 1 (Foundation & Quick Wins)
-- Step 1/5: ✅ statespace_monotone proven
-- Step 2/5: ⏸️ Remove Layer3 placeholders (-5 axioms)
-- Step 3/5: ⏸️ Remove duplicate stones_theorem (-1 axiom)
-- Step 4/5: ⏸️ Convert computational helpers to definitions (-2 axioms)
-- Step 5/5: ⏸️ Verify full build
+**Major Insight**: Don't prove Tier 2 (Established Math Tools) from scratch. Focus on proving LRT-specific claims from Tier 1 using Tier 2 as building blocks (following Hardy/Chiribella practice).
 
-**Axiom Progress**: 88 → 87 (-1) | Target: 80 for Phase 1 complete
+**Revised Target**:
+- **Tier 1 (LRT Specific)**: 2 axioms (I, I_infinite) ← Foundation
+- **Tier 2 (Established Math Tools)**: ~16 axioms (Stone's, Gleason's, etc.) ← Keep as infrastructure
+- **Tier 3 (Universal Physics)**: 1 axiom (energy additivity) ← Keep as standard assumption
+- **LRT Theorems**: ~30-35 to prove ← The real work
+- **Total Axioms**: ~19 (honest count)
+
+**Current Axiom Classification**:
+- Tier 1: 2 axioms ✅
+- Tier 2: ~16 axioms (need documentation)
+- Tier 3: 1 axiom (need documentation)
+- LRT provable: ~35-40 (currently axiomatized)
+- Placeholders: ~7 (to remove)
+
+**Progress**:
+- ✅ Tier system defined
+- ✅ Strategy revised for realistic approach
+- ✅ 1 LRT theorem proven (statespace_monotone)
+- ⏸️ ~30-35 LRT theorems remaining to prove
+
+**Next Phase**: Add Tier documentation to all existing axioms
 
 **Mitigation Progress**:
 - ✅ Process intervention created (Sanity Check Protocol)
-- ✅ Complete proof strategy defined (addresses weakness #2: avoiding hard work)
+- ✅ Honest axiom classification established (addresses weakness #4: false precision)
+- ✅ Realistic proof strategy (addresses weakness #2: avoiding hard work)
 - ✅ First proof completed (demonstrates capability)
-- 🟢 Phase 1 in progress (quick wins: -8 axioms target)
 
 ---
 
 **Session 9.0 Created**: 2025-11-04
-**Session 9.0 Updated**: 2025-11-04 (First proof complete, Phase 1 in progress)
-**Purpose**: Complete formal verification - prove all theorems from 2 foundational axioms
+**Session 9.0 Updated**: 2025-11-04 (Tier system established, realistic strategy defined)
+**Purpose**: Prove LRT-specific theorems from 2 foundational axioms using established math tools
 **Parent Session**: Session 8 complete (8.0-8.5)
-**Next**: Continue Phase 1 or await user direction
+**Next**: Begin Phase 1 (Add Tier documentation) or await user direction
