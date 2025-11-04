@@ -230,7 +230,7 @@ Physical reality emerges from logical consistency requirements.
 - A ⊂ I: Not all quantum states are classical (proper filtering)
 
 **Next Steps**:
-1. Add concrete examples of non-actualizable states (resolve sorry)
+1. Add concrete examples of non-actualizable states (future enhancement, no sorry to resolve)
 2. Connect to Hilbert space structure from Mathlib
 3. Prove derivations using A (time, energy, Born rule)
 4. Show A has measure-theoretic structure (probability theory)
