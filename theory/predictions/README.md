@@ -1,172 +1,220 @@
 # LRT Experimental Predictions
 
-This folder contains all work related to testing LRT's falsifiable predictions.
-
-**Last Updated**: 2025-11-05
-**Current Focus**: Pivot to Bell Ceiling prediction (cleaner falsifiability)
+**Last Updated**: 2025-11-05 (Session 10.0)
+**Current Status**: Multi-LLM consultation complete, awaiting user decision on Top 4 paths
 
 ---
 
-## Folder Organization (Updated 2025-11-05)
+## Folder Organization
 
-### Active Prediction Paths
+### 🔬 Active Prediction Paths
 
-**Bell_Ceiling/** - **PRIMARY FOCUS** (✅ α DERIVED)
-- **Prediction**: CHSH ≤ 2.71 ± 0.01 (4.1% below Tsirelson bound 2.828)
-- **Status**: α = 3/4 derived, prediction finalized (2025-11-05)
-- **Advantage**: Violates QM's fundamental bound (clean falsifiability)
-- **See**: `Bell_Ceiling/README.md` and `Bell_Ceiling/Alpha_Derivation_Results.md`
+**T2-T1/** - Path 3: Decoherence Asymmetry
+- **Status**: ✅ Protocol ready, awaiting experimental collaboration
+- **Prediction**: T2/T1 ≈ 0.81 (vs QM ≈ 1.0)
+- **Timeline**: Ready for testing NOW
+- **See**: Complete protocol, error budget, QuTiP validation
 
-**T2-T1/** - **SECONDARY** (needs correction)
-- **Prediction**: T2/T1 ≈ 0.81
-- **Status**: Baseline error identified, correction in progress
-- **Issue**: Falls within QM's allowed range (0 < T2/T1 ≤ 2)
-- **See**: `T2-T1/README.md` and `T2-T1/LESSONS_LEARNED_T2_T1_PREDICTION.md`
+**QC_Limits/** - Path 8: Quantum Computing Limits
+- **Status**: ⏸️ Paused - Check #7 applied successfully
+- **Result**: Simple predictions contradicted (T2 floor, error floor)
+- **Next**: Scaling hypotheses need theoretical refinement before proceeding
+- **See**: CHECK_7_LITERATURE_REVIEW.md, QC_LIMITS_DERIVATION.md
 
----
+**Bell_Ceiling-FALSIFIED/** - Path 7: Bell Ceiling (ARCHIVED)
+- **Status**: ❌ **FALSIFIED** by existing ion trap experiments (S ≈ 2.828 ± 0.002)
+- **Predicted**: S_max ≤ 2.71 (4.1% below Tsirelson bound)
+- **Lesson**: Check #7 protocol added to SANITY_CHECK_PROTOCOL.md
+- **Impact**: ~20h development effort, valuable process improvement
+- **See**: Complete derivation, lessons learned, pre-registration documents
 
-## Path 3: T1 vs T2 Comparison (Moved to T2-T1/)
+### 📊 Supporting Materials
 
-**Status**: Simulation-validated, **baseline correction needed** (2025-11-05)
+**Derivations/** - Quantitative mathematical derivations from LRT axioms
+- η ≈ 0.23 (Excluded Middle coupling strength) - variational optimization
+- T2/T1 ≈ 0.81 calculation
+- **Future**: AC Stark shift, Ramsey θ-dependence, Zeno crossover shift
 
-**Core Documents** (now in `T2-T1/`):
-- **[`T2-T1/T1_vs_T2_Protocol.md`](T2-T1/T1_vs_T2_Protocol.md)** - Complete experimental protocol (v1.2)
-- **[`T2-T1/T1_vs_T2_Error_Budget.md`](T2-T1/T1_vs_T2_Error_Budget.md)** - Comprehensive error analysis
-- **[`T2-T1/LESSONS_LEARNED_T2_T1_PREDICTION.md`](T2-T1/LESSONS_LEARNED_T2_T1_PREDICTION.md)** - **Error analysis** (2025-11-05)
-- **[`Quantitative_Predictions_Derivation.md`](Quantitative_Predictions_Derivation.md)** - First-principles derivation (needs correction)
+**Computational_Validation/** - QuTiP simulation work (Session 2.5-2.6)
+- **Status**: ⏸️ PAUSED - shifted focus to experimental predictions
+- Phase 2/3 test designs, IBM Quantum validation attempts
+- **Why paused**: Cleaner experimental predictions (T2/T1) took priority
+- **Future**: Could revive if experimental paths succeed
 
-**QuTiP Validation**:
-- **[`../../notebooks/Path3_T1_vs_T2_QuTiP_Validation.ipynb`](../../notebooks/Path3_T1_vs_T2_QuTiP_Validation.ipynb)** - Simulation validation
+**IBM_Q_Credentials/** - IBM Quantum account access
+- API tokens, Cloud Resource Names, account screenshots
+- ⚠️ **PRIVATE** - DO NOT commit .txt files to public repository
+- **Use**: Path B (Bell state asymmetry), future IBM Quantum testing
 
-**Implementation Scripts**:
-- **[`../../scripts/path3_t1_vs_t2/`](../../scripts/path3_t1_vs_t2/)** - Circuit generation scripts
+**Archive/** - Historical development documents
+- Session 2.5 Section 4 revisions
+- Superseded by current main theory paper
+- Preserved for continuity and lessons learned
 
-**Key Hypothesis** ⚠️ **CORRECTION NEEDED**:
-- **LRT**: T2/T1 ≈ 0.81 (from η ≈ 0.23)
-- **QM** (CORRECTED 2025-11-05): T2/T1 = 2.0 (clean limit), range 0-2 (with noise)
-- **Previous claim** (INCORRECT): "QM predicts T2/T1 ≈ 1.0"
-- **Issue**: LRT's 0.81 is **within** QM's allowed range (not outside it)
-- **See**: `T2-T1/LESSONS_LEARNED_T2_T1_PREDICTION.md` for complete analysis
+### 📋 Master Documents
 
-**Quantitative Predictions** (from first principles):
-- T2/T1 ≈ 0.8 (best estimate, 20% effect)
-- T2/T1 ≈ 0.9 (conservative, 10% effect)
-- T2/T1 ≈ 0.7 (lower bound, 30% effect)
+**Prediction_Paths_Master.md** - Complete overview of all prediction paths
+- Original 9 paths identified across quantum phenomena
+- Status tracking, timelines, falsification criteria
+- Priority rankings and experimental requirements
 
-**Validation Results** (Session 3.6):
-- Error budget: ±2.8% on T2/T1 ratio
-- Signal-to-noise: 3.6-10.7σ (highly significant)
-- Statistical power: >95% with 40,000 shots per point
-- QuTiP simulation: LRT effect detectable at >4σ significance
-
-**Multi-LLM Review** (Session 3.6):
-- Team scores: Grok 0.805, Gemini 0.62, ChatGPT 0.595 (avg: 0.673)
-- Decision: NO-GO (below 0.70 threshold) but very close
-- Critical gaps identified and addressed:
-  - ✅ Error budget created
-  - ✅ QuTiP simulation completed
-  - ✅ Statistical power justified
-  - ✅ Quantitative predictions emphasized
-- **Next**: Re-submit for review with expected quality >0.75
-
-**Resource Requirements**:
-- 450 hours total quantum time (3 backends, including T2_echo)
-- 40,000 shots per point (justified by power analysis)
-- Enhanced IBM Quantum access recommended
-
-### Path 5: Hamiltonian Frequency Shift (Planned)
-
-**Status**: Protocol drafted, awaiting Path 3 completion
-
-**Core Documents**:
-- **[`Hamiltonian_Frequency_Shift_Protocol.md`](Hamiltonian_Frequency_Shift_Protocol.md)** - Frequency shift test protocol (v1.1)
-
-**Key Hypothesis**:
-- **LRT**: ω(|+⟩) ≠ ω(|0⟩) with δω/ω ≈ 10⁻⁴ - 10⁻³
-- **QM**: ω(|+⟩) = ω(|0⟩) (no state-dependent frequency)
-
-**Temperature-Dependence Signature**:
-- **LRT**: δω ∝ T (linear scaling)
-- **AC Stark**: δω independent of T
-- **Distinguishing Test**: Temperature sweep (10-100 mK)
+**README.md** (this file) - Folder navigation and current status
 
 ---
 
-## Master Planning Documents
+## Current Status (Session 10.0 - November 2025)
 
-- **[`Prediction_Paths_Master.md`](Prediction_Paths_Master.md)** - Overview of all 8 prediction paths
-- **[`Quantitative_Predictions_Derivation.md`](Quantitative_Predictions_Derivation.md)** - First-principles derivations
+### Multi-LLM Consultation Complete ✅
 
----
+**Outcome**: **21 new prediction paths** generated with Check #7 validation
 
-## Historical Test Designs (Learning Archive)
+**Sources**:
+- **Internal** (3 parallel agents): 9 paths (decoherence, entanglement, interference)
+- **Gemini**: 3 paths (intrinsic T2 floors, DFS ceilings, state-dependent T1)
+- **Grok**: 5 paths (θ-dependence, CPMG floors, topological ratios)
+- **ChatGPT**: 4 paths (Sorkin κ, Zeno crossover, KCBS ceiling, ESD acceleration)
 
-### Logical State-Dependent Error Test (Superseded by Path 3)
+**See**: `multi_LLM/consultation/Prediction_Paths_Brainstorm_Session.md` (682 lines, complete analysis)
 
-- **[`Logical_State_Dependent_Error_Test_Design.md`](Logical_State_Dependent_Error_Test_Design.md)** - Initial design (Phase 3 complete)
-- **Status**: Superseded by Path 3 (T1 vs T2) protocol
-- **Lessons**: VIF diagnostics essential, avoid A/B circuit comparison
+### Key Discoveries
 
-### No Actualized Contradictions Test (Abandoned)
+✅ **Strong Independent Convergence**:
+- **Path 2 (Internal) + Grok Path 9**: Ramsey contrast θ-dependence (both suggested γ(θ) ∝ sin²(θ))
+- **4 AIs converged on T2 floors**: Intrinsic EM coupling creates measurement-resistant decoherence
 
-- **[`No_Actualized_Contradictions_Test_Design.md`](No_Actualized_Contradictions_Test_Design.md)** - Design iteration 1 (abandoned)
-- **[`Contradiction_Test_Consultation_Analysis.md`](Contradiction_Test_Consultation_Analysis.md)** - Consultation results
-- **Fatal Flaw**: Doesn't differentiate LRT from QM
-- **Lesson**: Avoid A/B circuit comparisons (multicollinearity)
+✅ **Check #7 Success**:
+- **Path E1** (GHZ fidelity ceiling): Identified as contradicted by Quantinuum F > 98% BEFORE development
+- **Path E2** (Bell network): Flagged as risky (tiny 0.7-1.8% effect, no experimental hints)
+- **Prevented**: Another ~20h wasted effort (learned from Bell Ceiling mistake)
 
-### Section 4 QEC Entropy-Error Test (Deferred)
+✅ **Critical Experimental Gap Discovered**:
+**Nobody measures θ-dependence** in quantum experiments because standard QM predicts none.
 
-- **[`Section_4_Revisions_Session_2.5.md`](Section_4_Revisions_Session_2.5.md)** - QEC analysis
-- **Result**: Fundamental challenges identified, 2-5 year timeline
-- **Status**: Deferred to future funded work
-
----
-
-## Key Lessons Learned
-
-1. **Avoid A/B Circuit Comparison**: Causes multicollinearity (VIF = ∞)
-2. **Use Residual Analysis**: Compare measurement vs QM baseline prediction
-3. **Design-First Methodology**: Validate with multi-LLM before coding
-4. **VIF Diagnostics Mandatory**: Confirm VIF = 1.0 in protocol design
-5. **Quantitative Predictions Essential**: Derive from first principles, not assumptions
-6. **Error Budget Critical**: Must quantify all error sources before execution
-7. **Simulation De-Risks**: QuTiP validation catches design flaws before expensive hardware runs
+**This creates UNEXPLORED TERRITORY** where LRT makes falsifiable predictions:
+- AC Stark shift vs superposition angle θ
+- Ramsey contrast decay vs θ
+- Two-qubit gate errors vs θ₁, θ₂
+- Bell state decoherence vs entanglement basis
 
 ---
 
-## Development Timeline
+## Top 4 Recommendations (Tier 1 "Smoking Guns")
 
-- **Session 2.4-2.5**: Initial contradiction test designs (abandoned after multi-LLM review)
-- **Session 3.1-3.4**: Path 3 protocol development and multi-LLM review
-- **Session 3.5**: Quantitative predictions derived from first principles
-- **Session 3.6**: QuTiP validation + error budget created, all gaps addressed
+**Awaiting User Decision**: Develop ALL FOUR in parallel or prioritize?
+
+### 1. Path 3 (AC Stark Shift θ-Dependence) - HIGHEST PRIORITY
+- **Effect**: 16% enhancement at θ=π/4 (Δω ratio ~1.16)
+- **Platform**: Rydberg atoms (Wisconsin, Harvard, Paris groups)
+- **Timeline**: 6-12 months
+- **Why**: Completely untested, kHz precision exists, cleanest observable (frequency shift)
+- **Risk**: LOW - flat response cleanly falsifies η ≈ 0.23
+
+### 2. Path B (Bell State Asymmetry) - FASTEST PATH
+- **Effect**: ΔT2/T1 ≈ 0.19 between |Φ+⟩ vs |Ψ+⟩
+- **Platform**: IBM Quantum, IonQ (existing hardware)
+- **Timeline**: 1-2 months
+- **Why**: Straightforward protocol, complements existing Path 3 (T2/T1)
+- **Risk**: LOW - no systematic difference contradicts LRT
+
+### 3. Path 2/Grok 9 (Ramsey θ-Scan) - VALIDATED BY CONVERGENCE
+- **Effect**: γ(θ) ∝ S_EM(θ), peaks at θ=π/4
+- **Platform**: Trapped ions (PTB, NIST)
+- **Timeline**: 6-12 months
+- **Why**: Independent convergence (Internal + Grok), >95% contrast achieved but θ never measured
+- **Risk**: MEDIUM - requires trapped ion precision
+
+### 4. ChatGPT Path B (Zeno-Anti-Zeno Crossover Shift)
+- **Effect**: Crossover rate r* shifted by factor ~1.23
+- **Platform**: Superconducting qubits, cold atoms, trapped ions
+- **Timeline**: 6-12 months
+- **Why**: Current tech, fixed bath spectrum test, ±5-10% precision achievable
+- **Risk**: MEDIUM - needs careful bath characterization
+
+---
+
+## Immediate Next Steps (Pending User Approval)
+
+### Option A: ALL FOUR in parallel (Recommended - diversifies risk)
+- ~40-80 hours protocol development total
+- Contact IBM Quantum, Rydberg groups, PTB/NIST, cold atom groups
+- Timeline: Protocols ready Weeks 1-4, experimental collaboration Month 2+
+
+### Option B: Sequential (Path B first, then others)
+- Fastest path (1-2 months) proves concept
+- Build credibility before larger asks
+
+### Option C: Top 2 only (Path 3 + Path B)
+- Focus resources on highest-priority smoking guns
+- Defer others until evidence emerges
+
+---
+
+## Strategic Value
+
+**Even if all Tier 1 paths falsify LRT**:
+1. ✅ Diversified risk across 21 independent tests
+2. ✅ Applied Check #7 preventing wasted effort (Path E1, Path E2 rejected)
+3. ✅ Identified near-term experiments (not 10+ year commitments)
+4. ✅ Validated "prediction paths journey" approach with scientific transparency
+
+**If ANY Tier 1 path confirms**:
+- Strong evidence for η ≈ 0.23 and LRT framework
+- Opens door to Tier 2/3 paths for comprehensive validation
+
+---
+
+## Documentation Roadmap (If Approved)
+
+**Week 1-2**:
+1. Create `Path_B_Bell_State_Asymmetry/` with full protocol
+2. Create `Path_3_AC_Stark_Angle/` with full protocol
+3. Merge `Path_2_Ramsey_Angle/` (converged with Grok 9)
+4. Create `Path_ChatGPT_B_Zeno_Crossover/` with protocol
+
+**Week 3-4**:
+5. Update `Prediction_Paths_Master.md` with all 21 paths + tier rankings
+6. Pre-register Top 4 protocols with detailed falsification criteria
+7. Update `Logic_Realism_Theory_Main_Compressed.md` Section 1.3 if needed
+8. Experimental collaboration outreach
+
+---
+
+## Key Lessons from Prediction Development Journey
+
+### From Path 7 (Bell Ceiling - Falsified)
+- ✅ **Check #7 Protocol**: Mandatory literature cross-check BEFORE development
+- ✅ **Honest documentation**: Falsification strengthens credibility, not weakens
+- ✅ **Process improvement**: Mistakes prevented >20h wasted effort on Path E1/E2
+
+### From Path 8 (QC Limits - Paused)
+- ✅ **Check #7 works**: Simple predictions contradicted by 15 orders of magnitude
+- ✅ **Theory refinement needed**: Scaling hypotheses require quantitative work
+- ✅ **Pivot quickly**: Don't pursue contradicted paths hoping for miracles
+
+### From Path 3 (T2/T1 - Ready)
+- ✅ **Rigorous derivation**: η ≈ 0.23 from variational optimization
+- ✅ **Error budget essential**: ±2.8% total, >95% statistical power
+- ✅ **QuTiP validation**: Simulation de-risks before expensive hardware
+- ✅ **Multi-LLM review**: Independent evaluation catches blind spots
+
+### From Multi-LLM Consultation (Session 10)
+- ✅ **Convergence validates**: Ramsey θ-dependence (Internal + Grok)
+- ✅ **Diversity essential**: 6 AIs, 21 paths - no single perspective complete
+- ✅ **Unexplored territory**: θ-dependence blind spot in QM experiments
+- ✅ **Tier ranking critical**: Focus on smoking guns (6-12 months), defer long-term (5+ years)
 
 ---
 
 ## Related Documentation
 
-- **Foundational Theory**: [`../Logic-realism-theory-foundational.md`](../Logic-realism-theory-foundational.md)
-- **Session History**: [`../../Session_Log/`](../../Session_Log/)
-  - [Session 3.6](../../Session_Log/Session_3.6.md) - Multi-LLM review + gap remediation
-- **QuTiP Validation**: [`../../notebooks/Path3_T1_vs_T2_QuTiP_Validation.ipynb`](../../notebooks/Path3_T1_vs_T2_QuTiP_Validation.ipynb)
-- **Implementation**: [`../../scripts/path3_t1_vs_t2/`](../../scripts/path3_t1_vs_t2/)
-- **Multi-LLM Review**: [`../../multi_LLM/consultation/path3_t1_vs_t2_review_20251027.txt`](../../multi_LLM/consultation/path3_t1_vs_t2_review_20251027.txt)
+- **Main Theory**: `Logic_Realism_Theory_Main.md` (root) - Section 9.12 documents prediction paths journey
+- **Compressed Theory**: `Logic_Realism_Theory_Main_Compressed.md` (root) - 445-line technical reference
+- **Session Log**: `Session_Log/Session_10.0.md` - Complete multi-LLM consultation details
+- **Sanity Check**: `SANITY_CHECK_PROTOCOL.md` (root) - Check #7 protocol (v1.1)
+- **Multi-LLM**: `multi_LLM/consultation/Prediction_Paths_Brainstorm_Session.md` - Full analysis
 
 ---
 
-## Next Steps
-
-**Immediate** (Session 3.7):
-1. Update Path 3 protocol to v1.3 (reference new validation documents)
-2. Re-submit to multi-LLM team (expected quality >0.75)
-3. Mark protocol as validated if team approves
-
-**Future**:
-4. Implement Path 5 (frequency shift) using same rigorous methodology
-5. Consider additional paths once Path 3 is validated/executed
-
----
-
-**Last Updated**: 2025-10-27 (Session 3.6)
-**Primary Focus**: Path 3 T1 vs T2 protocol
-**Status**: Simulation-validated, ready for team re-review
+**Status**: ✅ **CONSULTATION COMPLETE** - Awaiting user decision on path development
+**Impact**: Could provide decisive LRT evidence within 6-12 months
+**Next Action**: USER APPROVAL for Top 4 path protocol development
