@@ -27,11 +27,31 @@ This is a **proposed framework** with testable predictions, not yet empirically 
 
 ---
 
-## 🎉 Latest Updates (Session 9.1 - Jan 4, 2025)
+## 🎉 Latest Updates
+
+### Session 10: Bell Ceiling Falsification + Process Lessons (Nov 5, 2025) ⚠️
+
+**Critical Discovery**: Bell Ceiling prediction (CHSH ≤ 2.71) **falsified by existing experimental data**
+
+- **What happened**: Developed prediction, validated computationally, created experimental protocol (~20 hours)
+- **Error**: Never checked if high-fidelity experiments already reach S ≈ 2.828 (they do)
+- **Evidence**: Tian et al. (2022) - Ion traps achieve Tsirelson bound exactly, NOT our predicted ceiling
+- **Caught by**: Reddit community feedback citing paper we had reviewed but misinterpreted
+- **Lesson**: Always check existing experimental data BEFORE investing in theoretical derivation
+
+**Documentation**:
+- **[`theory/predictions/Bell_Ceiling/LESSONS_LEARNED_BELL_CEILING.md`](theory/predictions/Bell_Ceiling/LESSONS_LEARNED_BELL_CEILING.md)** - Complete post-mortem analysis
+- **[`SANITY_CHECK_PROTOCOL.md`](SANITY_CHECK_PROTOCOL.md)** - Updated to v1.1 with new Check #7: Experimental Literature Cross-Check
+
+**Strategic Outcome**: Bell ceiling work archived. **T2/T1 remains primary testable prediction** (not falsified).
+
+**Silver lining**: Better to find error via community review now than after pre-registration or publication.
+
+### Session 9.1: Complete Tier Classification Refactor ✅ (Jan 4, 2025)
 
 **Sprint 12: 50% Complete** 🟡 (2/4 tracks complete)
 
-### Session 9.0: Sanity Check Protocol + 3-Tier Axiom Framework ✅
+**Session 9.0: Sanity Check Protocol + 3-Tier Axiom Framework ✅**
 - **Achievement**: Established systematic axiom classification to prevent overclaiming
 - **Documentation**: 4 new files (AXIOM_CLASSIFICATION_SYSTEM.md, AXIOMS.md, STANDARD_FILE_HEADER.md, TIER_LABELING_QUICK_START.md)
 - **Framework**: 3-tier system distinguishing LRT axioms from mathematical infrastructure
@@ -39,7 +59,7 @@ This is a **proposed framework** with testable predictions, not yet empirically 
   - **Tier 2 (Established Math Tools)**: Published theorems axiomatized (with references)
   - **Tier 3 (Universal Physics)**: Domain-standard physical assumptions
 
-### Session 9.1: Complete Tier Classification Refactor ✅
+**Session 9.1: Complete Tier Classification Refactor ✅**
 - **Achievement**: Systematic ground-up refactor of 8 Lean modules
 - **Net Axiom Reduction**: -13 effective axioms (32 → 19)
   - Energy.lean: 5 axioms → 2 TIER 2 + 3 theorems (-3)
@@ -59,7 +79,7 @@ This is a **proposed framework** with testable predictions, not yet empirically 
 
 **Build Status**: ✅ Successful (6096 jobs, 0 errors)
 
-### Session 9.1 Phase 2: Infrastructure Analysis ✅
+**Session 9.1 Phase 2: Infrastructure Analysis ✅**
 - **Achievement**: Systematic analysis of all 14 sorry statements
 - **Key Finding**: Sorry statements blocked by **infrastructure limitations** (structure stubs, axiom formulation, Mathlib gaps), not proof difficulty
 - **Positive Discovery**: 10+ theorems across Foundation/ already have complete formal proofs
@@ -205,12 +225,17 @@ See [`lean/README.md`](lean/README.md) for details.
 - **Latest Work**: [Session 9.1](Session_Log/Session_9.1.md) - Tier classification refactor complete (-13 effective axioms)
 
 ### Experimental Predictions
-- **Hypothesis**: η ≈ 0.23 → T2/T1 ≈ 0.81 (from variational optimization)
-- **Path 3 Protocol**: Ready for quantum hardware validation
-- **QuTiP Validation**: >95% statistical power confirmed
-- **Derivation**: Notebook 07 (variational), validated in Notebook 05
-- **Error Budget**: Comprehensive analysis (±2.8% precision)
-- **Multi-LLM Review**: Quality control completed, gaps addressed
+- **Primary Prediction (T2/T1)**: η ≈ 0.23 → T2/T1 ≈ 0.81 (from variational optimization)
+  - **Path 3 Protocol**: Ready for quantum hardware validation
+  - **QuTiP Validation**: >95% statistical power confirmed
+  - **Derivation**: Notebook 07 (variational), validated in Notebook 05
+  - **Error Budget**: Comprehensive analysis (±2.8% precision)
+  - **Multi-LLM Review**: Quality control completed, gaps addressed
+  - **Status**: NOT falsified by existing data ✓
+- **Bell Ceiling (CHSH ≤ 2.71)**: ❌ **FALSIFIED** by existing experiments (Tian et al. 2022)
+  - **Evidence**: Ion traps achieve S ≈ 2.828 (Tsirelson bound), not our predicted 2.71
+  - **Lesson Learned**: [`theory/predictions/Bell_Ceiling/LESSONS_LEARNED_BELL_CEILING.md`](theory/predictions/Bell_Ceiling/LESSONS_LEARNED_BELL_CEILING.md)
+  - **Status**: Archived as process improvement case study
 
 ### Development Tools
 - **Multi-LLM Consultation**: Team review with quantitative scoring
@@ -256,7 +281,9 @@ Logic Realism Theory is a **proposed theoretical framework** under active develo
 - **Theory** → [Logic_Realism_Theory_Main.md](Logic_Realism_Theory_Main.md)
 - **AI Methodology** → [AI_Enabled_Theoretical_Physics.md](AI_Enabled_Theoretical_Physics.md)
 - **Primary Prediction** → [`theory/predictions/T1_vs_T2_Protocol.md`](theory/predictions/T1_vs_T2_Protocol.md)
-- **Latest Work** → [Session 9.1](Session_Log/Session_9.1.md) - Tier classification refactor complete
+- **Latest Work** → [Session 10](Session_Log/) - Bell ceiling falsification + process lessons
+- **Process Lessons** → [`theory/predictions/Bell_Ceiling/LESSONS_LEARNED_BELL_CEILING.md`](theory/predictions/Bell_Ceiling/LESSONS_LEARNED_BELL_CEILING.md)
+- **Sanity Check Protocol** → [`SANITY_CHECK_PROTOCOL.md`](SANITY_CHECK_PROTOCOL.md) (v1.1 - now includes experimental literature cross-check)
 - **Lean Proofs** → [`lean/README.md`](lean/README.md)
 - **Axiom Framework** → [`lean/AXIOM_CLASSIFICATION_SYSTEM.md`](lean/AXIOM_CLASSIFICATION_SYSTEM.md)
 - **Axiom Inventory** → [`lean/Ongoing_Axiom_Count_Classification.md`](lean/Ongoing_Axiom_Count_Classification.md)
