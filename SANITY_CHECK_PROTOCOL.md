@@ -8,7 +8,7 @@
 
 ## Quick Checklist
 
-Run through these 7 checks before claiming "complete" (Check #7 is CRITICAL for experimental predictions):
+Run through these 8 checks before claiming "complete" (Check #7 & #8 are CRITICAL for predictions/simulations):
 
 ### ☐ 1. Build Verification
 ```bash
@@ -132,6 +132,95 @@ Review all documentation and commit messages for professionalism:
 - ✅ Can skip for purely mathematical derivations (no experimental component)
 
 **This check exists because**: Bell Ceiling prediction (2025-11-05) was developed, validated, and nearly pre-registered despite being contradicted by existing experimental data. Reddit community caught the error that our internal sanity checks missed.
+
+### ☐ 8. Computational Circularity Check ⚠️ CRITICAL FOR SIMULATIONS
+
+**Purpose**: Verify computational validation tests LRT mechanism, not arithmetic
+
+**When to apply**: Before claiming "computational validation" for ANY simulation work
+
+**The Circularity Problem**:
+```python
+# CIRCULAR (forbidden):
+eta = 0.23  # Insert by hand
+effect = 1 + eta * sin²(θ)  # Calculate
+# → Get 23% effect
+# → Claim "validated" ❌
+
+# NON-CIRCULAR (correct):
+# 1. Derive η from LRT axioms (variational optimization)
+# 2. Apply derived η to specific system
+# 3. Verify prediction emerges ✅
+```
+
+**Checks**:
+
+1. **Parameter Origin**:
+   - ❌ **CIRCULAR**: Parameters inserted to match desired output
+   - ✅ **VALID**: Parameters derived from LRT framework, then applied
+
+2. **Independence Test**:
+   - Question: "Could this simulation predict a DIFFERENT value?"
+   - ❌ **CIRCULAR**: No (we put in what we wanted)
+   - ✅ **VALID**: Yes (parameters emerge from optimization/derivation)
+
+3. **Claims vs Reality**:
+   - ❌ **OVERCLAIM**: "Computational validation complete" (when phenomen
+
+ological)
+   - ✅ **HONEST**: "Analysis pipeline tested" OR "Derived parameters applied"
+
+**Red Flags**:
+- ❌ Inserting η = 0.23 by hand → getting 23% back → claiming "validation"
+- ❌ Parametrizing the effect → calling it "first-principles"
+- ❌ Testing arithmetic → claiming to test physics mechanism
+- ❌ "Phenomenological model" presented as "computational validation"
+
+**Pass Criteria**:
+- ✅ Parameters DERIVED from LRT axioms/optimization (variational framework)
+- ✅ Derivation is INDEPENDENT of the specific prediction being tested
+- ✅ OR clearly labeled as "phenomenological exploration" with harsh limitations
+- ✅ OR labeled as "analysis pipeline test" (no physics validation claims)
+
+**Example: AC Stark θ-Dependence**:
+
+**❌ CIRCULAR approach** (removed November 2025):
+```python
+# Phenomenological parametrization
+Ω_eff(θ) = Ω₀ · √[1 + η·sin²(θ)]  # η = 0.23 inserted
+# This DOES NOT test LRT mechanism
+# Just confirms: 0.23 → 23% (arithmetic)
+```
+
+**✅ FIRST-PRINCIPLES approach** (correct):
+```python
+# Part 1: Derive η from LRT variational framework
+β_optimal = minimize(K_violations + K_enforcement)  # → β ≈ 0.75
+η_derived = (ln2 / β²) - 1  # → η ≈ 0.23
+
+# Part 2: Apply to AC Stark system
+α(θ) = α₀(1 + η_derived·sin²(θ))
+Δω(θ) ∝ α(θ)  # → 23% enhancement emerges
+
+# Non-circular because:
+# - Variational optimization independent of AC Stark physics
+# - η emerges from general constraint minimization
+# - Then applied to specific system
+```
+
+**Documentation Requirements**:
+
+If using derived parameters:
+- ✅ Show derivation chain explicitly
+- ✅ Emphasize independence from prediction being tested
+- ✅ State: "η derived from [method], NOT inserted"
+
+If using phenomenological model:
+- ✅ Label clearly: "Phenomenological exploration" or "Analysis pipeline test"
+- ✅ Do NOT claim "validation" or "first-principles"
+- ✅ State limitations prominently
+
+**This check exists because**: AC Stark simulation (2025-11-05) initially used phenomenological parametrization but claimed "computational validation." User correctly flagged this as circular. Notebook was rebuilt from first principles using variational framework.
 
 ---
 

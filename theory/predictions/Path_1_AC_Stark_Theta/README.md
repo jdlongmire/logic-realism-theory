@@ -54,14 +54,14 @@ $$\Delta\omega(\theta) = \Delta\omega_0 \cdot [1 + \eta \cdot \sin^2(\theta)]$$
 - Synthetic data generation for testing
 - Demo mode included (run as standalone script)
 
-### ac_stark_simulation.ipynb (Jupyter notebook)
-**QuTiP computational validation**:
-- Hamiltonian construction (off-resonant drive, RWA)
-- Phenomenological LRT modification (θ-dependent coupling)
-- AC Stark shift calculation via spectroscopy simulation
-- θ-scan (0° to 90°) for QM vs LRT models
-- Effect size validation (~23% enhancement at θ = π/2)
-- Parameter sensitivity analysis (η, Ω, Δ)
+### ac_stark_first_principles.ipynb (Jupyter notebook)
+**First-principles derivation (non-circular)**:
+- Part 1: LRT variational framework → derives η ≈ 0.23 from constraint optimization
+- Part 2: Apply derived η to AC Stark system (logical polarizability enhancement)
+- Part 3: QuTiP verification with derived parameters
+- θ-scan (0° to 90°) shows enhancement emerges from optimization
+- Fit recovers input η (validates analysis pipeline)
+- **NON-CIRCULAR**: η derived independently, then applied to AC Stark
 - Exportable results and figures
 
 ---
@@ -161,7 +161,7 @@ $$\Delta\omega(\theta) = \Delta\omega_0 \cdot [1 + \eta \cdot \sin^2(\theta)]$$
 - [x] Complete mathematical derivation
 - [x] Create folder README
 - [x] Develop data analysis scripts (ac_stark_analysis.py)
-- [x] QuTiP simulation notebook (ac_stark_simulation.ipynb)
+- [x] First-principles derivation notebook (ac_stark_first_principles.ipynb)
 - [ ] Create collaboration pitch deck (optional)
 
 ### Phase 2: Experimental Collaboration (Months 1-2)
@@ -219,7 +219,7 @@ $$\Delta\omega(\theta) = \Delta\omega_0 \cdot [1 + \eta \cdot \sin^2(\theta)]$$
 **Theory/Analysis Side** (us):
 - Protocol support: Complete ✅
 - Data analysis scripts: Complete ✅ (ac_stark_analysis.py)
-- Computational validation: Complete ✅ (ac_stark_simulation.ipynb)
+- First-principles derivation: Complete ✅ (ac_stark_first_principles.ipynb)
 - Theoretical guidance: Available
 - Co-authorship contribution: Significant
 
@@ -255,15 +255,15 @@ $$\Delta\omega(\theta) = \Delta\omega_0 \cdot [1 + \eta \cdot \sin^2(\theta)]$$
 - [x] Derivation complete (AC_STARK_DERIVATION.md)
 - [x] README complete (this file)
 - [x] Data analysis scripts complete (ac_stark_analysis.py)
-- [x] QuTiP simulation complete (ac_stark_simulation.ipynb)
+- [x] First-principles derivation complete (ac_stark_first_principles.ipynb)
 - [ ] Collaboration materials (optional, future)
 
 ---
 
-**Path Status**: ✅ **FULLY DEVELOPED** (protocol + derivation + analysis + simulation)
+**Path Status**: ✅ **FULLY DEVELOPED** (protocol + derivation + analysis + first-principles simulation)
 **Ready for**: Experimental collaboration outreach
 **Confidence**: High (H) - Three derivations converge, clear predictions, excellent falsifiability
-**Computational Validation**: Complete (QuTiP simulation confirms 23% enhancement)
+**Computational Status**: First-principles derivation (η from variational optimization, non-circular)
 **Recommendation**: Proceed with contacting Rydberg atom groups (highest priority platform)
 
-**Last Updated**: 2025-11-05 (Session 10.0 - computational components added)
+**Last Updated**: 2025-11-05 (Session 10.0 - rebuilt with first-principles approach, removed circular parametrization)
