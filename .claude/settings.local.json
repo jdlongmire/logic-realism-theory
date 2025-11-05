@@ -15,7 +15,13 @@
       "Bash(git mv:*)",
       "Bash(for name in \"ConstraintViolations\" \"Set.card\" \"measurement_is_hermitian\" \"measurement_is_projection\")",
       "Bash(do echo \"=== $name ===\")",
-      "Bash(jupyter nbconvert:*)"
+      "Bash(jupyter nbconvert:*)",
+      "WebSearch",
+      "WebFetch(domain:quantumcomputing.stackexchange.com)",
+      "Bash(gh issue:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:gemini.google.com)",
+      "Bash(python:*)"
     ],
     "deny": [],
     "ask": []

@@ -11,11 +11,11 @@ This folder contains all work related to testing LRT's falsifiable predictions.
 
 ### Active Prediction Paths
 
-**Bell_Ceiling/** - **PRIMARY FOCUS** (NEW)
-- **Prediction**: CHSH ≤ 2.790 (below Tsirelson bound 2.828)
-- **Status**: α derivation needed (in progress)
+**Bell_Ceiling/** - **PRIMARY FOCUS** (✅ α DERIVED)
+- **Prediction**: CHSH ≤ 2.71 ± 0.01 (4.1% below Tsirelson bound 2.828)
+- **Status**: α = 3/4 derived, prediction finalized (2025-11-05)
 - **Advantage**: Violates QM's fundamental bound (clean falsifiability)
-- **See**: `Bell_Ceiling/README.md`
+- **See**: `Bell_Ceiling/README.md` and `Bell_Ceiling/Alpha_Derivation_Results.md`
 
 **T2-T1/** - **SECONDARY** (needs correction)
 - **Prediction**: T2/T1 ≈ 0.81
