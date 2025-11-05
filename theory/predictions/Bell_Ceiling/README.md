@@ -153,9 +153,14 @@ $$\mathcal{S}_{\text{LRT}}^{\text{max}} \approx 2.828 \cdot (1 - 0.0415) \approx
 - [ ] **Comparison_to_Tsirelson.md**: Why LRT predicts ceiling below QM bound
 
 ### Computational
-- [x] **08_Bell_Anomaly_Modeling.ipynb**: ✅ α derivation notebook created (needs format fix for execution)
-- [ ] **Bell_Ceiling_QuTiP_Validation.ipynb**: Simulate noisy CHSH, validate ceiling
-- [ ] **Zero_Noise_Extrapolation_Analysis.ipynb**: Test extrapolation methods (linear, quadratic, fit quality)
+- [x] **08_Bell_Anomaly_Modeling.ipynb**: ✅ α derivation notebook created (2025-11-05)
+- [x] **09_Bell_Ceiling_QuTiP_Validation.ipynb**: ✅ QuTiP validation complete (2025-11-05)
+  - Tsirelson bound verified (S = 2.828)
+  - LRT ceiling validated (S = 2.711)
+  - Zero-noise extrapolation tested (linear, quadratic, exponential)
+  - 8.5σ distinguishability confirmed (10K shots)
+  - Experimental requirements: >99.8% gate fidelity, 200K total shots
+- [ ] **Zero_Noise_Extrapolation_Analysis.ipynb**: (Optional - covered in validation notebook)
 
 ### Experimental
 - [ ] **Bell_Ceiling_Protocol.md**: Full experimental design
@@ -181,18 +186,18 @@ $$\mathcal{S}_{\text{LRT}}^{\text{max}} \approx 2.828 \cdot (1 - 0.0415) \approx
 - ✅ Connection to η ≈ 0.235 from variational derivation
 - ✅ **α derivation complete** (α = 3/4 = g_optimal)
 - ✅ **Numerical prediction finalized** (S_LRT = 2.71 ± 0.01)
+- ✅ **QuTiP validation complete** (Tsirelson verified, LRT ceiling validated, 8.5σ confirmed)
 - ✅ GitHub Issue #7 created with urgency flag
 - ✅ Folder structure created (this README)
 - ✅ Theoretical basis documented (Alpha_Derivation_Results.md)
-- ✅ Computational notebook framework (08_Bell_Anomaly_Modeling.ipynb)
+- ✅ Computational notebooks (08_Bell_Anomaly_Modeling.ipynb, 09_Bell_Ceiling_QuTiP_Validation.ipynb)
 
 ### In Progress ⚙️
-- ⏸️ Notebook execution (format issue to fix)
+- Experimental protocol development (next step)
 
 ### Not Started ⏸️
-- QuTiP validation notebook
-- Zero-noise extrapolation analysis
-- Experimental protocol
+- Experimental protocol document
+- Pre-registration (protocol_lrt_bell.yaml)
 - Main paper integration
 - Pre-registration
 
