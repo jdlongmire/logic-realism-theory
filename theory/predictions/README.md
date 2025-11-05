@@ -2,18 +2,38 @@
 
 This folder contains all work related to testing LRT's falsifiable predictions.
 
+**Last Updated**: 2025-11-05
+**Current Focus**: Pivot to Bell Ceiling prediction (cleaner falsifiability)
+
 ---
 
-## Active Prediction Paths
+## Folder Organization (Updated 2025-11-05)
 
-### Path 3: T1 vs T2 Comparison (Primary - In Progress)
+### Active Prediction Paths
 
-**Status**: Simulation-validated, ready for team re-review (Session 3.6)
+**Bell_Ceiling/** - **PRIMARY FOCUS** (NEW)
+- **Prediction**: CHSH ≤ 2.790 (below Tsirelson bound 2.828)
+- **Status**: α derivation needed (in progress)
+- **Advantage**: Violates QM's fundamental bound (clean falsifiability)
+- **See**: `Bell_Ceiling/README.md`
 
-**Core Documents**:
-- **[`T1_vs_T2_Protocol.md`](T1_vs_T2_Protocol.md)** - Complete experimental protocol (v1.2)
-- **[`T1_vs_T2_Error_Budget.md`](T1_vs_T2_Error_Budget.md)** - Comprehensive error analysis
-- **[`Quantitative_Predictions_Derivation.md`](Quantitative_Predictions_Derivation.md)** - First-principles derivation
+**T2-T1/** - **SECONDARY** (needs correction)
+- **Prediction**: T2/T1 ≈ 0.81
+- **Status**: Baseline error identified, correction in progress
+- **Issue**: Falls within QM's allowed range (0 < T2/T1 ≤ 2)
+- **See**: `T2-T1/README.md` and `T2-T1/LESSONS_LEARNED_T2_T1_PREDICTION.md`
+
+---
+
+## Path 3: T1 vs T2 Comparison (Moved to T2-T1/)
+
+**Status**: Simulation-validated, **baseline correction needed** (2025-11-05)
+
+**Core Documents** (now in `T2-T1/`):
+- **[`T2-T1/T1_vs_T2_Protocol.md`](T2-T1/T1_vs_T2_Protocol.md)** - Complete experimental protocol (v1.2)
+- **[`T2-T1/T1_vs_T2_Error_Budget.md`](T2-T1/T1_vs_T2_Error_Budget.md)** - Comprehensive error analysis
+- **[`T2-T1/LESSONS_LEARNED_T2_T1_PREDICTION.md`](T2-T1/LESSONS_LEARNED_T2_T1_PREDICTION.md)** - **Error analysis** (2025-11-05)
+- **[`Quantitative_Predictions_Derivation.md`](Quantitative_Predictions_Derivation.md)** - First-principles derivation (needs correction)
 
 **QuTiP Validation**:
 - **[`../../notebooks/Path3_T1_vs_T2_QuTiP_Validation.ipynb`](../../notebooks/Path3_T1_vs_T2_QuTiP_Validation.ipynb)** - Simulation validation
@@ -21,9 +41,12 @@ This folder contains all work related to testing LRT's falsifiable predictions.
 **Implementation Scripts**:
 - **[`../../scripts/path3_t1_vs_t2/`](../../scripts/path3_t1_vs_t2/)** - Circuit generation scripts
 
-**Key Hypothesis**:
-- **LRT**: T2/T1 ≈ 0.7-0.9 (superposition states less stable due to relaxed EM constraint)
-- **QM**: T2/T1 ≈ 1.0 (no fundamental state preference)
+**Key Hypothesis** ⚠️ **CORRECTION NEEDED**:
+- **LRT**: T2/T1 ≈ 0.81 (from η ≈ 0.23)
+- **QM** (CORRECTED 2025-11-05): T2/T1 = 2.0 (clean limit), range 0-2 (with noise)
+- **Previous claim** (INCORRECT): "QM predicts T2/T1 ≈ 1.0"
+- **Issue**: LRT's 0.81 is **within** QM's allowed range (not outside it)
+- **See**: `T2-T1/LESSONS_LEARNED_T2_T1_PREDICTION.md` for complete analysis
 
 **Quantitative Predictions** (from first principles):
 - T2/T1 ≈ 0.8 (best estimate, 20% effect)
