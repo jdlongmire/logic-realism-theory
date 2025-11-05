@@ -1,24 +1,33 @@
 # Bell Ceiling Prediction (Tsirelson Bound Violation)
 
-**Status**: ✅ α derived (α = 3/4), prediction finalized
+**Status**: ❌ **FALSIFIED by existing experimental data** (2025-11-05)
 **LRT Prediction**: CHSH ≤ 2.71 ± 0.01
 **Standard QM**: CHSH = 2√2 ≈ 2.828 (Tsirelson bound)
+**Experimental Reality**: CHSH ≈ 2.828 ± 0.002 (ion traps achieve Tsirelson bound)
+
+**Falsification Evidence**: Tian et al. (2022, arXiv:2201.10188) - High-fidelity experiments reach S = 2.828, NOT the predicted ceiling of 2.71
+
+**Lesson Learned**: Always check existing experimental data BEFORE investing in theoretical derivation. See LESSONS_LEARNED_BELL_CEILING.md for full analysis.
+
+**Strategic Outcome**: Revert to T2/T1 as primary testable prediction. Bell ceiling work archived for methodological lessons.
 
 ---
 
-## Why This Prediction is Cleaner Than T2/T1
+## ~~Why This Prediction is Cleaner Than T2/T1~~ (Obsolete - Prediction Falsified)
 
-**Key Advantage**: LRT prediction **violates QM's fundamental bound**
+**~~Key Advantage~~**: ~~LRT prediction **violates QM's fundamental bound**~~ **Reality**: Experiments show NO violation of Tsirelson bound
 
 | Aspect | T2/T1 | Bell Ceiling |
 |--------|-------|--------------|
-| **LRT prediction** | 0.81 | ≤ 2.71 |
+| **LRT prediction** | 0.81 | ~~≤ 2.71~~ ❌ |
 | **QM prediction** | 2.0 (clean), 0-2 (range) | ≤ 2.828 (Tsirelson) |
-| **Distinguishability** | Within QM range ❌ | **Below QM bound ✓** |
-| **Confounds** | Need 4 discriminators | Zero-noise extrapolation |
-| **Falsifiability** | Mechanism signatures | Single measurement |
+| **Experimental reality** | Untested | **2.828 ± 0.002 (contradicts LRT)** |
+| **Distinguishability** | Within QM range, needs discriminators | ~~Below QM bound~~ ❌ Falsified |
+| **Status** | **Viable (primary path)** ✓ | **Abandoned** ❌ |
 
-**Implication**: If experiments show CHSH > 2.805 in zero-noise limit, **LRT is falsified**. No need for complex discriminator framework.
+**~~Implication~~**: ~~If experiments show CHSH > 2.805 in zero-noise limit, **LRT is falsified**~~.
+
+**Actual Outcome**: Experiments already show CHSH ≈ 2.828, therefore **LRT's Bell ceiling prediction IS falsified**.
 
 ---
 
@@ -197,14 +206,20 @@ $$\mathcal{S}_{\text{LRT}}^{\text{max}} \approx 2.828 \cdot (1 - 0.0415) \approx
   - 7 verification checklists with code snippets
   - 8 critical questions for evaluator
   - Context on previous errors for calibration
-- [x] **EVALUATOR_RESPONSE.md**: ✅ Response to independent evaluation (2025-11-05)
+- [x] **EVALUATOR_RESPONSE.md**: ⚠️ Response to independent evaluation (2025-11-05)
   - Addresses evaluator's claims (α=1/4, S_LRT=2.792)
   - Documents verification: repository sync, notebook execution, literature cross-check
   - Evidence: All repository values correct (α=3/4, S_LRT=2.711)
-  - Conclusion: Evaluator appears to have accessed incorrect information
-  - **Result**: Values verified, ready to proceed with pre-registration
-- [ ] **Bell_vs_T2T1_Comparison.md**: Why Bell is cleaner prediction path
-- [ ] **Integration_with_Main_Paper.md**: How to add Bell prediction to Section 6
+  - **Note**: Verified our calculations were correct, but didn't catch experimental falsification
+- [x] **LESSONS_LEARNED_BELL_CEILING.md**: ❌ Post-mortem analysis (2025-11-05)
+  - **Critical finding**: Prediction falsified by existing experimental data
+  - Error analysis: Why we missed that experiments already reach S = 2.828
+  - Process failures: Incomplete literature review, no falsification-first check
+  - Protocol updates: New mandatory experimental cross-check before investing effort
+  - Strategic outcome: Abandon Bell ceiling, revert to T2/T1 as primary prediction
+  - **Key lesson**: Always check existing experimental data BEFORE theoretical derivation
+- [ ] ~~**Bell_vs_T2T1_Comparison.md**~~: ❌ Obsolete (Bell falsified)
+- [ ] ~~**Integration_with_Main_Paper.md**~~: ❌ Obsolete (Bell falsified)
 
 ---
 
