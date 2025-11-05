@@ -186,6 +186,23 @@ $$\mathcal{S}_{\text{LRT}}^{\text{max}} \approx 2.828 \cdot (1 - 0.0415) \approx
   - Verified no baseline assumption errors
   - Confirmed professional tone and accurate claims
   - **Result**: ✅ PASS on all criteria
+- [x] **PRE_REGISTRATION_SANITY_CHECK.md**: ✅ Pre-registration verification v2 (2025-11-05)
+  - All 5 verification categories passed
+  - Notebooks fully executed (10/10 and 14/14 cells)
+  - Statistical claims consistent across documents
+  - Key predictions match notebook results
+  - **Result**: Ready for pre-registration
+- [x] **INDEPENDENT_EVALUATION_PROMPT.md**: ✅ External evaluation request (2025-11-05)
+  - Comprehensive prompt for independent AI review
+  - 7 verification checklists with code snippets
+  - 8 critical questions for evaluator
+  - Context on previous errors for calibration
+- [x] **EVALUATOR_RESPONSE.md**: ✅ Response to independent evaluation (2025-11-05)
+  - Addresses evaluator's claims (α=1/4, S_LRT=2.792)
+  - Documents verification: repository sync, notebook execution, literature cross-check
+  - Evidence: All repository values correct (α=3/4, S_LRT=2.711)
+  - Conclusion: Evaluator appears to have accessed incorrect information
+  - **Result**: Values verified, ready to proceed with pre-registration
 - [ ] **Bell_vs_T2T1_Comparison.md**: Why Bell is cleaner prediction path
 - [ ] **Integration_with_Main_Paper.md**: How to add Bell prediction to Section 6
 
