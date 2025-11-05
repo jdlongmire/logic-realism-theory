@@ -8,7 +8,7 @@
 
 ## Quick Checklist
 
-Run through these 6 checks before claiming "complete":
+Run through these 7 checks before claiming "complete" (Check #7 is CRITICAL for experimental predictions):
 
 ### ☐ 1. Build Verification
 ```bash
@@ -74,6 +74,64 @@ Review all documentation and commit messages for professionalism:
 - ✅ Explicit about limitations ("pending verification", "preliminary results")
 - ✅ Professional restraint (state facts, not excitement)
 - ✅ Academic standard (like arxiv preprints, not press releases)
+
+### ☐ 7. Experimental Literature Cross-Check ⚠️ CRITICAL FOR PREDICTIONS
+
+**Purpose**: Verify prediction is not already falsified by existing experimental data
+
+**When to apply**: Before investing effort in ANY testable prediction
+
+**Checks**:
+1. **Literature search** (spend 30-60 minutes):
+   - Search for experiments in relevant parameter regime
+   - Focus on high-fidelity platforms (ion traps, photonics, superconducting qubits)
+   - Identify 3-5 recent experimental papers (last 5 years)
+   - Check for review articles or meta-analyses
+
+2. **Extract experimental values**:
+   - What quantities do experiments measure?
+   - What values with error bars are reported?
+   - What is the zero-noise or high-fidelity limit?
+   - Are there any systematic trends across platforms?
+
+3. **Compare to prediction**:
+   - Is our prediction within error bars of existing results? (consistent)
+   - Is our prediction contradicted by published results? (falsified)
+   - Is our prediction untested by existing experiments? (viable)
+
+4. **Decision gate**:
+   - ✅ **PROCEED**: Prediction untested OR marginally distinguishable from existing data
+   - ⚠️ **CAUTION**: Prediction at edge of experimental limits (requires very high precision)
+   - ❌ **STOP**: Prediction contradicted by high-fidelity experiments
+
+**Red flags** (immediately STOP if found):
+- ❌ High-fidelity platforms already achieve the regime we're predicting
+- ❌ Published results show opposite trend from our prediction
+- ❌ Multiple independent experiments contradict our claim
+- ❌ Our "novel" prediction matches existing experimental reality
+
+**Example failures** (learn from these):
+- **Bell Ceiling (2025-11-05)**: Predicted S ≤ 2.71, but ion traps already achieve S ≈ 2.828
+  - Error: Confirmed Tsirelson bound (baseline) but didn't check if experiments reach it
+  - Lesson: Checking baseline is correct ≠ checking experiments don't already falsify prediction
+  - Cost: ~20 hours wasted on derivation, validation, protocol development
+
+**Workflow**:
+```bash
+# Example literature search
+# Search: "[observable] [system] high fidelity experimental"
+# For Bell tests: "CHSH inequality ion trap loophole-free"
+# For decoherence: "T2 T1 ratio superconducting qubit fidelity"
+# Extract values, compare to prediction BEFORE proceeding
+```
+
+**When to skip this check**:
+- ❌ NEVER skip for experimental predictions
+- ❌ NEVER skip for testable claims about physical observables
+- ❌ NEVER skip because "we're confident in the theory"
+- ✅ Can skip for purely mathematical derivations (no experimental component)
+
+**This check exists because**: Bell Ceiling prediction (2025-11-05) was developed, validated, and nearly pre-registered despite being contradicted by existing experimental data. Reddit community caught the error that our internal sanity checks missed.
 
 ---
 
@@ -186,10 +244,11 @@ After running sanity check, report:
 ## When to Escalate to User
 
 Invoke this check yourself first. If you get:
-- ❌ on ANY of the 5 quick checks
+- ❌ on ANY of the 7 quick checks
 - Discrepancy between claimed and actual completion
 - Uncertainty about proof vs placeholder
 - Temptation to use stop words without verification
+- Experimental prediction that might be contradicted by existing data (Check #7)
 
 Then STOP and report results to user BEFORE claiming completion.
 
@@ -197,11 +256,18 @@ Then STOP and report results to user BEFORE claiming completion.
 
 ## Protocol Status
 
-**Version**: 1.0
+**Version**: 1.1 (updated 2025-11-05)
 **Created**: 2025-11-04
 **Purpose**: Mitigation for AI-assistant overclaiming patterns (Session 8 lessons)
 **Usage**: Mandatory after each track, optional during track for mid-point check
 
+**Updates**:
+- v1.1 (2025-11-05): Added Check #7 (Experimental Literature Cross-Check) after Bell Ceiling falsification
+- v1.0 (2025-11-04): Initial version (6 checks for Lean formalization work)
+
 ---
 
-**This protocol exists because**: Session 8 discovered systematic overclaiming of "BUILD SUCCESS" as "formal verification". This check distinguishes compilation from proof completion.
+**This protocol exists because**:
+- **Session 8**: Discovered systematic overclaiming of "BUILD SUCCESS" as "formal verification"
+- **Session 10 (Bell Ceiling)**: Discovered prediction development without checking existing experimental data
+- **Check #7 added**: Prevent investing effort in predictions already falsified by published experiments
