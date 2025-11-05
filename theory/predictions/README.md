@@ -11,24 +11,37 @@
 
 ### 🔬 Active Prediction Path Folders
 
-**T2-T1/** - Decoherence asymmetry prediction (T2/T1 ≈ 0.81)
-**QC_Limits/** - Quantum computing limits (paused for theoretical refinement)
-**Bell_Ceiling-FALSIFIED/** - Bell ceiling prediction (falsified November 2025)
+**✨ TOP 4 TIER 1 PATHS** (Session 10.0 - FULLY DEVELOPED):
+- **Path_1_AC_Stark_Theta/** - AC Stark θ-dependence (HIGH conf, 9σ, 6-12 mo)
+- **Path_2_Bell_State_Asymmetry/** - ΔT2/T1 Bell states (HIGH conf, 12σ, **FASTEST** 1-2 mo)
+- **Path_3_Ramsey_Theta_Scan/** - γ(θ) dephasing scan (HIGH conf, 5σ, 6-12 mo)
+- **Path_4_Zeno_Crossover_Shift/** - Zeno γ* shift (MEDIUM conf, 1σ, 6-12 mo)
 
-**Computational_Validation/** - QuTiP simulation work (paused)
-**IBM_Q_Credentials/** - IBM Quantum credentials (⚠️ PRIVATE)
-**Archive/** - Historical documents
+**Historical/Paused Paths**:
+- **T2-T1/** - Decoherence asymmetry (T2/T1 ≈ 0.81) - related to Path 2
+- **QC_Limits/** - Quantum computing limits (paused for refinement)
+- **Bell_Ceiling-FALSIFIED/** - Bell ceiling (falsified November 2025)
+- **Computational_Validation/** - QuTiP simulation work (paused)
+- **IBM_Q_Credentials/** - IBM Quantum credentials (⚠️ PRIVATE)
+- **Archive/** - Historical documents
 
 ---
 
 ## Current Status (Session 10.0)
 
-**Multi-LLM Consultation**: 21 new prediction paths identified (Internal, Gemini, Grok, ChatGPT)
-**Top 4 Tier 1 "Smoking Guns"**: AC Stark θ-dependence, Bell state asymmetry, Ramsey θ-scan, Zeno crossover
-**Key Discovery**: θ-dependence blind spot in QM experiments (unexplored territory)
-**Status**: Awaiting user decision on Top 4 path development
+✅ **TOP 4 TIER 1 PATHS: FULLY DEVELOPED**
 
-**Full details**: See `Prediction_Paths_Master.md` and `multi_LLM/consultation/Prediction_Paths_Brainstorm_Session.md`
+**Multi-LLM Consultation**: 21 prediction paths identified (Internal, Gemini, Grok, ChatGPT)
+**Top 4 "Smoking Guns"**: ✅ ALL COMPLETE (~10,000 lines of protocols + derivations)
+- **Path 1**: AC Stark θ-Dependence (HIGH confidence, 9σ, 23.5% effect)
+- **Path 2**: Bell State Asymmetry (HIGH confidence, 12σ, **FASTEST** 1-2 months)
+- **Path 3**: Ramsey θ-Scan (HIGH confidence, 5σ, **CLEANEST** single-qubit)
+- **Path 4**: Zeno Crossover Shift (MEDIUM confidence, 1σ, **UNIQUE** dynamical)
+
+**Key Discovery**: θ-dependence blind spot in QM experiments (unexplored territory)
+**Status**: ✅ Ready for experimental collaboration outreach
+
+**Full details**: See `Prediction_Paths_Master.md`, `PREDICTION_PATHS_RANKED.md`, and individual Path folders
 
 ---
 
