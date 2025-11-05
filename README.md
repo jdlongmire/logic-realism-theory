@@ -29,9 +29,9 @@ This is a **proposed framework** with testable predictions, not yet empirically 
 
 ## 🎉 Latest Updates
 
-### Session 10: Bell Ceiling Falsification + Process Lessons (Nov 5, 2025) ⚠️
+### Session 10: Bell Ceiling Falsification + QC Limits Exploration + Main Paper Update (Nov 5, 2025) ⚠️
 
-**Critical Discovery**: Bell Ceiling prediction (CHSH ≤ 2.71) **falsified by existing experimental data**
+**Phase 1 - Critical Discovery**: Bell Ceiling prediction (CHSH ≤ 2.71) **falsified by existing experimental data**
 
 - **What happened**: Developed prediction, validated computationally, created experimental protocol (~20 hours)
 - **Error**: Never checked if high-fidelity experiments already reach S ≈ 2.828 (they do)
@@ -39,13 +39,35 @@ This is a **proposed framework** with testable predictions, not yet empirically 
 - **Caught by**: Reddit community feedback citing paper we had reviewed but misinterpreted
 - **Lesson**: Always check existing experimental data BEFORE investing in theoretical derivation
 
+**Phase 2 - QC Limits Exploration**: Applied Check #7 protocol to Path 8 (Quantum Computing Limits) BEFORE major development
+
+- **Explored**: Five potential mechanisms (decoherence floor, error floor, N_max qubits, entanglement scaling, algorithmic limits)
+- **Check #7 Results**:
+  - ❌ Simple predictions (T2_min ~ ns, error floor ~4%) contradicted by 15 orders of magnitude
+  - ⚠️ Scaling hypotheses (T2(N), N_max) untested but need quantitative refinement
+  - ✅ Concept viable (quantum spacetime decoherence is legitimate physics topic)
+- **Success**: Check #7 prevented ~20 hours wasted development (Bell ceiling lesson applied)
+- **Decision**: QC Limits paused, requires major theoretical work before protocol development
+
+**Phase 3 - Main Paper Update**: Added Section 9.12 "Prediction Paths Journey" to Logic_Realism_Theory_Main.md
+
+- **Transparency**: Documents Bell ceiling falsification, QC Limits exploration, lessons learned
+- **Honest assessment**: LRT on scientific journey, willing to abandon contradicted predictions
+- **Process improvement**: Each false start strengthens verification protocols
+- **Strategic framing**: MToE alignment and Lean achievements provide foundational value beyond experimental predictions
+
 **Documentation**:
 - **[`theory/predictions/Bell_Ceiling/LESSONS_LEARNED_BELL_CEILING.md`](theory/predictions/Bell_Ceiling/LESSONS_LEARNED_BELL_CEILING.md)** - Complete post-mortem analysis
-- **[`SANITY_CHECK_PROTOCOL.md`](SANITY_CHECK_PROTOCOL.md)** - Updated to v1.1 with new Check #7: Experimental Literature Cross-Check
+- **[`theory/predictions/QC_Limits/CHECK_7_LITERATURE_REVIEW.md`](theory/predictions/QC_Limits/CHECK_7_LITERATURE_REVIEW.md)** - Comprehensive experimental literature review (~650 lines)
+- **[`theory/predictions/QC_Limits/QC_LIMITS_DERIVATION.md`](theory/predictions/QC_Limits/QC_LIMITS_DERIVATION.md)** - Theoretical exploration (417 lines)
+- **[`SANITY_CHECK_PROTOCOL.md`](SANITY_CHECK_PROTOCOL.md)** - Updated to v1.1 with Check #7: Experimental Literature Cross-Check
+- **[`Logic_Realism_Theory_Main.md`](Logic_Realism_Theory_Main.md)** - Section 9.12 added (~100 lines documenting prediction paths journey)
 
-**Strategic Outcome**: Bell ceiling work archived. **T2/T1 remains primary testable prediction** (not falsified).
+**Strategic Outcome**: Bell ceiling archived, QC Limits paused. **T2/T1 remains primary testable prediction** (not falsified).
 
-**Silver lining**: Better to find error via community review now than after pre-registration or publication.
+**Key Insight**: LRT's value isn't solely in experimental predictions (like Bohmian mechanics, may reproduce QM). Foundational contributions (MToE alignment, trans-formal domain, Lean verification) provide independent validation.
+
+**Silver lining**: Better to find errors via community review and Check #7 protocol than after pre-registration or publication.
 
 ### Session 9.1: Complete Tier Classification Refactor ✅ (Jan 4, 2025)
 
