@@ -2327,10 +2327,36 @@ Additional paths under exploration include Rabi oscillation inertia, state-depen
 
 **Primary Testable Prediction**: T2/T1 ≈ 0.81 (Section 6) remains viable. Check #7 application pending but no contradictions identified in preliminary reviews. Protocol ready (`theory/predictions/T1_vs_T2_Protocol.md`), QuTiP validated, comprehensive error budget (±2.8%), >95% statistical power.
 
-**Theoretical Validation Beyond Predictions**: Even if T2/T1 is not confirmed, LRT provides:
-- **MToE Alignment**: Formal equivalence with Meta-Theory of Everything (Faizal et al. 2025, JHAP) demonstrating independent convergence on non-computational grounding necessity. Documented in `theory/supplementary/Linking_Logic_Realism_Theory__LRT__and_the_Meta_Theory_of_Everything__MToE___A_Formal_Equivalence_v2.pdf`.
+**Theoretical Validation Beyond Predictions**: Even if T2/T1 is not confirmed, LRT provides significant foundational value through independent validation from cutting-edge physics research:
+
+**MToE Alignment - Independent Convergence on Non-Computational Reality**:
+
+LRT exhibits formal equivalence with the Meta-Theory of Everything (MToE) framework recently proposed by Faizal, Krauss, Shabir, and Marino (2025, *Journal of Holistic Applied Physics* 5(2): 10-21). Despite being developed independently through entirely distinct approaches—MToE from formal physics and Gödelian analysis of quantum gravity, LRT from foundational metaphysics and the pre-arithmetic nature of logic—both frameworks reach the same fundamental conclusion: **reality cannot be purely algorithmic and requires non-computational grounding**.
+
+**The MToE Framework**: Faizal et al. demonstrate that purely computational quantum gravity formalisms face Gödelian incompleteness—any consistent, finitely axiomatized system cannot prove all true statements about itself. To overcome this limitation, MToE introduces a **non-recursive truth predicate T(x)** that transcends algorithmic enumeration, providing external certification of truths that formal systems cannot internally prove.
+
+**The Formal Equivalence**: Our analysis (documented in `theory/supplementary/Linking_Logic_Realism_Theory__LRT__and_the_Meta_Theory_of_Everything__MToE___A_Formal_Equivalence_v2.pdf`) establishes one-to-one correspondence between MToE and LRT constructs:
+
+| MToE Construct | LRT Correspondent | Interpretation |
+|----------------|-------------------|----------------|
+| T(x) (truth predicate) | L (prescriptive logic) | Non-computational constraint certifying truth/actuality |
+| Σ_T (infinite substrate) | I (information space) | Infinite potential beyond algorithmic enumeration |
+| R_nonalg (non-algorithmic rules) | 3FLL enforcement | Non-recursive selection ensuring coherence |
+| LQG (algorithmic physics) | Computational shadow of A | Finite physical model subset |
+| Th_T (realized theory) | A (actuality) | Logically consistent domain |
+
+**Key Result**: The prescriptive logic operator **L** in LRT and the non-recursive truth predicate **T(x)** in MToE play **equivalent ontological roles** as non-computational constraint operators. Formally: **MToE ⊆ L(I)** where **T(x) ≡ L|Σ_QG** (MToE's truth predicate is projection of LRT's prescriptive logic onto quantum gravity domain).
+
+**Trans-Formal Domain**: Critically, LRT escapes Gödelian incompleteness by operating in a "trans-formal domain." While Gödel's theorems apply to formal systems (finitely axiomatized, recursively enumerable, arithmetically expressive), LRT's operator L is **prescriptive, not deductive**—a semantic field determining which configurations can actualize, not an inference engine with syntactic rules. This places L as the meta-semantic truth operator that Gödel's framework presupposes but cannot internalize, precisely what MToE models through external T(x).
+
+**Mutual Validation**: This independent convergence—achieved through completely different research programs arriving at the same necessity of non-computational grounding—provides strong mutual validation. Where MToE demonstrates the necessity from formal physics constraints, LRT establishes it from foundational logic and metaphysics. Their synthesis suggests reality is fundamentally **meta-logical, not computational**.
+
+**Implications**: If quantum computing limits exist (Path 8 exploration), they would exemplify **T(x)-certified bounds**—fundamental limits arising from meta-logical constraints rather than engineering limitations. This connection strengthens QC Limits theoretical motivation despite current quantitative predictions requiring refinement.
+
+**Additional Foundational Contributions**:
 - **Lean Formalization**: ~2,400 lines formal verification including -13 axiom reduction (Sprint 12), 10+ theorems with complete proofs, first module with 0 axioms (NonUnitaryEvolution.lean)
-- **Foundational Contributions**: Hierarchical emergence framework, K-threshold formalism, trans-formal domain analysis escaping Gödelian limits
+- **Hierarchical Emergence Framework**: Logic → proto-mathematics → mathematics → physics (Section 3)
+- **K-Threshold Formalism**: Unitary evolution (fixed K) vs measurement (K → K-ΔK) providing mechanism for quantum-to-classical transition (Section 4.4)
 
 **Honest Assessment**: LRT is on a scientific journey exploring multiple prediction paths. Some paths (Bell ceiling, simple QC limits) have been explored and abandoned when contradicted by experimental data. Others (T2/T1, scaling hypotheses at large N) remain under development. This iterative refinement process demonstrates:
 - **Falsifiability commitment**: Willingness to abandon contradicted predictions
@@ -2485,6 +2511,8 @@ If confirmed, LRT would represent a paradigm shift: logic as the foundation of p
 **Dirac, P. A. M.** (1930). *The Principles of Quantum Mechanics*. Oxford University Press.
 
 **Everett, H.** (1957). "Relative state" formulation of quantum mechanics. *Reviews of Modern Physics*, 29(3), 454-462. https://doi.org/10.1103/RevModPhys.29.454
+
+**Faizal, M., Krauss, L., Shabir, A., & Marino, F.** (2025). Consequences of Undecidability in Physics on the Theory of Everything. *Journal of Holistic Applied Physics*, 5(2), 10-21.
 
 **Fuchs, C. A., Mermin, N. D., & Schack, R.** (2014). An introduction to QBism with an application to the locality of quantum mechanics. *American Journal of Physics*, 82(8), 749-754. https://doi.org/10.1119/1.4874855
 
