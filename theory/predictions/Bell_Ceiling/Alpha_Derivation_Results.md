@@ -148,9 +148,10 @@ S_falsification = (2.711 + 2.828) / 2 = 2.77
 
 ### Distinguishability
 
-**Signal**: ΔS = 0.12 (LRT below QM)
-**Uncertainty**: ±0.01 (LRT) + ±0.01 (QM) = ±0.014 (quadrature)
-**Significance**: 0.12 / 0.014 ≈ **8.5σ** (highly distinguishable in principle)
+**Signal**: ΔS = 0.117 (LRT below QM)
+**Uncertainty**: δS ≈ 2/√N = 0.02 per measurement (N=10K shots per correlation)
+**Combined uncertainty**: √2 × 0.02 = 0.0283 (comparing two measurements)
+**Significance**: 0.117 / 0.0283 ≈ **4.1σ** (verified in QuTiP validation, Cell 21)
 
 **Challenge**: Zero-noise extrapolation accuracy
 - Need 5+ noise levels
@@ -191,10 +192,10 @@ S_falsification = (2.711 + 2.828) / 2 = 2.77
 - [ ] Execute notebook and save visualizations
 
 **Priority 2: Validation**
-- [ ] Create Bell_Ceiling_QuTiP_Validation.ipynb
-- [ ] Simulate noisy CHSH measurements
-- [ ] Test zero-noise extrapolation methods (linear, quadratic, exponential)
-- [ ] Validate distinguishability claim (8.5σ)
+- [x] Create Bell_Ceiling_QuTiP_Validation.ipynb
+- [x] Simulate noisy CHSH measurements
+- [x] Test zero-noise extrapolation methods (linear, quadratic, exponential)
+- [x] Validate distinguishability claim (4.1σ with 10K shots, verified in Cell 21)
 
 **Priority 3: Experimental Protocol**
 - [ ] Write Bell_Ceiling_Protocol.md
