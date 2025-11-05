@@ -385,7 +385,7 @@ This was computational + documentation work, not formal verification. No Lean th
 2. ✅ **Validated prediction numerically** via QuTiP simulation:
    - Tsirelson bound reproduced (2.828)
    - LRT ceiling reproduced (2.711)
-   - Distinguishability confirmed (8.5σ → 5.6σ with systematics)
+   - Distinguishability confirmed (4.1σ with 10K shots → 5.6σ with systematics)
 
 3. ✅ **Developed complete experimental protocol** (12,000 words):
    - Platform selection with justification

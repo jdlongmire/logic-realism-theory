@@ -95,11 +95,11 @@ $$\mathcal{S}_0^{\text{QM}} = 2\sqrt{2} \approx 2.828$$
 ### 2.4 Statistical Power
 
 **Signal**: Δ = S_QM - S_LRT = 0.117
-**Uncertainty** (per noise level): δS ≈ 2/√N = 0.02 (N=10,000 shots)
-**Combined uncertainty**: σ_total ≈ √2 × 0.02 ≈ 0.014 (both measurements)
-**Significance**: Δ/σ ≈ 0.117/0.014 ≈ **8.5σ**
+**Uncertainty** (per noise level): δS ≈ 2/√N = 0.02 (N=10,000 shots per correlation)
+**Combined uncertainty**: σ_combined ≈ √2 × δS ≈ 0.0283 (comparing two measurements)
+**Significance**: Δ/σ_combined ≈ 0.117/0.0283 ≈ **4.1σ**
 
-**Probability of Type I error** (falsely rejecting QM): p < 10⁻¹⁶
+**Probability of Type I error** (falsely rejecting QM): p < 3.4×10⁻⁵
 **Probability of Type II error** (failing to detect LRT if true): p < 0.01
 
 ---
@@ -230,7 +230,7 @@ To enable zero-noise extrapolation, measure at **5 noise levels**:
 
 **Per noise level, per correlation**:
 - Shots: 10,000
-- Reason: Gives δS ≈ 0.02 per correlation, 8.5σ significance on total CHSH
+- Reason: Gives δS ≈ 0.02 per correlation, 4.1σ significance for distinguishing S_QM from S_LRT
 
 **Total shots**:
 - 5 noise levels × 4 correlations × 10,000 shots = **200,000 shots**
@@ -371,7 +371,7 @@ $$= \sqrt{0.018^2 + 0.011^2} \approx 0.021$$
 - Uncertainty: δS₀ = 0.021
 - Significance: Δ/δS₀ ≈ **5.6σ**
 
-(Note: This is more conservative than the 8.5σ from pure statistical calculation, accounting for systematics.)
+(Note: This accounts for both statistical uncertainty (4.1σ with 10K shots per correlation) and systematic errors from extrapolation.)
 
 ---
 
