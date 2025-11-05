@@ -1,0 +1,411 @@
+# LRT Bell Ceiling Test - Pre-Registration Document
+# For submission to AsPredicted.org
+# Version: 1.0
+# Date: 2025-11-05
+
+study_information:
+  title: "Testing Logic Realism Theory's Prediction of a Bell Ceiling Below the Tsirelson Bound"
+
+  principal_investigator:
+    name: "James D. Longmire"
+    orcid: "0009-0009-1383-7698"
+    email: "james.longmire@example.com"
+    affiliation: "Independent Researcher"
+
+  registration_date: "To be filled upon submission"
+  aspredicted_id: "To be filled upon submission"
+
+  data_collection_status: "Has not begun"
+
+  funding: "Self-funded"
+
+  conflicts_of_interest: |
+    The PI is the developer of Logic Realism Theory and has a vested interest in supporting
+    the theory. To mitigate bias: (1) blind analysis with masked noise labels, (2) pre-committed
+    analysis code, (3) independent review of results.
+
+# ============================================================================
+# RESEARCH QUESTION AND HYPOTHESIS
+# ============================================================================
+
+research_question:
+  primary_question: |
+    Does the maximum CHSH violation in a Bell test, when extrapolated to the zero-environmental-noise
+    limit, equal the Tsirelson bound (standard QM) or fall below it (Logic Realism Theory)?
+
+  theoretical_background: |
+    Standard quantum mechanics predicts that the maximum CHSH violation is S_max = 2√2 ≈ 2.828
+    (Tsirelson bound), derived from the structure of quantum correlations.
+
+    Logic Realism Theory (LRT) predicts that measurement carries intrinsic logical cost due to
+    enforcement of the Law of Excluded Middle. This results in a ceiling below Tsirelson:
+
+    S_LRT^max = 2√2 × (1 - α·η²) ≈ 2.711 ± 0.010
+
+    where α = 3/4 (geometric factor) and η ≈ 0.235 (EM coupling strength).
+
+hypotheses:
+  primary_hypothesis:
+    label: "H1 (LRT)"
+    statement: |
+      The zero-environmental-noise CHSH maximum is S₀ = 2.711 ± 0.010,
+      which is 0.117 (4.1%) below the Tsirelson bound.
+    prediction_type: "Point estimate with uncertainty"
+
+  null_hypothesis:
+    label: "H0 (Standard QM)"
+    statement: |
+      The zero-environmental-noise CHSH maximum equals the Tsirelson bound:
+      S₀ = 2√2 ≈ 2.828.
+    prediction_type: "Established theoretical value"
+
+  alternative_outcomes:
+    - description: "S₀ > 2.83 (above Tsirelson)"
+      interpretation: "Experimental error (impossible in both QM and LRT)"
+    - description: "S₀ < 2.60 (far below LRT)"
+      interpretation: "Unexpected decoherence mechanism"
+
+# ============================================================================
+# EXPERIMENTAL DESIGN
+# ============================================================================
+
+experimental_design:
+  platform:
+    primary: "IonQ Aria"
+    alternative: "Quantinuum H2"
+    justification: |
+      IonQ Aria provides 99.8% gate fidelity and 99.7% measurement fidelity,
+      sufficient to detect the 4.1% LRT signal. Quantinuum H2 (99.9% fidelity)
+      is an alternative if higher precision is needed.
+
+  quantum_circuit:
+    state_preparation: |
+      Bell state |Φ⁺⟩ = (|00⟩ + |11⟩)/√2
+      Circuit: H on q0, CNOT(q0→q1)
+
+    measurement_settings:
+      Alice: ["a = 0° (Z basis)", "a' = 90° (X basis, H gate)"]
+      Bob: ["b = 45° (Ry(π/4))", "b' = -45° (Ry(-π/4))"]
+
+    correlations_measured: 4
+    correlation_labels: ["E(a,b)", "E(a,b')", "E(a',b)", "E(a',b')"]
+
+    chsh_formula: "S = E(a,b) + E(a,b') + E(a',b) - E(a',b')"
+
+  noise_parametrization:
+    method: "Controlled depolarizing noise via idle time insertion"
+    noise_levels: 5
+    noise_values: [0.0, 0.005, 0.01, 0.02, 0.05]
+    noise_labels: ["0%", "0.5%", "1%", "2%", "5%"]
+    implementation: |
+      Insert identity gates with calibrated idle times to induce T1/T2 decay.
+      Idle time calculated from: t = -T_eff × ln(1-p), where T_eff = (T1+T2)/2.
+
+  sample_size:
+    shots_per_correlation_per_noise_level: 10000
+    total_correlations: 4
+    total_noise_levels: 5
+    total_shots: 200000
+
+    justification: |
+      Statistical uncertainty per correlation: δE = 2/√N ≈ 0.02 (N=10,000)
+      CHSH uncertainty: δS = 2×δE ≈ 0.04
+      Signal (QM vs LRT): Δ = 0.117
+      Significance: Δ/(δS/√2) ≈ 8.5σ (highly significant)
+
+      With 5 noise levels for extrapolation, zero-noise uncertainty: δS₀ ≈ 0.02
+      Significance at zero-noise: 0.117/0.02 ≈ 5.9σ (accounting for systematics)
+
+  randomization:
+    circuit_order: "Randomized (20 circuits: 5 noise × 4 correlations)"
+    shot_order: "Interleaved (not 10K consecutive shots per circuit)"
+    calibration_frequency: "Every 1,000 shots"
+
+  blinding:
+    method: "Noise level labels masked during data collection and analysis"
+    unblinding_trigger: "After analysis code execution and results documentation complete"
+    purpose: "Prevent experimenter bias in data interpretation"
+
+# ============================================================================
+# DATA ANALYSIS PLAN
+# ============================================================================
+
+data_analysis:
+  primary_outcome:
+    variable: "S₀"
+    description: "Zero-environmental-noise CHSH value (extrapolated)"
+    measurement: |
+      1. Calculate E(a,b) for each noise level: E = (N_00 + N_11 - N_01 - N_10)/N
+      2. Calculate CHSH per noise level: S(p) = E(a,b) + E(a,b') + E(a',b) - E(a',b')
+      3. Fit S(p) vs p using three models: linear, quadratic, exponential
+      4. Extract S₀ (zero-noise intercept) from best-fit model (lowest χ²/DOF)
+      5. Report S₀ ± δS₀ (uncertainty from fit)
+
+  fit_models:
+    - name: "Linear"
+      formula: "S(p) = S₀ + c₁·p"
+      parameters: 2
+
+    - name: "Quadratic"
+      formula: "S(p) = S₀ + c₁·p + c₂·p²"
+      parameters: 3
+
+    - name: "Exponential"
+      formula: "S(p) = S₀ + A(1 - exp(-p/p₀))"
+      parameters: 3
+
+  model_selection:
+    criterion: "χ² / DOF (degrees of freedom)"
+    procedure: "Select model with lowest χ²/DOF, provided χ²/DOF < 2"
+
+  hypothesis_testing:
+    test_statistic: "z = (S₀ - S_LRT) / √(δS₀² + δS_LRT²)"
+    where:
+      S_LRT: 2.711
+      delta_S_LRT: 0.010
+      S_0: "Measured (from extrapolation)"
+      delta_S_0: "From fit uncertainty"
+
+  decision_rules:
+    reject_LRT:
+      condition: "S₀ > 2.77"
+      significance: "p < 0.01 (>2.5σ)"
+      interpretation: "Tsirelson bound is fundamental, LRT falsified"
+
+    support_LRT:
+      condition: "S₀ < 2.74"
+      significance: "p < 0.01 (>2.5σ)"
+      interpretation: "Evidence for intrinsic measurement cost, LRT supported"
+
+    inconclusive:
+      condition: "2.74 < S₀ < 2.77"
+      action: |
+        Increase shot count, use higher-fidelity platform, add intermediate noise levels,
+        or investigate systematic errors
+
+  secondary_outcomes:
+    - name: "Fit quality"
+      description: "χ²/DOF for best-fit model"
+      threshold: "Should be < 2 for valid extrapolation"
+
+    - name: "Monotonicity"
+      description: "S should decrease with increasing noise"
+      validation: "Check dS/dp < 0 for all adjacent noise levels"
+
+    - name: "Classical bound"
+      description: "All S(p) values should satisfy S ≤ 2.2 (allowing for measurement errors)"
+      validation: "Sanity check for data quality"
+
+  error_budget:
+    systematic_errors:
+      - source: "Gate errors"
+        magnitude: 0.008
+        mitigation: "High-fidelity platform (>99.8%)"
+
+      - source: "Measurement errors"
+        magnitude: 0.006
+        mitigation: "SPAM correction"
+
+      - source: "Calibration drift"
+        magnitude: 0.002
+        mitigation: "Recalibrate every 1K shots"
+
+      - source: "Crosstalk"
+        magnitude: 0.001
+        mitigation: "Use non-adjacent qubits"
+
+      - source: "Leakage"
+        magnitude: 0.001
+        mitigation: "Leakage detection"
+
+      total_systematic: 0.011  # Quadrature sum
+
+    statistical_error:
+      per_correlation: 0.02
+      per_chsh: 0.04
+      after_extrapolation: 0.018
+
+    total_uncertainty: 0.021  # √(0.018² + 0.011²)
+
+  exclusions:
+    criteria: "No data points will be excluded unless hardware failure is documented"
+    documentation: "All exclusions must be justified and documented before unblinding"
+
+# ============================================================================
+# PRE-COMMITMENT
+# ============================================================================
+
+pre_commitment:
+  analysis_code:
+    repository: "https://github.com/jdlongmire/logic-realism-theory"
+    directory: "scripts/bell_ceiling_test/"
+    commit_hash: "To be filled before data collection"
+    locked: true
+    description: |
+      Python scripts for correlation calculation, CHSH construction, extrapolation fitting,
+      and hypothesis testing. Code will be committed to GitHub and locked (no changes)
+      before data collection begins.
+
+  protocol_document:
+    file: "theory/predictions/Bell_Ceiling/Bell_Ceiling_Protocol.md"
+    version: "1.0"
+    frozen: true
+    description: "Complete experimental protocol with circuit designs, analysis plan, and decision rules"
+
+  deviations:
+    reporting: |
+      Any deviations from this pre-registered protocol will be documented and justified
+      in the final manuscript. Major deviations (e.g., changing platforms, shot counts,
+      or analysis methods) will be clearly marked and their impact assessed.
+
+# ============================================================================
+# DATA MANAGEMENT
+# ============================================================================
+
+data_management:
+  data_collection:
+    start_date: "To be filled"
+    end_date: "To be filled"
+    platform_used: "To be filled"
+
+  data_storage:
+    raw_data: "Shot counts for all 200K measurements"
+    metadata: "Timestamps, calibration data, noise levels, circuit parameters"
+    format: "JSON and CSV"
+    backup: "Cloud storage (3 copies: local, GitHub, Zenodo)"
+
+  data_availability:
+    policy: "All data will be made publicly available upon publication"
+    repository: "Zenodo (with DOI)"
+    code_repository: "GitHub (analysis scripts)"
+    timeline: "Within 1 month of manuscript submission"
+
+  privacy: "No human subjects data collected (quantum hardware only)"
+
+# ============================================================================
+# TIMELINE
+# ============================================================================
+
+timeline:
+  preparation:
+    duration: "1 week"
+    tasks:
+      - "Finalize protocol and incorporate feedback"
+      - "Submit pre-registration to AsPredicted.org"
+      - "Set up platform access and test circuits"
+      - "Lock analysis code on GitHub"
+
+  execution:
+    duration: "1 week"
+    tasks:
+      - "Calibration and validation (T1, T2, fidelities)"
+      - "Data collection (200K shots, ~6 hours with queue time)"
+      - "Validation checks (Bell fidelity, classical bound)"
+      - "Data backup and archiving"
+
+  analysis:
+    duration: "1 week"
+    tasks:
+      - "Run blind analysis pipeline"
+      - "Unblind and interpret results"
+      - "Sensitivity analysis and cross-checks"
+      - "Draft results section"
+      - "Manuscript preparation"
+
+  total_duration: "3 weeks from protocol finalization to manuscript submission"
+
+# ============================================================================
+# PUBLICATION PLAN
+# ============================================================================
+
+publication:
+  commitment: |
+    Results will be published regardless of outcome. Negative results (LRT falsified)
+    will be reported with equal transparency as positive results (LRT supported).
+
+  target_journals:
+    primary: "Physical Review Letters"
+    secondary: "Physical Review A"
+    preprint: "ArXiv (immediate dissemination)"
+
+  authorship:
+    policy: "Single author (PI) unless collaborators contribute substantially to execution or analysis"
+
+  supplementary_materials:
+    - "Complete raw data (Zenodo)"
+    - "Analysis code (GitHub)"
+    - "Pre-registration document (AsPredicted.org)"
+    - "Extended error budget calculations"
+    - "Circuit optimization details"
+
+# ============================================================================
+# ETHICS AND INTEGRITY
+# ============================================================================
+
+ethics:
+  institutional_review: "Not required (no human/animal subjects)"
+
+  informed_consent: "Not applicable"
+
+  data_integrity:
+    measures:
+      - "Blind analysis to prevent bias"
+      - "Pre-committed analysis code"
+      - "Independent review of results"
+      - "Public data availability for verification"
+
+  conflicts_of_interest:
+    declared: true
+    mitigation: |
+      PI is theory developer. Mitigation: (1) blind analysis, (2) pre-committed methods,
+      (3) external review, (4) transparent reporting of negative results.
+
+  research_integrity_statement: |
+    This research adheres to principles of scientific integrity including: transparency,
+    reproducibility, pre-registration, open data, and honest reporting regardless of outcome.
+
+# ============================================================================
+# ADDITIONAL INFORMATION
+# ============================================================================
+
+additional_info:
+  theoretical_papers:
+    - "Longmire, J.D. (2025). Logic Realism Theory: Deriving Quantum Mechanics from Logical Consistency"
+
+  computational_validation:
+    - "QuTiP simulation confirmed 8.5σ distinguishability"
+    - "Zero-noise extrapolation methods tested and validated"
+    - "Error budget verified via Monte Carlo simulations"
+
+  related_work:
+    - "T2/T1 decoherence prediction (secondary test of same mechanism)"
+    - "Variational derivation of η parameter (Notebook 07)"
+    - "Geometric factor α derivation (Notebook 08)"
+
+  questions_or_concerns:
+    contact: "james.longmire@example.com"
+    response_time: "Within 48 hours"
+
+# ============================================================================
+# CERTIFICATION
+# ============================================================================
+
+certification:
+  statement: |
+    I certify that this pre-registration accurately describes the research plan that will be
+    executed. Any deviations will be documented and justified. Data collection has not begun
+    at the time of this registration.
+
+  signature: "James D. Longmire"
+  date: "To be filled upon submission"
+  aspredicted_confirmation: "To be filled upon submission"
+
+# ============================================================================
+# VERSION HISTORY
+# ============================================================================
+
+version_history:
+  - version: "1.0"
+    date: "2025-11-05"
+    changes: "Initial pre-registration document"
+    status: "Draft for review"

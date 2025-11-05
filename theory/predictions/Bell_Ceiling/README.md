@@ -163,15 +163,21 @@ $$\mathcal{S}_{\text{LRT}}^{\text{max}} \approx 2.828 \cdot (1 - 0.0415) \approx
 - [ ] **Zero_Noise_Extrapolation_Analysis.ipynb**: (Optional - covered in validation notebook)
 
 ### Experimental
-- [ ] **Bell_Ceiling_Protocol.md**: Full experimental design
-  - Platform selection (IonQ Aria vs Quantinuum H2)
-  - Circuit specifications (Bell state preparation, measurements)
-  - Noise characterization (5 levels: 0%, 0.5%, 1%, 2%, 5%)
-  - Extrapolation methodology
-  - Error budget and statistical power
-  - Resource requirements
+- [x] **Bell_Ceiling_Protocol.md**: ✅ Complete experimental protocol (2025-11-05)
+  - Platform selection: IonQ Aria (primary), Quantinuum H2 (alternative)
+  - Circuit specifications: Bell state |Φ⁺⟩ + CHSH measurements
+  - Noise characterization: 5 levels (0%, 0.5%, 1%, 2%, 5%)
+  - Extrapolation: Linear, quadratic, exponential fits
+  - Error budget: ±0.021 total uncertainty
+  - Resource requirements: 200K shots, $70-300, 3 weeks
+  - **Status**: Ready for pre-registration
 
-- [ ] **protocol_lrt_bell.yaml**: Pre-registration content (referenced in Issue #7)
+- [x] **protocol_lrt_bell.yaml**: ✅ Pre-registration document complete (2025-11-05)
+  - Formatted for AsPredicted.org submission
+  - Hypothesis: H1 (S₀ = 2.711), H0 (S₀ = 2.828)
+  - Method: Blind analysis, pre-committed code
+  - Falsification: S₀ > 2.77 → LRT falsified
+  - **Status**: Ready for submission
 
 ### Documentation
 - [ ] **Bell_vs_T2T1_Comparison.md**: Why Bell is cleaner prediction path
@@ -191,15 +197,16 @@ $$\mathcal{S}_{\text{LRT}}^{\text{max}} \approx 2.828 \cdot (1 - 0.0415) \approx
 - ✅ Folder structure created (this README)
 - ✅ Theoretical basis documented (Alpha_Derivation_Results.md)
 - ✅ Computational notebooks (08_Bell_Anomaly_Modeling.ipynb, 09_Bell_Ceiling_QuTiP_Validation.ipynb)
+- ✅ **Experimental protocol complete** (Bell_Ceiling_Protocol.md, 12,000+ words)
+- ✅ **Pre-registration document complete** (protocol_lrt_bell.yaml)
 
 ### In Progress ⚙️
-- Experimental protocol development (next step)
+- Pre-registration submission to AsPredicted.org (next step)
 
 ### Not Started ⏸️
-- Experimental protocol document
-- Pre-registration (protocol_lrt_bell.yaml)
-- Main paper integration
-- Pre-registration
+- Main paper integration (Section 6.X)
+- Platform access setup (IonQ Aria or Quantinuum H2)
+- Experimental execution (after pre-registration)
 
 ---
 
