@@ -514,14 +514,123 @@ K_enforcement uses energy cost
 
 ---
 
+### LRT Explanatory Power Cleanup
+
+**Task**: Clean up theory/frameworks/LRT_Explanatory_Power.md to remove speculation, focus on rigorous achievements
+
+**Context**: Framework document (October 26, 1,249 lines) contained mix of rigorous derivations and speculative content (spacetime, gravity, mass, mathematics emergence)
+
+**User Feedback**: "clean up explanantory power to match what we actually have plausible theoretical evidence for and remove some of the fluff - make it clean, crisp, accurate"
+
+**Actions Taken**:
+
+1. ✅ **Deprecated old version** (1,249 lines → `LRT_Explanatory_Power_DEPRECATED_2025-11-06.md`)
+   - Preserves historical reference
+   - Tagged with date for future comparison
+
+2. ✅ **Created streamlined version** (378 lines)
+   - Core structure: Comparison table (LRT vs Standard QM) with status markers
+   - Focus: Complement paper formalization section, not duplicate it
+   - Removed: ~600 lines of speculation, ~300 lines of pedagogical fluff
+
+**Content Removed (~870 lines)**:
+- Spacetime emergence from information geometry (speculative)
+- Gravity as emergent geometric dynamics (speculative)
+- Mass accumulation from constraint energy (speculative)
+- Quantum fields as information subsets (speculative)
+- "Mathematics itself derived from L(I)" (philosophically problematic)
+- Overclaims about Born rule derivation (not actually derived)
+- Overclaims about Hilbert space derivation (conceptual only)
+- Pedagogical sections (unnecessary for framework doc)
+- Verbose interpretation explanations (repetitive)
+- Historical precedents (not needed)
+
+**Content Preserved** (user explicit request):
+- Entanglement/"spooky action at a distance" explanation (conceptual value, demystifies phenomenon)
+- Energy/Hamiltonian derivation from Noether (rigorous)
+- Conceptual advantages over standard QM
+- Comparison to interpretations (Copenhagen, Many-Worlds, Bohm, GRW, QBism)
+- Experimental status (Path 1-2 complete, Path 3-8 pending)
+- Strengths and limitations (expanded)
+
+**Content Added** (actual achievements):
+- Complete variational framework section (K_ID, K_EM, K_enforcement derivations)
+- β_opt ≈ 0.749 testable prediction with falsification criteria
+- Lagrangian/Hamiltonian formulation references
+- Decoherence timescale relations (T₁ ∝ 1/β², T₂* ∝ 1/β)
+- Honest percentages (~90-95% derived)
+- Clear status markers throughout (✅ Rigorous, ⚠️ Interpretive, ❓ Open)
+
+**New Structure** (378 lines):
+
+**Part I: Foundational Concepts - LRT vs Standard QM** (Comparison Table)
+- First Principles: 4-6 axioms → 3 logical constraints (Rigorous Reduction)
+- Energy (Ĥ): Derived from Noether's theorem via Identity (Rigorously Derived)
+- Time Evolution: Stone's theorem from persistence (Rigorously Derived)
+- Entanglement: Global constraint satisfaction (Interpretive Framework)
+- Measurement/Collapse: EM activation (Interpretive Framework)
+- Superposition: Relaxed EM constraint (Interpretive Framework)
+- Hilbert Space: Information geometry (Conceptual Derivation)
+
+**Part II: Variational Framework - Constraint Cost Functionals**
+- K_ID = 1/β² derivation (~95%)
+- K_EM = (ln 2)/β derivation (~95%)
+- K_enforcement = 4β² derivation (~90%)
+- β_opt ≈ 0.749 variational optimization
+- Testable predictions (scaling relations, universality)
+
+**Part III: Lagrangian/Hamiltonian Formulation**
+- Non-circular energy derivation
+- Reference to 1_Paper_Formalization_Section.md, Section 2
+
+**Part IV: Comparison to QM Interpretations**
+- Copenhagen, Many-Worlds, Bohm, GRW, QBism
+- LRT position: Realist with logical foundations
+
+**Part V: Strengths and Limitations**
+- Strengths: Rigorous derivations, testable predictions, conceptual framework
+- Limitations: β phenomenological, Born rule not derived, interpretive mechanisms
+- Open questions: β axiomatization, Born rule, measurement mechanism
+
+**Parts VI-VII**: Experimental status, value independent of predictions
+
+**Key Decisions**:
+- **Born Rule**: Omitted entirely (user: "yes - omit - until we do")
+  - Honest: LRT hasn't derived P = |ψ|² yet
+  - Previous version overclaimed this achievement
+- **β_opt**: Featured prominently as testable, falsifiable prediction
+  - Distinguishes LRT from standard QM parameter fitting
+- **Entanglement**: Preserved per user request ("one of the components I'd like to keep is LRT explains spooky action at a distance")
+  - Framed as interpretive, not rigorously derived
+  - Provides conceptual value and demystifies "spooky action"
+
+**Document Metrics**:
+- Length: 1,249 lines → 378 lines (~70% reduction)
+- Content: ~40% removed (speculation), ~30% removed (fluff), ~30% kept/added (rigorous+interpretive)
+- Tables: 2 major comparison tables added
+- Professional tone: No hyperbole, no emojis, factual throughout
+
+**Commits**:
+- 8c4d891 - "Session 14.0: Streamline LRT Explanatory Power to focused comparison"
+- Files: Deprecated old version, created new clean version
+
+**Result**:
+- Clean, focused document complementing paper formalization section
+- Honest about gaps (Born rule, β axiomatization, interpretive mechanisms)
+- Clear status markers distinguish rigorous from interpretive
+- User's comparison table format as centerpiece
+- Target achieved: "clean, crisp, accurate"
+
+---
+
 **Next Tasks** (pending):
 - Execute computational validation sprint (implement 5 scripts)?
-- User review of updated paper section with L/H framework?
+- Further framework cleanup?
 - Other tasks?
 
 ---
 
-**Session Status**: Active (context at ~91%, will continue in Session 14.1 if needed)
+**Session Status**: Active (context at ~96%, will continue in Session 14.1 if needed)
 
 ---
 
