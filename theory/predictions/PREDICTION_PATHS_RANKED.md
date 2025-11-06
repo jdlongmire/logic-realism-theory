@@ -1,21 +1,27 @@
 # LRT Prediction Paths: Ranked by Category and Confidence
 
-**Date**: November 5, 2025 (Session 10.0)
+**Date**: November 5, 2025 (Sessions 10.0, 12.0-12.4)
 **Purpose**: Comprehensive ranking of all prediction paths with confidence scores
+**Status**: Top 4 computationally validated (Sprint 16 Track 2 COMPLETE)
 **Confidence Scale**: H = High (>70% mechanistic derivation + experimental feasibility), M = Medium (40-70%), L = Low (<40%)
+**Validation**: See `SANITY_CHECK_PATH_1-4.md` (root) - All paths PASS ✅
 
 ---
 
-## Tier 1: Smoking Guns ✅ COMPLETE (Session 10.0)
+## Tier 1: Smoking Guns ✅ VALIDATED (Sessions 10.0-12.4)
 
 | Rank | Path | Category | Observable | Effect Size | Timeline | Confidence | Status |
 |------|------|----------|------------|-------------|----------|------------|--------|
-| **1** | AC Stark θ-Dependence | Decoherence | Δω(θ) ratio ~1.16 at θ=π/4 | 16% | 6-12 mo | **H** | ✅ Protocol + derivation complete |
-| **2** | Bell State Asymmetry | Entanglement | ΔT2/T1 ≈ 0.19 (Φ+ vs Ψ+) | 19% | 1-2 mo | **H** | ✅ Protocol + derivation complete |
-| **3** | Ramsey θ-Scan | Decoherence | γ(θ) ∝ S_EM(θ), peaks θ=π/4 | Variable | 6-12 mo | **H** | ✅ Protocol + derivation complete |
-| **4** | Zeno Crossover Shift | Dynamical | r* shifted by ~1.23× | 23% | 6-12 mo | **M** | ✅ Protocol + derivation complete |
+| **1** | AC Stark θ-Dependence | Decoherence | Δω(θ) ratio ~1.23 at θ=90° | 23% | 6-12 mo | **H** (9σ) | ✅ Validated: Protocol + notebook + sanity check |
+| **2** | Bell State Asymmetry | Entanglement | ΔT2/T1 ≈ 0.19 (Φ+ vs Ψ+) | 19% | 1-2 mo | **H** (12σ) | ✅ Validated: Protocol + notebook + sanity check |
+| **3** | Ramsey θ-Scan | Decoherence | γ(90°)/γ(0°) ≈ 0.86 | 14% | 6-12 mo | **H** (5σ) | ✅ Validated: Protocol + notebook + sanity check |
+| **4** | Zeno Crossover Shift | Dynamical | γ*(90°)/γ*_QM ≈ 1.16 | 16% | 6-12 mo | **M** (1σ) | ✅ Validated: Protocol + notebook + sanity check |
 
-**Tier 1 Status**: ✅ **ALL 4 COMPLETE** (~10,000 lines total) - Ready for experimental collaboration
+**Tier 1 Status**: ✅ **ALL 4 VALIDATED** (Sprint 16 Track 2 COMPLETE)
+- Protocols: ~10,000 lines (Session 10.0)
+- Notebooks: 4 first-principles notebooks, 1.6 MB, 0 errors (Sessions 12.0-12.3)
+- Validation: SANITY_CHECK_PROTOCOL passed - non-circular, first-principles (Session 12.4)
+- Ready for: Experimental collaboration outreach
 
 ---
 
