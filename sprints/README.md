@@ -30,6 +30,35 @@
 
 ## Active Sprints
 
+### Sprint 16: Prediction Paths First-Principles Validation 🟡 **PLANNING**
+
+**Status**: 🟡 PLANNING (not yet started)
+**Created**: November 5, 2025 (Session 11.0)
+**Priority**: 🔴 CRITICAL (blocks experimental outreach)
+**Duration**: 3-4 weeks (estimated)
+**Type**: Computational + Theoretical
+
+**Objective**: Resolve all V&V report weaknesses before experimental collaboration outreach
+
+**Four Tracks**:
+1. **Theoretical Foundations** (S_EM(θ) derivation, η uncertainty, error budgets)
+2. **Computational Validation** (4 notebooks + 4 analysis scripts, all paths)
+3. **Experimental Preparation** (pilot tests, multi-platform strategy, outreach materials)
+4. **Publication Preparation** (figures, methods, supplementary info)
+
+**Success Criteria**:
+- All 4 notebooks executed and validated (non-circular)
+- All analysis scripts implemented and tested
+- Error budgets updated to realistic values
+- Collaboration pitch materials ready (12 items)
+- Gate criteria passed for experimental outreach
+
+**Context**: Addresses critical weaknesses identified in TOP_4_VV_REPORT.md (16,000 words, Session 11.0)
+
+See: [`SPRINT_16_PLAN.md`](SPRINT_16_PLAN.md) and [`sprint_16/SPRINT_16_TRACKING.md`](sprint_16/SPRINT_16_TRACKING.md)
+
+---
+
 ### Sprint 9: Lean Proof Cleanup 🟡 **PLANNING**
 
 **Status**: 🟡 PLANNING (not yet started)
@@ -207,10 +236,11 @@ See: [`sprint_1/SPRINT_1_TRACKING.md`](sprint_1/SPRINT_1_TRACKING.md)
 | Sprint 8 | ✅ Complete | Oct 30 | Oct 30 | Honest Framing | 5.4+ |
 | **Sprint 9** | 🟡 **Planning** | Nov 3 | TBD | **Lean Proof Cleanup** | **TBD** |
 | **Sprint 10** | 🟡 **Planning** | Nov 3 | TBD | **K-Theory Integration** | **TBD** |
+| **Sprint 16** | 🟡 **Planning** | Nov 5 | TBD | **Prediction Paths Validation** | **TBD** |
 
 ---
 
-**Active Sprints**: Sprint 9 (Lean Proof Cleanup), Sprint 10 (K-Theory Integration) - both in planning
+**Active Sprints**: Sprint 16 (Prediction Paths - 🔴 CRITICAL), Sprint 9 (Lean Cleanup), Sprint 10 (K-Theory) - all in planning
 **On Hold**: Sprint 4 (can resume after higher priorities), Sprint 6 (deferred)
 **Latest Completed**: Sprint 8 (Honest Framing - October 30)
 **Current Session**: [Session 5.4](../Session_Log/Session_5.4.md) (latest recorded)
