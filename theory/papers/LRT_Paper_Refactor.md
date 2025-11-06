@@ -62,6 +62,17 @@ Following Session 13.0 variational framework derivation (~90-95% rigorous), the 
 **Status**: Detailed derivations for supplement or appendices
 **Reference**: theory/derivations/ folder
 
+### Foundational Reference Paper
+**theory/Logic_Realism_Theory_Foundational.md** (theory root folder)
+- Original foundational LRT paper
+- Philosophical arguments and core thesis development
+- Early derivations and experimental protocols
+- Historical context and motivation
+- Source material for content extraction
+
+**Status**: Historical reference for philosophical framing, experimental design, and foundational arguments
+**Reference**: theory/Logic_Realism_Theory_Foundational.md
+
 ---
 
 ## Paper Structure (Proposed)
