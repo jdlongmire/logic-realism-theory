@@ -3,6 +3,7 @@
 **Purpose**: Verify actual completion vs claimed completion after each track
 **Invoke**: After completing any track, sprint deliverable, or major claim
 **Created**: 2025-11-04 (Session 9.0 - AI-assistant challenge mitigation)
+**Reports**: Save all sanity check reports to `01_Sanity_Checks/` folder (see Output Format below)
 
 ---
 
@@ -504,7 +505,16 @@ Ask these before claiming completion:
 
 ## Output Format
 
-After running sanity check, report:
+After running sanity check, report results AND save to `01_Sanity_Checks/` folder:
+
+**File Naming Convention**: `YYYY-MM-DD_[TrackName]_SanityCheck.md`
+
+**Examples**:
+- `01_Sanity_Checks/2025-11-06_Energy_SanityCheck.md`
+- `01_Sanity_Checks/2025-11-06_K_ID_Derivation_SanityCheck.md`
+- `01_Sanity_Checks/2025-11-06_Sprint13_Track2_SanityCheck.md`
+
+**Report Template**:
 
 ```markdown
 ## Sanity Check Results - [Track Name]
