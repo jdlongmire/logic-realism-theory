@@ -72,16 +72,19 @@ This document tracks all LRT prediction paths: tested, blocked, proposed, and fu
 
 Standard QM predicts NO dependence on superposition angle θ for AC Stark shifts, Ramsey decay, gate errors. **Result**: Nobody has ever systematically measured these. **LRT predicts measurable θ-dependence** creating unexplored experimental territory.
 
-### Top 4 Tier 1 "Smoking Guns" (6-12 months, existing hardware)
+### Top 4 Tier 1 "Smoking Guns" ✅ COMPLETE (Session 10.0)
 
-1. **AC Stark Shift θ-Dependence** - HIGHEST PRIORITY (16% effect at θ=π/4)
-2. **Bell State Asymmetry** - FASTEST PATH (ΔT2/T1 ≈ 0.19, 1-2 months)
-3. **Ramsey θ-Scan** - CONVERGENCE VALIDATED (Internal + Grok)
-4. **Zeno Crossover Shift** - CURRENT TECH (r* shift ~1.23×)
+1. **AC Stark Shift θ-Dependence** - HIGHEST PRIORITY (16% effect at θ=π/4) ✅
+2. **Bell State Asymmetry** - FASTEST PATH (ΔT2/T1 ≈ 0.19, 1-2 months) ✅
+3. **Ramsey θ-Scan** - CONVERGENCE VALIDATED (Internal + Grok) ✅
+4. **Zeno Crossover Shift** - CURRENT TECH (r* shift ~1.23×) ✅
 
 **Full analysis**: See `multi_LLM/consultation/Prediction_Paths_Brainstorm_Session.md` (682 lines)
 
-**Status**: Awaiting user decision on protocol development (Option A: all 4 parallel, Option B: sequential, Option C: top 2 only)
+**Status**: ✅ **ALL 4 PROTOCOLS COMPLETE** (~10,000 lines total)
+- Each path: Full protocol + theoretical derivation + README
+- Documentation: `Path_1_AC_Stark_Theta/`, `Path_2_Bell_State_Asymmetry/`, `Path_3_Ramsey_Theta_Scan/`, `Path_4_Zeno_Crossover_Shift/`
+- Ready for experimental collaboration outreach
 
 ---
 
@@ -93,7 +96,7 @@ Standard QM predicts NO dependence on superposition angle θ for AC Stark shifts
 |------|-----------|--------|----------------|---------------|--------|
 | **1** | T2 Decoherence | ✓ **Tested** | Exponential T2 | Exponential T2 | No difference at 2.8% |
 | **2** | Contradiction Suppression | ✗ **Blocked** | NC filtering | Unitary + Born | Logically equivalent |
-| **3** | T1 vs T2 Ratio | ✅ **Protocol Ready** | T2/T1 ≈ 0.81 | T2/T1 = 2.0 (clean) | Awaiting tests |
+| **3** | T1 vs T2 Ratio (Path 5) | ✅ **Protocol Ready** | T2/T1 ≈ 0.81 | T2/T1 = 2.0 (clean) | Awaiting tests |
 | **4** | Rabi Inertia | ⚠️ **Questionable** | High-Ω suppression | Also suppresses | Ambiguous, deprioritized |
 | **5** | Hamiltonian Shift | ✅ **Documented** | ω(|+⟩) ≠ ω(|0⟩) | ω(|+⟩) = ω(|0⟩) | Protocol outline |
 | **6** | Landauer Complexity | 📋 **Aspirational** | E(complex) > kT ln(2) | E = kT ln(2) | Infeasible (decades) |
@@ -106,11 +109,11 @@ Standard QM predicts NO dependence on superposition angle θ for AC Stark shifts
 
 **See full details**: `multi_LLM/consultation/Prediction_Paths_Brainstorm_Session.md`
 
-**Tier 1 (Smoking Guns - Top 4)**:
-- AC Stark θ-dependence (16% effect)
-- Bell state asymmetry (ΔT2/T1 ≈ 0.19)
-- Ramsey θ-scan (convergence validated)
-- Zeno crossover shift (r* ~1.23×)
+**Tier 1 (Smoking Guns - Top 4)** - ✅ **ALL COMPLETE**:
+- AC Stark θ-dependence (16% effect) - Full protocol + derivation
+- Bell state asymmetry (ΔT2/T1 ≈ 0.19) - Full protocol + derivation
+- Ramsey θ-scan (convergence validated) - Full protocol + derivation
+- Zeno crossover shift (r* ~1.23×) - Full protocol + derivation
 
 **Tier 2 (High Priority - 4 paths)**: W-state asymmetry, nonlinear dephasing, KCBS ceiling, Sorkin parameter
 
@@ -759,169 +762,6 @@ Standard QM predicts NO dependence on superposition angle θ for AC Stark shifts
 
 ---
 
-## Path 8: Quantum Computing Upper Limits
-
-**Status**: 📋 **PROPOSED** - Needs Theoretical Development
-
-### Theory
-
-**LRT Hypothesis**: If physical reality emerges from logical filtering of information (A = L(I)), then quantum computation might face fundamental limits not present in standard QM.
-
-**Potential mechanisms**:
-1. **Constraint overhead**: Maintaining logical consistency requires computational resources
-2. **Error floor**: Logical filtering imposes minimum error rate that cannot be corrected away
-3. **Scaling limits**: Number of logically consistent qubits bounded by constraint capacity
-4. **Algorithm restrictions**: Certain quantum algorithms violate logical consistency at scale
-
-**Key Question**: What specific limits does LRT predict that standard QM does not?
-
-### Possible Predictions
-
-**Need clarification on which LRT predicts**:
-
-1. **Error Correction Threshold**:
-   - **LRT**: Fundamental error floor below which QEC cannot operate (e.g., ε > 10^-6)
-   - **QM**: No fundamental threshold (limited only by engineering)
-   - **Test**: Push error rates to extreme limits, look for floor
-
-2. **Qubit Number Scaling**:
-   - **LRT**: Maximum number of qubits bounded by logical constraint capacity (e.g., N_max ~ 10^6?)
-   - **QM**: No fundamental limit (exponential Hilbert space growth)
-   - **Test**: Build ever-larger quantum computers, look for failure to scale
-
-3. **Entanglement Complexity**:
-   - **LRT**: Highly entangled states require more "logical capacity" to maintain
-   - **QM**: Entanglement has no inherent cost
-   - **Test**: Compare resource requirements for product states vs maximally entangled
-
-4. **Algorithmic Restrictions**:
-   - **LRT**: Certain quantum algorithms (Shor? Grover?) might hit logical consistency limits
-   - **QM**: All unitary algorithms valid
-   - **Test**: Run algorithms at increasing scale, look for deviation from expected performance
-
-5. **Decoherence Floor**:
-   - **LRT**: Even perfect isolation has residual decoherence from logical constraint application
-   - **QM**: Perfect isolation → zero decoherence
-   - **Test**: Measure decoherence in best possible systems, look for irreducible minimum
-
-### Critical Questions (Need User Input)
-
-**To make this prediction path concrete, need to specify**:
-
-1. **Which limit does LRT predict?**
-   - Error floor? Qubit scaling? Entanglement cost? Algorithmic? Decoherence?
-   - Can be multiple, but need specific claim for each
-
-2. **What magnitude?**
-   - Error floor at 10^-6? 10^-9? 10^-12?
-   - Max qubits: 10^6? 10^9? 10^12?
-   - Decoherence floor: T2 > 1 ms? 1 s? 1 hour?
-
-3. **What mechanism?**
-   - How does logical filtering impose these limits?
-   - Can we derive quantitative prediction from LRT axioms?
-   - What is the physical interpretation?
-
-4. **How does it scale?**
-   - With system size (N qubits)?
-   - With algorithm complexity?
-   - With error correction overhead?
-
-### Falsifiability
-
-**If LRT predicts specific QC limits**:
-
-✓ **Highly falsifiable**:
-- Quantum computing companies (IBM, Google, IonQ, etc.) are actively pushing these boundaries
-- If LRT predicts error floor at 10^-6 and Google achieves 10^-8 → LRT falsified
-- If LRT predicts max 10^6 qubits and IBM builds 10^7 → LRT falsified
-- **This makes it an excellent prediction path**
-
-✓ **Timely**:
-- QC is advancing rapidly (~2-5 year doubling of capabilities)
-- Predictions could be tested within 5-10 years
-- Don't need expensive custom experiments (field is testing these limits anyway)
-
-✓ **High impact**:
-- If LRT correctly predicts limits that QM doesn't → major vindication
-- If limits are confirmed → paradigm shift in quantum computing
-- If limits are violated → LRT falsified cleanly
-
-### Comparison to Other Fields
-
-**Similar predictions in history**:
-
-1. **Heisenberg Uncertainty Principle**:
-   - QM predicted fundamental measurement limits
-   - Repeatedly tested, always confirmed
-   - Became cornerstone of theory
-
-2. **Bekenstein-Hawking Entropy**:
-   - Predicted maximum information in bounded region
-   - Holographic principle emerged
-   - Testable (in principle) via black hole thermodynamics
-
-3. **Thermodynamic Limits** (Carnot, Landauer):
-   - Fundamental bounds on efficiency, information processing
-   - Always confirmed experimentally
-   - Essential for engineering
-
-**If LRT predicts QC limits**, it's in good company with fundamental bounds.
-
-### Next Steps
-
-**To develop this prediction path**:
-
-1. **Clarify with user**: Which specific limit(s) does LRT predict?
-
-2. **Theoretical derivation**:
-   - Start from LRT axioms (I, NC, EM constraints)
-   - Derive quantitative bound on QC capability
-   - Compare to QM (which predicts no such bound)
-
-3. **Literature review**:
-   - Current QC state-of-the-art (error rates, qubit counts, etc.)
-   - Projected timelines for advances
-   - Where would LRT limit appear?
-
-4. **Quantitative prediction**:
-   - Error floor: ε_min = ???
-   - Max qubits: N_max = ???
-   - Decoherence floor: T2_min = ???
-   - Algorithm: Breaks at scale X
-
-5. **Falsification timeline**:
-   - When will experiments reach the predicted limit?
-   - 2-3 years? 5-10 years? 20+ years?
-
-6. **Publication**:
-   - Position paper: "Quantum Computing Limits in Logic Realism Theory"
-   - Make concrete, quantitative predictions
-   - Let the field test them
-
-### Strategic Importance
-
-**This could be THE key prediction path** because:
-
-✓ **Clear**: QM says no limits, LRT says limits exist
-✓ **Testable**: QC field is actively exploring these regimes
-✓ **Timely**: Tests will happen in next 5-10 years regardless
-✓ **High-impact**: Correct prediction would be major validation
-✓ **No special access needed**: Field tests itself, just watch results
-✓ **Falsifiable**: Violation of limits would clearly falsify LRT
-
-**If LRT correctly predicts QC limits that QM doesn't, this could be more important than any of Paths 1-7.**
-
-### Current Assessment
-
-**Status**: PROMISING but **needs specification**
-
-**Priority**: **HIGH** (potentially highest) **once limits are specified**
-
-**Next action**: **User to clarify which limits LRT predicts and at what magnitudes**
-
----
-
 ## Path 10: AGI Impossibility via IIS Access
 
 **Status**: ❌ **DEFERRED** - Too Many Philosophical Issues
@@ -1183,14 +1023,14 @@ Lean proof development may reveal additional prediction paths:
 
 ### Current Priority Ranking (Post-Consultation)
 
-**Tier 1 (Top 4 Smoking Guns - HIGHEST PRIORITY)**:
-1. **AC Stark θ-dependence**: 16% effect, cleanest observable, untested regime
-2. **Bell state asymmetry**: ΔT2/T1 ≈ 0.19, fastest path (1-2 months)
-3. **Ramsey θ-scan**: Validated by convergence (Internal + Grok)
-4. **Zeno crossover shift**: Current tech, r* ~1.23×
+**Tier 1 (Top 4 Smoking Guns)** - ✅ **ALL PROTOCOLS COMPLETE**:
+1. **AC Stark θ-dependence**: 16% effect, cleanest observable, untested regime ✅
+2. **Bell state asymmetry**: ΔT2/T1 ≈ 0.19, fastest path (1-2 months) ✅
+3. **Ramsey θ-scan**: Validated by convergence (Internal + Grok) ✅
+4. **Zeno crossover shift**: Current tech, r* ~1.23× ✅
 
 **Tier 2 (Secondary - Original Paths)**:
-5. **Path 3 (T1 vs T2)**: Protocol ready, T2/T1 ≈ 0.81 prediction
+5. **Path 5 (T1 vs T2)**: Protocol ready, T2/T1 ≈ 0.81 prediction (folder: Path_5_T2-T1/)
 6. **Path 5 (Frequency shift)**: Complementary, high precision
 
 **Tier 3 (Exploratory)**:
@@ -1207,11 +1047,12 @@ Lean proof development may reveal additional prediction paths:
 ### Strategic Direction
 
 **Next Actions**:
-1. ✅ **Create formal protocol for Path 3** (T1 vs T2 test design)
-2. ✅ **Multi-LLM consultation** on Path 3 design
-3. ⚠️ **Apply for enhanced IBM Quantum access** (Researchers Program)
-4. 🔍 **Continue Lean proof development** (may reveal Path N)
-5. 📊 **Prepare methodology paper** on prediction path framework
+1. ✅ **Create formal protocol for Path 3** (T1 vs T2 test design) - COMPLETE
+2. ✅ **Multi-LLM consultation** on Path 3 design - COMPLETE
+3. ✅ **Top 4 Tier 1 protocol development** - COMPLETE (~10,000 lines)
+4. ⚠️ **Apply for enhanced IBM Quantum access** OR **Experimental collaboration outreach**
+5. 🔍 **Continue Lean proof development** (may reveal Path N)
+6. 📊 **Prepare methodology paper** on prediction path framework
 
 **Decision Points**:
 - **If Path 3 shows T2 < T1**: Major result, verification needed

@@ -6,16 +6,16 @@
 
 ---
 
-## Tier 1: Smoking Guns (6-12 months, existing hardware)
+## Tier 1: Smoking Guns ✅ COMPLETE (Session 10.0)
 
-| Rank | Path | Category | Observable | Effect Size | Timeline | Confidence | Notes |
-|------|------|----------|------------|-------------|----------|------------|-------|
-| **1** | AC Stark θ-Dependence | Decoherence | Δω(θ) ratio ~1.16 at θ=π/4 | 16% | 6-12 mo | **H** | Untested regime, kHz precision exists, cleanest observable |
-| **2** | Bell State Asymmetry | Entanglement | ΔT2/T1 ≈ 0.19 (Φ+ vs Ψ+) | 19% | 1-2 mo | **H** | Fastest path, complements T2/T1, IBM Quantum ready |
-| **3** | Ramsey θ-Scan | Decoherence | γ(θ) ∝ S_EM(θ), peaks θ=π/4 | Variable | 6-12 mo | **H** | Independent convergence (Internal + Grok), trapped ions |
-| **4** | Zeno Crossover Shift | Dynamical | r* shifted by ~1.23× | 23% | 6-12 mo | **M** | Current tech, needs bath characterization |
+| Rank | Path | Category | Observable | Effect Size | Timeline | Confidence | Status |
+|------|------|----------|------------|-------------|----------|------------|--------|
+| **1** | AC Stark θ-Dependence | Decoherence | Δω(θ) ratio ~1.16 at θ=π/4 | 16% | 6-12 mo | **H** | ✅ Protocol + derivation complete |
+| **2** | Bell State Asymmetry | Entanglement | ΔT2/T1 ≈ 0.19 (Φ+ vs Ψ+) | 19% | 1-2 mo | **H** | ✅ Protocol + derivation complete |
+| **3** | Ramsey θ-Scan | Decoherence | γ(θ) ∝ S_EM(θ), peaks θ=π/4 | Variable | 6-12 mo | **H** | ✅ Protocol + derivation complete |
+| **4** | Zeno Crossover Shift | Dynamical | r* shifted by ~1.23× | 23% | 6-12 mo | **M** | ✅ Protocol + derivation complete |
 
-**Tier 1 Confidence Summary**: 3 High, 1 Medium - Prioritize paths 1-3
+**Tier 1 Status**: ✅ **ALL 4 COMPLETE** (~10,000 lines total) - Ready for experimental collaboration
 
 ---
 
@@ -23,7 +23,7 @@
 
 | Rank | Path | Category | Observable | Effect Size | Timeline | Confidence | Notes |
 |------|------|----------|------------|-------------|----------|------------|-------|
-| **5** | Original Path 3 (T2/T1) | Decoherence | T2/T1 ≈ 0.81 vs 2.0 | 60% | Ready | **M** | Protocol ready, needs 4-discriminator tests, QM baseline corrected |
+| **5** | Path 5: T2/T1 Ratio (Original Path 3) | Decoherence | T2/T1 ≈ 0.81 vs 2.0 | 60% | Ready | **M** | Protocol ready, needs 4-discriminator tests, QM baseline corrected |
 | **6** | W-State Asymmetry | Entanglement | T2(W) / T2(GHZ) ratio | 10-20% | 1-2 yr | **M** | Multi-qubit platforms, complexity overhead |
 | **7** | Nonlinear Dephasing | Decoherence | Γ(t) ∝ t^α, α ≠ 1 | Variable | 1-2 yr | **L** | Needs high-precision T2* measurements |
 | **8** | KCBS Ceiling | Contextuality | KCBS_max < √6 | 5-10% | 1-2 yr | **M** | Five-outcome measurements, existing proposals |
@@ -59,7 +59,7 @@
 |------|----------|------------|--------|------------|-------|
 | **Path 1** | Decoherence | T2 exponential decay | ✓ Tested | **N/A** | No difference at 2.8%, completed Oct 2025 |
 | **Path 2** | Logical | Contradiction suppression | ✗ Blocked | **N/A** | Logically equivalent to QM, abandoned |
-| **Path 3** | Decoherence | T2/T1 ≈ 0.81 | ✅ Protocol Ready | **M** | See Tier 2, rank 5 - needs 4-discriminator tests |
+| **Path 3** | Decoherence | T2/T1 ≈ 0.81 | ✅ Protocol Ready | **M** | Now Path 5 - See Tier 2, rank 5 - needs 4-discriminator tests |
 | **Path 4** | Dynamical | Rabi inertia (high-Ω) | ⚠️ Questionable | **L** | Many confounds, ambiguous separation |
 | **Path 5** | Energy | Hamiltonian shift ω(θ) | ✅ Documented | **M** | See Tier 2, rank 9 - protocol outline complete |
 | **Path 6** | Thermodynamics | Landauer complexity | 📋 Aspirational | **L** | Infeasible (10^-27 J resolution needed) |
@@ -112,48 +112,29 @@
 
 ---
 
-## Recommended Prioritization (User Decision Required)
+## Execution Status (Session 10.0)
 
-### Option A: Diversified Portfolio (Recommended)
-**Develop Top 4 Tier 1 in parallel** (Ranks 1-4):
-1. AC Stark θ-dependence (H confidence)
-2. Bell state asymmetry (H confidence)
-3. Ramsey θ-scan (H confidence)
-4. Zeno crossover shift (M confidence)
+### ✅ Option A: Diversified Portfolio - COMPLETED
+**All Top 4 Tier 1 developed in parallel** (Ranks 1-4):
+1. ✅ AC Stark θ-dependence - Protocol + derivation complete
+2. ✅ Bell state asymmetry - Protocol + derivation complete
+3. ✅ Ramsey θ-scan - Protocol + derivation complete
+4. ✅ Zeno crossover shift - Protocol + derivation complete
 
-**Effort**: ~40-80 hours protocol development
-**Timeline**: Protocols ready Weeks 1-4
-**Risk**: Diversified across 4 independent tests
+**Effort Invested**: ~60 hours protocol development (Session 10.0)
+**Deliverables**: ~10,000 lines across 12 files (4 protocols, 4 derivations, 4 READMEs)
+**Result**: All 4 paths ready for experimental collaboration outreach
 
-### Option B: Focused High-Confidence
-**Develop Top 3 only** (Ranks 1-3):
-1. AC Stark θ-dependence
-2. Bell state asymmetry
-3. Ramsey θ-scan
+### Next Steps (Post-Completion)
 
-**Effort**: ~30-60 hours
-**Timeline**: Protocols ready Weeks 1-3
-**Risk**: All eggs in Tier 1 basket
+**Immediate**:
+- ⚠️ **Experimental collaboration outreach** (quantum hardware access)
+- ⚠️ **Prepare methodology paper** with Top 4 as case studies
 
-### Option C: Fast Path First
-**Start with Rank 2 (Bell State Asymmetry)** - 1-2 month timeline:
-- Fastest experimental turnaround
-- Builds credibility for larger asks
-- Then develop Ranks 1, 3 based on results
-
-**Effort**: ~10-20 hours for Path 2
-**Timeline**: Protocol Week 1, experimental collaboration Month 1
-**Risk**: Sequential approach slower overall
-
-### Option D: Strengthen Existing
-**Refine Path 3 (T2/T1) with 4-discriminator tests**:
-- Already protocol-ready
-- Correct QM baseline (T2/T1 = 2.0 clean limit)
-- Develop state-dependence, platform-independence, DD-resistance, T-independence tests
-
-**Effort**: ~20-30 hours refinement
-**Timeline**: Updated protocol Week 2
-**Risk**: Falls within QM range, needs mechanism tests
+**Contingency Plans** (if Top 4 access delayed):
+- **Option D**: Refine Path 3 (T2/T1) with 4-discriminator tests
+- **Tier 2 Development**: W-state asymmetry, KCBS ceiling (Ranks 6, 8)
+- **Lean Formalization**: Continue proof development (may reveal Path N)
 
 ---
 
@@ -194,10 +175,13 @@
 - **Tier 2**: 5 paths, 60% Medium confidence (3/5)
 - **Tier 3**: 11 paths, 27% Medium confidence (3/11)
 
-**Recommended Strategy**: Focus resources on Tier 1 (Ranks 1-4), with Tier 2 (Ranks 5, 8, 9) as backup if Tier 1 fails.
+**Recommended Strategy**: Focus resources on Tier 1 (Ranks 1-4), with Tier 2 (Rank 5: Path_5_T2-T1, Ranks 8-9) as backup if Tier 1 fails.
 
 ---
 
-**Document Version**: 1.0
-**Last Updated**: November 5, 2025
-**Next Update**: After user decision on prioritization
+**Document Version**: 2.0
+**Last Updated**: November 5, 2025 (Session 11.0)
+**Changes**:
+- v2.0: Updated to reflect Top 4 completion status (Session 10.0)
+- v1.0: Initial ranking document (multi-LLM consultation results)
+**Next Update**: After experimental results or new path development
