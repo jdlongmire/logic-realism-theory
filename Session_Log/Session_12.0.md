@@ -478,7 +478,86 @@
 
 ---
 
-**Session Status**: ✅ COMPLETE (Tasks 2.1, 2.2)
-**Sprint Status**: 🟢 ON TRACK (2/28 tasks, 7.1%, Week 1 at 50%)
-**Next Session**: 12.1 (recommended: Task 3.1 Path 2 pilot test)
-**Gate Criteria Progress**: 2/5 blockers addressed (notebooks execution verified for Paths 1-2)
+---
+
+### Phase 8: Task 3.1 Start - Path 2 Pilot Test Protocol Design
+
+**Objective**: Design 3-point measurement protocol with decision tree for Path 2 experimental validation
+
+**Status**: ⏸️ **STARTED** (initial protocol complete, pending peer review)
+
+**Deliverable**: PATH_2_PILOT_TEST_PROTOCOL.md (~450 lines, comprehensive)
+
+**Protocol Components**:
+
+**1. Three-Point Measurement Design**:
+- **Point 1** (Baseline): Measure ΔT2/T1 on IBM Quantum
+  - |Φ+⟩ vs |Ψ+⟩ T1/T2 measurements
+  - 8,000 shots total (~2 hours)
+  - Expected: ΔT2/T1 ≈ 0.19 (LRT) vs 0.00 (QM)
+
+- **Point 2** (Validation): Replicate on IonQ
+  - Cross-platform verification
+  - Rules out IBM-specific systematic errors
+  - Different noise model (trapped ions vs superconducting)
+
+- **Point 3** (Null Test): Product states |00⟩, |01⟩
+  - Control measurement (no entanglement)
+  - Expected: ΔT2/T1 ≈ 0.00 for both LRT and QM
+  - Rules out measurement artifacts
+
+**2. Decision Tree Protocol**:
+```
+ΔT2/T1 > 0.15 → ✅ Proceed to IonQ validation + full study
+0.05 < ΔT2/T1 < 0.15 → ⚠️ Investigate T1 asymmetry assumption
+ΔT2/T1 < 0.05 → ❌ Path 2 falsified, pivot to Path 1/3
+```
+
+**3. Resource Requirements**:
+- IBM Quantum Premium access (or academic collaboration)
+- IonQ access via AWS Braket/Azure Quantum
+- Qubit pair: T1 > 100 μs, T2 > 50 μs, 2-qubit gate fidelity > 99%
+- Timeline: 1-2 months (8 weeks)
+
+**4. Collaboration Outreach Strategy**:
+- Target groups: IBM Quantum Research, MIT, Yale, IonQ
+- Pitch materials: Notebook ✅ + Protocol ✅ + 1-page summary (pending)
+- Value prop: Publishable result (PRL-quality), high SNR (12σ), fast timeline
+
+**5. Measurement Procedures**:
+- Bell state preparation (2-3 layer circuits)
+- T1 measurement: Population decay with 20 delay points (0-200 μs)
+- T2 measurement: Coherence decay with 20 delay points (0-100 μs)
+- Error propagation: σ_ΔT2/T1 < 0.05 (target precision)
+
+**6. Success Criteria**:
+- Pilot success: ΔT2/T1 > 0.15 on both platforms + null test ≈ 0
+- Partial success: 0.05-0.15 → revise T1 asymmetry assumption
+- Null result: < 0.05 → Path 2 falsified, document and pivot
+
+**Technical Details**:
+- 9 sections: Design, Procedures, Resources, Success Criteria, Risk Mitigation, Outreach, Next Steps, Appendices, History
+- Qubit selection criteria, circuit depth budget, data analysis pipeline
+- Risk mitigation for platform access, low SNR, systematic errors
+
+**Assessment**:
+- Protocol is comprehensive and experimentally feasible ✅
+- Ready for peer review by experimentalists ✅
+- Provides clear roadmap for 1-2 month pilot test ✅
+- Includes decision tree for GO/NO-GO at each stage ✅
+
+**Next Steps** (to complete Task 3.1):
+- [ ] Create 1-page non-technical summary (for PI outreach)
+- [ ] Create 2-page technical summary (for experimentalists)
+- [ ] Draft email template for collaboration outreach
+- [ ] Identify specific contact info for IBM/MIT/Yale/IonQ
+
+**Time Invested**: ~2 hours (protocol design + documentation)
+
+---
+
+**Session Status**: ✅ COMPLETE (Tasks 2.1, 2.2, 3.1 started)
+**Sprint Status**: 🟢 ON TRACK (2/28 tasks complete, 1 in progress, 7.1% + Task 3.1 ~30%)
+**Total Session Time**: ~7.5 hours (Task 2.1: 2h, Task 2.2: 2h, Part 3 fix: 1.5h, Documentation: 0.5h, Task 3.1: 2h)
+**Next Session**: 12.1 (complete Task 3.1 with outreach materials, OR start Task 2.3)
+**Gate Criteria Progress**: 2/5 blockers addressed + Task 3.1 pilot protocol started
