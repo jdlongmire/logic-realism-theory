@@ -13,12 +13,13 @@ theory/
 ├── derivations/     # First-principles mathematical derivations (Session 13.0)
 ├── analysis/        # Technical analyses & problem solving
 ├── predictions/     # Experimental predictions & test designs
-├── audits/          # Theory audits and section reviews
 ├── drafts/          # Work in progress sections & revisions
 ├── references/      # Bibliography & citations
 ├── supplementary/   # Supplementary materials (MToE papers)
 └── figures/         # Figures (currently empty)
 ```
+
+**Note**: Audit files are stored in the root-level `audits/` folder (not in theory/).
 
 ---
 
@@ -193,16 +194,6 @@ theory/
 
 ---
 
-## 🔍 audits/ - Theory Audits & Section Reviews
-
-**Purpose**: Systematic audits of theory sections, consistency checks, and quality reviews.
-
-- **`SECTION_7_AUDIT_2025-11-03.md`** (180 lines) - Section 7 audit (Session 9)
-
-**Status**: Historical audit records for tracking theory evolution
-
----
-
 ## ✏️ drafts/ - Work in Progress
 
 **Purpose**: Sections being developed, revision plans, and working analyses.
@@ -294,14 +285,13 @@ theory/
 3. **Derivations**: Add rigorous mathematical derivations from LRT axioms
 4. **Analysis**: Add if it's a deep technical investigation of a specific problem (check if resolved by derivations/)
 5. **Predictions**: Add to existing predictions/ folder with proper path numbering
-6. **Audits**: Add systematic theory audits, consistency checks, section reviews
-7. **Drafts**: Add if it's work-in-progress for a paper section
+6. **Drafts**: Add if it's work-in-progress for a paper section
 
 **When in doubt**: Place in `drafts/` and reorganize later when purpose clarifies.
 
 **Maintenance Notes**:
 - As Session 13.0 derivations have resolved many analysis/ issues, consider updating their status sections with resolution notes
-- Audit files should go in `audits/` folder, not `drafts/`
+- **Audit files should go in root-level `audits/` folder** (not in theory/audits/ or theory/drafts/)
 
 ---
 
