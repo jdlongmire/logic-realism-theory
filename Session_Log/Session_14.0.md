@@ -99,19 +99,22 @@ Awaiting user-guided actions for:
 
 ---
 
-### Audits Folder Creation
+### Audits Folder Organization
 
-**Task**: Create dedicated audits/ folder per user request
+**Task**: Organize audit files per user request
 
 **Actions Taken**:
-1. ✅ Created `theory/audits/` folder for theory audits and section reviews
-2. ✅ Moved `SECTION_7_AUDIT_2025-11-03.md` from drafts/ to audits/
-3. ✅ Updated theory/README.md:
-   - Added audits/ to folder structure
-   - Documented audits/ section
-   - Updated maintenance protocol: "Audit files should go in audits/ folder, not drafts/"
+1. ⚠️ Initially created `theory/audits/` folder (incorrect)
+2. ✅ **Corrected**: Moved audit to root-level `audits/` folder (single location)
+3. ✅ Removed `theory/audits/` to avoid multiple audit folders
+4. ✅ Updated theory/README.md:
+   - Removed audits/ from theory/ structure
+   - Added note: "Audit files are stored in root-level audits/ folder"
+   - Updated maintenance protocol: "Audit files go in root-level audits/"
 
-**Commit**: 0e3ea25 - "Session 14.0: Create theory/audits folder per maintenance protocol"
+**Commits**:
+- 0e3ea25 - Initial attempt (theory/audits/)
+- 800fb8b - Correction (root audits/)
 
 ---
 
@@ -140,14 +143,16 @@ Awaiting user-guided actions for:
 
 **Files Moved**:
 - lean/archive/: 3 files (obsolete Lean docs)
-- theory/audits/: 1 file (SECTION_7_AUDIT)
+- audits/: 1 file (SECTION_7_AUDIT) - root-level audits folder
 - theory/drafts/: 1 file (V3_Branch2_Synthesis_Analysis)
 - theory/papers/: 1 file (Session 10 snapshot)
 
 **Commits**:
 - 6f94ef5 - "Session 14.0: Lean folder documentation cleanup & organization"
 - 1a0fe6a - "Session 14.0: Theory folder organization & Session 13.0 integration"
-- 0e3ea25 - "Session 14.0: Create theory/audits folder per maintenance protocol"
+- 0e3ea25 - "Session 14.0: Create theory/audits folder per maintenance protocol" (incorrect)
+- 800fb8b - "Fix: Move audit file to root audits/ folder (single audit location)"
+- d8283cf - "Update Session 14.0 log with theory folder work summary"
 
 **Next Tasks** (pending):
 - Organization improvements (other folders?)
