@@ -42,6 +42,19 @@ theory/
   - Simpler presentation, more accessible
   - **Status**: Complementary framing reference
 
+### Planning Documents
+
+- **`LRT_Paper_Refactor.md`** (228 lines) 📋 **REFACTOR PLAN** (Session 14.0)
+  - Structure and integration plan for main paper refactor
+  - References Session 13.0 variational framework derivations
+  - Maps source artifacts:
+    - theory/derivations/1_Paper_Formalization_Section.md (mathematical content)
+    - theory/frameworks/LRT_Explanatory_Power.md (conceptual framework)
+  - Proposed paper structure with 9 sections + appendices
+  - Integration guidelines: professional tone, honest percentages, clear status markers
+  - 6-phase refactor checklist (structure → review)
+  - **Status**: Stub ready for user-guided execution
+
 ### Historical Reference & Snapshots
 
 - **`Logic-realism-theory-foundational.md`** (1,401 lines)
@@ -76,10 +89,13 @@ theory/
   - Ontological status of information space
   - Response to philosophical objections
 
-- **`LRT_Explanatory_Power.md`** (1,249 lines)
-  - Comprehensive analysis of LRT's explanatory scope
-  - Comparison to competing frameworks
-  - Testable predictions catalog
+- **`LRT_Explanatory_Power.md`** (378 lines) ⚠️ **UPDATED SESSION 14.0**
+  - Streamlined comparison: LRT vs Standard QM (comparison table)
+  - Variational framework summary (K_ID, K_EM, K_enforcement)
+  - Status markers: Rigorously Derived, Interpretive Framework, Conceptual Derivation, Open Problems
+  - Comparison to QM interpretations (Copenhagen, Many-Worlds, Bohm, GRW, QBism)
+  - Strengths, limitations, experimental status
+  - **Previous version**: LRT_Explanatory_Power_DEPRECATED_2025-11-06.md (1,249 lines with speculation)
 
 ---
 
