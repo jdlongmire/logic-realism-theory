@@ -67,5 +67,39 @@ Awaiting user-guided actions for:
 
 **TODO**: Discuss derivation strategy before paper revamp
 
+### Session 14.0 Summary (In Progress)
+
+**Completed**:
+- ✅ Lean folder documentation review (9 files)
+  - 4 files updated with Session 13.0 references
+  - 3 files archived (obsolete/superseded)
+  - 3 files verified (no updates needed)
+- ✅ Consolidated axiom count framing in AXIOMS.md
+- ✅ Marked lean/README.md as maintenance document
+- ✅ Updated CLAUDE.md references
+- ✅ Process cleanup verification (no orphaned agents)
+
+**Files Modified**:
+- lean/AXIOMS.md (added framing, Session 13.0 references)
+- lean/PROOF_REFACTOR_STRATEGY.md (future Lean targets)
+- lean/README.md (current status, maintenance doc)
+- CLAUDE.md (removed archived file references)
+
+**Files Archived** (→ lean/archive/):
+- PROOF_REFACTOR_STRATEGY_OLD.md
+- LRT_Comprehensive_Lean_Plan.md
+- Ongoing_Axiom_Count_Classification.md
+
+**Commit**: 6f94ef5 - "Session 14.0: Lean folder documentation cleanup & organization"
+
+**Next Tasks** (pending):
+- Organization improvements (other folders?)
+- Derivation strategy discussion
+- Paper revamps
+
+---
+
+**Session Status**: Active (context at ~91%, will continue in Session 14.1 if needed)
+
 ---
 
