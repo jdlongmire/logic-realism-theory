@@ -76,7 +76,7 @@
 - Re-executed: Both now derive η ≈ 0.235 from variational optimization
 
 **Deliverables**:
-- SANITY_CHECK_PATH_1-4.md (305 lines, comprehensive validation)
+- 01_Sanity_Checks/2025-11-05_Paths_1-4_SanityCheck.md (305 lines, comprehensive validation)
 - Fixed notebooks: ramsey_theta (455 KB), zeno_crossover (398 KB)
 - Session log: Session_12.4.md (163 lines)
 

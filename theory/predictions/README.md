@@ -2,7 +2,7 @@
 
 **Last Updated**: 2025-11-05 (Session 12.4 - Track 2 COMPLETE)
 **Master Tracking**: See `Prediction_Paths_Master.md` for comprehensive status of all paths
-**Validation**: See `SANITY_CHECK_PATH_1-4.md` (root) for computational validation results
+**Validation**: See `01_Sanity_Checks/2025-11-05_Paths_1-4_SanityCheck.md` (root) for computational validation results
 
 ---
 
@@ -53,7 +53,7 @@
 **Key Discovery**: θ-dependence blind spot in QM experiments (unexplored territory)
 **Next Steps**: Experimental collaboration outreach, multi-platform verification strategy
 
-**Full details**: See `SANITY_CHECK_PATH_1-4.md` (root), `Prediction_Paths_Master.md`, and individual Path folders
+**Full details**: See `01_Sanity_Checks/2025-11-05_Paths_1-4_SanityCheck.md` (root), `Prediction_Paths_Master.md`, and individual Path folders
 
 ---
 
@@ -66,4 +66,4 @@
 - `Session_Log/Session_12.0-12.4.md` - Computational validation (Sprint 16)
 **Validation**:
 - `SANITY_CHECK_PROTOCOL.md` (root) - General protocol
-- `SANITY_CHECK_PATH_1-4.md` (root) - Paths 1-4 validation results ✅ PASS
+- `01_Sanity_Checks/2025-11-05_Paths_1-4_SanityCheck.md` (root) - Paths 1-4 validation results ✅ PASS

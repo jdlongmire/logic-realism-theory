@@ -57,7 +57,7 @@
 - ✅ Task 2.6: zeno_crossover_first_principles_executed.ipynb (281 KB, 0 errors, 3 figures)
 
 **Session 12.4 Deliverables** (Validation & Fixes):
-- ✅ SANITY_CHECK_PATH_1-4.md: Identified circularity in Paths 3-4
+- ✅ 01_Sanity_Checks/2025-11-05_Paths_1-4_SanityCheck.md: Identified circularity in Paths 3-4
 - ✅ Fixed ramsey_theta_analysis.py: Derive ETA from β = 3/4 (not hardcoded)
 - ✅ Fixed zeno_crossover_analysis.py: Derive ETA from β = 3/4 (not hardcoded)
 - ✅ Fixed ramsey_theta_first_principles.ipynb: Correct variational formula η = (ln2/β²) - 1
@@ -108,7 +108,7 @@
 **Core Deliverables**:
 - [x] 4/4 notebooks implemented and validated (100%) - All 4 paths ✅ **COMPLETE**
 - [x] 4/4 analysis scripts complete (100%) - Paths 1-2 (Bell/AC Stark data), Paths 3-4 (Ramsey/Zeno) ✅ **COMPLETE**
-- [x] Sanity check validation (SANITY_CHECK_PATH_1-4.md) ✅ **COMPLETE**
+- [x] Sanity check validation (01_Sanity_Checks/2025-11-05_Paths_1-4_SanityCheck.md) ✅ **COMPLETE**
   - All paths PASS Check #7 (Experimental Literature)
   - All paths PASS Check #8 (Computational Circularity - FIXED in Session 12.4)
   - All paths PASS Professional Tone check

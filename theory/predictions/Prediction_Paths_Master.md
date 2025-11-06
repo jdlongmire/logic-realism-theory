@@ -3,7 +3,7 @@
 **Date**: November 5, 2025 (Sessions 10.0, 12.0-12.4)
 **Status**: Top 4 paths computationally validated (Sprint 16 Track 2 COMPLETE)
 **Philosophy**: Falsifiable scientific theory with multiple testable prediction paths
-**Validation**: See `SANITY_CHECK_PATH_1-4.md` (root) - All paths PASS ✅
+**Validation**: See `01_Sanity_Checks/2025-11-05_Paths_1-4_SanityCheck.md` - All paths PASS ✅
 
 ---
 

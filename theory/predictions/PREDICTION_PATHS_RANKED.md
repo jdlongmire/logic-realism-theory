@@ -4,7 +4,7 @@
 **Purpose**: Comprehensive ranking of all prediction paths with confidence scores
 **Status**: Top 4 computationally validated (Sprint 16 Track 2 COMPLETE)
 **Confidence Scale**: H = High (>70% mechanistic derivation + experimental feasibility), M = Medium (40-70%), L = Low (<40%)
-**Validation**: See `SANITY_CHECK_PATH_1-4.md` (root) - All paths PASS ✅
+**Validation**: See `01_Sanity_Checks/2025-11-05_Paths_1-4_SanityCheck.md` - All paths PASS ✅
 
 ---
 

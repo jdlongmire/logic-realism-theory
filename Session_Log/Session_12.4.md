@@ -17,7 +17,7 @@ Ran SANITY_CHECK_PROTOCOL on all 4 prediction paths. Identified critical circula
 
 ### 1. Sanity Check Execution ✅
 
-**Created**: `SANITY_CHECK_PATH_1-4.md` (305 lines)
+**Created**: `01_Sanity_Checks/2025-11-05_Paths_1-4_SanityCheck.md` (305 lines)
 
 **Results**:
 - **Path 1 (AC Stark)**: ✅ PASS (non-circular, β = 0.749, η = 0.235)
@@ -82,7 +82,7 @@ Ran SANITY_CHECK_PROTOCOL on all 4 prediction paths. Identified critical circula
 - 4 first-principles notebooks (1.6 MB total, 0 errors)
 - 4 analysis scripts (Paths 1-2: data analysis, Paths 3-4: predictions)
 - 11 publication-quality figures
-- SANITY_CHECK_PATH_1-4.md (validation report)
+- 01_Sanity_Checks/2025-11-05_Paths_1-4_SanityCheck.md (validation report)
 
 **Validation**:
 - ✅ All notebooks execute without errors
