@@ -164,6 +164,32 @@ Awaiting user-guided actions for:
 - d8283cf - "Update Session 14.0 log with theory folder work summary"
 - d919f5a - "Update Session 14.0 log with corrected audit folder location"
 
+---
+
+### Derivation Strategy Discussion
+
+**Question**: Should Session 13.0 derivations (~3,700 lines) be formalized in Lean?
+
+**Decision**: **Option A - Keep Markdown as Source of Truth**
+
+**Rationale**:
+1. ✅ Derivations already rigorous (non-circular, multi-LLM validated, 98% derived)
+2. ✅ Markdown easier to maintain and version control
+3. ✅ Can generate LaTeX/PDF as needed for paper submission
+4. ⏱️ Lean formalization would take weeks-months with infrastructure blockers
+5. 🎯 Experimental validation is current priority (TOP 4 paths ready)
+
+**Protocol Established** (added to CLAUDE.md):
+- **Location**: `theory/derivations/` - canonical location
+- **Source of Truth**: Markdown (.md) files
+- **Format Standards**: Non-circular, multi-LLM validated, transparent about limitations
+- **Integration**: Generate LaTeX/PDF from markdown as needed for papers
+- **Lean**: Deferred until after experimental validation (future work)
+
+**Commit**: 9e19485 - "Add explicit derivation protocol to CLAUDE.md"
+
+---
+
 **Next Tasks** (pending):
 - Organization improvements (other folders?)
 - Paper revamps
