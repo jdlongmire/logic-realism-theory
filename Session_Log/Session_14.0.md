@@ -105,16 +105,24 @@ Awaiting user-guided actions for:
 
 **Actions Taken**:
 1. ⚠️ Initially created `theory/audits/` folder (incorrect)
-2. ✅ **Corrected**: Moved audit to root-level `audits/` folder (single location)
-3. ✅ Removed `theory/audits/` to avoid multiple audit folders
-4. ✅ Updated theory/README.md:
+2. ⚠️ Created root `audits/` (plural) folder (incorrect - duplicate of existing `audit/`)
+3. ✅ **Final correction**: Consolidated to existing root `audit/` (singular) folder
+4. ✅ Removed duplicate folders (theory/audits/, audits/)
+5. ✅ Updated theory/README.md:
    - Removed audits/ from theory/ structure
-   - Added note: "Audit files are stored in root-level audits/ folder"
-   - Updated maintenance protocol: "Audit files go in root-level audits/"
+   - Added note: "Audit files are stored in root-level audit/ folder"
+   - Updated maintenance protocol: "Audit files go in root-level audit/"
+
+**Result**: Single `audit/` folder at repository root containing:
+- Program_Auditor_Agent.md
+- README.md
+- reports/ subfolder
+- SECTION_7_AUDIT_2025-11-03.md
 
 **Commits**:
 - 0e3ea25 - Initial attempt (theory/audits/)
-- 800fb8b - Correction (root audits/)
+- 800fb8b - First correction (root audits/)
+- 87780b5 - Final correction (root audit/)
 
 ---
 
@@ -143,16 +151,18 @@ Awaiting user-guided actions for:
 
 **Files Moved**:
 - lean/archive/: 3 files (obsolete Lean docs)
-- audits/: 1 file (SECTION_7_AUDIT) - root-level audits folder
+- audit/: 1 file (SECTION_7_AUDIT) - root-level audit folder (consolidated)
 - theory/drafts/: 1 file (V3_Branch2_Synthesis_Analysis)
 - theory/papers/: 1 file (Session 10 snapshot)
 
 **Commits**:
 - 6f94ef5 - "Session 14.0: Lean folder documentation cleanup & organization"
 - 1a0fe6a - "Session 14.0: Theory folder organization & Session 13.0 integration"
-- 0e3ea25 - "Session 14.0: Create theory/audits folder per maintenance protocol" (incorrect)
-- 800fb8b - "Fix: Move audit file to root audits/ folder (single audit location)"
+- 0e3ea25 - "Session 14.0: Create theory/audits folder" (incorrect - created duplicate)
+- 800fb8b - "Fix: Move audit file to root audits/ folder" (incorrect - still duplicate)
+- 87780b5 - "Fix: Consolidate to existing audit/ folder (singular)" ✅
 - d8283cf - "Update Session 14.0 log with theory folder work summary"
+- d919f5a - "Update Session 14.0 log with corrected audit folder location"
 
 **Next Tasks** (pending):
 - Organization improvements (other folders?)
