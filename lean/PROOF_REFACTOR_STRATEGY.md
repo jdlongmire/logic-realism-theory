@@ -135,6 +135,26 @@ These are well-known theorems with published proofs. We axiomatize them followin
 
 ---
 
+## Future Formalization Targets
+
+**Variational Framework Derivations** (Session 13.0, 2025-11-06):
+- K_ID = 1/β² derivation (Identity → Noether → Fermi) - 100% derived
+- K_EM = (ln 2)/β derivation (EM → Shannon → Lindblad) - 100% derived
+- K_enforcement = 4β² derivation (N=4, β² scaling) - 95% derived
+- Four-phase measurement necessity (3FLL + irreversibility)
+
+**Status**: Mathematical derivations complete in theory/derivations/, not yet formalized in Lean
+
+**Future Work**: These rigorous mathematical derivations provide clear targets for future Lean formalization:
+- Formalize Identity_to_K_ID_Derivation.md chain in Lean
+- Formalize ExcludedMiddle_to_K_EM_Derivation.md chain in Lean
+- Formalize Measurement_to_K_enforcement_Derivation.md chain in Lean
+
+This would add ~10-15 additional theorems to the "LRT Theorems to Prove" list above, demonstrating the variational framework emerges from LRT axioms.
+
+---
+
 **Status**: Ready for Phase 1 (Documentation)
 **Progress**: 1 theorem proven (statespace_monotone ✅)
 **Next**: Add Tier documentation to all axioms
+**Updated**: 2025-11-06 (added Session 13.0 derivation targets)

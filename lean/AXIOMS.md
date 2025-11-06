@@ -73,7 +73,8 @@ From these ~19 axioms, LRT proves:
 - **Hilbert Space Structure**: From distinguishability geometry
 - **Time Evolution**: From Identity constraint (Tier 1) + Stone's theorem (Tier 2)
 - **Measurement Collapse**: From Excluded Middle (proven from 3FLL) + K-transition
-- **Energy**: From entropy reduction
+- **Energy**: From entropy reduction (see theory/derivations/Identity_to_K_ID_Derivation.md for full non-circular chain: Identity → Noether → Fermi)
+- **Variational Framework**: K_total = (ln 2)/β + 1/β² + 4β² (98% derived from first principles, see theory/derivations/)
 - **3FLL**: Identity, Non-Contradiction, Excluded Middle proven from Lean's classical logic (0 LRT axioms)
 - **A = L(I)**: Actualization theorems proven (0 LRT axioms)
 
@@ -92,14 +93,51 @@ From these ~19 axioms, LRT proves:
 
 ---
 
+## Axiom Count Framing (Always Use This)
+
+**When discussing LRT axiom count, use this framing:**
+
+- ❌ **NOT** "57 axioms" or "58 axioms" (raw declaration count)
+- ✅ **USE** "~19 axioms (2 Tier 1 + ~16 Tier 2 + 1 Tier 3)"
+- ✅ **Separate** Tier 2 (~16) as mathematical infrastructure, not novel LRT axioms
+
+**Why this matters:**
+- Tier 2 axioms are standard mathematical results (Stone's theorem 1932, Gleason's theorem 1957, etc.)
+- ALL quantum mechanics reconstructions use similar mathematical infrastructure (~10-16 axioms)
+- Other programs (Hardy, Chiribella, Dakic) don't count infrastructure as "theory axioms"
+- Honest comparison: LRT foundational axioms (2 Tier 1) vs. their foundational axioms (3-6)
+
+**Current honest breakdown:**
+- **Total axioms**: ~19
+  - **Tier 1 (LRT Specific)**: 2 axioms (I, I_infinite)
+  - **Tier 2 (Established Math Tools)**: ~16 axioms (Stone's, Gleason's, MaxEnt, etc.)
+  - **Tier 3 (Universal Physics)**: 1 axiom (energy additivity)
+
+**What LRT derives** (not axiomatized):
+- Born rule, Hilbert space structure, time evolution, measurement collapse
+- Variational framework K_total = (ln 2)/β + 1/β² + 4β² (98% derived from first principles)
+- ~30-35 LRT-specific theorems proven from these foundations
+
+**Comparison to other theories:**
+- Hardy (2001): 5 operational axioms + ~10 math infrastructure = ~15 total
+- Chiribella et al. (2011): 6 principles + ~8 math infrastructure = ~14 total
+- LRT: 2 foundational + ~16 math infrastructure + 1 physics = ~19 total
+
+**Key difference**: LRT derives Born rule and Hilbert space (QM postulates them). LRT postulates infinite information space I (pre-physical ontology).
+
+---
+
 ## Honest Paper Framing
 
-**What to say**:
-> "LRT has 2 foundational axioms (I, I_infinite) defining the infinite information space, plus ~16 established mathematical results (Stone's theorem, spectral theorem, Gleason's theorem, MaxEnt, etc.) axiomatized for practical formalization, plus 1 standard physical assumption (energy additivity). From these, LRT proves ~30-35 theorems including Born rule, Hilbert space structure, time evolution, and measurement collapse."
+**Recommended framing for papers**:
+> "LRT has 2 foundational axioms (I, I_infinite) defining the infinite information space, plus ~16 established mathematical results (Stone's theorem, spectral theorem, Gleason's theorem, MaxEnt, etc.) axiomatized for practical formalization, plus 1 standard physical assumption (energy additivity). From these, LRT proves ~30-35 theorems including Born rule, Hilbert space structure, time evolution, measurement collapse, and the variational framework."
 
 **What NOT to say**:
-- ❌ "LRT has only 2 axioms" (ignores Tier 2 infrastructure)
+- ❌ "LRT has only 2 axioms" (ignores Tier 2 infrastructure - dishonest)
+- ❌ "LRT has 57 axioms" (counts raw declarations without tier classification - misleading)
 - ❌ "Everything proven from scratch" (uses established results as building blocks)
+
+**Transparency requirement**: Always disclose tier breakdown when claiming "2 axioms" or similar
 
 ---
 
@@ -139,5 +177,18 @@ See `STANDARD_FILE_HEADER.md` for complete format.
 
 ---
 
-**Last Updated**: 2025-11-04
+## Related Derivations
+
+**Theory Derivations** (theory/derivations/):
+- `Identity_to_K_ID_Derivation.md` - Non-circular energy derivation (Identity → Noether → Fermi)
+- `ExcludedMiddle_to_K_EM_Derivation.md` - EM → Shannon entropy → Lindblad dephasing
+- `Measurement_to_K_enforcement_Derivation.md` - 4-phase measurement cycle (N=4, β² scaling)
+- `Phase_Weighting_Symmetry_Analysis.md` - Equal weighting analysis (70-80% justified)
+- `Phase_Weighting_Coupling_Analysis.md` - Coupling theory deep dive
+
+**Status**: Variational framework 98% derived from first principles (Session 13.0, 2025-11-06)
+
+---
+
+**Last Updated**: 2025-11-06
 **Status**: Active axiom classification framework

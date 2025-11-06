@@ -16,13 +16,11 @@ This file provides essential guidance for Claude Code working in this repository
 - **`Logic_Realism_Theory_AI_Experiment.md`** (602 lines) - Methodology, honest status assessment
 
 ### Lean Formalization Status (lean/ folder)
-- **`lean/AXIOMS.md`** - **⚠️ ACTIVE** LRT axiom approach summary: 2 Tier 1 + ~16 Tier 2 + 1 Tier 3 = ~19 axioms, honest paper framing
+- **`lean/AXIOMS.md`** - **⚠️ ACTIVE** LRT axiom approach summary: 2 Tier 1 + ~16 Tier 2 + 1 Tier 3 = ~19 axioms, **⚠️ AXIOM COUNT FRAMING**, honest paper framing
 - **`lean/AXIOM_CLASSIFICATION_SYSTEM.md`** - **⚠️ ACTIVE** Complete 3-tier framework documentation with templates and examples
 - **`lean/PROOF_REFACTOR_STRATEGY.md`** - **⚠️ ACTIVE** Revised tier-based strategy: Prove ~30-35 LRT theorems from 2 foundation axioms using ~16 math tools
 - **`lean/STANDARD_FILE_HEADER.md`** - **⚠️ ACTIVE** Required header format for all Lean files (exemplar: IIS.lean)
 - **`lean/TIER_LABELING_QUICK_START.md`** - Quick reference for tier classification and inline labels
-- **`lean/LRT_Comprehensive_Lean_Plan.md`** - Option C roadmap: 57 → 35-38 axioms (Sprints 13-15)
-- **`lean/Ongoing_Axiom_Count_Classification.md`** - Complete 58 axiom inventory, classifications, **⚠️ AXIOM COUNT FRAMING**
 - **`lean/LogicRealismTheory.lean`** - Root import file showing all modules
 
 ### Development Guides
@@ -48,7 +46,7 @@ This file provides essential guidance for Claude Code working in this repository
 2. Read latest `Session_Log/Session_X.Y.md` (complete context - tells you what's needed)
 3. Based on session context, skim relevant guides:
    - `DEVELOPMENT_GUIDE.md` or `LEAN_BEST_PRACTICES.md` (architecture/Lean work)
-   - `lean/LRT_Comprehensive_Lean_Plan.md` (axiom/formalization work)
+   - `lean/PROOF_REFACTOR_STRATEGY.md` (axiom/formalization work)
    - `sprints/README.md` + active sprint tracking (if sprint active)
 
 ### Session Logging
@@ -269,7 +267,7 @@ Before claiming ANY of these terms, you MUST verify:
 
 **Author**: James D. (JD) Longmire (ORCID: 0009-0009-1383-7698)
 
-**Current Status**: See `lean/LogicRealismTheory.lean` (build status comments) and `lean/Ongoing_Axiom_Count_Classification.md`
+**Current Status**: See `lean/LogicRealismTheory.lean` (build status comments) and `lean/AXIOMS.md` (axiom count framing)
 
 **For detailed information on ANY topic, see the Critical Artifacts section above.**
 
