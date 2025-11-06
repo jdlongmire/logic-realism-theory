@@ -19,7 +19,7 @@ theory/
 └── figures/         # Figures (currently empty)
 ```
 
-**Note**: Audit files are stored in the root-level `audits/` folder (not in theory/).
+**Note**: Audit files are stored in the root-level `audit/` folder (not in theory/).
 
 ---
 
@@ -291,7 +291,7 @@ theory/
 
 **Maintenance Notes**:
 - As Session 13.0 derivations have resolved many analysis/ issues, consider updating their status sections with resolution notes
-- **Audit files should go in root-level `audits/` folder** (not in theory/audits/ or theory/drafts/)
+- **Audit files should go in root-level `audit/` folder** (not in theory/ subfolders)
 
 ---
 
