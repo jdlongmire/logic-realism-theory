@@ -333,7 +333,7 @@ K_enforcement = 4 × β²
 K_enforcement = 4β²
 ```
 
-**Status**: ✅ **FULLY DERIVED** from LRT first principles (3FLL + irreversibility)
+**Status**: ✅ **95% DERIVED** from LRT first principles (N=4 from 3FLL + irreversibility; sequential ordering assumed)
 
 ---
 
@@ -403,7 +403,7 @@ K_enforcement = 4β²
 
 **Before this analysis**: 85% derived (β² derived, 4 empirical)
 
-**After this analysis**: ⚠️ 95% derived
+**After this analysis**: ~95% derived
 - ✅ β² scaling: Fully derived from coupling theory
 - ✅ Factor of 4: Derived from 3FLL + irreversibility
 - ⚠️ Sequential ordering assumption: Physically motivated but not yet axiomatized
@@ -428,11 +428,11 @@ K_enforcement = 4β²
 
 | Term | Formula | Status |
 |------|---------|--------|
-| K_ID | 1/β² | ✅ 100% DERIVED |
-| K_EM | (ln 2)/β | ✅ 100% DERIVED |
-| K_enforcement | 4β² | ✅ 95% DERIVED |
+| K_ID | 1/β² | ✅ ~95% DERIVED (100% given β) |
+| K_EM | (ln 2)/β | ✅ ~95% DERIVED (100% given β) |
+| K_enforcement | 4β² | ✅ ~90% DERIVED (95% structure, 85% weighting) |
 
-**Overall**: ~98% of variational framework derived from LRT first principles! 🎯
+**Overall**: ~95% of variational framework derived from LRT first principles
 
 **Gap closed**: From phenomenological assumption to logical derivation
 
@@ -443,7 +443,7 @@ K_enforcement = 4β²
 - Formalize "stabilization is sufficient" (no 5th phase needed)
 - Axiomatize irreversibility requirement more formally
 
-**These are minor refinements** to an already strong derivation
+These assumptions remain to be axiomatized
 
 ---
 
