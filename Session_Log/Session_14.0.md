@@ -508,6 +508,10 @@ K_enforcement uses energy cost
 
 **Commit**: f0cce5c - "Session 14.0: Add Lagrangian/Hamiltonian framework to paper section"
 
+**File Organization**:
+- ✅ Renamed to `1_Paper_Formalization_Section.md` (prefix ensures it's listed first in folder)
+- **Commit**: c87e843 - "Rename Paper_Formalization_Section.md to 1_Paper_Formalization_Section.md"
+
 ---
 
 **Next Tasks** (pending):
