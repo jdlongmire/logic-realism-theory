@@ -410,9 +410,109 @@ Awaiting user-guided actions for:
 
 ---
 
+### Lagrangian/Hamiltonian Framework Integration
+
+**Task**: Add explicit Lagrangian and Hamiltonian structures to paper formalization section
+
+**Context**: User requested incorporation of L(K, K̇) and H(K, p) framework to make energy derivation explicit and non-circular
+
+**Actions Taken**:
+
+1. ✅ **Created NEW Section 2: Energy Emergence from Time Symmetry**
+   - Purpose: Derive energy concept rigorously *before* using it in K_ID, K_EM
+   - Non-circular proof structure
+
+**Section 2.1: Lagrangian of Constraint Dynamics**
+- Setup: Constraint violation functional K(t) evolving in time
+- Lagrangian formulation: L(K, K̇) = T(K̇) - V(K)
+- Explicit form: L = ½m K̇² - ½k K²
+- Euler-Lagrange equation: m K̈ + k K = 0 (harmonic oscillator)
+- Connection to Identity constraint via Stone's theorem
+- Physical interpretation: m = "inertia of information", k = "constraint stiffness"
+
+**Section 2.2: Hamiltonian and Energy Conservation**
+- Conjugate momentum: p = ∂L/∂K̇ = m K̇
+- Legendre transform: H(K, p) = p K̇ - L = T + V
+- Explicit form: H = p²/(2m) + ½k K²
+- Noether's theorem: Time translation symmetry → E = H conserved
+- Non-circularity check: Energy emerges from Identity + Stone + Noether
+- Result: Energy concept rigorously established for use in K_ID, K_EM
+
+2. ✅ **Updated Section 3 (K_ID) to use Section 2's energy**
+   - Updated derivation chain: "Section 2: Energy E derived from Identity + Stone + Noether"
+   - Step 1 now references Section 2's Hamiltonian and energy conservation
+   - Energy eigenstates: H|n⟩ = E_n|n⟩ (from Section 2)
+   - Identity violations interpreted as energy transitions
+   - Cost measured in units of energy (from Section 2's Noether derivation)
+
+3. ✅ **Renumbered all subsequent sections**
+   - Old Section 2 (K_ID) → New Section 3
+   - Old Section 3 (K_EM) → New Section 4
+   - Old Section 4 (K_enforcement) → New Section 5
+   - Old Section 5 (Complete Framework) → New Section 6
+   - Old Section 6 (Non-Circularity) → New Section 7
+   - Old Section 7 (Honest Assessment) → New Section 8
+   - Old Section 8 (Computational Validation) → New Section 9
+   - Old Section 9 (Lean Status) → New Section 10
+   - Old Section 10 (Conclusion) → New Section 11
+
+4. ✅ **Updated all subsection numbering consistently**
+   - K_ID: 3.1, 3.2, 3.3
+   - K_EM: 4.1, 4.2, 4.3
+   - K_enforcement: 5.1-5.6
+   - Complete Framework: 6.1-6.4
+   - Non-Circularity: 7.1-7.2
+   - Honest Assessment: 8.1-8.4
+   - Computational Validation: 9.1-9.4
+   - Lean Status: 10.1-10.2
+   - Conclusion: 11.1-11.4
+
+5. ✅ **Added cross-references**
+   - Section 3 (K_ID) notes: "uses energy concept derived in Section 2"
+   - Section 4 (K_EM) notes: "uses energy concept derived in Section 2, builds on Section 3"
+   - Section 5 (K_enforcement) notes: "uses energy concept derived in Section 2, building on Sections 3 and 4"
+
+**Key Mathematical Content Added**:
+- Lagrangian L(K, K̇) = ½m K̇² - ½k K² for constraint dynamics
+- Euler-Lagrange equation: d/dt(∂L/∂K̇) - ∂L/∂K = 0 → m K̈ + k K = 0
+- Legendre transform: H = p K̇ - L where p = ∂L/∂K̇
+- Hamiltonian H(K, p) = p²/(2m) + ½k K² (total energy)
+- Noether's theorem: ∂L/∂t = 0 → E = p K̇ - L = H conserved
+- Stone's theorem: U(t) = exp(-iHt/ℏ) → Generator H
+- Energy eigenvalue equation: H|n⟩ = E_n|n⟩
+
+**Non-Circularity Proof Structure**:
+```
+3FLL Identity (A = A)
+    ↓
+Continuous trajectories
+    ↓
+Stone's Theorem → Generator H
+    ↓
+Time translation symmetry
+    ↓
+Noether's Theorem → Energy E ≡ H
+    ↓
+[NOW ENERGY CONCEPT EXISTS]
+    ↓
+K_ID uses energy eigenstates
+K_EM uses energy/entropy
+K_enforcement uses energy cost
+```
+
+**Document Statistics**:
+- Added: ~200 lines (NEW Section 2)
+- Modified: ~70 lines (updated K_ID, K_EM, K_enforcement references)
+- Total: 263 insertions, 69 deletions
+- New total length: ~1000+ lines
+
+**Commit**: f0cce5c - "Session 14.0: Add Lagrangian/Hamiltonian framework to paper section"
+
+---
+
 **Next Tasks** (pending):
 - Execute computational validation sprint (implement 5 scripts)?
-- User review of paper section?
+- User review of updated paper section with L/H framework?
 - Other tasks?
 
 ---
