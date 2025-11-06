@@ -32,8 +32,12 @@ This file provides essential guidance for Claude Code working in this repository
 - **`Session_Log/Session_X.Y.md`** - Read LATEST session file (highest X.Y) for complete context
 - **`sprints/README.md`** + **`sprints/sprint_X/SPRINT_X_TRACKING.md`** - If active sprint exists
 
-### Theory Frameworks
+### Theory Frameworks & Derivations
 - **`theory/frameworks/LRT_Hierarchical_Emergence_Framework.md`** - Formal mathematical framework for emergence
+- **`theory/derivations/`** - First-principles mathematical derivations (Session 13.0, ~3,700 lines)
+  - **SOURCE OF TRUTH**: Markdown files (.md) are canonical
+  - Convert to LaTeX/PDF as needed for paper submission
+  - All derivations are non-circular, multi-LLM validated, rigorous
 
 ---
 
@@ -136,6 +140,43 @@ This file provides essential guidance for Claude Code working in this repository
 ### Repository Structure
 - Everything has ONE canonical location (see DEVELOPMENT_GUIDE.md for full structure)
 - Never create alternative folders without updating CLAUDE.md
+
+### Derivation Protocol (Session 13.0+)
+
+**Location**: `theory/derivations/` - All first-principles mathematical derivations
+
+**Source of Truth**: Markdown files (.md) are canonical
+- 7 files documenting variational framework derivation (~3,700 lines)
+- Identity_to_K_ID_Derivation.md (K_ID = 1/β², 100% derived)
+- ExcludedMiddle_to_K_EM_Derivation.md (K_EM = (ln 2)/β, 100% derived)
+- Measurement_to_K_enforcement_Derivation.md (K_enforcement = 4β², 95% derived)
+- Four_Phase_Necessity_Analysis.md, Phase_Weighting_*.md (3 files)
+
+**Format Standards**:
+- Markdown with LaTeX equations for readability and version control
+- Step-by-step derivation chains with explicit dependencies
+- Non-circularity explicitly checked (trace full dependency graph)
+- Multi-LLM expert validation required (quality ≥0.70 threshold)
+- Transparent about limitations (e.g., "98% derived with caveat")
+
+**Integration into Papers**:
+- Generate LaTeX/PDF from markdown as needed for paper submission
+- Can be included as supplementary material
+- Can be integrated into main paper body if appropriate
+- PDF generation is "compilation" - markdown remains source
+
+**Quality Standards** (inherited from AI-Collaboration-Profile.json):
+- Every step must be justified (no "it follows that" without explicit reasoning)
+- Circular reasoning actively hunted (dependency traces required)
+- Parameters must not appear in their own derivation chain
+- Multi-LLM team review before claiming validation
+- Honest acknowledgment of assumptions and limitations
+
+**Lean Formalization** (future work):
+- theory/derivations/ markdown provides ~10-15 theorems for future Lean work
+- Lean formalization deferred until after experimental validation
+- When ready: lean/LogicRealismTheory/Derivations/ mirrors theory/derivations/
+- See lean/README.md "Future Formalization Targets" section
 
 ### approach_2_reference/ Protocol
 - **NEVER reference** "approach_2" in public-facing code or documentation
