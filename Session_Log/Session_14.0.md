@@ -67,6 +67,54 @@ Awaiting user-guided actions for:
 
 **TODO**: Discuss derivation strategy before paper revamp
 
+### Theory Folder Organization
+
+**Task**: Organize theory/ folder and integrate Session 13.0 derivations
+
+**Actions Taken**:
+1. ✅ **Updated theory/README.md** (major revision)
+   - Added derivations/ folder documentation (Session 13.0, ~3,700 lines)
+   - Updated folder structure with all subdirectories
+   - Marked resolved analyses (Energy, Eta parameter)
+   - Updated predictions section (Bell ceiling, TOP 4 paths)
+   - Reorganized navigation guide with Session 13.0 references
+   - Updated cross-references to current project state
+
+2. ✅ **Organized theory root files** (moved to subdirectories)
+   - `SECTION_7_AUDIT_2025-11-03.md` → `theory/drafts/` (⚠️ NOTE: Should go to audit/ folder per user)
+   - `V3_Branch2_Synthesis_Analysis.md` → `theory/drafts/`
+   - `Logic_Realism_Theory_Main_2025-11-05_Session10.md` → `theory/papers/` (historical snapshot)
+
+3. ✅ **Updated theory/papers/ section** in README
+   - Clarified v3 as historical version (superseded by root Logic_Realism_Theory_Main.md)
+   - Added Session 10 snapshot documentation
+   - Updated status labels
+
+4. ✅ **Marked resolved analyses** with Session 13.0 resolutions
+   - `theory/analysis/Energy_Circularity_Analysis.md` - Added resolution note pointing to Identity_to_K_ID_Derivation.md
+   - `theory/analysis/Eta_Parameter_Analysis.md` - Added resolution note pointing to variational framework (98% derived)
+   - Both files remain for historical reference
+
+**Commit**: 1a0fe6a - "Session 14.0: Theory folder organization & Session 13.0 integration"
+
+---
+
+### Audits Folder Creation
+
+**Task**: Create dedicated audits/ folder per user request
+
+**Actions Taken**:
+1. ✅ Created `theory/audits/` folder for theory audits and section reviews
+2. ✅ Moved `SECTION_7_AUDIT_2025-11-03.md` from drafts/ to audits/
+3. ✅ Updated theory/README.md:
+   - Added audits/ to folder structure
+   - Documented audits/ section
+   - Updated maintenance protocol: "Audit files should go in audits/ folder, not drafts/"
+
+**Commit**: 0e3ea25 - "Session 14.0: Create theory/audits folder per maintenance protocol"
+
+---
+
 ### Session 14.0 Summary (In Progress)
 
 **Completed**:
@@ -74,27 +122,35 @@ Awaiting user-guided actions for:
   - 4 files updated with Session 13.0 references
   - 3 files archived (obsolete/superseded)
   - 3 files verified (no updates needed)
+- ✅ Theory folder organization (8 files)
+  - theory/README.md updated with derivations/, audits/, and Session 13.0
+  - 4 root files moved to subdirectories (papers/, drafts/, audits/)
+  - 2 analysis files marked as resolved
+  - Audits folder created per user request
 - ✅ Consolidated axiom count framing in AXIOMS.md
 - ✅ Marked lean/README.md as maintenance document
 - ✅ Updated CLAUDE.md references
 - ✅ Process cleanup verification (no orphaned agents)
 
 **Files Modified**:
-- lean/AXIOMS.md (added framing, Session 13.0 references)
-- lean/PROOF_REFACTOR_STRATEGY.md (future Lean targets)
-- lean/README.md (current status, maintenance doc)
-- CLAUDE.md (removed archived file references)
+- lean/AXIOMS.md, PROOF_REFACTOR_STRATEGY.md, README.md
+- theory/README.md (major update - added derivations/, audits/)
+- theory/analysis/Energy_Circularity_Analysis.md, Eta_Parameter_Analysis.md
+- CLAUDE.md
 
-**Files Archived** (→ lean/archive/):
-- PROOF_REFACTOR_STRATEGY_OLD.md
-- LRT_Comprehensive_Lean_Plan.md
-- Ongoing_Axiom_Count_Classification.md
+**Files Moved**:
+- lean/archive/: 3 files (obsolete Lean docs)
+- theory/audits/: 1 file (SECTION_7_AUDIT)
+- theory/drafts/: 1 file (V3_Branch2_Synthesis_Analysis)
+- theory/papers/: 1 file (Session 10 snapshot)
 
-**Commit**: 6f94ef5 - "Session 14.0: Lean folder documentation cleanup & organization"
+**Commits**:
+- 6f94ef5 - "Session 14.0: Lean folder documentation cleanup & organization"
+- 1a0fe6a - "Session 14.0: Theory folder organization & Session 13.0 integration"
+- 0e3ea25 - "Session 14.0: Create theory/audits folder per maintenance protocol"
 
 **Next Tasks** (pending):
 - Organization improvements (other folders?)
-- Derivation strategy discussion
 - Paper revamps
 
 ---
