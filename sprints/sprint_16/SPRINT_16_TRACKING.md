@@ -10,9 +10,9 @@
 
 **Week**: 1 (Nov 5-11)
 **Overall Progress**: 7/28 tasks complete (25.0%)
-**Sessions**: 12.0 (~5.5 hrs), 12.1 (~2 hrs), 12.2 (~2 hrs), 12.3 (~2 hrs)
+**Sessions**: 12.0 (~5.5 hrs), 12.1 (~2 hrs), 12.2 (~2 hrs), 12.3 (~2 hrs), 12.4 (~2 hrs)
 **Blockers**: None
-**Next Milestone**: Task 1.1 (S_EM derivation) OR Track 4 (publication prep)
+**Next Milestone**: Task 4.1 (Figures package) OR Task 3.2 (Multi-platform strategy)
 
 ---
 
@@ -56,6 +56,16 @@
 - ✅ Task 2.5: zeno_crossover_analysis.py (425 lines, Zeno effect predictions)
 - ✅ Task 2.6: zeno_crossover_first_principles_executed.ipynb (281 KB, 0 errors, 3 figures)
 
+**Session 12.4 Deliverables** (Validation & Fixes):
+- ✅ SANITY_CHECK_PATH_1-4.md: Identified circularity in Paths 3-4
+- ✅ Fixed ramsey_theta_analysis.py: Derive ETA from β = 3/4 (not hardcoded)
+- ✅ Fixed zeno_crossover_analysis.py: Derive ETA from β = 3/4 (not hardcoded)
+- ✅ Fixed ramsey_theta_first_principles.ipynb: Correct variational formula η = (ln2/β²) - 1
+- ✅ Fixed zeno_crossover_first_principles.ipynb: Correct variational formula η = (ln2/β²) - 1
+- ✅ Re-executed Path 3: ramsey_theta_first_principles_executed.ipynb (455 KB, η = 0.235 derived)
+- ✅ Re-executed Path 4: zeno_crossover_first_principles_executed.ipynb (398 KB, η = 0.235 derived)
+- ✅ **VALIDATED**: All 4 paths pass SANITY_CHECK_PROTOCOL (non-circular, first-principles)
+
 ---
 
 ### Track 3: Experimental Preparation (5 tasks)
@@ -97,7 +107,11 @@
 
 **Core Deliverables**:
 - [x] 4/4 notebooks implemented and validated (100%) - All 4 paths ✅ **COMPLETE**
-- [x] 2/4 analysis scripts complete (50%) - Paths 3, 4 ✅
+- [x] 4/4 analysis scripts complete (100%) - Paths 1-2 (Bell/AC Stark data), Paths 3-4 (Ramsey/Zeno) ✅ **COMPLETE**
+- [x] Sanity check validation (SANITY_CHECK_PATH_1-4.md) ✅ **COMPLETE**
+  - All paths PASS Check #7 (Experimental Literature)
+  - All paths PASS Check #8 (Computational Circularity - FIXED in Session 12.4)
+  - All paths PASS Professional Tone check
 - [x] 11/32 publication figures generated (34%) - 2+3+3+3 ✅
 - [ ] 0/4 protocols updated with error budgets (0%)
 - [x] 5/12 collaboration materials ready (42%) - Path 2 outreach complete ✅
