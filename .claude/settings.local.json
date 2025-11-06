@@ -27,7 +27,8 @@
       "Bash(git ls-tree:*)",
       "WebFetch(domain:www.nature.com)",
       "Bash(git log:*)",
-      "Bash(jupyter --version:*)"
+      "Bash(jupyter --version:*)",
+      "Bash(cat:*)"
     ],
     "deny": [],
     "ask": []
