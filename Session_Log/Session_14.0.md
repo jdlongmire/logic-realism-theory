@@ -623,14 +623,133 @@ K_enforcement uses energy cost
 
 ---
 
-**Next Tasks** (pending):
-- Execute computational validation sprint (implement 5 scripts)?
-- Further framework cleanup?
-- Other tasks?
+### Paper Refactor Plan Creation
+
+**Task**: Create planning document for main paper refactor incorporating Session 13.0 derivations
+
+**Actions Taken**:
+
+1. ✅ **Created LRT_Paper_Refactor.md stub** (228 lines)
+   - Maps all source artifacts to proposed paper sections
+   - Integration guidelines (professional tone, honest percentages, status markers)
+   - 6-phase refactor checklist
+
+**Source Artifacts Documented**:
+- **Foundational Reference**: theory/Logic_Realism_Theory_Foundational.md (historical reference)
+- **Primary Mathematical**: theory/derivations/1_Paper_Formalization_Section.md (Sections 2-6)
+- **Conceptual Framework**: theory/frameworks/LRT_Explanatory_Power.md (comparison table, interpretations)
+- **Supporting Derivations**: theory/derivations/ folder (7 files, ~3,700 lines)
+
+**Proposed Paper Structure** (9 sections + appendices):
+1. Introduction
+2. Foundations (3FLL, A = L(I))
+3. Energy Emergence (Lagrangian/Hamiltonian, Noether)
+4. Constraint Cost Derivations (K_ID, K_EM, K_enforcement)
+5. Variational Framework (β_opt ≈ 0.749)
+6. Interpretive Framework (entanglement, measurement, superposition)
+7. Experimental Predictions and Status
+8. Discussion (comparisons, strengths, limitations)
+9. Conclusion
+
+**Commits**:
+- 2589dba - "Session 14.0: Create paper refactor stub with artifact references"
+- 2922e07 - "Session 14.0: Fix foundational paper reference to theory root folder"
+- 32d8c62 - "Session 14.0: Reorder source artifacts - foundational paper first"
+
+**Theory README Updated**:
+- Added "Planning Documents" subsection in papers/ section
+- Reference to LRT_Paper_Refactor.md with full details
+- **Commit**: 29e8479 - "Session 14.0: Add paper refactor stub reference"
+
+**Result**: Complete planning document ready for user-guided paper refactor execution
 
 ---
 
-**Session Status**: Active (context at ~96%, will continue in Session 14.1 if needed)
+## Session Summary
+
+**Session 14.0 Achievements**:
+
+### 1. Lean Folder Documentation Cleanup (8 files reviewed)
+- ✅ Updated AXIOMS.md with Session 13.0 derivations
+- ✅ Updated PROOF_REFACTOR_STRATEGY.md with future formalization targets
+- ✅ Updated lean/README.md to current status
+- ✅ Archived 3 obsolete files (PROOF_REFACTOR_STRATEGY_OLD.md, LRT_Comprehensive_Lean_Plan.md, Ongoing_Axiom_Count_Classification.md)
+
+### 2. Theory Folder Organization
+- ✅ Updated theory/README.md with Session 13.0 derivations (derivations/ folder documentation)
+- ✅ Organized theory root files (moved to drafts/, papers/ subdirectories)
+- ✅ Marked resolved analyses (Energy_Circularity_Analysis.md, Eta_Parameter_Analysis.md)
+
+### 3. Derivations Remediation Sprint
+- ✅ Fixed 5 tone violations in Four_Phase_Necessity_Analysis.md
+  - Removed emoji (🎯), exclamation marks
+  - Qualified "100% DERIVED" claims with β caveat
+  - Updated percentages for consistency (98% → 95%)
+  - Removed dismissive language
+- ✅ All 7 derivation files now pass SANITY_CHECK_PROTOCOL.md
+
+### 4. Paper Formalization Section
+- ✅ Created theory/derivations/1_Paper_Formalization_Section.md (1000+ lines)
+- ✅ Added Lagrangian/Hamiltonian framework (Section 2: Energy Emergence)
+- ✅ Non-circular energy derivation via Noether's theorem
+- ✅ Complete mathematical derivations (K_ID, K_EM, K_enforcement, β_opt)
+- ✅ Professional tone, honest percentages (~90-95%), suitable for peer review
+
+### 5. Computational Validation Sprint
+- ✅ Created COMPUTATIONAL_VALIDATION_SPRINT.md (632 lines)
+- 5 Python validation scripts planned (identity, excluded middle, measurement, variational, experimental)
+- ≥15 figures expected, experimental test protocol
+- **Status**: Ready for execution (pending)
+
+### 6. LRT Explanatory Power Cleanup
+- ✅ Deprecated old version (1,249 lines → LRT_Explanatory_Power_DEPRECATED_2025-11-06.md)
+- ✅ Created streamlined version (378 lines, ~70% reduction)
+- ✅ Removed ~870 lines (speculation + pedagogical fluff)
+- ✅ Core: Comparison table (LRT vs Standard QM) with status markers
+- ✅ Preserved entanglement explanation (user request)
+- ✅ Omitted Born rule (not yet derived - honest)
+
+### 7. Paper Refactor Plan
+- ✅ Created LRT_Paper_Refactor.md (228 lines)
+- ✅ Maps all source artifacts to proposed paper structure
+- ✅ 6-phase refactor checklist
+- ✅ Integration guidelines (professional tone, honest status)
+- ✅ Ready for user-guided execution
+
+**Total Commits**: 13
+**Files Created**: 4 (1_Paper_Formalization_Section.md, COMPUTATIONAL_VALIDATION_SPRINT.md, LRT_Explanatory_Power.md v3.0, LRT_Paper_Refactor.md)
+**Files Deprecated**: 1 (LRT_Explanatory_Power_DEPRECATED_2025-11-06.md)
+**Files Archived**: 3 (Lean documentation)
+**READMEs Updated**: 3 (lean/README.md, theory/README.md, theory/papers/ section)
+
+**Key Outcomes**:
+1. Repository cleanup and organization complete
+2. Session 13.0 derivations documented and integrated into READMEs
+3. Paper-ready formalization section created (1000+ lines, peer-review quality)
+4. Framework documents streamlined (accurate, honest, focused)
+5. Paper refactor plan ready for execution
+
+**Professional Standards Maintained**:
+- No hyperbole, no emojis, factual tone throughout
+- Honest percentages (~90-95% derived)
+- Clear status markers (✅ Rigorous, ⚠️ Interpretive, ❓ Open)
+- Non-circularity proofs explicit
+- Limitations acknowledged
+
+---
+
+**Next Session Tasks** (pending):
+- Execute computational validation sprint (5 Python scripts)?
+- Execute paper refactor using LRT_Paper_Refactor.md?
+- Continue Lean formalization (resolve 55 sorries)?
+- Other user-directed tasks?
+
+---
+
+**Session Status**: ✅ **COMPLETE** (2025-11-06)
+**Context Usage**: ~88K tokens
+**Duration**: Full session
+**All Changes**: Committed and pushed to GitHub
 
 ---
 
