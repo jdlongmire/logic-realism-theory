@@ -581,7 +581,7 @@ To complete the mathematical treatment, we require:
 5. **Variational calculus** - Deriving Euler-Lagrange equations rigorously
 6. **Connection to physics** - Showing how specific κ functions yield known physical laws
 
-The next paper in this series will provide this formal treatment.
+The formal mathematical treatment is provided in *The Formal Mathematics of Logic Realism Theory* (Longmire). Testable predictions and validation methods are presented in *Logic Realism Theory: Predictions, Derivations, and Validation* (Longmire).
 
 ---
 
@@ -609,7 +609,7 @@ The framework is parsimonious (only two fundamental co-extant primitives), expla
 
 **Scope and limitations:** This framework is not offered as the unique metaphysical explanation but as the explanation that best balances simplicity, unification, and empirical coherence without inflating ontology. The parsimony principle, while methodologically preferred over alternatives, remains a substantive hypothesis requiring further empirical corroboration. The consciousness section (Section 5) presents exploratory implications rather than rigorously derived results. The framework's ultimate viability depends on whether its mathematical development (Paper 3) successfully derives known physical laws from its primitives and makes testable predictions distinguishing it from alternative approaches.
 
-Most significantly, LRT is not merely philosophical interpretation. It has the mathematical resources to generate dynamical equations, predict the form of physical laws, and explain why nature exhibits the regularities it does. The subsequent paper will develop this formal apparatus in detail, positioning LRT as a candidate foundational framework with ambitions to undergird and unify existing approaches in physics and metaphysics.
+Most significantly, LRT is not merely philosophical interpretation. It has the mathematical resources to generate dynamical equations, predict the form of physical laws, and explain why nature exhibits the regularities it does. The companion papers develop this formal apparatus in detail: *The Formal Mathematics of Logic Realism Theory* provides rigorous Lagrangian and Hamiltonian formulation, while *Logic Realism Theory: Predictions, Derivations, and Validation* presents testable empirical predictions including the T2/T1 decoherence ratio. Together, these position LRT as a candidate foundational framework with ambitions to undergird and unify existing approaches in physics and metaphysics.
 
 The central thesis is well-supported: logic is not merely about thought or language, but is best understood as the constitutive structure of reality itself. Everything that is, is because logical structure permits and constrains it. On this view, physics is applied logic, not logic applied to physics.
 

@@ -12,6 +12,8 @@ This paper advances Logic Realism Theory (LRT), the thesis that the three classi
 
 **Keywords:** logic realism, laws of logic, non-contradiction, metaphysics, ontology, transcendental argument, philosophy of logic
 
+**Companion papers:** This paper establishes the philosophical foundation. For the complete metaphysical framework, see *The Metaphysical Architecture of Logic Realism Theory* (Longmire). For mathematical formalization, see *The Formal Mathematics of Logic Realism Theory* (Longmire). For empirical predictions and validation, see *Logic Realism Theory: Predictions, Derivations, and Validation* (Longmire).
+
 ---
 
 ## 1. Introduction

@@ -14,7 +14,7 @@ We provide a rigorous mathematical formalization for Logic Realism Theory (LRT),
 
 ## Introduction
 
-In the companion paper (Longmire, 2024), we established the metaphysical architecture of Logic Realism Theory, showing how physical, abstract, and mental reality derive from the fundamental co-extant primitives of the Three Fundamental Logical Laws (3FLL) and the Infinite Information Space (IIS). The core thesis, formalized as $\mathcal{A} = \mathfrak{L}(\mathcal{I})$, states that actuality emerges from logical constraints applied to infinite possibility space.
+In the companion papers, we established Logic Realism Theory's philosophical and metaphysical foundations. *Logic Realism Theory* (Longmire) defends the ontological status of the three laws of logic. *The Metaphysical Architecture of Logic Realism Theory* (Longmire) develops the complete conceptual framework, showing how physical, abstract, and mental reality derive from the fundamental co-extant primitives of the Three Fundamental Logical Laws (3FLL) and the Infinite Information Space (IIS). The core thesis, formalized as $\mathcal{A} = \mathfrak{L}(\mathcal{I})$, states that actuality emerges from logical constraints applied to infinite possibility space. Testable predictions and validation methods are presented in *Logic Realism Theory: Predictions, Derivations, and Validation* (Longmire).
 
 This paper provides the mathematical backbone of that metaphysical structure. We axiomatize the framework, develop its variational calculus, and demonstrate its capacity to generate genuine physical dynamics. The formalization proceeds in three parts:
 
