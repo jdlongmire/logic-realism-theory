@@ -21,32 +21,54 @@ This is a **proposed framework** with testable predictions, not yet empirically 
 
 ---
 
-## 📄 Main Paper
+## Theory Papers (4-Paper Modular Structure)
 
-**[Logic_Realism_Theory_Main.md](Logic_Realism_Theory_Main.md)** ([PDF](Logic_Realism_Theory_Main.pdf)) - Complete technical framework with quantum mechanics derivations, testable predictions (T2/T1 decoherence asymmetry), Lean 4 formal verification, and experimental protocols.
+| Paper | Focus | Lines |
+|-------|-------|-------|
+| **[Logic_Realism_Theory.md](theory/Logic_Realism_Theory.md)** | Philosophical defense of logical realism | 426 |
+| **[LRT_Metaphysical_Architecture.md](theory/LRT_Metaphysical_Architecture.md)** | Conceptual framework, A = L(I) | 671 |
+| **[LRT_Formal_Mathematics.md](theory/LRT_Formal_Mathematics.md)** | Rigorous mathematical formalization | 859 |
+| **[LRT_Predictions_Validation.md](theory/LRT_Predictions_Validation.md)** | Testable predictions & experimental protocols | ~400 |
+
+**Legacy**: [Logic_Realism_Theory_Main.md](Logic_Realism_Theory_Main.md) remains as comprehensive reference.
 
 ---
 
-## 🎉 Latest Updates
+## Latest Updates
 
-### Session 14.0: Cleanup, Organization & Paper Revamps (Nov 6, 2025) ✅
+### Session 15.0: 4-Paper Modular Structure (Nov 25, 2025)
+
+**Achievement**: Restructured theory papers into focused, peer-review ready documents
+
+**Key Outcomes**:
+1. **4-Paper Structure**: Split monolithic foundational paper into focused documents
+   - Philosophy paper: Defends logical realism against 6 objections
+   - Metaphysics paper: Develops A = L(I), parsimony, grounding relations
+   - Mathematics paper: Rigorous Lagrangian/Hamiltonian formalization
+   - Predictions paper: T2/T1, variational framework, experimental protocols
+2. **Cross-References**: All papers properly cite each other
+3. **Sanity Check**: All 4 papers pass protocol (professional tone, no circularity, honest claims)
+
+**Deliverables**:
+- theory/Logic_Realism_Theory.md (426 lines)
+- theory/LRT_Metaphysical_Architecture.md (671 lines)
+- theory/LRT_Formal_Mathematics.md (859 lines)
+- theory/LRT_Predictions_Validation.md (~400 lines, NEW)
+- 01_Sanity_Checks/2025-11-25_Theory_Papers_SanityCheck.md
+
+**Session Log**: [Session_Log/Session_15.0.md](Session_Log/Session_15.0.md)
+
+---
+
+### Session 14.0: Cleanup, Organization & Paper Revamps (Nov 6, 2025)
 
 **Achievement**: Post-Session 13.0 repository cleanup and paper preparation
 
 **Key Outcomes**:
 1. **Repository Organization**: Lean and theory folder documentation updated with Session 13.0 derivations
-2. **Derivations Remediation**: All 7 derivation files pass sanity check protocol (fixed tone violations, qualified claims)
+2. **Derivations Remediation**: All 7 derivation files pass sanity check protocol
 3. **Paper Formalization**: Created peer-review ready section (1000+ lines) with Lagrangian/Hamiltonian framework
-4. **Framework Cleanup**: Streamlined LRT_Explanatory_Power.md (1,249 → 378 lines, removed speculation)
-5. **Paper Refactor Plan**: Complete planning document mapping source artifacts to proposed paper structure
-
-**Deliverables**:
-- theory/derivations/1_Paper_Formalization_Section.md (1000+ lines, professional, peer-review ready)
-- theory/frameworks/LRT_Explanatory_Power.md (378 lines, streamlined comparison table)
-- theory/papers/LRT_Paper_Refactor.md (228 lines, 6-phase checklist)
-- COMPUTATIONAL_VALIDATION_SPRINT.md (632 lines, 5 validation scripts planned)
-
-**Professional Standards**: No hyperbole, honest percentages (~90-95% derived), clear status markers, limitations acknowledged
+4. **Framework Cleanup**: Streamlined LRT_Explanatory_Power.md (1,249 → 378 lines)
 
 **Total**: 13 commits, 4 files created, 1 deprecated, 3 archived, 3 READMEs updated
 
@@ -239,7 +261,13 @@ See [AI_Enabled_Theoretical_Physics.md](AI_Enabled_Theoretical_Physics.md) for t
 
 ### Theory
 
-Read **[Logic_Realism_Theory_Main.md](Logic_Realism_Theory_Main.md)** for the complete theoretical framework.
+**New readers**: Start with the 4-paper structure:
+1. **[Logic_Realism_Theory.md](theory/Logic_Realism_Theory.md)** - Philosophical foundation
+2. **[LRT_Metaphysical_Architecture.md](theory/LRT_Metaphysical_Architecture.md)** - Conceptual framework
+3. **[LRT_Formal_Mathematics.md](theory/LRT_Formal_Mathematics.md)** - Mathematical formalization
+4. **[LRT_Predictions_Validation.md](theory/LRT_Predictions_Validation.md)** - Testable predictions
+
+**Comprehensive reference**: [Logic_Realism_Theory_Main.md](Logic_Realism_Theory_Main.md) (legacy, complete)
 
 ### Experimental Predictions
 
@@ -285,20 +313,24 @@ See [`lean/README.md`](lean/README.md) for details.
 
 ## Repository Structure
 
-- **[`Logic_Realism_Theory_Main.md`](Logic_Realism_Theory_Main.md)** - Main technical paper
+- **[`theory/`](theory/)** - Theory papers (4-paper modular structure)
+  - [`Logic_Realism_Theory.md`](theory/Logic_Realism_Theory.md) - Philosophical defense
+  - [`LRT_Metaphysical_Architecture.md`](theory/LRT_Metaphysical_Architecture.md) - Conceptual framework
+  - [`LRT_Formal_Mathematics.md`](theory/LRT_Formal_Mathematics.md) - Mathematical formalization
+  - [`LRT_Predictions_Validation.md`](theory/LRT_Predictions_Validation.md) - Predictions & validation
+  - [`derivations/`](theory/derivations/) - First-principles derivation chains (~3,700 lines)
+- **[`Logic_Realism_Theory_Main.md`](Logic_Realism_Theory_Main.md)** - Legacy comprehensive reference
 - **[`AI_Enabled_Theoretical_Physics.md`](AI_Enabled_Theoretical_Physics.md)** - Research methodology case study
-- [`theory/`](theory/) - Papers and foundational documents
 - [`lean/`](lean/) - Formal Lean 4 proofs with 3-tier axiom classification
   - [`AXIOM_CLASSIFICATION_SYSTEM.md`](lean/AXIOM_CLASSIFICATION_SYSTEM.md) - Complete 3-tier framework
   - [`AXIOMS.md`](lean/AXIOMS.md) - High-level axiom justification approach
-  - [`Ongoing_Axiom_Count_Classification.md`](lean/Ongoing_Axiom_Count_Classification.md) - Complete axiom inventory
 - [`notebooks/`](notebooks/) - Computational validation and simulations
 - [`scripts/`](scripts/) - Implementation scripts for experiments
 - [`multi_LLM/`](multi_LLM/) - Team consultation system (Grok-3, GPT-4, Gemini-2.0)
+- [`01_Sanity_Checks/`](01_Sanity_Checks/) - Sanity check reports
 - [`Session_Log/`](Session_Log/) - Development history
-  - [Latest: Session 9.1](Session_Log/Session_9.1.md) - Tier classification refactor complete
+  - [Latest: Session 15.0](Session_Log/Session_15.0.md) - 4-paper modular structure
 - [`sprints/`](sprints/) - Sprint planning and tracking
-- [`docs/`](docs/) - Extended documentation
 - [`archive/`](archive/) - Historical development artifacts
 
 ---
@@ -382,13 +414,23 @@ Logic Realism Theory is a **proposed theoretical framework** under active develo
 
 ## Quick Navigation
 
-- **Theory** → [Logic_Realism_Theory_Main.md](Logic_Realism_Theory_Main.md)
+**Theory Papers** (4-paper structure):
+- **Philosophy** → [Logic_Realism_Theory.md](theory/Logic_Realism_Theory.md)
+- **Metaphysics** → [LRT_Metaphysical_Architecture.md](theory/LRT_Metaphysical_Architecture.md)
+- **Mathematics** → [LRT_Formal_Mathematics.md](theory/LRT_Formal_Mathematics.md)
+- **Predictions** → [LRT_Predictions_Validation.md](theory/LRT_Predictions_Validation.md)
+
+**Key Resources**:
+- **Legacy Reference** → [Logic_Realism_Theory_Main.md](Logic_Realism_Theory_Main.md)
 - **AI Methodology** → [AI_Enabled_Theoretical_Physics.md](AI_Enabled_Theoretical_Physics.md)
+- **Derivations** → [`theory/derivations/`](theory/derivations/) (~3,700 lines)
 - **Primary Prediction** → [`theory/predictions/T1_vs_T2_Protocol.md`](theory/predictions/T1_vs_T2_Protocol.md)
-- **Latest Work** → [Session 10](Session_Log/) - Bell ceiling falsification + process lessons
-- **Process Lessons** → [`theory/predictions/Bell_Ceiling/LESSONS_LEARNED_BELL_CEILING.md`](theory/predictions/Bell_Ceiling/LESSONS_LEARNED_BELL_CEILING.md)
-- **Sanity Check Protocol** → [`SANITY_CHECK_PROTOCOL.md`](SANITY_CHECK_PROTOCOL.md) (v1.1 - now includes experimental literature cross-check)
+
+**Formalization**:
 - **Lean Proofs** → [`lean/README.md`](lean/README.md)
 - **Axiom Framework** → [`lean/AXIOM_CLASSIFICATION_SYSTEM.md`](lean/AXIOM_CLASSIFICATION_SYSTEM.md)
-- **Axiom Inventory** → [`lean/Ongoing_Axiom_Count_Classification.md`](lean/Ongoing_Axiom_Count_Classification.md)
-- **Development History** → [`Session_Log/`](Session_Log/)
+- **Sanity Check Protocol** → [`SANITY_CHECK_PROTOCOL.md`](SANITY_CHECK_PROTOCOL.md)
+
+**Development**:
+- **Latest Session** → [Session_Log/Session_15.0.md](Session_Log/Session_15.0.md)
+- **Session History** → [`Session_Log/`](Session_Log/)
