@@ -1522,7 +1522,337 @@ We have shown:
 - The Mathematical Universe Hypothesis is refined by selection considerations
 - LRT does not replace these programs but completes them
 
-This concludes Part II: Physical Interpretation. Part III will develop the mathematical formalization.
+This concludes Part II: Physical Interpretation. Part III develops the mathematical formalization.
+
+---
+
+## Part III: Mathematical Structure
+
+---
+
+## 16. LRT Axioms
+
+Parts I and II established the philosophical foundations and physical interpretation. This section states the formal axioms from which the mathematical structure of quantum mechanics is derived. The axiom structure is minimal: we state what must be assumed, distinguish different tiers of assumption, and identify what is derived versus what is postulated.
+
+### 16.1 Primitive Terms
+
+We begin with undefined primitive terms. These are not derived but taken as foundational.
+
+**Definition 16.1 (Three Fundamental Logical Laws).** The 3FLL are:
+- **Identity (I):** ∀x: x = x
+- **Non-Contradiction (NC):** ∀x, P: ¬(P(x) ∧ ¬P(x))
+- **Excluded Middle (EM):** ∀x, P: P(x) ∨ ¬P(x)
+
+**Definition 16.2 (Distinguishability).** A binary relation D on a set S such that D(x,y) holds iff x and y can be differentiated by some predicate P satisfying 3FLL.
+
+**Definition 16.3 (Infinite Information Space).** The maximal collection IIS of states closed under distinguishability:
+
+$$\mathcal{I} = \{s : D \text{ is defined on } s \times \mathcal{I}\}$$
+
+*Remark:* The maximality of IIS ensures it is infinite-dimensional. This will be relevant for applying Gleason's theorem, which requires dimension ≥ 3.
+
+**Definition 16.4 (Boolean Structure).** A set B equipped with operations {∧, ∨, ¬} satisfying the Boolean algebra axioms, with carrier set {0,1}.
+
+**Definition 16.5 (Context).** A partition C of (a subspace of) IIS into mutually exclusive, jointly exhaustive alternatives.
+
+### 16.2 The Axioms
+
+**Axiom 1 (Constitution).** 3FLL constitute distinguishability. For any x, y ∈ IIS:
+
+$$D(x,y) \text{ is well-defined} \iff x, y \text{ satisfy I, NC, EM}$$
+
+*This axiom asserts that distinguishability is not primitive but is constituted by logical structure. Without 3FLL, there is no basis for one state to differ from another.*
+
+---
+
+**Axiom 2 (Pairwise Structure).** Distinguishability is a binary relation. For any assessment of distinguishability, exactly two states are compared:
+
+$$D: \mathcal{I} \times \mathcal{I} \rightarrow [0,1]$$
+
+where D(x,y) = 0 means identical, D(x,y) = 1 means perfectly distinguishable.
+
+*This axiom captures that distinguishability is relational - it compares pairs. This pairwise character grounds the quadratic structure of quantum mechanics.*
+
+---
+
+**Axiom 3 (Physical Constraints on IIS).** The space IIS admits:
+
+**(a) Continuous transformations:** For any two states s₁, s₂ with D(s₁,s₂) < 1, there exists a continuous path of states connecting them.
+
+**(b) Reversible transformations:** For any transformation T on IIS, there exists T⁻¹ such that T⁻¹T = TT⁻¹ = id.
+
+**(c) Local tomography:** For any composite system with subsystems A and B, the state of the whole is uniquely determined by the statistics of local measurements on A and B separately.
+
+*Remark on 3(c):* This axiom is crucial for determining the number field. It asserts that the distinguishability of a composite system is determined by local measurements on its parts. This rules out holistic theories where the whole cannot be reconstructed from the parts.
+
+*Justification:* These constraints are not arbitrary. Continuity is required for dynamics to be well-defined. Reversibility is required for information preservation in IIS (non-reversible dynamics would lose distinguishability). Local tomography is required for physics to be compositional - for us to learn about wholes by studying parts.
+
+---
+
+**Axiom 4 (Boolean Actuality).** There exists a map Φ from IIS to Boolean outcomes:
+
+$$\Phi_C: \mathcal{I} \rightarrow \{0,1\}^{|C|}$$
+
+for each context C, satisfying:
+- (a) **Totality:** Φ_C is defined for all s ∈ IIS (from EM)
+- (b) **Single-valuedness:** For each s and C, Φ_C(s) is unique (from NC)
+- (c) **Exclusivity:** Exactly one element of C receives value 1 (from EM + NC)
+
+*This axiom asserts that actuality is Boolean - determinate, non-contradictory, complete. It does not yet specify HOW Φ assigns values, only that it does so consistently with 3FLL.*
+
+---
+
+**Axiom 5 (Non-Contextual Measure).** The interface map Φ induces a probability measure μ on outcomes satisfying:
+
+**(a) Non-negativity:** μ(s, c) ≥ 0 for all states s and outcomes c
+
+**(b) Normalization:** For any context C = {c₁, ..., cₙ}, we have Σᵢ μ(s, cᵢ) = 1
+
+**(c) Distinguishability-respecting:** If D(s,s') = 0, then μ(s,c) = μ(s',c) for all c
+
+**(d) Non-contextuality of measure:** The measure assigned to a subspace H is independent of the orthogonal complement H⊥ used to complete the context. That is, if H appears in two different contexts C and C', then μ(s, H) is the same in both.
+
+*Remark on 5(d):* This is the crucial condition for Gleason's theorem. It asserts that the probability of an outcome depends only on the state and the outcome, not on what other outcomes were possible. Without this, Gleason's theorem does not apply.
+
+*This axiom asserts that the interface has a probability measure with specific properties. It does NOT assert that this measure is |ψ|². That will be derived.*
+
+### 16.3 Axiom Tier Classification
+
+Not all axioms have the same status. We classify them:
+
+| Axiom | Tier | Status |
+|-------|------|--------|
+| 1 (Constitution) | Foundational | LRT-specific thesis |
+| 2 (Pairwise) | Foundational | Structural requirement |
+| 3a (Continuity) | Physical | Required for dynamics |
+| 3b (Reversibility) | Physical | Required for information preservation |
+| 3c (Local Tomography) | Physical | Required for compositional physics |
+| 4 (Boolean Actuality) | Foundational | From 3FLL enforcement |
+| 5 (Non-Contextual Measure) | Structural | Interface property |
+
+**Tier 1 (LRT-specific):** Axioms 1 and 2 are the core LRT claims - that 3FLL constitute distinguishability and that distinguishability is pairwise.
+
+**Tier 2 (Physical):** Axiom 3 states physical requirements. These are not derived from logic alone but are required for stable, informative physics.
+
+**Tier 3 (Structural):** Axioms 4 and 5 describe the interface structure. They follow from 3FLL enforcement (Axiom 4) or state interface properties (Axiom 5).
+
+### 16.4 What Is Derived, Not Axiomatized
+
+From these five axioms, we derive:
+
+- **Hilbert space structure** (Section 17)
+- **Complex numbers** as the field (Section 17)
+- **Born rule** (Section 18)
+- **Global parsimony** (below)
+
+These are theorems, not axioms. The derivations use established results (Masanes-Müller, Gleason) applied to the LRT axiom structure.
+
+### 16.5 Global Parsimony Derived
+
+Section 7.6 introduced parsimony as derived from constitution and grounding. Here we state it formally.
+
+**Constitutive Closure Principle (CCP).** If domain D is constituted by package P_const, then D contains exactly the structure generated by P_const. Nothing whose existence requires an additional source lies in D.
+
+**Truthmaker Requirement (TM).** If a proposition P in the fundamental physical description has Boolean value v ∈ {0,1}, then some ground G ∈ (3FLL + s₀) determines P = v.
+
+**Definition 16.6 (Grounded Proposition).** P is grounded iff its truth-value is determined by: (1) logical necessity from 3FLL, (2) logical entailment from grounded propositions, (3) initial condition s₀, or (4) propagation through dynamical laws.
+
+**Definition 16.7 (Surplus Proposition).** P is surplus iff its truth-value is determined by none of sources (1)-(4).
+
+**Lemma 16.8.** If P is surplus, then P has no genuine Boolean value.
+
+*Proof.* Immediate from TM. ∎
+
+**Lemma 16.9.** No surplus proposition lies in actuality.
+
+*Proof.* Suppose P ∈ A. Then P must possess a grounded Boolean value by enforcement. But surplus propositions lack such grounds (Lemma 16.8). Contradiction. ∎
+
+**Theorem 16.10 (Global Parsimony).** Actuality contains exactly the grounded propositions and nothing more. Equivalently, actuality is the minimal Boolean structure sufficient for global enforcement of 3FLL relative to the constitutive package (3FLL + s₀).
+
+*Proof.*
+
+1. Actuality is constituted by (3FLL + s₀). [Core claim of LRT]
+2. By CCP, actuality contains exactly what this package generates.
+3. The generative sources for propositions in this package are: (a) logical structure from 3FLL, (b) initial structure from s₀, (c) grounded entailments from (a)-(b), (d) propagation via dynamics. These correspond precisely to grounding sources (1)-(4).
+4. Thus (3FLL + s₀) generates exactly the grounded propositions.
+5. Surplus propositions have no grounds and cannot be enforced (Lemma 16.8).
+6. Surplus propositions therefore cannot be actual (Lemma 16.9).
+7. Conversely, all grounded propositions are generated by (3FLL + s₀).
+8. Therefore A consists exactly of grounded propositions, each with exactly one Boolean value. ∎
+
+**Corollary 16.11.** Parsimony is a theorem, not an axiom. It requires no independent assumption.
+
+### 16.6 Revised Axiom Structure
+
+With parsimony derived, the minimal axiom base is:
+
+| # | Element | Status |
+|---|---------|--------|
+| A1 | 3FLL constitute distinguishability | Axiom |
+| A2 | Distinguishability is pairwise | Axiom |
+| A3 | Physical constraints (continuity, reversibility, local tomography) | Axiom |
+| A4 | Boolean actuality (3FLL enforcement domain) | Axiom |
+| A5 | Non-contextual measure | Axiom |
+| D1 | Grounded proposition | Definition |
+| P1 | Constitutive Closure (CCP) | Principle (from A1) |
+| P2 | Truthmaker Requirement (TM) | Principle |
+| **T1** | **Global Parsimony** | **Theorem** |
+
+### 16.7 What This Section Establishes
+
+We have:
+
+- Stated five formal axioms for LRT
+- Classified axioms by tier (foundational, physical, structural)
+- Proved Global Parsimony as a theorem
+- Identified what is derived versus assumed
+
+The next section derives Hilbert space structure from these axioms.
+
+---
+
+## 17. Deriving Hilbert Space Structure
+
+This section shows that Hilbert space structure follows from the LRT axioms via established reconstruction theorems. The derivation is not novel - it leverages rigorous results from quantum foundations - but its grounding in LRT is.
+
+### 17.1 The Derivation Strategy
+
+The strategy is:
+
+1. Show that LRT axioms satisfy the premises of the Masanes-Müller theorem
+2. Apply Masanes-Müller to conclude that IIS has complex Hilbert space structure
+3. Verify that the derived structure has the required properties
+
+This is a derivation within LRT, not a derivation of LRT. The axioms are assumed; the structure follows.
+
+### 17.2 Inner Product Structure
+
+**Theorem 17.1 (Inner Product Structure).** If IIS satisfies Axioms 1-3, then the distinguishability relation D induces an inner product ⟨·|·⟩ on IIS.
+
+*Proof:*
+
+Axiom 2 establishes that D is pairwise - a function of two states.
+
+Axiom 3(a) establishes continuity: the state space is connected.
+
+Axiom 3(b) establishes reversibility: transformations are invertible.
+
+Axiom 3(c) establishes local tomography: composites are determined by parts.
+
+By the Masanes-Müller reconstruction theorem (Masanes & Müller, 2011), any state space satisfying:
+1. Continuous reversible dynamics
+2. Local tomography
+3. Existence of entangled states (non-trivial composites)
+
+admits a unique representation as a complex Hilbert space with standard quantum operations.
+
+Conditions 1 and 2 are Axioms 3(a-c). Condition 3 follows from the richness of IIS - since IIS contains all distinguishable configurations (Definition 16.3), it contains composite states that are not product states.
+
+Therefore IIS admits complex inner product structure. ∎
+
+### 17.3 Why Complex Numbers
+
+**Theorem 17.2 (Complex Numbers).** The field over which the inner product is defined is ℂ (complex numbers), not ℝ (reals) or ℍ (quaternions).
+
+*Proof:*
+
+This follows from Axiom 3(c) (Local Tomography) via Masanes & Müller (2011).
+
+Consider the alternatives:
+
+**Real quantum mechanics (ℝ):** Satisfies continuity and reversibility but has impoverished interference structure. More critically, real QM does not satisfy local tomography in general - there exist real quantum states of composite systems that cannot be distinguished by local measurements alone.
+
+**Quaternionic quantum mechanics (ℍ):** Satisfies continuity and reversibility but violates local tomography. In quaternionic QM, the joint state of a composite system contains more information than can be extracted from local measurements on the parts.
+
+**Complex quantum mechanics (ℂ):** Uniquely satisfies all three conditions. Complex numbers provide exactly the right structure for interference (via phases) while maintaining local tomography.
+
+Therefore, Axiom 3(c) forces the field to be ℂ. ∎
+
+*Experimental confirmation:* Recent experiments (Renou et al., 2021) have confirmed that quantum mechanics requires complex numbers - real-valued quantum theories make different predictions that have been ruled out.
+
+### 17.4 Hilbert Space
+
+**Theorem 17.3 (Hilbert Space).** IIS, equipped with the inner product from Theorem 17.1, is a complex Hilbert space ℋ.
+
+*Proof:*
+
+The inner product from Theorem 17.1 satisfies:
+- Conjugate symmetry: ⟨x|y⟩ = ⟨y|x⟩*
+- Linearity in second argument: ⟨x|αy + βz⟩ = α⟨x|y⟩ + β⟨x|z⟩
+- Positive definiteness: ⟨x|x⟩ ≥ 0, with equality iff x = 0
+
+Completeness (every Cauchy sequence converges) follows from the maximality of IIS (Definition 16.3). Any limit point of a sequence of distinguishable states is itself distinguishable from other states, hence in IIS. ∎
+
+### 17.5 Dimension
+
+**Corollary 17.4 (Dimension).** dim(ℋ) ≥ 3, satisfying the requirement for Gleason's theorem.
+
+*Proof:*
+
+IIS is maximal (Definition 16.3) and contains composite systems with entanglement (proof of Theorem 17.1). Any such space has dimension at least 4 (two qubits). More generally, IIS is infinite-dimensional, containing arbitrarily complex distinguishable configurations. ∎
+
+*Remark:* Gleason's theorem fails for dim = 2 (a single qubit admits non-Born probability measures). However, this is not a limitation for LRT. The physical universe is never a single isolated qubit - IIS contains all configurations, making its effective dimension infinite. The dim ≥ 3 requirement is trivially satisfied for any physically realistic subsystem embedded in IIS.
+
+### 17.6 The Distinguishability Metric
+
+With Hilbert space structure established, we can express distinguishability precisely.
+
+**Definition 17.5 (Distinguishability Distance).** For states x, y ∈ IIS:
+
+$$d(x,y) = \sqrt{1 - |\langle x|y\rangle|^2}$$
+
+This is the **Fubini-Study metric** on projective Hilbert space.
+
+**Properties:**
+- d(x,y) = 0 iff x = y (up to phase)
+- d(x,y) = 1 iff x ⊥ y (perfectly distinguishable)
+- Triangle inequality holds
+
+**Proposition 17.6.** The distinguishability metric is the natural metric on IIS induced by Axiom 2.
+
+*Proof:* Axiom 2 defines D: IIS × IIS → [0,1]. Given Hilbert space structure (Theorem 17.3), the inner product ⟨x|y⟩ measures overlap. The Fubini-Study metric converts this to a distance satisfying metric axioms. ∎
+
+### 17.7 Symmetries of IIS
+
+**Definition 17.7 (IIS Symmetry).** A symmetry of IIS is a bijection S: IIS → IIS preserving distinguishability:
+
+$$D(Sx, Sy) = D(x, y) \quad \forall x, y$$
+
+**Theorem 17.8 (Wigner).** Every symmetry of IIS is implemented by either:
+- A unitary operator U: ⟨Ux|Uy⟩ = ⟨x|y⟩, or
+- An antiunitary operator A: ⟨Ax|Ay⟩ = ⟨x|y⟩*
+
+*Proof:* Standard Wigner theorem. Distinguishability-preserving maps on projective Hilbert space are (anti)unitary. ∎
+
+**Corollary 17.9.** The symmetry group of IIS is:
+
+$$\text{Sym}(\mathcal{I}) = U(\mathcal{H}) \rtimes \mathbb{Z}_2$$
+
+where U(ℋ) is the unitary group and ℤ₂ is time-reversal (complex conjugation).
+
+### 17.8 The Derivation Chain (Summary)
+
+```
+3FLL (Axiom 1)
+    ↓ constitutes
+Distinguishability (Definition 16.2, Axiom 2)
+    ↓ + physical constraints (Axiom 3)
+Complex Hilbert Space (Theorems 17.1-17.3, via Masanes-Müller)
+```
+
+### 17.9 What This Section Establishes
+
+We have shown:
+
+- IIS has inner product structure (from pairwise distinguishability + physical constraints)
+- The field must be complex (from local tomography)
+- IIS is a complete Hilbert space (from maximality)
+- Dimension ≥ 3 (from compositional richness)
+- Symmetries are (anti)unitary (Wigner's theorem)
+
+The derivation is conditional on Axiom 3 (physical constraints). These constraints are not derived from 3FLL alone but are required for stable, compositional physics. The derivation shows: given 3FLL + physical requirements, Hilbert space follows.
+
+The next section derives the Born rule from this Hilbert space structure.
 
 ---
 

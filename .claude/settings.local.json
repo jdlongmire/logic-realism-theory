@@ -30,7 +30,9 @@
       "Bash(jupyter --version:*)",
       "Bash(cat:*)",
       "Bash(jobs)",
-      "Bash(pstree:*)"
+      "Bash(pstree:*)",
+      "WebFetch(domain:doi.org)",
+      "WebFetch(domain:zenodo.org)"
     ],
     "deny": [],
     "ask": []
