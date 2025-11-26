@@ -113,7 +113,16 @@ Key elements:
 
 **Word count**: ~1,500 words
 **Source**: Paper 2 §5
-**Status**: Ready for ChatGPT review
+**Status**: COMPLETE (revised per ChatGPT feedback)
+
+**ChatGPT Feedback Incorporated**:
+- §9.1: "classical mechanics" not just "classical probability"
+- §9.2: Added self-adjoint Hamiltonians reference
+- §9.3: Fixed complex numbers line; added Gisin citation
+- §9.4: Added GPT/PR-box note
+- §9.5: "stable information-bearing structures" (not observers)
+- §9.6: Clarified structural vs parameter fine-tuning ordering
+- §9.7: Added bridging sentence to Section 10
 
 ---
 
@@ -125,6 +134,7 @@ Key elements:
 4. `f48623a` - Draft Section 8: Distinguishability and the Bit
 5. `c3cfad0` - Revise Section 8 per ChatGPT feedback
 6. `c58c2bb` - Draft Section 9: Why Quantum Structure
+7. `1248fa3` - Revise Section 9 per ChatGPT feedback
 
 ---
 
