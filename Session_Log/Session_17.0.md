@@ -171,7 +171,7 @@ Honest about limits: timing criterion, why-this-outcome remain open.
 - §11.6: Modes of distinguishability refinement; statistics explanation
 - §11.7: Closing line on IIS/actuality divide
 
-### 7. Section 12: Quantum Fields and Emergence (DRAFTED)
+### 7. Section 12: Quantum Fields and Emergence (REVISED)
 
 Key elements:
 - Emergence hierarchy (5 levels: 3FLL → IIS → Hilbert → Fields → Particles)
@@ -183,9 +183,18 @@ Key elements:
 
 **Word count**: ~1,100 words
 **Source**: Paper 2 §8
-**Status**: Ready for ChatGPT review
+**Status**: COMPLETE (revised per ChatGPT feedback)
 
-### 8. Section 13: The Fine-Tuning Thesis (DRAFTED)
+**ChatGPT Feedback Incorporated**:
+- §12.1: Added ontological status progression (constitutive → phenomenological)
+- §12.2: "physical structures that implement" + "unitary representations"
+- §12.3: Particles as "emergent" (not just phenomenological)
+- §12.4: Added "LRT does not alter SM dynamics"
+- §12.5: Added "open targets for deeper unification"
+- §12.6: Added "local field operators" to Level 2→3 transition
+- §12.7: Added EFT multi-scale compatibility
+
+### 8. Section 13: The Fine-Tuning Thesis (REVISED)
 
 Key elements:
 - Three levels of fine-tuning: constants, structure, logic
@@ -196,9 +205,14 @@ Key elements:
 
 **Word count**: ~1,200 words
 **Source**: Paper 2 §9
-**Status**: Ready for ChatGPT review
+**Status**: COMPLETE (revised per ChatGPT feedback)
 
-### 9. Section 14: Wheeler's "It from Bit" Grounded (DRAFTED)
+**ChatGPT Feedback Incorporated**:
+- §13.1: Softened "no space of possible logics" with logical pluralism awareness
+- §13.4: Added "sharpens the question" line
+- §13.6: Changed "Discrete structures" to "distinct frameworks"
+
+### 9. Section 14: Wheeler's "It from Bit" Grounded (REVISED)
 
 Key elements:
 - Wheeler's original vision and open questions
@@ -210,9 +224,13 @@ Key elements:
 
 **Word count**: ~1,100 words
 **Source**: Paper 2 §10
-**Status**: Ready for ChatGPT review
+**Status**: COMPLETE (revised per ChatGPT feedback)
 
-### 10. Section 15: Completing Related Programs (DRAFTED)
+**ChatGPT Feedback Incorporated**:
+- §14.2: Connected binary explicitly to Excluded Middle; added "field modes"
+- §14.4: Added explicit S = ℏC disclaimer (not required for core claims)
+
+### 10. Section 15: Completing Related Programs (REVISED)
 
 Key elements:
 - Interpretations grounded: Copenhagen, QBism, Relational QM, Many-Worlds, Bohmian
@@ -223,7 +241,10 @@ Key elements:
 
 **Word count**: ~1,100 words
 **Source**: Paper 2 §11
-**Status**: Ready for ChatGPT review
+**Status**: COMPLETE (revised per ChatGPT feedback)
+
+**ChatGPT Feedback Incorporated**:
+- §15.6: Enhanced Tegmark row with "stability and 3FLL-constituted distinguishability"
 
 ---
 
@@ -244,6 +265,8 @@ Key elements:
 13. `55f27f0` - Draft Section 13: The Fine-Tuning Thesis
 14. `aef9226` - Draft Section 14: Wheeler's It from Bit Grounded
 15. `73a587d` - Draft Section 15: Completing Related Programs (Part II complete)
+16. `4c2cf34` - Update Session 17.0 log - Part II complete
+17. `0eec0ff` - Revise Sections 12-15 per ChatGPT feedback
 
 ---
 
