@@ -146,6 +146,22 @@ Key elements:
 - §10.5: Tensor-product composition reasoning
 - §10.6: Helstrom's theorem; Holevo bound added
 
+### 6. Section 11: Dissolving Foundational Puzzles (DRAFTED)
+
+Six puzzles dissolved via IIS/actuality distinction:
+- Measurement: category transition, not dynamical collapse
+- Entanglement: global constraint satisfaction, not spooky action
+- Many-Worlds: single actuality, IIS possibilities (not branches)
+- Wave function: ψ-structural (real but not actual)
+- Quantization: Boolean actuality requires discreteness
+- Identical particles: modes of distinguishability
+
+Honest about limits: timing criterion, why-this-outcome remain open.
+
+**Word count**: ~1,800 words
+**Source**: Paper 2 §7
+**Status**: Ready for ChatGPT review
+
 ---
 
 ## Commits This Session
@@ -159,6 +175,7 @@ Key elements:
 7. `1248fa3` - Revise Section 9 per ChatGPT feedback
 8. `ae3c1f7` - Draft Section 10: The Born Rule
 9. `124f66a` - Revise Section 10 per ChatGPT feedback
+10. `7e39e5c` - Draft Section 11: Dissolving Foundational Puzzles
 
 ---
 
@@ -198,6 +215,6 @@ Key elements:
 
 **Status**: IN PROGRESS
 **Part I**: COMPLETE (6/6 sections)
-**Part II**: 4/9 sections (Sections 7-10)
-**Overall Progress**: 10/41 sections (~24%)
-**Total Word Count**: ~10,650 words
+**Part II**: 5/9 sections (Sections 7-11)
+**Overall Progress**: 11/41 sections (~27%)
+**Total Word Count**: ~12,450 words
