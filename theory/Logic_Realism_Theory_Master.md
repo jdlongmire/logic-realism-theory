@@ -1293,3 +1293,118 @@ The next section examines how LRT grounds Wheeler's "it from bit" program - show
 
 ---
 
+## 14. Wheeler's "It from Bit" Grounded
+
+John Archibald Wheeler proposed that physical reality ("it") emerges from informational yes/no questions ("bit"). This was visionary but programmatic - Wheeler sketched a direction without completing the foundational work. LRT provides the grounding Wheeler lacked.
+
+### 14.1 Wheeler's Vision
+
+Wheeler wrote: "Every it - every particle, every field of force, even the spacetime continuum itself - derives its function, its meaning, its very existence entirely... from the apparatus-elicited answers to yes-or-no questions, binary choices, bits" (Wheeler, 1990).
+
+This statement contains several claims:
+- Physical entities derive from information
+- Information consists of yes/no questions
+- The binary structure is fundamental
+- Even spacetime emerges from bits
+
+Wheeler never fully developed the metaphysics. What IS a bit, fundamentally? Where do bits come from? Why do bits have the structure they do? How do bits become particles?
+
+### 14.2 LRT's Grounding
+
+LRT answers Wheeler's implicit questions:
+
+**What is a bit?** The minimal unit of distinguishability, constituted by 3FLL. A bit is the simplest distinction: A vs not-A.
+
+**Where do bits come from?** Bits do not "come from" anywhere - they are the fundamental structure that 3FLL establish. Without identity, non-contradiction, and excluded middle, there are no distinctions. With them, the bit is the minimal distinction.
+
+**Why binary?** Because 3FLL enforce determinacy. In actuality, every proposition is true or false - Excluded Middle. The binary structure is not a choice; it is constitutive.
+
+**How do bits become particles?** Through the interface between IIS and Boolean actuality. Possibilities in IIS become actual when 3FLL are enforced. Particles are patterns of actualized bits.
+
+### 14.3 "Bit from Fit"
+
+We extend Wheeler's slogan: **It from bit, bit from fit.**
+
+- **It from bit:** Physical reality emerges from information - from yes/no questions, from distinctions, from bits.
+- **Bit from fit:** The bit (fundamental distinction) emerges from the fit between IIS and Boolean actuality.
+
+The "fit" captures several aspects:
+
+**Precision:** The interface between IIS and Boolean actuality requires exact quantum structure. Not approximately quantum - exactly quantum.
+
+**Selection:** Quantum mechanics fits in the sense that it produces stable physics. Classical structure does not fit - it satisfies interface constraints but produces no stable matter. Other structures fail the constraints entirely.
+
+**Relationship:** The bit is not free-floating. It is the elementary unit of the IIS-actuality interface. Bits are how IIS possibilities become actual facts.
+
+### 14.4 The Conversion Factor
+
+If bits are fundamental and physics emerges from them, there must be a conversion between informational and physical quantities.
+
+ℏ (Planck's constant) is the natural candidate:
+
+$$\text{Action} = \hbar \times \text{Complexity}$$
+
+This is the conjecture S = ℏC from Section 8. If correct:
+
+- ℏ is the quantum of action - the minimal amount of physical change
+- ℏ is also the conversion factor from bits to action
+- One bit of logical distinction corresponds to ℏ of physical action
+
+This identification is conjectural but supported by:
+
+**The Planck scale:** At lengths ~ ℓ_P = √(ℏG/c³), the bit-structure of distinguishability becomes directly relevant. The Planck scale is where logical granularity meets physical granularity.
+
+**The Bekenstein bound:** Maximum entropy ~ area in Planck units. In LRT terms: maximum distinguishability is finite per region, with Planck area as the natural unit.
+
+**Black hole entropy:** S = A/4ℓ²_P. The information content of a black hole is its horizon area in Planck units - suggesting one bit per Planck area.
+
+### 14.5 The Classical Emergence
+
+The classical world appears continuous because:
+
+1. Classical phenomena involve many bits
+2. The bit structure averages out at macroscopic scales
+3. Continuous approximation works when individual bits are negligible
+
+This parallels thermodynamics. Temperature is a coarse-grained property that emerges from many particle states. Similarly, classical continuity is a coarse-grained property that emerges from many bits.
+
+The "weirdness" of quantum mechanics is the friction between bit-structure and continuous appearance. Phenomena like superposition, interference, and entanglement are what happens when the bit-level structure cannot be ignored.
+
+### 14.6 Wheeler's Questions Answered
+
+Wheeler posed several questions that his program left open:
+
+**"Why the quantum?"** LRT: Because quantum structure is the unique stable interface between IIS and Boolean actuality.
+
+**"What is existence?"** LRT: Existence is actuality - the domain where 3FLL are fully enforced, where propositions have genuine Boolean values grounded in being.
+
+**"What is information?"** LRT: Information is distinguishability structure, constituted by 3FLL. The bit is the minimal unit of this structure.
+
+**"How does the observer participate?"** LRT: The observer does not create reality but interfaces with it. Measurement is the category transition from IIS to actuality - not observation creating facts, but observation registering which IIS configuration actualized.
+
+### 14.7 What Wheeler Got Right
+
+Wheeler's intuitions align remarkably with LRT:
+
+- Information is more fundamental than matter (LRT: bits derive from 3FLL; particles derive from bits)
+- Yes/no questions are basic (LRT: the bit is the minimal logical structure)
+- Physics and information are unified (LRT: quantum mechanics is the interface structure)
+- Existence involves participation (LRT: measurement is category transition)
+
+Wheeler lacked the philosophical foundation. He had the vision but not the grounding. LRT provides what Wheeler sketched.
+
+### 14.8 What This Section Establishes
+
+We have shown:
+
+- Wheeler's "it from bit" is grounded by LRT
+- The bit derives from 3FLL as the minimal unit of distinguishability
+- "Bit from fit" extends the slogan to include the interface selection
+- ℏ may be the conversion factor between bits and action
+- Classical physics emerges from coarse-graining over many bits
+- Wheeler's key intuitions align with LRT's framework
+
+The next section examines how LRT relates to and completes other foundational programs in quantum mechanics.
+
+---
+
