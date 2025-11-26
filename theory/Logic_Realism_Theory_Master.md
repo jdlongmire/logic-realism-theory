@@ -844,24 +844,24 @@ For complex Hilbert space, the inner product is:
 
 $$\langle\psi|\phi\rangle$$
 
-This inner product is **sesquilinear**: linear in one argument, conjugate-linear in the other. This structure ensures:
+This inner product is **sesquilinear** (linear in one argument, conjugate-linear in the other) and **positive-definite**. Together these properties ensure:
 
 $$\langle\psi|\psi\rangle \geq 0$$
 
-The norm-squared is automatically non-negative - a requirement for any quantity that will become a probability.
+The norm-squared is non-negative - a requirement for any quantity that will become a probability.
 
 The connection to distinguishability is direct:
 - **Orthogonal states** (⟨ψ|φ⟩ = 0) are perfectly distinguishable
 - **Identical states** (|ψ⟩ = |φ⟩, up to phase) are completely indistinguishable
 - **Non-orthogonal states** have partial distinguishability, measured by |⟨ψ|φ⟩|²
 
-The inner product encodes the relational structure of distinguishability in IIS.
+The inner product encodes the relational structure of distinguishability in IIS. It is the unique structure that captures pairwise relational distinguishability continuously and compatibly with composition.
 
 ### 10.2 Gleason's Theorem: The Born Rule Is Unique
 
 Given a Hilbert space structure, what probability measures are possible? This is not a question of preference but of mathematical necessity.
 
-**Gleason's theorem** (1957) provides the answer: for Hilbert spaces of dimension ≥ 3, the only probability measure that assigns values to all projection operators in a non-contextual way is:
+**Gleason's theorem** (1957) provides the answer: in finite-dimensional Hilbert spaces of dimension ≥ 3, the only probability measure that assigns values to all projection operators in a non-contextual way is:
 
 $$P(E) = \text{Tr}(\rho E)$$
 
@@ -874,9 +874,11 @@ This is the Born rule. It is not an additional postulate grafted onto quantum me
 The theorem's assumptions are minimal:
 - Probabilities are non-negative real numbers
 - Probabilities sum to 1 for complete sets of outcomes
-- The probability assigned to a projector depends only on the projector and the state, not on which other projectors are measured alongside it (non-contextuality of probability values)
+- The probability assigned to a projector depends only on the projector and the state, not on which other projectors are measured alongside it (non-contextuality of probability values - this is weaker than the Kochen-Specker notion of non-contextuality for hidden variables)
 
 Any other probability rule would violate one of these requirements.
+
+Importantly, this result is independent of interpretation: hidden-variable, many-worlds, and operational approaches all inherit the Born rule from Hilbert-space geometry.
 
 ### 10.3 Why the Squared Magnitude?
 
@@ -884,7 +886,7 @@ The Born rule involves |⟨ψ|φ⟩|² - the squared magnitude of the inner prod
 
 Several considerations converge on this answer:
 
-**Mathematical:** The inner product ⟨ψ|φ⟩ is complex-valued. Probabilities must be real and non-negative. The squared magnitude |z|² = z*z is the unique way to obtain a non-negative real from a complex number while preserving the algebraic structure.
+**Mathematical:** The inner product ⟨ψ|φ⟩ is complex-valued. Probabilities must be real and non-negative. The squared magnitude |⟨ψ|φ⟩|² is the unique non-negative, basis-independent function compatible with the inner-product structure and with Gleason consistency.
 
 **Physical:** Gleason's theorem shows that no other power works. If probabilities were proportional to |⟨ψ|φ⟩|^n for n ≠ 2, the additivity requirement for probabilities would fail. The exponent 2 is not a choice; it is forced.
 
@@ -898,9 +900,9 @@ The amplitude lives in IIS; the probability lives at the interface with Boolean 
 
 We must be precise about the logical structure here:
 
-**Given Hilbert space structure:** The Born rule follows by Gleason's theorem. It is derived, not postulated.
+**Given Hilbert space structure:** The Born rule follows by Gleason's theorem. It is mathematically *derived*, not postulated.
 
-**Hilbert space structure itself:** Fine-tuned, not derived. Section 9 showed that complex Hilbert space is the unique stable structure for interfacing IIS with Boolean actuality.
+**Hilbert space structure itself:** Fine-tuned, not derived. Section 9 showed that complex Hilbert space is *selected* by stability considerations from among interface structures compatible with 3FLL and distinguishability.
 
 So the full picture is:
 
@@ -919,7 +921,7 @@ In dimension 2, Gleason's theorem does not apply directly - there exist other ma
 
 - Physical systems are never truly isolated qubits; they are subsystems of larger systems
 - Composite systems have dimension ≥ 4, where Gleason applies
-- Consistency across subsystems forces the Born rule even for qubits
+- Any physically meaningful qubit participates in larger composite systems; the Born rule is fixed by requiring consistency under tensor-product composition
 
 The restriction to dimension ≥ 3 is a technical artifact, not a physical limitation. In any realistic physical context, the Born rule remains unique.
 
@@ -927,11 +929,11 @@ The restriction to dimension ≥ 3 is a technical artifact, not a physical limit
 
 The Born rule has deep connections to information-theoretic principles:
 
-**Optimal state discrimination:** The Born rule probabilities are exactly those that achieve optimal distinguishability between quantum states. No other probability rule would do better at telling states apart.
+**Optimal state discrimination:** Helstrom's theorem shows the Born rule yields the maximal probability of correctly distinguishing quantum states. No other probability rule achieves better discrimination.
 
-**No-cloning constraint:** The specific form |⟨ψ|φ⟩|² is connected to the impossibility of perfectly copying unknown quantum states. Different probability rules would either allow cloning (violating unitarity) or fail to preserve information (violating reversibility).
+**No-cloning constraint:** The specific form |⟨ψ|φ⟩|² is connected to the impossibility of perfectly copying unknown quantum states. Alternative probability rules either violate linearity (allowing cloning) or violate unitary reversibility (destroying information).
 
-**Entropy and information:** Von Neumann entropy, defined using the Born rule, has all the properties required of an information measure. Other probability rules would yield pathological entropy functions.
+**Entropy and information:** Von Neumann entropy, defined using the Born rule, has all the properties required of an information measure. Information capacity limits such as the Holevo bound presuppose the Born rule and fail under alternative rules.
 
 These connections suggest that the Born rule is not just mathematically unique but informationally optimal - the natural way to extract Boolean outcomes from a structure designed to preserve distinguishability.
 
