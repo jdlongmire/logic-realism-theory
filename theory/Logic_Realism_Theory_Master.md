@@ -332,3 +332,73 @@ Actuality is the book we are reading. Why this book? That question points beyond
 
 ---
 
+## 5. Boolean Actuality
+
+The previous sections established two co-primitives: 3FLL and IIS. This section develops their relationship to actuality - the domain of determinate physical facts.
+
+### 5.1 What Actuality Requires
+
+Actuality is the domain where 3FLL are fully enforced. Any physical state of affairs - any event, measurement outcome, or determinate fact - must satisfy:
+
+**Identity:** The state is what it is; it has determinate properties.
+
+**Non-Contradiction:** The state does not simultaneously have and lack the same property.
+
+**Excluded Middle:** For any well-defined property, the state either has it or does not.
+
+This means actuality is **Boolean** - every proposition about an actual state has a definite truth value. The actual world is a consistent, determinate configuration. There are no unresolved truth values in actuality, no superpositions of facts at the level of actual measurement outcomes. When something is actual, it is determinately so.
+
+### 5.2 The Asymmetry Between IIS and Actuality
+
+Here is the key insight: **3FLL constitute the structure of distinguishability in IIS, and they further constrain what can become actual by enforcing Boolean determinacy.**
+
+IIS is richer than Boolean structure. It contains states that are distinguishable from each other but not yet determinate with respect to specific properties. These are not contradictions - they are genuinely indeterminate configurations that 3FLL permit.
+
+Consider the distinction:
+
+| Domain | Structure | 3FLL Status |
+|--------|-----------|-------------|
+| **IIS** | Contains determinate, indeterminate, superposition, and mixture states | Constituted by 3FLL (distinguishability structure) |
+| **Actuality** | Contains only determinate Boolean states | Constrained by 3FLL (full enforcement) |
+
+The asymmetry is crucial. 3FLL do two different jobs:
+1. They **constitute** what it means for states to be distinguishable at all (structuring IIS)
+2. They **constrain** what can be actual (enforcing Boolean determinacy)
+
+### 5.3 Why Actuality Must Be Boolean
+
+Why cannot actuality contain indeterminate states? The answer lies in what actuality means.
+
+**Actuality is what obtains.** To say that X is actual is to say that X is the case - determinately, not probabilistically, not potentially. Indeterminacy belongs in IIS. Once something is counted as actual, indeterminate truth status would either collapse into contradiction or violate Excluded Middle.
+
+**Causal efficacy requires determinacy.** For causal relations among actual facts, states must be determinately what they are. If actual causes were literally neither one way nor another, causal structure would collapse. Physical laws operate on determinate states to produce determinate consequences.
+
+**Observation confirms determinacy.** Every observation, every measurement, every detection yields a definite result. We never observe "half an electron" or "partially here." We often assign probabilities prior to measurement, but the recorded outcome is always a definite event.
+
+### 5.4 The Interface Problem Emerges
+
+This asymmetry creates a fundamental problem: **how do the rich structures of IIS relate to the Boolean structure of actuality?**
+
+IIS contains more than actuality can accommodate. Superpositions, indeterminate states, interference patterns - these exist as elements of IIS but cannot exist as fully actualized facts in Boolean A. Something must connect these domains.
+
+This is the **interface problem**. It asks: what structure mediates between the non-Boolean possibilities of IIS and the Boolean requirements of actuality?
+
+The answer, developed in Part II, is quantum mechanics. Quantum mechanics is not arbitrary; it is the unique stable structure that can perform this mediation. But before developing this claim, we must address objections to the philosophical foundation.
+
+### 5.5 The Central Formula Revisited
+
+We can now state the thesis formula with greater precision:
+
+$$\mathcal{A} = \mathfrak{L}(\mathcal{I})$$
+
+Where:
+- **I** (IIS) is the space of in-principle distinguishable states, constituted by 3FLL
+- **L** (Logical Filtering) is the enforcement of Boolean determinacy on distinguishable states, yielding actuality
+- **A** (Actuality) is the Boolean domain where 3FLL are fully satisfied
+
+The filtering operation L is not arbitrary selection. It is the requirement that whatever becomes actual must satisfy full Boolean structure. Part III will show that this requirement, combined with grounding principles, yields global parsimony as a theorem.
+
+The interface between I and A - the structure that mediates non-Boolean possibility and Boolean actuality - is where physical law lives. Part II argues this interface is quantum mechanics.
+
+---
+
