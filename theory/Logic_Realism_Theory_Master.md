@@ -713,3 +713,118 @@ This prepares the ground for Section 9, which asks: among the structures that ca
 
 ---
 
+## 9. Why Quantum Structure
+
+Section 7 established that multiple mathematical structures satisfy the interface constraints between IIS and Boolean actuality. Section 8 showed that any interface must respect the pairwise, bit-based character of distinguishability. This section asks: why does physical reality exhibit quantum structure specifically, rather than classical probability or some other generalized probabilistic theory?
+
+The answer is **stability selection**: quantum mechanics is the unique structure that produces stable physical existence. This is not a derivation but a selection effect - and we must be precise about what this means.
+
+### 9.1 Classical Structure Is Compatible but Unstable
+
+Classical probability satisfies the formal interface constraints. A probability distribution over outcomes, sampled to yield a definite result, produces Boolean actuality from a richer structure. Formally, classical probability is a valid interface.
+
+But classical probability, applied at the fundamental level, does not produce stable physics:
+
+- **No stable atoms.** Electrons would spiral into nuclei. The classical Bohr model fails precisely because orbiting charges radiate energy continuously.
+- **No discrete energy levels.** Without quantization, no chemistry - bonding requires discrete orbital structures.
+- **No tunneling.** Without quantum tunneling, no stellar fusion - stars cannot ignite.
+- **No identical particles.** Without quantum statistics (Bose-Einstein, Fermi-Dirac), no periodic table - the structure of matter collapses.
+
+Classical structure satisfies the Boolean interface constraint but does not produce observers capable of noticing. A universe with classical fundamental structure would contain no stable matter, no chemistry, no life, no inquiry.
+
+### 9.2 Quantum Structure Produces Stability
+
+Quantum mechanics - specifically, complex Hilbert space with unitary evolution and the Born rule - produces:
+
+- **Stable atoms.** Discrete energy levels arise from wave interference in bound states. Electrons occupy orbitals, not arbitrary positions.
+- **Chemistry.** Electron orbitals, bonding, molecular structure - all depend on quantum discreteness and interference.
+- **Solid matter.** The Pauli exclusion principle (fermion statistics) prevents matter from collapsing. Electrons cannot all occupy the lowest energy state.
+- **Stars.** Quantum tunneling enables nuclear fusion at temperatures far below the classical Coulomb barrier.
+- **Observers.** Stable structures capable of inquiry, measurement, and asking questions about the interface.
+
+### 9.3 The Fine-Tuning of Quantum Structure
+
+The relationship between quantum structure and physical stability is not logically necessary - it is fine-tuned. Perturbations to quantum structure destroy stability:
+
+| Perturbation | Consequence |
+|--------------|-------------|
+| Remove complex numbers | No interference; no stable atoms |
+| Alter unitarity | Norms blow up or decay; no stable evolution |
+| Change Born exponent from 2 | No valid probability measure (Gleason) |
+| Use quaternions instead | Lose tomographic locality |
+| Use reals instead | Lose interference; effectively classical |
+| Perturb linearity | Superluminal signaling becomes possible |
+| Alter commutation relations | Pathological spectra; no stable matter |
+| Remove Hilbert completeness | No well-defined dynamics |
+
+Quantum mechanics sits on a razor's edge. The mathematical structure must be exactly as it is for physics to be stable. This is not a claim about adjustable parameters within quantum mechanics; it is a claim about the mathematical framework itself.
+
+### 9.4 Evidence from Reconstruction Theorems
+
+The uniqueness of quantum structure is not merely asserted - it is supported by rigorous results in quantum foundations:
+
+**Hardy (2001):** Derived quantum theory from five "reasonable axioms" including continuous reversibility and tomographic locality. Result: only quantum mechanics satisfies all five.
+
+**Chiribella, D'Ariano, Perinotti (2011):** Derived quantum theory from informational axioms. Key finding: quantum theory is the unique theory satisfying causality, perfect distinguishability, ideal compression, local distinguishability, and pure conditioning.
+
+**Masanes and Müller (2011):** Showed quantum theory is uniquely characterized by:
+- Continuous reversible dynamics
+- Local tomography (state determined by local measurements)
+- Existence of entangled states
+
+**Dakić and Brukner (2011):** Derived quantum theory from three axioms about information capacity and continuity.
+
+These reconstruction theorems converge on the same conclusion: quantum mechanics is not one possibility among many but the **unique** structure satisfying certain natural constraints.
+
+In LRT terms: the constraints these theorems identify are features required for stable interface between IIS and Boolean actuality. Continuous reversibility preserves distinguishability in IIS. Local tomography ensures consistency across subsystems. The theorems do not derive quantum mechanics from logic alone, but they show that quantum structure is uniquely determined once reasonable interface requirements are imposed.
+
+### 9.5 Stability Selection, Not Derivation
+
+We must be explicit about the logical status of this argument:
+
+1. IIS contains many possible structures (classical, quantum, real, quaternionic, GPTs, PR-boxes, etc.)
+2. Multiple structures satisfy the formal interface constraints
+3. Only quantum structure produces stable atoms, chemistry, observers
+4. We are observers
+5. Therefore we observe quantum structure
+
+This has the form of the **Weak Anthropic Principle**: we necessarily find ourselves in conditions compatible with our existence. Critics may object that this is circular or tautological.
+
+The response: we are not claiming quantum structure is *logically necessary*. We are claiming it is *observationally necessary* - necessary for there to be observations at all. This is selection, not derivation.
+
+The selection is genuine:
+- IIS contains many possible interface structures
+- Most do not produce stable matter
+- The ones that do are the ones that can be observed
+- Quantum structure is the unique stable option
+
+This parallels cosmic fine-tuning arguments. We do not derive the value of the fine-structure constant α from first principles. We note that if α were significantly different, no stable atoms would form - and therefore no observers to measure α. The "explanation" is selection, not derivation.
+
+### 9.6 Structural Fine-Tuning
+
+LRT adds something to standard fine-tuning discussions: it situates the selection at the level of **mathematical structure**, not just parameters.
+
+**Cosmic fine-tuning** concerns constants: if the fine-structure constant α were slightly different, no stable atoms. If the cosmological constant Λ were much larger, no galaxies.
+
+**Structural fine-tuning** concerns the mathematical framework itself: if the structure of quantum mechanics were perturbed, no stable physics at all.
+
+Structural fine-tuning is more fundamental. The constants are parameters within the framework; the framework itself must be precisely right for any parameters to matter. You cannot ask "what if α were different?" unless quantum mechanics holds to give α meaning.
+
+The question "why quantum mechanics?" becomes parallel to "why these constants?" Both are fine-tuning facts, with structural fine-tuning being logically prior.
+
+### 9.7 What This Section Establishes
+
+We have shown:
+
+- Classical structure satisfies interface constraints but produces no stable matter
+- Quantum structure is the unique interface that produces physical stability
+- Reconstruction theorems independently confirm quantum uniqueness
+- The explanation is selection (anthropic), not derivation (logical)
+- Structural fine-tuning is more fundamental than cosmic fine-tuning
+
+LRT does not claim to explain *why* quantum structure exists. It claims to explain *why we observe it*: because it is the unique structure compatible with observers existing to ask the question.
+
+The next section addresses the Born rule specifically: why does the probability measure take the form $|\langle\psi|\phi\rangle|^2$, and how does this connect to the pairwise structure of distinguishability?
+
+---
+
