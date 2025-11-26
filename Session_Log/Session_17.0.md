@@ -80,6 +80,19 @@ Part II begins. Key elements:
 - §7.6: Constitution/axiom/grounding language clarified
 - §7.7: Preview of reconstruction theorems added
 
+### 3. Section 8: Distinguishability and the Bit (DRAFTED)
+
+Key elements:
+- Distinguishability constituted by 3FLL (not discovered)
+- Pairwise/quadratic structure → explains Born rule form
+- Bit as fundamental unit (Wheeler's "it from bit" grounded)
+- Bit scale: ℏ as logical-physical conversion factor
+- Bekenstein bound, holographic principle as support
+
+**Word count**: ~1,300 words
+**Source**: Paper 2 §3
+**Status**: Ready for ChatGPT review
+
 ---
 
 ## Commits This Session
@@ -87,6 +100,7 @@ Part II begins. Key elements:
 1. `ab0562c` - Draft Section 6: Objections and Responses
 2. `345618d` - Draft Section 7: The Interface Problem
 3. `1ecccd7` - Revise Section 7 per ChatGPT feedback
+4. `f48623a` - Draft Section 8: Distinguishability and the Bit
 
 ---
 
@@ -126,6 +140,6 @@ Part II begins. Key elements:
 
 **Status**: IN PROGRESS
 **Part I**: COMPLETE (6/6 sections)
-**Part II**: 1/9 sections drafted (Section 7)
-**Overall Progress**: 7/41 sections (~17%)
-**Total Word Count**: ~6,450 words
+**Part II**: 2/9 sections (Sections 7-8)
+**Overall Progress**: 8/41 sections (~20%)
+**Total Word Count**: ~7,750 words
