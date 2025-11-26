@@ -124,6 +124,20 @@ Key elements:
 - §9.6: Clarified structural vs parameter fine-tuning ordering
 - §9.7: Added bridging sentence to Section 10
 
+### 5. Section 10: The Born Rule (DRAFTED)
+
+Key elements:
+- Pairwise distinguishability → inner product structure
+- Gleason's theorem: Born rule is unique probability measure (dim ≥ 3)
+- Why squared magnitude (mathematical, physical, structural reasons)
+- Conditionality: Born rule derived from Hilbert space; Hilbert space fine-tuned
+- Dimension 2 caveat addressed (subsystems force consistency)
+- Information-theoretic connections (optimal discrimination, no-cloning, entropy)
+
+**Word count**: ~1,400 words
+**Source**: Paper 2 §6
+**Status**: Ready for ChatGPT review
+
 ---
 
 ## Commits This Session
@@ -135,6 +149,7 @@ Key elements:
 5. `c3cfad0` - Revise Section 8 per ChatGPT feedback
 6. `c58c2bb` - Draft Section 9: Why Quantum Structure
 7. `1248fa3` - Revise Section 9 per ChatGPT feedback
+8. `ae3c1f7` - Draft Section 10: The Born Rule
 
 ---
 
@@ -174,6 +189,6 @@ Key elements:
 
 **Status**: IN PROGRESS
 **Part I**: COMPLETE (6/6 sections)
-**Part II**: 3/9 sections (Sections 7-9)
-**Overall Progress**: 9/41 sections (~22%)
-**Total Word Count**: ~9,250 words
+**Part II**: 4/9 sections (Sections 7-10)
+**Overall Progress**: 10/41 sections (~24%)
+**Total Word Count**: ~10,650 words
