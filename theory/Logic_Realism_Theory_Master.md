@@ -507,3 +507,117 @@ Nothing in physical reality exhibits dialetheic structure; therefore, nothing in
 
 ---
 
+## Part II: Physical Interpretation
+
+---
+
+## 7. The Interface Problem
+
+Part I established the philosophical foundations: 3FLL are constitutive of physical reality, IIS is the co-primitive space of distinguishable states, and actuality is where 3FLL are fully enforced as Boolean determinacy. This section begins the physical interpretation by developing the central challenge this framework poses: how do the rich structures of IIS relate to the Boolean structure of actuality?
+
+### 7.1 The Problem Stated
+
+Section 5 introduced the asymmetry between IIS and actuality:
+
+| Domain | Structure | 3FLL Status |
+|--------|-----------|-------------|
+| **IIS** | Contains determinate, indeterminate, superposition, and mixture states | Constituted by 3FLL |
+| **Actuality** | Contains only determinate Boolean states | Constrained by 3FLL |
+
+IIS is richer than Boolean structure. It contains states that are distinguishable from each other but not yet determinate with respect to specific properties - indeterminate configurations that 3FLL permit but do not force into definiteness.
+
+Actuality, by contrast, must be fully determinate. When something becomes actual - when it manifests as a physical state of affairs - it must satisfy 3FLL completely. Every proposition about an actual state has a definite truth value.
+
+This creates the **interface problem**: what structure mediates between the non-Boolean possibilities of IIS and the Boolean requirements of actuality?
+
+### 7.2 Interface Constraints
+
+For any structure in IIS to interface with Boolean actuality, it must permit a map from its states to binary outcomes. This map must satisfy three constraints derived from 3FLL:
+
+**Totality** (from Excluded Middle): The map must be defined for all states. Every state in the interface structure must be capable of yielding a definite outcome.
+
+**Single-valuedness** (from Non-Contradiction): The map must produce no contradictory outputs. A state cannot yield both outcome A and outcome not-A in the same measurement context.
+
+**Distinguishability-preservation** (from Identity): Different states must be capable of yielding different outputs. If states A and B are distinguishable in IIS, their interface with actuality must preserve that distinction.
+
+These constraints are minimal. They follow directly from 3FLL applied to the interface.
+
+### 7.3 Multiple Structures Satisfy the Constraints
+
+Here is the crucial observation: multiple mathematical structures satisfy these interface constraints.
+
+**Classical probability** satisfies them. A probability distribution over outcomes, sampled to yield a definite result, produces Boolean actuality from a richer structure. The sampling is total (defined for all distributions), single-valued (each sample yields one outcome), and distinguishability-preserving (different distributions yield different outcome statistics).
+
+**Quantum mechanics** also satisfies them. A quantum state, measured in some basis, yields a definite outcome according to the Born rule. The measurement is total (defined for all states), single-valued (each measurement yields one outcome), and distinguishability-preserving (orthogonal states yield distinguishable outcomes).
+
+**Other structures** - real Hilbert spaces, quaternionic quantum mechanics, generalized probabilistic theories - also satisfy the formal constraints.
+
+### 7.4 The Selection Problem
+
+If multiple structures satisfy the formal interface constraints, what selects among them?
+
+This question is fundamental. Logic alone does not answer it. The interface constraints are necessary conditions for mediating between IIS and Boolean actuality, but they are not sufficient to uniquely determine the interface structure.
+
+Three possible answers present themselves:
+
+**Logical necessity:** Perhaps quantum mechanics is the unique structure satisfying some additional logical constraint we have not yet identified. This would make quantum mechanics derivable from 3FLL.
+
+**Brute contingency:** Perhaps quantum structure is simply the way our universe happens to be, with no deeper explanation. The selection is a brute fact.
+
+**Stability selection:** Perhaps quantum structure is selected because it alone produces stable physics - atoms, chemistry, observers capable of inquiry. Other structures satisfy the formal constraints but produce no stable matter.
+
+LRT defends the third answer. We do not claim that quantum mechanics is logically necessary. We claim that quantum mechanics is the unique structure compatible with stable physical existence. This is a **selection claim**, not a derivation claim.
+
+### 7.5 Why Selection Is Not Derivation
+
+The distinction between selection and derivation is crucial for honest assessment of LRT's claims.
+
+**Derivation** would mean: given only 3FLL and IIS, quantum mechanics follows by logical necessity. No empirical input is required. This is what LRT does *not* claim.
+
+**Selection** means: given that actuality requires Boolean outcomes and that observers exist, quantum mechanics is the unique interface structure that produces both. The existence of observers is an empirical fact; the uniqueness of quantum structure as a stability condition is a theoretical claim subject to analysis.
+
+This distinction matters because:
+
+1. It preserves LRT's empirical vulnerability. If another structure were shown to produce stable physics, LRT's selection claim would be falsified.
+
+2. It correctly locates the fine-tuning. The fine-tuning is not in the logical laws themselves but in the selection of quantum structure from among the logically permissible options.
+
+3. It explains why quantum mechanics has its specific form without claiming that form is logically inevitable.
+
+### 7.6 Parsimony as Derived
+
+One might ask: among the structures satisfying the interface constraints, why should actuality select the minimal one? Is parsimony an additional assumption?
+
+No. Parsimony is derived from more fundamental commitments already internal to LRT.
+
+The derivation proceeds as follows:
+
+**Step 1: Constitution versus Constraint.** 3FLL do not merely *constrain* actuality (ruling out some configurations while permitting others). They *constitute* actuality - they are what makes determinate being possible at all. This is LRT's core claim from Part I.
+
+**Step 2: Constitutive Closure.** If principle P constitutes domain D, then D contains exactly the structure P generates - no more, no less. This follows from what constitution means: the constituted domain just is what the constituting principles generate.
+
+**Step 3: Truthmaker Requirement.** For any proposition in actuality to have a genuine Boolean value (not merely a stipulated one), something must ground that value. The grounding sources within LRT's minimal ontology are: logical necessity from 3FLL, logical entailment from grounded propositions, initial conditions, and propagation through derived dynamics.
+
+**Step 4: Surplus Structure Excluded.** Any proposition not grounded by these sources cannot have a genuine Boolean value. But actuality requires genuine Boolean values. Therefore, ungrounded ("surplus") propositions cannot be part of actuality.
+
+**Conclusion:** Actuality contains exactly the grounded propositions - those whose Boolean values are determined by (3FLL + initial conditions) and their consequences. No surplus structure exists.
+
+This is **Global Parsimony** - not as a methodological preference but as a structural consequence of what "actuality" means given LRT's constitutive architecture. The formal statement and proof appear in Part III.
+
+### 7.7 The Path Forward
+
+The interface problem now has a clear structure:
+
+1. Actuality requires Boolean outcomes (from 3FLL enforcement)
+2. Multiple structures can provide Boolean outcomes (classical, quantum, others)
+3. Only quantum structure produces stable physics (selection claim)
+4. Therefore, quantum structure is what we observe
+
+The next sections develop each element of this argument:
+- Section 8 analyzes the bit as the fundamental unit of distinguishability
+- Section 9 examines why quantum structure specifically produces stability
+- Section 10 addresses the Born rule
+- Sections 11-15 develop implications and comparisons
+
+---
+
