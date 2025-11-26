@@ -91,7 +91,15 @@ Key elements:
 
 **Word count**: ~1,300 words
 **Source**: Paper 2 §3
-**Status**: Ready for ChatGPT review
+**Status**: COMPLETE (revised per ChatGPT feedback)
+
+**ChatGPT Feedback Incorporated**:
+- §8.1: Modal clarifier (IIS/A split); non-identity not a separate law
+- §8.2: "bilinear or quadratic" language; amplitude→probability structure
+- §8.3: IIS vs actuality for partial structure; "reflects and instantiates"
+- §8.4: S=ℏC not required for foundation; "naturally interpreted"
+- §8.5: Conditional on S=ℏC; description vs ontology; Planck scale refined
+- §8.6: Closing sentence previewing Section 9's conclusion
 
 ---
 
@@ -101,6 +109,7 @@ Key elements:
 2. `345618d` - Draft Section 7: The Interface Problem
 3. `1ecccd7` - Revise Section 7 per ChatGPT feedback
 4. `f48623a` - Draft Section 8: Distinguishability and the Bit
+5. `c3cfad0` - Revise Section 8 per ChatGPT feedback
 
 ---
 
