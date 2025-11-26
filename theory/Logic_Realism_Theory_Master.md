@@ -524,7 +524,7 @@ Section 5 introduced the asymmetry between IIS and actuality:
 | **IIS** | Contains determinate, indeterminate, superposition, and mixture states | Constituted by 3FLL |
 | **Actuality** | Contains only determinate Boolean states | Constrained by 3FLL |
 
-IIS is richer than Boolean structure. It contains states that are distinguishable from each other but not yet determinate with respect to specific properties - indeterminate configurations that 3FLL permit but do not force into definiteness.
+IIS is richer than Boolean structure. It contains states that are distinguishable from each other but not yet determinate with respect to specific properties - indeterminate configurations that 3FLL permit in the modal sense but that cannot become actual without Boolean enforcement.
 
 Actuality, by contrast, must be fully determinate. When something becomes actual - when it manifests as a physical state of affairs - it must satisfy 3FLL completely. Every proposition about an actual state has a definite truth value.
 
@@ -536,9 +536,9 @@ For any structure in IIS to interface with Boolean actuality, it must permit a m
 
 **Totality** (from Excluded Middle): The map must be defined for all states. Every state in the interface structure must be capable of yielding a definite outcome.
 
-**Single-valuedness** (from Non-Contradiction): The map must produce no contradictory outputs. A state cannot yield both outcome A and outcome not-A in the same measurement context.
+**Single-valuedness** (from Non-Contradiction): No state may yield mutually incompatible outcomes in the same measurement context. The map must produce no contradictory outputs.
 
-**Distinguishability-preservation** (from Identity): Different states must be capable of yielding different outputs. If states A and B are distinguishable in IIS, their interface with actuality must preserve that distinction.
+**Distinguishability-preservation** (from Identity): If states are distinguishable in IIS, their possible actualization patterns must not collapse that distinction. Otherwise, the mapping to actuality would violate the constitutive role of Identity.
 
 These constraints are minimal. They follow directly from 3FLL applied to the interface.
 
@@ -546,11 +546,11 @@ These constraints are minimal. They follow directly from 3FLL applied to the int
 
 Here is the crucial observation: multiple mathematical structures satisfy these interface constraints.
 
-**Classical probability** satisfies them. A probability distribution over outcomes, sampled to yield a definite result, produces Boolean actuality from a richer structure. The sampling is total (defined for all distributions), single-valued (each sample yields one outcome), and distinguishability-preserving (different distributions yield different outcome statistics).
+**Classical probability** satisfies them. A probability distribution over outcomes, sampled to yield a definite result, produces Boolean actuality from a richer structure. The sampling is total (defined for all distributions), single-valued (each sample yields one outcome), and distinguishability-preserving (different distributions yield different outcome statistics, even though individual samples produce definite outcomes).
 
-**Quantum mechanics** also satisfies them. A quantum state, measured in some basis, yields a definite outcome according to the Born rule. The measurement is total (defined for all states), single-valued (each measurement yields one outcome), and distinguishability-preserving (orthogonal states yield distinguishable outcomes).
+**Quantum mechanics** also satisfies them. A quantum state, measured in some basis, yields a definite outcome according to the Born rule. The measurement is total (defined for all states), single-valued (each measurement yields one outcome), and distinguishability-preserving (orthogonal states yield perfectly distinguishable outcomes; non-orthogonal states do not - exactly matching the IIS distinction between determinate and indeterminate structure).
 
-**Other structures** - real Hilbert spaces, quaternionic quantum mechanics, generalized probabilistic theories - also satisfy the formal constraints.
+**Other structures** - real Hilbert spaces, quaternionic quantum mechanics, generalized probabilistic theories (GPTs), and even super-quantum models like PR-boxes - also satisfy the formal constraints.
 
 ### 7.4 The Selection Problem
 
@@ -560,7 +560,7 @@ This question is fundamental. Logic alone does not answer it. The interface cons
 
 Three possible answers present themselves:
 
-**Logical necessity:** Perhaps quantum mechanics is the unique structure satisfying some additional logical constraint we have not yet identified. This would make quantum mechanics derivable from 3FLL.
+**Logical necessity:** Perhaps quantum mechanics is uniquely determined by some further logical or symmetry constraint we have not yet identified. This is the "derive QM from axioms alone" program pursued by Hardy, Chiribella-D'Ariano-Perinotti, and other reconstruction approaches.
 
 **Brute contingency:** Perhaps quantum structure is simply the way our universe happens to be, with no deeper explanation. The selection is a brute fact.
 
@@ -574,11 +574,11 @@ The distinction between selection and derivation is crucial for honest assessmen
 
 **Derivation** would mean: given only 3FLL and IIS, quantum mechanics follows by logical necessity. No empirical input is required. This is what LRT does *not* claim.
 
-**Selection** means: given that actuality requires Boolean outcomes and that observers exist, quantum mechanics is the unique interface structure that produces both. The existence of observers is an empirical fact; the uniqueness of quantum structure as a stability condition is a theoretical claim subject to analysis.
+**Selection** means: given that actuality requires Boolean outcomes and that stable structures capable of causal persistence exist, quantum mechanics is the unique interface structure that produces both. The existence of stable structures is an empirical fact; the uniqueness of quantum structure as a stability condition is a theoretical claim subject to analysis.
 
 This distinction matters because:
 
-1. It preserves LRT's empirical vulnerability. If another structure were shown to produce stable physics, LRT's selection claim would be falsified.
+1. It preserves LRT's empirical vulnerability. If another structure were shown to produce stable physics, LRT's selection claim would be falsified. This makes the interface claim strictly empirical, not purely philosophical.
 
 2. It correctly locates the fine-tuning. The fine-tuning is not in the logical laws themselves but in the selection of quantum structure from among the logically permissible options.
 
@@ -592,13 +592,13 @@ No. Parsimony is derived from more fundamental commitments already internal to L
 
 The derivation proceeds as follows:
 
-**Step 1: Constitution versus Constraint.** 3FLL do not merely *constrain* actuality (ruling out some configurations while permitting others). They *constitute* actuality - they are what makes determinate being possible at all. This is LRT's core claim from Part I.
+**Step 1: Constitution versus Constraint.** 3FLL do not merely *constrain* actuality (ruling out some configurations while permitting others). They *constitute* actuality - they generate the very structure within which determinate being is possible. This is LRT's core claim from Part I.
 
-**Step 2: Constitutive Closure.** If principle P constitutes domain D, then D contains exactly the structure P generates - no more, no less. This follows from what constitution means: the constituted domain just is what the constituting principles generate.
+**Step 2: Constitutive Closure.** If principle P constitutes domain D, then D contains exactly the structure P generates - no more, no less. This follows the same pattern as mathematical axioms: the structure of the domain is nothing over and above what the axioms generate.
 
-**Step 3: Truthmaker Requirement.** For any proposition in actuality to have a genuine Boolean value (not merely a stipulated one), something must ground that value. The grounding sources within LRT's minimal ontology are: logical necessity from 3FLL, logical entailment from grounded propositions, initial conditions, and propagation through derived dynamics.
+**Step 3: Truthmaker Requirement.** For any proposition in actuality to have a genuine Boolean value (not merely a stipulated one), something must ground that value. No proposition in actuality can have a free-floating truth value; every fact must be grounded. The grounding sources within LRT's minimal ontology are: logical necessity from 3FLL, logical entailment from grounded propositions, initial conditions, and propagation through derived dynamics.
 
-**Step 4: Surplus Structure Excluded.** Any proposition not grounded by these sources cannot have a genuine Boolean value. But actuality requires genuine Boolean values. Therefore, ungrounded ("surplus") propositions cannot be part of actuality.
+**Step 4: Surplus Structure Excluded.** Any proposition not grounded by these sources cannot have a genuine Boolean value. But actuality requires genuine Boolean values. Therefore, surplus propositions are not just pruned - they are impossible within actuality.
 
 **Conclusion:** Actuality contains exactly the grounded propositions - those whose Boolean values are determined by (3FLL + initial conditions) and their consequences. No surplus structure exists.
 
@@ -615,7 +615,7 @@ The interface problem now has a clear structure:
 
 The next sections develop each element of this argument:
 - Section 8 analyzes the bit as the fundamental unit of distinguishability
-- Section 9 examines why quantum structure specifically produces stability
+- Section 9 examines why quantum structure specifically produces stability, showing how reconstruction theorems, stability arguments, and physical fine-tuning converge
 - Section 10 addresses the Born rule
 - Sections 11-15 develop implications and comparisons
 
