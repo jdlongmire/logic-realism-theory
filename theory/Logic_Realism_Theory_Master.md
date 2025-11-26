@@ -1408,3 +1408,117 @@ The next section examines how LRT relates to and completes other foundational pr
 
 ---
 
+## 15. Completing Related Programs
+
+LRT does not stand alone. It connects to, grounds, or completes several existing programs in foundations of physics. This section maps these relationships.
+
+### 15.1 Interpretations Grounded
+
+The major interpretations of quantum mechanics each capture something important. LRT shows what each captures and what it lacks.
+
+**Copenhagen:** Copenhagen refused to say what the wave function "really is" - it is a tool for predicting outcomes, no more. Bohr emphasized complementarity and the role of measurement but avoided ontological commitment.
+
+LRT provides what Copenhagen refused: the wave function is IIS structure, real but not actual until measurement. Copenhagen's operational success reflects the correctness of the IIS/actuality interface. Copenhagen's silence on ontology reflects legitimate caution about conflating the domains.
+
+**QBism:** QBism (Quantum Bayesianism) says quantum states are agent's beliefs about future experiences. States are not objective features of the world but subjective degrees of belief.
+
+LRT grounds what those beliefs track. Beliefs are not arbitrary; they correspond to genuine features of IIS. The wave function represents real structure - the agent's beliefs are about something. QBism correctly identifies the subjective element in measurement but underestimates the objective element in IIS.
+
+**Relational QM:** Rovelli's relational interpretation says properties are relative to interactions. There is no absolute fact about which outcome occurred; facts are relative to observers.
+
+LRT explains why: context determines which partition of IIS interfaces with actuality. Different interactions probe different aspects of IIS structure. The relational character is real but not because facts are subjective - because IIS structure is context-sensitive in its actualization.
+
+**Many-Worlds:** Everett's interpretation preserves wave function realism and removes collapse. All branches are equally real.
+
+LRT preserves MWI's insights (wave function realism, no collapse mechanism) while restoring single actuality. The "branches" exist as possibilities in IIS; one actualizes. MWI correctly identified the reality of quantum states but conflated IIS with actuality.
+
+**Bohmian Mechanics:** Pilot-wave theory adds definite particle positions to the wave function. Particles follow deterministic trajectories guided by the wave.
+
+LRT shares Bohmian mechanics' commitment to definite outcomes but locates them differently. For LRT, definiteness emerges at the IIS/actuality interface, not from hidden variables. Bohm correctly intuited that something definite underlies quantum phenomena but located it in particle positions rather than in the structure of actuality itself.
+
+### 15.2 Programs Completed
+
+**Reconstruction theorems:** Hardy, Chiribella, and others have derived quantum structure from operational axioms (tomographic locality, continuous reversibility, etc.). These theorems show quantum mechanics is uniquely characterized by certain properties.
+
+LRT grounds these axioms. The reconstruction axioms are features required for stable interface between IIS and Boolean actuality. Continuous reversibility preserves information in IIS. Local tomography ensures consistency across subsystems. The theorems do not derive quantum mechanics from logic alone, but they show that quantum structure is uniquely determined once reasonable interface requirements are imposed.
+
+**Decoherence:** The decoherence program explains how interference terms vanish through environmental interaction. It shows why macroscopic superpositions are not observed.
+
+LRT explains what decoherence accomplishes: the transfer of phase information to the environment, enforcing local Boolean structure at the system level. Decoherence does not solve the measurement problem (it does not explain why one outcome occurs) but it explains why the problem does not manifest macroscopically.
+
+**Wheeler's program:** As detailed in Section 14, LRT grounds Wheeler's "it from bit" by showing that the bit derives from 3FLL and quantum mechanics is the interface structure.
+
+**Zeilinger's foundational principle:** Zeilinger proposed that an elementary system carries exactly one bit of information. This is a foundational principle for quantum mechanics.
+
+LRT explains why: the bit is the fundamental unit of distinguishability. Elementary systems are minimal carriers because they instantiate minimal distinction. Zeilinger's principle is not arbitrary; it reflects the logical constitution of physical information.
+
+### 15.3 Principles Connected
+
+LRT connects to several principles from physics and information theory:
+
+**Landauer's principle:** Erasing one bit of information costs at least kT ln 2 of energy. Information erasure has thermodynamic cost.
+
+In LRT terms: destroying a distinction has thermodynamic cost because distinctions are ontologically real. Erasure is not merely subjective loss of knowledge; it is objective reduction of structure.
+
+**Holographic principle:** The entropy of a region is bounded by its surface area in Planck units, not its volume. Information is holographic.
+
+In LRT terms: distinguishability has a spatial density limit. There is a maximum number of bits per Planck area. The holographic bound reflects the finite granularity of distinguishability.
+
+**Bekenstein bound:** A region of space has finite information capacity proportional to its size and energy.
+
+In LRT terms: actuality can only support finite distinguishability in finite regions. The bound is not merely thermodynamic but logical - finite regions cannot instantiate infinite distinction.
+
+### 15.4 Mathematical Universe Refined
+
+Tegmark's Mathematical Universe Hypothesis (MUH) claims that reality IS mathematical structure. All consistent mathematical structures exist; we inhabit one.
+
+LRT refines this:
+
+- Not all mathematical structures in IIS are actualized
+- 3FLL + stability select which structures produce physics
+- The relationship is constitutive (3FLL generate structure) not compositional (structure = reality)
+
+LRT is compatible with the spirit of MUH - mathematics is ontologically fundamental - while being more specific about the selection mechanism. Not every consistent structure exists as physical reality; only the stability-selected structures do.
+
+### 15.5 Information-Theoretic Physics
+
+The information-theoretic approach to physics (Lloyd, Vedral, etc.) treats information as physically fundamental. LRT provides the philosophical foundation:
+
+- Information IS distinguishability, constituted by 3FLL
+- Physics emerges from information structure
+- The bit is the fundamental unit
+- Quantum mechanics is the interface between information and actuality
+
+The information-theoretic program has the right intuition but often lacks philosophical grounding. LRT supplies that grounding.
+
+### 15.6 What LRT Adds to Each Program
+
+| Program | What They Have | What LRT Adds |
+|---------|---------------|---------------|
+| Copenhagen | Operational accuracy | Ontological interpretation |
+| QBism | Subjective element | Objective grounding |
+| Relational QM | Context-sensitivity | IIS structure |
+| Many-Worlds | Wave function realism | Single actuality |
+| Bohmian | Definite outcomes | Interface mechanism |
+| Reconstruction | Axiom derivation | Axiom grounding |
+| Decoherence | Interference suppression | Measurement interpretation |
+| Wheeler | "It from bit" vision | Logical foundation |
+| Zeilinger | Elementary = 1 bit | Constitutional explanation |
+| Landauer | Erasure cost | Ontological basis |
+| Holography | Area bounds | Distinguishability limit |
+| Tegmark | Mathematical existence | Selection mechanism |
+
+### 15.7 What This Section Establishes
+
+We have shown:
+
+- LRT grounds the major interpretations by providing what each lacks
+- Reconstruction theorems identify interface requirements that LRT explains
+- Information-theoretic principles connect to LRT's constitutional framework
+- The Mathematical Universe Hypothesis is refined by selection considerations
+- LRT does not replace these programs but completes them
+
+This concludes Part II: Physical Interpretation. Part III will develop the mathematical formalization.
+
+---
+
