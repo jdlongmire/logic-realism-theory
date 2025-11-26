@@ -33,13 +33,41 @@
 
 ## Work Completed
 
-*(To be updated as session progresses)*
+### 1. Section 16: LRT Axioms (DRAFTED)
+
+Key elements:
+- Five formal axioms stated with precise definitions
+- Primitive terms: 3FLL, Distinguishability, IIS, Boolean Structure, Context
+- Axiom tier classification (Foundational, Physical, Structural)
+- Global Parsimony Theorem derived (not axiomatized)
+- Revised axiom structure table
+
+**Word count**: ~1,400 words
+**Source**: Paper 3 §2
+
+### 2. Section 17: Deriving Hilbert Space Structure (DRAFTED)
+
+Key elements:
+- Derivation via Masanes-Müller reconstruction theorem
+- Theorem 17.1: Inner product structure from Axioms 1-3
+- Theorem 17.2: Complex numbers forced by local tomography
+- Theorem 17.3: IIS is complete Hilbert space
+- Corollary 17.4: Dimension ≥ 3 (enables Gleason)
+- Wigner's theorem for IIS symmetries
+- Derivation chain diagram
+
+**Word count**: ~1,100 words
+**Source**: Paper 3 §2.3, §3
+
+### Status: PAUSED FOR CHATGPT REVIEW
+
+Sections 16-17 ready for external review before continuing to Section 18 (Born Rule Derivation).
 
 ---
 
 ## Commits This Session
 
-*(To be updated as session progresses)*
+1. `e5bfeac` - Draft Part III Sections 16-17: LRT Axioms and Hilbert Space Derivation
 
 ---
 
