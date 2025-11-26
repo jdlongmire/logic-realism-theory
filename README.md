@@ -81,4 +81,4 @@ archive/                 # Historical artifacts
 
 ## Disclaimer
 
-Logic Realism Theory is a proposed theoretical framework. All claims require scrutiny. This work was developed with AI assistance (Claude, ChatGPT, Gemini, Grok, Perplexity). Scientific judgments remain the author's responsibility.
+Logic Realism Theory is a proposed theoretical framework. All claims require scrutiny. Human-curated, AI-enabled. This work was developed with AI assistance (Claude, ChatGPT, Gemini, Grok, Perplexity). Scientific judgments remain the author's responsibility.
