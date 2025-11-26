@@ -961,7 +961,7 @@ LRT does not solve the foundational puzzles of quantum mechanics in the sense of
 
 **The puzzle:** How does the smooth, deterministic evolution of the wave function produce discrete, random measurement outcomes? What constitutes a "measurement"? When does "collapse" occur?
 
-**The dissolution:** There is no mysterious collapse mechanism. Measurement is the interface between IIS and Boolean actuality.
+**The dissolution:** There is no mysterious collapse mechanism. Measurement is the interface between IIS and Boolean actuality. LRT treats measurement not as a primitive but as whatever physical process forces Boolean enforcement.
 
 In IIS, the quantum state evolves unitarily - smoothly and deterministically. When the state interacts with a context that requires Boolean outcomes - a detector, an irreversible record, a macroscopic system - 3FLL are enforced. The state must become determinate.
 
@@ -973,9 +973,9 @@ This is not a dynamical process requiring new physics. It is a **category transi
 - A reason why no new physics is needed (it is not a physical process)
 
 **What LRT does not provide:**
-- A precise physical criterion for when the transition occurs
+- A precise physical criterion for when the transition occurs (though candidates include decoherence, irreversibility, thermodynamic gradients)
 - A derivation of the quantum-classical boundary
-- An explanation of why THIS outcome rather than THAT outcome
+- An explanation of why THIS outcome rather than THAT outcome (nor does any interpretation - nothing requires explanation for "which branch")
 
 The question "when exactly does Boolean actuality get enforced?" remains open. Candidate physical criteria include decoherence (Zurek, Zeh), irreversible amplification, thermodynamic gradients, gravitational thresholds (Penrose), and information transfer to the environment (Quantum Darwinism). LRT is compatible with any of these as the physical marker of the transition. What LRT adds is the interpretation: whatever the physical criterion, what happens is category transition, not collapse dynamics.
 
@@ -987,7 +987,7 @@ The remaining question - why THIS outcome? - may have no answer. If selection am
 
 **The dissolution:** There is no "spooky action at a distance" because there is no action.
 
-In LRT, 3FLL operate as a **global constraint field**. They do not propagate from place to place like a signal; they simply hold, everywhere, always. An entangled state is a single configuration in IIS with extended properties - not two separate things mysteriously connected.
+In LRT, 3FLL operate as a **global logical constraint** (not a physical field - the term "field" is metaphorical). They do not propagate from place to place like a signal; they simply hold, everywhere, always. An entangled state is a single joint configuration in IIS - not two separate things mysteriously connected, but one extended state with non-factorizable structure.
 
 When measurement occurs, 3FLL enforce consistency across the entire state. The correlations are not caused by one particle signaling the other; they are **constraint satisfaction**, not communication.
 
@@ -998,7 +998,7 @@ When measurement occurs, 3FLL enforce consistency across the entire state. The c
 
 Bell's theorem rules out local hidden *variables* - pre-existing definite values. LRT does not posit such values. The IIS state is genuinely indeterminate; constraints specify relationships between outcomes, not the outcomes themselves.
 
-This explains why entanglement produces correlations but not signaling. The correlations reflect the logical structure of a unified state. No information travels because there is nothing traveling - just global consistency being enforced.
+This explains why entanglement produces correlations but not signaling. The correlations reflect the logical structure of a unified state. No information travels because there is nothing traveling - just global consistency being enforced. The marginal statistics at each location remain unchanged regardless of what measurement is performed at the other - no-signaling is preserved precisely because the joint configuration already contains the constraint; measurement merely reveals it.
 
 ### 11.3 Many-Worlds Obviated
 
@@ -1013,9 +1013,9 @@ MWI correctly recognized that:
 
 LRT agrees with all of this. But LRT does not conclude that all branches are equally actual. Instead:
 
-- **Possibilities are real** - they exist in IIS
-- **One actuality** - 3FLL enforce a single determinate outcome
-- **Other possibilities remain in IIS**, not in parallel branches
+- **Possibilities are real** - they exist in IIS as modal structure, not parallel actualized worlds
+- **One actuality** - 3FLL enforce a single determinate outcome (single actuality follows directly from Non-Contradiction and Excluded Middle)
+- **Other possibilities remain in IIS**, not in parallel branches - they are possibilities that did not actualize, not alternative actualities
 
 The "branching" of MWI is reinterpreted as the structure of IIS - all possibilities are there, but only one actualizes. This is not solipsism or hidden variables; it is the distinction between possibility (IIS) and actuality (3FLL-compliant Boolean structure).
 
@@ -1025,9 +1025,11 @@ The "branching" of MWI is reinterpreted as the structure of IIS - all possibilit
 
 **The dissolution:** The wave function is IIS structure - real but not actual.
 
-The wave function ψ describes a genuine configuration in IIS. It is not "just math" or "just our knowledge." But it is also not a physical thing in space like a classical field.
+The wave function ψ describes a genuine configuration in IIS. It is not "just math" or "just our knowledge." But it is also not a physical thing in space like a classical field - it is ontologically real but not spatiotemporally located.
 
-The wave function is real in the sense that IIS is real - it is the structure of possibility constituted by 3FLL. It becomes actual only at the interface, when measurement enforces Boolean determinacy. This position is neither ψ-ontic (wave function as physical substance) nor ψ-epistemic (wave function as mere knowledge) but something distinct: ψ-structural (wave function as IIS configuration).
+The wave function is real in the sense that IIS is real - it is the structure of possibility constituted by 3FLL. It becomes actual only at the interface, when measurement enforces Boolean determinacy. This position is neither ψ-ontic (wave function as physical substance) nor ψ-epistemic (wave function as mere knowledge) but something distinct: **ψ-structural** (wave function as IIS configuration).
+
+This is compatible with the PBR theorem (Pusey-Barrett-Rudolph, 2012), which rules out ψ-epistemic interpretations where quantum states represent ignorance of underlying ontic states. LRT's ψ-structural position agrees that the wave function is not mere ignorance - it genuinely represents structure in IIS - while denying that this structure is spatiotemporal substance.
 
 ### 11.5 Quantization
 
@@ -1038,9 +1040,9 @@ The wave function is real in the sense that IIS is real - it is the structure of
 In IIS, continuous structures exist. But actuality - what physically manifests - must be determinate. The bit is the minimal unit of determinacy. You cannot have 0.7 of a distinction.
 
 Discrete quantities reflect the Boolean structure of actuality:
-- Energy levels are discrete because the electron either is or is not in a given state
-- Charge is quantized because the particle either has it or does not
-- Spin is quantized because the measurement outcome is either up or down
+- Energy levels are discrete because bound-state boundary conditions select specific eigenvalues - the electron either is or is not in a given eigenstate
+- Charge is quantized because U(1) gauge symmetry produces discrete representations - particles carry integer multiples of the fundamental charge
+- Spin is quantized because SU(2) representations are discrete - measurement outcomes are eigenvalues of angular momentum operators
 
 Quantization is 3FLL at work - the enforcement of determinate, non-contradictory, complete structure at the level of actuality.
 
@@ -1048,11 +1050,11 @@ Quantization is 3FLL at work - the enforcement of determinate, non-contradictory
 
 **The puzzle:** Why are all electrons exactly identical? Classical objects can be arbitrarily similar but always distinguishable in principle. Quantum particles of the same type are absolutely indistinguishable.
 
-**The dissolution:** Quantum fields are modes of distinguishability.
+**The dissolution:** Quantum fields are modes of distinguishability in IIS.
 
-In LRT, quantum fields are not substances but structures - modes of distinguishability in IIS. All electrons are identical because they are excitations of the same mode. There is no "this electron" versus "that electron" at the fundamental level - there is only "electron-mode excitation here" versus "electron-mode excitation there."
+In LRT, quantum fields are not substances but structures - they represent the different ways distinctions can be made within IIS. All electrons are identical because they are excitations of the same distinguishability mode (the electron field). There is no "this electron" versus "that electron" at the fundamental level - there is only "electron-mode excitation here" versus "electron-mode excitation there."
 
-The identity of particles follows from the structure of distinguishability itself. What we call "an electron" is a pattern of distinguishability, not an individual substance.
+The identity of particles follows from the structure of distinguishability itself. What we call "an electron" is a quantum of the electron distinguishability mode - a pattern of distinction, not an individual substance. This explains both perfect identity (same mode) and the statistics (bosonic modes allow unlimited occupation; fermionic modes do not).
 
 ### 11.7 What This Section Establishes
 
@@ -1068,6 +1070,8 @@ LRT dissolves foundational puzzles by reframing them:
 | Identical particles | Why identical? | Modes of distinguishability |
 
 These dissolutions do not resolve every question. They reframe the questions in terms of the IIS/actuality distinction, showing that many "puzzles" arise from conflating these domains.
+
+The common thread: the IIS/actuality divide does most of the philosophical work. Superposition exists in IIS; definite outcomes exist in actuality. The wave function describes IIS structure; measurements reveal actuality. Possibilities are real in IIS; only one actualizes. Once this divide is taken seriously, the puzzles dissolve into category distinctions rather than dynamical mysteries.
 
 The next sections examine quantum fields, fine-tuning, and LRT's relationship to other foundational programs.
 
