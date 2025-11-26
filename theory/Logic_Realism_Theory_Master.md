@@ -1,4 +1,4 @@
-# Logic Realism Theory: A Complete Framework
+# Logic Realism Theory: A Unified Framework
 
 **James (JD) Longmire**
 Email: jdlongmire@outlook.com
@@ -9,7 +9,7 @@ Northrop Grumman Fellow (unaffiliated research)
 
 ## Abstract
 
-Logic Realism Theory (LRT) holds that the three fundamental laws of logic - Identity, Non-Contradiction, and Excluded Middle - are not cognitive conventions or linguistic rules but ontological constraints constitutive of physical reality. This paper presents the complete framework: philosophical foundations establishing the ontological status of logical laws; the physical interpretation showing quantum mechanics as the unique stable interface between the Infinite Information Space (IIS) and Boolean actuality; the mathematical formalization deriving Hilbert space structure via reconstruction theorems and the Born rule via Gleason's theorem; empirical grounding through 17+ retrodictions, 20+ testable predictions, and 12 explicit falsifiers; and consilience evidence from seven independent domains converging on identical deep structures. We do not claim to derive quantum mechanics from logic alone. We claim that quantum structure is uniquely selected by stability requirements - structural fine-tuning at the deepest level. One prediction (complex quantum mechanics required) has already been confirmed experimentally. The framework dissolves foundational puzzles of quantum mechanics, grounds Wheeler's "it from bit" program, and explains the unreasonable effectiveness of mathematics. It from bit; bit from fit.
+Logic Realism Theory (LRT) holds that the three fundamental laws of logic - Identity, Non-Contradiction, and Excluded Middle - are not cognitive conventions or linguistic rules but ontological constraints constitutive of physical reality. This paper presents the unified framework: philosophical foundations establishing the ontological status of logical laws; the physical interpretation showing quantum mechanics as the unique stable interface between the Infinite Information Space (IIS) and Boolean actuality; the mathematical formalization deriving Hilbert space structure via reconstruction theorems and the Born rule via Gleason's theorem; empirical grounding through 17+ retrodictions, 20+ testable predictions, and 12 explicit falsifiers; and consilience evidence from seven independent domains converging on identical deep structures. We do not claim to derive quantum mechanics from logic alone. We claim that quantum structure is uniquely selected by stability requirements - structural fine-tuning at the deepest level. One prediction (complex quantum mechanics required) has already been confirmed experimentally. The framework dissolves foundational puzzles of quantum mechanics, grounds Wheeler's "it from bit" program, and explains the unreasonable effectiveness of mathematics. It from bit; bit from fit.
 
 **Keywords:** logic realism, quantum foundations, Born rule, measurement problem, entanglement, information theory, consilience, philosophy of physics
 
@@ -40,9 +40,9 @@ $$\mathcal{A} = \mathfrak{L}(\mathcal{I})$$
 Where:
 - **A** (Actuality) is the realized physical world - what actually exists
 - **I** (Infinite Information Space) is the totality of distinguishable states - everything that could be
-- **L** (Logical Filtering) is the operation of the three fundamental laws plus parsimony - selecting from possibility to actuality
+- **L** (Logical Filtering) is the enforcement of 3FLL over IIS, together with the grounding structure that yields global parsimony (derived in Part III, not assumed)
 
-Actuality equals logical filtering applied to the space of possibilities. This is the core thesis.
+Actuality equals logical filtering applied to the space of possibilities. This is the core thesis. Note that L is introduced here as 3FLL-enforcement; later sections show that enforcing groundedness forces a globally parsimonious Boolean structure.
 
 ### 1.2 What This Paper Does and Does Not Claim
 
@@ -112,9 +112,9 @@ Aristotle considered this the most certain of all principles - one that cannot c
 
 $$\forall x, P: P(x) \lor \neg P(x)$$
 
-There is no middle ground between being and not-being. The electron is either here or not here. The proposition is either true or false. Excluded Middle rules out gaps in truth value.
+There is no middle ground between being and not-being. For actualized measurement outcomes, the electron is either here or not here. The proposition is either true or false. Excluded Middle rules out gaps in truth value.
 
-This law is more contested than the others. Intuitionists reject it for mathematical domains where constructive proof is unavailable. But for actualized physical states - determinate facts about the world - Excluded Middle appears inviolable.
+This law is more contested than the others. Intuitionists reject it for mathematical domains where constructive proof is unavailable. But for actualized physical states - determinate facts about the world - Excluded Middle appears inviolable. (The distinction between indeterminacy in IIS and determinacy in actuality is central to our later treatment of quantum mechanics.)
 
 ### 2.4 Historical Context
 
@@ -134,7 +134,7 @@ These developments show that *alternative formal systems* are possible. They do 
 
 We call these three laws "fundamental" for specific reasons:
 
-**Not reducible:** None of the three can be derived from the others. Each does independent work. Remove any one and the logical structure collapses.
+**Not reducible:** On this framework, none of the three is derived from the others. Each does independent work. Remove any one and the logical structure collapses.
 
 **Not conventional:** We did not choose these laws; we discovered them. Alternative conventions are conceivable but not actualizable.
 
@@ -203,27 +203,27 @@ Why do we observe no violations of logical laws in physical reality? Six candida
 
 **Candidate 2: Cognitive limitation.** Perhaps violations exist but our minds cannot detect them.
 
-*Assessment:* Ruled out by Observation 2. Our representational capacity is sufficient to form descriptions of violations. If they occurred, we would notice.
+*Assessment:* Strongly disfavored by Observation 2. Our representational capacity is sufficient to form descriptions of violations; our instrumentation extends far beyond unaided cognition. If violations occurred at any scale we can probe, we would notice.
 
 **Candidate 3: Constitutive constraint.** The laws of logic are structural features of reality itself. Nothing actualizes in violation of them because nothing can - logical structure is a precondition for any state of affairs to exist.
 
 *Assessment:* This is the thesis we defend.
 
-**Candidate 4: Analytic truth.** Perhaps "violations of logic" are not impossible states but pseudo-propositions with no sense. Logic is not about reality's structure but about what counts as coherent description.
+**Candidate 4: Analytic truth.** Perhaps "violations of logic" are not impossible states but pseudo-propositions with no sense - logical sentences have no factual content, so violation-talk is literally nonsense. Logic is not about reality's structure but about what counts as coherent language.
 
-*Assessment:* This explanation cannot account for the predictive success of mathematical physics. If mathematical success depended on linguistic grammar alone, then changing false assumptions should break predictions. But predictions are robust: idealized models (frictionless planes, point particles, infinite populations) yield correct predictions despite ontological falsehood. The structure works independent of the assumptions.
+*Assessment:* This explanation cannot account for the predictive success of mathematical physics. At minimum, the success of mathematical physics shows that whatever logic captures is not *merely* a linguistic convention, since its structural constraints keep working far beyond the regimes in which original idealizations were introduced. Idealized models (frictionless planes, point particles, infinite populations) yield correct predictions despite ontological falsehood. The structure works independent of the assumptions.
 
 **Candidate 5: Observer selection.** If observation requires logical structure, we would necessarily find ourselves in logically structured regions even if violations exist elsewhere.
 
 *Assessment:* Insufficient. It requires that structured regions instantiate logical laws anyway - relocating rather than eliminating the question. And it does not explain the fine-grained logical alignment we observe across all domains, including those causally disconnected from us.
 
-**Candidate 6: Description/described gap.** Perhaps all descriptions must be logically structured while what is described need not be.
+**Candidate 6: Description/described gap.** This differs from Candidate 4: here, logical sentences *do* have content, but logical structure applies only to descriptions, not to what is described. The world might be illogical even though our representations of it cannot be.
 
 *Assessment:* Explanatorily inadequate. It cannot explain why descriptions continue to work across radically new physical domains, why mathematics predicts phenomena no one designed the mathematics for, or why the world is so comprehensively modelable. Moreover, even the distinction between description and described presupposes identity and non-contradiction.
 
 ### 3.4 Inference to the Best Explanation
 
-Candidates 1 and 2 fail immediately. Candidates 4, 5, and 6 fail to explain the predictive success of mathematics, the uniformity of logical structure across disconnected regions, and the asymmetry between description and reality.
+Candidate 1 fails immediately; Candidate 2 is strongly disfavored. Candidates 4, 5, and 6 fail to explain the predictive success of mathematics, the uniformity of logical structure across disconnected regions, and the asymmetry between description and reality.
 
 Only Candidate 3 remains.
 
@@ -254,7 +254,7 @@ Having established that 3FLL are constitutive of physical reality, we now develo
 
 ### 4.1 What IIS Is
 
-**Definition:** The Infinite Information Space (IIS) is the totality of distinguishable states - every possible informational configuration constituted by 3FLL.
+**Definition:** The Infinite Information Space (IIS) is the totality of in-principle distinguishable states - every possible informational configuration constituted by 3FLL.
 
 Several clarifications are essential:
 
