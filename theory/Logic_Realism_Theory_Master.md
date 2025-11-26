@@ -632,18 +632,20 @@ Distinguishability is not a primitive fact discovered in the world. It is what 3
 Consider what is required for state A to be distinguishable from state B:
 
 - **Identity:** A = A and B = B. Each state must be determinately itself.
-- **Non-identity:** A ≠ B. The states must differ (which presupposes identity - you cannot differ from something unless both things are determinate).
+- **Non-identity:** A ≠ B. The states must differ. (Note: non-identity is not a separate logical law but is logically definable only because Identity and Non-Contradiction hold.)
 - **Non-contradiction:** It is not the case that A = B and A ≠ B simultaneously.
 
 Without these conditions, there is no basis for one state to be different from another. Distinguishability just *is* the application of 3FLL to a domain. This is why IIS is "constituted by" 3FLL rather than merely "constrained by" them - the very possibility of distinct states depends on logical structure.
+
+Distinguishability exists at the level of IIS; actuality enforces only one branch of each distinction. This reinforces the asymmetry: IIS contains all distinguishable configurations, while actuality selects among them.
 
 ### 8.2 Distinguishability Is Pairwise
 
 To distinguish is to compare. Distinguishability is inherently a relation between two things: how different is A from B?
 
-This relational character means distinguishability has **quadratic structure** - it involves pairs, not individuals. You do not ask "how distinguishable is A?" in isolation. You ask "how distinguishable is A from B?" The question is inherently comparative.
+This relational character means distinguishability naturally takes a **bilinear or quadratic mathematical form** - it involves pairs, not individuals. You do not ask "how distinguishable is A?" in isolation. You ask "how distinguishable is A from B?" The question is inherently comparative.
 
-This observation is crucial for understanding quantum structure. The Born rule gives probabilities as $|\langle\psi|\phi\rangle|^2$ - the squared magnitude of an inner product between two states. This quadratic form is not accidental. It reflects the pairwise nature of distinguishability itself.
+This observation is crucial for understanding quantum structure. The Born rule gives probabilities as $|\langle\psi|\phi\rangle|^2$ - the squared magnitude of an inner product between two states. This quadratic form is not accidental. It reflects the pairwise nature of distinguishability itself. The amplitude (inner product) captures the intrinsic relation between states; the squared magnitude yields the Boolean decision (probability of outcome).
 
 Similarly, the inner product structure of Hilbert space - where states are characterized by their overlaps with other states - instantiates the relational character of distinction. States in quantum mechanics are not defined by intrinsic properties alone but by their relations to measurement bases and to each other.
 
@@ -654,8 +656,8 @@ The **bit** is the minimal unit of distinguishability - one binary distinction, 
 In LRT terms:
 
 - **One bit** = the information required to distinguish between exactly two alternatives
-- **The bit is not derived from physics** - physics is derived from bits. The logical structure of distinction is prior to the physical structures that instantiate it.
-- **The grain of actuality is the bit** - you cannot have half a distinction. A proposition is either true or false; a state either obtains or does not.
+- **Physical law reflects and instantiates the bit-structure** - it does not generate it. The logical structure of distinction is prior to the physical structures that instantiate it.
+- **The grain of actuality is the bit** - you cannot have half a distinction. A proposition is either true or false; a state either obtains or does not. (In IIS, we can have partial or indeterminate structure; in actuality, distinctions are always Boolean.)
 
 This connects directly to Wheeler's "it from bit" thesis: physical reality emerges from yes/no questions, from binary distinctions accumulated and related. LRT grounds this insight by showing that the yes/no question is the fundamental logical operation, and 3FLL constitute what makes such questions meaningful.
 
@@ -671,29 +673,29 @@ $$S = \hbar \cdot C$$
 
 Where S is action (physical) and C is complexity (informational, measured in bits).
 
-This identification is conjectural but receives support from independent results:
+This identification is conjectural. LRT does not require S = ℏC for its philosophical foundation, but this conjecture makes the link between logical and physical structure quantitatively precise. It receives support from independent results:
 
 **The Bekenstein bound** states that the maximum entropy (information content) of a region is proportional to its surface area in Planck units:
 
 $$S_{\text{max}} = \frac{k_B c^3 A}{4 G \hbar}$$
 
-This implies a maximum bit density of roughly one bit per Planck area. If ℏ is the bit-action conversion factor, this bound follows naturally: physical regions have finite action capacity, hence finite bit capacity.
+This is naturally interpreted as a maximum bit density of roughly one bit per Planck area. If ℏ is the bit-action conversion factor, this bound follows naturally: physical regions have finite action capacity, hence finite bit capacity.
 
-**Black hole entropy** (the Bekenstein-Hawking formula) gives entropy proportional to horizon area in Planck units. In LRT terms: the horizon bounds the distinguishability capacity of the interior. A black hole of area A can contain at most A/(4ℓ²_P) bits of information - the maximum distinguishability the region can support.
+**Black hole entropy** (the Bekenstein-Hawking formula) gives entropy proportional to horizon area in Planck units. In LRT terms: the horizon encodes the maximum distinguishability available to degrees of freedom associated with that region. A black hole of area A can contain at most A/(4ℓ²_P) bits of information.
 
-**The holographic principle** generalizes this: the information content of any region is bounded by its boundary area, not its volume. In LRT terms, this reflects fundamental limits on distinguishability density. Reality cannot support arbitrary information density because distinguishability itself has finite granularity.
+**The holographic principle** generalizes this: the information content of any region is bounded by its boundary area, not its volume. This constraint appears as a physical limit but is equally interpretable as a limit on distinguishability-granularity if the bit is ontologically fundamental. Reality cannot support arbitrary information density because distinguishability itself has finite granularity.
 
 ### 8.5 Implications for Physical Structure
 
-These connections suggest several conclusions:
+These connections suggest several conclusions (conditional on S = ℏC where noted):
 
-1. **One bit of complexity corresponds to approximately ℏ of action.** This sets the scale at which logical structure becomes physically manifest.
+1. **If S = ℏC, then one bit of complexity corresponds to approximately ℏ of action.** This sets the scale at which logical structure becomes physically manifest.
 
-2. **The classical world appears continuous because specifying it exactly would require infinite bits.** Continuity is an approximation that breaks down at scales where the bit-structure of reality becomes directly relevant.
+2. **The classical world appears continuous because specifying it exactly would require infinite bits at the level of description.** Continuity is an approximation that breaks down at scales where the bit-structure of distinguishability becomes directly relevant. This is a claim about description, not about ontology.
 
-3. **The Planck scale marks the transition.** At lengths of order ℓ_P = √(ℏG/c³), the discrete bit-structure can no longer be ignored. This is not merely a practical limitation but reflects the finite distinguishability capacity of physical structure.
+3. **The Planck scale marks the regime where the finite bit-structure of distinguishability becomes non-negligible.** At lengths of order ℓ_P = √(ℏG/c³), the discrete structure can no longer be ignored relative to our measurements. This reflects the finite distinguishability capacity of physical structure.
 
-4. **Quantum discreteness reflects bit-structure.** Energy levels, angular momentum quantization, and other discrete quantum features are manifestations of the underlying granularity of distinguishability.
+4. **Quantum discreteness reflects bit-structure.** Energy levels, angular momentum quantization, and other discrete quantum features arise from Hilbert-space algebra and boundary conditions. This does not conflict with the bit interpretation; the algebra itself instantiates the finite-granularity of distinguishability.
 
 5. **The quadratic structure of probability (Born rule) reflects pairwise distinguishability.** This connection is developed further in Section 10.
 
@@ -707,7 +709,7 @@ We have shown:
 - Physical constants (ℏ) may encode the conversion between logical and physical domains
 - Several independent results (Bekenstein bound, holography) support this picture
 
-This prepares the ground for Section 9, which asks: among the structures that can interface with Boolean actuality, why does quantum mechanics - with its specific Hilbert space, inner product, and Born rule structure - produce stable physics while others do not?
+This prepares the ground for Section 9, which asks: among the structures that can interface with Boolean actuality, why does quantum mechanics - with its specific Hilbert space, inner product, and Born rule structure - produce stable physics while others do not? The answer will show that quantum mechanics, and not classical probability or any other generalized probabilistic theory, is the unique stable structure compatible with this bit-based distinguishability architecture.
 
 ---
 
