@@ -723,7 +723,7 @@ The answer is **stability selection**: quantum mechanics is the unique structure
 
 Classical probability satisfies the formal interface constraints. A probability distribution over outcomes, sampled to yield a definite result, produces Boolean actuality from a richer structure. Formally, classical probability is a valid interface.
 
-But classical probability, applied at the fundamental level, does not produce stable physics:
+But classical mechanics - whether deterministic or supplemented by classical probability - does not produce stable physics at the atomic scale:
 
 - **No stable atoms.** Electrons would spiral into nuclei. The classical Bohr model fails precisely because orbiting charges radiate energy continuously.
 - **No discrete energy levels.** Without quantization, no chemistry - bonding requires discrete orbital structures.
@@ -736,7 +736,7 @@ Classical structure satisfies the Boolean interface constraint but does not prod
 
 Quantum mechanics - specifically, complex Hilbert space with unitary evolution and the Born rule - produces:
 
-- **Stable atoms.** Discrete energy levels arise from wave interference in bound states. Electrons occupy orbitals, not arbitrary positions.
+- **Stable atoms.** Discrete energy levels arise from the spectral properties of self-adjoint Hamiltonians - wave interference in bound states. Electrons occupy orbitals, not arbitrary positions.
 - **Chemistry.** Electron orbitals, bonding, molecular structure - all depend on quantum discreteness and interference.
 - **Solid matter.** The Pauli exclusion principle (fermion statistics) prevents matter from collapsing. Electrons cannot all occupy the lowest energy state.
 - **Stars.** Quantum tunneling enables nuclear fusion at temperatures far below the classical Coulomb barrier.
@@ -748,12 +748,12 @@ The relationship between quantum structure and physical stability is not logical
 
 | Perturbation | Consequence |
 |--------------|-------------|
-| Remove complex numbers | No interference; no stable atoms |
+| Remove complex numbers | Lose full interference structure and compositional consistency; no stable microphysics |
 | Alter unitarity | Norms blow up or decay; no stable evolution |
 | Change Born exponent from 2 | No valid probability measure (Gleason) |
-| Use quaternions instead | Lose tomographic locality |
-| Use reals instead | Lose interference; effectively classical |
-| Perturb linearity | Superluminal signaling becomes possible |
+| Use quaternions instead | Lose tomographic locality in multi-system composition |
+| Use reals instead | Lose local tomography; effectively classical |
+| Perturb linearity | Non-linear evolution generically violates no-signaling (Gisin) |
 | Alter commutation relations | Pathological spectra; no stable matter |
 | Remove Hilbert completeness | No well-defined dynamics |
 
@@ -774,7 +774,7 @@ The uniqueness of quantum structure is not merely asserted - it is supported by 
 
 **Dakić and Brukner (2011):** Derived quantum theory from three axioms about information capacity and continuity.
 
-These reconstruction theorems converge on the same conclusion: quantum mechanics is not one possibility among many but the **unique** structure satisfying certain natural constraints.
+These reconstruction theorems converge on the same conclusion: quantum mechanics is not one possibility among many but the **unique** structure satisfying certain natural constraints. GPT models with stronger-than-quantum correlations (such as PR-boxes) violate either continuous dynamics or compositional consistency - they satisfy some constraints but fail others.
 
 In LRT terms: the constraints these theorems identify are features required for stable interface between IIS and Boolean actuality. Continuous reversibility preserves distinguishability in IIS. Local tomography ensures consistency across subsystems. The theorems do not derive quantum mechanics from logic alone, but they show that quantum structure is uniquely determined once reasonable interface requirements are imposed.
 
@@ -784,13 +784,13 @@ We must be explicit about the logical status of this argument:
 
 1. IIS contains many possible structures (classical, quantum, real, quaternionic, GPTs, PR-boxes, etc.)
 2. Multiple structures satisfy the formal interface constraints
-3. Only quantum structure produces stable atoms, chemistry, observers
-4. We are observers
+3. Only quantum structure produces stable atoms, chemistry, and long-lived information-bearing structures
+4. We inhabit a universe capable of sustaining such structures
 5. Therefore we observe quantum structure
 
 This has the form of the **Weak Anthropic Principle**: we necessarily find ourselves in conditions compatible with our existence. Critics may object that this is circular or tautological.
 
-The response: we are not claiming quantum structure is *logically necessary*. We are claiming it is *observationally necessary* - necessary for there to be observations at all. This is selection, not derivation.
+The response: we are not claiming quantum structure is *logically necessary*. We are claiming it is *observationally necessary* - necessary for there to be stable information-bearing structures at all. This is selection, not derivation.
 
 The selection is genuine:
 - IIS contains many possible interface structures
@@ -808,9 +808,9 @@ LRT adds something to standard fine-tuning discussions: it situates the selectio
 
 **Structural fine-tuning** concerns the mathematical framework itself: if the structure of quantum mechanics were perturbed, no stable physics at all.
 
-Structural fine-tuning is more fundamental. The constants are parameters within the framework; the framework itself must be precisely right for any parameters to matter. You cannot ask "what if α were different?" unless quantum mechanics holds to give α meaning.
+Structural fine-tuning is more fundamental. Structural fine-tuning constrains the mathematical space of viable physical theories; parameter fine-tuning occurs *within* such a structure. The framework itself must be precisely right for any parameters to matter. You cannot ask "what if α were different?" unless quantum mechanics holds to give α meaning.
 
-The question "why quantum mechanics?" becomes parallel to "why these constants?" Both are fine-tuning facts, with structural fine-tuning being logically prior.
+The question "why quantum mechanics?" becomes parallel to "why these constants?" Both are fine-tuning facts, with structural fine-tuning being logically prior. Constants require a framework; frameworks do not require constants.
 
 ### 9.7 What This Section Establishes
 
@@ -822,9 +822,9 @@ We have shown:
 - The explanation is selection (anthropic), not derivation (logical)
 - Structural fine-tuning is more fundamental than cosmic fine-tuning
 
-LRT does not claim to explain *why* quantum structure exists. It claims to explain *why we observe it*: because it is the unique structure compatible with observers existing to ask the question.
+LRT does not claim to explain *why* quantum structure exists. It claims to explain *why we observe it*: because it is the unique structure compatible with stable information-bearing structures existing to ask the question.
 
-The next section addresses the Born rule specifically: why does the probability measure take the form $|\langle\psi|\phi\rangle|^2$, and how does this connect to the pairwise structure of distinguishability?
+To complete the interface story, we must now understand why the mapping from relational structure to Boolean outcomes takes the quadratic form expressed by the Born rule. The next section addresses this: why does the probability measure take the form $|\langle\psi|\phi\rangle|^2$, and how does this connect to the pairwise structure of distinguishability?
 
 ---
 
