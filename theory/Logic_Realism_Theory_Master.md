@@ -158,3 +158,93 @@ This is the thesis we must now defend.
 
 ---
 
+## 3. The Central Argument: Inference to Best Explanation
+
+Before presenting the argument for Logic Realism, we must clarify the framework's structure. LRT rests on **two co-primitive foundations**:
+
+1. **The Three Fundamental Logical Laws (3FLL)** - Identity, Non-Contradiction, Excluded Middle
+2. **The Infinite Information Space (IIS)** - The totality of distinguishable states
+
+These are not in a grounding relation where one explains the other. They are mutually constitutive: without 3FLL, IIS would be undifferentiated noise - no state distinguishable from any other. Without IIS, 3FLL would have nothing to structure - laws without a domain. Together they form the minimal ontological base from which the distinction between possibility and actuality can be articulated.
+
+This section establishes that 3FLL are ontologically constitutive (not merely cognitive or linguistic). Section 4 develops IIS as the co-primitive space that 3FLL structure. Section 5 explains how they jointly constitute Boolean actuality.
+
+### 3.1 Observation 1: Universal Compliance
+
+**No physical manifestation, observed or unobserved, violates the three laws of logic.**
+
+This is not merely an empirical generalization from limited data. Every successful physical theory, every measurement, every causal interaction we have documented respects logical structure. No state of affairs has ever been recorded that instantiates a contradiction. The universality is striking.
+
+Consider the history of physics. Newtonian mechanics, thermodynamics, electromagnetism, special and general relativity, quantum mechanics, quantum field theory, the Standard Model - all presuppose and respect classical logic at the meta-level. When apparent paradoxes arise (Zeno's paradoxes, the twin paradox, Schrödinger's cat), resolution always preserves logical consistency. The paradox is in our understanding, not in reality.
+
+Consider the attempts to interpret quantum mechanics as violating non-contradiction. Despite the strangeness of superposition, entanglement, and the measurement problem, quantum physics has consistently resisted interpretation as genuinely contradictory. What we find instead are complementarity frameworks, contextual properties, and probabilistic descriptions - all of which preserve logical consistency.
+
+### 3.2 Observation 2: Detection Capacity
+
+**Human representational capacity is sufficient to detect violations of the logical laws were they to occur.**
+
+This observation is crucial for blocking a deflationary explanation. One might claim that we observe no violations simply because our cognitive apparatus is blind to them - that contradictions exist but we cannot recognize them.
+
+Several considerations tell against this deflationary move:
+
+**Syntactic representation.** We can form representations of contradictions. We can write sentences describing violations. We understand what it would mean for something to violate non-contradiction: "This apple is entirely green and entirely not-green at the same instant." Our representational apparatus is sensitive enough that a genuine violation would create detectable anomalies in our physical descriptions.
+
+**Evolutionary pressure.** Contradictions are informational catastrophes. They eliminate inferential gradients. No agent could use contradictions to guide action because contradictions erase the difference between possible futures. If reality contained action-relevant contradictions, organisms that detected them would have survival advantages. Instead, evolution favored organisms that treat apparent contradictions as errors to be resolved - strong evidence that contradictions do not occur in survival-relevant reality.
+
+**Scientific instrumentation.** Our detection capacity extends far beyond unaided cognition. We have instruments sensitive to phenomena our ancestors could not conceive - quantum states, gravitational waves, cosmic background radiation. If logical violations occurred at any scale we can probe, the systematic success of logically-structured physical theories would be inexplicable.
+
+### 3.3 Candidate Explanations
+
+Why do we observe no violations of logical laws in physical reality? Six candidate explanations present themselves:
+
+**Candidate 1: Coincidence.** Perhaps it is mere happenstance that no violations have occurred in the portion of reality we have accessed.
+
+*Assessment:* Implausible given the universality of the observation across all domains, scales, and epochs of physical inquiry. Coincidence becomes untenable as an explanation for exceptionless regularity.
+
+**Candidate 2: Cognitive limitation.** Perhaps violations exist but our minds cannot detect them.
+
+*Assessment:* Ruled out by Observation 2. Our representational capacity is sufficient to form descriptions of violations. If they occurred, we would notice.
+
+**Candidate 3: Constitutive constraint.** The laws of logic are structural features of reality itself. Nothing actualizes in violation of them because nothing can - logical structure is a precondition for any state of affairs to exist.
+
+*Assessment:* This is the thesis we defend.
+
+**Candidate 4: Analytic truth.** Perhaps "violations of logic" are not impossible states but pseudo-propositions with no sense. Logic is not about reality's structure but about what counts as coherent description.
+
+*Assessment:* This explanation cannot account for the predictive success of mathematical physics. If mathematical success depended on linguistic grammar alone, then changing false assumptions should break predictions. But predictions are robust: idealized models (frictionless planes, point particles, infinite populations) yield correct predictions despite ontological falsehood. The structure works independent of the assumptions.
+
+**Candidate 5: Observer selection.** If observation requires logical structure, we would necessarily find ourselves in logically structured regions even if violations exist elsewhere.
+
+*Assessment:* Insufficient. It requires that structured regions instantiate logical laws anyway - relocating rather than eliminating the question. And it does not explain the fine-grained logical alignment we observe across all domains, including those causally disconnected from us.
+
+**Candidate 6: Description/described gap.** Perhaps all descriptions must be logically structured while what is described need not be.
+
+*Assessment:* Explanatorily inadequate. It cannot explain why descriptions continue to work across radically new physical domains, why mathematics predicts phenomena no one designed the mathematics for, or why the world is so comprehensively modelable. Moreover, even the distinction between description and described presupposes identity and non-contradiction.
+
+### 3.4 Inference to the Best Explanation
+
+Candidates 1 and 2 fail immediately. Candidates 4, 5, and 6 fail to explain the predictive success of mathematics, the uniformity of logical structure across disconnected regions, and the asymmetry between description and reality.
+
+Only Candidate 3 remains.
+
+By inference to the best explanation:
+
+> **The laws of logic are constitutive constraints on physical reality.**
+
+This is not to say that reality "obeys" logic as a student obeys a teacher. It is to say that reality *instantiates* logical structure - that determinate, non-contradictory, self-identical existence is what it means to be a physical state of affairs.
+
+### 3.5 The Strength of the Argument
+
+How strong is this inference? Not deductively certain. Inference to best explanation never achieves certainty. But the argument has significant force:
+
+- The explanandum is universal and exceptionless
+- Five of six candidates fail on independent grounds
+- The remaining candidate is coherent, parsimonious, and explanatorily powerful
+- No counterexamples exist despite extensive search
+
+Compare to other inferences to best explanation we accept: the reality of electrons, the age of the universe, the existence of other minds. Logic Realism is at least as well supported as these.
+
+This establishes the first primitive: 3FLL are constitutive. We now turn to the second primitive: the space that 3FLL structure.
+
+---
+
