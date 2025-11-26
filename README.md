@@ -2,6 +2,8 @@
 
 **The Three Fundamental Laws of Logic as Ontological Constraints on Physical Reality**
 
+**Author**: James D. (JD) Longmire | jdlongmire@outlook.com | [ORCID](https://orcid.org/0009-0009-1383-7698)
+
 **License**: Apache 2.0
 
 ---
@@ -74,14 +76,6 @@ archive/                 # Historical artifacts
   url = {https://github.com/jdlongmire/logic-realism-theory}
 }
 ```
-
----
-
-## Author
-
-James D. (JD) Longmire
-**Email**: jdlongmire@outlook.com
-**ORCID**: [0009-0009-1383-7698](https://orcid.org/0009-0009-1383-7698)
 
 ---
 
