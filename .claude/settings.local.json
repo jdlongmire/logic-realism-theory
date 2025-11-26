@@ -28,7 +28,9 @@
       "WebFetch(domain:www.nature.com)",
       "Bash(git log:*)",
       "Bash(jupyter --version:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(jobs)",
+      "Bash(pstree:*)"
     ],
     "deny": [],
     "ask": []
