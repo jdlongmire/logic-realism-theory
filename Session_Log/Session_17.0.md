@@ -69,7 +69,16 @@ Part II begins. Key elements:
 
 **Word count**: ~1,400 words
 **Source**: Paper 2 §2.3, §4
-**Status**: Ready for ChatGPT review
+**Status**: COMPLETE (revised per ChatGPT feedback)
+
+**ChatGPT Feedback Incorporated**:
+- §7.1: Modal/actual distinction clarified
+- §7.2: Single-valuedness and distinguishability-preservation tightened
+- §7.3: Classical/QM descriptions enhanced; GPTs and PR-boxes added
+- §7.4: References reconstruction programs (Hardy, CDP)
+- §7.5: "stable structures capable of causal persistence" (not observers)
+- §7.6: Constitution/axiom/grounding language clarified
+- §7.7: Preview of reconstruction theorems added
 
 ---
 
@@ -77,6 +86,7 @@ Part II begins. Key elements:
 
 1. `ab0562c` - Draft Section 6: Objections and Responses
 2. `345618d` - Draft Section 7: The Interface Problem
+3. `1ecccd7` - Revise Section 7 per ChatGPT feedback
 
 ---
 
