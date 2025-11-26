@@ -136,7 +136,15 @@ Key elements:
 
 **Word count**: ~1,400 words
 **Source**: Paper 2 §6
-**Status**: Ready for ChatGPT review
+**Status**: COMPLETE (revised per ChatGPT feedback)
+
+**ChatGPT Feedback Incorporated**:
+- §10.1: Fixed sesquilinear/positive-definite; added composition compatibility
+- §10.2: Finite-dimensional; Kochen-Specker distinction; interpretation independence
+- §10.3: Refined "unique" with basis-independence and Gleason consistency
+- §10.4: Explicit derived/selected distinction
+- §10.5: Tensor-product composition reasoning
+- §10.6: Helstrom's theorem; Holevo bound added
 
 ---
 
@@ -150,6 +158,7 @@ Key elements:
 6. `c58c2bb` - Draft Section 9: Why Quantum Structure
 7. `1248fa3` - Revise Section 9 per ChatGPT feedback
 8. `ae3c1f7` - Draft Section 10: The Born Rule
+9. `124f66a` - Revise Section 10 per ChatGPT feedback
 
 ---
 
