@@ -22,7 +22,7 @@ Logic Realism Theory is presented as a 5-paper series:
 
 ---
 
-## Published Work
+## Published Pre-Prints
 
 **[Linking Logic Realism Theory (LRT) and the Meta-Theory of Everything (MToE): A Formal Equivalence](https://doi.org/10.5281/zenodo.17533459)**
 Zenodo, November 2025 | DOI: 10.5281/zenodo.17533459
