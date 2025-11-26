@@ -66,11 +66,35 @@ Session was interrupted but Section 6 was already drafted with ChatGPT feedback 
 
 ---
 
+## Source Artifact Mapping
+
+**5-Paper Framework** (created Session 15.0):
+- `theory/LRT_Paper1_Logic_Realism_Theory.md` → Part I (Sections 1-6) ✅
+- `theory/LRT_Paper2_It_From_Bit_Bit_From_Fit.md` → Part II (Sections 7-15)
+- `theory/LRT_Paper3_Mathematical_Structure.md` → Part III (Sections 16-22)
+- `theory/LRT_Paper4_Empirical_Signatures.md` → Part IV (Sections 23-30)
+- `theory/LRT_Paper5_Consilience.md` → Part V (Sections 31-37)
+
+**Part II Section Mapping** (from Paper 2):
+
+| Master § | Title | Paper 2 § |
+|----------|-------|-----------|
+| 7 | The Interface Problem | 2.3, 4 |
+| 8 | Distinguishability and the Bit | 3 |
+| 9 | Why Quantum Structure | 4-5 |
+| 10 | The Born Rule | 6 |
+| 11 | Dissolving Foundational Puzzles | 7 |
+| 12 | Quantum Fields and Emergence | 8 |
+| 13 | The Fine-Tuning Thesis | 9 |
+| 14 | Wheeler's "It from Bit" Grounded | 10 |
+| 15 | Completing Related Programs | 11 |
+
+---
+
 ## Next Steps
 
 1. **Section 7**: Begin Part II - Physical Interpretation
-   - The Interface Problem
-   - Why quantum structure?
+   - The Interface Problem (synthesize from Paper 2 §2.3, §4)
 
 ---
 
