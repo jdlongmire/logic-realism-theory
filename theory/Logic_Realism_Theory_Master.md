@@ -1177,3 +1177,119 @@ The next section develops the fine-tuning thesis more systematically, showing ho
 
 ---
 
+## 13. The Fine-Tuning Thesis
+
+Fine-tuning is typically discussed in terms of cosmic constants - if the fine-structure constant α or the cosmological constant Λ were slightly different, no stable atoms or galaxies would form. LRT reveals a deeper level: **structural fine-tuning** - the mathematical framework itself must be precisely as it is for any physics to exist.
+
+### 13.1 Three Levels of Fine-Tuning
+
+| Level | What Is Tuned | Examples | Status in LRT |
+|-------|---------------|----------|---------------|
+| **Constants** | Parameters within QM + GR | α, G, Λ, particle masses | Contingent |
+| **Structure** | Mathematical framework | Complex Hilbert space, Born rule, unitarity | Fine-tuned (selected) |
+| **Logic** | 3FLL themselves | Identity, Non-Contradiction, Excluded Middle | Constitutive (not tuned) |
+
+Standard fine-tuning discussions focus on Level 1. LRT reveals Level 2: the framework itself is fine-tuned in the sense that perturbations destroy physics.
+
+Level 3 is not fine-tuned in the same sense. 3FLL are constitutive - there is no space of "possible logics" from which classical logic was chosen. 3FLL are the condition for any structure at all. Asking "why 3FLL?" is like asking "why is anything self-identical?" - the question presupposes what it questions.
+
+### 13.2 The Depth of Structural Fine-Tuning
+
+Consider the chain of dependencies:
+
+1. **Without 3FLL:** No distinguishability, no structure, no possibility of determinate states
+2. **Without quantum structure:** No stable atoms, no chemistry, no complex matter
+3. **Without fine-tuned constants:** No stars, no planets, no life
+
+Level 1 (constants) gets attention because the numbers are striking - α ≈ 1/137, Λ ≈ 10⁻¹²² in Planck units. These numbers seem arbitrary and their values seem miraculous.
+
+But Level 2 (structure) is more fundamental. You cannot tune constants if the framework does not support stable physics at all. The question "what if α were different?" presupposes that quantum mechanics holds - otherwise α has no meaning.
+
+Quantum fine-tuning is the deepest level of contingency we can articulate - deeper than cosmic fine-tuning, because it concerns the framework within which cosmic parameters are defined.
+
+### 13.3 The Perturbation Argument Revisited
+
+Section 9 showed that perturbations to quantum structure destroy physics:
+
+| Perturbation | Consequence |
+|--------------|-------------|
+| Remove complex numbers | No interference; compositional inconsistency |
+| Alter unitarity | Norms blow up or decay |
+| Change Born exponent | No valid probability measure |
+| Use quaternions | Lose tomographic locality |
+| Use reals | Effectively classical |
+| Perturb linearity | Superluminal signaling |
+| Alter commutation | Pathological spectra |
+| Remove completeness | No well-defined dynamics |
+
+This is not parameter sensitivity within a framework. This is framework sensitivity - the mathematical structure itself cannot be perturbed without destroying physics entirely.
+
+Compare to constant fine-tuning: if α changes by 10%, atoms become unstable. If the structure of quantum mechanics changes at all, there is no framework in which "atoms" is even a concept.
+
+### 13.4 Why This Matters
+
+Fine-tuning is often framed as a puzzle requiring explanation. Common responses include:
+
+- **Multiverse:** Many universes exist with different values; we observe habitable ones (selection effect)
+- **Design:** An intelligent agent chose the values
+- **Brute fact:** The values just are what they are
+- **Deeper theory:** Some future theory will derive the values
+
+LRT does not resolve this puzzle. But it clarifies what the puzzle is.
+
+The question is not just: why these constants?
+The question is: why this structure?
+
+LRT shows that quantum structure is required for stable physics. It does not explain why stable physics exists. But it situates the question at the right level.
+
+### 13.5 Structural Fine-Tuning and Selection
+
+The relationship between structural fine-tuning and selection deserves careful statement.
+
+**Selection claim:** Among the structures in IIS that can interface with Boolean actuality, only quantum mechanics produces stable physics capable of supporting observers.
+
+**What this explains:** Why we observe quantum structure. Observers can only exist in quantum universes; therefore, observers observe quantum structure.
+
+**What this does not explain:** Why any such structure exists at all. Why IIS contains quantum structure among its possibilities. Why there are observers rather than none.
+
+The selection argument has the form of the Weak Anthropic Principle. It is not an explanation in the sense of deriving quantum mechanics from more fundamental principles. It is a constraint on what we can observe, given that we observe.
+
+### 13.6 Comparison to Cosmic Fine-Tuning
+
+| Feature | Cosmic Fine-Tuning | Structural Fine-Tuning |
+|---------|-------------------|----------------------|
+| What varies | Parameter values | Mathematical framework |
+| Range of possibilities | Continuous parameter space | Discrete structures (classical, quantum, etc.) |
+| Selection criterion | Habitable values | Stable physics |
+| Logical priority | Assumes framework | Framework itself at stake |
+
+Structural fine-tuning is logically prior: you need a framework before parameters can be defined. If quantum structure is not fine-tuned, there is no context for discussing whether α = 1/137 is fine-tuned.
+
+### 13.7 Open Questions About Fine-Tuning
+
+LRT situates fine-tuning without explaining it away. Several questions remain:
+
+1. **Is structural fine-tuning contingent or necessary?** Could there be a deeper principle from which quantum structure follows? Or is it brute fact at the structural level?
+
+2. **What is the space of alternative structures?** We know classical probability and various generalized probabilistic theories exist. What is the full space of possibilities in IIS?
+
+3. **Does the multiverse extend to structures?** If multiple parameter values exist (multiverse), do multiple structures also exist? What would a "structure multiverse" mean?
+
+4. **Can fine-tuning be explained by anthropic selection?** Selection explains observation but not existence. Why does IIS contain structures that produce observers?
+
+LRT frames these questions clearly without claiming to answer them. The framework shows where the mystery lies; it does not dissolve the mystery.
+
+### 13.8 What This Section Establishes
+
+We have shown:
+
+- Fine-tuning operates at three levels: constants, structure, and logic
+- Structural fine-tuning is deeper than cosmic fine-tuning
+- Quantum structure cannot be perturbed without destroying physics
+- Selection explains observation but not existence
+- LRT situates the fine-tuning puzzle without resolving it
+
+The next section examines how LRT grounds Wheeler's "it from bit" program - showing that the bit (fundamental distinction) derives from 3FLL, and quantum mechanics is what bit-structure looks like at the interface with actuality.
+
+---
+
