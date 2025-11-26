@@ -50,6 +50,10 @@ The Three Fundamental Logical Laws (3FLL) — Identity, Non-Contradiction, Exclu
 
 For development history and ongoing work, see the **[Session Log](Session_Log/)**.
 
+**Additional Resources**:
+- **[AI-Enabled Research Methodology](Logic_Realism_Theory_AI_Experiment.md)** - How this research uses AI collaboration
+- **[Comparative Scorecard](LRT_Current_Comparison_Scorecard.md)** - LRT vs other foundational approaches
+
 ---
 
 ## Repository Structure
