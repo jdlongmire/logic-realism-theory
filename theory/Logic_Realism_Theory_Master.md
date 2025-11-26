@@ -29,7 +29,7 @@ This paper defends a different view: **the three fundamental laws of logic are n
 
 On this view - Logic Realism Theory (LRT) - the laws of logic do not describe how we think about reality. They describe what reality must be. A world that violated Non-Contradiction would not be a strange world we could visit; it would not be a world at all. The logical laws are not filters we impose on experience but the conditions under which experience - and existence - are possible.
 
-The implications are substantial. If logic is constitutive of reality, then the structure of physics is not arbitrary. The "unreasonable effectiveness of mathematics" dissolves: mathematics and physics share a common root in logical structure. The puzzles of quantum mechanics - superposition, entanglement, the measurement problem - receive new interpretation. And a deep unity emerges across domains that appear disconnected: physics, information theory, thermodynamics, and computation converge on identical structures because they all study manifestations of the same underlying logical constitution.
+The implications are substantial. If logic is constitutive of reality, then the structure of physics is not arbitrary. The "unreasonable effectiveness of mathematics" (Wigner, 1960) dissolves: mathematics and physics share a common root in logical structure. The puzzles of quantum mechanics - superposition, entanglement, the measurement problem - receive new interpretation. And a deep unity emerges across domains that appear disconnected: physics, information theory, thermodynamics, and computation converge on identical structures because they all study manifestations of the same underlying logical constitution.
 
 ### 1.1 The Central Formula
 
@@ -278,7 +278,7 @@ The term "information" invites misunderstanding. We must specify what we mean.
 
 **What we do mean: distinguishability structure.** "Information" in IIS refers to the structure of possible distinctions. A "state" in IIS is whatever can be distinguished from other states. The "information content" of a region of IIS is the complexity of distinctions it contains.
 
-This usage aligns with a tradition running from Bateson - "information is a difference that makes a difference" (Bateson, 1972) - through Wheeler's "it from bit" (Wheeler, 1990). Information, in this sense, is more fundamental than matter or energy - it is the structure of distinction itself.
+This usage aligns with a tradition running from Bateson - "information is a difference that makes a difference" (Bateson, 1972) - through Wheeler's "it from bit" (Wheeler, 1990) and Shannon's foundational work on information theory (Shannon, 1948). Information, in this sense, is more fundamental than matter or energy - it is the structure of distinction itself.
 
 ### 4.3 The Modal Status of IIS
 
@@ -753,7 +753,7 @@ The relationship between quantum structure and physical stability is not logical
 | Change Born exponent from 2 | No valid probability measure (Gleason) |
 | Use quaternions instead | Lose tomographic locality in multi-system composition |
 | Use reals instead | Lose local tomography; effectively classical |
-| Perturb linearity | Non-linear evolution generically violates no-signaling (Gisin) |
+| Perturb linearity | Non-linear evolution generically violates no-signaling (Gisin, 1990) |
 | Alter commutation relations | Pathological spectra; no stable matter |
 | Remove Hilbert completeness | No well-defined dynamics |
 
@@ -929,11 +929,11 @@ The restriction to dimension ≥ 3 is a technical artifact, not a physical limit
 
 The Born rule has deep connections to information-theoretic principles:
 
-**Optimal state discrimination:** Helstrom's theorem shows the Born rule yields the maximal probability of correctly distinguishing quantum states. No other probability rule achieves better discrimination.
+**Optimal state discrimination:** Helstrom's theorem (Helstrom, 1976) shows the Born rule yields the maximal probability of correctly distinguishing quantum states. No other probability rule achieves better discrimination.
 
 **No-cloning constraint:** The specific form |⟨ψ|φ⟩|² is connected to the impossibility of perfectly copying unknown quantum states. Alternative probability rules either violate linearity (allowing cloning) or violate unitary reversibility (destroying information).
 
-**Entropy and information:** Von Neumann entropy, defined using the Born rule, has all the properties required of an information measure. Information capacity limits such as the Holevo bound presuppose the Born rule and fail under alternative rules.
+**Entropy and information:** Von Neumann entropy, defined using the Born rule, has all the properties required of an information measure. Information capacity limits such as the Holevo bound (Holevo, 1973) presuppose the Born rule and fail under alternative rules.
 
 These connections suggest that the Born rule is not just mathematically unique but informationally optimal - the natural way to extract Boolean outcomes from a structure designed to preserve distinguishability.
 
@@ -977,13 +977,13 @@ This is not a dynamical process requiring new physics. It is a **category transi
 - A derivation of the quantum-classical boundary
 - An explanation of why THIS outcome rather than THAT outcome (nor does any interpretation - nothing requires explanation for "which branch")
 
-The question "when exactly does Boolean actuality get enforced?" remains open. Candidate physical criteria include decoherence (Zurek, Zeh), irreversible amplification, thermodynamic gradients, gravitational thresholds (Penrose), and information transfer to the environment (Quantum Darwinism). LRT is compatible with any of these as the physical marker of the transition. What LRT adds is the interpretation: whatever the physical criterion, what happens is category transition, not collapse dynamics.
+The question "when exactly does Boolean actuality get enforced?" remains open. Candidate physical criteria include decoherence (Zurek, 2003; Schlosshauer, 2007), irreversible amplification, thermodynamic gradients, gravitational thresholds (Penrose, 1996), and information transfer to the environment (Quantum Darwinism). LRT is compatible with any of these as the physical marker of the transition. What LRT adds is the interpretation: whatever the physical criterion, what happens is category transition, not collapse dynamics.
 
 The remaining question - why THIS outcome? - may have no answer. If selection among outcomes satisfying 3FLL is genuinely stochastic, then "why this one?" has no deeper explanation. The Born rule gives probabilities; it may not admit further grounding.
 
 ### 11.2 Entanglement and Non-Locality
 
-**The puzzle:** Entangled particles exhibit correlations that cannot be explained by local hidden variables (Bell's theorem). Measuring one particle seems to instantaneously affect the other, regardless of distance. How can this be, given that no signal travels faster than light?
+**The puzzle:** Entangled particles exhibit correlations that cannot be explained by local hidden variables (Bell, 1964). Measuring one particle seems to instantaneously affect the other, regardless of distance. How can this be, given that no signal travels faster than light?
 
 **The dissolution:** There is no "spooky action at a distance" because there is no action.
 
@@ -1424,19 +1424,19 @@ The major interpretations of quantum mechanics each capture something important.
 
 LRT provides what Copenhagen refused: the wave function is IIS structure, real but not actual until measurement. Copenhagen's operational success reflects the correctness of the IIS/actuality interface. Copenhagen's silence on ontology reflects legitimate caution about conflating the domains.
 
-**QBism:** QBism (Quantum Bayesianism) says quantum states are agent's beliefs about future experiences. States are not objective features of the world but subjective degrees of belief.
+**QBism:** QBism (Quantum Bayesianism; Fuchs and Schack, 2013) says quantum states are agent's beliefs about future experiences. States are not objective features of the world but subjective degrees of belief.
 
 LRT grounds what those beliefs track. Beliefs are not arbitrary; they correspond to genuine features of IIS. The wave function represents real structure - the agent's beliefs are about something. QBism correctly identifies the subjective element in measurement but underestimates the objective element in IIS.
 
-**Relational QM:** Rovelli's relational interpretation says properties are relative to interactions. There is no absolute fact about which outcome occurred; facts are relative to observers.
+**Relational QM:** Rovelli's relational interpretation (Rovelli, 1996) says properties are relative to interactions. There is no absolute fact about which outcome occurred; facts are relative to observers.
 
 LRT explains why: context determines which partition of IIS interfaces with actuality. Different interactions probe different aspects of IIS structure. The relational character is real but not because facts are subjective - because IIS structure is context-sensitive in its actualization.
 
-**Many-Worlds:** Everett's interpretation preserves wave function realism and removes collapse. All branches are equally real.
+**Many-Worlds:** Everett's interpretation (Everett, 1957) preserves wave function realism and removes collapse. All branches are equally real.
 
 LRT preserves MWI's insights (wave function realism, no collapse mechanism) while restoring single actuality. The "branches" exist as possibilities in IIS; one actualizes. MWI correctly identified the reality of quantum states but conflated IIS with actuality.
 
-**Bohmian Mechanics:** Pilot-wave theory adds definite particle positions to the wave function. Particles follow deterministic trajectories guided by the wave.
+**Bohmian Mechanics:** Pilot-wave theory (Bohm, 1952) adds definite particle positions to the wave function. Particles follow deterministic trajectories guided by the wave.
 
 LRT shares Bohmian mechanics' commitment to definite outcomes but locates them differently. For LRT, definiteness emerges at the IIS/actuality interface, not from hidden variables. Bohm correctly intuited that something definite underlies quantum phenomena but located it in particle positions rather than in the structure of actuality itself.
 
@@ -1460,7 +1460,7 @@ LRT explains why: the bit is the fundamental unit of distinguishability. Element
 
 LRT connects to several principles from physics and information theory:
 
-**Landauer's principle:** Erasing one bit of information costs at least kT ln 2 of energy. Information erasure has thermodynamic cost.
+**Landauer's principle:** Erasing one bit of information costs at least kT ln 2 of energy (Landauer, 1961). Information erasure has thermodynamic cost.
 
 In LRT terms: destroying a distinction has thermodynamic cost because distinctions are ontologically real. Erasure is not merely subjective loss of knowledge; it is objective reduction of structure.
 
@@ -1468,13 +1468,13 @@ In LRT terms: destroying a distinction has thermodynamic cost because distinctio
 
 In LRT terms: distinguishability has a spatial density limit. There is a maximum number of bits per Planck area. The holographic bound reflects the finite granularity of distinguishability.
 
-**Bekenstein bound:** A region of space has finite information capacity proportional to its size and energy.
+**Bekenstein bound:** A region of space has finite information capacity proportional to its size and energy (Bekenstein, 1973).
 
 In LRT terms: actuality can only support finite distinguishability in finite regions. The bound is not merely thermodynamic but logical - finite regions cannot instantiate infinite distinction.
 
 ### 15.4 Mathematical Universe Refined
 
-Tegmark's Mathematical Universe Hypothesis (MUH) claims that reality IS mathematical structure. All consistent mathematical structures exist; we inhabit one.
+Tegmark's Mathematical Universe Hypothesis (MUH; Tegmark, 2008) claims that reality IS mathematical structure. All consistent mathematical structures exist; we inhabit one.
 
 LRT refines this:
 
@@ -1523,6 +1523,82 @@ We have shown:
 - LRT does not replace these programs but completes them
 
 This concludes Part II: Physical Interpretation. Part III will develop the mathematical formalization.
+
+---
+
+## References
+
+Aristotle. *Metaphysics*, trans. W. D. Ross, revised by J. Barnes. Princeton University Press, 1984.
+
+Aspect, A., Grangier, P., and Roger, G. "Experimental tests of Bell's inequalities using time-varying analyzers." *Physical Review Letters* 49(25), 1982: 1804-1807.
+
+Bateson, G. *Steps to an Ecology of Mind*. University of Chicago Press, 1972.
+
+Beall, J. C. and Restall, G. *Logical Pluralism*. Oxford: Clarendon Press, 2006.
+
+Bekenstein, J. D. "Black holes and entropy." *Physical Review D* 7(8), 1973: 2333-2346.
+
+Bell, J. S. "On the Einstein Podolsky Rosen paradox." *Physics* 1(3), 1964: 195-200.
+
+Bohm, D. "A suggested interpretation of the quantum theory in terms of 'hidden' variables." *Physical Review* 85(2), 1952: 166-193.
+
+Caves, C. M., Fuchs, C. A., and Schack, R. "Quantum probabilities as Bayesian probabilities." *Physical Review A* 65(2), 2002: 022305.
+
+Chiribella, G., D'Ariano, G. M., and Perinotti, P. "Informational derivation of quantum theory." *Physical Review A* 84(1), 2011: 012311.
+
+Dakić, B. and Brukner, Č. "Quantum theory and beyond: Is entanglement special?" In H. Halvorson (ed.), *Deep Beauty: Understanding the Quantum World through Mathematical Innovation*. Cambridge University Press, 2011.
+
+Everett, H. "Relative state formulation of quantum mechanics." *Reviews of Modern Physics* 29(3), 1957: 454-462.
+
+Fuchs, C. A. and Schack, R. "Quantum-Bayesian coherence." *Reviews of Modern Physics* 85(4), 2013: 1693-1715.
+
+Ghirardi, G. C., Rimini, A., and Weber, T. "Unified dynamics for microscopic and macroscopic systems." *Physical Review D* 34(2), 1986: 470-491.
+
+Gisin, N. "Weinberg's non-linear quantum mechanics and superluminal communications." *Physics Letters A* 143(1-2), 1990: 1-2.
+
+Gleason, A. M. "Measures on the closed subspaces of a Hilbert space." *Journal of Mathematics and Mechanics* 6(6), 1957: 885-893.
+
+Hardy, L. "Quantum theory from five reasonable axioms." arXiv:quant-ph/0101012, 2001.
+
+Helstrom, C. W. *Quantum Detection and Estimation Theory*. Academic Press, 1976.
+
+Hensen, B., et al. "Loophole-free Bell inequality violation using electron spins separated by 1.3 kilometres." *Nature* 526, 2015: 682-686.
+
+Holevo, A. S. "Bounds for the quantity of information transmitted by a quantum communication channel." *Problems of Information Transmission* 9(3), 1973: 177-183.
+
+Kochen, S. and Specker, E. P. "The problem of hidden variables in quantum mechanics." *Journal of Mathematics and Mechanics* 17(1), 1967: 59-87.
+
+Landauer, R. "Irreversibility and heat generation in the computing process." *IBM Journal of Research and Development* 5(3), 1961: 183-191.
+
+Masanes, L. and Müller, M. P. "A derivation of quantum theory from physical requirements." *New Journal of Physics* 13, 2011: 063001.
+
+Penrose, R. "On gravity's role in quantum state reduction." *General Relativity and Gravitation* 28(5), 1996: 581-600.
+
+Priest, G. *In Contradiction: A Study of the Transconsistent*. 2nd edn. Oxford University Press, 2006.
+
+Pusey, M. F., Barrett, J., and Rudolph, T. "On the reality of the quantum state." *Nature Physics* 8, 2012: 475-478.
+
+Quine, W. V. O. "Two Dogmas of Empiricism." *The Philosophical Review* 60(1), 1951: 20-43.
+
+Renou, M.-O., et al. "Quantum theory based on real numbers can be experimentally falsified." *Nature* 600, 2021: 625-629.
+
+Rovelli, C. "Relational quantum mechanics." *International Journal of Theoretical Physics* 35(8), 1996: 1637-1678.
+
+Schlosshauer, M. *Decoherence and the Quantum-to-Classical Transition*. Springer, 2007.
+
+Shannon, C. E. "A mathematical theory of communication." *Bell System Technical Journal* 27(3), 1948: 379-423.
+
+Tarski, A. "The semantic conception of truth and the foundations of semantics." *Philosophy and Phenomenological Research* 4(3), 1944: 341-376.
+
+Tegmark, M. "The mathematical universe." *Foundations of Physics* 38(2), 2008: 101-150.
+
+Tsirelson, B. S. "Quantum generalizations of Bell's inequality." *Letters in Mathematical Physics* 4(2), 1980: 93-100.
+
+Wheeler, J. A. "Information, physics, quantum: The search for links." In W. Zurek (ed.), *Complexity, Entropy, and the Physics of Information*. Addison-Wesley, 1990.
+
+Wigner, E. P. "The unreasonable effectiveness of mathematics in the natural sciences." *Communications on Pure and Applied Mathematics* 13(1), 1960: 1-14.
+
+Zurek, W. H. "Decoherence, einselection, and the quantum origins of the classical." *Reviews of Modern Physics* 75(3), 2003: 715-775.
 
 ---
 
