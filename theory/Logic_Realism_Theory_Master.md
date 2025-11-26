@@ -1093,19 +1093,21 @@ LRT articulates a hierarchy from logical foundation to observable physics:
 | 3: Quantum Fields | Dynamic structure | Excitation modes |
 | 4: Particles | Phenomenological | Localized excitations |
 
+Note the progression: from constitutive → selected → contingent → phenomenological. Each level is real and physically serious, but the ontological grounding shifts as we move down the hierarchy.
+
 This inverts the usual picture. Standard physics thinks: particles are fundamental; fields describe their interactions; Hilbert space is mathematical formalism; logic is how we reason about results.
 
 LRT reverses this: logic is foundational; IIS is what logical distinguishability generates; Hilbert space is what distinguishability looks like when stability-selected; fields are modes of excitation; particles are what we observe when fields are locally excited.
 
 ### 12.2 Quantum Fields as Distinguishability Modes
 
-At Level 3, quantum fields are not substances but **modes of distinguishability** in IIS. Each field represents a particular way that distinctions can be made:
+At Level 3, quantum fields are physical structures that implement particular **modes of distinguishability** in IIS. Each field represents a particular way that distinctions can be made:
 
 - The **electron field** represents a mode where distinctions carry electric charge, spin-1/2, and lepton number
 - The **photon field** represents a mode where distinctions carry spin-1, zero mass, and mediate electromagnetic interaction
 - The **quark fields** represent modes with fractional charge, color charge, and baryon number
 
-The mathematical structures describing these fields (spinor fields, gauge fields, etc.) are not arbitrary - they encode how the corresponding distinguishability modes transform under symmetry operations (Lorentz, gauge).
+The mathematical structures describing these fields (spinor fields, gauge fields, etc.) are not arbitrary - they encode how these modes transform under Lorentz and internal gauge symmetries via unitary representations.
 
 ### 12.3 Particles as Local Excitations
 
@@ -1117,7 +1119,7 @@ At Level 4, particles are what we observe when fields have localized excitations
 
 This explains why particles are countable (discrete excitation numbers), why identical particles are truly identical (same mode), and why particle physics has the structure it does (mode-mixing, creation/annihilation).
 
-The particle concept is not fundamental - it is phenomenological. What we call "an electron" is really "one unit of excitation in the electron mode of distinguishability." At high energies or in extreme conditions, the particle picture breaks down and the field picture becomes essential.
+The particle concept is not fundamental - it is *emergent*: accurate and indispensable at many scales, but derivative of field structure. What we call "an electron" is really "one unit of excitation in the electron mode of distinguishability." At high energies or in extreme conditions, the particle picture breaks down and the field picture becomes essential.
 
 ### 12.4 The Standard Model Structure
 
@@ -1129,6 +1131,8 @@ The Standard Model describes:
 
 In LRT terms, this structure represents the specific distinguishability modes that exist in our universe. The gauge symmetries encode how distinctions transform; the matter fields represent fermionic modes; the interaction fields mediate relationships between modes.
 
+LRT does not alter Standard Model dynamics; it reinterprets their place in the logical hierarchy.
+
 ### 12.5 What LRT Does Not Explain About Fields
 
 The hierarchy situates quantum fields within the logical framework but does not derive their specifics. LRT does not explain:
@@ -1139,7 +1143,7 @@ The hierarchy situates quantum fields within the logical framework but does not 
 - **Why THESE masses** - the specific values of particle masses
 - **Why THESE coupling constants** - the specific strengths of interactions
 
-These represent further fine-tuning beyond structural fine-tuning. LRT shows that quantum structure is necessary for stable physics; it does not show why quantum structure has these particular field contents.
+These represent further fine-tuning beyond structural fine-tuning. LRT shows that quantum structure is necessary for stable physics; it does not show why quantum structure has these particular field contents. These remain as open targets for deeper unification or further selection principles beyond those articulated here.
 
 ### 12.6 The Emergence Question
 
@@ -1149,7 +1153,7 @@ A natural question: how do higher levels emerge from lower levels?
 
 **Level 1 → Level 2:** Hilbert space structure is selected by stability from among IIS structures that can interface with Boolean actuality. This is selection, not derivation.
 
-**Level 2 → Level 3:** Quantum fields arise as dynamical structures on Hilbert space - specific representations of symmetry groups that encode how distinguishability modes behave.
+**Level 2 → Level 3:** Quantum fields arise as dynamical structures on Hilbert space via representations of symmetry groups and local field operators that encode how distinguishability modes behave.
 
 **Level 3 → Level 4:** Particles emerge phenomenologically when fields have localized excitations that can be counted and tracked.
 
@@ -1159,7 +1163,7 @@ The transitions from Level 2 onward involve progressively more contingent struct
 
 Modern particle physics uses **effective field theory (EFT)**: describing physics at a given energy scale without requiring complete knowledge of higher-energy structure. At each scale, appropriate degrees of freedom and symmetries suffice.
 
-LRT is compatible with EFT. The hierarchy (logic → IIS → Hilbert space → fields → particles) does not require deriving lower levels from higher ones. Each level can be described in its own terms while recognizing its place in the larger structure.
+LRT is compatible with EFT. The hierarchy (logic → IIS → Hilbert space → fields → particles) does not require deriving lower levels from higher ones. Each level can be described in its own terms while recognizing its place in the larger structure. LRT is compatible with multiple EFT descriptions at different scales; the logical hierarchy does not require a single micro-theory to be explicitly known.
 
 The question "what is fundamental?" receives a nuanced answer: 3FLL and IIS are constitutively fundamental; Hilbert space is stability-selected fundamental; fields and particles are phenomenologically fundamental at appropriate scales.
 
@@ -1191,7 +1195,7 @@ Fine-tuning is typically discussed in terms of cosmic constants - if the fine-st
 
 Standard fine-tuning discussions focus on Level 1. LRT reveals Level 2: the framework itself is fine-tuned in the sense that perturbations destroy physics.
 
-Level 3 is not fine-tuned in the same sense. 3FLL are constitutive - there is no space of "possible logics" from which classical logic was chosen. 3FLL are the condition for any structure at all. Asking "why 3FLL?" is like asking "why is anything self-identical?" - the question presupposes what it questions.
+Level 3 is not fine-tuned in the same sense. From within LRT, 3FLL are constitutive; treating them as "one option among many logics" presupposes the very distinguishability they make possible. 3FLL are the condition for any structure at all. Asking "why 3FLL?" is like asking "why is anything self-identical?" - the question presupposes what it questions.
 
 ### 13.2 The Depth of Structural Fine-Tuning
 
@@ -1240,7 +1244,7 @@ LRT does not resolve this puzzle. But it clarifies what the puzzle is.
 The question is not just: why these constants?
 The question is: why this structure?
 
-LRT shows that quantum structure is required for stable physics. It does not explain why stable physics exists. But it situates the question at the right level.
+LRT shows that quantum structure is required for stable physics. It does not explain why stable physics exists. But it situates the question at the right level. LRT doesn't answer the "why" but sharpens it: the core question is why a universe with stable quantum structure exists at all.
 
 ### 13.5 Structural Fine-Tuning and Selection
 
@@ -1259,7 +1263,7 @@ The selection argument has the form of the Weak Anthropic Principle. It is not a
 | Feature | Cosmic Fine-Tuning | Structural Fine-Tuning |
 |---------|-------------------|----------------------|
 | What varies | Parameter values | Mathematical framework |
-| Range of possibilities | Continuous parameter space | Discrete structures (classical, quantum, etc.) |
+| Range of possibilities | Continuous parameter space | Distinct frameworks (classical, quantum, super-quantum GPTs, etc.) |
 | Selection criterion | Habitable values | Stable physics |
 | Logical priority | Assumes framework | Framework itself at stake |
 
@@ -1317,9 +1321,9 @@ LRT answers Wheeler's implicit questions:
 
 **Where do bits come from?** Bits do not "come from" anywhere - they are the fundamental structure that 3FLL establish. Without identity, non-contradiction, and excluded middle, there are no distinctions. With them, the bit is the minimal distinction.
 
-**Why binary?** Because 3FLL enforce determinacy. In actuality, every proposition is true or false - Excluded Middle. The binary structure is not a choice; it is constitutive.
+**Why binary?** Binary structure reflects Excluded Middle applied at the level of actuality: every actual proposition is either true or false. The binary structure is not a choice; it is constitutive of what actuality means.
 
-**How do bits become particles?** Through the interface between IIS and Boolean actuality. Possibilities in IIS become actual when 3FLL are enforced. Particles are patterns of actualized bits.
+**How do bits become particles?** Through the interface between IIS and Boolean actuality. Possibilities in IIS become actual when 3FLL are enforced. Particles are patterns of actualized bits structured by the quantum interface and field modes.
 
 ### 14.3 "Bit from Fit"
 
@@ -1350,7 +1354,7 @@ This is the conjecture S = ℏC from Section 8. If correct:
 - ℏ is also the conversion factor from bits to action
 - One bit of logical distinction corresponds to ℏ of physical action
 
-This identification is conjectural but supported by:
+S = ℏC is not required for LRT's core logical claims; it is a proposed quantitative bridge between bit-structure and physical action. This identification is conjectural but supported by:
 
 **The Planck scale:** At lengths ~ ℓ_P = √(ℏG/c³), the bit-structure of distinguishability becomes directly relevant. The Planck scale is where logical granularity meets physical granularity.
 
@@ -1506,7 +1510,7 @@ The information-theoretic program has the right intuition but often lacks philos
 | Zeilinger | Elementary = 1 bit | Constitutional explanation |
 | Landauer | Erasure cost | Ontological basis |
 | Holography | Area bounds | Distinguishability limit |
-| Tegmark | Mathematical existence | Selection mechanism |
+| Tegmark | Mathematical existence | Selection via stability and 3FLL-constituted distinguishability |
 
 ### 15.7 What This Section Establishes
 
