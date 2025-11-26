@@ -248,3 +248,87 @@ This establishes the first primitive: 3FLL are constitutive. We now turn to the 
 
 ---
 
+## 4. The Infinite Information Space (IIS)
+
+Having established that 3FLL are constitutive of physical reality, we now develop the second primitive: the Infinite Information Space. This is not a second, independent ontology but the co-primitive partner to 3FLL - the domain that logical structure structures.
+
+### 4.1 What IIS Is
+
+**Definition:** The Infinite Information Space (IIS) is the totality of distinguishable states - every possible informational configuration constituted by 3FLL.
+
+Several clarifications are essential:
+
+**IIS is not a Platonic realm.** We do not posit abstract objects floating in a separate domain. IIS is not "somewhere else" - it is the structural space of what can be distinguished.
+
+**IIS is not a set-theoretic construction.** We do not define IIS as a set of possible worlds or a collection of maximal consistent state-descriptions. Such constructions face cardinality paradoxes. IIS is better understood as a structural concept - what 3FLL make possible - than as a completed totality.
+
+**IIS is not merely epistemic.** It does not represent what we do not know about an otherwise determinate reality. IIS contains genuinely indeterminate states - configurations that are distinguishable but not yet resolved into definite actuality.
+
+**The positive characterization:** IIS is the **space of possibility** constituted by logical distinguishability. It is what can be, given that distinction is possible at all. Its "existence" is not the existence of a thing among things, but the existence of a structural condition - the condition under which there can be distinct states at all.
+
+### 4.2 What "Information" Means
+
+The term "information" invites misunderstanding. We must specify what we mean.
+
+**Not Shannon information.** Shannon information is a statistical measure of surprise or entropy, defined relative to probability distributions over messages. IIS is not a communication channel and does not presuppose senders, receivers, or probabilities.
+
+**Not semantic information.** Semantic information concerns meaning - what propositions are about. IIS is more primitive than meaning; it concerns what can be distinguished, not what distinctions mean.
+
+**Not physical information (in the usual sense).** Physical information typically refers to degrees of freedom in a physical system - bits stored in memory, quantum states of particles. But IIS is not itself a physical system; it is the space from which physical systems are actualized.
+
+**What we do mean: distinguishability structure.** "Information" in IIS refers to the structure of possible distinctions. A "state" in IIS is whatever can be distinguished from other states. The "information content" of a region of IIS is the complexity of distinctions it contains.
+
+This usage aligns with a tradition running from Bateson - "information is a difference that makes a difference" (Bateson, 1972) - through Wheeler's "it from bit" (Wheeler, 1990). Information, in this sense, is more fundamental than matter or energy - it is the structure of distinction itself.
+
+### 4.3 The Modal Status of IIS
+
+What kind of thing is IIS? This question deserves careful treatment.
+
+The risk of Pythagoreanism - the view that "structure is substance" or "mathematics is reality" - is real but navigable. We do not claim that IIS is made of mathematics. We claim that IIS is the structural space that 3FLL constitute, and that physical reality is what actualizes within it. The relationship is constitutive, not compositional.
+
+This parallels standard moves in philosophy of modality. Just as possible worlds semantics does not require believing in concrete parallel universes (Lewis, 1986), IIS does not require believing in a separate realm of informational states. It is a framework for articulating what follows from the constitutive role of 3FLL.
+
+### 4.4 Defending Co-Primitiveness
+
+The claim that 3FLL and IIS are co-primitive may seem stipulative - a way of avoiding the hard question of which is more fundamental. We defend it as follows:
+
+**The grounding regress.** If 3FLL ground IIS, what grounds 3FLL? If IIS grounds 3FLL, what grounds IIS? Any grounding chain must terminate somewhere. We propose that 3FLL and IIS terminate together - neither grounds the other because each requires the other to be what it is.
+
+**Mutual constitution is coherent.** Consider the relationship between a metric and a space. The metric defines distances; the space is what has distances. Neither is prior - they are co-constitutive aspects of a single structure. Similarly, 3FLL and IIS are co-constitutive aspects of the structure of distinguishability.
+
+**The magnetic poles analogy.** The north and south poles of a magnet are mutually dependent - you cannot have one without the other. But neither pole causes or temporally precedes the other. They are co-present aspects of a single magnetic structure.
+
+Similarly, 3FLL and IIS do not "start" in sequence. They are co-present aspects of the structure of distinguishability itself. The question "which came first?" is malformed, just as "which came first, the north pole or the south pole?" is malformed.
+
+**The alternative is worse.** If we take 3FLL alone as primitive, we face the question: 3FLL over what domain? If we take IIS alone as primitive, we face the question: what makes its states distinguishable? The co-primitiveness thesis answers both at once.
+
+### 4.5 IIS Is Not Boolean
+
+A crucial point: while 3FLL constitute distinguishability, they do not constrain IIS to be Boolean in structure.
+
+**Boolean** refers to a system where every element has a definite binary value - true/false, 0/1, actual/not-actual.
+
+**IIS contains more than Boolean structure.** It contains:
+- Determinate states (fully specified configurations)
+- Indeterminate states (distinguishable but not resolved to definite values)
+- Superpositions (specific indeterminate states with interference structure)
+- Classical mixtures (probabilistic combinations without interference)
+
+This distinction is essential:
+- **IIS:** Contains all distinguishable states, including indeterminate ones
+- **Actuality:** The domain where 3FLL are fully enforced - Boolean, determinate, non-contradictory
+
+The relationship between IIS and actuality is where quantum mechanics enters. This is developed in Part II.
+
+### 4.6 The Library Analogy
+
+Borges' "The Library of Babel" (1941) imagines a universe consisting of an enormous library containing every possible 410-page book - every true statement, every false statement, every string of gibberish. Most of it is noise. The meaningful books exist but are buried in infinity. Jonathan Basile's digital implementation (https://libraryofbabel.info/) allows exploration of this concept - every possible page of text is addressable and retrievable.
+
+IIS is analogous. It contains every possible informational configuration. Most are not physical. Most do not correspond to anything stable. But everything distinguishable is there.
+
+3FLL is what makes the library navigable. Without it, there are no distinct books - just undifferentiated text. 3FLL constitutes the possibility of one book being different from another.
+
+Actuality is the book we are reading. Why this book? That question points beyond what this section establishes. But we can say what the book is: it is one path through IIS, the one that actualizes under the constraints of 3FLL and the selection of parsimony.
+
+---
+
