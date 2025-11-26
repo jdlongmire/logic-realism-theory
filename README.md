@@ -77,6 +77,12 @@ archive/                 # Historical artifacts
 
 ---
 
+## Future Decisions
+
+- **T2/T1 Prediction Status**: Review whether the T2/T1 ≈ 0.81 prediction (from prior variational framework) should be included in the current 5-paper structure, modified, or retired given the shift from "derivation" to "structural fine-tuning" framing.
+
+---
+
 ## Citation
 
 ```bibtex
