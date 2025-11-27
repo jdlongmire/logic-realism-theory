@@ -120,15 +120,49 @@ Tier 3: Hilbert space → Schrödinger dynamics → Born rule → QM
 
 ## Master Paper Progress
 
-**Overall: 22/41 sections (~54%)**
+**Overall: 30/41 sections (~73%)**
 
 | Part | Sections | Status |
 |------|----------|--------|
 | Part I | 1-6 | **COMPLETE** (Philosophical Foundations, incl. CBP) |
 | Part II | 7-15 | **COMPLETE** (Physical Interpretation) |
 | Part III | 16-22 | **COMPLETE** (Mathematical Structure, incl. 17.10-17.11) |
-| Part IV | 23-30 | NOT STARTED (Empirical Signatures) |
+| Part IV | 23-30 | **COMPLETE** (Empirical Signatures) |
 | Part V | 31-41 | NOT STARTED (Implications & Extensions) |
+
+---
+
+## Part IV Completion (Session 19.0 continued)
+
+### 4. Part IV: Empirical Signatures (Sections 23-30)
+
+**Status: COMPLETE**
+
+All 8 sections drafted with multi-LLM (GPT) hypercritical review and corrections integrated:
+
+| Section | Title | Key Content |
+|---------|-------|-------------|
+| 23 | Introduction to Empirical Signatures | Categories: retrodictions, predictions, falsifiers |
+| 24 | Retrodictions | 17 quantum phenomena explained (interpretively unified) |
+| 25 | Confirmed Predictions | Complex QM (Renou et al., 2021) - shared with local tomography |
+| 26 | Current Experiments | Interface mechanisms (PD, GRW, decoherence) |
+| 27 | Novel Predictions | S = ℏC conjecture, structural fine-tuning |
+| 28 | Quantum Computing | Interpretive only - no predictive content |
+| 29 | Falsifiers | Reconstruction vs LRT-specific; falsifiability at all levels |
+| 30 | Research Program | Empirical status, achievements, limitations, future work |
+
+**Key themes enforced throughout Part IV:**
+- Honest accounting: derived vs inherited vs conjectural
+- Reconstruction framework acknowledgment (Masanes-Müller, Gleason)
+- LRT's contribution is explanatory unification, not novel prediction
+- S = ℏC is the only pathway to novel testable predictions
+- Falsifiability spans physical axioms to logical commitments
+
+**Notable additions:**
+- Section 26.6: "LRT converts collapse vs no-collapse dilemma into empirical question"
+- Section 27.7: "Only pathway for novel predictions is exact saturation of information-theoretic bounds"
+- Section 28.6: "Quantum computing tests engineering, not foundations"
+- Section 29.6: "Falsifiable at every level - from physical axioms to logical commitments"
 
 ---
 
@@ -141,23 +175,15 @@ Tier 3: Hilbert space → Schrödinger dynamics → Born rule → QM
 5. `31c1e72` - Update Session 19.0 log - complete status
 6. `b9b0820` - Create ISSUE 003: Lean 4 Formalization roadmap
 7. `f7d7828` - Update Session 19.0 log with ISSUE 003
+8. `2f5b8e9` - Complete Part IV: Empirical Signatures (Sections 23-30)
 
 ---
 
 ## Next Steps
 
-Ready to begin **Part IV: Empirical Signatures** (Sections 23-30)
+Ready to begin **Part V: Implications & Extensions** (Sections 31-41)
 
-Source material: `theory/LRT_Paper4_Empirical_Signatures.md`
-
-Proposed section mapping:
-- Section 23: Introduction to Empirical Signatures
-- Section 24: Retrodictions (what LRT explains)
-- Section 25: Already Confirmed Predictions
-- Section 26: Current Experiments (Interface mechanism)
-- Section 27: Novel Predictions (S=ℏC, structural fine-tuning)
-- Section 28: Implications for Quantum Computing
-- Section 29: Falsifiers (what would refute LRT)
-- Section 30: Research Program and Summary
+Remaining sections (11):
+- Section 31-41: Implications, extensions, conclusion
 
 ---
