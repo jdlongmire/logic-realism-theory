@@ -1860,6 +1860,165 @@ The next section derives the Born rule from this Hilbert space structure.
 
 ---
 
+## 18. Deriving the Born Rule
+
+The Born rule - the probability of outcome |φ⟩ when measuring state |ψ⟩ is |⟨φ|ψ⟩|² - is often taken as an independent axiom of quantum mechanics. This section shows it is derived, not assumed, within LRT.
+
+### 18.1 The Derivation Strategy
+
+The strategy parallels Section 17:
+
+1. Verify that LRT axioms satisfy Gleason's theorem premises
+2. Apply Gleason to conclude the unique probability measure
+3. Show this measure has the Born rule form
+
+### 18.2 Gleason's Theorem
+
+**Theorem 18.1 (Gleason, 1957).** Let ℋ be a Hilbert space with dim(ℋ) ≥ 3. Let μ be a function from projection operators on ℋ to [0,1] satisfying:
+
+1. **Non-negativity:** μ(P) ≥ 0 for all projections P
+2. **Normalization:** μ(I) = 1 (where I is the identity)
+3. **Finite additivity:** For orthogonal projections P₁, P₂, ..., Pₙ summing to I:
+   $$\sum_{i=1}^{n} \mu(P_i) = 1$$
+
+Then there exists a unique density operator ρ (positive semi-definite, trace 1) such that:
+
+$$\mu(P) = \text{Tr}(\rho P)$$
+
+For pure states ρ = |ψ⟩⟨ψ| and rank-1 projections P = |φ⟩⟨φ|:
+
+$$\mu(|φ⟩⟨φ|) = |\langle φ|ψ\rangle|^2$$
+
+This is the Born rule.
+
+### 18.3 Verification of Premises
+
+**Lemma 18.2.** The LRT axioms satisfy Gleason's premises.
+
+*Proof:*
+
+**Premise 1 (dim ≥ 3):** Corollary 17.4 establishes dim(ℋ) ≥ 3 for physically relevant subsystems.
+
+**Premise 2 (Non-negative measure):** Axiom 5(a) directly states μ(s, c) ≥ 0.
+
+**Premise 3 (Normalization):** Axiom 5(b) states Σᵢ μ(s, cᵢ) = 1 for any context C.
+
+**Premise 4 (Additivity for orthogonal projections):** This follows from Axiom 5(b) applied to orthogonal contexts. When projections P₁, ..., Pₙ are mutually orthogonal and sum to I, they form a valid context. Normalization gives additivity.
+
+**Premise 5 (Non-contextuality):** Axiom 5(d) directly states that μ(s, H) is independent of the orthogonal complement used to complete the context.
+
+All premises are satisfied. ∎
+
+### 18.4 Application of Gleason
+
+**Theorem 18.3 (Born Rule from LRT).** The interface probability measure μ induced by Axiom 5 has the form:
+
+$$\mu(s, P) = \text{Tr}(\rho_s P)$$
+
+For pure states s = |ψ⟩ and rank-1 outcomes P = |φ⟩⟨φ|:
+
+$$P(\phi|\psi) = |\langle\phi|\psi\rangle|^2$$
+
+*Proof:* By Lemma 18.2, the LRT axioms satisfy Gleason's premises. Gleason's theorem (Theorem 18.1) then determines the unique form of μ. ∎
+
+### 18.5 Why the Squared Magnitude
+
+The Born rule involves |⟨ψ|φ⟩|² - why squared, not linear or some other power?
+
+**Mathematical necessity:** The inner product ⟨ψ|φ⟩ is complex-valued. Probabilities must be real and non-negative. The squared magnitude |⟨ψ|φ⟩|² is the unique non-negative, basis-independent quantity constructible from the inner product that satisfies Gleason's additivity constraints.
+
+**Gleason's uniqueness:** The theorem shows that no other functional form satisfies the axioms. If probabilities were proportional to |⟨ψ|φ⟩|ⁿ for n ≠ 2, additivity would fail. The exponent 2 is not chosen; it is forced.
+
+**Connection to distinguishability:** Section 8 showed that distinguishability is pairwise, giving it quadratic structure. The Born rule's squared form reflects this pairwise character:
+- The amplitude ⟨ψ|φ⟩ captures the intrinsic relation between states in IIS
+- The squared magnitude |⟨ψ|φ⟩|² converts this to Boolean-compatible probability
+
+### 18.6 The Conditional Structure
+
+We must be precise about the logical dependencies:
+
+```
+Axioms 1-3 → Hilbert Space (via Masanes-Müller)
+     +
+Axiom 5 → Non-contextual measure
+     ↓
+Gleason's Theorem → Born Rule
+```
+
+The Born rule is derived *conditional on* Hilbert space structure and the non-contextual measure axiom. Hilbert space structure is itself derived from more primitive axioms. The derivation is genuine but layered.
+
+### 18.7 Mixed States and Density Operators
+
+Gleason's theorem naturally generalizes to mixed states.
+
+**Definition 18.4 (Mixed State).** A mixed state ρ is a positive semi-definite operator with Tr(ρ) = 1. It represents statistical mixtures or reduced states of entangled systems.
+
+**Theorem 18.5.** For any mixed state ρ and projection P:
+
+$$P(P|\rho) = \text{Tr}(\rho P)$$
+
+*Proof:* Direct consequence of Gleason's theorem, which applies to all states (pure and mixed). ∎
+
+**LRT interpretation:** Mixed states represent:
+1. **Classical ignorance:** We do not know which pure state the system is in
+2. **Entanglement:** The system is part of a larger entangled state; the reduced description is necessarily mixed
+3. **Decoherence:** Interaction with the environment has transferred phase information away
+
+In all cases, the Born rule applies via the trace formula.
+
+### 18.8 Contextuality as Corollary
+
+**Theorem 18.6 (Kochen-Specker, 1967).** For dim(ℋ) ≥ 3, there is no function v: P(ℋ) → {0,1} from projections to definite values satisfying:
+1. v(P) + v(P⊥) = 1 for complementary projections
+2. v is non-contextual (depends only on P, not the measurement context)
+
+*Proof:* Follows from Gleason. If such a v existed, it would be a probability measure with only values 0 and 1. Gleason shows all measures have form Tr(ρP), which takes continuous values in [0,1] except for eigenstates. But no state is simultaneously an eigenstate of all projection operators. Contradiction. ∎
+
+**LRT interpretation:** Contextuality is not a quantum anomaly - it is the signature of the IIS → Boolean interface. IIS states do not have pre-existing definite values for all observables. Values emerge at the interface, in context.
+
+### 18.9 Information-Theoretic Significance
+
+The Born rule has deep information-theoretic implications:
+
+**Optimal discrimination (Helstrom, 1976):** The Born rule yields the maximal probability of correctly distinguishing quantum states. No other probability rule achieves better discrimination - the Born rule is informationally optimal.
+
+**Holevo bound (Holevo, 1973):** The maximum classical information extractable from a quantum system is bounded by von Neumann entropy, which presupposes the Born rule. The bound reflects the finite information capacity of quantum states.
+
+**No-cloning (Wootters & Zurek, 1982):** The Born rule's specific form is connected to the impossibility of perfectly copying unknown quantum states. Alternative rules either violate linearity or destroy information.
+
+These connections suggest the Born rule is not arbitrary but informationally natural - the unique way to extract Boolean outcomes from distinguishability structure while preserving information-theoretic coherence.
+
+### 18.10 The Derivation Chain (Complete)
+
+```
+3FLL (Axiom 1)
+    ↓ constitutes
+Distinguishability (Axiom 2)
+    ↓ + physical constraints (Axiom 3)
+Complex Hilbert Space (Section 17, via Masanes-Müller)
+    ↓ + Boolean actuality (Axiom 4)
+    ↓ + non-contextual measure (Axiom 5)
+Born Rule (Theorem 18.3, via Gleason)
+    ↓
+QUANTUM MECHANICS
+```
+
+### 18.11 What This Section Establishes
+
+We have shown:
+
+- The Born rule follows from LRT axioms via Gleason's theorem
+- The squared magnitude is forced, not chosen
+- Mixed states are naturally accommodated
+- Contextuality is a corollary, not an anomaly
+- The Born rule has information-theoretic significance
+
+The derivation is conditional on Axioms 3-5, but these have philosophical grounding in LRT. The Born rule is not an independent postulate but a theorem of the framework.
+
+The next sections examine how existing interpretations fit within LRT's layer structure.
+
+---
+
 ## References
 
 Aristotle. *Metaphysics*, trans. W. D. Ross, revised by J. Barnes. Princeton University Press, 1984.
@@ -1949,6 +2108,8 @@ Tsirelson, B. S. "Quantum generalizations of Bell's inequality." *Letters in Mat
 Wheeler, J. A. "Information, physics, quantum: The search for links." In W. Zurek (ed.), *Complexity, Entropy, and the Physics of Information*. Addison-Wesley, 1990.
 
 Wigner, E. P. "The unreasonable effectiveness of mathematics in the natural sciences." *Communications on Pure and Applied Mathematics* 13(1), 1960: 1-14.
+
+Wootters, W. K. and Zurek, W. H. "A single quantum cannot be cloned." *Nature* 299, 1982: 802-803.
 
 Zurek, W. H. "Decoherence, einselection, and the quantum origins of the classical." *Reviews of Modern Physics* 75(3), 2003: 715-775.
 
