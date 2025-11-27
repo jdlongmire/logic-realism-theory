@@ -94,6 +94,7 @@ Tier 3: Hilbert space → Schrödinger dynamics → Born rule → QM
 |-------|-------|--------|
 | 001 | Axiom 3 Grounding | **CLOSED** |
 | 002 | Lagrangian/Hamiltonian | **CLOSED** |
+| 003 | Lean 4 Formalization | **PLANNED** (post-first-draft) |
 
 ---
 
@@ -117,6 +118,8 @@ Tier 3: Hilbert space → Schrödinger dynamics → Born rule → QM
 2. `f74e645` - Close ISSUE 001: Axiom 3 grounding complete
 3. `dffd738` - Close ISSUE 002: Add Section 17.10-17.11 (Dynamical Structure)
 4. `d6abd14` - Update Session 19.0 log with ISSUE 002 closure
+5. `31c1e72` - Update Session 19.0 log - complete status
+6. `b9b0820` - Create ISSUE 003: Lean 4 Formalization roadmap
 
 ---
 
