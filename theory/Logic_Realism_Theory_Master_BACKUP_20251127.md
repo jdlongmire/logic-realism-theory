@@ -66,17 +66,17 @@ The distinction between derivation and fine-tuning is crucial. We do not claim t
 
 The argument proceeds in six parts:
 
-**Part I (Sections 1-7)** establishes the philosophical foundations: what are the three laws, why think they are ontological, what objections arise, and how does IIS relate to 3FLL.
+**Part I (Sections 1-6)** establishes the philosophical foundations: what are the three laws, why think they are ontological, what objections arise, and how does IIS relate to 3FLL.
 
-**Part II (Sections 8-16)** develops the physical interpretation: the interface problem, why quantum structure survives, the Born rule, and how foundational puzzles dissolve.
+**Part II (Sections 7-15)** develops the physical interpretation: the interface problem, why quantum structure survives, the Born rule, and how foundational puzzles dissolve.
 
-**Part III (Sections 17-23)** provides the mathematical framework: precise axioms, the derivation chain from 3FLL to Hilbert space to Born rule, and how existing interpretations fit.
+**Part III (Sections 16-22)** provides the mathematical framework: precise axioms, the derivation chain from 3FLL to Hilbert space to Born rule, and how existing interpretations fit.
 
-**Part IV (Sections 24-31)** examines empirical grounding: retrodictions (what LRT explains), predictions (what LRT implies), and falsifiers (what would refute LRT).
+**Part IV (Sections 23-30)** examines empirical grounding: retrodictions (what LRT explains), predictions (what LRT implies), and falsifiers (what would refute LRT).
 
-**Part V (Sections 32-38)** presents the consilience argument: how independent domains converge on identical structures, supporting the thesis through unexpected agreement.
+**Part V (Sections 31-37)** presents the consilience argument: how independent domains converge on identical structures, supporting the thesis through unexpected agreement.
 
-**Part VI (Sections 39-42)** synthesizes: honest accounting of what is derived versus assumed, comparison to other frameworks, and conclusions.
+**Part VI (Sections 38-41)** synthesizes: honest accounting of what is derived versus assumed, comparison to other frameworks, and conclusions.
 
 The reader may proceed linearly or jump to sections of particular interest. However, the argument is cumulative: later sections presuppose earlier ones.
 
@@ -699,8 +699,8 @@ The interface problem now has a clear structure:
 The next sections develop each element of this argument:
 - Section 8 analyzes the bit as the fundamental unit of distinguishability
 - Section 9 examines why quantum structure specifically produces stability, showing how reconstruction theorems, stability arguments, and physical fine-tuning converge
-- Section 11 addresses the Born rule
-- Sections 12-16 develop implications and comparisons
+- Section 10 addresses the Born rule
+- Sections 11-15 develop implications and comparisons
 
 ---
 
@@ -883,7 +883,7 @@ The selection is genuine:
 
 This parallels cosmic fine-tuning arguments. We do not derive the value of the fine-structure constant α from first principles. We note that if α were significantly different, no stable atoms would form - and therefore no observers to measure α. The "explanation" is selection, not derivation.
 
-### 10.6 Structural Fine-Tuning
+### 9.6 Structural Fine-Tuning
 
 LRT adds something to standard fine-tuning discussions: it situates the selection at the level of **mathematical structure**, not just parameters.
 
@@ -895,7 +895,7 @@ Structural fine-tuning is more fundamental. Structural fine-tuning constrains th
 
 The question "why quantum mechanics?" becomes parallel to "why these constants?" Both are fine-tuning facts, with structural fine-tuning being logically prior. Constants require a framework; frameworks do not require constants.
 
-### 10.7 What This Section Establishes
+### 9.7 What This Section Establishes
 
 We have shown:
 
@@ -911,7 +911,7 @@ To complete the interface story, we must now understand why the mapping from rel
 
 ---
 
-## 11. The Born Rule
+## 10. The Born Rule
 
 The Born rule states that the probability of obtaining outcome |φ⟩ when measuring a system in state |ψ⟩ is:
 
@@ -919,7 +919,7 @@ $$P(\phi|\psi) = |\langle\phi|\psi\rangle|^2$$
 
 This is the central probabilistic law of quantum mechanics. Why does it have this specific form? This section shows that the Born rule is not an arbitrary postulate but follows from the structure of Hilbert space - which in turn reflects the pairwise character of distinguishability established in Section 8.
 
-### 11.1 From Pairwise Distinguishability to Inner Product
+### 10.1 From Pairwise Distinguishability to Inner Product
 
 Section 8 established that distinguishability is inherently pairwise: to distinguish is to compare. This relational character means that the natural mathematical structure on a space of distinguishable states is an **inner product** - a function that takes two vectors and returns a number measuring their relation.
 
@@ -940,7 +940,7 @@ The connection to distinguishability is direct:
 
 The inner product encodes the relational structure of distinguishability in IIS. It is the unique structure that captures pairwise relational distinguishability continuously and compatibly with composition.
 
-### 11.2 Gleason's Theorem: The Born Rule Is Unique
+### 10.2 Gleason's Theorem: The Born Rule Is Unique
 
 Given a Hilbert space structure, what probability measures are possible? This is not a question of preference but of mathematical necessity.
 
@@ -963,7 +963,7 @@ Any other probability rule would violate one of these requirements.
 
 Importantly, this result is independent of interpretation: hidden-variable, many-worlds, and operational approaches all inherit the Born rule from Hilbert-space geometry.
 
-### 11.3 Why the Squared Magnitude?
+### 10.3 Why the Squared Magnitude?
 
 The Born rule involves |⟨ψ|φ⟩|² - the squared magnitude of the inner product. Why squared, not linear or some other power?
 
@@ -979,7 +979,7 @@ Several considerations converge on this answer:
 
 The amplitude lives in IIS; the probability lives at the interface with Boolean actuality. Squaring is the operation that converts relational structure to Boolean-compatible measure.
 
-### 11.4 The Conditionality of the Derivation
+### 10.4 The Conditionality of the Derivation
 
 We must be precise about the logical structure here:
 
@@ -996,7 +996,7 @@ So the full picture is:
 
 The Born rule is derived *conditional on* Hilbert space structure. Hilbert space structure is selected *from among* logically possible interfaces. The derivation is genuine but conditional.
 
-### 11.5 What About Dimension 2?
+### 10.5 What About Dimension 2?
 
 Gleason's theorem requires dimension ≥ 3. What about qubits (dimension 2)?
 
@@ -1008,7 +1008,7 @@ In dimension 2, Gleason's theorem does not apply directly - there exist other ma
 
 The restriction to dimension ≥ 3 is a technical artifact, not a physical limitation. In any realistic physical context, the Born rule remains unique.
 
-### 11.6 Connection to Information Theory
+### 10.6 Connection to Information Theory
 
 The Born rule has deep connections to information-theoretic principles:
 
@@ -1020,7 +1020,7 @@ The Born rule has deep connections to information-theoretic principles:
 
 These connections suggest that the Born rule is not just mathematically unique but informationally optimal - the natural way to extract Boolean outcomes from a structure designed to preserve distinguishability.
 
-### 11.7 What This Section Establishes
+### 10.7 What This Section Establishes
 
 We have shown:
 
@@ -1036,11 +1036,11 @@ The next sections address how LRT dissolves foundational puzzles of quantum mech
 
 ---
 
-## 12. Dissolving Foundational Puzzles
+## 11. Dissolving Foundational Puzzles
 
 LRT does not solve the foundational puzzles of quantum mechanics in the sense of providing new dynamics or hidden variables. It **dissolves** them - showing that the puzzles arise from mistaken framings. Once the IIS/actuality distinction is understood, several long-standing problems cease to be puzzling.
 
-### 12.1 The Measurement Problem
+### 11.1 The Measurement Problem
 
 **The puzzle:** How does the smooth, deterministic evolution of the wave function produce discrete, random measurement outcomes? What constitutes a "measurement"? When does "collapse" occur?
 
@@ -1064,7 +1064,7 @@ The question "when exactly does Boolean actuality get enforced?" remains open. C
 
 The remaining question - why THIS outcome? - may have no answer. If selection among outcomes satisfying 3FLL is genuinely stochastic, then "why this one?" has no deeper explanation. The Born rule gives probabilities; it may not admit further grounding.
 
-### 12.2 Entanglement and Non-Locality
+### 11.2 Entanglement and Non-Locality
 
 **The puzzle:** Entangled particles exhibit correlations that cannot be explained by local hidden variables (Bell, 1964). Measuring one particle seems to instantaneously affect the other, regardless of distance. How can this be, given that no signal travels faster than light?
 
@@ -1083,7 +1083,7 @@ Bell's theorem rules out local hidden *variables* - pre-existing definite values
 
 This explains why entanglement produces correlations but not signaling. The correlations reflect the logical structure of a unified state. No information travels because there is nothing traveling - just global consistency being enforced. The marginal statistics at each location remain unchanged regardless of what measurement is performed at the other - no-signaling is preserved precisely because the joint configuration already contains the constraint; measurement merely reveals it.
 
-### 12.3 Many-Worlds Obviated
+### 11.3 Many-Worlds Obviated
 
 **The puzzle:** If the wave function is real and collapse is not fundamental, what happens to the other branches? The Many-Worlds Interpretation says they are equally real - parallel worlds splitting at every measurement.
 
@@ -1102,7 +1102,7 @@ LRT agrees with all of this. But LRT does not conclude that all branches are equ
 
 The "branching" of MWI is reinterpreted as the structure of IIS - all possibilities are there, but only one actualizes. This is not solipsism or hidden variables; it is the distinction between possibility (IIS) and actuality (3FLL-compliant Boolean structure).
 
-### 12.4 Wave Function Reality
+### 11.4 Wave Function Reality
 
 **The puzzle:** Is the wave function real (ontological) or merely a description of our knowledge (epistemic)?
 
@@ -1114,7 +1114,7 @@ The wave function is real in the sense that IIS is real - it is the structure of
 
 This is compatible with the PBR theorem (Pusey-Barrett-Rudolph, 2012), which rules out ψ-epistemic interpretations where quantum states represent ignorance of underlying ontic states. LRT's ψ-structural position agrees that the wave function is not mere ignorance - it genuinely represents structure in IIS - while denying that this structure is spatiotemporal substance.
 
-### 12.5 Quantization
+### 11.5 Quantization
 
 **The puzzle:** Why are physical quantities (energy, charge, spin) discrete rather than continuous?
 
@@ -1129,7 +1129,7 @@ Discrete quantities reflect the Boolean structure of actuality:
 
 Quantization is 3FLL at work - the enforcement of determinate, non-contradictory, complete structure at the level of actuality.
 
-### 12.6 Identical Particles
+### 11.6 Identical Particles
 
 **The puzzle:** Why are all electrons exactly identical? Classical objects can be arbitrarily similar but always distinguishable in principle. Quantum particles of the same type are absolutely indistinguishable.
 
@@ -1139,7 +1139,7 @@ In LRT, quantum fields are not substances but structures - they represent the di
 
 The identity of particles follows from the structure of distinguishability itself. What we call "an electron" is a quantum of the electron distinguishability mode - a pattern of distinction, not an individual substance. This explains both perfect identity (same mode) and the statistics (bosonic modes allow unlimited occupation; fermionic modes do not).
 
-### 12.7 What This Section Establishes
+### 11.7 What This Section Establishes
 
 LRT dissolves foundational puzzles by reframing them:
 
@@ -1160,11 +1160,11 @@ The next sections examine quantum fields, fine-tuning, and LRT's relationship to
 
 ---
 
-## 13. Quantum Fields and Emergence
+## 12. Quantum Fields and Emergence
 
-Section 12 dissolved foundational puzzles by distinguishing IIS from actuality. This section develops how quantum fields fit into the framework - not as fundamental substances but as emergent structures in the hierarchy from logic to observable particles.
+Section 11 dissolved foundational puzzles by distinguishing IIS from actuality. This section develops how quantum fields fit into the framework - not as fundamental substances but as emergent structures in the hierarchy from logic to observable particles.
 
-### 13.1 The Emergence Hierarchy
+### 12.1 The Emergence Hierarchy
 
 LRT articulates a hierarchy from logical foundation to observable physics:
 
@@ -1182,7 +1182,7 @@ This inverts the usual picture. Standard physics thinks: particles are fundament
 
 LRT reverses this: logic is foundational; IIS is what logical distinguishability generates; Hilbert space is what distinguishability looks like when stability-selected; fields are modes of excitation; particles are what we observe when fields are locally excited.
 
-### 13.2 Quantum Fields as Distinguishability Modes
+### 12.2 Quantum Fields as Distinguishability Modes
 
 At Level 3, quantum fields are physical structures that implement particular **modes of distinguishability** in IIS. Each field represents a particular way that distinctions can be made:
 
@@ -1192,7 +1192,7 @@ At Level 3, quantum fields are physical structures that implement particular **m
 
 The mathematical structures describing these fields (spinor fields, gauge fields, etc.) are not arbitrary - they encode how these modes transform under Lorentz and internal gauge symmetries via unitary representations.
 
-### 13.3 Particles as Local Excitations
+### 12.3 Particles as Local Excitations
 
 At Level 4, particles are what we observe when fields have localized excitations:
 
@@ -1204,7 +1204,7 @@ This explains why particles are countable (discrete excitation numbers), why ide
 
 The particle concept is not fundamental - it is *emergent*: accurate and indispensable at many scales, but derivative of field structure. What we call "an electron" is really "one unit of excitation in the electron mode of distinguishability." At high energies or in extreme conditions, the particle picture breaks down and the field picture becomes essential.
 
-### 13.4 The Standard Model Structure
+### 12.4 The Standard Model Structure
 
 The Standard Model describes:
 - **Gauge symmetries:** U(1) × SU(2) × SU(3)
@@ -1216,7 +1216,7 @@ In LRT terms, this structure represents the specific distinguishability modes th
 
 LRT does not alter Standard Model dynamics; it reinterprets their place in the logical hierarchy.
 
-### 13.5 What LRT Does Not Explain About Fields
+### 12.5 What LRT Does Not Explain About Fields
 
 The hierarchy situates quantum fields within the logical framework but does not derive their specifics. LRT does not explain:
 
@@ -1228,7 +1228,7 @@ The hierarchy situates quantum fields within the logical framework but does not 
 
 These represent further fine-tuning beyond structural fine-tuning. LRT shows that quantum structure is necessary for stable physics; it does not show why quantum structure has these particular field contents. These remain as open targets for deeper unification or further selection principles beyond those articulated here.
 
-### 13.6 The Emergence Question
+### 12.6 The Emergence Question
 
 A natural question: how do higher levels emerge from lower levels?
 
@@ -1242,7 +1242,7 @@ A natural question: how do higher levels emerge from lower levels?
 
 The transitions from Level 2 onward involve progressively more contingent structure. Logic alone does not determine Hilbert space; Hilbert space alone does not determine which fields exist; fields alone do not determine particle phenomena.
 
-### 13.7 Relationship to Effective Field Theory
+### 12.7 Relationship to Effective Field Theory
 
 Modern particle physics uses **effective field theory (EFT)**: describing physics at a given energy scale without requiring complete knowledge of higher-energy structure. At each scale, appropriate degrees of freedom and symmetries suffice.
 
@@ -1250,7 +1250,7 @@ LRT is compatible with EFT. The hierarchy (logic → IIS → Hilbert space → f
 
 The question "what is fundamental?" receives a nuanced answer: 3FLL and IIS are constitutively fundamental; Hilbert space is stability-selected fundamental; fields and particles are phenomenologically fundamental at appropriate scales.
 
-### 13.8 What This Section Establishes
+### 12.8 What This Section Establishes
 
 We have shown:
 
@@ -1264,11 +1264,11 @@ The next section develops the fine-tuning thesis more systematically, showing ho
 
 ---
 
-## 14. The Fine-Tuning Thesis
+## 13. The Fine-Tuning Thesis
 
 Fine-tuning is typically discussed in terms of cosmic constants - if the fine-structure constant α or the cosmological constant Λ were slightly different, no stable atoms or galaxies would form. LRT reveals a deeper level: **structural fine-tuning** - the mathematical framework itself must be precisely as it is for any physics to exist.
 
-### 14.1 Three Levels of Fine-Tuning
+### 13.1 Three Levels of Fine-Tuning
 
 | Level | What Is Tuned | Examples | Status in LRT |
 |-------|---------------|----------|---------------|
@@ -1280,7 +1280,7 @@ Standard fine-tuning discussions focus on Level 1. LRT reveals Level 2: the fram
 
 Level 3 is not fine-tuned in the same sense. From within LRT, 3FLL are constitutive; treating them as "one option among many logics" presupposes the very distinguishability they make possible. 3FLL are the condition for any structure at all. Asking "why 3FLL?" is like asking "why is anything self-identical?" - the question presupposes what it questions.
 
-### 14.2 The Depth of Structural Fine-Tuning
+### 13.2 The Depth of Structural Fine-Tuning
 
 Consider the chain of dependencies:
 
@@ -1294,7 +1294,7 @@ But Level 2 (structure) is more fundamental. You cannot tune constants if the fr
 
 Quantum fine-tuning is the deepest level of contingency we can articulate - deeper than cosmic fine-tuning, because it concerns the framework within which cosmic parameters are defined.
 
-### 14.3 The Perturbation Argument Revisited
+### 13.3 The Perturbation Argument Revisited
 
 Section 9 showed that perturbations to quantum structure destroy physics:
 
@@ -1313,7 +1313,7 @@ This is not parameter sensitivity within a framework. This is framework sensitiv
 
 Compare to constant fine-tuning: if α changes by 10%, atoms become unstable. If the structure of quantum mechanics changes at all, there is no framework in which "atoms" is even a concept.
 
-### 14.4 Why This Matters
+### 13.4 Why This Matters
 
 Fine-tuning is often framed as a puzzle requiring explanation. Common responses include:
 
@@ -1329,7 +1329,7 @@ The question is: why this structure?
 
 LRT shows that quantum structure is required for stable physics. It does not explain why stable physics exists. But it situates the question at the right level. LRT doesn't answer the "why" but sharpens it: the core question is why a universe with stable quantum structure exists at all.
 
-### 14.5 Structural Fine-Tuning and Selection
+### 13.5 Structural Fine-Tuning and Selection
 
 The relationship between structural fine-tuning and selection deserves careful statement.
 
@@ -1341,7 +1341,7 @@ The relationship between structural fine-tuning and selection deserves careful s
 
 The selection argument has the form of the Weak Anthropic Principle. It is not an explanation in the sense of deriving quantum mechanics from more fundamental principles. It is a constraint on what we can observe, given that we observe.
 
-### 14.6 Comparison to Cosmic Fine-Tuning
+### 13.6 Comparison to Cosmic Fine-Tuning
 
 | Feature | Cosmic Fine-Tuning | Structural Fine-Tuning |
 |---------|-------------------|----------------------|
@@ -1352,7 +1352,7 @@ The selection argument has the form of the Weak Anthropic Principle. It is not a
 
 Structural fine-tuning is logically prior: you need a framework before parameters can be defined. If quantum structure is not fine-tuned, there is no context for discussing whether α = 1/137 is fine-tuned.
 
-### 14.7 Open Questions About Fine-Tuning
+### 13.7 Open Questions About Fine-Tuning
 
 LRT situates fine-tuning without explaining it away. Several questions remain:
 
@@ -1366,7 +1366,7 @@ LRT situates fine-tuning without explaining it away. Several questions remain:
 
 LRT frames these questions clearly without claiming to answer them. The framework shows where the mystery lies; it does not dissolve the mystery.
 
-### 14.8 What This Section Establishes
+### 13.8 What This Section Establishes
 
 We have shown:
 
@@ -1380,11 +1380,11 @@ The next section examines how LRT grounds Wheeler's "it from bit" program - show
 
 ---
 
-## 15. Wheeler's "It from Bit" Grounded
+## 14. Wheeler's "It from Bit" Grounded
 
 John Archibald Wheeler proposed that physical reality ("it") emerges from informational yes/no questions ("bit"). This was visionary but programmatic - Wheeler sketched a direction without completing the foundational work. LRT provides the grounding Wheeler lacked.
 
-### 15.1 Wheeler's Vision
+### 14.1 Wheeler's Vision
 
 Wheeler wrote: "Every it - every particle, every field of force, even the spacetime continuum itself - derives its function, its meaning, its very existence entirely... from the apparatus-elicited answers to yes-or-no questions, binary choices, bits" (Wheeler, 1990).
 
@@ -1396,7 +1396,7 @@ This statement contains several claims:
 
 Wheeler never fully developed the metaphysics. What IS a bit, fundamentally? Where do bits come from? Why do bits have the structure they do? How do bits become particles?
 
-### 15.2 LRT's Grounding
+### 14.2 LRT's Grounding
 
 LRT answers Wheeler's implicit questions:
 
@@ -1408,7 +1408,7 @@ LRT answers Wheeler's implicit questions:
 
 **How do bits become particles?** Through the interface between IIS and Boolean actuality. Possibilities in IIS become actual when 3FLL are enforced. Particles are patterns of actualized bits structured by the quantum interface and field modes.
 
-### 15.3 "Bit from Fit"
+### 14.3 "Bit from Fit"
 
 We extend Wheeler's slogan: **It from bit, bit from fit.**
 
@@ -1423,7 +1423,7 @@ The "fit" captures several aspects:
 
 **Relationship:** The bit is not free-floating. It is the elementary unit of the IIS-actuality interface. Bits are how IIS possibilities become actual facts.
 
-### 15.4 The Conversion Factor
+### 14.4 The Conversion Factor
 
 If bits are fundamental and physics emerges from them, there must be a conversion between informational and physical quantities.
 
@@ -1445,7 +1445,7 @@ S = ℏC is not required for LRT's core logical claims; it is a proposed quantit
 
 **Black hole entropy:** S = A/4ℓ²_P. The information content of a black hole is its horizon area in Planck units - suggesting one bit per Planck area.
 
-### 15.5 The Classical Emergence
+### 14.5 The Classical Emergence
 
 The classical world appears continuous because:
 
@@ -1457,7 +1457,7 @@ This parallels thermodynamics. Temperature is a coarse-grained property that eme
 
 The "weirdness" of quantum mechanics is the friction between bit-structure and continuous appearance. Phenomena like superposition, interference, and entanglement are what happens when the bit-level structure cannot be ignored.
 
-### 15.6 Wheeler's Questions Answered
+### 14.6 Wheeler's Questions Answered
 
 Wheeler posed several questions that his program left open:
 
@@ -1469,7 +1469,7 @@ Wheeler posed several questions that his program left open:
 
 **"How does the observer participate?"** LRT: The observer does not create reality but interfaces with it. Measurement is the category transition from IIS to actuality - not observation creating facts, but observation registering which IIS configuration actualized.
 
-### 15.7 What Wheeler Got Right
+### 14.7 What Wheeler Got Right
 
 Wheeler's intuitions align remarkably with LRT:
 
@@ -1480,7 +1480,7 @@ Wheeler's intuitions align remarkably with LRT:
 
 Wheeler lacked the philosophical foundation. He had the vision but not the grounding. LRT provides what Wheeler sketched.
 
-### 15.8 What This Section Establishes
+### 14.8 What This Section Establishes
 
 We have shown:
 
@@ -1495,11 +1495,11 @@ The next section examines how LRT relates to and completes other foundational pr
 
 ---
 
-## 16. Completing Related Programs
+## 15. Completing Related Programs
 
 LRT does not stand alone. It connects to, grounds, or completes several existing programs in foundations of physics. This section maps these relationships.
 
-### 16.1 Interpretations Grounded
+### 15.1 Interpretations Grounded
 
 The major interpretations of quantum mechanics each capture something important. LRT shows what each captures and what it lacks.
 
@@ -1523,7 +1523,7 @@ LRT preserves MWI's insights (wave function realism, no collapse mechanism) whil
 
 LRT shares Bohmian mechanics' commitment to definite outcomes but locates them differently. For LRT, definiteness emerges at the IIS/actuality interface, not from hidden variables. Bohm correctly intuited that something definite underlies quantum phenomena but located it in particle positions rather than in the structure of actuality itself.
 
-### 16.2 Programs Completed
+### 15.2 Programs Completed
 
 **Reconstruction theorems:** Hardy, Chiribella, and others have derived quantum structure from operational axioms (tomographic locality, continuous reversibility, etc.). These theorems show quantum mechanics is uniquely characterized by certain properties.
 
@@ -1533,13 +1533,13 @@ LRT grounds these axioms. The reconstruction axioms are features required for st
 
 LRT explains what decoherence accomplishes: the transfer of phase information to the environment, enforcing local Boolean structure at the system level. Decoherence does not solve the measurement problem (it does not explain why one outcome occurs) but it explains why the problem does not manifest macroscopically.
 
-**Wheeler's program:** As detailed in Section 15, LRT grounds Wheeler's "it from bit" by showing that the bit derives from 3FLL and quantum mechanics is the interface structure.
+**Wheeler's program:** As detailed in Section 14, LRT grounds Wheeler's "it from bit" by showing that the bit derives from 3FLL and quantum mechanics is the interface structure.
 
 **Zeilinger's foundational principle:** Zeilinger proposed that an elementary system carries exactly one bit of information. This is a foundational principle for quantum mechanics.
 
 LRT explains why: the bit is the fundamental unit of distinguishability. Elementary systems are minimal carriers because they instantiate minimal distinction. Zeilinger's principle is not arbitrary; it reflects the logical constitution of physical information.
 
-### 16.3 Principles Connected
+### 15.3 Principles Connected
 
 LRT connects to several principles from physics and information theory:
 
@@ -1555,7 +1555,7 @@ In LRT terms: distinguishability has a spatial density limit. There is a maximum
 
 In LRT terms: actuality can only support finite distinguishability in finite regions. The bound is not merely thermodynamic but logical - finite regions cannot instantiate infinite distinction.
 
-### 16.4 Mathematical Universe Refined
+### 15.4 Mathematical Universe Refined
 
 Tegmark's Mathematical Universe Hypothesis (MUH; Tegmark, 2008) claims that reality IS mathematical structure. All consistent mathematical structures exist; we inhabit one.
 
@@ -1567,7 +1567,7 @@ LRT refines this:
 
 LRT is compatible with the spirit of MUH - mathematics is ontologically fundamental - while being more specific about the selection mechanism. Not every consistent structure exists as physical reality; only the stability-selected structures do.
 
-### 16.5 Information-Theoretic Physics
+### 15.5 Information-Theoretic Physics
 
 The information-theoretic approach to physics (Lloyd, Vedral, etc.) treats information as physically fundamental. LRT provides the philosophical foundation:
 
@@ -1578,7 +1578,7 @@ The information-theoretic approach to physics (Lloyd, Vedral, etc.) treats infor
 
 The information-theoretic program has the right intuition but often lacks philosophical grounding. LRT supplies that grounding.
 
-### 16.6 What LRT Adds to Each Program
+### 15.6 What LRT Adds to Each Program
 
 | Program | What They Have | What LRT Adds |
 |---------|---------------|---------------|
@@ -1595,7 +1595,7 @@ The information-theoretic program has the right intuition but often lacks philos
 | Holography | Area bounds | Distinguishability limit |
 | Tegmark | Mathematical existence | Selection via stability and 3FLL-constituted distinguishability |
 
-### 16.7 What This Section Establishes
+### 15.7 What This Section Establishes
 
 We have shown:
 
@@ -1613,32 +1613,32 @@ This concludes Part II: Physical Interpretation. Part III develops the mathemati
 
 ---
 
-## 17. LRT Axioms
+## 16. LRT Axioms
 
 Parts I and II established the philosophical foundations and physical interpretation. This section states the formal axioms from which the mathematical structure of quantum mechanics is derived. The axiom structure is minimal: we state what must be assumed, distinguish different tiers of assumption, and identify what is derived versus what is postulated.
 
-### 17.1 Primitive Terms
+### 16.1 Primitive Terms
 
 We begin with undefined primitive terms. These are not derived but taken as foundational.
 
-**Definition 17.1 (Three Fundamental Logical Laws).** The 3FLL are:
+**Definition 16.1 (Three Fundamental Logical Laws).** The 3FLL are:
 - **Identity (I):** ∀x: x = x
 - **Non-Contradiction (NC):** ∀x, P: ¬(P(x) ∧ ¬P(x))
 - **Excluded Middle (EM):** ∀x, P: P(x) ∨ ¬P(x)
 
-**Definition 17.2 (Distinguishability).** A binary relation D on a set S, primitive but constrained by 3FLL: D(x,y) is definable only if x, y satisfy 3FLL. D takes values in [0,1], where D(x,y) = 0 means identical and D(x,y) = 1 means perfectly distinguishable. The inner-product structure of D will be derived in Section 18.
+**Definition 16.2 (Distinguishability).** A binary relation D on a set S, primitive but constrained by 3FLL: D(x,y) is definable only if x, y satisfy 3FLL. D takes values in [0,1], where D(x,y) = 0 means identical and D(x,y) = 1 means perfectly distinguishable. The inner-product structure of D will be derived in Section 17.
 
-**Definition 17.3 (Infinite Information Space).** The maximal collection IIS of states closed under distinguishability:
+**Definition 16.3 (Infinite Information Space).** The maximal collection IIS of states closed under distinguishability:
 
 $$\mathcal{I} = \{s : D \text{ is defined on } s \times \mathcal{I}\}$$
 
 *Remark:* The maximality of IIS ensures it is infinite-dimensional. This will be relevant for applying Gleason's theorem, which requires dimension ≥ 3.
 
-**Definition 17.4 (Boolean Structure).** A set B equipped with operations {∧, ∨, ¬} satisfying the Boolean algebra axioms, with carrier set {0,1}.
+**Definition 16.4 (Boolean Structure).** A set B equipped with operations {∧, ∨, ¬} satisfying the Boolean algebra axioms, with carrier set {0,1}.
 
-**Definition 17.5 (Context).** A partition C of (a subspace of) IIS into mutually exclusive, jointly exhaustive alternatives.
+**Definition 16.5 (Context).** A partition C of (a subspace of) IIS into mutually exclusive, jointly exhaustive alternatives.
 
-### 17.2 The Axioms
+### 16.2 The Axioms
 
 **Axiom 1 (Constitution).** 3FLL constitute distinguishability. For any x, y ∈ IIS:
 
@@ -1662,13 +1662,13 @@ where D(x,y) = 0 means identical, D(x,y) = 1 means perfectly distinguishable.
 
 **(a) Continuous transformations** (Hardy, 2001; Masanes & Müller, 2011)**:** For any two states s₁, s₂ with D(s₁,s₂) < 1, there exists a continuous path of states connecting them.
 
-**(b) Reversible transformations** (Hardy, 2001, Axiom 4)**:** For any transformation T on IIS, there exists T⁻¹ such that T⁻¹T = TT⁻¹ = id. **[DERIVED - see Theorem 17.12 below]**
+**(b) Reversible transformations** (Hardy, 2001, Axiom 4)**:** For any transformation T on IIS, there exists T⁻¹ such that T⁻¹T = TT⁻¹ = id. **[DERIVED - see Theorem 16.12 below]**
 
 **(c) Local tomography** (Chiribella et al., 2011; Masanes & Müller, 2011)**:** For any composite system with subsystems A and B, the state of the whole is uniquely determined by the statistics of local measurements on A and B separately.
 
 *Remark on 3(c):* This axiom is crucial for determining the number field. It asserts that the distinguishability of a composite system is determined by local measurements on its parts. This rules out holistic theories where the whole cannot be reconstructed from the parts.
 
-*Justification:* These constraints are not arbitrary. Continuity is motivated by parsimony (discontinuous dynamics require surplus specification). **Reversibility is derived from CBP + Parsimony (Theorem 17.12).** Local tomography is required for physics to be compositional - for us to learn about wholes by studying parts. These are standard axioms in reconstruction programs; LRT derives reversibility and provides philosophical grounding for continuity and local tomography.
+*Justification:* These constraints are not arbitrary. Continuity is motivated by parsimony (discontinuous dynamics require surplus specification). **Reversibility is derived from CBP + Parsimony (Theorem 16.12).** Local tomography is required for physics to be compositional - for us to learn about wholes by studying parts. These are standard axioms in reconstruction programs; LRT derives reversibility and provides philosophical grounding for continuity and local tomography.
 
 ---
 
@@ -1701,7 +1701,7 @@ for each context C, satisfying:
 
 *This axiom asserts that the interface has a probability measure with specific properties. It does NOT assert that this measure is |ψ|². That will be derived.*
 
-### 17.3 Axiom Tier Classification
+### 16.3 Axiom Tier Classification
 
 Not all axioms have the same status. We classify them:
 
@@ -1710,29 +1710,29 @@ Not all axioms have the same status. We classify them:
 | 1 (Constitution) | Foundational | LRT-specific thesis |
 | 2 (Pairwise) | Foundational | Structural requirement |
 | 3a (Continuity) | Physical | Motivated by parsimony (see 16.8) |
-| 3b (Reversibility) | Derived | From Parsimony (Theorem 17.10) |
+| 3b (Reversibility) | Derived | From Parsimony (Theorem 16.10) |
 | 3c (Local Tomography) | Physical | Partially grounded by parsimony (see 16.8) |
 | 4 (Boolean Actuality) | Foundational | From 3FLL enforcement |
 | 5 (Non-Contextual Measure) | Structural | Interface property |
 
 **Tier 1 (LRT-specific):** Axioms 1 and 2 are the core LRT claims - that 3FLL constitute distinguishability and that distinguishability is pairwise.
 
-**Tier 2 (Physical/Derived):** Axiom 3 states interface requirements. 3b (Reversibility) is now derived from Parsimony. 3a and 3c are motivated by parsimony with identified gaps (see Section 17.8).
+**Tier 2 (Physical/Derived):** Axiom 3 states interface requirements. 3b (Reversibility) is now derived from Parsimony. 3a and 3c are motivated by parsimony with identified gaps (see Section 16.8).
 
 **Tier 3 (Structural):** Axioms 4 and 5 describe the interface structure. They follow from 3FLL enforcement (Axiom 4) or state interface properties (Axiom 5).
 
-### 17.4 What Is Derived, Not Axiomatized
+### 16.4 What Is Derived, Not Axiomatized
 
 From these five axioms, we derive:
 
-- **Hilbert space structure** (Section 18)
-- **Complex numbers** as the field (Section 18)
-- **Born rule** (Section 19)
+- **Hilbert space structure** (Section 17)
+- **Complex numbers** as the field (Section 17)
+- **Born rule** (Section 18)
 - **Global parsimony** (below)
 
 These are theorems, not axioms. The derivations use established results (Masanes-Müller, Gleason) applied to the LRT axiom structure.
 
-### 17.5 Global Parsimony Derived
+### 16.5 Global Parsimony Derived
 
 Section 7.6 introduced parsimony as derived from constitution and grounding. Here we state it formally, drawing on established work in truthmaker theory (Armstrong, 2004; Mulligan et al., 1984) and grounding (Schaffer, 2009; Fine, 2012).
 
@@ -1740,9 +1740,9 @@ Section 7.6 introduced parsimony as derived from constitution and grounding. Her
 
 **Truthmaker Requirement (TM).** If a proposition P in the fundamental physical description has Boolean value v ∈ {0,1}, then some ground G ∈ (3FLL + s₀) determines P = v. (This adapts Armstrong's truthmaker maximalism to the LRT context.)
 
-**Definition 17.6 (Grounded Proposition).** P is grounded iff its truth-value is determined by: (1) logical necessity from 3FLL, (2) logical entailment from grounded propositions, (3) initial condition s₀, or (4) propagation through dynamical laws.
+**Definition 16.6 (Grounded Proposition).** P is grounded iff its truth-value is determined by: (1) logical necessity from 3FLL, (2) logical entailment from grounded propositions, (3) initial condition s₀, or (4) propagation through dynamical laws.
 
-**Definition 17.7 (Surplus Proposition).** P is surplus iff its truth-value is determined by none of sources (1)-(4).
+**Definition 16.7 (Surplus Proposition).** P is surplus iff its truth-value is determined by none of sources (1)-(4).
 
 **Lemma 16.8.** If P is surplus, then P has no genuine Boolean value.
 
@@ -1752,7 +1752,7 @@ Section 7.6 introduced parsimony as derived from constitution and grounding. Her
 
 *Proof.* Suppose P ∈ A. Then P must possess a grounded Boolean value by enforcement. But surplus propositions lack such grounds (Lemma 16.8). Contradiction. ∎
 
-**Theorem 17.10 (Global Parsimony).** Actuality contains exactly the grounded propositions and nothing more. Equivalently, actuality is the minimal Boolean structure sufficient for global enforcement of 3FLL relative to the constitutive package (3FLL + s₀).
+**Theorem 16.10 (Global Parsimony).** Actuality contains exactly the grounded propositions and nothing more. Equivalently, actuality is the minimal Boolean structure sufficient for global enforcement of 3FLL relative to the constitutive package (3FLL + s₀).
 
 *Proof.*
 
@@ -1765,9 +1765,9 @@ Section 7.6 introduced parsimony as derived from constitution and grounding. Her
 7. Conversely, all grounded propositions are generated by (3FLL + s₀).
 8. Therefore A consists exactly of grounded propositions, each with exactly one Boolean value. ∎
 
-**Corollary 17.11.** Parsimony is a theorem, not an axiom. It requires no independent assumption.
+**Corollary 16.11.** Parsimony is a theorem, not an axiom. It requires no independent assumption.
 
-### 17.6 Revised Axiom Structure
+### 16.6 Revised Axiom Structure
 
 With parsimony derived and reversibility now a theorem, the minimal axiom base is:
 
@@ -1793,9 +1793,9 @@ With parsimony derived and reversibility now a theorem, the minimal axiom base i
 - **Tier 2 (Physical):** Continuity (motivated) + Local Tomography (irreducible)
 - **Tier 3 (Derived):** Hilbert space → Born rule → QM structure
 
-### 17.7 The Reversibility Theorem
+### 16.7 The Reversibility Theorem
 
-**Theorem 17.12 (Reversibility from CBP + Parsimony).** Fundamental transformations on IIS are reversible (information-preserving).
+**Theorem 16.12 (Reversibility from CBP + Parsimony).** Fundamental transformations on IIS are reversible (information-preserving).
 
 *Proof.*
 
@@ -1805,39 +1805,39 @@ With parsimony derived and reversibility now a theorem, the minimal axiom base i
 
 3. **M is surplus structure:** The constitutive package of LRT is (3FLL + s₀). The mechanism M - whatever physical process enables information loss - is not contained in this package. It requires specification beyond what 3FLL and the initial state generate.
 
-4. **Apply Constitutive Closure (CCP):** By CCP (Section 17.5), the domain contains exactly the structure generated by the constitutive package. Structure requiring additional sources does not lie in the domain.
+4. **Apply Constitutive Closure (CCP):** By CCP (Section 16.5), the domain contains exactly the structure generated by the constitutive package. Structure requiring additional sources does not lie in the domain.
 
-5. **Apply Parsimony (Theorem 17.10):** No surplus structure exists at the fundamental level. M would be surplus structure.
+5. **Apply Parsimony (Theorem 16.10):** No surplus structure exists at the fundamental level. M would be surplus structure.
 
 6. **Apply CBP (Section 6):** Irreversible dynamics produce states whose resolution history becomes unrecoverable. Such states cannot participate in consistent Boolean resolution - they would generate propositions about "which original state led here" that have no truthmaker. This violates the Consistency Bridging Principle.
 
 7. **Conclusion:** No mechanism for information loss exists at the fundamental level. Therefore T must be reversible: distinct inputs map to distinct outputs. ∎
 
-*Remark:* This is genuine derivation, not merely philosophical motivation. The key ingredients - CCP, Parsimony (Theorem 17.10), and CBP (Definition 6.1) - are all established within LRT. The argument does not assume reversibility; it derives it from the prohibition on surplus structure.
+*Remark:* This is genuine derivation, not merely philosophical motivation. The key ingredients - CCP, Parsimony (Theorem 16.10), and CBP (Definition 6.1) - are all established within LRT. The argument does not assume reversibility; it derives it from the prohibition on surplus structure.
 
-*Corollary 17.13.* Fundamental IIS dynamics are unitary (when Hilbert space structure is established in Section 18).
+*Corollary 16.13.* Fundamental IIS dynamics are unitary (when Hilbert space structure is established in Section 17).
 
-### 17.8 Axiom 3: Derivation Status
+### 16.8 Axiom 3: Derivation Status
 
 The external reconstruction theorems (Hardy, Masanes-Müller, CDP) use axioms equivalent to our Axiom 3. A natural question arises: can LRT *derive* these constraints from more primitive commitments (3FLL, distinguishability), thereby reducing the axiom count?
 
-We investigated this systematically. A key insight emerged: **Parsimony (Theorem 17.10)** serves as a bridge connecting the LRT framework to Axiom 3 constraints.
+We investigated this systematically. A key insight emerged: **Parsimony (Theorem 16.10)** serves as a bridge connecting the LRT framework to Axiom 3 constraints.
 
 **Updated results:**
 
 | Constraint | Derivation Status | Argument |
 |------------|-------------------|----------|
-| **Reversibility (3b)** | **DERIVED (Theorem 17.12)** | CBP + Parsimony: mechanism for information loss is surplus structure |
+| **Reversibility (3b)** | **DERIVED (Theorem 16.12)** | CBP + Parsimony: mechanism for information loss is surplus structure |
 | **Continuity (3a)** | MOTIVATED | Parsimony: discontinuous dynamics require surplus specification |
 | **Local Tomography (3c)** | IRREDUCIBLE | Parsimony motivates but decomposability gap remains |
 
-**Reversibility is derived (Theorem 17.12):**
+**Reversibility is derived (Theorem 16.12):**
 
-The full proof appears in Section 17.7. In summary:
+The full proof appears in Section 16.7. In summary:
 
 1. Irreversible dynamics require a mechanism for information loss
 2. Such mechanisms require specification beyond the constitutive package (3FLL + s₀)
-3. By CCP + Parsimony (Theorem 17.10): no surplus structure exists
+3. By CCP + Parsimony (Theorem 16.10): no surplus structure exists
 4. By CBP (Section 6): states must permit consistent Boolean resolution
 5. Therefore: fundamental IIS dynamics are reversible (information-preserving)
 
@@ -1848,7 +1848,7 @@ This is genuine derivation, not merely philosophical motivation. The argument us
 **Local tomography** is partially derived. Parsimony eliminates irreducibly global structure with no Boolean cash-out (such structure is surplus). However, the argument that joint measurement truthmakers must decompose into local truthmakers plus coupling is assumed, not derived. This decomposability may represent irreducible physical content.
 
 **The refined position:** Of the three Axiom 3 constraints:
-- **Reversibility** is fully derived (Theorem 17.12) from CBP + Parsimony
+- **Reversibility** is fully derived (Theorem 16.12) from CBP + Parsimony
 - **Continuity** is motivated by parsimony (specification-complexity argument) but not rigorously derived
 - **Local tomography** remains an irreducible physical axiom (decomposability gap)
 
@@ -1859,7 +1859,7 @@ LRT reduces the physical input for quantum mechanics to two axioms (continuity, 
 - Deriving truthmaker decomposability for local tomography
 - Constructor-theoretic approaches (Deutsch & Marletto, 2015) may close these gaps
 
-### 17.9 What This Section Establishes
+### 16.9 What This Section Establishes
 
 We have:
 
@@ -1873,11 +1873,11 @@ The next section derives Hilbert space structure from these axioms.
 
 ---
 
-## 18. Deriving Hilbert Space Structure
+## 17. Deriving Hilbert Space Structure
 
 This section shows that Hilbert space structure follows from the LRT axioms via established reconstruction theorems. The derivation is not novel - it leverages rigorous results from quantum foundations - but its grounding in LRT is.
 
-### 18.1 The Derivation Strategy
+### 17.1 The Derivation Strategy
 
 The strategy is:
 
@@ -1887,9 +1887,9 @@ The strategy is:
 
 This is a derivation within LRT, not a derivation of LRT. The axioms are assumed; the structure follows.
 
-### 18.2 Inner Product Structure
+### 17.2 Inner Product Structure
 
-**Theorem 18.1 (Inner Product Structure).** If IIS satisfies Axioms 1-5, then the distinguishability relation D induces an inner product ⟨·|·⟩ on IIS.
+**Theorem 17.1 (Inner Product Structure).** If IIS satisfies Axioms 1-5, then the distinguishability relation D induces an inner product ⟨·|·⟩ on IIS.
 
 *Proof:*
 
@@ -1910,13 +1910,13 @@ By the Masanes-Müller reconstruction theorem (Masanes & Müller, 2011), any sta
 
 admits a unique representation as a complex Hilbert space with standard quantum operations.
 
-Conditions 1 and 2 are Axioms 3(a-c). Condition 3 follows from the richness of IIS - since IIS contains all distinguishable configurations (Definition 18.3), it contains composite states that are not product states.
+Conditions 1 and 2 are Axioms 3(a-c). Condition 3 follows from the richness of IIS - since IIS contains all distinguishable configurations (Definition 16.3), it contains composite states that are not product states.
 
 Therefore IIS admits complex inner product structure. ∎
 
-### 18.3 Why Complex Numbers
+### 17.3 Why Complex Numbers
 
-**Theorem 18.2 (Complex Numbers).** The field over which the inner product is defined is ℂ (complex numbers), not ℝ (reals) or ℍ (quaternions).
+**Theorem 17.2 (Complex Numbers).** The field over which the inner product is defined is ℂ (complex numbers), not ℝ (reals) or ℍ (quaternions).
 
 *Proof:*
 
@@ -1934,34 +1934,34 @@ Therefore, Axiom 3(c) forces the field to be ℂ. ∎
 
 *Experimental confirmation:* Recent experiments (Renou et al., 2021) have confirmed that quantum mechanics requires complex numbers - real-valued quantum theories make different predictions that have been ruled out.
 
-### 18.4 Hilbert Space
+### 17.4 Hilbert Space
 
-**Theorem 18.3 (Hilbert Space).** IIS, equipped with the inner product from Theorem 18.1, is a complex Hilbert space ℋ.
+**Theorem 17.3 (Hilbert Space).** IIS, equipped with the inner product from Theorem 17.1, is a complex Hilbert space ℋ.
 
 *Proof:*
 
-The inner product from Theorem 18.1 satisfies:
+The inner product from Theorem 17.1 satisfies:
 - Conjugate symmetry: ⟨x|y⟩ = ⟨y|x⟩*
 - Linearity in second argument: ⟨x|αy + βz⟩ = α⟨x|y⟩ + β⟨x|z⟩
 - Positive definiteness: ⟨x|x⟩ ≥ 0, with equality iff x = 0
 
-Completeness (every Cauchy sequence converges) follows from the maximality of IIS (Definition 18.3): IIS includes limit points of all Cauchy sequences generated by distinguishability relations. Any limit point of a sequence of distinguishable states is itself distinguishable from other states (since distinguishability is continuous in the induced topology), hence lies in IIS. This aligns with standard reconstructions where the operational state space is taken to be norm-closed. ∎
+Completeness (every Cauchy sequence converges) follows from the maximality of IIS (Definition 16.3): IIS includes limit points of all Cauchy sequences generated by distinguishability relations. Any limit point of a sequence of distinguishable states is itself distinguishable from other states (since distinguishability is continuous in the induced topology), hence lies in IIS. This aligns with standard reconstructions where the operational state space is taken to be norm-closed. ∎
 
-### 18.5 Dimension
+### 17.5 Dimension
 
-**Corollary 18.4 (Dimension).** dim(ℋ) ≥ 3 in physically relevant subsystems, satisfying the requirement for Gleason's theorem.
+**Corollary 17.4 (Dimension).** dim(ℋ) ≥ 3 in physically relevant subsystems, satisfying the requirement for Gleason's theorem.
 
 *Proof:*
 
-IIS is maximal (Definition 18.3) and contains composite systems with entanglement (proof of Theorem 18.1). Any such space has dimension at least 4 (two qubits). More generally, IIS is infinite-dimensional, containing arbitrarily complex distinguishable configurations. ∎
+IIS is maximal (Definition 16.3) and contains composite systems with entanglement (proof of Theorem 17.1). Any such space has dimension at least 4 (two qubits). More generally, IIS is infinite-dimensional, containing arbitrarily complex distinguishable configurations. ∎
 
 *Remark:* Gleason's theorem fails for dim = 2 (a single qubit admits non-Born probability measures). However, this is not a limitation for LRT. The physical universe is never a single isolated qubit - any physically relevant subsystem is embedded in IIS and participates in composite systems of dimension ≥ 4. The dim ≥ 3 requirement is satisfied for any subsystem whose measurement statistics must be consistent with the larger whole. Individual qubits inherit the Born rule from their embedding in higher-dimensional composites.
 
-### 18.6 The Distinguishability Metric
+### 17.6 The Distinguishability Metric
 
 With Hilbert space structure established, we can express distinguishability precisely.
 
-**Definition 18.5 (Distinguishability Distance).** For states x, y ∈ IIS:
+**Definition 17.5 (Distinguishability Distance).** For states x, y ∈ IIS:
 
 $$d(x,y) = \sqrt{1 - |\langle x|y\rangle|^2}$$
 
@@ -1972,39 +1972,39 @@ This is the **Fubini-Study metric** on projective Hilbert space (Bengtsson & Ży
 - d(x,y) = 1 iff x ⊥ y (perfectly distinguishable)
 - Triangle inequality holds
 
-**Proposition 18.6.** The distinguishability metric is the natural metric on IIS induced by Axiom 2.
+**Proposition 17.6.** The distinguishability metric is the natural metric on IIS induced by Axiom 2.
 
-*Proof:* Axiom 2 defines D: IIS × IIS → [0,1]. Given Hilbert space structure (Theorem 18.3), the inner product ⟨x|y⟩ measures overlap. The Fubini-Study metric converts this to a distance satisfying metric axioms. ∎
+*Proof:* Axiom 2 defines D: IIS × IIS → [0,1]. Given Hilbert space structure (Theorem 17.3), the inner product ⟨x|y⟩ measures overlap. The Fubini-Study metric converts this to a distance satisfying metric axioms. ∎
 
-### 18.7 Symmetries of IIS
+### 17.7 Symmetries of IIS
 
-**Definition 18.7 (IIS Symmetry).** A symmetry of IIS is a bijection S: IIS → IIS preserving distinguishability:
+**Definition 17.7 (IIS Symmetry).** A symmetry of IIS is a bijection S: IIS → IIS preserving distinguishability:
 
 $$D(Sx, Sy) = D(x, y) \quad \forall x, y$$
 
-**Theorem 18.8 (Wigner).** Every symmetry of IIS is implemented by either:
+**Theorem 17.8 (Wigner).** Every symmetry of IIS is implemented by either:
 - A unitary operator U: ⟨Ux|Uy⟩ = ⟨x|y⟩, or
 - An antiunitary operator A: ⟨Ax|Ay⟩ = ⟨x|y⟩*
 
 *Proof:* Standard Wigner theorem. Distinguishability-preserving maps on projective Hilbert space are (anti)unitary. ∎
 
-**Corollary 18.9.** The symmetry group of IIS is:
+**Corollary 17.9.** The symmetry group of IIS is:
 
 $$\text{Sym}(\mathcal{I}) = U(\mathcal{H}) \rtimes \mathbb{Z}_2$$
 
 where U(ℋ) is the unitary group and ℤ₂ is time-reversal (complex conjugation).
 
-### 18.8 The Derivation Chain (Summary)
+### 17.8 The Derivation Chain (Summary)
 
 ```
 3FLL (Axiom 1)
     ↓ constitutes
-Distinguishability (Definition 17.2, Axiom 2)
+Distinguishability (Definition 16.2, Axiom 2)
     ↓ + physical constraints (Axiom 3)
-Complex Hilbert Space (Theorems 18.1-18.3, via Masanes-Müller)
+Complex Hilbert Space (Theorems 17.1-17.3, via Masanes-Müller)
 ```
 
-### 18.9 What Sections 18.1-18.8 Establish
+### 17.9 What Sections 17.1-17.8 Establish
 
 We have shown:
 
@@ -2018,15 +2018,15 @@ The derivation is conditional on Axiom 3 (physical constraints). These constrain
 
 The next subsection completes the structural picture by deriving dynamical laws.
 
-### 18.10 Dynamical Structure
+### 17.10 Dynamical Structure
 
-Sections 18.1-18.9 established complex Hilbert space structure from LRT axioms via Masanes-Müller. Section 17.7 derived reversibility (Theorem 17.12) from CBP + Parsimony. Together with the Hilbert structure and Wigner-type symmetry constraints, this yields **unitary evolution**: transformations preserving the distinguishability metric are (anti)unitary, with antiunitaries ruled out by logical time orientation.
+Sections 17.1-17.9 established complex Hilbert space structure from LRT axioms via Masanes-Müller. Section 16.7 derived reversibility (Theorem 16.12) from CBP + Parsimony. Together with the Hilbert structure and Wigner-type symmetry constraints, this yields **unitary evolution**: transformations preserving the distinguishability metric are (anti)unitary, with antiunitaries ruled out by logical time orientation.
 
 To obtain the standard Schrödinger form
 
 $$i\hbar \frac{\partial}{\partial t}|\psi\rangle = H|\psi\rangle$$
 
-the one-parameter family U(t) must be **strongly continuous** in the parameter t. This strong continuity is supplied by the physical postulate of continuity of reversible transformations (Axiom 3a) - one of the two irreducible physical inputs identified in Section 17.8. Strong continuity is assumed, not derived.
+the one-parameter family U(t) must be **strongly continuous** in the parameter t. This strong continuity is supplied by the physical postulate of continuity of reversible transformations (Axiom 3a) - one of the two irreducible physical inputs identified in Section 16.8. Strong continuity is assumed, not derived.
 
 Given strong continuity, **Stone's theorem** (Stone, 1932) immediately yields:
 - A unique self-adjoint generator H (the Hamiltonian), up to domain specification
@@ -2039,20 +2039,20 @@ The Hamiltonian and Lagrangian formulations, the action principle, symplectic ge
 **What LRT contributes:** Interpretive framing. The Hamiltonian is the generator of IIS evolution; the action principle is philosophically motivated by parsimony (extremal paths require minimal specification). However, parsimony motivates the extremal-path principle but does not replace standard derivations from symplectic structure and semiclassical analysis.
 
 **Summary:** The dynamical laws of physics are consequences of:
-1. Derived unitary evolution (Theorem 17.12 + Hilbert structure)
+1. Derived unitary evolution (Theorem 16.12 + Hilbert structure)
 2. The physical axiom of continuity (Axiom 3a)
 
 All structure beyond unitary evolution - Hamiltonians, Lagrangians, action principles, canonical equations - arises from standard physics applied after LRT has fixed the unitary form.
 
-### 18.11 What This Section Establishes
+### 17.11 What This Section Establishes
 
-Section 18 has derived from LRT axioms:
+Section 17 has derived from LRT axioms:
 
-- Complex Hilbert space structure (18.1-18.4)
-- Dimension ≥ 3 (18.5)
-- Distinguishability metric (18.6)
-- (Anti)unitary symmetries (18.7)
-- Schrödinger dynamics via Stone's theorem (18.10)
+- Complex Hilbert space structure (17.1-17.4)
+- Dimension ≥ 3 (17.5)
+- Distinguishability metric (17.6)
+- (Anti)unitary symmetries (17.7)
+- Schrödinger dynamics via Stone's theorem (17.10)
 
 The derivation chain is:
 
@@ -2062,7 +2062,7 @@ The derivation chain is:
 Distinguishability (Axiom 2)
     ↓ + physical constraints (Axiom 3a,c)
 Complex Hilbert Space (Masanes-Müller)
-    ↓ + reversibility (Theorem 17.12)
+    ↓ + reversibility (Theorem 16.12)
 Unitary Evolution
     ↓ + continuity (Axiom 3a)
 Schrödinger Equation (Stone's theorem)
@@ -2072,19 +2072,19 @@ With Hilbert space and unitary dynamics established, the next section derives th
 
 ---
 
-## 19. Deriving the Born Rule
+## 18. Deriving the Born Rule
 
 The Born rule - the probability of outcome |φ⟩ when measuring state |ψ⟩ is |⟨φ|ψ⟩|² - is often taken as an independent axiom of quantum mechanics. This section shows it is derived, not assumed, within LRT.
 
-### 19.1 The Derivation Strategy
+### 18.1 The Derivation Strategy
 
-The strategy parallels Section 18:
+The strategy parallels Section 17:
 
 1. Verify that LRT axioms satisfy Gleason's theorem premises
 2. Apply Gleason to conclude the unique probability measure
 3. Show this measure has the Born rule form
 
-### 19.2 Gleason's Theorem
+### 18.2 Gleason's Theorem
 
 **Theorem 18.1 (Gleason, 1957).** Let ℋ be a Hilbert space with dim(ℋ) ≥ 3. Let μ be a function from projection operators on ℋ to [0,1] satisfying:
 
@@ -2105,13 +2105,13 @@ This is the Born rule.
 
 *Remark:* We rely on the standard projection-valued version of Gleason (1957). Generalizations to positive operator-valued measures (POVMs) exist (Busch, 2003) and are compatible with this framework but are not needed here. The finite-additivity condition suffices; countable additivity follows in separable Hilbert spaces (Bayer & Clifton, 2000).
 
-### 19.3 Verification of Premises
+### 18.3 Verification of Premises
 
 **Lemma 18.2.** The LRT axioms satisfy Gleason's premises.
 
 *Proof:*
 
-**Premise 1 (dim ≥ 3):** Corollary 18.4 establishes dim(ℋ) ≥ 3 for physically relevant subsystems.
+**Premise 1 (dim ≥ 3):** Corollary 17.4 establishes dim(ℋ) ≥ 3 for physically relevant subsystems.
 
 **Premise 2 (Non-negative measure):** Axiom 5(a) directly states μ(s, c) ≥ 0.
 
@@ -2123,7 +2123,7 @@ This is the Born rule.
 
 All premises are satisfied. ∎
 
-### 19.4 Application of Gleason
+### 18.4 Application of Gleason
 
 **Theorem 18.3 (Born Rule from LRT).** The interface probability measure μ induced by Axiom 5 has the form:
 
@@ -2135,7 +2135,7 @@ $$P(\phi|\psi) = |\langle\phi|\psi\rangle|^2$$
 
 *Proof:* By Lemma 18.2, the LRT axioms satisfy Gleason's premises. Gleason's theorem (Theorem 18.1) then determines the unique form of μ. No additional interpretive assumptions are added at this step; the theorem applies strictly to the mathematical object μ defined by Axiom 5. ∎
 
-### 19.5 Why the Squared Magnitude
+### 18.5 Why the Squared Magnitude
 
 The Born rule involves |⟨ψ|φ⟩|² - why squared, not linear or some other power?
 
@@ -2149,7 +2149,7 @@ The Born rule involves |⟨ψ|φ⟩|² - why squared, not linear or some other p
 - The amplitude ⟨ψ|φ⟩ captures the intrinsic relation between states in IIS
 - The squared magnitude |⟨ψ|φ⟩|² converts this to Boolean-compatible probability
 
-### 19.6 The Conditional Structure
+### 18.6 The Conditional Structure
 
 We must be precise about the logical dependencies:
 
@@ -2165,7 +2165,7 @@ The Born rule is derived *conditional on* Hilbert space structure and the non-co
 
 *Note on dimension 2:* Gleason's theorem fails in dimension 2 - a single qubit admits non-Born probability measures. However, the physical universe does not contain dimension-2 systems in isolation. Any qubit is embedded in larger systems (the apparatus, environment, observer), and composite systems always have physical dimension ≥ 4. The Born rule for qubits is inherited from consistency with the larger system where Gleason applies.
 
-### 19.7 Mixed States and Density Operators
+### 18.7 Mixed States and Density Operators
 
 Gleason's theorem naturally generalizes to mixed states.
 
@@ -2186,7 +2186,7 @@ The Hughston-Jozsa-Wootters theorem (Hughston et al., 1993) shows that all ensem
 
 In all cases, the Born rule applies via the trace formula.
 
-### 19.8 Contextuality as Corollary
+### 18.8 Contextuality as Corollary
 
 **Theorem 18.6 (Kochen-Specker, 1967).** For dim(ℋ) ≥ 3, there is no function v: P(ℋ) → {0,1} from projections to definite values satisfying:
 1. v(P) + v(P⊥) = 1 for complementary projections
@@ -2198,7 +2198,7 @@ In all cases, the Born rule applies via the trace formula.
 
 *Clarification:* KS contextuality concerns pre-assigned values, not measurement outcomes. It does not imply that observers affect reality or that measurements create results ex nihilo. Rather, it shows that value-definiteness cannot be global - not all observables can simultaneously possess definite values independent of measurement context. This is precisely what LRT predicts: Boolean definiteness exists only at the interface, not throughout IIS. For further analysis of the logical structure connecting Gleason and Kochen-Specker, see Appleby (2005).
 
-### 19.9 Information-Theoretic Significance
+### 18.9 Information-Theoretic Significance
 
 The Born rule has deep information-theoretic implications:
 
@@ -2212,7 +2212,7 @@ The Born rule has deep information-theoretic implications:
 
 These connections suggest the Born rule is not arbitrary but informationally natural - the unique way to extract Boolean outcomes from distinguishability structure while preserving information-theoretic coherence.
 
-### 19.10 The Derivation Chain (Complete)
+### 18.10 The Derivation Chain (Complete)
 
 The complete logical structure distinguishes tiers of assumption and derivation:
 
@@ -2222,13 +2222,13 @@ A1: 3FLL constitute distinguishability
 A2: Distinguishability is pairwise
 A4: Boolean actuality (3FLL enforcement domain)
 A5: Non-contextual measure on interface
-T1: Global Parsimony (Theorem 17.10) ← derived from A1
+T1: Global Parsimony (Theorem 16.10) ← derived from A1
 ```
 
 **TIER 1 - BRIDGING PRINCIPLE:**
 ```
 P3: Consistency Bridging Principle (CBP, Section 6)
-T2: Reversibility (Theorem 17.12) ← derived from CBP + T1
+T2: Reversibility (Theorem 16.12) ← derived from CBP + T1
 ```
 
 **TIER 2 - PHYSICAL AXIOMS (irreducible):**
@@ -2258,7 +2258,7 @@ A4-A5 + Hilbert Space → Born Rule (via Gleason)
                                     ▼
               ═══════════════════════════════════════════
               ║  TIER 1: Bridging                       ║
-              ║  T2: Reversibility (Theorem 17.12)      ║
+              ║  T2: Reversibility (Theorem 16.12)      ║
               ║      DERIVED from CBP + Parsimony       ║
               ═══════════════════════════════════════════
                                     │
@@ -2283,7 +2283,7 @@ A4-A5 + Hilbert Space → Born Rule (via Gleason)
                           QUANTUM MECHANICS
 ```
 
-### 19.11 What This Section Establishes
+### 18.11 What This Section Establishes
 
 We have shown:
 
@@ -2293,17 +2293,17 @@ We have shown:
 - Contextuality is a corollary, not an anomaly
 - The Born rule has information-theoretic significance
 
-The derivation is conditional on continuity (A3a, motivated), local tomography (A3c, axiom), and Axioms 4-5. Reversibility (formerly A3b) is now derived (Theorem 17.12). The Born rule is not an independent postulate but a theorem of the framework.
+The derivation is conditional on continuity (A3a, motivated), local tomography (A3c, axiom), and Axioms 4-5. Reversibility (formerly A3b) is now derived (Theorem 16.12). The Born rule is not an independent postulate but a theorem of the framework.
 
 The next sections examine how existing interpretations fit within LRT's layer structure.
 
 ---
 
-## 20. The Layer Structure: Unifying Interpretations
+## 19. The Layer Structure: Unifying Interpretations
 
 Sections 16-18 derived quantum mechanics from LRT axioms. This section shows how existing interpretations of quantum mechanics - Copenhagen, Many-Worlds, Bohmian mechanics, GRW, QBism, Relational QM - fit within LRT's ontological architecture. Rather than competing theories, they describe different layers of the same structure.
 
-### 20.1 The Four-Layer Model
+### 19.1 The Four-Layer Model
 
 LRT articulates four ontological layers between IIS and Boolean actuality:
 
@@ -2318,7 +2318,7 @@ Each layer is physically real and mathematically precise. Layers 1-3 are real as
 
 Existing interpretations correctly describe one or more layers while mistaking their layer for the whole.
 
-### 20.2 Layer 1: IIS Dynamics (Unitary QM / Many-Worlds)
+### 19.2 Layer 1: IIS Dynamics (Unitary QM / Many-Worlds)
 
 **What it describes:** The fundamental evolution of quantum states in IIS, governed by the Schrödinger equation:
 
@@ -2337,7 +2337,7 @@ $$i\hbar\frac{\partial}{\partial t}|\psi\rangle = H|\psi\rangle$$
 
 **LRT assessment:** Layer 1 is real but not the whole story. It describes IIS dynamics but not the interface with actuality.
 
-### 20.3 Layer 2: Probability Flow (Bohmian Mechanics)
+### 19.3 Layer 2: Probability Flow (Bohmian Mechanics)
 
 **What it describes:** The evolution of probability distributions over configuration space, governed by the continuity equation:
 
@@ -2362,13 +2362,13 @@ Bohm's *interpretation* of these trajectories as always-actual particle position
 
 **LRT assessment:** Layer 2 correctly describes probability flow. Bohmian mathematics is valid at this layer. The disagreement is interpretive: LRT treats configuration-space trajectories as IIS probability structure, not as underlying point particles with always-definite positions.
 
-### 20.4 Layer 3: Interface Approach (Decoherence / GRW)
+### 19.4 Layer 3: Interface Approach (Decoherence / GRW)
 
 **What it describes:** The approach to Boolean actuality through environmental interaction or spontaneous collapse. For decoherence:
 
 $$\frac{d\rho}{dt} = -\frac{i}{\hbar}[H, \rho] + \mathcal{L}[\rho]$$
 
-where 𝓛 is the Lindblad superoperator encoding environment coupling. The Lindblad term encodes information leakage to the environment - precisely what Section 19 identified as the price of Boolean-compatible information extraction.
+where 𝓛 is the Lindblad superoperator encoding environment coupling. The Lindblad term encodes information leakage to the environment - precisely what Section 18 identified as the price of Boolean-compatible information extraction.
 
 **Key features:**
 - Off-diagonal elements decay (phase information transfers to environment)
@@ -2393,7 +2393,7 @@ where E_G is gravitational self-energy of superposition.
 
 **LRT assessment:** Layer 3 describes the approach to Boolean actuality. Multiple mechanisms (decoherence, GRW, gravity) may contribute. LRT is agnostic about which physical process dominates - it provides the ontological interpretation (interface transition) while leaving mechanism identification to empirical investigation.
 
-### 20.5 Layer 4: Boolean Actuality (Copenhagen / QBism)
+### 19.5 Layer 4: Boolean Actuality (Copenhagen / QBism)
 
 **What it describes:** The domain of definite outcomes, classical records, and Boolean truth values.
 
@@ -2410,7 +2410,7 @@ where E_G is gravitational self-energy of superposition.
 
 **LRT assessment:** Layer 4 is where 3FLL are fully enforced. Copenhagen and QBism correctly describe this layer's phenomenology but lack ontological grounding for the interface.
 
-### 20.6 Layer Correspondence Table
+### 19.6 Layer Correspondence Table
 
 | Interpretation | Primary Layer | What It Gets Right | What It Misses (within LRT) |
 |----------------|---------------|-------------------|----------------------------|
@@ -2423,7 +2423,7 @@ where E_G is gravitational self-energy of superposition.
 
 *Note:* The "What It Misses" column evaluates each interpretation relative to LRT's architecture, not as an absolute verdict. Each interpretation captures genuine structure at its primary layer.
 
-### 20.7 Relational Quantum Mechanics
+### 19.7 Relational Quantum Mechanics
 
 **Rovelli's RQM (1996)** deserves special treatment because it spans layers.
 
@@ -2438,7 +2438,7 @@ The qualifier "relative to a given history" acknowledges what RQM gets right: di
 
 RQM's relationality reflects the context-dependence of the interface map Φ_C, not subjective construction of reality. Different measurement contexts actualize different aspects of IIS structure. This is genuine relationality but with objective grounding.
 
-### 20.8 Why No Interpretation Suffices Alone
+### 19.8 Why No Interpretation Suffices Alone
 
 Each interpretation captures genuine structure but mistakes its layer for the whole:
 
@@ -2452,7 +2452,7 @@ Each interpretation captures genuine structure but mistakes its layer for the wh
 
 LRT unifies these by recognizing each layer as real and specifying how they relate. On LRT's view, the measurement problem is the failure to distinguish IIS dynamics (Layers 1-3) from the Boolean interface (Layer 4). Once this split and its constraints are made explicit - grounded in 3FLL enforcement and the information-theoretic results of Sections 16-18 - the problem dissolves rather than being "solved" by an ad hoc rule. "Measurement" is the transition from Layer 3 to Layer 4, the interface crossing where Boolean actuality is enforced.
 
-### 20.9 The Inheritance Principle
+### 19.9 The Inheritance Principle
 
 **Principle 19.1 (Inheritance).** Mathematical structures valid at Layer n are inherited by Layer n+1, appropriately transformed.
 
@@ -2463,9 +2463,9 @@ LRT unifies these by recognizing each layer as real and specifying how they rela
 
 This principle explains why different interpretations' mathematics are all correct - they correctly describe their layer, and layer structure is preserved under inheritance.
 
-In grounding terms (Section 17.5), higher layers are non-redundantly grounded in lower layers: nothing at Layer 4 floats free of Layers 1-3, but not all truths about Layer 4 reduce to a single description at Layer 1. Each layer introduces genuine structure - Boolean truth-values and records at Layer 4, decoherence rates at Layer 3, probability flow at Layer 2 - that is grounded in but not eliminable to the layer below.
+In grounding terms (Section 16.5), higher layers are non-redundantly grounded in lower layers: nothing at Layer 4 floats free of Layers 1-3, but not all truths about Layer 4 reduce to a single description at Layer 1. Each layer introduces genuine structure - Boolean truth-values and records at Layer 4, decoherence rates at Layer 3, probability flow at Layer 2 - that is grounded in but not eliminable to the layer below.
 
-### 20.10 What This Section Establishes
+### 19.10 What This Section Establishes
 
 We have shown:
 
@@ -2481,11 +2481,11 @@ The next section examines reconstruction theorems that independently confirm key
 
 ---
 
-## 21. Reconstruction Theorems
+## 20. Reconstruction Theorems
 
 Sections 16-18 derived quantum mechanics from LRT axioms using the Masanes-Müller and Gleason theorems. This section surveys the broader landscape of quantum reconstruction results, showing how they independently confirm LRT's structural claims and provide alternative derivation routes.
 
-### 21.1 The Reconstruction Program
+### 20.1 The Reconstruction Program
 
 The quantum reconstruction program seeks to derive quantum mechanics from physically or informationally motivated axioms, rather than taking the Hilbert space formalism as given. Key results include:
 
@@ -2498,7 +2498,7 @@ The quantum reconstruction program seeks to derive quantum mechanics from physic
 
 These independent approaches converge on the same conclusion: quantum mechanics is uniquely characterized by reasonable operational axioms.
 
-### 21.2 Hardy's Axioms (2001)
+### 20.2 Hardy's Axioms (2001)
 
 Hardy derived quantum theory from five axioms:
 
@@ -2512,7 +2512,7 @@ Hardy derived quantum theory from five axioms:
 
 **Connection to LRT:** Hardy's Axiom 5 corresponds to LRT's Axiom 3(a-b) (continuity and reversibility). Hardy derives the same conclusion: continuous reversibility forces quantum structure.
 
-### 21.3 Chiribella-D'Ariano-Perinotti (2011)
+### 20.3 Chiribella-D'Ariano-Perinotti (2011)
 
 The CDP derivation uses purely informational axioms:
 
@@ -2526,9 +2526,9 @@ The CDP derivation uses purely informational axioms:
 
 **Connection to LRT:** CDP's local distinguishability corresponds to LRT's Axiom 3(c) (local tomography). CDP's causality axiom captures the no-signaling constraint that LRT derives from the IIS/actuality split.
 
-### 21.4 Masanes-Müller (2011)
+### 20.4 Masanes-Müller (2011)
 
-The Masanes-Müller derivation (used in Section 18) requires:
+The Masanes-Müller derivation (used in Section 17) requires:
 
 1. **Continuous reversible dynamics:** State transformations form a continuous group
 2. **Local tomography:** Composite states are determined by local measurements
@@ -2540,7 +2540,7 @@ The Masanes-Müller derivation (used in Section 18) requires:
 
 **Connection to LRT:** This is the theorem LRT directly uses. LRT provides philosophical grounding for why these axioms hold: they are required for stable, compositional physics at the IIS/actuality interface.
 
-### 21.5 Dakić-Brukner (2011)
+### 20.5 Dakić-Brukner (2011)
 
 The Dakić-Brukner approach uses information-theoretic constraints:
 
@@ -2552,7 +2552,7 @@ The Dakić-Brukner approach uses information-theoretic constraints:
 
 **Connection to LRT:** The finite information capacity axiom connects to LRT's bit-based ontology (Section 8). The bit as fundamental unit of distinguishability implies finite capacity per system.
 
-### 21.6 What Reconstruction Theorems Establish
+### 20.6 What Reconstruction Theorems Establish
 
 The convergence of these independent approaches establishes several important results:
 
@@ -2562,7 +2562,7 @@ The convergence of these independent approaches establishes several important re
 
 **Derivation vs postulation:** The axioms of quantum mechanics can be derived rather than simply postulated. This shifts the foundational burden to explaining the axioms themselves.
 
-### 21.7 LRT's Contribution to Reconstruction
+### 20.7 LRT's Contribution to Reconstruction
 
 LRT contributes to the reconstruction program in several ways:
 
@@ -2580,7 +2580,7 @@ LRT contributes to the reconstruction program in several ways:
 
 **Ontological interpretation:** Reconstruction theorems are typically operationalist - they derive quantum mechanics without saying what it is about. LRT provides ontological content: quantum mechanics describes the structure of the IIS/actuality interface.
 
-### 21.8 Beyond Reconstruction: Selection
+### 20.8 Beyond Reconstruction: Selection
 
 Reconstruction shows quantum mechanics is uniquely characterized by certain axioms. It does not explain why those axioms hold.
 
@@ -2592,7 +2592,7 @@ LRT addresses this through stability selection (Section 9):
 
 This is selection, not derivation. LRT does not claim quantum mechanics is logically necessary. It claims quantum mechanics is observationally necessary - necessary for stable information-bearing structures.
 
-### 21.9 Generalized Probabilistic Theories (GPTs)
+### 20.9 Generalized Probabilistic Theories (GPTs)
 
 The reconstruction program situates quantum mechanics within the broader space of Generalized Probabilistic Theories (GPTs). GPTs include:
 
@@ -2609,7 +2609,7 @@ The reconstruction program situates quantum mechanics within the broader space o
 
 **LRT interpretation:** The GPT landscape represents the space of possible interface structures in IIS. Quantum mechanics is selected because it alone produces stable physics. PR boxes satisfy no-signaling but lack compositional consistency. Real and quaternionic theories satisfy some constraints but fail local tomography.
 
-### 21.10 What This Section Establishes
+### 20.10 What This Section Establishes
 
 We have shown:
 
@@ -2625,11 +2625,11 @@ The next section examines novel mathematical structures arising from LRT's frame
 
 ---
 
-## 22. Novel Structures and Conjectures
+## 21. Novel Structures and Conjectures
 
 LRT's framework suggests several novel mathematical structures and testable conjectures. This section presents these as directions for future development, distinguishing established results from open questions.
 
-### 22.1 The Action-Complexity Conjecture
+### 21.1 The Action-Complexity Conjecture
 
 **Conjecture 21.1 (Action-Complexity).** Physical action S and informational complexity C are related by:
 
@@ -2651,7 +2651,7 @@ where ℏ is Planck's constant and C is measured in bits.
 
 **Status:** Conjectural. Requires formal proof or counterexample.
 
-### 22.2 The Interface Functor
+### 21.2 The Interface Functor
 
 **Definition 21.2 (Interface Functor).** Let **IIS** be the category of IIS states and unitary transformations. Let **Bool** be the category of Boolean algebras. The interface is a functor:
 
@@ -2669,7 +2669,7 @@ satisfying:
 
 **Potential significance:** A rigorous categorical description of the interface could clarify the relationship between quantum and classical information, and connect LRT to categorical quantum mechanics (Abramsky & Coecke, 2004).
 
-### 22.3 Information Geometry of IIS
+### 21.3 Information Geometry of IIS
 
 IIS inherits rich geometric structure from its Hilbert space realization.
 
@@ -2691,7 +2691,7 @@ where L_ρ is the symmetric logarithmic derivative.
 
 **LRT interpretation:** The information geometry of IIS encodes the structure of distinguishability. Geometric properties of IIS correspond to operational capabilities at the interface.
 
-### 22.4 Complexity Measures on IIS
+### 21.4 Complexity Measures on IIS
 
 **Problem:** Define a rigorous complexity measure C: IIS → ℝ⁺ satisfying:
 
@@ -2709,7 +2709,7 @@ where L_ρ is the symmetric logarithmic derivative.
 
 **LRT direction:** A principled complexity measure should emerge from the constitutive role of distinguishability. The complexity of a state is the number of independent distinctions it encodes.
 
-### 22.5 Emergent Spacetime
+### 21.5 Emergent Spacetime
 
 **Conjecture 21.4 (Emergent Spacetime).** Spacetime structure emerges from the distinguishability relations in IIS, not vice versa.
 
@@ -2725,7 +2725,7 @@ where L_ρ is the symmetric logarithmic derivative.
 
 **Status:** Highly speculative. Requires connection to quantum gravity.
 
-### 22.6 The 3FLL Algebra
+### 21.6 The 3FLL Algebra
 
 **Problem:** What mathematical structure emerges from taking 3FLL as axioms of an algebraic system?
 
@@ -2741,7 +2741,7 @@ where L_ρ is the symmetric logarithmic derivative.
 
 **Connection to quantum logic:** Standard quantum logic replaces Boolean algebras with orthomodular lattices. LRT suggests the opposite direction: start with Boolean structure (3FLL) and derive non-Boolean structure (quantum logic) as a consequence of the IIS/actuality interface.
 
-### 22.7 Derivation of Local Tomography
+### 21.7 Derivation of Local Tomography
 
 **Open Problem:** Can local tomography (Axiom 3c) be derived from more primitive LRT commitments?
 
@@ -2757,7 +2757,7 @@ where L_ρ is the symmetric logarithmic derivative.
 
 **Significance:** Deriving local tomography would reduce LRT's axiom count and strengthen the derivation chain.
 
-### 22.8 The Number Field Problem
+### 21.8 The Number Field Problem
 
 **Problem:** Can the choice of complex numbers (over reals or quaternions) be derived from pure distinguishability considerations?
 
@@ -2772,7 +2772,7 @@ where L_ρ is the symmetric logarithmic derivative.
 
 If these follow from LRT's foundational commitments, the complex number field would be derived, not assumed.
 
-### 22.9 What This Section Establishes
+### 21.9 What This Section Establishes
 
 We have identified:
 
@@ -2786,11 +2786,11 @@ The next section summarizes the open problems systematically.
 
 ---
 
-## 23. Open Problems
+## 22. Open Problems
 
 This section catalogs the major open problems in LRT, organized by domain. These represent honest acknowledgments of current limitations and directions for future work.
 
-### 23.1 Foundational Problems
+### 22.1 Foundational Problems
 
 **Problem 22.1 (Derivation of Axiom 3).** Can the physical constraints (continuity, reversibility, local tomography) be derived from 3FLL and distinguishability alone?
 
@@ -2819,7 +2819,7 @@ This section catalogs the major open problems in LRT, organized by domain. These
 
 ---
 
-### 23.2 Mathematical Problems
+### 22.2 Mathematical Problems
 
 **Problem 22.4 (Complexity Measure).** Define a principled complexity measure C: IIS → ℝ⁺ connecting to action via S = ℏC.
 
@@ -2851,7 +2851,7 @@ This section catalogs the major open problems in LRT, organized by domain. These
 
 ---
 
-### 23.3 Physical Problems
+### 22.3 Physical Problems
 
 **Problem 22.7 (Interface Mechanism).** What physical process implements the Layer 3 → Layer 4 transition?
 
@@ -2866,7 +2866,7 @@ However, the logical structure established in Part III imposes non-trivial const
 
 **Parsimony Constraint on Interface Dynamics:**
 
-Global Parsimony (Theorem 17.10) implies that actuality contains only grounded structure - grounded in 3FLL, IIS, and the initial state s₀. This allows a natural parsimony constraint:
+Global Parsimony (Theorem 16.10) implies that actuality contains only grounded structure - grounded in 3FLL, IIS, and the initial state s₀. This allows a natural parsimony constraint:
 
 > Any collapse or interface mechanism that introduces new primitive constants not already required by reversible dynamics or emergent geometry is disfavored as fundamental.
 
@@ -2905,7 +2905,7 @@ The open problem is no longer whether "anything goes," but which parameter-free,
 
 **Problem 22.8 (Gravity).** How does gravity fit into LRT's framework?
 
-*Current status:* LRT addresses quantum mechanics but does not incorporate general relativity. The relationship between distinguishability structure and spacetime geometry is conjectural (Section 22.5).
+*Current status:* LRT addresses quantum mechanics but does not incorporate general relativity. The relationship between distinguishability structure and spacetime geometry is conjectural (Section 21.5).
 
 *Possible directions:*
 - Emergent spacetime from distinguishability (information-theoretic gravity)
@@ -2925,7 +2925,7 @@ The open problem is no longer whether "anything goes," but which parameter-free,
 
 ---
 
-### 23.4 Philosophical Problems
+### 22.4 Philosophical Problems
 
 **Problem 22.10 (Modality).** What is the modal status of LRT's claims?
 
@@ -2960,7 +2960,7 @@ The open problem is no longer whether "anything goes," but which parameter-free,
 
 ---
 
-### 23.5 Experimental Problems
+### 22.5 Experimental Problems
 
 **Problem 22.13 (Interface Transition Tests).** Design experiments to test competing interface mechanisms.
 
@@ -2984,7 +2984,7 @@ The open problem is no longer whether "anything goes," but which parameter-free,
 
 ---
 
-### 23.6 Summary of Open Problems
+### 22.6 Summary of Open Problems
 
 | Problem | Domain | Difficulty | Priority |
 |---------|--------|------------|----------|
@@ -3003,7 +3003,7 @@ The open problem is no longer whether "anything goes," but which parameter-free,
 | Interface tests | Experimental | Medium (technical) | High |
 | Novel predictions | Experimental | High | High |
 
-### 23.7 What This Section Establishes
+### 22.7 What This Section Establishes
 
 This catalog of open problems serves several purposes:
 
@@ -3022,7 +3022,7 @@ This concludes Part III: Mathematical Structure.
 
 # Part IV: Empirical Signatures
 
-## 24. Introduction to Empirical Signatures
+## 23. Introduction to Empirical Signatures
 
 Parts I-III established Logic Realism Theory as a philosophical thesis, a physical interpretation, and a mathematical framework. This part addresses the critical question: **Is LRT empirically testable?**
 
@@ -3030,21 +3030,21 @@ A theoretical framework without empirical content is metaphysics at best, specul
 
 Such claims demand empirical grounding. Part IV provides it.
 
-### 24.1 Three Categories of Empirical Content
+### 23.1 Three Categories of Empirical Content
 
 We organize LRT's empirical content into three categories:
 
-**Retrodictions (Section 25):** Phenomena already confirmed that LRT explains more deeply than standard quantum mechanics. These are not novel predictions but provide explanatory unification. Standard QM predicts these phenomena; LRT explains *why* they occur. These retrodictions do not expand the predictive domain of QM; they unify it under a single architectural principle.
+**Retrodictions (Section 24):** Phenomena already confirmed that LRT explains more deeply than standard quantum mechanics. These are not novel predictions but provide explanatory unification. Standard QM predicts these phenomena; LRT explains *why* they occur. These retrodictions do not expand the predictive domain of QM; they unify it under a single architectural principle.
 
-**Predictions (Sections 26-29):** Testable claims that follow from LRT's specific commitments:
-- Already confirmed predictions (Section 26)
-- Currently testable predictions (Section 27)
-- Novel predictions from the Action-Complexity conjecture (Section 28)
-- Implications for quantum computing (Section 29)
+**Predictions (Sections 25-28):** Testable claims that follow from LRT's specific commitments:
+- Already confirmed predictions (Section 25)
+- Currently testable predictions (Section 26)
+- Novel predictions from the Action-Complexity conjecture (Section 27)
+- Implications for quantum computing (Section 28)
 
-**Falsifiers (Section 31):** Possible observations that would refute LRT. A theory that cannot be wrong cannot be scientific.
+**Falsifiers (Section 29):** Possible observations that would refute LRT. A theory that cannot be wrong cannot be scientific.
 
-### 24.2 What Distinguishes LRT Empirically
+### 23.2 What Distinguishes LRT Empirically
 
 The goal is not merely to show that LRT is consistent with observation - any interpretation of quantum mechanics can claim that. The goal is to show that LRT makes specific claims about the structure of reality that are, in principle and in practice, testable.
 
@@ -3060,11 +3060,11 @@ LRT differs from other interpretations in making definite commitments:
 
 **On complex numbers:** This is a *structural prediction* of LRT rather than standard QM. Standard QM simply postulates complex amplitudes; LRT predicts them because local tomography (Axiom 3c) requires ℂ over ℝ or ℍ. Renou et al. (2021) confirmed this by ruling out real quantum mechanics experimentally.
 
-**On the Born rule:** Uniqueness follows from Gleason's theorem given Hilbert space structure (derived in Section 18) and a non-contextual probability measure (Axiom 5). The derivation is conditional on these premises; LRT does not derive the probability rule from pure logic.
+**On the Born rule:** Uniqueness follows from Gleason's theorem given Hilbert space structure (derived in Section 17) and a non-contextual probability measure (Axiom 5). The derivation is conditional on these premises; LRT does not derive the probability rule from pure logic.
 
 *Remark:* The complex-number requirement is LRT's only structural prediction that has already been experimentally confirmed against a live alternative (real QM). All other confirmed results in the table are shared with standard QM; LRT's distinctive contribution is explaining *why* the excluded alternatives fail.
 
-### 24.3 The Evidential Structure
+### 23.3 The Evidential Structure
 
 The evidential case for LRT rests on three pillars:
 
@@ -3074,7 +3074,7 @@ The evidential case for LRT rests on three pillars:
 
 **Falsifiability:** LRT specifies what observations would refute it. A theory that takes intellectual risk by making falsifiable claims demonstrates genuine content. Scientific risk-taking is evidence.
 
-### 24.4 A Note on Interpretation vs. Prediction
+### 23.4 A Note on Interpretation vs. Prediction
 
 All interpretations of quantum mechanics (Copenhagen, Many-Worlds, Bohmian, QBism) make the same predictions for standard experiments - this is by design, as they interpret the same formalism.
 
@@ -3086,31 +3086,31 @@ LRT's empirical distinctiveness comes from:
 
 **Novel conjectures:** The Action-Complexity Equivalence (S = ℏC) generates testable consequences that other interpretations do not propose.
 
-### 24.5 What This Part Establishes
+### 23.5 What This Part Establishes
 
 The following sections demonstrate that LRT is not merely an interpretation but an empirically grounded framework that:
 
-1. **Retrodicts** 17+ quantum phenomena with unified explanation (Section 25)
-2. **Has confirmed predictions** already tested (Section 26)
-3. **Makes currently testable predictions** about interface mechanisms (Section 27)
-4. **Generates novel predictions** from its core commitments (Section 28)
-5. **Has implications** for quantum computing (Section 29)
-6. **Specifies falsification conditions** (Section 31)
-7. **Defines a research program** extending decades into the future (Section 32)
+1. **Retrodicts** 17+ quantum phenomena with unified explanation (Section 24)
+2. **Has confirmed predictions** already tested (Section 25)
+3. **Makes currently testable predictions** about interface mechanisms (Section 26)
+4. **Generates novel predictions** from its core commitments (Section 27)
+5. **Has implications** for quantum computing (Section 28)
+6. **Specifies falsification conditions** (Section 29)
+7. **Defines a research program** extending decades into the future (Section 30)
 
 The theory's prediction concerning complex quantum mechanics has already been confirmed (Renou et al., 2021). Its predictions concerning interface mechanisms will be tested within the next decade in optomechanical superposition experiments, macroscopic interferometry (Vienna group), and MAQRO proposals. This is not armchair philosophy but a framework that makes contact with ongoing experimental physics.
 
 ---
 
-## 25. Retrodictions: What LRT Explains
+## 24. Retrodictions: What LRT Explains
 
 Standard quantum mechanics is empirically successful but explanatorily silent. It tells us to use Hilbert space (but not why), apply the Born rule |ψ|² (but not why), accept contextuality (but not why), and expect Bell violations (but not why). LRT fills these explanatory gaps without changing predictions. These retrodictions rely only on the structural commitments established in Parts I-III and do not introduce new postulates.
 
-### 25.1 The Explanatory Gap
+### 24.1 The Explanatory Gap
 
 A retrodiction is an explanation of an already-confirmed phenomenon. LRT retrodicts quantum phenomena by deriving them from the interaction of 3FLL, IIS structure, the interface constraints, and the derived Hilbert-space framework. This is not ad hoc - the same explanatory resources ground all phenomena. The unification is the evidence.
 
-### 25.2 Retrodiction Table
+### 24.2 Retrodiction Table
 
 | Phenomenon | Standard QM | LRT Explanation |
 |------------|-------------|-----------------|
@@ -3132,7 +3132,7 @@ A retrodiction is an explanation of an already-confirmed phenomenon. LRT retrodi
 | **State collapse** | Postulate (problematic) | Category transition from IIS to actuality; not a dynamical process |
 | **Preferred basis problem** | Unresolved in MWI | Einselection + interface structure determines which partition actualizes |
 
-### 25.3 The Depth of Explanation
+### 24.3 The Depth of Explanation
 
 Standard QM presents these 17 phenomena as brute facts or mathematical consequences without physical interpretation. LRT provides unified explanation:
 
@@ -3146,7 +3146,7 @@ Consider three examples in detail:
 
 **Wave-particle duality:** Bohr's complementarity is descriptive, not explanatory. LRT explains: "wave" and "particle" refer to different ontological domains. The wave-like aspects (interference, superposition) describe IIS structure. The particle-like aspects (localized detection, definite outcomes) describe Boolean actuality. There is no contradiction because these are not competing descriptions of the same thing - they are accurate descriptions of different domains.
 
-### 25.4 What Retrodiction Achieves
+### 24.4 What Retrodiction Achieves
 
 Retrodiction is not prediction. LRT does not claim to have predicted Bell violations before Bell, or contextuality before Kochen-Specker. These phenomena were already established.
 
@@ -3159,11 +3159,11 @@ What retrodiction achieves:
 
 The 17 retrodictions in Table 24.2 are not independent successes. They follow from the same framework. This systematic explanatory power - rather than any single retrodiction - constitutes evidence for LRT.
 
-### 25.5 Limitations of Retrodiction
+### 24.5 Limitations of Retrodiction
 
 Retrodiction has limitations:
 
-**Not unique:** Other interpretations also explain some of these phenomena. Many-Worlds accounts for apparent collapse through branching, though the probability interpretation remains contested; Bohmian mechanics explains single outcomes. LRT's advantage is unified explanation from minimal resources, not exclusive explanation. No competing interpretation currently derives unitarity from informational principles (Theorem 17.12) while simultaneously dissolving the measurement problem without branching worlds or non-local hidden variables.
+**Not unique:** Other interpretations also explain some of these phenomena. Many-Worlds accounts for apparent collapse through branching, though the probability interpretation remains contested; Bohmian mechanics explains single outcomes. LRT's advantage is unified explanation from minimal resources, not exclusive explanation. No competing interpretation currently derives unitarity from informational principles (Theorem 16.12) while simultaneously dissolving the measurement problem without branching worlds or non-local hidden variables.
 
 **Not derivation:** Some "explanations" in Table 24.2 are conceptual reframings rather than strict derivations. "Superposition is the pre-actualization state" is an interpretation, not a theorem. Honest accounting requires distinguishing explanation from derivation.
 
@@ -3173,9 +3173,9 @@ Despite these limitations, the systematic explanatory unification across 17 quan
 
 ---
 
-## 26. Confirmed Predictions: Complex Quantum Mechanics
+## 25. Confirmed Predictions: Complex Quantum Mechanics
 
-### 26.1 The Only Structural Prediction Currently Confirmed
+### 25.1 The Only Structural Prediction Currently Confirmed
 
 Among LRT's structural predictions (those concerning the mathematical form of quantum theory), exactly one has been experimentally confirmed: quantum mechanics requires complex numbers.
 
@@ -3191,7 +3191,7 @@ This prediction arises as follows:
 
 5. **Result**: Experimental violation of the real-QM bound confirms complex amplitudes.
 
-### 26.2 What This Confirms and What It Does Not
+### 25.2 What This Confirms and What It Does Not
 
 **What it confirms:**
 
@@ -3207,7 +3207,7 @@ The experimental result confirms that *if* local tomography holds, quantum mecha
 
 This is a consistency check, not a distinctive confirmation. LRT passes this test, but so does any interpretation that accepts the standard quantum formalism with local tomography.
 
-### 26.3 Status of Other Structural Predictions
+### 25.3 Status of Other Structural Predictions
 
 LRT's remaining structural predictions (see Sections 26-27) concern:
 
@@ -3217,21 +3217,21 @@ LRT's remaining structural predictions (see Sections 26-27) concern:
 
 These predictions await experimental test and are discussed in subsequent sections.
 
-### 26.4 Summary
+### 25.4 Summary
 
 | Prediction | Basis | Status |
 |-----------|-------|--------|
 | Complex amplitudes required | Local tomography (Axiom 3c) | Confirmed (Renou et al., 2021) |
-| Specific interface dynamics | Full reconstruction framework (Axioms 1-5) | Testable (Section 27) |
-| Irreducibility bounds | IIS structure + interface constraints | Open (Section 28) |
+| Specific interface dynamics | Full reconstruction framework (Axioms 1-5) | Testable (Section 26) |
+| Irreducibility bounds | IIS structure + interface constraints | Open (Section 27) |
 
 **Current empirical standing**: LRT is consistent with all known quantum phenomena. One structural prediction (complex numbers) has been confirmed, though this confirmation is shared by any locally tomographic framework. Distinctive predictions remain to be tested.
 
 ---
 
-## 27. Current Experiments: Testing Interface Mechanisms
+## 26. Current Experiments: Testing Interface Mechanisms
 
-### 27.1 The Open Question
+### 26.1 The Open Question
 
 LRT specifies that Boolean actuality is enforced at an interface with IIS, but does not uniquely determine the physical mechanism by which this occurs. This is not a weakness - it is an empirical question that ongoing experiments can address.
 
@@ -3246,7 +3246,7 @@ Several candidates for the interface mechanism exist:
 
 LRT is compatible with any collapse or decoherence mechanism that preserves the CBP constraints and maintains pre-interface unitarity. Models that introduce superluminal signaling or violate unitarity prior to interface resolution would conflict with Part III's derived constraints.
 
-### 27.2 The Penrose-Diósi Model
+### 26.2 The Penrose-Diósi Model
 
 The gravity-induced collapse model predicts that superpositions collapse when gravitational self-energy reaches a threshold:
 
@@ -3262,7 +3262,7 @@ where τ is the collapse time and E_G is the gravitational self-energy of the su
 | Nanoparticle (10⁹ amu) | 10⁻¹⁸ kg | ~100 nm | ~10⁻² s |
 | Micromirror (10¹⁴ amu) | 10⁻¹³ kg | ~10 nm | ~10⁻⁷ s |
 
-### 27.3 Planned and Ongoing Experiments
+### 26.3 Planned and Ongoing Experiments
 
 **MAQRO (Macroscopic Quantum Resonators in Orbit):**
 ESA mission proposal to test superposition of ~10⁹ amu particles in space. Microgravity eliminates decoherence from support structures. Status: proposal under periodic ESA review; not yet selected for flight.
@@ -3273,7 +3273,7 @@ Ground-based experiments with nanomechanical oscillators create superpositions o
 **Large-molecule interferometry:**
 Vienna group has demonstrated interference with molecules exceeding 25,000 amu. Goal: extend to 10⁵-10⁶ amu; full PD regime requires ~10⁸-10⁹ amu but intermediate deviations would be informative.
 
-### 27.4 GRW Heating Tests
+### 26.4 GRW Heating Tests
 
 The GRW spontaneous localization model predicts anomalous heating:
 
@@ -3285,7 +3285,7 @@ Parameters λ and a are not uniquely fixed; GRW provides ranges, not exact value
 
 **Current status:** Sensitivity ~10⁻²² W. Current experiments constrain GRW with standard parameter choices but cannot yet reach the full GRW parameter range.
 
-### 27.5 What Results Would Tell Us
+### 26.5 What Results Would Tell Us
 
 | Observation | Implication for LRT |
 |-------------|---------------------|
@@ -3296,7 +3296,7 @@ Parameters λ and a are not uniquely fixed; GRW provides ranges, not exact value
 
 **LRT's role:** LRT does not predict which mechanism is correct. It provides the interpretive framework: whatever physical process triggers collapse (if any), it marks the category transition from IIS possibilities to Boolean actuality.
 
-### 27.6 Honest Assessment
+### 26.6 Honest Assessment
 
 **What these experiments test:** Whether objective collapse occurs and, if so, what physical criterion triggers it.
 
@@ -3312,9 +3312,9 @@ Either outcome is consistent with LRT's framework. LRT thereby converts what is 
 
 ---
 
-## 28. Novel Predictions
+## 27. Novel Predictions
 
-### 28.1 Categories of Prediction
+### 27.1 Categories of Prediction
 
 LRT generates predictions in three categories:
 
@@ -3326,7 +3326,7 @@ LRT generates predictions in three categories:
 
 We distinguish what LRT specifically contributes from what it inherits.
 
-### 28.2 The Action-Complexity Conjecture
+### 27.2 The Action-Complexity Conjecture
 
 **Conjecture (S = ℏC):** There exists a fundamental equivalence between physical action and informational complexity:
 
@@ -3347,7 +3347,7 @@ where S is physical action and C is informational complexity; ℏ acts as a conv
 
 **Honest assessment:** The S = ℏC conjecture provides interpretive unification but has not generated predictions distinct from existing physics. Novel empirical content arises only if future experiments show exact saturation of Landauer or Bekenstein bounds (no slack region between theoretical limit and achievable performance).
 
-### 28.3 Structural Fine-Tuning Predictions
+### 27.3 Structural Fine-Tuning Predictions
 
 LRT claims quantum mechanics is the unique stable interface between IIS and Boolean actuality. This generates exclusion predictions:
 
@@ -3365,7 +3365,7 @@ LRT claims quantum mechanics is the unique stable interface between IIS and Bool
 
 **Honest assessment:** These exclusions are not unique to LRT. Any framework accepting standard quantum mechanics makes the same predictions. LRT's contribution is providing a unified reason (interface stability under CBP) for why these alternatives fail.
 
-### 28.4 The Tsirelson Bound
+### 27.4 The Tsirelson Bound
 
 **Prediction:** Quantum correlations saturate the Tsirelson bound (2√2 for CHSH) and never exceed it.
 
@@ -3375,7 +3375,7 @@ LRT claims quantum mechanics is the unique stable interface between IIS and Bool
 
 **Honest assessment:** The prediction is shared with standard quantum mechanics. LRT provides interpretive grounding for *why* this particular bound, not a novel empirical claim.
 
-### 28.5 The Born Rule
+### 27.5 The Born Rule
 
 **Prediction:** The Born rule |ψ|² holds exactly at all precision levels.
 
@@ -3387,7 +3387,7 @@ LRT claims quantum mechanics is the unique stable interface between IIS and Bool
 
 **Honest assessment:** This prediction is not unique to LRT. Any framework accepting Hilbert space structure predicts Born rule exactness via Gleason.
 
-### 28.6 3FLL as Global Constraint
+### 27.6 3FLL as Global Constraint
 
 LRT makes several predictions based on 3FLL being constitutive:
 
@@ -3399,7 +3399,7 @@ LRT makes several predictions based on 3FLL being constitutive:
 
 **Honest assessment:** These are not empirically distinct from standard physics. They provide interpretation, not novel predictions.
 
-### 28.7 Summary: What LRT Uniquely Predicts
+### 27.7 Summary: What LRT Uniquely Predicts
 
 | Prediction Category | Unique to LRT? | Novel Empirical Content? |
 |--------------------|----------------|-------------------------|
@@ -3407,14 +3407,14 @@ LRT makes several predictions based on 3FLL being constitutive:
 | Born rule exact | No (shared with Hilbert frameworks) | Ongoing precision tests |
 | Tsirelson exact | No (shared with QM) | Confirmed |
 | S = ℏC consequences | Yes (interpretively) | Only if exact saturation observed |
-| Interface mechanism | No (mechanism-agnostic) | Section 27 experiments |
+| Interface mechanism | No (mechanism-agnostic) | Section 26 experiments |
 | Structural fine-tuning | Yes (unified explanation) | No novel empirical claim |
 
 **Honest conclusion:** LRT's primary contribution is interpretive unification, not novel empirical predictions. The one potentially distinctive prediction - that Landauer and Bekenstein bounds are exactly saturated rather than approximate - awaits precision testing. Most "predictions" are shared with any framework accepting standard quantum mechanics with the reconstruction axioms.
 
 The only pathway currently visible for LRT to acquire a genuinely novel, experimentally distinguishable prediction is the exact saturation of information-theoretic bounds (Landauer, Bekenstein, Margolus-Levitin) implied by the action-complexity conjecture.
 
-### 28.8 Distinctive Predictions of LRT
+### 27.8 Distinctive Predictions of LRT
 
 The preceding sections established that most of LRT's empirical content is shared with standard quantum mechanics or inherited from the reconstruction framework. However, LRT's specific structural commitments—Global Parsimony, the interface ontology, CBP, and the logical grounding of distinguishability—generate several predictions that are distinctive to this framework.
 
@@ -3424,7 +3424,7 @@ The preceding sections established that most of LRT's empirical content is share
 
 *Statement*: Any verified collapse mechanism whose rate depends on a new primitive constant—one not derivable from the existing constant set—would falsify LRT in its current form.
 
-*Basis*: Global Parsimony (Theorem 17.10) prohibits surplus structure. Collapse parameters that cannot be expressed in terms of constants already required for reversible dynamics and geometry would constitute such surplus.
+*Basis*: Global Parsimony (Theorem 16.10) prohibits surplus structure. Collapse parameters that cannot be expressed in terms of constants already required for reversible dynamics and geometry would constitute such surplus.
 
 *Example*: GRW/CSL models introduce independent parameters (λ, a) as primitives. If collapse is confirmed and these parameters cannot be grounded in the existing constant set, LRT requires revision.
 
@@ -3450,7 +3450,7 @@ These predictions are conditional on the Action-Complexity conjecture (S = ℏC)
 
 *Statement 3c*: Holographic complexity bounds and black-hole entropy reflect exact complexity capacity, not approximate inequalities.
 
-*Basis*: Section 28.2—if action and complexity are fundamentally equivalent, bounds become equalities.
+*Basis*: Section 27.2—if action and complexity are fundamentally equivalent, bounds become equalities.
 
 *Status*: These remain conditional forecasts. S = ℏC is conjectural within LRT. Precision tests over 10–30 year horizons may become decisive.
 
@@ -3470,7 +3470,7 @@ LRT treats measurement as an ontological category transition from IIS to Boolean
 
 **Prediction 5: Deviations from Complex Structure Tied to Logical Distinguishability**
 
-LRT grounds the complex-number structure of quantum mechanics in local tomography and logical compositionality (Section 26).
+LRT grounds the complex-number structure of quantum mechanics in local tomography and logical compositionality (Section 25).
 
 *Statement*: Any observed deviation from complex quantum mechanics in extreme regimes (Planckian scales, strong curvature, analogue systems) must coincide with a detectable failure of logical distinguishability or local tomography. Real or quaternionic deviations without such failures would falsify the "logical origin" claim.
 
@@ -3496,9 +3496,9 @@ Predictions 1 and 2 represent concrete empirical commitments that distinguish LR
 
 ---
 
-## 29. Implications for Quantum Computing
+## 28. Implications for Quantum Computing
 
-### 29.1 LRT's Perspective on Quantum Computation
+### 28.1 LRT's Perspective on Quantum Computation
 
 Quantum computing exploits the structure that LRT identifies as the IIS-actuality interface. From LRT's perspective:
 
@@ -3509,9 +3509,9 @@ Quantum computing exploits the structure that LRT identifies as the IIS-actualit
 
 This provides interpretation, not novel predictions about quantum computing capabilities.
 
-### 29.2 Complexity Bounds (Conditional on S = ℏC)
+### 28.2 Complexity Bounds (Conditional on S = ℏC)
 
-If the Action-Complexity conjecture (Section 28.2) holds, quantum computation would have fundamental resource bounds:
+If the Action-Complexity conjecture (Section 27.2) holds, quantum computation would have fundamental resource bounds:
 
 **Conceptual bound:** Circuit complexity bounded by available action:
 
@@ -3525,13 +3525,13 @@ The conjecture mirrors known quantum speed-limit theorems (Margolus-Levitin, Man
 
 **Honest assessment:** This reinterprets existing bounds rather than predicting new ones.
 
-### 29.3 Error Correction
+### 28.3 Error Correction
 
 **LRT interpretation:** Error correction maintains the stability of logical subspaces against decoherence. This is an interpretive description; threshold values arise from engineering constraints and noise models, not from LRT's foundational claims.
 
 **Status:** Error correction thresholds are empirically studied and theoretically derived from fault-tolerance theory. LRT provides no novel predictions about threshold values.
 
-### 29.4 Quantum Advantage
+### 28.4 Quantum Advantage
 
 **LRT interpretation:** Quantum algorithms exploit interference and entanglement to sculpt amplitudes, not literal "parallel evaluation" of Boolean alternatives. The advantage reflects structural resources available in IIS that have no Boolean counterpart.
 
@@ -3539,7 +3539,7 @@ The conjecture mirrors known quantum speed-limit theorems (Margolus-Levitin, Man
 
 **Status:** Quantum advantage has been demonstrated for specific problems (Sycamore, Zuchongzhi). LRT explains *why* advantage is possible but does not predict *which* problems admit speedup.
 
-### 29.5 What LRT Does Not Predict
+### 28.5 What LRT Does Not Predict
 
 LRT makes no novel predictions about:
 - Which computational problems have quantum speedup
@@ -3551,7 +3551,7 @@ LRT makes no novel predictions about:
 
 These depend on engineering, complexity theory, and algorithm design - not on LRT's foundational claims.
 
-### 29.6 Summary
+### 28.6 Summary
 
 | Quantum Computing Topic | LRT Contribution |
 |------------------------|------------------|
@@ -3566,15 +3566,15 @@ LRT provides a conceptual framework for understanding quantum computation but do
 
 ---
 
-## 30. Falsifiers: What Would Refute LRT
+## 29. Falsifiers: What Would Refute LRT
 
-### 30.1 The Requirement of Falsifiability
+### 29.1 The Requirement of Falsifiability
 
 A scientific theory must specify conditions for its own refutation. LRT is falsifiable - certain observations would refute its core claims. This section catalogs those observations and their current status.
 
 Some falsifiers target LRT's distinctive commitments; others target the reconstruction framework LRT adopts. This distinction is essential for honest assessment.
 
-### 30.2 Falsification Table
+### 29.2 Falsification Table
 
 | Observation | What It Would Refute | Current Status |
 |-------------|---------------------|----------------|
@@ -3590,7 +3590,7 @@ Some falsifiers target LRT's distinctive commitments; others target the reconstr
 | **Non-identical "identical" particles** | Identity constitutive | Not observed |
 | **Locally tomographic quaternionic QM works** | Local tomography (Axiom 3c) | Theoretically disfavored |
 
-### 30.3 Categories of Falsifier
+### 29.3 Categories of Falsifier
 
 **Reconstruction falsifiers (test the quantum structure LRT adopts, not LRT's distinctive claims):**
 - Real vs. complex QM → Complex confirmed (2021)
@@ -3606,7 +3606,7 @@ Some falsifiers target LRT's distinctive commitments; others target the reconstr
 - Failure of any mechanism (collapse or decoherence) to produce definite outcomes → Would falsify interface picture
 
 **Currently being tested:**
-- Interface mechanism specifics (Section 27)
+- Interface mechanism specifics (Section 26)
 - Macroscopic superposition decoherence rates
 - Precision Born rule measurements
 
@@ -3615,7 +3615,7 @@ Some falsifiers target LRT's distinctive commitments; others target the reconstr
 - Exact saturation of Landauer limit
 - S = ℏC predictions
 
-### 30.4 Honest Assessment of Falsifiability
+### 29.4 Honest Assessment of Falsifiability
 
 **What these falsifiers actually test:**
 
@@ -3635,7 +3635,7 @@ LRT inherits these falsifiers because it adopts the reconstruction framework. Th
 
 These are extraordinarily difficult to test because they concern foundational assumptions shared with virtually all physics.
 
-### 30.5 What LRT Does Not Predict (Hence Cannot Falsify)
+### 29.5 What LRT Does Not Predict (Hence Cannot Falsify)
 
 LRT makes no predictions about:
 - Specific particle masses
@@ -3644,12 +3644,12 @@ LRT makes no predictions about:
 - Gauge group structure (SU(3) × SU(2) × U(1))
 - Cosmological parameters
 - Dark matter/energy nature
-- Specific collapse mechanism (Section 27)
+- Specific collapse mechanism (Section 26)
 - Quantum gravity or relativistic unification
 
 These are either parameters within the quantum framework or domains beyond LRT's scope. Their values do not test LRT's core claims about the logical grounding of quantum structure.
 
-### 30.6 The Falsifiability Status
+### 29.6 The Falsifiability Status
 
 **Strong claim:** LRT is falsifiable in principle.
 
@@ -3663,9 +3663,9 @@ LRT is therefore falsifiable in principle at every level - from its two survivin
 
 ---
 
-## 31. Research Program and Summary
+## 30. Research Program and Summary
 
-### 31.1 The Empirical Status of LRT
+### 30.1 The Empirical Status of LRT
 
 Part IV has established:
 
@@ -3677,24 +3677,24 @@ Part IV has established:
 - Tsirelson bound - confirmed to all currently available precision
 
 **Being tested:**
-- Interface mechanism (collapse vs. decoherence-only) - Section 27
+- Interface mechanism (collapse vs. decoherence-only) - Section 26
 - Macroscopic superposition limits
 - Precision measurements of quantum bounds
 
 **Awaiting test:**
 - Exact saturation of Landauer/Bekenstein bounds (S = ℏC implications)
 
-### 31.2 What LRT Achieves
+### 30.2 What LRT Achieves
 
 LRT provides:
 
-1. **Explanatory unification** - 17 quantum phenomena explained from common resources (Section 25)
-2. **Derivation of reversibility** - Theorem 17.12 derives unitarity given Hilbert structure, CBP, and Parsimony
+1. **Explanatory unification** - 17 quantum phenomena explained from common resources (Section 24)
+2. **Derivation of reversibility** - Theorem 16.12 derives unitarity given Hilbert structure, CBP, and Parsimony
 3. **Explicit axiom accounting** - Two irreducible physical axioms at the interface (continuity and local tomography), with additional structural assumptions from reconstruction
 4. **Interface interpretation** - Measurement as category transition, not dynamical collapse (mechanism-agnostic; compatible with both decoherence-only and objective-collapse models)
-5. **Falsifiability structure** - Clear conditions for refutation (Section 31)
+5. **Falsifiability structure** - Clear conditions for refutation (Section 29)
 
-### 31.3 What LRT Does Not Achieve
+### 30.3 What LRT Does Not Achieve
 
 Honest assessment requires acknowledging limitations:
 
@@ -3704,7 +3704,7 @@ Honest assessment requires acknowledging limitations:
 4. **S = ℏC remains conjectural** - motivated but not derived
 5. **Interface mechanism underdetermined** - compatible with multiple physical realizations
 
-### 31.4 The Research Program
+### 30.4 The Research Program
 
 **Near-term (experimental):**
 - Monitor interface mechanism experiments (MAQRO, optomechanics, interferometry)
@@ -3712,7 +3712,7 @@ Honest assessment requires acknowledging limitations:
 - Follow developments in macroscopic superposition studies
 
 **Near-term (theoretical):**
-- Formal verification in Lean 4 (ISSUE 003): Theorem 17.12, CBP application, and Hilbert reconstruction lemmas
+- Formal verification in Lean 4 (ISSUE 003): Theorem 16.12, CBP application, and Hilbert reconstruction lemmas
 - Rigorous treatment of S = ℏC conjecture
 - Exploratory investigation of how LRT's interface and logical constraints might integrate with quantum gravity approaches
 
@@ -3721,7 +3721,7 @@ Honest assessment requires acknowledging limitations:
 - Investigation of cosmological implications
 - Development of experimental proposals that could distinguish LRT
 
-### 31.5 Comparison with Other Interpretations
+### 30.5 Comparison with Other Interpretations
 
 | Interpretation | Explains QM structure? | Novel predictions? | Measurement problem? |
 |---------------|----------------------|-------------------|---------------------|
@@ -3733,19 +3733,19 @@ Honest assessment requires acknowledging limitations:
 
 LRT's distinctive contribution is grounding quantum structure in logical and informational principles, not novel empirical predictions.
 
-### 31.6 Summary of Part IV
+### 30.6 Summary of Part IV
 
-Part IV (Sections 24-31) has established:
+Part IV (Sections 23-30) has established:
 
-1. **Retrodictions** (Section 25): LRT explains 17 quantum phenomena from unified resources (interpretively unified; not newly derived)
-2. **Confirmed prediction** (Section 26): Complex QM (shared with local tomography frameworks)
-3. **Current experiments** (Section 27): Interface mechanism tests ongoing
-4. **Novel predictions** (Section 28): Primarily interpretive; only S = ℏC may yield future testable differences
-5. **Quantum computing** (Section 29): Interpretive framework, no predictive content
-6. **Falsifiers** (Section 31): Clear conditions exist; most test QM generally
-7. **Research program** (Section 32): Formal verification and experimental monitoring
+1. **Retrodictions** (Section 24): LRT explains 17 quantum phenomena from unified resources (interpretively unified; not newly derived)
+2. **Confirmed prediction** (Section 25): Complex QM (shared with local tomography frameworks)
+3. **Current experiments** (Section 26): Interface mechanism tests ongoing
+4. **Novel predictions** (Section 27): Primarily interpretive; only S = ℏC may yield future testable differences
+5. **Quantum computing** (Section 28): Interpretive framework, no predictive content
+6. **Falsifiers** (Section 29): Clear conditions exist; most test QM generally
+7. **Research program** (Section 30): Formal verification and experimental monitoring
 
-### 31.7 Conclusion
+### 30.7 Conclusion
 
 LRT is empirically adequate: it is consistent with all known quantum phenomena and has passed every test that standard quantum mechanics has passed (as expected, since LRT reproduces standard QM predictions). Its one structural prediction with experimental confirmation (complex numbers) is shared with any locally tomographic framework.
 
