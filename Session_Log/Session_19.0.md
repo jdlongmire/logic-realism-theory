@@ -74,6 +74,26 @@ Original 1,900-word draft overclaimed. Reduced to ~350 words with honest boundar
 
 ---
 
+### 3. ISSUE 003 Created (Lean 4 Formalization)
+
+**Status: PLANNED** (post-first-draft)
+
+Created comprehensive Lean 4 formalization roadmap based on Grok strategic analysis:
+
+| Phase | Timeline | Goal |
+|-------|----------|------|
+| 0 | 1-2 weeks | Infrastructure (CI, Mathlib) |
+| 1 | 2-4 months | Logical core (unitarity from CBP + Parsimony) |
+| 2 | 4-8 months | Reconstruction (Masanes-Müller, Gleason, Born rule) |
+| 3 | 1-2 months | Explicit axiom accounting (master theorem) |
+| 4 | 6-12 months | Bonus (Stone's theorem, layer model) |
+
+**Key insight**: Phase 1 alone is publishable ("First Formal Derivation of Unitarity from Informational Principles in Lean 4")
+
+**Deferred until**: Master Paper first draft complete
+
+---
+
 ## Final LRT Reconstruction Hierarchy
 
 ```
@@ -120,6 +140,7 @@ Tier 3: Hilbert space → Schrödinger dynamics → Born rule → QM
 4. `d6abd14` - Update Session 19.0 log with ISSUE 002 closure
 5. `31c1e72` - Update Session 19.0 log - complete status
 6. `b9b0820` - Create ISSUE 003: Lean 4 Formalization roadmap
+7. `f7d7828` - Update Session 19.0 log with ISSUE 003
 
 ---
 
