@@ -2060,6 +2060,178 @@ The next sections examine how existing interpretations fit within LRT's layer st
 
 ---
 
+## 19. The Layer Structure: Unifying Interpretations
+
+Sections 16-18 derived quantum mechanics from LRT axioms. This section shows how existing interpretations of quantum mechanics - Copenhagen, Many-Worlds, Bohmian mechanics, GRW, QBism, Relational QM - fit within LRT's ontological architecture. Rather than competing theories, they describe different layers of the same structure.
+
+### 19.1 The Four-Layer Model
+
+LRT articulates four ontological layers between IIS and Boolean actuality:
+
+| Layer | Domain | Description | Key Structure |
+|-------|--------|-------------|---------------|
+| **1** | IIS Dynamics | Unitary evolution of quantum states | Schrödinger equation |
+| **2** | Probability Flow | Distribution evolution over configuration space | Continuity equation |
+| **3** | Interface Approach | Decoherence, environment coupling, approach to Boolean | Lindblad equation |
+| **4** | Boolean Actuality | Definite outcomes, classical records | Measurement results |
+
+Each layer is physically real and mathematically precise. Existing interpretations correctly describe one or more layers while mistaking their layer for the whole.
+
+### 19.2 Layer 1: IIS Dynamics (Unitary QM / Many-Worlds)
+
+**What it describes:** The fundamental evolution of quantum states in IIS, governed by the Schrödinger equation:
+
+$$i\hbar\frac{\partial}{\partial t}|\psi\rangle = H|\psi\rangle$$
+
+**Key features:**
+- Evolution is deterministic and unitary
+- Superposition is preserved
+- Information is conserved
+- "Branching" structure exists
+
+**Which interpretations live here:**
+- **Many-Worlds (Everett, 1957):** Correctly identifies that the wave function is real and evolves unitarily. MWI's "branches" are real structure in IIS. However, MWI errs in claiming all branches are equally *actual*. In LRT, branches exist as possibilities in IIS; only one actualizes at Layer 4.
+
+- **Unitary-only QM:** Any interpretation that takes unitary evolution as fundamental and complete describes Layer 1 correctly.
+
+**LRT assessment:** Layer 1 is real but not the whole story. It describes IIS dynamics but not the interface with actuality.
+
+### 19.3 Layer 2: Probability Flow (Bohmian Mechanics)
+
+**What it describes:** The evolution of probability distributions over configuration space, governed by the continuity equation:
+
+$$\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho v) = 0$$
+
+where ρ = |ψ|² and v is the guidance velocity field.
+
+**Key features:**
+- Probability is conserved
+- Flow is deterministic given the wave function
+- Trajectories exist (mathematically)
+- Born rule emerges as equilibrium
+
+**Which interpretations live here:**
+- **Bohmian mechanics (Bohm, 1952):** Correctly identifies the probability flow structure. The guidance equation:
+
+$$v = \frac{\hbar}{m}\text{Im}\left(\frac{\nabla\psi}{\psi}\right)$$
+
+accurately describes how probability flows through configuration space. However, Bohmian mechanics errs in postulating that particles *always* have definite positions. In LRT, the trajectories describe probability flow in IIS, not actual particle positions until Layer 4.
+
+**LRT assessment:** Layer 2 correctly describes probability flow. Bohmian mathematics is valid at this layer. The error is treating configuration-space trajectories as always-actual positions rather than IIS probability structure.
+
+### 19.4 Layer 3: Interface Approach (Decoherence / GRW)
+
+**What it describes:** The approach to Boolean actuality through environmental interaction or spontaneous collapse. For decoherence:
+
+$$\frac{d\rho}{dt} = -\frac{i}{\hbar}[H, \rho] + \mathcal{L}[\rho]$$
+
+where 𝓛 is the Lindblad superoperator encoding environment coupling.
+
+**Key features:**
+- Off-diagonal elements decay (phase information transfers to environment)
+- Classical pointer states emerge
+- Effective Boolean structure appears
+- Transition rates are calculable
+
+**Which interpretations live here:**
+- **Decoherence program (Zurek, 2003; Schlosshauer, 2007):** Correctly identifies the mechanism by which interference terms vanish and classical structure emerges. However, decoherence alone does not explain why *one* outcome occurs - it shows why superpositions are not observed, not why definite outcomes happen.
+
+- **GRW (Ghirardi et al., 1986):** Postulates spontaneous collapse with specific rate parameters. The collapse rate:
+
+$$\lambda \approx 10^{-16} \text{ s}^{-1}$$
+
+describes the approach to Boolean structure. In LRT, GRW mathematics correctly models the interface transition statistics, though we do not commit to GRW's specific collapse mechanism.
+
+- **Penrose-Diósi gravity-induced collapse:** Another interface mechanism proposal, with collapse rate:
+
+$$\tau \sim \frac{\hbar}{E_G}$$
+
+where E_G is gravitational self-energy of superposition.
+
+**LRT assessment:** Layer 3 describes the approach to Boolean actuality. Multiple mechanisms (decoherence, GRW, gravity) may contribute. LRT is agnostic about which physical process dominates - it provides the ontological interpretation (interface transition) while leaving mechanism identification to empirical investigation.
+
+### 19.5 Layer 4: Boolean Actuality (Copenhagen / QBism)
+
+**What it describes:** The domain of definite outcomes, classical records, and Boolean truth values.
+
+**Key features:**
+- All propositions have definite truth values
+- Measurement results are determinate
+- Classical logic holds
+- Records can be compared and communicated
+
+**Which interpretations live here:**
+- **Copenhagen:** Correctly insists on definite measurement outcomes and the primacy of classical apparatus. The "measurement problem" arises from refusing to specify what measurement is ontologically. LRT provides the answer: measurement is whatever physical process enforces Boolean actuality.
+
+- **QBism (Fuchs & Schack, 2013):** Correctly identifies the agent-relative character of quantum probability assignments and the centrality of measurement outcomes for rational belief updating. In LRT, QBist probability coherence reflects the structure of Layer 4 - how agents embedded in Boolean actuality must reason about interface outcomes.
+
+**LRT assessment:** Layer 4 is where 3FLL are fully enforced. Copenhagen and QBism correctly describe this layer's phenomenology but lack ontological grounding for the interface.
+
+### 19.6 Layer Correspondence Table
+
+| Interpretation | Primary Layer | What It Gets Right | What It Misses |
+|----------------|---------------|-------------------|----------------|
+| Many-Worlds | 1 | Wave function realism, unitarity | Single actuality |
+| Bohmian | 2 | Probability flow structure | Positions as always-actual |
+| Decoherence | 3 | Interference suppression | Outcome selection |
+| GRW | 3 | Collapse statistics | Mechanism specificity |
+| Copenhagen | 4 | Definite outcomes | Interface ontology |
+| QBism | 4 | Coherence constraints | Objective grounding |
+
+### 19.7 Relational Quantum Mechanics
+
+**Rovelli's RQM (1996)** deserves special treatment because it spans layers.
+
+**Core claim:** Properties are relative to interactions. There is no absolute fact about which outcome occurred; facts are relative to observers/systems.
+
+**LRT assessment:** RQM correctly identifies context-dependence but mislocates it. In LRT:
+- The IIS state (Layers 1-2) is objective
+- The *interface* (Layer 3) is context-dependent - different interactions probe different aspects of IIS
+- Outcomes (Layer 4) are objective once actualized
+
+RQM's relationality reflects the context-dependence of the interface map Φ_C, not subjective construction of reality. Different measurement contexts actualize different aspects of IIS structure. This is genuine relationality but with objective grounding.
+
+### 19.8 Why No Interpretation Suffices Alone
+
+Each interpretation captures genuine structure but mistakes its layer for the whole:
+
+**Many-Worlds** sees Layer 1 and concludes all branches are actual. It lacks the IIS/actuality distinction that explains why one outcome occurs.
+
+**Bohmian mechanics** sees Layer 2 and concludes particles always have positions. It lacks the recognition that trajectories describe probability flow, not actual positions until measurement.
+
+**Decoherence** sees Layer 3 and concludes the measurement problem is solved. It lacks the explanation for why one outcome rather than another.
+
+**Copenhagen/QBism** sees Layer 4 and refuses to discuss deeper ontology. They correctly describe outcomes but provide no grounding.
+
+LRT unifies these by recognizing each layer as real and specifying how they relate. The measurement problem dissolves because "measurement" is the transition from Layer 3 to Layer 4 - the interface crossing.
+
+### 19.9 The Inheritance Principle
+
+**Principle 19.1 (Inheritance).** Mathematical structures valid at Layer n are inherited by Layer n+1, appropriately transformed.
+
+**Examples:**
+- Born rule (Layer 1) → Equilibrium distribution (Layer 2)
+- Probability flow (Layer 2) → Decoherence rates (Layer 3)
+- Pointer states (Layer 3) → Measurement outcomes (Layer 4)
+
+This principle explains why different interpretations' mathematics are all correct - they correctly describe their layer, and layer structure is preserved under inheritance.
+
+### 19.10 What This Section Establishes
+
+We have shown:
+
+- LRT articulates four ontological layers between IIS and actuality
+- Each major interpretation correctly describes one or more layers
+- No interpretation alone captures the full structure
+- The measurement problem dissolves as an interface transition
+- Mathematical structures inherit across layers
+
+The layer structure is not ad hoc - it follows from the IIS/actuality distinction and the requirements of stable interface. Each layer has mathematical precision and physical significance.
+
+The next section examines reconstruction theorems that independently confirm key features of this structure.
+
+---
+
 ## References
 
 Appleby, D. M. "The Bell–Kochen–Specker theorem." *Studies in History and Philosophy of Modern Physics* 36(1), 2005: 1-28.
