@@ -85,9 +85,35 @@ Key elements:
 **Word count**: ~1,500 words
 **Source**: Paper 3 §4
 
+### 5. Section 18 Revisions (per ChatGPT feedback)
+
+- Added Busch 2003 (POVM), Bayer-Clifton 2000 notes
+- Clarified contexts = orthonormal bases / PVMs
+- Added phase invariance argument
+- Added dim-2 Gleason failure note
+- Added Hughston-Jozsa-Wootters citation
+- Added Appleby 2005, KS clarification
+- Added Dutch book coherence
+- Expanded derivation chain diagram
+
+### 6. Section 19: The Layer Structure (DRAFTED)
+
+Key elements:
+- Four-layer model between IIS and Boolean actuality
+- Layer 1: IIS Dynamics (Schrödinger, Many-Worlds)
+- Layer 2: Probability Flow (Continuity equation, Bohmian)
+- Layer 3: Interface Approach (Lindblad, GRW, Penrose-Diósi)
+- Layer 4: Boolean Actuality (Copenhagen, QBism)
+- Layer correspondence table
+- Special treatment of Relational QM
+- Inheritance Principle
+
+**Word count**: ~1,800 words
+**Source**: Paper 3 §4.5-4.7, §5-9
+
 ### Status: PAUSED FOR CHATGPT REVIEW
 
-Section 18 ready for external review before continuing to Section 19 (Existing Frameworks Unified).
+Section 19 ready for external review before continuing to Section 20 (Reconstruction Theorems).
 
 ---
 
@@ -97,6 +123,9 @@ Section 18 ready for external review before continuing to Section 19 (Existing F
 2. `317ce29` - Update Session 18.0 log - Sections 16-17 drafted, paused for review
 3. `57d6706` - Revise Sections 16-17 per ChatGPT feedback
 4. `f7aed8f` - Draft Section 18: Deriving the Born Rule
+5. `e2234ef` - Update Session 18.0 log with Section 18 progress
+6. `89ebe44` - Revise Section 18 per ChatGPT feedback
+7. `3739772` - Draft Section 19: The Layer Structure
 
 ---
 
