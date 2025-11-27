@@ -8,9 +8,27 @@
 
 ---
 
-## The Papers
+## Master Paper (In Progress)
 
-Logic Realism Theory is presented as a 5-paper series:
+**[Logic Realism Theory - Master Paper](theory/Logic_Realism_Theory_Master.md)**
+
+Consolidated 41-section paper integrating all five original papers into a unified work.
+
+**Progress: 30/41 sections (~73%)**
+
+| Part | Sections | Status |
+|------|----------|--------|
+| Part I | 1-6 | ✅ Complete (Philosophical Foundations) |
+| Part II | 7-15 | ✅ Complete (Physical Interpretation) |
+| Part III | 16-22 | ✅ Complete (Mathematical Structure) |
+| Part IV | 23-30 | ✅ Complete (Empirical Signatures) |
+| Part V | 31-41 | Pending (Implications & Extensions) |
+
+---
+
+## Source Papers
+
+Logic Realism Theory was originally developed as a 5-paper series:
 
 | # | Paper | Focus |
 |---|-------|-------|
@@ -60,20 +78,34 @@ For development history and ongoing work, see the **[Session Log](Session_Log/)*
 
 ```
 theory/
-├── LRT_Paper1_Logic_Realism_Theory.md        # Philosophy
-├── LRT_Paper2_It_From_Bit_Bit_From_Fit.md    # Physics
-├── LRT_Paper3_Mathematical_Structure.md      # Mathematics
-├── LRT_Paper4_Empirical_Signatures.md        # Predictions
-├── LRT_Paper5_Consilience.md                 # Cross-domain evidence
+├── Logic_Realism_Theory_Master.md            # Master Paper (30/41 sections)
+├── LRT_Paper1_Logic_Realism_Theory.md        # Source: Philosophy
+├── LRT_Paper2_It_From_Bit_Bit_From_Fit.md    # Source: Physics
+├── LRT_Paper3_Mathematical_Structure.md      # Source: Mathematics
+├── LRT_Paper4_Empirical_Signatures.md        # Source: Predictions
+├── LRT_Paper5_Consilience.md                 # Source: Cross-domain evidence
+├── issues/                                    # Open issues and roadmaps
 ├── derivations/                               # First-principles derivation chains
 └── papers/                                    # Archive of previous versions
 
-lean/                    # Formal Lean 4 proofs
+lean/                    # Formal Lean 4 proofs (ISSUE 003)
 notebooks/               # Computational validation
 multi_LLM/               # Multi-LLM consultation system
 Session_Log/             # Development history
 archive/                 # Historical artifacts
 ```
+
+---
+
+## Open Issues
+
+| Issue | Title | Status |
+|-------|-------|--------|
+| 001 | Axiom 3 Grounding | **CLOSED** |
+| 002 | Lagrangian/Hamiltonian | **CLOSED** |
+| 003 | [Lean 4 Formalization](theory/issues/ISSUE_003_Lean4_Formalization.md) | **PLANNED** (post-first-draft) |
+
+See `theory/issues/` for details.
 
 ---
 
