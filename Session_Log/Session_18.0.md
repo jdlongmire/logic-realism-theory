@@ -59,15 +59,44 @@ Key elements:
 **Word count**: ~1,100 words
 **Source**: Paper 3 §2.3, §3
 
+### 3. Sections 16-17 Revisions (per ChatGPT feedback)
+
+- Clarified Definition 16.2 (D is primitive but constrained)
+- Added citations to Axiom 3 sub-axioms
+- Added clarification to Axiom 4 (no hidden-variable assumption)
+- Added truthmaker/grounding citations (Armstrong, Fine, Schaffer, Sider, Tahko)
+- Added Axiom 5 note for Section 17
+- Added Solér reference for quaternionic QM
+- Strengthened completeness argument
+- Added Bengtsson & Życzkowski citation
+
+### 4. Section 18: Deriving the Born Rule (DRAFTED)
+
+Key elements:
+- Gleason's theorem statement (Theorem 18.1)
+- Verification of LRT axioms satisfying Gleason premises (Lemma 18.2)
+- Born Rule derivation (Theorem 18.3)
+- Why squared magnitude is forced
+- Mixed states and density operators
+- Kochen-Specker contextuality as corollary
+- Information-theoretic significance (Helstrom, Holevo, no-cloning)
+- Complete derivation chain diagram
+
+**Word count**: ~1,500 words
+**Source**: Paper 3 §4
+
 ### Status: PAUSED FOR CHATGPT REVIEW
 
-Sections 16-17 ready for external review before continuing to Section 18 (Born Rule Derivation).
+Section 18 ready for external review before continuing to Section 19 (Existing Frameworks Unified).
 
 ---
 
 ## Commits This Session
 
 1. `e5bfeac` - Draft Part III Sections 16-17: LRT Axioms and Hilbert Space Derivation
+2. `317ce29` - Update Session 18.0 log - Sections 16-17 drafted, paused for review
+3. `57d6706` - Revise Sections 16-17 per ChatGPT feedback
+4. `f7aed8f` - Draft Section 18: Deriving the Born Rule
 
 ---
 
