@@ -2855,12 +2855,51 @@ This section catalogs the major open problems in LRT, organized by domain. These
 
 **Problem 22.7 (Interface Mechanism).** What physical process implements the Layer 3 → Layer 4 transition?
 
-*Current status:* LRT is agnostic about mechanism. Decoherence, GRW collapse, gravity-induced collapse are all compatible with the framework. Experimental discrimination between these is an ongoing research program.
+*Current status:* The current framework constraints (continuity, local tomography, non-contextual measure, and CBP) do not determine a unique physical interface mechanism. Decoherence, gravity-induced collapse, spontaneous localization, and information-theoretic saturation remain empirically live possibilities.
+
+However, the logical structure established in Part III imposes non-trivial constraints on which mechanisms can be *fundamental* rather than emergent.
 
 *LRT commitment:* Whatever the mechanism, it must:
 - Produce Boolean outcomes
 - Respect the Born rule
 - Preserve consistency (no signaling)
+
+**Parsimony Constraint on Interface Dynamics:**
+
+Global Parsimony (Theorem 16.10) implies that actuality contains only grounded structure - grounded in 3FLL, IIS, and the initial state s₀. This allows a natural parsimony constraint:
+
+> Any collapse or interface mechanism that introduces new primitive constants not already required by reversible dynamics or emergent geometry is disfavored as fundamental.
+
+This does *not* render GRW empirically false. It places a structural constraint: if GRW is correct, then its parameters λ and a must be *derived* from deeper structure, not postulated. This moves GRW from "compatible" to "conditionally compatible if derivable."
+
+**Emergent Geometry and Boolean Actuality:**
+
+If spacetime geometry is emergent from IIS (as explored in §21), then actuality can host only one macroscopic metric for a given region. A macroscopic superposition that induces incompatible metrics (e.g., two distinct gravitational self-energies) cannot be mapped into Boolean actuality without contradiction.
+
+Thus, geometry places structural limits on how large or complex a superposition can be before the interface must resolve it. This logic is consistent with gravity-induced collapse proposals, information-based collapse proposals, and strong decoherence where geometry plays a passive constraining role.
+
+**Conditional Information-Density Threshold:**
+
+If two further conjectures eventually hold:
+1. Action-Complexity Equivalence (S = ℏC)
+2. Exact Bekenstein Capacity for representable complexity
+
+then a state whose distinguishability complexity exceeds the informational capacity of its region would be incompatible with Boolean geometry. Under these assumptions, resolution (collapse) becomes a consequence of geometric incompatibility and information-density saturation - without new fundamental constants.
+
+This yields a Penrose-Diósi-like collapse mechanism, not as a new dynamical law but as a consistency-restoring constraint emerging from geometry and information.
+
+**Updated Status:**
+
+The mechanism enforcing the IIS → actuality transition remains partially open. However, the space of fundamental mechanisms is no longer wide-open:
+
+| Mechanism | Status under LRT |
+|-----------|------------------|
+| GRW-type models | Empirically viable; fundamental only if λ, a are derivable |
+| Geometry-driven collapse | Naturally compatible with parsimony and emergent geometry |
+| Information-density collapse | Viable under S = ℏC and exact Bekenstein capacity |
+| Decoherence-only | Compatible as emergent interface if no geometric contradictions |
+
+The open problem is no longer whether "anything goes," but which parameter-free, grounded mechanism survives LRT's parsimony and emergent geometry constraints.
 
 ---
 
