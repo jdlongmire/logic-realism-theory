@@ -1,422 +1,266 @@
 # ISSUE 001: Grounding Axiom 3 (Physical Constraints)
 
-**Status**: IN PROGRESS (Reversibility derived, CBP pending implementation)
-**Priority**: CRITICAL
-**Created**: 2025-11-26
-**Updated**: 2025-11-27
-**Source**: External reviews (Gemini, Grok, GPT synthesis)
+**Status:** IN PROGRESS
+**Priority:** CRITICAL
+**Created:** 2025-11-26
+**Updated:** 2025-11-27
+**Source:** External peer-review (Gemini, Grok, GPT synthesis)
 
 ---
 
-## Problem Statement
+## 1. Executive Summary (Final Verdict — 2025)
 
-LRT claims to derive quantum mechanics from logical foundations. However, **Axiom 3** (Physical Constraints) contains three sub-axioms that are **physical postulates, not logical necessities**:
+Axiom 3 in LRT introduces three physical constraints:
 
-- **3a: Continuity** - Between any two states, there exists a continuous path
-- **3b: Reversibility** - All transformations have inverses
-- **3c: Local Tomography** - Composites are determined by local measurements
+* **3a — Continuity**
+* **3b — Reversibility**
+* **3c — Local Tomography**
 
-These are exactly the axioms used in reconstruction theorems (Hardy, Masanes-Müller, CDP). LRT has not reduced the axiom count - it has repackaged them with philosophical narrative.
+After extensive internal analysis, multi-LLM consultation, and circularity checks, the conclusions are:
 
-**Core critique (Grok):**
-> "Logic alone does not demand 'Continuous Transformations' or 'Local Tomography.'"
+| Sub-Axiom | Derivable from Logical Primitives Alone? | Final Status (2025) |
+|-----------|------------------------------------------|---------------------|
+| **3b Reversibility** | **No** — unless a bridging principle is added | **DERIVED**, conditional on CBP |
+| **3a Continuity** | **No** | Motivated only (no derivation) |
+| **3c Local Tomography** | **No — and almost certainly impossible** | Independent physical axiom |
 
-**Core critique (Gemini):**
-> "The derivation of Hilbert Space relies on Axiom 3... These are physical postulates, not logical ones."
-
----
-
-## Current Status in LRT
-
-| Sub-Axiom | Current Justification | Status |
-|-----------|----------------------|--------|
-| Continuity | "Required for dynamics to be well-defined" | Asserted |
-| Reversibility | "Required for information preservation in IIS" | Asserted |
-| Local Tomography | "Required for compositional physics" | Asserted |
-
-All three are justified by appeal to what stable physics requires, not derived from 3FLL or distinguishability.
+**Key Result:**
+LRT reduces the physical input required for Hilbert-space quantum mechanics down to **two** assumptions (continuity and local tomography), plus one weak bridging principle (CBP). Reversibility is genuinely *derived* once CBP is adopted.
 
 ---
 
-## The Challenge
+## 2. Problem Statement
 
-Can these constraints be **derived** from more primitive LRT commitments (3FLL, distinguishability, IIS structure)?
+LRT's goal is to derive quantum mechanics from:
 
-### What Would Count as Derivation
+* the three Fundamental Laws of Logic (3FLL),
+* the Infinite Information Space (IIS),
+* pairwise distinguishability,
+* and Boolean actuality at the interface.
 
-A successful derivation would show:
+However, Axiom 3 introduces the following physical constraints:
 
-1. **Continuity**: Given only 3FLL + distinguishability structure, continuous transformations are forced (not merely permitted)
+* **(3a) Continuity:** every two pure states are connected by a continuous reversible path.
+* **(3b) Reversibility:** fundamental transformations are invertible (unitary).
+* **(3c) Local Tomography:** composite states are fixed by statistics of local measurements.
 
-2. **Reversibility**: Given only 3FLL + distinguishability structure, reversible dynamics are forced
+External reviewers pointed out that these assumptions are **identical** to the postulates used in standard operational reconstructions (Hardy; Masanes–Müller; Chiribella–D'Ariano–Perinotti) and are **not derived** from logic, IIS, or distinguishability.
 
-3. **Local Tomography**: Given only 3FLL + distinguishability structure, composite states must be determinable from local measurements
+> **Grok:** "Logic alone does not demand continuous transformations or local tomography."
+> **Gemini:** "Hilbert space comes *only* after you insert Axiom 3; these parts remain physical, not logical."
 
-### What Would NOT Count
+Thus, ISSUE 001 asks:
 
-- Circular arguments that assume the conclusion
-- Arguments that merely show these are "natural" or "reasonable"
-- Stability/anthropic selection (explains observation, not existence)
-
----
-
-## Potential Derivation Approaches
-
-### Approach A: From Information Preservation
-
-**Hypothesis**: If IIS is the space of all distinguishable configurations, then:
-- Transformations that destroy distinguishability information cannot be fundamental
-- Therefore dynamics must be information-preserving
-- Information-preserving = reversible + (possibly) continuous
-
-**Problem**: Why continuous? Discrete reversible dynamics exist.
-
-**Status**: Partial at best
+> **Can 3a–3c be derived from LRT's logical and informational primitives, or must they remain irreducible physical postulates?**
 
 ---
 
-### Approach B: From Distinguishability Metric Structure
+## 3. Existing LRT Commitments
 
-**Hypothesis**: Distinguishability defines a metric on IIS. The metric structure may constrain transformations.
+Any attempted derivation may use:
 
-**Potential argument**:
-1. Distinguishability D(x,y) defines a distance
-2. Distances satisfy triangle inequality
-3. Transformations preserving distinguishability must preserve metric structure
-4. Metric-preserving transformations form a continuous group (?)
+* **3FLL** (Identity, Non-Contradiction, Excluded Middle)
+* **IIS** (maximal distinguishability field)
+* **Axiom 2:** pairwise distinguishability
+* **Initial state s₀**
+* **CCP (Constitutive Closure Principle):** the constitutive package generates all fundamental structure
+* **Parsimony Theorem (16.10):** no surplus grounded propositions exist in Boolean actuality
 
-**Problem**: Step 4 is not obviously true. Discrete isometries exist.
-
-**Status**: Needs investigation
-
----
-
-### Approach C: From Compositional Distinguishability (Local Tomography)
-
-**Hypothesis**: If distinguishability is fundamentally pairwise (Axiom 2), then global distinguishability must be reconstructible from pairwise comparisons.
-
-**Potential argument**:
-1. D(x,y) compares two states
-2. For composite systems AB, distinguishability must still be pairwise
-3. Pairwise comparison of composite states = comparing local subsystems pairwise
-4. Therefore composite distinguishability is determined by local distinguishability
-5. This is local tomography
-
-**Problem**: Step 3 is the leap. Why can't composite pairwise comparison involve irreducibly global structure?
-
-**Status**: Most promising direction
+**No additional physical axioms may be assumed unless declared explicitly.**
 
 ---
 
-### Approach D: Constructor-Theoretic Grounding
+## 4. Summary of Derivation Attempts
 
-**Hypothesis**: Axiom 3 constraints can be reformulated as constructor-theoretic impossibility conditions.
+### Approach A — Information Preservation
 
-**Potential argument**:
-1. A "constructor" is something that enables a task repeatedly
-2. For the IIS→Boolean interface to function as a constructor, certain tasks must be possible/impossible
-3. Continuity and reversibility may be necessary for the interface to be a reliable constructor
-4. Local tomography may be necessary for composite tasks to be possible
+* Motivates reversibility.
+* Does not force continuity.
+* Does not touch local tomography.
 
-**References**: Deutsch & Marletto, Constructor Theory
-
-**Status**: Unexplored, flagged by Gemini review
+**Outcome:** Partial only.
 
 ---
 
-### Approach E: From 3FLL Enforcement Requirements
+### Approach B — Distinguishability-Induced Metric
 
-**Hypothesis**: The specific structure of 3FLL enforcement at the interface constrains IIS dynamics.
+* Distinguishability defines a distance.
+* Distance-preserving maps can still be discontinuous or discrete.
 
-**Potential argument**:
-1. Boolean actuality requires Excluded Middle (every proposition has a truth value)
-2. Non-Contradiction requires consistency across contexts
-3. Identity requires states to be re-identifiable
-4. For the interface to enforce these across all contexts, the underlying structure must have specific properties
-5. These properties entail continuity, reversibility, local tomography
-
-**Problem**: Very hand-wavy. The connection from 3FLL to continuous groups is not obvious.
-
-**Status**: Needs rigorous development
+**Outcome:** No derivation.
 
 ---
 
-### Approach F: Logical Time (Resolution Ordering)
+### Approach C — Compositional Distinguishability
 
-**Hypothesis**: Time is the partial ordering of Boolean resolutions relative to IIS paths. If this is correct, Axiom 3 constraints may be derivable as requirements for coherent logical sequencing.
+* Tried to derive local tomography from pairwise distinguishability.
+* Key step ("global pairwise distinguishability reduces to local pairs") is unsupported.
 
-**Core claim**: Time = ordering of IIS→Boolean transitions
-- Before resolution: propositions are modal (in IIS)
-- After resolution: propositions are Boolean (in actuality)
-- The transition defines a direction
-- The ordering of transitions defines proto-time
-
-**Potential derivations**:
-
-1. **Continuity from coherent sequencing**:
-   - Discontinuities would produce broken causal graphs
-   - Impossible truthmaker assignments
-   - Non-re-identifiable identity structures
-   - Therefore: continuity is a constraint on coherent resolution-ordering
-
-2. **Reversibility from pre-resolution structure**:
-   - In IIS: no Boolean commitments made
-   - No information is lost (no resolution has occurred)
-   - All propositions remain open
-   - Therefore: IIS dynamics must be reversible
-   - Irreversibility only enters at the interface (Boolean stamping)
-
-3. **Local Tomography from temporal interface-locality**:
-   - Resolution must be localized (interaction boundaries)
-   - Resolution applies to subsystems before composites
-   - Sequential: resolved A, then resolved AB joint structure
-   - Therefore: composite distinguishability = what can be resolved by temporally local sequences
-
-**Key insight**: If we can derive *all three* from a single principle ("coherent logical sequencing"), this is a reduction even if that principle is additional.
-
-**Potential problems**:
-- "Coherent sequencing" may itself be a physical assumption
-- Why must resolution ordering be coherent? (Stability assumption?)
-- "Local resolution" may presuppose local tomography (circularity)
-- "Pre-resolution has no information loss" may assume structure preservation
-
-**Status**: INVESTIGATED - see DERIVATION_ATTEMPT_LogicalTime.md
-
-**Investigation Results (2025-11-27)**:
-- Reversibility: PARTIAL SUCCESS (gets injectivity from IIS maximality, needs additional principle for surjectivity)
-- Continuity: NOT DERIVED ("coherent sequencing" not precise enough to force continuity)
-- Local Tomography: NOT DERIVED (circular - assumes locality to derive it)
-
-**Conclusion**: Better philosophical grounding than "physical axioms" but still not pure logical derivation. Upgrades framing from "selection" to "structural requirements on interface."
-
-**References**:
-- Sorkin, R. (causal sets)
-- Isham, C. (quantum event structures)
-- Lamport, L. (logical time/clocks)
+**Outcome:** No derivation; identified decomposability gap.
 
 ---
 
-## Specific Sub-Issues
+### Approach D — Constructor Theory
 
-### ISSUE 001a: Derive Continuity
+* Promising reframing in terms of possible/impossible tasks.
+* Not developed enough to yield a derivation.
 
-**Question**: Can we show that IIS dynamics must be continuous, given only 3FLL + distinguishability?
-
-**Leads**:
-- Metric structure from distinguishability
-- Topological requirements for consistent interface
-- Information-theoretic continuity bounds
+**Outcome:** Open.
 
 ---
 
-### ISSUE 001b: Derive Reversibility
+### Approach E/F — Logical Time (Resolution Ordering)
 
-**Question**: Can we show that IIS dynamics must be reversible, given only 3FLL + distinguishability?
+* Time = ordering of IIS → Boolean transitions.
+* Reversibility: partial success (injectivity).
+* Continuity: no derivation.
+* Local tomography: circular arguments.
 
-**Leads**:
-- Information preservation
-- Landauer's principle connection
-- Time-symmetry of distinguishability
-
----
-
-### ISSUE 001c: Derive Local Tomography (HIGHEST PRIORITY)
-
-**Question**: Can we show that composite distinguishability must be locally determined, given only 3FLL + pairwise distinguishability?
-
-**Leads**:
-- Compositional distinguishability argument (Approach C)
-- Constructor theory (Approach D)
-- Information-theoretic locality
-
-**Grok assessment**: "If local tomography could be derived from more primitive distinguishability considerations, the theory would be vastly strengthened."
+**Outcome:** Philosophically helpful, mathematically insufficient.
 
 ---
 
-## Success Criteria
+## 5. Parsimony Bridge and the Scope Gap
 
-A derivation is successful if:
+Parsimony constrains *Boolean actuality* (the domain of truth-valued propositions).
+But we need constraints on *IIS dynamics* (pre-Boolean).
 
-1. **Non-circular**: Does not assume what it proves
-2. **Valid**: Each step follows logically
-3. **Grounded**: Uses only 3FLL, distinguishability, IIS definition, and previously derived results
-4. **Explicit**: All assumptions are stated
+This mismatch creates the **scope gap**:
 
----
+| Domain | What Parsimony Governs | What Axiom 3 Governs |
+|--------|------------------------|----------------------|
+| Actuality | Truthmakers, grounded propositions | – |
+| IIS Dynamics | – | Transformations on modal states |
 
-## Fallback Position
-
-If derivations fail, the honest position is:
-
-> "Axiom 3 (Physical Constraints) is not derived from logic alone. It represents the additional requirements for a stable, compositional interface. LRT's contribution is showing these requirements are not arbitrary but are precisely the conditions that enable Boolean actuality to interface with IIS structure."
-
-This is the "meta-theoretical interpretation" framing that remains defensible.
+Thus, **Parsimony alone cannot constrain IIS dynamics**.
+A bridging principle is necessary.
 
 ---
 
-## Investigation Results (2025-11-26)
+## 6. CBP — Consistency Bridging Principle (NEW)
 
-### Detailed Derivation Attempts
+**CBP (Consistency Bridging Principle):**
 
-See companion documents:
+> **Admissible transformations on IIS are only those for which all reachable states can, in principle, participate in a consistent resolution to Boolean actuality, without generating ungroundable propositions.**
+
+CBP does **not** claim "only what is actual exists."
+It simply requires that modal dynamics never produce states incompatible with any possible Boolean history.
+
+With CBP, the scope gap is closed, and reversibility can be derived.
+
+---
+
+## 7. Final Derivation Status (After CBP)
+
+### (3b) Reversibility — YES (Derived with CBP)
+
+**Argument:**
+
+1. Irreversible maps require mechanisms for information destruction.
+2. Such mechanisms require extra structure not contained in the constitutive package.
+3. By CCP + Parsimony, surplus structure cannot exist at the fundamental level.
+4. Irreversible dynamics produce states incompatible with any consistent Boolean history ⇒ violates CBP.
+5. Therefore fundamental IIS dynamics must be reversible (unitary).
+
+**Status:** **DERIVED**, conditional on CBP.
+
+---
+
+### (3a) Continuity — NO (Motivated Only)
+
+Continuity would require showing discontinuous maps inevitably introduce surplus specification (e.g., jump sets, exception tables).
+This is plausible but **not proven**; formal specification-complexity arguments are missing.
+
+**Status:** Motivated but not derived.
+
+---
+
+### (3c) Local Tomography — NO (Almost Certainly Independent)
+
+Local tomography demands that global states be reconstructible from local data.
+No argument from 3FLL, distinguishability, IIS maximality, CCP, Parsimony, or CBP forces this.
+
+The decomposability gap remains:
+
+* Ruling out "surplus" global structure does **not** imply local reconstructibility.
+* Reconstruction literature treats local tomography as irreducible.
+
+**Status:** Independent physical axiom; likely irreducible.
+
+---
+
+## 8. Implications for LRT
+
+LRT's reconstruction hierarchy becomes:
+
+### Tier 0 — Pure Logical/Informational Foundations
+
+3FLL, IIS, distinguishability, Boolean actuality, Parsimony theorem
+
+### Tier 1 — One Minimal Bridging Principle
+
+CBP → **Reversibility** (derived)
+
+### Tier 2 — Two Irreducible Physical Axioms
+
+**Continuity** + **Local Tomography** → Hilbert space
+
+### Tier 3 — Theorems
+
+Hilbert space → Born rule (Gleason) → QM structure
+
+This is the strongest derivation currently compatible with the structure of quantum theory as understood in operational reconstructions.
+
+---
+
+## 9. Required Paper Revisions
+
+This issue mandates:
+
+### (1) Add a new subsection
+
+**"Remaining Physical Input: Continuity and Local Tomography"**
+explaining precisely what is and is not derived.
+
+### (2) Add CBP to Section 16
+
+as the sole bridging principle between IIS dynamics and Boolean actuality.
+
+### (3) Promote Reversibility (3b) to a theorem
+
+derived from Parsimony + CBP + CCP.
+
+### (4) Explicitly mark continuity and local tomography as independent postulates
+
+with clear justification aligned with reconstruction literature.
+
+### (5) Update the derivation chain diagrams
+
+to reflect Tier 0 → Tier 1 → Tier 2 → Hilbert space.
+
+---
+
+## 10. Close Conditions for ISSUE 001
+
+ISSUE 001 can be closed once the following are completed:
+
+- [ ] CBP added to the manuscript
+- [ ] Reversibility theorem written and cross-referenced
+- [ ] Continuity marked as conjectural, not derived
+- [ ] Local tomography explicitly identified as irreducible
+- [ ] Reconstruction chain updated
+- [ ] Section 16 revision merged
+
+---
+
+## Supporting Documents
+
 - `DERIVATION_ATTEMPT_LocalTomography.md` (7 approaches tested)
 - `DERIVATION_ATTEMPT_Continuity_Reversibility.md` (5 approaches each)
-
-### Summary of Findings
-
-| Constraint | Derivation Status | Best Available Argument |
-|------------|-------------------|------------------------|
-| **Continuity** | NOT DERIVED | Stability selection (discontinuous dynamics prevents stable structures) |
-| **Reversibility** | CONDITIONALLY DERIVED | Structure preservation (dynamics should be automorphisms of IIS) |
-| **Local Tomography** | NOT DERIVED | Compositionality requirement (physics must be modular) |
-
-### Key Finding
-
-**None of the three Axiom 3 constraints can be derived from 3FLL + distinguishability alone.**
-
-The attempts reveal:
-1. Local tomography cannot follow from pairwise distinguishability - the two are independent properties
-2. Reversibility can be motivated by structure preservation, but structure preservation is itself a physical principle
-3. Continuity has only stability/selection arguments, not logical derivations
-
-### Implications for LRT
-
-1. **The honest position**: Axiom 3 is a physical axiom package, not logically derivable
-2. **The achievable claim**: LRT provides philosophical justification for why these constraints are natural requirements for stable interface physics
-3. **The open problem**: Deriving any of these from deeper principles remains the most important technical challenge for LRT
-
-### Grounding Hierarchy (Initial Assessment)
-
-If we must rank how well-grounded each constraint is:
-
-1. **Reversibility** (best): Follows from "dynamics preserve structure" - a natural principle for fundamental physics
-2. **Local Tomography** (moderate): Follows from compositionality - physics must be modular
-3. **Continuity** (weakest): Only stability selection - no logical argument found
-
----
-
-## Investigation Results (2025-11-27): Parsimony Bridge
-
-### The Key Insight
-
-GPT proposed that **Parsimony (Theorem 16.10)** - already proven in Section 16.5 - can serve as the bridge connecting logical time to Axiom 3 constraints.
-
-See: `DERIVATION_ATTEMPT_ParsimonyBridge.md`
-
-### Updated Summary of Findings
-
-| Constraint | Previous Status | Parsimony Argument | New Status |
-|------------|----------------|-------------------|------------|
-| **Reversibility** | CONDITIONAL | Mechanism for info loss is surplus, not in constitutive package | **DERIVED** |
-| **Continuity** | NOT DERIVED | Discontinuous dynamics require surplus specification | MOTIVATED (needs formalization) |
-| **Local Tomography** | NOT DERIVED | Inaccessible global structure is surplus | PARTIAL (decomposability gap) |
-
-### The Reversibility Derivation (SUCCESS)
-
-**Argument**:
-1. Irreversible dynamics require a mechanism for information loss (noise, dissipation, coarse-graining)
-2. This mechanism requires specification beyond the constitutive package (3FLL + s₀)
-3. By CCP: the constitutive package generates exactly what's in the domain
-4. By Parsimony (Theorem 16.10): no surplus structure exists
-5. Therefore: no mechanism for information loss exists at the fundamental level
-6. Therefore: fundamental IIS dynamics are reversible
-
-**Why this works**: Previously, "structure preservation" was an assumed principle. Now it follows from parsimony, which is already proven.
-
-### Continuity: Motivated but Not Formalized
-
-The intuition: discontinuous dynamics require "exception points" - surplus specification.
-The gap: "specification complexity" needs rigorous definition.
-
-### Local Tomography: Partial Progress
-
-**What parsimony gives**: Irreducibly global structure with no Boolean cash-out is surplus and doesn't exist.
-
-**The remaining gap**: Why must joint measurement truthmakers decompose into local truthmakers + coupling? This decomposability is assumed, not derived.
-
-### Updated Grounding Hierarchy
-
-1. **Reversibility** (DERIVED): Follows from Theorem 16.10 (Parsimony)
-2. **Continuity** (MOTIVATED): Parsimony argument exists but needs formalization
-3. **Local Tomography** (PARTIAL): Parsimony eliminates some non-local structure, decomposability gap remains
-
----
-
-## Circularity Check (2025-11-27)
-
-A rigorous circularity analysis was performed. See: `CIRCULARITY_CHECK_Axiom3_Derivations.md`
-
-### Key Finding: Scope Gap (NOT Circularity)
-
-The derivations are **not circular**, but have a **scope gap**:
-
-| What Parsimony Is About | What Axiom 3 Is About |
-|-------------------------|----------------------|
-| Boolean actuality | IIS structure/dynamics |
-| Propositions with truth values | Transformations on IIS |
-| What exists in actualized domain | Pre-Boolean structure |
-
-**The problem**: Parsimony says "actuality contains only grounded propositions." But IIS dynamics are NOT in actuality - they're pre-Boolean structure. So parsimony about actuality doesn't *strictly* constrain IIS dynamics without a bridging principle.
-
----
-
-## Multi-LLM Consultation (2025-11-27)
-
-Consulted Grok, Gemini, ChatGPT on how to address the scope gap.
-
-See: `multi_LLM/consultation/parsimony_scope_gap_20251127.md`
-
-### Consensus Results
-
-| Model | Score | Recommendation |
-|-------|-------|----------------|
-| **Grok** | 0.70 | Option D: Consistency Bridging Principle |
-| Gemini | 0.55 | Combination B+C+D with projection map |
-| ChatGPT | 0.28 | Option B + time as ordering |
-
-### Option A (Interface Constraint) Rejected
-
-All three models flagged Option A ("Structure in IIS with no Boolean manifestation does not exist") as **risking circularity** - it presupposes Boolean actuality as sole arbiter of existence.
-
-### Recommended Solution: Consistency Bridging Principle (CBP)
-
-**Principle**: IIS dynamics must admit a consistent mapping to Boolean actuality under resolution processes, ensuring that no ungrounded propositions arise.
-
-**Why CBP works**:
-1. **Avoids circularity** - focuses on logical consistency, not direct manifestation
-2. **Maintains claim strength** - reversibility is derived, not merely preferred
-3. **Aligns with QM** - unitary dynamics preserve information for consistent measurement outcomes
-
-### Derivation with CBP
-
-1. Irreversible dynamics → information loss
-2. Information loss → states that can't consistently resolve to Boolean propositions
-3. By CBP → such dynamics are inadmissible
-4. By Parsimony → no mechanism for inadmissible dynamics exists
-5. Therefore → fundamental IIS dynamics must be reversible
-
----
-
-## Final Status Summary
-
-| Constraint | Status | With CBP |
-|------------|--------|----------|
-| **Reversibility (3b)** | DERIVED (scope gap) | **FULLY DERIVED** |
-| **Continuity (3a)** | MOTIVATED | Stronger argument possible |
-| **Local Tomography (3c)** | PARTIAL | Still partial (decomposability gap) |
-
----
-
-## Recommended Action
-
-1. ✅ Revise Section 16 with explicit "Derivation Status" subsection (COMPLETED 2025-11-27)
-2. ✅ Adopt "meta-theoretical interpretation" framing per GPT recommendation (COMPLETED - Section 16.8)
-3. ✅ Add Constructor Theory as future direction (COMPLETED - noted in Section 16.8)
-4. ✅ Perform circularity check (COMPLETED - scope gap identified, not circular)
-5. ✅ Multi-LLM consultation on scope gap (COMPLETED - CBP recommended)
-6. ☐ **Add CBP to Section 16** to close scope gap for reversibility derivation
-7. ☐ Formalize "specification complexity" for continuity derivation
-8. Keep local tomography derivation as highest-priority open problem
+- `DERIVATION_ATTEMPT_LogicalTime.md` (Approach F)
+- `DERIVATION_ATTEMPT_ParsimonyBridge.md` (scope gap analysis)
+- `CIRCULARITY_CHECK_Axiom3_Derivations.md` (circularity verification)
+- `multi_LLM/consultation/parsimony_scope_gap_20251127.md` (multi-LLM consultation)
 
 ---
 
@@ -426,3 +270,7 @@ All three models flagged Option A ("Structure in IIS with no Boolean manifestati
 - Hardy, L. (2001). "Quantum theory from five reasonable axioms."
 - Chiribella, G., D'Ariano, G. M., and Perinotti, P. (2011). "Informational derivation of quantum theory."
 - Deutsch, D. and Marletto, C. (2015). "Constructor theory of information."
+
+---
+
+**End of ISSUE 001**
