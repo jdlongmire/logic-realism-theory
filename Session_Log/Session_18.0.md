@@ -238,3 +238,74 @@ GPT proposed that Parsimony (Theorem 16.10) serves as bridge to ground Axiom 3. 
 
 Created `DERIVATION_ATTEMPT_ParsimonyBridge.md` (~300 lines).
 Updated Section 16.8 and tier classification table in Master paper.
+
+### 14. Circularity Check
+
+Performed rigorous circularity analysis of the parsimony bridge derivations.
+
+**Key finding**: Derivations are NOT circular, but have a **scope gap**:
+- Parsimony (Theorem 16.10) is about Boolean actuality
+- Axiom 3 constraints are about IIS dynamics
+- These are different domains
+
+**The gap**: We need a bridging principle to connect actuality-parsimony to IIS-constraints.
+
+**Options identified**:
+- A: Add Interface Constraint Principle (explicit bridge)
+- B: Reframe as "most parsimonious" (weaker claim)
+- C: Accept gap with transparency (honest framing)
+
+Created `CIRCULARITY_CHECK_Axiom3_Derivations.md` documenting the analysis.
+
+**Status**: Awaiting decision on which approach to take.
+
+### 15. ISSUE 002 Created: Lagrangian/Hamiltonian Formulations
+
+Created new issue to track future work on grounding classical mechanics formulations in LRT.
+
+**Key sub-issues**:
+- 002a: Symplectic structure from IIS
+- 002b: Action principle grounding (parsimony → least action)
+- 002c: Time parameter vs logical time
+- 002d: Classical-quantum correspondence
+
+**GPT Analysis added**: Proposed derivation paths for Hamiltonian (via Stone's theorem), Lagrangian (as distinguishability flow density), and symplectic structure (from reversible transformations).
+
+Key insight: **Parsimony ⇒ Least Action** - extremal principles are minimal path specifications.
+
+---
+
+## Issues Inventory
+
+| Issue | Title | Priority | Status |
+|-------|-------|----------|--------|
+| 001 | Axiom 3 Grounding | CRITICAL | Reversibility derived; scope gap identified |
+| 002 | Lagrangian/Hamiltonian | MEDIUM | Open (future work) |
+
+---
+
+## Commits This Session (Updated)
+
+1. `e5bfeac` - Draft Part III Sections 16-17
+2. `317ce29` - Update Session 18.0 log
+3. `57d6706` - Revise Sections 16-17 per ChatGPT feedback
+4. `f7aed8f` - Draft Section 18: Deriving the Born Rule
+5. `e2234ef` - Update Session 18.0 log with Section 18 progress
+6. `89ebe44` - Revise Section 18 per ChatGPT feedback
+7. `3739772` - Draft Section 19: The Layer Structure
+8. `0fef2a5` - Update Session 18.0 log with Section 19 progress
+9. `f8d0ef8` - Revise Section 19 per ChatGPT feedback
+10. `ccaf283` - Complete Part III: Sections 20-22
+11. `e3b46b4` - Add Section 16.8: Axiom 3 Derivation Status
+12. `fe09507` - Investigate Approach F: Logical Time derivation
+13. `6f120d9` - Parsimony Bridge: Derive reversibility from Theorem 16.10
+14. `c05784e` - Add ISSUE 002 and circularity check
+15. `a024b3c` - Add GPT analysis to ISSUE 002
+
+---
+
+## Next Steps
+
+1. **Decide on circularity gap approach** (A, B, or C)
+2. **Continue Part IV** (Empirical Signatures) when ready
+3. **Future**: Address ISSUE 002 (Lagrangian/Hamiltonian)
