@@ -140,6 +140,61 @@ A successful derivation would show:
 
 ---
 
+### Approach F: Logical Time (Resolution Ordering)
+
+**Hypothesis**: Time is the partial ordering of Boolean resolutions relative to IIS paths. If this is correct, Axiom 3 constraints may be derivable as requirements for coherent logical sequencing.
+
+**Core claim**: Time = ordering of IIS→Boolean transitions
+- Before resolution: propositions are modal (in IIS)
+- After resolution: propositions are Boolean (in actuality)
+- The transition defines a direction
+- The ordering of transitions defines proto-time
+
+**Potential derivations**:
+
+1. **Continuity from coherent sequencing**:
+   - Discontinuities would produce broken causal graphs
+   - Impossible truthmaker assignments
+   - Non-re-identifiable identity structures
+   - Therefore: continuity is a constraint on coherent resolution-ordering
+
+2. **Reversibility from pre-resolution structure**:
+   - In IIS: no Boolean commitments made
+   - No information is lost (no resolution has occurred)
+   - All propositions remain open
+   - Therefore: IIS dynamics must be reversible
+   - Irreversibility only enters at the interface (Boolean stamping)
+
+3. **Local Tomography from temporal interface-locality**:
+   - Resolution must be localized (interaction boundaries)
+   - Resolution applies to subsystems before composites
+   - Sequential: resolved A, then resolved AB joint structure
+   - Therefore: composite distinguishability = what can be resolved by temporally local sequences
+
+**Key insight**: If we can derive *all three* from a single principle ("coherent logical sequencing"), this is a reduction even if that principle is additional.
+
+**Potential problems**:
+- "Coherent sequencing" may itself be a physical assumption
+- Why must resolution ordering be coherent? (Stability assumption?)
+- "Local resolution" may presuppose local tomography (circularity)
+- "Pre-resolution has no information loss" may assume structure preservation
+
+**Status**: INVESTIGATED - see DERIVATION_ATTEMPT_LogicalTime.md
+
+**Investigation Results (2025-11-27)**:
+- Reversibility: PARTIAL SUCCESS (gets injectivity from IIS maximality, needs additional principle for surjectivity)
+- Continuity: NOT DERIVED ("coherent sequencing" not precise enough to force continuity)
+- Local Tomography: NOT DERIVED (circular - assumes locality to derive it)
+
+**Conclusion**: Better philosophical grounding than "physical axioms" but still not pure logical derivation. Upgrades framing from "selection" to "structural requirements on interface."
+
+**References**:
+- Sorkin, R. (causal sets)
+- Isham, C. (quantum event structures)
+- Lamport, L. (logical time/clocks)
+
+---
+
 ## Specific Sub-Issues
 
 ### ISSUE 001a: Derive Continuity

@@ -201,5 +201,19 @@ Updated ISSUE_001 to mark completed action items.
 8. `0fef2a5` - Update Session 18.0 log with Section 19 progress
 9. `f8d0ef8` - Revise Section 19 per ChatGPT feedback
 10. `ccaf283` - Complete Part III: Sections 20-22
-11. (pending) - Add issue tracking for Axiom 3 grounding problem
-12. (pending) - Add Section 16.8: Axiom 3 Derivation Status
+11. `e3b46b4` - Add Section 16.8: Axiom 3 Derivation Status (honest accounting)
+12. (pending) - Investigate Approach F: Logical Time derivation
+
+### 12. Approach F Investigation: Logical Time
+
+GPT proposed treating time as "logical sequencing" (ordering of IIS→Boolean resolutions) to ground Axiom 3. Formal derivation attempted:
+
+| Constraint | Logical Time Argument | Result |
+|------------|----------------------|--------|
+| Reversibility | Pre-resolution = open possibilities | PARTIAL (gets injectivity, not bijection) |
+| Continuity | Coherent sequencing | NOT DERIVED (still selection argument) |
+| Local Tomography | Temporal interface-locality | NOT DERIVED (circular) |
+
+**Conclusion**: Better philosophical grounding but not pure logical derivation. The framing upgrades from "physical selection" to "structural requirements on coherent interface."
+
+Created `DERIVATION_ATTEMPT_LogicalTime.md` (~250 lines) documenting the analysis.
