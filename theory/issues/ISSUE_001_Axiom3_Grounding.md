@@ -284,13 +284,60 @@ The attempts reveal:
 2. **The achievable claim**: LRT provides philosophical justification for why these constraints are natural requirements for stable interface physics
 3. **The open problem**: Deriving any of these from deeper principles remains the most important technical challenge for LRT
 
-### Grounding Hierarchy
+### Grounding Hierarchy (Initial Assessment)
 
 If we must rank how well-grounded each constraint is:
 
 1. **Reversibility** (best): Follows from "dynamics preserve structure" - a natural principle for fundamental physics
 2. **Local Tomography** (moderate): Follows from compositionality - physics must be modular
 3. **Continuity** (weakest): Only stability selection - no logical argument found
+
+---
+
+## Investigation Results (2025-11-27): Parsimony Bridge
+
+### The Key Insight
+
+GPT proposed that **Parsimony (Theorem 16.10)** - already proven in Section 16.5 - can serve as the bridge connecting logical time to Axiom 3 constraints.
+
+See: `DERIVATION_ATTEMPT_ParsimonyBridge.md`
+
+### Updated Summary of Findings
+
+| Constraint | Previous Status | Parsimony Argument | New Status |
+|------------|----------------|-------------------|------------|
+| **Reversibility** | CONDITIONAL | Mechanism for info loss is surplus, not in constitutive package | **DERIVED** |
+| **Continuity** | NOT DERIVED | Discontinuous dynamics require surplus specification | MOTIVATED (needs formalization) |
+| **Local Tomography** | NOT DERIVED | Inaccessible global structure is surplus | PARTIAL (decomposability gap) |
+
+### The Reversibility Derivation (SUCCESS)
+
+**Argument**:
+1. Irreversible dynamics require a mechanism for information loss (noise, dissipation, coarse-graining)
+2. This mechanism requires specification beyond the constitutive package (3FLL + s₀)
+3. By CCP: the constitutive package generates exactly what's in the domain
+4. By Parsimony (Theorem 16.10): no surplus structure exists
+5. Therefore: no mechanism for information loss exists at the fundamental level
+6. Therefore: fundamental IIS dynamics are reversible
+
+**Why this works**: Previously, "structure preservation" was an assumed principle. Now it follows from parsimony, which is already proven.
+
+### Continuity: Motivated but Not Formalized
+
+The intuition: discontinuous dynamics require "exception points" - surplus specification.
+The gap: "specification complexity" needs rigorous definition.
+
+### Local Tomography: Partial Progress
+
+**What parsimony gives**: Irreducibly global structure with no Boolean cash-out is surplus and doesn't exist.
+
+**The remaining gap**: Why must joint measurement truthmakers decompose into local truthmakers + coupling? This decomposability is assumed, not derived.
+
+### Updated Grounding Hierarchy
+
+1. **Reversibility** (DERIVED): Follows from Theorem 16.10 (Parsimony)
+2. **Continuity** (MOTIVATED): Parsimony argument exists but needs formalization
+3. **Local Tomography** (PARTIAL): Parsimony eliminates some non-local structure, decomposability gap remains
 
 ---
 

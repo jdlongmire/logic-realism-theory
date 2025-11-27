@@ -1626,15 +1626,15 @@ Not all axioms have the same status. We classify them:
 |-------|------|--------|
 | 1 (Constitution) | Foundational | LRT-specific thesis |
 | 2 (Pairwise) | Foundational | Structural requirement |
-| 3a (Continuity) | Physical | Required for dynamics |
-| 3b (Reversibility) | Physical | Required for information preservation |
-| 3c (Local Tomography) | Physical | Required for compositional physics |
+| 3a (Continuity) | Physical | Motivated by parsimony (see 16.8) |
+| 3b (Reversibility) | Derived | From Parsimony (Theorem 16.10) |
+| 3c (Local Tomography) | Physical | Partially grounded by parsimony (see 16.8) |
 | 4 (Boolean Actuality) | Foundational | From 3FLL enforcement |
 | 5 (Non-Contextual Measure) | Structural | Interface property |
 
 **Tier 1 (LRT-specific):** Axioms 1 and 2 are the core LRT claims - that 3FLL constitute distinguishability and that distinguishability is pairwise.
 
-**Tier 2 (Physical):** Axiom 3 states physical requirements. These are not derived from logic alone but are required for stable, informative physics.
+**Tier 2 (Physical/Derived):** Axiom 3 states interface requirements. 3b (Reversibility) is now derived from Parsimony. 3a and 3c are motivated by parsimony with identified gaps (see Section 16.8).
 
 **Tier 3 (Structural):** Axioms 4 and 5 describe the interface structure. They follow from 3FLL enforcement (Axiom 4) or state interface properties (Axiom 5).
 
@@ -1704,25 +1704,37 @@ With parsimony derived, the minimal axiom base is:
 
 The external reconstruction theorems (Hardy, Masanes-Müller, CDP) use axioms equivalent to our Axiom 3. A natural question arises: can LRT *derive* these constraints from more primitive commitments (3FLL, distinguishability), thereby reducing the axiom count?
 
-We investigated this systematically. The results:
+We investigated this systematically. A key insight emerged: **Parsimony (Theorem 16.10)** serves as a bridge connecting the LRT framework to Axiom 3 constraints.
 
-| Constraint | Derivation Status | Best Available Argument |
-|------------|-------------------|------------------------|
-| **Continuity (3a)** | NOT DERIVED | Stability selection: discontinuous dynamics prevents stable structures, but is not logically impossible |
-| **Reversibility (3b)** | CONDITIONALLY DERIVED | Structure preservation: if fundamental dynamics must preserve distinguishability structure (automorphisms of IIS), reversibility follows |
-| **Local Tomography (3c)** | NOT DERIVED | Compositionality requirement: physics must be modular, but this is physical, not logical |
+**Updated results:**
 
-**Key finding:** None of the three Axiom 3 constraints can be derived from 3FLL + distinguishability alone.
+| Constraint | Derivation Status | Argument |
+|------------|-------------------|----------|
+| **Reversibility (3b)** | DERIVED | Parsimony: mechanism for information loss is surplus structure |
+| **Continuity (3a)** | MOTIVATED | Parsimony: discontinuous dynamics require surplus specification |
+| **Local Tomography (3c)** | PARTIAL | Parsimony: inaccessible global structure is surplus (decomposability gap remains) |
 
-**Reversibility** has the strongest grounding. If we accept that fundamental dynamics should be automorphisms of IIS (structure-preserving maps), then irreversible dynamics would collapse distinguishability, violating the IIS definition. This argument is plausible but rests on "dynamics preserve structure" - itself a physical principle, not a logical necessity.
+**Reversibility is now derived from Parsimony:**
 
-**Local tomography** has moderate grounding through compositionality. Without it, composite systems would have "hidden" degrees of freedom inaccessible to local operations. This is physically unacceptable but not logically impossible. Seven distinct derivation approaches (from pairwise structure, compositional identity, Non-Contradiction, information locality, Excluded Middle, decomposable differentiation, and constructor composability) all failed or proved conditional.
+1. Irreversible dynamics require a mechanism for information loss (noise, dissipation, coarse-graining)
+2. Such mechanisms require specification beyond the constitutive package (3FLL + s₀)
+3. By CCP (Section 16.5): the constitutive package generates exactly what's in the domain
+4. By Parsimony (Theorem 16.10): no surplus structure exists in actuality
+5. Therefore: no mechanism for information loss exists at the fundamental level
+6. Therefore: fundamental IIS dynamics are reversible (information-preserving)
 
-**Continuity** has the weakest grounding. The only available arguments are stability-selection: discontinuous dynamics would prevent stable structures from persisting. This explains why we observe continuous dynamics but does not derive its logical necessity.
+This is genuine progress over previous "structure preservation" arguments: parsimony is proven, not assumed.
 
-**The honest position:** Axiom 3 is a physical axiom package, not logically derivable. LRT's contribution is not eliminating these axioms but providing philosophical justification for why they are natural requirements for stable interface physics. The constraints are precisely what enables Boolean actuality to interface reliably with IIS structure.
+**Continuity** is motivated by parsimony but not fully derived. The intuition: discontinuous dynamics require "exception points" (where jumps occur), which constitute surplus specification not generated by the constitutive package. A rigorous definition of "specification complexity" would complete this argument.
 
-**Open problem:** Deriving any of these constraints from deeper principles remains the most important technical challenge for LRT's foundations. Constructor-theoretic approaches (Deutsch & Marletto, 2015) may offer a path forward.
+**Local tomography** is partially derived. Parsimony eliminates irreducibly global structure with no Boolean cash-out (such structure is surplus). However, the argument that joint measurement truthmakers must decompose into local truthmakers plus coupling is assumed, not derived. This decomposability may represent irreducible physical content.
+
+**The refined position:** Axiom 3 is significantly grounded in LRT's existing framework through parsimony. Reversibility is derived. Continuity and local tomography have parsimony-based motivations with identified gaps. LRT's contribution is not just philosophical justification but partial derivation of constraints that reconstruction programs take as primitive.
+
+**Remaining open problems:**
+- Formalizing "specification complexity" to complete continuity derivation
+- Deriving truthmaker decomposability for local tomography
+- Constructor-theoretic approaches (Deutsch & Marletto, 2015) may close these gaps
 
 ### 16.9 What This Section Establishes
 
