@@ -167,6 +167,36 @@ All 8 sections drafted with multi-LLM (GPT) hypercritical review and corrections
 
 ---
 
+### 5. Problem 22.7 Expansion (Interface Mechanism)
+
+**Status: COMPLETE**
+
+Expanded Problem 22.7 with conditional resolution path based on GPT analysis:
+
+**New content:**
+- Parsimony constraint: mechanisms with new primitive constants disfavored as fundamental
+- GRW moved from "compatible" to "conditionally compatible if λ, a derivable"
+- Emergent geometry constrains macroscopic superpositions
+- Information-density threshold (conditional on S = ℏC + Bekenstein)
+
+**Updated mechanism status table:**
+
+| Mechanism | Status under LRT |
+|-----------|------------------|
+| GRW-type | Empirically viable; fundamental only if parameters derivable |
+| Geometry-driven | Naturally compatible with parsimony |
+| Information-density | Viable under S = ℏC + Bekenstein |
+| Decoherence-only | Compatible as emergent interface |
+
+**Consistency verified with:**
+- Section 16 (Theorem 16.10 reference)
+- Section 21 (§21.5 emergent spacetime)
+- Section 26 (mechanism-agnosticism preserved)
+- Section 27 (S = ℏC remains conjectural)
+- Section 30 (interface underdetermined)
+
+---
+
 ## Commits This Session
 
 1. `1d733ba` - Start Session 19.0 - Recovery from crash
@@ -181,6 +211,8 @@ All 8 sections drafted with multi-LLM (GPT) hypercritical review and corrections
 10. `244d84a` - Add philosophical closing to Part IV
 11. `c95422f` - Update Session 19.0 log with final commits
 12. `60b8424` - Update root README with Master Paper progress
+13. `20f5123` - Update Session 19.0 log with README commit
+14. `f80e30c` - Expand Problem 22.7 with conditional resolution path
 
 ---
 
