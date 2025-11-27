@@ -316,3 +316,66 @@ This prevents the misreading that LRT uses QM to argue for logical realism (circ
 2. `9a3f232` - Revise abstract for two-part structure clarity
 
 ---
+
+## Archive Review
+
+Reviewed `theory/archive/` for missed content. Found four potential nuggets:
+
+| Nugget | Assessment | Action |
+|--------|------------|--------|
+| Variational Framework (T2/T1 prediction) | Speculative, not rigorously derived | Created ISSUE 005 |
+| L = P ∘ C decomposition | Low risk, high clarity | Integrated (Section 4.7) |
+| S = ℏC development | Low risk, strengthens physics | Integrated (Section 22.1) |
+| Time from NC | Medium risk, elegant | Integrated (Section 22.5) |
+
+### Archive Nugget Integrations
+
+**Section 4.7 (new): The Decomposition of Logical Filtering**
+- L = P ∘ C where C = Constitution, P = Parsimony
+- A = P(C(I)) formalization
+- Clarifies that 3FLL constitute IIS, Parsimony selects within it
+
+**Section 22.1 (expanded): Action-Complexity Conjecture**
+- Added holographic principle connection
+- Added "one bit ≈ ℏ action" framing
+- Strengthened physical motivation without overclaiming
+
+**Section 22.5 (expanded): Emergent Spacetime**
+- Added point 5: Temporal emergence from Non-Contradiction
+- Framed as interpretive possibility, not derivation
+- Explicit caveat: "suggestive, not demonstrative"
+
+### ISSUE 005 Created
+
+Variational framework K_total(β) = (ln 2)/β + 1/β² + 4β² tracked for future work:
+- Potential T2/T1 ≈ 0.7-0.9 prediction
+- Not elevated to master paper (derivation gaps)
+- Path forward documented
+
+---
+
+## Session Summary
+
+**Major accomplishments:**
+1. Comprehensive paper review (~3,920 lines, 32 sections)
+2. Structural framing per reviewer recommendations (Sections 1.4, 7.7, 32.2b + signposts)
+3. Abstract revision for two-part structure clarity
+4. Archive review and selective integration
+5. ISSUE 005 created for variational framework
+
+**Net changes to master paper:** ~180 lines added
+
+**Commits this session:** 6
+
+---
+
+## Next Session Recommendations
+
+1. Review conceptual figures (theory/figures/) for potential inclusion
+2. Consider C1-C3 clarifications from reviewer (IIS/3FLL relationship, CBP status, modal status)
+3. Monitor ISSUE 005 path forward (variational framework)
+
+---
+
+**Session Status:** CLOSED
+**Date Closed:** 2025-11-27
