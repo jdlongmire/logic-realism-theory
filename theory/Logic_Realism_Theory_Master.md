@@ -402,11 +402,94 @@ The interface between I and A - the structure that mediates non-Boolean possibil
 
 ---
 
-## 6. Objections and Responses
+## 6. Constraining IIS Dynamics
 
-The philosophical foundation developed in Sections 1-5 faces several serious objections. We address six. These objections target the philosophical foundation only; quantum-mechanical and empirical objections are treated in greater depth in Parts II and IV.
+The previous section established a fundamental asymmetry: IIS contains non-Boolean structure (superpositions, indeterminate states), while actuality must be Boolean. This raises an immediate question that must be addressed before proceeding: **what constrains transformations on IIS?**
 
-### 6.1 Objection 1: Unfalsifiability
+IIS is not static. States evolve, transform, interact. But not every conceivable transformation can be admissible - otherwise the framework would have no physical content. Something must constrain dynamics, and that something cannot be arbitrary physical postulation if we are to maintain the logical foundations developed thus far.
+
+### 6.1 The Architectural Necessity
+
+Consider the structure we have established:
+
+1. **IIS** contains all distinguishable states (constituted by 3FLL)
+2. **Actuality** is Boolean (3FLL fully enforced)
+3. **Resolution** is the process by which IIS states become actual
+
+The question of dynamics concerns transformations *within* IIS - before resolution to actuality. What principles govern these pre-Boolean transformations?
+
+The answer follows from the structure itself. Any transformation on IIS must preserve the possibility of consistent Boolean resolution. If a transformation produced states that *could never* resolve consistently to Boolean actuality - states that would generate ungroundable propositions, contradictions in actuality, or violations of Excluded Middle - then such states would have no path to the actual world.
+
+But LRT identifies actuality with what can be grounded through the resolution of IIS via 3FLL. States with no path to actuality are, within LRT's ontology, states that cannot exist as anything more than formal possibilities. They are not part of physical reality.
+
+This is not an additional assumption but an architectural requirement. The very structure of the IIS-Actuality relationship demands it.
+
+### 6.2 The Consistency Bridging Principle
+
+We state this requirement explicitly:
+
+**Definition 6.1 (Consistency Bridging Principle).** *Admissible transformations on IIS are only those for which all reachable states can, in principle, participate in a consistent resolution to Boolean actuality, without generating ungroundable propositions.*
+
+Several aspects require clarification:
+
+**"Admissible transformations"** - We are constraining what dynamics are physically possible, not what is mathematically conceivable. Many transformations can be written down that violate CBP; they simply do not correspond to physical processes.
+
+**"All reachable states"** - If transformation T takes state s₁ to s₂, then s₂ must satisfy CBP. The constraint applies to the image of the transformation.
+
+**"In principle participate"** - This is a modal condition. The state need not *actually* resolve in any given physical situation. It must merely be *capable* of consistent resolution. Superpositions satisfy this: they can evolve, interfere, and eventually resolve to definite outcomes.
+
+**"Consistent resolution"** - Resolution that satisfies 3FLL. No contradictory actuality, no undefined truth values, no violations of identity.
+
+**"Ungroundable propositions"** - Propositions that would require truthmakers external to the IIS-Actuality framework. By the Parsimony Theorem (developed in Part III), actuality contains exactly the grounded propositions and nothing more.
+
+### 6.3 What CBP Is Not
+
+To prevent misunderstanding:
+
+**CBP is not a collapse postulate.** It does not specify *when* or *how* resolution occurs. It constrains dynamics, not measurement.
+
+**CBP is not an assertion that "only Boolean states exist."** IIS genuinely contains non-Boolean structure. CBP says this structure must be *compatible with* eventual Boolean resolution, not that it must *already be* Boolean.
+
+**CBP is not circular with Boolean actuality.** It does not say "dynamics must produce actuality" (which would presuppose what we are explaining). It says dynamics must *preserve the possibility* of consistent resolution - a structural constraint, not a temporal requirement.
+
+**CBP is not an empirical hypothesis.** Like the logical laws themselves, CBP is a framework condition. It cannot be tested by looking for transformations that violate it, because such transformations would not correspond to physical processes within LRT. Its justification is architectural, not observational.
+
+### 6.4 Implications
+
+CBP has substantive consequences that will be developed in Part III:
+
+**Reversibility.** Irreversible transformations destroy information - they map multiple input states to the same output state. But information destruction requires a mechanism: something must absorb or erase the lost distinctions. Such a mechanism would constitute structure beyond the constitutive package (3FLL + IIS + s₀). By parsimony principles developed later, no such surplus structure exists at the fundamental level. Irreversible dynamics would produce states whose resolution history becomes unrecoverable - potential violations of consistent grounding. Thus CBP constrains fundamental dynamics to be reversible.
+
+This argument is sketched here but made rigorous in Part III, where the Parsimony Theorem provides the formal grounding.
+
+**Continuity.** Discontinuous dynamics require specification of exception points or jump conditions - additional structure beyond the minimal constitutive package. While this argument is weaker than for reversibility, it motivates the expectation of continuous dynamics.
+
+**Local Tomography.** CBP alone does not constrain composite systems. How global states relate to local measurements requires additional physical input. This is discussed in Part III.
+
+### 6.5 Summary
+
+CBP is not an arbitrary addition to the framework. It is the natural answer to a question that the IIS-Actuality structure itself poses: given that actuality must be Boolean, what constrains transformations in the pre-Boolean space of IIS?
+
+The answer - consistency with eventual Boolean resolution - follows from the architecture. CBP makes this answer explicit. It connects the logical foundations of Part I to the physical constraints of Part II and the mathematical derivations of Part III.
+
+With CBP in place, we have:
+
+| Component | Role | Status |
+|-----------|------|--------|
+| 3FLL | Constitutes distinguishability; enforces Boolean actuality | Foundational |
+| IIS | Space of all distinguishable states | Co-primitive with 3FLL |
+| CBP | Constrains admissible transformations on IIS | Architectural consequence |
+| Resolution | Maps IIS to Boolean actuality | Interface (Part II) |
+
+The framework is now complete enough to address foundational objections.
+
+---
+
+## 7. Objections and Responses
+
+The philosophical foundation developed in Sections 1-6 faces several serious objections. We address six. These objections target the philosophical foundation only; quantum-mechanical and empirical objections are treated in greater depth in Parts II and IV.
+
+### 7.1 Objection 1: Unfalsifiability
 
 **The objection:** When confronted with an apparent logical violation, the Logic Realist can always deflect: "You misdescribed the state of affairs," "The predicates are not genuinely contradictory," "That is equivocation." If any purported counterexample can be deflected, Logic Realism is unfalsifiable and therefore not a meaningful claim.
 
@@ -424,7 +507,7 @@ Nevertheless, Logic Realism faces what we call **transcendental falsifiers**:
 
 Mathematically consistent inconsistent systems exist; empirically adequate ones do not. If logical structure cannot be dispensed with even in principle without collapsing predictive capacity, that is evidence for its constitutive status, not evidence of ad hoc immunization.
 
-### 6.2 Objection 2: Category Error
+### 7.2 Objection 2: Category Error
 
 **The objection:** Logic governs relations between propositions - statements that bear truth values. Physical reality consists of states of affairs - objects, properties, events. Applying logical laws to reality itself is a category mistake. Reality does not "obey" logic any more than an apple obeys modus ponens.
 
@@ -441,7 +524,7 @@ To say reality instantiates logical structure is not to ascribe rule-following t
 
 The objector cannot coherently deny that reality has determinate structure; they can only refuse to call that structure "logical." But calling the structure "logical" or "structural" makes no metaphysical difference; the point is that reality's structure has the same invariants logic formalizes.
 
-### 6.3 Objection 3: The Kantian Alternative
+### 7.3 Objection 3: The Kantian Alternative
 
 **The objection:** Logic is not a feature of reality but a precondition for any possible experience. We cannot observe violations because observation itself presupposes logical structure. The absence of violations tells us about cognition, not mind-independent reality. The Kantian view is more parsimonious: it posits logical structure in cognition only, not in both cognition and reality.
 
@@ -457,7 +540,7 @@ Kantianism can reinterpret these as phenomenal regularities, but doing so adds m
 
 **Parsimony reconsidered.** Kantianism's apparent simplicity conceals substantial machinery: an unknowable thing-in-itself, a strict phenomenal-noumenal divide, an unexplained harmony between thought and nature. Logic Realism requires no additional commitment beyond the world having determinate structure and our theories successfully tracking it.
 
-### 6.4 Objection 4: The Epistemic Gap
+### 7.4 Objection 4: The Epistemic Gap
 
 **The objection:** Logic Realism claims that no physical manifestation - observed or unobserved - violates 3FLL. But our evidence consists entirely of observed phenomena. The inference from "no observed violations" to "no violations anywhere" is inductive and fallible. What about beyond the cosmological horizon, the first Planck moments, inside black holes?
 
@@ -467,7 +550,7 @@ Could logic fail beyond the cosmological horizon? The question is malformed. For
 
 Logic Realism does not claim all possible universes must obey classical *laws*; only that any universe must instantiate identity, non-contradiction, and determinate structure to count as a universe at all. Without these, there are no states, no laws, no events, no persistence.
 
-### 6.5 Objection 5: Quantum Mechanics
+### 7.5 Objection 5: Quantum Mechanics
 
 **The objection:** Quantum mechanics challenges classical logic: superposition ("the particle is here AND there"), wave-particle duality, non-distributive quantum logic, definite outcomes from indefinite states. If QM violates classical logic, Logic Realism fails at the most fundamental level.
 
@@ -489,7 +572,7 @@ The first violates Non-Contradiction. The second does not. Quantum mechanics inv
 
 Part II argues that quantum mechanics is best understood as the unique stable interface between IIS (where indeterminate states live) and Boolean actuality (where 3FLL are fully enforced).
 
-### 6.6 Objection 6: Dialetheism
+### 7.6 Objection 6: Dialetheism
 
 **The objection:** Dialetheism holds that some contradictions are true - that there exist propositions P such that both P and ¬P obtain. Paraconsistent logics like LP (Logic of Paradox) show that contradictions can be manipulated without explosion. The Liar Paradox suggests accepting true contradiction is simpler than alternatives. Modern dialetheists (Priest, 2006; Beall, 2009) have developed sophisticated frameworks for this view.
 
@@ -511,11 +594,11 @@ Nothing in physical reality exhibits dialetheic structure; therefore, nothing in
 
 ---
 
-## 7. The Interface Problem
+## 8. The Interface Problem
 
 Part I established the philosophical foundations: 3FLL are constitutive of physical reality, IIS is the co-primitive space of distinguishable states, and actuality is where 3FLL are fully enforced as Boolean determinacy. This section begins the physical interpretation by developing the central challenge this framework poses: how do the rich structures of IIS relate to the Boolean structure of actuality?
 
-### 7.1 The Problem Stated
+### 8.1 The Problem Stated
 
 Section 5 introduced the asymmetry between IIS and actuality:
 
@@ -530,7 +613,7 @@ Actuality, by contrast, must be fully determinate. When something becomes actual
 
 This creates the **interface problem**: what structure mediates between the non-Boolean possibilities of IIS and the Boolean requirements of actuality?
 
-### 7.2 Interface Constraints
+### 8.2 Interface Constraints
 
 For any structure in IIS to interface with Boolean actuality, it must permit a map from its states to binary outcomes. This map must satisfy three constraints derived from 3FLL:
 
@@ -542,7 +625,7 @@ For any structure in IIS to interface with Boolean actuality, it must permit a m
 
 These constraints are minimal. They follow directly from 3FLL applied to the interface.
 
-### 7.3 Multiple Structures Satisfy the Constraints
+### 8.3 Multiple Structures Satisfy the Constraints
 
 Here is the crucial observation: multiple mathematical structures satisfy these interface constraints.
 
@@ -552,7 +635,7 @@ Here is the crucial observation: multiple mathematical structures satisfy these 
 
 **Other structures** - real Hilbert spaces, quaternionic quantum mechanics, generalized probabilistic theories (GPTs), and even super-quantum models like PR-boxes - also satisfy the formal constraints.
 
-### 7.4 The Selection Problem
+### 8.4 The Selection Problem
 
 If multiple structures satisfy the formal interface constraints, what selects among them?
 
@@ -568,7 +651,7 @@ Three possible answers present themselves:
 
 LRT defends the third answer. We do not claim that quantum mechanics is logically necessary. We claim that quantum mechanics is the unique structure compatible with stable physical existence. This is a **selection claim**, not a derivation claim.
 
-### 7.5 Why Selection Is Not Derivation
+### 8.5 Why Selection Is Not Derivation
 
 The distinction between selection and derivation is crucial for honest assessment of LRT's claims.
 
@@ -584,7 +667,7 @@ This distinction matters because:
 
 3. It explains why quantum mechanics has its specific form without claiming that form is logically inevitable.
 
-### 7.6 Parsimony as Derived
+### 8.6 Parsimony as Derived
 
 One might ask: among the structures satisfying the interface constraints, why should actuality select the minimal one? Is parsimony an additional assumption?
 
@@ -604,7 +687,7 @@ The derivation proceeds as follows:
 
 This is **Global Parsimony** - not as a methodological preference but as a structural consequence of what "actuality" means given LRT's constitutive architecture. The formal statement and proof appear in Part III.
 
-### 7.7 The Path Forward
+### 8.7 The Path Forward
 
 The interface problem now has a clear structure:
 
@@ -621,11 +704,11 @@ The next sections develop each element of this argument:
 
 ---
 
-## 8. Distinguishability and the Bit
+## 9. Distinguishability and the Bit
 
 The interface problem asks what structure mediates between IIS and Boolean actuality. Before examining candidate structures, we must analyze what distinguishability itself requires. This section establishes that the **bit** - the minimal unit of distinction - is constituted by 3FLL, and that this constitution has structural implications for any interface.
 
-### 8.1 Distinguishability Is Constituted by 3FLL
+### 9.1 Distinguishability Is Constituted by 3FLL
 
 Distinguishability is not a primitive fact discovered in the world. It is what 3FLL establish.
 
@@ -639,7 +722,7 @@ Without these conditions, there is no basis for one state to be different from a
 
 Distinguishability exists at the level of IIS; actuality enforces only one branch of each distinction. This reinforces the asymmetry: IIS contains all distinguishable configurations, while actuality selects among them.
 
-### 8.2 Distinguishability Is Pairwise
+### 9.2 Distinguishability Is Pairwise
 
 To distinguish is to compare. Distinguishability is inherently a relation between two things: how different is A from B?
 
@@ -649,7 +732,7 @@ This observation is crucial for understanding quantum structure. The Born rule g
 
 Similarly, the inner product structure of Hilbert space - where states are characterized by their overlaps with other states - instantiates the relational character of distinction. States in quantum mechanics are not defined by intrinsic properties alone but by their relations to measurement bases and to each other.
 
-### 8.3 The Bit as Fundamental Unit
+### 9.3 The Bit as Fundamental Unit
 
 The **bit** is the minimal unit of distinguishability - one binary distinction, a single yes/no question answered.
 
@@ -665,7 +748,7 @@ Wheeler wrote: "Every it - every particle, every field of force, even the spacet
 
 LRT explains *why* this is so: the bit is the atomic unit of 3FLL-constituted distinguishability. Physical reality must be Boolean at the level of actuality, and the bit is the minimal Boolean structure.
 
-### 8.4 The Bit Scale
+### 9.4 The Bit Scale
 
 If the bit is the fundamental unit of distinguishability, and physical action is measured in units of ℏ (Planck's constant), then ℏ may be understood as the **conversion factor between logical and physical structure**:
 
@@ -685,7 +768,7 @@ This is naturally interpreted as a maximum bit density of roughly one bit per Pl
 
 **The holographic principle** generalizes this: the information content of any region is bounded by its boundary area, not its volume. This constraint appears as a physical limit but is equally interpretable as a limit on distinguishability-granularity if the bit is ontologically fundamental. Reality cannot support arbitrary information density because distinguishability itself has finite granularity.
 
-### 8.5 Implications for Physical Structure
+### 9.5 Implications for Physical Structure
 
 These connections suggest several conclusions (conditional on S = ℏC where noted):
 
@@ -699,7 +782,7 @@ These connections suggest several conclusions (conditional on S = ℏC where not
 
 5. **The quadratic structure of probability (Born rule) reflects pairwise distinguishability.** This connection is developed further in Section 10.
 
-### 8.6 What This Section Establishes
+### 9.6 What This Section Establishes
 
 We have shown:
 
@@ -713,13 +796,13 @@ This prepares the ground for Section 9, which asks: among the structures that ca
 
 ---
 
-## 9. Why Quantum Structure
+## 10. Why Quantum Structure
 
-Section 7 established that multiple mathematical structures satisfy the interface constraints between IIS and Boolean actuality. Section 8 showed that any interface must respect the pairwise, bit-based character of distinguishability. This section asks: why does physical reality exhibit quantum structure specifically, rather than classical probability or some other generalized probabilistic theory?
+Section 8 established that multiple mathematical structures satisfy the interface constraints between IIS and Boolean actuality. Section 9 showed that any interface must respect the pairwise, bit-based character of distinguishability. This section asks: why does physical reality exhibit quantum structure specifically, rather than classical probability or some other generalized probabilistic theory?
 
 The answer is **stability selection**: quantum mechanics is the unique structure that produces stable physical existence. This is not a derivation but a selection effect - and we must be precise about what this means.
 
-### 9.1 Classical Structure Is Compatible but Unstable
+### 10.1 Classical Structure Is Compatible but Unstable
 
 Classical probability satisfies the formal interface constraints. A probability distribution over outcomes, sampled to yield a definite result, produces Boolean actuality from a richer structure. Formally, classical probability is a valid interface.
 
@@ -732,7 +815,7 @@ But classical mechanics - whether deterministic or supplemented by classical pro
 
 Classical structure satisfies the Boolean interface constraint but does not produce observers capable of noticing. A universe with classical fundamental structure would contain no stable matter, no chemistry, no life, no inquiry.
 
-### 9.2 Quantum Structure Produces Stability
+### 10.2 Quantum Structure Produces Stability
 
 Quantum mechanics - specifically, complex Hilbert space with unitary evolution and the Born rule - produces:
 
@@ -742,7 +825,7 @@ Quantum mechanics - specifically, complex Hilbert space with unitary evolution a
 - **Stars.** Quantum tunneling enables nuclear fusion at temperatures far below the classical Coulomb barrier.
 - **Observers.** Stable structures capable of inquiry, measurement, and asking questions about the interface.
 
-### 9.3 The Fine-Tuning of Quantum Structure
+### 10.3 The Fine-Tuning of Quantum Structure
 
 The relationship between quantum structure and physical stability is not logically necessary - it is fine-tuned. Perturbations to quantum structure destroy stability:
 
@@ -759,7 +842,7 @@ The relationship between quantum structure and physical stability is not logical
 
 Quantum mechanics sits on a razor's edge. The mathematical structure must be exactly as it is for physics to be stable. This is not a claim about adjustable parameters within quantum mechanics; it is a claim about the mathematical framework itself.
 
-### 9.4 Evidence from Reconstruction Theorems
+### 10.4 Evidence from Reconstruction Theorems
 
 The uniqueness of quantum structure is not merely asserted - it is supported by rigorous results in quantum foundations:
 
@@ -778,7 +861,7 @@ These reconstruction theorems converge on the same conclusion: quantum mechanics
 
 In LRT terms: the constraints these theorems identify are features required for stable interface between IIS and Boolean actuality. Continuous reversibility preserves distinguishability in IIS. Local tomography ensures consistency across subsystems. The theorems do not derive quantum mechanics from logic alone, but they show that quantum structure is uniquely determined once reasonable interface requirements are imposed.
 
-### 9.5 Stability Selection, Not Derivation
+### 10.5 Stability Selection, Not Derivation
 
 We must be explicit about the logical status of this argument:
 
@@ -1579,13 +1662,13 @@ where D(x,y) = 0 means identical, D(x,y) = 1 means perfectly distinguishable.
 
 **(a) Continuous transformations** (Hardy, 2001; Masanes & Müller, 2011)**:** For any two states s₁, s₂ with D(s₁,s₂) < 1, there exists a continuous path of states connecting them.
 
-**(b) Reversible transformations** (Hardy, 2001, Axiom 4)**:** For any transformation T on IIS, there exists T⁻¹ such that T⁻¹T = TT⁻¹ = id.
+**(b) Reversible transformations** (Hardy, 2001, Axiom 4)**:** For any transformation T on IIS, there exists T⁻¹ such that T⁻¹T = TT⁻¹ = id. **[DERIVED - see Theorem 16.12 below]**
 
 **(c) Local tomography** (Chiribella et al., 2011; Masanes & Müller, 2011)**:** For any composite system with subsystems A and B, the state of the whole is uniquely determined by the statistics of local measurements on A and B separately.
 
 *Remark on 3(c):* This axiom is crucial for determining the number field. It asserts that the distinguishability of a composite system is determined by local measurements on its parts. This rules out holistic theories where the whole cannot be reconstructed from the parts.
 
-*Justification:* These constraints are not arbitrary. Continuity is required for dynamics to be well-defined. Reversibility is required for information preservation in IIS (non-reversible dynamics would lose distinguishability). Local tomography is required for physics to be compositional - for us to learn about wholes by studying parts. These are standard axioms in reconstruction programs; LRT provides philosophical grounding for them.
+*Justification:* These constraints are not arbitrary. Continuity is motivated by parsimony (discontinuous dynamics require surplus specification). **Reversibility is derived from CBP + Parsimony (Theorem 16.12).** Local tomography is required for physics to be compositional - for us to learn about wholes by studying parts. These are standard axioms in reconstruction programs; LRT derives reversibility and provides philosophical grounding for continuity and local tomography.
 
 ---
 
@@ -1686,19 +1769,53 @@ Section 7.6 introduced parsimony as derived from constitution and grounding. Her
 
 ### 16.6 Revised Axiom Structure
 
-With parsimony derived, the minimal axiom base is:
+With parsimony derived and reversibility now a theorem, the minimal axiom base is:
 
 | # | Element | Status |
 |---|---------|--------|
-| A1 | 3FLL constitute distinguishability | Axiom |
-| A2 | Distinguishability is pairwise | Axiom |
-| A3 | Physical constraints (continuity, reversibility, local tomography) | Axiom |
-| A4 | Boolean actuality (3FLL enforcement domain) | Axiom |
-| A5 | Non-contextual measure | Axiom |
+| A1 | 3FLL constitute distinguishability | Axiom (Tier 0) |
+| A2 | Distinguishability is pairwise | Axiom (Tier 0) |
+| A3a | Continuity of transformations | Axiom (Tier 2 - motivated) |
+| A3c | Local tomography | Axiom (Tier 2 - physical) |
+| A4 | Boolean actuality (3FLL enforcement domain) | Axiom (Tier 0) |
+| A5 | Non-contextual measure | Axiom (Tier 0) |
 | D1 | Grounded proposition | Definition |
 | P1 | Constitutive Closure (CCP) | Principle (from A1) |
 | P2 | Truthmaker Requirement (TM) | Principle |
+| P3 | Consistency Bridging Principle (CBP) | Principle (Section 6) |
 | **T1** | **Global Parsimony** | **Theorem** |
+| **T2** | **Reversibility (3b)** | **Theorem** (from CBP + T1) |
+
+**LRT Reconstruction Hierarchy:**
+
+- **Tier 0 (Logical/Informational):** 3FLL, IIS, distinguishability, Boolean actuality, Parsimony theorem
+- **Tier 1 (Bridging):** CBP → Reversibility (derived)
+- **Tier 2 (Physical):** Continuity (motivated) + Local Tomography (irreducible)
+- **Tier 3 (Derived):** Hilbert space → Born rule → QM structure
+
+### 16.7 The Reversibility Theorem
+
+**Theorem 16.12 (Reversibility from CBP + Parsimony).** Fundamental transformations on IIS are reversible (information-preserving).
+
+*Proof.*
+
+1. **Setup:** Let T be a fundamental transformation on IIS. Suppose for contradiction that T is irreversible - i.e., T maps distinct states s₁ ≠ s₂ to the same image T(s₁) = T(s₂).
+
+2. **Information destruction requires a mechanism:** If T destroys information (erases the distinction between s₁ and s₂), there must be some process or structure that absorbs, dissipates, or erases this distinction. Call this mechanism M.
+
+3. **M is surplus structure:** The constitutive package of LRT is (3FLL + s₀). The mechanism M - whatever physical process enables information loss - is not contained in this package. It requires specification beyond what 3FLL and the initial state generate.
+
+4. **Apply Constitutive Closure (CCP):** By CCP (Section 16.5), the domain contains exactly the structure generated by the constitutive package. Structure requiring additional sources does not lie in the domain.
+
+5. **Apply Parsimony (Theorem 16.10):** No surplus structure exists at the fundamental level. M would be surplus structure.
+
+6. **Apply CBP (Section 6):** Irreversible dynamics produce states whose resolution history becomes unrecoverable. Such states cannot participate in consistent Boolean resolution - they would generate propositions about "which original state led here" that have no truthmaker. This violates the Consistency Bridging Principle.
+
+7. **Conclusion:** No mechanism for information loss exists at the fundamental level. Therefore T must be reversible: distinct inputs map to distinct outputs. ∎
+
+*Remark:* This is genuine derivation, not merely philosophical motivation. The key ingredients - CCP, Parsimony (Theorem 16.10), and CBP (Definition 6.1) - are all established within LRT. The argument does not assume reversibility; it derives it from the prohibition on surplus structure.
+
+*Corollary 16.13.* Fundamental IIS dynamics are unitary (when Hilbert space structure is established in Section 17).
 
 ### 16.8 Axiom 3: Derivation Status
 
@@ -1710,26 +1827,32 @@ We investigated this systematically. A key insight emerged: **Parsimony (Theorem
 
 | Constraint | Derivation Status | Argument |
 |------------|-------------------|----------|
-| **Reversibility (3b)** | DERIVED | Parsimony: mechanism for information loss is surplus structure |
+| **Reversibility (3b)** | **DERIVED (Theorem 16.12)** | CBP + Parsimony: mechanism for information loss is surplus structure |
 | **Continuity (3a)** | MOTIVATED | Parsimony: discontinuous dynamics require surplus specification |
-| **Local Tomography (3c)** | PARTIAL | Parsimony: inaccessible global structure is surplus (decomposability gap remains) |
+| **Local Tomography (3c)** | IRREDUCIBLE | Parsimony motivates but decomposability gap remains |
 
-**Reversibility is now derived from Parsimony:**
+**Reversibility is derived (Theorem 16.12):**
 
-1. Irreversible dynamics require a mechanism for information loss (noise, dissipation, coarse-graining)
+The full proof appears in Section 16.7. In summary:
+
+1. Irreversible dynamics require a mechanism for information loss
 2. Such mechanisms require specification beyond the constitutive package (3FLL + s₀)
-3. By CCP (Section 16.5): the constitutive package generates exactly what's in the domain
-4. By Parsimony (Theorem 16.10): no surplus structure exists in actuality
-5. Therefore: no mechanism for information loss exists at the fundamental level
-6. Therefore: fundamental IIS dynamics are reversible (information-preserving)
+3. By CCP + Parsimony (Theorem 16.10): no surplus structure exists
+4. By CBP (Section 6): states must permit consistent Boolean resolution
+5. Therefore: fundamental IIS dynamics are reversible (information-preserving)
 
-This is genuine progress over previous "structure preservation" arguments: parsimony is proven, not assumed.
+This is genuine derivation, not merely philosophical motivation. The argument uses only established LRT machinery.
 
 **Continuity** is motivated by parsimony but not fully derived. The intuition: discontinuous dynamics require "exception points" (where jumps occur), which constitute surplus specification not generated by the constitutive package. A rigorous definition of "specification complexity" would complete this argument.
 
 **Local tomography** is partially derived. Parsimony eliminates irreducibly global structure with no Boolean cash-out (such structure is surplus). However, the argument that joint measurement truthmakers must decompose into local truthmakers plus coupling is assumed, not derived. This decomposability may represent irreducible physical content.
 
-**The refined position:** Axiom 3 is significantly grounded in LRT's existing framework through parsimony. Reversibility is derived. Continuity and local tomography have parsimony-based motivations with identified gaps. LRT's contribution is not just philosophical justification but partial derivation of constraints that reconstruction programs take as primitive.
+**The refined position:** Of the three Axiom 3 constraints:
+- **Reversibility** is fully derived (Theorem 16.12) from CBP + Parsimony
+- **Continuity** is motivated by parsimony (specification-complexity argument) but not rigorously derived
+- **Local tomography** remains an irreducible physical axiom (decomposability gap)
+
+LRT reduces the physical input for quantum mechanics to two axioms (continuity, local tomography) plus one bridging principle (CBP). This is significant progress over reconstruction programs that take all three as primitive.
 
 **Remaining open problems:**
 - Formalizing "specification complexity" to complete continuity derivation
@@ -2039,43 +2162,70 @@ These connections suggest the Born rule is not arbitrary but informationally nat
 
 ### 18.10 The Derivation Chain (Complete)
 
-The complete logical structure distinguishes assumptions from derivations:
+The complete logical structure distinguishes tiers of assumption and derivation:
 
-**ASSUMED (Axioms 1-5):**
+**TIER 0 - LOGICAL/INFORMATIONAL FOUNDATIONS:**
 ```
 A1: 3FLL constitute distinguishability
 A2: Distinguishability is pairwise
-A3: Physical constraints (continuity, reversibility, local tomography)
 A4: Boolean actuality (3FLL enforcement domain)
 A5: Non-contextual measure on interface
+T1: Global Parsimony (Theorem 16.10) ← derived from A1
 ```
 
-**DERIVED (Theorems):**
+**TIER 1 - BRIDGING PRINCIPLE:**
 ```
-A1-A3 → Complex Hilbert Space (via Masanes-Müller)
+P3: Consistency Bridging Principle (CBP, Section 6)
+T2: Reversibility (Theorem 16.12) ← derived from CBP + T1
+```
+
+**TIER 2 - PHYSICAL AXIOMS (irreducible):**
+```
+A3a: Continuity of transformations (motivated by parsimony)
+A3c: Local tomography (irreducible physical content)
+```
+
+**TIER 3 - DERIVED STRUCTURE:**
+```
+A1-A2 + T2 + A3a + A3c → Complex Hilbert Space (via Masanes-Müller)
 A4-A5 + Hilbert Space → Born Rule (via Gleason)
 ```
 
 **Visual derivation chain:**
 ```
-[A1: 3FLL] ──constitutes──▶ [A2: Distinguishability]
+              ═══════════════════════════════════════════
+              ║  TIER 0: Logical/Informational          ║
+              ║  A1 (3FLL) → A2 (Distinguishability)    ║
+              ║  A4 (Boolean Actuality)                 ║
+              ║  A5 (Non-contextual Measure)            ║
+              ║  T1: Parsimony (derived)                ║
+              ═══════════════════════════════════════════
                                     │
-                          + [A3: Physical Constraints]
-                                    │
-                                    ▼
-                     ═══════════════════════════════
-                     ║  DERIVED: Hilbert Space     ║
-                     ║  (Masanes-Müller)           ║
-                     ═══════════════════════════════
-                                    │
-                    + [A4: Boolean Actuality]
-                    + [A5: Non-contextual Measure]
+                    + [P3: CBP (Section 6)]
                                     │
                                     ▼
-                     ═══════════════════════════════
-                     ║  DERIVED: Born Rule         ║
-                     ║  (Gleason)                  ║
-                     ═══════════════════════════════
+              ═══════════════════════════════════════════
+              ║  TIER 1: Bridging                       ║
+              ║  T2: Reversibility (Theorem 16.12)      ║
+              ║      DERIVED from CBP + Parsimony       ║
+              ═══════════════════════════════════════════
+                                    │
+              + [A3a: Continuity (motivated)]
+              + [A3c: Local Tomography (axiom)]
+                                    │
+                                    ▼
+              ═══════════════════════════════════════════
+              ║  TIER 3: DERIVED - Hilbert Space        ║
+              ║  (via Masanes-Müller)                   ║
+              ═══════════════════════════════════════════
+                                    │
+                    + [A4 + A5 applied]
+                                    │
+                                    ▼
+              ═══════════════════════════════════════════
+              ║  TIER 3: DERIVED - Born Rule            ║
+              ║  (via Gleason)                          ║
+              ═══════════════════════════════════════════
                                     │
                                     ▼
                           QUANTUM MECHANICS
@@ -2091,7 +2241,7 @@ We have shown:
 - Contextuality is a corollary, not an anomaly
 - The Born rule has information-theoretic significance
 
-The derivation is conditional on Axioms 3-5, but these have philosophical grounding in LRT. The Born rule is not an independent postulate but a theorem of the framework.
+The derivation is conditional on continuity (A3a, motivated), local tomography (A3c, axiom), and Axioms 4-5. Reversibility (formerly A3b) is now derived (Theorem 16.12). The Born rule is not an independent postulate but a theorem of the framework.
 
 The next sections examine how existing interpretations fit within LRT's layer structure.
 

@@ -1,9 +1,10 @@
 # ISSUE 001: Grounding Axiom 3 (Physical Constraints)
 
-**Status:** IN PROGRESS
+**Status:** CLOSED
 **Priority:** CRITICAL
 **Created:** 2025-11-26
 **Updated:** 2025-11-27
+**Closed:** 2025-11-27
 **Source:** External peer-review (Gemini, Grok, GPT synthesis)
 
 ---
@@ -242,14 +243,14 @@ to reflect Tier 0 → Tier 1 → Tier 2 → Hilbert space.
 
 ## 10. Close Conditions for ISSUE 001
 
-ISSUE 001 can be closed once the following are completed:
+All close conditions have been met (Session 19.0):
 
-- [ ] CBP added to the manuscript
-- [ ] Reversibility theorem written and cross-referenced
-- [ ] Continuity marked as conjectural, not derived
-- [ ] Local tomography explicitly identified as irreducible
-- [ ] Reconstruction chain updated
-- [ ] Section 16 revision merged
+- [x] CBP added to the manuscript (Section 6.2, Definition 6.1)
+- [x] Reversibility theorem written and cross-referenced (Section 16.7, Theorem 16.12)
+- [x] Continuity marked as conjectural, not derived (Section 16.8, "MOTIVATED")
+- [x] Local tomography explicitly identified as irreducible (Section 16.8, "IRREDUCIBLE")
+- [x] Reconstruction chain updated (Section 18.10, Tier-based diagram)
+- [x] Section 16 revision merged (16.6 revised axiom table, 16.7 theorem added)
 
 ---
 
