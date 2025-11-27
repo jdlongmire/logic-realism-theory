@@ -2075,7 +2075,9 @@ LRT articulates four ontological layers between IIS and Boolean actuality:
 | **3** | Interface Approach | Decoherence, environment coupling, approach to Boolean | Lindblad equation |
 | **4** | Boolean Actuality | Definite outcomes, classical records | Measurement results |
 
-Each layer is physically real and mathematically precise. Existing interpretations correctly describe one or more layers while mistaking their layer for the whole.
+Each layer is physically real and mathematically precise. Layers 1-3 are real as structures in IIS and its dynamics; Layer 4 is real as the domain of truthmakers and records. This refines the IIS/Boolean split introduced in Sections 7-10: Layers 1-3 reside in IIS-side structure, Layer 4 is Boolean actuality where 3FLL are fully enforced.
+
+Existing interpretations correctly describe one or more layers while mistaking their layer for the whole.
 
 ### 19.2 Layer 1: IIS Dynamics (Unitary QM / Many-Worlds)
 
@@ -2087,10 +2089,10 @@ $$i\hbar\frac{\partial}{\partial t}|\psi\rangle = H|\psi\rangle$$
 - Evolution is deterministic and unitary
 - Superposition is preserved
 - Information is conserved
-- "Branching" structure exists
+- "Branching" structure exists (as a structural feature of the state's decomposition in certain bases, not ontologically many worlds)
 
 **Which interpretations live here:**
-- **Many-Worlds (Everett, 1957):** Correctly identifies that the wave function is real and evolves unitarily. MWI's "branches" are real structure in IIS. However, MWI errs in claiming all branches are equally *actual*. In LRT, branches exist as possibilities in IIS; only one actualizes at Layer 4.
+- **Many-Worlds (Everett, 1957):** Correctly identifies that the wave function is real and evolves unitarily. MWI's "branches" are real structure in IIS - the decomposition of the global state into decoherent histories is genuine structure. However, MWI errs in claiming all branches are equally *actual*. In LRT, multiple branches coexist in IIS, but the role of Layer 4 is precisely to pick out a single Boolean actual history. This is not a matter of taste but follows from the IIS/Boolean distinction: 3FLL enforcement at Layer 4 requires single actuality (from Non-Contradiction and Excluded Middle).
 
 - **Unitary-only QM:** Any interpretation that takes unitary evolution as fundamental and complete describes Layer 1 correctly.
 
@@ -2115,9 +2117,11 @@ where ρ = |ψ|² and v is the guidance velocity field.
 
 $$v = \frac{\hbar}{m}\text{Im}\left(\frac{\nabla\psi}{\psi}\right)$$
 
-accurately describes how probability flows through configuration space. However, Bohmian mechanics errs in postulating that particles *always* have definite positions. In LRT, the trajectories describe probability flow in IIS, not actual particle positions until Layer 4.
+accurately describes how probability flows through configuration space. Results by Dürr, Goldstein, and Zanghì (1992) on quantum equilibrium show how the Born distribution is dynamically equivariant - the |ψ|² distribution is preserved under the flow. LRT accepts this as a correct statement about probability flow in IIS.
 
-**LRT assessment:** Layer 2 correctly describes probability flow. Bohmian mathematics is valid at this layer. The error is treating configuration-space trajectories as always-actual positions rather than IIS probability structure.
+Bohm's *interpretation* of these trajectories as always-actual particle positions is what LRT relocates. In LRT, the trajectories describe probability flow in IIS, not actual particle positions until Layer 4. The guidance equation and continuity equation are valid; the ontological claim about pre-existing definite positions is not.
+
+**LRT assessment:** Layer 2 correctly describes probability flow. Bohmian mathematics is valid at this layer. The disagreement is interpretive: LRT treats configuration-space trajectories as IIS probability structure, not as underlying point particles with always-definite positions.
 
 ### 19.4 Layer 3: Interface Approach (Decoherence / GRW)
 
@@ -2125,7 +2129,7 @@ accurately describes how probability flows through configuration space. However,
 
 $$\frac{d\rho}{dt} = -\frac{i}{\hbar}[H, \rho] + \mathcal{L}[\rho]$$
 
-where 𝓛 is the Lindblad superoperator encoding environment coupling.
+where 𝓛 is the Lindblad superoperator encoding environment coupling. The Lindblad term encodes information leakage to the environment - precisely what Section 18 identified as the price of Boolean-compatible information extraction.
 
 **Key features:**
 - Off-diagonal elements decay (phase information transfers to environment)
@@ -2140,7 +2144,7 @@ where 𝓛 is the Lindblad superoperator encoding environment coupling.
 
 $$\lambda \approx 10^{-16} \text{ s}^{-1}$$
 
-describes the approach to Boolean structure. In LRT, GRW mathematics correctly models the interface transition statistics, though we do not commit to GRW's specific collapse mechanism.
+describes the approach to Boolean structure. In LRT, GRW mathematics correctly models the interface transition statistics. LRT treats any such parameter as empirically constrained interface physics - something to be measured rather than derived from the theory's deep structure. We do not commit to GRW's specific collapse mechanism but accept its mathematics as a valid description of Layer 3 dynamics.
 
 - **Penrose-Diósi gravity-induced collapse:** Another interface mechanism proposal, with collapse rate:
 
@@ -2161,22 +2165,24 @@ where E_G is gravitational self-energy of superposition.
 - Records can be compared and communicated
 
 **Which interpretations live here:**
-- **Copenhagen:** Correctly insists on definite measurement outcomes and the primacy of classical apparatus. The "measurement problem" arises from refusing to specify what measurement is ontologically. LRT provides the answer: measurement is whatever physical process enforces Boolean actuality.
+- **Copenhagen:** Correctly insists on definite measurement outcomes and the primacy of classical apparatus. The "measurement problem" arises from refusing to specify what measurement is ontologically. In LRT, this is not a primitive stipulation: "measurement" is any process that implements the Layer 3 → Layer 4 interface map Φ, whose existence and constraints are fixed by the IIS/Boolean distinction and by the information-theoretic results of Sections 16-18.
 
-- **QBism (Fuchs & Schack, 2013):** Correctly identifies the agent-relative character of quantum probability assignments and the centrality of measurement outcomes for rational belief updating. In LRT, QBist probability coherence reflects the structure of Layer 4 - how agents embedded in Boolean actuality must reason about interface outcomes.
+- **QBism (Fuchs & Schack, 2013):** Correctly identifies the agent-relative character of quantum probability assignments and the centrality of measurement outcomes for rational belief updating. In LRT, QBist probability coherence reflects the structure of Layer 4 - how agents embedded in Boolean actuality must reason about interface outcomes. Crucially, QBist personalist probabilities are still constrained by the same coherence conditions derived from Gleason and the Born rule (Section 18). QBism is right about *how* agents must reason at Layer 4; it is incomplete about the ontology underlying that reasoning.
 
 **LRT assessment:** Layer 4 is where 3FLL are fully enforced. Copenhagen and QBism correctly describe this layer's phenomenology but lack ontological grounding for the interface.
 
 ### 19.6 Layer Correspondence Table
 
-| Interpretation | Primary Layer | What It Gets Right | What It Misses |
-|----------------|---------------|-------------------|----------------|
-| Many-Worlds | 1 | Wave function realism, unitarity | Single actuality |
-| Bohmian | 2 | Probability flow structure | Positions as always-actual |
-| Decoherence | 3 | Interference suppression | Outcome selection |
-| GRW | 3 | Collapse statistics | Mechanism specificity |
-| Copenhagen | 4 | Definite outcomes | Interface ontology |
-| QBism | 4 | Coherence constraints | Objective grounding |
+| Interpretation | Primary Layer | What It Gets Right | What It Misses (within LRT) |
+|----------------|---------------|-------------------|----------------------------|
+| Many-Worlds | 1 | Wave function realism, unitarity | Single actuality (IIS/Boolean split) |
+| Bohmian | 2 | Probability flow structure | Positions as always-actual (vs IIS structure) |
+| Decoherence | 3 | Interference suppression | Outcome selection (Layer 4 transition) |
+| GRW | 3 | Collapse statistics | Mechanism derivation (empirical, not foundational) |
+| Copenhagen | 4 | Definite outcomes | Interface ontology (Layers 1-3) |
+| QBism | 4 | Coherence constraints | Objective grounding (IIS structure) |
+
+*Note:* The "What It Misses" column evaluates each interpretation relative to LRT's architecture, not as an absolute verdict. Each interpretation captures genuine structure at its primary layer.
 
 ### 19.7 Relational Quantum Mechanics
 
@@ -2187,7 +2193,9 @@ where E_G is gravitational self-energy of superposition.
 **LRT assessment:** RQM correctly identifies context-dependence but mislocates it. In LRT:
 - The IIS state (Layers 1-2) is objective
 - The *interface* (Layer 3) is context-dependent - different interactions probe different aspects of IIS
-- Outcomes (Layer 4) are objective once actualized
+- Outcomes (Layer 4) are objective once actualized, relative to a given history
+
+The qualifier "relative to a given history" acknowledges what RQM gets right: different interactions select *which* interface is relevant, and the resulting facts are indexed to that interaction context. But once selected, facts are not agent-relative or observer-constructed. RQM correctly picks up on the context-dependence of the interface; LRT insists that once the interface is crossed, the resulting Boolean facts are objective within that history.
 
 RQM's relationality reflects the context-dependence of the interface map Φ_C, not subjective construction of reality. Different measurement contexts actualize different aspects of IIS structure. This is genuine relationality but with objective grounding.
 
@@ -2203,7 +2211,7 @@ Each interpretation captures genuine structure but mistakes its layer for the wh
 
 **Copenhagen/QBism** sees Layer 4 and refuses to discuss deeper ontology. They correctly describe outcomes but provide no grounding.
 
-LRT unifies these by recognizing each layer as real and specifying how they relate. The measurement problem dissolves because "measurement" is the transition from Layer 3 to Layer 4 - the interface crossing.
+LRT unifies these by recognizing each layer as real and specifying how they relate. On LRT's view, the measurement problem is the failure to distinguish IIS dynamics (Layers 1-3) from the Boolean interface (Layer 4). Once this split and its constraints are made explicit - grounded in 3FLL enforcement and the information-theoretic results of Sections 16-18 - the problem dissolves rather than being "solved" by an ad hoc rule. "Measurement" is the transition from Layer 3 to Layer 4, the interface crossing where Boolean actuality is enforced.
 
 ### 19.9 The Inheritance Principle
 
@@ -2215,6 +2223,8 @@ LRT unifies these by recognizing each layer as real and specifying how they rela
 - Pointer states (Layer 3) → Measurement outcomes (Layer 4)
 
 This principle explains why different interpretations' mathematics are all correct - they correctly describe their layer, and layer structure is preserved under inheritance.
+
+In grounding terms (Section 16.5), higher layers are non-redundantly grounded in lower layers: nothing at Layer 4 floats free of Layers 1-3, but not all truths about Layer 4 reduce to a single description at Layer 1. Each layer introduces genuine structure - Boolean truth-values and records at Layer 4, decoherence rates at Layer 3, probability flow at Layer 2 - that is grounded in but not eliminable to the layer below.
 
 ### 19.10 What This Section Establishes
 
@@ -2265,6 +2275,8 @@ Caves, C. M., Fuchs, C. A., and Schack, R. "Unknown quantum states: The quantum 
 Chiribella, G., D'Ariano, G. M., and Perinotti, P. "Informational derivation of quantum theory." *Physical Review A* 84(1), 2011: 012311.
 
 Dakić, B. and Brukner, Č. "Quantum theory and beyond: Is entanglement special?" In H. Halvorson (ed.), *Deep Beauty: Understanding the Quantum World through Mathematical Innovation*. Cambridge University Press, 2011.
+
+Dürr, D., Goldstein, S., and Zanghì, N. "Quantum equilibrium and the origin of absolute uncertainty." *Journal of Statistical Physics* 67(5-6), 1992: 843-907.
 
 Everett, H. "Relative state formulation of quantum mechanics." *Reviews of Modern Physics* 29(3), 1957: 454-462.
 
