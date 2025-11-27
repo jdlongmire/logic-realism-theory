@@ -1670,6 +1670,8 @@ where D(x,y) = 0 means identical, D(x,y) = 1 means perfectly distinguishable.
 
 *Justification:* These constraints are not arbitrary. Continuity is motivated by parsimony (discontinuous dynamics require surplus specification). **Reversibility is derived from CBP + Parsimony (Theorem 17.12).** Local tomography is required for physics to be compositional - for us to learn about wholes by studying parts. These are standard axioms in reconstruction programs; LRT derives reversibility and provides philosophical grounding for continuity and local tomography.
 
+*Note on axiom status:* Axiom 3 lists the physical constraints required by external reconstruction theorems (Hardy, Masanes-Müller, etc.). We retain this numbering for compatibility with that literature. However, within LRT, constraint 3(b) is not an independent assumption but a theorem—it follows from the Consistency Bridging Principle and Global Parsimony. Constraints 3(a) and 3(c) remain irreducible physical inputs.
+
 ---
 
 **Axiom 4 (Boolean Actuality).** There exists a map Φ from IIS to Boolean outcomes:
@@ -2086,7 +2088,7 @@ The strategy parallels Section 18:
 
 ### 19.2 Gleason's Theorem
 
-**Theorem 18.1 (Gleason, 1957).** Let ℋ be a Hilbert space with dim(ℋ) ≥ 3. Let μ be a function from projection operators on ℋ to [0,1] satisfying:
+**Theorem 19.1 (Gleason, 1957).** Let ℋ be a Hilbert space with dim(ℋ) ≥ 3. Let μ be a function from projection operators on ℋ to [0,1] satisfying:
 
 1. **Non-negativity:** μ(P) ≥ 0 for all projections P
 2. **Normalization:** μ(I) = 1 (where I is the identity)
@@ -2107,7 +2109,7 @@ This is the Born rule.
 
 ### 19.3 Verification of Premises
 
-**Lemma 18.2.** The LRT axioms satisfy Gleason's premises.
+**Lemma 19.6.** The LRT axioms satisfy Gleason's premises.
 
 *Proof:*
 
@@ -2125,7 +2127,7 @@ All premises are satisfied. ∎
 
 ### 19.4 Application of Gleason
 
-**Theorem 18.3 (Born Rule from LRT).** The interface probability measure μ induced by Axiom 5 has the form:
+**Theorem 19.2 (Born Rule from LRT).** The interface probability measure μ induced by Axiom 5 has the form:
 
 $$\mu(s, P) = \text{Tr}(\rho_s P)$$
 
@@ -2133,7 +2135,7 @@ For pure states s = |ψ⟩ and rank-1 outcomes P = |φ⟩⟨φ|:
 
 $$P(\phi|\psi) = |\langle\phi|\psi\rangle|^2$$
 
-*Proof:* By Lemma 18.2, the LRT axioms satisfy Gleason's premises. Gleason's theorem (Theorem 18.1) then determines the unique form of μ. No additional interpretive assumptions are added at this step; the theorem applies strictly to the mathematical object μ defined by Axiom 5. ∎
+*Proof:* By Lemma 19.6, the LRT axioms satisfy Gleason's premises. Gleason's theorem (Theorem 19.1) then determines the unique form of μ. No additional interpretive assumptions are added at this step; the theorem applies strictly to the mathematical object μ defined by Axiom 5. ∎
 
 ### 19.5 Why the Squared Magnitude
 
@@ -2169,9 +2171,9 @@ The Born rule is derived *conditional on* Hilbert space structure and the non-co
 
 Gleason's theorem naturally generalizes to mixed states.
 
-**Definition 18.4 (Mixed State).** A mixed state ρ is a positive semi-definite operator with Tr(ρ) = 1. It represents statistical mixtures or reduced states of entangled systems.
+**Definition 19.5 (Mixed State).** A mixed state ρ is a positive semi-definite operator with Tr(ρ) = 1. It represents statistical mixtures or reduced states of entangled systems.
 
-**Theorem 18.5.** For any mixed state ρ and projection P:
+**Theorem 19.3.** For any mixed state ρ and projection P:
 
 $$P(P|\rho) = \text{Tr}(\rho P)$$
 
@@ -2188,7 +2190,7 @@ In all cases, the Born rule applies via the trace formula.
 
 ### 19.8 Contextuality as Corollary
 
-**Theorem 18.6 (Kochen-Specker, 1967).** For dim(ℋ) ≥ 3, there is no function v: P(ℋ) → {0,1} from projections to definite values satisfying:
+**Theorem 19.4 (Kochen-Specker, 1967).** For dim(ℋ) ≥ 3, there is no function v: P(ℋ) → {0,1} from projections to definite values satisfying:
 1. v(P) + v(P⊥) = 1 for complementary projections
 2. v is non-contextual (depends only on P, not the measurement context)
 
@@ -2631,7 +2633,7 @@ LRT's framework suggests several novel mathematical structures and testable conj
 
 ### 22.1 The Action-Complexity Conjecture
 
-**Conjecture 21.1 (Action-Complexity).** Physical action S and informational complexity C are related by:
+**Conjecture 22.1 (Action-Complexity).** Physical action S and informational complexity C are related by:
 
 $$S = \hbar \cdot C$$
 
@@ -2653,7 +2655,7 @@ where ℏ is Planck's constant and C is measured in bits.
 
 ### 22.2 The Interface Functor
 
-**Definition 21.2 (Interface Functor).** Let **IIS** be the category of IIS states and unitary transformations. Let **Bool** be the category of Boolean algebras. The interface is a functor:
+**Definition 22.2 (Interface Functor).** Let **IIS** be the category of IIS states and unitary transformations. Let **Bool** be the category of Boolean algebras. The interface is a functor:
 
 $$\Phi: \textbf{IIS} \rightarrow \textbf{Bool}$$
 
@@ -2673,7 +2675,7 @@ satisfying:
 
 IIS inherits rich geometric structure from its Hilbert space realization.
 
-**Definition 21.3 (Fisher-Rao Metric).** On the space of density operators, the Fisher-Rao metric is:
+**Definition 22.3 (Fisher-Rao Metric).** On the space of density operators, the Fisher-Rao metric is:
 
 $$ds^2 = \text{Tr}(d\rho \cdot L_\rho^{-1}[d\rho])$$
 
@@ -2711,7 +2713,7 @@ where L_ρ is the symmetric logarithmic derivative.
 
 ### 22.5 Emergent Spacetime
 
-**Conjecture 21.4 (Emergent Spacetime).** Spacetime structure emerges from the distinguishability relations in IIS, not vice versa.
+**Conjecture 22.4 (Emergent Spacetime).** Spacetime structure emerges from the distinguishability relations in IIS, not vice versa.
 
 **Supporting considerations:**
 
@@ -2729,7 +2731,7 @@ where L_ρ is the symmetric logarithmic derivative.
 
 **Problem:** What mathematical structure emerges from taking 3FLL as axioms of an algebraic system?
 
-**Definition 21.5 (3FLL Algebra).** An algebraic structure (A, =, ¬, ∧, ∨) where:
+**Definition 22.5 (3FLL Algebra).** An algebraic structure (A, =, ¬, ∧, ∨) where:
 - Identity: a = a for all a
 - Non-contradiction: ¬(P ∧ ¬P) for all propositions P
 - Excluded middle: P ∨ ¬P for all propositions P
@@ -3020,7 +3022,7 @@ This concludes Part III: Mathematical Structure.
 
 ---
 
-# Part IV: Empirical Signatures
+## Part IV: Empirical Signatures
 
 ## 24. Introduction to Empirical Signatures
 
