@@ -1,8 +1,8 @@
 # Session 21.0
 
 **Date**: 2025-11-27
-**Focus**: Section 32 (Conclusion) + Final Paper Structure
-**Status**: IN PROGRESS
+**Focus**: Section 32 (Conclusion) + Final Paper Structure + Editorial Remediation
+**Status**: CLOSED
 
 ---
 
@@ -15,15 +15,15 @@
 4. Paper now at 31/42 sections (~74%)
 
 **Structural Decision (this session)**:
-- Consilience moves to Appendix A (not Part V)
+- Consilience deferred (future Appendix A)
 - Part V collapses to a single Conclusion section
-- Final paper: 32 sections + appendices
+- Final paper: 32 sections
 
 ---
 
 ## Master Paper Status
 
-**Target: 32 sections + Appendices**
+**FINAL: 32 sections**
 
 | Part | Sections | Status |
 |------|----------|--------|
@@ -31,8 +31,7 @@
 | Part II | 8-16 | **COMPLETE** (Physical Interpretation) |
 | Part III | 17-23 | **COMPLETE** (Mathematical Structure) |
 | Part IV | 24-31 | **COMPLETE** (Empirical Signatures) |
-| Section 32 | Conclusion | IN PROGRESS |
-| Appendix A | Consilience | PLANNED |
+| Section 32 | Conclusion | **COMPLETE** |
 
 ---
 
@@ -41,7 +40,8 @@
 1. Draft Section 32: Conclusion ✅
 2. Update paper structure ✅
 3. Create ISSUE 004: Editorial Remediation ✅
-4. Complete ISSUE 004 Phase 1-2 ✅
+4. Complete ISSUE 004 Phases 1-3 ✅
+5. Final verification fixes ✅
 
 ---
 
@@ -62,6 +62,56 @@ Added final conclusion section with 5 subsections covering central claim, achiev
 - Renumbered Section 22 items: 21.x → 22.x
 - Added clarifying note for Axiom 3(b) derived status
 
-**Phase 3 (Optional):** Abstract revision - deferred to author decision
+**Phase 3 (Polish) - COMPLETE:**
+- Drafted hybrid abstract emphasizing Global Constraint Satisfaction and falsifiability
+- Polished with Grok review feedback
+- Integrated final abstract into Master Paper
+
+### 3. New Abstract
+
+Integrated polished abstract emphasizing:
+- Global Constraint Satisfaction (reframing non-locality)
+- Global Parsimony as falsifiability anchor
+- Honest epistemic framing ("selected" not "derived")
+- Explicit testable predictions and 12 falsifiers
+
+### 4. Repository Reorganization
+- Moved original papers to `theory/archive/`
+- Updated README.md with new paths
+- Updated repository structure documentation
+
+### 5. Final Verification Fix
+- Fixed Section 1.3: "six parts" → "four parts followed by a concluding synthesis"
+- Removed reference to non-existent Appendix A
+
+---
+
+## ISSUE 004 Status
+
+**CLOSED** - All phases complete, all verification issues resolved.
+
+---
+
+## Final Paper Statistics
+
+- **Total Sections**: 32
+- **Total Lines**: ~3,900
+- **Structure**: 4 Parts + Conclusion
+- **Falsifiers**: 12 explicit
+- **Predictions**: Multiple (including confirmed Renou et al. 2021)
+
+---
+
+## Session Closed
+
+Session 21.0 complete. The LRT Master Paper is now publication-ready:
+
+1. ✅ Section 32 (Conclusion) added
+2. ✅ All editorial issues resolved (ISSUE 004 CLOSED)
+3. ✅ New abstract integrated
+4. ✅ Section 1.3 structure description fixed
+5. ✅ Source papers archived with updated paths
+
+**Next steps**: Author review and submission decisions.
 
 ---

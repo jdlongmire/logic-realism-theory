@@ -70,7 +70,7 @@ The distinction between derivation and fine-tuning is crucial. We do not claim t
 
 ### 1.3 Structure of the Paper
 
-The argument proceeds in six parts:
+The argument proceeds in four parts followed by a concluding synthesis:
 
 **Part I (Sections 1-7)** establishes the philosophical foundations: what are the three laws, why think they are ontological, what objections arise, and how does IIS relate to 3FLL.
 
@@ -81,8 +81,6 @@ The argument proceeds in six parts:
 **Part IV (Sections 24-31)** examines empirical grounding: retrodictions (what LRT explains), predictions (what LRT implies), and falsifiers (what would refute LRT).
 
 **Section 32** concludes: honest accounting of what is derived versus assumed, the status of LRT, and the wager it offers.
-
-**Appendix A** presents consilience evidence: how independent domains converge on identical structures, supporting the thesis through unexpected agreement.
 
 The reader may proceed linearly or jump to sections of particular interest. However, the argument is cumulative: later sections presuppose earlier ones.
 
