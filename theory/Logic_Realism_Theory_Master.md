@@ -361,6 +361,29 @@ IIS is analogous. It contains every possible informational configuration. Most a
 
 Actuality is the book we are reading. Why this book? That question points beyond what this section establishes. But we can say what the book is: it is one path through IIS, the one that actualizes under the constraints of 3FLL and the selection of parsimony.
 
+### 4.7 The Decomposition of Logical Filtering
+
+The central formula A = L(I) can now be given a more precise interpretation. The logical filtering operator L decomposes into two distinct operations:
+
+$$L = P \circ C$$
+
+where:
+- **C (Constitution)** encodes the constitutive constraints of 3FLL on informational structure—what makes distinguishability possible at all
+- **P (Parsimony)** encodes selection among constitutionally admissible states—what actualizes from among the possibilities
+
+The full formulation becomes:
+
+$$A = P(C(I))$$
+
+This decomposition separates two conceptually distinct questions:
+
+1. **What must be the case** for anything to be distinguishable at all? (answered by C)
+2. **What is the case** among the constitutionally admissible possibilities? (answered by P)
+
+3FLL do not "filter" IIS in the sense of removing possibilities from a pre-existing space. They *constitute* IIS as a structured space of distinguishable states. Parsimony then selects which path through this constituted space actualizes.
+
+This distinction will become important when we develop the Consistency Bridging Principle (Section 6) and Global Parsimony (Section 17.10). The CBP operates at the boundary between C and P—it constrains which transformations within the constituted space are admissible for actualization.
+
 ---
 
 ## 5. Boolean Actuality
@@ -2692,17 +2715,26 @@ where ℏ is Planck's constant and C is measured in bits.
 
 **Supporting evidence:**
 
-1. **Bekenstein bound:** Maximum entropy of a region is S_max = k_B c³ A / (4Gℏ), proportional to area in Planck units. This suggests ~1 bit per Planck area.
+1. **Bekenstein bound:** Maximum entropy of a region is S_max = k_B c³ A / (4Gℏ), proportional to area in Planck units. This suggests approximately one bit per Planck area—a maximum distinguishability density.
 
-2. **Black hole entropy:** Bekenstein-Hawking entropy S = A/(4ℓ_P²) gives entropy proportional to horizon area in Planck units.
+2. **Black hole entropy:** Bekenstein-Hawking entropy S = A/(4ℓ_P²) gives entropy proportional to horizon area in Planck units. In LRT terms: the horizon bounds the distinguishability capacity of the region.
 
-3. **Margolus-Levitin theorem:** The maximum rate of computation is bounded by E/ℏ operations per second, linking energy to computational capacity.
+3. **Holographic principle:** The information content of a volume is encoded on its boundary. This suggests that distinguishability has geometric character, with ℏ setting the conversion scale.
 
-4. **Landauer limit:** Erasing one bit requires minimum energy k_B T ln 2, linking information to thermodynamics.
+4. **Margolus-Levitin theorem:** The maximum rate of computation is bounded by E/ℏ operations per second, linking energy to computational capacity.
 
-**LRT interpretation:** If the bit is the fundamental unit of distinguishability (Section 8), and ℏ is the quantum of action, then S = ℏC would express the conversion between logical and physical structure.
+5. **Landauer limit:** Erasing one bit requires minimum energy k_B T ln 2, linking information to thermodynamics.
 
-**Status:** Conjectural. Requires formal proof or counterexample.
+6. **Elementary operations:** A single bit flip—the minimal change in distinguishability—requires action on the order of ℏ. This is not derived but observed across quantum systems.
+
+**Physical interpretation:** These independent results converge on a picture where:
+- One bit of complexity corresponds to approximately ℏ of action
+- The Planck scale marks where the bit-structure of reality becomes directly relevant
+- The classical world appears continuous because specifying it exactly would require infinite bits
+
+**LRT interpretation:** If the bit is the fundamental unit of distinguishability (Section 9), and ℏ is the quantum of action, then S = ℏC would express the conversion between logical and physical structure. The conjecture does not follow from LRT axioms but is motivated by them.
+
+**Status:** Conjectural. These connections do not prove the conjecture, but they position it within a body of work suggesting a deep relationship between action, information, and geometry. Requires formal derivation or experimental test.
 
 ### 22.2 The Interface Functor
 
@@ -2776,7 +2808,11 @@ where L_ρ is the symmetric logarithmic derivative.
 
 4. **LRT foundation:** IIS is constituted by distinguishability (3FLL). Space would then be the structure of how distinctions are arranged, not a prior arena.
 
-**Status:** Highly speculative. Requires connection to quantum gravity.
+5. **Temporal emergence from Non-Contradiction:** One consequence of treating NC as ontological is that incompatible states cannot co-occur. If two states would constitute a contradiction if actual simultaneously, they can both actualize provided they are *ordered* in a way that avoids simultaneity. This suggests that temporal succession may be interpreted as the ordering relation generated by NC over incompatible states. Formally: if P(s) and ¬P(s') must both actualize, they require distinct parameter values τ₁ ≠ τ₂. Time emerges as the dimension along which contradictory states succeed one another without violating NC.
+
+**Interpretive note:** Point 5 does not derive time uniquely—it provides a conceptual route by which a temporal dimension becomes natural in a framework grounded in ontological logical constraints. The argument is suggestive, not demonstrative.
+
+**Status:** Highly speculative. Requires connection to quantum gravity and further formal development.
 
 ### 22.6 The 3FLL Algebra
 
