@@ -2977,7 +2977,664 @@ LRT is a framework in development, not a completed theory. These open problems r
 
 ---
 
-This concludes Part III: Mathematical Structure. Part IV will develop the empirical signatures of LRT.
+This concludes Part III: Mathematical Structure.
+
+---
+
+# Part IV: Empirical Signatures
+
+## 23. Introduction to Empirical Signatures
+
+Parts I-III established Logic Realism Theory as a philosophical thesis, a physical interpretation, and a mathematical framework. This part addresses the critical question: **Is LRT empirically testable?**
+
+A theoretical framework without empirical content is metaphysics at best, speculation at worst. LRT makes strong claims: that the Three Fundamental Logical Laws (3FLL) are constitutive of physical reality, that quantum mechanics is the unique stable interface between the Infinite Information Space (IIS) and Boolean actuality. The 3FLL themselves are not directly testable, but their empirical consequences emerge when the logical foundations are combined with the physical interface axioms (continuity, local tomography, non-contextual measure).
+
+Such claims demand empirical grounding. Part IV provides it.
+
+### 23.1 Three Categories of Empirical Content
+
+We organize LRT's empirical content into three categories:
+
+**Retrodictions (Section 24):** Phenomena already confirmed that LRT explains more deeply than standard quantum mechanics. These are not novel predictions but provide explanatory unification. Standard QM predicts these phenomena; LRT explains *why* they occur. These retrodictions do not expand the predictive domain of QM; they unify it under a single architectural principle.
+
+**Predictions (Sections 25-28):** Testable claims that follow from LRT's specific commitments:
+- Already confirmed predictions (Section 25)
+- Currently testable predictions (Section 26)
+- Novel predictions from the Action-Complexity conjecture (Section 27)
+- Implications for quantum computing (Section 28)
+
+**Falsifiers (Section 29):** Possible observations that would refute LRT. A theory that cannot be wrong cannot be scientific.
+
+### 23.2 What Distinguishes LRT Empirically
+
+The goal is not merely to show that LRT is consistent with observation - any interpretation of quantum mechanics can claim that. The goal is to show that LRT makes specific claims about the structure of reality that are, in principle and in practice, testable.
+
+LRT differs from other interpretations in making definite commitments:
+
+| Commitment | LRT Position | Type | Status |
+|------------|--------------|------|--------|
+| Complex numbers required | Yes (via local tomography, Axiom 3c) | Prediction | Confirmed 2021 |
+| Born rule is unique | Yes (via Gleason, given Hilbert + Axiom 5) | Conditional | Ongoing |
+| Tsirelson bound exact | Yes (interface stability) | Selection | Ongoing |
+| Interface mechanism exists | Yes (category transition) | Prediction | 2025-2030 |
+| S = ℏC | Conjectured | Novel | Open |
+
+**On complex numbers:** This is a *structural prediction* of LRT rather than standard QM. Standard QM simply postulates complex amplitudes; LRT predicts them because local tomography (Axiom 3c) requires ℂ over ℝ or ℍ. Renou et al. (2021) confirmed this by ruling out real quantum mechanics experimentally.
+
+**On the Born rule:** Uniqueness follows from Gleason's theorem given Hilbert space structure (derived in Section 17) and a non-contextual probability measure (Axiom 5). The derivation is conditional on these premises; LRT does not derive the probability rule from pure logic.
+
+*Remark:* The complex-number requirement is LRT's only structural prediction that has already been experimentally confirmed against a live alternative (real QM). All other confirmed results in the table are shared with standard QM; LRT's distinctive contribution is explaining *why* the excluded alternatives fail.
+
+### 23.3 The Evidential Structure
+
+The evidential case for LRT rests on three pillars:
+
+**Explanatory unification:** LRT derives from a single source (3FLL constituting distinguishability) what standard QM takes as multiple independent postulates. The Born rule, Hilbert space structure, contextuality, and Bell correlations all follow from the same framework. Unification is evidence.
+
+**Confirmed predictions:** Where LRT makes specific *structural predictions* - particularly that quantum mechanics requires complex numbers - these have been confirmed. Bell violations and contextuality are *retrodictions* (explained by LRT but not uniquely predicted by it), not unique predictions. Track record on genuine predictions is evidence.
+
+**Falsifiability:** LRT specifies what observations would refute it. A theory that takes intellectual risk by making falsifiable claims demonstrates genuine content. Scientific risk-taking is evidence.
+
+### 23.4 A Note on Interpretation vs. Prediction
+
+All interpretations of quantum mechanics (Copenhagen, Many-Worlds, Bohmian, QBism) make the same predictions for standard experiments - this is by design, as they interpret the same formalism.
+
+LRT's empirical distinctiveness comes from:
+
+**Structural predictions:** Claims about *why* the formalism has its structure (complex numbers, Born rule, Tsirelson bound). These predictions concern what alternatives are ruled out, not what experiments will show within standard QM. These exclusions follow from the IIS-actuality stability criteria, not from pure logical necessity.
+
+**Existence claims:** Commitment to interface mechanism as real physical process. The transition from IIS to Boolean actuality is not merely epistemic but ontological.
+
+**Novel conjectures:** The Action-Complexity Equivalence (S = ℏC) generates testable consequences that other interpretations do not propose.
+
+### 23.5 What This Part Establishes
+
+The following sections demonstrate that LRT is not merely an interpretation but an empirically grounded framework that:
+
+1. **Retrodicts** 17+ quantum phenomena with unified explanation (Section 24)
+2. **Has confirmed predictions** already tested (Section 25)
+3. **Makes currently testable predictions** about interface mechanisms (Section 26)
+4. **Generates novel predictions** from its core commitments (Section 27)
+5. **Has implications** for quantum computing (Section 28)
+6. **Specifies falsification conditions** (Section 29)
+7. **Defines a research program** extending decades into the future (Section 30)
+
+The theory's prediction concerning complex quantum mechanics has already been confirmed (Renou et al., 2021). Its predictions concerning interface mechanisms will be tested within the next decade in optomechanical superposition experiments, macroscopic interferometry (Vienna group), and MAQRO proposals. This is not armchair philosophy but a framework that makes contact with ongoing experimental physics.
+
+---
+
+## 24. Retrodictions: What LRT Explains
+
+Standard quantum mechanics is empirically successful but explanatorily silent. It tells us to use Hilbert space (but not why), apply the Born rule |ψ|² (but not why), accept contextuality (but not why), and expect Bell violations (but not why). LRT fills these explanatory gaps without changing predictions. These retrodictions rely only on the structural commitments established in Parts I-III and do not introduce new postulates.
+
+### 24.1 The Explanatory Gap
+
+A retrodiction is an explanation of an already-confirmed phenomenon. LRT retrodicts quantum phenomena by deriving them from the interaction of 3FLL, IIS structure, the interface constraints, and the derived Hilbert-space framework. This is not ad hoc - the same explanatory resources ground all phenomena. The unification is the evidence.
+
+### 24.2 Retrodiction Table
+
+| Phenomenon | Standard QM | LRT Explanation |
+|------------|-------------|-----------------|
+| **Born rule is \|ψ\|² exactly** | Postulate | Gleason's theorem + non-contextual interface (Axiom 5) - the *unique* probability measure on Hilbert space (dim ≥ 3) |
+| **Hilbert space is complex** | Postulate | Local tomography (Axiom 3c) forces ℂ; alternatives lack compositional structure |
+| **Kochen-Specker contextuality** | Theorem (unexplained) | Interface signature - Boolean values are generated at interface, not pre-existing in IIS |
+| **Bell inequality violations** | Theorem (unexplained) | Admissible global states must satisfy 3FLL-based consistency; correlations are structural, not signaling |
+| **Tsirelson bound (2√2)** | Theorem | Maximum correlation compatible with stable interface; exceeding it allows signaling |
+| **No-cloning theorem** | Theorem | Distinguishability preservation in IIS; copying would violate information structure |
+| **Uncertainty relations** | Theorem | Non-commuting observables = incompatible partitions of IIS; cannot simultaneously actualize |
+| **Identical particles** | Postulate | Particles share identical distinguishability profiles in IIS; identity is constitutive, not emergent |
+| **Quantization (discrete spectra)** | From dynamics | Boolean grain of actuality; minimal distinguishability unit is the bit |
+| **Decoherence** | Derived | Explained interpretively: interface approach + environmental entanglement select pointer basis |
+| **Wave-particle duality** | "Complementarity" | IIS state (wave-like) vs. actualized outcome (particle-like); different ontological domains |
+| **Superposition** | Postulate | IIS is non-Boolean; superposition is the pre-actualization state |
+| **Entanglement without signaling** | "Peaceful coexistence" | Global consistency under 3FLL, not causal connection; constraints enforce correlation without communication |
+| **Quantum Zeno effect** | Derived | Repeated interface → frozen IIS evolution; measurement is active, not passive |
+| **Measurement "disturbance"** | Postulate | Interface generates Boolean values; no pre-existing values to "disturb" |
+| **State collapse** | Postulate (problematic) | Category transition from IIS to actuality; not a dynamical process |
+| **Preferred basis problem** | Unresolved in MWI | Einselection + interface structure determines which partition actualizes |
+
+### 24.3 The Depth of Explanation
+
+Standard QM presents these 17 phenomena as brute facts or mathematical consequences without physical interpretation. LRT provides unified explanation:
+
+**All of these phenomena follow from the interface structure between non-Boolean IIS and Boolean actuality, constrained by 3FLL.**
+
+Consider three examples in detail:
+
+**Contextuality:** In standard QM, Kochen-Specker is a no-go theorem - it rules out non-contextual hidden variables. But *why* is nature contextual? LRT reframes contextuality: Boolean values are created at the interface, so the notion of non-contextual hidden variables is inapplicable. There are no hidden variables to be non-contextual about. Contextuality is not a bug but a signature of the IIS-actuality architecture.
+
+**Bell correlations:** Standard QM predicts Bell violations but offers no mechanism. LRT explains: entangled states must satisfy global consistency under 3FLL. When entangled particles are measured, the constraint that their joint state is self-identical and non-contradictory produces correlations. These correlations reflect structural consistency rather than any dynamical signal. No information travels - the constraints are already globally satisfied.
+
+**Wave-particle duality:** Bohr's complementarity is descriptive, not explanatory. LRT explains: "wave" and "particle" refer to different ontological domains. The wave-like aspects (interference, superposition) describe IIS structure. The particle-like aspects (localized detection, definite outcomes) describe Boolean actuality. There is no contradiction because these are not competing descriptions of the same thing - they are accurate descriptions of different domains.
+
+### 24.4 What Retrodiction Achieves
+
+Retrodiction is not prediction. LRT does not claim to have predicted Bell violations before Bell, or contextuality before Kochen-Specker. These phenomena were already established.
+
+What retrodiction achieves:
+
+1. **Explanatory depth:** Moving from "that's what the math says" to "that's why the math says it"
+2. **Unification:** Deriving diverse phenomena from common principles
+3. **Dissolution of puzzles:** Reframing apparent paradoxes as natural consequences without introducing additional ontology
+4. **Guidance:** Suggesting which research directions are fruitful
+
+The 17 retrodictions in Table 24.2 are not independent successes. They follow from the same framework. This systematic explanatory power - rather than any single retrodiction - constitutes evidence for LRT.
+
+### 24.5 Limitations of Retrodiction
+
+Retrodiction has limitations:
+
+**Not unique:** Other interpretations also explain some of these phenomena. Many-Worlds accounts for apparent collapse through branching, though the probability interpretation remains contested; Bohmian mechanics explains single outcomes. LRT's advantage is unified explanation from minimal resources, not exclusive explanation. No competing interpretation currently derives unitarity from informational principles (Theorem 16.12) while simultaneously dissolving the measurement problem without branching worlds or non-local hidden variables.
+
+**Not derivation:** Some "explanations" in Table 24.2 are conceptual reframings rather than strict derivations. "Superposition is the pre-actualization state" is an interpretation, not a theorem. Honest accounting requires distinguishing explanation from derivation.
+
+**Not prediction:** Retrodiction cannot substitute for novel predictions. Sections 25-27 address what LRT genuinely predicts.
+
+Despite these limitations, the systematic explanatory unification across 17 quantum phenomena is significant. Competing frameworks typically explain some phenomena while leaving others as brute facts. LRT's architecture addresses all of them from the same resources.
+
+---
+
+## 25. Confirmed Predictions: Complex Quantum Mechanics
+
+### 25.1 The Only Structural Prediction Currently Confirmed
+
+Among LRT's structural predictions (those concerning the mathematical form of quantum theory), exactly one has been experimentally confirmed: quantum mechanics requires complex numbers.
+
+This prediction arises as follows:
+
+1. **LRT adopts local tomography** (Axiom 3c): composite system states are determined by local measurement statistics.
+
+2. **Local tomography distinguishes number fields**: Real quantum mechanics allows local tomography only for product states; general entangled states require additional correlations. Quaternionic quantum mechanics suffers from tensor-product pathologies that complicate compositional state spaces.
+
+3. **Complex quantum mechanics is the unique locally tomographic option** satisfying all reconstruction axioms (Masanes-Müller, 2011).
+
+4. **Experimental test**: Renou et al. (2021) designed a Bell-like inequality that complex QM satisfies but real QM (with local tomography) violates.
+
+5. **Result**: Experimental violation of the real-QM bound confirms complex amplitudes.
+
+### 25.2 What This Confirms and What It Does Not
+
+**What it confirms:**
+
+The experimental result confirms that *if* local tomography holds, quantum mechanics must use complex numbers. Since LRT takes local tomography as Axiom 3c, LRT is consistent with this finding.
+
+**What it does not confirm:**
+
+- The result does not confirm local tomography itself - it is assumed in both LRT and the experimental analysis.
+- The result does not confirm LRT uniquely - any framework adopting local tomography makes the same prediction.
+- The result does not distinguish LRT from standard quantum mechanics, which also uses complex amplitudes.
+
+**Honest assessment:**
+
+This is a consistency check, not a distinctive confirmation. LRT passes this test, but so does any interpretation that accepts the standard quantum formalism with local tomography.
+
+### 25.3 Status of Other Structural Predictions
+
+LRT's remaining structural predictions (see Sections 26-27) concern:
+
+- Interface dynamics (objective collapse mechanisms)
+- Irreducibility bounds (complexity limitations)
+- Structural fine-tuning (why these axioms, not others)
+
+These predictions await experimental test and are discussed in subsequent sections.
+
+### 25.4 Summary
+
+| Prediction | Basis | Status |
+|-----------|-------|--------|
+| Complex amplitudes required | Local tomography (Axiom 3c) | Confirmed (Renou et al., 2021) |
+| Specific interface dynamics | Full reconstruction framework (Axioms 1-5) | Testable (Section 26) |
+| Irreducibility bounds | IIS structure + interface constraints | Open (Section 27) |
+
+**Current empirical standing**: LRT is consistent with all known quantum phenomena. One structural prediction (complex numbers) has been confirmed, though this confirmation is shared by any locally tomographic framework. Distinctive predictions remain to be tested.
+
+---
+
+## 26. Current Experiments: Testing Interface Mechanisms
+
+### 26.1 The Open Question
+
+LRT specifies that Boolean actuality is enforced at an interface with IIS, but does not uniquely determine the physical mechanism by which this occurs. This is not a weakness - it is an empirical question that ongoing experiments can address.
+
+Several candidates for the interface mechanism exist:
+
+| Mechanism | Proponents | Physical Criterion |
+|-----------|------------|-------------------|
+| **Decoherence alone** | Zurek, Zeh | Environmental entanglement selects pointer basis |
+| **Gravity-induced collapse** | Penrose, Diósi | Gravitational self-energy exceeds threshold |
+| **Spontaneous localization** | GRW, Pearle | Stochastic collapse at rate λ |
+| **Thermodynamic irreversibility** | Various | Entropy production threshold |
+
+LRT is compatible with any collapse or decoherence mechanism that preserves the CBP constraints and maintains pre-interface unitarity. Models that introduce superluminal signaling or violate unitarity prior to interface resolution would conflict with Part III's derived constraints.
+
+### 26.2 The Penrose-Diósi Model
+
+The gravity-induced collapse model predicts that superpositions collapse when gravitational self-energy reaches a threshold:
+
+$$\tau \sim \frac{\hbar}{E_G}$$
+
+where τ is the collapse time and E_G is the gravitational self-energy of the superposition. (The PD model remains heuristic; a complete relativistic formulation is still lacking.)
+
+**Testable predictions (order-of-magnitude estimates; precise values depend on mass-density difference between branches):**
+
+| System | Mass | Superposition size | Predicted τ |
+|--------|------|-------------------|-------------|
+| Large molecule (10⁴ amu) | 10⁻²³ kg | ~1 μm | ~10⁵ s |
+| Nanoparticle (10⁹ amu) | 10⁻¹⁸ kg | ~100 nm | ~10⁻² s |
+| Micromirror (10¹⁴ amu) | 10⁻¹³ kg | ~10 nm | ~10⁻⁷ s |
+
+### 26.3 Planned and Ongoing Experiments
+
+**MAQRO (Macroscopic Quantum Resonators in Orbit):**
+ESA mission proposal to test superposition of ~10⁹ amu particles in space. Microgravity eliminates decoherence from support structures. Status: proposal under periodic ESA review; not yet selected for flight.
+
+**Optomechanical tests:**
+Ground-based experiments with nanomechanical oscillators create superpositions of center-of-mass motion and monitor decoherence rates versus mass. Current superposition sizes fall below the PD threshold, but scaling improvements are ongoing. Status: active (Vienna, Delft, other groups).
+
+**Large-molecule interferometry:**
+Vienna group has demonstrated interference with molecules exceeding 25,000 amu. Goal: extend to 10⁵-10⁶ amu; full PD regime requires ~10⁸-10⁹ amu but intermediate deviations would be informative.
+
+### 26.4 GRW Heating Tests
+
+The GRW spontaneous localization model predicts anomalous heating:
+
+$$P \sim \lambda \cdot N \cdot \frac{\hbar^2}{m a^2} \approx 10^{-25} \text{ W/nucleon}$$
+
+Parameters λ and a are not uniquely fixed; GRW provides ranges, not exact values.
+
+**Test:** Precision calorimetry of ultra-cold systems.
+
+**Current status:** Sensitivity ~10⁻²² W. Current experiments constrain GRW with standard parameter choices but cannot yet reach the full GRW parameter range.
+
+### 26.5 What Results Would Tell Us
+
+| Observation | Implication for LRT |
+|-------------|---------------------|
+| Collapse rate matches Penrose-Diósi | Gravity marks the interface |
+| Collapse rate matches GRW | Spontaneous localization marks interface |
+| No collapse beyond decoherence | Decoherence alone marks effective interface, without ontological collapse |
+| Unexpected scaling | Novel interface physics to be understood |
+
+**LRT's role:** LRT does not predict which mechanism is correct. It provides the interpretive framework: whatever physical process triggers collapse (if any), it marks the category transition from IIS possibilities to Boolean actuality.
+
+### 26.6 Honest Assessment
+
+**What these experiments test:** Whether objective collapse occurs and, if so, what physical criterion triggers it.
+
+**What these experiments do not test:** LRT specifically. These are tests of collapse models (GRW, Penrose-Diósi) versus decoherence-only interpretations. LRT interprets rather than uniquely predicts these outcomes.
+
+**Why this matters for LRT:**
+
+If objective collapse exists, LRT interprets the collapse threshold as the physical manifestation of the interface's Boolean-enforcement condition.
+
+If no objective collapse is found, LRT remains fully compatible, interpreting decoherence as the effective marker of category transition within standard unitarity.
+
+Either outcome is consistent with LRT's framework. LRT thereby converts what is usually presented as an interpretive dilemma (collapse vs. no-collapse) into an empirical question about the physical marker of the IIS→actuality interface. The experiments determine which physical mechanism marks the interface - they do not test whether the interface exists.
+
+---
+
+## 27. Novel Predictions
+
+### 27.1 Categories of Prediction
+
+LRT generates predictions in three categories:
+
+1. **Structural predictions** (shared with the reconstruction framework adopted in Part III): Claims about the mathematical form of quantum theory - complex numbers, Born rule exactness, Tsirelson bound saturation. These originate from reconstruction axioms (Masanes-Müller, Hardy, CDP), not from 3FLL alone.
+
+2. **Action-complexity predictions**: Consequences of the S = ℏC conjecture, which is motivated by but not required for LRT.
+
+3. **Exclusion predictions**: Claims that certain alternatives to quantum mechanics are impossible. These exclusions follow from CBP + Hilbert-space reconstruction + interface stability, not from 3FLL alone.
+
+We distinguish what LRT specifically contributes from what it inherits.
+
+### 27.2 The Action-Complexity Conjecture
+
+**Conjecture (S = ℏC):** There exists a fundamental equivalence between physical action and informational complexity:
+
+$$S = \hbar \cdot C$$
+
+where S is physical action and C is informational complexity; ℏ acts as a conversion factor.
+
+**Status:** This conjecture is motivated by, but not required for, LRT. It is not derived from first principles.
+
+**What this would imply if true:**
+
+| Implication | Standard Status | LRT Interpretation |
+|-------------|-----------------|-------------------|
+| Quantum speed limits | Margolus-Levitin established | Complexity bound, not just energy bound |
+| Landauer limit | Confirmed to ~10% | Exact saturation predicted (no slack region) |
+| Bekenstein bound | Established | Maximum distinguishability capacity |
+| Black hole entropy | S_BH = A/4ℓ_P² | Maximum complexity for horizon area |
+
+**Honest assessment:** The S = ℏC conjecture provides interpretive unification but has not generated predictions distinct from existing physics. Novel empirical content arises only if future experiments show exact saturation of Landauer or Bekenstein bounds (no slack region between theoretical limit and achievable performance).
+
+### 27.3 Structural Fine-Tuning Predictions
+
+LRT claims quantum mechanics is the unique stable interface between IIS and Boolean actuality. This generates exclusion predictions:
+
+| Alternative | LRT Claim | Basis | Status |
+|-------------|-----------|-------|--------|
+| Real quantum mechanics | Ruled out | Fails local tomography | **Confirmed**: locally tomographic ℝ-QM ruled out (Renou et al., 2021) |
+| Quaternionic QM | Ruled out | Fails local tomography; composition inconsistent due to quaternionic phases | Theoretical |
+| Non-linear QM | Ruled out | Superluminal signaling possible | Theoretical |
+| Born rule p ≠ 2 | Ruled out | Gleason (dim ≥ 3) rules out alternatives mathematically | **Confirmed** experimentally |
+| Super-quantum correlations | Ruled out | Violate no-signaling + compositional stability | **Confirmed** (Tsirelson bound exact) |
+| Local hidden variables | Ruled out | Bell's theorem | **Confirmed** |
+| Non-contextual HV | Ruled out | Kochen-Specker | **Confirmed** |
+
+**What this means:** LRT predicts no "post-quantum" theory will succeed if it exceeds Tsirelson bound, uses different probability rules than Born, employs non-contextual hidden variables, or uses a different number field than ℂ.
+
+**Honest assessment:** These exclusions are not unique to LRT. Any framework accepting standard quantum mechanics makes the same predictions. LRT's contribution is providing a unified reason (interface stability under CBP) for why these alternatives fail.
+
+### 27.4 The Tsirelson Bound
+
+**Prediction:** Quantum correlations saturate the Tsirelson bound (2√2 for CHSH) and never exceed it.
+
+**LRT interpretation:** The Tsirelson bound marks the maximum correlation compatible with stable interface operation. LRT explains *why* the bound takes its value: it is the maximal correlation compatible with stable mapping from IIS to Boolean actuality. Post-quantum theories exceeding this bound would allow signaling or destabilize compositional structure.
+
+**Status:** All experiments confirm the Tsirelson bound exactly. No violations have been observed.
+
+**Honest assessment:** The prediction is shared with standard quantum mechanics. LRT provides interpretive grounding for *why* this particular bound, not a novel empirical claim.
+
+### 27.5 The Born Rule
+
+**Prediction:** The Born rule |ψ|² holds exactly at all precision levels.
+
+**Basis:** Gleason's theorem (dim ≥ 3) plus non-contextual interface (Axiom 5) uniquely determines |ψ|².
+
+**Status:** Confirmed to ~10⁻⁵ precision (bounds from neutron interferometry, ion traps, and photonic interference experiments).
+
+**Test:** Continued precision improvements. Any systematic deviation would imply either non-Hilbert structure or a breakdown of non-contextuality.
+
+**Honest assessment:** This prediction is not unique to LRT. Any framework accepting Hilbert space structure predicts Born rule exactness via Gleason.
+
+### 27.6 3FLL as Global Constraint
+
+LRT makes several predictions based on 3FLL being constitutive:
+
+**No physical dialetheia:** No true contradiction is ever actualized. Status: continuously confirmed by all of physics.
+
+**Identical particles are exactly identical:** Their indistinguishability is constitutive - identity is structural, not emergent or merely epistemic. Status: quantum statistics confirmed to extraordinary precision.
+
+**Excluded middle holds in actuality:** Every actualized measurement yields a definite Boolean value; IIS superpositions do not survive the interface. Status: confirmed (all measurements yield definite outcomes).
+
+**Honest assessment:** These are not empirically distinct from standard physics. They provide interpretation, not novel predictions.
+
+### 27.7 Summary: What LRT Uniquely Predicts
+
+| Prediction Category | Unique to LRT? | Novel Empirical Content? |
+|--------------------|----------------|-------------------------|
+| Complex QM required | No (shared with local tomography) | Confirmed 2021 |
+| Born rule exact | No (shared with Hilbert frameworks) | Ongoing precision tests |
+| Tsirelson exact | No (shared with QM) | Confirmed |
+| S = ℏC consequences | Yes (interpretively) | Only if exact saturation observed |
+| Interface mechanism | No (mechanism-agnostic) | Section 26 experiments |
+| Structural fine-tuning | Yes (unified explanation) | No novel empirical claim |
+
+**Honest conclusion:** LRT's primary contribution is interpretive unification, not novel empirical predictions. The one potentially distinctive prediction - that Landauer and Bekenstein bounds are exactly saturated rather than approximate - awaits precision testing. Most "predictions" are shared with any framework accepting standard quantum mechanics with the reconstruction axioms.
+
+The only pathway currently visible for LRT to acquire a genuinely novel, experimentally distinguishable prediction is the exact saturation of information-theoretic bounds (Landauer, Bekenstein, Margolus-Levitin) implied by the action-complexity conjecture.
+
+---
+
+## 28. Implications for Quantum Computing
+
+### 28.1 LRT's Perspective on Quantum Computation
+
+Quantum computing exploits the structure that LRT identifies as the IIS-actuality interface. From LRT's perspective:
+
+- **Quantum states** inhabit the IIS domain, which permits exponential representational capacity, though many useful subspaces (stabilizer states, Gaussian states) remain classically simulable.
+- **Quantum gates** are unitary transformations within IIS that preserve the relational structure from which probabilities are extracted.
+- **Measurement** is the interface transition that extracts Boolean outcomes.
+- **Quantum advantage** emerges only for problem classes exploiting entanglement, non-stabilizer resources, or interference patterns unavailable to Boolean computation - not universally.
+
+This provides interpretation, not novel predictions about quantum computing capabilities.
+
+### 28.2 Complexity Bounds (Conditional on S = ℏC)
+
+If the Action-Complexity conjecture (Section 27.2) holds, quantum computation would have fundamental resource bounds:
+
+**Conceptual bound:** Circuit complexity bounded by available action:
+
+$$C_{circuit} \leq \frac{S_{available}}{\hbar}$$
+
+**Important caveats:**
+
+This is *not* a statement about computational complexity classes (BQP, QMA, etc.). It concerns physical resource limits, not algorithmic hardness. Only under a speculative identification between distinguishability change and action could such a bound be expressed. Circuit complexity depends on entangling depth, non-Clifford resources, and gate decomposition - factors not captured by a simple action ratio.
+
+The conjecture mirrors known quantum speed-limit theorems (Margolus-Levitin, Mandelstam-Tamm) but does not extend them without further proof.
+
+**Honest assessment:** This reinterprets existing bounds rather than predicting new ones.
+
+### 28.3 Error Correction
+
+**LRT interpretation:** Error correction maintains the stability of logical subspaces against decoherence. This is an interpretive description; threshold values arise from engineering constraints and noise models, not from LRT's foundational claims.
+
+**Status:** Error correction thresholds are empirically studied and theoretically derived from fault-tolerance theory. LRT provides no novel predictions about threshold values.
+
+### 28.4 Quantum Advantage
+
+**LRT interpretation:** Quantum algorithms exploit interference and entanglement to sculpt amplitudes, not literal "parallel evaluation" of Boolean alternatives. The advantage reflects structural resources available in IIS that have no Boolean counterpart.
+
+**Important caveat (Gottesman-Knill):** Many quantum states (e.g., stabilizer states under Clifford gates) are efficiently classically simulable. LRT's IIS perspective accommodates this: not all IIS configurations yield computational advantage. Speedup requires non-stabilizer resources.
+
+**Status:** Quantum advantage has been demonstrated for specific problems (Sycamore, Zuchongzhi). LRT explains *why* advantage is possible but does not predict *which* problems admit speedup.
+
+### 28.5 What LRT Does Not Predict
+
+LRT makes no novel predictions about:
+- Which computational problems have quantum speedup
+- Optimal quantum algorithms for specific tasks
+- Achievable qubit counts or coherence times
+- Error correction threshold values
+- Whether BQP exceeds NP or other classical complexity classes
+- Computational complexity separations
+
+These depend on engineering, complexity theory, and algorithm design - not on LRT's foundational claims.
+
+### 28.6 Summary
+
+| Quantum Computing Topic | LRT Contribution |
+|------------------------|------------------|
+| Quantum advantage | Interpretive (IIS vs Boolean); no predictive consequences for complexity classes |
+| Complexity bounds | Interpretive (conditional on unproven conjecture S = ℏC) |
+| Error correction | Interpretive (stability of logical subspaces) |
+| Specific algorithms | None |
+
+LRT therefore joins the consensus view that quantum computing is a test of engineering and algorithm design, not of quantum foundations proper.
+
+LRT provides a conceptual framework for understanding quantum computation but does not generate testable predictions beyond what standard quantum mechanics already implies. The relationship between LRT and quantum computing is interpretive, not predictive.
+
+---
+
+## 29. Falsifiers: What Would Refute LRT
+
+### 29.1 The Requirement of Falsifiability
+
+A scientific theory must specify conditions for its own refutation. LRT is falsifiable - certain observations would refute its core claims. This section catalogs those observations and their current status.
+
+Some falsifiers target LRT's distinctive commitments; others target the reconstruction framework LRT adopts. This distinction is essential for honest assessment.
+
+### 29.2 Falsification Table
+
+| Observation | What It Would Refute | Current Status |
+|-------------|---------------------|----------------|
+| **Locally tomographic real QM works** | Local tomography (Axiom 3c) | Ruled out (Renou et al., 2021) |
+| **Born rule violated (dim ≥ 3)** | Gleason + non-contextual interface (Axiom 5) | Not observed (confirmed to 10⁻⁵) |
+| **Tsirelson bound exceeded** | Interface stability (and all standard QM reconstructions) | Not observed |
+| **Physical dialetheia** | Non-Contradiction constitutive (requires P ∧ ¬P at level of actual Boolean outcomes, not formal representations) | Not observed |
+| **Local hidden variables work** | Bell's theorem; 3FLL as global constraint | Ruled out |
+| **Non-contextual HV work** | Kochen-Specker; interface interpretation | Ruled out |
+| **Non-Boolean measurement outcomes** | Excluded Middle constitutive; interface produces Boolean actuality | Not observed |
+| **Information exceeds Bekenstein bound** | S = ℏC conjecture (not core LRT) | Not observed |
+| **Superluminal signaling via entanglement** | 3FLL constraint interpretation | Not observed |
+| **Non-identical "identical" particles** | Identity constitutive | Not observed |
+| **Locally tomographic quaternionic QM works** | Local tomography (Axiom 3c) | Theoretically disfavored |
+
+### 29.3 Categories of Falsifier
+
+**Reconstruction falsifiers (test the quantum structure LRT adopts, not LRT's distinctive claims):**
+- Real vs. complex QM → Complex confirmed (2021)
+- Bell inequalities → Violated as predicted
+- Kochen-Specker contextuality → Confirmed
+- Born rule → Confirmed to ~10⁻⁵
+- Tsirelson bound → Confirmed exactly
+
+**Interpretive falsifiers (test LRT's distinctive commitments):**
+- Pre-existing measurement outcomes (non-contextual HV) → Would falsify interface interpretation
+- Physical dialetheia → Would falsify NC as constitutive
+- Non-Boolean actual outcomes → Would falsify EM as constitutive
+- Failure of any mechanism (collapse or decoherence) to produce definite outcomes → Would falsify interface picture
+
+**Currently being tested:**
+- Interface mechanism specifics (Section 26)
+- Macroscopic superposition decoherence rates
+- Precision Born rule measurements
+
+**In principle testable:**
+- Exact saturation of Bekenstein bound
+- Exact saturation of Landauer limit
+- S = ℏC predictions
+
+### 29.4 Honest Assessment of Falsifiability
+
+**What these falsifiers actually test:**
+
+Most entries in Table 29.2 test *standard quantum mechanics* or *reconstruction axioms*, not LRT specifically. For example:
+- Born rule violations would refute Gleason's theorem assumptions
+- Tsirelson violations would refute no-signaling constraints
+- Bell inequality satisfaction would refute QM itself
+
+LRT inherits these falsifiers because it adopts the reconstruction framework. They are not unique tests of LRT's distinctive claims.
+
+**What would uniquely falsify LRT:**
+
+1. **Pre-existing measurement outcomes** - contextual hidden variables that somehow evade Kochen-Specker would undermine the interface interpretation
+2. **Physical dialetheia** - a reproducible phenomenon instantiating a true contradiction at the level of actualized Boolean outcomes (not quantum superpositions or semantic paradoxes)
+3. **Violation of 3FLL at the fundamental level** - physical realization of logical violation, not merely formal inconsistency
+4. **Actualized indeterminacy** - a measurement outcome that is neither true nor false, violating Excluded Middle in actuality
+
+These are extraordinarily difficult to test because they concern foundational assumptions shared with virtually all physics.
+
+### 29.5 What LRT Does Not Predict (Hence Cannot Falsify)
+
+LRT makes no predictions about:
+- Specific particle masses
+- Coupling constants (α, G, etc.)
+- Number of particle generations
+- Gauge group structure (SU(3) × SU(2) × U(1))
+- Cosmological parameters
+- Dark matter/energy nature
+- Specific collapse mechanism (Section 26)
+- Quantum gravity or relativistic unification
+
+These are either parameters within the quantum framework or domains beyond LRT's scope. Their values do not test LRT's core claims about the logical grounding of quantum structure.
+
+### 29.6 The Falsifiability Status
+
+**Strong claim:** LRT is falsifiable in principle.
+
+**Honest caveat:** Most falsifiers test quantum mechanics generally, not LRT specifically. The distinctive claims of LRT (3FLL as constitutive, interface interpretation, CBP) are difficult to isolate experimentally because they concern the interpretation of already-confirmed quantum structure.
+
+Many core claims are falsifiable in principle but extremely difficult to isolate experimentally because they overlap with general requirements for consistent physical theory. Testing whether Non-Contradiction is constitutive, for instance, would require observing a physical dialetheia - something that would challenge not just LRT but the foundations of empirical science itself.
+
+**The real test:** If future experiments reveal structure incompatible with the reconstruction axioms (Axioms 1-5 of Part III), LRT would need revision. But so would most of quantum foundations.
+
+LRT is therefore falsifiable in principle at every level - from its two surviving physical axioms (which have already survived one experimental test) to its deepest logical commitments (which would require observations that no coherent physical theory could survive).
+
+---
+
+## 30. Research Program and Summary
+
+### 30.1 The Empirical Status of LRT
+
+Part IV has established:
+
+**Confirmed:**
+- Complex quantum mechanics required (Renou et al., 2021) - consistent with Axiom 3c
+- Bell inequalities violated - consistent with LRT's interpretation of global consistency under 3FLL
+- Kochen-Specker contextuality - consistent with interface interpretation
+- Born rule to ~10⁻⁵ (dim ≥ 3 cases anchored by Gleason) - consistent with Axiom 5
+- Tsirelson bound - confirmed to all currently available precision
+
+**Being tested:**
+- Interface mechanism (collapse vs. decoherence-only) - Section 26
+- Macroscopic superposition limits
+- Precision measurements of quantum bounds
+
+**Awaiting test:**
+- Exact saturation of Landauer/Bekenstein bounds (S = ℏC implications)
+
+### 30.2 What LRT Achieves
+
+LRT provides:
+
+1. **Explanatory unification** - 17 quantum phenomena explained from common resources (Section 24)
+2. **Derivation of reversibility** - Theorem 16.12 derives unitarity given Hilbert structure, CBP, and Parsimony
+3. **Explicit axiom accounting** - Two irreducible physical axioms at the interface (continuity and local tomography), with additional structural assumptions from reconstruction
+4. **Interface interpretation** - Measurement as category transition, not dynamical collapse (mechanism-agnostic; compatible with both decoherence-only and objective-collapse models)
+5. **Falsifiability structure** - Clear conditions for refutation (Section 29)
+
+### 30.3 What LRT Does Not Achieve
+
+Honest assessment requires acknowledging limitations:
+
+1. **No novel empirical predictions** - LRT introduces no new empirical predictions beyond those inherited from reconstruction frameworks
+2. **No unique experimental signatures** that distinguish LRT from standard QM
+3. **Interpretive, not predictive** contribution to quantum computing
+4. **S = ℏC remains conjectural** - motivated but not derived
+5. **Interface mechanism underdetermined** - compatible with multiple physical realizations
+
+### 30.4 The Research Program
+
+**Near-term (experimental):**
+- Monitor interface mechanism experiments (MAQRO, optomechanics, interferometry)
+- Track precision tests of Landauer and Bekenstein bounds
+- Follow developments in macroscopic superposition studies
+
+**Near-term (theoretical):**
+- Formal verification in Lean 4 (ISSUE 003): Theorem 16.12, CBP application, and Hilbert reconstruction lemmas
+- Rigorous treatment of S = ℏC conjecture
+- Exploratory investigation of how LRT's interface and logical constraints might integrate with quantum gravity approaches
+
+**Long-term:**
+- Critical requirement: extend LRT's interface structure to QFT and Lorentz-invariant regimes
+- Investigation of cosmological implications
+- Development of experimental proposals that could distinguish LRT
+
+### 30.5 Comparison with Other Interpretations
+
+| Interpretation | Explains QM structure? | Novel predictions? | Measurement problem? |
+|---------------|----------------------|-------------------|---------------------|
+| Copenhagen | No (postulates) | No | Dissolved (pragmatic) |
+| Many-Worlds | No (postulates) | Contested | Dissolved (branching) |
+| Bohmian | No (postulates) | No (empirically equiv.) | Solved (particles) |
+| QBism | No (normative) | No | Dissolved (subjective) |
+| **LRT** | Yes (reconstruction) | Marginal (S = ℏC; conditional, not currently testable) | Dissolved (interface) |
+
+LRT's distinctive contribution is grounding quantum structure in logical and informational principles, not novel empirical predictions.
+
+### 30.6 Summary of Part IV
+
+Part IV (Sections 23-30) has established:
+
+1. **Retrodictions** (Section 24): LRT explains 17 quantum phenomena from unified resources (interpretively unified; not newly derived)
+2. **Confirmed prediction** (Section 25): Complex QM (shared with local tomography frameworks)
+3. **Current experiments** (Section 26): Interface mechanism tests ongoing
+4. **Novel predictions** (Section 27): Primarily interpretive; only S = ℏC may yield future testable differences
+5. **Quantum computing** (Section 28): Interpretive framework, no predictive content
+6. **Falsifiers** (Section 29): Clear conditions exist; most test QM generally
+7. **Research program** (Section 30): Formal verification and experimental monitoring
+
+### 30.7 Conclusion
+
+LRT is empirically adequate: it is consistent with all known quantum phenomena and has passed every test that standard quantum mechanics has passed (as expected, since LRT reproduces standard QM predictions). Its one structural prediction with experimental confirmation (complex numbers) is shared with any locally tomographic framework.
+
+LRT's primary contribution is not novel prediction but explanatory depth. It explains why the reconstructed Hilbert structure is uniquely selected, given interface stability and logical constraints. The answer traces to the interface between non-Boolean IIS and Boolean actuality, constrained by 3FLL.
+
+Whether this explanatory unification constitutes scientific progress depends on one's philosophy of science. LRT offers explanatory depth but not new empirical leverage - its scientific value lies in unification, not prediction. For strict empiricists demanding novel predictions, LRT's contribution remains marginal until the S = ℏC conjecture generates testable consequences.
+
+The framework stands ready for formal verification (ISSUE 003) and continued empirical scrutiny. Its falsifiability is established; its predictions are clear; its limitations are acknowledged. This is the honest status of Logic Realism Theory as a foundation for quantum mechanics.
 
 ---
 
