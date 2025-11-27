@@ -103,10 +103,29 @@ Tier 3: Hilbert space → Born rule → QM
 
 ---
 
+### 2. ISSUE 002 Closure
+
+Added Section 17.10-17.11 (Dynamical Structure) with honest accounting:
+
+**What is derived:**
+- Unitary evolution (Theorem 16.12 + Hilbert structure)
+- Schrödinger equation (via Stone's theorem, given Axiom 3a)
+
+**What is NOT derived:**
+- Strong continuity (Axiom 3a - physical input)
+- Action principle (motivated by parsimony, not derived)
+- Lagrangian/Hamiltonian formulations (standard physics)
+
+**Multi-LLM review (Grok, GPT):**
+Original 1,900-word draft overclaimed. Reduced to ~350 words with honest boundaries between derived vs assumed.
+
+---
+
 ## Commits This Session
 
 1. `1d733ba` - Start Session 19.0 - Recovery from crash
 2. `f74e645` - Close ISSUE 001: Axiom 3 grounding complete
+3. `dffd738` - Close ISSUE 002: Add Section 17.10-17.11 (Dynamical Structure)
 
 ---
 
