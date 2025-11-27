@@ -2004,7 +2004,7 @@ Distinguishability (Definition 16.2, Axiom 2)
 Complex Hilbert Space (Theorems 17.1-17.3, via Masanes-Müller)
 ```
 
-### 17.9 What This Section Establishes
+### 17.9 What Sections 17.1-17.8 Establish
 
 We have shown:
 
@@ -2016,7 +2016,59 @@ We have shown:
 
 The derivation is conditional on Axiom 3 (physical constraints). These constraints are not derived from 3FLL alone but are required for stable, compositional physics. The derivation shows: given 3FLL + physical requirements, Hilbert space follows.
 
-The next section derives the Born rule from this Hilbert space structure.
+The next subsection completes the structural picture by deriving dynamical laws.
+
+### 17.10 Dynamical Structure
+
+Sections 17.1-17.9 established complex Hilbert space structure from LRT axioms via Masanes-Müller. Section 16.7 derived reversibility (Theorem 16.12) from CBP + Parsimony. Together with the Hilbert structure and Wigner-type symmetry constraints, this yields **unitary evolution**: transformations preserving the distinguishability metric are (anti)unitary, with antiunitaries ruled out by logical time orientation.
+
+To obtain the standard Schrödinger form
+
+$$i\hbar \frac{\partial}{\partial t}|\psi\rangle = H|\psi\rangle$$
+
+the one-parameter family U(t) must be **strongly continuous** in the parameter t. This strong continuity is supplied by the physical postulate of continuity of reversible transformations (Axiom 3a) - one of the two irreducible physical inputs identified in Section 16.8. Strong continuity is assumed, not derived.
+
+Given strong continuity, **Stone's theorem** (Stone, 1932) immediately yields:
+- A unique self-adjoint generator H (the Hamiltonian), up to domain specification
+- The exponential form U(t) = e^{-iHt/ℏ}
+
+*Remark on time:* The parameter t in Stone's theorem is **physical time** - the continuous parameter of the unitary representation. This inherits its interpretation from the logical time ordering (the constitutive ordering of IIS-to-Boolean resolutions) but is not identical to it. Logical time is structural; physical time t is the parameterization that Axiom 3a makes well-defined.
+
+The Hamiltonian and Lagrangian formulations, the action principle, symplectic geometry, and the classical limit then follow from standard quantum and classical mechanics (Goldstein, 2002; Arnold, 1989). No additional LRT derivations are required once unitarity and strong continuity are in place.
+
+**What LRT contributes:** Interpretive framing. The Hamiltonian is the generator of IIS evolution; the action principle is philosophically motivated by parsimony (extremal paths require minimal specification). However, parsimony motivates the extremal-path principle but does not replace standard derivations from symplectic structure and semiclassical analysis.
+
+**Summary:** The dynamical laws of physics are consequences of:
+1. Derived unitary evolution (Theorem 16.12 + Hilbert structure)
+2. The physical axiom of continuity (Axiom 3a)
+
+All structure beyond unitary evolution - Hamiltonians, Lagrangians, action principles, canonical equations - arises from standard physics applied after LRT has fixed the unitary form.
+
+### 17.11 What This Section Establishes
+
+Section 17 has derived from LRT axioms:
+
+- Complex Hilbert space structure (17.1-17.4)
+- Dimension ≥ 3 (17.5)
+- Distinguishability metric (17.6)
+- (Anti)unitary symmetries (17.7)
+- Schrödinger dynamics via Stone's theorem (17.10)
+
+The derivation chain is:
+
+```
+3FLL (Axiom 1)
+    ↓ constitutes
+Distinguishability (Axiom 2)
+    ↓ + physical constraints (Axiom 3a,c)
+Complex Hilbert Space (Masanes-Müller)
+    ↓ + reversibility (Theorem 16.12)
+Unitary Evolution
+    ↓ + continuity (Axiom 3a)
+Schrödinger Equation (Stone's theorem)
+```
+
+With Hilbert space and unitary dynamics established, the next section derives the Born rule - completing the core structure of quantum mechanics.
 
 ---
 

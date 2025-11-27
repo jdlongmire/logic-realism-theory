@@ -1,9 +1,11 @@
 # ISSUE 002: Lagrangian and Hamiltonian Formulations
 
-**Status**: OPEN
+**Status**: CLOSED
 **Priority**: MEDIUM
 **Created**: 2025-11-27
+**Closed**: 2025-11-27
 **Source**: Session 18 follow-up
+**Resolution**: Section 17.10-17.11 added to Master Paper (honest accounting)
 
 ---
 
@@ -216,6 +218,29 @@ A section covering:
 6. Bridge to field theory (future)
 
 ---
+
+## Resolution (Session 19.0)
+
+**What was added:** Section 17.10-17.11 in Master Paper
+
+**What is derived:**
+- Unitary evolution (Theorem 16.12 + Hilbert structure)
+- Schrödinger equation (via Stone's theorem, given Axiom 3a continuity)
+
+**What is NOT derived (honest accounting):**
+- Strong continuity (assumed via Axiom 3a - physical input)
+- Action principle (motivated by parsimony, not derived)
+- Lagrangian formulation (follows from standard physics)
+- Symplectic structure (follows from standard physics)
+
+**Key insight from multi-LLM review (Grok, GPT):**
+The original 1,900-word draft overclaimed. The honest version (~350 words) acknowledges that once unitarity + strong continuity are granted, Stone's theorem gives Hamiltonians, and everything else is textbook physics. LRT contributes interpretive framing, not new derivations of classical mechanics.
+
+**Close conditions met:**
+- [x] Hamiltonian existence addressed (Stone's theorem)
+- [x] Action principle addressed (motivated, not derived)
+- [x] Honest accounting of derived vs assumed
+- [x] Integrated into Section 17 with smooth transitions
 
 ## Related Issues
 
