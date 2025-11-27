@@ -55,6 +55,33 @@ Tier 3: Hilbert space → Schrödinger dynamics → Born rule → QM
 
 ---
 
+## Session 20.0 Accomplishments
+
+### 1. Section 27.8: Distinctive Predictions of LRT
+
+**Status: COMPLETE**
+
+Added new subsection to Section 27 (Novel Predictions) with 5 distinctive LRT predictions:
+
+| Prediction | Type | Time Horizon | Falsifiability |
+|------------|------|--------------|----------------|
+| 1. No underivable collapse constants | Falsifier | 5–20 years | High |
+| 2. Collapse rate from geometry/info | Positive forecast | 5–20 years | High |
+| 3. Exact saturation of bounds | Conditional (S = ℏC) | 10–30 years | Medium |
+| 4. No recoherence after actualization | Distinctive | Long-term | Medium |
+| 5. ℂ breakdown tied to tomography | Distinctive | Long-term | High |
+
+**Key refinements applied:**
+- "Derivable" explicitly defined as structural constraint (not computational claim)
+- Predictions 1 & 2 separated as falsifier vs positive forecast
+- Prediction 4 sharpened with actualization criterion (stable, redundantly-encoded macroscopic record)
+- Prediction 3 explicitly marked conditional on S = ℏC
+- Removed editorial rhetoric per V&V feedback
+
+**Significance:** Moves LRT from purely explanatory framework to empirically testable research program with concrete near-term stakes in macroscopic quantum experiments.
+
+---
+
 ## Next Steps
 
 Ready to begin **Part V: Implications & Extensions** (Sections 31-41)

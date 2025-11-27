@@ -3414,6 +3414,86 @@ LRT makes several predictions based on 3FLL being constitutive:
 
 The only pathway currently visible for LRT to acquire a genuinely novel, experimentally distinguishable prediction is the exact saturation of information-theoretic bounds (Landauer, Bekenstein, Margolus-Levitin) implied by the action-complexity conjecture.
 
+### 27.8 Distinctive Predictions of LRT
+
+The preceding sections established that most of LRT's empirical content is shared with standard quantum mechanics or inherited from the reconstruction framework. However, LRT's specific structural commitments—Global Parsimony, the interface ontology, CBP, and the logical grounding of distinguishability—generate several predictions that are distinctive to this framework.
+
+**Terminological Note**: Throughout this section, "derivable" means *expressible as a function of constants already required to specify the reversible dynamics and emergent geometry* (ℏ, c, G, particle masses, cosmological parameters), plus the initial state s₀. This is weaker than claiming derivation from the 3FLL axioms directly; it is a parsimony constraint on the constant set, not a computational claim about what LRT can presently derive. This requirement is structural rather than computational: LRT does not claim the ability to calculate these constants from first principles, only that any fundamental law may not introduce primitives that play no role in reversible dynamics or geometry.
+
+**Prediction 1: No Underivable Collapse Constants (Falsifier)**
+
+*Statement*: Any verified collapse mechanism whose rate depends on a new primitive constant—one not derivable from the existing constant set—would falsify LRT in its current form.
+
+*Basis*: Global Parsimony (Theorem 16.10) prohibits surplus structure. Collapse parameters that cannot be expressed in terms of constants already required for reversible dynamics and geometry would constitute such surplus.
+
+*Example*: GRW/CSL models introduce independent parameters (λ, a) as primitives. If collapse is confirmed and these parameters cannot be grounded in the existing constant set, LRT requires revision.
+
+*Status*: This is a falsifier—a condition under which LRT fails.
+
+**Prediction 2: Collapse Rate Fixed by Geometry or Information Capacity (Positive Forecast)**
+
+*Statement*: If macroscopic superpositions undergo objective collapse, LRT predicts the collapse rate will be a function only of gravitational self-energy and/or information-capacity constraints, with no new parameters.
+
+*Basis*: Problem 22.7's conditional resolution path identifies emergent geometry and information-density saturation as the only parsimony-compatible collapse triggers.
+
+*Test*: Experiments in the 5–20 year horizon (MAQRO, large-mass interferometers, quantum optomechanics) will probe this regime. Discovery of collapse with Penrose-Diósi form (τ ~ ℏ/E_G) or information-capacity form derivable from holographic bounds would support LRT. Collapse rates depending on genuinely new primitives would not.
+
+*Status*: This is a positive forecast—a prediction of what collapse, if it exists, must look like.
+
+**Prediction 3: Exact Saturation of Information-Theoretic Bounds (Conditional on S = ℏC)**
+
+These predictions are conditional on the Action-Complexity conjecture (S = ℏC) being exact:
+
+*Statement 3a*: Certain physical processes saturate the Margolus-Levitin quantum speed limit exactly, not merely as an inequality.
+
+*Statement 3b*: Landauer's limit for irreversible computation is realized with zero slack in idealized regimes.
+
+*Statement 3c*: Holographic complexity bounds and black-hole entropy reflect exact complexity capacity, not approximate inequalities.
+
+*Basis*: Section 27.2—if action and complexity are fundamentally equivalent, bounds become equalities.
+
+*Status*: These remain conditional forecasts. S = ℏC is conjectural within LRT. Precision tests over 10–30 year horizons may become decisive.
+
+**Prediction 4: No Recoherence After Actualization**
+
+LRT treats measurement as an ontological category transition from IIS to Boolean actuality, not merely epistemic updating.
+
+*Actualization Criterion*: An outcome is actualized when it has produced a stable, redundantly-encoded macroscopic record—i.e., when information about the outcome is durably imprinted across many degrees of freedom (consistent with quantum Darwinism).
+
+*Statement*: Once an outcome has produced a stable, redundantly-encoded macroscopic record, thereby entering Boolean actuality, LRT forbids any recoherence that would restore interference between that outcome and its macroscopically distinct alternatives. The "other branches" were never actual; there is nothing to recohere.
+
+*Pre-actualization reversibility*: Decoherence-only evolution prior to stable record formation may in principle be reversed. LRT is compatible with this. The prohibition applies only after actualization.
+
+*Contrast with MWI*: Many-Worlds permits recoherence in principle given sufficient control over all degrees of freedom. LRT denies this for actualized records.
+
+*Test*: Difficult to probe directly. Some quantum-gravity analogue proposals or extreme-precision interference experiments may eventually access this regime.
+
+**Prediction 5: Deviations from Complex Structure Tied to Logical Distinguishability**
+
+LRT grounds the complex-number structure of quantum mechanics in local tomography and logical compositionality (Section 25).
+
+*Statement*: Any observed deviation from complex quantum mechanics in extreme regimes (Planckian scales, strong curvature, analogue systems) must coincide with a detectable failure of logical distinguishability or local tomography. Real or quaternionic deviations without such failures would falsify the "logical origin" claim.
+
+*Basis*: If ℂ is selected by local tomography + compositional distinguishability, then breakdown of ℂ implies breakdown of those logical structures.
+
+*Test*: Long-term; requires access to regimes where standard quantum structure might fail.
+
+**Summary Table**
+
+| Prediction | Type | Time Horizon | Falsifiability |
+|------------|------|--------------|----------------|
+| 1. No underivable collapse constants | Falsifier | 5–20 years | High |
+| 2. Collapse rate from geometry/info | Positive forecast | 5–20 years | High |
+| 3. Exact saturation of bounds | Conditional (S = ℏC) | 10–30 years | Medium |
+| 4. No recoherence after actualization | Distinctive | Long-term | Medium |
+| 5. ℂ breakdown tied to tomography | Distinctive | Long-term | High |
+
+**Assessment**
+
+These predictions define clear empirical commitments and provide concrete avenues for testing LRT's distinctive structural claims. The near-term stakes lie in macroscopic quantum experiments testing collapse mechanisms. If collapse is confirmed with geometry-driven or information-capacity-driven rates and no new primitives, LRT's parsimony constraints gain significant empirical support. If collapse requires genuinely new, underivable constants, LRT in its current form would require revision.
+
+Predictions 1 and 2 represent concrete empirical commitments that distinguish LRT from frameworks agnostic about collapse mechanisms. Prediction 4 represents a genuine ontological divergence from Many-Worlds. The conditional predictions (3a–3c) chart a research direction whose decisiveness depends on the status of S = ℏC.
+
 ---
 
 ## 28. Implications for Quantum Computing
