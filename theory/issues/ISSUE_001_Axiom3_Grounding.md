@@ -1,8 +1,9 @@
 # ISSUE 001: Grounding Axiom 3 (Physical Constraints)
 
-**Status**: OPEN
+**Status**: IN PROGRESS (Reversibility derived, CBP pending implementation)
 **Priority**: CRITICAL
 **Created**: 2025-11-26
+**Updated**: 2025-11-27
 **Source**: External reviews (Gemini, Grok, GPT synthesis)
 
 ---
@@ -341,12 +342,81 @@ The gap: "specification complexity" needs rigorous definition.
 
 ---
 
+## Circularity Check (2025-11-27)
+
+A rigorous circularity analysis was performed. See: `CIRCULARITY_CHECK_Axiom3_Derivations.md`
+
+### Key Finding: Scope Gap (NOT Circularity)
+
+The derivations are **not circular**, but have a **scope gap**:
+
+| What Parsimony Is About | What Axiom 3 Is About |
+|-------------------------|----------------------|
+| Boolean actuality | IIS structure/dynamics |
+| Propositions with truth values | Transformations on IIS |
+| What exists in actualized domain | Pre-Boolean structure |
+
+**The problem**: Parsimony says "actuality contains only grounded propositions." But IIS dynamics are NOT in actuality - they're pre-Boolean structure. So parsimony about actuality doesn't *strictly* constrain IIS dynamics without a bridging principle.
+
+---
+
+## Multi-LLM Consultation (2025-11-27)
+
+Consulted Grok, Gemini, ChatGPT on how to address the scope gap.
+
+See: `multi_LLM/consultation/parsimony_scope_gap_20251127.md`
+
+### Consensus Results
+
+| Model | Score | Recommendation |
+|-------|-------|----------------|
+| **Grok** | 0.70 | Option D: Consistency Bridging Principle |
+| Gemini | 0.55 | Combination B+C+D with projection map |
+| ChatGPT | 0.28 | Option B + time as ordering |
+
+### Option A (Interface Constraint) Rejected
+
+All three models flagged Option A ("Structure in IIS with no Boolean manifestation does not exist") as **risking circularity** - it presupposes Boolean actuality as sole arbiter of existence.
+
+### Recommended Solution: Consistency Bridging Principle (CBP)
+
+**Principle**: IIS dynamics must admit a consistent mapping to Boolean actuality under resolution processes, ensuring that no ungrounded propositions arise.
+
+**Why CBP works**:
+1. **Avoids circularity** - focuses on logical consistency, not direct manifestation
+2. **Maintains claim strength** - reversibility is derived, not merely preferred
+3. **Aligns with QM** - unitary dynamics preserve information for consistent measurement outcomes
+
+### Derivation with CBP
+
+1. Irreversible dynamics → information loss
+2. Information loss → states that can't consistently resolve to Boolean propositions
+3. By CBP → such dynamics are inadmissible
+4. By Parsimony → no mechanism for inadmissible dynamics exists
+5. Therefore → fundamental IIS dynamics must be reversible
+
+---
+
+## Final Status Summary
+
+| Constraint | Status | With CBP |
+|------------|--------|----------|
+| **Reversibility (3b)** | DERIVED (scope gap) | **FULLY DERIVED** |
+| **Continuity (3a)** | MOTIVATED | Stronger argument possible |
+| **Local Tomography (3c)** | PARTIAL | Still partial (decomposability gap) |
+
+---
+
 ## Recommended Action
 
 1. ✅ Revise Section 16 with explicit "Derivation Status" subsection (COMPLETED 2025-11-27)
 2. ✅ Adopt "meta-theoretical interpretation" framing per GPT recommendation (COMPLETED - Section 16.8)
 3. ✅ Add Constructor Theory as future direction (COMPLETED - noted in Section 16.8)
-4. Keep local tomography derivation as highest-priority open problem
+4. ✅ Perform circularity check (COMPLETED - scope gap identified, not circular)
+5. ✅ Multi-LLM consultation on scope gap (COMPLETED - CBP recommended)
+6. ☐ **Add CBP to Section 16** to close scope gap for reversibility derivation
+7. ☐ Formalize "specification complexity" for continuity derivation
+8. Keep local tomography derivation as highest-priority open problem
 
 ---
 
