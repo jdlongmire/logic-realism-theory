@@ -1700,7 +1700,31 @@ With parsimony derived, the minimal axiom base is:
 | P2 | Truthmaker Requirement (TM) | Principle |
 | **T1** | **Global Parsimony** | **Theorem** |
 
-### 16.7 What This Section Establishes
+### 16.8 Axiom 3: Derivation Status
+
+The external reconstruction theorems (Hardy, Masanes-Müller, CDP) use axioms equivalent to our Axiom 3. A natural question arises: can LRT *derive* these constraints from more primitive commitments (3FLL, distinguishability), thereby reducing the axiom count?
+
+We investigated this systematically. The results:
+
+| Constraint | Derivation Status | Best Available Argument |
+|------------|-------------------|------------------------|
+| **Continuity (3a)** | NOT DERIVED | Stability selection: discontinuous dynamics prevents stable structures, but is not logically impossible |
+| **Reversibility (3b)** | CONDITIONALLY DERIVED | Structure preservation: if fundamental dynamics must preserve distinguishability structure (automorphisms of IIS), reversibility follows |
+| **Local Tomography (3c)** | NOT DERIVED | Compositionality requirement: physics must be modular, but this is physical, not logical |
+
+**Key finding:** None of the three Axiom 3 constraints can be derived from 3FLL + distinguishability alone.
+
+**Reversibility** has the strongest grounding. If we accept that fundamental dynamics should be automorphisms of IIS (structure-preserving maps), then irreversible dynamics would collapse distinguishability, violating the IIS definition. This argument is plausible but rests on "dynamics preserve structure" - itself a physical principle, not a logical necessity.
+
+**Local tomography** has moderate grounding through compositionality. Without it, composite systems would have "hidden" degrees of freedom inaccessible to local operations. This is physically unacceptable but not logically impossible. Seven distinct derivation approaches (from pairwise structure, compositional identity, Non-Contradiction, information locality, Excluded Middle, decomposable differentiation, and constructor composability) all failed or proved conditional.
+
+**Continuity** has the weakest grounding. The only available arguments are stability-selection: discontinuous dynamics would prevent stable structures from persisting. This explains why we observe continuous dynamics but does not derive its logical necessity.
+
+**The honest position:** Axiom 3 is a physical axiom package, not logically derivable. LRT's contribution is not eliminating these axioms but providing philosophical justification for why they are natural requirements for stable interface physics. The constraints are precisely what enables Boolean actuality to interface reliably with IIS structure.
+
+**Open problem:** Deriving any of these constraints from deeper principles remains the most important technical challenge for LRT's foundations. Constructor-theoretic approaches (Deutsch & Marletto, 2015) may offer a path forward.
+
+### 16.9 What This Section Establishes
 
 We have:
 
@@ -1708,6 +1732,7 @@ We have:
 - Classified axioms by tier (foundational, physical, structural)
 - Proved Global Parsimony as a theorem
 - Identified what is derived versus assumed
+- Provided honest accounting of Axiom 3's derivation status
 
 The next section derives Hilbert space structure from these axioms.
 

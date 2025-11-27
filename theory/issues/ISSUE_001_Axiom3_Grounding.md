@@ -241,9 +241,9 @@ If we must rank how well-grounded each constraint is:
 
 ## Recommended Action
 
-1. Revise Section 16 with explicit "Derivation Status" subsection
-2. Adopt "meta-theoretical interpretation" framing per GPT recommendation
-3. Add Constructor Theory subsection as future direction
+1. ✅ Revise Section 16 with explicit "Derivation Status" subsection (COMPLETED 2025-11-27)
+2. ✅ Adopt "meta-theoretical interpretation" framing per GPT recommendation (COMPLETED - Section 16.8)
+3. ✅ Add Constructor Theory as future direction (COMPLETED - noted in Section 16.8)
 4. Keep local tomography derivation as highest-priority open problem
 
 ---

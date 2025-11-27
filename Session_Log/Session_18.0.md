@@ -173,6 +173,22 @@ Key elements:
 
 ---
 
+## Work After Context Break (2025-11-27)
+
+### 11. Section 16.8 Added: Axiom 3 Derivation Status
+
+Following the external reviews (Gemini, Grok) and derivation investigation, added new subsection 16.8 to Section 16 providing honest accounting of Axiom 3's derivation status:
+
+- Documented that none of the three Axiom 3 constraints can be derived from 3FLL + distinguishability alone
+- Hierarchy: Reversibility (best grounded) > Local Tomography (moderate) > Continuity (weakest)
+- Adopted "meta-theoretical interpretation" framing
+- Flagged local tomography derivation as highest-priority open problem
+- Referenced Constructor Theory (Deutsch & Marletto) as future direction
+
+Updated ISSUE_001 to mark completed action items.
+
+---
+
 ## Commits This Session
 
 1. `e5bfeac` - Draft Part III Sections 16-17: LRT Axioms and Hilbert Space Derivation
@@ -185,3 +201,5 @@ Key elements:
 8. `0fef2a5` - Update Session 18.0 log with Section 19 progress
 9. `f8d0ef8` - Revise Section 19 per ChatGPT feedback
 10. `ccaf283` - Complete Part III: Sections 20-22
+11. (pending) - Add issue tracking for Axiom 3 grounding problem
+12. (pending) - Add Section 16.8: Axiom 3 Derivation Status
