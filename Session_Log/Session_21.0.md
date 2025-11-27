@@ -23,7 +23,7 @@
 
 ## Master Paper Status
 
-**FINAL: 32 sections**
+**FINAL: 32 sections (publication-ready)**
 
 | Part | Sections | Status |
 |------|----------|--------|
@@ -32,16 +32,6 @@
 | Part III | 17-23 | **COMPLETE** (Mathematical Structure) |
 | Part IV | 24-31 | **COMPLETE** (Empirical Signatures) |
 | Section 32 | Conclusion | **COMPLETE** |
-
----
-
-## Session 21.0 Goals
-
-1. Draft Section 32: Conclusion ✅
-2. Update paper structure ✅
-3. Create ISSUE 004: Editorial Remediation ✅
-4. Complete ISSUE 004 Phases 1-3 ✅
-5. Final verification fixes ✅
 
 ---
 
@@ -84,6 +74,22 @@ Integrated polished abstract emphasizing:
 - Fixed Section 1.3: "six parts" → "four parts followed by a concluding synthesis"
 - Removed reference to non-existent Appendix A
 
+### 6. Editorial Review Discussion
+
+Received 7-point editorial recommendation (external LLM review). After critical analysis:
+
+**ACCEPTED (for next session):**
+- Signposting paragraphs at end of Parts I-IV (high value, no risk)
+- Possibly: "What LRT Does/Does Not Claim" bullet list in Section 1
+- Consider: Softened reframe for Sections 10 and 20 openings
+
+**REJECTED (overclaiming risk):**
+- Wholesale Section 1 replacement (current version is strong)
+- New abstract (already polished, new version overclaims)
+- Section 1.7 "What Is At Stake" (claims achievements not demonstrated)
+- Strengthened conclusion (invites reviewer hostility)
+- Title change ("Logic Realism Theory" is accurate)
+
 ---
 
 ## ISSUE 004 Status
@@ -102,16 +108,36 @@ Integrated polished abstract emphasizing:
 
 ---
 
+## Next Session (22.0) Setup
+
+### Priority Tasks
+
+1. **Signposting Paragraphs** (HIGH PRIORITY)
+   - Add short bridging paragraphs at end of Parts I, II, III, IV
+   - Format: "Part X established... Part Y will now..."
+   - Purely navigational, no new claims
+   - ~4 paragraphs total
+
+2. **Optional Enhancements** (LOWER PRIORITY)
+   - Consider adding "What LRT Does/Does Not Claim" bullet list to Section 1.5
+   - Consider softened openings for Sections 10 and 20
+
+### Do NOT Do
+- Wholesale Section 1 replacement
+- Abstract changes
+- Title changes
+- Section 1.7 additions
+- Conclusion strengthening
+
+### Reference
+The editorial discussion is captured in this session log. The key insight: **clarity improvements yes, ambition inflation no**.
+
+---
+
 ## Session Closed
 
-Session 21.0 complete. The LRT Master Paper is now publication-ready:
+Session 21.0 complete. The LRT Master Paper is publication-ready.
 
-1. ✅ Section 32 (Conclusion) added
-2. ✅ All editorial issues resolved (ISSUE 004 CLOSED)
-3. ✅ New abstract integrated
-4. ✅ Section 1.3 structure description fixed
-5. ✅ Source papers archived with updated paths
-
-**Next steps**: Author review and submission decisions.
+Next session: Optional polish (signposting) if desired.
 
 ---
