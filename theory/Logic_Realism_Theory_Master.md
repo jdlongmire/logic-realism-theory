@@ -9,9 +9,15 @@ Northrop Grumman Fellow (unaffiliated research)
 
 ## Abstract
 
-Logic Realism Theory (LRT) holds that the three fundamental laws of logic - Identity, Non-Contradiction, and Excluded Middle - are not cognitive conventions or linguistic rules but ontological constraints constitutive of physical reality. This paper presents the unified framework: philosophical foundations establishing the ontological status of logical laws; the physical interpretation showing quantum mechanics as the unique stable interface between the Infinite Information Space (IIS) and Boolean actuality; the mathematical formalization deriving Hilbert space structure via reconstruction theorems and the Born rule via Gleason's theorem; empirical grounding through 17+ retrodictions, 20+ testable predictions, and 12 explicit falsifiers; and consilience evidence from seven independent domains converging on identical deep structures. We do not claim to derive quantum mechanics from logic alone. We claim that quantum structure is uniquely selected by stability requirements - structural fine-tuning at the deepest level. One prediction (complex quantum mechanics required) has already been confirmed experimentally. The framework dissolves foundational puzzles of quantum mechanics, grounds Wheeler's "it from bit" program, and explains the unreasonable effectiveness of mathematics. It from bit; bit from fit.
+Logic Realism Theory (LRT) holds that the Three Fundamental Laws of Logic—Identity, Non-Contradiction, and Excluded Middle—are not cognitive conventions but ontological constraints constituting physical distinguishability. This paper shows that standard complex Hilbert-space quantum mechanics emerges as the unique stable interface between the non-Boolean Infinite Information Space (IIS) and the Boolean structure required for physical facts.
 
-**Keywords:** logic realism, quantum foundations, Born rule, measurement problem, entanglement, information theory, consilience, philosophy of physics
+LRT reframes quantum non-locality as Global Constraint Satisfaction: the logical laws enforce correlations without signaling, dissolving "spooky action." Global Parsimony prohibits surplus structure, implying that any objective collapse mechanism must be derivable from geometry or information-theoretic limits alone—free collapse parameters would falsify the theory.
+
+We do not claim to derive quantum mechanics from logic alone. We claim that its specific structure is uniquely selected by stability and parsimony given minimal interface constraints. One structural prediction—that quantum mechanics requires complex (not real or quaternionic) amplitudes—has been experimentally confirmed (Renou et al., 2021). A second, conditional prediction—exact saturation of thermodynamic and holographic bounds if action equals complexity (S = ℏC)—is testable. The framework retrodicts all standard quantum phenomena from unified principles and lists 12 explicit falsifiers.
+
+It from bit; bit from fit.
+
+**Keywords:** logic realism, quantum foundations, Born rule, measurement problem, entanglement, information theory, global constraint satisfaction, falsifiability
 
 ---
 
