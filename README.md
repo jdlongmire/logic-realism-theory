@@ -32,10 +32,10 @@ Logic Realism Theory was originally developed as a 5-paper series:
 
 | # | Paper | Focus |
 |---|-------|-------|
-| 1 | **[Logic Realism Theory](theory/LRT_Paper1_Logic_Realism_Theory.md)** | Philosophical foundations: 3FLL as ontological constraints |
-| 2 | **[It from Bit, Bit from Fit](theory/LRT_Paper2_It_From_Bit_Bit_From_Fit.md)** | Quantum mechanics as the unique stable interface |
-| 3 | **[Mathematical Structure](theory/LRT_Paper3_Mathematical_Structure.md)** | Axiomatic formalization: 3FLL → Hilbert space → Born rule |
-| 4 | **[Empirical Signatures](theory/LRT_Paper4_Empirical_Signatures.md)** | Retrodictions, predictions, and falsifiability |
+| 1 | **[Logic Realism Theory](theory/archive/LRT_Paper1_Logic_Realism_Theory.md)** | Philosophical foundations: 3FLL as ontological constraints |
+| 2 | **[It from Bit, Bit from Fit](theory/archive/LRT_Paper2_It_From_Bit_Bit_From_Fit.md)** | Quantum mechanics as the unique stable interface |
+| 3 | **[Mathematical Structure](theory/archive/LRT_Paper3_Mathematical_Structure.md)** | Axiomatic formalization: 3FLL → Hilbert space → Born rule |
+| 4 | **[Empirical Signatures](theory/archive/LRT_Paper4_Empirical_Signatures.md)** | Retrodictions, predictions, and falsifiability |
 | 5 | **[Consilience](theory/LRT_Paper5_Consilience.md)** | Cross-domain evidence for logical constitution of reality |
 
 ---
@@ -78,21 +78,16 @@ For development history and ongoing work, see the **[Session Log](Session_Log/)*
 
 ```
 theory/
-├── Logic_Realism_Theory_Master.md            # Master Paper (31/42 sections)
-├── LRT_Paper1_Logic_Realism_Theory.md        # Source: Philosophy
-├── LRT_Paper2_It_From_Bit_Bit_From_Fit.md    # Source: Physics
-├── LRT_Paper3_Mathematical_Structure.md      # Source: Mathematics
-├── LRT_Paper4_Empirical_Signatures.md        # Source: Predictions
-├── LRT_Paper5_Consilience.md                 # Source: Cross-domain evidence
+├── Logic_Realism_Theory_Master.md            # Master Paper (32 sections)
+├── LRT_Paper5_Consilience.md                 # Future Appendix A
 ├── issues/                                    # Open issues and roadmaps
 ├── derivations/                               # First-principles derivation chains
-└── papers/                                    # Archive of previous versions
+└── archive/                                   # Source papers and historical versions
 
 lean/                    # Formal Lean 4 proofs (ISSUE 003)
 notebooks/               # Computational validation
 multi_LLM/               # Multi-LLM consultation system
 Session_Log/             # Development history
-archive/                 # Historical artifacts
 ```
 
 ---

@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(for:*)",
+      "Bash(do echo -n \"Section $i references: \")",
+      "Bash(done)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
