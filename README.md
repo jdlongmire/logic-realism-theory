@@ -20,26 +20,28 @@ This repository develops a framework to explain why.
 
 ---
 
-## Master Paper
+## Main Paper
 
-**[Logic Realism Theory: A Unified Framework](theory/Logic_Realism_Theory_Master.md)**
+**[It from Bit, Bit from Fit: Foundational Physics Logically Remastered](theory/Logic_Realism_Theory_Main.md)**
 
-Publication-ready paper: 32 sections, ~4,100 lines, 4 Parts + Conclusion.
+**Status:** Camera-ready (Accepted with Revisions, Grade A-)
 
-| Part | Sections | Content | Status |
-|------|----------|---------|--------|
-| **I** | 1-7 | Philosophical Foundations | Complete |
-| **II** | 8-16 | Physical Interpretation | Complete |
-| **III** | 17-23 | Mathematical Structure | Complete |
-| **IV** | 24-31 | Empirical Signatures | Complete |
-| **Conclusion** | 32 | Status & The Wager | Complete |
+| Section | Content | Status |
+|---------|---------|--------|
+| 1 | Introduction & Thesis | Complete |
+| 2 | The Framework (IIS, Actuality, Interface) | Complete |
+| 3 | Derivation Chain (Hilbert space, Born rule, unitarity) | Complete |
+| 4 | What This Explains (17 phenomena) | Complete |
+| 5 | Comparison with Alternatives | Complete |
+| 6 | Predictions and Falsifiers (12 explicit) | Complete |
+| 7 | Open Questions and Conclusion | Complete |
 
 **Key features:**
-- Opens with empirical challenge (Section 1.1)
-- Two-part structure: metaphysical thesis + physics overlay (Section 1.5)
-- 17 retrodictions, 12 explicit falsifiers
+- Derives rather than postulates: QM structure from 3FLL + physical constraints
+- 17 phenomena unified, 12 explicit falsifiers
 - 1 confirmed structural prediction (complex QM, Renou et al. 2021)
-- Closes with challenge renewed (Section 32.6)
+- Explicit about physical inputs (local tomography, continuity)
+- Core open problems acknowledged (interface criterion, relativistic formulation)
 
 ---
 
@@ -65,13 +67,14 @@ The Three Fundamental Logical Laws (3FLL) — Identity, Non-Contradiction, Exclu
 
 ```
 theory/
-├── Logic_Realism_Theory_Master.md        # Master Paper (32 sections)
+├── Logic_Realism_Theory_Main.md          # Main Paper (camera-ready)
 ├── figures/                               # Conceptual diagrams
 ├── issues/                                # Open issues and tracking
 ├── derivations/                           # First-principles derivation chains
 ├── frameworks/                            # Supporting frameworks
 └── archive/                               # Source papers and historical versions
 
+review_response/         # Reviewer defense and response documents
 lean/                    # Formal Lean 4 proofs (ISSUE 003)
 notebooks/               # Computational validation
 multi_LLM/               # Multi-LLM consultation system
@@ -120,11 +123,19 @@ Zenodo, November 2025 | DOI: 10.5281/zenodo.17533459
 
 For development history, see **[Session Log](Session_Log/)**.
 
-**Latest**: Session 23.0 (2025-11-27) - Empirical challenge reframing
+**Latest**: Session 27.0 (2025-11-28) - Paper submitted, accepted with revisions, camera-ready
+
+**Session 27.0 Summary:**
+- Completed em dash editorial cleanup (63 replacements)
+- Created reviewer defense framework
+- Responded to red team analysis (5 attack vectors)
+- Implemented referee-requested revisions (3 items)
+- Camera-ready abstract finalized
 
 **Additional Resources**:
 - **[AI-Enabled Research Methodology](Logic_Realism_Theory_AI_Experiment.md)**
 - **[AI Collaboration Profile](AI-Collaboration-Profile.json)**
+- **[Review Response Documents](review_response/)** - Defense framework, red team response, referee response
 
 ---
 
