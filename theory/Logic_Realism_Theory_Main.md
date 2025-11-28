@@ -542,9 +542,9 @@ The following phenomena receive treatment from LRT resources, ranging from rigor
 | Hilbert space is complex | **Derived** | Local tomography forces ℂ |
 | Unitary dynamics | **Derived** | Reversibility (CBP + Parsimony) + Continuity → Stone |
 | Reversibility | **Derived** | CBP + Global Parsimony |
-| Contextuality | **Explained** | Interface signature—values generated at interface, not pre-existing |
-| Bell inequality violations | **Explained** | Global constraint satisfaction—3FLL enforce consistency |
-| Tsirelson bound (2√2) | **Explained** | Interface stability limit—exceeding permits signaling |
+| Contextuality | **Explained** | Interface signature: values generated at interface, not pre-existing |
+| Bell inequality violations | **Explained** | Global constraint satisfaction: 3FLL enforce consistency |
+| Tsirelson bound (2√2) | **Explained** | Interface stability limit: exceeding permits signaling |
 | No-cloning | **Explained** | Distinguishability preservation in IIS |
 | Uncertainty relations | **Explained** | Non-commuting observables = incompatible IIS partitions |
 | Entanglement without signaling | **Explained** | Global 3FLL constraints; correlation without causal connection |
@@ -552,7 +552,7 @@ The following phenomena receive treatment from LRT resources, ranging from rigor
 | Superposition | **Reframed** | IIS is non-Boolean; superposition is pre-actualization state |
 | State collapse | **Reframed** | Category transition from IIS to actuality, not dynamical process |
 | Measurement disturbance | **Reframed** | No pre-existing values to disturb; values generated at interface |
-| Decoherence | **Reframed** | Interface approach—environmental entanglement transfers phase information |
+| Decoherence | **Reframed** | Interface approach: environmental entanglement transfers phase information |
 | Identical particles | **Compatible** | Excitations of same distinguishability mode (requires further development) |
 | Quantization | **Compatible** | Boolean grain of actuality (requires further development) |
 | Quantum Zeno effect | **Compatible** | Repeated interface transitions (not derived) |
@@ -573,9 +573,9 @@ LRT dissolves rather than solves this problem.
 
 **The dissolution:** Measurement is not a dynamical process requiring special physics. It is the interface between IIS and Boolean actuality. The quantum state evolves unitarily in IIS. When it interacts with a context requiring Boolean outcomes, 3FLL are enforced. The state becomes determinate.
 
-This is category transition, not collapse dynamics. The question "when does collapse occur?" presupposes that collapse is a dynamical process within a single domain. On LRT, measurement is a transition between domains—from IIS structure to Boolean actuality. Asking when this occurs is legitimate, but the answer is a physical criterion (Section 7.1), not a dynamical mechanism. The measurement problem is transformed, not evaded.
+This is category transition, not collapse dynamics. The question "when does collapse occur?" presupposes that collapse is a dynamical process within a single domain. On LRT, measurement is a transition between domains, from IIS structure to Boolean actuality. Asking when this occurs is legitimate, but the answer is a physical criterion (Section 7.1), not a dynamical mechanism. The measurement problem is transformed, not evaded.
 
-**The key distinction:** The measurement problem is dissolved as a *conceptual puzzle* (no special collapse dynamics needed, no Heisenberg cut, no observer-dependence) while remaining open as an *empirical question* (which physical criterion marks the interface). These are different issues. The conceptual puzzle—how can deterministic evolution produce single random outcomes?—is resolved by recognizing measurement as category transition rather than dynamical process. The empirical question—what physical conditions trigger interface transition?—is legitimate and tractable, not a residual form of the original puzzle.
+**The key distinction:** The measurement problem is dissolved as a *conceptual puzzle* (no special collapse dynamics needed, no Heisenberg cut, no observer-dependence) while remaining open as an *empirical question* (which physical criterion marks the interface). These are different issues. The conceptual puzzle (how can deterministic evolution produce single random outcomes?) is resolved by recognizing measurement as category transition rather than dynamical process. The empirical question (what physical conditions trigger interface transition?) is legitimate and tractable, not a residual form of the original puzzle.
 
 **What LRT explains:**
 - Why definite outcomes occur (3FLL enforcement at interface)
@@ -583,12 +583,12 @@ This is category transition, not collapse dynamics. The question "when does coll
 - Why no special "measurement" dynamics is needed (interface, not mechanism)
 
 **What LRT does not explain:**
-- The precise physical criterion marking the interface (decoherence threshold, gravitational criterion, information-theoretic saturation—these are empirical questions)
+- The precise physical criterion marking the interface (decoherence threshold, gravitational criterion, information-theoretic saturation; these are empirical questions)
 - Why *this* outcome rather than *that* (this may be irreducibly stochastic)
 
-The openness of the interface criterion is not evasion. LRT constrains the answer: by Global Parsimony, any collapse mechanism must be derivable from geometry or information capacity—it cannot introduce free parameters. This rules out theories with arbitrary collapse rates while remaining neutral between derivable mechanisms (gravitational self-energy, information-theoretic saturation, decoherence thresholds). The measurement problem is not relocated but transformed from "what causes collapse?" to "which derivable physical criterion marks the interface?"—an empirically tractable question.
+The openness of the interface criterion is not evasion. LRT constrains the answer: by Global Parsimony, any collapse mechanism must be derivable from geometry or information capacity; it cannot introduce free parameters. This rules out theories with arbitrary collapse rates while remaining neutral between derivable mechanisms (gravitational self-energy, information-theoretic saturation, decoherence thresholds). The measurement problem is not relocated but transformed from "what causes collapse?" to "which derivable physical criterion marks the interface?", an empirically tractable question.
 
-The second open point—why this particular outcome—is not a failure. No interpretation explains why a particular outcome occurs. What LRT explains is why *an* outcome occurs and why it is always determinate.
+The second open point, why this particular outcome, is not a failure. No interpretation explains why a particular outcome occurs. What LRT explains is why *an* outcome occurs and why it is always determinate.
 
 ### 4.3 Entanglement and Non-Locality
 
@@ -596,7 +596,7 @@ Bell's theorem shows that quantum correlations cannot be explained by local hidd
 
 LRT reframes this entirely.
 
-**The reframing:** There is no action at a distance because there is no action. Entangled particles are not two things mysteriously connected—they are one configuration in IIS with non-factorizable structure.
+**The reframing:** There is no action at a distance because there is no action. Entangled particles are not two things mysteriously connected; they are one configuration in IIS with non-factorizable structure.
 
 When measurement occurs, 3FLL enforce consistency across the entire configuration. The correlations are not caused by signaling between particles. They are **constraint satisfaction**: the joint state already satisfies 3FLL globally, and measurement reveals this structure.
 
