@@ -392,7 +392,7 @@ Axiom A3c (local tomography) therefore forces ℂ.
 
 **Step 3: Completeness from maximality.**
 
-IIS is defined as the maximal space of distinguishable configurations. Maximality implies closure under limits: any Cauchy sequence of distinguishable states has a limit that is itself distinguishable. This gives completeness—the defining property that makes the space a Hilbert space rather than merely an inner product space. ∎
+IIS is defined as the maximal space of distinguishable configurations. Maximality implies closure under limits: any Cauchy sequence of distinguishable states has a limit that is itself distinguishable. This gives completeness, the defining property that makes the space a Hilbert space rather than merely an inner product space. ∎
 
 **Experimental confirmation:** Renou et al. (2021) tested complex vs. real quantum mechanics directly. The experiment confirmed that locally tomographic real quantum mechanics makes predictions distinguishable from complex quantum mechanics, and nature follows the complex predictions.
 
@@ -422,7 +422,7 @@ $$P(\phi|\psi) = |\langle\phi|\psi\rangle|^2$$
 
 3. *Normalization:* From Axiom A5.
 
-4. *Non-contextuality:* From Axiom A5—probability assigned to an outcome depends only on state and outcome, not on other possible outcomes in the measurement context.
+4. *Non-contextuality:* From Axiom A5: probability assigned to an outcome depends only on state and outcome, not on other possible outcomes in the measurement context.
 
 All premises are satisfied. Gleason's theorem applies. The Born rule follows. ∎
 
@@ -463,7 +463,7 @@ The Schrödinger equation follows immediately. ∎
 
 ### 3.6 Hamiltonian and Lagrangian Structure
 
-Stone's theorem yields more than the Schrödinger equation. The self-adjoint generator H is the **Hamiltonian**—the observable corresponding to total energy. From this, standard dynamical formalism follows.
+Stone's theorem yields more than the Schrödinger equation. The self-adjoint generator H is the **Hamiltonian**, the observable corresponding to total energy. From this, standard dynamical formalism follows.
 
 **What Stone's theorem provides:**
 
@@ -487,7 +487,7 @@ Once unitarity and the Hamiltonian are established, LRT inherits rather than red
 
 LRT does not provide new derivations of Lagrangian or Hamiltonian mechanics. What it provides is *grounding*: an explanation of why unitary dynamics holds in the first place (reversibility from CBP + Parsimony), which then generates the Hamiltonian via Stone's theorem.
 
-The action principle—that physical trajectories extremize action—receives philosophical motivation from parsimony (extremal paths require minimal specification), but this is interpretive, not a replacement for the standard derivation from variational principles.
+The action principle (that physical trajectories extremize action) receives philosophical motivation from parsimony (extremal paths require minimal specification), but this is interpretive, not a replacement for the standard derivation from variational principles.
 
 **Open: Quantum Field Theory**
 
@@ -503,7 +503,7 @@ LRT's framework is consistent with QFT but does not yet provide independent deri
 
 ![Figure 2: LRT Derivation Chain](figures/LRT_Fig2b.png)
 
-**Figure 2.** The LRT derivation chain. Blue nodes indicate axioms (foundational assumptions). Gold/amber nodes indicate results derived within the framework, citing the external theorems employed. Dashed lines show additional inputs required at each derivation step. The four derived results—reversibility, complex Hilbert space, the Born rule, and unitary dynamics—follow from the foundational axioms plus physical constraints, without independent postulation.
+**Figure 2.** The LRT derivation chain. Blue nodes indicate axioms (foundational assumptions). Gold/amber nodes indicate results derived within the framework, citing the external theorems employed. Dashed lines show additional inputs required at each derivation step. The four derived results (reversibility, complex Hilbert space, the Born rule, and unitary dynamics) follow from the foundational axioms plus physical constraints, without independent postulation.
 
 ### 3.8 What Is Derived vs. Assumed
 
@@ -520,7 +520,7 @@ LRT's framework is consistent with QFT but does not yet provide independent deri
 | Local tomography | Axiom (A3c) | Physical input (irreducible) |
 | Non-contextual measure | Axiom (A5) | Interface structure |
 
-The derivations are genuine but conditional. They show: *given* the LRT axioms and physical constraints, quantum structure follows. The physical constraints (A3a, A3c) are not derived from logic alone—they represent empirical input about our universe.
+The derivations are genuine but conditional. They show: *given* the LRT axioms and physical constraints, quantum structure follows. The physical constraints (A3a, A3c) are not derived from logic alone; they represent empirical input about our universe.
 
 What LRT provides is the unified grounding. The axioms of reconstruction theorems receive explanation: they are features required for stable interface between IIS and Boolean actuality.
 
@@ -602,7 +602,7 @@ When measurement occurs, 3FLL enforce consistency across the entire configuratio
 
 **Why no signaling:** The marginal statistics at each location are unchanged regardless of what happens at the other location. Correlations appear only when results are compared. This is exactly what constraint satisfaction predicts: the constraints were already global; measurement reveals them without transmitting information.
 
-**Constraints vs. hidden variables:** Bell's theorem rules out local hidden *variables*—pre-existing definite values. LRT does not posit such values. The IIS state is genuinely indeterminate until the interface. Constraints specify relationships between outcomes, not the outcomes themselves.
+**Constraints vs. hidden variables:** Bell's theorem rules out local hidden *variables* (pre-existing definite values). LRT does not posit such values. The IIS state is genuinely indeterminate until the interface. Constraints specify relationships between outcomes, not the outcomes themselves.
 
 This distinction is crucial:
 
@@ -618,7 +618,7 @@ In LRT:
 
 The correlations are not explained by hidden information traveling faster than light. They are explained by the unified structure of the IIS state, which does not have spatial parts that need to coordinate. The "non-locality" is in the wholeness of the state, not in any propagation. This explains why entanglement produces correlations but not signaling.
 
-**Relativistic considerations:** The "global constraint" picture works naturally in non-relativistic quantum mechanics, where simultaneity is well-defined. In relativistic contexts, the constraint is on the IIS state, not on spacetime events. The entangled state in IIS is a single configuration; it does not have spatial parts that need to coordinate. When measurement outcomes are registered at spacelike separation, each outcome is locally determinate and globally consistent. Different reference frames describe the ordering of measurements differently, but all frames agree on the correlations—which is exactly what we observe. A fully relativistic formulation of LRT would need to articulate how the IIS/actuality interface respects the causal structure of spacetime; this represents ongoing work for the framework.
+**Relativistic considerations:** The "global constraint" picture works naturally in non-relativistic quantum mechanics, where simultaneity is well-defined. In relativistic contexts, the constraint is on the IIS state, not on spacetime events. The entangled state in IIS is a single configuration; it does not have spatial parts that need to coordinate. When measurement outcomes are registered at spacelike separation, each outcome is locally determinate and globally consistent. Different reference frames describe the ordering of measurements differently, but all frames agree on the correlations, which is exactly what we observe. A fully relativistic formulation of LRT would need to articulate how the IIS/actuality interface respects the causal structure of spacetime; this represents ongoing work for the framework.
 
 ### 4.4 The Tsirelson Bound
 
@@ -630,13 +630,13 @@ LRT explanation: The Tsirelson bound marks the maximum correlation compatible wi
 
 The bound is not arbitrary. It is the stability limit of the IIS-actuality interface.
 
-**Limitation acknowledged:** LRT identifies the Tsirelson bound as the interface stability limit and provides the *framework* within which this question becomes tractable. The full derivation of why 2√2 *specifically* marks this limit—rather than some other value—would require detailed information-theoretic analysis of interface stability conditions. This derivation is ongoing work. What LRT establishes is *where and why* such a bound must exist; the precise value remains to be derived from first principles.
+**Limitation acknowledged:** LRT identifies the Tsirelson bound as the interface stability limit and provides the *framework* within which this question becomes tractable. The full derivation of why 2√2 *specifically* marks this limit (rather than some other value) would require detailed information-theoretic analysis of interface stability conditions. This derivation is ongoing work. What LRT establishes is *where and why* such a bound must exist; the precise value remains to be derived from first principles.
 
 ### 4.5 Contextuality
 
 The Kochen-Specker theorem shows that quantum observables cannot all have definite, non-contextual values prior to measurement.
 
-**Standard framing:** This is presented as a no-go theorem—a constraint on hidden variable theories.
+**Standard framing:** This is presented as a no-go theorem, a constraint on hidden variable theories.
 
 **LRT framing:** Contextuality is not a constraint on theories. It is a signature of the interface. Boolean values do not exist in IIS waiting to be revealed. They are generated at the interface, in context. Different measurement contexts actualize different aspects of IIS structure.
 
@@ -646,7 +646,7 @@ Contextuality follows directly from the IIS/actuality distinction. Asking "what 
 
 Is the wave function real (ontic) or merely knowledge (epistemic)?
 
-**LRT answer:** Neither, as traditionally framed. The wave function is **IIS structure**—real but not actual.
+**LRT answer:** Neither, as traditionally framed. The wave function is **IIS structure**: real but not actual.
 
 - **Real:** The wave function describes genuine structure in IIS, not mere ignorance.
 - **Not actual:** It is not a thing in Boolean actuality until interface transition.
@@ -682,12 +682,12 @@ This section evaluates LRT against competing interpretations of quantum mechanic
 
 Six interpretations warrant comparison:
 
-1. **Copenhagen** — Operational approach; refuses ontological commitment
-2. **Many-Worlds (MWI)** — Wave function realism; all branches actual
-3. **Bohmian Mechanics** — Hidden particle positions; nonlocal pilot wave
-4. **GRW/Objective Collapse** — Spontaneous localization with specified rates
-5. **QBism** — Quantum states as agent beliefs
-6. **Relational QM** — Facts relative to observers
+1. **Copenhagen**: Operational approach; refuses ontological commitment
+2. **Many-Worlds (MWI)**: Wave function realism; all branches actual
+3. **Bohmian Mechanics**: Hidden particle positions; nonlocal pilot wave
+4. **GRW/Objective Collapse**: Spontaneous localization with specified rates
+5. **QBism**: Quantum states as agent beliefs
+6. **Relational QM**: Facts relative to observers
 
 ### 5.2 Explanatory Power
 
@@ -718,11 +718,11 @@ LRT is the only framework that explains *why* quantum mechanics has its structur
 **Assessment:**
 
 - **Copenhagen** avoids the question by refusing ontology
-- **MWI** "solves" it by accepting all outcomes—but then faces the probability problem: why does |ψ|² give correct weights if all branches exist equally?
-- **Bohmian** solves it with hidden variables—but requires explicit nonlocality and doesn't explain why the guidance equation has its form
-- **GRW** solves it with new physics—but introduces free parameters (λ, a) with no derivation
-- **QBism** dissolves it by making QM subjective—but loses objectivity
-- **LRT** dissolves it as category transition—honest that "why this outcome" is open, but explains why outcomes are Boolean
+- **MWI** "solves" it by accepting all outcomes, but then faces the probability problem: why does |ψ|² give correct weights if all branches exist equally?
+- **Bohmian** solves it with hidden variables, but requires explicit nonlocality and doesn't explain why the guidance equation has its form
+- **GRW** solves it with new physics, but introduces free parameters (λ, a) with no derivation
+- **QBism** dissolves it by making QM subjective, but loses objectivity
+- **LRT** dissolves it as category transition, honest that "why this outcome" is open, but explains why outcomes are Boolean
 
 ### 5.4 Ontological Cost
 
@@ -738,13 +738,13 @@ LRT is the only framework that explains *why* quantum mechanics has its structur
 
 **The parsimony comparison:**
 
-MWI's ontology is staggering: every quantum event spawns entire universes. Defenders respond that branches are not "added" but entailed by refusing to postulate collapse. However, the asymmetry with LRT is fundamental. MWI's branches are entailed by *denying* something observation suggests (single outcomes). LRT's 3FLL are *presupposed* by any coherent discourse—including MWI's own formulation. MWI adds branch realism to avoid accepting what every measurement displays; LRT makes explicit what every theory already assumes at the metalevel. The parsimony difference is not between "one world" and "many worlds" but between recognizing presuppositions and multiplying entities to evade observations.
+MWI's ontology is staggering: every quantum event spawns entire universes. Defenders respond that branches are not "added" but entailed by refusing to postulate collapse. However, the asymmetry with LRT is fundamental. MWI's branches are entailed by *denying* something observation suggests (single outcomes). LRT's 3FLL are *presupposed* by any coherent discourse, including MWI's own formulation. MWI adds branch realism to avoid accepting what every measurement displays; LRT makes explicit what every theory already assumes at the metalevel. The parsimony difference is not between "one world" and "many worlds" but between recognizing presuppositions and multiplying entities to evade observations.
 
 Bohmian mechanics adds hidden variables that are in principle unobservable plus explicitly nonlocal dynamics.
 
 GRW adds new physics with unexplained parameters.
 
-LRT adds nothing beyond what is already presupposed. The 3FLL are assumed by every theory at the metalevel. Making them explicit and showing they do physical work is not adding ontology—it is recognizing what was already there.
+LRT adds nothing beyond what is already presupposed. The 3FLL are assumed by every theory at the metalevel. Making them explicit and showing they do physical work is not adding ontology; it is recognizing what was already there.
 
 ### 5.5 Locality
 
@@ -758,7 +758,7 @@ LRT adds nothing beyond what is already presupposed. The 3FLL are assumed by eve
 | Relational | Relative | Claims yes | No |
 | **LRT** | **Constraint satisfaction** | **Yes** | **No** |
 
-Bohmian mechanics and GRW explicitly embrace nonlocality. This is a significant cost—it conflicts with relativistic intuitions and requires careful treatment to avoid signaling.
+Bohmian mechanics and GRW explicitly embrace nonlocality. This is a significant cost; it conflicts with relativistic intuitions and requires careful treatment to avoid signaling.
 
 LRT maintains locality: correlations arise from global constraint satisfaction, not causal influence. The constraints are structural features of IIS configurations, not signals propagating between locations.
 
@@ -766,19 +766,19 @@ LRT maintains locality: correlations arise from global constraint satisfaction, 
 
 | Theory | Novel Predictions | Confirmed | Currently Testable | Explicit Falsifiers |
 |--------|------------------|-----------|-------------------|---------------------|
-| Copenhagen | None | — | None | None |
-| MWI | None (empirically equivalent) | — | None practical | None practical |
-| Bohmian | None (empirically equivalent) | — | None practical | None practical |
+| Copenhagen | None | N/A | None | None |
+| MWI | None (empirically equivalent) | N/A | None practical | None practical |
+| Bohmian | None (empirically equivalent) | N/A | None practical | None practical |
 | GRW | Collapse effects | Testing | Yes | Yes |
-| QBism | None | — | None | None (by design) |
-| Relational | None | — | None | None |
+| QBism | None | N/A | None | None (by design) |
+| Relational | None | N/A | None | None |
 | **LRT** | **Structural** | **Yes (2021)** | **Yes** | **12 explicit** |
 
 **Assessment:**
 
 Copenhagen, MWI, Bohmian, QBism, and Relational QM make no predictions beyond standard quantum mechanics. They are empirically equivalent interpretations.
 
-GRW makes testable predictions about collapse rates. This is a genuine virtue—GRW takes empirical risk.
+GRW makes testable predictions about collapse rates. This is a genuine virtue; GRW takes empirical risk.
 
 LRT makes structural predictions:
 - Complex numbers required → **Confirmed** (Renou et al., 2021)
@@ -794,12 +794,12 @@ The Born rule deserves special attention.
 | Theory | Born Rule Status | Derivation Quality |
 |--------|-----------------|-------------------|
 | Copenhagen | Postulated | None |
-| MWI | Contested | Decision-theoretic (Deutsch-Wallace)—disputed |
-| Bohmian | Derived | Quantum equilibrium—but why equilibrium? |
+| MWI | Contested | Decision-theoretic (Deutsch-Wallace), disputed |
+| Bohmian | Derived | Quantum equilibrium, but why equilibrium? |
 | GRW | Built in | Part of collapse postulate |
-| QBism | Coherence | Dutch book—normative, not physical |
+| QBism | Coherence | Dutch book (normative, not physical) |
 | Relational | Relational | Not fully addressed |
-| **LRT** | **Derived** | **Gleason's theorem—mathematically rigorous** |
+| **LRT** | **Derived** | **Gleason's theorem (mathematically rigorous)** |
 
 **The MWI problem is severe.** If all branches are equally real, what does "probability" mean? The Deutsch-Wallace derivation uses decision-theoretic arguments: a rational agent *should* weight branches by |ψ|². But this is normative, not physical. It doesn't explain why |ψ|² tracks anything about reality.
 
@@ -823,9 +823,9 @@ MWI is LRT's strongest competitor as a realist interpretation. Direct comparison
 
 MWI: We observe one outcome because we're in one branch, but all branches are equally real. This requires explaining why Born rule gives branch weights, what "probability" means when all outcomes occur, and why we should believe in unobservable branches.
 
-LRT: We observe one outcome because actuality is Boolean. Non-Contradiction and Excluded Middle enforce single, determinate outcomes. No additional explanation needed—single actuality follows from 3FLL.
+LRT: We observe one outcome because actuality is Boolean. Non-Contradiction and Excluded Middle enforce single, determinate outcomes. No additional explanation needed; single actuality follows from 3FLL.
 
-The asymmetry is fundamental: MWI introduces branch realism to avoid accepting what every measurement displays (single outcomes), while LRT makes explicit what every theory already presupposes (3FLL). MWI and LRT thus differ not just in ontology but in methodology—one multiplies entities, the other recognizes presuppositions.
+The asymmetry is fundamental: MWI introduces branch realism to avoid accepting what every measurement displays (single outcomes), while LRT makes explicit what every theory already presupposes (3FLL). MWI and LRT thus differ not just in ontology but in methodology: one multiplies entities, the other recognizes presuppositions.
 
 ### 5.9 Summary Comparison
 
@@ -854,10 +854,10 @@ Rather than viewing interpretations as competitors, LRT reveals them as descript
 
 | Layer | Description |
 |-------|-------------|
-| **LAYER 4: BOOLEAN ACTUALITY** | **Frameworks:** Copenhagen (outcomes), QBism (agent's bets) — **Math:** Boolean algebra, classical probability — **What happens:** Definite outcomes; one result per context |
-| **LAYER 3: THE INTERFACE** | **Frameworks:** Decoherence, GRW (collapse statistics) — **Math:** Lindblad equation, stochastic Schrödinger equation — **What happens:** Transition from quantum to classical |
-| **LAYER 2: PROBABILITY FLOW** | **Frameworks:** Bohmian mechanics (guidance equation) — **Math:** Probability currents, quantum equilibrium — **What happens:** \|ψ\|² distribution maintained; flow structure |
-| **LAYER 1: IIS DYNAMICS** | **Frameworks:** Unitary QM, Many-Worlds (wave function realism) — **Math:** Schrödinger equation, Hilbert space — **What happens:** Unitary evolution; all branches present |
+| **LAYER 4: BOOLEAN ACTUALITY** | **Frameworks:** Copenhagen (outcomes), QBism (agent's bets). **Math:** Boolean algebra, classical probability. **What happens:** Definite outcomes; one result per context |
+| **LAYER 3: THE INTERFACE** | **Frameworks:** Decoherence, GRW (collapse statistics). **Math:** Lindblad equation, stochastic Schrödinger equation. **What happens:** Transition from quantum to classical |
+| **LAYER 2: PROBABILITY FLOW** | **Frameworks:** Bohmian mechanics (guidance equation). **Math:** Probability currents, quantum equilibrium. **What happens:** \|ψ\|² distribution maintained; flow structure |
+| **LAYER 1: IIS DYNAMICS** | **Frameworks:** Unitary QM, Many-Worlds (wave function realism). **Math:** Schrödinger equation, Hilbert space. **What happens:** Unitary evolution; all branches present |
 
 **Domain assignments:**
 
@@ -891,7 +891,7 @@ A physical theory must make testable claims and specify conditions for its own r
 
 **The complex numbers result:**
 
-LRT, via local tomography (A3c), requires that quantum mechanics use complex rather than real amplitudes. This structural requirement—independently established by reconstruction theorems—was experimentally confirmed by Renou et al. (2021), who designed an experiment distinguishing complex from real quantum mechanics. Nature followed the complex predictions. While LRT did not generate this prediction independently of reconstruction theorems, the experimental confirmation validates the framework's structural commitments.
+LRT, via local tomography (A3c), requires that quantum mechanics use complex rather than real amplitudes. This structural requirement (independently established by reconstruction theorems) was experimentally confirmed by Renou et al. (2021), who designed an experiment distinguishing complex from real quantum mechanics. Nature followed the complex predictions. While LRT did not generate this prediction independently of reconstruction theorems, the experimental confirmation validates the framework's structural commitments.
 
 ### 6.2 Currently Testable Predictions
 
@@ -901,7 +901,7 @@ If objective collapse occurs (as in GRW-type models), LRT constrains the mechani
 
 > Any collapse parameter not derivable from geometry or information capacity would constitute surplus structure, violating Global Parsimony.
 
-GRW introduces parameters λ (collapse rate) and a (localization width) as primitives. If collapse is confirmed with these as free parameters—not derivable from existing physical constants—LRT requires revision.
+GRW introduces parameters λ (collapse rate) and a (localization width) as primitives. If collapse is confirmed with these as free parameters (not derivable from existing physical constants), LRT requires revision.
 
 Conversely, if collapse rates follow from gravitational self-energy (Penrose-Diósi) or information-theoretic bounds, LRT is supported.
 
@@ -924,7 +924,7 @@ For objects in thermal environments, the decoherence time τ_D depends on mass, 
 | Dust grain (10⁻⁵ g) | 1 nm | ~ 10⁻³¹ s |
 | Bowling ball | 1 cm | ~ 10⁻⁴³ s |
 
-For macroscopic objects, τ_D → 0 effectively. The interface transition is instantaneous at human scales. This resolves the "when does collapse happen?" concern—for macro systems, the question of precise timing becomes physically meaningless.
+For macroscopic objects, τ_D → 0 effectively. The interface transition is instantaneous at human scales. This resolves the "when does collapse happen?" concern; for macro systems, the question of precise timing becomes physically meaningless.
 
 **GRW mass scaling (if collapse model applies):**
 
@@ -940,7 +940,7 @@ This scaling explains why microscopic systems exhibit quantum behavior while mac
 
 **Prediction 2: No recoherence after actualization.**
 
-LRT treats measurement as category transition. Once an outcome has produced a stable macroscopic record, the other "branches" were never actual—there is nothing to recohere.
+LRT treats measurement as category transition. Once an outcome has produced a stable macroscopic record, the other "branches" were never actual; there is nothing to recohere.
 
 MWI permits recoherence in principle (given sufficient control). LRT forbids it for actualized outcomes.
 
@@ -990,7 +990,7 @@ Twelve conditions would refute LRT:
 
 **Currently testable (11-12):** Bekenstein bound tests and collapse mechanism experiments are active research areas. These represent genuine empirical risk for LRT.
 
-**Foundational (5-6, 9-10):** These falsifiers concern logical structure presupposed by all empirical science. Observing a physical dialetheia or non-Boolean outcome would not merely refute LRT—it would challenge the foundations of scientific inquiry itself. These are "in principle" falsifiers that establish LRT's logical commitments, not practical test conditions. No such observations exist or are expected.
+**Foundational (5-6, 9-10):** These falsifiers concern logical structure presupposed by all empirical science. Observing a physical dialetheia or non-Boolean outcome would not merely refute LRT; it would challenge the foundations of scientific inquiry itself. These are "in principle" falsifiers that establish LRT's logical commitments, not practical test conditions. No such observations exist or are expected.
 
 **Note on shared falsifiers:** Several falsifiers (Born rule, Tsirelson bound, no-signaling) are shared with standard quantum mechanics. This is appropriate: LRT *predicts* standard QM, so falsifiers of standard QM are falsifiers of LRT. What distinguishes LRT is that it *explains* what it predicts rather than postulating it. The distinctive LRT predictions concern structural requirements (complex numbers, derivable collapse parameters) and the impossibility of certain extensions.
 
@@ -1027,12 +1027,12 @@ These lie outside LRT's scope. The framework addresses *why quantum mechanics ha
 
 | Theory | Confirmed Predictions | Testable Predictions | Explicit Falsifiers |
 |--------|----------------------|---------------------|---------------------|
-| Copenhagen | — | None | None |
-| MWI | — | None practical | None practical |
-| Bohmian | — | None practical | None practical |
+| Copenhagen | N/A | None | None |
+| MWI | N/A | None practical | None practical |
+| Bohmian | N/A | None practical | None practical |
 | GRW | Testing | Yes (collapse rates) | Yes |
-| QBism | — | None | None (unfalsifiable) |
-| Relational | — | None | None |
+| QBism | N/A | None | None (unfalsifiable) |
+| Relational | N/A | None | None |
 | **LRT** | **Complex QM (2021)** | **Yes (collapse, bounds)** | **12 explicit** |
 
 Only LRT and GRW make testable predictions and specify falsification conditions. This is what distinguishes physical theories from interpretive frameworks.
@@ -1076,11 +1076,11 @@ Section 3.6 noted that QFT extension remains incomplete. LRT's framework is cons
 - Vacuum properties
 - Gauge symmetries
 
-However, explicit derivation may not be required. If 3FLL function as a global constraint field rather than merely interface constraints, QFT inherits logical grounding directly. The quantum mechanical core of QFT—complex Hilbert space (Fock space), unitary S-matrix, Boolean measurement outcomes, the Born rule—operates within the same constraint structure that LRT establishes. The specifically field-theoretic features (which fields, which gauge groups, which particle content) represent contingent physical content operating within the constraint field, analogous to how specific triangles operate within Euclidean geometry without being derived from its axioms.
+However, explicit derivation may not be required. If 3FLL function as a global constraint field rather than merely interface constraints, QFT inherits logical grounding directly. The quantum mechanical core of QFT (complex Hilbert space/Fock space, unitary S-matrix, Boolean measurement outcomes, the Born rule) operates within the same constraint structure that LRT establishes. The specifically field-theoretic features (which fields, which gauge groups, which particle content) represent contingent physical content operating within the constraint field, analogous to how specific triangles operate within Euclidean geometry without being derived from its axioms.
 
 This perspective suggests that renormalization might be understood as constraint enforcement: the infinities arising in naive QFT calculations violate distinguishability (infinite quantities are not well-defined), and renormalization removes these violations to restore 3FLL compliance.
 
-The implications of treating 3FLL as a global constraint field—for understanding gauge symmetries, for the relationship between logical and spacetime structure, and for quantum gravity—constitute a direction for future work.
+The implications of treating 3FLL as a global constraint field (for understanding gauge symmetries, for the relationship between logical and spacetime structure, and for quantum gravity) constitute a direction for future work.
 
 **Quantum gravity:**
 
@@ -1113,12 +1113,12 @@ LRT is a physical theory that:
 
 | Criterion | Status |
 |-----------|--------|
-| Explains quantum structure | Yes—uniquely among interpretations |
-| Derives key results | Yes—Born rule, reversibility, complex numbers |
-| Has confirmed predictions | Yes—complex QM (2021) |
-| Is currently testable | Yes—collapse mechanism constraints |
-| Specifies falsification conditions | Yes—12 explicit |
-| Resolves all open questions | No—interface criterion, QFT, gravity remain open |
+| Explains quantum structure | Yes (uniquely among interpretations) |
+| Derives key results | Yes (Born rule, reversibility, complex numbers) |
+| Has confirmed predictions | Yes (complex QM, 2021) |
+| Is currently testable | Yes (collapse mechanism constraints) |
+| Specifies falsification conditions | Yes (12 explicit) |
+| Resolves all open questions | No (interface criterion, QFT, gravity remain open) |
 
 This is the status of a successful physical framework with acknowledged limitations, not the status of a complete final theory.
 
@@ -1191,7 +1191,7 @@ Other interpretations postulate quantum structure and interpret it. LRT explains
 
 LRT offers a wager:
 
-> The deepest structure of physical reality is not contingent but constrained—constrained by the conditions under which anything can be distinguished from anything else.
+> The deepest structure of physical reality is not contingent but constrained: constrained by the conditions under which anything can be distinguished from anything else.
 
 If this is correct:
 - The "unreasonable effectiveness of mathematics" dissolves (mathematics and physics share logical roots)
@@ -1256,11 +1256,11 @@ The LRT framework raises precise mathematical and physical questions. These are 
 
 ### 7.8 Conclusion
 
-Every physical measurement ever conducted has yielded exactly one outcome—self-identical, non-contradictory, determinate. This holds despite a century of quantum mechanics where violations were actively sought.
+Every physical measurement ever conducted has yielded exactly one outcome: self-identical, non-contradictory, determinate. This holds despite a century of quantum mechanics where violations were actively sought.
 
 Logic Realism Theory explains this pattern. The Three Fundamental Laws of Logic are not cognitive conventions but ontological constraints constitutive of physical distinguishability. Quantum mechanics is the unique stable structure at the interface between non-Boolean possibility and Boolean actuality.
 
-The framework derives rather than postulates: complex Hilbert space from local tomography, the Born rule from Gleason's theorem, unitary dynamics from information preservation. One structural prediction—that quantum mechanics requires complex amplitudes—has been experimentally confirmed.
+The framework derives rather than postulates: complex Hilbert space from local tomography, the Born rule from Gleason's theorem, unitary dynamics from information preservation. One structural prediction (that quantum mechanics requires complex amplitudes) has been experimentally confirmed.
 
 Twelve explicit conditions would falsify the theory. Experiments currently underway test its predictions about collapse mechanisms. This is what physical theories do: explain, predict, and risk refutation.
 
@@ -1268,7 +1268,7 @@ The competing interpretations either refuse ontological commitment, require infi
 
 It from bit. Bit from fit.
 
-Wheeler's insight was that information is fundamental—physical reality emerges from yes/no questions. LRT adds: the bit itself—the fundamental unit of distinction—is not primitive. It emerges from the fit between logical structure (3FLL) and physical actuality. Quantum mechanics is the mathematics of that fit.
+Wheeler's insight was that information is fundamental: physical reality emerges from yes/no questions. LRT adds: the bit itself, the fundamental unit of distinction, is not primitive. It emerges from the fit between logical structure (3FLL) and physical actuality. Quantum mechanics is the mathematics of that fit.
 
 ---
 
