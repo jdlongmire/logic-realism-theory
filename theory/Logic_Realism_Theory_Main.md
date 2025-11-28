@@ -482,36 +482,7 @@ LRT's framework is consistent with QFT but does not yet provide independent deri
 
 ### 3.7 The Complete Derivation Chain
 
-```mermaid
-flowchart TD
-    %% Axioms (blue)
-    A["3FLL - Identity, Non-Contradiction,<br/>Excluded Middle"]:::axiom
-    B["Distinguishability - Pairwise Structure"]:::axiom
-
-    %% Derived (gold/amber)
-    C["Reversibility<br/>DERIVED"]:::derived
-    D["Complex Hilbert Space<br/>via Masanes-Müller<br/>DERIVED"]:::derived
-    E["Born Rule &#124;ψ&#124;²<br/>via Gleason<br/>DERIVED"]:::derived
-    F["Schrödinger Equation<br/>via Stone<br/>DERIVED"]:::derived
-
-    %% Main vertical chain
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
-
-    %% Dashed side inputs
-    G["CBP + Parsimony"] -.-> C
-    H["Continuity +<br/>Local Tomography"] -.-> D
-    I["Non-Contextual<br/>Measure"] -.-> E
-
-    %% Styling
-    classDef axiom fill:#d0e8ff,stroke:#333,stroke-width:2px,color:#000
-    classDef derived fill:#fff2cc,stroke:#333,stroke-width:2px,color:#000
-    linkStyle 0,1,2,3,4,5 stroke:#333,stroke-width:3px
-    linkStyle 6,7,8 stroke-dasharray: 8 5,stroke:#666
-```
+![Figure 2: LRT Derivation Chain](figures/LRT_Fig2b.png)
 
 **Figure 2.** The LRT derivation chain. Blue nodes indicate axioms (foundational assumptions). Gold/amber nodes indicate results derived within the framework, citing the external theorems employed. Dashed lines show additional inputs required at each derivation step. The four derived results—reversibility, complex Hilbert space, the Born rule, and unitary dynamics—follow from the foundational axioms plus physical constraints, without independent postulation.
 
