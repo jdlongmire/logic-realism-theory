@@ -485,14 +485,14 @@ LRT's framework is consistent with QFT but does not yet provide independent deri
 ```mermaid
 flowchart TD
     %% Axioms (blue)
-    A["3FLL - Identity, Non-Contradiction,\nExcluded Middle"]:::axiom
+    A["3FLL - Identity, Non-Contradiction,<br/>Excluded Middle"]:::axiom
     B["Distinguishability - Pairwise Structure"]:::axiom
 
     %% Derived (gold/amber)
-    C["Reversibility\nDERIVED"]:::derived
-    D["Complex Hilbert Space\nvia Masanes-Müller\nDERIVED"]:::derived
-    E["Born Rule |ψ|²\nvia Gleason\nDERIVED"]:::derived
-    F["Schrödinger Equation\nvia Stone\nDERIVED"]:::derived
+    C["Reversibility<br/>DERIVED"]:::derived
+    D["Complex Hilbert Space<br/>via Masanes-Müller<br/>DERIVED"]:::derived
+    E["Born Rule &#124;ψ&#124;²<br/>via Gleason<br/>DERIVED"]:::derived
+    F["Schrödinger Equation<br/>via Stone<br/>DERIVED"]:::derived
 
     %% Main vertical chain
     A --> B
@@ -503,8 +503,8 @@ flowchart TD
 
     %% Dashed side inputs
     G["CBP + Parsimony"] -.-> C
-    H["Continuity +\nLocal Tomography"] -.-> D
-    I["Non-Contextual\nMeasure"] -.-> E
+    H["Continuity +<br/>Local Tomography"] -.-> D
+    I["Non-Contextual<br/>Measure"] -.-> E
 
     %% Styling
     classDef axiom fill:#d0e8ff,stroke:#333,stroke-width:2px,color:#000
