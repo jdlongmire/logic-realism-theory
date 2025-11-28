@@ -157,6 +157,8 @@ IIS is not:
 
 IIS is the structural space of what *can be distinguished*. Its existence is not the existence of a thing among things, but the existence of a structural condition—the condition under which distinct states are possible at all.
 
+**Functional characterization:** IIS is characterized functionally rather than by stipulating a mathematical structure. IIS is whatever structure 3FLL constitute. Its properties are *derived*, not assumed. Premature mathematization would beg questions about which formalism applies. What we can say: IIS contains at minimum all configurations distinguishable by 3FLL, including superpositions and entangled states (non-Boolean structure). The derivation chain (Section 3) shows that this structure, at the interface with Boolean actuality, has complex Hilbert space form.
+
 Crucially, IIS is richer than Boolean structure. It contains:
 
 | State Type | Description |
@@ -227,7 +229,9 @@ If 3FLL constitute distinguishability, and IIS is the space constituted by 3FLL,
 
 **Global Parsimony:** Actuality contains exactly the propositions whose truth values are grounded in (3FLL + initial conditions) and their consequences. No surplus structure exists.
 
-This is not a methodological preference for simplicity. It is a structural consequence of what "constitution" means. If 3FLL constitute the domain, the domain contains what they generate. Propositions requiring additional grounding sources have no truthmakers within the framework.
+**Derivation:** If 3FLL constitute distinguishability, and all physical structure presupposes distinguishability, then all physical structure must trace to 3FLL. Consider what surplus structure would require: structure not traceable to 3FLL would need distinguishability from outside the only source of distinguishability. But there is no such source available—distinguishability just is what 3FLL establish. Surplus structure is therefore incoherent. Global Parsimony is not an aesthetic preference or methodological heuristic; it is the closure condition on the constitutive claim itself.
+
+This is a structural consequence of what "constitution" means. If 3FLL constitute the domain, the domain contains what they generate. Propositions requiring additional grounding sources have no truthmakers within the framework.
 
 Global Parsimony has teeth:
 
@@ -310,6 +314,8 @@ LRT rests on five axioms, organized by tier:
 | A5: Non-Contextual Measure | Interface induces probability measure independent of measurement context |
 
 **Grounding A5:** Why should the interface measure be non-contextual? Consider what contextuality of the interface measure would mean: the same IIS state would yield different probability distributions depending on which other measurements could have been performed. But this would violate Identity at the interface. A state's probability of actualization would not be a determinate feature of that state—it would depend on extrinsic factors. The interface would fail to map states to definite probability assignments. Non-contextuality is thus required by Identity: the interface must assign each state a determinate actualization probability that is a feature of that state itself.
+
+**Clarification:** Contextuality of *values* (Kochen-Specker) is compatible with non-contextuality of *measure*. The distinction is essential. Values are generated at actualization—they need not pre-exist and need not be context-independent. But probabilities characterize the IIS state's disposition toward actualization. If probabilities were contextual, the IIS state would lack determinate actualization propensities—violating Identity for the state itself. The Kochen-Specker contextuality that quantum mechanics exhibits concerns outcome values, not the probability measure over those outcomes.
 
 **Tier 1 — Derived:**
 
@@ -404,6 +410,8 @@ $$P(\phi|\psi) = |\langle\phi|\psi\rangle|^2$$
 4. *Non-contextuality:* From Axiom A5—probability assigned to an outcome depends only on state and outcome, not on other possible outcomes in the measurement context.
 
 All premises are satisfied. Gleason's theorem applies. The Born rule follows. ∎
+
+**The bridge from distinguishability to probability:** The probability measure is not independently postulated. Given Hilbert space structure (derived via Masanes-Müller from distinguishability geometry) and non-contextual measure (A5, grounded in Identity), Gleason's theorem *forces* |ψ|² as the unique probability measure. The mapping from distinguishability to probability is mathematical necessity given the derived structure, not stipulation.
 
 **Why the squared magnitude?**
 
@@ -509,7 +517,9 @@ Standard quantum mechanics is empirically successful but explanatorily silent. I
 
 LRT fills these gaps. The framework developed in Sections 2-3 provides unified explanation for phenomena that other approaches treat as independent postulates or unexplained theorems.
 
-### 4.1 Seventeen Phenomena Addressed
+### 4.1 What This Framework Addresses
+
+The following phenomena receive treatment from LRT resources, ranging from rigorous mathematical derivation to reconceptualization. The claim is *unified treatment from common principles*, not uniform derivation. All seventeen trace to the IIS/actuality interface structure, unlike competing interpretations that treat them as independent postulates or unexplained facts.
 
 | Phenomenon | Status | LRT Account |
 |------------|--------|-------------|
@@ -550,6 +560,8 @@ LRT dissolves rather than solves this problem.
 
 This is category transition, not collapse dynamics. The question "when does collapse occur?" presupposes that collapse is a dynamical process within a single domain. On LRT, measurement is a transition between domains—from IIS structure to Boolean actuality. Asking when this occurs is legitimate, but the answer is a physical criterion (Section 7.1), not a dynamical mechanism. The measurement problem is transformed, not evaded.
 
+**The key distinction:** The measurement problem is dissolved as a *conceptual puzzle* (no special collapse dynamics needed, no Heisenberg cut, no observer-dependence) while remaining open as an *empirical question* (which physical criterion marks the interface). These are different issues. The conceptual puzzle—how can deterministic evolution produce single random outcomes?—is resolved by recognizing measurement as category transition rather than dynamical process. The empirical question—what physical conditions trigger interface transition?—is legitimate and tractable, not a residual form of the original puzzle.
+
 **What LRT explains:**
 - Why definite outcomes occur (3FLL enforcement at interface)
 - Why outcomes are always Boolean (actuality is Boolean by definition)
@@ -586,6 +598,8 @@ Quantum correlations violate Bell inequalities but only up to the Tsirelson boun
 LRT explanation: The Tsirelson bound marks the maximum correlation compatible with stable interface operation. PR boxes and other super-quantum correlations, while satisfying no-signaling at the single-use level, permit signaling when composed or permit computational trivializations that destabilize physical structure.
 
 The bound is not arbitrary. It is the stability limit of the IIS-actuality interface.
+
+**Limitation acknowledged:** LRT identifies the Tsirelson bound as the interface stability limit and provides the *framework* within which this question becomes tractable. The full derivation of why 2√2 *specifically* marks this limit—rather than some other value—would require detailed information-theoretic analysis of interface stability conditions. This derivation is ongoing work. What LRT establishes is *where and why* such a bound must exist; the precise value remains to be derived from first principles.
 
 ### 4.5 Contextuality
 
@@ -780,7 +794,7 @@ MWI: We observe one outcome because we're in one branch, but all branches are eq
 
 LRT: We observe one outcome because actuality is Boolean. Non-Contradiction and Excluded Middle enforce single, determinate outcomes. No additional explanation needed—single actuality follows from 3FLL.
 
-MWI multiplies entities beyond necessity to avoid a conclusion that observation already supports. LRT takes observation seriously.
+The asymmetry is fundamental: MWI introduces branch realism to avoid accepting what every measurement displays (single outcomes), while LRT makes explicit what every theory already presupposes (3FLL). MWI and LRT thus differ not just in ontology but in methodology—one multiplies entities, the other recognizes presuppositions.
 
 ### 5.9 Summary Comparison
 
@@ -882,13 +896,23 @@ Twelve conditions would refute LRT:
 | 11 | Information exceeds Bekenstein bound | Distinguishability finitude |
 | 12 | Collapse with underivable free parameters | Global Parsimony |
 
+**Testability categorization:**
+
+| Category | Falsifiers | Status |
+|----------|------------|--------|
+| **Already tested and passed** | 1-4, 7-8 | Born rule (10⁻⁵), Tsirelson bound, complex QM (2021), Bell/KS violations |
+| **Currently testable** | 11-12 | Bekenstein bound tests, collapse mechanism experiments (active research) |
+| **Foundational/in-principle** | 5-6, 9-10 | Would challenge empirical science itself; no observations exist or expected |
+
 **Assessment of falsifier categories:**
 
 **Already tested (1-4, 7-8):** Falsifiers 1-4 and 7-8 have been tested extensively. Born rule confirmed to 10⁻⁵. Tsirelson bound holds. Real QM ruled out (2021). Bell and Kochen-Specker violations confirmed. LRT passes.
 
+**Currently testable (11-12):** Bekenstein bound tests and collapse mechanism experiments are active research areas. These represent genuine empirical risk for LRT.
+
 **Foundational (5-6, 9-10):** These falsifiers concern logical structure presupposed by all empirical science. Observing a physical dialetheia or non-Boolean outcome would not merely refute LRT—it would challenge the foundations of scientific inquiry itself. These are "in principle" falsifiers that establish LRT's logical commitments, not practical test conditions. No such observations exist or are expected.
 
-**Currently testable (11-12):** Bekenstein bound tests and collapse mechanism experiments are active research areas.
+**Note on shared falsifiers:** Several falsifiers (Born rule, Tsirelson bound, no-signaling) are shared with standard quantum mechanics. This is appropriate: LRT *predicts* standard QM, so falsifiers of standard QM are falsifiers of LRT. What distinguishes LRT is that it *explains* what it predicts rather than postulating it. The distinctive LRT predictions concern structural requirements (complex numbers, derivable collapse parameters) and the impossibility of certain extensions.
 
 ### 6.4 What LRT Does Not Predict
 
