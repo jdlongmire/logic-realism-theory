@@ -48,6 +48,8 @@ The quantum case is decisive precisely because it represents our best opportunit
 
 This pattern demands explanation.
 
+The demand is not merely philosophical. Quantum mechanics is our most successful physical theory, yet we cannot say why it has its specific structure—why complex Hilbert space, why the Born rule, why unitary dynamics. This explanatory vacuum has consequences. Without agreed-upon criteria for what counts as explanation, quantum foundations tolerates speculation other fields would not: infinite unobservable branches, consciousness-caused collapse, retrocausality. "Interpretation" becomes license for speculation unconstrained by structural requirements. Meanwhile, practical developments—quantum computing, quantum gravity—require foundational clarity we do not have. The pattern demands explanation, and the explanation must be disciplined.
+
 ### 1.2 The Thesis
 
 This paper defends a physical thesis:
