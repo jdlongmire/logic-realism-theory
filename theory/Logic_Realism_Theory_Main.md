@@ -286,7 +286,7 @@ Actuality equals logical filtering (3FLL enforcement + parsimony) applied to the
 
 ---
 
-![Figure 1: LRT Ontological Architecture](/mnt/user-data/outputs/LRT_Figure1_Architecture.jpeg)
+![Figure 1: LRT Ontological Architecture](figures/LRT_Fig-1.jpeg)
 
 **Figure 1.** The ontological architecture of Logic Realism Theory. The Infinite Information Space (IIS), constituted by the Three Fundamental Logical Laws, contains non-Boolean structure including superpositions and indeterminate states. Quantum mechanics operates as the interface, characterized by complex Hilbert space, the Born rule, and unitary dynamics. Boolean Actuality—where 3FLL are fully enforced—contains only definite, self-identical, non-contradictory outcomes. The three laws (Identity, Non-Contradiction, Excluded Middle) run through the entire structure, constituting IIS and constraining actuality.
 
@@ -525,7 +525,7 @@ What LRT provides is the unified grounding. The axioms of reconstruction theorem
 
 ---
 
-![Figure 2: LRT Derivation Chain](/mnt/user-data/outputs/LRT_Figure2_Derivation.jpeg)
+![Figure 2: LRT Derivation Chain](figures/LRT_Fig-2.jpeg)
 
 **Figure 2.** The LRT derivation chain. Blue nodes indicate axioms (foundational assumptions). Gold nodes indicate results derived within the framework, citing the external theorems employed. Dashed lines show additional inputs required at each derivation step. The four derived results—reversibility, complex Hilbert space, the Born rule, and unitary dynamics—follow from the foundational axioms plus physical constraints, without independent postulation.
 
