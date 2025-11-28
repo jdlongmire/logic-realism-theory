@@ -292,10 +292,6 @@ Actuality equals logical filtering (3FLL enforcement + parsimony) applied to the
 
 ---
 
-*[Section 3: The Derivation Chain — to follow]*
-
----
-
 ## 3. The Derivation Chain
 
 This section shows that quantum mechanical structure follows from the framework established in Section 2. The derivations rely on established mathematical results—Masanes-Müller, Gleason, Stone—applied to the LRT axiom structure. What LRT contributes is not new mathematics but the grounding that explains why these axioms hold.
@@ -507,10 +503,6 @@ What LRT provides is the unified grounding. The axioms of reconstruction theorem
 
 ---
 
-*[Section 4: What This Explains — to follow]*
-
----
-
 ## 4. What This Explains
 
 Standard quantum mechanics is empirically successful but explanatorily silent. It tells us to use Hilbert space but not why. It gives us the Born rule but not why |ψ|². It presents contextuality, entanglement, and the Tsirelson bound as mathematical facts without physical grounding.
@@ -634,10 +626,6 @@ Every phenomenon in the table traces to this structure:
 - **Tsirelson bound** = interface stability limit
 
 This unification is the primary evidence for LRT. Competing interpretations explain some phenomena while leaving others as brute facts. LRT explains all seventeen from common resources.
-
----
-
-*[Section 5: Comparison with Alternatives — to follow]*
 
 ---
 
@@ -817,10 +805,6 @@ LRT is the only interpretation that:
 
 ---
 
-*[Section 6: Predictions and Falsifiers — to follow]*
-
----
-
 ## 6. Predictions and Falsifiers
 
 A physical theory must make testable claims and specify conditions for its own refutation. This section catalogs what LRT predicts, what has been confirmed, what is currently testable, and what would falsify the framework.
@@ -950,10 +934,6 @@ These lie outside LRT's scope. The framework addresses *why quantum mechanics ha
 Only LRT and GRW make testable predictions and specify falsification conditions. This is what distinguishes physical theories from interpretive frameworks.
 
 LRT's advantage over GRW: LRT constrains collapse mechanisms rather than postulating specific parameters. If GRW's parameters are confirmed as free (not derivable), GRW is confirmed but LRT requires revision. If collapse parameters are derivable from geometry or information theory, both are supported but LRT's parsimony constraint is vindicated.
-
----
-
-*[Section 7: Open Questions and Conclusion — to follow]*
 
 ---
 
