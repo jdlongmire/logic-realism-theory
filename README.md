@@ -8,42 +8,38 @@
 
 ---
 
-## Master Paper (In Progress)
+## The Challenge
 
-**[Logic Realism Theory - Master Paper](theory/Logic_Realism_Theory_Master.md)**
+Every physical measurement ever conducted has yielded exactly one outcome—self-identical, non-contradictory, determinate. No detector has simultaneously fired and not-fired. No particle has been measured in contradictory states. No experimental record has ever displayed P and ¬P.
 
-Consolidated 42-section paper integrating all five original papers into a unified work.
+**Identify one physical measurement, at any scale, in any domain, at any point in history, that violated the Law of Identity, Non-Contradiction, or Excluded Middle.**
 
-**Progress: 31/42 sections (~74%)**
+No such measurement exists.
 
-| Part | Sections | Status |
-|------|----------|--------|
-| Part I | 1-7 | ✅ Complete (Philosophical Foundations) |
-| Part II | 8-16 | ✅ Complete (Physical Interpretation) |
-| Part III | 17-23 | ✅ Complete (Mathematical Structure) |
-| Part IV | 24-31 | ✅ Complete (Empirical Signatures) |
-| Part V | 32-42 | Pending (Implications & Extensions) |
+This repository develops a framework to explain why.
 
 ---
 
-## Source Papers
+## Master Paper
 
-Logic Realism Theory was originally developed as a 5-paper series:
+**[Logic Realism Theory: A Unified Framework](theory/Logic_Realism_Theory_Master.md)**
 
-| # | Paper | Focus |
-|---|-------|-------|
-| 1 | **[Logic Realism Theory](theory/archive/LRT_Paper1_Logic_Realism_Theory.md)** | Philosophical foundations: 3FLL as ontological constraints |
-| 2 | **[It from Bit, Bit from Fit](theory/archive/LRT_Paper2_It_From_Bit_Bit_From_Fit.md)** | Quantum mechanics as the unique stable interface |
-| 3 | **[Mathematical Structure](theory/archive/LRT_Paper3_Mathematical_Structure.md)** | Axiomatic formalization: 3FLL → Hilbert space → Born rule |
-| 4 | **[Empirical Signatures](theory/archive/LRT_Paper4_Empirical_Signatures.md)** | Retrodictions, predictions, and falsifiability |
-| 5 | **[Consilience](theory/LRT_Paper5_Consilience.md)** | Cross-domain evidence for logical constitution of reality |
+Publication-ready paper: 32 sections, ~4,100 lines, 4 Parts + Conclusion.
 
----
+| Part | Sections | Content | Status |
+|------|----------|---------|--------|
+| **I** | 1-7 | Philosophical Foundations | Complete |
+| **II** | 8-16 | Physical Interpretation | Complete |
+| **III** | 17-23 | Mathematical Structure | Complete |
+| **IV** | 24-31 | Empirical Signatures | Complete |
+| **Conclusion** | 32 | Status & The Wager | Complete |
 
-## Published Pre-Prints
-
-**[Linking Logic Realism Theory (LRT) and the Meta-Theory of Everything (MToE): A Formal Equivalence](https://doi.org/10.5281/zenodo.17533459)**
-Zenodo, November 2025 | DOI: 10.5281/zenodo.17533459
+**Key features:**
+- Opens with empirical challenge (Section 1.1)
+- Two-part structure: metaphysical thesis + physics overlay (Section 1.5)
+- 17 retrodictions, 12 explicit falsifiers
+- 1 confirmed structural prediction (complex QM, Renou et al. 2021)
+- Closes with challenge renewed (Section 32.6)
 
 ---
 
@@ -51,26 +47,17 @@ Zenodo, November 2025 | DOI: 10.5281/zenodo.17533459
 
 The Three Fundamental Logical Laws (3FLL) — Identity, Non-Contradiction, Excluded Middle — are not merely rules of reasoning but **ontological constraints constitutive of physical reality**.
 
-**Formal Expression**: A = L(I)
+**Formal Expression**: A = P(C(I))
 - **I** = Infinite Information Space (all distinguishable states)
-- **L** = Logical filtering (3FLL + parsimony)
+- **C** = Constitution (3FLL establishing distinguishability)
+- **P** = Parsimony (selection among admissible states)
 - **A** = Actuality (physical reality)
 
 **Key Claims**:
-- Quantum mechanics is the unique stable interface between IIS and Boolean actuality
+- Quantum mechanics fits the interface requirements between IIS and Boolean actuality with striking completeness
 - The Born rule follows from Gleason's theorem given Hilbert space structure
 - Hilbert space follows from reconstruction theorems given physical constraints
-- This is structural fine-tuning, not derivation from logic alone
-
----
-
-## Development
-
-For development history and ongoing work, see the **[Session Log](Session_Log/)**.
-
-**Additional Resources**:
-- **[AI-Enabled Research Methodology](Logic_Realism_Theory_AI_Experiment.md)** - How this research uses AI collaboration
-- **[Comparative Scorecard](LRT_Current_Comparison_Scorecard.md)** - LRT vs other foundational approaches
+- This is structural selection, not derivation from logic alone
 
 ---
 
@@ -78,11 +65,12 @@ For development history and ongoing work, see the **[Session Log](Session_Log/)*
 
 ```
 theory/
-├── Logic_Realism_Theory_Master.md            # Master Paper (32 sections)
-├── LRT_Paper5_Consilience.md                 # Future Appendix A
-├── issues/                                    # Open issues and roadmaps
-├── derivations/                               # First-principles derivation chains
-└── archive/                                   # Source papers and historical versions
+├── Logic_Realism_Theory_Master.md        # Master Paper (32 sections)
+├── figures/                               # Conceptual diagrams
+├── issues/                                # Open issues and tracking
+├── derivations/                           # First-principles derivation chains
+├── frameworks/                            # Supporting frameworks
+└── archive/                               # Source papers and historical versions
 
 lean/                    # Formal Lean 4 proofs (ISSUE 003)
 notebooks/               # Computational validation
@@ -96,17 +84,46 @@ Session_Log/             # Development history
 
 | Issue | Title | Status |
 |-------|-------|--------|
-| 001 | Axiom 3 Grounding | **CLOSED** |
-| 002 | Lagrangian/Hamiltonian | **CLOSED** |
-| 003 | [Lean 4 Formalization](theory/issues/ISSUE_003_Lean4_Formalization.md) | **PLANNED** (post-first-draft) |
+| 001 | Axiom 3 Grounding | CLOSED |
+| 002 | Lagrangian/Hamiltonian | CLOSED |
+| 003 | Lean 4 Formalization | PLANNED |
+| 004 | Editorial Remediation | CLOSED |
+| 005 | [Variational Framework](theory/issues/ISSUE_005_Variational_Framework.md) | OPEN |
 
 See `theory/issues/` for details.
 
 ---
 
-## Future Decisions
+## Source Papers (Archived)
 
-- **T2/T1 Prediction Status**: Review whether the T2/T1 ≈ 0.81 prediction (from prior variational framework) should be included in the current 5-paper structure, modified, or retired given the shift from "derivation" to "structural fine-tuning" framing.
+The master paper consolidates five original papers, now in `theory/archive/`:
+
+| # | Paper | Focus |
+|---|-------|-------|
+| 1 | Logic Realism Theory | Philosophical foundations |
+| 2 | It from Bit, Bit from Fit | Quantum interface |
+| 3 | Mathematical Structure | Axiomatic formalization |
+| 4 | Empirical Signatures | Predictions and falsifiers |
+| 5 | Consilience | Cross-domain evidence |
+
+---
+
+## Published Pre-Prints
+
+**[Linking Logic Realism Theory (LRT) and the Meta-Theory of Everything (MToE): A Formal Equivalence](https://doi.org/10.5281/zenodo.17533459)**
+Zenodo, November 2025 | DOI: 10.5281/zenodo.17533459
+
+---
+
+## Development
+
+For development history, see **[Session Log](Session_Log/)**.
+
+**Latest**: Session 23.0 (2025-11-27) - Empirical challenge reframing
+
+**Additional Resources**:
+- **[AI-Enabled Research Methodology](Logic_Realism_Theory_AI_Experiment.md)**
+- **[AI Collaboration Profile](AI-Collaboration-Profile.json)**
 
 ---
 
@@ -115,7 +132,7 @@ See `theory/issues/` for details.
 ```bibtex
 @misc{longmire2025lrt,
   author = {Longmire, James D.},
-  title = {Logic Realism Theory},
+  title = {Logic Realism Theory: A Unified Framework},
   year = {2025},
   url = {https://github.com/jdlongmire/logic-realism-theory}
 }
