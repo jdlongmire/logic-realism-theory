@@ -482,7 +482,9 @@ LRT's framework is consistent with QFT but does not yet provide independent deri
 
 ### 3.7 The Complete Derivation Chain
 
-The complete derivation chain is shown in Figure 2 (end of this section).
+![Figure 2: LRT Derivation Chain](figures/LRT_Fig-2.jpeg)
+
+**Figure 2.** The LRT derivation chain. Blue nodes indicate axioms (foundational assumptions). Gold nodes indicate results derived within the framework, citing the external theorems employed. Dashed lines show additional inputs required at each derivation step. The four derived results—reversibility, complex Hilbert space, the Born rule, and unitary dynamics—follow from the foundational axioms plus physical constraints, without independent postulation.
 
 ### 3.8 What Is Derived vs. Assumed
 
@@ -502,12 +504,6 @@ The complete derivation chain is shown in Figure 2 (end of this section).
 The derivations are genuine but conditional. They show: *given* the LRT axioms and physical constraints, quantum structure follows. The physical constraints (A3a, A3c) are not derived from logic alone—they represent empirical input about our universe.
 
 What LRT provides is the unified grounding. The axioms of reconstruction theorems receive explanation: they are features required for stable interface between IIS and Boolean actuality.
-
----
-
-![Figure 2: LRT Derivation Chain](figures/LRT_Fig-2.jpeg)
-
-**Figure 2.** The LRT derivation chain. Blue nodes indicate axioms (foundational assumptions). Gold nodes indicate results derived within the framework, citing the external theorems employed. Dashed lines show additional inputs required at each derivation step. The four derived results—reversibility, complex Hilbert space, the Born rule, and unitary dynamics—follow from the foundational axioms plus physical constraints, without independent postulation.
 
 ---
 
