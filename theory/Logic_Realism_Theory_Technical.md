@@ -116,7 +116,13 @@ $$K(x,y;z) := 1 - \frac{1}{2}[D(x,y) + D(x,z) - D(y,z)] \in [0,1]$$
 
 *Part (b):* For fixed reference, $K(x,x;\text{ref}) = 1 - \frac{1}{2}[0 + D(x,\text{ref}) - D(x,\text{ref})] = 1$.
 
-*Part (c):* Continuity of $D$ (from A3a) implies continuity of $K$. The richness of $\mathcal{I}$ (infinitely many distinguishable states) allows extension from the real kernel to a sesquilinear form via the standard polarization procedure.
+*Part (c):* Continuity of $D$ (from A3a) implies continuity of $K$. The richness of $\mathcal{I}$ (infinitely many distinguishable states) allows extension from the real kernel to a sesquilinear form over $\mathbb{C}$ via polarization:
+
+The real inner product $\langle x, y \rangle_{\mathbb{R}} = K(x,y;\text{ref})$ extends to a complex sesquilinear form by the standard construction (see Halmos 1974, §44): given a real inner product space $(V, \langle \cdot, \cdot \rangle_{\mathbb{R}})$, its complexification $V_{\mathbb{C}} = V \oplus iV$ carries the unique sesquilinear form
+
+$$\langle x_1 + iy_1, x_2 + iy_2 \rangle = \langle x_1, x_2 \rangle_{\mathbb{R}} + \langle y_1, y_2 \rangle_{\mathbb{R}} + i(\langle x_1, y_2 \rangle_{\mathbb{R}} - \langle y_1, x_2 \rangle_{\mathbb{R}})$$
+
+The extension is unique given continuity. The question is whether $\mathbb{C}$ is the *correct* field; this is answered by Part (d) and the field-elimination arguments below.
 
 *Part (d):* This is the Masanes-Müller field-elimination step applied to the explicitly constructed $K$, combined with Theorems 5.2-5.3 below. ∎
 
@@ -375,6 +381,8 @@ The underlying field must be $\mathbb{C}$.
 
 Therefore, $\mathbb{C}$ is uniquely selected. ∎
 
+**Remark (Quantitative Gap):** The argument in Step 4-5 is qualitative. A fully rigorous treatment would require showing that real QM predicts quantitatively wrong atomic spectra or selection rules. McKague (2009) and Aleksandrova et al. (2013) provide partial results on the distinguishability of real and complex QM, but a complete spectroscopic analysis remains an open problem. The Renou et al. (2021) experiment confirms the complex/real distinction via Bell-type correlations rather than spectroscopy. We flag this as an area where additional quantitative work would strengthen the argument.
+
 ### 5.5 Uniqueness Theorem
 
 **Theorem 5.7 (Uniqueness).** Complex quantum mechanics is the unique probabilistic theory satisfying the LRT axioms A1-A5.
@@ -534,6 +542,8 @@ LRT (via Global Parsimony) predicts that if objective collapse occurs, the param
 
 Adler, S. L. *Quaternionic Quantum Mechanics and Quantum Fields.* Oxford University Press, 1995.
 
+Aleksandrova, A., Borber, V., and Wootters, W. K. "Real-vector-space quantum theory with a universal quantum bit." *Physical Review A* 87, 2013: 052106.
+
 de la Torre, G., Hoban, M. J., Dhara, C., Sainz, A. B., and Acín, A. "Maximally nonlocal theories cannot be maximally random." *Physical Review Letters* 114, 2015: 160502. See also: "Deriving quantum theory from its local structure and reversibility." *New Journal of Physics* 16, 2014: 073040.
 
 Birkhoff, G. and von Neumann, J. "The logic of quantum mechanics." *Annals of Mathematics* 37(4), 1936: 823-843.
@@ -548,9 +558,13 @@ Earnshaw, S. "On the nature of the molecular forces which regulate the constitut
 
 Egg, M. "Scientific realism in particle physics: A causal approach." *Philosophy of Science* 83(5), 2016: 1050-1061.
 
+Halmos, P. R. *Finite-Dimensional Vector Spaces.* Springer, 1974. [§44: complexification of real inner product spaces.]
+
 Hardy, L. "Quantum theory from five reasonable axioms." arXiv:quant-ph/0101012, 2001. [Note: Establishes the axiomatic reconstruction program; our §3.3 extends Hardy's kernel construction by grounding the distinguishability metric in 3FLL.]
 
 Lee, C. M. and Selby, J. H. "Deriving Grover's lower bound from simple physical principles." *Quantum* 4, 2020: 231. [Key result: Proves that continuous reversibility + local tomography + purification uniqueness implies MM5 entanglement structure. Used in §6 to close the MM5 gap.]
+
+McKague, M. "Simulating quantum systems using real Hilbert spaces." *Quantum Information & Computation* 9, 2009: 1158-1181.
 
 Longmire, J. D. "It from Bit, Bit from Fit: Foundational Physics Logically Remastered." [Main LRT paper, this volume.]
 

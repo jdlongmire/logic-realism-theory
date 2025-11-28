@@ -147,4 +147,21 @@ Created `theory/Logic_Realism_Theory_Bridging.md` (~7,500 words) as the foundati
 
 **Target venues:** BJPS, Philosophy of Science, Synthese, Erkenntnis
 
+### 5. Review-Driven Revisions
+
+Implemented targeted revisions based on critical review:
+
+**Philosophy Paper:**
+| Change | Section | Detail |
+|--------|---------|--------|
+| Conceivability argument | §2.4 | "We can conceive 3FLL violations but never observe them" - explicit argument |
+| Abstract strengthened | Abstract | Added core evidence statement |
+
+**Technical Paper:**
+| Change | Section | Detail |
+|--------|---------|--------|
+| Polarization construction | Lemma 3.1c | Explicit Halmos construction for ℝ→ℂ extension |
+| Chemistry claim flagged | Theorem 5.6 | Added "Quantitative Gap" remark noting need for spectroscopic analysis |
+| New references | References | Halmos 1974, McKague 2009, Aleksandrova et al. 2013 |
+
 ---

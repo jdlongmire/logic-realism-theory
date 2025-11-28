@@ -10,7 +10,7 @@ ORCID: 0009-0009-1383-7698
 
 ## Abstract
 
-Logic Realism Theory (LRT) proposes that the Three Fundamental Laws of Logic (3FLL)—Identity, Non-Contradiction, and Excluded Middle—are not merely rules of reasoning but ontological constraints constitutive of physical distinguishability. This paper develops the philosophical foundations of this claim. We argue that: (1) 3FLL have a dual character, functioning both epistemically and ontologically; (2) quantum mechanics emerges as the unique "interface" structure mediating between non-Boolean possibility and Boolean actuality; (3) this framework resolves longstanding interpretive puzzles while maintaining scientific realism. The result is a form of structural realism grounded in logical necessity rather than contingent physical law.
+Logic Realism Theory (LRT) proposes that the Three Fundamental Laws of Logic (3FLL)—Identity, Non-Contradiction, and Excluded Middle—are not merely rules of reasoning but ontological constraints constitutive of physical distinguishability. The core evidence is an asymmetry: we can conceive of 3FLL violations, yet physical reality never produces them. This asymmetry indicates that 3FLL constrain reality, not merely cognition. This paper develops the philosophical foundations of this claim. We argue that: (1) 3FLL have a dual character, functioning both epistemically and ontologically; (2) quantum mechanics emerges as the unique "interface" structure mediating between non-Boolean possibility and Boolean actuality; (3) this framework resolves longstanding interpretive puzzles while maintaining scientific realism. The result is a form of structural realism grounded in logical necessity rather than contingent physical law.
 
 ---
 
@@ -103,13 +103,25 @@ This places LRT in dialogue with Kant's transcendental idealism, but with a cruc
 
 A natural objection: "Logical laws are just how we think. They say nothing about external reality."
 
-**Reply:** This confuses the *source* of our knowledge of logical laws with their *scope of application*. We discover logical laws through reflection, but their validity extends beyond minds. Consider:
+**Reply:** The decisive evidence against psychologism is the asymmetry between conceivability and observation:
 
-1. A computer program that violates Non-Contradiction crashes (physical consequence)
-2. A measurement apparatus that cannot distinguish states produces no information (physical constraint)
-3. No physical process has ever produced an outcome that violated Identity (empirical regularity)
+**We can conceive of 3FLL violations. Physical reality never produces them.**
 
-The universality and exceptionlessness of 3FLL across all physical domains suggests they are not merely cognitive but constitutive of the physical realm.
+This asymmetry is crucial. If 3FLL were merely cognitive constraints—limits on what we can think—then we could not conceive of their violation. But we can:
+
+- We can imagine a particle that is both spin-up and spin-down *at the outcome level* (not merely in superposition)
+- We can conceive of a detector that fires and does not fire simultaneously
+- We can entertain the proposition "this measurement yielded result A and not-A"
+
+These scenarios are conceivable. We can form coherent mental representations of them, discuss them, and reason about their implications. Nothing in cognition prevents us from entertaining 3FLL violations.
+
+Yet physical reality never produces them. Despite a century of quantum mechanics—a theory that routinely describes superposition, entanglement, and non-classical correlations—no measurement has ever yielded a contradictory outcome. No detector has ever recorded P and ¬P. No experimental notebook contains a genuine 3FLL violation at the outcome level.
+
+**The constraint is on reality, not cognition.**
+
+If psychologism were true, the conceivability of 3FLL violations would be impossible. Since such violations are conceivable but never observed, the constraint must be external to mind. The 3FLL govern what physical reality can produce, not merely what minds can represent.
+
+This argument is strengthened by noting that physicists have *actively sought* 3FLL violations. Experiments testing Bell inequalities, probing quantum contextuality, and searching for deviations from standard quantum mechanics represent sustained attempts to find cracks in the logical structure of outcomes. None have succeeded. The 3FLL hold not for lack of trying, but because reality enforces them.
 
 ### 2.5 The Relation to Wittgenstein
 
