@@ -157,7 +157,20 @@ IIS is not:
 
 IIS is the structural space of what *can be distinguished*. Its existence is not the existence of a thing among things, but the existence of a structural condition—the condition under which distinct states are possible at all.
 
-**Functional characterization:** IIS is characterized functionally rather than by stipulating a mathematical structure. IIS is whatever structure 3FLL constitute. Its properties are *derived*, not assumed. Premature mathematization would beg questions about which formalism applies. What we can say: IIS contains at minimum all configurations distinguishable by 3FLL, including superpositions and entangled states (non-Boolean structure). The derivation chain (Section 3) shows that this structure, at the interface with Boolean actuality, has complex Hilbert space form.
+**Co-primitive with 3FLL:** IIS and 3FLL are mutually constitutive. Without 3FLL, IIS would be undifferentiated noise—no state distinguishable from any other. Without IIS, 3FLL would have nothing to structure. This parallels Borges' Library of Babel: IIS contains every possible informational configuration; 3FLL make the library navigable by constituting what makes one configuration distinguishable from another.
+
+**Functional characterization:** IIS is characterized functionally rather than by stipulating a mathematical structure at the outset. Its properties are *derived*, not assumed. Premature mathematization would beg questions about which formalism applies.
+
+What we can say prior to derivation:
+- IIS is not Boolean (contains determinate states, indeterminate states, superpositions, classical mixtures)
+- IIS is structured by distinguishability—the "metric" is how distinguishable states are from each other
+- IIS contains all consistent Generalized Probabilistic Theories (GPTs) as substructures (Hardy 2001, Chiribella et al. 2011)
+
+**Mathematical characterization:** IIS can be formally defined as the maximal collection of states closed under distinguishability:
+
+$$\mathcal{I} = \{s : D \text{ is defined on } s \times \mathcal{I}\}$$
+
+The derivation chain (Section 3) shows that IIS, equipped with the inner product induced by distinguishability, has complex Hilbert space form at the interface with Boolean actuality. This result invokes the Masanes-Müller reconstruction theorem. The mathematical structure *emerges* from the framework rather than being imposed on it.
 
 Crucially, IIS is richer than Boolean structure. It contains:
 
@@ -1104,6 +1117,8 @@ Wheeler's insight was that information is fundamental—physical reality emerges
 Aspect, A., Grangier, P., and Roger, G. "Experimental tests of Bell's inequalities using time-varying analyzers." *Physical Review Letters* 49(25), 1982: 1804-1807.
 
 Bell, J. S. "On the Einstein Podolsky Rosen paradox." *Physics* 1(3), 1964: 195-200.
+
+Borges, J. L. "The Library of Babel." In *Labyrinths*. New York: New Directions, 1962.
 
 Birkhoff, G. and von Neumann, J. "The logic of quantum mechanics." *Annals of Mathematics* 37(4), 1936: 823-843.
 

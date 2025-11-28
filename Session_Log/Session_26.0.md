@@ -96,6 +96,13 @@ Implemented 10 revisions to `theory/Logic_Realism_Theory_Main.md` in response to
    - Softened MWI comparison rhetoric while preserving substantive distinction
    - Changed from "multiplies entities... LRT takes observation seriously" to methodological asymmetry framing
 
+10. **Section 2.2 - Expanded IIS characterization**
+    - Added co-primitive framing: IIS and 3FLL mutually constitutive
+    - Added Borges' Library of Babel analogy
+    - Added GPT containment claim (Hardy 2001, Chiribella et al. 2011)
+    - Added formal definition: $\mathcal{I} = \{s : D \text{ is defined on } s \times \mathcal{I}\}$
+    - Added Borges reference to References section
+
 ---
 
 ## Session Status
