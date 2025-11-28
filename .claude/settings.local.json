@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git restore:*)"
+      "Bash(git restore:*)",
+      "Bash(LRT axioms\" - no conditional hedge required\n\n5. New references: Lee & Selby (2020), de la Torre et al. (2014)\n\nThe derivation chain is now complete:\n3FLL → D → ⟨·|·⟩ → MM1-MM5 → ℂ-QM\n\nPaper is technically watertight for PRX Quantum / Studies in HPS submission.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
     ],
     "deny": [],
     "ask": []
