@@ -81,6 +81,7 @@
 | 003 | Lean 4 Formalization | PLANNED |
 | 004 | Editorial Remediation | CLOSED |
 | 005 | Variational Framework | OPEN |
+| 006 | Bit as Fundamental | OPEN |
 
 ---
 

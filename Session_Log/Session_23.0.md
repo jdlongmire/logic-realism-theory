@@ -83,9 +83,10 @@ Concludes with:
 
 ## Next Session Recommendations
 
-1. Review conceptual figures (theory/figures/) for potential inclusion
-2. C1-C3 clarifications from reviewer (IIS/3FLL, CBP status, modal status)
-3. ISSUE 005 path forward (variational framework)
+1. **ISSUE 006: Bit as Fundamental** - Reevaluate and integrate "bit from fit" concept from archive
+2. Review conceptual figures (theory/figures/) for potential inclusion
+3. C1-C3 clarifications from reviewer (IIS/3FLL, CBP status, modal status)
+4. ISSUE 005 path forward (variational framework)
 
 ---
 

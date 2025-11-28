@@ -89,6 +89,7 @@ Session_Log/             # Development history
 | 003 | Lean 4 Formalization | PLANNED |
 | 004 | Editorial Remediation | CLOSED |
 | 005 | [Variational Framework](theory/issues/ISSUE_005_Variational_Framework.md) | OPEN |
+| 006 | [Bit as Fundamental](theory/issues/ISSUE_006_Bit_As_Fundamental.md) | OPEN |
 
 See `theory/issues/` for details.
 
