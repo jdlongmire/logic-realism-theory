@@ -103,13 +103,41 @@ Implemented 10 revisions to `theory/Logic_Realism_Theory_Main.md` in response to
     - Added formal definition: $\mathcal{I} = \{s : D \text{ is defined on } s \times \mathcal{I}\}$
     - Added Borges reference to References section
 
+### Archived Paper Extractions
+
+Reviewed archived papers (Papers 1-4) and extracted valuable content not yet in main paper:
+
+**From Paper 2 (It From Bit, Bit From Fit):**
+- Section 4.3: Constraints Are Not Hidden Variables - added to Section 4.3
+- Section 7.2.1: Relativistic Considerations - added to Section 4.3
+- Section 12: Honest Accounting tables - added as Section 7.3
+
+**From Paper 3 (Mathematical Structure):**
+- Section 4.5: Layer Cake diagram - added as Section 5.10
+- Section 5.4: Decoherence timescales table - added to Section 6.2
+- Section 7.2: GRW mass scaling table - added to Section 6.2
+- Section 14.x: Open Problems list - added as Section 7.5
+
+**From Paper 4 (Empirical Signatures):**
+- Section 11: Research Program - added as Section 7.6
+
+**New content added to main paper:**
+- Section 4.3: Expanded with Constraints vs. Variables table, relativistic considerations
+- Section 5.10: Layer Structure diagram showing how interpretations map to different layers
+- Section 6.2: Decoherence timescales and GRW mass scaling tables
+- Section 7.3: Honest Accounting (Derived vs. Fine-Tuned vs. Given)
+- Section 7.5: Structured Open Problems (Foundational, Physical, Structural)
+- Section 7.6: Research Program (Near-term, Medium-term, Long-term)
+
 ---
 
 ## Session Status
 
 **Status**: ACTIVE
 
-**Revisions Complete**: All 10 revisions from review response implemented
+**Interaction Count**: 6
+
+**Revisions Complete**: All review response revisions + archived paper extractions
 
 ---
 
@@ -118,5 +146,6 @@ Implemented 10 revisions to `theory/Logic_Realism_Theory_Main.md` in response to
 1. `4f4b5af` - Address Session 25.0 review issues with 10 targeted revisions
 2. `56eae62` - Update Session 26.0 log with commit info
 3. `beb6730` - Expand IIS characterization in Section 2.2
+4. Pending - Integrate archived paper content
 
 ---

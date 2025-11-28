@@ -602,6 +602,22 @@ When measurement occurs, 3FLL enforce consistency across the entire configuratio
 
 **Constraints vs. hidden variables:** Bell's theorem rules out local hidden *variables*—pre-existing definite values. LRT does not posit such values. The IIS state is genuinely indeterminate until the interface. Constraints specify relationships between outcomes, not the outcomes themselves.
 
+This distinction is crucial:
+
+| Concept | Definition | LRT Status |
+|---------|------------|------------|
+| **Variable** | Has a value; "hidden" means we don't know it | NOT posited |
+| **Constraint** | A rule specifying relationships (e.g., A + B = 0) | Posited (3FLL) |
+
+In LRT:
+- The entangled state is a single IIS configuration satisfying 3FLL constraints
+- Measurement reveals which values satisfy the constraints
+- No signal is needed because the constraint was constitutive of the state, not "communicated"
+
+The correlations are not explained by hidden information traveling faster than light. They are explained by the unified structure of the IIS state, which does not have spatial parts that need to coordinate. The "non-locality" is in the wholeness of the state, not in any propagation. This explains why entanglement produces correlations but not signaling.
+
+**Relativistic considerations:** The "global constraint" picture works naturally in non-relativistic quantum mechanics, where simultaneity is well-defined. In relativistic contexts, the constraint is on the IIS state, not on spacetime events. The entangled state in IIS is a single configuration; it does not have spatial parts that need to coordinate. When measurement outcomes are registered at spacelike separation, each outcome is locally determinate and globally consistent. Different reference frames describe the ordering of measurements differently, but all frames agree on the correlations—which is exactly what we observe. A fully relativistic formulation of LRT would need to articulate how the IIS/actuality interface respects the causal structure of spacetime; this represents ongoing work for the framework.
+
 ### 4.4 The Tsirelson Bound
 
 Quantum correlations violate Bell inequalities but only up to the Tsirelson bound of 2√2 for CHSH. Stronger correlations are mathematically possible (PR boxes achieve 4) but not physically realized.
@@ -830,6 +846,52 @@ LRT is the only interpretation that:
 - Has confirmed predictions
 - Specifies explicit falsification conditions
 
+### 5.10 The Layer Structure: Unifying Interpretations
+
+Rather than viewing interpretations as competitors, LRT reveals them as descriptions of different layers:
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  LAYER 4: BOOLEAN ACTUALITY                                 │
+│  ─────────────────────────────────────────────────────────  │
+│  Frameworks: Copenhagen (outcomes), QBism (agent's bets)    │
+│  Math: Boolean algebra, classical probability               │
+│  What happens: Definite outcomes; one result per context    │
+├─────────────────────────────────────────────────────────────┤
+│  LAYER 3: THE INTERFACE                                     │
+│  ─────────────────────────────────────────────────────────  │
+│  Frameworks: Decoherence, GRW (collapse statistics)         │
+│  Math: Lindblad equation, stochastic Schrödinger equation   │
+│  What happens: Transition from quantum to classical         │
+├─────────────────────────────────────────────────────────────┤
+│  LAYER 2: PROBABILITY FLOW                                  │
+│  ─────────────────────────────────────────────────────────  │
+│  Frameworks: Bohmian mechanics (guidance equation)          │
+│  Math: Probability currents, quantum equilibrium            │
+│  What happens: |ψ|² distribution maintained; flow structure │
+├─────────────────────────────────────────────────────────────┤
+│  LAYER 1: IIS DYNAMICS                                      │
+│  ─────────────────────────────────────────────────────────  │
+│  Frameworks: Unitary QM, Many-Worlds (wave function realism)│
+│  Math: Schrödinger equation, Hilbert space                  │
+│  What happens: Unitary evolution; all branches present      │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Domain assignments:**
+
+| Framework | Layer | Mathematical Content | LRT Interpretation |
+|-----------|-------|---------------------|-------------------|
+| Unitary QM / MWI | 1 | Schrödinger: i∂ₜ\|ψ⟩ = H\|ψ⟩ | Evolution in IIS; all branches exist |
+| Bohmian | 2 | Guidance: dQ/dt = (ℏ/m)Im(∇ψ/ψ) | Probability flow in IIS |
+| Decoherence | 3 | Lindblad: ρ̇ = -i[H,ρ] + L[ρ] | Approach to interface threshold |
+| GRW | 3 | Collapse rate: λ · N | Statistics of interface transitions |
+| QBism | 4 | Dutch book coherence | Agent's rational bets on outcomes |
+| Copenhagen | 4 | Born rule + collapse | Description of actualized outcomes |
+| Relational | 2-4 | Perspectival states | Context-dependence across layers |
+
+**Why interpretations seem to conflict:** MWI (Layer 1) says all branches are real. Copenhagen (Layer 4) says one outcome occurs. Both are correct *in their domains*. MWI correctly describes IIS dynamics; Copenhagen correctly describes Boolean actuality. The apparent conflict dissolves when we recognize they describe different layers.
+
 ---
 
 ## 6. Predictions and Falsifiers
@@ -870,6 +932,30 @@ Conversely, if collapse rates follow from gravitational self-energy (Penrose-Di�
 | Optomechanical tests | Nanoparticle superposition limits | Ongoing |
 | Large-molecule interferometry | Interference at increasing mass scales | Ongoing (Vienna) |
 | GRW heating tests | Anomalous heating from collapse | Sensitivity improving |
+
+**Quantitative context - decoherence timescales:**
+
+For objects in thermal environments, the decoherence time τ_D depends on mass, temperature, and superposition separation:
+
+| System | Superposition Δx | Decoherence Time τ_D |
+|--------|------------------|---------------------|
+| Electron in lab | 1 nm | ~ 10⁻¹³ s |
+| Dust grain (10⁻⁵ g) | 1 nm | ~ 10⁻³¹ s |
+| Bowling ball | 1 cm | ~ 10⁻⁴³ s |
+
+For macroscopic objects, τ_D → 0 effectively. The interface transition is instantaneous at human scales. This resolves the "when does collapse happen?" concern—for macro systems, the question of precise timing becomes physically meaningless.
+
+**GRW mass scaling (if collapse model applies):**
+
+| System | N (nucleons) | Mean collapse time |
+|--------|--------------|-------------------|
+| Electron | 1 | ~ 10⁸ years |
+| Protein | 10⁵ | ~ 10³ years |
+| Virus | 10⁷ | ~ 10 years |
+| Dust grain | 10¹⁴ | ~ 10⁻⁶ s |
+| Cat | 10²⁷ | ~ 10⁻¹¹ s |
+
+This scaling explains why microscopic systems exhibit quantum behavior while macroscopic systems appear classical. The interface transition rate scales with system complexity.
 
 **Prediction 2: No recoherence after actualization.**
 
@@ -1055,7 +1141,51 @@ LRT is a physical theory that:
 
 This is the status of a successful physical framework with acknowledged limitations, not the status of a complete final theory.
 
-### 7.3 The Core Contribution
+### 7.3 Honest Accounting: Derived vs. Fine-Tuned vs. Given
+
+Clear accounting distinguishes what LRT establishes:
+
+**What Is Derived:**
+
+| Claim | Status | Basis |
+|-------|--------|-------|
+| Actuality is Boolean | Derived | 3FLL require determinacy |
+| Distinguishability is constituted by 3FLL | Derived | Definition/analysis |
+| Distinguishability is pairwise/quadratic | Derived | Structural analysis |
+| The bit is the fundamental unit | Derived | Minimal distinguishability |
+| Born rule (given Hilbert space) | Derived | Gleason's theorem |
+| Measurement is category transition | Derived | IIS/actuality framework |
+| Entanglement is global constraint | Derived | 3FLL as constraint field |
+| Complex Hilbert space | Derived | Masanes-Müller from Axiom 3 |
+| Global Parsimony | Derived | CCP + Truthmaker Requirement |
+
+**What Is Fine-Tuned:**
+
+| Feature | Status | Why |
+|---------|--------|-----|
+| Specific quantum fields | Fine-tuned | Which modes exist is contingent |
+| Particle masses | Fine-tuned | Parameter-level tuning |
+| Coupling constants | Fine-tuned | Parameter-level tuning |
+| Spacetime dimension | Fine-tuned | Not addressed by LRT |
+| Initial conditions (s₀) | Fine-tuned | Contingent starting point |
+
+**What Is Given (Axiomatic):**
+
+| Element | Status | Note |
+|---------|--------|------|
+| 3FLL | Primitive | Constitutive; not derived |
+| IIS | Primitive | Co-constitutive with 3FLL |
+| Physical constraints (continuity, reversibility, local tomography) | Axiom 3 | Required for stable, compositional physics |
+| Non-contextual measure | Axiom 5 | Required for consistent interface statistics |
+
+**What LRT Does Not Explain:**
+- Why there is something rather than nothing
+- Why 3FLL rather than some other logical structure
+- Why THESE quantum fields, masses, constants
+- The arrow of time (beyond interface structure)
+- The specific interface criterion (empirical question)
+
+### 7.4 The Core Contribution
 
 LRT's central contribution is answering a question other interpretations do not address:
 
@@ -1094,7 +1224,56 @@ If this is wrong:
 
 The wager is testable. Section 6 specified conditions that would refute LRT. The framework takes intellectual risk.
 
-### 7.5 Conclusion
+### 7.5 Structured Open Problems
+
+The LRT framework raises precise mathematical and physical questions. These are organized by difficulty and approach:
+
+**Foundational Problems:**
+
+| Problem | Difficulty | Current Status |
+|---------|------------|----------------|
+| Can Local Tomography be derived from 3FLL? | Hard | Open; currently an axiom (A3c) |
+| Can complex numbers be derived from more primitive assumptions? | Medium | Partial; depends on local tomography |
+| What categorical structure describes the interface functor? | Medium | Open |
+| Characterize representations of the 3FLL algebra | Medium | Open |
+
+**Physical Problems:**
+
+| Problem | Difficulty | Current Status |
+|---------|------------|----------------|
+| What physical criterion marks interface transition? | Empirical | Candidates identified; testable |
+| Prove or refute S = ℏC (action-complexity conjecture) | Hard | Conjectural; motivated |
+| How does Lorentz symmetry act on IIS? | Hard | Open; algebraic QFT approach suggested |
+| Does gravity modify the interface? (Penrose-Diósi) | Very Hard | Experimentally testable |
+
+**Structural Problems:**
+
+| Problem | Difficulty | Current Status |
+|---------|------------|----------------|
+| Why do physical systems have specific finite dimensions? | Very Hard | Fine-tuning; not addressed |
+| Why U(1) × SU(2) × SU(3) gauge symmetry? | Beyond LRT | Requires unification physics |
+| Why three generations of fermions? | Beyond LRT | Parameter-level fine-tuning |
+
+### 7.6 Research Program
+
+**Near-term (tractable with current methods):**
+1. Test S = ℏC in simple models (qubit systems)
+2. Develop relativistic LRT using algebraic QFT
+3. Formalize the interface category mathematically
+4. Improve sensitivity of collapse mechanism experiments
+
+**Medium-term (requires new developments):**
+5. Derive local tomography from 3FLL (would strengthen foundations)
+6. Connect LRT to quantum gravity proposals
+7. Test Penrose-Diósi collapse predictions at increasing mass scales
+8. Investigate tensor network structure of actualizable states
+
+**Long-term (speculative):**
+9. Derive specific field content from LRT + cosmological principles
+10. Unify LRT with spacetime emergence
+11. Resolve the arrow of time within LRT
+
+### 7.7 Conclusion
 
 Every physical measurement ever conducted has yielded exactly one outcome—self-identical, non-contradictory, determinate. This holds despite a century of quantum mechanics where violations were actively sought.
 
