@@ -482,27 +482,7 @@ LRT's framework is consistent with QFT but does not yet provide independent deri
 
 ### 3.7 The Complete Derivation Chain
 
-```
-3FLL (A1)
-    ↓ constitute
-Distinguishability (A2: pairwise)
-    ↓
-    + CBP + Parsimony
-    ↓
-Reversibility (derived)
-    ↓
-    + Continuity (A3a) + Local Tomography (A3c)
-    ↓
-Complex Hilbert Space (via Masanes-Müller)
-    ↓
-    + Non-Contextual Measure (A5)
-    ↓
-Born Rule (via Gleason)
-    ↓
-    + Continuity (A3a)
-    ↓
-Schrödinger Equation (via Stone)
-```
+The complete derivation chain is shown in Figure 2 (end of this section).
 
 ### 3.8 What Is Derived vs. Assumed
 
