@@ -45,6 +45,18 @@ This repository develops a framework to explain why.
 
 ---
 
+## Companion Papers
+
+| Paper | Focus | Target Venue | Status |
+|-------|-------|--------------|--------|
+| **[Technical Foundations](theory/Logic_Realism_Theory_Technical.md)** | Mathematical proofs, derivation chain | PRX Quantum, Foundations of Physics | Airtight |
+| **[Philosophical Foundations](theory/Logic_Realism_Theory_Philosophy.md)** | Ontological status of 3FLL, interface metaphysics | Philosophy of Science, BJPS | Complete |
+| **[Bridging Paper](theory/Logic_Realism_Theory_Bridging.md)** | Synthesis for broad audiences | BJPS, Synthese | Complete |
+
+**Derivation chain (complete):** 3FLL → D → ⟨·|·⟩ → MM1-MM5 → ℂ-QM
+
+---
+
 ## Core Thesis
 
 The Three Fundamental Logical Laws (3FLL) — Identity, Non-Contradiction, Excluded Middle — are not merely rules of reasoning but **ontological constraints constitutive of physical reality**.
@@ -123,14 +135,14 @@ Zenodo, November 2025 | DOI: 10.5281/zenodo.17533459
 
 For development history, see **[Session Log](Session_Log/)**.
 
-**Latest**: Session 27.0 (2025-11-28) - Paper submitted, accepted with revisions, camera-ready
+**Latest**: Session 28.0 (2025-11-28) - Technical gaps closed, companion papers created
 
-**Session 27.0 Summary:**
-- Completed em dash editorial cleanup (63 replacements)
-- Created reviewer defense framework
-- Responded to red team analysis (5 attack vectors)
-- Implemented referee-requested revisions (3 items)
-- Camera-ready abstract finalized
+**Session 28.0 Summary:**
+- Closed all technical gaps (MM5 via Lee-Selby, Hardy kernel, unconditional uniqueness)
+- Created Technical Foundations paper (mathematical proofs)
+- Created Philosophical Foundations paper (ontological arguments)
+- Created Bridging paper (synthesis for broad audiences)
+- Implemented review feedback (conceivability argument, Halmos construction)
 
 **Additional Resources**:
 - **[AI-Enabled Research Methodology](Logic_Realism_Theory_AI_Experiment.md)**
