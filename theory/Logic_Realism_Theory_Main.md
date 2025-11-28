@@ -166,7 +166,7 @@ IIS is the structural space of what *can be distinguished*. Its existence is not
 What we can say prior to derivation:
 - IIS is not Boolean (contains determinate states, indeterminate states, superpositions, classical mixtures)
 - IIS is structured by distinguishability—the "metric" is how distinguishable states are from each other
-- IIS contains all consistent Generalized Probabilistic Theories (GPTs) as substructures (Hardy 2001, Chiribella et al. 2011)
+- IIS contains all consistent Generalized Probabilistic Theories (GPTs) as substructures (Hardy, 2001; Chiribella et al., 2011)
 
 **Mathematical characterization:** IIS can be formally defined as the maximal collection of states closed under distinguishability:
 
@@ -1177,7 +1177,7 @@ Clear accounting distinguishes what LRT establishes:
 |---------|--------|------|
 | 3FLL | Primitive | Constitutive; not derived |
 | IIS | Primitive | Co-constitutive with 3FLL |
-| Physical constraints (continuity, reversibility, local tomography) | Axiom 3 | Required for stable, compositional physics |
+| Physical constraints (continuity, local tomography) | Axiom 3 | Required for stable, compositional physics |
 | Non-contextual measure | Axiom 5 | Required for consistent interface statistics |
 
 **What LRT Does Not Explain:**
@@ -1307,6 +1307,10 @@ Bohm, D. "A suggested interpretation of the quantum theory in terms of 'hidden' 
 
 Chiribella, G., D'Ariano, G. M., and Perinotti, P. "Informational derivation of quantum theory." *Physical Review A* 84(1), 2011: 012311.
 
+Deutsch, D. "Quantum theory of probability and decisions." *Proceedings of the Royal Society A* 455, 1999: 3129-3137.
+
+Diósi, L. "Models for universal reduction of macroscopic quantum fluctuations." *Physical Review A* 40(3), 1989: 1165-1174.
+
 Everett, H. "Relative state formulation of quantum mechanics." *Reviews of Modern Physics* 29(3), 1957: 454-462.
 
 Fuchs, C. A. and Schack, R. "Quantum-Bayesian coherence." *Reviews of Modern Physics* 85(4), 2013: 1693-1715.
@@ -1323,6 +1327,8 @@ Masanes, L. and Müller, M. P. "A derivation of quantum theory from physical req
 
 Penrose, R. "On gravity's role in quantum state reduction." *General Relativity and Gravitation* 28(5), 1996: 581-600.
 
+Pusey, M. F., Barrett, J., and Rudolph, T. "On the reality of the quantum state." *Nature Physics* 8(6), 2012: 475-478.
+
 Renou, M.-O., et al. "Quantum theory based on real numbers can be experimentally falsified." *Nature* 600, 2021: 625-629.
 
 Rovelli, C. "Relational quantum mechanics." *International Journal of Theoretical Physics* 35(8), 1996: 1637-1678.
@@ -1330,6 +1336,8 @@ Rovelli, C. "Relational quantum mechanics." *International Journal of Theoretica
 Stone, M. H. "On one-parameter unitary groups in Hilbert space." *Annals of Mathematics* 33(3), 1932: 643-648.
 
 Tsirelson, B. S. "Quantum generalizations of Bell's inequality." *Letters in Mathematical Physics* 4(2), 1980: 93-100.
+
+Wallace, D. "Quantum probability from subjective likelihood: Improving on Deutsch's proof of the probability rule." *Studies in History and Philosophy of Science Part B* 38(2), 2007: 311-332.
 
 Wheeler, J. A. "Information, physics, quantum: The search for links." In W. Zurek (ed.), *Complexity, Entropy, and the Physics of Information*. Addison-Wesley, 1990.
 
