@@ -42,6 +42,42 @@ User reorganized theory artifacts before this session:
 
 ## Session 25.0 Work
 
-(Awaiting direction)
+### Systematic Document Review
+
+Completed section-by-section review of `theory/Logic_Realism_Theory_Main.md` (~1,160 lines, 7 sections).
+
+**Major Strengths Identified:**
+- Novel explanatory framework (grounding vs. postulating QM axioms)
+- Legitimate derivation chain via established theorems
+- 12 explicit falsifiers (good scientific practice)
+- Confirmed prediction (complex QM, Renou 2021)
+- Epistemic honesty about limitations
+- Clear writing and organization
+
+**Major Issues Identified:**
+
+| Issue | Section | Severity |
+|-------|---------|----------|
+| Global Parsimony underargued | 2.6 | High |
+| Non-contextuality grounding (A5) contestable | 3.1 | High |
+| Measurement problem dissolution incomplete | 4.2 | High |
+| IIS characterization imprecise | 2.2 | Medium |
+| D → [0,1] mapping not justified | 3.3 | Medium |
+| "17 phenomena explained" overclaims | 4.1 | Medium |
+| Tsirelson bound explanation weak | 4.4 | Medium |
+| Most falsifiers in-principle or shared | 6.3 | Medium |
+
+**Recommendations:**
+1. Strengthen Global Parsimony argument (foundational)
+2. Clarify A5 grounding with more defense
+3. Reduce or recategorize "17 phenomena" claim
+4. Clarify IIS mathematical status
+5. Add bridging lemmas in Section 3
+6. Tone down Section 5 advocacy
+7. Fix figure paths (lines 289, 528)
+
+**Circularity Check:** No circularity detected. Derivation chain is linear.
+
+**Bottom Line:** Publishable in foundations journal. Core contribution is novel. Execution has vulnerabilities a hostile reviewer would exploit.
 
 ---
