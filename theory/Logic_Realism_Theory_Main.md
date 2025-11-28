@@ -852,33 +852,12 @@ LRT is the only interpretation that:
 
 Rather than viewing interpretations as competitors, LRT reveals them as descriptions of different layers:
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│  LAYER 4: BOOLEAN ACTUALITY                                 │
-│  ─────────────────────────────────────────────────────────  │
-│  Frameworks: Copenhagen (outcomes), QBism (agent's bets)    │
-│  Math: Boolean algebra, classical probability               │
-│  What happens: Definite outcomes; one result per context    │
-├─────────────────────────────────────────────────────────────┤
-│  LAYER 3: THE INTERFACE                                     │
-│  ─────────────────────────────────────────────────────────  │
-│  Frameworks: Decoherence, GRW (collapse statistics)         │
-│  Math: Lindblad equation, stochastic Schrödinger equation   │
-│  What happens: Transition from quantum to classical         │
-├─────────────────────────────────────────────────────────────┤
-│  LAYER 2: PROBABILITY FLOW                                  │
-│  ─────────────────────────────────────────────────────────  │
-│  Frameworks: Bohmian mechanics (guidance equation)          │
-│  Math: Probability currents, quantum equilibrium            │
-│  What happens: |ψ|² distribution maintained; flow structure │
-├─────────────────────────────────────────────────────────────┤
-│  LAYER 1: IIS DYNAMICS                                      │
-│  ─────────────────────────────────────────────────────────  │
-│  Frameworks: Unitary QM, Many-Worlds (wave function realism)│
-│  Math: Schrödinger equation, Hilbert space                  │
-│  What happens: Unitary evolution; all branches present      │
-└─────────────────────────────────────────────────────────────┘
-```
+| Layer | Description |
+|-------|-------------|
+| **LAYER 4: BOOLEAN ACTUALITY** | **Frameworks:** Copenhagen (outcomes), QBism (agent's bets) — **Math:** Boolean algebra, classical probability — **What happens:** Definite outcomes; one result per context |
+| **LAYER 3: THE INTERFACE** | **Frameworks:** Decoherence, GRW (collapse statistics) — **Math:** Lindblad equation, stochastic Schrödinger equation — **What happens:** Transition from quantum to classical |
+| **LAYER 2: PROBABILITY FLOW** | **Frameworks:** Bohmian mechanics (guidance equation) — **Math:** Probability currents, quantum equilibrium — **What happens:** \|ψ\|² distribution maintained; flow structure |
+| **LAYER 1: IIS DYNAMICS** | **Frameworks:** Unitary QM, Many-Worlds (wave function realism) — **Math:** Schrödinger equation, Hilbert space — **What happens:** Unitary evolution; all branches present |
 
 **Domain assignments:**
 
