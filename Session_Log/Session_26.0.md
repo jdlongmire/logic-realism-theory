@@ -115,6 +115,8 @@ Implemented 10 revisions to `theory/Logic_Realism_Theory_Main.md` in response to
 
 ## Commits This Session
 
-1. `4f4b5af` - Address Session 25.0 review issues with 10 targeted revisions (pushed)
+1. `4f4b5af` - Address Session 25.0 review issues with 10 targeted revisions
+2. `56eae62` - Update Session 26.0 log with commit info
+3. `beb6730` - Expand IIS characterization in Section 2.2
 
 ---
