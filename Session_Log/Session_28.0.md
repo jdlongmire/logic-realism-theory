@@ -119,4 +119,32 @@ Created `theory/Logic_Realism_Theory_Philosophy.md` (~450 lines) covering:
 3. LRT supports "logico-physical structuralism"
 4. Resolves measurement problem by reframing it as interface necessity
 
+### 4. Bridging Paper (Lead Paper for Series)
+
+Created `theory/Logic_Realism_Theory_Bridging.md` (~7,500 words) as the foundational paper for the LRT series.
+
+**Structure (9 sections):**
+
+| Section | Content |
+|---------|---------|
+| §1 | The Puzzle of Logical Structure in Physics |
+| §2 | The Logic Realism Thesis (A = L(I)) |
+| §3 | The Abductive Argument (inference to best explanation) |
+| §4 | From Logic to Physics: The Interface |
+| §5 | Philosophical Payoffs |
+| §6 | Technical Derivations: A Preview |
+| §7 | Comparison with Rivals |
+| §8 | Objections and Replies (6 objections) |
+| §9 | Conclusion |
+
+**Key features:**
+- Synthesizes core thesis accessibly
+- Abductive argument structure (rivals eliminated)
+- Visual flow diagram (IIS → QM → Actuality)
+- Preview of technical derivations
+- Comparison table with 6 interpretations
+- Cross-references Technical and Philosophy papers
+
+**Target venues:** BJPS, Philosophy of Science, Synthese, Erkenntnis
+
 ---
