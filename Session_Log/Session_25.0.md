@@ -80,4 +80,27 @@ Completed section-by-section review of `theory/Logic_Realism_Theory_Main.md` (~1
 
 **Bottom Line:** Publishable in foundations journal. Core contribution is novel. Execution has vulnerabilities a hostile reviewer would exploit.
 
+### Document Cleanup
+
+After review, made the following edits to `theory/Logic_Realism_Theory_Main.md`:
+
+1. **Fixed figure paths** - Updated to relative paths (`figures/LRT_Fig-1.jpeg`, `figures/LRT_Fig2b.png`)
+2. **Removed duplicate derivation chain** - Section 3.7 ASCII diagram removed, kept Figure 2
+3. **Moved Figure 2** - Now directly under Section 3.7 heading
+4. **Replaced Figure 2 image** - Using `LRT_Fig2b.png` (Mermaid didn't render properly)
+5. **Removed editorial placeholders** - 5 "[Section X — to follow]" notes removed
+
+**Git commits this session:** 9 commits, all pushed to master.
+
+---
+
+## Session Status
+
+**Status**: PAUSED
+
+**Next steps when resuming:**
+- Address high-severity issues from review (Global Parsimony, A5 grounding, measurement dissolution)
+- Consider reducing "17 phenomena" claim
+- ISSUE 005 and 006 still open
+
 ---
