@@ -49,18 +49,9 @@ This paper fills these gaps by providing:
 
 ### 2.1 The Distinguishability Relation
 
-**Definition 2.1 (Distinguishability).** Two states $s_1, s_2 \in \mathcal{I}$ are *distinguishable*, written $s_1 \perp s_2$, if and only if there exists a measurement context $M$ such that the probability distributions over outcomes differ:
+**Definition 2.1 (Distinguishability).** Two states $s_1, s_2 \in \mathcal{I}$ are *distinguishable*, written $s_1 \perp s_2$, iff there exists a measurement context $M$ such that $P_M(s_1) \neq P_M(s_2)$.
 
-$$s_1 \perp s_2 \iff \exists M: P_M(s_1) \neq P_M(s_2)$$
-
-**Claim:** This definition presupposes 3FLL.
-
-**Proof:**
-- *Identity:* For $P_M(s_1) \neq P_M(s_2)$ to be meaningful, $s_1$ must be self-identical ($s_1 = s_1$) and similarly for $s_2$. Without identity, there is no fact about what $s_1$ *is* that could differ from $s_2$.
-- *Non-Contradiction:* The inequality requires that $P_M(s_1) = P_M(s_2)$ and $P_M(s_1) \neq P_M(s_2)$ cannot both hold. Without non-contradiction, distinguishability would be undefined.
-- *Excluded Middle:* For any $s_1, s_2$, either $P_M(s_1) = P_M(s_2)$ or $P_M(s_1) \neq P_M(s_2)$. Without excluded middle, there could be state pairs for which distinguishability is undefined.
-
-Thus 3FLL are preconditions for the distinguishability relation to be well-defined. ∎
+**Remark:** This definition presupposes 3FLL: Identity (states are self-identical), Non-Contradiction (equality and inequality cannot both hold), Excluded Middle (states are either equal or not). The 3FLL grounding is immediate from the definition.
 
 ### 2.2 The Distinguishability Metric
 
@@ -138,7 +129,13 @@ A3b (CBP) implies pure state dynamics are reversible. Reversible continuous tran
 The group of reversible transformations acts transitively on pure states of equal distinguishability from a reference state. This defines concentric "spheres" of constant $D$ from any reference. The geometry is that of projective space.
 
 *Step 3: Field determination.*
-Local tomography (A3c) requires the field to be $\mathbb{R}$, $\mathbb{C}$, or $\mathbb{H}$. Associativity of tensor products for 3+ systems eliminates $\mathbb{H}$. The existence of entangled states with local marginals (requiring complex phases) eliminates $\mathbb{R}$.
+Local tomography (A3c) restricts the field to $\mathbb{R}$, $\mathbb{C}$, or $\mathbb{H}$ (Masanes-Müller 2011).
+
+*Elimination of $\mathbb{H}$:* Quaternionic tensor products fail associativity for $n \geq 3$ systems (Adler 1995). For spaces $\mathcal{H}_A, \mathcal{H}_B, \mathcal{H}_C$: $(\mathcal{H}_A \otimes \mathcal{H}_B) \otimes \mathcal{H}_C \ncong \mathcal{H}_A \otimes (\mathcal{H}_B \otimes \mathcal{H}_C)$ due to quaternion non-commutativity.
+
+*Elimination of $\mathbb{R}$:* Consider the Bell state $|\Phi^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)$ in complex QM. Its local marginals are $\rho_A = \rho_B = \frac{1}{2}I$. In real QM, construct the analogous state. The crucial difference: in complex QM, the relative phase between $|00\rangle$ and $|11\rangle$ is observable via interference with local rotations $e^{i\theta}$. In real QM, no such phase exists. Consequently, real QM admits distinct global states with identical local marginals that complex QM distinguishes (Wootters 1990, Stueckelberg 1960). This violates local tomography: composite states are not determined by local measurements.
+
+Therefore, only $\mathbb{C}$ satisfies A3c + compositional consistency.
 
 *Step 4: Uniqueness.*
 The inner product satisfying $D = 1 - |\langle \cdot | \cdot \rangle|^2$ is unique up to overall phase by Wigner's theorem.
@@ -414,14 +411,15 @@ MM5 is specifically about entanglement structure. It's not obvious how this foll
 - Do not claim to have proven exhaustiveness
 - Let the reconstruction theorems carry the uniqueness claim
 
-### 6.4 Current Status
+### 6.4 Adopted Resolution: Approach C
 
-**Honest assessment:** We have not closed the MM5 gap. The technical paper can either:
-1. Solve it (significant mathematical work)
-2. Adopt Approach B (additional axiom)
-3. Adopt Approach C (weakened claim)
+**This paper adopts Approach C.** The uniqueness claim is explicitly conditional:
 
-Approach C is recommended for initial submission, with the MM5 gap flagged as open.
+> **Theorem 5.7 (Conditional Uniqueness).** Complex quantum mechanics is the unique theory satisfying LRT axioms A1-A5 *and* MM5 (entanglement connectivity).
+
+**Interpretation:** LRT provides ontological grounding for MM1-MM4 via 3FLL-constituted distinguishability. MM5 remains irreducible physical input, analogous to local tomography (A3c). This is not a weakness but a feature: LRT identifies the *minimal* physical axioms beyond logic required for quantum mechanics.
+
+**Future work:** Deriving MM5 from interface requirements (Approach A) would strengthen the framework but is not required for the conditional uniqueness result to hold.
 
 ---
 
@@ -503,7 +501,7 @@ Adler, S. L. *Quaternionic Quantum Mechanics and Quantum Fields.* Oxford Univers
 
 Birkhoff, G. and von Neumann, J. "The logic of quantum mechanics." *Annals of Mathematics* 37(4), 1936: 823-843.
 
-Brassard, G., et al. "Limit on nonlocality in any world in which communication complexity is not trivial." *Physical Review Letters* 96, 2006: 250401.
+Brassard, G., Buhrman, H., Linden, N., Méthot, A. A., Tapp, A., and Unger, F. "Limit on nonlocality in any world in which communication complexity is not trivial." *Physical Review Letters* 96, 2006: 250401.
 
 Chiribella, G., D'Ariano, G. M., and Perinotti, P. "Informational derivation of quantum theory." *Physical Review A* 84(1), 2011: 012311.
 
@@ -513,18 +511,22 @@ Earnshaw, S. "On the nature of the molecular forces which regulate the constitut
 
 Egg, M. "Scientific realism in particle physics: A causal approach." *Philosophy of Science* 83(5), 2016: 1050-1061.
 
-Hardy, L. "Quantum theory from five reasonable axioms." arXiv:quant-ph/0101012, 2001.
+Hardy, L. "Quantum theory from five reasonable axioms." arXiv:quant-ph/0101012, 2001. [Note: Establishes the axiomatic reconstruction program; our Theorem 3.2 extends Hardy's approach by grounding the distinguishability metric in 3FLL.]
+
+Longmire, J. D. "It from Bit, Bit from Fit: Foundational Physics Logically Remastered." [Main LRT paper, this volume.]
 
 Masanes, L. and Müller, M. P. "A derivation of quantum theory from physical requirements." *New Journal of Physics* 13, 2011: 063001.
 
-Renou, M.-O., et al. "Quantum theory based on real numbers can be experimentally falsified." *Nature* 600, 2021: 625-629.
+Renou, M.-O., Trillo, D., Weilenmann, M., Le, T. P., Tavakoli, A., Gisin, N., Acín, A., and Navascués, M. "Quantum theory based on real numbers can be experimentally falsified." *Nature* 600, 2021: 625-629.
 
 Stueckelberg, E. C. G. "Quantum theory in real Hilbert space." *Helvetica Physica Acta* 33, 1960: 727-752.
 
 van Dam, W. "Implausible consequences of superstrong nonlocality." arXiv:quant-ph/0501159, 2005.
 
+Wigner, E. P. "On unitary representations of the inhomogeneous Lorentz group." *Annals of Mathematics* 40(1), 1939: 149-204. [Wigner's theorem on symmetry representations.]
+
 Wootters, W. K. "Local accessibility of quantum states." In *Complexity, Entropy, and the Physics of Information*, edited by W. Zurek. Addison-Wesley, 1990.
 
 ---
 
-*Technical companion to "It from Bit, Bit from Fit." Working draft targeting philosophy of physics venues.*
+*Technical companion to Longmire (this volume). Targets philosophy of physics venues (Philosophy of Physics, BJPS).*
