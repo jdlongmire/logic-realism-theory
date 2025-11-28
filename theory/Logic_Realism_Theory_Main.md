@@ -254,7 +254,7 @@ Global Parsimony has teeth:
 - Free parameters not derivable from the constitutive base → ruled out at the fundamental level
 - Ontological additions beyond IIS structure → require justification from the constitutive base
 
-A clarification: Global Parsimony applies to *fundamental* structure, not to emergent or contingent physical content. The claim is not that everything is derived from 3FLL—specific particle masses, coupling constants, and gauge groups are empirical. The claim is that no *additional foundational principles* beyond 3FLL are required to ground the structure of physical law. Contingent physical content operates within the framework that 3FLL establish; it does not require independent metaphysical grounding.
+A clarification: Global Parsimony applies to *fundamental* structure, not to emergent or contingent physical content. The claim is not that everything is derived from 3FLL; specific particle masses, coupling constants, and gauge groups are empirical. The claim is that no *additional foundational principles* beyond 3FLL are required to ground the structure of physical law. Contingent physical content operates within the framework that 3FLL establish; it does not require independent metaphysical grounding.
 
 ### 2.7 Why Quantum Mechanics
 
@@ -270,7 +270,7 @@ Classical mechanics satisfies interface constraints but produces no stable physi
 
 A classical universe contains no stable matter, no chemistry, no life, no observers to notice.
 
-Real quantum mechanics (using ℝ instead of ℂ) fails local tomography—composite system states cannot be fully determined by local measurements. Quaternionic quantum mechanics fails compositional consistency. Generalized probabilistic theories exceeding the Tsirelson bound permit signaling.
+Real quantum mechanics (using ℝ instead of ℂ) fails local tomography: composite system states cannot be fully determined by local measurements. Quaternionic quantum mechanics fails compositional consistency. Generalized probabilistic theories exceeding the Tsirelson bound permit signaling.
 
 Only complex Hilbert space quantum mechanics with unitary dynamics and the Born rule produces:
 - Stable atoms (discrete energy levels from spectral properties)
@@ -281,9 +281,9 @@ Only complex Hilbert space quantum mechanics with unitary dynamics and the Born 
 
 This is **stability selection**: among structures compatible with the interface constraints, only quantum mechanics produces stable physical existence.
 
-Stability selection explains why we observe quantum mechanics: observers require stable physical structures, and only quantum mechanics produces them. This is an observability filter, not an ontological derivation. The uniqueness claim—that quantum mechanics is the *only* structure satisfying the interface constraints with stability—rests on the mathematical reconstruction theorems (Masanes-Müller, Hardy, Chiribella et al.), which demonstrate that complex Hilbert space quantum mechanics is uniquely selected by the relevant axioms. Stability selection explains why we are in a position to observe this; the reconstruction theorems establish that there is nothing else to observe.
+Stability selection explains why we observe quantum mechanics: observers require stable physical structures, and only quantum mechanics produces them. This is an observability filter, not an ontological derivation. The uniqueness claim, that quantum mechanics is the *only* structure satisfying the interface constraints with stability, rests on the mathematical reconstruction theorems (Masanes-Müller, Hardy, Chiribella et al.), which demonstrate that complex Hilbert space quantum mechanics is uniquely selected by the relevant axioms. Stability selection explains why we are in a position to observe this; the reconstruction theorems establish that there is nothing else to observe.
 
-Stability selection is not logical derivation. It does not claim quantum mechanics is necessary. It claims quantum mechanics is *observationally necessary*—necessary for there to be stable structures capable of observation.
+Stability selection is not logical derivation. It does not claim quantum mechanics is necessary. It claims quantum mechanics is *observationally necessary*, necessary for there to be stable structures capable of observation.
 
 ### 2.8 The Framework Summarized
 
@@ -307,19 +307,19 @@ Actuality equals logical filtering (3FLL enforcement + parsimony) applied to the
 
 ![Figure 1: LRT Ontological Architecture](figures/LRT_Fig-1.jpeg)
 
-**Figure 1.** The ontological architecture of Logic Realism Theory. The Infinite Information Space (IIS), constituted by the Three Fundamental Logical Laws, contains non-Boolean structure including superpositions and indeterminate states. Quantum mechanics operates as the interface, characterized by complex Hilbert space, the Born rule, and unitary dynamics. Boolean Actuality—where 3FLL are fully enforced—contains only definite, self-identical, non-contradictory outcomes. The three laws (Identity, Non-Contradiction, Excluded Middle) run through the entire structure, constituting IIS and constraining actuality.
+**Figure 1.** The ontological architecture of Logic Realism Theory. The Infinite Information Space (IIS), constituted by the Three Fundamental Logical Laws, contains non-Boolean structure including superpositions and indeterminate states. Quantum mechanics operates as the interface, characterized by complex Hilbert space, the Born rule, and unitary dynamics. Boolean Actuality, where 3FLL are fully enforced, contains only definite, self-identical, non-contradictory outcomes. The three laws (Identity, Non-Contradiction, Excluded Middle) run through the entire structure, constituting IIS and constraining actuality.
 
 ---
 
 ## 3. The Derivation Chain
 
-This section shows that quantum mechanical structure follows from the framework established in Section 2. The derivations rely on established mathematical results—Masanes-Müller, Gleason, Stone—applied to the LRT axiom structure. What LRT contributes is not new mathematics but the grounding that explains why these axioms hold.
+This section shows that quantum mechanical structure follows from the framework established in Section 2. The derivations rely on established mathematical results (Masanes-Müller, Gleason, Stone) applied to the LRT axiom structure. What LRT contributes is not new mathematics but the grounding that explains why these axioms hold.
 
 ### 3.1 The Axioms
 
 LRT rests on five axioms, organized by tier:
 
-**Tier 0 — Foundational (LRT-specific):**
+**Tier 0: Foundational (LRT-specific)**
 
 | Axiom | Statement |
 |-------|-----------|
@@ -328,18 +328,18 @@ LRT rests on five axioms, organized by tier:
 | A4: Boolean Actuality | Interface map Φ produces Boolean outcomes satisfying totality, single-valuedness, exclusivity |
 | A5: Non-Contextual Measure | Interface induces probability measure independent of measurement context |
 
-**Grounding A5:** Why should the interface measure be non-contextual? Consider what contextuality of the interface measure would mean: the same IIS state would yield different probability distributions depending on which other measurements could have been performed. But this would violate Identity at the interface. A state's probability of actualization would not be a determinate feature of that state—it would depend on extrinsic factors. The interface would fail to map states to definite probability assignments. Non-contextuality is thus required by Identity: the interface must assign each state a determinate actualization probability that is a feature of that state itself.
+**Grounding A5:** Why should the interface measure be non-contextual? Consider what contextuality of the interface measure would mean: the same IIS state would yield different probability distributions depending on which other measurements could have been performed. But this would violate Identity at the interface. A state's probability of actualization would not be a determinate feature of that state; it would depend on extrinsic factors. The interface would fail to map states to definite probability assignments. Non-contextuality is thus required by Identity: the interface must assign each state a determinate actualization probability that is a feature of that state itself.
 
-**Clarification:** Contextuality of *values* (Kochen-Specker) is compatible with non-contextuality of *measure*. The distinction is essential. Values are generated at actualization—they need not pre-exist and need not be context-independent. But probabilities characterize the IIS state's disposition toward actualization. If probabilities were contextual, the IIS state would lack determinate actualization propensities—violating Identity for the state itself. The Kochen-Specker contextuality that quantum mechanics exhibits concerns outcome values, not the probability measure over those outcomes.
+**Clarification:** Contextuality of *values* (Kochen-Specker) is compatible with non-contextuality of *measure*. The distinction is essential. Values are generated at actualization; they need not pre-exist and need not be context-independent. But probabilities characterize the IIS state's disposition toward actualization. If probabilities were contextual, the IIS state would lack determinate actualization propensities, violating Identity for the state itself. The Kochen-Specker contextuality that quantum mechanics exhibits concerns outcome values, not the probability measure over those outcomes.
 
-**Tier 1 — Derived:**
+**Tier 1: Derived**
 
 | Result | Derivation |
 |--------|------------|
 | Global Parsimony | From A1 + Constitutive Closure (Section 2.6) |
 | Reversibility | From CBP + Global Parsimony (Section 3.2) |
 
-**Tier 2 — Physical (irreducible input):**
+**Tier 2: Physical (irreducible input)**
 
 | Axiom | Statement | Status |
 |-------|-----------|--------|
@@ -354,7 +354,7 @@ The physical axioms (A3a, A3c) represent genuine empirical input. They are not d
 
 *Proof:*
 
-1. Let T be a fundamental transformation on IIS. Suppose T is irreversible—it maps distinct states s₁ ≠ s₂ to the same output T(s₁) = T(s₂).
+1. Let T be a fundamental transformation on IIS. Suppose T is irreversible: it maps distinct states s₁ ≠ s₂ to the same output T(s₁) = T(s₂).
 
 2. Information destruction requires a mechanism. If T erases the distinction between s₁ and s₂, some physical process must absorb or dissipate that distinction.
 
@@ -362,11 +362,11 @@ The physical axioms (A3a, A3c) represent genuine empirical input. They are not d
 
 4. By Global Parsimony, no surplus structure exists at the fundamental level.
 
-5. By CBP, states must admit consistent Boolean resolution. Irreversible dynamics produce states whose history becomes unrecoverable—generating propositions ("which original state led here?") with no truthmaker.
+5. By CBP, states must admit consistent Boolean resolution. Irreversible dynamics produce states whose history becomes unrecoverable, generating propositions ("which original state led here?") with no truthmaker.
 
 6. Therefore, T must be reversible: distinct inputs map to distinct outputs. ∎
 
-This derivation is genuine. Reversibility is not assumed but follows from CBP and Global Parsimony. The physical consequence is that fundamental dynamics preserve information—a defining feature of quantum mechanics that other interpretations simply postulate.
+This derivation is genuine. Reversibility is not assumed but follows from CBP and Global Parsimony. The physical consequence is that fundamental dynamics preserve information, a defining feature of quantum mechanics that other interpretations simply postulate.
 
 ### 3.3 Deriving Hilbert Space Structure
 
