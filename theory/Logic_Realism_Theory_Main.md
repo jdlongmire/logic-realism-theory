@@ -12,7 +12,7 @@ Every physical measurement ever conducted has yielded exactly one outcome: self-
 
 This paper argues that the Three Fundamental Laws of Logic (Identity, Non-Contradiction, and Excluded Middle) are not cognitive conventions but ontological constraints constitutive of physical distinguishability. From this thesis, quantum mechanics emerges as the unique stable structure at the interface between non-Boolean possibility and Boolean actuality.
 
-The framework derives rather than postulates: complex Hilbert space structure follows from interface constraints and local tomography; the Born rule follows from Gleason's theorem; unitary dynamics follows from information preservation requirements. These derivations reproduce standard quantum mechanics while explaining why it has its specific structure.
+The framework derives rather than postulates: complex Hilbert space structure follows from interface constraints combined with the physical requirement of compositional consistency (local tomography); the Born rule follows from Gleason's theorem; unitary dynamics follows from information preservation requirements. The derivations are conditional on both logical (3FLL) and physical (continuity, local tomography) inputs, but this combination suffices to reproduce standard quantum mechanics while explaining why it has its specific structure.
 
 One structural prediction, that quantum mechanics requires complex amplitudes, has been experimentally confirmed (Renou et al., 2021). The framework specifies twelve explicit conditions that would falsify it and makes testable predictions about collapse mechanisms currently under experimental investigation.
 
@@ -100,7 +100,7 @@ The argument proceeds as follows:
 
 **Section 2** develops the framework: IIS, Boolean actuality, the interface problem, and the Consistency Bridging Principle that constrains admissible dynamics.
 
-**Section 3** presents the derivation chain: from 3FLL and interface constraints to complex Hilbert space, the Born rule, and unitary dynamics. Key results are derived, not postulated.
+**Section 3** presents the derivation chain: from 3FLL, interface constraints, and physical requirements (continuity, local tomography) to complex Hilbert space, the Born rule, and unitary dynamics. Key results are derived from this combined foundation, not postulated independently.
 
 **Section 4** shows what the framework explains: seventeen quantum phenomena receive unified explanation from common resources.
 
@@ -994,6 +994,8 @@ Twelve conditions would refute LRT:
 
 **Note on shared falsifiers:** Several falsifiers (Born rule, Tsirelson bound, no-signaling) are shared with standard quantum mechanics. This is appropriate: LRT *predicts* standard QM, so falsifiers of standard QM are falsifiers of LRT. What distinguishes LRT is that it *explains* what it predicts rather than postulating it. The distinctive LRT predictions concern structural requirements (complex numbers, derivable collapse parameters) and the impossibility of certain extensions.
 
+**Critical falsifier: Fundamental information loss.** The derivation of unitary dynamics (Section 3.5) rests on the Consistency Bridging Principle and Global Parsimony, which require that fundamental dynamics preserve information. This explicitly stakes LRT on the resolution of the Black Hole Information Paradox. If Hawking radiation is confirmed to be truly thermal with fundamental information loss (non-unitary black hole evaporation), this directly falsifies LRT's derivation of the Schrödinger equation. Current theoretical evidence (AdS/CFT correspondence, Page curve derivations) favors information preservation, but this remains an open empirical and theoretical question. LRT's commitment to unitarity is principled, not evasive: information destruction would require a mechanism constituting surplus structure beyond the constitutive base, violating Global Parsimony.
+
 ### 6.4 What LRT Does Not Predict
 
 LRT makes no predictions about:
@@ -1066,6 +1068,14 @@ LRT explains why measurement yields *a* definite Boolean outcome. It does not ex
 This may be irreducibly stochastic. The Born rule gives probabilities; there may be no deeper fact about why a specific outcome occurs. If so, this is not a failure of LRT but a feature of physical reality.
 
 No interpretation explains individual outcome selection. MWI claims all outcomes occur. Bohmian mechanics makes selection deterministic but with unknowable initial conditions. GRW makes it stochastic. LRT is honest that this question is open.
+
+**The relativistic interface:**
+
+LRT explains entanglement as global constraint satisfaction rather than causal signaling. This works naturally in non-relativistic quantum mechanics, where simultaneity is well-defined. However, a fully relativistic formulation requires articulating how the IIS/actuality interface respects the causal structure of spacetime.
+
+The challenge: "global constraint" might appear to presuppose a reference frame, while Special Relativity has no universal "now." The resolution lies in recognizing that the constraint is on the IIS state itself (which is a single configuration without spatial parts needing coordination), not on spacetime events. Different reference frames describe measurement orderings differently, but all frames agree on the correlations.
+
+A Lorentz-invariant formulation of the interface, likely using algebraic quantum field theory where local observables respect causal diamond structure, is required for full theoretical completeness. This represents ongoing work analogous in importance to the interface criterion problem.
 
 **Quantum field theory:**
 
