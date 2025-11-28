@@ -57,6 +57,38 @@
 
 ## Commits This Session
 
-1. Complete em dash replacement (Sections 3-7)
+1. `bfa4ec3` - Complete em dash replacement (Sections 3-7)
+2. Defense framework document created
+
+---
+
+## Session 27.0 Additional Work
+
+### 2. Reviewer Defense Preparation
+
+Created `review_response/DEFENSE_FRAMEWORK.md` containing:
+
+**Core claims identified (7):**
+1. 3FLL are ontological, not cognitive
+2. IIS is coherent and well-defined
+3. QM is the unique stable interface
+4. Born rule, Hilbert space, unitarity are derived
+5. 17 phenomena unified
+6. Complex QM confirmed as prediction
+7. LRT adds no new ontology
+
+**Objections anticipated (13 across 4 categories):**
+- Category A (Foundational): Circularity, logic-to-physics gap, parsimony, ontological status
+- Category B (Technical): IIS definition, reconstruction theorem usage, local tomography, measurement problem
+- Category C (Comparative): Prediction credit, shared falsifiers, anthropic reasoning, Bell correlations
+- Category D (Scope): QFT extension, outcome selection
+
+**Defense priorities established:**
+- Non-negotiable: Core thesis, derivation structure
+- Defensible: Explanatory claims
+- Revisable: Specific formulations
+- Acknowledgeable: Scope limitations
+
+**Red lines identified:** 5 conditions that would require fundamental revision (none currently evidenced)
 
 ---
