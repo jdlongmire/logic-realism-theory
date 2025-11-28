@@ -482,9 +482,38 @@ LRT's framework is consistent with QFT but does not yet provide independent deri
 
 ### 3.7 The Complete Derivation Chain
 
-![Figure 2: LRT Derivation Chain](figures/LRT_Fig-2.jpeg)
+```mermaid
+flowchart TD
+    %% Axioms (blue)
+    A["3FLL - Identity, Non-Contradiction,\nExcluded Middle"]:::axiom
+    B["Distinguishability - Pairwise Structure"]:::axiom
 
-**Figure 2.** The LRT derivation chain. Blue nodes indicate axioms (foundational assumptions). Gold nodes indicate results derived within the framework, citing the external theorems employed. Dashed lines show additional inputs required at each derivation step. The four derived results—reversibility, complex Hilbert space, the Born rule, and unitary dynamics—follow from the foundational axioms plus physical constraints, without independent postulation.
+    %% Derived (gold/amber)
+    C["Reversibility\nDERIVED"]:::derived
+    D["Complex Hilbert Space\nvia Masanes-Müller\nDERIVED"]:::derived
+    E["Born Rule |ψ|²\nvia Gleason\nDERIVED"]:::derived
+    F["Schrödinger Equation\nvia Stone\nDERIVED"]:::derived
+
+    %% Main vertical chain
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+
+    %% Dashed side inputs
+    G["CBP + Parsimony"] -.-> C
+    H["Continuity +\nLocal Tomography"] -.-> D
+    I["Non-Contextual\nMeasure"] -.-> E
+
+    %% Styling
+    classDef axiom fill:#d0e8ff,stroke:#333,stroke-width:2px,color:#000
+    classDef derived fill:#fff2cc,stroke:#333,stroke-width:2px,color:#000
+    linkStyle 0,1,2,3,4,5 stroke:#333,stroke-width:3px
+    linkStyle 6,7,8 stroke-dasharray: 8 5,stroke:#666
+```
+
+**Figure 2.** The LRT derivation chain. Blue nodes indicate axioms (foundational assumptions). Gold/amber nodes indicate results derived within the framework, citing the external theorems employed. Dashed lines show additional inputs required at each derivation step. The four derived results—reversibility, complex Hilbert space, the Born rule, and unitary dynamics—follow from the foundational axioms plus physical constraints, without independent postulation.
 
 ### 3.8 What Is Derived vs. Assumed
 
