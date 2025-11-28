@@ -8,13 +8,13 @@ Northrop Grumman Fellow (unaffiliated research)
 
 ## Abstract
 
-Every physical measurement ever conducted has yielded exactly one outcome—self-identical, non-contradictory, determinate. This holds across all domains, scales, and epochs of physical inquiry, including a century of quantum mechanics where violations were actively sought.
+Every physical measurement ever conducted has yielded exactly one outcome: self-identical, non-contradictory, determinate. This holds across all domains, scales, and epochs of physical inquiry, including a century of quantum mechanics where violations were actively sought.
 
-This paper argues that the Three Fundamental Laws of Logic—Identity, Non-Contradiction, and Excluded Middle—are not cognitive conventions but ontological constraints constitutive of physical distinguishability. From this thesis, quantum mechanics emerges as the unique stable structure at the interface between non-Boolean possibility and Boolean actuality.
+This paper argues that the Three Fundamental Laws of Logic (Identity, Non-Contradiction, and Excluded Middle) are not cognitive conventions but ontological constraints constitutive of physical distinguishability. From this thesis, quantum mechanics emerges as the unique stable structure at the interface between non-Boolean possibility and Boolean actuality.
 
 The framework derives rather than postulates: complex Hilbert space structure follows from interface constraints and local tomography; the Born rule follows from Gleason's theorem; unitary dynamics follows from information preservation requirements. These derivations reproduce standard quantum mechanics while explaining why it has its specific structure.
 
-One structural prediction—that quantum mechanics requires complex amplitudes—has been experimentally confirmed (Renou et al., 2021). The framework specifies twelve explicit conditions that would falsify it and makes testable predictions about collapse mechanisms currently under experimental investigation.
+One structural prediction, that quantum mechanics requires complex amplitudes, has been experimentally confirmed (Renou et al., 2021). The framework specifies twelve explicit conditions that would falsify it and makes testable predictions about collapse mechanisms currently under experimental investigation.
 
 Logic Realism Theory provides unified explanation for seventeen quantum phenomena that other interpretations treat as independent postulates, while maintaining realism, locality, and parsimony. The competing interpretations either refuse ontological commitment (Copenhagen, QBism), require massive ontological excess (Many-Worlds), or introduce unexplained nonlocal mechanisms (Bohmian, GRW).
 
@@ -26,9 +26,9 @@ Logic Realism Theory provides unified explanation for seventeen quantum phenomen
 
 ### 1.1 The Empirical Puzzle
 
-Every physical measurement ever conducted has yielded exactly one outcome—self-identical, non-contradictory, determinate. No detector has simultaneously fired and not-fired. No particle has been measured in contradictory states. No experimental record has ever displayed P and ¬P.
+Every physical measurement ever conducted has yielded exactly one outcome: self-identical, non-contradictory, determinate. No detector has simultaneously fired and not-fired. No particle has been measured in contradictory states. No experimental record has ever displayed P and ¬P.
 
-This pattern holds universally. Across all of physics, chemistry, biology, and engineering—across all scales from Planck length to cosmological horizon, across all epochs from the early universe to the present—the Three Fundamental Laws of Logic (3FLL) have never been violated:
+This pattern holds universally. Across all of physics, chemistry, biology, and engineering, across all scales from Planck length to cosmological horizon, across all epochs from the early universe to the present, the Three Fundamental Laws of Logic (3FLL) have never been violated:
 
 - **Identity:** Everything is what it is (∀x: x = x)
 - **Non-Contradiction:** Nothing both is and is not in the same respect (∀x,P: ¬(P(x) ∧ ¬P(x)))
@@ -38,17 +38,17 @@ This is not for lack of trying.
 
 Quantum mechanics appeared to offer violations. Superposition looks like "both A and not-A." Entanglement looks like instantaneous contradiction-propagation. The measurement problem looks like contradictory states persisting until observed. For nearly a century, physicists and philosophers actively sought to interpret quantum mechanics as requiring non-classical logic.
 
-Birkhoff and von Neumann (1936) proposed quantum logic with non-distributive structure. Paraconsistent approaches attempted to formalize quantum states as true contradictions. The measurement problem generated interpretations explicitly designed to accommodate logical indeterminacy. Sophisticated formal tools were developed. Professional incentives favored finding violations—it would have been a major result.
+Birkhoff and von Neumann (1936) proposed quantum logic with non-distributive structure. Paraconsistent approaches attempted to formalize quantum states as true contradictions. The measurement problem generated interpretations explicitly designed to accommodate logical indeterminacy. Sophisticated formal tools were developed. Professional incentives favored finding violations; it would have been a major result.
 
 Every attempt failed.
 
-Upon careful analysis, every apparent violation dissolved. Superposition is indeterminacy prior to measurement, not contradiction in actuality. Entanglement produces correlations, not signals. Wave-particle duality reflects complementary experimental contexts, not contradictory properties. And measurement—always, without exception—yields one definite outcome.
+Upon careful analysis, every apparent violation dissolved. Superposition is indeterminacy prior to measurement, not contradiction in actuality. Entanglement produces correlations, not signals. Wave-particle duality reflects complementary experimental contexts, not contradictory properties. And measurement, always, without exception, yields one definite outcome.
 
 The quantum case is decisive precisely because it represents our best opportunity to find violations. If 3FLL were going to fail anywhere in physics, quantum mechanics is where it would happen. The formalism practically invites the interpretation that contradictions are real. Yet the logical structure holds.
 
 This pattern demands explanation.
 
-The demand is not merely philosophical. Quantum mechanics is our most successful physical theory, yet we cannot say why it has its specific structure—why complex Hilbert space, why the Born rule, why unitary dynamics. This explanatory vacuum has consequences. Without agreed-upon criteria for what counts as explanation, quantum foundations tolerates speculation other fields would not: infinite unobservable branches, consciousness-caused collapse, retrocausality. "Interpretation" becomes license for speculation unconstrained by structural requirements. Meanwhile, practical developments—quantum computing, quantum gravity—require foundational clarity we do not have. The pattern demands explanation, and the explanation must be disciplined.
+The demand is not merely philosophical. Quantum mechanics is our most successful physical theory, yet we cannot say why it has its specific structure: why complex Hilbert space, why the Born rule, why unitary dynamics. This explanatory vacuum has consequences. Without agreed-upon criteria for what counts as explanation, quantum foundations tolerates speculation other fields would not: infinite unobservable branches, consciousness-caused collapse, retrocausality. "Interpretation" becomes license for speculation unconstrained by structural requirements. Meanwhile, practical developments (quantum computing, quantum gravity) require foundational clarity we do not have. The pattern demands explanation, and the explanation must be disciplined.
 
 ### 1.2 The Thesis
 
@@ -56,9 +56,9 @@ This paper defends a physical thesis:
 
 > **The Three Fundamental Laws of Logic are ontological constraints constitutive of physical distinguishability itself.**
 
-Distinguishability—the capacity for one thing to be different from another—is not discovered in the world. It is what 3FLL establish. Without Identity, there is no basis for a state to be determinately itself. Without Non-Contradiction, there is no basis for a state to exclude alternatives. Without Excluded Middle, there is no basis for exhaustive distinction.
+Distinguishability, the capacity for one thing to be different from another, is not discovered in the world. It is what 3FLL establish. Without Identity, there is no basis for a state to be determinately itself. Without Non-Contradiction, there is no basis for a state to exclude alternatives. Without Excluded Middle, there is no basis for exhaustive distinction.
 
-The laws are not rules we impose on experience. They are conditions under which experience—and physical existence—are possible.
+The laws are not rules we impose on experience. They are conditions under which experience, and physical existence, are possible.
 
 ### 1.3 The Asymmetry of Burden
 
@@ -68,7 +68,7 @@ The claim that the Three Fundamental Laws of Logic are merely formal, cognitive,
 
 No such instance exists.
 
-Every detector click, every photographic plate spot, every CCD pixel, every gravitational-wave strain datum, every spectroscopic line—trillions of independent events across thirteen-plus orders of magnitude in energy and fourteen billion years—has been strictly self-identical, non-contradictory, and determinate. The conformity is not probabilistic; it is absolute.
+Every detector click, every photographic plate spot, every CCD pixel, every gravitational-wave strain datum, every spectroscopic line, trillions of independent events across thirteen-plus orders of magnitude in energy and fourteen billion years, has been strictly self-identical, non-contradictory, and determinate. The conformity is not probabilistic; it is absolute.
 
 Until a single counterexample is exhibited, the universality of 3FLL compliance stands as an unexplained brute fact on any view that treats the laws as optional. Logic Realism Theory removes the brute fact by elevating the laws from unexplained regularities to the constitutive conditions of physical distinguishability itself.
 
@@ -80,9 +80,9 @@ If 3FLL are constitutive of distinguishability, a structural consequence follows
 
 Define two domains:
 
-- **Infinite Information Space (IIS):** The totality of distinguishable configurations—everything that can be distinguished from everything else. This space is constituted by 3FLL and contains both determinate and indeterminate states.
+- **Infinite Information Space (IIS):** The totality of distinguishable configurations, everything that can be distinguished from everything else. This space is constituted by 3FLL and contains both determinate and indeterminate states.
 
-- **Boolean Actuality:** The domain where 3FLL are fully enforced—where every proposition has exactly one truth value. This is what we call physical reality.
+- **Boolean Actuality:** The domain where 3FLL are fully enforced, where every proposition has exactly one truth value. This is what we call physical reality.
 
 IIS is richer than Boolean structure. It contains superpositions, indeterminate configurations, states not yet resolved to definite values. Boolean actuality permits only determinate states.
 
@@ -150,22 +150,22 @@ This is the foundational claim of Logic Realism Theory. The laws are not cogniti
 
 ### 2.2 The Infinite Information Space
 
-**Definition:** The Infinite Information Space (IIS) is the totality of distinguishable configurations—every state that can be distinguished from every other state, as constituted by 3FLL. IIS is infinite in the sense that the space of distinguishable configurations is unbounded—there is no finite limit to the distinctions that can be drawn.
+**Definition:** The Infinite Information Space (IIS) is the totality of distinguishable configurations, every state that can be distinguished from every other state, as constituted by 3FLL. IIS is infinite in the sense that the space of distinguishable configurations is unbounded; there is no finite limit to the distinctions that can be drawn.
 
 IIS is not:
 - A Platonic realm of abstract objects
 - A set-theoretic construction (which would face cardinality paradoxes)
 - Merely epistemic (representing what we don't know)
 
-IIS is the structural space of what *can be distinguished*. Its existence is not the existence of a thing among things, but the existence of a structural condition—the condition under which distinct states are possible at all.
+IIS is the structural space of what *can be distinguished*. Its existence is not the existence of a thing among things, but the existence of a structural condition, the condition under which distinct states are possible at all.
 
-**Co-primitive with 3FLL:** IIS and 3FLL are mutually constitutive. Without 3FLL, IIS would be undifferentiated noise—no state distinguishable from any other. Without IIS, 3FLL would have nothing to structure. This parallels Borges' Library of Babel: IIS contains every possible informational configuration; 3FLL make the library navigable by constituting what makes one configuration distinguishable from another.
+**Co-primitive with 3FLL:** IIS and 3FLL are mutually constitutive. Without 3FLL, IIS would be undifferentiated noise, no state distinguishable from any other. Without IIS, 3FLL would have nothing to structure. This parallels Borges' Library of Babel: IIS contains every possible informational configuration; 3FLL make the library navigable by constituting what makes one configuration distinguishable from another.
 
 **Functional characterization:** IIS is characterized functionally rather than by stipulating a mathematical structure at the outset. Its properties are *derived*, not assumed. Premature mathematization would beg questions about which formalism applies.
 
 What we can say prior to derivation:
 - IIS is not Boolean (contains determinate states, indeterminate states, superpositions, classical mixtures)
-- IIS is structured by distinguishability—the "metric" is how distinguishable states are from each other
+- IIS is structured by distinguishability; the "metric" is how distinguishable states are from each other
 - IIS contains all consistent Generalized Probabilistic Theories (GPTs) as substructures (Hardy, 2001; Chiribella et al., 2011)
 
 **Mathematical characterization:** IIS can be formally defined as the maximal collection of states closed under distinguishability:
@@ -187,9 +187,9 @@ Indeterminacy is not contradiction. A state can be distinguishable from other st
 
 ### 2.3 Boolean Actuality
 
-**Definition:** Boolean Actuality is the domain where 3FLL are fully enforced—where every proposition about the state of affairs has exactly one truth value.
+**Definition:** Boolean Actuality is the domain where 3FLL are fully enforced, where every proposition about the state of affairs has exactly one truth value.
 
-When something becomes actual—when it manifests as a physical state of affairs—it must satisfy 3FLL completely:
+When something becomes actual, when it manifests as a physical state of affairs, it must satisfy 3FLL completely:
 
 - **Identity:** The state is determinately what it is
 - **Non-Contradiction:** The state does not both have and lack any property
@@ -230,21 +230,21 @@ The answer follows from the structure itself:
 
 > **Consistency Bridging Principle (CBP):** Admissible transformations on IIS are only those for which all reachable states can, in principle, participate in a consistent resolution to Boolean actuality.
 
-CBP is not an additional postulate. It is an architectural requirement. Any transformation that produced states incapable of Boolean resolution would produce states with no path to actuality. Such states would be physical dead ends—configurations that cannot manifest as determinate facts.
+CBP is not an additional postulate. It is an architectural requirement. Any transformation that produced states incapable of Boolean resolution would produce states with no path to actuality. Such states would be physical dead ends, configurations that cannot manifest as determinate facts.
 
 CBP constrains dynamics to preserve the possibility of consistent actualization. It does not specify *when* actualization occurs or *which* outcome obtains. It constrains what transformations are admissible in the first place.
 
-**Key consequence:** CBP implies that fundamental dynamics must be reversible. Irreversible dynamics destroy information—they map distinct states to the same output. But information destruction requires a mechanism: something must absorb or erase the distinction. Any such mechanism would constitute additional structure beyond IIS and 3FLL. By parsimony (derived below), no such surplus structure exists at the fundamental level. Therefore, fundamental IIS dynamics preserve information.
+**Key consequence:** CBP implies that fundamental dynamics must be reversible. Irreversible dynamics destroy information; they map distinct states to the same output. But information destruction requires a mechanism: something must absorb or erase the distinction. Any such mechanism would constitute additional structure beyond IIS and 3FLL. By parsimony (derived below), no such surplus structure exists at the fundamental level. Therefore, fundamental IIS dynamics preserve information.
 
 ### 2.6 Global Parsimony
 
 A principle of parsimony follows from the constitutive role of 3FLL:
 
-If 3FLL constitute distinguishability, and IIS is the space constituted by 3FLL, then actuality contains exactly what this constitutive base generates—no more, no less.
+If 3FLL constitute distinguishability, and IIS is the space constituted by 3FLL, then actuality contains exactly what this constitutive base generates, no more, no less.
 
 **Global Parsimony:** Actuality contains exactly the propositions whose truth values are grounded in (3FLL + initial conditions) and their consequences. No surplus structure exists.
 
-**Derivation:** If 3FLL constitute distinguishability, and all physical structure presupposes distinguishability, then all physical structure must trace to 3FLL. Consider what surplus structure would require: structure not traceable to 3FLL would need distinguishability from outside the only source of distinguishability. But there is no such source available—distinguishability just is what 3FLL establish. Surplus structure is therefore incoherent. Global Parsimony is not an aesthetic preference or methodological heuristic; it is the closure condition on the constitutive claim itself.
+**Derivation:** If 3FLL constitute distinguishability, and all physical structure presupposes distinguishability, then all physical structure must trace to 3FLL. Consider what surplus structure would require: structure not traceable to 3FLL would need distinguishability from outside the only source of distinguishability. But there is no such source available; distinguishability just is what 3FLL establish. Surplus structure is therefore incoherent. Global Parsimony is not an aesthetic preference or methodological heuristic; it is the closure condition on the constitutive claim itself.
 
 This is a structural consequence of what "constitution" means. If 3FLL constitute the domain, the domain contains what they generate. Propositions requiring additional grounding sources have no truthmakers within the framework.
 
