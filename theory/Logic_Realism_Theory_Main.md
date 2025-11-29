@@ -174,6 +174,8 @@ $$\mathcal{I} = \{s : D \text{ is defined on } s \times \mathcal{I}\}$$
 
 The derivation chain (Section 3) shows that IIS, equipped with the inner product induced by distinguishability, has complex Hilbert space form at the interface with Boolean actuality. This result invokes the Masanes-Müller reconstruction theorem. The mathematical structure *emerges* from the framework rather than being imposed on it.
 
+**Physical interpretation:** For familiar quantum systems, IIS takes concrete form. A single qubit's IIS is the Bloch sphere, with the distinguishability metric $D$ giving the trace distance between states. In a two-slit experiment, the superposition state resides in IIS with definite identity (it is determinately $|\psi\rangle$) while lacking definite which-path information. For composite systems, entangled states represent correlation structures in IIS not reducible to subsystem states. The Technical companion (§3.4) develops these examples in detail, showing how the abstract IIS definition maps onto the standard quantum formalism.
+
 Crucially, IIS is richer than Boolean structure. It contains:
 
 | State Type | Description |

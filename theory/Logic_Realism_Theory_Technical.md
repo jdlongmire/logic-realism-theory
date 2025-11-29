@@ -165,7 +165,104 @@ The inner product satisfying $D = 1 - |\langle \cdot | \cdot \rangle|^2$ is uniq
 
 Therefore, distinguishability $D$ + continuity + reversibility uniquely determines complex inner product structure. ∎
 
-### 3.4 Operational Primitives from Distinguishability
+### 3.4 Physical Interpretation of IIS
+
+The abstract definition of IIS (Definition 3.1) and the Hardy kernel construction may appear remote from physical intuition. This section grounds these abstractions in concrete quantum systems.
+
+#### 3.4.1 Example: Single Qubit and the Bloch Sphere
+
+For a single qubit, the IIS corresponds to the space of pure quantum states, representable on the Bloch sphere. Each point $(\theta, \phi)$ on the sphere represents a distinguishable state:
+
+$$|\psi(\theta, \phi)\rangle = \cos(\theta/2)|0\rangle + e^{i\phi}\sin(\theta/2)|1\rangle$$
+
+The distinguishability metric $D$ gives the trace distance between states:
+
+$$D(\psi_1, \psi_2) = \sqrt{1 - |\langle\psi_1|\psi_2\rangle|^2}$$
+
+For orthogonal states (e.g., $|0\rangle$ and $|1\rangle$), $D = 1$ (perfectly distinguishable). For identical states, $D = 0$. For states at angle $\theta$ on the Bloch sphere, $D = \sin(\theta/2)$.
+
+**3FLL manifestation:**
+- **Identity**: Each point on the Bloch sphere is self-identical; $|\psi\rangle = |\psi\rangle$
+- **Non-Contradiction**: No state is both $|0\rangle$ and not-$|0\rangle$; states have definite positions on the sphere
+- **Excluded Middle**: Any two states are either identical ($D = 0$) or distinguishable ($D > 0$)
+
+The Bloch sphere geometry emerges from 3FLL-constituted distinguishability: the metric structure, the topology, and the group of reversible transformations (SU(2)) all follow from the distinguishability constraints plus continuity and reversibility.
+
+#### 3.4.2 Example: Two-Slit Experiment
+
+Consider an electron in a two-slit apparatus. The IIS representation illuminates the non-Boolean structure:
+
+**Before measurement (state in IIS):**
+$$|\psi\rangle = \frac{1}{\sqrt{2}}(|\text{slit}_1\rangle + |\text{slit}_2\rangle)$$
+
+This state encodes the full distinguishability structure:
+- Distinguishable from $|\text{slit}_1\rangle$ alone: $D(|\psi\rangle, |\text{slit}_1\rangle) = 1/\sqrt{2}$
+- Distinguishable from $|\text{slit}_2\rangle$ alone: $D(|\psi\rangle, |\text{slit}_2\rangle) = 1/\sqrt{2}$
+- Carries interference information (relative phase between paths)
+
+**Non-Boolean character:** The proposition "electron went through slit 1" has no definite truth value in IIS. This is not a failure of 3FLL but a consequence of the state being genuinely indeterminate with respect to the slit basis. The 3FLL apply to the state's identity (it is determinately $|\psi\rangle$), not to properties the state doesn't possess.
+
+**Upon measurement (actualization to Boolean outcome):**
+When position is measured on the detection screen:
+- Exactly one location registers (Excluded Middle)
+- That location is definite (Identity)
+- It is not simultaneously another location (Non-Contradiction)
+
+The transition from IIS to Boolean actuality is the interface: the non-Boolean superposition resolves to a Boolean outcome, with probabilities given by the Born rule (derived from the inner product structure).
+
+#### 3.4.3 Example: General n-Dimensional System
+
+For a quantum system with Hilbert space $\mathcal{H}$ of dimension $n$:
+
+**Pure states in IIS:** The projective space $\mathbb{CP}^{n-1}$ (rays in $\mathcal{H}$)
+- Each ray $[|\psi\rangle]$ is a point in IIS
+- The Fubini-Study metric on $\mathbb{CP}^{n-1}$ corresponds to distinguishability $D$
+
+**Mixed states in IIS:** The space of density operators $\mathcal{D}(\mathcal{H})$
+- Convex set with pure states as extreme points
+- $D(\rho_1, \rho_2) = \frac{1}{2}\|\rho_1 - \rho_2\|_1$ (trace distance)
+
+**Dimension is physical input:** The dimension $n$ is not derived from LRT; it specifies the distinguishability structure of a particular physical system. A spin-1/2 particle has $n = 2$; a spin-1 particle has $n = 3$; a harmonic oscillator has $n = \infty$. LRT explains *why* the state space has complex Hilbert structure given any $n$, but does not determine $n$ itself.
+
+**Richness condition:** Definition 3.1 requires that for any $k$, there exist $k$ mutually distinguishable states. For finite $n$, this is satisfied up to $k = n$ (orthonormal basis). For infinite-dimensional systems (e.g., position of a particle), the richness is unbounded.
+
+#### 3.4.4 Example: Composite Systems and Entanglement
+
+For bipartite system $AB$ with Hilbert spaces $\mathcal{H}_A \otimes \mathcal{H}_B$:
+
+**Factorizable states:** $|\psi_A\rangle \otimes |\psi_B\rangle$
+- Product of individual IIS elements
+- Local measurements on A and B are statistically independent
+- $D_{AB} = \sqrt{D_A^2 + D_B^2 - D_A^2 D_B^2}$ for product states
+
+**Entangled states:** $|\Psi\rangle \neq |\psi_A\rangle \otimes |\psi_B\rangle$
+- Correlation structure in IIS not reducible to subsystem states
+- Example: Bell state $|\Phi^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)$
+
+**Entanglement as IIS structure:**
+The Bell state $|\Phi^+\rangle$ has the following distinguishability properties:
+- Local marginals: $\rho_A = \rho_B = \frac{1}{2}I$ (maximally mixed)
+- Global state: pure, with $D(|\Phi^+\rangle, |\Phi^-\rangle) = 1$
+
+The entanglement is not "spooky action" but correlation structure built into the IIS state. When Alice and Bob measure:
+- Each obtains a Boolean outcome (3FLL satisfied locally)
+- Outcomes are correlated because both actualize from the same IIS structure
+- No signal propagates; both access shared distinguishability structure
+
+**Local tomography (A3c):** For complex QM, the global state is uniquely determined by local measurements plus correlations. This is why $\mathbb{C}$ is required: real QM fails this (Theorem 5.2 below), and quaternionic QM fails tensor associativity for three or more systems.
+
+#### 3.4.5 Summary: IIS as Distinguishability Structure
+
+| System | IIS Representation | D Metric | 3FLL Role |
+|--------|-------------------|----------|-----------|
+| Single qubit | Bloch sphere $S^2$ | Trace distance | State identity, mutual exclusion |
+| Two-slit | Superposition in $\mathbb{C}^2$ | Fubini-Study | Outcome determinacy at measurement |
+| n-level system | $\mathbb{CP}^{n-1}$ (pure) | Trace distance | Distinguishability structure |
+| Composite AB | $\mathcal{H}_A \otimes \mathcal{H}_B$ | Trace distance | Local outcomes Boolean, global correlations |
+
+The key insight: IIS is not a mysterious abstract space but the familiar quantum state space, viewed through the lens of distinguishability. The 3FLL are not imposed externally but constitute the very notion of distinguishable states. The non-Boolean structure of superposition coexists with 3FLL because 3FLL apply to state identity, not to properties states may lack.
+
+### 3.5 Operational Primitives from Distinguishability
 
 **Definition 3.2 (States).** A *state* is an equivalence class under operational indistinguishability:
 $$[p] = \{p' : D(p, p') = 0\}$$
