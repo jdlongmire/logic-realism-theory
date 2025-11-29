@@ -19,6 +19,19 @@ This document describes a multi-stage development process combining AI assistanc
 
 ## Process Overview
 
+**CRITICAL STARTING POINT**: This process assumes you begin with a human-originated core insight, observation, or theoretical framework that needs formalization and development. The AI assists with mathematical formalization, proof development, and error detection—it does NOT generate the theory from scratch.
+
+**Examples of appropriate starting points**:
+- "I noticed that X fundamental principle implies Y unexpected consequence"
+- "These three disparate phenomena might share a common underlying structure"
+- "If we take concept A seriously as ontological rather than epistemic, it predicts B"
+
+**NOT appropriate**:
+- "AI, generate a theory of quantum gravity for me"
+- "What's a novel physics theory I could work on?"
+
+The human provides the theoretical insight; the AI provides formalization assistance and adversarial verification.
+
 ```
 Phase 1: Claude Code Initial Development
     ↓
@@ -46,6 +59,15 @@ Phase 10: Experimental Validation (Ongoing)
 ---
 
 ## Phase 1: Initial Development (Claude Code)
+
+### Prerequisites
+**Human provides**:
+- Core theoretical insight or observation
+- Initial framework or conceptual structure
+- Key claims to be formalized
+- Domain context and constraints
+
+**Example**: "The three fundamental laws of logic (Identity, Non-Contradiction, Excluded Middle) are not merely epistemic tools but ontological constraints constitutive of physical distinguishability. I need help formalizing what this implies mathematically."
 
 ### Tool
 Claude Code with mandatory collaboration profile
@@ -405,8 +427,6 @@ Select appropriate journals based on:
 
 ### Submission Strategy Options
 
-### Submission Strategy Options
-
 **Option A: Sequential**
 - Submit main paper first
 - After acceptance, submit companion papers citing the published work
@@ -539,6 +559,8 @@ Ultimate arbiter is experiment, not theory elegance or mathematical beauty.
 
 **Problem**: AI systems can produce plausible-sounding but false content
 
+**Additional Critical Point**: This methodology is NOT for "AI-generated theories." The core theoretical insight must be human-originated. AI assists with formalization, not theory creation from scratch.
+
 **Defenses**:
 1. **Multi-LLM adversarial review**: Different systems with different training, actively searching for errors
 2. **Mandatory circularity checking**: Systematic dependency tracing catches circular reasoning
@@ -584,6 +606,7 @@ Ultimate arbiter is experiment, not theory elegance or mathematical beauty.
 | Date | Change | Session |
 |------|--------|---------|
 | 2025-11-29 | Created | 31.0 |
+| 2025-11-29 | Added human-originated insight requirement | 31.0 |
 
 ---
 
