@@ -649,13 +649,21 @@ LRT satisfies conditions 1, 2, and 4 directly. The following two subsections est
 
 **Proof:**
 
-Local tomography asserts: the state of a composite system AB is completely determined by the statistics of local measurements on A and B separately, together with their correlations.
+Local tomography (A3c) requires: for any state $\rho_{AB}$ on composite system AB, the statistics of all local measurements $\{M_A\}$ on A and $\{M_B\}$ on B, together with their joint statistics, uniquely determine $\rho_{AB}$.
 
-In the reconstruction literature, this is equivalent to the state space factorizing as a tensor product (Masanes & Müller 2011, §III.B; Hardy 2001, Axiom 4):
+This is equivalent to tensor product structure (Masanes & Müller 2011, §III.B; Hardy 2001, Axiom 4):
 
-1. *Dimension counting:* If system A has $d_A$ degrees of freedom and B has $d_B$, local tomography requires exactly $d_A \cdot d_B$ independent parameters to specify the joint state—the signature of tensor product structure.
+1. *Dimension counting:* If $\dim(\mathcal{H}_A) = d_A$ and $\dim(\mathcal{H}_B) = d_B$, local tomography requires exactly $d_A^2 - 1$ parameters for A, $d_B^2 - 1$ parameters for B, and $(d_A^2 - 1)(d_B^2 - 1)$ correlation parameters—totaling $(d_A \cdot d_B)^2 - 1$ independent parameters. This matches the dimension of density matrices on $\mathcal{H}_A \otimes \mathcal{H}_B$.
 
-2. *Operational equivalence:* The probabilities for joint measurements factorize appropriately: $p(a,b|\rho_{AB}, M_A \otimes M_B) = \text{Tr}[\rho_{AB}(M_A \otimes M_B)]$.
+2. *Operational factorization:* The Born rule probabilities must satisfy:
+$$p(a,b|\rho_{AB}, M_A \otimes M_B) = \text{Tr}[\rho_{AB}(M_A \otimes M_B)]$$
+This factorization structure is the defining property of tensor product composition.
+
+3. *State determination:* Any bipartite state $\rho_{AB}$ is completely characterized by:
+   - Local expectation values: $\langle A_i \otimes I \rangle$, $\langle I \otimes B_j \rangle$
+   - Correlation functions: $\langle A_i \otimes B_j \rangle$
+
+   This is precisely the structure of operators on $\mathcal{H}_A \otimes \mathcal{H}_B$.
 
 Combined with the Hilbert space structure from Theorem 3.2 (inner product from distinguishability), this gives:
 
