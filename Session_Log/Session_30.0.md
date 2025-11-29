@@ -3,7 +3,7 @@
 **Date**: 2025-11-29
 **Focus**: Implement Ontic Booleanity integration
 **Status**: IN PROGRESS
-**Interaction Count**: 2
+**Interaction Count**: 6
 
 ---
 
@@ -92,18 +92,44 @@ Added sentence in §2.1 after foundational claim:
 
 ## Session Summary
 
+### Part 1: Ontic Booleanity Integration
+
 Successfully integrated the Ontic Booleanity Theorem across all four papers:
 - Technical: Full theorem with rigorous proof
 - Philosophy: Reference paragraph strengthening anti-psychologism argument
 - Bridging: New subsection explaining the closure
 - Main: Brief mention supporting constitutive claim
 
-The epistemic loophole objection is now formally addressed in the paper series.
+### Part 2: Strategic Planning
+
+Based on post-review feedback, developed comprehensive restructuring strategy:
+
+**New Structure (2+1)**:
+1. Paper 1 (Main revised): "Quantum Mechanics from Logical Constraints on Distinguishability" - Foundations of Physics
+2. Paper 2 (Technical revised): "Technical Foundations of Logic Realism Theory" - Foundations of Physics / SHPMP
+3. Paper 3 (Philosophy): "Logic Realism and Quantum Foundations" - BJPS
+
+**Bridging paper deprecated** - content absorbed into Papers 1-2.
+
+**7 Gaps identified** with priority ordering:
+1. IIS Physical Interpretation (2-3 weeks)
+2. Bell State Worked Calculation (1-2 weeks)
+3. Real QM Local Tomography Proof (1 week)
+4. Hardy Kernel Verification (1-2 weeks)
+5. Constitutive vs Descriptive Clarification (1 week)
+6. MM5 Rigorous Derivation (4-6 weeks)
+7. Figures and Diagrams (2 weeks)
+
+**Timeline**: ~16 weeks (4 months) with no timeline pressure.
+
+**Strategy document created**: `theory/PAPER_RESTRUCTURING_STRATEGY.md`
 
 ---
 
 ## Commits This Session
 
 1. `5dc502b` - Integrate Ontic Booleanity Theorem across four papers
+2. `05416ee` - Update Session 30.0 log with commit hash
+3. *(pending)* - Create paper restructuring strategy document
 
 ---
