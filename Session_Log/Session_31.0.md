@@ -300,4 +300,29 @@ Revised Technical §6 "Derivation of MM5 via Purification Uniqueness":
 
 **Papers now submission-ready** (minus figures).
 
+### Ontic Booleanity in Main Paper - COMPLETE
+
+Added Main §4.8 "Ontic Booleanity: The Epistemic Loophole Closed":
+- Presents epistemic loophole objection
+- States Ontic Booleanity theorem
+- Summarizes two-part proof (positive-probability + hidden tokens)
+- Emphasizes path-connectedness constraint
+- References Technical §7 for complete proof
+
+This implements Decision 1 (Option C - split): theorem statement in Main, full proof in Technical.
+
+---
+
+## Commits This Session
+
+1. `d589eaf` - Gap 1: IIS Physical Interpretation
+2. `e841294` - Gap 2: Bell State Worked Calculation
+3. `7a72273` - Gap 3: Real QM Local Tomography Proof
+4. `2554316` - Gap 4: Hardy Kernel Verification
+5. `4e8021c` - Gap 5: Circularity Objection + Theorem 5.6 fix
+6. `da38d36` - MM5 feasibility spike
+7. `86f9a17` - Gap 6: MM5 rigorous derivation via Uhlmann
+8. `2fe7cb6` - Session log verification update
+9. `dc0df03` - Main §4.8: Ontic Booleanity
+
 ---
