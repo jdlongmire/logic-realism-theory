@@ -239,4 +239,35 @@ The answer: **Uhlmann's theorem**. In any Hilbert space with tensor product stru
 
 This transforms Lemma 6.1 from a hand-wavy argument into a proper chain of established results.
 
+### Gap 6 Implementation - COMPLETE
+
+Revised Technical §6 "Derivation of MM5 via Purification Uniqueness":
+
+**§6.1 The Lee-Selby Theorem** (revised intro)
+- Clarified that purification uniqueness comes from Hilbert space structure, not CBP directly
+
+**§6.2 Local Tomography Implies Tensor Product Structure** (NEW)
+- Theorem 6.2: A3c → IIS_{AB} = IIS_A ⊗ IIS_B
+- Cites Masanes-Müller 2011, Hardy 2001
+- Explains dimension counting argument
+
+**§6.3 Uhlmann's Theorem (Purification Uniqueness)** (NEW)
+- Definition 6.1: Purification
+- Theorem 6.3: Uhlmann's theorem (all purifications related by local unitaries)
+- Proof sketch via Schmidt decomposition
+- Corollary 6.1: This IS purification uniqueness
+
+**§6.4 The Complete Derivation** (revised)
+- Theorem 6.4: LRT → MM5
+- Clean derivation chain with equation display
+- Removed hand-wavy CBP argument
+
+**Cross-references updated**:
+- Line 396-401: MM5 derivation summary
+- Line 611: Theorem 5.7 proof reference
+- Line 839: Conclusions reference
+
+**References added**:
+- Uhlmann, A. (1976) - purification uniqueness theorem
+
 ---

@@ -100,7 +100,7 @@ Based on risk/value analysis, we proceed in this order:
 | 3 | Real QM Local Tomography Proof | Low | Medium | 1 week | COMPLETE |
 | 4 | Hardy Kernel Verification | Medium | Medium | 1-2 weeks | COMPLETE |
 | 5 | Constitutive vs Descriptive | Low | Medium | 1 week | COMPLETE |
-| 6 | MM5 Rigorous Derivation | Medium | High | 1-2 weeks | SPIKE COMPLETE |
+| 6 | MM5 Rigorous Derivation | Medium | High | 1-2 weeks | COMPLETE |
 | 7 | Figures and Diagrams | Low | Medium | 2 weeks | NOT STARTED |
 
 **Rationale**: Start with low-risk/high-value gaps to build momentum and strengthen papers regardless of MM5 outcome. Tackle MM5 last with clearer framework established.
@@ -213,22 +213,24 @@ Based on risk/value analysis, we proceed in this order:
 - Risk reduced from HIGH to MEDIUM; time from 4-6 weeks to 1-2 weeks
 
 **Revised Deliverables**:
-- [ ] **Step A**: Local Tomography → Tensor Product (new §6.2)
-  - [ ] State that A3c implies IIS_{AB} = IIS_A ⊗ IIS_B
-  - [ ] Cite Masanes-Müller 2011 for standard result
-- [ ] **Step B**: Uhlmann's Theorem (new §6.3)
-  - [ ] State Uhlmann's theorem formally
-  - [ ] Note this follows from Hilbert space + tensor product structure
-  - [ ] Show this = purification uniqueness (Lee-Selby condition 3)
-- [ ] **Step C**: Complete Derivation (revise §6.4)
-  - [ ] Chain: LRT → Hilbert space → Tensor product → Uhlmann → Lee-Selby → MM5
-  - [ ] Remove hand-wavy CBP argument from old Lemma 6.1
+- [x] **Step A**: Local Tomography → Tensor Product (new §6.2)
+  - [x] State that A3c implies IIS_{AB} = IIS_A ⊗ IIS_B
+  - [x] Cite Masanes-Müller 2011 for standard result
+- [x] **Step B**: Uhlmann's Theorem (new §6.3)
+  - [x] State Uhlmann's theorem formally
+  - [x] Note this follows from Hilbert space + tensor product structure
+  - [x] Show this = purification uniqueness (Lee-Selby condition 3)
+- [x] **Step C**: Complete Derivation (revise §6.4)
+  - [x] Chain: LRT → Hilbert space → Tensor product → Uhlmann → Lee-Selby → MM5
+  - [x] Remove hand-wavy CBP argument from old Lemma 6.1
 
 **Output**: 3-4 pages in Technical (revision, not expansion)
 
 **Acceptance criteria**: Clean chain of established results with proper citations
 
 **Key insight**: Purification uniqueness is Uhlmann's theorem applied to the Hilbert space structure that LRT already establishes in §3.3. We cite standard results, not prove from scratch.
+
+**Completed**: Session 31.0 (2025-11-29)
 
 ---
 
@@ -358,7 +360,7 @@ Based on risk/value analysis, we proceed in this order:
 | 3. Real QM Proof | [x] | [x] | [ ] | [x] |
 | 4. Hardy Verification | [x] | [x] | [ ] | [x] |
 | 5. Constitutive Clarification | [x] | [x] | [ ] | [x] |
-| 6. MM5 Derivation | [x] | [ ] | [ ] | [ ] |
+| 6. MM5 Derivation | [x] | [x] | [ ] | [x] |
 | 7. Figures | [ ] | [ ] | [ ] | [ ] |
 
 ---
