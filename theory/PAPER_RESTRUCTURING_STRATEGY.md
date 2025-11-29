@@ -2,7 +2,7 @@
 
 **Created**: 2025-11-29 (Session 30.0)
 **Status**: ACTIVE
-**Last Updated**: 2025-11-29 (Gap 1 complete)
+**Last Updated**: 2025-11-29 (Gaps 1-2 complete)
 
 ---
 
@@ -96,7 +96,7 @@ Based on risk/value analysis, we proceed in this order:
 | Priority | Gap | Risk | Value | Time Est. | Status |
 |----------|-----|------|-------|-----------|--------|
 | 1 | IIS Physical Interpretation | Low | High | 2-3 weeks | COMPLETE |
-| 2 | Bell State Worked Calculation | Low | High | 1-2 weeks | NOT STARTED |
+| 2 | Bell State Worked Calculation | Low | High | 1-2 weeks | COMPLETE |
 | 3 | Real QM Local Tomography Proof | Low | Medium | 1 week | NOT STARTED |
 | 4 | Hardy Kernel Verification | Medium | Medium | 1-2 weeks | NOT STARTED |
 | 5 | Constitutive vs Descriptive | Low | Medium | 1 week | NOT STARTED |
@@ -133,16 +133,18 @@ Based on risk/value analysis, we proceed in this order:
 **Location**: Main §4.3 (expanded)
 
 **Deliverables**:
-- [ ] IIS representation of |Ψ⁻⟩
-- [ ] Step-by-step correlation calculation
-- [ ] E(n̂_A, n̂_B) = -n̂_A · n̂_B derived
-- [ ] CHSH violation shown (|S| = 2√2)
-- [ ] No-signaling demonstration
-- [ ] Contrast with classical/Bohmian
+- [x] IIS representation of |Ψ⁻⟩
+- [x] Step-by-step correlation calculation
+- [x] E(n̂_A, n̂_B) = -n̂_A · n̂_B derived
+- [x] CHSH violation shown (|S| = 2√2)
+- [x] No-signaling demonstration
+- [x] Contrast with classical/Bohmian
 
 **Output**: 2-3 pages in Main
 
 **Acceptance criteria**: Complete worked example a physicist can follow
+
+**Completed**: Session 31.0 (2025-11-29)
 
 ---
 
@@ -342,7 +344,7 @@ Based on risk/value analysis, we proceed in this order:
 | Gap | Started | Draft | Review | Complete |
 |-----|---------|-------|--------|----------|
 | 1. IIS Interpretation | [x] | [x] | [ ] | [x] |
-| 2. Bell Calculation | [ ] | [ ] | [ ] | [ ] |
+| 2. Bell Calculation | [x] | [x] | [ ] | [x] |
 | 3. Real QM Proof | [ ] | [ ] | [ ] | [ ] |
 | 4. Hardy Verification | [ ] | [ ] | [ ] | [ ] |
 | 5. Constitutive Clarification | [ ] | [ ] | [ ] | [ ] |

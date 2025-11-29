@@ -3,7 +3,7 @@
 **Date**: 2025-11-29
 **Focus**: Gap 1 - IIS Physical Interpretation
 **Status**: IN PROGRESS
-**Interaction Count**: 2
+**Interaction Count**: 3
 
 ---
 
@@ -81,10 +81,24 @@ Also added summary paragraph to Main paper §2.2 referencing Technical §3.4.
 
 Updated strategy document to mark Gap 1 complete.
 
+### Gap 2: Bell State Worked Calculation - COMPLETE
+
+Added "Worked Example: Bell State Correlations" to Main §4.3 (~110 lines):
+
+1. **The State in IIS**: Singlet state properties, global purity, local mixedness
+2. **Measurement Scenario**: Alice/Bob spacelike-separated measurements
+3. **Correlation Calculation**: E(n̂_A, n̂_B) = -n̂_A · n̂_B derived explicitly
+4. **CHSH Violation**: |S| = 2√2 > 2 shown with explicit axis choices
+5. **No-Signaling Proof**: Alice's marginal independent of Bob's choices
+6. **LRT vs. Alternatives**: Comparison table (Classical, Copenhagen, MWI, Bohmian, LRT)
+
+Updated strategy document to mark Gap 2 complete.
+
 ---
 
 ## Commits This Session
 
-1. *(pending)* - Add IIS Physical Interpretation (Gap 1 complete)
+1. `d589eaf` - Gap 1 complete: Add IIS Physical Interpretation
+2. *(pending)* - Gap 2 complete: Add Bell State Worked Calculation
 
 ---

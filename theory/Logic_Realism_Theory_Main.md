@@ -620,6 +620,114 @@ In LRT:
 
 The correlations are not explained by hidden information traveling faster than light. They are explained by the unified structure of the IIS state, which does not have spatial parts that need to coordinate. The "non-locality" is in the wholeness of the state, not in any propagation. This explains why entanglement produces correlations but not signaling.
 
+#### Worked Example: Bell State Correlations
+
+To make this concrete, we work through the Bell state $|\Psi^-\rangle$ in complete detail, showing how LRT explains the correlations.
+
+**1. The State in IIS**
+
+Consider the singlet Bell state:
+$$|\Psi^-\rangle = \frac{1}{\sqrt{2}}(|01\rangle - |10\rangle)$$
+
+where $|0\rangle$ and $|1\rangle$ denote spin-up and spin-down along the z-axis.
+
+**IIS representation:** This state is a single point in the composite IIS for the two-particle system. Its key properties:
+
+- **Global purity:** $|\Psi^-\rangle$ is a pure state with $D(|\Psi^-\rangle, |\Psi^-\rangle) = 0$
+- **Local mixedness:** The reduced density matrices are $\rho_A = \rho_B = \frac{1}{2}I$ (maximally mixed)
+- **Global distinguishability:** $D(|\Psi^-\rangle, |\Phi^+\rangle) = 1$ (perfectly distinguishable from other Bell states)
+
+The entanglement is manifest: the global state carries more information than the sum of local states. This is correlation structure built into IIS, not a dynamical connection between particles.
+
+**2. Measurement Scenario**
+
+Alice and Bob perform measurements at spacelike-separated locations:
+
+- Alice measures spin along axis $\hat{n}_A = (\sin\theta_A\cos\phi_A, \sin\theta_A\sin\phi_A, \cos\theta_A)$
+- Bob measures spin along axis $\hat{n}_B = (\sin\theta_B\cos\phi_B, \sin\theta_B\sin\phi_B, \cos\theta_B)$
+
+Each measurement yields Boolean outcome $\pm 1$ (satisfying 3FLL at the interface).
+
+**3. Correlation Calculation**
+
+The correlation function is:
+$$E(\hat{n}_A, \hat{n}_B) = \langle\Psi^-|\sigma_A \cdot \hat{n}_A \otimes \sigma_B \cdot \hat{n}_B|\Psi^-\rangle$$
+
+where $\sigma = (\sigma_x, \sigma_y, \sigma_z)$ are the Pauli matrices.
+
+**Explicit calculation:**
+
+For the singlet state, we use the identity:
+$$|\Psi^-\rangle\langle\Psi^-| = \frac{1}{4}(I \otimes I - \sigma_x \otimes \sigma_x - \sigma_y \otimes \sigma_y - \sigma_z \otimes \sigma_z)$$
+
+Therefore:
+$$E(\hat{n}_A, \hat{n}_B) = \text{Tr}\left[|\Psi^-\rangle\langle\Psi^-| \cdot (\sigma \cdot \hat{n}_A) \otimes (\sigma \cdot \hat{n}_B)\right]$$
+
+Expanding $(\sigma \cdot \hat{n}_A) \otimes (\sigma \cdot \hat{n}_B)$ and using $\text{Tr}(\sigma_i) = 0$ and $\text{Tr}(\sigma_i \sigma_j) = 2\delta_{ij}$:
+
+$$E(\hat{n}_A, \hat{n}_B) = -\hat{n}_A \cdot \hat{n}_B = -\cos\theta$$
+
+where $\theta$ is the angle between the measurement axes.
+
+**Special cases:**
+- Parallel axes ($\theta = 0$): $E = -1$ (perfect anticorrelation)
+- Antiparallel axes ($\theta = \pi$): $E = +1$ (perfect correlation)
+- Orthogonal axes ($\theta = \pi/2$): $E = 0$ (no correlation)
+
+**4. CHSH Violation**
+
+The CHSH inequality for local hidden variable theories states:
+$$|S| = |E(a,b) - E(a,b') + E(a',b) + E(a',b')| \leq 2$$
+
+Choose axes:
+- $a = \hat{z}$ (Alice's first setting)
+- $a' = \hat{x}$ (Alice's second setting)
+- $b = (\hat{z} + \hat{x})/\sqrt{2}$ (Bob's first setting, at 45°)
+- $b' = (\hat{z} - \hat{x})/\sqrt{2}$ (Bob's second setting, at -45°)
+
+Calculate each term using $E = -\cos\theta$:
+- $E(a,b) = -\cos(45°) = -1/\sqrt{2}$
+- $E(a,b') = -\cos(45°) = -1/\sqrt{2}$
+- $E(a',b) = -\cos(45°) = -1/\sqrt{2}$
+- $E(a',b') = -\cos(135°) = +1/\sqrt{2}$
+
+Therefore:
+$$S = -\frac{1}{\sqrt{2}} - \left(-\frac{1}{\sqrt{2}}\right) + \left(-\frac{1}{\sqrt{2}}\right) + \frac{1}{\sqrt{2}} = -\frac{2}{\sqrt{2}} - \frac{2}{\sqrt{2}} = -2\sqrt{2}$$
+
+$$|S| = 2\sqrt{2} \approx 2.83 > 2$$
+
+The CHSH inequality is violated. Bell's theorem concludes: no local hidden variable theory can reproduce quantum predictions.
+
+**5. No-Signaling Proof**
+
+Despite the correlations, Alice cannot signal to Bob:
+
+**Alice's marginal probability:**
+$$P(A = +1 | \hat{n}_A) = \text{Tr}_B\left[\langle +_A|\rho_{AB}|+_A\rangle\right] = \text{Tr}\left[\frac{1}{2}I \cdot |+_A\rangle\langle +_A|\right] = \frac{1}{2}$$
+
+This is independent of:
+- Bob's choice of measurement axis $\hat{n}_B$
+- Bob's measurement outcome
+- Whether Bob measures at all
+
+**Why?** Alice's reduced state is $\rho_A = \frac{1}{2}I$ regardless of anything Bob does. The correlations appear only in the joint statistics $P(A,B)$, never in the marginals $P(A)$ or $P(B)$.
+
+**LRT interpretation:** Each party's local measurement produces Boolean outcomes from the same global IIS structure. No information propagates because both parties access the same pre-existing correlation structure. The correlations were constitutive of the state, not communicated.
+
+**6. LRT vs. Alternatives**
+
+| Approach | Explanation of Correlations | Problem |
+|----------|---------------------------|---------|
+| **Classical (hidden variables)** | Pre-existing values determine outcomes | Bell's theorem rules this out |
+| **Copenhagen** | "Shut up and calculate" | No explanation offered |
+| **Many-Worlds** | All outcomes occur; correlations are branch structure | Preferred basis problem; probability problem |
+| **Bohmian** | Nonlocal guidance equation | Explicit nonlocal dynamics required |
+| **LRT** | Correlation structure in IIS; local actualization | None (explains without nonlocal dynamics) |
+
+**The LRT advantage:** Correlations are not caused by anything propagating between Alice and Bob. They are revealed by measurements that independently actualize from the same IIS structure. The entangled state already encodes the correlations; measurement makes them manifest without transmitting them.
+
+This worked example demonstrates the core LRT insight: entanglement is structure in IIS, not mysterious connection in spacetime.
+
 **Relativistic considerations:** The "global constraint" picture works naturally in non-relativistic quantum mechanics, where simultaneity is well-defined. In relativistic contexts, the constraint is on the IIS state, not on spacetime events. The entangled state in IIS is a single configuration; it does not have spatial parts that need to coordinate. When measurement outcomes are registered at spacelike separation, each outcome is locally determinate and globally consistent. Different reference frames describe the ordering of measurements differently, but all frames agree on the correlations, which is exactly what we observe. A fully relativistic formulation of LRT would need to articulate how the IIS/actuality interface respects the causal structure of spacetime; this represents ongoing work for the framework.
 
 ### 4.4 The Tsirelson Bound
