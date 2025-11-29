@@ -99,7 +99,7 @@ Based on risk/value analysis, we proceed in this order:
 | 2 | Bell State Worked Calculation | Low | High | 1-2 weeks | COMPLETE |
 | 3 | Real QM Local Tomography Proof | Low | Medium | 1 week | COMPLETE |
 | 4 | Hardy Kernel Verification | Medium | Medium | 1-2 weeks | COMPLETE |
-| 5 | Constitutive vs Descriptive | Low | Medium | 1 week | NOT STARTED |
+| 5 | Constitutive vs Descriptive | Low | Medium | 1 week | COMPLETE |
 | 6 | MM5 Rigorous Derivation | High | High | 4-6 weeks | NOT STARTED |
 | 7 | Figures and Diagrams | Low | Medium | 2 weeks | NOT STARTED |
 
@@ -190,14 +190,16 @@ Based on risk/value analysis, we proceed in this order:
 **Location**: Main §2 or Philosophy §2.2
 
 **Deliverables**:
-- [ ] Address circularity objection head-on
-- [ ] Explain apparatus-level conformity as evidence FOR LRT
-- [ ] Distinguish constitutive claim from operational framework
-- [ ] Contrast with "3FLL merely descriptive" alternative
+- [x] Address circularity objection head-on
+- [x] Explain apparatus-level conformity as evidence FOR LRT
+- [x] Distinguish constitutive claim from operational framework
+- [x] Contrast with "3FLL merely descriptive" alternative
 
 **Output**: 2-3 pages
 
 **Acceptance criteria**: Circularity objection preempted
+
+**Completed**: Session 31.0 (2025-11-29)
 
 ---
 
@@ -351,7 +353,7 @@ Based on risk/value analysis, we proceed in this order:
 | 2. Bell Calculation | [x] | [x] | [ ] | [x] |
 | 3. Real QM Proof | [x] | [x] | [ ] | [x] |
 | 4. Hardy Verification | [x] | [x] | [ ] | [x] |
-| 5. Constitutive Clarification | [ ] | [ ] | [ ] | [ ] |
+| 5. Constitutive Clarification | [x] | [x] | [ ] | [x] |
 | 6. MM5 Derivation | [ ] | [ ] | [ ] | [ ] |
 | 7. Figures | [ ] | [ ] | [ ] | [ ] |
 

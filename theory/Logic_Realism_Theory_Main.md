@@ -313,6 +313,54 @@ Actuality equals logical filtering (3FLL enforcement + parsimony) applied to the
 
 ---
 
+### 2.9 The Circularity Objection
+
+A natural objection arises: the operational framework used to define distinguishability presupposes classical measurement apparatus. Detectors yield discrete outcomes; laboratory equipment obeys 3FLL. Does this make the derivation circular?
+
+**The objection stated precisely:** If we define the distinguishability metric $D$ in terms of measurement statistics, and measurements presuppose 3FLL-conforming apparatus, then haven't we assumed what we claim to derive?
+
+**The response distinguishes observation from explanation.**
+
+*Observation:* Measurement apparatus conforms to 3FLL. Detectors fire or don't fire. Outcomes are determinate.
+
+*Explanation:* Why does apparatus conform? Two answers are available:
+
+| Answer | Claim | Status |
+|--------|-------|--------|
+| **Brute fact** | Apparatus just happens to obey 3FLL | No explanation offered |
+| **LRT** | 3FLL are constitutive of distinguishability; apparatus conformity follows | Explains the conformity |
+
+The operational framework is not *evidence* for LRT; it is the *explanandum*. LRT explains why the operational framework has the structure it does. Alternatives treat this structure as unexplained background.
+
+**The asymmetry argument:** Consider the conceivability-observability gap:
+
+- We *can conceive* of detectors that fire and don't fire simultaneously
+- We *can imagine* measurement outcomes that violate Excluded Middle
+- We *can entertain* the proposition that a particle is both detected and not detected
+
+These scenarios are mentally representable. Nothing in cognition prevents us from considering them.
+
+Yet we *never observe* them. No detector in the history of physics has ever produced a 3FLL-violating outcome. This asymmetry requires explanation.
+
+**Psychologism** (3FLL are cognitive constraints) cannot explain this: if 3FLL were merely how we think, we could not conceive of their violation. But we can.
+
+**Conventionalism** (3FLL are linguistic rules) cannot explain this: we could define "outcome" to permit contradictions; we still would not observe them.
+
+**LRT** explains this: 3FLL are constitutive of physical distinguishability itself. Violations are not observed because they cannot occur—not because we cannot think them or have defined them away, but because distinguishability presupposes logical structure.
+
+**The circularity dissolves:** Yes, the operational framework presupposes 3FLL. This is not a bug but a feature. The question is whether this presupposition is brute (unexplained) or constitutive (explanatory). LRT claims the latter: 3FLL conformity of apparatus is not coincidental background but consequence of what distinguishability requires.
+
+The derivation proceeds as follows:
+
+1. **Given:** Operational framework with 3FLL-conforming measurements (observation)
+2. **Claim:** 3FLL are constitutive of distinguishability (hypothesis)
+3. **Derivation:** From 3FLL + minimal physics → quantum mechanics (consequence)
+4. **Test:** Framework must be consistent, predictive, and explanatorily superior to alternatives (verification)
+
+The circularity objection mistakes the explanandum (3FLL conformity of measurements) for a hidden assumption. LRT does not assume 3FLL conformity—it explains it.
+
+---
+
 ## 3. The Derivation Chain
 
 This section shows that quantum mechanical structure follows from the framework established in Section 2. The derivations rely on established mathematical results (Masanes-Müller, Gleason, Stone) applied to the LRT axiom structure. What LRT contributes is not new mathematics but the grounding that explains why these axioms hold.

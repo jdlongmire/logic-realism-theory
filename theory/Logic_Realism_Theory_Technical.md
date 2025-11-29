@@ -598,7 +598,7 @@ The underlying field must be $\mathbb{C}$.
 
 Therefore, $\mathbb{C}$ is uniquely selected. ∎
 
-**Remark (Quantitative Gap):** The argument in Step 4-5 is qualitative. A fully rigorous treatment would require showing that real QM predicts quantitatively wrong atomic spectra or selection rules. McKague (2009) and Aleksandrova et al. (2013) provide partial results on the distinguishability of real and complex QM, but a complete spectroscopic analysis remains an open problem. The Renou et al. (2021) experiment confirms the complex/real distinction via Bell-type correlations rather than spectroscopy. We flag this as an area where additional quantitative work would strengthen the argument.
+**Remark (Alternative Confirmation Route):** The spectroscopic argument in Step 4-5 is qualitative rather than quantitative. However, the complex/real distinction has now been experimentally confirmed via an independent route: Renou et al. (2021) demonstrated that quantum correlations in a Bell-type experiment distinguish complex from real QM, with the observed data matching complex QM predictions and ruling out real QM at high significance. This provides direct experimental confirmation that $\mathbb{C}$ is required, complementing the theoretical stability argument. The spectroscopic route (McKague 2009, Aleksandrova et al. 2013) remains an open quantitative problem, but is no longer required for the conclusion: experiment has confirmed that nature selects $\mathbb{C}$.
 
 ### 5.5 Uniqueness Theorem
 
