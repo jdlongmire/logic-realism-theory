@@ -170,3 +170,73 @@ Session 31.0 completed all 5 low-risk gaps identified in the restructuring strat
 **Recommended Next Step**: MM5 feasibility spike to assess tractability before committing 4-6 weeks.
 
 ---
+
+## MM5 Feasibility Spike (Session 31.0 continuation)
+
+### The Current Gap
+
+**Lemma 6.1** claims: "CBP → Purification Uniqueness"
+
+Current proof states (line 660):
+> "Any two purifications that differ by more than local unitaries would yield different joint Boolean outcome distributions for some entangled measurement. This violates CBP..."
+
+**Problem**: This argument is hand-wavy. CBP says each pure state has a unique Boolean resolution pattern, but two different purifications ARE two different pure states—each can have its own pattern without violating CBP. The argument doesn't actually connect CBP to purification uniqueness.
+
+### Proposed Rigorous Proof Path
+
+The CBP argument goes the wrong direction. Purification uniqueness follows from **Hilbert space structure**, not directly from CBP:
+
+| Step | Claim | Source |
+|------|-------|--------|
+| 1 | LRT → Inner product structure | §3.3 (Theorem 3.2) ✓ Done |
+| 2 | A3c (local tomography) → Tensor product for composites | Masanes-Müller 2011 (standard) |
+| 3 | Hilbert space + tensor product → Uhlmann's theorem | Standard QM result |
+| 4 | Uhlmann's theorem = Purification uniqueness | Definitional equivalence |
+| 5 | Lee-Selby: MM1-MM4 + Purification uniqueness → MM5 | Lee-Selby 2020 ✓ Already cited |
+
+**Key insight**: The structure of IIS (inner product, tensor products) comes from the distinguishability metric D and local tomography. Purification uniqueness is a structural property of Hilbert spaces with tensor products—it's Uhlmann's theorem, which is standard.
+
+### Revised Assessment
+
+| Aspect | Original | Revised |
+|--------|----------|---------|
+| Risk | High | **Medium** |
+| Time | 4-6 weeks | **1-2 weeks** |
+| Approach | Prove CBP → Purification from scratch | Use established Uhlmann's theorem |
+
+**Why lower risk**: We're not proving something new—we're connecting LRT's established structure (Hilbert space from §3.3) to a standard theorem (Uhlmann).
+
+### Answer to Key Question
+
+From strategy document: *"Can you articulate in 2-3 sentences why non-equivalent purifications yield different Boolean outcome patterns?"*
+
+**Answer**: This question is actually the wrong framing. Non-equivalent purifications DO yield different Boolean outcome patterns for joint measurements—they're different states. The right question is: *"Why can't non-equivalent purifications of the same reduced state coexist?"*
+
+The answer: **Uhlmann's theorem**. In any Hilbert space with tensor product structure, all purifications of a given mixed state are related by local unitaries on the purifying system. This is a mathematical fact about tensor products of Hilbert spaces. LRT establishes Hilbert space structure (§3.3) and tensor product structure (via local tomography A3c), so Uhlmann applies automatically.
+
+### Proposed Revision to §6
+
+**Current §6.2** should be replaced with:
+
+1. **§6.2 Local Tomography Implies Tensor Product Structure**
+   - State that A3c (local tomography) implies IIS_{AB} = IIS_A ⊗ IIS_B
+   - Cite Masanes-Müller 2011 for the standard result
+
+2. **§6.3 Uhlmann's Theorem (Purification Uniqueness)**
+   - State Uhlmann's theorem: all purifications of ρ_A related by U_B ⊗ I_A
+   - Note this follows from Hilbert space + tensor product (standard QM)
+   - This IS condition 3 of Lee-Selby
+
+3. **§6.4 The Complete Derivation (unchanged)**
+   - Apply Lee-Selby theorem
+
+### Recommendation
+
+**Proceed with Gap 6 revision**. The path is clear and uses established results:
+- Cite Masanes-Müller for tensor product structure
+- State Uhlmann's theorem
+- Apply Lee-Selby
+
+This transforms Lemma 6.1 from a hand-wavy argument into a proper chain of established results.
+
+---
