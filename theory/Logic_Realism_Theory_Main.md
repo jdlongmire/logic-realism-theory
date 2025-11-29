@@ -830,6 +830,26 @@ Every phenomenon in the table traces to this structure:
 
 This unification is the primary evidence for LRT. Competing interpretations explain some phenomena while leaving others as brute facts. LRT explains all seventeen from common resources.
 
+### 4.8 Ontic Booleanity: The Epistemic Loophole Closed
+
+A sophisticated objection grants that *observed* outcomes obey 3FLL but suggests this might be epistemic rather than ontic: perhaps 3FLL are filters on *observation*, not constraints on *reality*. Hidden outcome tokens might violate 3FLL while remaining undetectable.
+
+LRT closes this loophole completely.
+
+**Theorem (Ontic Booleanity).** Under the continuity and path-connectedness required by quantum mechanics, every actual outcome token satisfies 3FLL. No token—even one that never occurs with positive probability—can violate 3FLL.
+
+**The argument has two parts:**
+
+*Part I (Positive-probability tokens):* Any token that occurs with positive probability must be Boolean. If a token $t_0$ violated 3FLL (say, by satisfying both $A$ and $\neg A$ simultaneously), then states assigning positive probability to $t_0$ would violate probability normalization: $\omega(A) + \omega(\neg A) > 1$. This contradicts the probability structure of quantum mechanics.
+
+*Part II (Hidden zero-probability tokens):* Hypothetical tokens with zero probability under all states cannot violate 3FLL either. Here path-connectedness is crucial: pure states with $\omega(A) = 1$ and $\omega(A) = 0$ are connected by continuous paths. Any hidden non-Boolean token would disrupt this continuity structure. More fundamentally, the token space is *defined* by what states can distinguish—a token outside all state supports is not a token of the theory.
+
+**The conclusion:** 3FLL are not observer-imposed filters but structural constraints on outcome tokens themselves. The epistemic loophole is mathematically closed.
+
+This result strengthens LRT's core claim: the 3FLL do not merely describe how we observe reality—they constitute what can be an actual outcome. The continuous structure of quantum state space is incompatible with hidden non-Boolean tokens.
+
+*For the complete proof, see Technical companion Theorem 7.1.*
+
 ---
 
 ## 5. Comparison with Alternatives
