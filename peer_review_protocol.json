@@ -1,0 +1,478 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Peer Review Protocol",
+  "version": "0.1.0",
+  "description": "Schema for systematic tracking of peer review submissions, reviews, responses, and decisions with full audit trail",
+
+  "type": "object",
+  "required": ["submission_metadata", "venue", "review_cycle"],
+
+  "properties": {
+
+    "submission_metadata": {
+      "type": "object",
+      "description": "Core information about the submitted manuscript",
+      "required": ["submission_id", "title", "authors", "submission_date", "manuscript_version"],
+      "properties": {
+        "submission_id": {
+          "type": "string",
+          "description": "Unique identifier for this submission (journal-assigned or internal)"
+        },
+        "title": {
+          "type": "string"
+        },
+        "authors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {"type": "string"},
+              "affiliation": {"type": "string"},
+              "email": {"type": "string", "format": "email"},
+              "orcid": {"type": "string"},
+              "corresponding": {"type": "boolean"},
+              "position": {"type": "integer"}
+            }
+          }
+        },
+        "submission_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "manuscript_version": {
+          "type": "string",
+          "description": "Version identifier (e.g., v1, R1, R2)"
+        },
+        "word_count": {"type": "integer"},
+        "abstract": {"type": "string"},
+        "keywords": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "manuscript_type": {
+          "type": "string",
+          "enum": ["original_research", "review", "commentary", "letter", "perspective", "methods", "other"]
+        },
+        "supplementary_materials": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {"type": "string"},
+              "filename": {"type": "string"},
+              "description": {"type": "string"}
+            }
+          }
+        },
+        "preprint": {
+          "type": "object",
+          "properties": {
+            "server": {"type": "string", "enum": ["arxiv", "biorxiv", "medrxiv", "philsci", "ssrn", "osf", "zenodo", "other"]},
+            "identifier": {"type": "string"},
+            "url": {"type": "string", "format": "uri"},
+            "posted_date": {"type": "string", "format": "date"}
+          }
+        },
+        "ai_disclosure": {
+          "type": "object",
+          "description": "Transparency about AI assistance in manuscript preparation",
+          "properties": {
+            "ai_assisted": {"type": "boolean"},
+            "tools_used": {
+              "type": "array",
+              "items": {"type": "string"}
+            },
+            "assistance_type": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["writing", "editing", "coding", "analysis", "literature_review", "formalization", "verification", "other"]
+              }
+            },
+            "disclosure_statement": {"type": "string"}
+          }
+        }
+      }
+    },
+
+    "venue": {
+      "type": "object",
+      "description": "Target publication venue",
+      "required": ["name", "type"],
+      "properties": {
+        "name": {"type": "string"},
+        "type": {
+          "type": "string",
+          "enum": ["journal", "conference", "workshop", "book_chapter", "proceedings", "other"]
+        },
+        "publisher": {"type": "string"},
+        "issn": {"type": "string"},
+        "impact_factor": {"type": "number"},
+        "open_access": {"type": "boolean"},
+        "review_model": {
+          "type": "string",
+          "enum": ["single_blind", "double_blind", "open", "post_publication", "hybrid"]
+        },
+        "typical_timeline_weeks": {"type": "integer"},
+        "editor_contact": {
+          "type": "object",
+          "properties": {
+            "name": {"type": "string"},
+            "email": {"type": "string", "format": "email"},
+            "role": {"type": "string"}
+          }
+        },
+        "submission_portal": {"type": "string", "format": "uri"}
+      }
+    },
+
+    "review_cycle": {
+      "type": "array",
+      "description": "Each round of review (initial, R1, R2, etc.)",
+      "items": {
+        "type": "object",
+        "required": ["cycle_number", "status", "submitted_date"],
+        "properties": {
+          "cycle_number": {
+            "type": "integer",
+            "description": "0 = initial submission, 1 = first revision, etc."
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "SUBMITTED",
+              "DESK_REVIEW",
+              "UNDER_REVIEW",
+              "REVIEWS_COMPLETE",
+              "DECISION_PENDING",
+              "REVISION_REQUESTED",
+              "REVISION_SUBMITTED",
+              "ACCEPTED",
+              "REJECTED",
+              "WITHDRAWN"
+            ]
+          },
+          "submitted_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "decision_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "revision_deadline": {
+            "type": "string",
+            "format": "date"
+          },
+
+          "desk_review": {
+            "type": "object",
+            "description": "Initial editorial assessment",
+            "properties": {
+              "editor": {"type": "string"},
+              "date": {"type": "string", "format": "date"},
+              "outcome": {
+                "type": "string",
+                "enum": ["SENT_FOR_REVIEW", "DESK_REJECT", "TRANSFER_SUGGESTED"]
+              },
+              "comments": {"type": "string"},
+              "suggested_reviewers": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "excluded_reviewers": {
+                "type": "array",
+                "items": {"type": "string"}
+              }
+            }
+          },
+
+          "reviews": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["reviewer_id", "recommendation"],
+              "properties": {
+                "reviewer_id": {
+                  "type": "string",
+                  "description": "Anonymous identifier (Reviewer 1, Reviewer 2, etc.)"
+                },
+                "expertise_match": {
+                  "type": "string",
+                  "enum": ["HIGH", "MEDIUM", "LOW", "UNKNOWN"]
+                },
+                "invitation_date": {"type": "string", "format": "date"},
+                "accepted_date": {"type": "string", "format": "date"},
+                "completed_date": {"type": "string", "format": "date"},
+
+                "scores": {
+                  "type": "object",
+                  "description": "Numerical ratings (scale defined by venue)",
+                  "properties": {
+                    "overall": {"type": "number"},
+                    "originality": {"type": "number"},
+                    "significance": {"type": "number"},
+                    "rigor": {"type": "number"},
+                    "clarity": {"type": "number"},
+                    "reproducibility": {"type": "number"},
+                    "relevance": {"type": "number"}
+                  }
+                },
+
+                "recommendation": {
+                  "type": "string",
+                  "enum": [
+                    "ACCEPT",
+                    "MINOR_REVISION",
+                    "MAJOR_REVISION",
+                    "REJECT_RESUBMIT",
+                    "REJECT"
+                  ]
+                },
+
+                "review_content": {
+                  "type": "object",
+                  "properties": {
+                    "summary": {
+                      "type": "string",
+                      "description": "Reviewer's summary of the paper"
+                    },
+                    "strengths": {
+                      "type": "array",
+                      "items": {"type": "string"}
+                    },
+                    "weaknesses": {
+                      "type": "array",
+                      "items": {"type": "string"}
+                    },
+                    "major_concerns": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {"type": "string"},
+                          "concern": {"type": "string"},
+                          "location": {"type": "string"},
+                          "severity": {
+                            "type": "string",
+                            "enum": ["CRITICAL", "MAJOR", "MODERATE"]
+                          }
+                        }
+                      }
+                    },
+                    "minor_concerns": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {"type": "string"},
+                          "concern": {"type": "string"},
+                          "location": {"type": "string"}
+                        }
+                      }
+                    },
+                    "questions": {
+                      "type": "array",
+                      "items": {"type": "string"}
+                    },
+                    "suggestions": {
+                      "type": "array",
+                      "items": {"type": "string"}
+                    },
+                    "confidential_to_editor": {"type": "string"}
+                  }
+                }
+              }
+            }
+          },
+
+          "editorial_decision": {
+            "type": "object",
+            "properties": {
+              "decision": {
+                "type": "string",
+                "enum": [
+                  "ACCEPT",
+                  "ACCEPT_WITH_MINOR",
+                  "MINOR_REVISION",
+                  "MAJOR_REVISION",
+                  "REJECT_RESUBMIT",
+                  "REJECT"
+                ]
+              },
+              "editor": {"type": "string"},
+              "date": {"type": "string", "format": "date"},
+              "letter": {"type": "string"},
+              "revision_requirements": {
+                "type": "array",
+                "items": {"type": "string"}
+              }
+            }
+          },
+
+          "author_response": {
+            "type": "object",
+            "description": "Response to reviewers (for revisions)",
+            "properties": {
+              "response_date": {"type": "string", "format": "date"},
+              "cover_letter": {"type": "string"},
+              "point_by_point": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["reviewer_id", "concern_id", "response", "action_taken"],
+                  "properties": {
+                    "reviewer_id": {"type": "string"},
+                    "concern_id": {"type": "string"},
+                    "concern_text": {"type": "string"},
+                    "response": {"type": "string"},
+                    "action_taken": {
+                      "type": "string",
+                      "enum": [
+                        "REVISED_AS_SUGGESTED",
+                        "REVISED_ALTERNATIVELY",
+                        "CLARIFIED",
+                        "REBUTTED",
+                        "ACKNOWLEDGED_LIMITATION",
+                        "DEFERRED"
+                      ]
+                    },
+                    "manuscript_changes": {
+                      "type": "object",
+                      "properties": {
+                        "section": {"type": "string"},
+                        "page": {"type": "string"},
+                        "description": {"type": "string"}
+                      }
+                    }
+                  }
+                }
+              },
+              "changes_summary": {"type": "string"},
+              "highlighted_manuscript": {"type": "boolean"}
+            }
+          }
+        }
+      }
+    },
+
+    "timeline": {
+      "type": "object",
+      "description": "Key dates and deadlines",
+      "properties": {
+        "first_submitted": {"type": "string", "format": "date"},
+        "first_decision": {"type": "string", "format": "date"},
+        "final_decision": {"type": "string", "format": "date"},
+        "accepted": {"type": "string", "format": "date"},
+        "proofs_received": {"type": "string", "format": "date"},
+        "proofs_returned": {"type": "string", "format": "date"},
+        "published_online": {"type": "string", "format": "date"},
+        "published_print": {"type": "string", "format": "date"},
+        "total_days_to_decision": {"type": "integer"},
+        "total_days_to_publication": {"type": "integer"}
+      }
+    },
+
+    "publication_details": {
+      "type": "object",
+      "description": "Final publication information (if accepted)",
+      "properties": {
+        "doi": {"type": "string"},
+        "volume": {"type": "string"},
+        "issue": {"type": "string"},
+        "pages": {"type": "string"},
+        "article_number": {"type": "string"},
+        "url": {"type": "string", "format": "uri"},
+        "open_access_status": {
+          "type": "string",
+          "enum": ["GOLD", "GREEN", "HYBRID", "BRONZE", "CLOSED"]
+        },
+        "license": {"type": "string"},
+        "apc_paid": {"type": "number"},
+        "apc_currency": {"type": "string"}
+      }
+    },
+
+    "quality_tracking": {
+      "type": "object",
+      "description": "Internal quality metrics for the review process",
+      "properties": {
+        "review_quality_notes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "reviewer_id": {"type": "string"},
+              "quality_assessment": {
+                "type": "string",
+                "enum": ["EXCELLENT", "GOOD", "ADEQUATE", "POOR", "PROBLEMATIC"]
+              },
+              "notes": {"type": "string"}
+            }
+          }
+        },
+        "editorial_quality_notes": {"type": "string"},
+        "lessons_learned": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "would_submit_again": {"type": "boolean"},
+        "venue_rating": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        }
+      }
+    },
+
+    "related_submissions": {
+      "type": "array",
+      "description": "Links to companion papers or prior rejections",
+      "items": {
+        "type": "object",
+        "properties": {
+          "relationship": {
+            "type": "string",
+            "enum": ["COMPANION", "PRIOR_VERSION", "TRANSFER", "SEQUEL", "RESUBMISSION"]
+          },
+          "title": {"type": "string"},
+          "venue": {"type": "string"},
+          "status": {"type": "string"},
+          "submission_id": {"type": "string"}
+        }
+      }
+    },
+
+    "notes": {
+      "type": "object",
+      "properties": {
+        "internal_notes": {"type": "string"},
+        "strategy_notes": {"type": "string"},
+        "backup_venues": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      }
+    }
+  },
+
+  "definitions": {
+    "concern_severity": {
+      "type": "string",
+      "enum": ["CRITICAL", "MAJOR", "MODERATE", "MINOR"],
+      "description": "CRITICAL: Fatal flaw requiring fundamental rework. MAJOR: Significant issue requiring substantial revision. MODERATE: Notable issue requiring attention. MINOR: Small issue, easily addressed."
+    },
+    "response_type": {
+      "type": "string",
+      "enum": [
+        "REVISED_AS_SUGGESTED",
+        "REVISED_ALTERNATIVELY",
+        "CLARIFIED",
+        "REBUTTED",
+        "ACKNOWLEDGED_LIMITATION",
+        "DEFERRED"
+      ],
+      "description": "REVISED_AS_SUGGESTED: Implemented reviewer's suggestion. REVISED_ALTERNATIVELY: Addressed concern differently. CLARIFIED: Added explanation without changing substance. REBUTTED: Disagreed with reviewer with justification. ACKNOWLEDGED_LIMITATION: Accepted as limitation. DEFERRED: Marked for future work."
+    }
+  }
+}
