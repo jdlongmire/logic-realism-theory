@@ -147,5 +147,26 @@ Updated strategy document to mark Gap 5 complete.
 2. `e841294` - Gap 2 complete: Add Bell State Worked Calculation
 3. `7a72273` - Gap 3 complete: Expand Real QM Local Tomography Proof
 4. `2554316` - Gap 4 complete: Add Hardy Kernel Verification
+5. `4e8021c` - Gap 5 complete: Add Circularity Objection and fix Theorem 5.6 framing
+
+---
+
+## Summary
+
+Session 31.0 completed all 5 low-risk gaps identified in the restructuring strategy:
+
+| Gap | Description | Status |
+|-----|-------------|--------|
+| 1 | IIS Physical Interpretation | ✓ Complete |
+| 2 | Bell State Worked Calculation | ✓ Complete |
+| 3 | Real QM Local Tomography Proof | ✓ Complete |
+| 4 | Hardy Kernel Verification | ✓ Complete |
+| 5 | Constitutive vs Descriptive | ✓ Complete |
+
+**Remaining Gaps**:
+- Gap 6: MM5 Rigorous Derivation (High risk, 4-6 weeks) - NOT STARTED
+- Gap 7: Figures and Diagrams (Low risk, 2 weeks) - NOT STARTED
+
+**Recommended Next Step**: MM5 feasibility spike to assess tractability before committing 4-6 weeks.
 
 ---
