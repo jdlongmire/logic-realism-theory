@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(violations but never observe them - constraint is on reality, not cognition\")\n- Update abstract with explicit argument structure\n\nTechnical Paper (Logic_Realism_Theory_Technical.md):\n- Lemma 3.1c: Add explicit Halmos polarization construction for ℝ→ℂ\n  extension (cite Halmos 1974, §44)\n- Theorem 5.6: Add \"Quantitative Gap\" remark flagging that real QM\n  chemistry argument is qualitative; cite McKague 2009, Aleksandrova 2013\n- New references: Halmos, McKague, Aleksandrova et al.\n\nThese revisions address the two technical weaknesses identified in review\nwhile strengthening the core philosophical argument.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push)",
+      "Bash(git restore:*)",
+      "Bash(git rm:*)",
+      "WebSearch"
     ],
     "deny": [],
     "ask": []

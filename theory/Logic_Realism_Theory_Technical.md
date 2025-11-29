@@ -918,7 +918,7 @@ LRT (via Global Parsimony) predicts that if objective collapse occurs, the param
 
 Adler, S. L. *Quaternionic Quantum Mechanics and Quantum Fields.* Oxford University Press, 1995.
 
-Aleksandrova, A., Borber, V., and Wootters, W. K. "Real-vector-space quantum theory with a universal quantum bit." *Physical Review A* 87, 2013: 052106.
+Aleksandrova, A., Borish, V., and Wootters, W. K. "Real-vector-space quantum theory with a universal quantum bit." *Physical Review A* 87, 2013: 052106.
 
 de la Torre, G., Hoban, M. J., Dhara, C., Sainz, A. B., and Acín, A. "Maximally nonlocal theories cannot be maximally random." *Physical Review Letters* 114, 2015: 160502. See also: "Deriving quantum theory from its local structure and reversibility." *New Journal of Physics* 16, 2014: 073040.
 

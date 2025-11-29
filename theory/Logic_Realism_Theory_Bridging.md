@@ -558,7 +558,7 @@ Putnam, H. "Is logic empirical?" In *Boston Studies in the Philosophy of Science
 
 Renou, M.-O. et al. "Quantum theory based on real numbers can be experimentally falsified." *Nature* 600, 2021: 625-629.
 
-Sher, G. "Logical realism: Two theories." *Synthese*, forthcoming.
+Sher, G. "Logical Realism—A Tale of Two Theories." In S. Arbeiter and J. Kennedy (eds.), *The Philosophy of Penelope Maddy*, Outstanding Contributions to Logic, vol. 31. Springer, 2024.
 
 Wallace, D. *The Emergent Multiverse: Quantum Theory According to the Everett Interpretation.* Oxford University Press, 2012.
 
