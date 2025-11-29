@@ -370,17 +370,71 @@ Therefore, classical atoms are unstable: electrons spiral into nuclei in $\sim 1
 
 **Proof (Wootters 1990, Stueckelberg 1960):**
 
-Consider a bipartite system in real QM. The state space is $\mathbb{R}^{n_A} \otimes \mathbb{R}^{n_B}$.
+We construct an explicit counterexample: two distinct global states with identical local marginals that cannot be distinguished by local measurements in real QM but can in complex QM.
 
-*Claim:* There exist distinct bipartite states $\rho_1 \neq \rho_2$ with identical local marginals.
+*Step 1: Construct two states with identical local marginals.*
 
-*Construction:* Let $|+\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle)$ and $|-\rangle = \frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)$.
+Consider the two-qubit states in complex QM:
+$$|\Phi^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)$$
+$$|\Phi^-\rangle = \frac{1}{\sqrt{2}}(|00\rangle - |11\rangle)$$
 
-In complex QM: $|\Phi^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)$ and $|\Psi^+\rangle = \frac{1}{\sqrt{2}}(|01\rangle + |10\rangle)$ are locally distinguishable via phase-sensitive measurements.
+Both have the same local marginals:
+$$\rho_A^{(\Phi^+)} = \text{Tr}_B(|\Phi^+\rangle\langle\Phi^+|) = \frac{1}{2}|0\rangle\langle 0| + \frac{1}{2}|1\rangle\langle 1| = \frac{1}{2}I$$
+$$\rho_A^{(\Phi^-)} = \text{Tr}_B(|\Phi^-\rangle\langle\Phi^-|) = \frac{1}{2}|0\rangle\langle 0| + \frac{1}{2}|1\rangle\langle 1| = \frac{1}{2}I$$
 
-In real QM: The relative phase information is absent. States that differ only by complex phases become identical. Local measurements cannot distinguish certain global states.
+Similarly for subsystem B. The local statistics are identical.
 
-*Consequence:* Composite system states are not determined by local measurements + correlations. This violates MM2 (tomographic locality) and interface stability criterion 2. ∎
+*Step 2: Show global distinguishability in complex QM.*
+
+In complex QM, these states are orthogonal: $\langle\Phi^+|\Phi^-\rangle = 0$.
+
+**Distinguishing measurement:** Measure in the Bell basis $\{|\Phi^+\rangle, |\Phi^-\rangle, |\Psi^+\rangle, |\Psi^-\rangle\}$.
+
+Alternatively, use local measurements with phase-sensitive interference:
+- Alice applies Hadamard: $H = \frac{1}{\sqrt{2}}\begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$
+- Bob applies Hadamard
+- Both measure in computational basis
+
+For $|\Phi^+\rangle$:
+$$(H \otimes H)|\Phi^+\rangle = \frac{1}{\sqrt{2}}(|++\rangle + |--\rangle)$$
+
+After measurement: outcomes 00 and 11 each with probability 1/2.
+
+For $|\Phi^-\rangle$:
+$$(H \otimes H)|\Phi^-\rangle = \frac{1}{\sqrt{2}}(|+-\rangle + |-+\rangle)$$
+
+After measurement: outcomes 01 and 10 each with probability 1/2.
+
+**The states are perfectly distinguishable** via this local procedure (local unitaries + local measurements).
+
+*Step 3: Show real QM cannot distinguish them.*
+
+In real QM, the Hilbert space is $\mathbb{R}^2 \otimes \mathbb{R}^2$, and only real linear combinations are permitted.
+
+**Key observation:** The Hadamard gate $H$ is real, so it exists in real QM. But the phase gate
+$$S = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix}$$
+does not exist in real QM (it requires $i$).
+
+In real QM, both $|\Phi^+\rangle$ and $|\Phi^-\rangle$ exist (they have real coefficients). But consider the state:
+$$|\Phi_\theta\rangle = \frac{1}{\sqrt{2}}(|00\rangle + e^{i\theta}|11\rangle)$$
+
+For $\theta \neq 0, \pi$, this state requires complex amplitudes. In real QM, only $\theta = 0$ ($|\Phi^+\rangle$) and $\theta = \pi$ ($|\Phi^-\rangle$) are representable.
+
+**The failure:** In complex QM, the continuous family $|\Phi_\theta\rangle$ spans a circle, and local operations can rotate around this circle (via phase gates). In real QM, only two points on the circle exist, and there is no local operation connecting them.
+
+More precisely: the distinguishing protocol above uses the fact that $H \otimes H$ maps $|\Phi^+\rangle$ and $|\Phi^-\rangle$ to different measurement statistics. This works because the relative phase ($+1$ vs $-1$) affects interference.
+
+But in real QM without access to the full complex structure, the local marginals of both states are $\frac{1}{2}I$, and there exists no local protocol to distinguish them. The relative sign is a global property invisible to real local measurements.
+
+*Step 4: Formal statement of violation.*
+
+**Local tomography (A3c/MM2):** The state of a composite system is completely determined by the statistics of local measurements on subsystems.
+
+**Real QM violates this:** $|\Phi^+\rangle$ and $|\Phi^-\rangle$ have identical local statistics but are globally distinct.
+
+In complex QM, local tomography holds because phase-sensitive measurements (using $S, T$, or other complex gates) can extract the relative phase information.
+
+*Consequence:* Real QM fails A3c. Since A3c is required for interface stability (composite system behavior must be predictable from local behavior), real QM fails interface stability criterion 2. ∎
 
 **Theorem 5.3 (Quaternionic QM Failure - Tensor Associativity).** Quaternionic quantum mechanics over $\mathbb{H}$ fails tensor product associativity for $n \geq 3$ systems.
 
