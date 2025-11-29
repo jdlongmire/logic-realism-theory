@@ -42,6 +42,12 @@ Birkhoff and von Neumann (1936) proposed quantum logic with non-distributive str
 
 Every attempt failed.
 
+The failure was not for lack of formal resources. Paraconsistent logics, developed rigorously since the 1960s (da Costa 1963; Priest & Routley 1989), provide mathematical frameworks where contradictions do not entail everything. Dialetheism, the view that some contradictions are true, has been seriously defended by philosophers including Graham Priest, who argues that semantic paradoxes, vagueness, and even motion involve true contradictions (Priest 2006). Impossible worlds semantics models scenarios where classical logic fails (Berto & Jago 2019). Buddhist logic explored four-valued structures (catuṣkoṭi) for millennia before Western analytic philosophy engaged these questions.
+
+These are not idle speculations. Paraconsistent logic has an official American Mathematical Society classification (03B53). Five World Congresses on Paraconsistency have convened since 1997. The formal apparatus for conceiving and reasoning about 3FLL violations is mature and mathematically rigorous.
+
+Yet no physical observation has ever instantiated what these frameworks describe. The gap between formal conceivability and physical actuality is the core explanandum.
+
 Upon careful analysis, every apparent violation dissolved. Superposition is indeterminacy prior to measurement, not contradiction in actuality. Entanglement produces correlations, not signals. Wave-particle duality reflects complementary experimental contexts, not contradictory properties. And measurement, always, without exception, yields one definite outcome.
 
 The quantum case is decisive precisely because it represents our best opportunity to find violations. If 3FLL were going to fail anywhere in physics, quantum mechanics is where it would happen. The formalism practically invites the interpretation that contradictions are real. Yet the logical structure holds.
@@ -347,6 +353,21 @@ Yet we *never observe* them. No detector in the history of physics has ever prod
 **Conventionalism** (3FLL are linguistic rules) cannot explain this: we could define "outcome" to permit contradictions; we still would not observe them.
 
 **LRT** explains this: 3FLL are constitutive of physical distinguishability itself. Violations are not observed because they cannot occur—not because we cannot think them or have defined them away, but because distinguishability presupposes logical structure.
+
+**The conceivability claim deserves emphasis.** The assertion that we "can conceive" of 3FLL violations is not mere hand-waving. It is backed by rigorous formal development:
+
+| Framework | Key Feature | Status |
+|-----------|-------------|--------|
+| Paraconsistent logic | Contradictions don't explode | AMS 03B53; five World Congresses |
+| Dialetheism | True contradictions exist | Defended by Priest, Routley, Beall |
+| Impossible worlds | Logical laws fail at some worlds | Standard in modal metaphysics |
+| Buddhist catuṣkoṭi | Four truth values (T, F, both, neither) | 2000+ year tradition |
+
+These frameworks are not conceptual errors waiting to be corrected. They are internally consistent formal systems with sophisticated metatheory. One can reason validly within paraconsistent logic; the inferences are well-defined; the semantics is rigorous.
+
+The question is not whether such reasoning is *possible* (it manifestly is). The question is whether such reasoning describes *actuality*. And here the answer is uniformly negative. No detector, no measurement apparatus, no physical record has ever exhibited a paraconsistent outcome. The formal possibility is real; the physical instantiation is absent.
+
+This is precisely what LRT predicts. Formal systems are not constrained by 3FLL because they are not physical systems; they are abstract structures that can be specified arbitrarily. Physical actuality *is* constrained by 3FLL because distinguishability constitutes it. The conceivability-actuality gap is not a puzzle to be explained away; it is the signature of 3FLL's constitutive role.
 
 **The circularity dissolves:** Yes, the operational framework presupposes 3FLL. This is not a bug but a feature. The question is whether this presupposition is brute (unexplained) or constitutive (explanatory). LRT claims the latter: 3FLL conformity of apparatus is not coincidental background but consequence of what distinguishability requires.
 
@@ -1466,6 +1487,8 @@ Aspect, A., Grangier, P., and Roger, G. "Experimental tests of Bell's inequaliti
 
 Bell, J. S. "On the Einstein Podolsky Rosen paradox." *Physics* 1(3), 1964: 195-200.
 
+Berto, F. and Jago, M. *Impossible Worlds.* Oxford University Press, 2019.
+
 Borges, J. L. "The Library of Babel." In *Labyrinths*. New York: New Directions, 1962.
 
 Birkhoff, G. and von Neumann, J. "The logic of quantum mechanics." *Annals of Mathematics* 37(4), 1936: 823-843.
@@ -1473,6 +1496,8 @@ Birkhoff, G. and von Neumann, J. "The logic of quantum mechanics." *Annals of Ma
 Bohm, D. "A suggested interpretation of the quantum theory in terms of 'hidden' variables." *Physical Review* 85(2), 1952: 166-193.
 
 Chiribella, G., D'Ariano, G. M., and Perinotti, P. "Informational derivation of quantum theory." *Physical Review A* 84(1), 2011: 012311.
+
+da Costa, N. C. A. "On the theory of inconsistent formal systems." *Notre Dame Journal of Formal Logic* 15(4), 1974: 497-510.
 
 Deutsch, D. "Quantum theory of probability and decisions." *Proceedings of the Royal Society A* 455, 1999: 3129-3137.
 
@@ -1493,6 +1518,12 @@ Kochen, S. and Specker, E. P. "The problem of hidden variables in quantum mechan
 Masanes, L. and Müller, M. P. "A derivation of quantum theory from physical requirements." *New Journal of Physics* 13, 2011: 063001.
 
 Penrose, R. "On gravity's role in quantum state reduction." *General Relativity and Gravitation* 28(5), 1996: 581-600.
+
+Priest, G. *In Contradiction: A Study of the Transconsistent.* Second edition. Oxford University Press, 2006.
+
+Priest, G., Beall, J. C., and Armour-Garb, B. (eds.) *The Law of Non-Contradiction: New Philosophical Essays.* Oxford University Press, 2004.
+
+Priest, G., Routley, R., and Norman, J. (eds.) *Paraconsistent Logic: Essays on the Inconsistent.* Philosophia Verlag, 1989.
 
 Pusey, M. F., Barrett, J., and Rudolph, T. "On the reality of the quantum state." *Nature Physics* 8(6), 2012: 475-478.
 

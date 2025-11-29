@@ -828,9 +828,28 @@ Therefore, every token in $T$ satisfies 3FLL. The constraint is on the tokens th
 
 ### 7.7 Physical Interpretation
 
-The ontic Booleanity theorem establishes that 3FLL are not observer-imposed filters but structural constraints on reality itself. The key insight is that path-connectedness and continuity (required for quantum mechanics) are incompatible with hidden non-Boolean tokens.
+The Ontic Booleanity theorem establishes that 3FLL are not observer-imposed filters but structural constraints on reality itself. The key insight is that path-connectedness and continuity (required for quantum mechanics) are incompatible with hidden non-Boolean tokens.
 
-This strengthens LRT's constitutive claim: the 3FLL do not merely describe how we observe reality, they constitute what can be an actual outcome token. Any hypothetical non-Boolean token would be physically meaningless, unable to participate in the continuous structure of quantum state space.
+This result has a precise relationship to the conceivability-actuality asymmetry discussed in the main paper. Consider:
+
+**Conceivability:** Paraconsistent logics (da Costa, Priest) provide rigorous formal frameworks where contradictions are tolerable. Dialetheism holds that some contradictions are true. Impossible worlds semantics models scenarios where logical laws fail. These are not informal speculations but mathematically developed systems with well-defined inference rules and model theory.
+
+**Actuality:** Theorem 7.1 proves that no token in the outcome space $T$ can violate 3FLL, not even hidden tokens with zero probability. The constraint is structural, not statistical.
+
+The theorem explains *why* the conceivability-actuality gap exists:
+
+1. **Formal systems are unconstrained:** Abstract structures can be defined arbitrarily. Nothing prevents specifying a model where $A(t) = 1$ and $\neg A(t) = 1$ simultaneously. Paraconsistent logics do exactly this.
+
+2. **Physical token spaces are constrained:** The axioms OB1-OB5 are not arbitrary stipulations. They encode:
+   - OB4 (path-connectedness): Quantum state space is connected
+   - OB5 (logical robustness): Effects extend continuously
+   - These are physical facts about quantum mechanics, not definitional choices
+
+3. **The incompatibility is structural:** Given OB4-OB5, non-Boolean tokens cannot exist in $T$. The proof (Lemmas 7.1-7.2) shows that such tokens would either violate probability normalization (Part I) or be excludable from the token space entirely (Part II).
+
+**Conclusion:** We can *formally specify* 3FLL violations because formal systems are abstract. We cannot *physically instantiate* them because physical token spaces inherit the connected, continuous structure of quantum state space, which excludes non-Boolean tokens by Theorem 7.1.
+
+This is the formal grounding for LRT's constitutive claim: 3FLL constrain actuality, not because we define actuality that way, but because the physical structure of quantum mechanics mathematically excludes non-Boolean outcomes.
 
 ---
 
@@ -920,6 +939,8 @@ Adler, S. L. *Quaternionic Quantum Mechanics and Quantum Fields.* Oxford Univers
 
 Aleksandrova, A., Borish, V., and Wootters, W. K. "Real-vector-space quantum theory with a universal quantum bit." *Physical Review A* 87, 2013: 052106.
 
+Berto, F. and Jago, M. *Impossible Worlds.* Oxford University Press, 2019.
+
 de la Torre, G., Hoban, M. J., Dhara, C., Sainz, A. B., and Acín, A. "Maximally nonlocal theories cannot be maximally random." *Physical Review Letters* 114, 2015: 160502. See also: "Deriving quantum theory from its local structure and reversibility." *New Journal of Physics* 16, 2014: 073040.
 
 Birkhoff, G. and von Neumann, J. "The logic of quantum mechanics." *Annals of Mathematics* 37(4), 1936: 823-843.
@@ -928,11 +949,13 @@ Brassard, G., Buhrman, H., Linden, N., Méthot, A. A., Tapp, A., and Unger, F. "
 
 Chiribella, G., D'Ariano, G. M., and Perinotti, P. "Informational derivation of quantum theory." *Physical Review A* 84(1), 2011: 012311.
 
-Demarest, H. "Powerful properties, powerless laws." In *Current Controversies in Metaphysics*, edited by E. Barnes. Routledge, 2016.
+da Costa, N. C. A. "On the theory of inconsistent formal systems." *Notre Dame Journal of Formal Logic* 15(4), 1974: 497-510.
+
+Demarest, H. "Powerful properties, powerless laws." In *Causal Powers*, edited by J. Jacobs. Oxford University Press, 2017: 38-53.
 
 Earnshaw, S. "On the nature of the molecular forces which regulate the constitution of the luminiferous ether." *Transactions of the Cambridge Philosophical Society* 7, 1842: 97-112.
 
-Egg, M. "Scientific realism in particle physics: A causal approach." *Philosophy of Science* 83(5), 2016: 1050-1061.
+Egg, M. *Scientific Realism in Particle Physics: A Causal Approach.* De Gruyter, 2014.
 
 Halmos, P. R. *Finite-Dimensional Vector Spaces.* Springer, 1974. [§44: complexification of real inner product spaces.]
 
@@ -945,6 +968,10 @@ McKague, M. "Simulating quantum systems using real Hilbert spaces." *Quantum Inf
 Longmire, J. D. "It from Bit, Bit from Fit: Foundational Physics Logically Remastered." [Main LRT paper, this volume.]
 
 Masanes, L. and Müller, M. P. "A derivation of quantum theory from physical requirements." *New Journal of Physics* 13, 2011: 063001.
+
+Priest, G. *In Contradiction: A Study of the Transconsistent.* Second edition. Oxford University Press, 2006.
+
+Priest, G., Beall, J. C., and Armour-Garb, B. (eds.) *The Law of Non-Contradiction: New Philosophical Essays.* Oxford University Press, 2004.
 
 Renou, M.-O., Trillo, D., Weilenmann, M., Le, T. P., Tavakoli, A., Gisin, N., Acín, A., and Navascués, M. "Quantum theory based on real numbers can be experimentally falsified." *Nature* 600, 2021: 625-629.
 
