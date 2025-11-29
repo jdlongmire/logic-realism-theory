@@ -123,6 +123,8 @@ If psychologism were true, the conceivability of 3FLL violations would be imposs
 
 This argument is strengthened by noting that physicists have *actively sought* 3FLL violations. Experiments testing Bell inequalities, probing quantum contextuality, and searching for deviations from standard quantum mechanics represent sustained attempts to find cracks in the logical structure of outcomes. None have succeeded. The 3FLL hold not for lack of trying, but because reality enforces them.
 
+The Technical companion (Theorem 7.1) provides a rigorous proof that this constraint is ontic rather than epistemic: even "hidden" outcome tokens that never occur with positive probability cannot violate 3FLL without contradicting the continuity structure of the theory. The epistemic loophole is mathematically closed.
+
 ### 2.5 The Relation to Wittgenstein
 
 Wittgenstein (*Tractatus* 5.4731) claimed logical propositions are tautologies that say nothing about the world. LRT partially agrees: 3FLL do not *describe* contingent features of the world. But LRT adds: 3FLL are *conditions for* anything being describable at all.

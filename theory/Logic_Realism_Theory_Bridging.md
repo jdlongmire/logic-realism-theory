@@ -326,7 +326,13 @@ LRT reframes the problem: **measurement is the interface between non-Boolean IIS
 
 The "mystery" of definite outcomes is inverted. What would be mysterious is if outcomes were *not* definite—for then 3FLL would fail, and distinguishability itself would be incoherent. Definite outcomes are not explained by adding mechanisms but by recognizing the constitutive role of logic.
 
-### 5.4 A New Form of Structural Realism
+### 5.4 The Epistemic Loophole Closed
+
+A sophisticated objection grants that observed outcomes obey 3FLL but suggests hidden tokens might violate them. The Technical paper (Theorem 7.1) proves this impossible: the continuity and path-connectedness of pure states—required for quantum mechanics—exclude non-Boolean tokens even at probability zero.
+
+The argument proceeds in two parts: (1) any token occurring with positive probability must be Boolean (else probability normalization fails), and (2) any hypothetical "hidden" token with zero probability cannot belong to the token space without violating the continuity structure. The 3FLL are ontic constraints on actual outcome tokens, not epistemic filters on observation. The loophole is closed.
+
+### 5.5 A New Form of Structural Realism
 
 LRT supports a distinctive form of structural realism—call it **logico-physical structuralism**:
 

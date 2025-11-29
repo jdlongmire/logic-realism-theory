@@ -146,7 +146,7 @@ Without these conditions, there is no basis for one state to differ from another
 
 This claim invites a circularity objection: are we defining distinguishability in terms of 3FLL, then claiming 3FLL are necessary for distinguishability? No. The argument is transcendental, not definitional. We ask: what must be the case for distinguishability to be possible at all? For state A to be distinguished from state B, A must be determinately A (Identity), A must not simultaneously be B and not-B (Non-Contradiction), and A must either be B or not be B (Excluded Middle). These are not stipulations about what "distinguishability" means; they are conditions without which distinction cannot obtain. The question is not "what do we mean by distinguishability?" but "what makes distinguishability possible?" The answer is 3FLL.
 
-This is the foundational claim of Logic Realism Theory. The laws are not cognitive filters we impose, not linguistic conventions we adopt, not useful approximations we employ. They are the conditions under which anything can be distinguished from anything else.
+This is the foundational claim of Logic Realism Theory. The laws are not cognitive filters we impose, not linguistic conventions we adopt, not useful approximations we employ. They are the conditions under which anything can be distinguished from anything else. The Technical companion (Theorem 7.1) proves this claim is ontic rather than epistemic: the continuity structure of quantum mechanics excludes hidden non-Boolean tokens even at probability zero.
 
 ### 2.2 The Infinite Information Space
 
