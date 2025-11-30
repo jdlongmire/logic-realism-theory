@@ -31,10 +31,18 @@ The claim isn't that 3FLL are the only axioms of Boolean algebra. It's that they
 
 Put differently: You need Identity, Non-Contradiction, and Excluded Middle to have {0,1} as your outcome set. You need the other axioms to define the algebra on that set. The paper is about why physical outcomes live in {0,1} rather than some other structure - that's the 3FLL question, not the full Boolean algebra question.
 
+This also explains why the **bit is fundamental**. The bit isn't fundamental because Shannon chose it as a convenient unit - it's fundamental because 3FLL *force* all actualized outcomes into binary form. Any distinguishable property either obtains or doesn't. That's exactly what a bit IS: a single binary distinction.
+
+Note the subtlety: quantum *states* are continuous (complex Hilbert space, superpositions, interference). The bit emerges at the *interface* - when possibility becomes actuality. Pre-measurement: continuous, non-Boolean. Post-measurement: discrete, Boolean. 3FLL explain why the transition *must* land on bits.
+
+Wheeler asked "why bits?" ("It from Bit"). LRT answers: because distinguishability is constitutively Boolean. The bit structure isn't arbitrary - it's forced by what actuality requires. That's the "Bit from Fit" direction of the paper's title.
+
 ---
 
 ## Notes
 
 - Key distinction: constitutive vs operational
 - 3FLL define the outcome space; other axioms define operations on it
-- This is addressed implicitly in Main paper but could be made more explicit
+- Bits are fundamental because 3FLL force binary outcomes, not by convention
+- Quantum states are continuous; bits emerge at actualization
+- This addresses Wheeler's "It from Bit" question directly
