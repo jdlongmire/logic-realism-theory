@@ -967,9 +967,11 @@ Lee, C. M. and Selby, J. H. "Deriving Grover's lower bound from simple physical 
 
 McKague, M., Mosca, M., and Gisin, N. "Simulating quantum systems using real Hilbert spaces." *Physical Review Letters* 102, 2009: 020505.
 
-Longmire, J. D. "It from Bit, Bit from Fit: Foundational Physics Logically Remastered." [Main LRT paper, available at: https://github.com/jdlongmire/logic-realism-theory/blob/master/theory/Logic_Realism_Theory_Main.md]
+Longmire, J. D. "It from Bit, Bit from Fit: Foundational Physics Logically Remastered." Zenodo, 2025. DOI: [10.5281/zenodo.17778402](https://doi.org/10.5281/zenodo.17778402)
 
-Longmire, J. D. "Logic Realism Theory: Philosophical Foundations." [Available at: https://github.com/jdlongmire/logic-realism-theory/blob/master/theory/Logic_Realism_Theory_Philosophy.md]
+Longmire, J. D. "Logic Realism Theory: Philosophical Foundations." Zenodo, 2025. DOI: [10.5281/zenodo.17779030](https://doi.org/10.5281/zenodo.17779030)
+
+Longmire, J. D. "LRT Constraints on QFT: Deriving Fock Structure and Interpreting Renormalization from Logical Foundations." Zenodo, 2025. DOI: [10.5281/zenodo.17779066](https://doi.org/10.5281/zenodo.17779066)
 
 Masanes, L. and Müller, M. P. "A derivation of quantum theory from physical requirements." *New Journal of Physics* 13, 2011: 063001.
 

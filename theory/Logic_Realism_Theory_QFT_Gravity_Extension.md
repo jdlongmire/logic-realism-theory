@@ -749,8 +749,10 @@ The extension is conservative, rigorous, and honest. It represents the next step
 
 ---
 
-## Related Papers
+## Related Papers in This Series
 
-- [Main Paper](Logic_Realism_Theory_Main.md) - Core thesis and 17 phenomena
-- [Technical Foundations](Logic_Realism_Theory_Technical.md) - Mathematical proofs, derivation chain
-- [Philosophical Foundations](Logic_Realism_Theory_Philosophy.md) - Ontological status of 3FLL
+Longmire, J. D. "It from Bit, Bit from Fit: Foundational Physics Logically Remastered." Zenodo, 2025. DOI: [10.5281/zenodo.17778402](https://doi.org/10.5281/zenodo.17778402)
+
+Longmire, J. D. "Logic Realism Theory: Technical Foundations." Zenodo, 2025. DOI: [10.5281/zenodo.17778707](https://doi.org/10.5281/zenodo.17778707)
+
+Longmire, J. D. "Logic Realism Theory: Philosophical Foundations." Zenodo, 2025. DOI: [10.5281/zenodo.17779030](https://doi.org/10.5281/zenodo.17779030)

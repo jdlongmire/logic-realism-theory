@@ -456,4 +456,14 @@ Wittgenstein, L. *Tractatus Logico-Philosophicus.* 1921. Trans. D. Pears and B. 
 
 ---
 
+## Related Papers in This Series
+
+Longmire, J. D. "It from Bit, Bit from Fit: Foundational Physics Logically Remastered." Zenodo, 2025. DOI: [10.5281/zenodo.17778402](https://doi.org/10.5281/zenodo.17778402)
+
+Longmire, J. D. "Logic Realism Theory: Technical Foundations." Zenodo, 2025. DOI: [10.5281/zenodo.17778707](https://doi.org/10.5281/zenodo.17778707)
+
+Longmire, J. D. "LRT Constraints on QFT: Deriving Fock Structure and Interpreting Renormalization from Logical Foundations." Zenodo, 2025. DOI: [10.5281/zenodo.17779066](https://doi.org/10.5281/zenodo.17779066)
+
+---
+
 *Philosophical companion to Longmire (this volume). Targets philosophy of science venues (Philosophy of Science, BJPS, Studies in HPS).*

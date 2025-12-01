@@ -1563,3 +1563,13 @@ Wheeler, J. A. "Information, physics, quantum: The search for links." In W. Zure
 
 Wigner, E. P. "The unreasonable effectiveness of mathematics in the natural sciences." *Communications on Pure and Applied Mathematics* 13(1), 1960: 1-14.
 
+---
+
+## Related Papers in This Series
+
+Longmire, J. D. "Logic Realism Theory: Technical Foundations." Zenodo, 2025. DOI: [10.5281/zenodo.17778707](https://doi.org/10.5281/zenodo.17778707)
+
+Longmire, J. D. "Logic Realism Theory: Philosophical Foundations." Zenodo, 2025. DOI: [10.5281/zenodo.17779030](https://doi.org/10.5281/zenodo.17779030)
+
+Longmire, J. D. "LRT Constraints on QFT: Deriving Fock Structure and Interpreting Renormalization from Logical Foundations." Zenodo, 2025. DOI: [10.5281/zenodo.17779066](https://doi.org/10.5281/zenodo.17779066)
+
