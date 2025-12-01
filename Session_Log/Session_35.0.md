@@ -44,17 +44,57 @@ The Three Fundamental Laws of Logic (Identity, Non-Contradiction, Excluded Middl
 
 ## Work Completed
 
-*(To be updated as session progresses)*
+### 1. QFT/Gravity Extension Paper Framework
+
+**File**: `theory/Logic_Realism_Theory_QFT_Gravity_Extension.md`
+
+Collaborated with external reviewer (Perplexity) to develop defensible framework:
+
+**Initial proposal** (from collaborator):
+- Ambitious claims: Fock from 3FLL, renormalization derived, spin-statistics from logic
+
+**Critical review** identified red flags:
+- "Derive" vs "Reframe" conflation
+- Hidden physical inputs (Poincaré assumed, not derived)
+- Overstated uniqueness claims
+- Aggressive timeline
+
+**Resolution through dialogue**:
+1. Cluster decomposition acknowledged as Tier 4 physical input (dynamical, not kinematic)
+2. Spin-statistics requires Lorentz + microcausality + Lee-Selby bridge
+3. Renormalization/vacuum are interpretations, not derivations
+4. Gravity section marked as conjecture only
+
+**Final framework**:
+
+| Tier | Inputs | Status |
+|------|--------|--------|
+| 1: Logic | 3FLL | Derived |
+| 2: Covariant | + CBP + Lorentz | Derived (Masanes-Muller) |
+| 3: Fields | + Locality | Derived (Lee-Selby) |
+| 4: QFT | + Cluster + Vacuum | Interpreted |
+| 5: Gravity | + Holographic | Conjecture |
+
+**Deliverables**:
+- 3 derivations (with explicit physical inputs)
+- 2 interpretations
+- 2 predictions
+- 3 falsifiers
+- 1 conjecture
+
+**Target**: Foundations of Physics, Q1 2026
 
 ---
 
 ## Commits
 
-*(To be updated)*
+- `02a4262` - Start Session 35.0
+- `9113073` - Add seed document for QFT/Gravity extension
+- `3567991` - Update QFT extension with refined framework from collaborator review
 
 ---
 
-## Interaction Count: 1
+## Interaction Count: 7
 
 ---
 
