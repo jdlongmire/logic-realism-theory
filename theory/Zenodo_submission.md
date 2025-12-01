@@ -29,7 +29,7 @@ Zenodo assigns DOIs when drafts are created, not when published. This solves the
 | Main | Logic_Realism_Theory_Main.md | 10.5281/zenodo.17778402 | Draft created |
 | Technical | Logic_Realism_Theory_Technical.md | 10.5281/zenodo.17778707 | Draft created |
 | Philosophy | Logic_Realism_Theory_Philosophy.md | 10.5281/zenodo.17779030 | Draft created |
-| QFT Extension | Logic_Realism_Theory_QFT_Gravity_Extension.md | TBD | Draft pending |
+| QFT Extension | Logic_Realism_Theory_QFT_Gravity_Extension.md | 10.5281/zenodo.17779066 | Draft created |
 
 **Update this table as DOIs are reserved.**
 
@@ -119,7 +119,7 @@ Longmire, J. D. "Logic Realism Theory: Technical Foundations." Zenodo, 2025. DOI
 
 Longmire, J. D. "Logic Realism Theory: Philosophical Foundations." Zenodo, 2025. DOI: 10.5281/zenodo.17779030
 
-Longmire, J. D. "LRT Constraints on QFT: Deriving Fock Structure and Interpreting Renormalization from Logical Foundations." Zenodo, 2025. DOI: 10.5281/zenodo.XXXXXX4
+Longmire, J. D. "LRT Constraints on QFT: Deriving Fock Structure and Interpreting Renormalization from Logical Foundations." Zenodo, 2025. DOI: 10.5281/zenodo.17779066
 ```
 
 ---
@@ -143,7 +143,7 @@ Longmire, J. D. "LRT Constraints on QFT: Deriving Fock Structure and Interpretin
 - [x] Create Main draft → DOI: 10.5281/zenodo.17778402
 - [x] Create Technical draft → DOI: 10.5281/zenodo.17778707
 - [x] Create Philosophy draft → DOI: 10.5281/zenodo.17779030
-- [ ] Create QFT Extension draft → Note DOI: ____________
+- [x] Create QFT Extension draft → DOI: 10.5281/zenodo.17779066
 
 ### Final Steps
 - [ ] Update all PDFs with cross-reference DOIs
