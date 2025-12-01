@@ -18,9 +18,9 @@ We establish three principal results. First, Fock space structure is derived fro
 
 The paper distinguishes derivations from interpretations. Cluster decomposition, vacuum uniqueness, and the spectral gap are physical inputs (Tier 4), not consequences of logical constraints. Renormalization is interpreted as 3FLL-restoration at UV scales, but this conceptual framework does not derive renormalization group equations. The gravity sector remains conjectural.
 
-Four predictions follow: (1) Tsirelson bound holds for field correlations, (2) information is never fundamentally lost, (3) complex amplitudes are required, (4) spin-statistics holds universally. Five strong falsifiers are identified, including signaling via entangled fields and fundamental information loss.
+Four predictions follow: (1) Tsirelson bound holds for field correlations, (2) information is never fundamentally lost, (3) complex amplitudes are required, (4) spin-statistics holds universally. Six strong falsifiers are identified, including signaling via entangled fields, fundamental information loss, and parastatistics in 3+1 dimensions.
 
-The extension is conservative: it builds on established LRT results, adds Lorentz invariance and microcausality as explicit physical inputs, and makes honest distinctions between what is derived, interpreted, and conjectured.
+The extension is conservative: it builds on established LRT results, adds Lorentz invariance and microcausality as explicit physical inputs, and makes honest distinctions between what is derived, interpreted, and conjectured. No claim is made to derive Lorentz invariance, microcausality, or cluster decomposition from pure logic - these are physical inputs at Tiers 2-4.
 
 **Keywords:** quantum field theory, logic realism, Fock space, spin-statistics, falsifiability, reconstruction theorems
 
@@ -187,29 +187,33 @@ $$\mathcal{H}^{(n)} = \mathcal{H}_1 \otimes \mathcal{H}_1 \otimes \cdots \otimes
 
 **Physical observation:** Identical particles (e.g., two electrons) are *operationally indistinguishable*. No measurement can determine "which electron is which."
 
+**Physical Input (Tier 3):** Indistinguishability under arbitrary permutations. For $n$ identical particles, no measurement can distinguish particle $i$ from particle $j$ for any $i, j$. This is stronger than mere "permutability of labels" - it asserts that the particles are genuinely identical in all physical respects.
+
 **3FLL Constraint (Identity):** If particle 1 and particle 2 are identical, then any state must respect this identity. The state $|a\rangle_1 \otimes |b\rangle_2$ (particle 1 in state $a$, particle 2 in state $b$) must be *physically equivalent* to $|b\rangle_1 \otimes |a\rangle_2$.
 
 **Definition 3.1 (Exchange Operator).** For two-particle states, define:
 $$P_{12} |a\rangle_1 \otimes |b\rangle_2 = |b\rangle_1 \otimes |a\rangle_2$$
 
-**Theorem 3.1' (Symmetrization from 3FLL).** For identical particles, physical states must satisfy:
-$$P_{12} |\psi\rangle = \lambda |\psi\rangle$$
+**Theorem 3.1' (Symmetrization from 3FLL + Indistinguishability).** For identical particles satisfying the indistinguishability input, physical states must satisfy:
+$$P_\sigma |\psi\rangle = \lambda_\sigma |\psi\rangle$$
 
-where $\lambda = \pm 1$ (since $P_{12}^2 = 1$).
+for all permutations $\sigma \in S_n$, where $\lambda_\sigma = +1$ for all $\sigma$ (bosons) or $\lambda_\sigma = \text{sign}(\sigma)$ (fermions).
 
 **Proof:**
 
-*Step 1 (Identity):* If particles are identical, then $|a\rangle_1 \otimes |b\rangle_2$ and $|b\rangle_1 \otimes |a\rangle_2$ represent the same physical configuration. Therefore, they must belong to the same ray in Hilbert space:
+*Step 1 (Two-particle case - Identity):* If particles are identical, then $|a\rangle_1 \otimes |b\rangle_2$ and $|b\rangle_1 \otimes |a\rangle_2$ represent the same physical configuration. Therefore, they must belong to the same ray in Hilbert space:
 $$|b\rangle_1 \otimes |a\rangle_2 = e^{i\phi} |a\rangle_1 \otimes |b\rangle_2$$
 
 *Step 2 (Consistency):* Applying the exchange twice returns to the original:
 $$P_{12}^2 = 1 \implies e^{2i\phi} = 1 \implies e^{i\phi} = \pm 1$$
 
-*Step 3 (Non-Contradiction):* A state cannot be both symmetric ($\lambda = +1$) and antisymmetric ($\lambda = -1$). Each particle type has a definite symmetry.
+*Step 3 (Extension to n particles - Lüders-Zumino):* For $n > 2$ particles, the indistinguishability input requires consistency under all transpositions $(ij)$. By the Lüders-Zumino theorem (Lüders 1958, Zumino 1960), if each transposition gives phase $\pm 1$, and these phases must be consistent across all permutations, then only two possibilities exist: all transpositions give $+1$ (fully symmetric) or all give $-1$ (fully antisymmetric). Mixed statistics (parastatistics) are excluded in 3+1 dimensions by locality constraints (Messiah-Greenberg 1964).
 
-*Step 4 (Excluded Middle):* Every identical-particle state is either symmetric or antisymmetric. No other options exist. ∎
+*Step 4 (Non-Contradiction):* A state cannot be both symmetric ($\lambda = +1$) and antisymmetric ($\lambda = -1$). Each particle type has a definite symmetry.
 
-**Critical Gap:** Theorem 3.1' establishes that identical particles must have definite exchange symmetry, but does **not** determine which particles are symmetric (bosons) versus antisymmetric (fermions). This requires additional physical input (§3.3).
+*Step 5 (Excluded Middle):* Every identical-particle state is either symmetric or antisymmetric. No other options exist in 3+1 dimensions. ∎
+
+**Critical Gap:** Theorem 3.1' establishes that identical particles must have definite exchange symmetry (bosonic or fermionic), but does **not** determine which particles are symmetric (bosons) versus antisymmetric (fermions). This requires additional physical input (§3.3).
 
 **Definition 3.2 (Symmetrized Subspaces).**
 - **Symmetric subspace:** $\mathcal{H}_S^{(n)} = \{|\psi\rangle \in \mathcal{H}_1^{\otimes n} : P_\sigma |\psi\rangle = |\psi\rangle \text{ for all } \sigma \in S_n\}$
@@ -229,19 +233,15 @@ This ensures no faster-than-light signaling via field measurements.
 
 Integer-spin particles are bosons (symmetric); half-integer-spin particles are fermions (antisymmetric).
 
-**Proof sketch (via Pauli 1940, Streater-Wightman axioms):**
+**Proof reference:** By the spin-statistics theorem in the Streater-Wightman axiomatic framework (Streater & Wightman 1964, §4.4) or equivalently the Haag-Kastler algebraic framework (Haag 1996, §IV.1), microcausality combined with the Bargmann-Hall-Wigner phase analysis under $2\pi$ rotations implies that integer-spin fields must satisfy commutation relations (bosons) while half-integer-spin fields must satisfy anticommutation relations (fermions). The key steps are:
 
-*Step 1:* For a spin-$s$ field, the field operator transforms under the $(s, 0) \oplus (0, s)$ representation of the Lorentz group.
+*Step 1:* Under a $2\pi$ rotation, field operators transform with phase $e^{2\pi i s}$ where $s$ is the spin. Integer spin gives $+1$; half-integer spin gives $-1$.
 
-*Step 2:* Under a $2\pi$ rotation, the field picks up a phase $e^{2\pi i s}$:
-- Integer $s$: $e^{2\pi i s} = +1$
-- Half-integer $s$: $e^{2\pi i s} = -1$
+*Step 2:* Microcausality requires $[\phi(x), \phi(y)]_\mp = 0$ at spacelike separation. The choice of commutator vs. anticommutator must be consistent with the $2\pi$ rotation phase.
 
-*Step 3:* Microcausality requires $[\phi(x), \phi(y)]_\mp = 0$ at spacelike separation. For this to hold with Lorentz covariance:
-- Integer spin: commutator $[\phi, \phi] = 0$ → bosons
-- Half-integer spin: anticommutator $\{\phi, \phi\} = 0$ → fermions
+*Step 3:* For Lorentz-covariant, positive-energy theories, the only consistent assignment is: integer spin → commutator (bosons); half-integer spin → anticommutator (fermions).
 
-*Step 4:* The wrong choice (integer spin with anticommutator, or half-integer with commutator) violates either microcausality or positive energy. ∎
+*Step 4:* The wrong choice violates either microcausality or positive energy (vacuum instability). See Weinberg (1995, Vol. I, §5.7) for the explicit calculation. ∎
 
 **LRT Bridge (Lee-Selby Connection):** The Lee-Selby theorem (Technical.md §6.4) shows that continuous reversibility + local tomography + purification uniqueness implies the entanglement structure of QM. In the relativistic extension:
 
@@ -292,11 +292,11 @@ where $a(\mathbf{p})$ and $a^\dagger(\mathbf{p})$ satisfy the canonical relation
 | Result | Inputs | Status |
 |--------|--------|--------|
 | Tensor products | A3c (local tomography) | Derived (Thm 6.2) |
-| Symmetrization requirement | 3FLL (Identity) | Derived (Thm 3.1') |
-| Spin-statistics connection | Lorentz + microcausality | Derived (Thm 3.2') |
+| Symmetrization requirement | 3FLL (Identity) + Indistinguishability (Tier 3) | Derived (Thm 3.1') |
+| Spin-statistics connection | Lorentz + microcausality + positive energy | Derived (Thm 3.2') |
 | CCR/CAR algebra | Fock structure + inner product | Derived (Thm 3.3') |
 
-The Fock space structure is genuinely derived from LRT axioms plus explicit physical inputs (Lorentz invariance, microcausality). This is not a reframing but a constructive derivation with clear assumptions.
+The Fock space structure is genuinely derived from LRT axioms plus explicit physical inputs (Lorentz invariance, microcausality, indistinguishability). This is not a reframing but a constructive derivation with clear assumptions.
 
 ---
 
@@ -332,6 +332,8 @@ This state lives in $\mathcal{H}_A \otimes \mathcal{H}_B$ (tensor structure exis
 
 **LRT Status:** Cluster decomposition is an additional physical input at Tier 4. LRT provides the algebraic structure (tensor products) but not the dynamical guarantee (correlation factorization).
 
+**Note on Vacuum Uniqueness:** In massive interacting theories, vacuum uniqueness and cluster decomposition are equivalent (Weinberg 1995, Vol. I, §4.3). A unique vacuum guarantees cluster decomposition; conversely, if correlations factorize at infinite separation, the vacuum must be unique. We list both as Tier 4 inputs but they are not independent - confirming one confirms the other.
+
 ### 4.2 Renormalization as CBP-Enforced Consistency
 
 **Important:** This section offers an *interpretation* of renormalization within the LRT framework. It does **not** derive renormalization group equations, beta functions, or anomalous dimensions.
@@ -354,6 +356,11 @@ These divergences arise from integrating over arbitrarily high momenta (short di
 *Excluded Middle violation:* A divergent quantity is neither finite nor well-defined infinite. It fails to have a determinate value.
 
 **CBP Constraint:** The Consistency Bridging Principle requires that all states resolve to Boolean outcomes. A divergent amplitude cannot produce well-defined probabilities (which must sum to 1).
+
+**Explicit Example (φ³ Tadpole):** In $\phi^3$ theory, the one-loop tadpole diagram contributes to the vacuum energy:
+$$\langle 0 | \phi | 0 \rangle \sim \int \frac{d^4k}{k^2 - m^2} \to \infty$$
+
+This divergent vacuum expectation value violates Identity: the quantity "$\langle 0 | \phi | 0 \rangle$" is not self-identical because "$\infty$" is not a well-defined value. Two different regularization schemes would give different "infinities" - but if the quantity were truly self-identical, it would have a unique value. Renormalization (adding a counterterm to cancel the divergence) restores a finite, self-identical vacuum expectation value.
 
 #### 4.2.3 Renormalization as 3FLL Restoration
 
@@ -505,6 +512,7 @@ A falsifier is an observation that would refute LRT-QFT. We distinguish strong f
 | **Fundamental information loss** | Black hole destroys information irreversibly; unitarity fails fundamentally | CBP violated; A3b wrong; LRT refuted |
 | **Spin-statistics violation** | Integer-spin fermion or half-integer boson observed | Theorem 3.2' fails; Lorentz+microcausality insufficient |
 | **Contradiction in measurement outcomes** | Single measurement yields contradictory results (P and ¬P) | 3FLL not constitutive; LRT foundationally wrong |
+| **Parastatistics or anyons in 3+1D** | Particles with exchange phases other than ±1 observed in bulk 3+1D (not confined to 2D surfaces) | Theorem 3.1' fails; Lüders-Zumino/Messiah-Greenberg wrong |
 
 #### 5.2.2 Weak Falsifiers
 
@@ -584,37 +592,58 @@ The extension is conservative: it builds on established results and adds physica
 
 ---
 
-## 6. Gravity Conjecture (2 pages)
+## 6. Gravity: Future Work
 
-### 6.1 Holographic Interface
+**Status:** This section contains preliminary conjectures only. No derivations are claimed. The gravity extension is explicitly marked as future work, not part of the current paper's main contribution.
 
-**Conjecture**: Spacetime structure emerges from holographic bounds on IIS information capacity.
+### 6.1 Why Gravity is Deferred
 
-### 6.2 Collapse Parameters
+The QFT extension (§§2-5) rests on well-established mathematical results: Masanes-Müller reconstruction, Streater-Wightman axioms, Lee-Selby theorems. Equivalent rigor for gravity would require:
 
-**Conjecture**: Penrose-Diósi collapse parameters derivable from Global Parsimony:
+1. A reconstruction theorem for general covariance from information-theoretic principles (does not exist)
+2. A derivation of spacetime structure from IIS constraints (speculative)
+3. Resolution of the quantum gravity problem itself (open for 60+ years)
 
-```
-τ ~ ℏ / (G m²)
-```
+Rather than speculate without mathematical foundation, we mark the gravity sector as future work and limit ourselves to stating conjectures that could guide future research.
 
-**Status**: Conjecture only. No derivation claimed.
+### 6.2 Conjectures (Not Derivations)
 
-### 6.3 Black Holes and Information
+**Conjecture 6.1 (Holographic Interface):** Spacetime structure may emerge from holographic bounds on IIS information capacity. The Bekenstein bound ($S \leq 2\pi R E / \hbar c$) could represent an interface criterion analogous to the IIS-actuality boundary.
 
-**Prediction**: No fundamental information loss (CBP). Hawking radiation must encode infalling information.
+**Conjecture 6.2 (Collapse Parameters):** If objective collapse occurs (Penrose-Diósi), the collapse timescale
+$$\tau \sim \frac{\hbar}{G m^2 / R}$$
+may be derivable from Global Parsimony as the scale where gravitational self-energy exceeds a critical distinguishability threshold. This is speculative; no derivation is claimed.
 
-**Testable**: Gravitational wave signatures from quantum corrections near horizon.
+**Prediction (from CBP, not gravity-specific):** No fundamental information loss. Hawking radiation must encode information about infallen matter. This follows from CBP (§5.1.2), not from a gravity derivation.
+
+### 6.3 Path Forward
+
+A rigorous LRT-gravity extension would require:
+
+| Component | Status | What's Needed |
+|-----------|--------|---------------|
+| General covariance | Not addressed | Reconstruction theorem from IIS principles |
+| Spacetime emergence | Conjecture | Derivation from holographic bounds |
+| Collapse mechanism | Conjecture | Connection to Global Parsimony |
+| Quantum gravity unification | Open problem | Beyond current scope |
+
+This is acknowledged as the major gap in LRT's scope. Closing it would require breakthroughs in quantum gravity foundations, not just LRT-specific work.
 
 ---
 
 ## 7. Open Questions
 
-1. Full derivation of creation/annihilation commutation relations from LRT
-2. Rigorous proof of uniqueness theorem with explicit assumptions
-3. Connection to gauge theories (Yang-Mills from IIS?)
-4. Path from conjecture to derivation for gravity sector
-5. Experimental tests distinguishing LRT-QFT from standard QFT interpretations
+1. **Creation/annihilation algebra:** Full derivation of CCR/CAR commutation relations directly from LRT axioms (currently derived from Fock structure, which is derived from LRT + physical inputs).
+
+2. **Uniqueness theorem rigor:** Complete proof of Theorem 5.1' with all assumptions explicitly verified and no gaps.
+
+3. **Gauge theories and Yang-Mills:** Whether local gauge symmetry can be derived from IIS closure under charged superpositions combined with 3FLL constraints remains an open problem. Current status: gauge groups (U(1), SU(2), SU(3)) are Tier 5 physical inputs, analogous to particle content. A derivation showing that gauge structure is *required* by LRT axioms would be a major advance; alternatively, gauge groups may simply be additional physical inputs that LRT accommodates but does not predict.
+
+4. **Gravity derivation:** Path from conjecture (§6) to derivation for the gravity sector. This requires either (a) deriving spacetime structure from IIS information bounds, or (b) explicitly adding general covariance as a Tier 5+ input.
+
+5. **Experimental discrimination:** Tests that would distinguish LRT-QFT from standard QFT interpretations. Currently, LRT-QFT makes the same quantitative predictions as standard QFT; the difference is interpretive. Novel predictions (collapse parameters, information preservation tests) are needed.
+
+6. **Interacting QFT:** Extension of LRT-QFT to interacting theories beyond free fields. Does the framework accommodate non-perturbative effects, confinement, asymptotic freedom?
 
 ---
 
@@ -625,21 +654,37 @@ The extension is conservative: it builds on established results and adds physica
 **Summary**: This paper extends LRT to QFT via:
 - 3 derivations (Hilbert → Fock → spin-statistics) with explicit physical inputs
 - 2 interpretations (renormalization, vacuum) - not derivations
-- 2 predictions (Tsirelson in fields, no info paradox)
-- 3 falsifiers (signaling, real QFT, info loss)
-- 1 conjecture (gravity collapse parameters)
+- 4 predictions (Tsirelson in fields, info preservation, complex amplitudes, spin-statistics universal)
+- 6 strong falsifiers (signaling, real QFT, info loss, spin-statistics violation, contradictory outcomes, parastatistics in 3+1D)
+- 1 conjecture (gravity, marked as future work)
 
 ---
 
 ## References
 
-*To be added - Key references:*
-- Masanes & Muller (2011) - Reconstruction theorems
-- Lee & Selby (2016) - Spin-statistics
-- Hardy (2001) - Quantum theory from axioms
-- Renou et al. (2021) - Complex amplitudes experimental confirmation
-- Weinberg - Cluster decomposition
-- Technical.md theorems (Thm 3.2, 5.2, 5.4, 6.2, 6.4)
+*Key references (to be formatted for submission):*
+
+**Reconstruction Theorems:**
+- Masanes, L. & Müller, M. P. (2011). A derivation of quantum theory from physical requirements. *New J. Phys.* 13, 063001.
+- Hardy, L. (2001). Quantum theory from five reasonable axioms. arXiv:quant-ph/0101012.
+- Lee, C. M. & Selby, J. H. (2016). Deriving Grover's lower bound from simple physical principles. *New J. Phys.* 18, 093047.
+
+**Axiomatic QFT:**
+- Streater, R. F. & Wightman, A. S. (1964). *PCT, Spin and Statistics, and All That*. W. A. Benjamin.
+- Haag, R. (1996). *Local Quantum Physics*. 2nd ed. Springer.
+- Weinberg, S. (1995). *The Quantum Theory of Fields*, Vol. I. Cambridge University Press. [§4.3 cluster decomposition; §5.7 spin-statistics]
+
+**Spin-Statistics and Identical Particles:**
+- Pauli, W. (1940). The connection between spin and statistics. *Phys. Rev.* 58, 716-722.
+- Lüders, G. (1958). Vertauschungsrelationen zwischen verschiedenen Feldern. *Z. Naturforsch.* 13a, 254.
+- Zumino, B. (1960). Normal forms of complex matrices. *J. Math. Phys.* 1, 1-7.
+- Messiah, A. M. L. & Greenberg, O. W. (1964). Symmetrization postulate and its experimental foundation. *Phys. Rev.* 136, B248.
+
+**Experimental Confirmation:**
+- Renou, M.-O. et al. (2021). Quantum theory based on real numbers can be experimentally falsified. *Nature* 600, 625-629.
+
+**LRT Foundation Papers:**
+- Technical.md theorems (Thm 3.2, 5.2, 5.4, 6.2, 6.4) - see companion paper
 
 ---
 
