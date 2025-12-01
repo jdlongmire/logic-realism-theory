@@ -18,6 +18,8 @@ One structural prediction, that quantum mechanics requires complex amplitudes, h
 
 Logic Realism Theory provides unified explanation for seventeen quantum phenomena that other interpretations treat as independent postulates, while maintaining realism, locality, and parsimony. The competing interpretations either refuse ontological commitment (Copenhagen, QBism), require massive ontological excess (Many-Worlds), or introduce unexplained nonlocal mechanisms (Bohmian, GRW).
 
+The "unreasonable effectiveness of mathematics" in physics is revealed as an illusion caused by viewing physical laws as contingent. By strictly enforcing Global Parsimony, LRT shows that fundamental physical constraints—from the Born Rule to Special Relativity—are the unique mathematical solutions necessary to maintain the Three Fundamental Laws of Logic at the interface of possibility and actuality. There is no "Bit" without the "Fit" of logical consistency.
+
 **Keywords:** quantum foundations, logic realism, Born rule, measurement problem, entanglement, falsifiability
 
 ---
@@ -1368,6 +1370,20 @@ Clear accounting distinguishes what LRT establishes:
 | Physical constraints (continuity, local tomography) | Axiom 3 | Required for stable, compositional physics |
 | Non-contextual measure | Axiom 5 | Required for consistent interface statistics |
 
+**Refining the Status of "Physical Inputs":**
+
+In the derivation of Quantum Field Theory (see QFT companion paper), we categorize features like Lorentz Invariance and Microcausality as "Tier 2/3 Inputs". It is crucial to distinguish the *methodological status* of these inputs from their *ontological status*.
+
+**Methodologically**, we treat them as inputs to maintain rigor where a complete mathematical derivation from 3FLL is not yet finalized. We honestly acknowledge the current gap between the abstract logic of distinguishability and the specific geometry of spacetime.
+
+**Ontologically**, however, LRT asserts that these are not independent variables. Under **Global Parsimony**, the universe cannot contain arbitrary symmetries. Thus, these inputs function as **pending derivations**: logical placeholders for constraints that are necessary to maintain 3FLL compliance.
+
+- **Local Tomography** is not an arbitrary rule; it is the stability constraint that prevents the logical incoherence of "globally distinct but locally identical" states. Although real QM permits globally distinct states with identical marginals (e.g., |Φ⁺⟩ and |Φ⁻⟩ both give ρ_A = ρ_B = I/2), such states would violate Global Parsimony: the same local statistics would correspond to two metaphysically distinct global configurations with no additional distinguishable consequences—surplus ontological structure forbidden by the truthmaker requirement of 3FLL.
+
+- **Lorentz Invariance** is treated as an input, but LRT conjectures that the Poincaré group will ultimately be shown to be the unique isometry group that preserves the distinguishability metric D across all physically admissible frames of reference.
+
+The distinction is not between "logical" and "empirical," but between "derived now" and "derivable in principle."
+
 **What LRT Does Not Explain:**
 - Why there is something rather than nothing
 - Why 3FLL rather than some other logical structure
@@ -1474,6 +1490,8 @@ The framework derives rather than postulates: complex Hilbert space from local t
 Twelve explicit conditions would falsify the theory. Experiments currently underway test its predictions about collapse mechanisms. This is what physical theories do: explain, predict, and risk refutation.
 
 The competing interpretations either refuse ontological commitment, require infinite unobservable worlds, introduce unexplained nonlocal mechanisms, or abandon objectivity. LRT maintains realism, locality, and parsimony while explaining what others postulate.
+
+The "unreasonable effectiveness of mathematics" in physics is revealed as an illusion caused by viewing physical laws as contingent. By strictly enforcing Global Parsimony, LRT shows that fundamental physical constraints—from the Born Rule to Special Relativity—are the unique mathematical solutions necessary to maintain the Three Fundamental Laws of Logic at the interface of possibility and actuality. There is no "Bit" without the "Fit" of logical consistency.
 
 It from bit. Bit from fit.
 

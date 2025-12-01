@@ -131,6 +131,18 @@ Wittgenstein (*Tractatus* 5.4731) claimed logical propositions are tautologies t
 
 This is closer to the *Tractatus* claim that logic is "transcendental" (6.13)—not a theory *about* the world but the *form* of any possible theory.
 
+### 2.6 The Structural Necessity of Empirical Fact
+
+A central tenet of Logic Realism Theory is that there are no "brute" empirical facts. Under the principle of **Global Parsimony**, any feature of reality that is not grounded in the constitutive base (3FLL) would constitute "surplus structure" and is therefore forbidden.
+
+Consequently, what we traditionally classify as "empirical inputs"—such as Lorentz invariance, the dimensionality of Hilbert space, or the necessity of complex amplitudes—are not arbitrary rules written on top of reality. Rather, they are the **structural preconditions** required for distinguishability to obtain in a stable interface.
+
+For example, while we empirically observe that quantum mechanics uses complex numbers, LRT reveals this is not a random selection. As proven by the failure of Real Quantum Mechanics to satisfy local tomography (Technical companion, Theorem 5.2), the complex field is the *unique* structure capable of preserving distinguishability in composite systems.
+
+**The Local Tomography Constraint:** Although real QM permits globally distinct states with identical marginals (e.g., the Bell states |Φ⁺⟩ and |Φ⁻⟩ both give ρ_A = ρ_B = I/2), LRT excludes this possibility because such states would violate Global Parsimony: the same local statistics would correspond to two metaphysically distinct global configurations with no additional distinguishable consequences—surplus ontological structure forbidden by the truthmaker requirement of 3FLL.
+
+Therefore, an "empirical fact" in LRT is simply a **logical constraint that we observe as a physical regularity.** The "Wager" of LRT is that *all* fundamental physical laws (including relativistic symmetries) will ultimately be revealed not as contingent inputs, but as the mathematical necessities required to satisfy the Three Fundamental Laws of Logic.
+
 ---
 
 ## 3. Interface Metaphysics
