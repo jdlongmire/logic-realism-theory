@@ -27,7 +27,7 @@ Zenodo assigns DOIs when drafts are created, not when published. This solves the
 | Paper | File | Reserved DOI | Status |
 |-------|------|--------------|--------|
 | Main | Logic_Realism_Theory_Main.md | 10.5281/zenodo.17778402 | Draft created |
-| Technical | Logic_Realism_Theory_Technical.md | TBD | Draft pending |
+| Technical | Logic_Realism_Theory_Technical.md | 10.5281/zenodo.17778707 | Draft created |
 | Philosophy | Logic_Realism_Theory_Philosophy.md | TBD | Draft pending |
 | QFT Extension | Logic_Realism_Theory_QFT_Gravity_Extension.md | TBD | Draft pending |
 
@@ -115,7 +115,7 @@ Once DOIs are reserved, add to each paper's References section:
 
 Longmire, J. D. "It from Bit, Bit from Fit: Foundational Physics Logically Remastered." Zenodo, 2025. DOI: 10.5281/zenodo.17778402
 
-Longmire, J. D. "Logic Realism Theory: Technical Foundations." Zenodo, 2025. DOI: 10.5281/zenodo.XXXXXX2
+Longmire, J. D. "Logic Realism Theory: Technical Foundations." Zenodo, 2025. DOI: 10.5281/zenodo.17778707
 
 Longmire, J. D. "Logic Realism Theory: Philosophical Foundations." Zenodo, 2025. DOI: 10.5281/zenodo.XXXXXX3
 
@@ -141,7 +141,7 @@ Longmire, J. D. "LRT Constraints on QFT: Deriving Fock Structure and Interpretin
 
 ### Zenodo Draft Creation
 - [x] Create Main draft → DOI: 10.5281/zenodo.17778402
-- [ ] Create Technical draft → Note DOI: ____________
+- [x] Create Technical draft → DOI: 10.5281/zenodo.17778707
 - [ ] Create Philosophy draft → Note DOI: ____________
 - [ ] Create QFT Extension draft → Note DOI: ____________
 
