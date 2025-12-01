@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Citation Validation Record",
-  "version": "0.2.3",
-  "description": "Schema for systematic verification of bibliographic citations with full audit trail. Version 0.2.0 adds two-phase verification, source hierarchy, and stricter evidence requirements. Version 0.2.1 adds tooling reference. Version 0.2.2 adds mandatory page number verification. Version 0.2.3 adds Google Scholar as tier_2 fallback for pre-DOI papers.",
+  "version": "0.3.0",
+  "description": "Schema for systematic verification of bibliographic citations with full audit trail. Version 0.2.0 adds two-phase verification, source hierarchy, and stricter evidence requirements. Version 0.2.1 adds tooling reference. Version 0.2.2 adds mandatory page number verification. Version 0.2.3 adds Google Scholar as tier_2 fallback for pre-DOI papers. Version 0.3.0 adds dedicated book verification workflow (B1-B4) and book source hierarchy.",
 
   "tools": {
     "verify_citation_script": {
@@ -89,8 +89,98 @@
           "jstor": "https://www.jstor.org/action/doBasicSearch?Query=<title>",
           "worldcat": "https://www.worldcat.org/search?q=<title>"
         }
+      },
+      {
+        "step": "B1",
+        "name": "Book Verification: With DOI",
+        "trigger": "Citation is a book AND has a DOI",
+        "action": "Use standard DOI verification workflow",
+        "workflow": [
+          "Run verify_citation.py with book DOI",
+          "Crossref returns publisher, year, ISBN, editors",
+          "Verify title, authors/editors, publisher, year match"
+        ],
+        "tier": "tier_1",
+        "result_status": "VERIFIED"
+      },
+      {
+        "step": "B2",
+        "name": "Book Verification: ISBN Only",
+        "trigger": "Citation is a book AND has ISBN but no DOI",
+        "action": "Verify via publisher website and WorldCat",
+        "workflow": [
+          "Search WorldCat by ISBN: https://www.worldcat.org/isbn/<ISBN>",
+          "Verify publisher website lists the book",
+          "Cross-reference with Google Books for publication details",
+          "Confirm: title, authors/editors, publisher, year, edition"
+        ],
+        "tier": "tier_1 (publisher) + tier_2 (WorldCat)",
+        "required_confirmations": 2,
+        "result_status": "VERIFIED",
+        "tools": {
+          "worldcat_isbn": "https://www.worldcat.org/isbn/<ISBN>",
+          "google_books": "https://books.google.com/books?q=isbn:<ISBN>",
+          "openlibrary": "https://openlibrary.org/isbn/<ISBN>"
+        }
+      },
+      {
+        "step": "B3",
+        "name": "Book Chapter Verification",
+        "trigger": "Citation is a book chapter",
+        "action": "Verify both chapter and containing volume",
+        "workflow": [
+          "First verify containing volume via B1 or B2",
+          "If chapter has DOI, verify via Crossref",
+          "Verify chapter title, authors, page range",
+          "Cross-reference table of contents if available",
+          "Confirm chapter exists in verified volume"
+        ],
+        "required_fields": ["chapter_title", "chapter_authors", "volume_title", "editors", "publisher", "year", "pages"],
+        "tier": "tier_1 (DOI) or tier_2 (publisher TOC)",
+        "result_status": "VERIFIED"
+      },
+      {
+        "step": "B4",
+        "name": "Book Verification: Pre-ISBN (pre-1970)",
+        "trigger": "Citation is a book published before 1970 OR has no ISBN",
+        "action": "Verify via library catalogs and historical records",
+        "workflow": [
+          "Search WorldCat by title + author",
+          "Search Google Books (may have scanned copies)",
+          "Check Library of Congress catalog",
+          "Cross-reference with academic citations",
+          "Require 2+ independent sources agreeing on details"
+        ],
+        "tier": "tier_2",
+        "required_confirmations": 2,
+        "result_status": "VERIFIED_VIA_SECONDARY",
+        "tools": {
+          "worldcat": "https://www.worldcat.org/search?q=<title>+<author>",
+          "loc": "https://catalog.loc.gov/",
+          "google_books": "https://books.google.com/books?q=<title>+<author>",
+          "hathitrust": "https://catalog.hathitrust.org/"
+        }
       }
     ]
+  },
+
+  "book_source_hierarchy": {
+    "description": "Source hierarchy specifically for book verification",
+    "tier_1": {
+      "sources": ["Crossref (for books with DOI)", "Publisher website", "ISBN lookup services"],
+      "use_for": "Authoritative bibliographic details",
+      "required_for": "VERIFIED status"
+    },
+    "tier_2": {
+      "sources": ["WorldCat", "Google Books", "Library of Congress", "OpenLibrary", "HathiTrust"],
+      "use_for": "Cross-validation, pre-ISBN books",
+      "required_for": "VERIFIED_VIA_SECONDARY status"
+    },
+    "tier_3": {
+      "sources": ["Web search", "Wikipedia", "Goodreads"],
+      "use_for": "Discovery only",
+      "never_use_for": "Bibliographic verification"
+    }
   },
 
   "type": "object",

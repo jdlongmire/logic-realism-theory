@@ -1,6 +1,6 @@
 # Reference Validation Protocol
 
-**Version**: 0.2.3
+**Version**: 0.3.0
 **Purpose**: Systematic verification of bibliographic citations with full audit trail
 
 ---
@@ -62,6 +62,63 @@ python reference_validation_protocol/verify_citation.py --compare "<citation>" <
 ```bash
 python reference_validation_protocol/verify_citation.py --json <DOI>
 ```
+
+---
+
+## Book Verification Workflow
+
+Books require a separate workflow due to different identifier systems (ISBN vs DOI) and source availability.
+
+### Book Source Hierarchy
+
+| Tier | Sources | Use For |
+|------|---------|---------|
+| **Tier 1** | Crossref (books with DOI), Publisher website, ISBN lookup | Authoritative details |
+| **Tier 2** | WorldCat, Google Books, Library of Congress, OpenLibrary | Cross-validation, pre-ISBN |
+| **Tier 3** | Web search, Wikipedia, Goodreads | Discovery only |
+
+### Step B1: Books with DOI
+- **Trigger**: Book has a DOI (common for modern academic books)
+- Use standard DOI verification via `verify_citation.py`
+- Crossref returns publisher, year, ISBN, editors
+- Result: `VERIFIED`
+
+```bash
+python reference_validation_protocol/verify_citation.py 10.1093/oso/9780198812791.001.0001
+```
+
+### Step B2: Books with ISBN Only
+- **Trigger**: Book has ISBN but no DOI
+- Verify via publisher website AND WorldCat
+- Require 2+ sources agreeing on details
+- Result: `VERIFIED`
+
+**Tools:**
+- WorldCat: `https://www.worldcat.org/isbn/<ISBN>`
+- Google Books: `https://books.google.com/books?q=isbn:<ISBN>`
+- OpenLibrary: `https://openlibrary.org/isbn/<ISBN>`
+
+### Step B3: Book Chapters
+- **Trigger**: Citation is a chapter within an edited volume
+- First verify containing volume via B1 or B2
+- If chapter has DOI, verify via Crossref
+- Verify: chapter title, authors, page range
+- Cross-reference table of contents
+- Result: `VERIFIED`
+
+**Required fields**: chapter_title, chapter_authors, volume_title, editors, publisher, year, pages
+
+### Step B4: Pre-ISBN Books (pre-1970)
+- **Trigger**: Book published before 1970 OR has no ISBN
+- Verify via library catalogs and historical records
+- Require 2+ independent sources
+- Result: `VERIFIED_VIA_SECONDARY`
+
+**Tools:**
+- WorldCat: `https://www.worldcat.org/search?q=<title>+<author>`
+- Library of Congress: `https://catalog.loc.gov/`
+- Google Books: `https://books.google.com/books?q=<title>+<author>`
+- HathiTrust: `https://catalog.hathitrust.org/`
 
 ---
 
@@ -138,4 +195,4 @@ reference_validation_protocol/
 
 ---
 
-*Protocol developed 2025-11-30, updated to v0.2.3 2025-12-01*
+*Protocol developed 2025-11-30, v0.3.0 2025-12-01 (added book verification workflow)*
