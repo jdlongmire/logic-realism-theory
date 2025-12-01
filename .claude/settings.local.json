@@ -1,12 +1,19 @@
 {
   "permissions": {
     "allow": [
+      "Bash(powershell -Command:*)",
+      "Bash(wmic logicaldisk:*)",
+      "Bash(wmic startup:*)",
+      "Bash(tasklist:*)",
+      "WebSearch",
+      "WebFetch(domain:quantum-journal.org)",
+      "Bash(python scripts/verify_citation.py:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)",
-      "Bash(git push)",
-      "Bash(git restore:*)",
-      "Bash(git rm:*)",
-      "WebSearch"
+      "Bash(git commit -m \"$(cat <<''EOF''\nUpgrade reference validation protocol to v0.2.3 with citation fixes\n\nProtocol improvements (v0.1.0 → v0.2.3):\n- Add two-phase verification (existence vs bibliographic accuracy)\n- Add source hierarchy (tier_1/tier_2/tier_3) with strict requirements\n- Add verify_citation.py script for Crossref API verification\n- Add mandatory page number verification (Step 4)\n- Add Google Scholar elevation rules for pre-DOI papers (Step 2b)\n- Add new status: VERIFIED_VIA_SECONDARY\n- Add red flags: PAGE_MISMATCH, WRONG_PAPER_SAME_AUTHORS\n- Add common error patterns for page number issues\n\nCitation fixes:\n- Technical paper: Fix 3 citations (de la Torre, Lee & Selby, McKague)\n- Technical paper: Fix inline references (Lee-Selby 2020 → 2016)\n- Main paper: Fix Aspect et al. 1982 (Grangier → Dalibard)\n\nValidation results:\n- Main paper: 29/29 references verified, 1 error fixed\n- Technical paper: 5 errors fixed (from Reddit reviewer feedback)\n\nPost-mortem added explaining v0.1.0 validation failure root cause.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)",
+      "WebFetch(domain:arxiv.org)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nComplete v0.2.3 protocol re-validation of Technical paper\n\nTechnical paper (25 citations):\n- 13 journal articles verified via Crossref DOI (tier_1)\n- 2 pre-DOI papers verified via Step 2b (tier_2)\n- 6 books verified via ISBN/DOI\n- 2 book chapters verified\n- 2 arXiv preprints verified\n- Result: 25/25 verified (100%)\n\nValidation report updated with detailed tier-based results.\nSession 34.0 complete.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []

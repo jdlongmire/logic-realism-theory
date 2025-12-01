@@ -2,7 +2,7 @@
 
 **Generated**: 2025-11-29 (REVISED 2025-11-30, RE-VALIDATED 2025-12-01)
 **Validator**: Claude (Opus 4.5) + Web Search + Crossref API
-**Protocol**: reference_validation_protocol.json v0.2.3
+**Protocol**: reference_validation_protocol/reference_validation_protocol.json v0.2.3
 **Papers Validated**: 4
 
 ---
@@ -365,6 +365,6 @@ All citations verified:
 
 ---
 
-*Report generated using reference_validation_protocol.json schema*
+*Report generated using reference_validation_protocol/reference_validation_protocol.json schema*
 *v0.1.0 validation revised 2025-11-30 after external review identified missed errors*
-*Protocol upgraded to v0.2.0 with mandatory two-phase verification*
+*Protocol upgraded to v0.2.3 with mandatory two-phase verification*

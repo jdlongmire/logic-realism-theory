@@ -3,7 +3,7 @@
 Citation Verification Script (v1.0.0)
 
 Queries Crossref API to get authoritative bibliographic data for a DOI.
-Part of reference_validation_protocol.json v0.2.0
+Part of reference_validation_protocol/reference_validation_protocol.json v0.2.3
 
 Usage:
     python verify_citation.py <DOI>
@@ -82,7 +82,7 @@ def query_crossref(doi: str) -> Optional[CitationData]:
     """
     Query Crossref API for DOI metadata.
 
-    This is a tier_1 authoritative source per reference_validation_protocol.json v0.2.0.
+    This is a tier_1 authoritative source per reference_validation_protocol.json v0.2.3.
     """
     # Clean DOI
     doi = doi.strip()
