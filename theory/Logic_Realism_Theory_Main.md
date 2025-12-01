@@ -1515,6 +1515,8 @@ Hardy, L. "Quantum theory from five reasonable axioms." arXiv:quant-ph/0101012, 
 
 Kochen, S. and Specker, E. P. "The problem of hidden variables in quantum mechanics." *Journal of Mathematics and Mechanics* 17(1), 1967: 59-87.
 
+Longmire, J. D. "Logic Realism Theory: Technical Companion." [Available at: https://github.com/jdlongmire/logic-realism-theory/blob/master/theory/Logic_Realism_Theory_Technical.md]
+
 Masanes, L. and Müller, M. P. "A derivation of quantum theory from physical requirements." *New Journal of Physics* 13, 2011: 063001.
 
 Penrose, R. "On gravity's role in quantum state reduction." *General Relativity and Gravitation* 28(5), 1996: 581-600.
