@@ -250,10 +250,41 @@ Implemented three synthesized text blocks from external collaborator feedback:
 - `a734162` - Update Session 35.0 with reviewer feedback implementation
 - `7f70318` - Complete QFT extension paper - write Conclusion, update consistency
 - `1a1a333` - Implement philosophical refinements from Gemini/Grok feedback
+- `d11a8f0` - Add Zenodo pre-print submission guide
+- `4e4142b` - Update Zenodo metadata with actual paper titles/abstracts
+- `55a95e3` - Add Main paper DOI: 10.5281/zenodo.17778402
+- `15e3063` - Add Technical paper DOI: 10.5281/zenodo.17778707
+- `38bdd52` - Add Philosophy paper DOI: 10.5281/zenodo.17779030
+- `932891a` - Add QFT Extension paper DOI: 10.5281/zenodo.17779066
+- `60f4300` - Add Zenodo DOI cross-references to all four papers
 
 ---
 
-## Interaction Count: 11
+### 6. Zenodo Pre-print Setup
+
+**File**: `theory/Zenodo_submission.md`
+
+Created comprehensive submission guide with DOI reservation workflow.
+
+**All DOIs Reserved**:
+| Paper | DOI |
+|-------|-----|
+| Main | 10.5281/zenodo.17778402 |
+| Technical | 10.5281/zenodo.17778707 |
+| Philosophy | 10.5281/zenodo.17779030 |
+| QFT Extension | 10.5281/zenodo.17779066 |
+
+**Cross-references added** to all four papers linking to sibling papers via DOI.
+
+**Remaining**:
+- [ ] Convert markdown → PDF (requires LaTeX: `winget install MiKTeX.MiKTeX`)
+- [ ] Upload PDFs to Zenodo drafts
+- [ ] Publish Phase 1 (Main, Technical, Philosophy)
+- [ ] Publish Phase 2 (QFT Extension)
+
+---
+
+## Interaction Count: 26
 
 ---
 

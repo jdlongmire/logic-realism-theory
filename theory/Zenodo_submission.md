@@ -133,11 +133,11 @@ Longmire, J. D. "LRT Constraints on QFT: Deriving Fock Structure and Interpretin
 - [ ] Convert QFT_Extension.md → QFT_Extension.pdf
 
 ### Quality Checks
-- [ ] All citations verified (v0.3.0 protocol: 64/64 passed)
-- [ ] Cross-references between papers consistent
+- [x] All citations verified (v0.3.0 protocol: 64/64 passed)
+- [x] Cross-references between papers consistent (DOIs added 2025-12-01)
 - [ ] No broken internal links
 - [ ] Figures/equations render correctly in PDF
-- [ ] Author name and ORCID correct
+- [x] Author name and ORCID correct
 
 ### Zenodo Draft Creation
 - [x] Create Main draft → DOI: 10.5281/zenodo.17778402
