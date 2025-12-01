@@ -396,7 +396,7 @@ Masanes-Müller (2011) derive complex quantum mechanics from five axioms:
 **MM5 (Entanglement structure) ← A3c + Hilbert structure (via Lee-Selby):**
 - A3c (local tomography) implies tensor product structure (Theorem 6.2)
 - Hilbert space + tensor product → Uhlmann's theorem = purification uniqueness (Theorem 6.3)
-- Lee-Selby (2020) proves MM1 + MM2 + purification uniqueness yields MM5 ✓
+- Lee-Selby (2016) proves MM1 + MM2 + purification uniqueness yields MM5 ✓
 
 **Status:** All five Masanes-Müller axioms follow from LRT axioms. See §6 for the complete MM5 derivation (Theorem 6.4).
 
@@ -631,9 +631,9 @@ No conditional hedge is required. ∎
 
 The remaining Masanes-Müller axiom MM5 (sufficient entanglement) follows from the Hilbert space structure established in §3, combined with local tomography (A3c). The key intermediate result is *purification uniqueness*, which we derive from the mathematical structure of Hilbert spaces with tensor products.
 
-**Key Reference:** Lee, C. M. & Selby, J. H. "Deriving Grover's lower bound from simple physical principles." *Quantum* 4, 231 (2020). See also de la Torre et al., *New J. Phys.* 16, 073040 (2014).
+**Key Reference:** Lee, C. M. & Selby, J. H. "Deriving Grover's lower bound from simple physical principles." *New J. Phys.* 18, 093047 (2016). See also de la Torre et al., *Phys. Rev. Lett.* 109, 090403 (2012).
 
-**Theorem 6.1 (Lee-Selby 2020, rephrased).** Let a theory satisfy:
+**Theorem 6.1 (Lee-Selby 2016, rephrased).** Let a theory satisfy:
 1. Continuous reversibility of pure states (LRT: A3a + A3b → MM1)
 2. Local tomography (LRT: A3c → MM2)
 3. Purification uniqueness up to local reversibles on the purifying system
@@ -941,7 +941,9 @@ Aleksandrova, A., Borish, V., and Wootters, W. K. "Real-vector-space quantum the
 
 Berto, F. and Jago, M. *Impossible Worlds.* Oxford University Press, 2019.
 
-de la Torre, G., Hoban, M. J., Dhara, C., Sainz, A. B., and Acín, A. "Maximally nonlocal theories cannot be maximally random." *Physical Review Letters* 114, 2015: 160502. See also: "Deriving quantum theory from its local structure and reversibility." *New Journal of Physics* 16, 2014: 073040.
+de la Torre, G., Hoban, M. J., Dhara, C., Sainz, A. B., and Acín, A. "Maximally nonlocal theories cannot be maximally random." *Physical Review Letters* 114, 2015: 160502.
+
+de la Torre, G., Masanes, Ll., Short, A. J., and Müller, M. P. "Deriving quantum theory from its local structure and reversibility." *Physical Review Letters* 109, 2012: 090403.
 
 Birkhoff, G. and von Neumann, J. "The logic of quantum mechanics." *Annals of Mathematics* 37(4), 1936: 823-843.
 
@@ -961,9 +963,9 @@ Halmos, P. R. *Finite-Dimensional Vector Spaces.* Springer, 1974. [§44: complex
 
 Hardy, L. "Quantum theory from five reasonable axioms." arXiv:quant-ph/0101012, 2001. [Note: Establishes the axiomatic reconstruction program; our §3.3 extends Hardy's kernel construction by grounding the distinguishability metric in 3FLL.]
 
-Lee, C. M. and Selby, J. H. "Deriving Grover's lower bound from simple physical principles." *Quantum* 4, 2020: 231. [Key result: Proves that continuous reversibility + local tomography + purification uniqueness implies MM5 entanglement structure. Used in §6 to close the MM5 gap.]
+Lee, C. M. and Selby, J. H. "Deriving Grover's lower bound from simple physical principles." *New Journal of Physics* 18(9), 2016: 093047. [Key result: Proves that continuous reversibility + local tomography + purification uniqueness implies MM5 entanglement structure. Used in §6 to close the MM5 gap.]
 
-McKague, M. "Simulating quantum systems using real Hilbert spaces." *Quantum Information & Computation* 9, 2009: 1158-1181.
+McKague, M., Mosca, M., and Gisin, N. "Simulating quantum systems using real Hilbert spaces." *Physical Review Letters* 102, 2009: 020505.
 
 Longmire, J. D. "It from Bit, Bit from Fit: Foundational Physics Logically Remastered." [Main LRT paper, this volume.]
 

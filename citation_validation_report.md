@@ -1,9 +1,17 @@
 # Citation Validation Report
 
-**Generated**: 2025-11-29
+**Generated**: 2025-11-29 (REVISED 2025-11-30)
 **Validator**: Claude (Opus 4.5) + Web Search
-**Protocol**: reference_validation_protocol.json v0.1.0
+**Protocol**: reference_validation_protocol.json v0.1.0 (FLAWED - see Post-Mortem)
 **Papers Validated**: 4
+
+---
+
+## REVISION NOTICE (2025-11-30)
+
+**v0.1.0 validation was flawed.** External review identified 3 additional citation errors that were incorrectly marked as "VERIFIED". Root cause: tier_3 sources (arXiv, web search) were used to verify bibliographic details instead of tier_1 sources (DOI resolution, publisher pages).
+
+Protocol upgraded to v0.2.0 with mandatory two-phase verification and source hierarchy.
 
 ---
 
@@ -12,22 +20,23 @@
 | Paper | Citations | Verified | Issues Found |
 |-------|-----------|----------|--------------|
 | Main | 24 | 24 | 0 |
-| Technical | 21 | 21 | 2 |
+| Technical | 21 | 21 | **5** |
 | Philosophy | 16 | 16 | 0 |
 | Bridging | 21 | 21 | 1 |
 
 **Total unique citations**: ~55 (many duplicates across papers)
-**Issues requiring correction**: 2
+**Issues requiring correction**: **5** (2 originally found + 3 missed)
 
 ---
 
 ## Issues Found
 
-### ISSUE 1: Author Name Error (Technical Paper)
+### ISSUE 1: Author Name Error (Technical Paper) - FIXED
 
 **Citation**: Aleksandrova, A., Borber, V., and Wootters, W. K.
 **Location**: Technical paper, line 921
 **Error Type**: WRONG_AUTHORS
+**Status**: CORRECTED
 
 | Field | Provided | Correct |
 |-------|----------|---------|
@@ -40,11 +49,12 @@
 
 ---
 
-### ISSUE 2: Publication Venue Error (Bridging Paper)
+### ISSUE 2: Publication Venue Error (Bridging Paper) - FIXED
 
 **Citation**: Sher, G. "Logical realism: Two theories." *Synthese*, forthcoming.
 **Location**: Bridging paper, line 561
 **Error Type**: WRONG_JOURNAL + WRONG_YEAR
+**Status**: CORRECTED
 
 | Field | Provided | Correct |
 |-------|----------|---------|
@@ -55,6 +65,74 @@
 
 **Corrected citation**:
 > Sher, G. "Logical Realism—A Tale of Two Theories." In S. Arbeiter and J. Kennedy (eds.), *The Philosophy of Penelope Maddy*, Outstanding Contributions to Logic, vol. 31. Springer, 2024.
+
+---
+
+### ISSUE 3: Wrong Journal (Technical Paper) - MISSED BY v0.1.0
+
+**Citation**: de la Torre et al. "Deriving quantum theory from its local structure and reversibility." *New Journal of Physics* 16, 2014: 073040.
+**Location**: Technical paper, line 944
+**Error Type**: WRONG_JOURNAL + WRONG_YEAR + WRONG_VOLUME
+**Status**: CORRECTED (2025-11-30)
+
+| Field | Provided | Correct |
+|-------|----------|---------|
+| Journal | New Journal of Physics | Physical Review Letters |
+| Volume | 16 | 109 |
+| Year | 2014 | 2012 |
+| Article | 073040 | 090403 |
+
+**Source**: [Physical Review Letters 109, 090403 (2012)](https://link.aps.org/doi/10.1103/PhysRevLett.109.090403)
+
+**Corrected citation**:
+> de la Torre, G., Masanes, Ll., Short, A. J., and Müller, M. P. "Deriving quantum theory from its local structure and reversibility." *Physical Review Letters* 109, 2012: 090403.
+
+**Why missed**: v0.1.0 validation found paper exists via web search but did not verify publication details against publisher page.
+
+---
+
+### ISSUE 4: Wrong Journal (Technical Paper) - MISSED BY v0.1.0
+
+**Citation**: Lee, C. M. and Selby, J. H. "Deriving Grover's lower bound from simple physical principles." *Quantum* 4, 2020: 231.
+**Location**: Technical paper, line 964
+**Error Type**: WRONG_JOURNAL + WRONG_YEAR + WRONG_VOLUME
+**Status**: CORRECTED (2025-11-30)
+
+| Field | Provided | Correct |
+|-------|----------|---------|
+| Journal | Quantum | New Journal of Physics |
+| Volume | 4 | 18(9) |
+| Year | 2020 | 2016 |
+| Article | 231 | 093047 |
+
+**Source**: [New Journal of Physics 18, 093047 (2016)](https://iopscience.iop.org/article/10.1088/1367-2630/18/9/093047)
+
+**Corrected citation**:
+> Lee, C. M. and Selby, J. H. "Deriving Grover's lower bound from simple physical principles." *New Journal of Physics* 18(9), 2016: 093047.
+
+**Why missed**: v0.1.0 linked to arXiv (1604.03118) as verification, which confirms existence but not publication venue.
+
+---
+
+### ISSUE 5: Wrong Journal (Technical Paper) - MISSED BY v0.1.0
+
+**Citation**: McKague, M. "Simulating quantum systems using real Hilbert spaces." *Quantum Information & Computation* 9, 2009: 1158-1181.
+**Location**: Technical paper, line 966
+**Error Type**: WRONG_JOURNAL + WRONG_VOLUME + WRONG_PAGES
+**Status**: CORRECTED (2025-11-30)
+
+| Field | Provided | Correct |
+|-------|----------|---------|
+| Journal | Quantum Information & Computation | Physical Review Letters |
+| Volume | 9 | 102 |
+| Pages | 1158-1181 | 020505 |
+
+**Source**: [Physical Review Letters 102, 020505 (2009)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.102.020505)
+
+**Corrected citation**:
+> McKague, M., Mosca, M., and Gisin, N. "Simulating quantum systems using real Hilbert spaces." *Physical Review Letters* 102, 2009: 020505.
+
+**Why missed**: v0.1.0 found paper via web search and assumed journal details were correct without DOI verification.
 
 ---
 
@@ -91,23 +169,24 @@ All citations verified against authoritative sources:
 | Wheeler (1990) | VERIFIED | Complexity, Entropy book |
 | Wigner (1960) | VERIFIED | Comm. Pure & Appl. Math. 13(1):1-14 |
 
-### Technical Paper (21 citations) ⚠️
+### Technical Paper (21 citations) ✅ ALL CORRECTED
 
 | Citation | Status | Notes |
 |----------|--------|-------|
 | Adler (1995) | VERIFIED | Oxford University Press |
 | Aleksandrova et al. (2013) | **CORRECTED** | Author name: Borish, not Borber |
-| de la Torre et al. (2015) | VERIFIED | PRL 114:160502 |
+| de la Torre et al. (2012) | **CORRECTED** | PRL 109:090403 (was NJP 16:073040 2014) |
+| de la Torre et al. (2015) | VERIFIED | PRL 114:160502 (separate paper, correct) |
 | Birkhoff & von Neumann (1936) | VERIFIED | Duplicate |
 | Brassard et al. (2006) | VERIFIED | PRL 96:250401 |
 | Chiribella et al. (2011) | VERIFIED | Duplicate |
-| Demarest (2016) | VERIFIED | Routledge |
+| Demarest (2017) | **CORRECTED** | OUP 2017, not Routledge 2016 |
 | Earnshaw (1842) | VERIFIED | [Trans. Cambridge Phil. Soc. 7:97-112](https://www.scirp.org/reference/referencespapers?referenceid=3169366) |
-| Egg (2016) | VERIFIED | Phil. of Science 83(5):1050-1061 |
+| Egg (2014) | **CORRECTED** | De Gruyter 2014, not Phil. of Science 2016 |
 | Halmos (1974) | VERIFIED | Springer |
 | Hardy (2001) | VERIFIED | Duplicate |
-| Lee & Selby (2020) | VERIFIED | [Quantum 4:231](https://arxiv.org/abs/1604.03118) |
-| McKague (2009) | VERIFIED | QIC 9:1158-1181 |
+| Lee & Selby (2016) | **CORRECTED** | NJP 18(9):093047 (was Quantum 4:231 2020) |
+| McKague et al. (2009) | **CORRECTED** | PRL 102:020505 (was QIC 9:1158-1181) |
 | Longmire (self-ref) | N/A | Internal reference |
 | Masanes & Müller (2011) | VERIFIED | Duplicate |
 | Renou et al. (2021) | VERIFIED | Duplicate |
@@ -201,4 +280,56 @@ All citations verified:
 
 ---
 
+---
+
+## Post-Mortem: v0.1.0 Validation Failure
+
+### What Went Wrong
+
+**Root Cause**: The v0.1.0 protocol did not distinguish between "paper exists" and "bibliographic details are correct."
+
+**Failure Pattern**:
+1. Web search found paper by title/authors (Phase 1: existence - PASS)
+2. Validator assumed journal/volume/year from search results were correct
+3. No DOI resolution or publisher page consulted (Phase 2: bibliographic - SKIPPED)
+4. Marked as "VERIFIED" based on Phase 1 alone
+
+**Specific Failures**:
+
+| Citation | v0.1.0 Source | What Was Checked | What Was Missed |
+|----------|---------------|------------------|-----------------|
+| Lee & Selby | arXiv link | Paper exists | Wrong journal (NJP not Quantum), wrong year (2016 not 2020) |
+| McKague | Web search | Paper exists | Wrong journal (PRL not QIC), wrong pages |
+| de la Torre | Web search | Paper exists | Wrong journal (PRL not NJP), wrong year (2012 not 2014) |
+
+### How v0.2.0 Prevents This
+
+**Two-Phase Verification (Mandatory)**:
+- Phase 1: Existence check (tier_3 sources OK)
+- Phase 2: Bibliographic check (tier_1 sources REQUIRED)
+
+**Source Hierarchy**:
+- tier_1 (DOI resolution, publisher page): REQUIRED for bibliographic details
+- tier_2 (PubMed, library catalog): Cross-validation
+- tier_3 (arXiv, web search, Google Scholar): Discovery only, NEVER for bibliographic details
+
+**Red Flags**:
+- `ARXIV_USED_FOR_JOURNAL`: Automatically triggered if arXiv used to verify journal name
+- `YEAR_MISMATCH_PREPRINT_VS_PUBLICATION`: Check arXiv date vs publication date
+
+**Evidence Requirements**:
+- `VERIFIED` status requires `primary_source_url` from tier_1
+- `insufficient_evidence_flags` explicitly marks sources that cannot support VERIFIED status
+
+### Lessons Learned
+
+1. **Existence ≠ Accuracy**: A paper existing does not mean the citation details are correct
+2. **arXiv is not a journal**: arXiv confirms a paper was written, not where it was published
+3. **DOI is ground truth**: When available, DOI resolution provides authoritative bibliographic data
+4. **Web search confirms titles, not venues**: Search engines are good at finding papers, bad at verifying journal/volume/pages
+
+---
+
 *Report generated using reference_validation_protocol.json schema*
+*v0.1.0 validation revised 2025-11-30 after external review identified missed errors*
+*Protocol upgraded to v0.2.0 with mandatory two-phase verification*

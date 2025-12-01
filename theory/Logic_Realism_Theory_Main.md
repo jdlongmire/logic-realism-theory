@@ -1483,7 +1483,7 @@ Wheeler's insight was that information is fundamental: physical reality emerges 
 
 ## References
 
-Aspect, A., Grangier, P., and Roger, G. "Experimental tests of Bell's inequalities using time-varying analyzers." *Physical Review Letters* 49(25), 1982: 1804-1807.
+Aspect, A., Dalibard, J., and Roger, G. "Experimental test of Bell's inequalities using time-varying analyzers." *Physical Review Letters* 49(25), 1982: 1804-1807.
 
 Bell, J. S. "On the Einstein Podolsky Rosen paradox." *Physics* 1(3), 1964: 195-200.
 

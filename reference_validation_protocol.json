@@ -1,11 +1,100 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Citation Validation Record",
-  "version": "0.1.0",
-  "description": "Schema for systematic verification of bibliographic citations with full audit trail",
+  "version": "0.2.3",
+  "description": "Schema for systematic verification of bibliographic citations with full audit trail. Version 0.2.0 adds two-phase verification, source hierarchy, and stricter evidence requirements. Version 0.2.1 adds tooling reference. Version 0.2.2 adds mandatory page number verification. Version 0.2.3 adds Google Scholar as tier_2 fallback for pre-DOI papers.",
+
+  "tools": {
+    "verify_citation_script": {
+      "path": "scripts/verify_citation.py",
+      "description": "Queries Crossref API (tier_1 source) to get authoritative bibliographic data for a DOI",
+      "usage": {
+        "basic_lookup": "python scripts/verify_citation.py <DOI>",
+        "compare_citation": "python scripts/verify_citation.py --compare \"<provided citation>\" <DOI>",
+        "json_output": "python scripts/verify_citation.py --json <DOI>",
+        "batch_mode": "python scripts/verify_citation.py --file <dois.txt>"
+      },
+      "when_to_use": [
+        "Phase 2 (bibliographic verification) - REQUIRED for all citations with DOIs",
+        "When comparing provided citation details against authoritative source",
+        "When generating corrected citations"
+      ],
+      "output_fields": ["doi", "title", "authors", "journal", "volume", "issue", "pages", "article_number", "year", "publisher"],
+      "note": "Script output can be used directly to populate phase_2_bibliographic.field_checks"
+    }
+  },
+
+  "workflow": {
+    "description": "Recommended workflow for citation validation",
+    "steps": [
+      {
+        "step": 1,
+        "name": "Discovery",
+        "action": "Search for paper by title/authors using tier_3 sources (Google Scholar, arXiv, web search)",
+        "goal": "Find the paper and obtain its DOI",
+        "tool": null
+      },
+      {
+        "step": 2,
+        "name": "DOI Verification",
+        "action": "Run verify_citation.py with discovered DOI",
+        "goal": "Get authoritative bibliographic data from Crossref (tier_1)",
+        "tool": "python scripts/verify_citation.py <DOI>"
+      },
+      {
+        "step": 3,
+        "name": "Comparison",
+        "action": "Compare provided citation against script output",
+        "goal": "Identify discrepancies in journal, volume, year, pages",
+        "tool": "python scripts/verify_citation.py --compare \"<citation>\" <DOI>"
+      },
+      {
+        "step": 4,
+        "name": "Page Verification",
+        "action": "Explicitly verify page numbers match between citation and Crossref data",
+        "goal": "Catch page range errors (common source of citation mistakes)",
+        "checks": [
+          "Start page matches",
+          "End page matches (if provided)",
+          "Page range is plausible for article length",
+          "No confusion with article number vs page number"
+        ],
+        "note": "Page mismatches often indicate citing the WRONG paper (e.g., Aspect 1982 error: pages 1804-1807 vs 91-94 = different papers)"
+      },
+      {
+        "step": 5,
+        "name": "Correction",
+        "action": "If discrepancies found, use script output as corrected citation",
+        "goal": "Generate verified citation from tier_1 source",
+        "tool": "python scripts/verify_citation.py --json <DOI>"
+      },
+      {
+        "step": "2b",
+        "name": "Fallback: Google Scholar for Pre-DOI Papers",
+        "trigger": "Crossref returns no results OR paper is pre-1990",
+        "action": "Use Google Scholar as tier_2 verification source",
+        "workflow": [
+          "Search Google Scholar for exact title + authors",
+          "Verify multiple GS entries show consistent bibliographic data",
+          "Cross-reference with JSTOR (for older papers) or publisher archive",
+          "Check if JSTOR has the paper (many pre-1990 papers are there)",
+          "If book: verify via Google Books, WorldCat, or publisher website",
+          "Document that tier_1 (Crossref) was unavailable"
+        ],
+        "required_confirmations": 2,
+        "note": "Must have at least 2 independent sources agreeing on bibliographic details",
+        "result_status": "VERIFIED_VIA_SECONDARY",
+        "tools": {
+          "google_scholar": "https://scholar.google.com/scholar?q=<title>+<author>",
+          "jstor": "https://www.jstor.org/action/doBasicSearch?Query=<title>",
+          "worldcat": "https://www.worldcat.org/search?q=<title>"
+        }
+      }
+    ]
+  },
 
   "type": "object",
-  "required": ["validation_metadata", "citation_input", "verification_result"],
+  "required": ["validation_metadata", "citation_input", "verification_phases", "verification_result"],
 
   "properties": {
 
@@ -127,45 +216,279 @@
       }
     },
 
+    "source_hierarchy": {
+      "type": "object",
+      "description": "Defines trust levels for different verification sources. CRITICAL: Bibliographic details MUST come from tier_1 sources (or tier_2 for pre-DOI papers).",
+      "properties": {
+        "tier_1_authoritative": {
+          "type": "array",
+          "description": "Primary sources for bibliographic verification. REQUIRED for VERIFIED status.",
+          "default": ["doi_resolution", "publisher_page", "crossref_api"],
+          "items": {"type": "string"}
+        },
+        "tier_2_secondary": {
+          "type": "array",
+          "description": "Reliable but not primary. Use for cross-validation, OR as primary for pre-DOI papers.",
+          "default": ["pubmed", "library_catalog", "author_orcid", "jstor", "google_scholar_for_pre_doi"],
+          "items": {"type": "string"}
+        },
+        "tier_3_discovery": {
+          "type": "array",
+          "description": "For finding papers only. NEVER use for bibliographic details (except Google Scholar for pre-DOI papers, which elevates to tier_2).",
+          "default": ["google_scholar", "semantic_scholar", "arxiv", "web_search"],
+          "items": {"type": "string"}
+        }
+      },
+      "google_scholar_elevation_rules": {
+        "description": "Conditions under which Google Scholar can be used as tier_2 instead of tier_3",
+        "conditions": [
+          {
+            "condition": "pre_doi_paper",
+            "description": "Paper published before ~1990 when DOIs were not standard",
+            "google_scholar_tier": "tier_2",
+            "verification_requirements": [
+              "Multiple Google Scholar entries agree on bibliographic details",
+              "Cross-reference with JSTOR, library catalog, or publisher archive if available",
+              "Flag as VERIFIED_VIA_SECONDARY in results"
+            ]
+          },
+          {
+            "condition": "book_or_book_chapter",
+            "description": "Books often lack Crossref DOIs",
+            "google_scholar_tier": "tier_2",
+            "verification_requirements": [
+              "Verify ISBN if available",
+              "Cross-reference with publisher website or WorldCat",
+              "Check Google Books for publication details"
+            ]
+          },
+          {
+            "condition": "doi_not_in_crossref",
+            "description": "Some publishers don't register with Crossref",
+            "google_scholar_tier": "tier_2",
+            "verification_requirements": [
+              "Try publisher website directly",
+              "Use Google Scholar as secondary confirmation",
+              "Document that Crossref lookup failed"
+            ]
+          }
+        ],
+        "never_elevate_when": [
+          "DOI exists and resolves correctly",
+          "Paper is post-2000 and should have DOI",
+          "Only one Google Scholar result found (could be erroneous)"
+        ]
+      }
+    },
+
+    "verification_phases": {
+      "type": "object",
+      "description": "Two-phase verification separating existence from bibliographic accuracy",
+      "required": ["phase_1_existence", "phase_2_bibliographic"],
+      "properties": {
+        "phase_1_existence": {
+          "type": "object",
+          "description": "Confirms paper exists with matching authors/title",
+          "required": ["status", "sources_used"],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["FOUND", "NOT_FOUND", "AMBIGUOUS"]
+            },
+            "sources_used": {
+              "type": "array",
+              "items": {"type": "string"},
+              "description": "tier_3 sources acceptable for discovery"
+            },
+            "matched_title": {
+              "type": "string",
+              "description": "Actual title found (may differ slightly from input)"
+            },
+            "matched_authors": {
+              "type": "array",
+              "items": {"type": "string"}
+            },
+            "doi_discovered": {
+              "type": "string",
+              "description": "DOI found during discovery phase"
+            },
+            "notes": {"type": "string"}
+          }
+        },
+        "phase_2_bibliographic": {
+          "type": "object",
+          "description": "Verifies exact publication details from authoritative sources",
+          "required": ["status", "primary_source"],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["ALL_FIELDS_MATCH", "ERRORS_FOUND", "INCOMPLETE", "SKIPPED"],
+              "description": "ALL_FIELDS_MATCH: Every field verified against tier_1 source. ERRORS_FOUND: Discrepancies detected. INCOMPLETE: Some fields unverifiable. SKIPPED: Phase 1 failed."
+            },
+            "primary_source": {
+              "type": "object",
+              "description": "The tier_1 source used for bibliographic verification",
+              "required": ["type", "url"],
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": ["doi_resolution", "publisher_page", "crossref_api"]
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "accessed_at": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              }
+            },
+            "field_checks": {
+              "type": "object",
+              "description": "Per-field verification against primary source",
+              "properties": {
+                "journal": {"$ref": "#/definitions/bibliographic_field_check"},
+                "volume": {"$ref": "#/definitions/bibliographic_field_check"},
+                "issue": {"$ref": "#/definitions/bibliographic_field_check"},
+                "pages": {"$ref": "#/definitions/bibliographic_field_check"},
+                "year": {"$ref": "#/definitions/bibliographic_field_check"},
+                "article_number": {"$ref": "#/definitions/bibliographic_field_check"},
+                "doi": {"$ref": "#/definitions/bibliographic_field_check"}
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "red_flags": {
+      "type": "array",
+      "description": "Conditions that indicate potential errors - must be investigated",
+      "items": {
+        "type": "object",
+        "required": ["flag_type", "triggered", "resolution"],
+        "properties": {
+          "flag_type": {
+            "type": "string",
+            "enum": [
+              "ARXIV_USED_FOR_JOURNAL",
+              "YEAR_MISMATCH_PREPRINT_VS_PUBLICATION",
+              "NO_DOI_FOUND",
+              "JOURNAL_NAME_VARIANT",
+              "VOLUME_PAGES_FROM_PREPRINT",
+              "SECONDARY_SOURCE_ONLY",
+              "AUTHOR_NAME_SPELLING",
+              "TITLE_DIFFERS",
+              "PAGE_MISMATCH",
+              "ARTICLE_NUMBER_VS_PAGE_CONFUSION",
+              "WRONG_PAPER_SAME_AUTHORS"
+            ]
+          },
+          "triggered": {"type": "boolean"},
+          "details": {"type": "string"},
+          "resolution": {
+            "type": "string",
+            "enum": ["VERIFIED_OK", "ERROR_CONFIRMED", "UNRESOLVED", "NOT_APPLICABLE"]
+          },
+          "resolution_notes": {"type": "string"}
+        }
+      }
+    },
+
+    "common_error_patterns": {
+      "type": "object",
+      "description": "Known error patterns to check. Static reference data.",
+      "properties": {
+        "arxiv_vs_publication": {
+          "description": "arXiv year often differs from publication year by 1-3 years",
+          "check": "Compare arxiv ID year with publication year"
+        },
+        "journal_name_variants": {
+          "description": "Journals have multiple valid names",
+          "examples": [
+            {"variants": ["Phys. Rev. Lett.", "Physical Review Letters", "PRL"]},
+            {"variants": ["New J. Phys.", "New Journal of Physics", "NJP"]},
+            {"variants": ["Quantum Inf. Comput.", "Quantum Information & Computation", "QIC"]}
+          ]
+        },
+        "preprint_has_no_volume_pages": {
+          "description": "arXiv citations should not have volume/pages unless referencing journal publication"
+        },
+        "page_number_errors": {
+          "description": "Page numbers can indicate wrong paper entirely",
+          "common_issues": [
+            {
+              "type": "wrong_paper_same_author",
+              "description": "Author published multiple papers in same volume - page numbers distinguish them",
+              "example": "Aspect 1982: pages 91-94 vs 1804-1807 are DIFFERENT papers with different co-authors"
+            },
+            {
+              "type": "article_number_vs_pages",
+              "description": "Modern journals use article numbers (e.g., 012311) not page ranges",
+              "example": "PRA 84, 012311 (2011) - 012311 is article number, not page 12311"
+            },
+            {
+              "type": "partial_page_range",
+              "description": "Citation has only start page, missing end page",
+              "example": "pp. 581 should be pp. 581-600"
+            }
+          ],
+          "verification_rule": "If pages don't match, verify you have the CORRECT paper, not just a paper by same author"
+        }
+      }
+    },
+
     "verification_result": {
       "type": "object",
-      "required": ["overall_status", "field_verification", "sources_consulted"],
+      "required": ["overall_status", "field_verification", "sources_consulted", "evidence"],
       "properties": {
 
         "overall_status": {
           "type": "string",
-          "enum": ["VERIFIED", "VERIFIED_WITH_CORRECTIONS", "PARTIALLY_VERIFIED", "UNVERIFIED", "REFUTED", "NONEXISTENT"],
-          "description": "VERIFIED: All fields confirmed. VERIFIED_WITH_CORRECTIONS: Exists but input had errors. PARTIALLY_VERIFIED: Some fields confirmed, others unverifiable. UNVERIFIED: Could not confirm existence. REFUTED: Confirmed to be erroneous. NONEXISTENT: Source does not exist."
+          "enum": ["VERIFIED", "VERIFIED_WITH_CORRECTIONS", "VERIFIED_VIA_SECONDARY", "PARTIALLY_VERIFIED", "UNVERIFIED", "REFUTED", "NONEXISTENT"],
+          "description": "VERIFIED: All fields confirmed via tier_1 source. VERIFIED_WITH_CORRECTIONS: Exists but input had errors. VERIFIED_VIA_SECONDARY: Pre-DOI paper verified via tier_2 sources (Google Scholar + cross-reference). PARTIALLY_VERIFIED: Some fields confirmed, others unverifiable. UNVERIFIED: Could not confirm existence. REFUTED: Confirmed to be erroneous. NONEXISTENT: Source does not exist."
+        },
+
+        "status_requirements": {
+          "type": "object",
+          "description": "What is required for each status level",
+          "properties": {
+            "VERIFIED": {
+              "requires": [
+                "phase_1_existence.status = FOUND",
+                "phase_2_bibliographic.status = ALL_FIELDS_MATCH",
+                "phase_2_bibliographic.primary_source.type in tier_1",
+                "All red_flags resolved or NOT_APPLICABLE"
+              ]
+            },
+            "VERIFIED_WITH_CORRECTIONS": {
+              "requires": [
+                "phase_1_existence.status = FOUND",
+                "phase_2_bibliographic.status = ERRORS_FOUND",
+                "corrected_citation provided",
+                "Corrections verified against tier_1 source"
+              ]
+            }
+          }
         },
 
         "confidence": {
           "type": "string",
           "enum": ["HIGH", "MEDIUM", "LOW"],
-          "description": "HIGH: Multiple authoritative sources agree. MEDIUM: Single authoritative source or multiple secondary. LOW: Only indirect evidence."
+          "description": "HIGH: tier_1 source confirms all fields. MEDIUM: tier_2 source or partial tier_1. LOW: Only tier_3 sources."
         },
 
         "field_verification": {
           "type": "object",
           "description": "Per-field verification status",
           "properties": {
-            "authors": {
-              "$ref": "#/definitions/field_status"
-            },
-            "title": {
-              "$ref": "#/definitions/field_status"
-            },
-            "year": {
-              "$ref": "#/definitions/field_status"
-            },
-            "venue": {
-              "$ref": "#/definitions/field_status"
-            },
-            "volume_issue_pages": {
-              "$ref": "#/definitions/field_status"
-            },
-            "identifiers": {
-              "$ref": "#/definitions/field_status"
-            }
+            "authors": {"$ref": "#/definitions/field_status"},
+            "title": {"$ref": "#/definitions/field_status"},
+            "year": {"$ref": "#/definitions/field_status"},
+            "venue": {"$ref": "#/definitions/field_status"},
+            "volume_issue_pages": {"$ref": "#/definitions/field_status"},
+            "identifiers": {"$ref": "#/definitions/field_status"}
           }
         },
 
@@ -173,11 +496,9 @@
           "type": "array",
           "items": {
             "type": "object",
-            "required": ["field", "error_type", "provided_value"],
+            "required": ["field", "error_type", "provided_value", "correct_value", "source_of_correction"],
             "properties": {
-              "field": {
-                "type": "string"
-              },
+              "field": {"type": "string"},
               "error_type": {
                 "type": "string",
                 "enum": [
@@ -192,20 +513,61 @@
                   "CONFLATED_SOURCES",
                   "CRAWLER_ARTIFACT",
                   "HALLUCINATED",
-                  "PREPRINT_NOT_PUBLISHED",
-                  "PUBLISHED_NOT_PREPRINT",
+                  "PREPRINT_CITED_AS_JOURNAL",
+                  "JOURNAL_CITED_AS_PREPRINT",
                   "PARTIAL_MATCH",
                   "OTHER"
                 ]
               },
-              "provided_value": {
-                "type": "string"
+              "provided_value": {"type": "string"},
+              "correct_value": {"type": "string"},
+              "source_of_correction": {
+                "type": "string",
+                "description": "URL of tier_1 source that provided correct value"
               },
-              "correct_value": {
-                "type": "string"
-              },
-              "explanation": {
-                "type": "string"
+              "explanation": {"type": "string"}
+            }
+          }
+        },
+
+        "evidence": {
+          "type": "object",
+          "description": "Proof of verification - required for VERIFIED status",
+          "required": ["primary_source_url"],
+          "properties": {
+            "primary_source_url": {
+              "type": "string",
+              "format": "uri",
+              "description": "URL of DOI resolution or publisher page"
+            },
+            "primary_source_type": {
+              "type": "string",
+              "enum": ["doi_resolution", "publisher_page", "crossref_api"]
+            },
+            "doi": {
+              "type": "string",
+              "description": "DOI if available"
+            },
+            "crossref_record": {
+              "type": "object",
+              "description": "Raw Crossref API response if used"
+            },
+            "accessed_at": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "insufficient_evidence_flags": {
+              "type": "array",
+              "description": "Sources that are NOT sufficient for VERIFIED status",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "arxiv_abstract_page",
+                  "google_scholar_snippet",
+                  "web_search_result",
+                  "semantic_scholar_only",
+                  "wikipedia_citation"
+                ]
               }
             }
           }
@@ -216,18 +578,18 @@
           "description": "Audit trail of verification sources",
           "items": {
             "type": "object",
-            "required": ["source_type", "source_url", "consulted_at", "result"],
+            "required": ["source_type", "source_tier", "source_url", "consulted_at", "result"],
             "properties": {
               "source_type": {
                 "type": "string",
                 "enum": [
                   "publisher_page",
                   "doi_resolution",
+                  "crossref_api",
                   "arxiv",
                   "pubmed",
                   "google_scholar",
                   "semantic_scholar",
-                  "crossref",
                   "author_institutional_page",
                   "author_orcid",
                   "author_cv",
@@ -236,6 +598,11 @@
                   "web_search",
                   "other"
                 ]
+              },
+              "source_tier": {
+                "type": "string",
+                "enum": ["tier_1", "tier_2", "tier_3"],
+                "description": "Trust level of this source"
               },
               "source_url": {
                 "type": "string",
@@ -257,9 +624,7 @@
                 "type": "array",
                 "items": {"type": "string"}
               },
-              "notes": {
-                "type": "string"
-              }
+              "notes": {"type": "string"}
             }
           }
         },
@@ -272,8 +637,11 @@
               "type": "string",
               "description": "Corrected citation in standard format"
             },
-            "bibtex": {
-              "type": "string"
+            "bibtex": {"type": "string"},
+            "verified_against": {
+              "type": "string",
+              "format": "uri",
+              "description": "URL of tier_1 source used to verify correction"
             },
             "fields": {
               "$ref": "#/properties/citation_input/properties/parsed_fields"
@@ -300,9 +668,12 @@
           "items": {"type": "string"},
           "description": "Suggested follow-up actions"
         },
-        "time_spent_seconds": {
-          "type": "integer"
-        }
+        "lessons_learned": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Insights for improving future validations"
+        },
+        "time_spent_seconds": {"type": "integer"}
       }
     }
   },
@@ -310,7 +681,7 @@
   "definitions": {
     "field_status": {
       "type": "object",
-      "required": ["status"],
+      "required": ["status", "source_tier"],
       "properties": {
         "status": {
           "type": "string",
@@ -320,9 +691,31 @@
           "type": "string",
           "description": "Which source confirmed/contradicted this field"
         },
-        "notes": {
-          "type": "string"
-        }
+        "source_tier": {
+          "type": "string",
+          "enum": ["tier_1", "tier_2", "tier_3", "none"],
+          "description": "Trust level of the confirming source"
+        },
+        "notes": {"type": "string"}
+      }
+    },
+    "bibliographic_field_check": {
+      "type": "object",
+      "required": ["provided", "from_primary_source", "match"],
+      "properties": {
+        "provided": {
+          "type": "string",
+          "description": "Value in the citation being verified"
+        },
+        "from_primary_source": {
+          "type": "string",
+          "description": "Value from tier_1 authoritative source"
+        },
+        "match": {
+          "type": "boolean",
+          "description": "Whether provided matches primary source"
+        },
+        "notes": {"type": "string"}
       }
     }
   }
