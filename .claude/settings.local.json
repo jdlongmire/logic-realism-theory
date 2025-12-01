@@ -13,7 +13,9 @@
       "Bash(git push:*)",
       "WebFetch(domain:arxiv.org)",
       "Bash(git commit -m \"$(cat <<''EOF''\nComplete v0.2.3 protocol re-validation of Technical paper\n\nTechnical paper (25 citations):\n- 13 journal articles verified via Crossref DOI (tier_1)\n- 2 pre-DOI papers verified via Step 2b (tier_2)\n- 6 books verified via ISBN/DOI\n- 2 book chapters verified\n- 2 arXiv preprints verified\n- Result: 25/25 verified (100%)\n\nValidation report updated with detailed tier-based results.\nSession 34.0 complete.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(python:*)",
+      "WebFetch(domain:www.sciencedirect.com)"
     ],
     "deny": [],
     "ask": []
