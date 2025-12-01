@@ -39,10 +39,10 @@ LRT extends to QFT via a tiered structure with explicit physical inputs at each 
 | Tier | Inputs | Outputs | Status |
 |------|--------|---------|--------|
 | **1: Logic** | 3FLL | Distinguishability D; kernel K | Derived (Thm 2.1-3.2) |
-| **2: Covariant** | + CBP + Lorentz invariance | Algebraic Hilbert; D-isometries | Derived (via Masanes-Muller) |
-| **3: Fields** | + Locality (A3c) | Fock tensors; spin-statistics | Derived (via Lee-Selby) |
+| **2: Covariant** | + CBP + Lorentz invariance | Algebraic Hilbert; D-isometries | Derived (via Masanes-Müller) |
+| **3: Fields** | + Locality (A3c) + Indistinguishability + Microcausality + Positive energy | Fock tensors; spin-statistics | Derived (Thm 3.1', 3.2') |
 | **4: QFT** | + Cluster decomposition + Vacuum uniqueness | Renormalization; vacuum structure | Interpreted |
-| **5: Gravity** | + Holographic bounds | Collapse parameters | Conjecture |
+| **5: Gravity** | + Holographic bounds | Collapse parameters | Conjecture (future work) |
 
 ### 1.3 What This Paper Claims and Does Not Claim
 
@@ -62,10 +62,12 @@ LRT extends to QFT via a tiered structure with explicit physical inputs at each 
 
 ### 1.4 Key Theorems (Stated)
 
-- **Theorem 2.1'**: Lorentz-covariant distinguishability metric; kernel induces field operators
-- **Theorem 3.1'**: Fock space as symmetric/antisymmetric IIS tensor products under locality
-- **Theorem 3.2'**: Spin-statistics from 3FLL exclusivity + Lorentz + microcausality (via Lee-Selby)
-- **Theorem 5.x'**: Complex QFT is unique Lorentz-covariant, locally tomographic IIS interface satisfying stability
+- **Theorem 2.1'**: D-isometries under Lorentz transformations (§2.2)
+- **Theorem 2.2'**: Single-particle Hilbert space from Poincaré representations (§2.3)
+- **Theorem 3.1'**: Symmetrization from 3FLL + Indistinguishability (§3.2) - yields bosonic/fermionic Fock spaces
+- **Theorem 3.2'**: Spin-statistics from Lorentz + microcausality + positive energy (§3.3) - via Streater-Wightman
+- **Theorem 3.3'**: CCR/CAR algebra from Fock structure (§3.4)
+- **Theorem 5.1'**: Uniqueness of complex QFT with 7 explicit assumptions (§5.3)
 
 ---
 
@@ -647,16 +649,75 @@ This is acknowledged as the major gap in LRT's scope. Closing it would require b
 
 ---
 
-## 8. Conclusion (1 page)
+## 8. Conclusion
 
-*To be written*
+### 8.1 What This Paper Establishes
 
-**Summary**: This paper extends LRT to QFT via:
-- 3 derivations (Hilbert → Fock → spin-statistics) with explicit physical inputs
-- 2 interpretations (renormalization, vacuum) - not derivations
-- 4 predictions (Tsirelson in fields, info preservation, complex amplitudes, spin-statistics universal)
-- 6 strong falsifiers (signaling, real QFT, info loss, spin-statistics violation, contradictory outcomes, parastatistics in 3+1D)
-- 1 conjecture (gravity, marked as future work)
+This paper extends Logic Realism Theory from non-relativistic quantum mechanics to quantum field theory through a tiered derivation structure with explicit physical inputs at each level. The extension is conservative: it builds on established mathematical results (Masanes-Müller reconstruction, Streater-Wightman axioms, Lee-Selby theorems) and makes honest distinctions between derivations, interpretations, and conjectures.
+
+**Principal Results:**
+
+1. **Fock space derived** (§3): The tensor product structure from local tomography (A3c) combines with 3FLL-enforced symmetrization (Theorem 3.1') and indistinguishability (Tier 3 input) to yield bosonic and fermionic Fock spaces. This is a genuine derivation, not a reframing.
+
+2. **Spin-statistics derived** (§3.3): The connection between spin and statistics follows from Lorentz invariance and microcausality via the Streater-Wightman framework (Theorem 3.2'). LRT provides the underlying Hilbert space and tensor product structure; the physical inputs complete the derivation.
+
+3. **Complex QFT unique** (§5.3): Alternatives (real QFT, quaternionic QFT, super-quantum theories) fail stability, local tomography, or tensor associativity requirements. Theorem 5.1' establishes uniqueness with seven explicit assumptions.
+
+4. **Renormalization interpreted** (§4.2): UV divergences are interpreted as 3FLL violations (undefined self-identity at infinite energy). This provides a conceptual framework but does not derive RG equations or beta functions.
+
+5. **Gravity deferred** (§6): The gravity sector requires breakthroughs in quantum gravity foundations beyond LRT-specific work. Conjectures are stated; no derivations are claimed.
+
+### 8.2 The Derivation Chain Extended
+
+The complete derivation chain from logical constraints to QFT is:
+
+$$\text{3FLL} \xrightarrow{\text{constitute}} D \xrightarrow{\text{Thm 3.2}} \langle\cdot|\cdot\rangle \xrightarrow{\text{+Lorentz}} \mathcal{H}_1 \xrightarrow{\text{+A3c}} \mathcal{H}^{\otimes n} \xrightarrow{\text{+Tier 3}} \mathcal{F}_\pm \xrightarrow{\text{+microcausality}} \text{QFT}$$
+
+Each arrow represents either a theorem (with proof) or an explicit physical input (with justification). No hidden assumptions; no circular reasoning.
+
+### 8.3 Epistemic Hygiene
+
+This paper maintains the epistemic standards established in the Technical Foundations companion:
+
+| Category | Examples | Treatment |
+|----------|----------|-----------|
+| **Derived** | Fock structure, spin-statistics, CCR/CAR | Proof provided with explicit inputs |
+| **Interpreted** | Renormalization, vacuum | Conceptual framework; limitations stated |
+| **Input** | Lorentz, microcausality, cluster decomposition | Explicitly listed at appropriate tier |
+| **Conjectured** | Gravity, collapse parameters | Marked as future work; no derivation claimed |
+
+This taxonomy protects against overclaiming - the failure mode of most foundational physics papers.
+
+### 8.4 Predictions and Falsifiability
+
+LRT-QFT makes four predictions (§5.1) and identifies six strong falsifiers (§5.2). This places LRT in a small class of genuinely scientific interpretations of quantum theory - those that make testable claims beyond "quantum mechanics is correct."
+
+**Key falsifiers:**
+- Signaling via entangled fields → LRT refuted
+- Consistent real QFT → complex uniqueness wrong
+- Fundamental information loss → CBP violated
+- Parastatistics in 3+1D → symmetrization theorem wrong
+
+The existence of clear falsifiers distinguishes LRT from interpretations that are empirically equivalent to standard QM by construction.
+
+### 8.5 Implications
+
+**For foundations of physics:** LRT-QFT demonstrates that the mathematical structure of quantum field theory can be derived (not merely postulated) from logical constraints plus explicit physical inputs. The "unreasonable effectiveness" of mathematics in physics is explained: QFT is the unique Lorentz-covariant, locally tomographic interface between non-Boolean possibility and Boolean actuality.
+
+**For philosophy of science:** The tiered derivation structure provides a model for honest foundational theorizing. By distinguishing derivations from interpretations from inputs from conjectures, LRT avoids the overclaiming that undermines credibility in foundations research.
+
+**For quantum gravity:** The explicit identification of what LRT can and cannot derive (§6.3) clarifies the remaining gaps. A successful quantum gravity theory must either (a) derive general covariance from information-theoretic principles, or (b) accept it as a physical input at a higher tier.
+
+### 8.6 Summary
+
+This paper extends LRT to QFT via:
+- **3 derivations** (Hilbert → Fock → spin-statistics) with explicit physical inputs
+- **2 interpretations** (renormalization, vacuum) - not derivations
+- **4 predictions** (Tsirelson in fields, info preservation, complex amplitudes, spin-statistics universal)
+- **6 strong falsifiers** (signaling, real QFT, info loss, spin-statistics violation, contradictory outcomes, parastatistics in 3+1D)
+- **1 conjecture** (gravity, marked as future work)
+
+The extension is conservative, rigorous, and honest. It represents the next step in a research program that takes both physics and logic seriously.
 
 ---
 
