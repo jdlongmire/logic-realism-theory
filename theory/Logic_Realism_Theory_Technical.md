@@ -969,6 +969,8 @@ McKague, M., Mosca, M., and Gisin, N. "Simulating quantum systems using real Hil
 
 Longmire, J. D. "It from Bit, Bit from Fit: Foundational Physics Logically Remastered." [Main LRT paper, available at: https://github.com/jdlongmire/logic-realism-theory/blob/master/theory/Logic_Realism_Theory_Main.md]
 
+Longmire, J. D. "Logic Realism Theory: Philosophical Foundations." [Available at: https://github.com/jdlongmire/logic-realism-theory/blob/master/theory/Logic_Realism_Theory_Philosophy.md]
+
 Masanes, L. and Müller, M. P. "A derivation of quantum theory from physical requirements." *New Journal of Physics* 13, 2011: 063001.
 
 Priest, G. *In Contradiction: A Study of the Transconsistent.* Second edition. Oxford University Press, 2006.

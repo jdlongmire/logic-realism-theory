@@ -1517,6 +1517,8 @@ Kochen, S. and Specker, E. P. "The problem of hidden variables in quantum mechan
 
 Longmire, J. D. "Logic Realism Theory: Technical Companion." [Available at: https://github.com/jdlongmire/logic-realism-theory/blob/master/theory/Logic_Realism_Theory_Technical.md]
 
+Longmire, J. D. "Logic Realism Theory: Philosophical Foundations." [Available at: https://github.com/jdlongmire/logic-realism-theory/blob/master/theory/Logic_Realism_Theory_Philosophy.md]
+
 Masanes, L. and Müller, M. P. "A derivation of quantum theory from physical requirements." *New Journal of Physics* 13, 2011: 063001.
 
 Penrose, R. "On gravity's role in quantum state reduction." *General Relativity and Gravitation* 28(5), 1996: 581-600.

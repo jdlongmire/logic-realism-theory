@@ -424,9 +424,9 @@ Hardy, L. "Quantum theory from five reasonable axioms." arXiv:quant-ph/0101012, 
 
 Ladyman, J. "What is structural realism?" *Studies in History and Philosophy of Science* 29(3), 1998: 409-424.
 
-Longmire, J. D. "It from Bit, Bit from Fit: Foundational Physics Logically Remastered." [Main LRT paper, this volume.]
+Longmire, J. D. "It from Bit, Bit from Fit: Foundational Physics Logically Remastered." [Main LRT paper, available at: https://github.com/jdlongmire/logic-realism-theory/blob/master/theory/Logic_Realism_Theory_Main.md]
 
-Longmire, J. D. "Logic Realism Theory: Technical Foundations." [Technical companion, this volume.]
+Longmire, J. D. "Logic Realism Theory: Technical Companion." [Available at: https://github.com/jdlongmire/logic-realism-theory/blob/master/theory/Logic_Realism_Theory_Technical.md]
 
 Masanes, L. and Müller, M. P. "A derivation of quantum theory from physical requirements." *New Journal of Physics* 13, 2011: 063001.
 
