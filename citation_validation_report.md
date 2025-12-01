@@ -1,8 +1,8 @@
 # Citation Validation Report
 
-**Generated**: 2025-11-29 (REVISED 2025-11-30)
-**Validator**: Claude (Opus 4.5) + Web Search
-**Protocol**: reference_validation_protocol.json v0.1.0 (FLAWED - see Post-Mortem)
+**Generated**: 2025-11-29 (REVISED 2025-11-30, RE-VALIDATED 2025-12-01)
+**Validator**: Claude (Opus 4.5) + Web Search + Crossref API
+**Protocol**: reference_validation_protocol.json v0.2.3
 **Papers Validated**: 4
 
 ---
@@ -169,32 +169,67 @@ All citations verified against authoritative sources:
 | Wheeler (1990) | VERIFIED | Complexity, Entropy book |
 | Wigner (1960) | VERIFIED | Comm. Pure & Appl. Math. 13(1):1-14 |
 
-### Technical Paper (21 citations) ✅ ALL CORRECTED
+### Technical Paper (25 citations) ✅ RE-VALIDATED WITH v0.2.3
 
-| Citation | Status | Notes |
-|----------|--------|-------|
-| Adler (1995) | VERIFIED | Oxford University Press |
-| Aleksandrova et al. (2013) | **CORRECTED** | Author name: Borish, not Borber |
-| de la Torre et al. (2012) | **CORRECTED** | PRL 109:090403 (was NJP 16:073040 2014) |
-| de la Torre et al. (2015) | VERIFIED | PRL 114:160502 (separate paper, correct) |
-| Birkhoff & von Neumann (1936) | VERIFIED | Duplicate |
-| Brassard et al. (2006) | VERIFIED | PRL 96:250401 |
-| Chiribella et al. (2011) | VERIFIED | Duplicate |
-| Demarest (2017) | **CORRECTED** | OUP 2017, not Routledge 2016 |
-| Earnshaw (1842) | VERIFIED | [Trans. Cambridge Phil. Soc. 7:97-112](https://www.scirp.org/reference/referencespapers?referenceid=3169366) |
-| Egg (2014) | **CORRECTED** | De Gruyter 2014, not Phil. of Science 2016 |
-| Halmos (1974) | VERIFIED | Springer |
-| Hardy (2001) | VERIFIED | Duplicate |
-| Lee & Selby (2016) | **CORRECTED** | NJP 18(9):093047 (was Quantum 4:231 2020) |
-| McKague et al. (2009) | **CORRECTED** | PRL 102:020505 (was QIC 9:1158-1181) |
-| Longmire (self-ref) | N/A | Internal reference |
-| Masanes & Müller (2011) | VERIFIED | Duplicate |
-| Renou et al. (2021) | VERIFIED | Duplicate |
-| Stueckelberg (1960) | VERIFIED | [Helv. Phys. Acta 33:727-752](https://archive-ouverte.unige.ch/unige:161825) |
-| Uhlmann (1976) | VERIFIED | [Rep. Math. Phys. 9(2):273-279](https://www.sciencedirect.com/science/article/abs/pii/0034487776900604) |
-| van Dam (2005) | VERIFIED | arXiv:quant-ph/0501159 |
-| Wigner (1939) | VERIFIED | Ann. Math. 40(1):149-204 |
-| Wootters (1990) | VERIFIED | Complexity, Entropy book |
+**v0.2.3 Re-validation Date**: 2025-12-01
+
+**Journal Articles (Tier 1 - Crossref DOI)**:
+
+| Citation | Status | DOI | Verification |
+|----------|--------|-----|--------------|
+| Aleksandrova et al. (2013) | VERIFIED | 10.1103/PhysRevA.87.052106 | PRA 87:052106 ✓ |
+| Birkhoff & von Neumann (1936) | VERIFIED | 10.2307/1968621 | Ann. Math. 37(4):823-843 ✓ |
+| Brassard et al. (2006) | VERIFIED | 10.1103/PhysRevLett.96.250401 | PRL 96:250401 ✓ |
+| Chiribella et al. (2011) | VERIFIED | 10.1103/PhysRevA.84.012311 | PRA 84(1):012311 ✓ |
+| da Costa (1974) | VERIFIED | 10.1305/ndjfl/1093891487 | Notre Dame J. Formal Logic 15(4):497-510 ✓ |
+| de la Torre et al. (2012) | VERIFIED | 10.1103/PhysRevLett.109.090403 | PRL 109:090403 ✓ |
+| de la Torre et al. (2015) | VERIFIED | 10.1103/PhysRevLett.114.160502 | PRL 114:160502 ✓ |
+| Lee & Selby (2016) | VERIFIED | 10.1088/1367-2630/18/9/093047 | NJP 18(9):093047 ✓ |
+| Masanes & Müller (2011) | VERIFIED | 10.1088/1367-2630/13/6/063001 | NJP 13(6):063001 ✓ |
+| McKague et al. (2009) | VERIFIED | 10.1103/PhysRevLett.102.020505 | PRL 102:020505 ✓ |
+| Renou et al. (2021) | VERIFIED | 10.1038/s41586-021-04160-4 | Nature 600:625-629 ✓ |
+| Uhlmann (1976) | VERIFIED | 10.1016/0034-4877(76)90060-4 | Rep. Math. Phys. 9(2):273-279 ✓ |
+| Wigner (1939) | VERIFIED | 10.2307/1968551 | Ann. Math. 40(1):149-204 ✓ |
+
+**Pre-DOI Papers (Tier 2 - Step 2b Google Scholar Fallback)**:
+
+| Citation | Status | Source | Verification |
+|----------|--------|--------|--------------|
+| Earnshaw (1842) | VERIFIED_VIA_SECONDARY | [Springer review](https://link.springer.com/article/10.1007/s11012-005-4503-x) | Trans. Cambridge Phil. Soc. 7:97-112 ✓ |
+| Stueckelberg (1960) | VERIFIED_VIA_SECONDARY | [UNIGE Archive](https://archive-ouverte.unige.ch/unige:161825) | Helv. Phys. Acta 33:727-752 ✓ |
+
+**Books (Publisher/ISBN)**:
+
+| Citation | Status | ISBN/DOI | Publisher |
+|----------|--------|----------|-----------|
+| Adler (1995) | VERIFIED | ISBN 0-19-506643-X | Oxford University Press |
+| Berto & Jago (2019) | VERIFIED | DOI 10.1093/oso/9780198812791.001.0001 | Oxford University Press |
+| Egg (2014) | VERIFIED | DOI 10.1515/9783110354409 | De Gruyter |
+| Halmos (1974) | VERIFIED | DOI 10.1007/978-1-4612-6387-6 | Springer |
+| Priest (2006) | VERIFIED | DOI 10.1093/acprof:oso/9780199263301.001.0001 | Oxford University Press |
+| Priest et al. (2004) | VERIFIED | DOI 10.1093/ACPROF:OSO/9780199265176.001.0001 | Oxford/Clarendon |
+
+**Book Chapters**:
+
+| Citation | Status | Volume | Pages |
+|----------|--------|--------|-------|
+| Demarest (2017) | VERIFIED | *Causal Powers*, ed. J. Jacobs | 38-53 |
+| Wootters (1990) | VERIFIED | *Complexity, Entropy...*, ed. W. Zurek | 39-46 |
+
+**arXiv Preprints**:
+
+| Citation | Status | arXiv ID |
+|----------|--------|----------|
+| Hardy (2001) | VERIFIED | quant-ph/0101012 |
+| van Dam (2005) | VERIFIED | quant-ph/0501159 |
+
+**Internal Reference**:
+
+| Citation | Status |
+|----------|--------|
+| Longmire (self-ref) | N/A |
+
+**Total**: 25 citations, 25 verified (100%)
 
 ### Philosophy Paper (16 citations) ✅
 
