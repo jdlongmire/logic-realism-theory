@@ -17,7 +17,7 @@ The Many-Worlds Interpretation (MWI) faces three fatal problems that have resist
 
 This paper presents an integrated information-theoretic resolution through synthesis with Logic Realism Theory (LRT). The core thesis: **many virtual worlds, one logically actualized.** All quantum branches exist as virtual structure in the Infinite Information Space (IIS)—a complete information-theoretic characterization of distinguishable quantum configurations. One branch becomes actual per measurement context, with actualization governed by information-theoretic constraints (the Three Fundamental Laws of Logic) at the IIS-Boolean interface.
 
-LRT provides the information-theoretic framework: distinguishability is the fundamental information-theoretic primitive (one bit = minimal distinction between two states), IIS is the complete information space of distinguishable configurations, and the interface satisfies information-processing bounds (Gleason's theorem, local tomography, unitarity). This framework resolves MWI's three problems: (1) the preferred basis is specified by measurement context at the interface, not by decoherence alone; (2) probability is objective actualization propensity, derived from Gleason's theorem on the interface structure; (3) ontology comprises two structures (IIS + Boolean actuality), not infinite actual universes.
+LRT provides the information-theoretic framework: distinguishability is the fundamental information-theoretic primitive (one bit = minimal distinction between two states), IIS is the complete information space of distinguishable configurations, and the interface satisfies information-processing bounds (Gleason's theorem, local tomography, unitarity). This framework resolves MWI's three problems: (1) the preferred basis is specified by measurement context at the interface, not by decoherence alone; (2) probability is objective actualization propensity, rigorously derived from Gleason's theorem given interface constraints; (3) ontology comprises two structures (IIS + Boolean actuality), not infinite actual universes.
 
 The synthesis achieves dramatic ontological parsimony (2 fundamental structures rather than 2^(10^183) actual worlds) while preserving wavefunction realism and showing quantum structure is uniquely determined by logical constraints (3FLL) plus minimal physical inputs (continuity, local tomography)—connecting established mathematical results (Gleason, Masanes-Müller) through a common logical foundation rather than treating them as independent postulates. We demonstrate that "branching" is differentiation of information structure in IIS, not creation of actual worlds. Decoherence makes branches distinguishable (approaching interface threshold); actualization produces definite outcomes. All branches exist as virtual structure; one actualizes logically per context.
 
@@ -383,7 +383,7 @@ If IIS and Boolean actuality are distinct domains, what connects them?
 
 - **Probabilistic:** Superposition states in IIS lack definite values for certain observables. Since actuality requires definite values, a selection mechanism is needed. Deterministic selection would require hidden variables (Bohmian), violating parsimony. Stochastic selection is minimal.
 
-- **Born Rule:** This is the unique probability measure on IIS satisfying non-contextuality, continuity, and finite additivity (Gleason 1957). It is not postulated but derived from interface structure (see Longmire 2025b, §4.3).
+- **Born Rule:** This is the unique probability measure on IIS satisfying non-contextuality, continuity, and finite additivity (Gleason 1957). Given these operational axioms (themselves motivated but not logically forced by 3FLL), the Born rule follows rigorously (see Longmire 2025b, §4.3).
 
 **Physical identification:** The interface corresponds to **measurement**—not as a special physical process requiring new dynamics, but as the category transition from IIS to Boolean actuality. When we "measure" a system, we perform an interaction that requires a Boolean outcome. The system must transition from non-Boolean IIS state to Boolean actual state.
 
@@ -988,7 +988,7 @@ is the Born rule: $\mu(P) = \text{Tr}(\rho P)$, which for pure states gives $P_i
 
 **Application of Gleason:** These constraints (1-4) are exactly Gleason's premises. Therefore, the interface measure must be $P_i = |\langle i|\psi\rangle|^2$.
 
-**Conclusion:** Born rule is not postulated or derived from decision theory but proven as the unique probability measure satisfying interface structural requirements.
+**Conclusion:** Born rule is not postulated or derived from decision theory but proven (via Gleason's theorem) as the unique probability measure satisfying interface structural requirements. The structural requirements themselves are motivated by the 3FLL framework, though the connection is conceptually compelling rather than logically forced.
 
 ### 5.6 Why This Is Physical, Not Normative
 
@@ -1829,11 +1829,13 @@ Standard MWI makes no novel empirical predictions—it reproduces exactly the sa
 
 ### 8.2 Prediction 1: No Decoherence-Free Recoherence
 
+**Status note:** This prediction is *conditional* on the interface criterion (what physical condition marks actualization). The interface criterion remains open—candidates include decoherence thresholds, gravitational self-energy (Penrose-Diósi), or information-theoretic saturation. The prediction's qualitative form (no recoherence after actualization) is robust across candidate mechanisms, but quantitative details depend on which mechanism obtains.
+
 #### 8.2.1 Qualitative Statement
 
 **Standard MWI:** Once branches decohere (off-diagonal elements vanish), they remain forever separate. Recoherence of macroscopic branches is impossible in practice due to extreme environmental entanglement, but possible in principle if all environmental interactions could be reversed.
 
-**LRT prediction:** Once a branch has actualized (crossed from IIS to Boolean), it cannot recohere with unactualized branches. The barrier is fundamental, not merely practical.
+**LRT prediction (conditional on interface criterion):** Once a branch has actualized (crossed from IIS to Boolean), it cannot recohere with unactualized branches. The barrier is fundamental, not merely practical.
 
 **Reason:** Actualization is a category transition (IIS → Boolean). The other branches remain as IIS structure without Boolean instantiation. You cannot "undo" actualization and return to pre-measurement IIS state—that would require moving backward through the interface, which violates the asymmetry between possibility and actuality.
 
@@ -1957,6 +1959,8 @@ Then actualization is not fundamental irreversibility → LRT refuted.
 **Feasibility assessment:** Challenging but tractable. The main barrier is coherence measurement sensitivity at macroscopic scales, which is improving rapidly.
 
 ### 8.3 Prediction 2: Interface Threshold Phenomena
+
+**Status note:** Like Prediction 1, this prediction is *conditional* on the interface criterion. The qualitative expectation (threshold-like rather than smooth transition) follows from the LRT framework, but quantitative parameters ($t_{\text{thresh}}$, $C_{\text{crit}}$, $\Delta t$) depend on which physical mechanism marks the interface. Current estimates are illustrative, not derived from first principles.
 
 #### 8.3.1 Qualitative Statement
 
@@ -2635,7 +2639,7 @@ LRT connects quantum mechanics to:
 
 **Overall assessment:** LRT synthesis achieves everything standard MWI achieves (wavefunction realism, no collapse postulate, deterministic evolution in IIS) while solving MWI's three fatal problems (preferred basis, probability, ontological extravagance) and providing clear advantages across conceptual, empirical, and philosophical dimensions.
 
-**The synthesis is not merely "MWI with different words." It is a better theory—cleaner, more powerful, more testable, more coherent.**
+**The synthesis is not merely "MWI with different words."** The substantive differences—distinct modes of existence (virtual vs. actual), different probability foundations (Gleason vs. decision theory), and divergent empirical predictions (Section 8)—distinguish this from terminological rebranding.
 
 ---
 
@@ -3078,7 +3082,7 @@ This paper has developed a synthesis of Many-Worlds Interpretation with Logic Re
 
 **Standard MWI:** If all branches exist, probability is subjective uncertainty (Deutsch-Wallace decision theory).
 
-**LRT solution:** Probability is objective propensity for actualization. Born rule derived from Gleason's theorem on interface structure. Frequencies match propensities by standard probability theory. No self-location puzzle because only one branch actualizes.
+**LRT solution:** Probability is objective propensity for actualization. Born rule follows rigorously from Gleason's theorem given interface constraints (constraints motivated by 3FLL framework). Frequencies match propensities by standard probability theory. No self-location puzzle because only one branch actualizes.
 
 **3. The Ontological Extravagance Problem (Section 6)**
 
@@ -3227,7 +3231,7 @@ The integrated information-theoretic resolution via Logic Realism Theory synthes
 ✓ Information-theoretic grounding (distinguishability as primitive)  
 ✓ Parsimony (two structures vs. infinite worlds)
 
-**We conclude:** This synthesis is not merely "interpretation" of MWI, but a better theory—one that preserves MWI's profound insights while resolving its fatal flaws and providing clearer conceptual, empirical, and philosophical foundations. LRT provides the integrated information-theoretic framework (distinguishability → IIS → interface → Boolean) that MWI lacks.
+**We conclude:** This synthesis is not merely a reinterpretation of MWI but a structured research program—one that preserves MWI's core commitments (wavefunction realism, universal unitarity, no ad hoc collapse) while addressing its three most criticized vulnerabilities and adding testable structure. The substantive differences (distinct ontological categories, Gleason-based probability, divergent predictions) distinguish this from terminological variation.
 
 **The path forward:** Experimental tests of interface predictions (Section 8), integration with quantum gravity (ongoing), continued development of the information-theoretic framework across physics domains.
 
