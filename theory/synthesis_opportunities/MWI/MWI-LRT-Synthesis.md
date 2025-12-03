@@ -3320,7 +3320,7 @@ Albert, D. Z. (2010). "Probability in the Everett picture." In S. Saunders et al
 
 Bekenstein, J. D. (1981). "Universal upper bound on the entropy-to-energy ratio for bounded systems." *Physical Review D*, 23(2), 287-298.
 
-Bell, J. S. (1964). "On the Einstein Podolsky Rosen paradox." *Physics Physique Физика*, 1(3), 195-200.
+Bell, J. S. (1964). "On the Einstein Podolsky Rosen paradox." *Physics Physique Fizika*, 1(3), 195-200.
 
 Birkhoff, G., & von Neumann, J. (1936). "The logic of quantum mechanics." *Annals of Mathematics*, 37(4), 823-843.
 
