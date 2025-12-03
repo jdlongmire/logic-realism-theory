@@ -254,23 +254,23 @@ for all permutations $\sigma \in S_n$, where $\lambda_\sigma = +1$ for all $\sig
 
 **Part I: Two-Particle Symmetrization**
 
-*Step 1 (Identity constraint):* Let particles 1 and 2 be identical. By the Law of Identity, if $x = y$ then all predicates true of $x$ are true of $y$. For identical particles, "particle 1 in state $|a\rangle$" and "particle 2 in state $|a\rangle$" are physically indistinguishable—no measurement can determine which particle is which.
+*Step 1 (Identity constraint):* **(uses 3FLL-Identity)** Let particles 1 and 2 be identical. By the Law of Identity, if $x = y$ then all predicates true of $x$ are true of $y$. For identical particles, "particle 1 in state $|a\rangle$" and "particle 2 in state $|a\rangle$" are physically indistinguishable—no measurement can determine which particle is which.
 
-*Step 2 (Physical equivalence → ray equivalence):* The states $|a\rangle_1 \otimes |b\rangle_2$ and $|b\rangle_1 \otimes |a\rangle_2$ represent the same physical configuration (particle in state $|a\rangle$ and particle in state $|b\rangle$, with no "which is which" distinction). In quantum mechanics, physically equivalent states belong to the same ray:
+*Step 2 (Physical equivalence → ray equivalence):* **(uses A4 indistinguishability)** The states $|a\rangle_1 \otimes |b\rangle_2$ and $|b\rangle_1 \otimes |a\rangle_2$ represent the same physical configuration (particle in state $|a\rangle$ and particle in state $|b\rangle$, with no "which is which" distinction). In quantum mechanics, physically equivalent states belong to the same ray:
 $$|b\rangle_1 \otimes |a\rangle_2 = e^{i\phi(a,b)} |a\rangle_1 \otimes |b\rangle_2$$
 
-*Step 3 (Phase independence):* The phase $e^{i\phi}$ cannot depend on the specific states $|a\rangle, |b\rangle$. Proof by contradiction: Suppose $\phi(a,b) \neq \phi(a,c)$. Consider the superposition $|b\rangle + |c\rangle$. Linearity of the exchange operator would give inconsistent phases. Therefore, $e^{i\phi}$ is a constant for each particle type.
+*Step 3 (Phase independence):* **(uses A2 Hilbert space linearity)** The phase $e^{i\phi}$ cannot depend on the specific states $|a\rangle, |b\rangle$. Proof by contradiction: Suppose $\phi(a,b) \neq \phi(a,c)$. Consider the superposition $|b\rangle + |c\rangle$. Linearity of the exchange operator would give inconsistent phases. Therefore, $e^{i\phi}$ is a constant for each particle type.
 
-*Step 4 (Involution constraint):* Exchanging twice returns the original: $P_{12}^2 = \mathbf{1}$. Therefore:
+*Step 4 (Involution constraint):* **(uses 3FLL-Identity: x=x)** Exchanging twice returns the original: $P_{12}^2 = \mathbf{1}$. Therefore:
 $$e^{2i\phi} = 1 \implies e^{i\phi} = \pm 1$$
 
 **Part II: Extension to n Particles (Lüders-Zumino)**
 
-*Step 5:* For $n$ identical particles, the symmetric group $S_n$ acts on $\mathcal{H}_1^{\otimes n}$. Each transposition $(ij)$ must satisfy $P_{ij}^2 = \mathbf{1}$, giving eigenvalue $\pm 1$.
+*Step 5:* **(uses A3 tensor products)** For $n$ identical particles, the symmetric group $S_n$ acts on $\mathcal{H}_1^{\otimes n}$. Each transposition $(ij)$ must satisfy $P_{ij}^2 = \mathbf{1}$, giving eigenvalue $\pm 1$.
 
-*Step 6:* By the Lüders-Zumino theorem, if all transpositions have eigenvalue $+1$, the representation is the trivial (fully symmetric) representation. If all transpositions have eigenvalue $-1$, it is the sign (fully antisymmetric) representation.
+*Step 6:* **(standard result: Lüders-Zumino)** By the Lüders-Zumino theorem, if all transpositions have eigenvalue $+1$, the representation is the trivial (fully symmetric) representation. If all transpositions have eigenvalue $-1$, it is the sign (fully antisymmetric) representation.
 
-*Step 7 (Mixed phases excluded):* Could some transpositions give $+1$ and others $-1$? The group relations in $S_n$ constrain this. For example, $(12)(23)(12) = (13)$. If $P_{12}|\psi\rangle = +|\psi\rangle$ and $P_{23}|\psi\rangle = -|\psi\rangle$, then:
+*Step 7 (Mixed phases excluded):* **(uses 3FLL-Non-Contradiction)** Could some transpositions give $+1$ and others $-1$? The group relations in $S_n$ constrain this. For example, $(12)(23)(12) = (13)$. If $P_{12}|\psi\rangle = +|\psi\rangle$ and $P_{23}|\psi\rangle = -|\psi\rangle$, then:
 $$P_{13}|\psi\rangle = P_{12}P_{23}P_{12}|\psi\rangle = P_{12}P_{23}(+|\psi\rangle) = P_{12}(-|\psi\rangle) = -|\psi\rangle$$
 But also $(13)(12) = (123)$ and $(12)(13) = (132)$, leading to contradictions unless all phases are equal.
 
@@ -278,13 +278,13 @@ But also $(13)(12) = (123)$ and $(12)(13) = (132)$, leading to contradictions un
 
 *Step 8 (Definition):* Parastatistics would allow higher-dimensional representations of $S_n$ where $P_{ij}^2 = \mathbf{1}$ but the representation is neither fully symmetric nor fully antisymmetric.
 
-*Step 9 (Messiah-Greenberg 1964):* In 3+1 dimensions with locality (microcausality), parastatistics is observationally equivalent to ordinary statistics with internal quantum numbers. Specifically:
+*Step 9 (Messiah-Greenberg 1964):* **(uses A5 microcausality)** In 3+1 dimensions with locality (microcausality), parastatistics is observationally equivalent to ordinary statistics with internal quantum numbers. Specifically:
 
 **The Messiah-Greenberg Theorem:** Any parastatistics theory in 3+1D can be rewritten as an ordinary statistics theory with a hidden "paracharge" quantum number. The paracharge transforms under an internal symmetry group, and the physical states are paracharge singlets.
 
-*Step 10 (LRT interpretation):* The Law of Identity requires particles to have definite identity. If parastatistics were fundamental, the "paracharge" would be a hidden variable violating the completeness of quantum description. By assuming A4 (complete indistinguishability, no hidden labels), parastatistics reduces to ordinary statistics.
+*Step 10 (LRT interpretation):* **(uses A4 + 3FLL-Identity)** The Law of Identity requires particles to have definite identity. If parastatistics were fundamental, the "paracharge" would be a hidden variable violating the completeness of quantum description. By assuming A4 (complete indistinguishability, no hidden labels), parastatistics reduces to ordinary statistics.
 
-*Step 11 (Locality constraint):* Microcausality (A5) in 3+1D further constrains: for spacelike separated observables to commute/anticommute, the exchange phase must be consistent across all measurements. In 2+1D, braiding allows anyonic phases $e^{i\theta}$ with $\theta \notin \{0, \pi\}$, but in 3+1D, topological constraints force $\theta \in \{0, \pi\}$.
+*Step 11 (Locality constraint):* **(uses A5 microcausality in 3+1D)** Microcausality (A5) in 3+1D further constrains: for spacelike separated observables to commute/anticommute, the exchange phase must be consistent across all measurements. In 2+1D, braiding allows anyonic phases $e^{i\theta}$ with $\theta \notin \{0, \pi\}$, but in 3+1D, topological constraints force $\theta \in \{0, \pi\}$.
 
 **Conclusion:** In 3+1D with indistinguishability (A4) and microcausality (A5), the only possibilities are:
 - Bosons: $P_\sigma|\psi\rangle = |\psi\rangle$ for all $\sigma$
@@ -752,7 +752,7 @@ Specifically:
 
 *Step 6 (Exclusion of alternatives):*
 
-- *Real QFT:* In real QFT, local tomography fails. Specifically, there exist composite states $\rho_{AB}$ that cannot be distinguished from $\sigma_{AB}$ by local measurements on $A$ and $B$ separately, yet $\rho_{AB} \neq \sigma_{AB}$. **A4 (local tomography) rules out real QFT.** (Technical.md Theorem 5.2)
+- *Real QFT:* In real QFT, local tomography fails. Specifically, there exist composite states $\rho_{AB}$ that cannot be distinguished from $\sigma_{AB}$ by local measurements on $A$ and $B$ separately, yet $\rho_{AB} \neq \sigma_{AB}$. **A4 (local tomography) rules out real QFT.** (Technical.md Theorem 5.2; cf. Renou et al. 2021 for experimental exclusion at >7σ)
 
 - *Quaternionic QFT:* Quaternionic amplitudes violate tensor associativity: $(A \otimes B) \otimes C \ncong A \otimes (B \otimes C)$ due to non-commutativity. **A4 (well-defined tensor structure) rules out quaternionic QFT.** (Technical.md Theorem 5.3)
 
