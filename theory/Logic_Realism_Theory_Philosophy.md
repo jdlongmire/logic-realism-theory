@@ -191,7 +191,13 @@ The Infinite Information Space is defined as the maximal set closed under distin
 
 $$\mathcal{I} = \{s : D \text{ is defined on } s \times \mathcal{I}\}$$
 
-This is not a postulate about "what exists" but a characterization of the space of *possible* distinguishable configurations. The richness of IIS (infinite-dimensional Hilbert space) follows from:
+This is not a postulate about "what exists" but a characterization of the space of *possible* distinguishable configurations.
+
+**Philosophical note on IIS ontology:** IIS is not exotic new metaphysics—it is what physics already assumes. Physicists routinely work with Hilbert space, configuration space, Fock space, and phase space—mathematical structures that are not "in" spacetime yet are treated as describing something physically meaningful. IIS names what these structures represent: the space of distinguishable possibilities constrained by 3FLL.
+
+The methodological point is crucial: LRT does not ask "what does quantum mechanics mean?" (interpretation) but "why does quantum mechanics have this structure?" (derivation). The answer is that quantum mechanics is the unique interface structure between IIS and Boolean actuality. This inverts the usual philosophical approach of starting with formalism and seeking interpretation. Instead, we start with the metaphysical requirement (distinguishability requires 3FLL) and derive the formalism.
+
+Critics who find IIS ontologically suspicious should ask themselves: What do *they* think Hilbert space describes? If the wavefunction is physically meaningful (as realists maintain), it must represent something. IIS provides a direct answer: the structure of distinguishable possibilities. The richness of IIS (infinite-dimensional Hilbert space) follows from:
 
 1. **Richness of distinguishability:** For any $n$, there exist $n$ mutually distinguishable states
 2. **Closure under superposition:** If $s_1, s_2$ are distinguishable, their linear combinations are also distinguishable states

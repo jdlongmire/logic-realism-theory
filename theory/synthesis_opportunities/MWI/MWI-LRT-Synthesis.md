@@ -141,6 +141,15 @@ This represents honest epistemology: we distinguish what is mathematically prove
 
 **Our commitment: Information realism.** IIS elements are real because information is physically real, not merely abstract or epistemic.
 
+**IIS is not exotic ontology—it's what physics already uses.** Consider what physicists routinely accept as real:
+- Hilbert space (infinite-dimensional, not embedded in spacetime)
+- Configuration space (3N dimensions for N particles)
+- Fock space (variable particle number, no definite location)
+- Phase space (statistical mechanics operates here)
+- The wavefunction itself (what does it describe?)
+
+These mathematical structures are not "in" physical space, yet physics treats them as describing something real. IIS simply names what they describe: the space of distinguishable possibilities. The question for critics is not "how can IIS be real?" but "what do *you* think Hilbert space describes?" If the wavefunction is physically meaningful (as MWI insists), it must represent something. IIS is explicit about what: the complete structure of distinguishable quantum configurations.
+
 **Why information is physical:** Four independent lines of evidence establish information as physical:
 
 1. **Landauer's principle (1961):** Erasing one bit requires minimum energy $E_{erase} \geq k_B T \ln 2$. Information erasure has thermodynamic cost—it is not merely cognitive or computational but physical.
@@ -235,6 +244,14 @@ Section 2 reconstructs MWI's position charitably, identifying what it gets right
 ---
 
 ## 3. The IIS Framework: Possibility and Actuality Distinguished
+
+### 3.0 The Bridge from Metaphysics to Physics
+
+Before developing the technical framework, we emphasize a crucial methodological point: LRT does not ask "what does quantum mechanics mean?" (interpretation) but "why does quantum mechanics have this structure?" (derivation). The answer is IIS.
+
+Most interpretations take the quantum formalism as given and ask what reality must be like for the formalism to be true. LRT inverts this: it starts from metaphysical requirements (distinguishability requires 3FLL) and derives the formalism as the unique structure satisfying those requirements at the interface between possibility and actuality.
+
+This is not adding exotic ontology to physics. It is recognizing what physics already assumes. Every use of Hilbert space, every quantum state, every superposition implicitly references a space of distinguishable possibilities. IIS makes this explicit and asks: what constrains this space? The answer—the Three Fundamental Laws of Logic—connects metaphysics to physics at the deepest level.
 
 ### 3.1 Distinguishability as Foundational
 
@@ -2975,6 +2992,16 @@ No more than: virtual particles (real effects, Casimir force), virtual photons (
 **"Why not just say IIS states are possible, not real?"**
 
 Because "possible" suggests modal metaphysics (possible worlds) which are typically abstract. IIS is not abstract—it's subject to physical constraints (Bekenstein), has physical effects (actualization probabilities), costs physical resources to change (Landauer). It's more real than "merely possible" but less actual than Boolean instantiation.
+
+**The challenge to critics:** Those who find IIS ontologically suspicious must answer: What do *you* think Hilbert space describes? If quantum mechanics is more than an instrument for prediction—if the wavefunction is physically meaningful, as MWI insists—then it must represent something. What?
+
+The standard options are unsatisfying:
+- **Instrumentalism:** The wavefunction is just a calculational tool → But then MWI collapses; there are no "real" branches
+- **Many-Worlds:** The wavefunction describes all actual universes → Ontological explosion; why is this preferable to IIS?
+- **Bohmian:** The wavefunction guides particles → But what *is* the pilot wave? Where does it exist?
+- **Copenhagen:** Don't ask → Not an answer
+
+IIS provides a direct answer: Hilbert space describes the structure of distinguishable possibilities. The wavefunction specifies a point in this space. Superposition reflects the space's non-Boolean richness. Measurement is the transition from IIS to Boolean actuality. This is not adding ontology to physics; it's being explicit about what physics already uses.
 
 **Summary:** IIS exists as physically real information structure governed by physical bounds and conservation laws, but not instantiated in Boolean matter/energy configuration. This is information realism—a position grounded in quantum information theory, black hole thermodynamics, and holographic principles, not philosophical speculation.
 

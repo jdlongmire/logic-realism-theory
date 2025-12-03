@@ -164,6 +164,9 @@ IIS is not:
 - A Platonic realm of abstract objects
 - A set-theoretic construction (which would face cardinality paradoxes)
 - Merely epistemic (representing what we don't know)
+- Exotic new ontology added to physics
+
+**IIS is what physics already uses.** Consider what physicists routinely treat as real: Hilbert space (infinite-dimensional, not embedded in spacetime), configuration space (3N dimensions for N particles), Fock space (variable particle number), phase space (the arena for statistical mechanics). These mathematical structures are not "in" physical space, yet physics operates with them as describing something physically meaningful. IIS names what these structures represent: the space of distinguishable possibilities. The question for skeptics is not "how can IIS be real?" but "what do you think Hilbert space describes?" If the wavefunction is physically meaningful, it must represent something. IIS is explicit about what.
 
 IIS is the structural space of what *can be distinguished*. Its existence is not the existence of a thing among things, but the existence of a structural condition, the condition under which distinct states are possible at all.
 

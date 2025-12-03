@@ -33,6 +33,16 @@ This paper establishes these results by providing:
 2. **Mapping:** Explicit correspondence between LRT axioms and reconstruction theorem premises
 3. **Uniqueness:** Proof that complex QM is the unique structure satisfying interface + stability requirements
 
+### 1.1a Methodological Note: What IIS Represents
+
+Before proceeding to formal constructions, we emphasize a crucial point: the Infinite Information Space (IIS) is not exotic new mathematical structure imposed on physics. It is what physics already uses, made explicit.
+
+Physicists routinely work with Hilbert space, configuration space, Fock space, and phase space—mathematical structures not embedded in spacetime yet treated as describing something physically meaningful. IIS names what these structures represent: the space of distinguishable possibilities constrained by the Three Fundamental Laws of Logic.
+
+The derivations in this paper do not add ontology to quantum mechanics. They reveal why quantum mechanics has its specific structure: because that structure is uniquely selected by the requirements of the interface between distinguishable possibilities (IIS) and determinate outcomes (Boolean actuality). The mathematical structures derived here—complex Hilbert space, Born rule probabilities, unitary dynamics—are what any interface satisfying 3FLL plus physical constraints must have.
+
+This inverts the usual foundational approach. Rather than taking quantum formalism as given and seeking interpretation, we start from the metaphysical requirement that distinguishability presupposes 3FLL and derive the formalism as the unique solution to the interface problem.
+
 ### 1.2 Notation and Conventions
 
 | Symbol | Meaning |
