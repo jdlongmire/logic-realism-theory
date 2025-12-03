@@ -239,6 +239,8 @@ $$P_\sigma |\psi\rangle = \lambda_\sigma |\psi\rangle$$
 
 for all permutations $\sigma \in S_n$, where $\lambda_\sigma = +1$ for all $\sigma$ (bosons) or $\lambda_\sigma = \text{sign}(\sigma)$ (fermions). Parastatistics (mixed symmetry representations) are excluded in 3+1D.
 
+> **Standard Result Implemented:** This theorem implements the Messiah-Greenberg exclusion of parastatistics in 3+1D (Messiah & Greenberg 1964) under LRT assumptions A1-A5. The novelty is not the result itself—which is standard—but the derivation from 3FLL-based distinguishability constraints rather than ad hoc symmetrization postulates.
+
 ---
 
 **COMPLETE PROOF OF THEOREM 3.1'**
@@ -661,17 +663,50 @@ A falsifier is an observation that would refute LRT-QFT. We distinguish strong f
 
 **THEOREM 5.1' (Uniqueness of Complex QFT)**
 
-Complex quantum field theory is the unique relativistic theory satisfying assumptions A1-A7:
+Complex quantum field theory is the unique relativistic theory satisfying assumptions A1-A7.
 
-| # | Assumption | Formal Statement | Source |
-|---|------------|------------------|--------|
-| **A1** | 3FLL-constituted distinguishability | Distinguishability metric $D$ satisfies 3FLL constraints | Tier 1 |
-| **A2** | Continuous dynamics | State space is a topological manifold; evolution is continuous | A3a |
-| **A3** | Information preservation | Evolution is reversible; no information loss | A3b (CBP) |
-| **A4** | Local tomography | Composite state determined by local measurements + correlations | A3c |
-| **A5** | Lorentz invariance | Laws identical in all inertial frames; $D$ is Lorentz-invariant | Tier 2 |
-| **A6** | Microcausality | $[\phi(x), \phi(y)]_\mp = 0$ for $(x-y)^2 < 0$ | Tier 3 |
-| **A7** | Stability | Bound states exist; vacuum is lowest-energy state | Physical |
+---
+
+### The Seven Assumptions (A1-A7)
+
+> **A1. 3FLL-Constituted Distinguishability** (Tier 1)
+> The distinguishability metric $D(s_1, s_2)$ satisfies the constraints imposed by the Three Fundamental Laws of Logic: Identity ($D(s,s)=0$), Non-Contradiction (states are either distinguishable or not), Excluded Middle (every pair has a definite $D$ value).
+
+> **A2. Continuous Dynamics** (from A3a)
+> The state space is a topological manifold; time evolution is continuous. Discontinuous "jumps" are forbidden except at measurement (interface transitions).
+
+> **A3. Information Preservation** (from A3b / CBP)
+> Evolution is reversible at the fundamental level. No information is created or destroyed; pure states evolve to pure states under closed-system dynamics.
+
+> **A4. Local Tomography** (from A3c)
+> Composite system states are fully determined by local measurements on subsystems plus correlations. Implies tensor product structure: $\mathcal{H}_{AB} = \mathcal{H}_A \otimes \mathcal{H}_B$.
+
+> **A5. Lorentz Invariance** (Tier 2 — empirical input)
+> The laws of physics take the same form in all inertial reference frames. The distinguishability metric $D$ is Lorentz-invariant.
+
+> **A6. Microcausality** (Tier 3 — empirical input)
+> Fields at spacelike separation (anti)commute: $[\phi(x), \phi(y)]_\mp = 0$ for $(x-y)^2 < 0$. No faster-than-light signaling via field measurements.
+
+> **A7. Stability** (Physical input)
+> Bound states exist; the vacuum is the unique lowest-energy state. Energy spectrum bounded below.
+
+---
+
+**Summary Table:**
+
+| # | Assumption | Source | Empirical? |
+|---|------------|--------|------------|
+| A1 | 3FLL distinguishability | Tier 1 | No (logical) |
+| A2 | Continuous dynamics | A3a | No (structural) |
+| A3 | Information preservation | A3b/CBP | No (structural) |
+| A4 | Local tomography | A3c | No (structural) |
+| A5 | Lorentz invariance | Tier 2 | Yes |
+| A6 | Microcausality | Tier 3 | Yes |
+| A7 | Stability | Physical | Yes |
+
+*Four structural assumptions (A1-A4) + three empirical inputs (A5-A7) = complex QFT uniquely.*
+
+---
 
 **Theorem Statement:** Given A1-A7, any theory is either:
 - (a) Complex QFT (standard quantum field theory), OR
