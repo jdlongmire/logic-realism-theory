@@ -1,7 +1,7 @@
 # It from Bit, Bit from Fit: Foundational Physics Logically Remastered
 
-**James (JD) Longmire**
-ORCID: 0009-0009-1383-7698
+**James (JD) Longmire**\
+ORCID: 0009-0009-1383-7698\
 Northrop Grumman Fellow (unaffiliated research)
 
 ---
@@ -134,6 +134,8 @@ The argument proceeds as follows:
 - The measurement problem is dynamically solved (it is structurally dissolved)
 - All open questions are answered (several are explicitly identified)
 
+**Scope clarification:** LRT's constitutive claim targets the *actuality/record layer*—the domain where measurement outcomes are registered and information is stably propagated. The claim is that any physically implementable measurement architecture capable of carrying stable information must terminate in Boolean records, and therefore 3FLL are constitutive of the only layer at which physics is operationally defined. What lies "beneath" or "beyond" this layer—the metaphysics of IIS prior to actualization—is constrained by architecture but not directly accessed by experiment. This is not a retreat from ontological claims but a clarification of their scope: LRT makes strong claims about the structure of physical accessibility, not about inaccessible domains.
+
 The distinction between derivation and selection is crucial. We do not derive quantum mechanics from pure logic. We show that quantum mechanics is the unique structure compatible with stable information-bearing existence given the interface requirements. This is a selection claim with empirical content, not a claim of logical necessity.
 
 ---
@@ -155,6 +157,8 @@ Without these conditions, there is no basis for one state to differ from another
 This claim invites a circularity objection: are we defining distinguishability in terms of 3FLL, then claiming 3FLL are necessary for distinguishability? No. The argument is transcendental, not definitional. We ask: what must be the case for distinguishability to be possible at all? For state A to be distinguished from state B, A must be determinately A (Identity), A must not simultaneously be B and not-B (Non-Contradiction), and A must either be B or not be B (Excluded Middle). These are not stipulations about what "distinguishability" means; they are conditions without which distinction cannot obtain. The question is not "what do we mean by distinguishability?" but "what makes distinguishability possible?" The answer is 3FLL.
 
 This is the foundational claim of Logic Realism Theory. The laws are not cognitive filters we impose, not linguistic conventions we adopt, not useful approximations we employ. They are the conditions under which anything can be distinguished from anything else. The Technical companion (Theorem 7.1) proves this claim is ontic rather than epistemic: the continuity structure of quantum mechanics excludes hidden non-Boolean tokens even at probability zero.
+
+**The measurement-layer argument:** One might object that 3FLL are constitutive only of *our concept* of measurement, not of physics itself. But this objection, properly understood, supports rather than undermines LRT. If any coherent notion of "measurement outcome"—one that yields stable, propagatable records capable of grounding scientific inference—must be Boolean, then 3FLL are constitutive of the only layer at which physics becomes empirically accessible. The question is not whether some exotic non-Boolean "physics" might exist beyond measurement, but whether such a domain could ever manifest in any operationally meaningful way. If it cannot, then 3FLL constrain everything that physics can coherently describe. The "middle position" (3FLL are constitutive of measurement concepts) is not a rival to LRT but a special case of it.
 
 ### 2.2 The Infinite Information Space
 
@@ -235,7 +239,15 @@ Any interface must satisfy three constraints derived from 3FLL:
 
 Multiple mathematical structures satisfy these formal constraints: classical probability, quantum mechanics, real quantum mechanics, quaternionic quantum mechanics, various generalized probabilistic theories. The interface constraints alone do not uniquely determine the structure.
 
-### 2.5 The Consistency Bridging Principle
+---
+
+![Figure 1: LRT Ontological Architecture](figures/LRT_Fig-1.jpeg)
+
+**Figure 1.** The ontological architecture of Logic Realism Theory. The Infinite Information Space (IIS), constituted by the Three Fundamental Logical Laws, contains non-Boolean structure including superpositions and indeterminate states. Quantum mechanics operates as the interface, characterized by complex Hilbert space, the Born rule, and unitary dynamics. Boolean Actuality, where 3FLL are fully enforced, contains only definite, self-identical, non-contradictory outcomes. The three laws (Identity, Non-Contradiction, Excluded Middle) run through the entire structure, constituting IIS and constraining actuality.
+
+---
+
+### 2.5 Structural Principle: Consistency Bridging
 
 What constrains dynamics within IIS? Not every conceivable transformation can be physically admissible.
 
@@ -243,21 +255,29 @@ The answer follows from the structure itself:
 
 > **Consistency Bridging Principle (CBP):** Admissible transformations on IIS are only those for which all reachable states can, in principle, participate in a consistent resolution to Boolean actuality.
 
-CBP is not an additional postulate. It is an architectural requirement. Any transformation that produced states incapable of Boolean resolution would produce states with no path to actuality. Such states would be physical dead ends, configurations that cannot manifest as determinate facts.
+**Status:** CBP is a *substantive structural principle*, motivated by (but not strictly derived from) the constitutive thesis. We adopt it because it is the formal expression of the requirement that IIS dynamics never strand states with no path to actuality. It is not an arbitrary postulate but a principled constraint: if IIS exists to enable actualization, transformations that sever this connection are inadmissible.
+
+**Alternative considered:** A weaker principle might permit "dead-end" IIS regions—states that can never actualize. Such regions would constitute physically inaccessible structure: distinguishable configurations with no empirical consequences. This alternative (a) reintroduces brute facts about why such regions are never accessed, undermining explanatory unity; and (b) violates the parsimony principle (Section 2.6) by admitting structure with no actualizable consequences. LRT rejects this alternative.
+
+**Comparison:** Other frameworks build in analogous constraints: "no signaling" in operational approaches, "no superdeterministic conspiracies" in Bell analyses, specific collapse postulates in GRW. CBP is not more ad hoc than these; it is the LRT-specific expression of a general requirement that physical structure be empirically accessible.
 
 CBP constrains dynamics to preserve the possibility of consistent actualization. It does not specify *when* actualization occurs or *which* outcome obtains. It constrains what transformations are admissible in the first place.
 
-**Key consequence:** CBP implies that fundamental dynamics must be reversible. Irreversible dynamics destroy information; they map distinct states to the same output. But information destruction requires a mechanism: something must absorb or erase the distinction. Any such mechanism would constitute additional structure beyond IIS and 3FLL. By parsimony (derived below), no such surplus structure exists at the fundamental level. Therefore, fundamental IIS dynamics preserve information.
+**Key consequence:** CBP implies that fundamental dynamics must be reversible. Irreversible dynamics destroy information; they map distinct states to the same output. But information destruction requires a mechanism: something must absorb or erase the distinction. Any such mechanism would constitute additional structure beyond IIS and 3FLL. By parsimony (Section 2.6), no such surplus structure exists at the fundamental level. Therefore, fundamental IIS dynamics preserve information.
 
-### 2.6 Global Parsimony
+### 2.6 Structural Principle: Global Parsimony
 
 A principle of parsimony follows from the constitutive role of 3FLL:
 
 If 3FLL constitute distinguishability, and IIS is the space constituted by 3FLL, then actuality contains exactly what this constitutive base generates, no more, no less.
 
-**Global Parsimony:** Actuality contains exactly the propositions whose truth values are grounded in (3FLL + initial conditions) and their consequences. No surplus structure exists.
+> **Global Parsimony:** Actuality contains exactly the propositions whose truth values are grounded in (3FLL + initial conditions) and their consequences. No surplus structure exists.
+
+**Status:** Global Parsimony is a *substantive structural principle*, motivated by the constitutive thesis. While we present a derivation below, the principle functions as a strong metaphysical commitment: that there can be no distinct physical structure with no new distinguishable consequences. We adopt it because it is the natural closure condition on the constitutive claim—but acknowledge that this "naturalness" argument falls short of logical necessity.
 
 **Derivation:** If 3FLL constitute distinguishability, and all physical structure presupposes distinguishability, then all physical structure must trace to 3FLL. Consider what surplus structure would require: structure not traceable to 3FLL would need distinguishability from outside the only source of distinguishability. But there is no such source available; distinguishability just is what 3FLL establish. Surplus structure is therefore incoherent. Global Parsimony is not an aesthetic preference or methodological heuristic; it is the closure condition on the constitutive claim itself.
+
+**Alternative considered:** A weaker parsimony might allow hidden, irretrievable information—structure that is distinguishable in principle but never accessible in practice. This alternative would (a) undermine the derivation of reversibility by permitting information sinks at the fundamental level; (b) reintroduce unexplained brute facts (why is this information hidden?); and (c) lose the explanatory unity that makes LRT distinctive. LRT rejects this alternative in favor of the stronger principle.
 
 This is a structural consequence of what "constitution" means. If 3FLL constitute the domain, the domain contains what they generate. Propositions requiring additional grounding sources have no truthmakers within the framework.
 
@@ -315,14 +335,6 @@ The central formula:
 $$\mathcal{A} = \mathfrak{L}(\mathcal{I})$$
 
 Actuality equals logical filtering (3FLL enforcement + parsimony) applied to the Infinite Information Space.
-
----
-
-![Figure 1: LRT Ontological Architecture](figures/LRT_Fig-1.jpeg)
-
-**Figure 1.** The ontological architecture of Logic Realism Theory. The Infinite Information Space (IIS), constituted by the Three Fundamental Logical Laws, contains non-Boolean structure including superpositions and indeterminate states. Quantum mechanics operates as the interface, characterized by complex Hilbert space, the Born rule, and unitary dynamics. Boolean Actuality, where 3FLL are fully enforced, contains only definite, self-identical, non-contradictory outcomes. The three laws (Identity, Non-Contradiction, Excluded Middle) run through the entire structure, constituting IIS and constraining actuality.
-
----
 
 ### 2.9 The Circularity Objection
 
@@ -423,6 +435,10 @@ LRT rests on five axioms, organized by tier:
 | A3c: Local Tomography | Composite system states determined by local measurements | Irreducible physical content |
 
 The physical axioms (A3a, A3c) represent genuine empirical input. They are not derived from 3FLL alone. What LRT provides is the framework within which these physical constraints yield quantum structure.
+
+**Status clarification on local tomography (A3c):** Local tomography is a Tier-2 physical axiom, not a consequence of 3FLL. LRT does *not* derive local tomography from logical principles; it shows that *given* local tomography plus the 3FLL-based constraints, complex quantum mechanics is uniquely selected. This keeps the reconstruction in the same epistemic category as other GPT reconstructions (Masanes-Müller, Hardy, Chiribella et al.). LRT's distinctive contribution is not new mathematics but the *interpretation* and unification of these axioms within the IIS/actuality picture: showing why this specific axiom set yields the structure needed for stable, Boolean-actualizing physics.
+
+Whether local tomography can be derived from deeper principles (perhaps Global Parsimony applied to compositional structure, ruling out "surplus" globally-distinct-but-locally-indistinguishable states) remains an open question listed in Section 7.
 
 ### 3.2 Deriving Reversibility
 
@@ -620,7 +636,7 @@ The following phenomena receive treatment from LRT resources, ranging from rigor
 | Reversibility | **Derived** | CBP + Global Parsimony |
 | Contextuality | **Explained** | Interface signature: values generated at interface, not pre-existing |
 | Bell inequality violations | **Explained** | Global constraint satisfaction: 3FLL enforce consistency |
-| Tsirelson bound (2√2) | **Explained** | Interface stability limit: exceeding permits signaling |
+| Tsirelson bound (2√2) | **Interpreted** | Interface stability framework (formal derivation pending) |
 | No-cloning | **Explained** | Distinguishability preservation in IIS |
 | Uncertainty relations | **Explained** | Non-commuting observables = incompatible IIS partitions |
 | Entanglement without signaling | **Explained** | Global 3FLL constraints; correlation without causal connection |
@@ -637,6 +653,7 @@ The following phenomena receive treatment from LRT resources, ranging from rigor
 **Status categories:**
 - **Derived:** Follows mathematically from LRT axioms via established theorems
 - **Explained:** Receives substantive account from IIS/actuality framework
+- **Interpreted:** LRT provides interpretive framework; formal derivation pending
 - **Reframed:** Reconceptualized in LRT terms; puzzle dissolved rather than solved
 - **Compatible:** Consistent with LRT; full derivation not yet developed
 - **Constrained:** LRT narrows possibilities without fully determining
@@ -810,11 +827,11 @@ Quantum correlations violate Bell inequalities but only up to the Tsirelson boun
 
 **Why this bound?**
 
-LRT explanation: The Tsirelson bound marks the maximum correlation compatible with stable interface operation. PR boxes and other super-quantum correlations, while satisfying no-signaling at the single-use level, permit signaling when composed or permit computational trivializations that destabilize physical structure.
+**LRT interpretation (not derivation):** LRT suggests interpreting the Tsirelson bound as marking the maximum correlation compatible with stable interface operation. PR boxes and other super-quantum correlations, while satisfying no-signaling at the single-use level, permit signaling when composed or permit computational trivializations that destabilize physical structure.
 
-The bound is not arbitrary. It is the stability limit of the IIS-actuality interface.
+This interpretation places the bound as the stability limit of the IIS-actuality interface.
 
-**Limitation acknowledged:** LRT identifies the Tsirelson bound as the interface stability limit and provides the *framework* within which this question becomes tractable. The full derivation of why 2√2 *specifically* marks this limit (rather than some other value) would require detailed information-theoretic analysis of interface stability conditions. This derivation is ongoing work. What LRT establishes is *where and why* such a bound must exist; the precise value remains to be derived from first principles.
+**Status clarification:** LRT does *not* derive the Tsirelson bound from 3FLL or the IIS framework. Rather, LRT provides an *interpretive framework* within which the bound's existence becomes conceptually natural: if actuality requires Boolean definiteness and the interface must operate stably, correlations exceeding certain limits would destabilize the interface. The specific value 2√2 is not derived but interpreted as the empirically observed stability threshold. A formal derivation connecting 3FLL to this specific value remains future work (see Section 7: Open Problems).
 
 ### 4.5 Contextuality
 
@@ -852,29 +869,31 @@ Every phenomenon in the table traces to this structure:
 - **Correlations** = constraint satisfaction
 - **Contextuality** = values generated at interface
 - **Born rule** = unique interface probability
-- **Tsirelson bound** = interface stability limit
+- **Tsirelson bound** = interface stability limit (interpretive; see 4.4)
 
 This unification is the primary evidence for LRT. Competing interpretations explain some phenomena while leaving others as brute facts. LRT explains all seventeen from common resources.
 
-### 4.8 Ontic Booleanity: The Epistemic Loophole Closed
+### 4.8 Ontic Booleanity: The Epistemic Loophole
 
 A sophisticated objection grants that *observed* outcomes obey 3FLL but suggests this might be epistemic rather than ontic: perhaps 3FLL are filters on *observation*, not constraints on *reality*. Hidden outcome tokens might violate 3FLL while remaining undetectable.
 
-LRT closes this loophole completely.
+LRT addresses this loophole as follows.
 
-**Theorem (Ontic Booleanity).** Under the continuity and path-connectedness required by quantum mechanics, every actual outcome token satisfies 3FLL. No token—even one that never occurs with positive probability—can violate 3FLL.
+**Conjecture (Ontic Booleanity).** Under the continuity and path-connectedness required by quantum mechanics, every actual outcome token satisfies 3FLL. No token—even one that never occurs with positive probability—can violate 3FLL.
 
-**The argument has two parts:**
+**Status:** This is a *conjecture* with a proof sketch, not a completed theorem. The argument outline is provided below; a fully rigorous proof requires additional technical development.
 
-*Part I (Positive-probability tokens):* Any token that occurs with positive probability must be Boolean. If a token $t_0$ violated 3FLL (say, by satisfying both $A$ and $\neg A$ simultaneously), then states assigning positive probability to $t_0$ would violate probability normalization: $\omega(A) + \omega(\neg A) > 1$. This contradicts the probability structure of quantum mechanics.
+**The argument sketch has two parts:**
 
-*Part II (Hidden zero-probability tokens):* Hypothetical tokens with zero probability under all states cannot violate 3FLL either. Here path-connectedness is crucial: pure states with $\omega(A) = 1$ and $\omega(A) = 0$ are connected by continuous paths. Any hidden non-Boolean token would disrupt this continuity structure. More fundamentally, the token space is *defined* by what states can distinguish—a token outside all state supports is not a token of the theory.
+*Part I (Positive-probability tokens):* Any token that occurs with positive probability must be Boolean. If a token $t_0$ violated 3FLL (say, by satisfying both $A$ and $\neg A$ simultaneously), then states assigning positive probability to $t_0$ would violate probability normalization: $\omega(A) + \omega(\neg A) > 1$. This contradicts the probability structure of quantum mechanics. (This part is relatively straightforward.)
 
-**The conclusion:** 3FLL are not observer-imposed filters but structural constraints on outcome tokens themselves. The epistemic loophole is mathematically closed.
+*Part II (Hidden zero-probability tokens):* Hypothetical tokens with zero probability under all states cannot violate 3FLL either. Here path-connectedness is crucial: pure states with $\omega(A) = 1$ and $\omega(A) = 0$ are connected by continuous paths. Any hidden non-Boolean token would disrupt this continuity structure. More fundamentally, the token space is *defined* by what states can distinguish—a token outside all state supports is not a token of the theory. (This part requires rigorous formalization; the intuition is clear but the proof details remain to be worked out.)
 
-This result strengthens LRT's core claim: the 3FLL do not merely describe how we observe reality—they constitute what can be an actual outcome. The continuous structure of quantum state space is incompatible with hidden non-Boolean tokens.
+**If established, the conclusion would be:** 3FLL are not observer-imposed filters but structural constraints on outcome tokens themselves. The epistemic loophole would be mathematically closed.
 
-*For the complete proof, see Technical companion Theorem 7.1.*
+This conjecture, if proven, would strengthen LRT's core claim: the 3FLL would not merely describe how we observe reality but constitute what can be an actual outcome. Completing this proof is listed as future work (Section 7).
+
+*For the proof sketch details, see Technical companion Section 7.*
 
 ---
 
@@ -895,15 +914,15 @@ Six interpretations warrant comparison:
 
 ### 5.2 Explanatory Power
 
-| Theory | Explains QM Structure? | Explains Born Rule? | Explains Contextuality? | Explains Bell Correlations? | Explains Tsirelson Bound? |
-|--------|----------------------|--------------------|-----------------------|---------------------------|-------------------------|
-| Copenhagen | No | No (postulates) | Accepts | Accepts | Accepts |
+| Theory | Structure | Born Rule | Context. | Bell | Tsirelson |
+|--------|:---------:|:---------:|:--------:|:----:|:---------:|
+| Copenhagen | No | Postulates | Accepts | Accepts | Accepts |
 | MWI | No | Contested | Accepts | Accepts | Accepts |
-| Bohmian | No | Partial (equilibrium) | Accepts | Yes (nonlocal) | Accepts |
+| Bohmian | No | Partial | Accepts | Nonlocal | Accepts |
 | GRW | No | Modified | Accepts | Accepts | Accepts |
-| QBism | No | Coherence | Accepts | Agent-relative | Accepts |
-| Relational | No | Relational | Context-dependent | Relational | Accepts |
-| **LRT** | **Yes** | **Yes (Gleason)** | **Yes (interface)** | **Yes (constraints)** | **Yes (stability)** |
+| QBism | No | Coherence | Accepts | Agent | Accepts |
+| Relational | No | Relational | Context | Relational | Accepts |
+| **LRT** | **Yes** | **Gleason** | **Interface** | **Derived** | **Interprets** |
 
 LRT is the only framework that explains *why* quantum mechanics has its structure rather than postulating that structure or remaining silent.
 
@@ -1033,17 +1052,17 @@ The asymmetry is fundamental: MWI introduces branch realism to avoid accepting w
 
 ### 5.9 Summary Comparison
 
-**Table 1.** Comparison of quantum mechanics interpretations across key theoretical criteria. ✓ = criterion satisfied; ✗ = criterion not satisfied; ~ = partial or contested.
+**Table 1.** Comparison of quantum mechanics interpretations across key theoretical criteria. Y = criterion satisfied; N = criterion not satisfied; P = partial or contested; ? = unclear.
 
-| Criterion | Copenhagen | MWI | Bohmian | GRW | QBism | Relational | **LRT** |
-|-----------|:----------:|:---:|:-------:|:---:|:-----:|:----------:|:-------:|
-| Explains structure | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ | **✓** |
-| Derives Born rule | ✗ | ~ | ~ | ✗ | ~ | ✗ | **✓** |
-| Parsimony | ~ | ✗ | ✗ | ✗ | ~ | ~ | **✓** |
-| Realism | ✗ | ✓ | ✓ | ✓ | ✗ | ~ | **✓** |
-| Locality | ? | ✓ | ✗ | ✗ | ? | ✓ | **✓** |
-| Testable predictions | ✗ | ✗ | ✗ | ✓ | ✗ | ✗ | **✓** |
-| Falsifiable | ✗ | ✗ | ✗ | ✓ | ✗ | ✗ | **✓** |
+| Criterion | Copen. | MWI | Bohm | GRW | QBism | Relat. | **LRT** |
+|-----------|:------:|:---:|:----:|:---:|:-----:|:------:|:-------:|
+| Explains structure | N | N | N | N | N | N | **Y** |
+| Derives Born rule | N | P | P | N | P | N | **Y** |
+| Parsimony | P | N | N | N | P | P | **Y** |
+| Realism | N | Y | Y | Y | N | P | **Y** |
+| Locality | ? | Y | N | N | ? | Y | **Y** |
+| Testable predictions | N | N | N | Y | N | N | **Y** |
+| Falsifiable | N | N | N | Y | N | N | **Y** |
 
 LRT is the only interpretation that:
 - Explains why QM has its structure
@@ -1089,7 +1108,7 @@ A physical theory must make testable claims and specify conditions for its own r
 |------------|-------|------|--------|
 | Complex amplitudes required | Local tomography (A3c) forces ℂ over ℝ | Renou et al. (2021) | **Confirmed** |
 | Born rule exact | Gleason's theorem | Precision measurements | Confirmed to 10⁻⁵ |
-| Tsirelson bound exact | Interface stability | All Bell tests | No violations observed |
+| Tsirelson bound exact | Interpretive (not derived) | All Bell tests | No violations observed |
 | Bell inequality violations | Global constraint satisfaction | Bell tests since 1982 | Confirmed |
 | Contextuality | Interface signature | Kochen-Specker tests | Confirmed |
 
@@ -1168,7 +1187,7 @@ Twelve conditions would refute LRT:
 | # | Falsifier | What It Would Refute |
 |---|-----------|---------------------|
 | 1 | Born rule violated (dim ≥ 3) | Gleason derivation; non-contextual interface (A5) |
-| 2 | Tsirelson bound exceeded | Interface stability claim |
+| 2 | Tsirelson bound exceeded | Interface stability interpretation (shared with standard QM) |
 | 3 | Locally tomographic real QM works | Local tomography → ℂ derivation |
 | 4 | Locally tomographic quaternionic QM works | Compositional consistency claim |
 | 5 | Physical dialetheia observed | Non-Contradiction as constitutive |
@@ -1482,7 +1501,38 @@ The LRT framework raises precise mathematical and physical questions. These are 
 10. Unify LRT with spacetime emergence
 11. Resolve the arrow of time within LRT
 
-### 7.8 Conclusion
+### 7.8 Programmatic Elements: Explicit Status Summary
+
+This section explicitly distinguishes what LRT has established from what remains programmatic (open, sketched, or in progress). Honest accounting requires this transparency.
+
+**Established (derived or rigorously justified):**
+
+| Element | Status | Basis |
+|---------|--------|-------|
+| 3FLL as constitutive of distinguishability | **Established** | Conceptual argument (Section 2) |
+| Born rule (|ψ|²) | **Derived** | Gleason's theorem + non-contextual interface |
+| Complex Hilbert space (ℂ over ℝ) | **Derived** | Local tomography (A3c); experimentally confirmed (2021) |
+| Unitary dynamics | **Derived** | CBP + Parsimony + Stone's theorem |
+| Measurement as category transition | **Established** | Conceptual framework (Section 4.2) |
+| Contextuality | **Explained** | Interface signature (Section 4.5) |
+| Bell correlations without signaling | **Explained** | Global constraint satisfaction (Section 4.3) |
+
+**Programmatic (open, conjectural, or requiring further work):**
+
+| Element | Current Status | What Would Resolve It |
+|---------|----------------|----------------------|
+| Interface criterion | **Open** | Physical/empirical: What marks IIS→actuality transition? |
+| Ontic Booleanity | **Conjecture** | Rigorous proof of Part II (zero-probability tokens); see Section 4.8 |
+| Tsirelson bound | **Interpretive** | Formal derivation from 3FLL/interface stability; see Section 4.4 |
+| Local tomography | **Tier-2 axiom** | Derivation from 3FLL would strengthen foundations |
+| Relativistic extension | **Open** | Full treatment in QFT Gravity Extension paper |
+| Specific dimension emergence | **Open** | Why dim(H) = n for specific systems? |
+
+**This distinction matters.** LRT's core contribution is the *framework* that unifies quantum phenomena from logical principles. Some elements within this framework are rigorously established; others are conjectural or require additional development. Failing to distinguish these would overstate the theory's current reach.
+
+The programmatic elements are *tractable* open problems, not fundamental obstacles. Completing them would strengthen LRT; their current openness does not undermine the established results.
+
+### 7.9 Conclusion
 
 Every physical measurement ever conducted has yielded exactly one outcome: self-identical, non-contradictory, determinate. This holds despite a century of quantum mechanics where violations were actively sought.
 
