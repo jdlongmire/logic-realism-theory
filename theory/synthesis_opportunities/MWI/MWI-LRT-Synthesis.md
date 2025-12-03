@@ -3297,22 +3297,6 @@ The integrated information-theoretic resolution via Logic Realism Theory synthes
 
 ---
 
-## References
-
-[To be developed: Complete bibliography including:
-- MWI foundational papers (Everett 1957, DeWitt 1970, etc.)
-- MWI development (Wallace 2012, Vaidman 2002, Saunders 2010)
-- Probability derivations (Deutsch 1999, Wallace 2007, Greaves 2007)
-- Decoherence theory (Zurek 2003, Schlosshauer 2007)
-- LRT foundational papers (Longmire 2025, Technical companion, Philosophy companion)
-- Reconstruction theorems (Masanes-Müller 2011, Chiribella et al. 2011, Hardy 2001)
-- Quantum foundations (Gleason 1957, Kochen-Specker 1967, Bell 1964)
-- Philosophy of modality (Lewis 1986, Parfit 1984, Kripke 1980)
-- Related interpretations (Bohmian, GRW, modal, consistent histories)
-- Experimental papers (Renou et al. 2021, decoherence experiments, collapse searches)]
-
----
-
 **END OF DRAFT**
 
 **Paper Statistics:**
@@ -3332,13 +3316,17 @@ The integrated information-theoretic resolution via Logic Realism Theory synthes
 
 ## References
 
-[To be completed - key references already cited in text]
-
 Albert, D. Z. (2010). "Probability in the Everett picture." In S. Saunders et al. (eds.), *Many Worlds? Everett, Quantum Theory, and Reality*. Oxford University Press.
+
+Bekenstein, J. D. (1981). "Universal upper bound on the entropy-to-energy ratio for bounded systems." *Physical Review D*, 23(2), 287-298.
+
+Bell, J. S. (1964). "On the Einstein Podolsky Rosen paradox." *Physics Physique Физика*, 1(3), 195-200.
 
 Birkhoff, G., & von Neumann, J. (1936). "The logic of quantum mechanics." *Annals of Mathematics*, 37(4), 823-843.
 
 Bohm, D. (1952). "A suggested interpretation of the quantum theory in terms of 'hidden' variables, I & II." *Physical Review*, 85, 166-193.
+
+Chiribella, G., D'Ariano, G. M., & Perinotti, P. (2011). "Informational derivation of quantum theory." *Physical Review A*, 84(1), 012311.
 
 Deutsch, D. (1985). "Quantum theory as a universal physical theory." *International Journal of Theoretical Physics*, 24(1), 1-41.
 
@@ -3354,7 +3342,17 @@ Ghirardi, G. C., Rimini, A., & Weber, T. (1986). "Unified dynamics for microscop
 
 Gleason, A. M. (1957). "Measures on the closed subspaces of a Hilbert space." *Journal of Mathematics and Mechanics*, 6(6), 885-893.
 
+Greaves, H. (2007). "Probability in the Everett interpretation." *Philosophy Compass*, 2(1), 109-128.
+
+Hardy, L. (2001). "Quantum theory from five reasonable axioms." arXiv:quant-ph/0101012.
+
 Kent, A. (2010). "One world versus many: The inadequacy of Everettian accounts of evolution, probability, and scientific confirmation." In S. Saunders et al. (eds.), *Many Worlds?* Oxford University Press.
+
+Kochen, S., & Specker, E. P. (1967). "The problem of hidden variables in quantum mechanics." *Journal of Mathematics and Mechanics*, 17(1), 59-87.
+
+Kripke, S. (1980). *Naming and Necessity*. Harvard University Press.
+
+Landauer, R. (1961). "Irreversibility and heat generation in the computing process." *IBM Journal of Research and Development*, 5(3), 183-191.
 
 Lewis, D. (1986). *On the Plurality of Worlds*. Blackwell.
 
@@ -3362,13 +3360,21 @@ Longmire, J. D. (2025a). "It from Bit, Bit from Fit: Foundational Physics Logica
 
 Longmire, J. D. (2025b). "Logic Realism Theory: Technical Foundations." [Technical companion]
 
+Margolus, N., & Levitin, L. B. (1998). "The maximum speed of dynamical evolution." *Physica D*, 120(1-2), 188-195.
+
 Masanes, L., & Müller, M. P. (2011). "A derivation of quantum theory from physical requirements." *New Journal of Physics*, 13, 063001.
 
 Maudlin, T. (2014). "Critical study: David Wallace, *The Emergent Multiverse*." *Noûs*, 48(4), 794-808.
 
+Parfit, D. (1984). *Reasons and Persons*. Oxford University Press.
+
 Price, H. (2010). "Decisions, decisions, decisions: Can Savage salvage Everettian probability?" In S. Saunders et al. (eds.), *Many Worlds?* Oxford University Press.
 
+Renou, M.-O., et al. (2021). "Quantum theory based on real numbers can be experimentally falsified." *Nature*, 600, 625-629.
+
 Saunders, S. (2010). "Many worlds? An introduction." In S. Saunders et al. (eds.), *Many Worlds?* Oxford University Press.
+
+Schlosshauer, M. (2007). *Decoherence and the Quantum-to-Classical Transition*. Springer.
 
 Stalnaker, R. (2003). *Ways a World Might Be: Metaphysical and Anti-Metaphysical Essays*. Oxford University Press.
 
@@ -3382,13 +3388,3 @@ Wallace, D. (2012). *The Emergent Multiverse: Quantum Theory According to the Ev
 
 Zurek, W. H. (2003). "Decoherence, einselection, and the quantum origins of the classical." *Reviews of Modern Physics*, 75(3), 715-775.
 
----
-
-**End of Draft - Sections 1 & 3**
-
-**Next steps:**
-- Review and refine philosophical arguments in Section 1
-- Strengthen mathematical exposition in Section 3
-- Draft Section 4 (Preferred Basis Problem)
-- Develop explicit examples throughout
-- Add figures/diagrams for three-layer architecture
