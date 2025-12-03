@@ -1,7 +1,8 @@
 # Logic Realism Theory: Technical Foundations
 
-**James (JD) Longmire**
-ORCID: 0009-0009-1383-7698
+**James (JD) Longmire**\
+ORCID: 0009-0009-1383-7698\
+Northrop Grumman Fellow (unaffiliated research)
 
 **Status:** Working Draft
 **Purpose:** Address technical gaps identified in peer review; provide rigorous mathematical foundations for LRT
@@ -369,15 +370,20 @@ Masanes-Müller (2011) derive complex quantum mechanics from five axioms:
 
 ### 4.2 LRT Axioms Restated
 
-| LRT Axiom | Statement |
-|-----------|-----------|
-| A1 | 3FLL constitute distinguishability |
-| A2 | IIS contains all distinguishable configurations |
-| A3a | Physical dynamics are continuous |
-| A3b | Information is preserved (CBP) |
-| A3c | Local tomography holds |
-| A4 | Global Parsimony: no surplus structure |
-| A5 | Interface probability measure is non-contextual |
+| LRT Axiom | Statement | Tier |
+|-----------|-----------|------|
+| A1 | 3FLL constitute distinguishability | Tier-1 (foundational) |
+| A2 | IIS contains all distinguishable configurations | Tier-1 (foundational) |
+| A3a | Physical dynamics are continuous | Tier-2 (physical) |
+| A3b | Information is preserved (CBP) | Tier-2 (structural principle) |
+| A3c | Local tomography holds | Tier-2 (physical) |
+| A4 | Global Parsimony: no surplus structure | Tier-2 (structural principle) |
+| A5 | Interface probability measure is non-contextual | Tier-2 (physical) |
+
+**Tier classification:**
+- **Tier-1 (foundational):** Constitutive claims about 3FLL and distinguishability. These are LRT's core philosophical commitments.
+- **Tier-2 (physical):** Empirically motivated physical constraints (continuity, local tomography, non-contextuality). Not derived from 3FLL.
+- **Tier-2 (structural principle):** Methodological commitments (CBP, Global Parsimony). Adopted by LRT but alternatives are coherent. See Main paper Sections 2.5-2.6 for discussion.
 
 ### 4.3 The Mapping
 
@@ -551,31 +557,33 @@ Let $\mathcal{S}_{max}$ be the maximum CHSH value achievable in a GPT.
 
 ### 5.3 The Tsirelson Bound as Stability Maximum
 
-**Theorem 5.5 (Tsirelson Bound from CBP + Global Parsimony).**
+**Proposition 5.5 (Tsirelson Bound Compatibility).**
 
-The Tsirelson bound $\mathcal{S} \leq 2\sqrt{2}$ is the maximum correlation compatible with:
+The Tsirelson bound $\mathcal{S} \leq 2\sqrt{2}$ is compatible with and interpretable within LRT's framework:
 1. Consistency Bridging Principle (CBP): All states must admit Boolean resolution
 2. Global Parsimony: No surplus structure beyond 3FLL + physical constraints
 3. No signaling under arbitrary composition
 
-**Proof:**
+**Status clarification:** This proposition demonstrates *compatibility*, not *derivation*. LRT provides an interpretive framework within which the Tsirelson bound is natural (interface stability, no surplus signaling mechanisms), but the specific value 2√2 is not derived from 3FLL or CBP. The value comes from the mathematics of complex Hilbert space (itself derived via local tomography). A full derivation of *why* 2√2 specifically marks the stability threshold remains open (see Main paper Section 4.4).
+
+**Argument:**
 
 *Step 1:* CBP requires that entangled states resolve to correlated Boolean outcomes. The correlation structure must be consistent across all measurement contexts.
 
 *Step 2:* Global Parsimony forbids mechanisms that would allow amplification of correlations beyond what the state structure supports. Any such mechanism would constitute surplus structure.
 
-*Step 3:* The Tsirelson bound is the unique maximum satisfying:
-- Consistency with complex Hilbert space structure (from Theorem 3.2)
-- No signaling under composition
+*Step 3:* Within complex QM (established by Theorems 3.2, 5.6), the Tsirelson bound satisfies:
+- Consistency with complex Hilbert space structure
+- No signaling under composition (Theorem 5.4)
 - No communication complexity collapse
 
-*Step 4:* Explicit calculation: For CHSH with quantum states,
+*Step 4:* Explicit calculation confirms the maximum: For CHSH with quantum states,
 $$\mathcal{S} = \langle A_1 B_1 \rangle + \langle A_1 B_2 \rangle + \langle A_2 B_1 \rangle - \langle A_2 B_2 \rangle$$
 
 Maximum achieved by measuring $|\Phi^+\rangle$ with optimal angles:
 $$\mathcal{S}_{max} = 2\sqrt{2}$$
 
-This is the unique maximum compatible with LRT axioms. ∎
+**Conclusion:** The Tsirelson bound is the unique maximum compatible with LRT axioms. LRT interprets this as the interface stability limit, but deriving 2√2 from first principles remains future work. ∎
 
 ### 5.4 Observer Stability Theorem
 
@@ -729,11 +737,13 @@ Each step uses either an LRT axiom or a standard theorem. No additional assumpti
 
 ## 7. Ontic Booleanity of Actual Outcome Tokens
 
+**Status note:** The Main paper (Section 4.8) presents Ontic Booleanity as a *Conjecture* with a proof sketch, acknowledging that Part II (hidden zero-probability tokens) requires additional rigorous development. This Technical companion provides the fuller argument. Part I (positive-probability tokens, Lemma 7.1) is mathematically rigorous. Part II (Lemma 7.2) provides the detailed reasoning; its final step—that "a token outside all state supports is not a token of the theory"—is the interpretive move requiring further formalization. This section documents the complete argument structure.
+
 ### 7.1 The Epistemic Loophole
 
 A sophisticated objection to LRT's constitutive claim grants that observed outcomes obey 3FLL but suggests this might be epistemic rather than ontic: perhaps 3FLL are filters on *observation*, not constraints on *reality*. Hidden outcome tokens might violate 3FLL while never appearing in measurements.
 
-This section proves such tokens cannot exist. The 3FLL are ontic constraints on actual outcome tokens themselves, not merely epistemic filters on what we can observe.
+This section argues such tokens cannot exist. The 3FLL are ontic constraints on actual outcome tokens themselves, not merely epistemic filters on what we can observe.
 
 ### 7.2 Axioms for Ontic Booleanity
 
