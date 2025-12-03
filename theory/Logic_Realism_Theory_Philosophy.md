@@ -1,7 +1,8 @@
 # Logic Realism Theory: Philosophical Foundations
 
-**James (JD) Longmire**
-ORCID: 0009-0009-1383-7698
+**James (JD) Longmire**\
+ORCID: 0009-0009-1383-7698\
+Northrop Grumman Fellow (unaffiliated research)
 
 **Status:** Working Draft
 **Target Venues:** Philosophy of Science, BJPS, Studies in History and Philosophy of Modern Physics
@@ -133,7 +134,9 @@ This is closer to the *Tractatus* claim that logic is "transcendental" (6.13)—
 
 ### 2.6 The Structural Necessity of Empirical Fact
 
-A central tenet of Logic Realism Theory is that there are no "brute" empirical facts. Under the principle of **Global Parsimony**, any feature of reality that is not grounded in the constitutive base (3FLL) would constitute "surplus structure" and is therefore forbidden.
+A central tenet of Logic Realism Theory is that there are no "brute" empirical facts. Under the **Structural Principle of Global Parsimony**, any feature of reality that is not grounded in the constitutive base (3FLL) would constitute "surplus structure" and is therefore forbidden.
+
+**Status note:** Global Parsimony is a *structural principle* adopted by LRT, not a consequence derived from 3FLL. It functions as a methodological commitment: prefer minimal ontology. Alternative approaches (e.g., accepting brute facts, modal realism) are coherent but rejected by LRT as introducing unjustified surplus structure. See Main paper Section 2.6 for discussion of alternatives.
 
 Consequently, what we traditionally classify as "empirical inputs"—such as Lorentz invariance, the dimensionality of Hilbert space, or the necessity of complex amplitudes—are not arbitrary rules written on top of reality. Rather, they are the **structural preconditions** required for distinguishability to obtain in a stable interface.
 
@@ -343,9 +346,9 @@ LRT's prediction of complex (not real or quaternionic) quantum mechanics predate
 
 **Objection:** "Logical laws are about inference, not about the physical world. You cannot derive physics from logic."
 
-**Reply:** LRT does not derive physics from logic *alone*. The derivation requires physical axioms (continuity, local tomography, information preservation). What LRT shows is that *given* these minimal physical constraints, the logical structure of distinguishability uniquely determines quantum mechanics.
+**Reply:** LRT does not derive physics from logic *alone*. The derivation requires physical axioms (continuity, local tomography, information preservation). These are classified as **Tier-2 physical axioms**—empirically motivated constraints that are not derived from 3FLL but are required for the derivation of quantum mechanics. What LRT shows is that *given* these minimal physical constraints, the logical structure of distinguishability uniquely determines quantum mechanics.
 
-The claim is not "logic entails QM" but "3FLL + minimal physics entails QM."
+The claim is not "logic entails QM" but "3FLL + Tier-2 physical axioms entails QM." This honest accounting distinguishes LRT's constitutive claims (3FLL as conditions for distinguishability) from its physical assumptions (continuity, local tomography, information preservation).
 
 ### 6.2 Objection: This Is Just Reconstruction, Not Interpretation
 
