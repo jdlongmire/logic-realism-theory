@@ -389,6 +389,14 @@ If IIS and Boolean actuality are distinct domains, what connects them?
 
 **Key point:** The interface is not a mechanism (no new forces, no collapse dynamics) but a **structural requirement**. If actuality is Boolean and IIS is not, some structure must mediate. That structure is what quantum mechanics describes.
 
+---
+
+![Figure 1: LRT Ontological Architecture](../../figures/LRT_Fig-1.jpeg)
+
+**Figure 1.** The ontological architecture of Logic Realism Theory. The Infinite Information Space (IIS), constituted by the Three Fundamental Logical Laws, contains non-Boolean structure including superpositions and indeterminate states. Quantum mechanics operates as the interface, characterized by complex Hilbert space, the Born rule, and unitary dynamics. Boolean Actuality, where 3FLL are fully enforced, contains only definite, self-identical, non-contradictory outcomes. The three laws (Identity, Non-Contradiction, Excluded Middle) run through the entire structure, constituting IIS and constraining actuality.
+
+---
+
 ### 3.6 Quantum Mechanics as Interface Theory
 
 This framework identifies quantum mechanics as the mathematical description of the interface:
