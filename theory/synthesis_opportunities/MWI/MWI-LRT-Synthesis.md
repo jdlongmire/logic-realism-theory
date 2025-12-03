@@ -475,44 +475,30 @@ all terms $|i\rangle_S|i\rangle_A$ remain in the state vector. The formalism tre
 
 ### 3.8 The Three-Layer Architecture
 
-The complete picture involves three ontologically distinct layers:
+The complete picture involves three ontologically distinct layers (see Figure 1):
 
-```
-╔══════════════════════════════════════════════════╗
-║   LAYER 1: IIS (Possibility Space)               ║
-║                                                  ║
-║   Full superposition: |ψ⟩ = Σ cᵢ|i⟩            ║
-║   All branches present as distinguishable        ║
-║   Unitary evolution (Schrödinger)               ║
-║   Non-Boolean structure                          ║
-║   MWI correctly describes THIS layer             ║
-╚══════════════════════════════════════════════════╝
-                     ↓
-            ╔════════════════╗
-            ║ LAYER 2:       ║
-            ║ INTERFACE      ║
-            ║                ║
-            ║ Context: M     ║
-            ║ Probability:   ║
-            ║ Pᵢ = |cᵢ|²    ║
-            ║                ║
-            ║ MWI MISSES     ║
-            ║ THIS LAYER     ║
-            ╚════════════════╝
-                     ↓
-╔══════════════════════════════════════════════════╗
-║   LAYER 3: BOOLEAN ACTUALITY                     ║
-║                                                  ║
-║   Single definite outcome: |j⟩                   ║
-║   Boolean structure fully enforced               ║
-║   3FLL applied to propositions about facts       ║
-║   What we observe                                ║
-╚══════════════════════════════════════════════════╝
-```
+**Layer 1: IIS (Possibility Space)**
+- Full superposition: $|\psi\rangle = \sum_i c_i|i\rangle$
+- All branches present as distinguishable configurations
+- Unitary evolution (Schrödinger equation)
+- Non-Boolean structure
+- *MWI correctly describes this layer*
+
+**Layer 2: Interface (Quantum Mechanics)**
+- Measurement context: $M$
+- Probability assignment: $P_i = |c_i|^2$
+- Category transition from non-Boolean to Boolean
+- *MWI misses this layer*
+
+**Layer 3: Boolean Actuality**
+- Single definite outcome: $|j\rangle$
+- Boolean structure fully enforced
+- 3FLL applied to propositions about facts
+- *What we observe*
 
 **MWI's error:** Identifying Layer 1 with Layer 3. Treating IIS structure as exhausting actuality. Claiming all branches are actual because all branches exist in the formalism.
 
-**LRT's correction:** Recognizing three layers. IIS (possibility) and Boolean actuality (instantiation) are ontologically distinct. The interface is not optional extras but required structure given the asymmetry.
+**LRT's correction:** Recognizing three layers. IIS (possibility) and Boolean actuality (instantiation) are ontologically distinct. The interface is not optional but required structure given the asymmetry.
 
 ### 3.9 Formal Statement of the Synthesis
 
@@ -3229,15 +3215,15 @@ MWI requires more actual universes than particles in observable universe. Every 
 
 The integrated information-theoretic resolution via Logic Realism Theory synthesis with Many-Worlds provides:
 
-✓ Wavefunction realism (MWI's central virtue)  
-✓ No dynamical collapse (MWI's central virtue)  
-✓ Deterministic evolution in IIS (MWI's central virtue)  
-✓ Solution to preferred basis problem (MWI's first fatal flaw)  
-✓ Solution to probability problem (MWI's second fatal flaw)  
-✓ Solution to ontological extravagance (MWI's third fatal flaw)  
-✓ Testable predictions (empirical content)  
-✓ Information-theoretic grounding (distinguishability as primitive)  
-✓ Parsimony (two structures vs. infinite worlds)
+- Wavefunction realism (MWI's central virtue)
+- No dynamical collapse (MWI's central virtue)
+- Deterministic evolution in IIS (MWI's central virtue)
+- Solution to preferred basis problem (MWI's first fatal flaw)
+- Solution to probability problem (MWI's second fatal flaw)
+- Solution to ontological extravagance (MWI's third fatal flaw)
+- Testable predictions (empirical content)
+- Information-theoretic grounding (distinguishability as primitive)
+- Parsimony (two structures vs. infinite worlds)
 
 **We conclude:** This synthesis is not merely a reinterpretation of MWI but a structured research program—one that preserves MWI's core commitments (wavefunction realism, universal unitarity, no ad hoc collapse) while addressing its three most criticized vulnerabilities and adding testable structure. The substantive differences (distinct ontological categories, Gleason-based probability, divergent predictions) distinguish this from terminological variation.
 
