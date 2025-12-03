@@ -23,10 +23,10 @@ The main LRT paper makes several claims that invoke external mathematical result
 
 | Claim | External Result | Status |
 |-------|-----------------|--------|
-| Complex Hilbert space from interface constraints | Masanes-Müller reconstruction | ✓ Proven (§3-4, §6) |
-| Born rule from interface structure | Gleason's theorem | ✓ Via inner product (§3.3) |
-| Unitary dynamics from information preservation | Stone's theorem | ✓ Via CBP (§4) |
-| Complex QM is uniquely stable | Reconstruction uniqueness | ✓ Proven (§5, Theorem 5.7) |
+| Complex Hilbert space from interface constraints | Masanes-Müller reconstruction | Proven (§3-4, §6) |
+| Born rule from interface structure | Gleason's theorem | Via inner product (§3.3) |
+| Unitary dynamics from information preservation | Stone's theorem | Via CBP (§4) |
+| Complex QM is uniquely stable | Reconstruction uniqueness | Proven (§5, Theorem 5.7) |
 
 This paper establishes these results by providing:
 
@@ -159,7 +159,7 @@ The metric properties follow:
 - **Symmetry:** $D(s_1, s_2) = D(s_2, s_1)$ (TV distance is symmetric)
 - **Triangle inequality:** $D(s_1, s_3) \leq D(s_1, s_2) + D(s_2, s_3)$ (TV distance satisfies triangle inequality; supremum preserves it)
 
-Therefore, $D$ is a metric. ✓
+Therefore, $D$ is a metric.
 
 **Condition H2: D ∈ [0,1] with D = 1 for perfectly distinguishable states.**
 
@@ -170,7 +170,7 @@ For perfectly distinguishable states (orthogonal in Hilbert space), there exists
 $$P_M(s_1) = (1, 0, 0, \ldots), \quad P_M(s_2) = (0, 1, 0, \ldots)$$
 $$\|P_M(s_1) - P_M(s_2)\|_{TV} = 1$$
 
-Therefore $D = 1$ for perfectly distinguishable states. ✓
+Therefore $D = 1$ for perfectly distinguishable states.
 
 **Condition H3: Continuity of D.**
 
@@ -184,7 +184,7 @@ By triangle inequality:
 $$|D(s_n, t_n) - D(s, t)| \leq |D(s_n, t_n) - D(s, t_n)| + |D(s, t_n) - D(s, t)|$$
 $$\leq D(s_n, s) + D(t_n, t) \to 0$$
 
-Therefore $D$ is continuous. ✓
+Therefore $D$ is continuous.
 
 *Physical interpretation:* A3a ensures that small changes in preparation procedures produce small changes in measurement statistics. Since $D$ is defined via measurement statistics, continuity of dynamics implies continuity of $D$.
 
@@ -196,7 +196,7 @@ Therefore $D$ is continuous. ✓
 - $D(e_i, e_j) = 1$ for $i \neq j$ (orthogonal states are perfectly distinguishable)
 - The measurement in the $\{|e_1\rangle, |e_2\rangle, |e_3\rangle\}$ basis perfectly discriminates all three
 
-The richness condition guarantees such triplets exist for any system with dimension $\geq 3$. For qubits (dimension 2), any two orthogonal states form a perfectly distinguishable pair, and the Hardy construction proceeds with pairs. ✓
+The richness condition guarantees such triplets exist for any system with dimension $\geq 3$. For qubits (dimension 2), any two orthogonal states form a perfectly distinguishable pair, and the Hardy construction proceeds with pairs.
 
 **Conclusion: Hardy Construction Applies.**
 
@@ -394,25 +394,25 @@ Masanes-Müller (2011) derive complex quantum mechanics from five axioms:
 **MM1 (Continuous reversibility) ← A3a + A3b:**
 - A3a gives continuity of dynamics
 - A3b (CBP) requires information preservation, which implies reversibility for pure states
-- Combined: continuous reversible dynamics ✓
+- Combined: continuous reversible dynamics
 
 **MM2 (Tomographic locality) ← A3c:**
-- A3c directly asserts local tomography ✓
+- A3c directly asserts local tomography
 
 **MM3 (Existence of pure states) ← A1 + A2:**
 - Pure states = maximally specified states in IIS
 - 3FLL guarantee that maximally specified states are well-defined (Identity ensures determinacy)
-- A2 guarantees IIS contains them ✓
+- A2 guarantees IIS contains them
 
 **MM4 (Subspace axiom) ← A1 + A2:**
 - Any system with 2+ distinguishable states admits a binary distinction
 - Binary distinction = qubit structure (by A1, distinction is Boolean)
-- This is embedded in larger state space ✓
+- This is embedded in larger state space
 
 **MM5 (Entanglement structure) ← A3c + Hilbert structure (via Lee-Selby):**
 - A3c (local tomography) implies tensor product structure (Theorem 6.2)
 - Hilbert space + tensor product → Uhlmann's theorem = purification uniqueness (Theorem 6.3)
-- Lee-Selby (2016) proves MM1 + MM2 + purification uniqueness yields MM5 ✓
+- Lee-Selby (2016) proves MM1 + MM2 + purification uniqueness yields MM5
 
 **Status:** All five Masanes-Müller axioms follow from LRT axioms. See §6 for the complete MM5 derivation (Theorem 6.4).
 
