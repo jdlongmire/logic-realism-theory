@@ -2100,9 +2100,11 @@ Then threshold phenomena absent → LRT interface prediction falsified.
 
 **Status:** No clear threshold effect yet observed, but experiments are improving. The challenge is distinguishing actualization threshold from decoherence dynamics.
 
-### 8.4 Prediction 3: Consciousness and Actuality Correlation
+### 8.4 Prediction 3: Consciousness and Actuality Correlation (Speculative)
 
-**LRT claim:** Conscious experience correlates with Boolean actuality, not IIS structure.
+**Epistemic status:** This prediction is *significantly more speculative* than Predictions 1-2. The consciousness-actuality claim is a conjectural extension of LRT, not a core result. It is philosophically under-argued and far from empirically testable with current technology. See Section 10.6.4 for extended discussion.
+
+**LRT conjecture:** Conscious experience correlates with Boolean actuality, not IIS structure.
 
 **Implication:** Conscious observers should never experience superposition directly—only Boolean outcomes.
 
@@ -2763,9 +2765,60 @@ $$E = \langle \psi | H | \psi \rangle = \sum_i |c_i|^2 E_i$$
 
 **Moreover:** This prediction is testable (Section 8.4)—if consciousness could exist in superposition, LRT is falsified.
 
-### 10.2 Comparison with Other Synthesis Attempts
+### 10.2 Relocation vs. Resolution of the Measurement Problem
 
-#### 10.2.1 Modal Interpretations
+A sophisticated objection holds that LRT does not *resolve* the measurement problem but merely *relocates* it—from "what dynamical process collapses the wavefunction?" to "what physical condition marks the IIS→Boolean interface?" This objection is partially correct, and intellectual honesty requires explicit acknowledgment.
+
+#### 10.2.1 What LRT Does and Does Not Achieve
+
+**What LRT does NOT do:**
+- Derive a specific dynamical mechanism for actualization from first principles
+- Eliminate all mystery about why one outcome occurs rather than another
+- Provide a complete physical theory of the interface transition
+
+**What LRT DOES do:**
+- Reframe the problem conceptually: measurement is category transition (IIS→Boolean), not dynamical collapse within a single domain
+- Remove conceptual confusions: no "Heisenberg cut," no observer-dependence, no special role for consciousness as causal agent
+- Constrain candidate mechanisms: any interface mechanism must satisfy Global Parsimony (no free parameters) and CBP (information preservation)
+- Turn an interpretive puzzle into an empirical question: "which derivable physical criterion marks the interface?"
+
+#### 10.2.2 Why Relocation Is Progress
+
+The relocation from "what collapses the wavefunction?" to "what marks the interface?" represents genuine progress for three reasons:
+
+**1. Tractability:** The interface question has concrete candidate answers (gravitational self-energy, decoherence threshold, information-theoretic saturation) that make different empirical predictions. The original collapse question had no such concrete candidates within unitary-only frameworks.
+
+**2. Constraint:** LRT's framework constrains candidate mechanisms. Not any mechanism will do—it must be derivable from existing physics (Global Parsimony), preserve information at the fundamental level (CBP), and produce Boolean outputs from non-Boolean inputs. These constraints rule out some proposals and guide future development.
+
+**3. Dissolution of sub-problems:** Many measurement "paradoxes" (Wigner's friend, Schrödinger's cat, quantum Zeno) dissolve once measurement is recognized as interface transition rather than within-domain dynamics. This is not merely terminological—it removes genuine conceptual confusions.
+
+#### 10.2.3 The Interface Postulate as Framework Commitment
+
+The interface postulate—that one branch per measurement context actualizes from IIS to Boolean—is a *framework-level commitment*, comparable to taking Hilbert space structure or unitarity as primitive in other approaches.
+
+**Comparison:**
+- Standard QM takes Hilbert space + Born rule as postulates
+- MWI takes universal unitarity + branch-actuality equivalence as postulates
+- LRT takes 3FLL constitutivity + IIS/Boolean distinction as postulates
+
+No interpretation derives everything from nothing. The question is which postulates are most parsimonious, most explanatory, and most empirically constraining. LRT's interface postulate scores well on parsimony (two domains vs. infinite worlds), explanation (unified account of 17 phenomena), and constraint (derivability requirement on mechanisms).
+
+**Honest accounting:** The connection from 3FLL to operational axioms is "motivated but not rigorously proven" (Table 1.1). The interface postulate is a substantive metaphysical commitment, not a logical derivation. This paper presents a *research program*, not a completed theory.
+
+#### 10.2.4 What Would Count as Full Resolution
+
+Full resolution of the measurement problem would require:
+1. Derivation of the interface criterion from independent physical principles
+2. Quantitative prediction of actualization timing and statistics
+3. Experimental confirmation distinguishing from no-collapse alternatives
+
+LRT provides framework for (1)-(3) but does not complete them. Sections 8.2-8.3 outline how (2) and (3) might proceed once (1) is achieved. The interface criterion remains the central open problem.
+
+**The honest summary:** LRT transforms the measurement problem from a conceptual puzzle (how can unitary evolution produce definite outcomes?) into an empirical research program (what physical criterion marks the interface, and how can we test it?). This is relocation, not elimination—but it is progress.
+
+### 10.3 Comparison with Other Synthesis Attempts
+
+#### 10.3.1 Modal Interpretations
 
 **Modal interpretations** (van Fraassen, Kochen, Dieks): Distinguish possible from actual properties. Systems have definite properties (actual) even when wavefunction is superposition.
 
@@ -2782,7 +2835,7 @@ $$E = \langle \psi | H | \psi \rangle = \sum_i |c_i|^2 E_i$$
 
 **Assessment:** LRT can be seen as rigorous version of modal interpretation, with logical grounding and interface mechanism replacing ad hoc property assignment.
 
-#### 10.2.2 Consistent Histories
+#### 10.3.2 Consistent Histories
 
 **Consistent histories** (Griffiths, Omnès, Gell-Mann & Hartle): Define consistent sets of histories; quantum probabilities assigned to histories in consistent set.
 
@@ -2799,7 +2852,7 @@ $$E = \langle \psi | H | \psi \rangle = \sum_i |c_i|^2 E_i$$
 
 **Assessment:** Consistent histories are more instrumentalist (avoiding ontological commitment). LRT is more realist (making definite claims about what exists).
 
-#### 10.2.3 Transactional Interpretation
+#### 10.3.3 Transactional Interpretation
 
 **Transactional interpretation** (Cramer): Quantum process involves offer wave (forward in time) and confirmation wave (backward in time). Transaction creates actualization.
 
@@ -2816,11 +2869,11 @@ $$E = \langle \psi | H | \psi \rangle = \sum_i |c_i|^2 E_i$$
 
 **Assessment:** Transactional is more specific about mechanism but requires controversial retrocausality. LRT is more general, avoiding retrocausality.
 
-### 10.3 Integration with Other LRT Results
+### 10.4 Integration with Other LRT Results
 
 The MWI synthesis is one component of broader Logic Realism Theory program. How does it integrate?
 
-#### 10.3.1 GRW Synthesis
+#### 10.4.1 GRW Synthesis
 
 **Companion paper:** "Deriving Collapse Parameters from Gravitational Self-Energy: The LRT+GRW Synthesis"
 
@@ -2831,7 +2884,7 @@ The MWI synthesis is one component of broader Logic Realism Theory program. How 
 
 **Result:** MWI+LRT says *what* actualizes (one branch from IIS); GRW+LRT says *how* (collapse rate from gravity).
 
-#### 10.3.2 Technical Foundations
+#### 10.4.2 Technical Foundations
 
 **Companion paper:** "Logic Realism Theory: Technical Foundations"
 
@@ -2843,7 +2896,7 @@ The MWI synthesis is one component of broader Logic Realism Theory program. How 
 
 **Result:** MWI synthesis builds on rigorous mathematical foundations, not informal philosophical arguments.
 
-#### 10.3.3 QFT Extension
+#### 10.4.3 QFT Extension
 
 **Companion paper:** "LRT Constraints on QFT"
 
@@ -2854,9 +2907,9 @@ The MWI synthesis is one component of broader Logic Realism Theory program. How 
 
 **Result:** MWI+LRT framework scales to relativistic QFT, not just non-relativistic QM.
 
-### 10.4 Philosophical Implications
+### 10.5 Philosophical Implications
 
-#### 10.4.1 Realism vs. Anti-Realism
+#### 10.5.1 Realism vs. Anti-Realism
 
 **The realism question:** Does quantum mechanics describe reality, or just our knowledge of reality?
 
@@ -2871,7 +2924,7 @@ The MWI synthesis is one component of broader Logic Realism Theory program. How 
 
 **Result:** LRT is realist interpretation, committed to objective physical reality independent of observers, while making precise distinction between possible and actual.
 
-#### 10.4.2 Determinism vs. Indeterminism
+#### 10.5.2 Determinism vs. Indeterminism
 
 **The determinism question:** Is the future determined by the present?
 
@@ -2886,7 +2939,7 @@ The MWI synthesis is one component of broader Logic Realism Theory program. How 
 
 **Implication:** Genuinely open future (until actualization), not subjective uncertainty about predetermined fact.
 
-#### 10.4.3 Free Will
+#### 10.5.3 Free Will
 
 **Relevance:** If all branches exist (MWI), and I make different choices in different branches, what does "free will" mean?
 
@@ -2901,9 +2954,9 @@ The MWI synthesis is one component of broader Logic Realism Theory program. How 
 
 **Result:** LRT is more compatible with libertarian free will (choices determine which possibilities actualize). MWI requires compatibilist or eliminativist account.
 
-### 10.5 Open Questions
+### 10.6 Open Questions
 
-#### 10.5.1 Interface Mechanism
+#### 10.6.1 Interface Mechanism
 
 **Question:** What physical process drives actualization?
 
@@ -2917,7 +2970,7 @@ The MWI synthesis is one component of broader Logic Realism Theory program. How 
 
 **Status:** Open empirical question. Experiments underway (Section 8).
 
-#### 10.5.2 Quantum Cosmology
+#### 10.6.2 Quantum Cosmology
 
 **Question:** What about quantum state of universe?
 
@@ -2935,7 +2988,7 @@ The MWI synthesis is one component of broader Logic Realism Theory program. How 
 
 **Status:** Under development. Requires quantum gravity progress.
 
-#### 10.5.3 The Ontological Status of IIS - Defended
+#### 10.6.3 The Ontological Status of IIS - Defended
 
 **Question:** In what sense does IIS "exist"?
 
@@ -3003,20 +3056,23 @@ IIS provides a direct answer: Hilbert space describes the structure of distingui
 
 **Summary:** IIS exists as physically real information structure governed by physical bounds and conservation laws, but not instantiated in Boolean matter/energy configuration. This is information realism—a position grounded in quantum information theory, black hole thermodynamics, and holographic principles, not philosophical speculation.
 
-#### 10.5.4 Consciousness and Actuality
+#### 10.6.4 Consciousness and Actuality (Speculative)
+
+**Epistemic status:** This subsection is *significantly more speculative* than the rest of the paper. The consciousness-actuality link is a conjectural extension of LRT's ontology, not a central result. It is included to mark a research direction, not a settled conclusion. The arguments below are philosophically under-developed and far from empirically operationalizable given current neuroscience and quantum technology.
 
 **Question:** Why does consciousness require Boolean actuality?
 
-**LRT claim:** Conscious experience requires determinate states (3FLL enforcement).
+**LRT conjecture:** Conscious experience requires determinate states (3FLL enforcement).
 
-**But:**
-- Why is determinacy necessary for consciousness?
+**Open issues:**
+- Why is determinacy necessary for consciousness? (No rigorous argument provided)
 - Could consciousness exist in "degree" (proportional to coherence)?
 - What about quantum consciousness proposals (Penrose-Hameroff)?
+- How would we test this empirically given current technology?
 
-**Status:** Controversial. LRT makes empirical claim (consciousness correlates with actuality) but philosophical grounding remains debated.
+**Status:** Highly speculative. LRT makes an empirical conjecture (consciousness correlates with actuality) but philosophical grounding and experimental methodology remain undeveloped. This direction is included for completeness, not as a core claim of the synthesis.
 
-### 10.6 Research Directions
+### 10.7 Research Directions
 
 **Immediate next steps:**
 1. **Formalize interface criterion:** Precise threshold for actualization
@@ -3035,7 +3091,7 @@ IIS provides a direct answer: Hilbert space describes the structure of distingui
 2. **Unified physics:** Show all fundamental physics emerges from logical structure + minimal physical inputs
 3. **Explain mathematics-physics connection:** Why does math describe reality? Because both are logical structure.
 
-### 10.7 Critical Self-Assessment
+### 10.8 Critical Self-Assessment
 
 **What LRT+MWI synthesis achieves:**
 - Solves MWI's three fatal problems (basis, probability, ontology)
