@@ -98,9 +98,69 @@ Formalized survey findings as trackable issue: `theory/issues/ISSUE_007_All_Work
 - Acceptance criteria defined
 - Links to related issues (003, 005, 006)
 
+### 3. MWI-LRT Synthesis Paper Evaluation
+
+**Date**: 2025-12-03 (Session continuation)
+
+Completed detailed evaluation of user-added MWI synthesis documents:
+
+#### Documents Evaluated:
+
+1. **MWI-LRT-Synthesis.md** (~199KB, ~40,000 words, 11 sections)
+   - Target: Foundations of Physics
+   - Core thesis: "Many virtual worlds, one logically actualized"
+   - Complete first draft ready for revision
+
+2. **MWI-LRT-Section-work.md** (~28KB, ~4,200 words)
+   - Refined Section 4: Preferred Basis Problem
+   - Contains Theorem 4.1 (Contextual Basis Selection)
+   - Contains Theorem 4.2 (Regress Blocking)
+
+#### Full Evaluation Completed (See above conversation)
+
+#### Integration Completed
+
+**Action**: Integrated refined Section 4 from `MWI-LRT-Section-work.md` into main `MWI-LRT-Synthesis.md`
+
+**Changes Made**:
+- Added Section 4.5.1: Interface Threshold vs. Measurement Context (~400 words)
+- Added Theorem 4.2 (Regress Blocking) with formal statement
+- Added Objection 5: von Neumann chain regress with explicit reply
+- Improved Theorem 4.1: separate Gleason's role from context's role
+- Improved Definition 4.1: context constituted at threshold, not presupposed
+- Added "Regress vulnerability" row to comparison table
+- Expanded summary to 4 points (joint actualization added)
+
+**Commit**: `3091319` - "Integrate refined Section 4 into MWI-LRT Synthesis paper"
+
+### 4. IIS Ontology Defense - Systematic Addition
+
+**Date**: 2025-12-03 (Session continuation)
+
+Added the "bridge from metaphysics to physics" framing across all four papers to strengthen IIS positioning.
+
+**Core argument added:**
+- IIS is not exotic ontology—it's what physics already uses
+- Hilbert space, configuration space, Fock space are already accepted as real
+- Challenge to critics: "What do YOU think Hilbert space describes?"
+- LRT asks "why does QM have this structure?" (derivation) not "what does QM mean?" (interpretation)
+
+**Papers modified:**
+
+| Paper | Location | Addition |
+|-------|----------|----------|
+| MWI-LRT-Synthesis | Section 1.4.2 | "IIS is what physics already uses" paragraph |
+| MWI-LRT-Synthesis | Section 3.0 | New "Bridge from Metaphysics to Physics" subsection |
+| MWI-LRT-Synthesis | Section 10.5.3 | "Challenge to critics" with responses to alternatives |
+| Main Paper | Section 2.2 | IIS defense after "IIS is not:" list |
+| Philosophy Paper | Section 3.4 | "Philosophical note on IIS ontology" |
+| Technical Paper | Section 1.1a | New "Methodological Note: What IIS Represents" |
+
+**Commit**: `963f6f5` - "Add IIS ontology defense across all papers"
+
 ---
 
-## Interaction Count: 8
+## Interaction Count: 14
 
 ---
 

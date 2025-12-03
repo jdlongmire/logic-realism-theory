@@ -1,0 +1,3578 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Logic_Realism_Theory_Main</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1
+id="it-from-bit-bit-from-fit-foundational-physics-logically-remastered">It
+from Bit, Bit from Fit: Foundational Physics Logically Remastered</h1>
+<p><strong>James (JD) Longmire</strong> ORCID: 0009-0009-1383-7698
+Northrop Grumman Fellow (unaffiliated research)</p>
+<hr />
+<h2 id="abstract">Abstract</h2>
+<p>Every physical measurement ever conducted has yielded exactly one
+outcome: self-identical, non-contradictory, determinate. This holds
+across all domains, scales, and epochs of physical inquiry, including a
+century of quantum mechanics where violations were actively sought.</p>
+<p>This paper argues that the Three Fundamental Laws of Logic (Identity,
+Non-Contradiction, and Excluded Middle) are not cognitive conventions
+but ontological constraints constitutive of physical distinguishability.
+From this thesis, quantum mechanics emerges as the unique stable
+structure at the interface between non-Boolean possibility and Boolean
+actuality.</p>
+<p>The framework derives rather than postulates: complex Hilbert space
+structure follows from interface constraints combined with the physical
+requirement of compositional consistency (local tomography); the Born
+rule follows from Gleason’s theorem; unitary dynamics follows from
+information preservation requirements. These derivations are conditional
+on both logical (3FLL) and physical (continuity, local tomography)
+inputs, but this specific combination suffices to reconstruct the theory
+without independent postulation.</p>
+<p>One structural prediction, that quantum mechanics requires complex
+amplitudes, has been experimentally confirmed (Renou et al., 2021). The
+framework specifies twelve explicit conditions that would falsify it,
+including fundamental information loss or underivable collapse
+parameters, and makes testable predictions about collapse mechanisms
+currently under experimental investigation.</p>
+<p>Logic Realism Theory provides unified explanation for seventeen
+quantum phenomena that other interpretations treat as independent
+postulates, while maintaining realism, locality, and parsimony. The
+competing interpretations either refuse ontological commitment
+(Copenhagen, QBism), require massive ontological excess (Many-Worlds),
+or introduce unexplained nonlocal mechanisms (Bohmian, GRW).</p>
+<p>The “unreasonable effectiveness of mathematics” in physics is
+revealed as an illusion caused by viewing physical laws as contingent.
+By strictly enforcing Global Parsimony, LRT shows that fundamental
+physical constraints—from the Born Rule to Special Relativity—are the
+unique mathematical solutions necessary to maintain the Three
+Fundamental Laws of Logic at the interface of possibility and actuality.
+There is no “Bit” without the “Fit” of logical consistency.</p>
+<p><strong>Keywords:</strong> quantum foundations, logic realism, Born
+rule, measurement problem, entanglement, falsifiability</p>
+<hr />
+<h2 id="introduction">1. Introduction</h2>
+<h3 id="the-empirical-puzzle">1.1 The Empirical Puzzle</h3>
+<p>Every physical measurement ever conducted has yielded exactly one
+outcome: self-identical, non-contradictory, determinate. No detector has
+simultaneously fired and not-fired. No particle has been measured in
+contradictory states. No experimental record has ever displayed P and
+¬P.</p>
+<p>This pattern holds universally. Across all of physics, chemistry,
+biology, and engineering, across all scales from Planck length to
+cosmological horizon, across all epochs from the early universe to the
+present, the Three Fundamental Laws of Logic (3FLL) have never been
+violated:</p>
+<ul>
+<li><strong>Identity:</strong> Everything is what it is (∀x: x = x)</li>
+<li><strong>Non-Contradiction:</strong> Nothing both is and is not in
+the same respect (∀x,P: ¬(P(x) ∧ ¬P(x)))</li>
+<li><strong>Excluded Middle:</strong> Everything either is or is not
+(∀x,P: P(x) ∨ ¬P(x))</li>
+</ul>
+<p>This is not for lack of trying.</p>
+<p>Quantum mechanics appeared to offer violations. Superposition looks
+like “both A and not-A.” Entanglement looks like instantaneous
+contradiction-propagation. The measurement problem looks like
+contradictory states persisting until observed. For nearly a century,
+physicists and philosophers actively sought to interpret quantum
+mechanics as requiring non-classical logic.</p>
+<p>Birkhoff and von Neumann (1936) proposed quantum logic with
+non-distributive structure. Paraconsistent approaches attempted to
+formalize quantum states as true contradictions. The measurement problem
+generated interpretations explicitly designed to accommodate logical
+indeterminacy. Sophisticated formal tools were developed. Professional
+incentives favored finding violations; it would have been a major
+result.</p>
+<p>Every attempt failed.</p>
+<p>The failure was not for lack of formal resources. Paraconsistent
+logics, developed rigorously since the 1960s (da Costa 1963; Priest
+&amp; Routley 1989), provide mathematical frameworks where
+contradictions do not entail everything. Dialetheism, the view that some
+contradictions are true, has been seriously defended by philosophers
+including Graham Priest, who argues that semantic paradoxes, vagueness,
+and even motion involve true contradictions (Priest 2006). Impossible
+worlds semantics models scenarios where classical logic fails (Berto
+&amp; Jago 2019). Buddhist logic explored four-valued structures
+(catuṣkoṭi) for millennia before Western analytic philosophy engaged
+these questions.</p>
+<p>These are not idle speculations. Paraconsistent logic has an official
+American Mathematical Society classification (03B53). Five World
+Congresses on Paraconsistency have convened since 1997. The formal
+apparatus for conceiving and reasoning about 3FLL violations is mature
+and mathematically rigorous.</p>
+<p>Yet no physical observation has ever instantiated what these
+frameworks describe. The gap between formal conceivability and physical
+actuality is the core explanandum.</p>
+<p>Upon careful analysis, every apparent violation dissolved.
+Superposition is indeterminacy prior to measurement, not contradiction
+in actuality. Entanglement produces correlations, not signals.
+Wave-particle duality reflects complementary experimental contexts, not
+contradictory properties. And measurement, always, without exception,
+yields one definite outcome.</p>
+<p>The quantum case is decisive precisely because it represents our best
+opportunity to find violations. If 3FLL were going to fail anywhere in
+physics, quantum mechanics is where it would happen. The formalism
+practically invites the interpretation that contradictions are real. Yet
+the logical structure holds.</p>
+<p>This pattern demands explanation.</p>
+<p>The demand is not merely philosophical. Quantum mechanics is our most
+successful physical theory, yet we cannot say why it has its specific
+structure: why complex Hilbert space, why the Born rule, why unitary
+dynamics. This explanatory vacuum has consequences. Without agreed-upon
+criteria for what counts as explanation, quantum foundations tolerates
+speculation other fields would not: infinite unobservable branches,
+consciousness-caused collapse, retrocausality. “Interpretation” becomes
+license for speculation unconstrained by structural requirements.
+Meanwhile, practical developments (quantum computing, quantum gravity)
+require foundational clarity we do not have. The pattern demands
+explanation, and the explanation must be disciplined.</p>
+<h3 id="the-thesis">1.2 The Thesis</h3>
+<p>This paper defends a physical thesis:</p>
+<blockquote>
+<p><strong>The Three Fundamental Laws of Logic are ontological
+constraints constitutive of physical distinguishability
+itself.</strong></p>
+</blockquote>
+<p>Distinguishability, the capacity for one thing to be different from
+another, is not discovered in the world. It is what 3FLL establish.
+Without Identity, there is no basis for a state to be determinately
+itself. Without Non-Contradiction, there is no basis for a state to
+exclude alternatives. Without Excluded Middle, there is no basis for
+exhaustive distinction.</p>
+<p>The laws are not rules we impose on experience. They are conditions
+under which experience, and physical existence, are possible.</p>
+<h3 id="the-asymmetry-of-burden">1.3 The Asymmetry of Burden</h3>
+<p>The claim that the Three Fundamental Laws of Logic are merely formal,
+cognitive, linguistic, or contingently emergent carries a precise and
+unmet evidential obligation:</p>
+<blockquote>
+<p>Any critic who denies their ontological and constitutive status must
+produce at least one verified instance of a well-defined physical
+observable actualizing a non-Boolean or contradictory outcome in the
+historical record of measurement.</p>
+</blockquote>
+<p>No such instance exists.</p>
+<p>Every detector click, every photographic plate spot, every CCD pixel,
+every gravitational-wave strain datum, every spectroscopic line,
+trillions of independent events across thirteen-plus orders of magnitude
+in energy and fourteen billion years, has been strictly self-identical,
+non-contradictory, and determinate. The conformity is not probabilistic;
+it is absolute.</p>
+<p>Until a single counterexample is exhibited, the universality of 3FLL
+compliance stands as an unexplained brute fact on any view that treats
+the laws as optional. Logic Realism Theory removes the brute fact by
+elevating the laws from unexplained regularities to the constitutive
+conditions of physical distinguishability itself.</p>
+<p>The burden therefore lies entirely with the objector. LRT discharges
+its burden by showing that quantum mechanics is the unique stable
+structure compatible with that constitutive role.</p>
+<h3 id="the-consequence">1.4 The Consequence</h3>
+<p>If 3FLL are constitutive of distinguishability, a structural
+consequence follows.</p>
+<p>Define two domains:</p>
+<ul>
+<li><p><strong>Infinite Information Space (IIS):</strong> The totality
+of distinguishable configurations, everything that can be distinguished
+from everything else. This space is constituted by 3FLL and contains
+both determinate and indeterminate states.</p></li>
+<li><p><strong>Boolean Actuality:</strong> The domain where 3FLL are
+fully enforced, where every proposition has exactly one truth value.
+This is what we call physical reality.</p></li>
+</ul>
+<p>IIS is richer than Boolean structure. It contains superpositions,
+indeterminate configurations, states not yet resolved to definite
+values. Boolean actuality permits only determinate states.</p>
+<p>This creates an interface problem: what structure mediates between
+non-Boolean IIS and Boolean actuality?</p>
+<p>The answer is quantum mechanics.</p>
+<p>Quantum mechanics is not one option among many. Given the constraints
+that 3FLL impose on any transition from possibility to actuality,
+quantum mechanics is the unique stable interface structure. Classical
+probability satisfies formal interface requirements but produces no
+stable atoms, no chemistry, no observers. Real and quaternionic quantum
+theories fail compositional requirements. Generalized probabilistic
+theories exceeding quantum correlations permit signaling. Only complex
+Hilbert space quantum mechanics with the Born rule produces stable
+physical existence.</p>
+<p>This is the central claim: quantum mechanics has its specific
+structure because that structure is uniquely selected by the
+requirements of the IIS-actuality interface.</p>
+<h3 id="what-this-paper-establishes">1.5 What This Paper
+Establishes</h3>
+<p>The argument proceeds as follows:</p>
+<p><strong>Section 2</strong> develops the framework: IIS, Boolean
+actuality, the interface problem, and the Consistency Bridging Principle
+that constrains admissible dynamics.</p>
+<p><strong>Section 3</strong> presents the derivation chain: from 3FLL,
+interface constraints, and physical requirements (continuity, local
+tomography) to complex Hilbert space, the Born rule, and unitary
+dynamics. Key results are derived from this combined foundation, not
+postulated independently.</p>
+<p><strong>Section 4</strong> shows what the framework explains:
+seventeen quantum phenomena receive unified explanation from common
+resources.</p>
+<p><strong>Section 5</strong> compares Logic Realism Theory (LRT) to
+competing interpretations, evaluating each as a physical theory on
+common criteria.</p>
+<p><strong>Section 6</strong> presents predictions and falsifiers: what
+LRT implies, what has been confirmed, what is currently testable, and
+what would refute the theory.</p>
+<p><strong>Section 7</strong> addresses open questions and
+concludes.</p>
+<h3 id="what-this-paper-claims-and-does-not-claim">1.6 What This Paper
+Claims and Does Not Claim</h3>
+<p><strong>LRT claims:</strong></p>
+<ul>
+<li>3FLL are ontological, not merely cognitive or linguistic</li>
+<li>Quantum mechanics is the unique stable IIS-actuality interface</li>
+<li>This explains otherwise unexplained features of quantum
+structure</li>
+<li>The framework is empirically falsifiable</li>
+</ul>
+<p><strong>LRT does not claim:</strong></p>
+<ul>
+<li>Quantum mechanics is logically necessary (it is structurally
+selected)</li>
+<li>All of physics derives from logic alone (physical constraints are
+also required)</li>
+<li>The measurement problem is dynamically solved (it is structurally
+dissolved)</li>
+<li>All open questions are answered (several are explicitly
+identified)</li>
+</ul>
+<p>The distinction between derivation and selection is crucial. We do
+not derive quantum mechanics from pure logic. We show that quantum
+mechanics is the unique structure compatible with stable
+information-bearing existence given the interface requirements. This is
+a selection claim with empirical content, not a claim of logical
+necessity.</p>
+<hr />
+<h2 id="the-framework">2. The Framework</h2>
+<h3 id="distinguishability-and-the-three-laws">2.1 Distinguishability
+and the Three Laws</h3>
+<p>Distinguishability is not a primitive feature of reality that we
+discover. It is what the Three Fundamental Laws establish.</p>
+<p>For state A to be distinguishable from state B:</p>
+<ul>
+<li><strong>Identity</strong> must hold: A = A and B = B. Each state
+must be determinately itself.</li>
+<li><strong>Non-Contradiction</strong> must hold: It cannot be that A =
+B and A ≠ B simultaneously.</li>
+<li><strong>Excluded Middle</strong> must hold: Either A = B or A ≠ B.
+No indeterminate middle.</li>
+</ul>
+<p>Without these conditions, there is no basis for one state to differ
+from another. Distinguishability just <em>is</em> the application of
+3FLL to a domain. The laws do not describe distinguishability; they
+constitute it.</p>
+<p>This claim invites a circularity objection: are we defining
+distinguishability in terms of 3FLL, then claiming 3FLL are necessary
+for distinguishability? No. The argument is transcendental, not
+definitional. We ask: what must be the case for distinguishability to be
+possible at all? For state A to be distinguished from state B, A must be
+determinately A (Identity), A must not simultaneously be B and not-B
+(Non-Contradiction), and A must either be B or not be B (Excluded
+Middle). These are not stipulations about what “distinguishability”
+means; they are conditions without which distinction cannot obtain. The
+question is not “what do we mean by distinguishability?” but “what makes
+distinguishability possible?” The answer is 3FLL.</p>
+<p>This is the foundational claim of Logic Realism Theory. The laws are
+not cognitive filters we impose, not linguistic conventions we adopt,
+not useful approximations we employ. They are the conditions under which
+anything can be distinguished from anything else. The Technical
+companion (Theorem 7.1) proves this claim is ontic rather than
+epistemic: the continuity structure of quantum mechanics excludes hidden
+non-Boolean tokens even at probability zero.</p>
+<h3 id="the-infinite-information-space">2.2 The Infinite Information
+Space</h3>
+<p><strong>Definition:</strong> The Infinite Information Space (IIS) is
+the totality of distinguishable configurations, every state that can be
+distinguished from every other state, as constituted by 3FLL. IIS is
+infinite in the sense that the space of distinguishable configurations
+is unbounded; there is no finite limit to the distinctions that can be
+drawn.</p>
+<p>IIS is not: - A Platonic realm of abstract objects - A set-theoretic
+construction (which would face cardinality paradoxes) - Merely epistemic
+(representing what we don’t know) - Exotic new ontology added to
+physics</p>
+<p><strong>IIS is what physics already uses.</strong> Consider what
+physicists routinely treat as real: Hilbert space (infinite-dimensional,
+not embedded in spacetime), configuration space (3N dimensions for N
+particles), Fock space (variable particle number), phase space (the
+arena for statistical mechanics). These mathematical structures are not
+“in” physical space, yet physics operates with them as describing
+something physically meaningful. IIS names what these structures
+represent: the space of distinguishable possibilities. The question for
+skeptics is not “how can IIS be real?” but “what do you think Hilbert
+space describes?” If the wavefunction is physically meaningful, it must
+represent something. IIS is explicit about what.</p>
+<p>IIS is the structural space of what <em>can be distinguished</em>.
+Its existence is not the existence of a thing among things, but the
+existence of a structural condition, the condition under which distinct
+states are possible at all.</p>
+<p><strong>Co-primitive with 3FLL:</strong> IIS and 3FLL are mutually
+constitutive. Without 3FLL, IIS would be undifferentiated noise, no
+state distinguishable from any other. Without IIS, 3FLL would have
+nothing to structure. This parallels Borges’ Library of Babel: IIS
+contains every possible informational configuration; 3FLL make the
+library navigable by constituting what makes one configuration
+distinguishable from another.</p>
+<p><strong>Functional characterization:</strong> IIS is characterized
+functionally rather than by stipulating a mathematical structure at the
+outset. Its properties are <em>derived</em>, not assumed. Premature
+mathematization would beg questions about which formalism applies.</p>
+<p>What we can say prior to derivation: - IIS is not Boolean (contains
+determinate states, indeterminate states, superpositions, classical
+mixtures) - IIS is structured by distinguishability; the “metric” is how
+distinguishable states are from each other - IIS contains all consistent
+Generalized Probabilistic Theories (GPTs) as substructures (Hardy, 2001;
+Chiribella et al., 2011)</p>
+<p><strong>Mathematical characterization:</strong> IIS can be formally
+defined as the maximal collection of states closed under
+distinguishability:</p>
+<p><span class="math display">\[\mathcal{I} = \{s : D \text{ is defined
+on } s \times \mathcal{I}\}\]</span></p>
+<p>The derivation chain (Section 3) shows that IIS, equipped with the
+inner product induced by distinguishability, has complex Hilbert space
+form at the interface with Boolean actuality. This result invokes the
+Masanes-Müller reconstruction theorem. The mathematical structure
+<em>emerges</em> from the framework rather than being imposed on it.</p>
+<p><strong>Physical interpretation:</strong> For familiar quantum
+systems, IIS takes concrete form. A single qubit’s IIS is the Bloch
+sphere, with the distinguishability metric <span
+class="math inline">\(D\)</span> giving the trace distance between
+states. In a two-slit experiment, the superposition state resides in IIS
+with definite identity (it is determinately <span
+class="math inline">\(|\psi\rangle\)</span>) while lacking definite
+which-path information. For composite systems, entangled states
+represent correlation structures in IIS not reducible to subsystem
+states. The Technical companion (§3.4) develops these examples in
+detail, showing how the abstract IIS definition maps onto the standard
+quantum formalism.</p>
+<p>Crucially, IIS is richer than Boolean structure. It contains:</p>
+<table>
+<colgroup>
+<col style="width: 48%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr>
+<th>State Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Determinate states</td>
+<td>Fully specified configurations</td>
+</tr>
+<tr>
+<td>Indeterminate states</td>
+<td>Distinguishable but not resolved to definite values</td>
+</tr>
+<tr>
+<td>Superpositions</td>
+<td>Specific indeterminate states with interference structure</td>
+</tr>
+<tr>
+<td>Mixtures</td>
+<td>Probabilistic combinations without interference</td>
+</tr>
+</tbody>
+</table>
+<p>Indeterminacy is not contradiction. A state can be distinguishable
+from other states without having definite values for all properties.
+This distinction is essential: IIS contains genuine indeterminacy; it
+does not contain contradictions.</p>
+<h3 id="boolean-actuality">2.3 Boolean Actuality</h3>
+<p><strong>Definition:</strong> Boolean Actuality is the domain where
+3FLL are fully enforced, where every proposition about the state of
+affairs has exactly one truth value.</p>
+<p>When something becomes actual, when it manifests as a physical state
+of affairs, it must satisfy 3FLL completely:</p>
+<ul>
+<li><strong>Identity:</strong> The state is determinately what it
+is</li>
+<li><strong>Non-Contradiction:</strong> The state does not both have and
+lack any property</li>
+<li><strong>Excluded Middle:</strong> For any well-defined property, the
+state either has it or does not</li>
+</ul>
+<p>Actuality is Boolean. Every measurement outcome is definite. Every
+physical record is determinate. Every causal interaction involves states
+that are one way rather than another.</p>
+<p>This is not an interpretation. It is what we observe. Every
+measurement, without exception, yields one outcome.</p>
+<h3 id="the-interface-problem">2.4 The Interface Problem</h3>
+<p>The asymmetry between IIS and Boolean actuality creates a fundamental
+structural problem:</p>
+<table>
+<thead>
+<tr>
+<th>Domain</th>
+<th>Structure</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IIS</td>
+<td>Non-Boolean</td>
+<td>Determinate and indeterminate states</td>
+</tr>
+<tr>
+<td>Actuality</td>
+<td>Boolean</td>
+<td>Only determinate states</td>
+</tr>
+</tbody>
+</table>
+<p>IIS contains more than actuality can accommodate. Superpositions
+exist as elements of IIS but cannot exist as actualized facts. Something
+must connect these domains.</p>
+<p>This is the <strong>interface problem</strong>: What structure
+mediates between non-Boolean IIS and Boolean actuality?</p>
+<p>Any interface must satisfy three constraints derived from 3FLL:</p>
+<ol type="1">
+<li><p><strong>Totality</strong> (from Excluded Middle): The interface
+must be defined for all IIS states. Every state must be capable of
+yielding a definite outcome.</p></li>
+<li><p><strong>Single-valuedness</strong> (from Non-Contradiction): No
+state may yield contradictory outcomes in the same context. The
+interface produces no contradictions.</p></li>
+<li><p><strong>Distinguishability-preservation</strong> (from Identity):
+If states are distinguishable in IIS, their actualization patterns must
+not collapse that distinction entirely.</p></li>
+</ol>
+<p>Multiple mathematical structures satisfy these formal constraints:
+classical probability, quantum mechanics, real quantum mechanics,
+quaternionic quantum mechanics, various generalized probabilistic
+theories. The interface constraints alone do not uniquely determine the
+structure.</p>
+<h3 id="the-consistency-bridging-principle">2.5 The Consistency Bridging
+Principle</h3>
+<p>What constrains dynamics within IIS? Not every conceivable
+transformation can be physically admissible.</p>
+<p>The answer follows from the structure itself:</p>
+<blockquote>
+<p><strong>Consistency Bridging Principle (CBP):</strong> Admissible
+transformations on IIS are only those for which all reachable states
+can, in principle, participate in a consistent resolution to Boolean
+actuality.</p>
+</blockquote>
+<p>CBP is not an additional postulate. It is an architectural
+requirement. Any transformation that produced states incapable of
+Boolean resolution would produce states with no path to actuality. Such
+states would be physical dead ends, configurations that cannot manifest
+as determinate facts.</p>
+<p>CBP constrains dynamics to preserve the possibility of consistent
+actualization. It does not specify <em>when</em> actualization occurs or
+<em>which</em> outcome obtains. It constrains what transformations are
+admissible in the first place.</p>
+<p><strong>Key consequence:</strong> CBP implies that fundamental
+dynamics must be reversible. Irreversible dynamics destroy information;
+they map distinct states to the same output. But information destruction
+requires a mechanism: something must absorb or erase the distinction.
+Any such mechanism would constitute additional structure beyond IIS and
+3FLL. By parsimony (derived below), no such surplus structure exists at
+the fundamental level. Therefore, fundamental IIS dynamics preserve
+information.</p>
+<h3 id="global-parsimony">2.6 Global Parsimony</h3>
+<p>A principle of parsimony follows from the constitutive role of
+3FLL:</p>
+<p>If 3FLL constitute distinguishability, and IIS is the space
+constituted by 3FLL, then actuality contains exactly what this
+constitutive base generates, no more, no less.</p>
+<p><strong>Global Parsimony:</strong> Actuality contains exactly the
+propositions whose truth values are grounded in (3FLL + initial
+conditions) and their consequences. No surplus structure exists.</p>
+<p><strong>Derivation:</strong> If 3FLL constitute distinguishability,
+and all physical structure presupposes distinguishability, then all
+physical structure must trace to 3FLL. Consider what surplus structure
+would require: structure not traceable to 3FLL would need
+distinguishability from outside the only source of distinguishability.
+But there is no such source available; distinguishability just is what
+3FLL establish. Surplus structure is therefore incoherent. Global
+Parsimony is not an aesthetic preference or methodological heuristic; it
+is the closure condition on the constitutive claim itself.</p>
+<p>This is a structural consequence of what “constitution” means. If
+3FLL constitute the domain, the domain contains what they generate.
+Propositions requiring additional grounding sources have no truthmakers
+within the framework.</p>
+<p>Global Parsimony has teeth:</p>
+<ul>
+<li>Irreversible fundamental dynamics would require surplus mechanisms →
+ruled out</li>
+<li>Free parameters not derivable from the constitutive base → ruled out
+at the fundamental level</li>
+<li>Ontological additions beyond IIS structure → require justification
+from the constitutive base</li>
+</ul>
+<p>A clarification: Global Parsimony applies to <em>fundamental</em>
+structure, not to emergent or contingent physical content. The claim is
+not that everything is derived from 3FLL; specific particle masses,
+coupling constants, and gauge groups are empirical. The claim is that no
+<em>additional foundational principles</em> beyond 3FLL are required to
+ground the structure of physical law. Contingent physical content
+operates within the framework that 3FLL establish; it does not require
+independent metaphysical grounding.</p>
+<h3 id="why-quantum-mechanics">2.7 Why Quantum Mechanics</h3>
+<p>Multiple structures satisfy the formal interface constraints. What
+selects quantum mechanics specifically?</p>
+<p><strong>Stability.</strong></p>
+<p>Classical mechanics satisfies interface constraints but produces no
+stable physics: - Electrons spiral into nuclei (no stable atoms) - No
+discrete energy levels (no chemistry) - No quantum tunneling (no stellar
+fusion) - No identical particles (no periodic table)</p>
+<p>A classical universe contains no stable matter, no chemistry, no
+life, no observers to notice.</p>
+<p>Real quantum mechanics (using ℝ instead of ℂ) fails local tomography:
+composite system states cannot be fully determined by local
+measurements. Quaternionic quantum mechanics fails compositional
+consistency. Generalized probabilistic theories exceeding the Tsirelson
+bound permit signaling.</p>
+<p>Only complex Hilbert space quantum mechanics with unitary dynamics
+and the Born rule produces: - Stable atoms (discrete energy levels from
+spectral properties) - Chemistry (electron orbitals, bonding, molecular
+structure) - Solid matter (Pauli exclusion prevents collapse) - Stars
+(quantum tunneling enables fusion) - Observers (stable structures
+capable of inquiry)</p>
+<p>This is <strong>stability selection</strong>: among structures
+compatible with the interface constraints, only quantum mechanics
+produces stable physical existence.</p>
+<p>Stability selection explains why we observe quantum mechanics:
+observers require stable physical structures, and only quantum mechanics
+produces them. This is an observability filter, not an ontological
+derivation. The uniqueness claim, that quantum mechanics is the
+<em>only</em> structure satisfying the interface constraints with
+stability, rests on the mathematical reconstruction theorems
+(Masanes-Müller, Hardy, Chiribella et al.), which demonstrate that
+complex Hilbert space quantum mechanics is uniquely selected by the
+relevant axioms. Stability selection explains why we are in a position
+to observe this; the reconstruction theorems establish that there is
+nothing else to observe.</p>
+<p>Stability selection is not logical derivation. It does not claim
+quantum mechanics is necessary. It claims quantum mechanics is
+<em>observationally necessary</em>, necessary for there to be stable
+structures capable of observation.</p>
+<h3 id="the-framework-summarized">2.8 The Framework Summarized</h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3FLL</td>
+<td>Constitute distinguishability</td>
+</tr>
+<tr>
+<td>IIS</td>
+<td>Space of all distinguishable configurations</td>
+</tr>
+<tr>
+<td>Boolean Actuality</td>
+<td>Domain where 3FLL are fully enforced</td>
+</tr>
+<tr>
+<td>Interface</td>
+<td>Structure mediating IIS → Actuality</td>
+</tr>
+<tr>
+<td>CBP</td>
+<td>Constrains admissible IIS dynamics</td>
+</tr>
+<tr>
+<td>Global Parsimony</td>
+<td>No surplus structure beyond constitutive base</td>
+</tr>
+<tr>
+<td>Quantum Mechanics</td>
+<td>The unique stable interface</td>
+</tr>
+</tbody>
+</table>
+<p>The central formula:</p>
+<p><span class="math display">\[\mathcal{A} =
+\mathfrak{L}(\mathcal{I})\]</span></p>
+<p>Actuality equals logical filtering (3FLL enforcement + parsimony)
+applied to the Infinite Information Space.</p>
+<hr />
+<figure>
+<img src="figures/LRT_Fig-1.jpeg"
+alt="Figure 1: LRT Ontological Architecture" />
+<figcaption aria-hidden="true">Figure 1: LRT Ontological
+Architecture</figcaption>
+</figure>
+<p><strong>Figure 1.</strong> The ontological architecture of Logic
+Realism Theory. The Infinite Information Space (IIS), constituted by the
+Three Fundamental Logical Laws, contains non-Boolean structure including
+superpositions and indeterminate states. Quantum mechanics operates as
+the interface, characterized by complex Hilbert space, the Born rule,
+and unitary dynamics. Boolean Actuality, where 3FLL are fully enforced,
+contains only definite, self-identical, non-contradictory outcomes. The
+three laws (Identity, Non-Contradiction, Excluded Middle) run through
+the entire structure, constituting IIS and constraining actuality.</p>
+<hr />
+<h3 id="the-circularity-objection">2.9 The Circularity Objection</h3>
+<p>A natural objection arises: the operational framework used to define
+distinguishability presupposes classical measurement apparatus.
+Detectors yield discrete outcomes; laboratory equipment obeys 3FLL. Does
+this make the derivation circular?</p>
+<p><strong>The objection stated precisely:</strong> If we define the
+distinguishability metric <span class="math inline">\(D\)</span> in
+terms of measurement statistics, and measurements presuppose
+3FLL-conforming apparatus, then haven’t we assumed what we claim to
+derive?</p>
+<p><strong>The response distinguishes observation from
+explanation.</strong></p>
+<p><em>Observation:</em> Measurement apparatus conforms to 3FLL.
+Detectors fire or don’t fire. Outcomes are determinate.</p>
+<p><em>Explanation:</em> Why does apparatus conform? Two answers are
+available:</p>
+<table>
+<colgroup>
+<col style="width: 34%" />
+<col style="width: 30%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr>
+<th>Answer</th>
+<th>Claim</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Brute fact</strong></td>
+<td>Apparatus just happens to obey 3FLL</td>
+<td>No explanation offered</td>
+</tr>
+<tr>
+<td><strong>LRT</strong></td>
+<td>3FLL are constitutive of distinguishability; apparatus conformity
+follows</td>
+<td>Explains the conformity</td>
+</tr>
+</tbody>
+</table>
+<p>The operational framework is not <em>evidence</em> for LRT; it is the
+<em>explanandum</em>. LRT explains why the operational framework has the
+structure it does. Alternatives treat this structure as unexplained
+background.</p>
+<p><strong>The asymmetry argument:</strong> Consider the
+conceivability-observability gap:</p>
+<ul>
+<li>We <em>can conceive</em> of detectors that fire and don’t fire
+simultaneously</li>
+<li>We <em>can imagine</em> measurement outcomes that violate Excluded
+Middle</li>
+<li>We <em>can entertain</em> the proposition that a particle is both
+detected and not detected</li>
+</ul>
+<p>These scenarios are mentally representable. Nothing in cognition
+prevents us from considering them.</p>
+<p>Yet we <em>never observe</em> them. No detector in the history of
+physics has ever produced a 3FLL-violating outcome. This asymmetry
+requires explanation.</p>
+<p><strong>Psychologism</strong> (3FLL are cognitive constraints) cannot
+explain this: if 3FLL were merely how we think, we could not conceive of
+their violation. But we can.</p>
+<p><strong>Conventionalism</strong> (3FLL are linguistic rules) cannot
+explain this: we could define “outcome” to permit contradictions; we
+still would not observe them.</p>
+<p><strong>LRT</strong> explains this: 3FLL are constitutive of physical
+distinguishability itself. Violations are not observed because they
+cannot occur—not because we cannot think them or have defined them away,
+but because distinguishability presupposes logical structure.</p>
+<p><strong>The conceivability claim deserves emphasis.</strong> The
+assertion that we “can conceive” of 3FLL violations is not mere
+hand-waving. It is backed by rigorous formal development:</p>
+<table>
+<colgroup>
+<col style="width: 34%" />
+<col style="width: 40%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Framework</th>
+<th>Key Feature</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Paraconsistent logic</td>
+<td>Contradictions don’t explode</td>
+<td>AMS 03B53; five World Congresses</td>
+</tr>
+<tr>
+<td>Dialetheism</td>
+<td>True contradictions exist</td>
+<td>Defended by Priest, Routley, Beall</td>
+</tr>
+<tr>
+<td>Impossible worlds</td>
+<td>Logical laws fail at some worlds</td>
+<td>Standard in modal metaphysics</td>
+</tr>
+<tr>
+<td>Buddhist catuṣkoṭi</td>
+<td>Four truth values (T, F, both, neither)</td>
+<td>2000+ year tradition</td>
+</tr>
+</tbody>
+</table>
+<p>These frameworks are not conceptual errors waiting to be corrected.
+They are internally consistent formal systems with sophisticated
+metatheory. One can reason validly within paraconsistent logic; the
+inferences are well-defined; the semantics is rigorous.</p>
+<p>The question is not whether such reasoning is <em>possible</em> (it
+manifestly is). The question is whether such reasoning describes
+<em>actuality</em>. And here the answer is uniformly negative. No
+detector, no measurement apparatus, no physical record has ever
+exhibited a paraconsistent outcome. The formal possibility is real; the
+physical instantiation is absent.</p>
+<p>This is precisely what LRT predicts. Formal systems are not
+constrained by 3FLL because they are not physical systems; they are
+abstract structures that can be specified arbitrarily. Physical
+actuality <em>is</em> constrained by 3FLL because distinguishability
+constitutes it. The conceivability-actuality gap is not a puzzle to be
+explained away; it is the signature of 3FLL’s constitutive role.</p>
+<p><strong>The circularity dissolves:</strong> Yes, the operational
+framework presupposes 3FLL. This is not a bug but a feature. The
+question is whether this presupposition is brute (unexplained) or
+constitutive (explanatory). LRT claims the latter: 3FLL conformity of
+apparatus is not coincidental background but consequence of what
+distinguishability requires.</p>
+<p>The derivation proceeds as follows:</p>
+<ol type="1">
+<li><strong>Given:</strong> Operational framework with 3FLL-conforming
+measurements (observation)</li>
+<li><strong>Claim:</strong> 3FLL are constitutive of distinguishability
+(hypothesis)</li>
+<li><strong>Derivation:</strong> From 3FLL + minimal physics → quantum
+mechanics (consequence)</li>
+<li><strong>Test:</strong> Framework must be consistent, predictive, and
+explanatorily superior to alternatives (verification)</li>
+</ol>
+<p>The circularity objection mistakes the explanandum (3FLL conformity
+of measurements) for a hidden assumption. LRT does not assume 3FLL
+conformity—it explains it.</p>
+<hr />
+<h2 id="the-derivation-chain">3. The Derivation Chain</h2>
+<p>This section shows that quantum mechanical structure follows from the
+framework established in Section 2. The derivations rely on established
+mathematical results (Masanes-Müller, Gleason, Stone) applied to the LRT
+axiom structure. What LRT contributes is not new mathematics but the
+grounding that explains why these axioms hold.</p>
+<h3 id="the-axioms">3.1 The Axioms</h3>
+<p>LRT rests on five axioms, organized by tier:</p>
+<p><strong>Tier 0: Foundational (LRT-specific)</strong></p>
+<table>
+<colgroup>
+<col style="width: 38%" />
+<col style="width: 61%" />
+</colgroup>
+<thead>
+<tr>
+<th>Axiom</th>
+<th>Statement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A1: Constitution</td>
+<td>3FLL constitute distinguishability</td>
+</tr>
+<tr>
+<td>A2: Pairwise Structure</td>
+<td>Distinguishability is a binary relation: D(x,y) compares two
+states</td>
+</tr>
+<tr>
+<td>A4: Boolean Actuality</td>
+<td>Interface map Φ produces Boolean outcomes satisfying totality,
+single-valuedness, exclusivity</td>
+</tr>
+<tr>
+<td>A5: Non-Contextual Measure</td>
+<td>Interface induces probability measure independent of measurement
+context</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Grounding A5:</strong> Why should the interface measure be
+non-contextual? Consider what contextuality of the interface measure
+would mean: the same IIS state would yield different probability
+distributions depending on which other measurements could have been
+performed. But this would violate Identity at the interface. A state’s
+probability of actualization would not be a determinate feature of that
+state; it would depend on extrinsic factors. The interface would fail to
+map states to definite probability assignments. Non-contextuality is
+thus required by Identity: the interface must assign each state a
+determinate actualization probability that is a feature of that state
+itself.</p>
+<p><strong>Clarification:</strong> Contextuality of <em>values</em>
+(Kochen-Specker) is compatible with non-contextuality of
+<em>measure</em>. The distinction is essential. Values are generated at
+actualization; they need not pre-exist and need not be
+context-independent. But probabilities characterize the IIS state’s
+disposition toward actualization. If probabilities were contextual, the
+IIS state would lack determinate actualization propensities, violating
+Identity for the state itself. The Kochen-Specker contextuality that
+quantum mechanics exhibits concerns outcome values, not the probability
+measure over those outcomes.</p>
+<p><strong>Tier 1: Derived</strong></p>
+<table>
+<thead>
+<tr>
+<th>Result</th>
+<th>Derivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Global Parsimony</td>
+<td>From A1 + Constitutive Closure (Section 2.6)</td>
+</tr>
+<tr>
+<td>Reversibility</td>
+<td>From CBP + Global Parsimony (Section 3.2)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tier 2: Physical (irreducible input)</strong></p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 42%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr>
+<th>Axiom</th>
+<th>Statement</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A3a: Continuity</td>
+<td>IIS admits continuous transformations</td>
+<td>Motivated by parsimony</td>
+</tr>
+<tr>
+<td>A3c: Local Tomography</td>
+<td>Composite system states determined by local measurements</td>
+<td>Irreducible physical content</td>
+</tr>
+</tbody>
+</table>
+<p>The physical axioms (A3a, A3c) represent genuine empirical input.
+They are not derived from 3FLL alone. What LRT provides is the framework
+within which these physical constraints yield quantum structure.</p>
+<h3 id="deriving-reversibility">3.2 Deriving Reversibility</h3>
+<p><strong>Theorem (Reversibility):</strong> Fundamental transformations
+on IIS are information-preserving.</p>
+<p><em>Proof:</em></p>
+<ol type="1">
+<li><p>Let T be a fundamental transformation on IIS. Suppose T is
+irreversible: it maps distinct states s₁ ≠ s₂ to the same output T(s₁) =
+T(s₂).</p></li>
+<li><p>Information destruction requires a mechanism. If T erases the
+distinction between s₁ and s₂, some physical process must absorb or
+dissipate that distinction.</p></li>
+<li><p>Any such mechanism constitutes structure beyond the constitutive
+base (3FLL + initial conditions).</p></li>
+<li><p>By Global Parsimony, no surplus structure exists at the
+fundamental level.</p></li>
+<li><p>By CBP, states must admit consistent Boolean resolution.
+Irreversible dynamics produce states whose history becomes
+unrecoverable, generating propositions (“which original state led
+here?”) with no truthmaker.</p></li>
+<li><p>Therefore, T must be reversible: distinct inputs map to distinct
+outputs. ∎</p></li>
+</ol>
+<p>This derivation is genuine. Reversibility is not assumed but follows
+from CBP and Global Parsimony. The physical consequence is that
+fundamental dynamics preserve information, a defining feature of quantum
+mechanics that other interpretations simply postulate.</p>
+<h3 id="deriving-hilbert-space-structure">3.3 Deriving Hilbert Space
+Structure</h3>
+<p><strong>Theorem (Complex Hilbert Space):</strong> IIS, equipped with
+the structure required by Axioms A1-A5 and physical constraints A3a,
+A3c, admits representation as a complex Hilbert space.</p>
+<p><em>Proof:</em></p>
+<p>The proof applies the Masanes-Müller reconstruction theorem
+(2011).</p>
+<p><strong>Step 1: Pairwise distinguishability implies inner product
+structure.</strong></p>
+<p>Axiom A2 establishes that distinguishability is a binary relation D:
+IIS × IIS → [0,1]. This pairwise structure, combined with continuity
+(A3a) and reversibility (derived above), induces an inner product ⟨·|·⟩
+on IIS.</p>
+<p><strong>Step 2: Local tomography selects complex
+numbers.</strong></p>
+<p>Three number fields could support Hilbert space structure: real (ℝ),
+complex (ℂ), or quaternionic (ℍ).</p>
+<ul>
+<li>Real quantum mechanics: Fails local tomography. Entangled states
+exist that cannot be distinguished by local measurements alone.</li>
+<li>Quaternionic quantum mechanics: Fails consistent tensor product
+composition. Quaternionic phases create compositional pathologies.</li>
+<li>Complex quantum mechanics: Uniquely satisfies both local tomography
+and compositional consistency.</li>
+</ul>
+<p>Axiom A3c (local tomography) therefore forces ℂ.</p>
+<p><strong>Step 3: Completeness from maximality.</strong></p>
+<p>IIS is defined as the maximal space of distinguishable
+configurations. Maximality implies closure under limits: any Cauchy
+sequence of distinguishable states has a limit that is itself
+distinguishable. This gives completeness, the defining property that
+makes the space a Hilbert space rather than merely an inner product
+space. ∎</p>
+<p><strong>Experimental confirmation:</strong> Renou et al. (2021)
+tested complex vs. real quantum mechanics directly. The experiment
+confirmed that locally tomographic real quantum mechanics makes
+predictions distinguishable from complex quantum mechanics, and nature
+follows the complex predictions.</p>
+<p>This was a structural prediction of any locally tomographic
+framework, including LRT. It has been confirmed.</p>
+<h3 id="deriving-the-born-rule">3.4 Deriving the Born Rule</h3>
+<p><strong>Theorem (Born Rule):</strong> The interface probability
+measure has the form P(φ|ψ) = |⟨φ|ψ⟩|².</p>
+<p><em>Proof:</em></p>
+<p>The proof applies Gleason’s theorem (1957).</p>
+<p><strong>Gleason’s Theorem:</strong> In a Hilbert space of dimension ≥
+3, the only probability measure on projection operators satisfying
+non-negativity, normalization, and finite additivity is:</p>
+<p><span class="math display">\[\mu(P) = \text{Tr}(\rho P)\]</span></p>
+<p>For pure states ρ = |ψ⟩⟨ψ| and rank-1 projections P = |φ⟩⟨φ|, this
+reduces to:</p>
+<p><span class="math display">\[P(\phi|\psi) =
+|\langle\phi|\psi\rangle|^2\]</span></p>
+<p><strong>Verification of premises:</strong></p>
+<ol type="1">
+<li><p><em>Dimension ≥ 3:</em> IIS contains composite systems (entangled
+states). Any composite of two systems has dimension ≥ 4.</p></li>
+<li><p><em>Non-negativity:</em> From Axiom A5.</p></li>
+<li><p><em>Normalization:</em> From Axiom A5.</p></li>
+<li><p><em>Non-contextuality:</em> From Axiom A5: probability assigned
+to an outcome depends only on state and outcome, not on other possible
+outcomes in the measurement context.</p></li>
+</ol>
+<p>All premises are satisfied. Gleason’s theorem applies. The Born rule
+follows. ∎</p>
+<p><strong>The bridge from distinguishability to probability:</strong>
+The probability measure is not independently postulated. Given Hilbert
+space structure (derived via Masanes-Müller from distinguishability
+geometry) and non-contextual measure (A5, grounded in Identity),
+Gleason’s theorem <em>forces</em> |ψ|² as the unique probability
+measure. The mapping from distinguishability to probability is
+mathematical necessity given the derived structure, not stipulation.</p>
+<p><strong>Why the squared magnitude?</strong></p>
+<p>The inner product ⟨ψ|φ⟩ is complex-valued. Probabilities must be real
+and non-negative. The squared magnitude |⟨ψ|φ⟩|² is:</p>
+<ul>
+<li>The unique non-negative quantity constructible from the inner
+product</li>
+<li>The unique power satisfying Gleason’s additivity constraints</li>
+<li>Invariant under global phase transformations</li>
+</ul>
+<p>The exponent 2 is not chosen. It is forced by the mathematics.</p>
+<h3 id="deriving-unitary-dynamics">3.5 Deriving Unitary Dynamics</h3>
+<p><strong>Theorem (Schrödinger Equation):</strong> IIS dynamics take
+the form:</p>
+<p><span class="math display">\[i\hbar \frac{\partial}{\partial
+t}|\psi\rangle = H|\psi\rangle\]</span></p>
+<p><em>Proof:</em></p>
+<p><strong>Step 1: Reversibility implies unitarity.</strong></p>
+<p>Section 3.2 derived that fundamental transformations preserve
+information. On Hilbert space, the information-preserving
+transformations are precisely the unitary (and antiunitary) operators.
+Wigner’s theorem establishes this: any transformation preserving
+distinguishability (inner product structure) is implemented by a unitary
+or antiunitary operator.</p>
+<p>Antiunitarity corresponds to time reversal. For continuous forward
+evolution, unitarity applies.</p>
+<p><strong>Step 2: Continuity implies Stone’s theorem.</strong></p>
+<p>Axiom A3a requires continuous transformations. A continuous
+one-parameter family of unitary operators U(t) satisfies the premises of
+Stone’s theorem (1932):</p>
+<ul>
+<li>There exists a unique self-adjoint operator H (the Hamiltonian)</li>
+<li>U(t) = e^(-iHt/ℏ)</li>
+</ul>
+<p>The Schrödinger equation follows immediately. ∎</p>
+<h3 id="hamiltonian-and-lagrangian-structure">3.6 Hamiltonian and
+Lagrangian Structure</h3>
+<p>Stone’s theorem yields more than the Schrödinger equation. The
+self-adjoint generator H is the <strong>Hamiltonian</strong>, the
+observable corresponding to total energy. From this, standard dynamical
+formalism follows.</p>
+<p><strong>What Stone’s theorem provides:</strong></p>
+<ul>
+<li>A unique self-adjoint operator H generating the unitary group U(t) =
+e^(-iHt/ℏ)</li>
+<li>The spectral decomposition of H giving energy eigenstates</li>
+<li>The Heisenberg picture: A(t) = U†(t)A(0)U(t)</li>
+</ul>
+<p><strong>What follows from standard physics:</strong></p>
+<p>Once unitarity and the Hamiltonian are established, LRT inherits
+rather than rederives the classical formalism:</p>
+<table>
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 25%" />
+<col style="width: 38%" />
+</colgroup>
+<thead>
+<tr>
+<th>Structure</th>
+<th>Status</th>
+<th>Derivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hamiltonian mechanics</td>
+<td>Inherited</td>
+<td>Generator of time evolution (Stone)</td>
+</tr>
+<tr>
+<td>Lagrangian mechanics</td>
+<td>Inherited</td>
+<td>Legendre transform of Hamiltonian</td>
+</tr>
+<tr>
+<td>Action principle</td>
+<td>Inherited</td>
+<td>Path integral formulation; stationary action</td>
+</tr>
+<tr>
+<td>Symplectic geometry</td>
+<td>Inherited</td>
+<td>Phase space structure from [q,p] = iℏ</td>
+</tr>
+<tr>
+<td>Classical limit</td>
+<td>Inherited</td>
+<td>ℏ → 0 or decoherence + large quantum numbers</td>
+</tr>
+</tbody>
+</table>
+<p><strong>LRT’s contribution:</strong></p>
+<p>LRT does not provide new derivations of Lagrangian or Hamiltonian
+mechanics. What it provides is <em>grounding</em>: an explanation of why
+unitary dynamics holds in the first place (reversibility from CBP +
+Parsimony), which then generates the Hamiltonian via Stone’s
+theorem.</p>
+<p>The action principle (that physical trajectories extremize action)
+receives philosophical motivation from parsimony (extremal paths require
+minimal specification), but this is interpretive, not a replacement for
+the standard derivation from variational principles.</p>
+<p><strong>Open: Quantum Field Theory</strong></p>
+<p>Extension to quantum field theory remains an open problem. QFT
+requires:</p>
+<ul>
+<li>Infinite-dimensional field configurations in IIS</li>
+<li>Relativistic (Poincaré) invariance</li>
+<li>Renormalization and vacuum structure</li>
+</ul>
+<p>LRT’s framework is consistent with QFT but does not yet provide
+independent derivations of field-theoretic structure. This is
+acknowledged as a limitation and direction for future work.</p>
+<h3 id="the-complete-derivation-chain">3.7 The Complete Derivation
+Chain</h3>
+<figure>
+<img src="figures/LRT_Fig2b.png" alt="Figure 2: LRT Derivation Chain" />
+<figcaption aria-hidden="true">Figure 2: LRT Derivation
+Chain</figcaption>
+</figure>
+<p><strong>Figure 2.</strong> The LRT derivation chain. Blue nodes
+indicate axioms (foundational assumptions). Gold/amber nodes indicate
+results derived within the framework, citing the external theorems
+employed. Dashed lines show additional inputs required at each
+derivation step. The four derived results (reversibility, complex
+Hilbert space, the Born rule, and unitary dynamics) follow from the
+foundational axioms plus physical constraints, without independent
+postulation.</p>
+<h3 id="what-is-derived-vs.-assumed">3.8 What Is Derived
+vs. Assumed</h3>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Status</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3FLL are constitutive</td>
+<td>Axiom (A1)</td>
+<td>Core LRT thesis</td>
+</tr>
+<tr>
+<td>Distinguishability is pairwise</td>
+<td>Axiom (A2)</td>
+<td>Structural</td>
+</tr>
+<tr>
+<td>Reversibility</td>
+<td><strong>Derived</strong></td>
+<td>CBP + Parsimony</td>
+</tr>
+<tr>
+<td>Complex numbers</td>
+<td><strong>Derived</strong></td>
+<td>Local tomography (A3c)</td>
+</tr>
+<tr>
+<td>Hilbert space</td>
+<td><strong>Derived</strong></td>
+<td>Masanes-Müller</td>
+</tr>
+<tr>
+<td>Born rule</td>
+<td><strong>Derived</strong></td>
+<td>Gleason</td>
+</tr>
+<tr>
+<td>Unitary dynamics</td>
+<td><strong>Derived</strong></td>
+<td>Reversibility + Continuity</td>
+</tr>
+<tr>
+<td>Continuity</td>
+<td>Axiom (A3a)</td>
+<td>Physical input (motivated)</td>
+</tr>
+<tr>
+<td>Local tomography</td>
+<td>Axiom (A3c)</td>
+<td>Physical input (irreducible)</td>
+</tr>
+<tr>
+<td>Non-contextual measure</td>
+<td>Axiom (A5)</td>
+<td>Interface structure</td>
+</tr>
+</tbody>
+</table>
+<p>The derivations are genuine but conditional. They show:
+<em>given</em> the LRT axioms and physical constraints, quantum
+structure follows. The physical constraints (A3a, A3c) are not derived
+from logic alone; they represent empirical input about our universe.</p>
+<p>What LRT provides is the unified grounding. The axioms of
+reconstruction theorems receive explanation: they are features required
+for stable interface between IIS and Boolean actuality.</p>
+<hr />
+<h2 id="what-this-explains">4. What This Explains</h2>
+<p>Standard quantum mechanics is empirically successful but
+explanatorily silent. It tells us to use Hilbert space but not why. It
+gives us the Born rule but not why |ψ|². It presents contextuality,
+entanglement, and the Tsirelson bound as mathematical facts without
+physical grounding.</p>
+<p>LRT fills these gaps. The framework developed in Sections 2-3
+provides unified explanation for phenomena that other approaches treat
+as independent postulates or unexplained theorems.</p>
+<h3 id="what-this-framework-addresses">4.1 What This Framework
+Addresses</h3>
+<p>The following phenomena receive treatment from LRT resources, ranging
+from rigorous mathematical derivation to reconceptualization. The claim
+is <em>unified treatment from common principles</em>, not uniform
+derivation. All seventeen trace to the IIS/actuality interface
+structure, unlike competing interpretations that treat them as
+independent postulates or unexplained facts.</p>
+<table>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 24%" />
+<col style="width: 39%" />
+</colgroup>
+<thead>
+<tr>
+<th>Phenomenon</th>
+<th>Status</th>
+<th>LRT Account</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Born rule is |ψ|²</td>
+<td><strong>Derived</strong></td>
+<td>Gleason’s theorem + non-contextual interface</td>
+</tr>
+<tr>
+<td>Hilbert space is complex</td>
+<td><strong>Derived</strong></td>
+<td>Local tomography forces ℂ</td>
+</tr>
+<tr>
+<td>Unitary dynamics</td>
+<td><strong>Derived</strong></td>
+<td>Reversibility (CBP + Parsimony) + Continuity → Stone</td>
+</tr>
+<tr>
+<td>Reversibility</td>
+<td><strong>Derived</strong></td>
+<td>CBP + Global Parsimony</td>
+</tr>
+<tr>
+<td>Contextuality</td>
+<td><strong>Explained</strong></td>
+<td>Interface signature: values generated at interface, not
+pre-existing</td>
+</tr>
+<tr>
+<td>Bell inequality violations</td>
+<td><strong>Explained</strong></td>
+<td>Global constraint satisfaction: 3FLL enforce consistency</td>
+</tr>
+<tr>
+<td>Tsirelson bound (2√2)</td>
+<td><strong>Explained</strong></td>
+<td>Interface stability limit: exceeding permits signaling</td>
+</tr>
+<tr>
+<td>No-cloning</td>
+<td><strong>Explained</strong></td>
+<td>Distinguishability preservation in IIS</td>
+</tr>
+<tr>
+<td>Uncertainty relations</td>
+<td><strong>Explained</strong></td>
+<td>Non-commuting observables = incompatible IIS partitions</td>
+</tr>
+<tr>
+<td>Entanglement without signaling</td>
+<td><strong>Explained</strong></td>
+<td>Global 3FLL constraints; correlation without causal connection</td>
+</tr>
+<tr>
+<td>Wave-particle duality</td>
+<td><strong>Reframed</strong></td>
+<td>IIS state (wave-like) vs. actualized outcome (particle-like)</td>
+</tr>
+<tr>
+<td>Superposition</td>
+<td><strong>Reframed</strong></td>
+<td>IIS is non-Boolean; superposition is pre-actualization state</td>
+</tr>
+<tr>
+<td>State collapse</td>
+<td><strong>Reframed</strong></td>
+<td>Category transition from IIS to actuality, not dynamical
+process</td>
+</tr>
+<tr>
+<td>Measurement disturbance</td>
+<td><strong>Reframed</strong></td>
+<td>No pre-existing values to disturb; values generated at
+interface</td>
+</tr>
+<tr>
+<td>Decoherence</td>
+<td><strong>Reframed</strong></td>
+<td>Interface approach: environmental entanglement transfers phase
+information</td>
+</tr>
+<tr>
+<td>Identical particles</td>
+<td><strong>Compatible</strong></td>
+<td>Excitations of same distinguishability mode (requires further
+development)</td>
+</tr>
+<tr>
+<td>Quantization</td>
+<td><strong>Compatible</strong></td>
+<td>Boolean grain of actuality (requires further development)</td>
+</tr>
+<tr>
+<td>Quantum Zeno effect</td>
+<td><strong>Compatible</strong></td>
+<td>Repeated interface transitions (not derived)</td>
+</tr>
+<tr>
+<td>Preferred basis</td>
+<td><strong>Constrained</strong></td>
+<td>Einselection + interface structure determines partition</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Status categories:</strong> - <strong>Derived:</strong>
+Follows mathematically from LRT axioms via established theorems -
+<strong>Explained:</strong> Receives substantive account from
+IIS/actuality framework - <strong>Reframed:</strong> Reconceptualized in
+LRT terms; puzzle dissolved rather than solved -
+<strong>Compatible:</strong> Consistent with LRT; full derivation not
+yet developed - <strong>Constrained:</strong> LRT narrows possibilities
+without fully determining</p>
+<h3 id="the-measurement-problem-dissolved">4.2 The Measurement Problem
+Dissolved</h3>
+<p>The measurement problem asks: how does deterministic, unitary
+evolution produce definite, random outcomes? When does collapse occur?
+What counts as a measurement?</p>
+<p>LRT dissolves rather than solves this problem.</p>
+<p><strong>The dissolution:</strong> Measurement is not a dynamical
+process requiring special physics. It is the interface between IIS and
+Boolean actuality. The quantum state evolves unitarily in IIS. When it
+interacts with a context requiring Boolean outcomes, 3FLL are enforced.
+The state becomes determinate.</p>
+<p>This is category transition, not collapse dynamics. The question
+“when does collapse occur?” presupposes that collapse is a dynamical
+process within a single domain. On LRT, measurement is a transition
+between domains, from IIS structure to Boolean actuality. Asking when
+this occurs is legitimate, but the answer is a physical criterion
+(Section 7.1), not a dynamical mechanism. The measurement problem is
+transformed, not evaded.</p>
+<p><strong>The key distinction:</strong> The measurement problem is
+dissolved as a <em>conceptual puzzle</em> (no special collapse dynamics
+needed, no Heisenberg cut, no observer-dependence) while remaining open
+as an <em>empirical question</em> (which physical criterion marks the
+interface). These are different issues. The conceptual puzzle (how can
+deterministic evolution produce single random outcomes?) is resolved by
+recognizing measurement as category transition rather than dynamical
+process. The empirical question (what physical conditions trigger
+interface transition?) is legitimate and tractable, not a residual form
+of the original puzzle.</p>
+<p><strong>What LRT explains:</strong> - Why definite outcomes occur
+(3FLL enforcement at interface) - Why outcomes are always Boolean
+(actuality is Boolean by definition) - Why no special “measurement”
+dynamics is needed (interface, not mechanism)</p>
+<p><strong>What LRT does not explain:</strong> - The precise physical
+criterion marking the interface (decoherence threshold, gravitational
+criterion, information-theoretic saturation; these are empirical
+questions) - Why <em>this</em> outcome rather than <em>that</em> (this
+may be irreducibly stochastic)</p>
+<p>The openness of the interface criterion is not evasion. LRT
+constrains the answer: by Global Parsimony, any collapse mechanism must
+be derivable from geometry or information capacity; it cannot introduce
+free parameters. This rules out theories with arbitrary collapse rates
+while remaining neutral between derivable mechanisms (gravitational
+self-energy, information-theoretic saturation, decoherence thresholds).
+The measurement problem is not relocated but transformed from “what
+causes collapse?” to “which derivable physical criterion marks the
+interface?”, an empirically tractable question.</p>
+<p>The second open point, why this particular outcome, is not a failure.
+No interpretation explains why a particular outcome occurs. What LRT
+explains is why <em>an</em> outcome occurs and why it is always
+determinate.</p>
+<h3 id="entanglement-and-non-locality">4.3 Entanglement and
+Non-Locality</h3>
+<p>Bell’s theorem shows that quantum correlations cannot be explained by
+local hidden variables. This is often presented as “spooky action at a
+distance.”</p>
+<p>LRT reframes this entirely.</p>
+<p><strong>The reframing:</strong> There is no action at a distance
+because there is no action. Entangled particles are not two things
+mysteriously connected; they are one configuration in IIS with
+non-factorizable structure.</p>
+<p>When measurement occurs, 3FLL enforce consistency across the entire
+configuration. The correlations are not caused by signaling between
+particles. They are <strong>constraint satisfaction</strong>: the joint
+state already satisfies 3FLL globally, and measurement reveals this
+structure.</p>
+<p><strong>Why no signaling:</strong> The marginal statistics at each
+location are unchanged regardless of what happens at the other location.
+Correlations appear only when results are compared. This is exactly what
+constraint satisfaction predicts: the constraints were already global;
+measurement reveals them without transmitting information.</p>
+<p><strong>Constraints vs. hidden variables:</strong> Bell’s theorem
+rules out local hidden <em>variables</em> (pre-existing definite
+values). LRT does not posit such values. The IIS state is genuinely
+indeterminate until the interface. Constraints specify relationships
+between outcomes, not the outcomes themselves.</p>
+<p>This distinction is crucial:</p>
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 36%" />
+<col style="width: 36%" />
+</colgroup>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Definition</th>
+<th>LRT Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Variable</strong></td>
+<td>Has a value; “hidden” means we don’t know it</td>
+<td>NOT posited</td>
+</tr>
+<tr>
+<td><strong>Constraint</strong></td>
+<td>A rule specifying relationships (e.g., A + B = 0)</td>
+<td>Posited (3FLL)</td>
+</tr>
+</tbody>
+</table>
+<p>In LRT: - The entangled state is a single IIS configuration
+satisfying 3FLL constraints - Measurement reveals which values satisfy
+the constraints - No signal is needed because the constraint was
+constitutive of the state, not “communicated”</p>
+<p>The correlations are not explained by hidden information traveling
+faster than light. They are explained by the unified structure of the
+IIS state, which does not have spatial parts that need to coordinate.
+The “non-locality” is in the wholeness of the state, not in any
+propagation. This explains why entanglement produces correlations but
+not signaling.</p>
+<h4 id="worked-example-bell-state-correlations">Worked Example: Bell
+State Correlations</h4>
+<p>To make this concrete, we work through the Bell state <span
+class="math inline">\(|\Psi^-\rangle\)</span> in complete detail,
+showing how LRT explains the correlations.</p>
+<p><strong>1. The State in IIS</strong></p>
+<p>Consider the singlet Bell state: <span
+class="math display">\[|\Psi^-\rangle = \frac{1}{\sqrt{2}}(|01\rangle -
+|10\rangle)\]</span></p>
+<p>where <span class="math inline">\(|0\rangle\)</span> and <span
+class="math inline">\(|1\rangle\)</span> denote spin-up and spin-down
+along the z-axis.</p>
+<p><strong>IIS representation:</strong> This state is a single point in
+the composite IIS for the two-particle system. Its key properties:</p>
+<ul>
+<li><strong>Global purity:</strong> <span
+class="math inline">\(|\Psi^-\rangle\)</span> is a pure state with <span
+class="math inline">\(D(|\Psi^-\rangle, |\Psi^-\rangle) =
+0\)</span></li>
+<li><strong>Local mixedness:</strong> The reduced density matrices are
+<span class="math inline">\(\rho_A = \rho_B = \frac{1}{2}I\)</span>
+(maximally mixed)</li>
+<li><strong>Global distinguishability:</strong> <span
+class="math inline">\(D(|\Psi^-\rangle, |\Phi^+\rangle) = 1\)</span>
+(perfectly distinguishable from other Bell states)</li>
+</ul>
+<p>The entanglement is manifest: the global state carries more
+information than the sum of local states. This is correlation structure
+built into IIS, not a dynamical connection between particles.</p>
+<p><strong>2. Measurement Scenario</strong></p>
+<p>Alice and Bob perform measurements at spacelike-separated
+locations:</p>
+<ul>
+<li>Alice measures spin along axis <span class="math inline">\(\hat{n}_A
+= (\sin\theta_A\cos\phi_A, \sin\theta_A\sin\phi_A,
+\cos\theta_A)\)</span></li>
+<li>Bob measures spin along axis <span class="math inline">\(\hat{n}_B =
+(\sin\theta_B\cos\phi_B, \sin\theta_B\sin\phi_B,
+\cos\theta_B)\)</span></li>
+</ul>
+<p>Each measurement yields Boolean outcome <span
+class="math inline">\(\pm 1\)</span> (satisfying 3FLL at the
+interface).</p>
+<p><strong>3. Correlation Calculation</strong></p>
+<p>The correlation function is: <span
+class="math display">\[E(\hat{n}_A, \hat{n}_B) = \langle\Psi^-|\sigma_A
+\cdot \hat{n}_A \otimes \sigma_B \cdot
+\hat{n}_B|\Psi^-\rangle\]</span></p>
+<p>where <span class="math inline">\(\sigma = (\sigma_x, \sigma_y,
+\sigma_z)\)</span> are the Pauli matrices.</p>
+<p><strong>Explicit calculation:</strong></p>
+<p>For the singlet state, we use the identity: <span
+class="math display">\[|\Psi^-\rangle\langle\Psi^-| = \frac{1}{4}(I
+\otimes I - \sigma_x \otimes \sigma_x - \sigma_y \otimes \sigma_y -
+\sigma_z \otimes \sigma_z)\]</span></p>
+<p>Therefore: <span class="math display">\[E(\hat{n}_A, \hat{n}_B) =
+\text{Tr}\left[|\Psi^-\rangle\langle\Psi^-| \cdot (\sigma \cdot
+\hat{n}_A) \otimes (\sigma \cdot \hat{n}_B)\right]\]</span></p>
+<p>Expanding <span class="math inline">\((\sigma \cdot \hat{n}_A)
+\otimes (\sigma \cdot \hat{n}_B)\)</span> and using <span
+class="math inline">\(\text{Tr}(\sigma_i) = 0\)</span> and <span
+class="math inline">\(\text{Tr}(\sigma_i \sigma_j) =
+2\delta_{ij}\)</span>:</p>
+<p><span class="math display">\[E(\hat{n}_A, \hat{n}_B) = -\hat{n}_A
+\cdot \hat{n}_B = -\cos\theta\]</span></p>
+<p>where <span class="math inline">\(\theta\)</span> is the angle
+between the measurement axes.</p>
+<p><strong>Special cases:</strong> - Parallel axes (<span
+class="math inline">\(\theta = 0\)</span>): <span
+class="math inline">\(E = -1\)</span> (perfect anticorrelation) -
+Antiparallel axes (<span class="math inline">\(\theta = \pi\)</span>):
+<span class="math inline">\(E = +1\)</span> (perfect correlation) -
+Orthogonal axes (<span class="math inline">\(\theta = \pi/2\)</span>):
+<span class="math inline">\(E = 0\)</span> (no correlation)</p>
+<p><strong>4. CHSH Violation</strong></p>
+<p>The CHSH inequality for local hidden variable theories states: <span
+class="math display">\[|S| = |E(a,b) - E(a,b&#39;) + E(a&#39;,b) +
+E(a&#39;,b&#39;)| \leq 2\]</span></p>
+<p>Choose axes: - <span class="math inline">\(a = \hat{z}\)</span>
+(Alice’s first setting) - <span class="math inline">\(a&#39; =
+\hat{x}\)</span> (Alice’s second setting) - <span
+class="math inline">\(b = (\hat{z} + \hat{x})/\sqrt{2}\)</span> (Bob’s
+first setting, at 45°) - <span class="math inline">\(b&#39; = (\hat{z} -
+\hat{x})/\sqrt{2}\)</span> (Bob’s second setting, at -45°)</p>
+<p>Calculate each term using <span class="math inline">\(E =
+-\cos\theta\)</span>: - <span class="math inline">\(E(a,b) = -\cos(45°)
+= -1/\sqrt{2}\)</span> - <span class="math inline">\(E(a,b&#39;) =
+-\cos(45°) = -1/\sqrt{2}\)</span> - <span
+class="math inline">\(E(a&#39;,b) = -\cos(45°) = -1/\sqrt{2}\)</span> -
+<span class="math inline">\(E(a&#39;,b&#39;) = -\cos(135°) =
++1/\sqrt{2}\)</span></p>
+<p>Therefore: <span class="math display">\[S = -\frac{1}{\sqrt{2}} -
+\left(-\frac{1}{\sqrt{2}}\right) + \left(-\frac{1}{\sqrt{2}}\right) +
+\frac{1}{\sqrt{2}} = -\frac{2}{\sqrt{2}} - \frac{2}{\sqrt{2}} =
+-2\sqrt{2}\]</span></p>
+<p><span class="math display">\[|S| = 2\sqrt{2} \approx 2.83 &gt;
+2\]</span></p>
+<p>The CHSH inequality is violated. Bell’s theorem concludes: no local
+hidden variable theory can reproduce quantum predictions.</p>
+<p><strong>5. No-Signaling Proof</strong></p>
+<p>Despite the correlations, Alice cannot signal to Bob:</p>
+<p><strong>Alice’s marginal probability:</strong> <span
+class="math display">\[P(A = +1 | \hat{n}_A) = \text{Tr}_B\left[\langle
++_A|\rho_{AB}|+_A\rangle\right] = \text{Tr}\left[\frac{1}{2}I \cdot
+|+_A\rangle\langle +_A|\right] = \frac{1}{2}\]</span></p>
+<p>This is independent of: - Bob’s choice of measurement axis <span
+class="math inline">\(\hat{n}_B\)</span> - Bob’s measurement outcome -
+Whether Bob measures at all</p>
+<p><strong>Why?</strong> Alice’s reduced state is <span
+class="math inline">\(\rho_A = \frac{1}{2}I\)</span> regardless of
+anything Bob does. The correlations appear only in the joint statistics
+<span class="math inline">\(P(A,B)\)</span>, never in the marginals
+<span class="math inline">\(P(A)\)</span> or <span
+class="math inline">\(P(B)\)</span>.</p>
+<p><strong>LRT interpretation:</strong> Each party’s local measurement
+produces Boolean outcomes from the same global IIS structure. No
+information propagates because both parties access the same pre-existing
+correlation structure. The correlations were constitutive of the state,
+not communicated.</p>
+<p><strong>6. LRT vs. Alternatives</strong></p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 58%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr>
+<th>Approach</th>
+<th>Explanation of Correlations</th>
+<th>Problem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Classical (hidden variables)</strong></td>
+<td>Pre-existing values determine outcomes</td>
+<td>Bell’s theorem rules this out</td>
+</tr>
+<tr>
+<td><strong>Copenhagen</strong></td>
+<td>“Shut up and calculate”</td>
+<td>No explanation offered</td>
+</tr>
+<tr>
+<td><strong>Many-Worlds</strong></td>
+<td>All outcomes occur; correlations are branch structure</td>
+<td>Preferred basis problem; probability problem</td>
+</tr>
+<tr>
+<td><strong>Bohmian</strong></td>
+<td>Nonlocal guidance equation</td>
+<td>Explicit nonlocal dynamics required</td>
+</tr>
+<tr>
+<td><strong>LRT</strong></td>
+<td>Correlation structure in IIS; local actualization</td>
+<td>None (explains without nonlocal dynamics)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The LRT advantage:</strong> Correlations are not caused by
+anything propagating between Alice and Bob. They are revealed by
+measurements that independently actualize from the same IIS structure.
+The entangled state already encodes the correlations; measurement makes
+them manifest without transmitting them.</p>
+<p>This worked example demonstrates the core LRT insight: entanglement
+is structure in IIS, not mysterious connection in spacetime.</p>
+<p><strong>Relativistic considerations:</strong> The “global constraint”
+picture works naturally in non-relativistic quantum mechanics, where
+simultaneity is well-defined. In relativistic contexts, the constraint
+is on the IIS state, not on spacetime events. The entangled state in IIS
+is a single configuration; it does not have spatial parts that need to
+coordinate. When measurement outcomes are registered at spacelike
+separation, each outcome is locally determinate and globally consistent.
+Different reference frames describe the ordering of measurements
+differently, but all frames agree on the correlations, which is exactly
+what we observe. A fully relativistic formulation of LRT would need to
+articulate how the IIS/actuality interface respects the causal structure
+of spacetime; this represents ongoing work for the framework.</p>
+<h3 id="the-tsirelson-bound">4.4 The Tsirelson Bound</h3>
+<p>Quantum correlations violate Bell inequalities but only up to the
+Tsirelson bound of 2√2 for CHSH. Stronger correlations are
+mathematically possible (PR boxes achieve 4) but not physically
+realized.</p>
+<p><strong>Why this bound?</strong></p>
+<p>LRT explanation: The Tsirelson bound marks the maximum correlation
+compatible with stable interface operation. PR boxes and other
+super-quantum correlations, while satisfying no-signaling at the
+single-use level, permit signaling when composed or permit computational
+trivializations that destabilize physical structure.</p>
+<p>The bound is not arbitrary. It is the stability limit of the
+IIS-actuality interface.</p>
+<p><strong>Limitation acknowledged:</strong> LRT identifies the
+Tsirelson bound as the interface stability limit and provides the
+<em>framework</em> within which this question becomes tractable. The
+full derivation of why 2√2 <em>specifically</em> marks this limit
+(rather than some other value) would require detailed
+information-theoretic analysis of interface stability conditions. This
+derivation is ongoing work. What LRT establishes is <em>where and
+why</em> such a bound must exist; the precise value remains to be
+derived from first principles.</p>
+<h3 id="contextuality">4.5 Contextuality</h3>
+<p>The Kochen-Specker theorem shows that quantum observables cannot all
+have definite, non-contextual values prior to measurement.</p>
+<p><strong>Standard framing:</strong> This is presented as a no-go
+theorem, a constraint on hidden variable theories.</p>
+<p><strong>LRT framing:</strong> Contextuality is not a constraint on
+theories. It is a signature of the interface. Boolean values do not
+exist in IIS waiting to be revealed. They are generated at the
+interface, in context. Different measurement contexts actualize
+different aspects of IIS structure.</p>
+<p>Contextuality follows directly from the IIS/actuality distinction.
+Asking “what value did the observable have before measurement?”
+presupposes that Boolean values exist in IIS. They do not. They exist in
+actuality, which is produced at the interface.</p>
+<h3 id="wave-function-status">4.6 Wave Function Status</h3>
+<p>Is the wave function real (ontic) or merely knowledge
+(epistemic)?</p>
+<p><strong>LRT answer:</strong> Neither, as traditionally framed. The
+wave function is <strong>IIS structure</strong>: real but not
+actual.</p>
+<ul>
+<li><strong>Real:</strong> The wave function describes genuine structure
+in IIS, not mere ignorance.</li>
+<li><strong>Not actual:</strong> It is not a thing in Boolean actuality
+until interface transition.</li>
+</ul>
+<p>This ψ-structural position is compatible with the PBR theorem (which
+rules out ψ-epistemic interpretations where quantum states represent
+ignorance of underlying ontic states) while avoiding the claim that ψ is
+a physical substance in spacetime.</p>
+<h3 id="the-unification">4.7 The Unification</h3>
+<p>These seventeen explanations are not independent. They follow from a
+single structural insight:</p>
+<blockquote>
+<p>Quantum mechanics is the interface between non-Boolean IIS and
+Boolean actuality, constrained by 3FLL.</p>
+</blockquote>
+<p>Every phenomenon in the table traces to this structure:</p>
+<ul>
+<li><strong>Measurement</strong> = interface transition</li>
+<li><strong>Superposition</strong> = IIS indeterminacy</li>
+<li><strong>Collapse</strong> = category change</li>
+<li><strong>Entanglement</strong> = global IIS configuration</li>
+<li><strong>Correlations</strong> = constraint satisfaction</li>
+<li><strong>Contextuality</strong> = values generated at interface</li>
+<li><strong>Born rule</strong> = unique interface probability</li>
+<li><strong>Tsirelson bound</strong> = interface stability limit</li>
+</ul>
+<p>This unification is the primary evidence for LRT. Competing
+interpretations explain some phenomena while leaving others as brute
+facts. LRT explains all seventeen from common resources.</p>
+<h3 id="ontic-booleanity-the-epistemic-loophole-closed">4.8 Ontic
+Booleanity: The Epistemic Loophole Closed</h3>
+<p>A sophisticated objection grants that <em>observed</em> outcomes obey
+3FLL but suggests this might be epistemic rather than ontic: perhaps
+3FLL are filters on <em>observation</em>, not constraints on
+<em>reality</em>. Hidden outcome tokens might violate 3FLL while
+remaining undetectable.</p>
+<p>LRT closes this loophole completely.</p>
+<p><strong>Theorem (Ontic Booleanity).</strong> Under the continuity and
+path-connectedness required by quantum mechanics, every actual outcome
+token satisfies 3FLL. No token—even one that never occurs with positive
+probability—can violate 3FLL.</p>
+<p><strong>The argument has two parts:</strong></p>
+<p><em>Part I (Positive-probability tokens):</em> Any token that occurs
+with positive probability must be Boolean. If a token <span
+class="math inline">\(t_0\)</span> violated 3FLL (say, by satisfying
+both <span class="math inline">\(A\)</span> and <span
+class="math inline">\(\neg A\)</span> simultaneously), then states
+assigning positive probability to <span
+class="math inline">\(t_0\)</span> would violate probability
+normalization: <span class="math inline">\(\omega(A) + \omega(\neg A)
+&gt; 1\)</span>. This contradicts the probability structure of quantum
+mechanics.</p>
+<p><em>Part II (Hidden zero-probability tokens):</em> Hypothetical
+tokens with zero probability under all states cannot violate 3FLL
+either. Here path-connectedness is crucial: pure states with <span
+class="math inline">\(\omega(A) = 1\)</span> and <span
+class="math inline">\(\omega(A) = 0\)</span> are connected by continuous
+paths. Any hidden non-Boolean token would disrupt this continuity
+structure. More fundamentally, the token space is <em>defined</em> by
+what states can distinguish—a token outside all state supports is not a
+token of the theory.</p>
+<p><strong>The conclusion:</strong> 3FLL are not observer-imposed
+filters but structural constraints on outcome tokens themselves. The
+epistemic loophole is mathematically closed.</p>
+<p>This result strengthens LRT’s core claim: the 3FLL do not merely
+describe how we observe reality—they constitute what can be an actual
+outcome. The continuous structure of quantum state space is incompatible
+with hidden non-Boolean tokens.</p>
+<p><em>For the complete proof, see Technical companion Theorem
+7.1.</em></p>
+<hr />
+<h2 id="comparison-with-alternatives">5. Comparison with
+Alternatives</h2>
+<p>This section evaluates LRT against competing interpretations of
+quantum mechanics. Each is treated as a physical theory and assessed on
+common criteria: explanatory power, ontological commitments,
+predictions, and falsifiability.</p>
+<h3 id="the-competitors">5.1 The Competitors</h3>
+<p>Six interpretations warrant comparison:</p>
+<ol type="1">
+<li><strong>Copenhagen</strong>: Operational approach; refuses
+ontological commitment</li>
+<li><strong>Many-Worlds (MWI)</strong>: Wave function realism; all
+branches actual</li>
+<li><strong>Bohmian Mechanics</strong>: Hidden particle positions;
+nonlocal pilot wave</li>
+<li><strong>GRW/Objective Collapse</strong>: Spontaneous localization
+with specified rates</li>
+<li><strong>QBism</strong>: Quantum states as agent beliefs</li>
+<li><strong>Relational QM</strong>: Facts relative to observers</li>
+</ol>
+<h3 id="explanatory-power">5.2 Explanatory Power</h3>
+<table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 17%" />
+<col style="width: 16%" />
+<col style="width: 18%" />
+<col style="width: 21%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Theory</th>
+<th>Explains QM Structure?</th>
+<th>Explains Born Rule?</th>
+<th>Explains Contextuality?</th>
+<th>Explains Bell Correlations?</th>
+<th>Explains Tsirelson Bound?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Copenhagen</td>
+<td>No</td>
+<td>No (postulates)</td>
+<td>Accepts</td>
+<td>Accepts</td>
+<td>Accepts</td>
+</tr>
+<tr>
+<td>MWI</td>
+<td>No</td>
+<td>Contested</td>
+<td>Accepts</td>
+<td>Accepts</td>
+<td>Accepts</td>
+</tr>
+<tr>
+<td>Bohmian</td>
+<td>No</td>
+<td>Partial (equilibrium)</td>
+<td>Accepts</td>
+<td>Yes (nonlocal)</td>
+<td>Accepts</td>
+</tr>
+<tr>
+<td>GRW</td>
+<td>No</td>
+<td>Modified</td>
+<td>Accepts</td>
+<td>Accepts</td>
+<td>Accepts</td>
+</tr>
+<tr>
+<td>QBism</td>
+<td>No</td>
+<td>Coherence</td>
+<td>Accepts</td>
+<td>Agent-relative</td>
+<td>Accepts</td>
+</tr>
+<tr>
+<td>Relational</td>
+<td>No</td>
+<td>Relational</td>
+<td>Context-dependent</td>
+<td>Relational</td>
+<td>Accepts</td>
+</tr>
+<tr>
+<td><strong>LRT</strong></td>
+<td><strong>Yes</strong></td>
+<td><strong>Yes (Gleason)</strong></td>
+<td><strong>Yes (interface)</strong></td>
+<td><strong>Yes (constraints)</strong></td>
+<td><strong>Yes (stability)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>LRT is the only framework that explains <em>why</em> quantum
+mechanics has its structure rather than postulating that structure or
+remaining silent.</p>
+<h3 id="the-measurement-problem">5.3 The Measurement Problem</h3>
+<table>
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 18%" />
+<col style="width: 20%" />
+<col style="width: 12%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr>
+<th>Theory</th>
+<th>Approach</th>
+<th>Mechanism</th>
+<th>When?</th>
+<th>Why This Outcome?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Copenhagen</td>
+<td>Pragmatic dissolution</td>
+<td>“Measurement” (undefined)</td>
+<td>Unspecified</td>
+<td>Fundamental randomness</td>
+</tr>
+<tr>
+<td>MWI</td>
+<td>All outcomes occur</td>
+<td>Branching</td>
+<td>Always</td>
+<td>All occur; you’re in one branch</td>
+</tr>
+<tr>
+<td>Bohmian</td>
+<td>Always definite</td>
+<td>Hidden position</td>
+<td>N/A</td>
+<td>Determined by hidden variable</td>
+</tr>
+<tr>
+<td>GRW</td>
+<td>Spontaneous collapse</td>
+<td>Stochastic hits</td>
+<td>Random (rate λ)</td>
+<td>Stochastic</td>
+</tr>
+<tr>
+<td>QBism</td>
+<td>No objective problem</td>
+<td>Belief updating</td>
+<td>Agent-relative</td>
+<td>Agent’s experience</td>
+</tr>
+<tr>
+<td>Relational</td>
+<td>Relative facts</td>
+<td>Interaction</td>
+<td>Relative</td>
+<td>Relative</td>
+</tr>
+<tr>
+<td><strong>LRT</strong></td>
+<td><strong>Category transition</strong></td>
+<td><strong>IIS → Boolean</strong></td>
+<td><strong>At interface</strong></td>
+<td><strong>Not explained (acknowledged)</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Assessment:</strong></p>
+<ul>
+<li><strong>Copenhagen</strong> avoids the question by refusing
+ontology</li>
+<li><strong>MWI</strong> “solves” it by accepting all outcomes, but then
+faces the probability problem: why does |ψ|² give correct weights if all
+branches exist equally?</li>
+<li><strong>Bohmian</strong> solves it with hidden variables, but
+requires explicit nonlocality and doesn’t explain why the guidance
+equation has its form</li>
+<li><strong>GRW</strong> solves it with new physics, but introduces free
+parameters (λ, a) with no derivation</li>
+<li><strong>QBism</strong> dissolves it by making QM subjective, but
+loses objectivity</li>
+<li><strong>LRT</strong> dissolves it as category transition, honest
+that “why this outcome” is open, but explains why outcomes are
+Boolean</li>
+</ul>
+<h3 id="ontological-cost">5.4 Ontological Cost</h3>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 26%" />
+<col style="width: 38%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr>
+<th>Theory</th>
+<th>Wave Function</th>
+<th>Additional Ontology</th>
+<th>Parsimony</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Copenhagen</td>
+<td>Calculational tool</td>
+<td>Classical apparatus (unexplained)</td>
+<td>Evasive</td>
+</tr>
+<tr>
+<td>MWI</td>
+<td>Real (all branches)</td>
+<td>Infinite branching worlds</td>
+<td><strong>Very Low</strong></td>
+</tr>
+<tr>
+<td>Bohmian</td>
+<td>Real + particles</td>
+<td>Hidden positions, nonlocal dynamics</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>GRW</td>
+<td>Real (modified)</td>
+<td>Collapse mechanism, free parameters</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>QBism</td>
+<td>Agent beliefs</td>
+<td>Agents</td>
+<td>High (anti-realist)</td>
+</tr>
+<tr>
+<td>Relational</td>
+<td>Relational</td>
+<td>Observer-relative facts</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td><strong>LRT</strong></td>
+<td><strong>IIS structure</strong></td>
+<td><strong>3FLL (already presupposed)</strong></td>
+<td><strong>High</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>The parsimony comparison:</strong></p>
+<p>MWI’s ontology is staggering: every quantum event spawns entire
+universes. Defenders respond that branches are not “added” but entailed
+by refusing to postulate collapse. However, the asymmetry with LRT is
+fundamental. MWI’s branches are entailed by <em>denying</em> something
+observation suggests (single outcomes). LRT’s 3FLL are
+<em>presupposed</em> by any coherent discourse, including MWI’s own
+formulation. MWI adds branch realism to avoid accepting what every
+measurement displays; LRT makes explicit what every theory already
+assumes at the metalevel. The parsimony difference is not between “one
+world” and “many worlds” but between recognizing presuppositions and
+multiplying entities to evade observations.</p>
+<p>Bohmian mechanics adds hidden variables that are in principle
+unobservable plus explicitly nonlocal dynamics.</p>
+<p>GRW adds new physics with unexplained parameters.</p>
+<p>LRT adds nothing beyond what is already presupposed. The 3FLL are
+assumed by every theory at the metalevel. Making them explicit and
+showing they do physical work is not adding ontology; it is recognizing
+what was already there.</p>
+<h3 id="locality">5.5 Locality</h3>
+<table>
+<thead>
+<tr>
+<th>Theory</th>
+<th>Bell Correlations</th>
+<th>Locality Preserved?</th>
+<th>Signaling?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Copenhagen</td>
+<td>Accepts</td>
+<td>Silent</td>
+<td>No</td>
+</tr>
+<tr>
+<td>MWI</td>
+<td>Local in configuration space</td>
+<td>Yes (no collapse)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Bohmian</td>
+<td>Nonlocal dynamics</td>
+<td><strong>No</strong></td>
+<td>No</td>
+</tr>
+<tr>
+<td>GRW</td>
+<td>Nonlocal collapse</td>
+<td><strong>No</strong></td>
+<td>No</td>
+</tr>
+<tr>
+<td>QBism</td>
+<td>Agent experiences</td>
+<td>N/A</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Relational</td>
+<td>Relative</td>
+<td>Claims yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>LRT</strong></td>
+<td><strong>Constraint satisfaction</strong></td>
+<td><strong>Yes</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Bohmian mechanics and GRW explicitly embrace nonlocality. This is a
+significant cost; it conflicts with relativistic intuitions and requires
+careful treatment to avoid signaling.</p>
+<p>LRT maintains locality: correlations arise from global constraint
+satisfaction, not causal influence. The constraints are structural
+features of IIS configurations, not signals propagating between
+locations.</p>
+<h3 id="predictions-and-falsifiability">5.6 Predictions and
+Falsifiability</h3>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 23%" />
+<col style="width: 14%" />
+<col style="width: 24%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr>
+<th>Theory</th>
+<th>Novel Predictions</th>
+<th>Confirmed</th>
+<th>Currently Testable</th>
+<th>Explicit Falsifiers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Copenhagen</td>
+<td>None</td>
+<td>N/A</td>
+<td>None</td>
+<td>None</td>
+</tr>
+<tr>
+<td>MWI</td>
+<td>None (empirically equivalent)</td>
+<td>N/A</td>
+<td>None practical</td>
+<td>None practical</td>
+</tr>
+<tr>
+<td>Bohmian</td>
+<td>None (empirically equivalent)</td>
+<td>N/A</td>
+<td>None practical</td>
+<td>None practical</td>
+</tr>
+<tr>
+<td>GRW</td>
+<td>Collapse effects</td>
+<td>Testing</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>QBism</td>
+<td>None</td>
+<td>N/A</td>
+<td>None</td>
+<td>None (by design)</td>
+</tr>
+<tr>
+<td>Relational</td>
+<td>None</td>
+<td>N/A</td>
+<td>None</td>
+<td>None</td>
+</tr>
+<tr>
+<td><strong>LRT</strong></td>
+<td><strong>Structural</strong></td>
+<td><strong>Yes (2021)</strong></td>
+<td><strong>Yes</strong></td>
+<td><strong>12 explicit</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Assessment:</strong></p>
+<p>Copenhagen, MWI, Bohmian, QBism, and Relational QM make no
+predictions beyond standard quantum mechanics. They are empirically
+equivalent interpretations.</p>
+<p>GRW makes testable predictions about collapse rates. This is a
+genuine virtue; GRW takes empirical risk.</p>
+<p>LRT makes structural predictions: - Complex numbers required →
+<strong>Confirmed</strong> (Renou et al., 2021) - Collapse parameters
+must be derivable, not free → Currently testable - No recoherence after
+actualization → Distinguishes from MWI</p>
+<p>LRT specifies twelve explicit falsifiers. It takes empirical
+risk.</p>
+<h3 id="the-born-rule-problem">5.7 The Born Rule Problem</h3>
+<p>The Born rule deserves special attention.</p>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 38%" />
+<col style="width: 43%" />
+</colgroup>
+<thead>
+<tr>
+<th>Theory</th>
+<th>Born Rule Status</th>
+<th>Derivation Quality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Copenhagen</td>
+<td>Postulated</td>
+<td>None</td>
+</tr>
+<tr>
+<td>MWI</td>
+<td>Contested</td>
+<td>Decision-theoretic (Deutsch-Wallace), disputed</td>
+</tr>
+<tr>
+<td>Bohmian</td>
+<td>Derived</td>
+<td>Quantum equilibrium, but why equilibrium?</td>
+</tr>
+<tr>
+<td>GRW</td>
+<td>Built in</td>
+<td>Part of collapse postulate</td>
+</tr>
+<tr>
+<td>QBism</td>
+<td>Coherence</td>
+<td>Dutch book (normative, not physical)</td>
+</tr>
+<tr>
+<td>Relational</td>
+<td>Relational</td>
+<td>Not fully addressed</td>
+</tr>
+<tr>
+<td><strong>LRT</strong></td>
+<td><strong>Derived</strong></td>
+<td><strong>Gleason’s theorem (mathematically rigorous)</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>The MWI problem is severe.</strong> If all branches are
+equally real, what does “probability” mean? The Deutsch-Wallace
+derivation uses decision-theoretic arguments: a rational agent
+<em>should</em> weight branches by |ψ|². But this is normative, not
+physical. It doesn’t explain why |ψ|² tracks anything about reality.</p>
+<p><strong>LRT’s derivation is rigorous.</strong> Gleason’s theorem
+proves |ψ|² is the unique probability measure on Hilbert space
+satisfying minimal conditions. The derivation is mathematical, not
+normative. The conditions (non-negativity, normalization,
+non-contextuality) are grounded in the interface structure.</p>
+<h3 id="direct-comparison-lrt-vs.-mwi">5.8 Direct Comparison: LRT
+vs. MWI</h3>
+<p>MWI is LRT’s strongest competitor as a realist interpretation. Direct
+comparison:</p>
+<table>
+<colgroup>
+<col style="width: 52%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th>Criterion</th>
+<th>MWI</th>
+<th>LRT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wave function real?</td>
+<td>Yes (all branches)</td>
+<td>Yes (IIS structure)</td>
+</tr>
+<tr>
+<td>Single actuality?</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Born rule</td>
+<td>Contested</td>
+<td>Derived</td>
+</tr>
+<tr>
+<td>Matches observation</td>
+<td>Must explain away one outcome</td>
+<td>Directly predicts one outcome</td>
+</tr>
+<tr>
+<td>Ontological cost</td>
+<td>Infinite branches</td>
+<td>None beyond 3FLL</td>
+</tr>
+<tr>
+<td>Novel predictions</td>
+<td>None</td>
+<td>Complex QM confirmed</td>
+</tr>
+<tr>
+<td>Falsifiable</td>
+<td>Practically no</td>
+<td>Yes (12 explicit)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The core difference:</strong></p>
+<p>MWI: We observe one outcome because we’re in one branch, but all
+branches are equally real. This requires explaining why Born rule gives
+branch weights, what “probability” means when all outcomes occur, and
+why we should believe in unobservable branches.</p>
+<p>LRT: We observe one outcome because actuality is Boolean.
+Non-Contradiction and Excluded Middle enforce single, determinate
+outcomes. No additional explanation needed; single actuality follows
+from 3FLL.</p>
+<p>The asymmetry is fundamental: MWI introduces branch realism to avoid
+accepting what every measurement displays (single outcomes), while LRT
+makes explicit what every theory already presupposes (3FLL). MWI and LRT
+thus differ not just in ontology but in methodology: one multiplies
+entities, the other recognizes presuppositions.</p>
+<h3 id="summary-comparison">5.9 Summary Comparison</h3>
+<p><strong>Table 1.</strong> Comparison of quantum mechanics
+interpretations across key theoretical criteria. ✓ = criterion
+satisfied; ✗ = criterion not satisfied; ~ = partial or contested.</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 17%" />
+<col style="width: 7%" />
+<col style="width: 12%" />
+<col style="width: 7%" />
+<col style="width: 10%" />
+<col style="width: 17%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th>Criterion</th>
+<th style="text-align: center;">Copenhagen</th>
+<th style="text-align: center;">MWI</th>
+<th style="text-align: center;">Bohmian</th>
+<th style="text-align: center;">GRW</th>
+<th style="text-align: center;">QBism</th>
+<th style="text-align: center;">Relational</th>
+<th style="text-align: center;"><strong>LRT</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Explains structure</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;"><strong>✓</strong></td>
+</tr>
+<tr>
+<td>Derives Born rule</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">~</td>
+<td style="text-align: center;">~</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">~</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;"><strong>✓</strong></td>
+</tr>
+<tr>
+<td>Parsimony</td>
+<td style="text-align: center;">~</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">~</td>
+<td style="text-align: center;">~</td>
+<td style="text-align: center;"><strong>✓</strong></td>
+</tr>
+<tr>
+<td>Realism</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">~</td>
+<td style="text-align: center;"><strong>✓</strong></td>
+</tr>
+<tr>
+<td>Locality</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;"><strong>✓</strong></td>
+</tr>
+<tr>
+<td>Testable predictions</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;"><strong>✓</strong></td>
+</tr>
+<tr>
+<td>Falsifiable</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;"><strong>✓</strong></td>
+</tr>
+</tbody>
+</table>
+<p>LRT is the only interpretation that: - Explains why QM has its
+structure - Derives the Born rule rigorously - Maintains realism,
+locality, and parsimony simultaneously - Has confirmed predictions -
+Specifies explicit falsification conditions</p>
+<h3 id="the-layer-structure-unifying-interpretations">5.10 The Layer
+Structure: Unifying Interpretations</h3>
+<p>Rather than viewing interpretations as competitors, LRT reveals them
+as descriptions of different layers:</p>
+<table>
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>LAYER 4: BOOLEAN ACTUALITY</strong></td>
+<td><strong>Frameworks:</strong> Copenhagen (outcomes), QBism (agent’s
+bets). <strong>Math:</strong> Boolean algebra, classical probability.
+<strong>What happens:</strong> Definite outcomes; one result per
+context</td>
+</tr>
+<tr>
+<td><strong>LAYER 3: THE INTERFACE</strong></td>
+<td><strong>Frameworks:</strong> Decoherence, GRW (collapse statistics).
+<strong>Math:</strong> Lindblad equation, stochastic Schrödinger
+equation. <strong>What happens:</strong> Transition from quantum to
+classical</td>
+</tr>
+<tr>
+<td><strong>LAYER 2: PROBABILITY FLOW</strong></td>
+<td><strong>Frameworks:</strong> Bohmian mechanics (guidance equation).
+<strong>Math:</strong> Probability currents, quantum equilibrium.
+<strong>What happens:</strong> |ψ|² distribution maintained; flow
+structure</td>
+</tr>
+<tr>
+<td><strong>LAYER 1: IIS DYNAMICS</strong></td>
+<td><strong>Frameworks:</strong> Unitary QM, Many-Worlds (wave function
+realism). <strong>Math:</strong> Schrödinger equation, Hilbert space.
+<strong>What happens:</strong> Unitary evolution; all branches
+present</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Domain assignments:</strong></p>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 12%" />
+<col style="width: 36%" />
+<col style="width: 32%" />
+</colgroup>
+<thead>
+<tr>
+<th>Framework</th>
+<th>Layer</th>
+<th>Mathematical Content</th>
+<th>LRT Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unitary QM / MWI</td>
+<td>1</td>
+<td>Schrödinger: i∂ₜ|ψ⟩ = H|ψ⟩</td>
+<td>Evolution in IIS; all branches exist</td>
+</tr>
+<tr>
+<td>Bohmian</td>
+<td>2</td>
+<td>Guidance: dQ/dt = (ℏ/m)Im(∇ψ/ψ)</td>
+<td>Probability flow in IIS</td>
+</tr>
+<tr>
+<td>Decoherence</td>
+<td>3</td>
+<td>Lindblad: ρ̇ = -i[H,ρ] + L[ρ]</td>
+<td>Approach to interface threshold</td>
+</tr>
+<tr>
+<td>GRW</td>
+<td>3</td>
+<td>Collapse rate: λ · N</td>
+<td>Statistics of interface transitions</td>
+</tr>
+<tr>
+<td>QBism</td>
+<td>4</td>
+<td>Dutch book coherence</td>
+<td>Agent’s rational bets on outcomes</td>
+</tr>
+<tr>
+<td>Copenhagen</td>
+<td>4</td>
+<td>Born rule + collapse</td>
+<td>Description of actualized outcomes</td>
+</tr>
+<tr>
+<td>Relational</td>
+<td>2-4</td>
+<td>Perspectival states</td>
+<td>Context-dependence across layers</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Why interpretations seem to conflict:</strong> MWI (Layer 1)
+says all branches are real. Copenhagen (Layer 4) says one outcome
+occurs. Both are correct <em>in their domains</em>. MWI correctly
+describes IIS dynamics; Copenhagen correctly describes Boolean
+actuality. The apparent conflict dissolves when we recognize they
+describe different layers.</p>
+<hr />
+<h2 id="predictions-and-falsifiers">6. Predictions and Falsifiers</h2>
+<p>A physical theory must make testable claims and specify conditions
+for its own refutation. This section catalogs what LRT predicts, what
+has been confirmed, what is currently testable, and what would falsify
+the framework.</p>
+<h3 id="confirmed-predictions">6.1 Confirmed Predictions</h3>
+<table>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 21%" />
+<col style="width: 18%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th>Prediction</th>
+<th>Basis</th>
+<th>Test</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Complex amplitudes required</td>
+<td>Local tomography (A3c) forces ℂ over ℝ</td>
+<td>Renou et al. (2021)</td>
+<td><strong>Confirmed</strong></td>
+</tr>
+<tr>
+<td>Born rule exact</td>
+<td>Gleason’s theorem</td>
+<td>Precision measurements</td>
+<td>Confirmed to 10⁻⁵</td>
+</tr>
+<tr>
+<td>Tsirelson bound exact</td>
+<td>Interface stability</td>
+<td>All Bell tests</td>
+<td>No violations observed</td>
+</tr>
+<tr>
+<td>Bell inequality violations</td>
+<td>Global constraint satisfaction</td>
+<td>Bell tests since 1982</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Contextuality</td>
+<td>Interface signature</td>
+<td>Kochen-Specker tests</td>
+<td>Confirmed</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The complex numbers result:</strong></p>
+<p>LRT, via local tomography (A3c), requires that quantum mechanics use
+complex rather than real amplitudes. This structural requirement
+(independently established by reconstruction theorems) was
+experimentally confirmed by Renou et al. (2021), who designed an
+experiment distinguishing complex from real quantum mechanics. Nature
+followed the complex predictions. While LRT did not generate this
+prediction independently of reconstruction theorems, the experimental
+confirmation validates the framework’s structural commitments.</p>
+<h3 id="currently-testable-predictions">6.2 Currently Testable
+Predictions</h3>
+<p><strong>Prediction 1: Collapse parameters must be
+derivable.</strong></p>
+<p>If objective collapse occurs (as in GRW-type models), LRT constrains
+the mechanism:</p>
+<blockquote>
+<p>Any collapse parameter not derivable from geometry or information
+capacity would constitute surplus structure, violating Global
+Parsimony.</p>
+</blockquote>
+<p>GRW introduces parameters λ (collapse rate) and a (localization
+width) as primitives. If collapse is confirmed with these as free
+parameters (not derivable from existing physical constants), LRT
+requires revision.</p>
+<p>Conversely, if collapse rates follow from gravitational self-energy
+(Penrose-Diósi) or information-theoretic bounds, LRT is supported.</p>
+<p><strong>Current experiments:</strong></p>
+<table>
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 40%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr>
+<th>Experiment</th>
+<th>What It Tests</th>
+<th>Timeline</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MAQRO (ESA proposal)</td>
+<td>Macroscopic superposition in space</td>
+<td>Under review</td>
+</tr>
+<tr>
+<td>Optomechanical tests</td>
+<td>Nanoparticle superposition limits</td>
+<td>Ongoing</td>
+</tr>
+<tr>
+<td>Large-molecule interferometry</td>
+<td>Interference at increasing mass scales</td>
+<td>Ongoing (Vienna)</td>
+</tr>
+<tr>
+<td>GRW heating tests</td>
+<td>Anomalous heating from collapse</td>
+<td>Sensitivity improving</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Quantitative context - decoherence timescales:</strong></p>
+<p>For objects in thermal environments, the decoherence time τ_D depends
+on mass, temperature, and superposition separation:</p>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Superposition Δx</th>
+<th>Decoherence Time τ_D</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Electron in lab</td>
+<td>1 nm</td>
+<td>~ 10⁻¹³ s</td>
+</tr>
+<tr>
+<td>Dust grain (10⁻⁵ g)</td>
+<td>1 nm</td>
+<td>~ 10⁻³¹ s</td>
+</tr>
+<tr>
+<td>Bowling ball</td>
+<td>1 cm</td>
+<td>~ 10⁻⁴³ s</td>
+</tr>
+</tbody>
+</table>
+<p>For macroscopic objects, τ_D → 0 effectively. The interface
+transition is instantaneous at human scales. This resolves the “when
+does collapse happen?” concern; for macro systems, the question of
+precise timing becomes physically meaningless.</p>
+<p><strong>GRW mass scaling (if collapse model applies):</strong></p>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>N (nucleons)</th>
+<th>Mean collapse time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Electron</td>
+<td>1</td>
+<td>~ 10⁸ years</td>
+</tr>
+<tr>
+<td>Protein</td>
+<td>10⁵</td>
+<td>~ 10³ years</td>
+</tr>
+<tr>
+<td>Virus</td>
+<td>10⁷</td>
+<td>~ 10 years</td>
+</tr>
+<tr>
+<td>Dust grain</td>
+<td>10¹⁴</td>
+<td>~ 10⁻⁶ s</td>
+</tr>
+<tr>
+<td>Cat</td>
+<td>10²⁷</td>
+<td>~ 10⁻¹¹ s</td>
+</tr>
+</tbody>
+</table>
+<p>This scaling explains why microscopic systems exhibit quantum
+behavior while macroscopic systems appear classical. The interface
+transition rate scales with system complexity.</p>
+<p><strong>Prediction 2: No recoherence after
+actualization.</strong></p>
+<p>LRT treats measurement as category transition. Once an outcome has
+produced a stable macroscopic record, the other “branches” were never
+actual; there is nothing to recohere.</p>
+<p>MWI permits recoherence in principle (given sufficient control). LRT
+forbids it for actualized outcomes.</p>
+<p>This is difficult to test directly but represents a genuine
+ontological difference with empirical implications in extreme
+regimes.</p>
+<p><strong>Prediction 3: Structural fine-tuning is exact.</strong></p>
+<p>LRT predicts that perturbations to quantum structure destroy stable
+physics entirely:</p>
+<ul>
+<li>Remove complex numbers → No stable interference</li>
+<li>Alter unitarity → Probability non-conservation</li>
+<li>Change Born exponent → No valid probability measure</li>
+<li>Exceed Tsirelson bound → Signaling permitted</li>
+</ul>
+<p>Any observation of stable physics with altered quantum structure
+would falsify LRT.</p>
+<h3 id="the-falsifiers">6.3 The Falsifiers</h3>
+<p>Twelve conditions would refute LRT:</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 31%" />
+<col style="width: 60%" />
+</colgroup>
+<thead>
+<tr>
+<th>#</th>
+<th>Falsifier</th>
+<th>What It Would Refute</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Born rule violated (dim ≥ 3)</td>
+<td>Gleason derivation; non-contextual interface (A5)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Tsirelson bound exceeded</td>
+<td>Interface stability claim</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Locally tomographic real QM works</td>
+<td>Local tomography → ℂ derivation</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Locally tomographic quaternionic QM works</td>
+<td>Compositional consistency claim</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Physical dialetheia observed</td>
+<td>Non-Contradiction as constitutive</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Non-Boolean measurement outcome</td>
+<td>Excluded Middle as constitutive</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Local hidden variables succeed</td>
+<td>Global constraint interpretation</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Non-contextual hidden variables succeed</td>
+<td>Interface interpretation</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Superluminal signaling via entanglement</td>
+<td>3FLL as constraint (not signal)</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Distinguishable “identical” particles</td>
+<td>Identity as constitutive</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Information exceeds Bekenstein bound</td>
+<td>Distinguishability finitude</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Collapse with underivable free parameters</td>
+<td>Global Parsimony</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Testability categorization:</strong></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 40%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr>
+<th>Category</th>
+<th>Falsifiers</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Already tested and passed</strong></td>
+<td>1-4, 7-8</td>
+<td>Born rule (10⁻⁵), Tsirelson bound, complex QM (2021), Bell/KS
+violations</td>
+</tr>
+<tr>
+<td><strong>Currently testable</strong></td>
+<td>11-12</td>
+<td>Bekenstein bound tests, collapse mechanism experiments (active
+research)</td>
+</tr>
+<tr>
+<td><strong>Foundational/in-principle</strong></td>
+<td>5-6, 9-10</td>
+<td>Would challenge empirical science itself; no observations exist or
+expected</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Assessment of falsifier categories:</strong></p>
+<p><strong>Already tested (1-4, 7-8):</strong> Falsifiers 1-4 and 7-8
+have been tested extensively. Born rule confirmed to 10⁻⁵. Tsirelson
+bound holds. Real QM ruled out (2021). Bell and Kochen-Specker
+violations confirmed. LRT passes.</p>
+<p><strong>Currently testable (11-12):</strong> Bekenstein bound tests
+and collapse mechanism experiments are active research areas. These
+represent genuine empirical risk for LRT.</p>
+<p><strong>Foundational (5-6, 9-10):</strong> These falsifiers concern
+logical structure presupposed by all empirical science. Observing a
+physical dialetheia or non-Boolean outcome would not merely refute LRT;
+it would challenge the foundations of scientific inquiry itself. These
+are “in principle” falsifiers that establish LRT’s logical commitments,
+not practical test conditions. No such observations exist or are
+expected.</p>
+<p><strong>Note on shared falsifiers:</strong> Several falsifiers (Born
+rule, Tsirelson bound, no-signaling) are shared with standard quantum
+mechanics. This is appropriate: LRT <em>predicts</em> standard QM, so
+falsifiers of standard QM are falsifiers of LRT. What distinguishes LRT
+is that it <em>explains</em> what it predicts rather than postulating
+it. The distinctive LRT predictions concern structural requirements
+(complex numbers, derivable collapse parameters) and the impossibility
+of certain extensions.</p>
+<p><strong>Critical falsifier: Fundamental information loss.</strong>
+The derivation of unitary dynamics (Section 3.5) rests on the
+Consistency Bridging Principle and Global Parsimony, which require that
+fundamental dynamics preserve information. This explicitly stakes LRT on
+the resolution of the Black Hole Information Paradox. If Hawking
+radiation is confirmed to be truly thermal with fundamental information
+loss (non-unitary black hole evaporation), this directly falsifies LRT’s
+derivation of the Schrödinger equation. Current theoretical evidence
+(AdS/CFT correspondence, Page curve derivations) favors information
+preservation, but this remains an open empirical and theoretical
+question. LRT’s commitment to unitarity is principled, not evasive:
+information destruction would require a mechanism constituting surplus
+structure beyond the constitutive base, violating Global Parsimony.</p>
+<h3 id="what-lrt-does-not-predict">6.4 What LRT Does Not Predict</h3>
+<p>LRT makes no predictions about:</p>
+<ul>
+<li>Specific particle masses or coupling constants</li>
+<li>Number of particle generations</li>
+<li>Gauge group structure</li>
+<li>Cosmological parameters</li>
+<li>Dark matter/energy nature</li>
+<li>Quantum gravity details</li>
+</ul>
+<p>These lie outside LRT’s scope. The framework addresses <em>why
+quantum mechanics has its structure</em>, not the specific content of
+the Standard Model or cosmology.</p>
+<h3 id="the-evidential-structure">6.5 The Evidential Structure</h3>
+<p><strong>Strong evidence:</strong> - Universal 3FLL compliance across
+all physics (foundational observation) - Complex QM confirmed over real
+QM (structural prediction) - 17 phenomena unified under common
+explanation (explanatory power) - All falsifiers tested to date have
+been passed</p>
+<p><strong>Moderate evidence:</strong> - Reconstruction theorems
+independently confirm uniqueness of QM structure - No competing
+interpretation matches LRT’s combination of virtues</p>
+<p><strong>Open tests:</strong> - Collapse mechanism constraints (5-20
+year horizon) - Precision tests of information-theoretic bounds</p>
+<h3 id="comparison-with-competing-theories">6.6 Comparison with
+Competing Theories</h3>
+<table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 30%" />
+<col style="width: 29%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr>
+<th>Theory</th>
+<th>Confirmed Predictions</th>
+<th>Testable Predictions</th>
+<th>Explicit Falsifiers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Copenhagen</td>
+<td>N/A</td>
+<td>None</td>
+<td>None</td>
+</tr>
+<tr>
+<td>MWI</td>
+<td>N/A</td>
+<td>None practical</td>
+<td>None practical</td>
+</tr>
+<tr>
+<td>Bohmian</td>
+<td>N/A</td>
+<td>None practical</td>
+<td>None practical</td>
+</tr>
+<tr>
+<td>GRW</td>
+<td>Testing</td>
+<td>Yes (collapse rates)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>QBism</td>
+<td>N/A</td>
+<td>None</td>
+<td>None (unfalsifiable)</td>
+</tr>
+<tr>
+<td>Relational</td>
+<td>N/A</td>
+<td>None</td>
+<td>None</td>
+</tr>
+<tr>
+<td><strong>LRT</strong></td>
+<td><strong>Complex QM (2021)</strong></td>
+<td><strong>Yes (collapse, bounds)</strong></td>
+<td><strong>12 explicit</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Only LRT and GRW make testable predictions and specify falsification
+conditions. This is what distinguishes physical theories from
+interpretive frameworks.</p>
+<p>LRT’s advantage over GRW: LRT constrains collapse mechanisms rather
+than postulating specific parameters. If GRW’s parameters are confirmed
+as free (not derivable), GRW is confirmed but LRT requires revision. If
+collapse parameters are derivable from geometry or information theory,
+both are supported but LRT’s parsimony constraint is vindicated.</p>
+<hr />
+<h2 id="open-questions-and-conclusion">7. Open Questions and
+Conclusion</h2>
+<h3 id="what-remains-open">7.1 What Remains Open</h3>
+<p>LRT does not answer every question. Honest accounting requires
+identifying what is not yet resolved.</p>
+<p><strong>The interface criterion:</strong></p>
+<p>LRT establishes that measurement is category transition from IIS to
+Boolean actuality. It does not specify the precise physical criterion
+marking this transition.</p>
+<p>Candidates include: - Decoherence thresholds (environmental
+entanglement) - Gravitational self-energy (Penrose-Diósi) -
+Information-theoretic saturation (Bekenstein-type bounds) -
+Thermodynamic irreversibility</p>
+<p>These are empirical questions. Section 6.2 identified experiments
+currently testing them. LRT constrains the answer (no free parameters)
+but does not determine it.</p>
+<p><strong>Why this outcome?</strong></p>
+<p>LRT explains why measurement yields <em>a</em> definite Boolean
+outcome. It does not explain why <em>this particular</em> outcome rather
+than another.</p>
+<p>This may be irreducibly stochastic. The Born rule gives
+probabilities; there may be no deeper fact about why a specific outcome
+occurs. If so, this is not a failure of LRT but a feature of physical
+reality.</p>
+<p>No interpretation explains individual outcome selection. MWI claims
+all outcomes occur. Bohmian mechanics makes selection deterministic but
+with unknowable initial conditions. GRW makes it stochastic. LRT is
+honest that this question is open.</p>
+<p><strong>The relativistic interface:</strong></p>
+<p>LRT explains entanglement as global constraint satisfaction rather
+than causal signaling. This works naturally in non-relativistic quantum
+mechanics, where simultaneity is well-defined. However, a fully
+relativistic formulation requires articulating how the IIS/actuality
+interface respects the causal structure of spacetime.</p>
+<p>The challenge: “global constraint” might appear to presuppose a
+reference frame, while Special Relativity has no universal “now.” The
+resolution lies in recognizing that the constraint is on the IIS state
+itself (which is a single configuration without spatial parts needing
+coordination), not on spacetime events. Different reference frames
+describe measurement orderings differently, but all frames agree on the
+correlations.</p>
+<p>A Lorentz-invariant formulation of the interface, likely using
+algebraic quantum field theory where local observables respect causal
+diamond structure, is required for full theoretical completeness. This
+represents ongoing work analogous in importance to the interface
+criterion problem.</p>
+<p><strong>Quantum field theory:</strong></p>
+<p>Section 3.6 noted that QFT extension remains incomplete. LRT’s
+framework is consistent with quantum field theory but does not yet
+provide independent derivations of:</p>
+<ul>
+<li>Relativistic field structure</li>
+<li>Renormalization</li>
+<li>Vacuum properties</li>
+<li>Gauge symmetries</li>
+</ul>
+<p>However, explicit derivation may not be required. If 3FLL function as
+a global constraint field rather than merely interface constraints, QFT
+inherits logical grounding directly. The quantum mechanical core of QFT
+(complex Hilbert space/Fock space, unitary S-matrix, Boolean measurement
+outcomes, the Born rule) operates within the same constraint structure
+that LRT establishes. The specifically field-theoretic features (which
+fields, which gauge groups, which particle content) represent contingent
+physical content operating within the constraint field, analogous to how
+specific triangles operate within Euclidean geometry without being
+derived from its axioms.</p>
+<p>This perspective suggests that renormalization might be understood as
+constraint enforcement: the infinities arising in naive QFT calculations
+violate distinguishability (infinite quantities are not well-defined),
+and renormalization removes these violations to restore 3FLL
+compliance.</p>
+<p>The implications of treating 3FLL as a global constraint field (for
+understanding gauge symmetries, for the relationship between logical and
+spacetime structure, and for quantum gravity) constitute a direction for
+future work.</p>
+<p><strong>Quantum gravity:</strong></p>
+<p>The relationship between LRT and gravity is undeveloped. Intriguing
+possibilities exist:</p>
+<ul>
+<li>Spacetime might emerge from distinguishability structure in IIS</li>
+<li>The holographic principle suggests information-theoretic foundations
+for geometry</li>
+<li>The Bekenstein bound connects entropy to area in Planck units</li>
+</ul>
+<p>These connections are suggestive but not yet rigorous. Quantum
+gravity remains the major open problem in fundamental physics; LRT does
+not solve it.</p>
+<p><strong>The action-complexity conjecture:</strong></p>
+<p>The original development of LRT proposed a conjecture:</p>
+<p><span class="math display">\[S = \hbar \cdot C\]</span></p>
+<p>relating physical action S to informational complexity C, with ℏ as
+the conversion factor.</p>
+<p>This conjecture is motivated by: - The Bekenstein bound (entropy
+proportional to area in Planck units) - Black hole thermodynamics - The
+Margolus-Levitin quantum speed limit</p>
+<p>However, the conjecture remains speculative. It has not generated
+testable predictions distinct from existing physics. If developed
+further, it might yield novel empirical content. Currently, it is a
+research direction, not an established result.</p>
+<h3 id="the-status-of-lrt">7.2 The Status of LRT</h3>
+<p>LRT is a physical theory that:</p>
+<table>
+<colgroup>
+<col style="width: 57%" />
+<col style="width: 42%" />
+</colgroup>
+<thead>
+<tr>
+<th>Criterion</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Explains quantum structure</td>
+<td>Yes (uniquely among interpretations)</td>
+</tr>
+<tr>
+<td>Derives key results</td>
+<td>Yes (Born rule, reversibility, complex numbers)</td>
+</tr>
+<tr>
+<td>Has confirmed predictions</td>
+<td>Yes (complex QM, 2021)</td>
+</tr>
+<tr>
+<td>Is currently testable</td>
+<td>Yes (collapse mechanism constraints)</td>
+</tr>
+<tr>
+<td>Specifies falsification conditions</td>
+<td>Yes (12 explicit)</td>
+</tr>
+<tr>
+<td>Resolves all open questions</td>
+<td>No (interface criterion, QFT, gravity remain open)</td>
+</tr>
+</tbody>
+</table>
+<p>This is the status of a successful physical framework with
+acknowledged limitations, not the status of a complete final theory.</p>
+<h3 id="honest-accounting-derived-vs.-fine-tuned-vs.-given">7.3 Honest
+Accounting: Derived vs. Fine-Tuned vs. Given</h3>
+<p>Clear accounting distinguishes what LRT establishes:</p>
+<p><strong>What Is Derived:</strong></p>
+<table>
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 36%" />
+<col style="width: 31%" />
+</colgroup>
+<thead>
+<tr>
+<th>Claim</th>
+<th>Status</th>
+<th>Basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Actuality is Boolean</td>
+<td>Derived</td>
+<td>3FLL require determinacy</td>
+</tr>
+<tr>
+<td>Distinguishability is constituted by 3FLL</td>
+<td>Derived</td>
+<td>Definition/analysis</td>
+</tr>
+<tr>
+<td>Distinguishability is pairwise/quadratic</td>
+<td>Derived</td>
+<td>Structural analysis</td>
+</tr>
+<tr>
+<td>The bit is the fundamental unit</td>
+<td>Derived</td>
+<td>Minimal distinguishability</td>
+</tr>
+<tr>
+<td>Born rule (given Hilbert space)</td>
+<td>Derived</td>
+<td>Gleason’s theorem</td>
+</tr>
+<tr>
+<td>Measurement is category transition</td>
+<td>Derived</td>
+<td>IIS/actuality framework</td>
+</tr>
+<tr>
+<td>Entanglement is global constraint</td>
+<td>Derived</td>
+<td>3FLL as constraint field</td>
+</tr>
+<tr>
+<td>Complex Hilbert space</td>
+<td>Derived</td>
+<td>Masanes-Müller from Axiom 3</td>
+</tr>
+<tr>
+<td>Global Parsimony</td>
+<td>Derived</td>
+<td>CCP + Truthmaker Requirement</td>
+</tr>
+</tbody>
+</table>
+<p><strong>What Is Fine-Tuned:</strong></p>
+<table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 36%" />
+<col style="width: 22%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Specific quantum fields</td>
+<td>Fine-tuned</td>
+<td>Which modes exist is contingent</td>
+</tr>
+<tr>
+<td>Particle masses</td>
+<td>Fine-tuned</td>
+<td>Parameter-level tuning</td>
+</tr>
+<tr>
+<td>Coupling constants</td>
+<td>Fine-tuned</td>
+<td>Parameter-level tuning</td>
+</tr>
+<tr>
+<td>Spacetime dimension</td>
+<td>Fine-tuned</td>
+<td>Not addressed by LRT</td>
+</tr>
+<tr>
+<td>Initial conditions (s₀)</td>
+<td>Fine-tuned</td>
+<td>Contingent starting point</td>
+</tr>
+</tbody>
+</table>
+<p><strong>What Is Given (Axiomatic):</strong></p>
+<table>
+<colgroup>
+<col style="width: 39%" />
+<col style="width: 34%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr>
+<th>Element</th>
+<th>Status</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3FLL</td>
+<td>Primitive</td>
+<td>Constitutive; not derived</td>
+</tr>
+<tr>
+<td>IIS</td>
+<td>Primitive</td>
+<td>Co-constitutive with 3FLL</td>
+</tr>
+<tr>
+<td>Physical constraints (continuity, local tomography)</td>
+<td>Axiom 3</td>
+<td>Required for stable, compositional physics</td>
+</tr>
+<tr>
+<td>Non-contextual measure</td>
+<td>Axiom 5</td>
+<td>Required for consistent interface statistics</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Refining the Status of “Physical Inputs”:</strong></p>
+<p>In the derivation of Quantum Field Theory (see QFT companion paper),
+we categorize features like Lorentz Invariance and Microcausality as
+“Tier 2/3 Inputs”. It is crucial to distinguish the <em>methodological
+status</em> of these inputs from their <em>ontological status</em>.</p>
+<p><strong>Methodologically</strong>, we treat them as inputs to
+maintain rigor where a complete mathematical derivation from 3FLL is not
+yet finalized. We honestly acknowledge the current gap between the
+abstract logic of distinguishability and the specific geometry of
+spacetime.</p>
+<p><strong>Ontologically</strong>, however, LRT asserts that these are
+not independent variables. Under <strong>Global Parsimony</strong>, the
+universe cannot contain arbitrary symmetries. Thus, these inputs
+function as <strong>pending derivations</strong>: logical placeholders
+for constraints that are necessary to maintain 3FLL compliance.</p>
+<ul>
+<li><p><strong>Local Tomography</strong> is not an arbitrary rule; it is
+the stability constraint that prevents the logical incoherence of
+“globally distinct but locally identical” states. Although real QM
+permits globally distinct states with identical marginals (e.g., |Φ⁺⟩
+and |Φ⁻⟩ both give ρ_A = ρ_B = I/2), such states would violate Global
+Parsimony: the same local statistics would correspond to two
+metaphysically distinct global configurations with no additional
+distinguishable consequences—surplus ontological structure forbidden by
+the truthmaker requirement of 3FLL.</p></li>
+<li><p><strong>Lorentz Invariance</strong> is treated as an input, but
+LRT conjectures that the Poincaré group will ultimately be shown to be
+the unique isometry group that preserves the distinguishability metric D
+across all physically admissible frames of reference.</p></li>
+</ul>
+<p>The distinction is not between “logical” and “empirical,” but between
+“derived now” and “derivable in principle.”</p>
+<p><strong>What LRT Does Not Explain:</strong> - Why there is something
+rather than nothing - Why 3FLL rather than some other logical structure
+- Why THESE quantum fields, masses, constants - The arrow of time
+(beyond interface structure) - The specific interface criterion
+(empirical question)</p>
+<h3 id="the-core-contribution">7.4 The Core Contribution</h3>
+<p>LRT’s central contribution is answering a question other
+interpretations do not address:</p>
+<blockquote>
+<p><strong>Why does quantum mechanics have its specific
+structure?</strong></p>
+</blockquote>
+<p>The answer:</p>
+<blockquote>
+<p>Quantum mechanics is the unique stable interface between the space of
+distinguishable configurations (IIS) and Boolean actuality, given that
+the Three Fundamental Laws of Logic are constitutive of physical
+distinguishability.</p>
+</blockquote>
+<p>This explains: - Why Hilbert space (pairwise distinguishability +
+physical constraints) - Why complex numbers (local tomography) - Why the
+Born rule (Gleason’s theorem on the interface) - Why unitary dynamics
+(reversibility from CBP + Parsimony) - Why contextuality (values
+generated at interface) - Why Bell correlations without signaling
+(global constraint satisfaction) - Why the Tsirelson bound (interface
+stability limit)</p>
+<p>Other interpretations postulate quantum structure and interpret it.
+LRT explains why that structure obtains.</p>
+<h3 id="the-wager">7.5 The Wager</h3>
+<p>LRT offers a wager:</p>
+<blockquote>
+<p>The deepest structure of physical reality is not contingent but
+constrained: constrained by the conditions under which anything can be
+distinguished from anything else.</p>
+</blockquote>
+<p>If this is correct: - The “unreasonable effectiveness of mathematics”
+dissolves (mathematics and physics share logical roots) - The structure
+of quantum mechanics is not arbitrary but necessary for stable physics -
+The foundations of physics connect to the foundations of logic and
+information</p>
+<p>If this is wrong: - Quantum structure is brute contingency, not
+explained by deeper principles - The success of 3FLL across all physics
+is coincidence or cognitive artifact - Some alternative interpretation
+better accounts for the evidence</p>
+<p>The wager is testable. Section 6 specified conditions that would
+refute LRT. The framework takes intellectual risk.</p>
+<h3 id="structured-open-problems">7.6 Structured Open Problems</h3>
+<p>The LRT framework raises precise mathematical and physical questions.
+These are organized by difficulty and approach:</p>
+<p><strong>Foundational Problems:</strong></p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 32%" />
+<col style="width: 43%" />
+</colgroup>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Difficulty</th>
+<th>Current Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Can Local Tomography be derived from 3FLL?</td>
+<td>Hard</td>
+<td>Open; currently an axiom (A3c)</td>
+</tr>
+<tr>
+<td>Can complex numbers be derived from more primitive assumptions?</td>
+<td>Medium</td>
+<td>Partial; depends on local tomography</td>
+</tr>
+<tr>
+<td>What categorical structure describes the interface functor?</td>
+<td>Medium</td>
+<td>Open</td>
+</tr>
+<tr>
+<td>Characterize representations of the 3FLL algebra</td>
+<td>Medium</td>
+<td>Open</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Physical Problems:</strong></p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 32%" />
+<col style="width: 43%" />
+</colgroup>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Difficulty</th>
+<th>Current Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What physical criterion marks interface transition?</td>
+<td>Empirical</td>
+<td>Candidates identified; testable</td>
+</tr>
+<tr>
+<td>Prove or refute S = ℏC (action-complexity conjecture)</td>
+<td>Hard</td>
+<td>Conjectural; motivated</td>
+</tr>
+<tr>
+<td>How does Lorentz symmetry act on IIS?</td>
+<td>Hard</td>
+<td>Open; algebraic QFT approach suggested</td>
+</tr>
+<tr>
+<td>Does gravity modify the interface? (Penrose-Diósi)</td>
+<td>Very Hard</td>
+<td>Experimentally testable</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Structural Problems:</strong></p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 32%" />
+<col style="width: 43%" />
+</colgroup>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Difficulty</th>
+<th>Current Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Why do physical systems have specific finite dimensions?</td>
+<td>Very Hard</td>
+<td>Fine-tuning; not addressed</td>
+</tr>
+<tr>
+<td>Why U(1) × SU(2) × SU(3) gauge symmetry?</td>
+<td>Beyond LRT</td>
+<td>Requires unification physics</td>
+</tr>
+<tr>
+<td>Why three generations of fermions?</td>
+<td>Beyond LRT</td>
+<td>Parameter-level fine-tuning</td>
+</tr>
+</tbody>
+</table>
+<h3 id="research-program">7.7 Research Program</h3>
+<p><strong>Near-term (tractable with current methods):</strong> 1. Test
+S = ℏC in simple models (qubit systems) 2. Develop relativistic LRT
+using algebraic QFT 3. Formalize the interface category mathematically
+4. Improve sensitivity of collapse mechanism experiments</p>
+<p><strong>Medium-term (requires new developments):</strong> 5. Derive
+local tomography from 3FLL (would strengthen foundations) 6. Connect LRT
+to quantum gravity proposals 7. Test Penrose-Diósi collapse predictions
+at increasing mass scales 8. Investigate tensor network structure of
+actualizable states</p>
+<p><strong>Long-term (speculative):</strong> 9. Derive specific field
+content from LRT + cosmological principles 10. Unify LRT with spacetime
+emergence 11. Resolve the arrow of time within LRT</p>
+<h3 id="conclusion">7.8 Conclusion</h3>
+<p>Every physical measurement ever conducted has yielded exactly one
+outcome: self-identical, non-contradictory, determinate. This holds
+despite a century of quantum mechanics where violations were actively
+sought.</p>
+<p>Logic Realism Theory explains this pattern. The Three Fundamental
+Laws of Logic are not cognitive conventions but ontological constraints
+constitutive of physical distinguishability. Quantum mechanics is the
+unique stable structure at the interface between non-Boolean possibility
+and Boolean actuality.</p>
+<p>The framework derives rather than postulates: complex Hilbert space
+from local tomography, the Born rule from Gleason’s theorem, unitary
+dynamics from information preservation. One structural prediction (that
+quantum mechanics requires complex amplitudes) has been experimentally
+confirmed.</p>
+<p>Twelve explicit conditions would falsify the theory. Experiments
+currently underway test its predictions about collapse mechanisms. This
+is what physical theories do: explain, predict, and risk refutation.</p>
+<p>The competing interpretations either refuse ontological commitment,
+require infinite unobservable worlds, introduce unexplained nonlocal
+mechanisms, or abandon objectivity. LRT maintains realism, locality, and
+parsimony while explaining what others postulate.</p>
+<p>The “unreasonable effectiveness of mathematics” in physics is
+revealed as an illusion caused by viewing physical laws as contingent.
+By strictly enforcing Global Parsimony, LRT shows that fundamental
+physical constraints—from the Born Rule to Special Relativity—are the
+unique mathematical solutions necessary to maintain the Three
+Fundamental Laws of Logic at the interface of possibility and actuality.
+There is no “Bit” without the “Fit” of logical consistency.</p>
+<p>It from bit. Bit from fit.</p>
+<p>Wheeler’s insight was that information is fundamental: physical
+reality emerges from yes/no questions. LRT adds: the bit itself, the
+fundamental unit of distinction, is not primitive. It emerges from the
+fit between logical structure (3FLL) and physical actuality. Quantum
+mechanics is the mathematics of that fit.</p>
+<hr />
+<h2 id="references">References</h2>
+<p>Aspect, A., Dalibard, J., and Roger, G. “Experimental test of Bell’s
+inequalities using time-varying analyzers.” <em>Physical Review
+Letters</em> 49(25), 1982: 1804-1807.</p>
+<p>Bell, J. S. “On the Einstein Podolsky Rosen paradox.”
+<em>Physics</em> 1(3), 1964: 195-200.</p>
+<p>Berto, F. and Jago, M. <em>Impossible Worlds.</em> Oxford University
+Press, 2019.</p>
+<p>Borges, J. L. “The Library of Babel.” In <em>Labyrinths</em>. New
+York: New Directions, 1962.</p>
+<p>Birkhoff, G. and von Neumann, J. “The logic of quantum mechanics.”
+<em>Annals of Mathematics</em> 37(4), 1936: 823-843.</p>
+<p>Bohm, D. “A suggested interpretation of the quantum theory in terms
+of ‘hidden’ variables.” <em>Physical Review</em> 85(2), 1952:
+166-193.</p>
+<p>Chiribella, G., D’Ariano, G. M., and Perinotti, P. “Informational
+derivation of quantum theory.” <em>Physical Review A</em> 84(1), 2011:
+012311.</p>
+<p>da Costa, N. C. A. “On the theory of inconsistent formal systems.”
+<em>Notre Dame Journal of Formal Logic</em> 15(4), 1974: 497-510.</p>
+<p>Deutsch, D. “Quantum theory of probability and decisions.”
+<em>Proceedings of the Royal Society A</em> 455, 1999: 3129-3137.</p>
+<p>Diósi, L. “Models for universal reduction of macroscopic quantum
+fluctuations.” <em>Physical Review A</em> 40(3), 1989: 1165-1174.</p>
+<p>Everett, H. “Relative state formulation of quantum mechanics.”
+<em>Reviews of Modern Physics</em> 29(3), 1957: 454-462.</p>
+<p>Fuchs, C. A. and Schack, R. “Quantum-Bayesian coherence.” <em>Reviews
+of Modern Physics</em> 85(4), 2013: 1693-1715.</p>
+<p>Ghirardi, G. C., Rimini, A., and Weber, T. “Unified dynamics for
+microscopic and macroscopic systems.” <em>Physical Review D</em> 34(2),
+1986: 470-491.</p>
+<p>Gleason, A. M. “Measures on the closed subspaces of a Hilbert space.”
+<em>Journal of Mathematics and Mechanics</em> 6(6), 1957: 885-893.</p>
+<p>Hardy, L. “Quantum theory from five reasonable axioms.”
+arXiv:quant-ph/0101012, 2001.</p>
+<p>Kochen, S. and Specker, E. P. “The problem of hidden variables in
+quantum mechanics.” <em>Journal of Mathematics and Mechanics</em> 17(1),
+1967: 59-87.</p>
+<p>Longmire, J. D. “Logic Realism Theory: Technical Companion.”
+[Available at:
+https://github.com/jdlongmire/logic-realism-theory/blob/master/theory/Logic_Realism_Theory_Technical.md]</p>
+<p>Longmire, J. D. “Logic Realism Theory: Philosophical Foundations.”
+[Available at:
+https://github.com/jdlongmire/logic-realism-theory/blob/master/theory/Logic_Realism_Theory_Philosophy.md]</p>
+<p>Masanes, L. and Müller, M. P. “A derivation of quantum theory from
+physical requirements.” <em>New Journal of Physics</em> 13, 2011:
+063001.</p>
+<p>Penrose, R. “On gravity’s role in quantum state reduction.”
+<em>General Relativity and Gravitation</em> 28(5), 1996: 581-600.</p>
+<p>Priest, G. <em>In Contradiction: A Study of the Transconsistent.</em>
+Second edition. Oxford University Press, 2006.</p>
+<p>Priest, G., Beall, J. C., and Armour-Garb, B. (eds.) <em>The Law of
+Non-Contradiction: New Philosophical Essays.</em> Oxford University
+Press, 2004.</p>
+<p>Priest, G., Routley, R., and Norman, J. (eds.) <em>Paraconsistent
+Logic: Essays on the Inconsistent.</em> Philosophia Verlag, 1989.</p>
+<p>Pusey, M. F., Barrett, J., and Rudolph, T. “On the reality of the
+quantum state.” <em>Nature Physics</em> 8(6), 2012: 475-478.</p>
+<p>Renou, M.-O., et al. “Quantum theory based on real numbers can be
+experimentally falsified.” <em>Nature</em> 600, 2021: 625-629.</p>
+<p>Rovelli, C. “Relational quantum mechanics.” <em>International Journal
+of Theoretical Physics</em> 35(8), 1996: 1637-1678.</p>
+<p>Stone, M. H. “On one-parameter unitary groups in Hilbert space.”
+<em>Annals of Mathematics</em> 33(3), 1932: 643-648.</p>
+<p>Tsirelson, B. S. “Quantum generalizations of Bell’s inequality.”
+<em>Letters in Mathematical Physics</em> 4(2), 1980: 93-100.</p>
+<p>Wallace, D. “Quantum probability from subjective likelihood:
+Improving on Deutsch’s proof of the probability rule.” <em>Studies in
+History and Philosophy of Science Part B</em> 38(2), 2007: 311-332.</p>
+<p>Wheeler, J. A. “Information, physics, quantum: The search for links.”
+In W. Zurek (ed.), <em>Complexity, Entropy, and the Physics of
+Information</em>. Addison-Wesley, 1990.</p>
+<p>Wigner, E. P. “The unreasonable effectiveness of mathematics in the
+natural sciences.” <em>Communications on Pure and Applied
+Mathematics</em> 13(1), 1960: 1-14.</p>
+<hr />
+<h2 id="related-papers-in-this-series">Related Papers in This
+Series</h2>
+<p>Longmire, J. D. “Logic Realism Theory: Technical Foundations.”
+Zenodo, 2025. DOI: <a
+href="https://doi.org/10.5281/zenodo.17778707">10.5281/zenodo.17778707</a></p>
+<p>Longmire, J. D. “Logic Realism Theory: Philosophical Foundations.”
+Zenodo, 2025. DOI: <a
+href="https://doi.org/10.5281/zenodo.17779030">10.5281/zenodo.17779030</a></p>
+<p>Longmire, J. D. “LRT Constraints on QFT: Deriving Fock Structure and
+Interpreting Renormalization from Logical Foundations.” Zenodo, 2025.
+DOI: <a
+href="https://doi.org/10.5281/zenodo.17779066">10.5281/zenodo.17779066</a></p>
+</body>
+</html>

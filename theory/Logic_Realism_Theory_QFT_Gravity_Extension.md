@@ -740,25 +740,37 @@ Specifically:
 
 **PROOF OF THEOREM 5.1'**
 
-*Step 1 (Hilbert space):* By Theorem 3.2 (Technical.md), A1-A4 yield complex Hilbert space. The Hardy kernel construction from distinguishability produces an inner product; local tomography constrains the field to $\mathbb{C}$.
+*Step 1 (Hilbert space):* By Theorem 3.2 (Technical.md), **A1** (distinguishability) + **A2** (3FLL/CBP) + **A3** (information-causality) + **A4** (local tomography) yield complex Hilbert space. The Hardy kernel construction from distinguishability produces an inner product; **A4 rules out real amplitudes** (which fail local tomography) and constrains the field to $\mathbb{C}$.
 
-*Step 2 (Tensor structure):* By Theorem 6.2 (Technical.md), A4 yields tensor product structure: $\mathcal{H}_{AB} = \mathcal{H}_A \otimes \mathcal{H}_B$.
+*Step 2 (Tensor structure):* By Theorem 6.2 (Technical.md), **A4 (local tomography) yields tensor product structure**: $\mathcal{H}_{AB} = \mathcal{H}_A \otimes \mathcal{H}_B$. This rules out non-locally-tomographic alternatives where composite state space is not a tensor product.
 
-*Step 3 (Relativistic structure):* A5 requires Poincaré-covariant evolution. By Wigner's theorem, this is implemented by unitary representations. Combined with A2, we get the standard single-particle Hilbert spaces $\mathcal{H}_{m,s}$.
+*Step 3 (Relativistic structure):* **A5 (Poincaré invariance)** requires Poincaré-covariant evolution. By Wigner's theorem, this is implemented by unitary representations. Combined with **A2** (3FLL requiring determinate dynamics), we get the standard single-particle Hilbert spaces $\mathcal{H}_{m,s}$.
 
-*Step 4 (Fock structure):* A4 + indistinguishability (from 3FLL + A6) yields symmetrized/antisymmetrized Fock spaces (Theorem 3.1').
+*Step 4 (Fock structure):* **A4** + indistinguishability (from 3FLL + **A6 microcausality**) yields symmetrized/antisymmetrized Fock spaces (Theorem 3.1'). **A6 rules out parastatistics** in 3+1D via Messiah-Greenberg.
 
-*Step 5 (Spin-statistics):* A5 + A6 + A7 (positive energy) yield the spin-statistics connection (Theorem 3.2').
+*Step 5 (Spin-statistics):* **A5** (Lorentz invariance) + **A6** (microcausality) + **A7** (positive energy) yield the spin-statistics connection (Theorem 3.2'). **A7 rules out indefinite-metric theories** that would allow spin-statistics violations.
 
 *Step 6 (Exclusion of alternatives):*
 
-- *Real QFT:* In real QFT, local tomography fails. Specifically, there exist composite states $\rho_{AB}$ that cannot be distinguished from $\sigma_{AB}$ by local measurements on $A$ and $B$ separately, yet $\rho_{AB} \neq \sigma_{AB}$. This violates A4. (Technical.md Theorem 5.2)
+- *Real QFT:* In real QFT, local tomography fails. Specifically, there exist composite states $\rho_{AB}$ that cannot be distinguished from $\sigma_{AB}$ by local measurements on $A$ and $B$ separately, yet $\rho_{AB} \neq \sigma_{AB}$. **A4 (local tomography) rules out real QFT.** (Technical.md Theorem 5.2)
 
-- *Quaternionic QFT:* Quaternionic amplitudes violate tensor associativity: $(A \otimes B) \otimes C \ncong A \otimes (B \otimes C)$ due to non-commutativity. This conflicts with A4's requirement that composite systems have well-defined tensor structure. (Technical.md Theorem 5.3)
+- *Quaternionic QFT:* Quaternionic amplitudes violate tensor associativity: $(A \otimes B) \otimes C \ncong A \otimes (B \otimes C)$ due to non-commutativity. **A4 (well-defined tensor structure) rules out quaternionic QFT.** (Technical.md Theorem 5.3)
 
-- *Super-quantum theories:* PR-boxes and other super-quantum correlations allow signaling under composition—given access to shared entanglement, parties can communicate faster than light. This violates A3 (information structure must be consistent with causality) and A6 (microcausality). (Technical.md Theorem 5.4)
+- *Super-quantum theories:* PR-boxes and other super-quantum correlations allow signaling under composition—given access to shared entanglement, parties can communicate faster than light. **A3 (information-causality) and A6 (microcausality) jointly rule out super-quantum theories.** (Technical.md Theorem 5.4)
 
 *Step 7 (Uniqueness):* The only theory satisfying A1-A7 is complex QFT. ∎
+
+**Axiom Usage Summary:**
+
+| Axiom | Primary Role in Proof | What It Excludes |
+|-------|----------------------|------------------|
+| A1 | Distinguishability → inner product | Theories without metric |
+| A2 | Determinate dynamics | Non-3FLL-compliant theories |
+| A3 | Information-causality | Super-quantum (PR-boxes) |
+| A4 | Local tomography → tensor products, $\mathbb{C}$ | Real QFT, quaternionic QFT |
+| A5 | Poincaré invariance → Wigner classification | Non-relativistic QFT |
+| A6 | Microcausality → spin-statistics, no parastatistics | Parastatistics, signaling theories |
+| A7 | Positive energy → spin-statistics | Indefinite-metric theories |
 
 ---
 
