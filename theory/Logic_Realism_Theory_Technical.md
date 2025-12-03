@@ -11,7 +11,7 @@ Northrop Grumman Fellow (unaffiliated research)
 
 ## Abstract
 
-This companion paper provides the rigorous mathematical constructions underlying Logic Realism Theory. We prove three key results: (1) the Hardy kernel construction derives inner product structure directly from the distinguishability metric $D$ without presupposing Hilbert space or the Born rule; (2) LRT axioms imply all five Masanes-Müller axioms, including MM5 (entanglement connectivity) via the Lee-Selby theorem applied to CBP-enforced purification uniqueness; (3) complex quantum mechanics is the unique theory satisfying LRT axioms. The derivation chain from logical constraints (3FLL) to quantum mechanics is complete—no conditional hedges or irreducible gaps remain.
+This companion paper provides the rigorous mathematical constructions underlying Logic Realism Theory. We prove three key results: (1) the Hardy kernel construction derives inner product structure directly from the distinguishability metric $D$ without presupposing Hilbert space or the Born rule; (2) LRT axioms imply all five Masanes-Müller axioms, including MM5 (entanglement connectivity) via the Lee-Selby theorem applied to CBP-enforced purification uniqueness; (3) complex quantum mechanics is the unique theory satisfying LRT axioms. Given the LRT axiom set—including Tier-2 physical axioms (continuity, local tomography) and structural principles (CBP, Global Parsimony)—the reconstruction to complex quantum mechanics is rigorous and gap-free.
 
 ---
 
@@ -637,9 +637,9 @@ Therefore, $\mathbb{C}$ is uniquely selected. ∎
 | Quaternionic QM | No tensor associativity | 5.3 |
 | Super-quantum GPT | Signaling under composition | 5.4 |
 
-*Step 3: Uniqueness.* By Masanes-Müller (2011), any theory satisfying MM1-MM5 is complex quantum mechanics. LRT satisfies MM1-MM5. Therefore, complex quantum mechanics is the unique theory satisfying LRT axioms.
+*Step 3: Uniqueness.* By Masanes-Müller (2011), any theory satisfying MM1-MM5 is complex quantum mechanics. LRT satisfies MM1-MM5. Therefore, complex quantum mechanics is the unique theory satisfying the full LRT axiom set.
 
-No conditional hedge is required. ∎
+The uniqueness is *relative to* the LRT axioms, including Tier-2 physical and structural principles. This is a conditional derivation: given these axioms, complex QM follows uniquely. ∎
 
 ---
 
@@ -844,7 +844,7 @@ Therefore, no hidden non-Boolean token can belong to $T$. ∎
 - Tokens with positive probability must be Boolean (Part I)
 - Tokens with zero probability cannot violate 3FLL and belong to $T$ (Part II)
 
-Therefore, every token in $T$ satisfies 3FLL. The constraint is on the tokens themselves, not on our access to them. The epistemic loophole is closed. ∎
+Therefore, every token in $T$ satisfies 3FLL. The constraint is on the tokens themselves, not on our access to them. The epistemic loophole is closed *within the LRT ontology*—that is, given the framework's definition of outcome tokens via state supports (Lemma 7.2's final step is interpretive/metaphysical, not purely mathematical). ∎
 
 ### 7.7 Physical Interpretation
 
@@ -887,15 +887,15 @@ This is the formal grounding for LRT's constitutive claim: 3FLL constrain actual
 
 4. **Stability excludes alternatives:** Classical, real QM, quaternionic QM, and super-quantum theories fail stability requirements (Theorems 5.1-5.4)
 
-5. **Unconditional uniqueness:** Complex quantum mechanics is the unique theory satisfying LRT axioms (Theorem 5.7)
+5. **Conditional uniqueness:** Complex quantum mechanics is the unique theory satisfying the full LRT axiom set (Theorem 5.7)
 
-6. **Ontic Booleanity:** The 3FLL are ontic constraints on actual outcome tokens, not epistemic filters on observation (Theorem 7.1)
+6. **Ontic Booleanity:** The 3FLL are ontic constraints on actual outcome tokens within the LRT ontology (Theorem 7.1)
 
-### 8.2 The Derivation Chain (Complete)
+### 8.2 The Derivation Chain
 
-$$\text{3FLL} \xrightarrow{\text{constitute}} D \xrightarrow{\text{§3.3}} \langle\cdot|\cdot\rangle \xrightarrow{\text{§4}} \text{MM1-MM5} \xrightarrow{\text{MM 2011}} \mathbb{C}\text{-QM}$$
+$$\text{3FLL + Tier-2 Axioms} \xrightarrow{\text{constitute}} D \xrightarrow{\text{§3.3}} \langle\cdot|\cdot\rangle \xrightarrow{\text{§4}} \text{MM1-MM5} \xrightarrow{\text{MM 2011}} \mathbb{C}\text{-QM}$$
 
-No gaps remain. The chain from logical constraints to complex quantum mechanics is closed.
+Given the LRT axiom set (including Tier-2 physical axioms and structural principles), the reconstruction to complex QM is rigorous and gap-free. The derivation is *conditional* on these axioms—3FLL alone do not fix quantum theory—but once accepted, no further assumptions are needed.
 
 ### 8.3 Implications
 
