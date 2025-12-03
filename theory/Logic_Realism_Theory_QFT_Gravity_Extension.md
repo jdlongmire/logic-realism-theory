@@ -18,7 +18,7 @@ We establish three principal results. First, Fock space structure is derived (Ti
 
 The paper distinguishes derivations from interpretations. Cluster decomposition, vacuum uniqueness, and the spectral gap are physical inputs (Tier 4), not consequences of logical constraints. Renormalization is *conceptually framed* as 3FLL-restoration at UV scales, but this interpretive framework does not derive renormalization group equations or beta functions. The gravity sector remains conjectural (Tier 5).
 
-Four predictions follow: (1) Tsirelson bound $\mathcal{S} \leq 2\sqrt{2}$ holds for field correlations, (2) information is never fundamentally lost, (3) complex amplitudes are required (real-only QFT excluded by Renou et al. at >7σ), (4) spin-statistics holds universally. Six strong falsifiers are identified with quantitative criteria.
+Four predictions follow: (1) Tsirelson bound $\mathcal{S} \leq 2\sqrt{2}$ holds for field correlations, (2) information is never fundamentally lost, (3) complex amplitudes are required (real-only QFT excluded by Renou et al. at >7σ), (4) spin-statistics holds universally. Six strong falsifiers are identified with quantitative criteria (§5.2).
 
 The extension is conservative: it builds on established LRT results, adds Lorentz invariance and microcausality as explicit physical inputs, and makes honest distinctions between what is derived, interpreted, and conjectured. No claim is made to derive Lorentz invariance, microcausality, or cluster decomposition from pure logic—these are physical inputs at Tiers 2-4.
 
