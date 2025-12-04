@@ -1286,6 +1286,20 @@ Candidates include:
 
 These are empirical questions. Section 6.2 identified experiments currently testing them. LRT constrains the answer (no free parameters) but does not determine it.
 
+**A working hypothesis (Saturated Entanglement Criterion):**
+
+A concrete candidate has been developed that realizes the "information-theoretic saturation" option within the LRT framework. The *plateau-plus-pointer* criterion proposes that the interface transition completes when two conditions are jointly satisfied:
+
+> **(C1) Entropy Saturation:** The von Neumann entropy of the reduced system state reaches a stable plateau near its maximum: $S(\rho_{\text{system}}) \geq \log(d) - \epsilon$.
+>
+> **(C2) Pointer-Basis Decoherence:** Coherences in the pointer basis are irretrievably suppressed, with no recoherence on operationally relevant timescales.
+
+This criterion builds on standard decoherence theory (Joos & Zeh 1985, Zurek 2003) without adding new physics. C1 captures the global information export to the environment; C2 ensures this information exists as stable Boolean records compatible with 3FLL enforcement. Together, they specify when "all operationally accessible interference between outcome branches has vanished."
+
+The hypothesis generates testable predictions: collapse time should scale as $\tau \propto 1/(g^2 N)$ where $g$ is coupling strength and $N$ is apparatus degrees of freedom; interference should vanish precisely when entropy reaches the plateau; quantum eraser effects should succeed only before C2 is satisfied.
+
+**Status:** This is a *research program* consistent with LRT's axioms, not a theorem derived from them. LRT does not stand or fall with this specific criterion; LRT requires *some* physically specifiable interface rule, and the saturated-entanglement criterion is the current best proposal, pending theoretical and experimental scrutiny. Full development including equations, experimental data, and proposed tests is available in the companion document "Saturated Entanglement as the Interface Transition Criterion" (Longmire 2025).
+
 **Why this outcome?**
 
 LRT explains why measurement yields *a* definite Boolean outcome. It does not explain why *this particular* outcome rather than another.
@@ -1586,6 +1600,8 @@ Gleason, A. M. "Measures on the closed subspaces of a Hilbert space." *Journal o
 
 Hardy, L. "Quantum theory from five reasonable axioms." arXiv:quant-ph/0101012, 2001.
 
+Joos, E. and Zeh, H. D. "The emergence of classical properties through interaction with the environment." *Zeitschrift für Physik B* 59, 1985: 223-243.
+
 Kochen, S. and Specker, E. P. "The problem of hidden variables in quantum mechanics." *Journal of Mathematics and Mechanics* 17(1), 1967: 59-87.
 
 Longmire, J. D. "Logic Realism Theory: Technical Companion." [Available at: https://github.com/jdlongmire/logic-realism-theory/blob/master/theory/Logic_Realism_Theory_Technical.md]
@@ -1617,6 +1633,8 @@ Wallace, D. "Quantum probability from subjective likelihood: Improving on Deutsc
 Wheeler, J. A. "Information, physics, quantum: The search for links." In W. Zurek (ed.), *Complexity, Entropy, and the Physics of Information*. Addison-Wesley, 1990.
 
 Wigner, E. P. "The unreasonable effectiveness of mathematics in the natural sciences." *Communications on Pure and Applied Mathematics* 13(1), 1960: 1-14.
+
+Zurek, W. H. "Decoherence, einselection, and the quantum origins of the classical." *Reviews of Modern Physics* 75(3), 2003: 715-775.
 
 ---
 
