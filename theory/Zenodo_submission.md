@@ -26,10 +26,11 @@ Zenodo assigns DOIs when drafts are created, not when published. This solves the
 
 | Paper | File | Reserved DOI | Status |
 |-------|------|--------------|--------|
-| Main | Logic_Realism_Theory_Main.md | 10.5281/zenodo.17778402 | Draft created |
-| Technical | Logic_Realism_Theory_Technical.md | 10.5281/zenodo.17778707 | Draft created |
-| Philosophy | Logic_Realism_Theory_Philosophy.md | 10.5281/zenodo.17779030 | Draft created |
-| QFT Extension | Logic_Realism_Theory_QFT_Gravity_Extension.md | 10.5281/zenodo.17779066 | Draft created |
+| Main | Logic_Realism_Theory_Main-v2.md | 10.5281/zenodo.17778402 | v1 published |
+| Technical | Logic_Realism_Theory_Technical-v2.md | 10.5281/zenodo.17778707 | v1 published |
+| Philosophy | Logic_Realism_Theory_Philosophy-v2.md | 10.5281/zenodo.17779030 | v1 published |
+| QFT Extension | Logic_Realism_Theory_QFT_Gravity_Extension-v2.md | 10.5281/zenodo.17779066 | v1 published |
+| Saturated Entanglement | LRT_Saturated_Entanglement_Interface_Criterion.md | TBD | Pending |
 
 **Update this table as DOIs are reserved.**
 
@@ -104,6 +105,16 @@ Use this for each Zenodo upload:
 | **Subjects** | Physics > Quantum Physics; Physics > Mathematical Physics |
 | **Related identifiers** | (Add DOIs for Main, Technical, Philosophy papers once reserved) |
 
+#### Saturated Entanglement Paper
+
+| Field | Value |
+|-------|-------|
+| **Title** | Saturated Entanglement as the Interface Transition Criterion: A Working Hypothesis for Logic Realism Theory |
+| **Description** | Logic Realism Theory (LRT) identifies the quantum-to-classical transition as an interface between non-Boolean possibility (IIS) and Boolean actuality, but leaves the precise physical criterion for this transition as an open empirical question. This document proposes a specific criterion: the interface transition completes when (C1) system-environment entanglement entropy reaches a stable plateau near its maximum, AND (C2) pointer-basis coherences are irretrievably suppressed. This "plateau-plus-pointer" criterion builds on standard decoherence theory without adding new physics, provides testable predictions (including collapse time τ ∝ 1/(g²N) and entropy-interference correlations), and addresses Page's theorem constraints. The criterion is consistent with Joos-Zeh decoherence timescales and Haroche cavity QED experiments. Status: research hypothesis consistent with LRT axioms, not a derived theorem. |
+| **Keywords** | quantum foundations; decoherence; measurement problem; von Neumann entropy; pointer basis; collapse criterion |
+| **Subjects** | Physics > Quantum Physics |
+| **Related identifiers** | (Add DOIs for Main, Technical, Philosophy, QFT Extension papers) |
+
 ---
 
 ## Cross-Reference Format
@@ -120,6 +131,8 @@ Longmire, J. D. "Logic Realism Theory: Technical Foundations." Zenodo, 2025. DOI
 Longmire, J. D. "Logic Realism Theory: Philosophical Foundations." Zenodo, 2025. DOI: 10.5281/zenodo.17779030
 
 Longmire, J. D. "LRT Constraints on QFT: Deriving Fock Structure and Interpreting Renormalization from Logical Foundations." Zenodo, 2025. DOI: 10.5281/zenodo.17779066
+
+Longmire, J. D. "Saturated Entanglement as the Interface Transition Criterion: A Working Hypothesis for Logic Realism Theory." Zenodo, 2025. DOI: TBD
 ```
 
 ---
@@ -127,10 +140,11 @@ Longmire, J. D. "LRT Constraints on QFT: Deriving Fock Structure and Interpretin
 ## Pre-Submission Checklist
 
 ### Format Conversion
-- [ ] Convert Main.md → Main.pdf (LaTeX intermediate)
-- [ ] Convert Technical.md → Technical.pdf
-- [ ] Convert Philosophy.md → Philosophy.pdf
-- [ ] Convert QFT_Extension.md → QFT_Extension.pdf
+- [x] Convert Main-v2.md → Main-v2.pdf
+- [x] Convert Technical-v2.md → Technical-v2.pdf
+- [x] Convert Philosophy-v2.md → Philosophy-v2.pdf
+- [x] Convert QFT_Extension-v2.md → QFT_Extension-v2.pdf
+- [x] Convert LRT_Saturated_Entanglement_Interface_Criterion.md → LRT_Saturated_Entanglement_Interface_Criterion.pdf
 
 ### Quality Checks
 - [x] All citations verified (v0.3.0 protocol: 64/64 passed)
@@ -140,10 +154,11 @@ Longmire, J. D. "LRT Constraints on QFT: Deriving Fock Structure and Interpretin
 - [x] Author name and ORCID correct
 
 ### Zenodo Draft Creation
-- [x] Create Main draft → DOI: 10.5281/zenodo.17778402
-- [x] Create Technical draft → DOI: 10.5281/zenodo.17778707
-- [x] Create Philosophy draft → DOI: 10.5281/zenodo.17779030
-- [x] Create QFT Extension draft → DOI: 10.5281/zenodo.17779066
+- [x] Create Main draft → DOI: 10.5281/zenodo.17778402 (v1 published)
+- [x] Create Technical draft → DOI: 10.5281/zenodo.17778707 (v1 published)
+- [x] Create Philosophy draft → DOI: 10.5281/zenodo.17779030 (v1 published)
+- [x] Create QFT Extension draft → DOI: 10.5281/zenodo.17779066 (v1 published)
+- [ ] Create Saturated Entanglement draft → DOI: TBD
 
 ### Final Steps
 - [ ] Update all PDFs with cross-reference DOIs
@@ -197,4 +212,4 @@ Longmire, J. D. "LRT Constraints on QFT: Deriving Fock Structure and Interpretin
 
 ---
 
-*Last updated: 2025-12-01*
+*Last updated: 2025-12-04*
