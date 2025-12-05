@@ -26,7 +26,7 @@ Zenodo assigns DOIs when drafts are created, not when published. This solves the
 
 | Paper | File | Reserved DOI | Status |
 |-------|------|--------------|--------|
-| Main | Logic_Realism_Theory_Main-v2.md | 10.5281/zenodo.17778402 | v1 published |
+| Main | Logic_Realism_Theory_Main-v2.md | 10.5281/zenodo.17831819 | v2 published |
 | Technical | Logic_Realism_Theory_Technical-v2.md | 10.5281/zenodo.17778707 | v1 published |
 | Philosophy | Logic_Realism_Theory_Philosophy-v2.md | 10.5281/zenodo.17779030 | v1 published |
 | QFT Extension | Logic_Realism_Theory_QFT_Gravity_Extension-v2.md | 10.5281/zenodo.17779066 | v1 published |
@@ -124,7 +124,7 @@ Once DOIs are reserved, add to each paper's References section:
 ```markdown
 ## Related Papers in This Series
 
-Longmire, J. D. "It from Bit, Bit from Fit: Foundational Physics Logically Remastered." Zenodo, 2025. DOI: 10.5281/zenodo.17778402
+Longmire, J. D. "It from Bit, Bit from Fit: Foundational Physics Logically Remastered." Zenodo, 2025. DOI: 10.5281/zenodo.17831819
 
 Longmire, J. D. "Logic Realism Theory: Technical Foundations." Zenodo, 2025. DOI: 10.5281/zenodo.17778707
 

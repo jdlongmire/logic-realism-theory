@@ -988,7 +988,7 @@ Lee, C. M. and Selby, J. H. "Deriving Grover's lower bound from simple physical 
 
 McKague, M., Mosca, M., and Gisin, N. "Simulating quantum systems using real Hilbert spaces." *Physical Review Letters* 102, 2009: 020505.
 
-Longmire, J. D. "It from Bit, Bit from Fit: Foundational Physics Logically Remastered." Zenodo, 2025. DOI: [10.5281/zenodo.17778402](https://doi.org/10.5281/zenodo.17778402)
+Longmire, J. D. "It from Bit, Bit from Fit: Foundational Physics Logically Remastered." Zenodo, 2025. DOI: [10.5281/zenodo.17831819](https://doi.org/10.5281/zenodo.17831819)
 
 Longmire, J. D. "Logic Realism Theory: Philosophical Foundations." Zenodo, 2025. DOI: [10.5281/zenodo.17779030](https://doi.org/10.5281/zenodo.17779030)
 
