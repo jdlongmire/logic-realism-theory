@@ -438,13 +438,13 @@ Birkhoff, G. and von Neumann, J. "The logic of quantum mechanics." *Annals of Ma
 
 Chiribella, G., D'Ariano, G. M., and Perinotti, P. "Informational derivation of quantum theory." *Physical Review A* 84(1), 2011: 012311.
 
-French, S. and Ladyman, J. "Remodelling structural realism: Quantum physics and the metaphysics of structure." *Synthese* 136, 2003: 31-56.
+French, S. and Ladyman, J. "Remodelling structural realism: Quantum physics and the metaphysics of structure." *Synthese* 136, 2003: 31-56. DOI: [10.1023/A:1024156116636](https://doi.org/10.1023/A:1024156116636)
 
 Fuchs, C. A. and Schack, R. "Quantum-Bayesian coherence." *Reviews of Modern Physics* 85(4), 2013: 1693-1715.
 
 Hardy, L. "Quantum theory from five reasonable axioms." arXiv:quant-ph/0101012, 2001.
 
-Ladyman, J. "What is structural realism?" *Studies in History and Philosophy of Science* 29(3), 1998: 409-424.
+Ladyman, J. "What is structural realism?" *Studies in History and Philosophy of Science* 29(3), 1998: 409-424. DOI: [10.1016/S0039-3681(98)80129-5](https://doi.org/10.1016/S0039-3681(98)80129-5)
 
 Longmire, J. D. "It from Bit, Bit from Fit: Foundational Physics Logically Remastered." [Main LRT paper, available at: https://github.com/jdlongmire/logic-realism-theory/blob/master/theory/Logic_Realism_Theory_Main.md]
 
@@ -452,7 +452,7 @@ Longmire, J. D. "Logic Realism Theory: Technical Companion." [Available at: http
 
 Masanes, L. and Müller, M. P. "A derivation of quantum theory from physical requirements." *New Journal of Physics* 13, 2011: 063001.
 
-Maudlin, T. "Three measurement problems." *Topoi* 14(1), 1995: 7-15.
+Maudlin, T. "Three measurement problems." *Topoi* 14(1), 1995: 7-15. DOI: [10.1007/BF00763473](https://doi.org/10.1007/BF00763473)
 
 Putnam, H. "Is logic empirical?" In *Boston Studies in the Philosophy of Science*, Vol. 5, 1968.
 
