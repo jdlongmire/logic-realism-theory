@@ -3,7 +3,7 @@
 **Author:** James (JD) Longmire
 **ORCID:** 0009-0009-1383-7698
 **Status:** Final Draft for Review
-**Version:** 2.0
+**Version:** 2.10
 **Date:** 2025-12-04
 **Context:** Proposed physical criterion for the LRT interface (IIS → Boolean Actuality)
 

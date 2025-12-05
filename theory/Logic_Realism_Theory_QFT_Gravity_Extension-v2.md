@@ -4,7 +4,7 @@
 ORCID: 0009-0009-1383-7698\
 Northrop Grumman Fellow (unaffiliated research)
 
-**Version:** 2.0 (December 2025)\
+**Version:** 2.10 (December 2025)\
 **Status**: SEED DOCUMENT - Framework established, content to be developed
 **Target**: Foundations of Physics (~25 pages)
 **Timeline**: 6-9 months (Q1 2026 submission)

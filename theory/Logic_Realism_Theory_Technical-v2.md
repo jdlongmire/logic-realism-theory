@@ -4,7 +4,7 @@
 ORCID: 0009-0009-1383-7698\
 Northrop Grumman Fellow (unaffiliated research)
 
-**Version:** 2.0 (December 2025)\
+**Version:** 2.10 (December 2025)\
 **Status:** Working Draft
 **Purpose:** Address technical gaps identified in peer review; provide rigorous mathematical foundations for LRT
 
