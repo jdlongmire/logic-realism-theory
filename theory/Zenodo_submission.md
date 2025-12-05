@@ -27,10 +27,10 @@ Zenodo assigns DOIs when drafts are created, not when published. This solves the
 | Paper | File | Reserved DOI | Status |
 |-------|------|--------------|--------|
 | Main | Logic_Realism_Theory_Main-v2.md | 10.5281/zenodo.17831819 | v2 published |
-| Technical | Logic_Realism_Theory_Technical-v2.md | 10.5281/zenodo.17778707 | v1 published |
-| Philosophy | Logic_Realism_Theory_Philosophy-v2.md | 10.5281/zenodo.17779030 | v1 published |
-| QFT Extension | Logic_Realism_Theory_QFT_Gravity_Extension-v2.md | 10.5281/zenodo.17779066 | v1 published |
-| Saturated Entanglement | LRT_Saturated_Entanglement_Interface_Criterion.md | TBD | Pending |
+| Technical | Logic_Realism_Theory_Technical-v2.md | 10.5281/zenodo.17831883 | v2 published |
+| Philosophy | Logic_Realism_Theory_Philosophy-v2.md | 10.5281/zenodo.17831912 | v2 published |
+| QFT Extension | Logic_Realism_Theory_QFT_Gravity_Extension-v2.md | 10.5281/zenodo.17831926 | v2 published |
+| Saturated Entanglement | LRT_Saturated_Entanglement_Interface_Criterion.md | 10.5281/zenodo.17831946 | v1 published |
 
 **Update this table as DOIs are reserved.**
 
@@ -126,13 +126,13 @@ Once DOIs are reserved, add to each paper's References section:
 
 Longmire, J. D. "It from Bit, Bit from Fit: Foundational Physics Logically Remastered." Zenodo, 2025. DOI: 10.5281/zenodo.17831819
 
-Longmire, J. D. "Logic Realism Theory: Technical Foundations." Zenodo, 2025. DOI: 10.5281/zenodo.17778707
+Longmire, J. D. "Logic Realism Theory: Technical Foundations." Zenodo, 2025. DOI: 10.5281/zenodo.17831883
 
-Longmire, J. D. "Logic Realism Theory: Philosophical Foundations." Zenodo, 2025. DOI: 10.5281/zenodo.17779030
+Longmire, J. D. "Logic Realism Theory: Philosophical Foundations." Zenodo, 2025. DOI: 10.5281/zenodo.17831912
 
-Longmire, J. D. "LRT Constraints on QFT: Deriving Fock Structure and Interpreting Renormalization from Logical Foundations." Zenodo, 2025. DOI: 10.5281/zenodo.17779066
+Longmire, J. D. "LRT Constraints on QFT: Deriving Fock Structure and Interpreting Renormalization from Logical Foundations." Zenodo, 2025. DOI: 10.5281/zenodo.17831926
 
-Longmire, J. D. "Saturated Entanglement as the Interface Transition Criterion: A Working Hypothesis for Logic Realism Theory." Zenodo, 2025. DOI: TBD
+Longmire, J. D. "Saturated Entanglement as the Interface Transition Criterion: A Working Hypothesis for Logic Realism Theory." Zenodo, 2025. DOI: 10.5281/zenodo.17831946
 ```
 
 ---
@@ -158,7 +158,7 @@ Longmire, J. D. "Saturated Entanglement as the Interface Transition Criterion: A
 - [x] Create Technical draft → DOI: 10.5281/zenodo.17778707 (v1 published)
 - [x] Create Philosophy draft → DOI: 10.5281/zenodo.17779030 (v1 published)
 - [x] Create QFT Extension draft → DOI: 10.5281/zenodo.17779066 (v1 published)
-- [ ] Create Saturated Entanglement draft → DOI: TBD
+- [x] Create Saturated Entanglement draft → DOI: 10.5281/zenodo.17831946 (v1 published)
 
 ### Final Steps
 - [ ] Update all PDFs with cross-reference DOIs
