@@ -6,6 +6,14 @@
 -- See CLAUDE.md for development protocols.
 
 -- ═══════════════════════════════════════════════════════════════════════════
+-- EXTERNAL THEOREMS (Tier 2 axioms - established math tools)
+-- ═══════════════════════════════════════════════════════════════════════════
+-- All external mathematical results are localized in this module.
+-- See lean/AXIOMS.md and Technical paper Appendix A for documentation.
+
+import LogicRealismTheory.ExternalTheorems
+
+-- ═══════════════════════════════════════════════════════════════════════════
 -- FOUNDATION MODULES
 -- ═══════════════════════════════════════════════════════════════════════════
 

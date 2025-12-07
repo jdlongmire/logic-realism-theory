@@ -4,6 +4,34 @@
 
 ---
 
+## Formalization Methodology
+
+All formal reasoning for this work is carried out in the Lean 4 theorem prover, using the community mathematical library Mathlib as the foundational corpus. Lean's type-theoretic kernel serves as the trusted core, so that every theorem stated in the development is accompanied by a machine-checkable proof object.
+
+### Use of External Mathematical Results
+
+The central results in this work build on standard theorems that are widely accepted in the mathematical literature but not yet fully formalized in Lean. To incorporate these ingredients, each such result is represented as an explicit Lean axiom: a constant of the appropriate propositional type, declared without proof and annotated with a citation to the source theorem in the literature.
+
+**These axioms are collected in a dedicated module:** `LogicRealismTheory/ExternalTheorems.lean`
+
+This ensures that every dependency on non-formalized mathematics is localized and auditable.
+
+### Soundness Interpretation
+
+Under this methodology, any theorem proved in the Lean development is formally correct relative to:
+1. The soundness of Lean's kernel
+2. The truth of the explicitly stated axioms corresponding to external results
+
+If, in future work, some of these axioms are replaced by fully formal Lean proofs of the corresponding literature theorems, the remaining development can be reused unchanged.
+
+### Correspondence to Technical Paper
+
+The external theorems (E1-E8) correspond to Appendix A in:
+> Longmire, J.D. (2025). "Logic Realism Theory: Technical Foundations"
+> DOI: 10.5281/zenodo.17831883
+
+---
+
 ## The 3-Tier Classification System
 
 All axioms in this formalization are classified into three tiers:
