@@ -91,6 +91,29 @@ Focused README on published pre-prints with proper attribution:
 - BibTeX citations added
 - Development/Sessions as supporting context
 
+### 6. Lean ExternalTheorems Module
+
+Created centralized `lean/LogicRealismTheory/ExternalTheorems.lean` module:
+- Mirrors Technical paper Appendix A (E1-E8)
+- 9 axioms total (E5 Frobenius uses Mathlib)
+- All external theorems with full citations and exact hypotheses
+- TIER 2 classification (Established Math Tools)
+
+**Axioms included:**
+| ID | Theorem | Source |
+|----|---------|--------|
+| E1 | Masanes-Müller | New J. Phys. 2011 |
+| E2 | Lee-Selby | New J. Phys. 2016 |
+| E3 | Uhlmann | Rep. Math. Phys. 1976 |
+| E4 | de la Torre et al. | PRL 2012 |
+| E6 | van Dam/Brassard | PRL 2006 |
+| E7 | Wootters/Stueckelberg | 1960/1990 |
+| E8 | Adler | Oxford 1995 |
+| -- | Stone | Ann. Math. 1932 |
+| -- | Gleason | J. Math. Mech. 1957 |
+
+**Build status:** 6098 jobs successful
+
 ---
 
 ## Commits This Session
@@ -106,7 +129,10 @@ Focused README on published pre-prints with proper attribution:
 | `fccf0d1` | Update Session 38.0 log |
 | `593799b` | Restructure README: focus on published pre-prints |
 | `cee7f91` | Polish LRT Reconstruction Theorem with explicit external hypotheses |
+| `bfbfd3a` | Add ExternalTheorems.lean + update AXIOMS.md methodology |
+| `02a6a95` | Update LogicRealismTheory.lean to import ExternalTheorems |
+| `dba5be5` | Fix ExternalTheorems.lean build errors |
 
 ---
 
-## Interaction Count: 8
+## Interaction Count: 9
