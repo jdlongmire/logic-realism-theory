@@ -4,7 +4,7 @@
 **Priority**: HIGH
 **Created**: 2025-12-07
 **Source**: Perplexity AI mathematical review
-**Current Grade**: B+ (target: A-)
+**Current Grade**: B+ (target: A+)
 
 ---
 
@@ -86,7 +86,7 @@ becomes trivial when all three states are pairwise perfectly distinguishable:
 
 ---
 
-## Additional Recommendations (for A+ grade)
+## Required for A+ Grade
 
 ### R1: State Single Reconstruction Theorem
 
@@ -119,16 +119,16 @@ Add 1-2 fully worked finite-dimensional examples:
 
 ## Grading Criteria (Perplexity assessment)
 
-| Level | Requirements |
-|-------|--------------|
-| B+ | Current state - conceptually sound, technical gaps |
-| A- | Fix Issues 8.1-8.3 |
-| A | Add R1 (reconstruction theorem) |
-| A+ | Add R2-R3, full reconstruction-paper quality |
+| Level | Requirements | Status |
+|-------|--------------|--------|
+| B+ | Current state - conceptually sound, technical gaps | CURRENT |
+| A- | Fix Issues 8.1-8.3 | |
+| A | Add R1 (reconstruction theorem) | |
+| A+ | Add R2-R3, full reconstruction-paper quality | TARGET |
 
 ---
 
-## Action Plan
+## Action Plan (All Required for A+)
 
 1. [ ] **Fix metric consistency** (Issue 8.1)
    - Audit all uses of D in paper
@@ -147,6 +147,16 @@ Add 1-2 fully worked finite-dimensional examples:
 4. [ ] **Add reconstruction theorem** (R1)
    - Single statement with proof chain
    - Explicit external theorem references
+
+5. [ ] **Create External Theorems section** (R2)
+   - Masanes-Müller exact hypotheses
+   - Lee-Selby exact hypotheses
+   - de la Torre et al. exact hypotheses
+   - Uhlmann's theorem statement
+
+6. [ ] **Add worked examples** (R3)
+   - LRT → complex Hilbert model example
+   - Real/quaternionic failure example
 
 ---
 
