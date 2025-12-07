@@ -73,6 +73,24 @@ Created `theory/Logic_Realism_Theory_Technical-v3.md` implementing all Issue 008
 
 **Issue 008 Status**: RESOLVED
 
+### 4. Perplexity A+ Feedback - Final Polish
+
+Perplexity confirmed v3 is "very close to A+ target" - minor polishing only:
+- Added explicit external theorem hypotheses inline in LRT Reconstruction Theorem
+- Chain 1: MM5 derivation chain with E2-E3 references
+- Chain 2: MM hypotheses (i)-(v) spelled out
+- Chain 3: External Reference column added
+- Chain 4: E6 hypotheses inline
+- Verified Bloch-ball example already consistent with trace distance
+
+### 5. README Restructure
+
+Focused README on published pre-prints with proper attribution:
+- Author section at top with ORCID/email
+- Published Pre-Prints as primary content
+- BibTeX citations added
+- Development/Sessions as supporting context
+
 ---
 
 ## Commits This Session
@@ -85,7 +103,10 @@ Created `theory/Logic_Realism_Theory_Technical-v3.md` implementing all Issue 008
 | `8a12d64` | Create Technical paper v3 - Issues 8.1 and 8.2 fixed |
 | `3320bbb` | Complete Technical paper v3 - all A+ requirements met |
 | `b286d0e` | Mark Issue 008 as RESOLVED |
+| `fccf0d1` | Update Session 38.0 log |
+| `593799b` | Restructure README: focus on published pre-prints |
+| `cee7f91` | Polish LRT Reconstruction Theorem with explicit external hypotheses |
 
 ---
 
-## Interaction Count: 6
+## Interaction Count: 8
