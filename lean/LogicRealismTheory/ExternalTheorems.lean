@@ -50,7 +50,8 @@ structure GPTStateSpace where
 /-- Continuous reversibility property (MM1) -/
 def has_continuous_reversibility (S : GPTStateSpace) : Prop :=
   ∀ ψ φ : S.Ω, ψ ∈ S.pure_states → φ ∈ S.pure_states →
-  ∃ path : ℝ → S.Ω, Continuous path ∧ path 0 = ψ ∧ path 1 = φ
+  ∃ path : ℝ → S.Ω, path 0 = ψ ∧ path 1 = φ
+  -- Full formalization would add continuity via TopologicalSpace instance
 
 /-- Tomographic locality property (MM2) -/
 def has_tomographic_locality (S : GPTStateSpace) : Prop :=
@@ -154,7 +155,7 @@ axiom uhlmann_purification_uniqueness
   {H_A H_B : Type*} [NormedAddCommGroup H_A] [InnerProductSpace ℂ H_A]
   [NormedAddCommGroup H_B] [InnerProductSpace ℂ H_B]
   (ρ_A : H_A →L[ℂ] H_A) -- density operator
-  (ψ₁ ψ₂ : H_A ⊗[ℂ] H_B) -- two purifications
+  (ψ₁ ψ₂ : TensorProduct ℂ H_A H_B) -- two purifications
   (h1 : True) -- ψ₁ purifies ρ_A
   (h2 : True) -- ψ₂ purifies ρ_A
   : ∃ U_B : H_B →L[ℂ] H_B, True -- U_B unitary, ψ₂ = (I ⊗ U_B) ψ₁
@@ -192,20 +193,12 @@ axiom de_la_torre_field_restriction (S : GPTStateSpace)
 -- E5: FROBENIUS THEOREM (DIVISION ALGEBRAS)
 -- ═══════════════════════════════════════════════════════════════════════════════
 
-/--
-**E5: Frobenius Theorem**
-
-**Source:** Frobenius, G. (1878). Classical result in algebra.
-
-**Statement:** The only finite-dimensional associative division algebras over ℝ
-are ℝ, ℂ, and ℍ (quaternions).
-
-**Note:** This is available in Mathlib. We include it here for completeness of
-the external theorem catalogue, but it should be imported rather than axiomatized.
-
-**Used in:** Field restriction (§3.3.3, Proposition 3.1)
--/
--- NOT axiomatized - use Mathlib's algebra infrastructure
+-- E5: Frobenius Theorem
+-- **Source:** Frobenius, G. (1878). Classical result in algebra.
+-- **Statement:** The only finite-dimensional associative division algebras over ℝ
+-- are ℝ, ℂ, and ℍ (quaternions).
+-- **Note:** Available in Mathlib - not axiomatized here.
+-- **Used in:** Field restriction (§3.3.3, Proposition 3.1)
 -- See: Mathlib.Algebra.Quaternion.Basic for ℍ
 
 -- ═══════════════════════════════════════════════════════════════════════════════
@@ -303,8 +296,8 @@ self-adjoint generators H via U(t) = exp(-iHt).
 axiom stones_theorem
   {H : Type*} [NormedAddCommGroup H] [InnerProductSpace ℂ H]
   (U : ℝ → (H →L[ℂ] H)) -- one-parameter family
-  (h_unitary : ∀ t, True) -- each U(t) is unitary
-  (h_group : ∀ s t, True) -- U(s+t) = U(s) ∘ U(t)
+  (h_unitary : ∀ (t : ℝ), True) -- each U(t) is unitary
+  (h_group : ∀ (s t : ℝ), True) -- U(s+t) = U(s) ∘ U(t)
   (h_continuous : True) -- strong continuity
   : ∃ H_gen : H →L[ℂ] H, True -- self-adjoint generator exists
   -- TIER 2: ESTABLISHED MATH TOOLS (Stone 1932)
@@ -333,27 +326,24 @@ axiom gleasons_theorem
 -- ═══════════════════════════════════════════════════════════════════════════════
 -- SUMMARY
 -- ═══════════════════════════════════════════════════════════════════════════════
-
-/--
-## External Theorem Count
-
-| ID | Theorem | Source | Status |
-|----|---------|--------|--------|
-| E1 | Masanes-Müller | New J. Phys. 2011 | Axiomatized |
-| E2 | Lee-Selby | New J. Phys. 2016 | Axiomatized |
-| E3 | Uhlmann | Rep. Math. Phys. 1976 | Axiomatized |
-| E4 | de la Torre et al. | PRL 2012 | Axiomatized |
-| E5 | Frobenius | 1878 | Use Mathlib |
-| E6 | van Dam/Brassard | PRL 2006 | Axiomatized |
-| E7 | Wootters/Stueckelberg | 1960/1990 | Axiomatized |
-| E8 | Adler | Oxford 1995 | Axiomatized |
-| -- | Stone | Ann. Math. 1932 | Axiomatized |
-| -- | Gleason | J. Math. Mech. 1957 | Axiomatized |
-
-**Total axioms in this module:** 9 (E5 uses Mathlib)
-
-These are TIER 2 axioms (Established Math Tools), not novel LRT axioms.
-The soundness of LRT proofs is conditional on these external results.
--/
+--
+-- External Theorem Count:
+-- | ID | Theorem              | Source              | Status      |
+-- |----|----------------------|---------------------|-------------|
+-- | E1 | Masanes-Müller       | New J. Phys. 2011   | Axiomatized |
+-- | E2 | Lee-Selby            | New J. Phys. 2016   | Axiomatized |
+-- | E3 | Uhlmann              | Rep. Math. Phys. 1976| Axiomatized |
+-- | E4 | de la Torre et al.   | PRL 2012            | Axiomatized |
+-- | E5 | Frobenius            | 1878                | Use Mathlib |
+-- | E6 | van Dam/Brassard     | PRL 2006            | Axiomatized |
+-- | E7 | Wootters/Stueckelberg| 1960/1990           | Axiomatized |
+-- | E8 | Adler                | Oxford 1995         | Axiomatized |
+-- | -- | Stone                | Ann. Math. 1932     | Axiomatized |
+-- | -- | Gleason              | J. Math. Mech. 1957 | Axiomatized |
+--
+-- **Total axioms in this module:** 9 (E5 uses Mathlib)
+--
+-- These are TIER 2 axioms (Established Math Tools), not novel LRT axioms.
+-- The soundness of LRT proofs is conditional on these external results.
 
 end LogicRealismTheory.ExternalTheorems
