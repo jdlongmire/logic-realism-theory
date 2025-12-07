@@ -126,8 +126,18 @@ The master paper consolidates five original papers, now in `theory/archive/`:
 
 ## Published Pre-Prints
 
-**[Linking Logic Realism Theory (LRT) and the Meta-Theory of Everything (MToE): A Formal Equivalence](https://doi.org/10.5281/zenodo.17533459)**
-Zenodo, November 2025 | DOI: 10.5281/zenodo.17533459
+All papers published on Zenodo (December 2025):
+
+| Paper | DOI |
+|-------|-----|
+| **[It from Bit, Bit from Fit: Foundational Physics Logically Remastered](https://doi.org/10.5281/zenodo.17831819)** | 10.5281/zenodo.17831819 |
+| **[Logic Realism Theory: Technical Foundations](https://doi.org/10.5281/zenodo.17831883)** | 10.5281/zenodo.17831883 |
+| **[Logic Realism Theory: Philosophical Foundations](https://doi.org/10.5281/zenodo.17831912)** | 10.5281/zenodo.17831912 |
+| **[LRT Constraints on QFT: Deriving Fock Structure and Interpreting Renormalization](https://doi.org/10.5281/zenodo.17831926)** | 10.5281/zenodo.17831926 |
+| **[Saturated Entanglement as the Interface Transition Criterion](https://doi.org/10.5281/zenodo.17831946)** | 10.5281/zenodo.17831946 |
+
+**Additional:**
+- **[Linking LRT and the Meta-Theory of Everything (MToE): A Formal Equivalence](https://doi.org/10.5281/zenodo.17533459)** | 10.5281/zenodo.17533459
 
 ---
 
@@ -135,14 +145,13 @@ Zenodo, November 2025 | DOI: 10.5281/zenodo.17533459
 
 For development history, see **[Session Log](Session_Log/)**.
 
-**Latest**: Session 31.0 (2025-11-29) - All critical gaps closed, papers submission-ready
+**Latest**: Session 37.0 (2025-12-05) - All papers published on Zenodo
 
-**Session 31.0 Summary:**
-- Closed 6 of 7 restructuring gaps (IIS interpretation, Bell calculation, Real QM proof, Hardy verification, Constitutive clarification, MM5 derivation)
-- Rigorous MM5 derivation via Uhlmann's theorem (replacing hand-wavy CBP argument)
-- Added Ontic Booleanity to Main paper (§4.8)
-- Expanded Theorem 6.2 proof (tensor product from local tomography)
-- Papers now submission-ready (minus figures)
+**Recent Progress:**
+- v2.10 release with all cross-references updated to v2 DOIs
+- Reference validation complete (75 citations verified)
+- PDF regeneration with Cambria font (Unicode math symbols)
+- Reddit introduction post created
 
 **Additional Resources**:
 - **[Development Process Methodology](LRT_DEVELOPMENT_PROCESS.md)** - 10-phase AI-assisted theory development with defense-in-depth verification
