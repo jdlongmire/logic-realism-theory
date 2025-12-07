@@ -651,28 +651,40 @@ Then $\mathcal{T}$ is operationally equivalent to complex quantum mechanics (fin
 | A3c | → | MM2 (tomographic locality) | Direct |
 | A1 + A2 | → | MM3 (existence of pure states) | Theorem 4.1 |
 | A1 + A2 + A3a + A3b | → | MM4 (subspace/gbit axiom) | Theorem 3.1 + Theorem 4.1 |
-| A3c + §3 + §6 | → | MM5 (entanglement structure) | Uhlmann + Lee-Selby (Theorem 6.4) |
+| A3c + §3 + §6 | → | MM5 (entanglement structure) | Uhlmann (E3) + Lee-Selby (E2) via Theorem 6.4 |
+
+*MM5 derivation chain (External Theorems E2-E3):*
+- Uhlmann's Theorem (E3): Hilbert space + tensor product → purification uniqueness up to local unitaries
+- Lee-Selby Theorem (E2): MM1 + MM2 + purification uniqueness → MM5
 
 **Chain 2: MM Axioms → Complex QM**
 
-By the Masanes-Müller Reconstruction Theorem (2011):
+By the Masanes-Müller Reconstruction Theorem (External Theorem E1, Appendix A):
+
+*Hypotheses:* (i) Continuous reversibility of pure states, (ii) tomographic locality, (iii) existence of pure states, (iv) every system with $n \geq 2$ distinguishable states contains a gbit subsystem, (v) bipartite entanglement structure.
+
+*Conclusion:* Any finite-dimensional GPT satisfying (i)-(v) is operationally equivalent to $\mathbb{C}$-QM.
 
 $$\text{MM1} + \text{MM2} + \text{MM3} + \text{MM4} + \text{MM5} \implies \mathbb{C}\text{-QM}$$
 
-This is External Theorem E1 (Appendix A).
-
 **Chain 3: Stability Eliminates All Alternatives**
 
-| Alternative Theory | Failure Mode | Violated Axiom | Theorem |
-|--------------------|--------------|----------------|---------|
-| Classical mechanics | No bound states (Earnshaw) | A3b (stability) | 5.1 |
-| Real QM ($\mathbb{R}$) | Fails local tomography | A3c | 5.2 |
-| Quaternionic QM ($\mathbb{H}$) | Fails tensor associativity | A3c (composition) | 5.3 |
-| Super-quantum GPT ($\mathcal{S} > 2\sqrt{2}$) | Signaling under composition | A3c + A4 | 5.4 |
+| Alternative Theory | Failure Mode | Violated Axiom | Theorem / External Reference |
+|--------------------|--------------|----------------|------------------------------|
+| Classical mechanics | No bound states (Earnshaw) | A3b (stability) | Theorem 5.1 |
+| Real QM ($\mathbb{R}$) | Fails local tomography | A3c | Theorem 5.2; External E7 (Wootters/Stueckelberg) |
+| Quaternionic QM ($\mathbb{H}$) | Fails tensor associativity | A3c (composition) | Theorem 5.3; External E8 (Adler) |
+| Super-quantum GPT ($\mathcal{S} > 2\sqrt{2}$) | Signaling under composition | A3c + A4 | Theorem 5.4; External E6 (van Dam/Brassard) |
 
 **Chain 4: No Stronger Theory**
 
-Suppose $\mathcal{T}'$ is a no-signaling GPT strictly stronger than QM (i.e., achieves $\mathcal{S} > 2\sqrt{2}$). By Theorem 5.4 (van Dam, Brassard et al.), $\mathcal{T}'$ permits signaling under finite composition. This violates A3c (local tomography requires no-signaling) and A4 (parsimony forbids surplus correlation mechanisms). Therefore, no such $\mathcal{T}'$ exists.
+Suppose $\mathcal{T}'$ is a no-signaling GPT strictly stronger than QM (i.e., achieves $\mathcal{S} > 2\sqrt{2}$).
+
+By External Theorem E6 (van Dam 2005, Brassard et al. 2006):
+*Hypotheses:* (i) GPT achieves CHSH value $\mathcal{S} > 2\sqrt{2}$, (ii) composition allowed.
+*Conclusion:* Communication complexity collapses; effective signaling under composition.
+
+Therefore $\mathcal{T}'$ permits signaling under finite composition, violating A3c (local tomography requires no-signaling) and A4 (parsimony forbids surplus correlation mechanisms). No such $\mathcal{T}'$ exists.
 
 **Conclusion:** Complex quantum mechanics is the unique GPT satisfying A1-A5. ∎
 
