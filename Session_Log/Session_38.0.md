@@ -114,6 +114,34 @@ Created centralized `lean/LogicRealismTheory/ExternalTheorems.lean` module:
 
 **Build status:** 6098 jobs successful
 
+### 7. Major Lean Restructure
+
+Archived old approach files and created fresh structure matching Technical paper v3:
+
+**New Structure:**
+```
+lean/LogicRealismTheory/
+├── ExternalTheorems.lean      # Appendix A (9 Tier 2 axioms)
+├── Foundation/
+│   ├── IIS.lean               # §2 (2 Tier 1 axioms)
+│   ├── Actualization.lean     # §2.3 (A = L(I) theorem)
+│   └── StateSpace.lean        # §3 (MM axiom derivation)
+├── Dynamics/
+│   └── TimeEvolution.lean     # §4 (1 Tier 3 axiom)
+├── Measurement/
+│   └── BornRule.lean          # §5 (Gleason application)
+└── Reconstruction/
+    └── LRTReconstruction.lean # §5.5 (Master theorem)
+```
+
+**Axiom Count (reduced from ~67 to 12):**
+- Tier 1 (LRT Specific): 2 (I, I_infinite)
+- Tier 2 (Established Math): 9 (ExternalTheorems)
+- Tier 3 (Universal Physics): 1 (energy_additivity)
+- **Total: 12 axioms**
+
+**Build status:** 4488 jobs successful
+
 ---
 
 ## Commits This Session
@@ -132,7 +160,9 @@ Created centralized `lean/LogicRealismTheory/ExternalTheorems.lean` module:
 | `bfbfd3a` | Add ExternalTheorems.lean + update AXIOMS.md methodology |
 | `02a6a95` | Update LogicRealismTheory.lean to import ExternalTheorems |
 | `dba5be5` | Fix ExternalTheorems.lean build errors |
+| `28ae0db` | Update Session 38.0 log with Lean ExternalTheorems work |
+| `c711871` | Major Lean restructure: Archive old, create Technical paper v3 structure |
 
 ---
 
-## Interaction Count: 9
+## Interaction Count: 10
