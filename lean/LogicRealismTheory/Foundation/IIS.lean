@@ -1,140 +1,102 @@
 /-
 Copyright © 2025 James D. (JD) Longmire
 License: Apache License 2.0
-Citation: Longmire, J.D. (2025). Logic Realism Theory: A Research Program for Ontological Logic in Informational Reality. Logic Realism Theory Repository.
 
-**Axiom Approach**: See lean/AXIOMS.md for justification of all axioms in this formalization.
+# Infinite Information Space (IIS)
 
-# Foundation: Infinite Information Space (I)
+This module defines the foundational axioms of Logic Realism Theory.
+These are the ONLY Tier 1 (LRT-specific) axioms in the entire formalization.
 
-This file establishes the MINIMAL axiomatic foundation for Logic Realism Theory.
+## Correspondence to Technical Paper
 
-**Core Thesis**: Physical reality emerges from logical filtering of an Infinite Information Space.
-**Principle**: A = L(I) where Actualization = Logical filtering of Infinite Information
+Section 2.1-2.2 in:
+  Longmire, J.D. (2025). "Logic Realism Theory: Technical Foundations"
+  DOI: 10.5281/zenodo.17831883
 
-**Axiom Count**: 2 (absolute minimum)
-**Strategy**: Everything else defined or derived using Lean's built-in logic.
+## Axiom Classification
 
-## The Two Axioms
-
-These are the ONLY axioms in the entire theory. All quantum mechanics, time, energy, measurement,
-and even the 3FLL operations are DEFINED or DERIVED.
+- **Tier 1 (LRT Specific)**: 2 axioms (defined here)
+- **Tier 2 (Established Math)**: See ExternalTheorems.lean
+- **Tier 3 (Universal Physics)**: See Dynamics/TimeEvolution.lean
 
 -/
 
--- Imports
-import Mathlib.Algebra.CharZero.Infinite
+import Mathlib.Data.Set.Basic
+import Mathlib.Data.Finite.Defs
 
--- Import classical logic for excluded middle
-open Classical
+namespace LogicRealismTheory.Foundation
 
--- ═══════════════════════════════════════════════════════════════════════════
--- AXIOMS (2 total - TIER 1: LRT SPECIFIC)
--- ═══════════════════════════════════════════════════════════════════════════
+-- ═══════════════════════════════════════════════════════════════════════════════
+-- TIER 1 AXIOMS: LRT SPECIFIC (2 total)
+-- ═══════════════════════════════════════════════════════════════════════════════
 
 /--
-Axiom 1: Infinite Information Space exists
+**Axiom A1: Existence of Infinite Information Space**
 
-**TIER 1: LRT SPECIFIC**
+The Infinite Information Space I exists as a primitive ontological entity.
+I is the space of all possible distinctions - the pre-physical substrate
+from which actualized reality emerges.
 
-**Theory-Defining Assumption**: The existence of an infinite information space is the
-foundational postulate of Logic Realism Theory.
+**Technical Paper Reference:** §2.1, Definition 2.1
 
-**Justification**: LRT posits that physical reality (A) emerges from logical filtering (L)
-of an infinite information space (I). This axiom asserts I exists as a type.
-
-**Analogous to**: QM's postulate "Hilbert space exists" or ZFC's "Set exists"
-
-**Status**: Novel LRT foundational axiom
-
-**References**: Logic_Realism_Theory_Main.md Section 2.2 (Information Space I)
+TIER 1: LRT SPECIFIC
 -/
-axiom I : Type*  -- TIER 1: LRT SPECIFIC
+axiom I : Type
 
 /--
-Axiom 2: I is infinite
+**Axiom A2: Infinite Cardinality of I**
 
-**TIER 1: LRT SPECIFIC**
+The information space I has infinite cardinality. This ensures that
+the space of possible distinctions is not artificially bounded.
 
-**Theory-Defining Assumption**: The information space I is infinite, not finite.
+**Technical Paper Reference:** §2.1, Axiom A2
 
-**Justification**: Prevents trivial finite spaces. If I were finite, actualization would be
-trivial enumeration rather than filtering via logical constraints. The infinite nature of I
-is essential for quantum superposition (multiple possibilities) and continuous physical
-quantities to emerge.
-
-**Analogous to**: QM's postulate "Hilbert space is infinite-dimensional"
-
-**Status**: Novel LRT foundational axiom
-
-**References**: Logic_Realism_Theory_Main.md Section 2.2 (I Infinite)
+TIER 1: LRT SPECIFIC
 -/
-axiom I_infinite : Infinite I  -- TIER 1: LRT SPECIFIC
+axiom I_infinite : Infinite I
 
--- ═══════════════════════════════════════════════════════════════════════════
--- 3FLL (Definitions using Lean's built-in logic - NOT axioms)
--- ═══════════════════════════════════════════════════════════════════════════
+-- ═══════════════════════════════════════════════════════════════════════════════
+-- DERIVED DEFINITIONS (No additional axioms)
+-- ═══════════════════════════════════════════════════════════════════════════════
 
--- Identity: Already built into Lean's equality (reflexivity)
-theorem identity_law (x : I) : x = x := rfl
+/-- A distinction in I is simply an element of the information space. -/
+abbrev Distinction := I
 
--- Non-Contradiction: Derivable in Lean's logic
-theorem non_contradiction_law (P : I → Prop) (x : I) : ¬(P x ∧ ¬P x) :=
-  fun h => h.2 h.1
+/-- A proposition about I is a subset of I. -/
+abbrev Proposition := Set I
 
--- Excluded Middle: Available via Classical logic
-theorem excluded_middle_law (P : I → Prop) (x : I) : P x ∨ ¬P x :=
-  Classical.em (P x)
+/-- The logic L(I) is the type of all propositions about I. -/
+abbrev L := Set I
 
--- The 3FLL as a unified structure (L operator - not an axiom, a definition)
-structure LogicalConstraints where
-  identity : ∀ (x : I), x = x
-  non_contradiction : ∀ (P : I → Prop) (x : I), ¬(P x ∧ ¬P x)
-  excluded_middle : ∀ (P : I → Prop) (x : I), P x ∨ ¬P x
+-- ═══════════════════════════════════════════════════════════════════════════════
+-- BASIC THEOREMS (Proven from Tier 1 axioms + Lean's logic)
+-- ═══════════════════════════════════════════════════════════════════════════════
 
--- L is DEFINED (not axiomatized) as the application of 3FLL to I
-def L : LogicalConstraints := {
-  identity := identity_law
-  non_contradiction := non_contradiction_law
-  excluded_middle := excluded_middle_law
-}
+/-- L(I) is non-empty (contains at least the empty set). -/
+theorem L_nonempty : Nonempty L := ⟨∅⟩
 
-/-
-## Important Notes
+/-- L(I) satisfies the law of excluded middle for any proposition. -/
+theorem excluded_middle_in_L (P : Set I) (x : I) : x ∈ P ∨ x ∉ P :=
+  Classical.em (x ∈ P)
 
-**Why ONLY 2 axioms?**:
-- **I existence**: Foundational postulate (like "Set exists" in ZFC)
-- **I infinite**: Core to theory (prevents trivial finite spaces)
-- **3FLL**: Already in Lean's logic! No axioms needed.
-  - Identity: Proven via `rfl` (reflexivity)
-  - Non-Contradiction: Proven via `fun h => h.2 h.1`
-  - Excluded Middle: Available via `Classical.em`
+/-- L(I) satisfies non-contradiction for any proposition. -/
+theorem non_contradiction_in_L (P : Set I) (x : I) : ¬(x ∈ P ∧ x ∉ P) :=
+  fun ⟨h1, h2⟩ => h2 h1
 
-**What is NOT an axiom** (defined or proven):
-- **L (3FLL)**: DEFINITION (structure bundling the three laws)
-- **Π_id**: DEFINITION (identity projector in Operators/Projectors.lean)
-- **{Π_i}**: DEFINITION (incompatibility family)
-- **R**: DEFINITION (resolution map/Booleanization)
-- **A**: DEFINITION (actualized subspace A = L(I))
-- **Hilbert space ℋ**: IMPORT from Mathlib (0 new axioms)
-- **Time emergence**: THEOREM (Stone's theorem)
-- **Energy**: THEOREM (Spohn's inequality)
-- **Born rule**: THEOREM (maximum entropy)
-- **Superposition**: THEOREM (partial constraint)
-- **Measurement collapse**: THEOREM (full constraint)
+-- ═══════════════════════════════════════════════════════════════════════════════
+-- AXIOM COUNT SUMMARY
+-- ═══════════════════════════════════════════════════════════════════════════════
+--
+-- Tier 1 (LRT Specific): 2 axioms
+--   - I : Type
+--   - I_infinite : Infinite I
+--
+-- Tier 2 (Established Math): 0 in this file
+-- Tier 3 (Universal Physics): 0 in this file
+--
+-- Theorems proven: 3
+--   - L_nonempty
+--   - excluded_middle_in_L
+--   - non_contradiction_in_L
 
-**Philosophical Significance**:
-The entire framework derives from just TWO ontological commitments:
-1. An infinite informational substrate exists
-2. That's it. Everything else follows from logic.
-
-The 3FLL are not additional axioms but inherent features of reasoning itself,
-already present in Lean's type theory and classical logic.
-
-**Next Steps**:
-1. Define actualization A in `Foundation/Actualization.lean`
-2. Define operators (Π_id, {Π_i}, R) in `Operators/Projectors.lean`
-3. Prove time emergence in `Derivations/TimeEmergence.lean`
-4. Prove energy emergence in `Derivations/Energy.lean`
-5. Prove Born rule in `Derivations/BornRule.lean`
--/
+end LogicRealismTheory.Foundation
