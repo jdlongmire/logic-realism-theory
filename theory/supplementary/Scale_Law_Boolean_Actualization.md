@@ -191,9 +191,9 @@ The framework has been validated across seven distinct experimental platforms sp
 |----------|-----------|-------------|------------|-------------|------------|-----------|
 | Fullerene (C₆₀/C₇₀) | Rayleigh scattering | — | mass $m$ | 2 | 2.11 | Arndt 1999 |
 | Cavity QED cats | Photon loss | — | $\bar{n}$ | 1 | 1.01 | Brune 1996 |
-| SC qubits (IBM) | Dephasing | Uncorrelated | $N$ | 1 | 1.0 | Phys. Rev. Res. 2024 |
+| SC qubits (IBM) | Dephasing | Uncorrelated | $N$ | 1 | 1.0 | Kam 2024 |
 | Trapped ions (Innsbruck) | Dephasing | Correlated | $N$ | 2 | 2.0(1) | Monz 2011 |
-| NV ensembles | Dipole bath | Local | density | 1 | 1.06 | npj QI 2022 |
+| NV ensembles | Dipole bath | Local | density | 1 | 1.06 | Park 2022 |
 
 **Superconducting qubits (β = 1):**
 
@@ -392,14 +392,14 @@ Future work should extend controlled scaling tests to higher masses using levita
 - Ellerman, D. (2013) Entropy **15**, 3698.
 - Fein, Y. Y. et al. (2019) Nat. Phys. **15**, 1242.
 - Joos, E. et al. (2003) *Decoherence and the Appearance of a Classical World in Quantum Theory*, Springer.
-- Layden, D. et al. (2022) npj Quantum Inf. **8**, 89. [NV ensemble decoherence]
+- Park, H. et al. (2022) npj Quantum Inf. **8**, 95. [NV ensemble decoherence]
 - Longmire, J. D. (2025a) "It from Bit, Bit from Fit: Foundational Physics Logically Remastered." Zenodo. https://doi.org/10.5281/zenodo.17831819
 - Longmire, J. D. (2025b) "Logic Realism Theory: Technical Foundations." Zenodo. https://doi.org/10.5281/zenodo.17831883
 - Longmire, J. D. (2025c) "Logic Realism Theory: Philosophical Foundations." Zenodo. https://doi.org/10.5281/zenodo.17831912
 - Manfredi, G. & Feix, M. R. (2000) Phys. Rev. E **62**, 4665.
 - Millen, J. et al. (2020) Rep. Prog. Phys. **83**, 026401.
 - Monz, T. et al. (2011) Phys. Rev. Lett. **106**, 130506. [14-qubit GHZ, superdecoherence]
-- Mooney, G. J. et al. (2024) Phys. Rev. Research **6**, 013249. [IBM GHZ scaling, arXiv:2312.15170]
+- Kam, J. F. et al. (2024) Phys. Rev. Research **6**, 033155. [IBM GHZ scaling, arXiv:2312.15170]
 - Schlosshauer, M. (2007) *Decoherence and the Quantum-to-Classical Transition*, Springer.
 - Zurek, W. H. (2003) Rev. Mod. Phys. **75**, 715.
 

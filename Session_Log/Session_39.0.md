@@ -121,7 +121,22 @@ Based on literature search, expanded Section 3 with validation across 7 platform
 - Correlated noise → β = 2 (trapped ions, superdecoherence)
 - Same GHZ state, different β depending on platform
 
-Added references: Monz 2011 (trapped ions), Mooney 2024 (IBM GHZ), Layden 2022 (NV)
+Added references: Monz 2011 (trapped ions), Kam 2024 (IBM GHZ), Park 2022 (NV)
+
+### 3. Reference Validation (reference_validation_protocol)
+
+Ran reference validation via web search (Crossref API blocked in environment).
+
+**Corrections made:**
+| Original | Corrected | Issue |
+|----------|-----------|-------|
+| Mooney 2024, PRR 6, 013249 | Kam 2024, PRR 6, 033155 | Wrong article number, wrong first author |
+| Layden 2022, npj QI 8, 89 | Park 2022, npj QI 8, 95 | Wrong author, wrong article number |
+
+**Validated correct:**
+- Arndt 1999: Nature 401, 680 ✓
+- Brune 1996: PRL 77, 4887 ✓
+- Monz 2011: PRL 106, 130506 ✓
 
 ---
 
@@ -131,8 +146,9 @@ Added references: Monz 2011 (trapped ions), Mooney 2024 (IBM GHZ), Layden 2022 (
 |--------|-------------|
 | `aec0361` | Add Session 39.0: Get up to speed |
 | `d2a4d2b` | Add Scale Law of Boolean Actualization paper |
-| `TBD` | Expand Section 3 with 7-platform validation |
+| `8f6cd02` | Expand Section 3 with 7-platform validation |
+| `TBD` | Fix citation errors found in validation |
 
 ---
 
-## Interaction Count: 7
+## Interaction Count: 10
