@@ -256,7 +256,107 @@ LRT excludes any mechanism producing β > 2, including:
 
 ---
 
-## 7. References
+## 7. Literature Review: Is β > 2 Actually Possible?
+
+**Date of review:** December 2025
+
+### 7.1 Summary Finding
+
+**The prediction is NOT falsified.** No experimental observation of β > 2 exists in the literature.
+
+**However, a critical framing issue has been identified:** The claim that "standard QM permits mechanisms producing β > 2" requires revision.
+
+### 7.2 What the Literature Actually Shows
+
+#### Collapse Models Predict β ≤ 2
+
+| Model | Predicted Scaling | Source |
+|-------|-------------------|--------|
+| **CSL** | m² (mass-squared) → **β = 2** | [Nature Scientific Reports](https://www.nature.com/articles/srep12518) |
+| **GRW** | Amplification scales with size, not faster than quadratic | [arXiv:1907.12460](https://arxiv.org/html/1907.12460) |
+| **Diósi-Penrose** | Natural version **ruled out** by Gran Sasso | [arXiv:2111.13490](https://arxiv.org/abs/2111.13490) |
+
+**Key quote on CSL:** "The peculiar property of the CSL model is the **quadratic dependence** of the rate Γ on the number of constituents."
+
+#### Superradiance Maxes at N²
+
+Dicke superradiance—the canonical example of collective enhancement—produces emission rates proportional to N². This is the **maximum** for coherent collective effects.
+
+> "Almost 60 years ago Dicke introduced the term superradiance to describe a signature quantum effect: N atoms can collectively emit light at a rate proportional to **N²**." — [PMC/Nature](https://pmc.ncbi.nlm.nih.gov/articles/PMC9046277/)
+
+For 1D chains, scaling is actually **linear**; for 2D/3D arrays it is "superlinear but **sub-quadratic**."
+
+#### 2025 Analysis: Higher Exponents Unlikely
+
+A January 2025 paper ([arXiv:2501.17637](https://arxiv.org/html/2501.17637)) generalized CSL to explore different mass exponents:
+
+> "A **higher mass dependence is unlikely**, while a lower one significantly broadens the range of allowed parameters."
+
+This directly contradicts the claim that collapse models could produce β > 2.
+
+#### GHZ State Decoherence
+
+Theoretical analysis of multi-qubit GHZ states shows:
+- Decoherence rate scales with √N to N² depending on mechanism
+- **No mechanism produces scaling faster than N²**
+- [Nature Scientific Reports](https://www.nature.com/articles/srep17013)
+
+### 7.3 Critical Issue: Is the Prediction Uniquely LRT?
+
+The original framing (Issues 17/18) claimed:
+
+> "Standard quantum mechanics permits mechanisms producing β > 2... LRT excludes them."
+
+**Problem:** If CSL, GRW, superradiance, and all known mechanisms predict β ≤ 2, then:
+- LRT is **consistent** with all known physics
+- But LRT is **not uniquely distinguishing** itself from alternatives
+- The prediction becomes "LRT agrees with physics" rather than "LRT makes a unique testable claim"
+
+### 7.4 Possible Resolutions
+
+#### Option A: Find Mechanisms That DO Predict β > 2
+
+Search for theoretical mechanisms in standard QM that would permit β > 2:
+- Nonlinear Schrödinger modifications?
+- Exotic collapse models beyond CSL/GRW/DP?
+- Engineered quantum feedback systems?
+
+**Status:** No such mechanisms found in literature review.
+
+#### Option B: Reframe as Consistency Check
+
+Position the β ≤ 2 observation as:
+- **Confirmation** that LRT is consistent with all known decoherence physics
+- **Constraint** on any future collapse model (must satisfy β ≤ 2)
+- **Prediction** that any future mechanism claiming β > 2 would falsify LRT
+
+This is weaker than "unique distinguishing prediction" but still scientifically meaningful.
+
+#### Option C: Identify Different Distinguishing Feature
+
+The β ≤ 2 bound may not be the right distinguishing feature. Consider:
+- What DOES LRT predict that standard QM doesn't?
+- Are there other quantitative predictions from logical structure?
+- Focus on interpretive/ontological distinctions rather than rate scaling?
+
+### 7.5 Revised Claim
+
+**Original (Issues 17/18):**
+> "LRT predicts β ≤ 2; standard QM permits β > 2; observation of β > 2 would falsify LRT."
+
+**Revised (based on literature review):**
+> "LRT predicts β ≤ 2 from logical structure; all known physical mechanisms also yield β ≤ 2; any future mechanism claiming β > 2 would falsify both LRT and current decoherence theory. LRT provides an ontological grounding for why β ≤ 2 must hold universally."
+
+### 7.6 Action Items
+
+- [ ] Verify: Are there ANY proposed mechanisms with β > 2 in the literature?
+- [ ] Clarify: What exactly does Diósi-Penrose predict for β in testable regimes?
+- [ ] Decide: Keep prediction as is, or reframe as consistency constraint?
+- [ ] Update Issues 17/18 with this analysis
+
+---
+
+## 8. References
 
 - GitHub Issue #17: Original β ≤ 2 prediction
 - GitHub Issue #18: Refined falsification criteria
