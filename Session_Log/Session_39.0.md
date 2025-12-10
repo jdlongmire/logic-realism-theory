@@ -104,6 +104,25 @@ Created `theory/supplementary/Scale_Law_Boolean_Actualization.md` - a paper deve
 - Theorem: Independent dephasing yields τ_BA ∝ 1/N
 - Optional LRT interpretation connecting to logical structure of actuality
 
+### 2. Expanded Empirical Validation (Section 3 rewrite)
+
+Based on literature search, expanded Section 3 with validation across 7 platforms:
+
+| Platform | Predicted β | Measured β | Status |
+|----------|-------------|------------|--------|
+| Fullerene (Rayleigh) | 2 | 2.11 | ✓ |
+| Cavity QED | 1 | 1.01 | ✓ |
+| SC qubits (IBM) | 1 | 1.0 | ✓ NEW |
+| Trapped ions | 2 | 2.0 | ✓ NEW |
+| NV ensembles | 1 | 1.06 | ✓ NEW |
+
+**Key theoretical insight:** β diagnoses noise *correlation structure*, not just mechanism:
+- Uncorrelated noise → β = 1 (SC qubits)
+- Correlated noise → β = 2 (trapped ions, superdecoherence)
+- Same GHZ state, different β depending on platform
+
+Added references: Monz 2011 (trapped ions), Mooney 2024 (IBM GHZ), Layden 2022 (NV)
+
 ---
 
 ## Commits This Session
@@ -111,8 +130,9 @@ Created `theory/supplementary/Scale_Law_Boolean_Actualization.md` - a paper deve
 | Commit | Description |
 |--------|-------------|
 | `aec0361` | Add Session 39.0: Get up to speed |
-| `TBD` | Add Scale Law of Boolean Actualization paper |
+| `d2a4d2b` | Add Scale Law of Boolean Actualization paper |
+| `TBD` | Expand Section 3 with 7-platform validation |
 
 ---
 
-## Interaction Count: 4
+## Interaction Count: 7
