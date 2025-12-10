@@ -91,4 +91,28 @@ logic-realism-theory/
 
 ---
 
-## Interaction Count: 1
+## Work This Session
+
+### 1. Scale Law of Boolean Actualization Paper
+
+Created `theory/supplementary/Scale_Law_Boolean_Actualization.md` - a paper developing an operational framework for decoherence-driven classicality.
+
+**Key contributions:**
+- Defines Boolean actualization time τ_BA using logical entropy threshold
+- Shows τ_BA scales as s^(-β) with mechanism-dependent exponents
+- Empirical confirmation: C₆₀/C₇₀ (β=2.1) and cavity QED (β=1.01)
+- Theorem: Independent dephasing yields τ_BA ∝ 1/N
+- Optional LRT interpretation connecting to logical structure of actuality
+
+---
+
+## Commits This Session
+
+| Commit | Description |
+|--------|-------------|
+| `aec0361` | Add Session 39.0: Get up to speed |
+| `TBD` | Add Scale Law of Boolean Actualization paper |
+
+---
+
+## Interaction Count: 4
