@@ -17,13 +17,7 @@ $$\tau_{\text{BA}} \geq \frac{c}{N^2} \implies \beta \leq 2$$
 
 **Key claim:** Decoherence cannot occur faster than 1/N² scaling in any physical system, regardless of mechanism.
 
-**Distinguishing feature:** Standard quantum mechanics permits mechanisms producing β > 2:
-- Continuous Spontaneous Localization (CSL)
-- Diósi-Penrose gravitational collapse
-- Engineered collective decay channels
-- Adaptive measurements
-
-None of these violate quantum linearity, yet LRT excludes them as actualization mechanisms.
+**Reframed claim (post literature review):** LRT derives β ≤ 2 as a *necessary* constraint from logical structure. Standard QM observes β ≤ 2 as a *contingent* empirical fact. LRT explains why this must be so.
 
 ### 1.2 Refined Falsification Criteria (Issue 18)
 
@@ -59,48 +53,58 @@ Within Logic Realism Theory, the bound arises from the logical structure of actu
 
 **Physical interpretation:** The N² scaling represents the case where all constituents "vote together" against the superposition. This is the thermodynamic limit of logical contradiction resolution.
 
-### 2.2 Why Standard QM Permits β > 2
+### 2.2 The Necessary vs. Contingent Distinction
 
-Standard quantum mechanics places no fundamental constraint on decoherence rates. Mechanisms that could produce β > 2 include:
+Literature review (Section 7) reveals that all known mechanisms predict β ≤ 2:
+- **CSL:** m² scaling → β = 2
+- **Superradiance:** N² maximum (Dicke limit)
+- **GRW:** Amplification ≤ quadratic
+- **Diósi-Penrose:** Natural version ruled out experimentally
 
-1. **CSL (Continuous Spontaneous Localization):**
-   - Collapse rate λ scales with mass density overlap
-   - For extended objects, can produce super-quadratic scaling
+**The key distinction is not empirical but modal:**
 
-2. **Diósi-Penrose:**
-   - Gravitational self-energy drives collapse
-   - Rate scales as ΔE_grav, which can exceed N² for certain geometries
+| Framework | β ≤ 2 Status | Explanation |
+|-----------|--------------|-------------|
+| **Standard QM** | Contingent | Happens to be true for known mechanisms |
+| **LRT** | Necessary | Must be true; derived from logical structure |
 
-3. **Engineered collective decay:**
-   - Superradiant emission with N atoms: Γ ∝ N²
-   - But with engineered correlations, Γ ∝ N^k for k > 2 is achievable
+Standard QM has no *principled* reason why β couldn't exceed 2—it just happens that known mechanisms give β ≤ 2. If someone proposed a mechanism with β > 2, standard QM would evaluate it empirically.
 
-4. **Adaptive measurements:**
-   - Feedback-controlled measurement can accelerate decoherence
-   - No fundamental bound in standard QM
+LRT rejects β > 2 *a priori*: the logical structure of actualization forbids it.
 
-### 2.3 The Distinguishing Test
+### 2.3 The Scientific Value
 
-| Theory | Prediction | β > 2 observed? |
-|--------|------------|-----------------|
-| Standard QM + decoherence only | No prediction | Not excluded |
-| Standard QM + CSL/DP | Possible | Would support |
-| Logic Realism Theory | β ≤ 2 always | Would falsify LRT |
+This is analogous to other "principled impossibility" claims:
 
-**This is the signature falsifiable prediction of LRT.**
+| Domain | Claim | Status |
+|--------|-------|--------|
+| Thermodynamics | Perpetual motion impossible | Not just unobserved—*explained* |
+| Relativity | FTL impossible | Not just unachieved—*derived* |
+| **LRT** | β > 2 impossible | Not just unmeasured—*necessary* |
+
+**LRT provides explanatory depth** for an empirical regularity that standard QM observes but does not explain.
+
+### 2.4 Falsifiability (Preserved)
+
+The prediction remains falsifiable:
+- Observation of β > 2 would falsify LRT
+- It would also overturn current understanding of decoherence physics
+- This makes it an extraordinary claim requiring extraordinary evidence
+
+**Updated framing:** "LRT predicts β ≤ 2 from first principles. Any future mechanism claiming β > 2 would falsify LRT and require revision of decoherence theory."
 
 ---
 
 ## 3. The Opportunity
 
-### 3.1 Scientific Value
+### 3.1 Scientific Value (Reframed)
 
 This prediction offers:
 
-1. **Sharp falsifiability:** Binary yes/no test (β ≤ 2 or β > 2)
-2. **Novel territory:** No other interpretation makes this specific claim
-3. **Experimental accessibility:** Multiple platforms approaching required sensitivity
-4. **Theoretical depth:** Connects logical structure to physical rates
+1. **Explanatory depth:** LRT explains *why* β ≤ 2 must hold, not just that it does
+2. **Principled constraint:** Future mechanisms claiming β > 2 are excluded a priori
+3. **Sharp falsifiability:** Observation of β > 2 would falsify LRT (and overturn decoherence theory)
+4. **Theoretical unification:** Connects logical structure to physical rates
 
 ### 3.2 Gap in Current Documentation
 
@@ -110,23 +114,27 @@ The existing Scale_Law paper (reference document) establishes:
 - ✅ Empirical confirmation of β ≈ 2 (Rayleigh) and β ≈ 1 (photon loss)
 - ✅ LRT interpretation (Section 5)
 
-**Missing:**
-- ❌ Explicit derivation of β ≤ 2 as LRT-specific bound
-- ❌ Clear articulation of why standard QM doesn't impose this bound
-- ❌ Focused experimental proposal targeting β > 2 detection
-- ❌ Standalone prediction paper for peer review
+**What the reframe adds:**
+- ✅ Necessary vs. contingent distinction (Section 2.2 above)
+- ✅ Analogies to thermodynamics/relativity impossibility claims
+- ✅ Literature review confirming no β > 2 mechanisms exist
 
-### 3.3 Proposed Deliverable
+**Still needed:**
+- ❌ Rigorous derivation of β ≤ 2 from LRT axioms
+- ❌ Formal proof that N² is the maximum coherent contribution
+- ❌ Standalone paper articulating the explanatory value
 
-**A focused prediction paper:** "Logic Realism Theory Predicts a Universal Ceiling on Decoherence Scaling"
+### 3.3 Proposed Deliverable (Revised)
+
+**A focused paper:** "Why Decoherence Cannot Exceed Quadratic Scaling: A Logic Realism Derivation"
 
 **Structure:**
-1. **The Prediction:** β ≤ 2 for all physical systems
-2. **Theoretical Derivation:** From LRT axioms to the bound
-3. **Distinguishing Feature:** What standard QM permits but LRT excludes
-4. **Current Evidence:** All measured β values satisfy bound
-5. **Falsification Protocol:** Specific experimental requirements
-6. **Target Platforms:** Levitated nanoparticles, BEC, Rydberg arrays
+1. **The Empirical Regularity:** All measured β ≤ 2; all known mechanisms predict β ≤ 2
+2. **The Explanatory Gap:** Standard QM observes this but doesn't explain it
+3. **The LRT Derivation:** From logical structure to the N² bound
+4. **Modal Status:** Necessary (LRT) vs. contingent (standard QM)
+5. **Falsifiability:** What would overturn this (and what it would mean)
+6. **Implications:** Constraints on future collapse models
 
 ---
 
@@ -339,20 +347,23 @@ The β ≤ 2 bound may not be the right distinguishing feature. Consider:
 - Are there other quantitative predictions from logical structure?
 - Focus on interpretive/ontological distinctions rather than rate scaling?
 
-### 7.5 Revised Claim
+### 7.5 Adopted Resolution: Option B (Reframed)
 
 **Original (Issues 17/18):**
 > "LRT predicts β ≤ 2; standard QM permits β > 2; observation of β > 2 would falsify LRT."
 
-**Revised (based on literature review):**
-> "LRT predicts β ≤ 2 from logical structure; all known physical mechanisms also yield β ≤ 2; any future mechanism claiming β > 2 would falsify both LRT and current decoherence theory. LRT provides an ontological grounding for why β ≤ 2 must hold universally."
+**Revised (adopted):**
+> "LRT derives β ≤ 2 as a *necessary* constraint from logical structure. Standard QM observes β ≤ 2 as a *contingent* empirical fact across all known mechanisms. LRT explains why this must be so—providing the same kind of principled impossibility claim that thermodynamics provides for perpetual motion or relativity provides for FTL travel."
 
-### 7.6 Action Items
+**Key shift:** From "unique distinguishing prediction" to "principled explanation for universal regularity."
 
-- [ ] Verify: Are there ANY proposed mechanisms with β > 2 in the literature?
-- [ ] Clarify: What exactly does Diósi-Penrose predict for β in testable regimes?
-- [ ] Decide: Keep prediction as is, or reframe as consistency constraint?
-- [ ] Update Issues 17/18 with this analysis
+### 7.6 Action Items (Updated)
+
+- [x] ~~Verify: Are there ANY proposed mechanisms with β > 2 in the literature?~~ **No.** Literature review complete.
+- [x] ~~Decide: Keep prediction as is, or reframe as consistency constraint?~~ **Reframed.** See Sections 2.2-2.4.
+- [ ] Update Issues 17/18 on GitHub with this analysis
+- [ ] Develop rigorous derivation of N² maximum from LRT axioms
+- [ ] Draft standalone paper with revised framing
 
 ---
 
