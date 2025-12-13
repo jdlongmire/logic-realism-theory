@@ -103,6 +103,7 @@ Session_Log/                     # Development history (40 sessions)
 
 | Issue | Title | Status | Summary |
 |-------|-------|--------|---------|
+| 011 | Null Hypothesis Development | OPEN | Articulate H₀ vs H₁, Tier 1/2 falsification criteria |
 | 010 | IIS-LRT Paper Development | ACTIVE | Obviating Many-Worlds via three-stage framework |
 | 009 | Lean Future Work | OPEN | ~140 hours to complete formal proofs |
 | 008 | Technical Paper Improvements | RESOLVED | A+ grade achieved (v3) |
