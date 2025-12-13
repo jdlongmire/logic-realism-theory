@@ -163,4 +163,28 @@ LRT provides explanatory depth for an empirical regularity that standard QM obse
 
 ---
 
+## Recommended Response
+
+Fair points worth addressing. Let me clarify:
+
+**On detector superposition**: You're right that entangled detectors are in superposition—this is exactly where IIS-LRT diverges from MWI. We claim one outcome actualizes, not all. The measurement problem remains; IIS-LRT constrains *what* can actualize, not *how*.
+
+**On null hypothesis**: The strongest critique. Here's the distinction:
+
+LRT (Logic Realism Theory) predicts that decoherence scaling exponent β ≤ 2 is *necessary*—derived from the logical structure of actualization. Standard QM observes β ≤ 2 as *contingent*—it just happens to be true for all known mechanisms (CSL, GRW, superradiance all give β ≤ 2).
+
+The empirical status: 7 platforms tested (fullerenes, cavity QED, trapped ions, superconducting qubits, NV centers), all show β ≤ 2. No mechanism in the literature predicts β > 2.
+
+Why? Under any decoherence mechanism, phase variance accumulation is bounded: independent noise gives β = 1, perfectly correlated noise gives β = 2. You can't do better than perfect correlation—that's the N² ceiling.
+
+LRT claims this ceiling is *principled*, like thermodynamics explaining perpetual motion impossibility rather than just observing it doesn't happen. Standard QM has no reason β > 2 couldn't exist—it just doesn't.
+
+**On circularity**: The derivation chain is 3FLL → distinguishability metric → inner product → MM axioms → complex QM. The logical laws are prior to QM, not extracted from it. The reconstruction theorems (Hardy, Masanes-Müller) are the engine; LRT provides the foundation.
+
+**On terminology**: Fair. LRT = Logic Realism Theory; IIS = Infinite Information Space (the arena of all formally specifiable structures); 3FLL = Three Fundamental Logical Laws (Identity, Non-Contradiction, Excluded Middle).
+
+**On relays**: Metastable states are *indeterminate* (neither 1 nor 0), not *contradictory* (both 1 and 0). Different failure modes—LRT's criterion is stable contradictory outcome, not measurement ambiguity.
+
+---
+
 *Response drafted 2025-12-13*
