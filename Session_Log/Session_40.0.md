@@ -144,4 +144,28 @@ Updated root README.md with complete artifact documentation:
 
 ---
 
-## Interaction Count: 6
+### 6. IIS-LRT Paper Development (Issue 010)
+
+Captured extensive notes for new paper: "Infinite Information Space and Logic Realism Theory: A Framework for Quantum Foundations that Obviates Many-Worlds"
+
+**Created:**
+- `theory/issues/Issue_010_IIS_MWI_Paper_Development.md` - Issue tracking
+- `theory/supplementary/IIS_LRT_MWI_Paper_Outline.md` - Full 10-section paper outline
+- `theory/supplementary/IIS_LRT_Three_Stage_Framework.md` - Revised framework summary
+
+**Core Thesis**: Three-stage ontological structure:
+1. **REPRESENTABLE** (Stage 1): All formally specifiable structures (including incoherent)
+2. **PERMISSIBLE** (Stage 2): LRT-filtered subset where physics lives
+3. **ACTUAL** (Stage 3): Single outcome selected per measurement
+
+**Key Innovation**: MWI and IIS-LRT share Stages 1-2 but diverge at Stage 3:
+- MWI: ALL outcomes actualize (branching)
+- IIS-LRT: ONE outcome actualizes
+
+Parsimony favors IIS-LRT: same explanatory work, fewer actual entities.
+
+**Also captured**: "Opportunistic" probability model, QM as dual-domain theory, objections/responses.
+
+---
+
+## Interaction Count: 10
