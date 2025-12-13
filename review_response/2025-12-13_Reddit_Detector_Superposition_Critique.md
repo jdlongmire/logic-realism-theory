@@ -163,27 +163,101 @@ LRT provides explanatory depth for an empirical regularity that standard QM obse
 
 ---
 
+## Response to "What's Your Null Hypothesis?"
+
+The critic asks:
+> "What's your null hypothesis? Judging by your falsifiability criteria, it's a scenario that doesn't happen in quantum theory either... What's even different from quantum theory?"
+
+### The Null Hypothesis
+
+**H₀ (Standard view)**: The Three Fundamental Logical Laws (Identity, Non-Contradiction, Excluded Middle) are cognitive/linguistic conventions—useful rules for reasoning that physical reality is not ontologically bound by.
+
+**H₁ (LRT)**: The 3FLL are ontological constraints constitutive of physical reality itself.
+
+### Why This Matters
+
+Standard QM **presupposes** that measurement outcomes respect logic (no detector reads spin-up AND spin-down). It doesn't **explain** why. The formalism just happens to produce non-contradictory predictions.
+
+LRT makes this a **testable claim**: outcomes respect 3FLL because 3FLL are physical constraints, not because we got lucky with our formalism.
+
+### "It doesn't happen in QM either"
+
+Correct—and that's the point. LRT explains *why* it doesn't happen: 3FLL are ontological constraints that forbid it.
+
+Standard QM observes that it doesn't happen but has no principled reason it couldn't. The measurement postulates are axioms, not derivations. If someone proposed a modification where outcomes could be contradictory, standard QM would evaluate it empirically. LRT rejects it a priori.
+
+This is like thermodynamics vs. pre-thermodynamic observation:
+- Before thermodynamics: "Perpetual motion doesn't happen" (empirical observation)
+- After thermodynamics: "Perpetual motion *can't* happen" (derived from entropy)
+
+LRT plays the same role for logical consistency of outcomes.
+
+### "Deriving QM from QM"
+
+This is a misconception. The derivation chain is:
+
+```
+3FLL (logical laws, not physics)
+    ↓
+Distinguishability metric D(s₁,s₂)
+    ↓
+Inner product structure (from D properties)
+    ↓
+MM axioms (Masanes-Müller reconstruction axioms)
+    ↓
+Complex quantum mechanics
+```
+
+The 3FLL are not extracted from QM—they're the classical laws of logic (Aristotle, Leibniz). The reconstruction theorems (Hardy 2001, Masanes-Müller 2011) are the mathematical engine that shows: given certain axioms about information processing, complex QM is the unique solution.
+
+LRT's contribution: those axioms *follow from* the 3FLL being ontological constraints on distinguishability.
+
+### What's Different from Standard QM
+
+| Aspect | Standard QM | LRT |
+|--------|-------------|-----|
+| Why no P∧¬P outcomes? | Presupposed (measurement axioms) | Derived (3FLL are ontological) |
+| Status of logic | Background assumption | Falsifiable physical postulate |
+| Why complex numbers? | "It works" | Derived from 3FLL |
+| Measurement problem | Open (interpretation-dependent) | Structured (Stage 2→3 transition) |
+
+LRT doesn't add new predictions to standard QM—it provides **explanatory foundation** for features QM takes as given.
+
+---
+
 ## Recommended Response
 
-Fair points worth addressing. Let me clarify:
+Fair points. Let me clarify:
 
-**On detector superposition**: You're right that entangled detectors are in superposition—this is exactly where IIS-LRT diverges from MWI. We claim one outcome actualizes, not all. The measurement problem remains; IIS-LRT constrains *what* can actualize, not *how*.
+**On null hypothesis**:
 
-**On null hypothesis**: The strongest critique. Here's the distinction:
+The null hypothesis is: *The Three Fundamental Logical Laws (Identity, Non-Contradiction, Excluded Middle) are cognitive conventions, not ontological constraints.*
 
-LRT (Logic Realism Theory) predicts that decoherence scaling exponent β ≤ 2 is *necessary*—derived from the logical structure of actualization. Standard QM observes β ≤ 2 as *contingent*—it just happens to be true for all known mechanisms (CSL, GRW, superradiance all give β ≤ 2).
+LRT claims the opposite: 3FLL are constitutive of physical reality itself.
 
-The empirical status: 7 platforms tested (fullerenes, cavity QED, trapped ions, superconducting qubits, NV centers), all show β ≤ 2. No mechanism in the literature predicts β > 2.
+You're right that standard QM also never produces P∧¬P outcomes. But standard QM *presupposes* this (measurement axioms); it doesn't *explain* it. If someone proposed a modification where outcomes could be contradictory, standard QM would evaluate it empirically. LRT rejects it a priori—it's forbidden by the ontological status of logic.
 
-Why? Under any decoherence mechanism, phase variance accumulation is bounded: independent noise gives β = 1, perfectly correlated noise gives β = 2. You can't do better than perfect correlation—that's the N² ceiling.
+This is like thermodynamics vs pre-thermodynamic observation:
+- Before: "Perpetual motion doesn't happen" (observation)
+- After: "Perpetual motion *can't* happen" (derived from entropy)
 
-LRT claims this ceiling is *principled*, like thermodynamics explaining perpetual motion impossibility rather than just observing it doesn't happen. Standard QM has no reason β > 2 couldn't exist—it just doesn't.
+LRT plays this role for logical consistency.
 
-**On circularity**: The derivation chain is 3FLL → distinguishability metric → inner product → MM axioms → complex QM. The logical laws are prior to QM, not extracted from it. The reconstruction theorems (Hardy, Masanes-Müller) are the engine; LRT provides the foundation.
+**On "deriving QM from QM"**:
 
-**On terminology**: Fair. LRT = Logic Realism Theory; IIS = Infinite Information Space (the arena of all formally specifiable structures); 3FLL = Three Fundamental Logical Laws (Identity, Non-Contradiction, Excluded Middle).
+The derivation chain starts from logic, not physics:
 
-**On relays**: Metastable states are *indeterminate* (neither 1 nor 0), not *contradictory* (both 1 and 0). Different failure modes—LRT's criterion is stable contradictory outcome, not measurement ambiguity.
+3FLL (Aristotle, Leibniz) → Distinguishability metric → Inner product → MM axioms → Complex QM
+
+The reconstruction theorems (Hardy 2001, Masanes-Müller 2011) are the mathematical engine—they're established physics showing that certain information-processing axioms uniquely yield complex QM. LRT's contribution: those axioms *follow from* 3FLL being ontological.
+
+**On detector superposition**: You're right that entangled detectors are in superposition. This is where IIS-LRT diverges from MWI—we claim one outcome actualizes, not all. The measurement problem remains; LRT constrains *what* can actualize, not *how*.
+
+**On β ≤ 2**: This is a Tier 2 prediction (derived from Tier 1). If 3FLL are ontological, then decoherence scaling is bounded: β ≤ 2 is necessary, not contingent. 7 platforms tested, all consistent. No mechanism in the literature predicts β > 2.
+
+**On terminology**: LRT = Logic Realism Theory; IIS = Infinite Information Space; 3FLL = Three Fundamental Logical Laws.
+
+**On relays**: Metastable = *indeterminate* (neither 1 nor 0). LRT's criterion is *contradictory* (both 1 and 0). Different failure modes.
 
 ---
 
