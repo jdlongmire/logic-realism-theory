@@ -57,15 +57,33 @@ These distinctions are philosophical, not directly empirical. We need sharper cr
 
 ## Proposed Null Hypothesis Structure
 
-### H₀ (Standard QM)
+### Tier 1: The Fundamental Hypothesis
 
-> Decoherence scaling exponent β is determined by the specific physical mechanism and environmental coupling. There is no principled upper bound; β ≤ 2 is an empirical regularity that could be violated by future mechanisms.
+**H₀ (Standard view)**:
+> The Three Fundamental Logical Laws (Identity, Non-Contradiction, Excluded Middle) are cognitive/linguistic conventions—useful rules for reasoning that physical reality is not ontologically bound by. Quantum mechanics may require revision of classical logic at the fundamental level.
 
-### H₁ (LRT)
+**H₁ (LRT)**:
+> The 3FLL are ontological constraints constitutive of physical reality itself. No physical system can violate them. Apparent violations (superposition, entanglement) occur at the level of representation (Stage 1-2), not actuality (Stage 3).
 
-> Decoherence scaling exponent β ≤ 2 is a necessary constraint derived from the logical structure of Boolean actualization. No physical mechanism can produce β > 2 because the N² coherent phase accumulation ceiling is set by the mathematics of actualization itself.
+### Tier 1 Tests (Would Adjudicate H₀ vs H₁)
 
-### Distinguishing Test
+| Test | H₀ Prediction | H₁ Prediction |
+|------|---------------|---------------|
+| Macroscopic P∧¬P | Could occur if logic is conventional | Impossible in principle |
+| Stable contradictory record | Possible with right mechanism | Forbidden by 3FLL |
+| Quantum logic vindicated | Would support H₀ | Would falsify LRT |
+
+### Tier 2: Derived Predictions (Given H₁)
+
+If 3FLL are ontological (H₁ true), then:
+
+**H₁a (β bound)**:
+> Decoherence scaling exponent β ≤ 2 is a necessary constraint derived from the logical structure of Boolean actualization. No physical mechanism can produce β > 2.
+
+**H₀a (Standard QM)**:
+> β ≤ 2 is an empirical regularity with no principled upper bound. Future mechanisms could produce β > 2.
+
+### Distinguishing Test for Tier 2
 
 The hypotheses diverge when:
 1. A mechanism is proposed that *should* produce β > 2 under standard QM
