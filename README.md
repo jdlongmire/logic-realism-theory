@@ -22,6 +22,8 @@ The Three Fundamental Logical Laws (3FLL) - Identity, Non-Contradiction, Exclude
 
 **Derivation chain**: 3FLL -> Distinguishability metric D -> Inner product -> MM1-MM5 -> Complex QM
 
+**Assessment**: See [Logic Realism Theory: An Internal Clear-eyed Assessment](theory/LRT_Internal_Assessment.md) for an honest evaluation of what the theory has established, what remains open, and where it stands as a research program.
+
 ---
 
 ## Published Pre-Prints
