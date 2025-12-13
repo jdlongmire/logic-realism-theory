@@ -97,23 +97,6 @@ Session_Log/                     # Development history (40 sessions)
 
 ---
 
-## First-Principles Derivations
-
-All derivations in `theory/derivations/` (Session 13.0, ~3,700 lines):
-
-| Derivation | Status | Summary |
-|------------|--------|---------|
-| **Identity to K_ID** | 100% | Identity -> Noether symmetry -> Energy -> Fermi E_F -> K_ID = 1/beta^2 |
-| **Excluded Middle to K_EM** | 100% | EM -> Shannon entropy -> Lindblad dephasing -> K_EM = (ln 2)/beta |
-| **Measurement to K_enforcement** | 95% | 4-phase measurement cycle -> N=4 necessity -> K = 4*beta^2 |
-| **Four Phase Necessity** | Complete | Analysis of why measurement requires exactly 4 phases |
-| **Phase Weighting Analysis** | 70-80% | Equal weighting symmetry arguments (3 documents) |
-| **Linearity Derivation** | Complete | Why quantum evolution must be linear |
-
-**Variational Framework**: K_total = (ln 2)/beta + 1/beta^2 + 4*beta^2 (98% derived from first principles)
-
----
-
 ## Open Issues
 
 | Issue | Title | Status | Summary |
