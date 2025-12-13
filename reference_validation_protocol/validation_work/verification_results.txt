@@ -1,0 +1,341 @@
+======================================================================
+AUTHORITATIVE CITATION DATA (from Crossref API - tier_1 source)
+======================================================================
+DOI:      10.1103/PhysRevA.84.012311
+URL:      https://doi.org/10.1103/PhysRevA.84.012311
+Accessed: 2025-12-05T15:41:10.201177Z
+----------------------------------------------------------------------
+Title:    Informational derivation of quantum theory
+Authors:  Chiribella, G., D’Ariano, G., Perinotti, P.
+Journal:  Physical Review A
+Year:     2011
+Volume:   84(1)
+Article:  012311
+Publisher: American Physical Society (APS)
+----------------------------------------------------------------------
+FORMATTED CITATION:
+Chiribella, G. et al.. "Informational derivation of quantum theory" *Physical Review A* 84(1), 2011: 012311.
+======================================================================
+
+======================================================================
+AUTHORITATIVE CITATION DATA (from Crossref API - tier_1 source)
+======================================================================
+DOI:      10.1103/PhysRevA.40.1165
+URL:      https://doi.org/10.1103/PhysRevA.40.1165
+Accessed: 2025-12-05T15:41:10.337718Z
+----------------------------------------------------------------------
+Title:    Models for universal reduction of macroscopic quantum fluctuations
+Authors:  Diósi, L.
+Journal:  Physical Review A
+Year:     1989
+Volume:   40(3)
+Pages:    1165-1174
+Publisher: American Physical Society (APS)
+----------------------------------------------------------------------
+FORMATTED CITATION:
+Diósi, L.. "Models for universal reduction of macroscopic quantum fluctuations" *Physical Review A* 40(3), 1989: 1165-1174.
+======================================================================
+
+======================================================================
+AUTHORITATIVE CITATION DATA (from Crossref API - tier_1 source)
+======================================================================
+DOI:      10.1103/RevModPhys.85.1693
+URL:      https://doi.org/10.1103/RevModPhys.85.1693
+Accessed: 2025-12-05T15:41:10.500085Z
+----------------------------------------------------------------------
+Title:    Quantum-Bayesian coherence
+Authors:  Fuchs, C., Schack, R.
+Journal:  Reviews of Modern Physics
+Year:     2013
+Volume:   85(4)
+Pages:    1693-1715
+Publisher: American Physical Society (APS)
+----------------------------------------------------------------------
+FORMATTED CITATION:
+Fuchs, C. and Schack, R.. "Quantum-Bayesian coherence" *Reviews of Modern Physics* 85(4), 2013: 1693-1715.
+======================================================================
+
+======================================================================
+AUTHORITATIVE CITATION DATA (from Crossref API - tier_1 source)
+======================================================================
+DOI:      10.1103/PhysRevD.34.470
+URL:      https://doi.org/10.1103/PhysRevD.34.470
+Accessed: 2025-12-05T15:41:10.637790Z
+----------------------------------------------------------------------
+Title:    Unified dynamics for microscopic and macroscopic systems
+Authors:  Ghirardi, G., Rimini, A., Weber, T.
+Journal:  Physical Review D
+Year:     1986
+Volume:   34(2)
+Pages:    470-491
+Publisher: American Physical Society (APS)
+----------------------------------------------------------------------
+FORMATTED CITATION:
+Ghirardi, G. et al.. "Unified dynamics for microscopic and macroscopic systems" *Physical Review D* 34(2), 1986: 470-491.
+======================================================================
+
+======================================================================
+AUTHORITATIVE CITATION DATA (from Crossref API - tier_1 source)
+======================================================================
+DOI:      10.1088/1367-2630/13/6/063001
+URL:      https://doi.org/10.1088/1367-2630/13/6/063001
+Accessed: 2025-12-05T15:41:10.769430Z
+----------------------------------------------------------------------
+Title:    A derivation of quantum theory from physical requirements
+Authors:  Masanes, L., Müller, M.
+Journal:  New Journal of Physics
+Year:     2011
+Volume:   13(6)
+Pages:    063001
+Publisher: IOP Publishing
+----------------------------------------------------------------------
+FORMATTED CITATION:
+Masanes, L. and Müller, M.. "A derivation of quantum theory from physical requirements" *New Journal of Physics* 13(6), 2011: 063001.
+======================================================================
+
+======================================================================
+AUTHORITATIVE CITATION DATA (from Crossref API - tier_1 source)
+======================================================================
+DOI:      10.1007/BF02105068
+URL:      https://doi.org/10.1007/BF02105068
+Accessed: 2025-12-05T15:41:10.908485Z
+----------------------------------------------------------------------
+Title:    On Gravity's role in Quantum State Reduction
+Authors:  Penrose, R.
+Journal:  General Relativity and Gravitation
+Year:     1996
+Volume:   28(5)
+Pages:    581-600
+Publisher: Springer Science and Business Media LLC
+----------------------------------------------------------------------
+FORMATTED CITATION:
+Penrose, R.. "On Gravity's role in Quantum State Reduction" *General Relativity and Gravitation* 28(5), 1996: 581-600.
+======================================================================
+
+======================================================================
+AUTHORITATIVE CITATION DATA (from Crossref API - tier_1 source)
+======================================================================
+DOI:      10.1038/nphys2309
+URL:      https://doi.org/10.1038/nphys2309
+Accessed: 2025-12-05T15:41:11.045832Z
+----------------------------------------------------------------------
+Title:    On the reality of the quantum state
+Authors:  Pusey, M., Barrett, J., Rudolph, T.
+Journal:  Nature Physics
+Year:     2012
+Volume:   8(6)
+Pages:    475-478
+Publisher: Springer Science and Business Media LLC
+----------------------------------------------------------------------
+FORMATTED CITATION:
+Pusey, M. et al.. "On the reality of the quantum state" *Nature Physics* 8(6), 2012: 475-478.
+======================================================================
+
+======================================================================
+AUTHORITATIVE CITATION DATA (from Crossref API - tier_1 source)
+======================================================================
+DOI:      10.1038/s41586-021-04160-4
+URL:      https://doi.org/10.1038/s41586-021-04160-4
+Accessed: 2025-12-05T15:41:11.203680Z
+----------------------------------------------------------------------
+Title:    Quantum theory based on real numbers can be experimentally falsified
+Authors:  Renou, M., Trillo, D., Weilenmann, M., Le, T., Tavakoli, A., Gisin, N., Acín, A., Navascués, M.
+Journal:  Nature
+Year:     2021
+Volume:   600(7890)
+Pages:    625-629
+Publisher: Springer Science and Business Media LLC
+----------------------------------------------------------------------
+FORMATTED CITATION:
+Renou, M. et al.. "Quantum theory based on real numbers can be experimentally falsified" *Nature* 600(7890), 2021: 625-629.
+======================================================================
+
+======================================================================
+AUTHORITATIVE CITATION DATA (from Crossref API - tier_1 source)
+======================================================================
+DOI:      10.1007/BF02302261
+URL:      https://doi.org/10.1007/BF02302261
+Accessed: 2025-12-05T15:41:11.366300Z
+----------------------------------------------------------------------
+Title:    Relational quantum mechanics
+Authors:  Rovelli, C.
+Journal:  International Journal of Theoretical Physics
+Year:     1996
+Volume:   35(8)
+Pages:    1637-1678
+Publisher: Springer Science and Business Media LLC
+----------------------------------------------------------------------
+FORMATTED CITATION:
+Rovelli, C.. "Relational quantum mechanics" *International Journal of Theoretical Physics* 35(8), 1996: 1637-1678.
+======================================================================
+
+======================================================================
+AUTHORITATIVE CITATION DATA (from Crossref API - tier_1 source)
+======================================================================
+DOI:      10.1007/BF00417500
+URL:      https://doi.org/10.1007/BF00417500
+Accessed: 2025-12-05T15:41:11.502880Z
+----------------------------------------------------------------------
+Title:    Quantum generalizations of Bell's inequality
+Authors:  Cirel'son, B.
+Journal:  Letters in Mathematical Physics
+Year:     1980
+Volume:   4(2)
+Pages:    93-100
+Publisher: Springer Science and Business Media LLC
+----------------------------------------------------------------------
+FORMATTED CITATION:
+Cirel'son, B.. "Quantum generalizations of Bell's inequality" *Letters in Mathematical Physics* 4(2), 1980: 93-100.
+======================================================================
+
+======================================================================
+AUTHORITATIVE CITATION DATA (from Crossref API - tier_1 source)
+======================================================================
+DOI:      10.1103/RevModPhys.75.715
+URL:      https://doi.org/10.1103/RevModPhys.75.715
+Accessed: 2025-12-05T15:41:11.698008Z
+----------------------------------------------------------------------
+Title:    Decoherence, einselection, and the quantum origins of the classical
+Authors:  Zurek, W.
+Journal:  Reviews of Modern Physics
+Year:     2003
+Volume:   75(3)
+Pages:    715-775
+Publisher: American Physical Society (APS)
+----------------------------------------------------------------------
+FORMATTED CITATION:
+Zurek, W.. "Decoherence, einselection, and the quantum origins of the classical" *Reviews of Modern Physics* 75(3), 2003: 715-775.
+======================================================================
+
+======================================================================
+AUTHORITATIVE CITATION DATA (from Crossref API - tier_1 source)
+======================================================================
+DOI:      10.1103/PhysRevA.87.052106
+URL:      https://doi.org/10.1103/PhysRevA.87.052106
+Accessed: 2025-12-05T15:41:11.830604Z
+----------------------------------------------------------------------
+Title:    Real-vector-space quantum theory with a universal quantum bit
+Authors:  Aleksandrova, A., Borish, V., Wootters, W.
+Journal:  Physical Review A
+Year:     2013
+Volume:   87(5)
+Article:  052106
+Publisher: American Physical Society (APS)
+----------------------------------------------------------------------
+FORMATTED CITATION:
+Aleksandrova, A. et al.. "Real-vector-space quantum theory with a universal quantum bit" *Physical Review A* 87(5), 2013: 052106.
+======================================================================
+
+======================================================================
+AUTHORITATIVE CITATION DATA (from Crossref API - tier_1 source)
+======================================================================
+DOI:      10.1103/PhysRevLett.114.160502
+URL:      https://doi.org/10.1103/PhysRevLett.114.160502
+Accessed: 2025-12-05T15:41:11.972608Z
+----------------------------------------------------------------------
+Title:    Maximally Nonlocal Theories Cannot Be Maximally Random
+Authors:  de la Torre, G., Hoban, M., Dhara, C., Prettico, G., Acín, A.
+Journal:  Physical Review Letters
+Year:     2015
+Volume:   114(16)
+Article:  160502
+Publisher: American Physical Society (APS)
+----------------------------------------------------------------------
+FORMATTED CITATION:
+de la Torre, G. et al.. "Maximally Nonlocal Theories Cannot Be Maximally Random" *Physical Review Letters* 114(16), 2015: 160502.
+======================================================================
+
+======================================================================
+AUTHORITATIVE CITATION DATA (from Crossref API - tier_1 source)
+======================================================================
+DOI:      10.1103/PhysRevLett.109.090403
+URL:      https://doi.org/10.1103/PhysRevLett.109.090403
+Accessed: 2025-12-05T15:41:12.127744Z
+----------------------------------------------------------------------
+Title:    Deriving Quantum Theory from Its Local Structure and Reversibility
+Authors:  de la Torre, G., Masanes, L., Short, A., Müller, M.
+Journal:  Physical Review Letters
+Year:     2012
+Volume:   109(9)
+Article:  090403
+Publisher: American Physical Society (APS)
+----------------------------------------------------------------------
+FORMATTED CITATION:
+de la Torre, G. et al.. "Deriving Quantum Theory from Its Local Structure and Reversibility" *Physical Review Letters* 109(9), 2012: 090403.
+======================================================================
+
+======================================================================
+AUTHORITATIVE CITATION DATA (from Crossref API - tier_1 source)
+======================================================================
+DOI:      10.1103/PhysRevLett.96.250401
+URL:      https://doi.org/10.1103/PhysRevLett.96.250401
+Accessed: 2025-12-05T15:41:12.263002Z
+----------------------------------------------------------------------
+Title:    Limit on Nonlocality in Any World in Which Communication Complexity Is Not Trivial
+Authors:  Brassard, G., Buhrman, H., Linden, N., Méthot, A., Tapp, A., Unger, F.
+Journal:  Physical Review Letters
+Year:     2006
+Volume:   96(25)
+Article:  250401
+Publisher: American Physical Society (APS)
+----------------------------------------------------------------------
+FORMATTED CITATION:
+Brassard, G. et al.. "Limit on Nonlocality in Any World in Which Communication Complexity Is Not Trivial" *Physical Review Letters* 96(25), 2006: 250401.
+======================================================================
+
+======================================================================
+AUTHORITATIVE CITATION DATA (from Crossref API - tier_1 source)
+======================================================================
+DOI:      10.1088/1367-2630/18/9/093047
+URL:      https://doi.org/10.1088/1367-2630/18/9/093047
+Accessed: 2025-12-05T15:41:12.401491Z
+----------------------------------------------------------------------
+Title:    Deriving Grover's lower bound from simple physical principles
+Authors:  Lee, C., Selby, J.
+Journal:  New Journal of Physics
+Year:     2016
+Volume:   18(9)
+Pages:    093047
+Publisher: IOP Publishing
+----------------------------------------------------------------------
+FORMATTED CITATION:
+Lee, C. and Selby, J.. "Deriving Grover's lower bound from simple physical principles" *New Journal of Physics* 18(9), 2016: 093047.
+======================================================================
+
+======================================================================
+AUTHORITATIVE CITATION DATA (from Crossref API - tier_1 source)
+======================================================================
+DOI:      10.1103/PhysRevLett.102.020505
+URL:      https://doi.org/10.1103/PhysRevLett.102.020505
+Accessed: 2025-12-05T15:41:12.538984Z
+----------------------------------------------------------------------
+Title:    Simulating Quantum Systems Using Real Hilbert Spaces
+Authors:  McKague, M., Mosca, M., Gisin, N.
+Journal:  Physical Review Letters
+Year:     2009
+Volume:   102(2)
+Article:  020505
+Publisher: American Physical Society (APS)
+----------------------------------------------------------------------
+FORMATTED CITATION:
+McKague, M. et al.. "Simulating Quantum Systems Using Real Hilbert Spaces" *Physical Review Letters* 102(2), 2009: 020505.
+======================================================================
+
+======================================================================
+AUTHORITATIVE CITATION DATA (from Crossref API - tier_1 source)
+======================================================================
+DOI:      10.1016/0034-4877(76)90060-4
+URL:      https://doi.org/10.1016/0034-4877(76)90060-4
+Accessed: 2025-12-05T15:41:12.674483Z
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\reference_validation_protocol\verify_citation.py", line 354, in <module>
+    main()
+  File "C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\reference_validation_protocol\verify_citation.py", line 346, in main
+    print_citation_data(data, output_format)
+  File "C:\Users\jdlon\OneDrive\Documents\logic-realism-theory\reference_validation_protocol\verify_citation.py", line 259, in print_citation_data
+    print(f"Title:    {data.title}")
+  File "C:\Users\jdlon\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2217' in position 63: character maps to <undefined>

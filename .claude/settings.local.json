@@ -24,7 +24,10 @@
       "Bash(\"/c/Users/jdlon/AppData/Local/Programs/MiKTeX/miktex/bin/x64/xelatex.exe\" --version)",
       "Bash(python:*)",
       "WebSearch",
-      "Bash(for paper in Logic_Realism_Theory_Main-v2 Logic_Realism_Theory_Technical-v2 Logic_Realism_Theory_Philosophy-v2 Logic_Realism_Theory_QFT_Gravity_Extension-v2)"
+      "Bash(for paper in Logic_Realism_Theory_Main-v2 Logic_Realism_Theory_Technical-v2 Logic_Realism_Theory_Philosophy-v2 Logic_Realism_Theory_QFT_Gravity_Extension-v2)",
+      "Bash(git merge:*)",
+      "Bash(git checkout:*)",
+      "Bash(git stash:*)"
     ],
     "deny": [],
     "ask": []

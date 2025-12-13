@@ -1,0 +1,98 @@
+# Paper 1: Logic_Realism_Theory_Main-v2.md
+# Format: DOI | Citation Text
+
+# Aspect et al. 1982 - need to find DOI
+# Bell 1964 - pre-DOI
+# Berto & Jago 2019 - book, may have DOI
+# Borges 1962 - book chapter, no DOI expected
+# Birkhoff & von Neumann 1936 - pre-DOI
+# Bohm 1952 - pre-DOI
+10.1103/PhysRevA.84.012311 | Chiribella, G., D'Ariano, G. M., and Perinotti, P. "Informational derivation of quantum theory." Physical Review A 84(1), 2011: 012311.
+# da Costa 1974 - pre-DOI era
+# Deutsch 1999 - may have DOI
+10.1103/PhysRevA.40.1165 | Diósi, L. "Models for universal reduction of macroscopic quantum fluctuations." Physical Review A 40(3), 1989: 1165-1174.
+# Everett 1957 - pre-DOI
+10.1103/RevModPhys.85.1693 | Fuchs, C. A. and Schack, R. "Quantum-Bayesian coherence." Reviews of Modern Physics 85(4), 2013: 1693-1715.
+10.1103/PhysRevD.34.470 | Ghirardi, G. C., Rimini, A., and Weber, T. "Unified dynamics for microscopic and macroscopic systems." Physical Review D 34(2), 1986: 470-491.
+# Gleason 1957 - pre-DOI
+# Hardy 2001 - arXiv, no DOI
+# Joos & Zeh 1985 - pre-DOI
+# Kochen & Specker 1967 - pre-DOI
+10.1088/1367-2630/13/6/063001 | Masanes, L. and Müller, M. P. "A derivation of quantum theory from physical requirements." New Journal of Physics 13, 2011: 063001.
+10.1007/BF02105068 | Penrose, R. "On gravity's role in quantum state reduction." General Relativity and Gravitation 28(5), 1996: 581-600.
+# Priest 2006 - book, may have DOI
+# Priest et al 2004 - book, may have DOI
+# Priest et al 1989 - book
+10.1038/nphys2309 | Pusey, M. F., Barrett, J., and Rudolph, T. "On the reality of the quantum state." Nature Physics 8(6), 2012: 475-478.
+10.1038/s41586-021-04160-4 | Renou, M.-O., et al. "Quantum theory based on real numbers can be experimentally falsified." Nature 600, 2021: 625-629.
+10.1007/BF02302261 | Rovelli, C. "Relational quantum mechanics." International Journal of Theoretical Physics 35(8), 1996: 1637-1678.
+# Stone 1932 - pre-DOI
+10.1007/BF00417500 | Tsirelson, B. S. "Quantum generalizations of Bell's inequality." Letters in Mathematical Physics 4(2), 1980: 93-100.
+# Wallace 2007 - may have DOI
+# Wheeler 1990 - book chapter
+# Wigner 1960 - pre-DOI
+10.1103/RevModPhys.75.715 | Zurek, W. H. "Decoherence, einselection, and the quantum origins of the classical." Reviews of Modern Physics 75(3), 2003: 715-775.
+
+# Paper 2: Logic_Realism_Theory_Technical-v2.md
+# Adler 1995 - book
+10.1103/PhysRevA.87.052106 | Aleksandrova, A., Borish, V., and Wootters, W. K. "Real-vector-space quantum theory with a universal quantum bit." Physical Review A 87, 2013: 052106.
+# Berto & Jago 2019 - book (already listed)
+10.1103/PhysRevLett.114.160502 | de la Torre, G., Hoban, M. J., Dhara, C., Sainz, A. B., and Acín, A. "Maximally nonlocal theories cannot be maximally random." Physical Review Letters 114, 2015: 160502.
+10.1103/PhysRevLett.109.090403 | de la Torre, G., Masanes, Ll., Short, A. J., and Müller, M. P. "Deriving quantum theory from its local structure and reversibility." Physical Review Letters 109, 2012: 090403.
+# Birkhoff & von Neumann 1936 (already listed)
+10.1103/PhysRevLett.96.250401 | Brassard, G., Buhrman, H., Linden, N., Méthot, A. A., Tapp, A., and Unger, F. "Limit on nonlocality in any world in which communication complexity is not trivial." Physical Review Letters 96, 2006: 250401.
+# Chiribella 2011 (already listed)
+# da Costa 1974 (already listed)
+# Demarest 2017 - book chapter
+# Earnshaw 1842 - pre-DOI
+# Egg 2014 - book
+# Halmos 1974 - book
+# Hardy 2001 (already listed)
+10.1088/1367-2630/18/9/093047 | Lee, C. M. and Selby, J. H. "Deriving Grover's lower bound from simple physical principles." New Journal of Physics 18(9), 2016: 093047.
+10.1103/PhysRevLett.102.020505 | McKague, M., Mosca, M., and Gisin, N. "Simulating quantum systems using real Hilbert spaces." Physical Review Letters 102, 2009: 020505.
+# Masanes & Müller 2011 (already listed)
+# Priest 2006 (already listed)
+# Priest et al 2004 (already listed)
+# Renou 2021 (already listed)
+# Stueckelberg 1960 - pre-DOI
+10.1016/0034-4877(76)90060-4 | Uhlmann, A. "The 'transition probability' in the state space of a *-algebra." Reports on Mathematical Physics 9(2), 1976: 273-279.
+# van Dam 2005 - arXiv
+# Wigner 1939 - pre-DOI
+# Wootters 1990 - book chapter
+
+# Paper 3: Logic_Realism_Theory_Philosophy-v2.md
+# Birkhoff & von Neumann 1936 (already listed)
+# Chiribella 2011 (already listed)
+10.1023/A:1025621423808 | French, S. and Ladyman, J. "Remodelling structural realism: Quantum physics and the metaphysics of structure." Synthese 136, 2003: 31-56.
+# Fuchs & Schack 2013 (already listed)
+# Hardy 2001 (already listed)
+10.1016/S0039-3681(98)80129-6 | Ladyman, J. "What is structural realism?" Studies in History and Philosophy of Science 29(3), 1998: 409-424.
+# Masanes & Müller 2011 (already listed)
+10.1007/BF00773309 | Maudlin, T. "Three measurement problems." Topoi 14(1), 1995: 7-15.
+# Putnam 1968 - book chapter
+# Renou 2021 (already listed)
+# Wallace 2012 - book
+# Wigner 1960 (already listed)
+# Wittgenstein 1921/1961 - book
+
+# Paper 4: Logic_Realism_Theory_QFT_Gravity_Extension-v2.md
+# Masanes & Müller 2011 (already listed)
+# Hardy 2001 (already listed)
+# Lee & Selby 2016 (already listed)
+# Streater & Wightman 1964 - book
+# Haag 1996 - book
+# Weinberg 1995 - book
+10.1103/PhysRev.58.716 | Pauli, W. "The connection between spin and statistics." Phys. Rev. 58, 1940: 716-722.
+# Lüders 1958 - pre-DOI (German journal)
+# Zumino 1960 - may have DOI
+10.1103/PhysRev.136.B248 | Messiah, A. M. L. & Greenberg, O. W. "Symmetrization postulate and its experimental foundation." Phys. Rev. 136, 1964: B248.
+# Renou 2021 (already listed)
+
+# Paper 5: LRT_Saturated_Entanglement_Interface_Criterion.md
+10.1007/BF01725541 | Joos, E. & Zeh, H.D. "The emergence of classical properties through interaction with the environment." Z. Physik B 59, 1985: 223-243.
+10.1103/PhysRevLett.77.4887 | Brune, M. et al. "Observing the progressive decoherence of the 'meter' in a quantum measurement." Phys. Rev. Lett. 77, 1996: 4887.
+# Zurek 2003 (already listed)
+10.1103/PhysRevLett.71.1291 | Page, D.N. "Average entropy of a subsystem." Phys. Rev. Lett. 71, 1993: 1291.
+# Schlosshauer 2007 - book
+# Haroche 2006 - book
+10.1103/PhysRevB.100.064204 | Szyniszewski, M. et al. "Entanglement transition from variable-strength weak measurements." Phys. Rev. B 100, 2019: 064204.
