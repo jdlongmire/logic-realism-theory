@@ -95,6 +95,41 @@ All branches forked from same commit (`470905c` - Session 38.0 close).
 
 ---
 
+### 5. README Comprehensive Update
+
+Updated root README.md with complete artifact documentation:
+
+**New sections added:**
+- Supplementary Papers (3 working papers with summaries)
+- First-Principles Derivations (7 derivation documents with status)
+- Lean 4 Formalization (metrics, tier classification)
+- Computational Notebooks (16 notebooks listed)
+- Updated Open Issues table
+- Updated Development History
+
+**Artifacts now documented:**
+- 5 published pre-prints (Zenodo)
+- 3 supplementary papers (working drafts)
+- 7 derivation documents (~3,700 lines)
+- 12 Lean axioms (2 Tier 1 + 9 Tier 2 + 1 Tier 3)
+- 16 computational notebooks
+- 9 open/resolved issues
+
+---
+
+## Commits This Session
+
+| Commit | Description |
+|--------|-------------|
+| `ac00531` | (merged) Scale Law paper initial |
+| `2516f5d` | Merge: Scale Law 7-platform validation |
+| `19e09b2` | Merge: Beta prediction and Fundamental Laws |
+| `f486d41` | Add validation work artifacts and archived PDF |
+| `3fc4249` | Add Session 40.0 log |
+| `TBD` | Update README with comprehensive artifact list |
+
+---
+
 ## Session Summary
 
 **Accomplished:**
@@ -103,9 +138,10 @@ All branches forked from same commit (`470905c` - Session 38.0 close).
 3. Committed uncommitted local files
 4. Deleted merged remote branches
 5. Pushed everything to origin
+6. Updated README with comprehensive artifact documentation
 
-**Repository now fully synced.**
+**Repository now fully synced and documented.**
 
 ---
 
-## Interaction Count: 5
+## Interaction Count: 6
