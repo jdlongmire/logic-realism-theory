@@ -41,8 +41,11 @@ Thank you for your time and consideration.
 Best regards,
 
 James D. (JD) Longmire
-ORCID: 0009-0009-1383-7698
+Northrop Grumman Fellow (independent research)
+ORCID: [0009-0009-1383-7698](https://orcid.org/0009-0009-1383-7698)
 jdlongmire@outlook.com
+
+**Brief background:** I'm an independent researcher with a background in systems engineering and formal methods (30+ years at Northrop Grumman). This work grew from applying information-theoretic and logical foundations to questions in quantum mechanics—arriving at the metaphysics-of-logic literature from the physics side rather than the philosophy side. I'm seeking engagement with the philosophical community to ensure the framework is rigorous and well-positioned.
 
 ---
 
