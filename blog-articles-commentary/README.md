@@ -36,6 +36,11 @@ This ensures chronological sorting in file listings.
 - Independent convergence between MToE and LRT on non-computational constraints
 - References Zenodo DOI: 10.5281/zenodo.17533459
 
+**2025-12-14_Commentary_McSweeney_Cost_of_Closure.md**
+- Commentary on McSweeney (2021) "The Cost of Closure"
+- Logical realism undermines standard equivalence assumptions
+- LRT accepts the cost and offers physics-grounded criterion
+
 **2025-12-13_Commentary_Tahko_Logical_Realism_Survey.md**
 - Commentary on Tahko (2021) "A Survey of Logical Realism"
 - Positions LRT within established philosophical framework
