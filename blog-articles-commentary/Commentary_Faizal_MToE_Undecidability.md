@@ -1,3 +1,5 @@
+**December 14, 2025**
+
 # Why a "Theory of Everything" Might Be Mathematically Impossible - And What That Means for Physics
 
 ## A new paper from Faizal, Krauss, and colleagues argues that Gödel's incompleteness theorems constrain fundamental physics. Logic Realism Theory arrived at the same conclusion from a different direction.

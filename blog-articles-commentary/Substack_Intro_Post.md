@@ -1,3 +1,5 @@
+**December 14, 2025**
+
 # Welcome to Logic Realism Theory
 
 ## What if the laws of logic aren't just rules for thinking, but laws of physics?
