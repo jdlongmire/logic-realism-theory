@@ -36,14 +36,19 @@ This ensures chronological sorting in file listings.
 - Independent convergence between MToE and LRT on non-computational constraints
 - References Zenodo DOI: 10.5281/zenodo.17533459
 
+**2025-12-13_Commentary_Tahko_Logical_Realism_Survey.md**
+- Commentary on Tahko (2021) "A Survey of Logical Realism"
+- Positions LRT within established philosophical framework
+- Addresses overgeneration problem and dialetheism
+
 ---
 
 ## Other Contents
 
-- `A-Survey-of-Logic-Realism.pdf` - Tahko (2021) survey
-- `Commentary_Tahko_Survey_Logical_Realism.md` - Notes on Tahko survey
+- `A-Survey-of-Logic-Realism.pdf` - Tahko (2021) survey (source paper)
 - `Email_Draft_Tahko_Outreach.md` - Outreach draft
 - `Logical_Realism_Contact_List.md` - Research community contacts
+- `figures/` - Header images for articles
 
 ---
 
