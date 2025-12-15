@@ -45,6 +45,21 @@ LRT currently:
 - ✗ Does NOT derive the formula from 3FLL + Global Parsimony
 - ✗ Does NOT show why THIS formula specifically
 
+### 2.4 The Conditional Structure (Critical)
+
+> **LRT's prediction is conditional, not absolute:**
+>
+> **IF** objective collapse exists (superposition lifetime is bounded by more than environmental decoherence):
+> - **THEN** under LRT it must satisfy: λ = α·Gm²/(ℏR), with α derivable from geometry
+> - **AND** energy must be strictly conserved (no anomalous heating)
+> - **AND** mass scaling must be λ ∝ m² (not λ ∝ m)
+>
+> **IF** no objective collapse exists (all apparent collapse is environmental decoherence):
+> - **THEN** LRT is consistent with standard QM (no falsification)
+> - **AND** Global Parsimony is satisfied (no collapse parameters needed)
+>
+> **This is NOT** a prediction that collapse occurs. It is a constraint on what collapse *must look like* if it exists.
+
 ---
 
 ## 3. The Penrose-Diósi Formula
@@ -82,6 +97,8 @@ $$\lambda = \frac{1}{\tau} \sim \frac{Gm^2}{\hbar R}$$
 | Nanosphere (10⁶ amu) | 10⁻²¹ kg | 10⁻⁷ m | ~10¹⁵ s | No |
 | Microparticle (10¹² amu) | 10⁻¹⁵ kg | 10⁻⁵ m | ~10³ s | Yes (minutes) |
 | Dust grain (10¹⁵ amu) | 10⁻¹² kg | 10⁻⁴ m | ~1 s | Yes (seconds) |
+
+*Note: Values are order-of-magnitude estimates for uniform spheres, following standard DP calculations (Diósi 1987, Penrose 1996). Actual timescales depend on geometry; see Bassi et al. (2013) Table I for refined estimates.*
 
 ### 3.3 Comparison with GRW
 
@@ -179,6 +196,23 @@ We need to show: The gravitational self-energy E_G = Gm²/R is the UNIQUE geomet
    - Difference: ΔE ~ Gm²Δx/(R(R+Δx)) ~ Gm²/R for Δx ~ R
 
 5. **By Global Parsimony:** This is the ONLY available "cost" for spatial superposition. No additional mechanism is permitted.
+
+#### Comparison with Other Long-Range Couplings
+
+| Coupling | Why Excluded | Assumption Required |
+|----------|-------------|---------------------|
+| Electromagnetic | Charged objects have EM self-energy | Neutral test masses |
+| Scalar fields (dark energy) | Would contribute additional self-energy | No universal scalar coupling to mass |
+| Fifth force | Would modify scaling | Equivalence principle (gravity = geometry) |
+
+**Explicit assumptions for gravity uniqueness:**
+1. **Charge neutrality**: Test masses are electrically neutral
+2. **No additional universal long-range fields**: Only gravity couples universally to mass
+3. **Equivalence principle**: Gravity is geometric (mass ≡ spacetime curvature source)
+
+**Qualification:** The claim "only gravitational" means: *given* neutrality, equivalence principle, and absence of additional universal long-range fields coupling to mass. If any of these fail, additional terms would enter.
+
+**Why this is reasonable:** These are standard assumptions in collapse model literature (Bassi et al. 2013). Violations would be independently detectable and would constitute new physics beyond both standard QM and collapse models.
 
 ### 5.3 Why Energy-Time Uncertainty
 
@@ -323,6 +357,22 @@ This is too long to observe directly, but:
 - LRT: Basis determined by measurement context (which observable couples to environment)
 - Difficult to test (requires isolation from position-measuring fields)
 
+### 6.5 Comprehensive Model Comparison
+
+| Model | Free Parameters | Schrödinger Eq. | Energy | Mass Scaling | Heating |
+|-------|-----------------|-----------------|--------|--------------|---------|
+| **Standard QM** | None | Exact | Conserved | N/A (no collapse) | None |
+| **GRW/CSL** | λ₀, r_c | Modified | Violated | λ ∝ m | **Yes** |
+| **Diósi-Penrose (bare)** | None | Exact* | Conserved* | λ ∝ m² | None* |
+| **DP as physical collapse** | None | Modified | Violated | λ ∝ m² | **Yes** |
+| **LRT (logical actualization)** | None | **Exact** | **Conserved** | λ ∝ m² | **No** |
+
+*Bare DP model is ambiguous on dynamics; DP interpreted as physical collapse modifies Schrödinger equation.
+
+**Key formula:** LRT = Diósi-Penrose timescale + exact Schrödinger dynamics (no extra term)
+
+**The discriminant:** All physical collapse models (GRW, CSL, DP-as-collapse) predict anomalous heating. LRT uniquely predicts: (1) DP timescale, (2) no heating, (3) no free parameters.
+
 ---
 
 ## 7. What Remains to Prove
@@ -335,6 +385,24 @@ This is too long to observe directly, but:
 - ✓ Clear experimental distinctions from GRW
 
 ### 7.2 Gaps in the Argument
+
+**Logical Status of Inputs:**
+
+| Input | Status | Source |
+|-------|--------|--------|
+| Global Parsimony | **Derived** | LRT axiom A6 |
+| 3FLL | **Derived** | LRT foundation |
+| Hilbert space structure | **Derived** | From 3FLL (Technical paper §3) |
+| Energy-time uncertainty | **Derived** | From Hilbert space (chain needs explicit work) |
+| Gravity exists | **Imported** | Empirical physics |
+| G, ℏ values | **Imported** | Measured constants |
+| Equivalence principle | **Imported** | Standard physics assumption |
+
+**Key distinction:** The *form* of the collapse rate (λ ∝ Gm²/ℏR) follows from LRT + imported physics. The *claim that collapse follows this form* is LRT-specific (Global Parsimony forbids free parameters).
+
+---
+
+**Specific Gaps:**
 
 1. **Why gravity specifically?**
    - Argument: Only long-range force coupling to neutral mass
@@ -381,6 +449,14 @@ This is too long to observe directly, but:
 >
 > **This is a conditional prediction:** IF objective collapse occurs, THEN it must follow Penrose-Diósi scaling (λ ∝ m²), NOT GRW scaling (λ ∝ m). Experimental confirmation of m² scaling supports LRT; observation of m¹ scaling falsifies this LRT prediction.
 
+**Meta-summary (current status):**
+
+> Strong: scaling prediction (m², 1/R, no free λ), energy conservation signature, clear falsification conditions.
+>
+> Moderate: justification that gravity and E_G are uniquely relevant (requires standard physics assumptions).
+>
+> Incomplete: derivation of the DP coefficient α = 6/5 from the full LRT chain (currently imported from Diósi 1987).
+
 ---
 
 ## 8. Experimental Roadmap
@@ -412,6 +488,26 @@ A factor of 10 in mass gives:
 - GRW: 10× increase in collapse rate
 
 This is experimentally distinguishable.
+
+### 8.4 Named Experimental Platforms
+
+| Platform | Mass Range | Discriminant Tested | Reference |
+|----------|-----------|---------------------|-----------|
+| **Optical levitation (ground)** | 10⁶–10⁹ amu | m² vs m scaling | Millen et al. (2020) |
+| **MAQRO-type missions** | 10⁹–10¹² amu | Collapse timescale τ | Kaltenbaek et al. (2016) |
+| **Needle Paul traps** | 10⁹–10¹² amu | Heating vs no heating | Vinante et al. (2020) |
+| **Cryogenic cantilevers** | 10¹⁴–10¹⁶ amu | Anomalous heating | Vinante et al. (2017) |
+
+**Mapping to LRT predictions:**
+
+| Platform | Tests m² scaling? | Tests no-heating? | Decisive for LRT? |
+|----------|------------------|-------------------|-------------------|
+| Optical levitation | ✓ (vary m at fixed R) | ✓ (temperature monitoring) | Yes (both) |
+| MAQRO | ✓ (absolute timescale) | Limited (space environment) | Partial |
+| Needle Paul traps | ✓ | ✓ (sensitive heating measurement) | Yes (both) |
+| Cryogenic cantilevers | Limited | ✓ (sub-K heating bounds) | Partial (heating only) |
+
+*References: Millen et al., Rep. Prog. Phys. 83 (2020); Kaltenbaek et al., EPJ Quantum Tech. 3 (2016); Vinante et al., Phys. Rev. Lett. 119, 110401 (2017), Phys. Rev. Lett. 125, 100404 (2020).*
 
 ---
 
@@ -458,35 +554,25 @@ This is experimentally distinguishable.
 
 **Challenge:** "You never made a quantifiable prediction that distinguishes your model from standard physics."
 
-**Response:**
+**Response:** LRT makes conditional, quantifiable predictions (see §7.3 meta-summary for current status):
 
-LRT makes a **conditional prediction** about collapse mechanisms:
+1. **IF collapse exists:** λ ∝ m², not m; λ ∝ 1/R; no free parameters
+2. **Unique LRT signature:** DP timescale + no anomalous heating (energy conserved)
+3. **Falsification:** m¹ scaling or anomalous heating would falsify LRT
 
-> IF objective collapse is confirmed experimentally, THEN the collapse rate MUST satisfy:
-> - λ ∝ m² (Penrose-Diósi), NOT λ ∝ m (GRW)
-> - λ ∝ 1/R, NOT R-independent
-> - Absolute rate λ = (6/5) Gm²/(ℏR) with no free parameters
->
-> This is testable in levitated nanoparticle experiments within 5-10 years.
-
-**What this achieves:**
-- Quantitative prediction distinguishing LRT from GRW
-- Clear falsification condition: m¹ scaling would falsify this LRT prediction
-- Testable timeline: 5-10 years
-
-**What LRT adds beyond Penrose:**
-- Penrose proposed Penrose-Diósi as *plausible* (parsimony argument)
-- LRT shows it's *necessary* (Global Parsimony from 3FLL)
-- If collapse is confirmed with free parameters (GRW-style), Penrose-Diósi is ruled out but LRT is *falsified* (stronger claim)
+**What LRT adds beyond Penrose:** Penrose proposed DP as *plausible*; LRT's Global Parsimony makes it *necessary* if collapse exists. GRW-style free parameters would falsify LRT (stronger claim than DP alone).
 
 ---
 
 ## References
 
-- Penrose, R. (1996). "On Gravity's Role in Quantum State Reduction." Gen. Rel. Grav. 28, 581.
-- Diósi, L. (1987). "A universal master equation for the gravitational violation of quantum mechanics." Phys. Lett. A 120, 377.
 - Bassi, A. et al. (2013). "Models of wave-function collapse." Rev. Mod. Phys. 85, 471.
+- Diósi, L. (1987). "A universal master equation for the gravitational violation of quantum mechanics." Phys. Lett. A 120, 377.
+- Kaltenbaek, R. et al. (2016). "Macroscopic quantum resonators (MAQRO)." EPJ Quantum Tech. 3, 5.
 - Millen, J. et al. (2020). "Optomechanics with levitated particles." Rep. Prog. Phys. 83, 026401.
+- Penrose, R. (1996). "On Gravity's Role in Quantum State Reduction." Gen. Rel. Grav. 28, 581.
+- Vinante, A. et al. (2017). "Upper bounds on spontaneous wave-function collapse models." Phys. Rev. Lett. 119, 110401.
+- Vinante, A. et al. (2020). "Narrowing the parameter space of collapse models." Phys. Rev. Lett. 125, 100404.
 
 ---
 
@@ -495,3 +581,12 @@ LRT makes a **conditional prediction** about collapse mechanisms:
 - 2025-12-15: Initial creation (Session 43.0)
 - 2025-12-15: Revised based on feedback - fixed coefficient (α = 6/5), added QM dependence acknowledgment, strengthened honest assessment and critic response (Session 43.0)
 - 2025-12-15: Added Section 6.4 (LRT vs Physical Collapse) with energy conservation as critical distinguishing prediction; added Section 9.4 summary (Session 43.0)
+- 2025-12-15: Sharpening edits (Session 43.0):
+  - §2.4: Added boxed conditional structure statement
+  - §5.2: Comparison with other long-range couplings; explicit assumptions for gravity uniqueness
+  - §6.5: Comprehensive 5-model comparison table
+  - §7.2: Logical status table (derived vs imported inputs)
+  - §7.3: Added meta-summary of current status
+  - §8.4: Named experimental platforms with discriminant mapping
+  - §9.5: Tightened critic response with back-reference to meta-summary
+  - References: Added Kaltenbaek, Vinante (2017, 2020)

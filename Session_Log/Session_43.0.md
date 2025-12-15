@@ -163,7 +163,7 @@ Moved "Response to Critic" to 9.5 and added new 9.4 summarizing energy conservat
 
 ## Session Summary
 
-**Document:** `theory/LRT_Prediction_Collapse.md` (~500 lines)
+**Document:** `theory/LRT_Prediction_Collapse.md` (~600 lines)
 
 **Key Achievements:**
 1. Derived collapse rate from Global Parsimony: λ = (6/5) Gm²/(ℏR)
@@ -173,8 +173,36 @@ Moved "Response to Critic" to 9.5 and added new 9.4 summarizing energy conservat
    - Physical collapse: Anomalous heating (wavefunction modification)
 4. Responded to Reddit critic with quantifiable predictions
 
-**Status:** Ready for commit
+---
+
+## Third Revision: Sharpening Edits
+
+### Logical Status Clarification
+- §2.4: Added boxed conditional structure (IF collapse exists THEN...; IF no collapse THEN...)
+- §7.2: Added table separating derived (3FLL, Global Parsimony) vs imported inputs (gravity, G, ℏ)
+
+### Gravity Uniqueness Tightening
+- §5.2: Added comparison with EM, scalar fields, fifth force
+- Explicit assumptions: charge neutrality, no additional universal long-range fields, equivalence principle
+- Qualified "only gravitational" as assumption-dependent
+
+### LRT vs DP vs GRW Triad
+- §6.5: Comprehensive 5-model comparison table (Standard QM, GRW/CSL, bare DP, DP-as-collapse, LRT)
+- Columns: free parameters, Schrödinger equation, energy, mass scaling, heating
+
+### Experimental Refinements
+- §3.2: Added note citing Diósi 1987, Penrose 1996, Bassi et al. 2013 for numerical estimates
+- §8.4: Named platforms table (optical levitation, MAQRO, needle Paul traps, cryogenic cantilevers)
+- Mapping table: which platforms test m² scaling vs no-heating
+
+### Honest Assessment Strengthening
+- §7.3: Added meta-summary (strong/moderate/incomplete classification)
+- §9.5: Tightened critic response to 4 lines with back-reference
+
+### New References
+- Kaltenbaek et al. (2016) - MAQRO
+- Vinante et al. (2017, 2020) - cantilever heating bounds
 
 ---
 
-## Interaction Count: 4
+## Interaction Count: 5
