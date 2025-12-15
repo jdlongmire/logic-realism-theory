@@ -47,11 +47,11 @@ And the derivation reveals something interesting: the same logical laws that gov
 
 The most recent development combines LRT with an information-theoretic ontology I call IIS-LRT. It proposes three levels of existence:
 
-| Stage | Name | Contents |
-|-------|------|----------|
-| 1 | **Representable** | All formally specifiable structures (including contradictions) |
-| 2 | **Permissible** | LRT-filtered subset where physics lives |
-| 3 | **Actual** | Single outcome selected per measurement |
+**Stage 1: Representable** - All formally specifiable structures (including contradictions)
+
+**Stage 2: Permissible** - LRT-filtered subset where physics lives
+
+**Stage 3: Actual** - Single outcome selected per measurement
 
 This framework has an interesting consequence for the Many-Worlds interpretation. MWI and IIS-LRT share Stages 1-2, but diverge at Stage 3:
 
@@ -85,13 +85,11 @@ For the full internal assessment, see [LRT Internal Assessment](https://github.c
 
 Five papers are published on Zenodo with DOIs:
 
-| Paper | Description |
-|-------|-------------|
-| [It from Bit, Bit from Fit](https://doi.org/10.5281/zenodo.17831819) | Main paper: complete framework |
-| [Technical Foundations](https://doi.org/10.5281/zenodo.17831883) | Mathematical proofs, reconstruction theorems |
-| [Philosophical Foundations](https://doi.org/10.5281/zenodo.17831912) | Ontological status of 3FLL |
-| [LRT Constraints on QFT](https://doi.org/10.5281/zenodo.17831926) | Extensions to quantum field theory |
-| [Saturated Entanglement](https://doi.org/10.5281/zenodo.17831946) | Interface transition criterion |
+- **[It from Bit, Bit from Fit](https://doi.org/10.5281/zenodo.17831819)** - Main paper: complete framework
+- **[Technical Foundations](https://doi.org/10.5281/zenodo.17831883)** - Mathematical proofs, reconstruction theorems
+- **[Philosophical Foundations](https://doi.org/10.5281/zenodo.17831912)** - Ontological status of 3FLL
+- **[LRT Constraints on QFT](https://doi.org/10.5281/zenodo.17831926)** - Extensions to quantum field theory
+- **[Saturated Entanglement](https://doi.org/10.5281/zenodo.17831946)** - Interface transition criterion
 
 Working papers and derivations are in the [theory folder](https://github.com/jdlongmire/logic-realism-theory/tree/master/theory).
 
