@@ -295,4 +295,44 @@ Completely rewrote document as professional academic paper:
 
 ---
 
-## Interaction Count: 7
+## New Paper: No Hidden Non-Locality
+
+Created `theory/LRT_Prediction_No_Hidden_Nonlocality.md` (~350 lines)
+
+### Central Claim
+LRT predicts there is NO hidden non-locality—not even mechanisms respecting no-signaling. Entangled correlations arise from constraint satisfaction on pre-existing IIS structure, not causal influence.
+
+### Key Distinction
+- **Standard view:** Non-locality is real but mysterious (hidden mechanisms allowed)
+- **LRT view:** Non-locality doesn't exist. Correlations are constraint satisfaction, not causal connection
+
+### Testable Predictions
+
+| Prediction | LRT | Bohmian | GRW |
+|------------|-----|---------|-----|
+| Frame-dependence | None (exact) | Possible (tiny) | Possible |
+| Energy cost | Zero | Unknown | Non-zero |
+| Temporal ordering | Irrelevant | Matters (hidden) | May matter |
+| Preferred frame | None | Possibly | None |
+
+### Why This Is LRT's Strongest Prediction
+1. Philosophically distinctive (only interpretation claiming no hidden non-locality)
+2. Experimentally clean (frame-dependence is binary)
+3. Theory-neutral (tests structure of correlations)
+4. Fundamental (tests whether spacetime is fundamental)
+
+### Experimental Timeline
+- Energy tests: 5-10 years
+- Temporal ordering: 5-10 years (partial confirmation exists)
+- Frame-independence: 10-20 years (requires satellite experiments)
+
+---
+
+## Session Deliverables
+
+1. `theory/LRT_Prediction_Collapse.md` - Professional paper on collapse rate constraints
+2. `theory/LRT_Prediction_No_Hidden_Nonlocality.md` - Professional paper on frame-independence
+
+---
+
+## Interaction Count: 8
