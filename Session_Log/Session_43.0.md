@@ -131,4 +131,50 @@ Direct response to "no quantifiable predictions" challenge:
 
 ---
 
-## Interaction Count: 3
+## Second Revision: LRT vs Physical Collapse
+
+### Added: Section 6.4 - The Critical Distinction
+
+Key insight: LRT's "logical actualization" is NOT physical collapse.
+
+| Aspect | Physical Collapse | LRT |
+|--------|------------------|-----|
+| What happens | Wavefunction modified | Category transition (IIS → Boolean) |
+| Schrödinger equation | Modified | Exact |
+| Energy | Not conserved | **Strictly conserved** |
+
+### The Distinguishing Prediction
+
+**Energy conservation separates LRT from ALL physical collapse models:**
+
+| Observation | Supports |
+|-------------|----------|
+| τ ∝ m⁻² + heating | Penrose-Diósi as physical collapse |
+| τ ∝ m⁻² + NO heating | **LRT** |
+| τ ∝ m⁻¹ + heating | GRW |
+
+**LRT's unique signature:** Same timescale as Penrose-Diósi but with NO anomalous heating.
+
+### Added: Section 9.4 Summary
+
+Moved "Response to Critic" to 9.5 and added new 9.4 summarizing energy conservation as critical prediction.
+
+---
+
+## Session Summary
+
+**Document:** `theory/LRT_Prediction_Collapse.md` (~500 lines)
+
+**Key Achievements:**
+1. Derived collapse rate from Global Parsimony: λ = (6/5) Gm²/(ℏR)
+2. Established scaling distinction: λ ∝ m² (LRT) vs λ ∝ m (GRW)
+3. Identified THE critical distinguishing prediction: **Energy conservation**
+   - LRT: No anomalous heating (logical actualization)
+   - Physical collapse: Anomalous heating (wavefunction modification)
+4. Responded to Reddit critic with quantifiable predictions
+
+**Status:** Ready for commit
+
+---
+
+## Interaction Count: 4

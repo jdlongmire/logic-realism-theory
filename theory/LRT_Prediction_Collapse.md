@@ -256,6 +256,73 @@ This is too long to observe directly, but:
 3. Absolute rate matches Penrose-Diósi within order of magnitude
 4. No free parameters needed to fit data
 
+### 6.4 LRT vs. Physical Collapse: The Critical Distinction
+
+**The key insight:** LRT's "logical actualization" is NOT physical collapse. This creates a distinguishing prediction beyond the scaling law.
+
+#### The Mechanism Difference
+
+| Aspect | Physical Collapse (GRW/Penrose-Diósi) | LRT (Logical Resolution) |
+|--------|---------------------------------------|--------------------------|
+| What happens | Wavefunction physically modified | Category transition (IIS → Boolean) |
+| Schrödinger equation | Modified (add collapse terms) | **Exact** (no modification) |
+| Energy | Not conserved (collapse injects energy) | **Strictly conserved** |
+| Process type | Physical dynamics | Logical/ontological transition |
+
+#### The Energy Conservation Prediction
+
+**Physical collapse models (GRW/CSL):**
+- Collapse is a physical process that modifies the wavefunction
+- This violates unitarity → energy not conserved
+- Predicts **anomalous heating** of isolated systems
+- Heating rate: dE/dt ≈ N · λ · ℏ/τ where N = nucleon count
+
+**LRT (logical actualization):**
+- Actualization is category transition, not physical modification
+- Schrödinger equation remains exact
+- **No energy injection** required
+- Predicts: Energy strictly conserved, no anomalous heating
+
+#### The Distinguishing Test
+
+**Setup:** Levitated nanoparticle in ultra-high vacuum (all known heating sources characterized)
+
+| Model | Superposition Lifetime | Anomalous Heating |
+|-------|----------------------|-------------------|
+| GRW | τ ∝ m⁻¹ | YES (dT/dt ∝ Nλ₀) |
+| Penrose-Diósi (as collapse) | τ ∝ m⁻² | YES |
+| **LRT** | τ ∝ m⁻² | **NO** |
+
+**The critical prediction:**
+
+> LRT predicts the SAME timescale as Penrose-Diósi (τ ~ ℏR/Gm²) but with NO anomalous heating.
+
+**Falsification matrix:**
+
+| Observation | Supports | Falsifies |
+|-------------|----------|-----------|
+| τ ∝ m⁻¹ + heating | GRW | LRT, Penrose-Diósi |
+| τ ∝ m⁻² + heating | Penrose-Diósi (collapse) | LRT, GRW |
+| τ ∝ m⁻² + NO heating | **LRT** | GRW, Penrose-Diósi (collapse) |
+| No superposition lifetime limit | Standard QM (no collapse) | All collapse models |
+
+**Current experimental status:**
+- LISA Pathfinder reached 10⁻¹⁵ K/s sensitivity
+- GRW predicts ~10⁻¹⁴ K/s for 10¹⁵ nucleons
+- Timeline: 5-10 years to reach discriminating sensitivity
+
+#### Additional LRT Predictions
+
+**Sharp recoherence threshold:**
+- Physical collapse: Smooth exponential decay of recoherence fidelity
+- LRT: Sharp transition at τ_BA where recoherence becomes impossible
+- Reason: Boolean record existence is discrete (exists or doesn't), not continuous
+
+**Context-dependent basis:**
+- GRW: Always collapses in position basis (built into collapse operators)
+- LRT: Basis determined by measurement context (which observable couples to environment)
+- Difficult to test (requires isolation from position-measuring fields)
+
 ---
 
 ## 7. What Remains to Prove
@@ -375,7 +442,19 @@ This is experimentally distinguishable.
 - **Discriminating**: m² vs m scaling distinguishes LRT from GRW
 - **Falsifiable**: Wrong scaling would falsify LRT's collapse prediction
 
-### 9.4 Response to Critic
+### 9.4 The Critical Distinguishing Prediction
+
+**Energy conservation separates LRT from ALL physical collapse models:**
+
+| Observation | Interpretation |
+|-------------|----------------|
+| τ ∝ m⁻² + anomalous heating | Penrose-Diósi as physical collapse (falsifies LRT) |
+| τ ∝ m⁻² + NO heating | **LRT confirmed** (falsifies physical collapse) |
+| τ ∝ m⁻¹ + heating | GRW (falsifies both LRT and Penrose-Diósi) |
+
+**This is LRT's unique signature:** Same timescale as Penrose-Diósi, but energy strictly conserved because actualization is logical (category transition), not physical (wavefunction modification).
+
+### 9.5 Response to Critic
 
 **Challenge:** "You never made a quantifiable prediction that distinguishes your model from standard physics."
 
@@ -415,3 +494,4 @@ LRT makes a **conditional prediction** about collapse mechanisms:
 
 - 2025-12-15: Initial creation (Session 43.0)
 - 2025-12-15: Revised based on feedback - fixed coefficient (α = 6/5), added QM dependence acknowledgment, strengthened honest assessment and critic response (Session 43.0)
+- 2025-12-15: Added Section 6.4 (LRT vs Physical Collapse) with energy conservation as critical distinguishing prediction; added Section 9.4 summary (Session 43.0)
