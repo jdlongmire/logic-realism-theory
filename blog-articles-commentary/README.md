@@ -4,33 +4,34 @@ This folder contains Substack posts, responses to external critiques, and commen
 
 ---
 
-## Formatting Convention
+## Naming Convention
 
-All articles follow this format:
+**Filename format:** `YYYY-MM-DD_Title_With_Underscores.md`
 
-1. **Date first** - Bold date at the top of every article: `**Month Day, Year**`
+Examples:
+- `2025-12-14_Substack_Intro_Post.md`
+- `2025-12-14_Commentary_Faizal_MToE_Undecidability.md`
+
+This ensures chronological sorting in file listings.
+
+---
+
+## Content Format
+
+1. **Date first** - Bold date at the top: `**Month Day, Year**`
 2. **Title** - H1 heading
-3. **Subtitle** - H2 heading (optional, for context)
-4. **Content** - No tables (Substack doesn't render them well); use bullet lists instead
-
-**Example header:**
-```markdown
-**December 14, 2025**
-
-# Article Title
-
-## Optional subtitle providing context
-```
+3. **Subtitle** - H2 heading (optional)
+4. **No tables** - Substack doesn't render them; use bullet lists
 
 ---
 
 ## Current Articles
 
-**Substack_Intro_Post.md** (December 14, 2025)
+**2025-12-14_Substack_Intro_Post.md**
 - Introductory post for the LRT Substack
 - Core thesis, three-stage framework, published papers, future roadmap
 
-**Commentary_Faizal_MToE_Undecidability.md** (December 14, 2025)
+**2025-12-14_Commentary_Faizal_MToE_Undecidability.md**
 - Commentary on Faizal, Krauss et al. arXiv:2507.22950
 - Independent convergence between MToE and LRT on non-computational constraints
 - References Zenodo DOI: 10.5281/zenodo.17533459

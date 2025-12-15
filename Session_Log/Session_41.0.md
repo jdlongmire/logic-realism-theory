@@ -55,8 +55,48 @@ Session 40.0 (2025-12-13) completed:
 
 ## Work This Session
 
-*To be updated as session progresses*
+### 1. Substack Introductory Post
+
+Created `blog-articles-commentary/Substack_Intro_Post.md` for promoting LRT on Substack.
+
+**Content:**
+- Core thesis: 3FLL as ontological constraints
+- Three-stage IIS-LRT framework with MWI comparison
+- Honest status assessment (what's established vs open)
+- Published papers with Zenodo DOIs
+- Links to theory artifacts on GitHub
+- Future content roadmap (theory development, research commentary, methodology)
+
+**References the full theory folder:** https://github.com/jdlongmire/logic-realism-theory/tree/master/theory
+
+### 2. Commentary: Faizal et al. MToE Paper
+
+Created `blog-articles-commentary/Commentary_Faizal_MToE_Undecidability.md`
+
+**Paper reviewed:** Faizal, Krauss, Shabir & Marino (2025). "Consequences of Undecidability in Physics on the Theory of Everything." arXiv:2507.22950
+
+**Commentary highlights:**
+- Core argument: Gödel/Tarski/Chaitin limits constrain algorithmic TOE
+- MToE introduces non-recursive truth predicate to overcome limits
+- Independent convergence with LRT (A = L(I))
+- Formal correspondence: T(x) ≡ L|Σ_QG
+- Both conclude: reality is meta-logical, not computational
+
+**References:**
+- arXiv:2507.22950 (the reviewed paper)
+- Zenodo DOI: 10.5281/zenodo.17533459 (LRT-MToE formal equivalence)
 
 ---
 
-## Interaction Count: 1
+## Commits This Session
+
+| Commit | Description |
+|--------|-------------|
+| `54ce6a2` | Rename articles-commentary folder |
+| `3a1b5a7` | Add introductory Substack post |
+| `31911d8` | Replace tables with bullet lists |
+| `a0af1a0` | Add commentary on Faizal et al. MToE paper |
+
+---
+
+## Interaction Count: 6

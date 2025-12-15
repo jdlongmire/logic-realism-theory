@@ -27,7 +27,14 @@
       "Bash(for paper in Logic_Realism_Theory_Main-v2 Logic_Realism_Theory_Technical-v2 Logic_Realism_Theory_Philosophy-v2 Logic_Realism_Theory_QFT_Gravity_Extension-v2)",
       "Bash(git merge:*)",
       "Bash(git checkout:*)",
-      "Bash(git stash:*)"
+      "Bash(git stash:*)",
+      "Bash(ls:*)",
+      "Bash(grep:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:arxiv.org)",
+      "WebFetch(domain:zenodo.org)",
+      "Bash(in Physics on the Theory of Everything\" by Faizal, Krauss, et al.\n\nHighlights independent convergence between MToE and LRT on \nnon-computational constraints in fundamental physics.\n\nReferences Zenodo DOI: 10.5281/zenodo.17533459\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git mv:*)"
     ],
     "deny": [],
     "ask": []
