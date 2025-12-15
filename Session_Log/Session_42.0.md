@@ -174,4 +174,41 @@ Addressed four reviewer concerns with structural additions (+134 lines):
 
 ---
 
-## Interaction Count: 8
+## Final Reviewer Revisions: Publication Readiness
+
+Implemented four final revisions for publication readiness:
+
+### 1. Appendix B: Data Extraction Methodology (~130 lines)
+- B.1 Fullerene Interferometry (Arndt 1999) - extraction method, caveats
+- B.2 Cavity QED (Brune 1996) - log-log regression details
+- B.3 Superconducting Qubits (Kam 2024) - most robust dataset
+- B.4 Trapped Ions (Monz 2011) - superdecoherence confirmation
+- B.5 NV Center Ensembles (Park 2022) - dipole bath scaling
+- B.6 Large-Molecule Interferometry (Fein 2019) - confounding documented
+- B.7 Summary: Data Quality Assessment table
+
+### 2. Table 1 Enhancement
+Added columns:
+- Data Points (number of measurements)
+- Dynamic Range (size parameter span)
+
+### 3. Language Softening Pass
+Changed throughout paper:
+- "confirms" → "is consistent with" / "supports"
+- "validates" → "consistent with"
+- "proves" → "derives" / "shows"
+- Abstract updated: "Empirical validation confirms" → "Empirical data support"
+- Table 2: "✓ Validated" → "Consistent" with uncertainties
+
+### 4. Section 4.1a: Concrete Falsification Examples (~40 lines)
+Four quantitative examples:
+1. SC qubit anomaly: Γ ∝ N^1.5 instead of N
+2. Molecular interferometry breakdown: β outside [0.5, 2.5]
+3. Cavity QED deviation: |β - 1| > 0.15
+4. Objective collapse signature: unexplained Γ > 30%
+
+Plus clarification of what does NOT constitute falsification.
+
+---
+
+## Interaction Count: 9
