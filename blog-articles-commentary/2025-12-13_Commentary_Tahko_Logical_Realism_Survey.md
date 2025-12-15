@@ -4,6 +4,8 @@
 
 ## A philosopher's survey of logical realism provides the framework for understanding what Logic Realism Theory claims - and why it's different.
 
+![Tahko Logical Realism](figures/Tahko-article.png)
+
 ---
 
 A 2021 paper by Tuomas Tahko surveys a position in philosophy called "logical realism." Reading it clarified something important: LRT isn't inventing a new metaphysical position. It's taking an established philosophical framework and showing it has consequences for physics.

@@ -4,6 +4,8 @@
 
 ## A philosopher argues that if logic reflects reality, we can't assume logically equivalent theories are the same. LRT agrees - and offers a way forward.
 
+![McSweeney Cost of Closure](figures/McSweeney-article.png)
+
 ---
 
 Michaela McSweeney's 2021 paper makes a provocative argument: if you take logical realism seriously, you have to pay a price. Specifically, you can't keep assuming that logically equivalent theories are theoretically equivalent.

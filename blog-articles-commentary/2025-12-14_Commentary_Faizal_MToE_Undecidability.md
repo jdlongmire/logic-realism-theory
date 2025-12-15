@@ -4,6 +4,8 @@
 
 ## A new paper from Faizal, Krauss, and colleagues argues that Gödel's incompleteness theorems constrain fundamental physics. Logic Realism Theory arrived at the same conclusion from a different direction.
 
+![LRT-MToE](figures/LRT-MToE.png)
+
 ---
 
 A paper published in the *Journal of Holography Applications in Physics* makes a striking claim: a fully algorithmic Theory of Everything is impossible.
