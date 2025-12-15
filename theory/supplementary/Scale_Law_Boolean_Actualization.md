@@ -38,7 +38,15 @@ Any complete account of quantum mechanics must explain why this pattern holds wi
 
 ### 1.2 Decoherence and System Size
 
-Environmental entanglement rapidly suppresses off-diagonal terms of the reduced density matrix in the pointer basis (Zurek 2003; Schlosshauer 2007; Joos et al. 2003). The qualitative observation that larger systems decohere faster is well established. What has been lacking is a unified operational metric enabling quantitative comparison across disparate physical systems.
+Environmental entanglement rapidly suppresses off-diagonal terms of the reduced density matrix in the pointer basis (Zurek 2003; Schlosshauer 2007; Joos et al. 2003). The qualitative observation that larger systems decohere faster is well established under standard conditions. What has been lacking is a unified operational metric enabling quantitative comparison across disparate physical systems.
+
+**Scope qualification:** The scaling τ_BA ∝ s^(-β) assumes:
+- Fixed environmental coupling (no active isolation improvement with size)
+- Passive systems without quantum error correction
+- No exploitation of decoherence-free subspaces (DFS)
+- Standard product-state environmental models
+
+Specialized scenarios—DFS-protected qubits, fault-tolerant architectures, topological qubits with size-independent protection—require separate treatment beyond this framework's scope. The framework applies to passive systems undergoing standard environmental decoherence.
 
 ### 1.3 Controlled Empirical Tests
 
@@ -77,6 +85,17 @@ Log-log regression yields $\tau_d \propto \bar{n}^{-1.01}$, matching the theoret
 The full molecular interferometry dataset (C₆₀ through 25 kDa oligoporphyrins) yields an apparent exponent $\beta \approx 0.9$, substantially below the Rayleigh prediction. This attenuation arises because larger molecules were measured under progressively better vacuum (10⁻⁷ → 10⁻⁹ mbar), reducing environmental coupling. The 25 kDa oligoporphyrin, measured at < 10⁻⁹ mbar, exhibits *longer* τ_BA than the 10 kDa molecule at 10⁻⁹ mbar, demonstrating that isolation improvements can override mass-dependent decoherence.
 
 This confounding underscores that scaling comparisons require controlled isolation. The C₆₀/C₇₀ pair and cavity QED dataset satisfy this requirement; the broader molecular dataset does not.
+
+### 1.5 Falsifiability
+
+The framework makes quantitative, testable predictions. Under controlled isolation, the scaling exponent β is determined by the dominant decoherence mechanism and noise correlation structure. Deviations exceeding measurement uncertainty would indicate either:
+
+- Uncharacterized environmental channels requiring identification, or
+- New physics beyond standard decoherence (e.g., objective collapse contributions)
+
+**Concrete test:** If a system with fully characterized noise channels exhibits β outside the predicted range (e.g., |β_measured - β_predicted| > 3σ where σ includes both statistical and systematic uncertainty), the framework fails for that system. Section 4 develops specific falsification scenarios for near-term experiments, including levitated nanoparticles and high-N qubit arrays.
+
+This falsifiability distinguishes the framework from interpretive claims: the operational predictions can fail independently of any metaphysical commitments.
 
 ---
 
@@ -147,6 +166,8 @@ The term carries no ontological commitment regarding collapse, branching, or the
 ### 2.4 Theorem: Scaling Under Independent Dephasing
 
 We derive the scaling law for one analytically tractable case.
+
+**Positioning note:** The result that independent dephasing yields Γ_total = NΓ_single (hence τ ∝ 1/N) is well-established in the decoherence literature. Theorem 1 restates this in the language of logical entropy and τ_BA, providing an operational reframing rather than new physics. The framework's novelty lies elsewhere: (1) the cross-platform unification enabling quantitative comparison, (2) the diagnostic role of β in distinguishing noise correlation structures, and (3) the explicit falsification conditions derived from mechanism-dependent predictions.
 
 ---
 
@@ -253,7 +274,12 @@ The framework predictions are consistent with observations across seven distinct
 | Trapped ions | Corr. dephasing | 2 | 2.0 ± 0.1 | 6 | 4× | Monz 2011 |
 | NV ensembles | Dipole bath | 1 | 1.06 ± 0.05 | ~5 | ~10× | Park 2022 |
 
-*Note: "Data Points" indicates number of independent measurements used for β extraction. "Dynamic Range" indicates ratio of largest to smallest size parameter. Uncertainties reflect extraction precision; see Appendix B for methodology.*
+*Notes:*
+- *"Data Points" = independent measurements; "Dynamic Range" = ratio of largest to smallest size parameter*
+- *Fullerene: 2-point comparison with limited dynamic range (1.17×); serves as consistency check rather than precision test*
+- *SC qubits and Cavity QED: most robust validations (15 and 4 points respectively, well-characterized noise)*
+- *Large-molecule data (>C₇₀) excluded from Table 1 due to isolation confounding; see Section 4.5 for multi-variable treatment*
+- *See Appendix B for extraction methodology and caveats*
 
 **Superconducting qubits (β = 1):**
 

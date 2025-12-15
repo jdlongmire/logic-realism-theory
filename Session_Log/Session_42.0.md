@@ -211,4 +211,35 @@ Plus clarification of what does NOT constitute falsification.
 
 ---
 
-## Interaction Count: 9
+## Second External Review: Presentation Enhancements
+
+New reviewer validated technical work but identified 5 presentation improvements:
+
+### Implemented Revisions:
+
+1. **Theorem 1 positioning** (Section 2.4)
+   - Added "Positioning note" clarifying this is operational reframing of known physics
+   - Pivoted to real novelty: cross-platform unification, diagnostic β, falsification conditions
+
+2. **Inline caveats for Table 1** (Section 3.2)
+   - Expanded notes to 5 bullet points
+   - Flagged fullerene as "consistency check" (2-point, limited range)
+   - Highlighted SC qubits/Cavity QED as most robust
+   - Note on large-molecule exclusion due to confounding
+
+3. **Section 1.5 Falsifiability** (NEW)
+   - Added ~12 lines previewing Section 4
+   - Concrete test criterion: |β_measured - β_predicted| > 3σ
+   - Distinguished operational predictions from interpretive claims
+
+4. **Universality qualification** (Section 1.2)
+   - Added "Scope qualification" with 4 explicit assumptions
+   - Excluded DFS, error correction, topological protection from framework scope
+
+5. **LRT leakage scan** - CLEAN
+   - Sections 1-4 confirmed interpretation-neutral
+   - Only LRT mention in abstract properly marked "optional interpretive section"
+
+---
+
+## Interaction Count: 10
