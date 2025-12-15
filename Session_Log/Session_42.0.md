@@ -256,7 +256,27 @@ Generated publication-ready PDF:
 | `6505220` | Scale Law paper: publication-ready revisions |
 | `422d7a9` | Scale Law paper: presentation enhancements from second review |
 | `479ec70` | Add Scale Law paper PDF for preprint submission |
+| `afd212c` | Update session log with PDF generation |
+| `fbf7c7e` | Update main LRT paper to align with Scale Law revisions |
 
 ---
 
-## Interaction Count: 11
+## Main Paper Updates (Logic_Realism_Theory_Main-v2.md)
+
+Synchronized with Scale Law paper revisions:
+
+### Section 6.2a Changes:
+- Table: Added uncertainties, "Validated" → "Consistent"
+- Theorem positioning note: clarifies operational reframing of known physics
+- Language: "confirms" → "supports", "proves" → "derives"
+
+### Section 6.1 Table:
+- Complex amplitudes: "Confirmed" → "Consistent"
+- Boolean actualization scaling: "Confirmed" → "Consistent"
+
+### Section 6.5 Evidence:
+- "confirmed" → "supported" for consistency
+
+---
+
+## Interaction Count: 12
