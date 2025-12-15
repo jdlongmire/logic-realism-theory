@@ -1127,24 +1127,24 @@ A physical theory must make testable claims and specify conditions for its own r
 
 | Prediction | Basis | Test | Status |
 |------------|-------|------|--------|
-| Complex amplitudes required | Local tomography (A3c) forces ℂ over ℝ | Renou et al. (2021) | **Confirmed** |
+| Complex amplitudes required | Local tomography (A3c) forces ℂ over ℝ | Renou et al. (2021) | **Consistent** |
 | Born rule exact | Gleason's theorem | Precision measurements | Confirmed to 10⁻⁵ |
 | Tsirelson bound exact | Interpretive (not derived) | All Bell tests | No violations observed |
 | Bell inequality violations | Global constraint satisfaction | Bell tests since 1982 | Confirmed |
 | Contextuality | Interface signature | Kochen-Specker tests | Confirmed |
-| Boolean actualization scaling | Decoherence + interface structure | 7 platforms | **Confirmed** |
+| Boolean actualization scaling | Decoherence + interface structure | 7 platforms | **Consistent** |
 
 **The complex numbers result:**
 
-LRT, via local tomography (A3c), requires that quantum mechanics use complex rather than real amplitudes. This structural requirement (independently established by reconstruction theorems) was experimentally confirmed by Renou et al. (2021), who designed an experiment distinguishing complex from real quantum mechanics. Nature followed the complex predictions. While LRT did not generate this prediction independently of reconstruction theorems, the experimental confirmation validates the framework's structural commitments.
+LRT, via local tomography (A3c), requires that quantum mechanics use complex rather than real amplitudes. This structural requirement (independently established by reconstruction theorems) was experimentally supported by Renou et al. (2021), who designed an experiment distinguishing complex from real quantum mechanics. Nature followed the complex predictions. While LRT did not generate this prediction independently of reconstruction theorems, the experimental result is consistent with the framework's structural commitments.
 
 **The Boolean actualization scaling result:**
 
-LRT's interface structure predicts that τ_BA ∝ s^(-β) with mechanism-dependent exponents. Empirical validation across seven platforms confirms:
+LRT's interface structure predicts that τ_BA ∝ s^(-β) with mechanism-dependent exponents. Empirical data across seven platforms support the framework:
 
 - Rayleigh scattering: β = 2.11 (predicted 2) - Arndt et al. 1999
 - Photon loss: β = 1.01 (predicted 1) - Brune et al. 1996
-- Uncorrelated dephasing: β = 1.0 (predicted 1, proven) - Kam et al. 2024
+- Uncorrelated dephasing: β = 1.0 (predicted 1, derived) - Kam et al. 2024
 - Correlated dephasing: β = 2.0 (predicted 2, superdecoherence) - Monz et al. 2011
 - Dipole bath: β = 1.06 (predicted 1) - Park et al. 2022
 
@@ -1238,16 +1238,16 @@ where s is the relevant size parameter (mass, photon number, qubit count) and β
 
 | Mechanism | Size Parameter | Predicted β | Measured β | Status |
 |-----------|----------------|-------------|------------|--------|
-| Rayleigh scattering | mass m | 2 | 2.11 | Validated |
+| Rayleigh scattering | mass m | 2 | 2.1 ± 0.5 | Consistent |
 | Geometric scattering | mass m | 2/3 | - | Awaiting test |
-| Photon loss | n̄ | 1 | 1.01 | Validated |
-| Dephasing (uncorrelated) | N qubits | 1 | 1.0 | Validated |
-| Dephasing (correlated) | N qubits | 2 | 2.0 | Validated |
-| Dipole bath | density | 1 | 1.06 | Validated |
+| Photon loss | n̄ | 1 | 1.01 ± 0.03 | Consistent |
+| Dephasing (uncorrelated) | N qubits | 1 | 1.0 ± 0.05 | Consistent |
+| Dephasing (correlated) | N qubits | 2 | 2.0 ± 0.1 | Consistent |
+| Dipole bath | density | 1 | 1.06 ± 0.05 | Consistent |
 
 **Theoretical Derivation:**
 
-For the analytically tractable case of independent dephasing, we prove:
+For the analytically tractable case of independent dephasing, we derive the following result. (Note: The result that independent dephasing yields Γ_total = NΓ_single is well-established in the decoherence literature; this theorem restates it in the language of logical entropy and τ_BA, providing an operational reframing rather than new physics.)
 
 *Theorem (Scaling Under Independent Dephasing):* For N qubits under independent exponential dephasing with rate Γ, the time to reach logical entropy threshold h* scales as:
 
@@ -1262,7 +1262,7 @@ The most striking validation demonstrates that the scaling exponent diagnoses no
 - Superconducting qubits (IBM): β = 1.0 - Independent local dephasing
 - Trapped ions (Innsbruck): β = 2.0(1) - Correlated global dephasing (superdecoherence)
 
-This confirms that β encodes the correlation structure of environmental noise, not merely the state or system size. The framework provides a quantitative diagnostic tool.
+This supports the conclusion that β encodes the correlation structure of environmental noise, not merely the state or system size. The framework provides a quantitative diagnostic tool.
 
 **LRT Interpretation:**
 
@@ -1357,12 +1357,12 @@ These lie outside LRT's scope. The framework addresses *why quantum mechanics ha
 
 **Strong evidence:**
 - Universal 3FLL compliance across all physics (foundational observation)
-- Complex QM confirmed over real QM (structural prediction)
+- Complex QM supported over real QM (structural prediction)
 - 17 phenomena unified under common explanation (explanatory power)
 - All falsifiers tested to date have been passed
 
 **Moderate evidence:**
-- Reconstruction theorems independently confirm uniqueness of QM structure
+- Reconstruction theorems independently support uniqueness of QM structure
 - No competing interpretation matches LRT's combination of virtues
 
 **Open tests:**
