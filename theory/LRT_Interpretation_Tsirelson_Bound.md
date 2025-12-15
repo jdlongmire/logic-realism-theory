@@ -1,4 +1,4 @@
-# The Tsirelson Bound as Interface Stability Limit in Logic Realism Theory
+# The Tsirelson Bound: An Interpretation from Logic Realism Theory
 
 **James D. Longmire**
 ORCID: 0009-0009-1383-7698
