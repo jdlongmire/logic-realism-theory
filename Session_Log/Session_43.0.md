@@ -463,4 +463,89 @@ Both papers are now:
 
 ---
 
-## Interaction Count: 9
+---
+
+## Non-Locality Prediction Paper: Submission-Ready Revisions
+
+### Research Phase: Bohmian Lorentz Invariance
+
+Searched literature for hard data on Bohmian frame-dependence predictions:
+
+**Key findings:**
+1. **Dürr et al. (2014):** "Can Bohmian mechanics be made relativistic?" - concludes foliation can be extracted from wavefunction, allowing "fundamental Lorentz invariance"
+2. **Chen (2024):** "The Preferred Frame Problem of Bohmian Mechanics" - argues BM requires preferred frame
+3. **No quantitative predictions exist** for frame-dependent effects in Bell tests
+
+**Critical gap:** The literature debate is philosophical/theoretical. No one has calculated what ΔS (Bell parameter deviation) would be predicted by standard Bohmian vs Lorentz-invariant Bohmian.
+
+### Existing Experimental Data Found
+
+| Experiment | Result | Relevance |
+|------------|--------|-----------|
+| Zbinden et al. (2001) | No frame effects at 10 km, v << c | Consistent with LRT |
+| Stefanov et al. (2002) | "Multisimultaneity" refuted | Consistent with LRT |
+| Micius satellite (2017) | Bell violated at 1200 km, v/c ~ 10⁻⁵ | Tests locality loophole, not frame-dependence |
+
+**Critical gap:** All tests at non-relativistic velocities. Highest velocity tested is v/c ~ 10⁻⁵.
+
+### Revisions to `theory/LRT_Prediction_No_Hidden_Nonlocality.md`
+
+**Added Section 3.5: What "No Action at a Distance" Means**
+- Math problem analogy for constraint satisfaction
+- Clear distinction: influence vs. constraint satisfaction
+
+**Added Section 4: Existing Experimental Data**
+- §4.1: What Has Been Tested (Zbinden, Stefanov, Micius)
+- §4.2: What Has NOT Been Tested (honest table)
+- §4.3: Velocity Regimes and Expected Effects (with caveat about illustrative Bohmian predictions)
+
+**Revised Section 5.2: Energy Cost Test**
+- Demoted to "Speculative"
+- Added honest assessment: "conceptually murky and technically extremely difficult"
+
+**Added Section 6.4: Statistical Requirements**
+- Quantitative: ~2500 measurements per frame needed
+- Feasibility table: velocity is the critical gap
+
+**Added Section 7.2: Bohmian Lorentz-Invariant Formulations (CRITICAL)**
+- Dürr et al., Valentini, Tumulka formulations
+- Explicit table of competing claims
+- What the literature provides vs. doesn't provide
+- Honest assessment: if Bohmian is Lorentz-invariant, empirically indistinguishable from LRT
+
+**Updated Abstract**
+- Removed energy test claim
+- Added experimental data references
+- Added caveat about Bohmian debate
+
+**Updated References**
+- Added: Chen (2024), Dürr et al. (2014), Stefanov et al. (2002), Streiter et al. (2021), Tumulka (2006), Valentini (2008), Zbinden et al. (2001)
+
+### Document Status
+
+**File:** `theory/LRT_Prediction_No_Hidden_Nonlocality.md` (~513 lines)
+
+**Structure:**
+1. Introduction
+2. Background: Non-Locality in Quantum Mechanics
+3. LRT's Constraint Satisfaction Picture (3.1-3.5)
+4. Existing Experimental Data (4.1-4.3) - NEW
+5. Distinguishing Predictions (5.1-5.5)
+6. Proposed Experimental Tests (6.1-6.4) - statistical requirements added
+7. Discussion (7.1-7.6) - Bohmian caveat added
+8. Conclusion
+References (expanded)
+
+### Key Honest Assessments
+
+| Claim | Data Status |
+|-------|-------------|
+| No frame-dependent effects observed | ✓ TRUE (at v << c) |
+| Definitive test exists | ✗ FALSE (need v/c > 0.01) |
+| Bohmian predicts frame effects | **DISPUTED** (no quantitative prediction) |
+| Energy test feasible | ✗ Speculative |
+| LRT distinguishable from MWI | Only via recoherence tests |
+
+---
+
+## Interaction Count: 10
