@@ -18,7 +18,7 @@ Quantum mechanics permits superpositions at all scales, yet macroscopic measurem
 
 Empirical validation across seven platforms confirms the framework: fullerene interferometry ($\beta = 2.11$, Rayleigh), cavity QED ($\beta = 1.01$, photon loss), superconducting qubits ($\beta = 1.0$, uncorrelated dephasing), trapped ions ($\beta = 2.0$, correlated dephasing), and NV ensembles ($\beta = 1.06$, dipole bath). Notably, the apparent suppression of Rayleigh scaling in large-molecule interferometry ($\beta_{\text{obs}} \approx 0.9$) is consistent with a multi-variable analysis treating vacuum pressure as an explicit variable: the rate equation $\Gamma \propto P \cdot m^2$ predicts $\beta_{\text{obs}} = 0.7 \pm 0.2$ when isolation improves by two orders of magnitude, encompassing the observed value within one standard deviation.
 
-We derive theorems for both limiting cases: independent dephasing yields $\tau_{\mathrm{BA}} \propto 1/N$, while correlated (superdecoherence) yields $\tau_{\mathrm{BA}} \propto 1/N^2$. The framework provides a quantitative, falsifiable criterion for the quantum-classical boundary. An optional interpretive section connects these results to Logic Realism Theory, which reads Boolean actualization as reflecting the logical structure of actuality itself.
+We derive theorems for both limiting cases: independent dephasing yields $\tau_{\mathrm{BA}} \propto 1/N$, while correlated (superdecoherence) yields $\tau_{\mathrm{BA}} \propto 1/N^2$. The paper provides operational criteria for controlled isolation, guidance for multi-channel regimes where multiple decoherence mechanisms coexist, and explicit falsification conditions. The framework constitutes a quantitative, falsifiable criterion for the quantum-classical boundary. An optional interpretive section connects these results to Logic Realism Theory, which reads Boolean actualization as reflecting the logical structure of actuality itself.
 
 **Keywords:** decoherence, quantum-classical boundary, logical entropy, scaling laws, Boolean actualization, superdecoherence, noise correlation
 
@@ -96,6 +96,29 @@ $$h_L(\rho) = 1 - \mathrm{Tr}(\rho^2)$$
 
 Logical entropy does not presuppose collapse or any particular interpretation. It is a measurable quantity characterizing the degree of mixedness.
 
+### 2.1a Choice of Entropy Measure
+
+Logical entropy $h_L$ is selected over alternative measures for several operational advantages:
+
+**Algebraic simplicity:** Linear in purity $\mathrm{Tr}(\rho^2)$, requiring no logarithms. This enables analytical solutions for visibility-entropy relations.
+
+**Direct observability:** For balanced two-branch superpositions $\rho = (|\psi\rangle\langle\psi| + |\phi\rangle\langle\phi|)/2$ with overlap $|\langle\psi|\phi\rangle|^2 = c^2$, the relation $h_L = (1 - V^2)/2$ connects directly to interferometric visibility $V$ without numerical inversion.
+
+**Monotonicity:** Increases monotonically under decoherence for pure → mixed transitions, providing a natural "progress toward classicality" metric.
+
+**Operational interpretation:** $h_L$ measures the probability of error when attempting to distinguish $\rho$ from the maximally mixed state $I/d$ in a single measurement (Girolami 2014).
+
+**Comparison to alternatives:**
+
+| Measure | Definition | Advantage | Disadvantage for τ_BA |
+|---------|------------|-----------|----------------------|
+| Logical entropy $h_L$ | $1 - \mathrm{Tr}(\rho^2)$ | Linear in purity, direct V relation | None for this application |
+| Von Neumann $S_{vN}$ | $-\mathrm{Tr}(\rho \ln \rho)$ | Information-theoretic meaning | Requires numerical inversion |
+| Linear entropy $S_L$ | $(d/(d-1))h_L$ | Normalized to [0,1] | Equivalent to $h_L$, different normalization |
+| Fidelity $F$ | $\langle\psi|\rho|\psi\rangle$ | State comparison | Requires reference state, not intrinsic |
+
+For this framework's purpose—defining an operational, visibility-based interface criterion—logical entropy provides the simplest and most direct metric.
+
 ### 2.2 Boolean Actualization Time
 
 **Definition:** The Boolean actualization time $\tau_{\mathrm{BA}}(V_\ast)$ is the earliest time at which measured interference visibility falls below threshold $V_\ast$.
@@ -165,6 +188,37 @@ $$h_L^{(N)}(t) = 1 - \left[\frac{1 + e^{-2\Gamma t}}{2}\right]^N$$
 Setting $h_L^{(N)}(t_N) = h_\ast$ and solving yields (iii). Taylor expansion for large N gives (iv). □
 
 **Scope:** This theorem applies to independent exponential dephasing. Other mechanisms (thermal scattering, photon loss, collisional decoherence) yield different exponents, as shown empirically in Section 1 and tabulated in Section 3.
+
+### 2.5 Controlled Isolation: Operational Criteria
+
+A valid scaling comparison requires "controlled isolation": environmental coupling must remain constant (or explicitly modeled) while system size varies. This ensures observed exponent $\beta$ reflects the physical mechanism, not confounded environmental changes.
+
+**Operational criteria for controlled isolation:**
+
+1. **Vacuum pressure stability:** $\Delta P/P < 30\%$ across all measurements
+   - *Justification:* Rayleigh scattering rate $\Gamma \propto P$; 30% pressure variation induces ~30% decoherence rate variation, masking intrinsic scaling
+
+2. **Temperature stability:** $\Delta T/T < 5\%$ (typically $T = 300 \pm 15$ K for room-temperature systems)
+   - *Justification:* Thermal de Broglie wavelength $\lambda_{dB} \propto T^{-1/2}$ affects scattering cross-section; blackbody radiation field scales as $T^4$
+
+3. **Geometric consistency:** Slit width, grating period, and detector geometry unchanged
+   - *Justification:* Diffraction and detection solid angle affect measured visibility independently of decoherence
+
+4. **Velocity consistency:** Molecular beam or qubit gate time variation $< 20\%$
+   - *Justification:* Interaction time $\tau_{int}$ determines decoherence accumulation; $\tau_{BA} \propto \tau_{int}^{-1}$ for fixed $\Gamma$
+
+**Examples:**
+
+| Dataset | Pressure | Temperature | Geometry | Velocity | Status |
+|---------|----------|-------------|----------|----------|--------|
+| C$_{60}$/C$_{70}$ (Arndt 1999) | Fixed $10^{-7}$ mbar | 300 K | Identical | ~220 m/s | **Controlled** |
+| Full molecular (720→25k amu) | $10^{-7}→10^{-9}$ mbar | 300 K | Varies | Varies | **Confounded** |
+| Cavity QED (Brune 1996) | N/A (cavity) | 0.8 K | Fixed | N/A | **Controlled** |
+| SC qubits (Kam 2024) | Dilution fridge | 20 mK | Chip-fixed | Gate-fixed | **Controlled** |
+
+**Multi-variable framework:** When controlled isolation criteria are not met, the multi-variable rate equation $\Gamma(m, P, T, ...)$ must be used. Section 4.5 develops this explicitly for pressure variation.
+
+**Falsification requirement:** Experiments claiming to validate $\beta$ for a specific mechanism must either satisfy controlled isolation criteria or provide explicit multi-variable corrections. Failure to do so produces uninterpretable $\beta_{obs}$.
 
 ---
 
@@ -263,6 +317,69 @@ Extending quantitative scaling comparisons to larger systems (levitated nanopart
 - Explicit normalization by measured environmental coupling strength
 
 Without such controls, apparent exponents will be confounded by isolation improvements, as seen in the molecular interferometry data beyond C₆₀/C₇₀.
+
+### 3.7 Multi-Channel Regimes
+
+The framework assumes a single dominant decoherence channel when extracting $\beta$. In realistic experiments, multiple channels often coexist. This section provides operational guidance for multi-channel scenarios.
+
+**Channel Superposition:**
+
+When $K$ channels contribute with rates $\Gamma_k \propto s^{\beta_k}$, the total rate is:
+
+$$\Gamma_{\text{total}} = \sum_{k=1}^K a_k s^{\beta_k}$$
+
+The Boolean actualization time becomes:
+
+$$\tau_{\mathrm{BA}} \approx \left(\sum_{k=1}^K a_k s^{\beta_k}\right)^{-1}$$
+
+**Limiting Cases:**
+
+- *Single channel dominates:* If $a_1 s^{\beta_1} \gg a_2 s^{\beta_2}$ throughout the measured range, then $\beta_{\text{measured}} \approx \beta_1$.
+- *Two comparable channels:* The effective exponent $\beta_{\text{eff}}$ depends on system size and is not constant.
+
+**Crossover Behavior:**
+
+For two channels with $\beta_1 > \beta_2$:
+- Small $s$: Channel 1 dominates → $\beta_{\text{eff}} \approx \beta_1$
+- Large $s$: Channel 1 saturates faster → $\beta_{\text{eff}} \to \beta_2$
+
+*Example:* Superconducting qubits with uncorrelated dephasing ($\beta = 1$) and correlated flux noise ($\beta = 2$):
+- $N = 3$–$5$: Flux noise may dominate → $\beta_{\text{eff}} \approx 2$
+- $N = 10$–$20$: Dephasing takes over → $\beta_{\text{eff}} \approx 1$
+
+**Fitting Strategies:**
+
+| Strategy | Use Case | Parameters | Notes |
+|----------|----------|------------|-------|
+| Single-exponent | One dominant channel | $A$, $\beta_{\text{eff}}$ | Reports effective exponent |
+| Two-exponent | Visible crossover | $a_1$, $\beta_1$, $a_2$, $\beta_2$ | Requires dynamic range $>10\times$ |
+| Bounding | Mechanism uncertain | $\beta_{\min}$, $\beta_{\max}$ | Constrains channel combinations |
+
+**Diagnostic Protocol:**
+
+1. Measure $\beta_{\text{eff}}$ across maximum achievable size range
+2. Check for size-dependent variation (indicates multi-channel)
+3. Compare to known mechanisms (Table 2)
+4. If $\beta_{\text{eff}}$ is constant and matches prediction → single channel confirmed
+5. If $\beta_{\text{eff}}$ varies → fit two-exponent model or bound channels
+
+**Falsification Criteria for Multi-Channel:**
+
+The multi-channel framework is falsified if:
+- $\beta_{\text{measured}} < \min(\beta_k)$ for all plausible channels (impossible via superposition)
+- $\beta_{\text{measured}}$ violates upper bound from fastest known mechanism
+- Two-channel fit requires $\beta_1$ or $\beta_2$ outside physically reasonable range ($\beta < 0$ or $\beta > 3$)
+
+**Example—Cavity QED:**
+
+Brune et al. (1996) cat states experience:
+- Photon loss: $\beta = 1$ (dominant)
+- Thermal photons: $\beta \approx 0$ (negligible at $T = 0.8$ K)
+- Dephasing: $\beta \approx 1$ (small, $\sim 10\%$ of loss rate)
+
+Measured $\beta = 1.01$ confirms single-channel dominance. Two-exponent fit would not improve fit quality given data precision.
+
+**Conclusion:** Multi-channel effects do not undermine the framework but require sufficient dynamic range to identify crossover and mechanism identification via ancillary measurements. The diagnostic capability remains valid: $\beta$ distinguishes correlation structures even in multi-channel scenarios, provided channels can be resolved.
 
 ---
 
@@ -385,35 +502,35 @@ The multi-variable framework demonstrates that the apparent exponent suppression
 
 ## 5. Interpretive Context: Logic Realism Theory
 
-*This section presents an optional interpretive layer. The empirical and formal results of Sections 1–4 stand independently of this interpretation.*
+*This section presents an optional interpretive layer. The empirical and formal results of Sections 1–4 stand independently of this interpretation. Readers uninterested in foundational philosophy may skip to Section 6 without loss of operational content.*
 
-### 5.1 The Interpretive Claim
+### 5.1 The Interpretive Framework
 
 Logic Realism Theory (LRT) proposes that the Boolean character of actualized outcomes is not merely operational convenience but reflects the logical structure of actuality itself. On this view:
 
-- The Three Fundamental Laws of Logic (Identity, Non-Contradiction, Excluded Middle) are constitutive of physical distinguishability
-- Actualized events must be Boolean because actuality is constrained by these logical laws
-- Decoherence is the physical mechanism through which quantum potentiality resolves into logically admissible classical outcomes
+- LRT interprets the Three Fundamental Laws of Logic (Identity, Non-Contradiction, Excluded Middle) as constitutive of physical distinguishability
+- From the LRT perspective, actualized events are Boolean because actuality is constrained by these logical laws
+- LRT reads decoherence as the physical mechanism through which quantum potentiality resolves into logically admissible classical outcomes
 
-The universality of Boolean measurement outcomes, observed without exception across all of physics, receives explanation: it reflects the prescriptive character of logical law at the level of actuality.
+Within this framework, the universality of Boolean measurement outcomes—observed without exception across all of physics—is interpreted as reflecting the prescriptive character of logical law at the level of actuality. This interpretation is not required to apply the operational predictions; it is offered as one possible conceptual unification.
 
 ### 5.2 Decoherence Within LRT
 
 LRT does not modify decoherence physics. It provides an interpretive framework that situates decoherence within a broader metaphysics of actualization:
 
-- Quantum states represent the structure of the Infinite Information Space (IIS), which is non-Boolean
-- Boolean actuality is the domain where logical laws are fully enforced
-- Decoherence describes the approach to the IIS-actuality interface
+- On this view, quantum states represent the structure of the Infinite Information Space (IIS), which is non-Boolean
+- Boolean actuality is interpreted as the domain where logical laws are fully enforced
+- Decoherence is read as describing the approach to the IIS-actuality interface
 - The scaling law quantifies how rapidly this approach occurs as system complexity increases
 
-The empirical trend, that larger systems reach the Boolean regime faster, is interpreted as reflecting the increasing "pressure" toward logical resolution as the number of degrees of freedom grows. More complex systems have more ways to entangle with their environment, accelerating the transition from quantum potentiality to Boolean actuality.
+Within LRT, the empirical trend that larger systems reach the Boolean regime faster is interpreted as reflecting increasing "pressure" toward logical resolution as degrees of freedom grow. More complex systems have more channels for environmental entanglement, accelerating the transition from quantum potentiality to Boolean actuality.
 
-### 5.3 What LRT Does and Does Not Do
+### 5.3 What LRT Claims to Provide
 
-**LRT provides:**
-- Ontological grounding for the Boolean structure of actual events
+**LRT offers:**
+- An ontological grounding for the Boolean structure of actual events
 - Conceptual unification: decoherence as interface mechanism, not brute fact
-- Explanatory context for why classical logic governs all actualized phenomena
+- Interpretive context for why classical logic governs all actualized phenomena
 
 **LRT does not provide:**
 - Predictions of decoherence rates or scaling exponents (these come from physics)
@@ -421,7 +538,7 @@ The empirical trend, that larger systems reach the Boolean regime faster, is int
 - Size thresholds independent of isolation
 - Modifications to the quantum formalism
 
-LRT interprets the scaling law; it does not generate it. The predictions come from decoherence physics; LRT provides the metaphysical framework explaining why those predictions matter for the structure of actuality.
+**Critical distinction:** LRT interprets the scaling law; it does not generate it. The quantitative predictions come from standard decoherence physics. LRT provides a metaphysical framework for understanding why those predictions might matter for the structure of actuality—but this interpretive layer is separable from the operational framework.
 
 ### 5.4 Relation to Other Interpretations
 
@@ -465,6 +582,7 @@ Future work should extend controlled scaling tests to higher masses using levita
 - Eibenberger, S. et al. (2013) Phys. Chem. Chem. Phys. **15**, 14696.
 - Ellerman, D. (2013) Entropy **15**, 3698.
 - Fein, Y. Y. et al. (2019) Nat. Phys. **15**, 1242.
+- Girolami, D. (2014) Phys. Rev. Lett. **113**, 170401. [Operational interpretation of logical entropy]
 - Joos, E. et al. (2003) *Decoherence and the Appearance of a Classical World in Quantum Theory*, Springer.
 - Park, H. et al. (2022) npj Quantum Inf. **8**, 95. [NV ensemble decoherence]
 - Longmire, J. D. (2025a) "It from Bit, Bit from Fit: Foundational Physics Logically Remastered." Zenodo. https://doi.org/10.5281/zenodo.17831819
