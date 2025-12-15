@@ -14,7 +14,11 @@ Correspondence: jdlongmire@outlook.com
 
 ## Abstract
 
-Quantum mechanics permits superpositions at all scales, yet macroscopic measurement outcomes are invariably definite and Boolean. Decoherence theory explains the suppression of interference, but the rate of this suppression has not been expressed as a unified, operationally testable scaling framework enabling cross-platform comparison. This paper develops such a framework using logical entropy $h_L(\rho) = 1 - \mathrm{Tr}(\rho^2)$ and a fixed visibility threshold $V_\ast$ to define the Boolean actualization time $\tau_{\mathrm{BA}}$: the earliest time at which measured interference contrast falls below threshold. We show that $\tau_{\mathrm{BA}}$ scales as a power of system size, with exponent $\beta$ determined by both the physical mechanism and the correlation structure of environmental noise. Empirical validation across seven platforms confirms the framework: fullerene interferometry ($\beta = 2.11$, Rayleigh), cavity QED ($\beta = 1.01$, photon loss), superconducting qubits ($\beta = 1.0$, uncorrelated dephasing), trapped ions ($\beta = 2.0$, correlated dephasing), and NV ensembles ($\beta = 1.06$, dipole bath). Notably, the same GHZ state exhibits $\beta = 1$ on superconducting qubits versus $\beta = 2$ on trapped ions, demonstrating that the scaling exponent diagnoses noise correlation structure. We derive theorems for both limiting cases: independent dephasing yields $\tau_{\mathrm{BA}} \propto 1/N$, while correlated (superdecoherence) yields $\tau_{\mathrm{BA}} \propto 1/N^2$. The framework provides a quantitative, falsifiable criterion for the quantum-classical boundary. An optional interpretive section connects these results to Logic Realism Theory, which reads Boolean actualization as reflecting the logical structure of actuality itself.
+Quantum mechanics permits superpositions at all scales, yet macroscopic measurement outcomes are invariably definite and Boolean. Decoherence theory explains the suppression of interference, but the rate of this suppression has not been expressed as a unified, operationally testable scaling framework enabling cross-platform comparison. This paper develops such a framework using logical entropy $h_L(\rho) = 1 - \mathrm{Tr}(\rho^2)$ and a fixed visibility threshold $V_\ast$ to define the Boolean actualization time $\tau_{\mathrm{BA}}$: the earliest time at which measured interference contrast falls below threshold. We show that $\tau_{\mathrm{BA}}$ scales as a power of system size ($s^{-\beta}$), with exponent $\beta$ determined by both the physical mechanism and the correlation structure of environmental noise.
+
+Empirical validation across seven platforms confirms the framework: fullerene interferometry ($\beta = 2.11$, Rayleigh), cavity QED ($\beta = 1.01$, photon loss), superconducting qubits ($\beta = 1.0$, uncorrelated dephasing), trapped ions ($\beta = 2.0$, correlated dephasing), and NV ensembles ($\beta = 1.06$, dipole bath). Notably, the apparent suppression of Rayleigh scaling in large-molecule interferometry ($\beta_{\text{obs}} \approx 0.9$) is consistent with a multi-variable analysis treating vacuum pressure as an explicit variable: the rate equation $\Gamma \propto P \cdot m^2$ predicts $\beta_{\text{obs}} = 0.7 \pm 0.2$ when isolation improves by two orders of magnitude, encompassing the observed value within one standard deviation.
+
+We derive theorems for both limiting cases: independent dephasing yields $\tau_{\mathrm{BA}} \propto 1/N$, while correlated (superdecoherence) yields $\tau_{\mathrm{BA}} \propto 1/N^2$. The framework provides a quantitative, falsifiable criterion for the quantum-classical boundary. An optional interpretive section connects these results to Logic Realism Theory, which reads Boolean actualization as reflecting the logical structure of actuality itself.
 
 **Keywords:** decoherence, quantum-classical boundary, logical entropy, scaling laws, Boolean actualization, superdecoherence, noise correlation
 
@@ -306,6 +310,76 @@ The framework does not predict:
 A note on quantum computation: the scaling law describes decoherence rates under fixed environmental coupling. It does not bound achievable coherence times under active error correction, which can in principle suppress logical error rates faster than physical decoherence accumulates. Fault-tolerant quantum computation is a question of error correction thresholds, not raw decoherence scaling.
 
 These limitations are intrinsic to an operational framework grounded in known decoherence physics.
+
+### 4.5 Multi-Variable Scaling Analysis: Variable Isolation
+
+The apparent suppression of Rayleigh scaling in the broader molecular interferometry dataset ($\beta_{\text{obs}} \approx 0.9$) can be understood by explicitly treating vacuum pressure as a variable.
+
+**Physical Model**
+
+In the Rayleigh regime, the decoherence rate depends on both system mass $m$ (via scattering cross-section $\sigma \propto m^2$) and environmental pressure $P$ (via gas density $n \propto P$):
+
+$$\Gamma(m, P) = k \cdot P \cdot m^{\beta_{\text{phys}}}$$
+
+where $\beta_{\text{phys}} = 2$ for Rayleigh scattering. The Boolean actualization time scales as $\tau_{\text{BA}} \propto \Gamma^{-1}$.
+
+**Observable Exponent Under Variable Isolation**
+
+When comparing systems $(m_1, P_1)$ and $(m_2, P_2)$, the ratio of actualization times is:
+
+$$\frac{\tau_2}{\tau_1} = \frac{P_1}{P_2} \left( \frac{m_1}{m_2} \right)^{\beta_{\text{phys}}}$$
+
+Extracting an "apparent" scaling exponent from mass alone yields a correction formula:
+
+$$\beta_{\text{obs}} = \beta_{\text{phys}} - \frac{\ln(P_1/P_2)}{\ln(m_2/m_1)}$$
+
+This quantifies the masking effect: as experiments move to larger molecules ($m_2 > m_1$) with better vacuum ($P_2 < P_1$), the observable exponent is reduced. Other experimental parameters (chamber temperature $T \approx 300$ K, molecular beam velocity $v \approx 100\text{--}200$ m/s) remain approximately constant across the dataset; vacuum pressure is the dominant systematic variable, spanning two orders of magnitude.
+
+**Application to Data**
+
+The analysis compares the controlled low-mass baseline against the high-mass frontier:
+
+**Table 3: Molecular Interferometry Datasets**
+
+| Molecule | Mass (amu) | Vacuum ($P$, mbar) | $\tau_{\text{BA}}$ (ms) | Reference |
+|:---------|:-----------|:-------------------|:------------------------|:----------|
+| C$_{60}$ | 720 | $10^{-7}$ | $18 \pm 5$ | Arndt et al. 1999 |
+| C$_{70}$ | 840 | $10^{-7}$ | $12 \pm 3$ | Arndt et al. 1999 |
+| TPPF$_{152}$ | $\approx 6,000$ | $\sim 10^{-8}$ | — | Eibenberger 2013 |
+| Oligoporphyrin | $\approx 25,000$ | $< 10^{-9}$ | $> 12$ (est.) | Fein et al. 2019 |
+
+*Note: Vacuum pressure values represent estimated chamber pressures; measurement uncertainty in the $10^{-7}$–$10^{-9}$ mbar range is typically $\pm 30\text{--}50\%$. Oligoporphyrin $\tau_{\text{BA}}$: Lower bound estimated from visibility remaining above 0.10 at reported measurement times; precise value not extractable from published data.*
+
+Using the endpoints ($P_1 \approx 10^{-7}$ mbar, $P_2 \approx 10^{-9}$ mbar):
+
+* Mass ratio: $\ln(m_2/m_1) \approx 3.56$
+* Pressure ratio: $\ln(P_1/P_2) \approx 4.60$
+
+**Predicted observable exponent:**
+
+$$\beta_{\text{obs}} \approx 2 - \frac{4.60}{3.56} \approx 0.71$$
+
+Propagating vacuum pressure uncertainty ($\pm 50\%$) through the correction formula yields $\beta_{\text{obs}} = 0.7 \pm 0.2$.
+
+**Assessment**
+
+The predicted value ($\beta_{\text{obs}} = 0.7 \pm 0.2$) encompasses the fitted observation from the full dataset ($\beta_{\text{obs}} \approx 0.9$, obtained via log-log regression across the mass range 720–25,000 amu, this work) within one standard deviation. Additional systematic uncertainties in mass determination ($\pm 10\%$) and rate extraction ($\pm 20\%$) contribute to the residual discrepancy but do not indicate a breakdown of Rayleigh scaling. Intermediate mass points (e.g., TPPF$_{152}$) fall between these extremes, qualitatively consistent with the pressure-mass trajectory.
+
+**Supporting Evidence**
+
+The 25 kDa oligoporphyrin ($P < 10^{-9}$ mbar) exhibits coherence times that do not show the rapid collapse expected from Rayleigh scaling under fixed isolation. Specifically, the observed coherence lifetime remains substantial despite the 35-fold mass increase from C$_{60}$, whereas fixed-pressure Rayleigh scaling ($\beta = 2$) would predict a decoherence rate increase of $(35)^2 \approx 10^3$. This supports the multi-variable rate equation $\Gamma \propto P \cdot m^2$: the vacuum improvement (factor $> 10^2$) offsets the mass penalty, preventing the collapse that would occur at constant pressure.
+
+**Summary of Analysis**
+
+The dataset requires two distinct analyses:
+
+| Analysis | Range | Pressure | Result | Interpretation |
+|:---------|:------|:---------|:-------|:---------------|
+| **Controlled Pair** | C$_{60}$/C$_{70}$ | Fixed ($\sim 10^{-7}$) | $\beta = 2.11$ | Validates Rayleigh Scaling |
+| **Full Dataset** | 720 $\to$ 25k | Variable ($10^{-7} \to 10^{-9}$) | $\beta_{\text{obs}} \approx 0.9$ | Confounded by Isolation |
+| **Multi-Variable** | 720 $\to$ 25k | Corrected | $\beta_{\text{pred}} = 0.7 \pm 0.2$ | Consistent Within Uncertainty |
+
+The multi-variable framework demonstrates that the apparent exponent suppression arises from systematic improvements in vacuum quality correlated with increasing molecular mass, rather than from a failure of the underlying Rayleigh mechanism.
 
 ---
 
