@@ -26,6 +26,20 @@ The Three Fundamental Logical Laws (3FLL) - Identity, Non-Contradiction, Exclude
 
 ---
 
+## Articles and Commentaries
+
+Substack articles and commentary on related research in `blog-articles-commentary/`:
+
+- **[Welcome to Logic Realism Theory](blog-articles-commentary/2025-12-14_Substack_Intro_Post.md)** - Introductory post: core thesis, three-stage framework, published papers
+
+- **[Why a "Theory of Everything" Might Be Mathematically Impossible](blog-articles-commentary/2025-12-14_Commentary_Faizal_MToE_Undecidability.md)** - Commentary on Faizal, Krauss et al. (arXiv:2507.22950). Independent convergence between MToE and LRT on non-computational constraints.
+
+- **[When Logical Realism Gets Expensive](blog-articles-commentary/2025-12-14_Commentary_McSweeney_Cost_of_Closure.md)** - Commentary on McSweeney (2021). Logical realism undermines standard equivalence assumptions; LRT accepts the cost.
+
+- **[What Is "Logical Realism"?](blog-articles-commentary/2025-12-13_Commentary_Tahko_Logical_Realism_Survey.md)** - Commentary on Tahko (2021). Positions LRT within established philosophical framework.
+
+---
+
 ## Published Pre-Prints
 
 All papers published on Zenodo (December 2025):
@@ -115,10 +129,11 @@ Session_Log/                     # Development history (40 sessions)
 
 ## Development History
 
-40 sessions of development (October 2025 - December 2025):
+41 sessions of development (October 2025 - December 2025):
 
 | Session | Date | Focus |
 |---------|------|-------|
+| 41.0 | 2025-12-14 | Substack launch, 4 articles/commentaries |
 | 40.0 | 2025-12-13 | Branch merge, README update, IIS-LRT paper capture |
 | 39.0 | 2025-12-10 | Scale Law paper, 7-platform validation |
 | 38.0 | 2025-12-07 | Technical paper v3 (A+ grade target) |
