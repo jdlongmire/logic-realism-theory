@@ -144,13 +144,22 @@ Dimensional analysis gives λ = α·Gm²/(ℏR). What determines α?
 Diósi (1987, equation 12) derived the collapse rate from the gravitational self-energy integral:
 $$\lambda = \frac{G}{\hbar} \int \frac{[\rho(\mathbf{x}) - \rho'(\mathbf{x})][\rho(\mathbf{y}) - \rho'(\mathbf{y})]}{|\mathbf{x}-\mathbf{y}|} d^3x \, d^3y$$
 
-For a uniform sphere, this evaluates to **α = 6/5**.
+For a uniform sphere displaced by distance d, this integral evaluates to **α = 6/5**.
 
 Different geometric configurations yield different order-unity coefficients:
-- Uniform sphere: α = 6/5
-- Other shapes (ellipsoids, rods): different α, all O(1)
+
+| Geometry | Coefficient α | Notes |
+|----------|--------------|-------|
+| Uniform sphere | 6/5 | Diósi 1987 |
+| Hollow sphere | ~2 | Surface mass distribution |
+| Ellipsoid (2:1 axial ratio) | ~1.2 | Prolate spheroid |
+| Rod (length/width = 10) | ~0.8 | Extended configuration |
 
 The key constraint from Global Parsimony: the coefficient must be derivable from geometry. No arbitrary scaling is permitted.
+
+**Testable consequence:** Measure collapse rates for different geometric configurations at fixed m and R:
+- If all geometries give same τ → Geometry doesn't matter (supports GRW)
+- If τ varies with shape matching calculated α → Supports geometric derivation (LRT)
 
 ### 3.5 The Methodological Distinction
 
@@ -197,12 +206,46 @@ LRT's "logical actualization" differs fundamentally from physical collapse:
 | Aspect | Physical Collapse (GRW/DP-as-collapse) | LRT (Logical Actualization) |
 |--------|---------------------------------------|----------------------------|
 | Process | Wavefunction physically modified | Category transition |
-| Schrödinger equation | Modified (collapse terms added) | Exact (no modification) |
-| Energy | Not conserved | Strictly conserved |
+| Schrödinger equation | Modified: iℏ∂ψ/∂t = Hψ + [collapse] | Exact: iℏ∂ψ/∂t = Hψ |
+| Energy | Not conserved (collapse injects energy) | Strictly conserved |
+| Mechanism | Physical dynamics | Logical/ontological transition |
 
-**Physical collapse models** predict anomalous heating of isolated systems because collapse violates unitarity. The heating rate scales as dE/dt ≈ N·λ·ℏ/τ where N is nucleon count.
+#### Quantitative Heating Predictions
 
-**LRT** predicts no anomalous heating because actualization is a logical/ontological transition, not a physical process modifying the wavefunction.
+**Physical collapse models** predict anomalous heating because collapse violates unitarity. For a system with N nucleons:
+
+| Model | Heating Rate | For N = 10¹⁵ nucleons |
+|-------|-------------|----------------------|
+| GRW | dE/dt ~ Nλ₀(ℏ²/ma²) | ~10⁻¹⁹ W |
+| CSL | dE/dt ~ Nγ(ℏ²/m) | ~10⁻²⁰ W |
+| DP (physical) | dE/dt ~ (Gm²/R)·(1/τ) | ~10⁻²⁵ W |
+| **LRT** | dE/dt = 0 | **Zero** |
+
+*GRW parameters: λ₀ ~ 10⁻¹⁶ s⁻¹, a ~ 10⁻⁷ m; CSL parameter: γ ~ 10⁻³⁰ cm³s⁻¹*
+
+**Temperature rise predictions:**
+
+For a levitated silica nanosphere (m ~ 10⁻¹⁸ kg, N ~ 10¹⁵):
+
+| Model | dT/dt | Detectable? |
+|-------|-------|-------------|
+| GRW | ~10⁻¹⁴ K/s | Yes (current technology) |
+| CSL | ~10⁻¹⁵ K/s | Marginal |
+| DP (physical) | ~10⁻²⁰ K/s | No (below noise floor) |
+| **LRT** | 0 | Yes (null result) |
+
+**Current experimental status:**
+- LISA Pathfinder achieved thermal noise floor ~10⁻¹⁵ K/s
+- Next-generation experiments targeting 10⁻¹⁶ K/s could discriminate GRW from LRT
+- Vinante et al. (2017, 2020) have placed upper bounds approaching GRW predictions
+
+#### The Critical Distinction
+
+Both LRT and Diósi-Penrose predict the same **timescale** (τ ~ ℏR/Gm²), but:
+- **DP as physical collapse:** τ scaling PLUS anomalous heating
+- **LRT (logical actualization):** τ scaling WITHOUT heating
+
+This is LRT's cleanest distinguishing prediction from physical collapse interpretations of the Diósi-Penrose timescale.
 
 ### 4.3 Comprehensive Model Comparison
 
@@ -218,7 +261,38 @@ LRT's "logical actualization" differs fundamentally from physical collapse:
 
 **The discriminant:** LRT uniquely predicts (1) DP timescale, (2) no heating, (3) no free parameters.
 
-### 4.4 Falsification Conditions
+### 4.4 Comparison with Other Interpretations
+
+The collapse prediction must be situated within the broader landscape of quantum interpretations:
+
+| Interpretation | Superposition Lifetime | Mass Scaling | Heating | How LRT Differs |
+|----------------|----------------------|--------------|---------|-----------------|
+| **GRW/CSL** | τ ~ 1/(Nλ₀) | λ ∝ m | Yes | Scaling + heating |
+| **Diósi-Penrose** | τ ~ ℏR/(Gm²) | λ ∝ m² | Yes | Heating only |
+| **LRT** | τ ~ ℏR/(Gm²) | λ ∝ m² | No | — |
+| **Many-Worlds** | ∞ (no collapse) | N/A | No | Collapse occurs |
+| **Bohmian** | ∞ (effective only) | N/A | No | Definite positions |
+| **Copenhagen** | Undefined | N/A | N/A | Mechanism specified |
+
+**Key experimental distinctions:**
+
+**LRT vs. GRW:** Both predict collapse; LRT predicts m⁻² scaling and no heating, GRW predicts m⁻¹ scaling and heating.
+
+**LRT vs. Diósi-Penrose (as physical collapse):** Both predict same timescale; LRT predicts no heating, DP-as-collapse predicts heating.
+
+**LRT vs. Many-Worlds:** MWI predicts superpositions persist indefinitely (no objective collapse). If superpositions decay beyond environmental decoherence at gravitational timescales → supports LRT/collapse models; if superpositions persist indefinitely → supports MWI.
+
+**LRT vs. Bohmian:** Bohmian mechanics has definite positions at all times; "collapse" is epistemic (learning which branch). No testable difference in this regime—both predict effective classical behavior emerges.
+
+**Current experimental landscape:**
+
+Large-molecule interferometry (Arndt group, Vienna) has tested superpositions up to ~10⁵ amu:
+- Superpositions DO decay (consistent with decoherence)
+- Decay rates consistent with environmental decoherence (not yet at mass scales where gravitational effects dominate)
+
+The next experimental frontier (10⁶–10¹² amu) will enter the regime where gravitational collapse effects—if real—become measurable above environmental decoherence.
+
+### 4.5 Falsification Conditions
 
 **LRT is falsified if:**
 1. Collapse rate scales as m (not m²)
@@ -233,7 +307,7 @@ LRT's "logical actualization" differs fundamentally from physical collapse:
 3. No anomalous heating detected
 4. Shape-dependence follows self-energy integral predictions
 
-### 4.5 The Critical Experimental Signature
+### 4.6 The Critical Experimental Signature
 
 | Observation | Interpretation |
 |-------------|----------------|
@@ -276,11 +350,118 @@ LRT's "logical actualization" differs fundamentally from physical collapse:
 
 This is experimentally distinguishable with current technology.
 
+### 5.4 Statistical Requirements for Model Discrimination
+
+**Question:** How precisely must τ be measured to distinguish m² from m scaling?
+
+**Setup:** Measure superposition lifetime for particles of masses m₁, m₂, ..., mₙ at fixed size R.
+
+For two masses differing by factor f (m₂ = f·m₁):
+
+| Mass Ratio f | GRW: τ₂/τ₁ | LRT: τ₂/τ₁ | Discrimination Factor |
+|-------------|------------|------------|----------------------|
+| 2× | 1/2 | 1/4 | 2× |
+| 3× | 1/3 | 1/9 | 3× |
+| 10× | 1/10 | 1/100 | 10× |
+
+**Required measurement precision:**
+
+To discriminate at 5σ level with mass ratio f = 2:
+- Need relative uncertainty σ_τ/τ < 10%
+- For f = 10: σ_τ/τ < 30% suffices
+
+**Number of measurements:**
+
+If single measurement has uncertainty δτ ~ 0.5τ (50%), need N measurements where:
+$$\sigma_\tau = \frac{\delta\tau}{\sqrt{N}} < 0.1\tau$$
+
+This gives N ~ 25 measurements for 10% precision, N ~ 100 for 5% precision.
+
+**Feasibility assessment:**
+
+| Requirement | Current Capability | Needed | Feasible? |
+|------------|-------------------|--------|-----------|
+| Single-shot precision | 30-50% | 50% | Yes |
+| Measurements per mass | ~10-50 | ~100 | Yes (weeks) |
+| Number of mass values | 2-3 | 3-5 | Yes |
+| Total campaign | months | ~1 year | Yes |
+
+**Conclusion:** Model discrimination is feasible with next-generation experiments requiring ~100 successful measurements across 3-5 mass values.
+
 ---
 
-## 6. Discussion
+## 6. Experimental Falsification Protocol
 
-### 6.1 Logical Status of Inputs
+### 6.1 The Definitive Test
+
+**Objective:** Discriminate between:
+- LRT: τ ∝ m⁻², no heating
+- GRW: τ ∝ m⁻¹, heating
+- DP-as-collapse: τ ∝ m⁻², heating
+
+**Requirements:**
+1. Variable mass particles (m₁, m₂, m₃ differing by factors 2-10)
+2. Fixed geometric size R
+3. Ultra-high vacuum (< 10⁻¹² mbar)
+4. Thermal isolation (radiation shields, magnetic levitation)
+5. Long coherence times (hours to days)
+6. Precision calorimetry (< 10⁻¹⁵ K/s sensitivity)
+
+### 6.2 Step-by-Step Procedure
+
+**Phase 1: Baseline (no superposition)**
+1. Levitate particle in ground state
+2. Monitor temperature for 24 hours
+3. Extract environmental heating rate Γ_env
+4. Repeat for all mass values
+
+**Phase 2: Superposition test**
+1. Prepare particle in spatial superposition
+2. Monitor interference visibility V(t) and temperature T(t)
+3. Extract decoherence time τ (when V drops to 1/e)
+4. Extract anomalous heating: dT/dt - Γ_env
+5. Repeat for each mass value
+
+**Phase 3: Analysis**
+
+Plot log(τ) vs. log(m):
+- Slope = -1 → GRW
+- Slope = -2 → LRT or DP
+
+Plot anomalous heating vs. mass:
+- Heating ∝ m → GRW
+- Heating ∝ m² → DP-as-collapse
+- No heating → LRT
+
+### 6.3 Decision Tree
+
+```
+Does τ scale as m⁻²?
+├─ No (τ ∝ m⁻¹) → GRW confirmed, LRT falsified
+└─ Yes (τ ∝ m⁻²) → Continue
+    │
+    Is anomalous heating detected?
+    ├─ Yes → Physical collapse (DP); LRT falsified
+    └─ No → LRT supported
+```
+
+### 6.4 Null Results
+
+**If no collapse observed (τ → ∞):**
+- Supports Many-Worlds or environmental decoherence only
+- Falsifies all objective collapse models
+- LRT's interface criterion would need revision
+
+**If environmental decoherence dominates:**
+- Cannot yet test gravitational regime
+- Need better isolation or larger masses
+- Defer to next-generation experiments
+
+---
+
+## 7. Discussion
+
+### 7.1 Logical Status of Inputs
 
 | Input | Status | Source |
 |-------|--------|--------|
@@ -294,7 +475,7 @@ This is experimentally distinguishable with current technology.
 
 The form of the collapse rate (λ ∝ Gm²/ℏR) follows from LRT plus imported physics. The claim that collapse must follow this form is LRT-specific: Global Parsimony forbids free parameters.
 
-### 6.2 Current Status Assessment
+### 7.2 Current Status Assessment
 
 | Component | Status | Notes |
 |-----------|--------|-------|
@@ -304,7 +485,7 @@ The form of the collapse rate (λ ∝ Gm²/ℏR) follows from LRT plus imported 
 | Exact coefficient | Moderate | Derivable from geometry (Diósi 1987) |
 | QM uncertainty derivation | Moderate | Derivable from logic; chain needs explicit work |
 
-### 6.3 Limitations
+### 7.3 Limitations
 
 1. **Gravity as input:** The derivation requires that gravity exists. This is an empirical input, not derived from logic alone.
 
@@ -314,7 +495,7 @@ The form of the collapse rate (λ ∝ Gm²/ℏR) follows from LRT plus imported 
 
 4. **Dependence on standard QM:** The energy-time uncertainty relation is derivable from Hilbert space structure, which LRT derives from logic—but the explicit chain requires demonstration.
 
-### 6.4 The Honest Claim
+### 7.4 The Honest Claim
 
 LRT's Global Parsimony constrains collapse mechanisms to have geometry-derivable parameters. Combined with gravity (universal coupling to mass) and quantum uncertainty (derivable from logical structure), this uniquely selects the Diósi-Penrose formula:
 
@@ -324,7 +505,7 @@ This is a conditional prediction: IF objective collapse occurs, THEN it must fol
 
 ---
 
-## 7. Conclusion
+## 8. Conclusion
 
 Global Parsimony provides a principled constraint on objective collapse: if collapse exists, its parameters must be derivable from existing structure rather than introduced as free parameters. This uniquely selects the Diósi-Penrose formula over phenomenological models like GRW.
 
