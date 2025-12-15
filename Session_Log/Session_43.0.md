@@ -98,4 +98,37 @@ Factor of 10 in mass gives 100× (LRT) vs 10× (GRW) rate change.
 
 ---
 
-## Interaction Count: 2
+## Revisions Based on Feedback
+
+### Critical Fix: Section 5.4 Coefficient
+
+**Error:** Claimed α = 5/3 (inverting 3/5 from self-energy)
+**Correction:** α = 6/5 from Diósi's integral calculation
+
+The coefficient arises from the integral over the mass distribution, not simply from inverting the self-energy formula.
+
+### Added: Section 7.2.5 QM Dependence
+
+- Energy-time uncertainty IS derivable from 3FLL (via Hilbert space)
+- But explicit derivation chain needs demonstration
+- Not adding QM as independent input, but chain requires explicit work
+
+### Revised: Section 7.3 Honest Assessment
+
+Made explicit the derivation chain:
+```
+3FLL + Global Parsimony + (gravity exists) + (QM uncertainty)
+    → λ = (6/5) Gm²/(ℏR)
+```
+
+Clarified the **conditional nature** of the prediction.
+
+### Added: Section 9.4 Response to Critic
+
+Direct response to "no quantifiable predictions" challenge:
+- Conditional prediction: IF collapse, THEN Penrose-Diósi (not GRW)
+- What LRT adds beyond Penrose: necessity vs. plausibility
+
+---
+
+## Interaction Count: 3
