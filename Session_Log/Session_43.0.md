@@ -241,4 +241,58 @@ The circle is broken because 3FLL are NOT 'physics' - they're conditions for dis
 
 ---
 
-## Interaction Count: 6
+## Fifth Revision: Professional Paper Restructure
+
+Completely rewrote document as professional academic paper:
+
+### Structure Changes
+- **Title:** "Collapse Rate Constraints from Logic Realism Theory"
+- **Abstract:** Added proper scientific abstract
+- **Author:** Added author line with ORCID
+- Removed all working-document framing ("Gap 1A", "Status", "Session")
+- Removed internal references ("From Main Paper Section 6.2")
+- Removed "Response to Critic" section
+- Removed document history
+- Removed checkmarks and development notes
+
+### Section Reorganization
+1. **Introduction** - Collapse parameter problem, LRT approach, scope
+2. **Background** - DP formula, numerical estimates, model comparison
+3. **Derivation** - Global Parsimony, dimensional analysis, coefficient
+4. **Predictions** - Distinguishing predictions, energy conservation, falsifiability
+5. **Experimental Tests** - Near-term, medium-term, platforms
+6. **Discussion** - Logical status, assessment, limitations
+7. **Conclusion** - Summary of key predictions
+8. **References** - Added Ghirardi et al. 1986, Pearle 1989
+
+### Tone Changes
+- Professional academic tone throughout
+- Removed defensive language
+- Arguments presented as self-standing claims, not responses to critics
+- Conditional structure presented as methodological choice, not defense
+
+**Document length:** ~350 lines (down from ~665 lines)
+
+---
+
+## Session Summary
+
+**Deliverable:** `theory/LRT_Prediction_Collapse.md` - Professional paper
+
+**Key Content:**
+- Global Parsimony → collapse parameters must be derivable
+- Uniquely selects Diósi-Penrose formula λ = (6/5)Gm²/(ℏR)
+- Critical distinction: LRT predicts DP timescale + no heating
+- Falsification: m scaling or heating would falsify LRT
+
+**Evolution This Session:**
+1. Initial document (working notes)
+2. Coefficient correction (α = 6/5)
+3. Energy conservation distinction
+4. Sharpening edits (platforms, meta-summary)
+5. Methodological claim (geometry analogy)
+6. Professional paper restructure
+
+---
+
+## Interaction Count: 7
