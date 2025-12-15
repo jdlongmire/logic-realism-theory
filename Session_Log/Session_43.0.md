@@ -630,4 +630,59 @@ Three prediction papers created:
 
 ---
 
-## Interaction Count: 11
+---
+
+## Tsirelson Bound Paper: 2024-2025 Analog Extensions
+
+### Research Findings
+
+**Temporal Tsirelson Bound (TTB):**
+- Leggett-Garg inequality: K₃ ≤ 1.5 under definite dynamics
+- [Chatterjee et al. (2024)](https://arxiv.org/abs/2411.02301): TTB can be **exceeded** with superposed unitaries
+- Experimentally verified in NMR systems
+
+**Indefinite Causal Order Bounds:**
+- [Liu & Chiribella (Nature Comm 2025)](https://www.nature.com/articles/s41467-025-58508-9): Established Tsirelson-like bounds for indefinite causal order
+- Geometric picture mirrors CHSH: quantum correlations form circle between classical and algebraic max
+
+### Key Finding: Beyond-Bound Violations Only with Superposed Dynamics
+
+| Domain | Bound | Violated? | Condition |
+|--------|-------|-----------|-----------|
+| CHSH (spatial) | 2√2 | Never | - |
+| LG (definite dynamics) | 1.5 | Never | - |
+| LG (superposed dynamics) | 1.5 | **Yes** | Indefinite actualization |
+
+**LRT interpretation:** The only violations occur when actualization itself is superposed. Definite actualization enforces the bound.
+
+### Additions to Paper
+
+**New Section 5: Temporal and Causal Order Analogs**
+- §5.1: Temporal Tsirelson Bound (TTB)
+- §5.2: Beyond-TTB Violations via Superposed Dynamics
+- §5.3: Indefinite Causal Order Bounds (Liu & Chiribella 2025)
+- §5.4: LRT Interpretation of Analogs
+- §5.5: Current Data on Analogs
+
+**New Section 6.3: Where LRT Could Differ**
+- LRT-specific prediction: Decoherence should "lock in" the bound
+- Test: Superposed-unitary temporal correlations + decoherence → K₃ ≤ 1.5
+
+**New Section 8.2: How LRT Complements Information Causality**
+- IC: Operational/information-theoretic
+- LRT: Ontological/structural
+- Complementarity, not competition
+
+### Upgraded Assessment
+
+| Aspect | Before | After |
+|--------|--------|-------|
+| LRT-specific prediction | None | Potential (decoherence test in temporal domain) |
+| Experimental relevance | 2015-2023 only | 2024-2025 analog work included |
+| Relation to IC | Competition | Complementarity |
+
+**Document length:** ~424 lines (up from ~300)
+
+---
+
+## Interaction Count: 12
