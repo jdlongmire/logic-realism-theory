@@ -249,6 +249,73 @@ This integral evaluates to **α = 6/5** for a uniform sphere.
 
 **Prediction:** λ = (6/5) · Gm²/(ℏR) for uniform spherical masses
 
+### 5.5 The Methodological Claim
+
+LRT's claim is not primarily about new physics but about the **logical status** of physical structure.
+
+#### The Geometry Analogy
+
+**Euclidean geometry:**
+- NOT derived from logic alone (requires parallel postulate)
+- BUT every theorem IS logically derived from axioms
+- No one objects: "Geometry isn't logical because it assumes postulates!"
+
+**LRT has the same structure:**
+
+| Axioms (Inputs) | Theorems (Derived by Logic) |
+|----------------|---------------------------|
+| 3FLL (Identity, Non-Contradiction, Excluded Middle) | Distinguishability metric D |
+| Continuity (A3a) | Inner product ⟨·\|·⟩ via Hardy kernel |
+| Local tomography (A3c) | Complex Hilbert space |
+| Reversibility (A3b/CBP) | Unitary dynamics, Born rule |
+| Global Parsimony (A4) | No free parameters |
+| Gravity exists (G ≠ 0) | τ_BA ~ ℏR/(Gm²) |
+
+**Key distinction:**
+- "Not derived from logic alone" → TRUE (requires physics inputs like G exists)
+- "Every derived component IS derived from logic" → ALSO TRUE (every step is logical entailment)
+
+#### Standard vs. LRT Approach
+
+| Aspect | Standard (GRW/CSL) | LRT |
+|--------|-------------------|-----|
+| Method | Phenomenological fitting | Logical derivation |
+| Parameters | **Free** (λ₀ adjusted to avoid violations) | **Determined** (calculated from {G, ℏ, m, R}) |
+| Collapse rate | Fit to "avoid observable effects" | Derived from dimensional analysis + parsimony |
+| Coefficient | Arbitrary scaling allowed | Must be O(1), geometry-dependent |
+
+#### The Testable Distinction
+
+**The prediction is NOT "LRT physics vs. standard physics."**
+
+**The prediction IS "logically derived structure vs. phenomenologically fit structure."**
+
+**Falsification criteria:**
+1. If τ ∝ m⁻¹ (not m⁻²) → Dimensional analysis wrong → LRT falsified
+2. If heating observed → Energy non-conservation → Reversibility violated → LRT falsified
+3. If different materials (same m, R) need different λ → Free parameters required → LRT falsified
+4. If coefficient must be adjusted beyond geometric factors → Parsimony violated → LRT falsified
+
+**Confirmation criteria:**
+- If τ ∝ m⁻² with universal coefficient α ~ O(1) derivable from geometry
+- If no anomalous heating (energy exactly conserved)
+- If shape-dependence follows self-energy integral (spheres vs. rods differ predictably)
+
+#### Why This Matters
+
+**Critic's objection:** "You're using physics to derive physics - that's circular!"
+
+**Response:** "No. The derivation chain is:
+1. **Logic** (3FLL) - not physics, constitutive of distinguishability itself
+2. **Minimal structure** (continuity, tomography) - not specific physics, just general constraints
+3. **Observational facts** (gravity exists) - yes, this is physics input
+
+**From these, quantum structure follows by logical entailment.**
+
+The circle is broken because 3FLL are NOT 'physics' - they're conditions for distinguishability.
+
+Every arrow in the derivation chain is **logical entailment**, not empirical postulation. The physics inputs are minimal and independently motivated. The structure follows by logical necessity given these inputs."
+
 ---
 
 ## 6. LRT-Specific Predictions
@@ -590,3 +657,9 @@ This is experimentally distinguishable.
   - §8.4: Named experimental platforms with discriminant mapping
   - §9.5: Tightened critic response with back-reference to meta-summary
   - References: Added Kaltenbaek, Vinante (2017, 2020)
+- 2025-12-15: Added §5.5 "The Methodological Claim" (Session 43.0):
+  - Geometry analogy (Euclidean geometry as model)
+  - Axioms vs Theorems table
+  - Standard vs LRT approach comparison
+  - Testable distinction: "logical derivation vs phenomenological fitting"
+  - Response to circularity objection

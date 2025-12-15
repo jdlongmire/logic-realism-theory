@@ -205,4 +205,40 @@ Moved "Response to Critic" to 9.5 and added new 9.4 summarizing energy conservat
 
 ---
 
-## Interaction Count: 5
+## Fourth Revision: The Methodological Claim
+
+### Added: Section 5.5
+
+**The Key Insight:**
+- "Not derived from logic alone" → TRUE (requires physics inputs)
+- "Every derived component IS derived from logic" → ALSO TRUE (every step is logical entailment)
+
+**The Geometry Analogy:**
+- Euclidean geometry isn't "purely logical" (needs parallel postulate)
+- But every theorem IS logically derived from axioms
+- No one objects to this - it's the structure of axiomatic systems
+
+**LRT's Structure:**
+
+| Axioms (Inputs) | Theorems (Derived by Logic) |
+|----------------|---------------------------|
+| 3FLL | Distinguishability metric D |
+| Continuity | Inner product via Hardy kernel |
+| Local tomography | Complex Hilbert space |
+| Reversibility | Unitary dynamics, Born rule |
+| Parsimony | No free parameters |
+| Gravity exists | τ_BA ~ ℏR/(Gm²) |
+
+**The Testable Distinction:**
+- NOT "LRT physics vs standard physics"
+- IS "logical derivation vs phenomenological fitting"
+
+**Falsification:** If nature requires free parameters (adjustable λ), LRT wrong
+**Confirmation:** If nature permits only geometry-derived parameters, LRT confirmed
+
+**Response to Circularity Objection:**
+The circle is broken because 3FLL are NOT 'physics' - they're conditions for distinguishability itself. Every arrow is logical entailment, not empirical postulation.
+
+---
+
+## Interaction Count: 6
