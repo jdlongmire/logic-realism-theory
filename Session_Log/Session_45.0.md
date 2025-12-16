@@ -999,4 +999,32 @@ Structured argument with coherent derivation chain. No parameters fitted to know
 
 ---
 
-## Interaction Count: 21
+## Uniqueness and Circularity Analysis
+
+### Uniqueness of d = 3
+
+The decomposition B = 2^k + d² = 137 is unique for d = 3:
+- d=2: 137 - 4 = 133 (not 2^k)
+- d=3: 137 - 9 = 128 = 2^7 ✓
+- d=4: 137 - 16 = 121 (not 2^k)
+
+Only d = 3 allows information (2^k) + geometric (d²) decomposition.
+
+### Circularity Assessment
+
+**Not circular:**
+- Lagrangian form L = (1/2)x² - Bx - c·ln(x) from 3FLL
+- Structure B = 2^k + d²
+- Self-interaction c = (d+2)(1 - 1/(d(d+2)²))
+
+**Potentially circular:**
+- k = 7 from "chemistry needs ~100 states"
+- Chemistry depends on nuclear physics, which depends on α
+
+**Assessment:** This is anthropic-style reasoning. The FORM is constrained by logic, the VALUE comes from observation. Explains why α is *near* 137, not why *exactly* 137.036.
+
+**Updated:** Issue_012_Alpha_Formula.md with circularity analysis.
+
+---
+
+## Interaction Count: 22
