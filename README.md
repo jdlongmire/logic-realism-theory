@@ -113,24 +113,27 @@ theory/                          # Source markdown for all papers
 
 lean/                            # Lean 4 proof architecture (in development)
 notebooks/                       # Computational validation (in development)
-Session_Log/                     # Development history (44 sessions)
+Session_Log/                     # Development history (46 sessions)
 ```
 
 ---
 
 ## Open Issues
 
-### Gap Closure Roadmap (Session 44.0)
+### Gap Closure Roadmap (Updated Session 45.0)
 
 | Phase | Issue | Title | Status | Maturity Target |
 |-------|-------|-------|--------|-----------------|
-| 1 | 012 | Derive First Constants (α) | OPEN | Theoretical Model |
+| 1 | 012 | Derive First Constants (α) | **SUBSTANTIALLY COMPLETE** | Theoretical Model |
 | 1 | 013 | Logical Action Functional | OPEN | Theoretical Model |
 | 1 | 014 | Dimensional Optimality (3+1) | OPEN | Theoretical Model |
 | 2 | 015 | Quantum Gravity Interface | OPEN | Physical Theory |
 | 2 | 016 | Measurement Mechanism | OPEN | Physical Theory |
 | 3 | 017 | Simulate Toy Universes | OPEN | Verified Model |
 | 4 | 018 | Precision Tests (Falsification) | OPEN | Accepted Science |
+| - | 019 | Alpha Refinements | OPEN | Future Work |
+
+**Issue 012 Result**: Derived α⁻¹ = 2^(2d+1) + d² + c/α⁻¹ = 137.036 from d=3 with **8 ppb accuracy**. See [LRT_Derivation_Fine_Structure_Constant.md](theory/LRT_Derivation_Fine_Structure_Constant.md).
 
 ### Prior Issues
 
@@ -148,16 +151,17 @@ Session_Log/                     # Development history (44 sessions)
 
 ## Development History
 
-41 sessions of development (October 2025 - December 2025):
+46 sessions of development (October 2025 - December 2025):
 
 | Session | Date | Focus |
 |---------|------|-------|
+| 45.0 | 2025-12-16 | **α derivation breakthrough** (8 ppb accuracy from d=3) |
+| 44.0 | 2025-12-15 | Core paper consolidation, gap closure roadmap |
 | 41.0 | 2025-12-14 | Substack launch, 4 articles/commentaries |
 | 40.0 | 2025-12-13 | Branch merge, README update, IIS-LRT paper capture |
 | 39.0 | 2025-12-10 | Scale Law paper, 7-platform validation |
 | 38.0 | 2025-12-07 | Technical paper v3 (A+ grade target) |
 | 37.0 | 2025-12-05 | Zenodo publication, DOI updates |
-| 36.0 | 2025-12-04 | Final v2 preparation |
 | 13.0 | 2025-11-06 | First-principles derivations (~3,700 lines) |
 
 See `Session_Log/` for complete history.
