@@ -247,5 +247,41 @@ Created complete derivation chain addressing all circularity issues:
 
 ---
 
-## Interaction Count: 12
+### Task 6: External Review - Reconstruction Gap Identified
+
+Received critical feedback identifying a significant gap in the v2 derivation.
+
+**The problem:** Theorem 7.1 (Reconstruction) relies on Masanes-Müller (2011), which requires operational axioms NOT derivable from 3FLL + parsimony:
+
+| Required Axiom | Derivable from 3FLL? |
+|----------------|---------------------|
+| Tomographic locality | NO |
+| Subspace axiom | NO |
+| Composite systems | NO |
+| Finite information | NO |
+
+**Key insight from review:**
+- Discrete bits + Hamming distance → classical probability, not necessarily quantum
+- Continuity + reversibility alone don't force complex Hilbert space
+- The reconstruction theorem imports physics through undeclared axioms
+
+**Updated honest assessment:**
+
+| Derivation Step | Status |
+|-----------------|--------|
+| Sections 1-6 (3FLL → D → continuity → reversibility) | ✅ Valid from 3FLL + parsimony |
+| Section 7 (Reconstruction to inner product) | ⚠️ **Requires ~3-4 Tier 2 axioms** |
+| Sections 8-11 (Phase space → action → Lagrangian) | ✅ Valid given prior structure |
+
+**Revised status:** PARTIAL DERIVATION with reconstruction gap
+
+**Open problem:** Can the Masanes-Müller operational axioms be derived from 3FLL + parsimony? Current position: Accept as Tier 2 (like Stone's theorem, Gleason's theorem).
+
+**Documents updated:**
+- `theory/derivations/Issue_013_Logical_Action_Functional_v2.md` - Gap acknowledged
+- `theory/issues/Issue_013_Logical_Action_Functional.md` - Status revised
+
+---
+
+## Interaction Count: 13
 

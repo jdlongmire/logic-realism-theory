@@ -1,9 +1,10 @@
 # Issue 013: Derivation of the Logical Action Functional (v2)
 
-**Status:** COMPLETE DERIVATION CHAIN
+**Status:** PARTIAL DERIVATION - GAP AT RECONSTRUCTION STEP
 **Created:** 2025-12-16
 **Session:** 46.0
 **Replaces:** Issue_013_Logical_Action_Functional.md (v1 had circularity issues)
+**Updated:** 2025-12-16 - Honest assessment after external review
 
 ---
 
@@ -144,7 +145,42 @@ D(s₁, s₂) = √(1 - |⟨s₁|s₂⟩|²)
 3. Inner product induces D via the standard relation
 4. This is the Masanes-Müller reconstruction (2011). ∎
 
-**Note:** This is NOT importing QM. We derived the premises (continuity, reversibility) from 3FLL + parsimony. The reconstruction theorem then shows the ONLY consistent structure is the QM inner product.
+---
+
+### ⚠️ CRITICAL GAP IDENTIFIED (External Review)
+
+**The above theorem has a significant gap.**
+
+The actual Masanes-Müller (2011) reconstruction requires **operational axioms** beyond continuity and reversibility:
+
+| Required Axiom | Description | Derivable from 3FLL? |
+|----------------|-------------|---------------------|
+| Tomographic locality | Global states determined by local measurements | **NO** |
+| Continuous reversibility | Smooth group of reversible transformations | Partial (Theorem 6.1) |
+| Subspace axiom | Pure state structure | **NO** |
+| Composite systems | How systems combine | **NO** |
+| Finite information | Limited info per system | **NO** |
+
+**The problem:** These are operational postulates about physical systems, measurements, and composite systems - not derivable from pure logic or parsimony.
+
+**What actually follows from 3FLL + parsimony:**
+- Discrete bits + Hamming distance → **Classical probability theory**, not necessarily quantum
+- Continuity and reversibility alone don't force complex Hilbert space over real or classical alternatives
+
+**Honest assessment:** Theorem 7.1 as stated is **incomplete**. The reconstruction step imports physics through undeclared axioms.
+
+### Classification of Gap
+
+Per the LRT tier system, the Masanes-Müller prerequisites should be classified as:
+
+**Tier 2 (Established Mathematical/Operational Tools):**
+- Tomographic locality
+- Subspace axiom
+- Composite system structure
+
+These are analogous to Stone's theorem, Gleason's theorem, etc. - established results we axiomatize for practical use.
+
+**This means:** The derivation chain has ~3-4 Tier 2 axioms at the reconstruction step, not 0 external inputs.
 
 ---
 
@@ -241,21 +277,27 @@ Uniform motion in straight lines. ∎
 
 ---
 
-## 12. Complete Derivation Chain
+## 12. Derivation Chain (Honest Assessment)
 
 ```
 3FLL (primitive)
   ↓ Theorem 2.1
 Binary distinctions (bits)
   ↓ Definition 3.3
-Distinguishability metric D
+Distinguishability metric D (Hamming distance)
   ↓ Theorem 4.2 (parsimony)
 Minimum scale exists → ℏ defined
   ↓ Theorem 5.1 (parsimony)
 D is continuous
   ↓ Theorem 6.1 (parsimony)
 D-preserving transformations reversible
-  ↓ Theorem 7.1 (reconstruction)
+
+  ⚠️ GAP: Need operational axioms (Tier 2)
+  - Tomographic locality
+  - Subspace axiom
+  - Composite system structure
+
+  ↓ Theorem 7.1 (reconstruction) [REQUIRES TIER 2 AXIOMS]
 Inner product structure
   ↓ Theorem 8.1-8.2
 Hilbert space → Phase space (x, p)
@@ -271,7 +313,10 @@ Euler-Lagrange equations
 Classical mechanics
 ```
 
-**No external inputs.** Each step derives from 3FLL + parsimony.
+**Honest count:**
+- Steps 1-6: From 3FLL + parsimony (valid)
+- Step 7: Requires ~3-4 Tier 2 operational axioms (gap)
+- Steps 8-11: Standard mathematics given prior structure
 
 ---
 
@@ -299,14 +344,26 @@ Classical mechanics
 
 ---
 
-## 15. Verification
+## 15. Verification (Revised)
 
-The derivation chain has:
-- **0 external physics inputs**
-- **0 circular dependencies**
-- **0 empirical constants assumed**
+**What IS derived from 3FLL + parsimony:**
+- Binary distinctions as fundamental (Theorem 2.1) ✅
+- Distinguishability metric D (Definition 3.3) ✅
+- Minimum scale must exist (Theorem 4.2) ✅
+- Continuity of D (Theorem 5.1) ✅
+- Reversibility of D-preserving transformations (Theorem 6.1) ✅
 
-Each theorem depends only on prior theorems and 3FLL + parsimony.
+**What is NOT derived (requires Tier 2 axioms):**
+- Inner product structure (Theorem 7.1) ⚠️
+- Why quantum over classical probability ⚠️
+- Why complex over real numbers ⚠️
+- Phase space structure ⚠️
+
+**Honest assessment:**
+- **~3-4 Tier 2 axioms required** at reconstruction step
+- **0 circular dependencies** (the chain is valid given the axioms)
+- **0 empirical constants assumed** (ℏ is defined, not measured)
+- **Reconstruction gap acknowledged**
 
 ---
 
@@ -318,4 +375,19 @@ Each theorem depends only on prior theorems and 3FLL + parsimony.
 
 ---
 
-**Status:** Complete derivation chain from 3FLL to classical mechanics. Remaining gaps (mass, V(x)) are within-framework challenges.
+## 17. Open Problem
+
+**The reconstruction gap (Theorem 7.1) represents a genuine open problem:**
+
+Can the operational axioms required by Masanes-Müller (tomographic locality, subspace axiom, composite systems) be derived from 3FLL + parsimony?
+
+**Possible approaches:**
+1. Show these axioms follow from parsimony on composite systems
+2. Find alternative reconstruction that requires fewer axioms
+3. Accept them as Tier 2 (established mathematical tools, like Stone's theorem)
+
+**Current status:** Option 3 is the honest position until 1 or 2 is achieved.
+
+---
+
+**Status:** Partial derivation. Sections 1-6 valid from 3FLL + parsimony. Section 7 requires ~3-4 Tier 2 operational axioms (reconstruction prerequisites). Sections 8-11 follow given prior structure. This is a philosophical mapping with acknowledged gaps, not a complete derivation from pure logic.

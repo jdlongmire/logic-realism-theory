@@ -1,10 +1,10 @@
 # ISSUE 013: Formalize the Logical Action Functional
 
-**Status:** DERIVATION COMPLETE (v2)
+**Status:** PARTIAL DERIVATION (v2 - reconstruction gap identified)
 **Priority:** HIGH (core maturity gap)
 **Phase:** 1 - Mathematical Rigor
 **Created:** 2025-12-16
-**Updated:** 2025-12-16 (Session 46.0 - v2 complete derivation)
+**Updated:** 2025-12-16 (Session 46.0 - external review identified reconstruction gap)
 **Source:** Gap closure analysis (Session 44.0)
 
 ---
@@ -295,12 +295,51 @@ Euler-Lagrange → Classical mechanics
 | 3+1 dimensions | OPEN | Issue 014 |
 | Relativistic action | OPEN | Future work |
 
-### Success Criteria (Revised)
+### Success Criteria (Revised After External Review)
 
 | Level | Criterion | Status |
 |-------|-----------|--------|
 | Minimal | Qualitative mapping | ✅ v1 |
-| Moderate | Free particle derived | ✅ v1 |
-| **Strong** | **Complete chain from 3FLL** | **✅ v2** |
+| Moderate | Free particle derived (given structure) | ✅ v1, v2 |
+| Strong | Complete chain from 3FLL | ⚠️ **GAP AT RECONSTRUCTION** |
 
-**Issue 013 Status: DERIVATION COMPLETE**
+---
+
+## 13. External Review Findings (Session 46.0)
+
+### Critical Gap Identified
+
+External review correctly identified that **Theorem 7.1 (Reconstruction)** requires operational axioms NOT derivable from 3FLL + parsimony:
+
+| Required Axiom | Description | Derivable from 3FLL? |
+|----------------|-------------|---------------------|
+| Tomographic locality | Global states from local measurements | **NO** |
+| Subspace axiom | Pure state structure | **NO** |
+| Composite systems | How systems combine | **NO** |
+| Finite information | Limited info per system | **NO** |
+
+### What IS Valid
+
+- Sections 1-6 (3FLL → bits → D → minimum scale → continuity → reversibility): **Valid from 3FLL + parsimony**
+- Sections 8-11 (phase space → action → Lagrangian → least action): **Valid given prior structure**
+
+### What Requires Tier 2 Axioms
+
+- Section 7 (Reconstruction): Requires ~3-4 operational axioms as **Tier 2 inputs**
+- Why quantum over classical probability: Not derived
+- Why complex over real numbers: Not derived
+
+### Honest Assessment
+
+The derivation is a **philosophical mapping** showing consistency between LRT and physics, not a complete derivation from pure logic. The reconstruction step imports physics through Tier 2 axioms, analogous to how we use Stone's theorem, Gleason's theorem, etc.
+
+### Open Problem
+
+Can the Masanes-Müller operational axioms be derived from 3FLL + parsimony?
+
+**Possible approaches:**
+1. Show axioms follow from parsimony on composite systems
+2. Find alternative reconstruction requiring fewer axioms
+3. Accept as Tier 2 (current position)
+
+**Issue 013 Status: PARTIAL DERIVATION with reconstruction gap**
