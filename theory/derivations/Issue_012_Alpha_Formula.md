@@ -148,6 +148,65 @@ This is an **interpretation within LRT's framework**, connected to QED structure
 
 ---
 
+## Lagrangian Formulation
+
+The self-referential structure of the α formula has a natural variational interpretation.
+
+### The Lagrangian
+
+The equation x = 137 + c/x (where x = α⁻¹, c = 74/15) is the **Euler-Lagrange equation** for:
+
+```
+L(x) = (1/2)x² - 137x - c·ln(x)
+```
+
+**Verification:**
+```
+dL/dx = x - 137 - c/x = 0
+→ x² - 137x - c = 0  (multiply by x)
+→ x = 137 + c/x  ✓
+```
+
+### The Three Terms
+
+| Term | Form | Interpretation |
+|------|------|----------------|
+| Quadratic | (1/2)x² | Cost of maintaining resolution capacity |
+| Linear | -137x | Benefit from base structure (information + geometry) |
+| Logarithmic | -c·ln(x) | Self-referential/entropy term |
+
+### Why ln(x) Encodes Self-Reference
+
+The derivative d/dx[-c·ln(x)] = -c/x **depends on x itself**.
+
+The "pull" from this term changes as x changes. This is the mathematical signature of self-reference: the resolution capacity affects its own determination.
+
+### Information-Theoretic Character
+
+The ln(x) term has Shannon entropy form:
+- For uniform distribution over n states: H = ln(n)
+- If x represents distinguishable states, ln(x) is their information content
+
+The Lagrangian says: **Minimize cost while maintaining resolution, where the entropy contribution is self-referential.**
+
+### LRT Connection
+
+This Lagrangian structure aligns with LRT's framework:
+
+| LRT Principle | Lagrangian Analog |
+|---------------|-------------------|
+| Logic (3FLL) | Constrains allowed forms |
+| Information | ln(x) term (entropy) |
+| Least Action | Minimization of L |
+
+The self-referential fixed point emerges from variational optimization - consistent with LRT's claim that physical constants arise from Global Parsimony.
+
+### Honest Caveat
+
+This shows the self-referential equation **can** be expressed variationally. It does not prove this Lagrangian is **the** correct physical description. The connection is suggestive, not demonstrated.
+
+---
+
 ## Honest Assessment
 
 ### What this is

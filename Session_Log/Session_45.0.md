@@ -909,4 +909,53 @@ Stripped out philosophical speculation. The core observation is simple:
 
 ---
 
-## Interaction Count: 19
+## Lagrangian Formulation Exploration
+
+User insight: "LRT framing is logic + information + least action - seems like we could get to a Lagrangian"
+
+### Key Finding
+
+The self-referential equation x = 137 + c/x (where x = α⁻¹) is the **Euler-Lagrange equation** for:
+
+```
+L(x) = (1/2)x² - 137x - c·ln(x)
+```
+
+Where c = 74/15 ≈ 4.933
+
+### Verification
+
+```
+dL/dx = x - 137 - c/x = 0
+→ x² - 137x - c = 0  (multiply by x)
+→ x = 137 + c/x  ✓
+```
+
+### Physical Interpretation
+
+| Term | Form | Meaning |
+|------|------|---------|
+| Quadratic | (1/2)x² | Cost of resolution capacity |
+| Linear | -137x | Base structure benefit |
+| Logarithmic | -c·ln(x) | Self-referential/entropy term |
+
+### Why ln(x) Encodes Self-Reference
+
+The derivative d/dx[-c·ln(x)] = -c/x depends on x itself. This is the mathematical signature of self-reference: the resolution capacity affects its own determination.
+
+### LRT Connection
+
+The Lagrangian aligns with LRT's framework:
+- Logic (3FLL) → constrains allowed forms
+- Information → ln(x) term (entropy)
+- Least Action → minimization of L
+
+**Updated:** `Issue_012_Alpha_Formula.md` with new "Lagrangian Formulation" section.
+
+### Honest Assessment
+
+This shows the equation CAN be expressed variationally. It does not prove this Lagrangian IS the correct physical description. The connection is suggestive, not demonstrated.
+
+---
+
+## Interaction Count: 20
