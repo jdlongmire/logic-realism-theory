@@ -1200,4 +1200,39 @@ Error:    92 ppm
 
 ---
 
-## Interaction Count: 28
+## Deriving d = 3
+
+Explored why spatial dimension must be 3.
+
+### The Argument
+
+```
+Complexity (LRT):   C(d) = 2^(2d+1) >= 100  →  d >= 3
+Stability (physics): Atoms/orbits stable    →  d <= 3
+─────────────────────────────────────────────────────
+Intersection:                                  d = 3
+```
+
+### Phase Space Capacity
+
+| d | 2^(2d+1) | Sufficient? | Stable? | Viable? |
+|---|----------|-------------|---------|---------|
+| 1 | 8 | No | Yes | No |
+| 2 | 32 | No | Yes | No |
+| **3** | **128** | **Yes** | **Yes** | **YES** |
+| 4 | 512 | Yes | No | No |
+
+### The Full Chain
+
+```
+3FLL + Complexity → d >= 3
+Physics (stability) → d <= 3
+────────────────────────────
+d = 3 → α⁻¹ = 137.036
+```
+
+**Created:** Issue_012_Dimension_Derivation.md
+
+---
+
+## Interaction Count: 31
