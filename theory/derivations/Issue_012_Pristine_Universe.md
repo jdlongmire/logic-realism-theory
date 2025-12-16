@@ -194,6 +194,25 @@ The 0.036 "excess" is:
 
 **The pristine universe isn't more perfect - it's incomplete.**
 
-Our universe, with its tiny 0.026% overhead, is the *self-consistent* universe - the one where the resolution process includes itself in the accounting.
+Our universe, with its tiny 0.026% overhead, is the *self-consistent* universe - the one where the resolution equation accounts for its own coupling strength.
 
-That's not corruption. That's *self-awareness at the level of fundamental constants*.
+That's not corruption. That's *mathematical self-reference* - a fixed-point equation, not consciousness.
+
+---
+
+## Important Clarification
+
+The self-referential structure of the equation:
+```
+α⁻¹ = 137 + (d+2)/α⁻¹ - 1/(15α⁻¹)
+```
+
+Is a **mathematical property**, not a claim about cosmic awareness.
+
+| Overclaim | Accurate Claim |
+|-----------|----------------|
+| "Universe is self-aware" | Equation is self-referential |
+| "Cosmos knows itself" | Resolution cost depends on resolution |
+| "Consciousness at fundamental level" | Self-consistency requirement |
+
+The 0.036 is the cost of mathematical self-consistency - a fixed-point solution, nothing more.

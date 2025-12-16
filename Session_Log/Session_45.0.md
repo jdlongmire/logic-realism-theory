@@ -844,9 +844,9 @@ The 0.036 is the **accounting overhead of self-reference**:
 
 Our α⁻¹ = 137.036 is the **minimum self-consistent solution**.
 
-### The Poetic Version
+### The Mathematical Point
 
-The universe cannot resolve information without accounting for the resolution process itself. The 0.036 is the irreducible overhead of a self-aware cosmos.
+The resolution equation must account for its own coupling strength. The 0.036 is the irreducible overhead of this self-referential structure - a fixed-point solution, not cosmic consciousness.
 
 **New document:** `theory/derivations/Issue_012_Pristine_Universe.md`
 

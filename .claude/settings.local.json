@@ -42,7 +42,9 @@
       "Bash(powershell -command \"(Get-Item Scale_Law_Boolean_Actualization.pdf).Length / 1KB\")",
       "WebFetch(domain:pmc.ncbi.nlm.nih.gov)",
       "Bash(cat:*)",
-      "Bash(wc:*)"
+      "Bash(wc:*)",
+      "WebFetch(domain:www.academia.edu)",
+      "Bash(python3:*)"
     ],
     "deny": [],
     "ask": []
