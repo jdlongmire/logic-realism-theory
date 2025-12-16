@@ -147,5 +147,38 @@ Updated README.md to reflect Session 45.0 progress:
 
 ---
 
-## Interaction Count: 4
+### Foundational Clarification
+
+**Key alignment point established:**
+
+3FLL are the *truly primitive* system. Everything else - including what we call "Tier 1 axioms" (I, I_infinite), ℏ, phase space structure, physical constants - must be *derived from* or *presupposed by* 3FLL.
+
+**Implications:**
+1. Tier 1 axioms in Lean are explicitations for the theorem prover, not genuine additions
+2. ℏ is the *name* for the minimum specification cost, not an empirical input
+3. "Gaps" in derivations are work remaining, not places needing new axioms
+4. We cannot import physics facts - everything must trace back to 3FLL + parsimony
+
+**Hierarchy:**
+```
+3FLL (primitive, self-grounding)
+  ↓ presuppose
+I + I_infinite (domain of discourse, no arbitrary bound)
+  ↓ enforce
+Distinguishability → Parsimony → Minimum resolution
+  ↓ structure
+Phase space → Action → Dynamics
+  ↓ constrain
+d=3, α=1/137, mass, V(x), etc.
+```
+
+**Gaps identified that need tighter derivation:**
+- Continuity (discrete → continuous limit)
+- d=3 without using "physical stability" as input
+- Mass origin
+- Potential energy V(x) origin
+
+---
+
+## Interaction Count: 7
 
