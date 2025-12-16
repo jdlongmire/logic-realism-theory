@@ -815,4 +815,41 @@ Uniqueness: Only 1/(d(d+2)) gives sub-100 ppb among simple forms.
 
 ---
 
-## Interaction Count: 15
+## Philosophical Insight: The Pristine Universe
+
+User insight: The 0.036 "excess" is not corruption but the fingerprint of self-reference.
+
+### Key Reframing
+
+| Not | But |
+|-----|-----|
+| A flaw | A feature |
+| Price of time | Cost of self-reference |
+| What makes dynamics | What makes consistency |
+| Corruption | Completion |
+
+### The Deep Point
+
+A "pristine" universe (α⁻¹ = 137 exactly) would be equally dynamic - time flows, entropy increases, life emerges. The 0.036 isn't what *enables* dynamics.
+
+The 0.036 is the **accounting overhead of self-reference**:
+- Resolution requires measurement
+- Measurement requires interaction
+- Interaction has its own resolution cost
+- This creates: α⁻¹ = 137 + (something)/α⁻¹
+
+### Why the Pristine Limit May Be Unphysical
+
+α⁻¹ = 137 exactly would describe a universe that resolves information *without interacting* - which violates quantum mechanics.
+
+Our α⁻¹ = 137.036 is the **minimum self-consistent solution**.
+
+### The Poetic Version
+
+The universe cannot resolve information without accounting for the resolution process itself. The 0.036 is the irreducible overhead of a self-aware cosmos.
+
+**New document:** `theory/derivations/Issue_012_Pristine_Universe.md`
+
+---
+
+## Interaction Count: 16
