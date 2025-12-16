@@ -438,4 +438,35 @@ The derivation provides a numerical formula matching α to 0.012%. The framework
 
 ---
 
-## Interaction Count: 8
+---
+
+## Fractal Analysis Exploration
+
+Explored fractal and self-similarity connections to α derivation. Key findings:
+
+**Established Physics:**
+1. QFT has inherent self-similar structure - renormalization group is mathematically fractal
+2. Spacetime dimension flows 4 → 2 from IR to UV (quantum gravity/asymptotic safety)
+3. At RG fixed points, physics is exactly scale-invariant (fractal state)
+
+**Key Reframing:**
+The LRT formula can be written as:
+```
+α⁻¹ = 2^7 × (1 + 2/9π) = 2^(7 + ε)
+where ε = log₂(1 + 2/9π) ≈ 0.0984
+```
+
+This suggests α encodes a **fractal bit-depth** of ~7.1, with fractional part from geometric corrections.
+
+**Connections Found:**
+- [Self-Similar Loop Amplitudes (arXiv:2502.19300)](https://arxiv.org/abs/2502.19300) - renormalized amplitudes recursively nest
+- [Fractal Spacetime (JHEP)](https://link.springer.com/article/10.1007/JHEP12(2011)012) - spectral dimension d_s = 2 at UV
+- Golden angle 360/φ² = 137.508 is 0.34% off from α⁻¹ (likely coincidence)
+
+**New Document:** `theory/derivations/Issue_012_Fractal_Analysis.md`
+
+**Assessment:** Fractal interpretation adds conceptual depth but doesn't resolve circularity concerns. The 7-level hierarchy is suggestive but not derived from first principles.
+
+---
+
+## Interaction Count: 9
