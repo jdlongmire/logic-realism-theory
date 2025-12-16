@@ -507,4 +507,41 @@ Both approaches give similar accuracy from different starting points - suggests 
 
 ---
 
-## Interaction Count: 10
+---
+
+## α as Resolution Threshold
+
+User insight: α is "where the information waveform resolves"
+
+**Core reframe:** α isn't just a coupling constant - it's the **resolution constant** where continuous quantum information resolves into discrete classical bits.
+
+**Nyquist analogy:**
+- Signal processing: sample at ≥2× bandwidth to resolve continuous → discrete
+- Quantum measurement: couple at strength α to resolve wave → particle
+- Both have a threshold with overhead margin
+
+**The formula reinterpreted:**
+```
+α⁻¹ = 2^B × (1 + resolution_overhead)
+    = 128 × 1.07
+    = 137
+
+Where:
+- 2^B = raw bit capacity (discrete "bandwidth")
+- 7% = margin for clean resolution (like >2× Nyquist)
+```
+
+**Physical meaning:**
+- α sets the rate of Boolean Actualization
+- Too weak → states don't resolve (no chemistry)
+- Too strong → over-resolution (atoms unstable)
+- Just right → clean wave→bit transition enabling chemistry
+
+**The deep insight:**
+α is the "sampling rate of reality" - the unique threshold where quantum wavefunction resolves into distinguishable classical information with minimum overhead.
+
+**New document:** `theory/derivations/Issue_012_Resolution_Threshold.md`
+
+---
+
+## Interaction Count: 11
