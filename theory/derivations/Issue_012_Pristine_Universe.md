@@ -1,9 +1,26 @@
 # The Pristine Universe: What the 0.036 Excess Means
 
-**Status:** Philosophical reflection
+**Status:** Philosophical reflection (NOT physics derivation)
 **Created:** 2025-12-16
 **Session:** 45.0
-**Insight:** The deviation from 137 is not corruption but the fingerprint of self-reference
+**Nature:** Speculative interpretation, not established theory
+
+---
+
+## Important Disclaimer
+
+This document is a **philosophical reflection**, not a scientific derivation. The framework presented:
+
+- Is NOT standard QED or any established physics
+- Does NOT derive α from first principles in any rigorous sense
+- Makes NO testable predictions that distinguish it from numerology
+- Should be read as **interpretive speculation**, not physics
+
+The numerical coincidences (128 + 9 ≈ 137) are intriguing but unsubstantiated. In standard physics, α is a free parameter whose value is measured, not derived.
+
+---
+
+**Core idea:** The deviation from 137 might represent self-referential structure in the resolution equation
 
 ---
 

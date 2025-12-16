@@ -1,9 +1,27 @@
 # Issue 012: Strengthened Derivation of the Fine Structure Constant
 
-**Status:** Refined after constructive feedback
+**Status:** Speculative framework (NOT established physics)
 **Created:** 2025-12-16
 **Session:** 45.0
-**Key result:** 3.6 ppm derived; screening term now has principled justification
+**Nature:** Numerological pattern with physical interpretation
+
+---
+
+## Important Disclaimer
+
+This document presents a **speculative framework**, not a rigorous physics derivation:
+
+- The formula is NOT standard QED or any established theory
+- The components (128, 9, d+2, 1/15) have plausible interpretations but are NOT derived from quantum field theory
+- In standard physics, α is a free parameter - its value is measured, not derived
+- This work fits the tradition of numerological speculation about 1/137 (Eddington, etc.)
+- No testable predictions distinguish this from coincidence
+
+**Honest status:** Intriguing numerical pattern with suggestive physical interpretation, but NOT a derivation in any rigorous sense.
+
+---
+
+**Key result:** Formula matches α⁻¹ to 8 ppb, but components lack rigorous justification
 
 ---
 
