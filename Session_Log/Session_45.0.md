@@ -68,10 +68,107 @@ From `theory/issues/Issue_012_Derive_First_Constants.md`:
 
 ### Step 1: Literature Review
 
-*What approaches exist for deriving α from first principles?*
+**Historical Status:** No accepted derivation of α ≈ 1/137 from first principles exists. Feynman: "one of the greatest damn mysteries of physics."
 
-[To be filled in...]
+**Recent Attempts (2024-2025):**
+
+| Approach | Result | Method |
+|----------|--------|--------|
+| Kosmoplex Theory | α⁻¹ = 137.035577 (0.0003% error) | Octonionic structure + phase corrections |
+| Electron structure | 137.036 | Ratio of oscillation/gyratory frequencies |
+| Strand tangle model | 1/126 ± 30% | First Reidemeister move |
+| Lorentz tensor field | In development | EBT framework |
+
+**Anthropic Constraints (Tegmark, Barrow):**
+- α must be in narrow range for atomic stability
+- Constraint: α < ~0.1 for stable atoms
+- Carbon resonance requires specific α range
+- Stellar nucleosynthesis constrains α ± 4%
+
+**Information-Theoretic Approaches:**
+- Bekenstein-Hawking: S_BH = A/4l_P² (entropy ↔ area)
+- Landauer: E_min = k_B T ln 2 (bit erasure cost)
+- Kolmogorov complexity: Universe as simplest complex system?
+
+**Key Sources:**
+- [Wikipedia: Fine-structure constant](https://en.wikipedia.org/wiki/Fine-structure_constant)
+- [arXiv:1411.4673 - Historical overview](https://arxiv.org/abs/1411.4673)
+- [Kosmoplex preprint](https://www.preprints.org/manuscript/202508.1294/v1)
+- [Anthropic principle](https://en.wikipedia.org/wiki/Anthropic_principle)
+- [Barnes (2012) - Fine-tuning review](https://arxiv.org/pdf/1112.4647)
 
 ---
 
-## Interaction Count: 1
+### Step 2: Current LRT Framework Analysis
+
+**What LRT defines (Section 20 of core paper):**
+
+```
+S_spec(k) = log₂(|k - k₀|/δk)    # specification cost (bits)
+C = log₂(N_stable)                # structural complexity
+Optimization: min(S_total) s.t. C ≥ C_min
+```
+
+**Gaps identified:**
+
+| Component | Status | Problem |
+|-----------|--------|---------|
+| k₀ (natural value) | Undefined for α | What IS the natural value of α? |
+| δk (precision) | Planck-scale claimed | How to apply to dimensionless α? |
+| N_stable(α) | Not calculated | What structures depend on α? |
+| C_min | Not determined | What is minimum viable complexity? |
+
+**The core challenge:** α is dimensionless. Unlike Λ which has natural scale (Planck density), α has no obvious "natural value" k₀.
+
+---
+
+### Step 3: Formalizing S_spec for α
+
+**Approaches explored:**
+
+| Approach | Formula | Problem |
+|----------|---------|---------|
+| Order-unity | k₀ = 1 | Why is 1 natural for dimensionless? |
+| Algorithmic | K(α⁻¹) | Doesn't select 137 over 128 |
+| Maximum entropy | -log P(α) | Needs justified prior |
+| Structural encoding | α = f(structure) | Promising but undeveloped |
+
+**Key Insight:** Total cost optimization
+
+```
+S_total(α) = S_spec(α) + λ × S_structure(α)
+```
+
+**Simple Model Attempt:**
+```
+S_total(n) = log₂(n) + λn²  where n = α⁻¹
+
+dS/dn = 0 → n = √(1/(2λ ln 2))
+For n = 137: λ ≈ 3.8 × 10⁻⁵
+```
+
+**Problem:** Second derivative check shows this is a MAXIMUM, not minimum!
+
+**Revised Approach:** C(α) constraint is primary; S_spec selects within viable range.
+
+**Draft document:** `theory/derivations/Issue_012_Alpha_Derivation_DRAFT.md`
+
+---
+
+### Key Finding
+
+The simple S_spec + S_structure model is INSUFFICIENT.
+
+**α may be determined by:**
+1. **Physical constraints** (atomic stability, chemistry, fusion) - carve viable region
+2. **Constraint intersection** - may uniquely determine α
+3. **S_spec** - selects simplest value if range remains
+
+**Next steps:**
+- Model C(α) explicitly (structural complexity vs α)
+- Identify all physics constraints on α
+- Check if constraints alone select α ≈ 1/137
+
+---
+
+## Interaction Count: 3
