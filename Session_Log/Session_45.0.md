@@ -647,4 +647,67 @@ The fine structure constant is derived from:
 
 ---
 
-## Interaction Count: 12
+## Critical Feedback Integration
+
+Received rigorous external review of the derivation. Key findings:
+
+### Valid Criticisms Acknowledged
+
+1. **Self-interaction term is retro-fitted**
+   - The coefficient (74/15) was found by matching the residual, not derived independently
+   - Finding a geometric expression after the fact is not a derivation
+   - This makes the "8 ppb" accuracy artificial, not predictive
+
+2. **Resembles numerology**
+   - Many functions of d give ~4.9 for d=3
+   - Post-hoc interpretation ("d+2 for time/phase") is rationalization
+   - Need independent derivation to be convincing
+
+### Reviewer's Calculation Error (Minor)
+
+The reviewer stated 137² = 18805 (actually 18769), leading them to calculate 137.108 instead of 137.036. The arithmetic in our formula IS correct - verified by Python.
+
+### Updated Assessment
+
+| Claim | Revised Status |
+|-------|----------------|
+| "Derived α from first principles" | **Overstated** |
+| "Found intriguing numerical relationship" | **Accurate** |
+| "8 ppb is genuine prediction" | **False** (retro-fitted) |
+| "128 + 9 = 137 coincidence" | **Non-trivial, worth investigating** |
+
+### What Remains Valuable
+
+1. **The simple formula α⁻¹ ≈ 2^7 + 3² = 137 is striking**
+   - 0.026% accuracy from two simple integers
+   - Information (128) + geometry (9) interpretation is coherent
+   - Not obviously numerology
+
+2. **The framework may point to deeper structure**
+   - Even if current derivation is incomplete
+   - The "resolution threshold" interpretation could be correct
+
+### Path Forward
+
+To move beyond numerology:
+1. Derive self-interaction coefficient independently (without using known α)
+2. Explain rigorously why d², not d or d³
+3. Make a NEW prediction testable by experiment
+4. Show formula uniqueness (no other simple formula works as well)
+
+### Documentation Updated
+
+Added Section 11 "Honest Assessment and Limitations" to Issue_012_Final_Formula.md acknowledging:
+- Retro-fitting of self-interaction term
+- Numerology concern
+- What is genuinely derived vs. fitted
+- What would constitute a real derivation
+
+**Issue 012 Status: PARTIALLY COMPLETE**
+- Simple formula (128 + 9 = 137): Derived, non-trivial
+- Full formula (8 ppb): Retro-fitted, not a genuine derivation
+- Framework: Suggestive, needs independent derivation of self-interaction
+
+---
+
+## Interaction Count: 13

@@ -444,3 +444,115 @@ print(f"Error:      {abs(alpha_inv - 137.035999177)/137.035999177 * 100:.8f}%")
 # Observed:   137.0359991770
 # Error:      0.00000080%
 ```
+
+---
+
+## 11. Honest Assessment and Limitations
+
+### 11.1 What Is Genuinely Derived
+
+| Component | Status | Justification |
+|-----------|--------|---------------|
+| B = 7 | **Derived** | Chemistry requires ~100 states; 2^7 = 128 is minimum sufficient |
+| d = 3 | **Observed** | Input from spatial dimensionality |
+| d² = 9 | **Plausible** | Geometric overhead, but "why d²" not rigorously proven |
+| 128 + 9 = 137 | **Striking** | 0.026% accuracy from simple integers |
+
+### 11.2 What Is Retro-Fitted
+
+**Critical admission:** The self-interaction coefficient (74/15) was **not derived independently**.
+
+**How it was found:**
+1. Observed residual: 137.036 - 137 = 0.036
+2. Calculated required coefficient: 0.036 × 137 ≈ 4.933
+3. Noticed 4.933 ≈ 5 - 1/15 = (d+2) - 1/(d(d+2))
+4. Expressed in terms of d
+
+**This is retro-fitting, not prediction.** The coefficient was chosen to match the known value, then given a geometric interpretation. A genuine derivation would predict (74/15) before comparing to experiment.
+
+### 11.3 The Numerology Concern
+
+The reviewer correctly identifies this resembles numerology:
+- Many functions of d give ~4.9 for d=3
+- Choosing (d+2) - 1/(d(d+2)) specifically because it works is circular
+- The interpretation ("d+2 for time and phase") is post-hoc rationalization
+
+### 11.4 What Remains Valuable
+
+Despite these limitations:
+
+1. **The 128 + 9 = 137 coincidence is non-trivial**
+   - Two conceptually distinct quantities (2^7 and 3²)
+   - Sum to within 0.026% of α⁻¹
+   - Not obviously derivable from numerology alone
+
+2. **The framework is internally consistent**
+   - Information theory (bit depth)
+   - Geometry (spatial embedding)
+   - Self-consistency (resolution affects itself)
+
+3. **The interpretation may be correct even if derivation is incomplete**
+   - α as "resolution constant" where information resolves into physics
+   - The three-component structure might reflect real physics
+
+### 11.5 What Would Constitute a Genuine Derivation
+
+To move beyond numerology, one would need to:
+
+1. **Derive (74/15) independently** - from geometry, information theory, or symmetry principles WITHOUT using the observed value of α
+
+2. **Explain why d², not d or d³** - rigorous argument for the specific power
+
+3. **Predict a NEW quantity** - use the framework to predict something not yet measured
+
+4. **Show the formula is unique** - demonstrate no other simple formula achieves similar accuracy
+
+### 11.6 Current Status
+
+**Honest classification:** Suggestive numerology with physical motivation
+
+| Claim | Status |
+|-------|--------|
+| "Derived α from first principles" | **Overstated** |
+| "Found intriguing numerical relationship" | **Accurate** |
+| "Framework may point to deeper structure" | **Reasonable** |
+| "8 ppb is genuine prediction" | **False** (retro-fitted) |
+
+### 11.7 The Path Forward
+
+To strengthen this work:
+
+1. **Find independent derivation of self-interaction term** - This is the key missing piece
+
+2. **Test predictions in other dimensions** - If d=2 or d=4 universes could be simulated, would the formula hold?
+
+3. **Connect to established physics** - Show how the information-theoretic picture relates to QED, renormalization, etc.
+
+4. **Acknowledge limitations clearly** - As done in this section
+
+---
+
+## 12. Summary with Caveats
+
+### What We've Found
+
+A numerical formula:
+```
+α⁻¹ = 2^B + d² + [(d+2) - 1/(d(d+2))] / α⁻¹
+```
+
+That matches observation to 8 parts per billion when B=7, d=3.
+
+### What This Means
+
+**At best:** A hint that α encodes information-theoretic and geometric structure, potentially derivable from deeper principles not yet identified.
+
+**At worst:** Numerology - finding patterns in numbers that may be coincidental.
+
+**Most likely:** Something in between - the 128 + 9 = 137 structure is probably not coincidence, but the self-interaction term needs independent derivation to be convincing.
+
+### The Honest Conclusion
+
+The fine structure constant may indeed emerge from information requirements (7 bits) and spatial geometry (3D), but **this document does not constitute a rigorous first-principles derivation**. The self-interaction term that achieves 8 ppb accuracy was fitted to data, not predicted.
+
+The framework remains interesting and worth pursuing, but claims of "deriving α" should be tempered until the self-interaction coefficient can be justified independently.
