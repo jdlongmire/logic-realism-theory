@@ -100,5 +100,52 @@ Updated README.md to reflect Session 45.0 progress:
 
 ---
 
-## Interaction Count: 3
+### Task 2: Issue 013 - Logical Action Functional
+
+**Goal:** Show that LRT "change cost" maps to physical action S = ∫ L dt.
+
+**Key Results:**
+
+1. **Dimensional Bridge Established:**
+   - 1 Planck cell (area ℏ in phase space) = 1 bit of distinguishability
+   - Conversion: S_physical = ℏ × S_logical
+   - Uses Mandelstam-Tamm relation: ℏ × (rate of D change) = Energy
+
+2. **Free Particle Derived:**
+   ```
+   S_logical = (1/ℏ) ∫ p dx  (count of Planck cells traversed)
+   Legendre transform → L = pv - H = ½mv²
+   δS = 0 → d²x/dt² = 0 (uniform motion) ✓
+   ```
+
+3. **Derivation Chain:**
+   ```
+   3FLL → Distinguishability D → Planck scale (δx·δp = ℏ)
+       → Phase space structure → S = ∫ p dx
+       → Legendre transform → S = ∫ L dt
+       → Global Parsimony → δS = 0
+   ```
+
+**Honest Assessment:**
+
+| Strength | Limitation |
+|----------|------------|
+| Consistent mapping exists | Uses QM structure (Planck cell) |
+| Correct physical result | Not fully derived from pure logic |
+| No new free parameters | V(x) and m still unexplained |
+
+**Remaining Gaps:**
+- Potential energy V(x) - where does it come from logically?
+- Mass m - what determines particle mass?
+- Relativistic action - Lorentz-invariant generalization?
+
+**Documents:**
+- `theory/derivations/Issue_013_Logical_Action_Functional.md` - Full derivation (~200 lines)
+- `theory/issues/Issue_013_Logical_Action_Functional.md` - Updated issue file
+
+**Issue 013 Status:** FRAMEWORK ESTABLISHED (Moderate success level achieved)
+
+---
+
+## Interaction Count: 4
 

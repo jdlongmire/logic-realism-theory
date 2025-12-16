@@ -1,9 +1,10 @@
 # ISSUE 013: Formalize the Logical Action Functional
 
-**Status:** OPEN
+**Status:** FRAMEWORK ESTABLISHED
 **Priority:** HIGH (core maturity gap)
 **Phase:** 1 - Mathematical Rigor
 **Created:** 2025-12-16
+**Updated:** 2025-12-16 (Session 46.0)
 **Source:** Gap closure analysis (Session 44.0)
 
 ---
@@ -29,14 +30,15 @@ From the core paper (Sections 8-9):
 - Parsimony selects minimum action paths
 - Conservation laws emerge from action minimization
 
-### 2.2 The Gap
+### 2.2 The Gap (Updated Session 46.0)
 
 | Concept | Logical Definition | Physical Equivalent | Bridge Status |
 |---------|-------------------|---------------------|---------------|
-| Action | Σ(distinction changes) | S = ∫ L dt | Claimed, not proven |
-| Lagrangian | ? | L = T - V | No mapping |
+| Action | Σ(distinction changes) | S = ∫ L dt | **MAPPED** (phase space cells) |
+| Lagrangian | Phase space rate | L = T - V | **DERIVED** (free particle) |
 | Time | Sequential instantiation | Physical seconds | Interpretive |
-| Energy | ? | Joules | No derivation |
+| Energy | ℏ × (dD/dt) | Joules | **CONNECTED** (Mandelstam-Tamm) |
+| Conversion | 1 Planck cell | ℏ | **ESTABLISHED** |
 
 ---
 
@@ -132,18 +134,29 @@ Must derive:
 
 ### 7.1 Immediate Actions
 
-- [ ] Review literature: discrete → continuous action limits
-- [ ] Formalize "distinction change" as measurable quantity
-- [ ] Propose explicit ℏ-based conversion factor
-- [ ] Attempt free particle derivation
+- [x] Review literature: discrete → continuous action limits
+- [x] Formalize "distinction change" as measurable quantity
+- [x] Propose explicit ℏ-based conversion factor
+- [x] Attempt free particle derivation
+
+**See:** `theory/derivations/Issue_013_Logical_Action_Functional.md`
 
 ### 7.2 Success Criteria
 
-| Level | Criterion | Maturity |
-|-------|-----------|----------|
-| Minimal | Qualitative mapping with correct structure | Framework |
-| Moderate | Free particle S derived from D | Model |
-| Strong | General Lagrangian derived from logical action | Theory |
+| Level | Criterion | Maturity | Status |
+|-------|-----------|----------|--------|
+| Minimal | Qualitative mapping with correct structure | Framework | **ACHIEVED** |
+| Moderate | Free particle S derived from D | Model | **ACHIEVED** |
+| Strong | General Lagrangian derived from logical action | Theory | OPEN |
+
+### 7.3 Remaining Gaps
+
+| Gap | Description | Priority |
+|-----|-------------|----------|
+| Potential energy V(x) | Where does V come from logically? | HIGH |
+| Mass m | What determines particle mass? | MEDIUM |
+| Relativistic action | Lorentz-invariant generalization | MEDIUM |
+| Field theory | S = ∫ ℒ d⁴x extension | LOW |
 
 ---
 
@@ -168,3 +181,37 @@ Must derive:
 | Date | Update |
 |------|--------|
 | 2025-12-16 | Issue created from gap closure analysis |
+| 2025-12-16 | Session 46.0: Framework established. Free particle derived. See `theory/derivations/Issue_013_Logical_Action_Functional.md` |
+
+---
+
+## 11. Session 46.0 Summary
+
+### Key Results
+
+1. **Dimensional Bridge Established:**
+   - 1 Planck cell (area ℏ in phase space) = 1 bit of distinguishability
+   - S_physical = ℏ × S_logical
+
+2. **Free Particle Derived:**
+   - S_logical = (1/ℏ) ∫ p dx (phase space area in Planck cells)
+   - Legendre transform → L = pv - H = ½mv²
+   - δS = 0 → uniform motion
+
+3. **Derivation Chain:**
+   ```
+   3FLL → Distinguishability D → Planck scale (δx·δp = ℏ)
+       → Phase space structure → S = ∫ p dx
+       → Legendre transform → S = ∫ L dt
+       → Global Parsimony → δS = 0
+   ```
+
+### Honest Assessment
+
+| Strength | Limitation |
+|----------|------------|
+| Consistent mapping exists | Uses QM structure (Planck cell) |
+| Correct physical result | Not fully derived from pure logic |
+| No new free parameters | V(x) and m still unexplained |
+
+**Status:** Framework is sound but uses quantum mechanics as bridge. A purely logical derivation would require deriving ℏ from 3FLL (connects to Issue 012).
