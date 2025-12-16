@@ -178,7 +178,17 @@ d=3, α=1/137, mass, V(x), etc.
 - Mass origin
 - Potential energy V(x) origin
 
+### Task 3: Update CLAUDE.md with Foundational Principle
+
+Added new section "Foundational Principle: 3FLL as Truly Primitive" to CLAUDE.md:
+- Documents the derivation hierarchy (3FLL → I → Distinguishability → Physics)
+- Clarifies Tier 1 axioms are explicitations, not additions
+- States ℏ is derived, not empirical
+- Establishes rule: no importing physics facts
+
+This ensures future sessions maintain the correct foundational understanding.
+
 ---
 
-## Interaction Count: 7
+## Interaction Count: 8
 
