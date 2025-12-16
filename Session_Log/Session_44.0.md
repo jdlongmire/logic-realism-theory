@@ -148,11 +148,11 @@ Key achievements:
 
 ## Current Project State (End of Session)
 
-**Core Paper:** `theory/logic_realism_theory_foundation.md` - Complete unified framework
+**Core Paper:** `theory/2025-12-16_logic_realism_theory_foundation.md` - Complete unified framework
 
 **Archived:**
-- `theory/archive/Logic_Realism_Theory_Main-v2.md`
-- `theory/archive/Logic_Realism_Theory_Technical-v3.md`
+- `theory/archive/2025-12-16/Logic_Realism_Theory_Main-v2.md`
+- `theory/archive/2025-12-16/Logic_Realism_Theory_Technical-v3.md`
 
 **Prediction Papers:** (referenced, not merged)
 - `LRT_Prediction_Collapse.md`

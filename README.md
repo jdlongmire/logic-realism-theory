@@ -22,7 +22,7 @@ The Three Fundamental Logical Laws (3FLL) - Identity, Non-Contradiction, Exclude
 
 **Derivation chain**: 3FLL -> Distinguishability metric D -> Inner product -> MM1-MM5 -> Complex QM
 
-**Core Paper**: [logic_realism_theory_foundation.md](theory/logic_realism_theory_foundation.md) - Complete unified framework merging philosophical foundations, technical derivations, and physical applications.
+**Core Paper**: [2025-12-16_logic_realism_theory_foundation.md](theory/2025-12-16_logic_realism_theory_foundation.md) - Complete unified framework merging philosophical foundations, technical derivations, and physical applications.
 
 **Assessment**: See [Logic Realism Theory: An Internal Clear-eyed Assessment](theory/LRT_Internal_Assessment.md) for an honest evaluation of what the theory has established, what remains open, and where it stands as a research program.
 
@@ -98,7 +98,7 @@ See `theory/supplementary/IIS_LRT_Three_Stage_Framework.md` for details.
 
 ```
 theory/                          # Source markdown for all papers
-├── logic_realism_theory_foundation.md      # CORE PAPER: Complete unified framework
+├── 2025-12-16_logic_realism_theory_foundation.md  # CORE PAPER: Complete unified framework
 ├── Logic_Realism_Theory_Philosophy-v2.md   # Philosophy paper source
 ├── Logic_Realism_Theory_QFT_Gravity_Extension-v2.md
 ├── LRT_Saturated_Entanglement_Interface_Criterion.md
