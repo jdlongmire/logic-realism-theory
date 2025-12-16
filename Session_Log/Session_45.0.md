@@ -883,4 +883,30 @@ The formula matches observation well, but in standard physics α is a **free par
 
 ---
 
-## Interaction Count: 18
+## Cleanup: Focus on Numerical Pattern
+
+Stripped out philosophical speculation. The core observation is simple:
+
+```
+2^7 + 3² = 137
+137 + ~0.036 = α⁻¹
+```
+
+**Archived to `theory/derivations/archive/Issue_012_exploration/`:**
+- Pristine Universe (philosophical)
+- Convergent Constraints
+- Resolution Threshold
+- Fractal Analysis
+- Strengthened/Refined/Final Formula docs
+- Original DRAFT
+
+**New clean document:** `Issue_012_Alpha_Formula.md`
+- Just the numerical pattern
+- Physical interpretations (plausible, not proven)
+- Honest assessment (numerology with physical flavor)
+
+**Issue 012 Final Status:** Interesting numerical coincidence. Nothing more claimed.
+
+---
+
+## Interaction Count: 19
