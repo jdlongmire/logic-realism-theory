@@ -120,6 +120,20 @@ Session_Log/                     # Development history (44 sessions)
 
 ## Open Issues
 
+### Gap Closure Roadmap (Session 44.0)
+
+| Phase | Issue | Title | Status | Maturity Target |
+|-------|-------|-------|--------|-----------------|
+| 1 | 012 | Derive First Constants (α) | OPEN | Theoretical Model |
+| 1 | 013 | Logical Action Functional | OPEN | Theoretical Model |
+| 1 | 014 | Dimensional Optimality (3+1) | OPEN | Theoretical Model |
+| 2 | 015 | Quantum Gravity Interface | OPEN | Physical Theory |
+| 2 | 016 | Measurement Mechanism | OPEN | Physical Theory |
+| 3 | 017 | Simulate Toy Universes | OPEN | Verified Model |
+| 4 | 018 | Precision Tests (Falsification) | OPEN | Accepted Science |
+
+### Prior Issues
+
 | Issue | Title | Status | Summary |
 |-------|-------|--------|---------|
 | 011 | Null Hypothesis Development | OPEN | Articulate H₀ vs H₁, Tier 1/2 falsification criteria |
