@@ -410,4 +410,32 @@ B = 7
 
 ---
 
-## Interaction Count: 7
+---
+
+## Sanity Check Results
+
+Ran SANITY_CHECK_PROTOCOL against Issue 012 derivation. Key findings:
+
+**Issues Identified:**
+1. Potential circularity: QED coefficient 2/(3π) appears in formulas containing α
+2. This is postdiction (matching known value), not prediction
+3. Uses external physics inputs (QED, chemistry), not purely LRT
+4. "SUBSTANTIALLY RESOLVED" language was overclaiming
+
+**Corrections Applied:**
+1. Added Section 17.4 "Important Caveats" with circularity discussion
+2. Changed status from "SUBSTANTIALLY RESOLVED" to "Framework Established with Numerical Success"
+3. Updated Section 17.3 status table to show partial/cautionary status
+4. Toned down Section 15.16 from "Gap 2 Closed" to "Interpretation Proposed"
+5. Added explicit postdiction vs prediction clarification
+
+**Final Assessment:**
+The derivation provides a numerical formula matching α to 0.012%. The framework is valuable but must be honestly labeled as:
+- Suggestive framework, not rigorous proof
+- Postdiction, not prediction
+- Uses external physics inputs
+- Has potential circularity concern (QED coefficient)
+
+---
+
+## Interaction Count: 8

@@ -1202,13 +1202,13 @@ The coefficient 2/(3π) appears throughout QED:
              = 137.053
 ```
 
-### 15.16 Summary: Gap 2 Closed
+### 15.16 Summary: Gap 2 - Interpretation Proposed
 
-**Result:** 2/(9π) = 2/(3π) / 3 comes from:
+**Result:** 2/(9π) = 2/(3π) / 3 interpreted as:
 - **2/(3π)**: Fundamental QED vacuum polarization coefficient
 - **1/3**: Division by spatial dimensions (isotropic screening)
 
-**The correction is NOT ad hoc** - it's the QED screening correction at the boundary between discrete (Planck) and continuous (low-energy) regimes.
+**The correction has physical motivation** - it corresponds to the QED screening correction at the boundary between discrete (Planck) and continuous (low-energy) regimes. However, see Section 17.4 for circularity concerns regarding the use of QED coefficients.
 
 **General formula:**
 ```
@@ -1358,17 +1358,43 @@ B = 7 (minimum for stable molecules)
 
 ### 17.3 Status of Issue 012
 
-| Aspect | Status |
-|--------|--------|
-| Framework | Complete ✓ |
-| B = 7 derivation | Solid ✓ |
-| 2/(9π) derivation | Justified ✓ |
-| Numerical accuracy | Excellent (0.012%) ✓ |
-| Physical interpretation | Clear ✓ |
-| First-principles chain | Established ✓ |
+| Aspect | Status | Notes |
+|--------|--------|-------|
+| Framework | Complete ✓ | Derivation chain established |
+| B = 7 derivation | Solid ✓ | From well-established chemistry constraints |
+| 2/(9π) interpretation | Proposed ⚠️ | Physical motivation; circularity concern |
+| Numerical accuracy | 0.012% ✓ | Matches observation (postdiction) |
+| Physical interpretation | Suggestive ⚠️ | Not rigorous proof |
+| First-principles chain | Partial ⚠️ | Uses external physics inputs |
 
-**Issue 012: SUBSTANTIALLY RESOLVED**
+**Issue 012: Framework Established with Numerical Success**
 
 ---
 
-*This derivation represents the first successful derivation of α from LRT foundations with sub-0.1% accuracy.*
+### 17.4 Important Caveats
+
+**Circularity Concern:**
+The 2/(3π) coefficient comes from QED vacuum polarization formulas that contain α itself (e.g., dα/d(ln μ) ~ 2α²/(3π)). This creates a potential circularity: we use QED results that depend on α to derive α.
+
+**Counter-argument:** The coefficient 2/(3π) is a *structural* feature of QED (arising from spin-1/2 fermion loop topology), not a *numerical* value dependent on α's specific value. The coefficient would be 2/(3π) regardless of α's value. However, this argument needs more careful justification.
+
+**Postdiction, Not Prediction:**
+This derivation matches the *known* value of α. We did not predict α = 1/137.053 before knowing the experimental value. This is postdiction (explaining known data), not prediction (forecasting unknown data). A genuine test would require predicting something new.
+
+**External Physics Inputs:**
+The derivation uses:
+- Chemistry constraints from standard physics (Born-Oppenheimer, atomic stability)
+- QED vacuum polarization coefficient 2/(3π)
+- d = 3 spatial dimensions as input
+
+This is not purely from LRT axioms alone. LRT provides the framework (Boolean Actuality → discrete bits → minimum encoding), but physical constraints come from established physics.
+
+**Future Work Required:**
+A complete derivation from first principles would require:
+1. Deriving the 2/(3π) coefficient without invoking α-dependent QED
+2. Deriving d = 3 from LRT (Issue 014)
+3. Showing the chemistry constraints follow from LRT's complexity criterion
+
+---
+
+*This framework provides a numerical formula matching α to 0.012% accuracy. The physical interpretation connecting 7-bit encoding to chemistry constraints is suggestive but not fully rigorous. The QED coefficient circularity remains an open question.*
