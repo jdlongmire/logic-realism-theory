@@ -171,4 +171,42 @@ The simple S_spec + S_structure model is INSUFFICIENT.
 
 ---
 
-## Interaction Count: 3
+### Step 4: Information-Theoretic Approach (LRT Native)
+
+**Core insight:** Each EM interaction exchanges ~7.1 bits of information.
+
+```
+P(photon exchange) ~ α
+I = -log₂(α) = log₂(137) ≈ 7.1 bits
+```
+
+**The 7-bit hypothesis:**
+- 2⁷ = 128 ≈ 137
+- EM interactions encode ~7 bits per vertex
+- α⁻¹ = 128 + corrections → 137
+
+**Why 7 bits?**
+- Minimum encoding for rich atomic structure
+- Parsimony selects smallest B where C(2⁻ᴮ) ≥ C_min
+- B = 7 is that threshold
+
+**Binary expansion of 137:**
+```
+137 = 10001001₂ = 2⁷ + 2³ + 2⁰ = 128 + 8 + 1
+```
+
+**Correction terms (128 → 137):**
+- Phase space: log₂(2π) ≈ 2.65 bits
+- Spin degrees: 2 bits (electron + photon)
+- Dimensional: 3D embedding
+
+**Testable implications:**
+1. Other couplings should encode integer bits (α_s ≈ 1 → 0 bits, α_W ≈ 1/30 → 5 bits)
+2. Running of α toward 1/128 at high energy?
+3. Mass ratios: m_p/m_e ≈ 1836 ≈ 2^10.8 (~11 bits)
+
+**Assessment:** More aligned with LRT's "It from Bit" foundation, but still speculative. The 7% correction (128 → 137) needs rigorous derivation.
+
+---
+
+## Interaction Count: 4

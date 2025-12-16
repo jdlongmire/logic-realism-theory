@@ -326,4 +326,211 @@ Perhaps multiple constraints determine α:
 
 ---
 
+## 10. Information-Theoretic Approach (LRT Native)
+
+LRT's core is "It from Bit" - reality emerges from binary distinctions. Let's derive α from this foundation.
+
+### 10.1 What α Represents Information-Theoretically
+
+In natural units (ℏ = c = 4πε₀ = 1):
+```
+α = e² ≈ 1/137
+```
+
+So α is the **square of fundamental charge** in natural units.
+
+**Information interpretation:**
+- Electric charge = ability to exchange photons
+- Each photon exchange = information transfer
+- α governs the **probability amplitude** of this exchange
+- α² = probability of single photon exchange
+
+### 10.2 Bits Per Interaction
+
+**Key question:** How many bits of information are exchanged in an EM interaction?
+
+For a scattering process with n photon exchanges:
+```
+P(n) ~ α^n (probability of n exchanges)
+I(n) = -log₂(P(n)) = -n log₂(α) ≈ 7.1n bits
+```
+
+**Each photon exchange carries ~7.1 bits of information!**
+
+This is because α⁻¹ ≈ 137, and log₂(137) ≈ 7.1.
+
+### 10.3 The 7-Bit Structure
+
+**Observation:** 7 bits is special in information theory:
+- 2⁷ = 128 ≈ 137
+- 7 bits can encode ~128-137 distinct states
+- ASCII uses 7 bits (128 characters)
+
+**Hypothesis:** α⁻¹ ≈ 137 because EM interactions encode **7 bits** of information.
+
+### 10.4 Why 7 Bits?
+
+From LRT's Ontic Booleanity:
+- Reality is fundamentally binary (Boolean)
+- Information comes in discrete bits
+- Physical interactions must encode integer bits
+
+**Constraint:** Interaction strength must correspond to integer bit encoding.
+
+If each fundamental EM vertex encodes exactly 7 bits:
+```
+α = 2^(-7) = 1/128   (if exactly 7 bits)
+```
+
+But observed α⁻¹ = 137.036, not 128.
+
+**The ~7% discrepancy:** 137/128 ≈ 1.07
+
+### 10.5 Correction Terms
+
+The deviation from 2⁷ might come from:
+
+1. **Phase space corrections:**
+   - Continuous rotational degrees of freedom
+   - log₂(2π) ≈ 2.65 bits for angle specification
+
+2. **Spin structure:**
+   - Electron spin (1 bit: up/down)
+   - Photon polarization (1 bit: L/R)
+
+3. **Dimensional embedding:**
+   - 3 spatial dimensions
+   - Each adds geometric information
+
+**Possible formula:**
+```
+α⁻¹ = 2⁷ × (1 + δ)
+
+where δ accounts for continuous/geometric corrections
+```
+
+For δ ≈ 0.07: α⁻¹ ≈ 137
+
+### 10.6 Information Channel Capacity
+
+**Alternative approach:** α determines EM channel capacity.
+
+Shannon channel capacity:
+```
+C = B log₂(1 + S/N)
+```
+
+For EM interactions:
+- B = bandwidth (related to energy scale)
+- S/N = signal-to-noise (related to α)
+
+**If α optimizes information transfer:**
+- Too small α → weak signal, low capacity
+- Too large α → too much noise (vacuum fluctuations), low capacity
+- Optimal α → maximum channel capacity
+
+### 10.7 Holographic Connection
+
+From Bekenstein-Hawking:
+```
+S_BH = A/(4l_P²) bits
+```
+
+The factor of 4 in the denominator:
+- 4 = 2² (2 bits worth)
+- Suggests fundamental 2-bit structure at Planck scale
+
+**Connection to α:**
+```
+α = e²/(4πε₀ℏc)
+```
+
+The 4π in the denominator may relate to the same geometric/information structure.
+
+### 10.8 LRT Derivation Attempt
+
+**From first principles:**
+
+1. **Boolean Actuality requires discrete information**
+   - Interactions encode integer bits (approximately)
+
+2. **EM is the simplest gauge interaction**
+   - U(1) gauge group (simplest: just phase)
+   - Minimal information content
+
+3. **Minimum non-trivial encoding:**
+   - 1 bit = too few states for rich structure
+   - 7 bits = 128 states ≈ sufficient for atomic structure
+   - 8 bits = 256 states (overkill? higher action cost?)
+
+4. **Parsimony selects 7 bits:**
+   ```
+   α⁻¹ ≈ 2⁷ = 128 (base)
+   + geometric corrections ≈ 9
+   = 137
+   ```
+
+### 10.9 Testable Implications
+
+If α encodes 7 bits of information:
+
+1. **Other coupling constants should encode integer bits:**
+   - Strong coupling α_s ≈ 1 → encodes ~0 bits at high energy
+   - Weak coupling α_W ≈ 1/30 → encodes ~5 bits
+
+2. **Mass ratios might follow similar pattern:**
+   - m_p/m_e ≈ 1836 ≈ 2^10.8 → ~11 bits
+   - But 1836 ≈ 6π⁵ (more mysterious)
+
+3. **Running of α:**
+   - At higher energies, α increases (runs toward 1/128?)
+   - May approach exact 2⁻⁷ at some scale
+
+### 10.10 Open Questions
+
+1. **Why 7 specifically?** What determines the bit depth?
+
+2. **What are the correction terms?** Can we derive the ~9 beyond 128?
+
+3. **Is this circular?** Are we just numerology with 2⁷ ≈ 137?
+
+4. **Connection to other constants?** Do they follow bit patterns?
+
+---
+
+## 11. Synthesis: Information + Constraints
+
+Combining the constraint approach (Section 7) with information theory (Section 10):
+
+**Model:**
+```
+α⁻¹ = 2^B × f(constraints)
+
+Where:
+- B = fundamental bit encoding (≈ 7)
+- f(constraints) = geometric/physical corrections (≈ 1.07)
+```
+
+**Constraints determine f:**
+- Atomic stability: f < f_max
+- Chemistry: f > f_min
+- Stellar fusion: f in specific range
+
+**Information determines B:**
+- Parsimony selects minimum B for sufficient complexity
+- B = 7 is minimum for rich atomic structure
+
+**Final formula (speculative):**
+```
+α⁻¹ = 128 + 8 + 1 + corrections
+     = 2⁷ + 2³ + 2⁰ + ...
+     = 137.036...
+```
+
+The binary expansion: 137 = 10001001₂ = 128 + 8 + 1
+
+**This is suggestive but not yet a derivation.**
+
+---
+
 *Draft - Work in Progress*
