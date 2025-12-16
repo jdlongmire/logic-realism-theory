@@ -1173,4 +1173,31 @@ Physical meaning: 15 = dim(SU(4)) = dim(SO(4,2) conformal group)
 
 ---
 
-## Interaction Count: 27
+## Extension: Muon-Electron Mass Ratio
+
+Gemini proposed extending Issue 012 to the muon mass ratio:
+
+```
+m_μ/m_e = (d/2)α⁻¹ + c/4
+        = 205.554 + 1.233
+        = 206.787
+
+Observed: 206.768
+Error:    92 ppm
+```
+
+### Assessment
+
+| Component | Status |
+|-----------|--------|
+| c = 74/15 | Derived (Issue 012) |
+| (d/2)α⁻¹ = Nambu base | Empirical (1952) |
+| Factor of 4 (spinors) | Assumed, not derived |
+
+**Status:** Extension, not independent derivation. Uses Issue 012's c but relies on empirical Nambu relation.
+
+**Created:** Issue_012_Mass_Ratio.md
+
+---
+
+## Interaction Count: 28
