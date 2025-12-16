@@ -82,6 +82,39 @@ This file provides essential guidance for Claude Code working in this repository
 - Core thesis (A = L(I)) is non-negotiable unless proven logically impossible
 - Exhaust solutions before escalating to user
 
+### Foundational Principle: 3FLL as Truly Primitive ⚠️ CRITICAL
+
+**The Three Fundamental Laws of Logic (3FLL) are the primitive system from which everything else derives.**
+
+This is not just a claim - it is the foundational architecture of LRT:
+
+```
+3FLL (primitive, self-grounding)
+  ↓ presuppose
+I + I_infinite (domain of discourse, no arbitrary bound)
+  ↓ enforce
+Distinguishability → Parsimony → Minimum resolution (ℏ)
+  ↓ structure
+Phase space → Action → Dynamics
+  ↓ constrain
+d=3, α=1/137, mass, V(x), all physics
+```
+
+**Key implications:**
+
+1. **Tier 1 axioms are explicitations, not additions** - `I : Type*` and `I_infinite` in Lean are what 3FLL presuppose to be meaningful, not independent axioms
+
+2. **ℏ is derived, not empirical** - The Planck constant is the *name* for the minimum specification cost that 3FLL + parsimony necessitate
+
+3. **"Gaps" are derivation work, not new axioms** - When something isn't yet derived (mass, V(x), etc.), the task is to find the derivation chain back to 3FLL, not to add assumptions
+
+4. **No importing physics facts** - Everything must trace back to 3FLL + parsimony. Using "physical stability" or empirical facts as inputs violates the foundational architecture
+
+**When working on derivations:**
+- Always ask: "Does this trace back to 3FLL?"
+- If using external facts, flag them as gaps to be closed
+- The goal is a complete derivation chain, not a patchwork of assumptions
+
 ### Program Auditor
 - Run before ANY claims about completion status
 - Stop using "complete" without verification
