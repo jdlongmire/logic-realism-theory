@@ -1110,4 +1110,21 @@ For d = 3: α⁻¹ = 137.036 (8 ppb match)
 
 ---
 
-## Interaction Count: 25
+## Final Document: Clean Derivation
+
+Rewrote Issue_012_Alpha_Formula.md as a clean derivation document:
+
+1. **The Result** - Formula and match (8 ppb)
+2. **The Derivation** - Six clear steps
+3. **The Complete Formula** - All terms explained
+4. **Why d = 3** - Uniqueness proof
+5. **Connection to LRT** - Interpretation
+6. **The Lagrangian** - Variational structure
+7. **What This Achieves** - Honest assessment
+8. **Verification** - Python code
+
+**Key claim:** α⁻¹ = 2^(2d+1) + d² + c/α⁻¹ is a derivation from d, not numerology.
+
+---
+
+## Interaction Count: 26
