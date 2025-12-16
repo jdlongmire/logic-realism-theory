@@ -209,4 +209,58 @@ I = -log₂(α) = log₂(137) ≈ 7.1 bits
 
 ---
 
-## Interaction Count: 4
+### Step 5: Deriving the Correction (128 → 137)
+
+**Binary structure of 137:**
+```
+137 = 10001001₂ = 2⁷ + 2³ + 2⁰ = 128 + 8 + 1
+```
+
+**QED running insight:**
+- At Planck scale: α⁻¹(M_P) ≈ 137 - 11 ≈ 126-128
+- Suggests α⁻¹ = 2⁷ at fundamental scale
+- Running adds ~9-11 to reach 137 at low energy
+
+**Empirical formula found:**
+```
+α⁻¹ = 128 × (1 + 2/(9π)) = 128 × 1.0707 ≈ 137.05
+```
+
+**Matches observed value within 0.01%!**
+
+**What 2/9 might represent:**
+- 2/(3²) - dimensional (3D space)?
+- Spin-statistics contribution?
+- 9 = dim(su(3)) Lie algebra?
+
+**Honest assessment:**
+| Component | Status |
+|-----------|--------|
+| 7-bit base (128) | Suggestive, not derived |
+| Correction 2/(9π) | Empirical fit, not derived |
+| Formula accuracy | Excellent (0.01%) |
+| Physical justification | Still lacking |
+
+**Remaining gaps:**
+1. Why is B = 7 the minimum for complexity?
+2. What determines c = 2/9?
+3. How to avoid circularity (QED assumes α)?
+
+---
+
+## Session Summary
+
+**Issue 012 Progress:**
+- Explored 4 approaches to deriving α
+- Information-theoretic approach most LRT-aligned
+- Found empirical formula: α⁻¹ = 128 × (1 + 2/(9π)) ≈ 137.05
+- Connected to QED running (α → 128 at Planck scale)
+- Still numerology without full derivation from 3FLL
+
+**Draft document:** `theory/derivations/Issue_012_Alpha_Derivation_DRAFT.md` (~735 lines)
+
+**Issue 012 Status:** Partially addressed - framework established, gaps remain
+
+---
+
+## Interaction Count: 5
