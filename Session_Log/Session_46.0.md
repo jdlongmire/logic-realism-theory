@@ -763,5 +763,37 @@ Professional tone maintained - acknowledges mathematical legitimacy while noting
 
 ---
 
-## Interaction Count: 35
+### Task 23: Fraktur Notation for Formal Objects
+
+Updated Section 2.7 and 3.6 to use Fraktur characters:
+- **𝔄** (Actualization set)
+- **𝔏** (Logic constraint operator)
+- **𝔍** (Information space)
+
+Follows mathematical convention for distinguishing formal structures.
+
+---
+
+### Task 24: Create LRT Formal Core Document
+
+Created `theory/LRT_Formal_Core.md` - tightest possible framing of LRT:
+
+1. **Central claim:** 𝔄 = 𝔏(𝔍)
+2. **3FLL definitions:** L₁, L₂, L₃
+3. **Formal definitions:** 𝔍, 𝔏, 𝔄 precisely stated
+4. **Theorem-Conjecture decomposition:**
+   - Theorem 4.1: 𝔄 ⊆ 𝔏(𝔍) [proved]
+   - Conjecture 4.1: 𝔏(𝔍) ⊆ 𝔄 [open]
+5. **Co-constitutive thesis:** 𝔏 and 𝔍 jointly constitute 𝔄
+6. **Tier system:** Compressed but complete
+7. **Empirical status:** Falsifiability, evidence, refutation conditions
+8. **Scope:** Physical reality only
+9. **Contrasts:** MWI, paraconsistent, QBism
+10. **Summary table**
+
+~250 lines. Technical reference document for the formal core.
+
+---
+
+## Interaction Count: 37
 
