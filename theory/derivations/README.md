@@ -111,6 +111,21 @@ This tracking shows where features like Hilbert space structure, linearity, or d
 - **Non-circularity:** Dependency traces required
 - **Tier labeling:** Mark which tier each input comes from
 
+### Leaked Assumptions Section (Required)
+
+Each derivation MUST include a "Leaked Assumptions" section flagging any implicit dependencies:
+
+```markdown
+## Leaked Assumptions
+
+| Step | Implicit Dependency | Tier | Resolution |
+|------|---------------------|------|------------|
+| Theorem 7.1 | Hilbert space separability | Tier 2 | Accepted (MM reconstruction) |
+| Step 4 | Continuous time parameter | Tier 1? | Needs explicit derivation |
+```
+
+**Purpose:** If a derivation step relies on a property (e.g., of Hilbert space) not explicitly in Tier 2 presuppositions, flag it immediately. This maintains deductive integrity and prevents pseudo-derivation.
+
 ---
 
 ## Quality Standards

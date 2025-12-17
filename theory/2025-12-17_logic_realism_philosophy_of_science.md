@@ -208,6 +208,21 @@ Wheeler's "it from bit," Rovelli's relational QM, and various "physics from info
 
 ---
 
+## 4.3 Deductive Risk Assessment
+
+A rigorous methodology requires honest assessment of where derivations are vulnerable:
+
+| Component | Risk Level | Analysis |
+|-----------|------------|----------|
+| Tier 1 Assumptions (I, I_infinite) | **Moderate** | Are these truly *required* for logic, or just for our version of physics? This is the primary philosophical pivot point. |
+| Muon/Electron Ratio (92 ppm) | **Higher** | The 92 ppm accuracy suggests missing second-order corrections. Is this correction a new logic constraint or a Tier 3 physical detail? |
+| Dimension d=3 | **Critical** | Must verify no circularity: d=3 must be strictly upstream of α. (Verified: d depends on complexity + stability, not α.) |
+| Stability Constraint | **Moderate** | Uses Tier 3 physics (Ehrenfest stability). A fully logic-first derivation would need to derive stability from 3FLL. |
+
+**The "Leaked Assumptions" discipline:** Each derivation file must include explicit tracking of implicit dependencies. If a step relies on a Hilbert space property not in the Tier 2 presupposition list, flag it immediately. This prevents pseudo-derivation.
+
+---
+
 ## 5. Implications and Open Questions
 
 ### 5.1 For Philosophy of Science

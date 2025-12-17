@@ -383,5 +383,50 @@ Created new paper: `theory/2025-12-17_logic_realism_philosophy_of_science.md`
 
 ---
 
-## Interaction Count: 20
+### Task 11: Incorporate External Feedback - Deductive Risk Assessment
+
+Received detailed external feedback validating the Tier System approach while identifying specific risks.
+
+**Feedback Summary:**
+
+*Strengths validated:*
+- Tier System prevents "pseudo-derivation" trap
+- Presupposition Tracking is "most valuable asset"
+- α derivation (8 ppb) moves LRT from "metaphysics" to "predictive physics"
+- Action functional derivation is "Holy Grail" using MM as Tier 2
+
+*Risks identified:*
+
+| Component | Risk Level | Status |
+|-----------|------------|--------|
+| Tier 1 Assumptions | Moderate | Philosophical pivot point |
+| Muon/Electron (92 ppm) | Higher | Missing second-order correction? |
+| d=3 Circularity | Critical | **VERIFIED: NOT CIRCULAR** |
+| Stability Constraint | Moderate | Tier 3 physics input |
+
+**Updates made:**
+
+1. **`theory/derivations/README.md`** - Added "Leaked Assumptions Section (Required)" format standard
+
+2. **`theory/derivations/Issue_012_Dimension_Derivation.md`** - Added:
+   - Circularity Check section confirming d=3 → α is one-directional
+   - Leaked Assumptions table
+
+3. **`theory/derivations/Issue_013_Logical_Action_Functional_v2.md`** - Added:
+   - Section 13.1 Leaked Assumptions table
+   - Key vulnerability identified (MM reconstruction presuppositions)
+
+4. **`theory/2025-12-17_logic_realism_philosophy_of_science.md`** - Added:
+   - Section 4.3 Deductive Risk Assessment table
+   - "Leaked Assumptions" discipline explained
+
+**Key finding:** d=3 derivation is NOT circular. Chain is strictly:
+```
+Complexity + Stability → d=3 → α
+```
+α does not appear in the derivation of d.
+
+---
+
+## Interaction Count: 21
 

@@ -157,7 +157,7 @@ d = 3 → α⁻¹ = 137.036
 - Connection to phase space (2d+1 parameters)
 
 ### From Physics (Not LRT)
-- Upper bound d <= 3 from stability
+- Upper bound d <= 3 from stability (Tier 3 input)
 
 ### Partially Anthropic
 - C_min ~ 100 comes from observed chemistry/biology
@@ -166,6 +166,40 @@ d = 3 → α⁻¹ = 137.036
 ### Status
 
 **Constrained derivation.** d = 3 is the unique dimension satisfying both information capacity and physical stability. The argument combines LRT (complexity) with standard physics (stability).
+
+---
+
+## Circularity Check (Critical)
+
+**Question:** Does the derivation of d=3 depend on α, creating circularity with the α derivation?
+
+**Answer: NO** - The derivation chain is strictly one-directional:
+
+```
+Complexity threshold (Tier 1/LRT) ─┐
+                                   ├──→ d = 3 ──→ α⁻¹ = 137.036
+Stability constraint (Tier 3)    ─┘
+```
+
+| Parameter | Depends On | Used To Derive |
+|-----------|------------|----------------|
+| d = 3 | Complexity, Stability | α |
+| α | d = 3 | (downstream only) |
+
+**α does NOT appear in the derivation of d.** The dimension is fixed by the intersection of complexity (d ≥ 3) and stability (d ≤ 3) constraints, neither of which involves α.
+
+---
+
+## Leaked Assumptions
+
+| Step | Implicit Dependency | Tier | Resolution |
+|------|---------------------|------|------------|
+| Phase space (2d+1) | Position/momentum duality | Tier 2 | Via Hilbert space → Fourier |
+| Stability d ≤ 3 | Inverse-square force laws | Tier 3 | Empirical physics input |
+| C_min ~ 100 | Observed chemistry | Tier 3 | Anthropic bound |
+| Parsimony | Minimize d | Tier 1 | LRT principle |
+
+**Key vulnerability:** The stability constraint is a Tier 3 (physics) input. A fully logic-first derivation would need to derive stability from 3FLL.
 
 ---
 

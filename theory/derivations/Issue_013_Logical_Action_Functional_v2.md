@@ -325,6 +325,21 @@ Classical mechanics
 
 ---
 
+## 13.1 Leaked Assumptions
+
+| Step | Implicit Dependency | Tier | Resolution |
+|------|---------------------|------|------------|
+| Theorem 7.1 | Tomographic locality | Tier 2 | MM reconstruction presupposition |
+| Theorem 7.1 | Subspace axiom | Tier 2 | MM reconstruction presupposition |
+| Theorem 8.2 | Separable Hilbert space | Tier 2 | Standard QM assumption |
+| Theorem 8.2 | Fourier transform existence | Tier 2 | Mathematical (L² functions) |
+| Definition 8.1 | Phase space symplectic structure | Tier 2 | From Hilbert space |
+| Theorem 10.1 | Legendre transform invertibility | Math | Convexity assumed |
+
+**Key vulnerability:** The bridge from discrete bits to continuous Hilbert space (Theorem 7.1) carries the heaviest presupposition load. The MM reconstruction requires operational axioms that are methodologically legitimate but not derived from 3FLL.
+
+---
+
 ## 14. What v2 Fixes
 
 | v1 Problem | v2 Solution |
