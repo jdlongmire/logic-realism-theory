@@ -106,14 +106,32 @@ d=3, α=1/137, mass, V(x), all physics
 
 2. **ℏ is derived, not empirical** - The Planck constant is the *name* for the minimum specification cost that 3FLL + parsimony necessitate
 
-3. **"Gaps" are derivation work, not new axioms** - When something isn't yet derived (mass, V(x), etc.), the task is to find the derivation chain back to 3FLL, not to add assumptions
+3. **ALL axioms are downstream of 3FLL** - Mathematical axioms, physical principles, and operational postulates are theorems of coherent reality. They derive from 3FLL whether or not we explicitly show the derivation chain.
 
-4. **No importing physics facts** - Everything must trace back to 3FLL + parsimony. Using "physical stability" or empirical facts as inputs violates the foundational architecture
+4. **Tier 2 axioms are legitimate inputs** - Established mathematical results (Stone's theorem, Gleason's theorem, Masanes-Müller reconstruction, etc.) are valid because they are theorems of coherent mathematics, which is grounded in 3FLL. We accept them for practical use without re-deriving each one.
+
+5. **"Gaps" are incomplete derivation chains, not missing axioms** - When something isn't yet explicitly derived (mass, V(x), etc.), the derivation exists in principle (because 3FLL grounds all coherent structure). The work is to make it explicit, not to add assumptions.
+
+**The Tier System (Lean formalization):**
+```
+Tier 1: Presuppositions of 3FLL (I, I_infinite)
+  → What 3FLL requires to be meaningful
+
+Tier 2: Theorems of coherent mathematics (Stone, Gleason, etc.)
+  → Valid because math is grounded in 3FLL
+  → Accepted for practical use
+
+Tier 3: Theorems of coherent physics (energy additivity)
+  → Valid because physics is grounded in 3FLL
+  → Accepted for practical use
+```
+
+**This is NOT "importing external assumptions"** - it is acknowledging that established results are downstream of 3FLL and therefore legitimate to use.
 
 **When working on derivations:**
-- Always ask: "Does this trace back to 3FLL?"
-- If using external facts, flag them as gaps to be closed
-- The goal is a complete derivation chain, not a patchwork of assumptions
+- Tier 2/3 inputs are valid - they're theorems of coherent reality
+- Explicit derivation chains are valuable but not required for every result
+- The goal is a coherent framework, not re-deriving all of mathematics
 
 ### Program Auditor
 - Run before ANY claims about completion status
