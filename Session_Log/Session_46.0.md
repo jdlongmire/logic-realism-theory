@@ -428,5 +428,41 @@ Complexity + Stability → d=3 → α
 
 ---
 
-## Interaction Count: 21
+### Task 12: Philosophy of Science Paper - Full Draft
+
+Expanded `theory/2025-12-17_logic_realism_philosophy_of_science.md` to full journal article (~6,800 words).
+
+**Additions:**
+- Complete abstract with keywords
+- All sections fully written with argument development
+- Harvard-style citations throughout (Author Year format)
+- 20 verified academic references
+- Appendix A: Formal Statement of the Tier System
+- Appendix B: Presupposition Tracking Tables
+
+**Key References Added:**
+
+| Category | Sources |
+|----------|---------|
+| Logical Empiricism | Carnap 1956, Nagel 1961, Hempel 1965 |
+| Underdetermination | Quine 1951, Duhem 1954 |
+| Relativized A Priori | Friedman 2001 |
+| Quantum Reconstruction | Hardy 2001, Masanes & Müller 2011, Chiribella et al. 2011 |
+| Information Physics | Wheeler 1990, Rovelli 1996, Zeilinger 1999 |
+| Mathematical Foundations | Stone 1932, Gleason 1957, Ehrenfest 1917 |
+
+**Paper Structure:**
+1. Introduction (Problem, Thesis, Scope)
+2. Logic-First Structure (3FLL, Derivation Cascade, Tier System)
+3. Comparison with Traditions (4 subsections)
+4. Case Studies (Action functional, α, Risk assessment)
+5. Implications and Open Questions
+6. Conclusion
++ Appendices A & B
+
+**Status:** DRAFT ready for review
+
+---
+
+## Interaction Count: 23
 
