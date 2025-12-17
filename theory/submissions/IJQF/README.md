@@ -1,6 +1,6 @@
-# IFQF Submission
+# IJQF Submission
 
-Materials for IFQF submission.
+Materials for International Journal of Quantum Foundations submission.
 
 ---
 
