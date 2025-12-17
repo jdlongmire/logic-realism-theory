@@ -747,5 +747,21 @@ These defenses preempt likely specialized critiques for journal submission.
 
 ---
 
-## Interaction Count: 34
+### Task 22: Sharpen Non-Classical Logic Language
+
+Tightened language on paraconsistent/dialetheist approaches (professional, non-dismissive):
+
+**§3.5 additions:**
+1. "At present, such approaches **do not meet the usual criteria for inclusion in the physicist's toolkit**: they neither guide experimental design nor underwrite successful, domain-specific calculations beyond what standard quantum theory already provides."
+
+2. "In light of current practice, non-classical logical frameworks in physics are best understood as **conceptual or formal thought experiments** rather than as working physical theories."
+
+**Conclusion addition:**
+"Alternative logics in physics therefore remain, at this stage, **formal options and thought experiments**, not empirically established competitors to the 3FLL-constrained outcome structure that LRT codifies."
+
+Professional tone maintained - acknowledges mathematical legitimacy while noting lack of empirical traction.
+
+---
+
+## Interaction Count: 35
 

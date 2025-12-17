@@ -335,9 +335,11 @@ Hardy (2001), Chiribella et al. (2011), and Masanes and Müller (2011) derive qu
 
 **Empirical status of paraconsistent physics:** A crucial observation: existing work on paraconsistent logic in physics (da Costa and French 2003; Krause and Arenhart 2016) focuses on reformulating inconsistent classical theories, offering paraconsistent formalisms for quantum superposition, and exploring quantum logics from a paraconsistent perspective. However, **these approaches have not produced distinctive, confirmed physical predictions** that differ from standard quantum theory, nor have they become standard calculational frameworks in any active experimental domain.
 
-Dialetheism remains primarily a philosophical thesis about truth and inconsistency; its "applications" are almost entirely in logic, metaphysics, and the philosophy of mathematics—not in experimentally tested physics. In current scientific practice, paraconsistent and dialetheist frameworks function as **conceptual or formal thought experiments**, not as empirically successful rival physical theories.
+Dialetheism remains primarily a philosophical thesis about truth and inconsistency; its "applications" are almost entirely in logic, metaphysics, and the philosophy of mathematics—not in experimentally tested physics. In current scientific practice, paraconsistent and dialetheist frameworks function as **conceptual or formal thought experiments**, not as empirically successful rival physical theories. At present, such approaches **do not meet the usual criteria for inclusion in the physicist's toolkit**: they neither guide experimental design nor underwrite successful, domain-specific calculations beyond what standard quantum theory already provides.
 
 This supports LRT's position: all actual detector records analysed in mainstream physics are treated in entirely classical, Boolean terms at the level of measurement outcomes, even when the underlying formalism involves quantum superposition. Non-classical logical frameworks in physics therefore appear as **alternative representations** of a world whose actualized outcomes respect 3FLL; they do not exhibit themselves as different "logics of nature" realised in experiment.
+
+In light of current practice, non-classical logical frameworks in physics are best understood as **conceptual or formal thought experiments** rather than as working physical theories. They offer alternative representations of a world whose actualised detector records are still analysed in strictly Boolean terms, and they have not yet produced distinctive, confirmed predictions that would force a revision of 3FLL at the level of completed measurement outcomes.
 
 **Intuitionistic logic:** Excluded Middle fails for unverifiable propositions.
 
@@ -525,6 +527,8 @@ Logic Realism Theory makes an empirical claim—3FLL constrain physical possibil
 - That physics reduces to pure logic
 - That all Tier 2/3 assumptions have been derived
 - That the metaphysical thesis is proven
+
+Alternative logics in physics therefore remain, at this stage, **formal options and thought experiments**, not empirically established competitors to the 3FLL-constrained outcome structure that LRT codifies.
 
 The Logic Realism approach provides a meta-framework for analysing what physics presupposes and what it achieves. It is offered as an ambitious research program, not established truth.
 
