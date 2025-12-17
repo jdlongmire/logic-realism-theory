@@ -240,6 +240,12 @@ Hardy (2001), Chiribella et al. (2011), and Masanes and Müller (2011) derive qu
 
 *Limitation:* Priest and others have argued that paraconsistent meta-reasoning is possible. We flag this as a point where critics may diverge; our argument assumes classical meta-logic.
 
+**Empirical status of paraconsistent physics:** A crucial observation: existing work on paraconsistent logic in physics (da Costa and French 2003; Krause and Arenhart 2016) focuses on reformulating inconsistent classical theories, offering paraconsistent formalisms for quantum superposition, and exploring quantum logics from a paraconsistent perspective. However, **these approaches have not produced distinctive, confirmed physical predictions** that differ from standard quantum theory, nor have they become standard calculational frameworks in any active experimental domain.
+
+Dialetheism remains primarily a philosophical thesis about truth and inconsistency; its "applications" are almost entirely in logic, metaphysics, and the philosophy of mathematics—not in experimentally tested physics. In current scientific practice, paraconsistent and dialetheist frameworks function as **conceptual or formal thought experiments**, not as empirically successful rival physical theories.
+
+This supports LRT's position: all actual detector records analysed in mainstream physics are treated in entirely classical, Boolean terms at the level of measurement outcomes, even when the underlying formalism involves quantum superposition. Non-classical logical frameworks in physics therefore appear as **alternative representations** of a world whose actualized outcomes respect 3FLL; they do not exhibit themselves as different "logics of nature" realised in experiment.
+
 **Intuitionistic logic:** Excluded Middle fails for unverifiable propositions.
 
 *Response:* Physical distinguishability—the ability to tell states apart—is inherently bivalent. Two states either are or are not distinguishable; there is no third status. L₃ applies to distinguishability even if it fails for abstract mathematical existence.
@@ -376,6 +382,8 @@ This is honest science, not failure.
 
 - **Constitutive principles:** 3FLL are candidates for truly invariant constitutive principles (unlike Friedman-revisable frameworks).
 - **Analytic/synthetic:** 3FLL are neither purely analytic nor synthetic but constitutive of coherent worldhood.
+- **Alternative logics as modelling tools:** The finding that paraconsistent and dialetheist approaches have produced no distinct empirical predictions suggests they function as **representational options over a 3FLL-compliant outcome space**. LRT describes a constraint on the realised outcome space that is directly tied to observable practice—not an ad hoc philosophical overlay, but a **conservative generalisation of what physics in fact does** at the level of measurement outcomes.
+- **Demarcation:** LRT provides a falsifiability criterion distinguishing working physical theories from purely formal constructions: does the framework make predictions about actualised outcomes that could in principle be violated?
 
 ### 5.3 Open Questions
 
@@ -415,6 +423,8 @@ Chiribella, G., D'Ariano, G.M. and Perinotti, P. (2011) 'Informational derivatio
 
 CODATA (2018) *CODATA Recommended Values of the Fundamental Physical Constants: 2018*. Gaithersburg: National Institute of Standards and Technology.
 
+da Costa, N.C.A. and French, S. (2003) *Science and Partial Truth: A Unitary Approach to Models and Scientific Reasoning*. Oxford: Oxford University Press.
+
 Duhem, P. (1954) *The Aim and Structure of Physical Theory*. Translated by P.P. Wiener. Princeton: Princeton University Press. (Original work published 1906).
 
 Ehrenfest, P. (1917) 'In what way does it become manifest in the fundamental laws of physics that space has three dimensions?', *Proceedings of the Amsterdam Academy*, 20, pp. 200-209.
@@ -426,6 +436,8 @@ Gleason, A.M. (1957) 'Measures on the Closed Subspaces of a Hilbert Space', *Jou
 Hardy, L. (2001) 'Quantum Theory From Five Reasonable Axioms', arXiv:quant-ph/0101012.
 
 Hempel, C.G. (1965) *Aspects of Scientific Explanation*. New York: Free Press.
+
+Krause, D. and Arenhart, J.R.B. (2016) 'Logical Perspectives on Science and Cognition: Non-Classical Logics and Quantum Mechanics', *Handbook of the History of Logic*, 11, pp. 443-493.
 
 Maddy, P. (2007) *Second Philosophy: A Naturalistic Method*. Oxford: Oxford University Press.
 

@@ -574,5 +574,31 @@ Received formal referee report with verdict: "Reject with strong encouragement t
 
 ---
 
-## Interaction Count: 27
+### Task 15: New Findings - Empirical Status of Alternative Logics
+
+Incorporated new findings report on paraconsistent/dialetheist approaches in physics.
+
+**Key findings integrated:**
+
+1. **No distinct empirical predictions:** Paraconsistent and dialetheist approaches have not produced distinctive, confirmed physical predictions that differ from standard quantum theory.
+
+2. **Conceptual vs operational:** These frameworks function as conceptual/formal thought experiments, not as empirically successful rival physical theories.
+
+3. **All detector records are Boolean:** At the level of measurement outcomes, all actual physics uses classical logic.
+
+4. **LRT as conservative generalization:** LRT describes what physics actually does at the outcome level—it's not an ad hoc philosophical overlay.
+
+**Paper updates:**
+
+| Section | Change |
+|---------|--------|
+| §3.5 | Added "Empirical status of paraconsistent physics" subsection |
+| §5.2 | Added "Alternative logics as modelling tools" and "Demarcation" points |
+| References | Added da Costa & French (2003), Krause & Arenhart (2016) |
+
+**Key rhetorical move:** Non-classical logics are now explicitly classified as "representational options over a 3FLL-compliant outcome space"—precisely what LRT predicts.
+
+---
+
+## Interaction Count: 28
 
