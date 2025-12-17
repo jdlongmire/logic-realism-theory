@@ -326,7 +326,27 @@ This supports LRT's position: all actual detector records analysed in mainstream
 
 *Response:* Physical distinguishability—the ability to tell states apart—is inherently bivalent. Two states either are or are not distinguishable; there is no third status. L₃ applies to distinguishability even if it fails for abstract mathematical existence.
 
-### 3.6 The Fallback Position
+### 3.6 Contrast with Many-Worlds Interpretation
+
+The Many-Worlds Interpretation (MWI) of quantum mechanics provides an instructive contrast. MWI suffers from precisely the over-generation problem that LRT's co-constitutive framing avoids.
+
+**MWI's over-generation:** MWI posits that all branches of the wave function exist—every outcome permitted by unitary evolution is actualised in some branch. This generates ontological extravagance: infinitely many worlds, with no principled mechanism for why *this* branch exhibits *these* outcomes with *these* probabilities. The Born rule remains unexplained; the preferred basis problem persists.
+
+**LRT's response:** Under co-constitution, physical reality is *defined* as L(I)—not as a subset of some larger space of "all possible worlds." There is no over-generation because:
+- L provides the selection criterion from the start (3FLL filter incoherent configurations)
+- I is the substrate structured by L, not an independent "space of all possibilities"
+- A = L(I) is definitional, not a contingent fact about which branches exist
+
+| Problem | MWI | LRT |
+|---------|-----|-----|
+| Over-generation | All branches exist | Only L(I) exists |
+| Selection mechanism | None (all actualised) | L constrains I |
+| Born rule | Unexplained add-on | Emerges from distinguishability structure |
+| Ontological cost | Infinite worlds | Single co-constituted reality |
+
+MWI generates everything consistent with the wave equation and then struggles to recover observed physics. LRT begins with logical constraint and derives physical structure within that constraint. The co-constitutive framing ensures there is no "everything exists, then we pick"—there is only what L(I) permits.
+
+### 3.7 The Fallback Position
 
 Even if the strong metaphysical thesis fails, the program remains valuable:
 - **Tier system:** Tracks presuppositions regardless of which logic governs.

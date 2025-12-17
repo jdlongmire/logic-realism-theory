@@ -700,5 +700,22 @@ This is a significant philosophical move: the co-constitutive framing makes A = 
 
 ---
 
-## Interaction Count: 32
+### Task 20: Add MWI Contrast (Over-Generation)
+
+Added new Section 3.6 "Contrast with Many-Worlds Interpretation" showing how MWI suffers from over-generation while LRT avoids it:
+
+| Problem | MWI | LRT |
+|---------|-----|-----|
+| Over-generation | All branches exist | Only L(I) exists |
+| Selection mechanism | None | L constrains I |
+| Born rule | Unexplained | Emerges from distinguishability |
+| Ontological cost | Infinite worlds | Single co-constituted reality |
+
+Key point: MWI generates everything consistent with wave equation, then struggles to recover observed physics. LRT begins with logical constraint—no "everything exists, then we pick."
+
+Renumbered fallback position to §3.7.
+
+---
+
+## Interaction Count: 33
 
