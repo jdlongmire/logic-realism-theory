@@ -1,4 +1,4 @@
-# Logic Realism and Quantum Foundations: A Co-Constitutive Framework
+# Logic Realism Theory and Quantum Foundations: A Co-Constitutive Framework
 
 **James D. Longmire**
 ORCID: 0009-0009-1383-7698

@@ -15,13 +15,13 @@ Editor, International Journal of Quantum Foundations
 
 ---
 
-**Re: Submission of "Logic Realism and Quantum Foundations: A Co-Constitutive Framework"**
+**Re: Submission of "Logic Realism Theory and Quantum Foundations: A Co-Constitutive Framework"**
 
 ---
 
 Dear Dr. Gao,
 
-I am pleased to submit the enclosed manuscript, "Logic Realism and Quantum Foundations: A Co-Constitutive Framework," for consideration as a research note or normal paper in the International Journal of Quantum Foundations.
+I am pleased to submit the enclosed manuscript, "Logic Realism Theory and Quantum Foundations: A Co-Constitutive Framework," for consideration as a research note or normal paper in the International Journal of Quantum Foundations.
 
 **Summary**
 
