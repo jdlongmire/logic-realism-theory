@@ -6,7 +6,7 @@ author: |
   jdlongmire@outlook.com
 date: December 2025
 abstract: |
-  We present Logic Realism Theory (LRT), a framework in which physical reality is co-constituted by logical constraint operating on information space. The central thesis, $\mathfrak{A} = \mathfrak{L}(\mathfrak{I})$, decomposes into an empirically supported theorem ($\mathfrak{A} \subseteq \mathfrak{L}(\mathfrak{I})$: no measurement outcome violates the Three Fundamental Laws of Logic) and an open completeness conjecture ($\mathfrak{L}(\mathfrak{I}) \subseteq \mathfrak{A}$: logical constraint on information suffices for physical actualization). We show how this framework connects to quantum reconstruction programs, particularly the Masanes-Müller derivation, while avoiding the over-generation problem that afflicts Many-Worlds interpretations. The co-constitutive framing---in which neither logic nor information alone generates reality, but their interaction does---provides a principled selection criterion absent from interpretations where "all branches exist." We articulate precise falsification conditions and note that no violation of 3FLL has ever been observed in any completed physical measurement.
+  We present Logic Realism Theory (LRT), a *proposed* framework in which physical reality is co-constituted by logical constraint operating on information space. The central thesis, $\mathfrak{A} = \mathfrak{L}(\mathfrak{I})$, decomposes into an empirically supported theorem ($\mathfrak{A} \subseteq \mathfrak{L}(\mathfrak{I})$: no measurement outcome violates the Three Fundamental Laws of Logic) and an open completeness conjecture ($\mathfrak{L}(\mathfrak{I}) \subseteq \mathfrak{A}$: logical constraint on information suffices for physical actualization). We outline how this framework connects to quantum reconstruction programs, particularly the Masanes-Müller derivation, while avoiding the over-generation problem that afflicts Many-Worlds interpretations. The co-constitutive framing---in which neither logic nor information alone generates reality, but their interaction does---provides a principled selection criterion absent from interpretations where "all branches exist." We articulate precise falsification conditions and note that no violation of 3FLL has ever been observed in any completed physical measurement.
 keywords: quantum foundations, logic realism, quantum reconstruction, information space, co-constitution, Many-Worlds, measurement problem
 geometry: margin=1in
 fontsize: 11pt
@@ -16,7 +16,7 @@ fontsize: 11pt
 
 The foundations of quantum mechanics remain contested territory. Reconstruction programs (Hardy 2001; Chiribella et al. 2011; Masanes and Müller 2011) have shown that quantum theory can be derived from operational axioms, but these programs typically do not ask what grounds the operational axioms themselves. Meanwhile, interpretations like Many-Worlds face the over-generation problem: if all branches exist, what selects the one we observe?
 
-Logic Realism Theory (LRT) proposes a different starting point. Rather than treating logical consistency as a metalevel constraint on our theories, LRT treats the Three Fundamental Laws of Logic (3FLL) as constraints on physical reality itself. The result is a framework that:
+Logic Realism Theory (LRT) proposes a different starting point. Rather than treating logical consistency as a metalevel constraint on our theories, LRT treats the Three Fundamental Laws of Logic (3FLL) as constraints on physical reality itself. The aim here is to sketch an ambitious research program rather than to claim a completed foundation. The result is a framework that:
 
 1. Connects to quantum reconstruction via distinguishability and information
 2. Provides a principled selection criterion (logical coherence) absent from Many-Worlds
@@ -52,7 +52,7 @@ $$\mathfrak{A} \subseteq \mathfrak{L}(\mathfrak{I})$$
 
 *Proof sketch.* Any $s \in \mathfrak{A}$ encodes outcomes in a physically realizable history. No such outcome is both $P$ and $\neg P$ ($L_2$ violation), neither $P$ nor $\neg P$ ($L_3$ violation), or non-self-identical ($L_1$ violation). Therefore $s \in \mathfrak{L}(\mathfrak{I})$. $\square$
 
-**Status:** Empirically supported. No violation has ever been observed.
+**Status:** Empirically supported. No violation has ever been observed. Strictly speaking, Theorem 1 records in formal dress what current measurement practice already presupposes: all completed detector records are treated as Boolean at the outcome level. Its value lies in making this constraint explicit as a law-like regularity and in coupling it to a precise falsification criterion.
 
 **Conjecture 1 (Completeness).** *For any $s \in \mathfrak{L}(\mathfrak{I})$, there exists a physically realizable history:*
 $$\mathfrak{L}(\mathfrak{I}) \subseteq \mathfrak{A}$$
@@ -73,9 +73,9 @@ This is not "logic generates reality" (strong idealism). It is the claim that $\
 
 ## 3.1 Resolution of Over-Generation
 
-One might worry that $\mathfrak{L}(\mathfrak{I})$ is "too large"---that physical constraints beyond 3FLL forbid certain logically coherent states. The co-constitutive framing dissolves this concern:
+One might worry that $\mathfrak{L}(\mathfrak{I})$ is "too large"---that physical constraints beyond 3FLL forbid certain logically coherent states. The co-constitutive framing addresses this concern:
 
-If physical reality IS $\mathfrak{L}(\mathfrak{I})$, there is no external standpoint from which $\mathfrak{L}(\mathfrak{I})$ could be measured as "too large." The completeness question becomes definitional rather than contingent.
+If physical reality IS $\mathfrak{L}(\mathfrak{I})$, there is no external standpoint from which $\mathfrak{L}(\mathfrak{I})$ could be measured as "too large." The completeness question admits a definitional reading rather than a purely contingent one: one may take "physical reality" to mean "whatever $\mathfrak{L}(\mathfrak{I})$ permits." The present paper does *not* assume this reading; instead it treats Completeness as a substantive conjecture whose status depends on whether Tier-2/Tier-3 constraints can be absorbed into the $\mathfrak{L}$--$\mathfrak{I}$ structure.
 
 # 4. Connection to Quantum Reconstruction
 
@@ -83,16 +83,18 @@ LRT connects to quantum reconstruction programs through the following chain:
 
 1. **Binary distinctions** (from $L_3$): Properties partition into $P$ and $\neg P$
 2. **Distinguishability metric** (from 3FLL + information space): States can be told apart
-3. **Continuity** (from parsimony): Discontinuity requires extra specification
-4. **Reversibility** (from parsimony): Information-preserving transformations are invertible
+3. **Continuity** (from a parsimony axiom formalized as minimization of specification/information cost): strong discontinuities demand additional, localized descriptive parameters and are thereby disfavoured[^1]
+4. **Reversibility** (from the same parsimony axiom): maps that preserve a distinguishability metric but irreversibly merge states lose information and thus incur avoidable description cost
 5. **Inner product structure** (via Masanes-Müller): The above conditions yield quantum state space
+
+[^1]: This use of "parsimony" is intended in the spirit of minimal description length / Kolmogorov-style information cost, not as a vague aesthetic principle; full formalization is part of the ongoing work.
 
 The Masanes-Müller reconstruction (2011) shows that operational axioms---tomographic locality, continuous reversibility, subspace structure, composite systems---uniquely determine quantum theory. LRT provides a framework for asking: are these axioms themselves downstream of 3FLL, or genuinely independent?
 
 **Current status:**
 
-- Continuity and reversibility: derived from 3FLL + parsimony
-- Tomographic locality, subspace axiom: remain as Tier 2 inputs
+- Continuity and reversibility: argued to follow from 3FLL + a parsimony axiom, at the level of proof sketches
+- Tomographic locality, subspace axiom, composite systems: presently treated as Tier-2 inputs, not derived from 3FLL
 
 # 5. Contrast with Many-Worlds
 
@@ -123,7 +125,7 @@ No violation of 3FLL has ever been observed in any completed physical measuremen
 
 ## 6.3 Status of Non-Classical Logics
 
-Paraconsistent and dialetheist approaches in physics have not produced distinctive, confirmed predictions differing from standard quantum theory. They remain formal options and thought experiments, not empirically established competitors to the 3FLL-constrained structure LRT codifies.
+Paraconsistent and dialetheist approaches in physics have not produced distinctive, confirmed predictions differing from standard quantum theory. They remain formally well-defined options and valuable thought experiments, but at present are not empirically established competitors to the 3FLL-constrained outcome structure that LRT codifies: they have produced no distinctive, confirmed predictions and are not part of the standard calculational toolkit in any active experimental domain.
 
 # 7. Discussion
 
@@ -149,7 +151,7 @@ Logic Realism Theory offers a framework in which physical reality is co-constitu
 
 The co-constitutive framing provides what Many-Worlds lacks: a principled selection criterion. Rather than generating all possibilities and struggling to explain why we observe one, LRT identifies what can be actualized from the start.
 
-The framework connects naturally to quantum reconstruction programs while maintaining clear empirical content and honest separation of proved from conjectured components. It is offered as an ambitious research program for quantum foundations, not established truth.
+The framework connects naturally to quantum reconstruction programs while maintaining clear empirical content and honest separation of proved from conjectured components. It is offered as an ambitious research program for quantum foundations, not established truth. Accordingly, LRT is not put forward as a fully worked alternative interpretation of quantum theory, but as a structured proposal for how logical constraints and information-theoretic structure might jointly underpin such an interpretation.
 
 # Research Program and Collaboration
 
