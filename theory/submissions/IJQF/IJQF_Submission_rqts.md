@@ -15,6 +15,7 @@
 | **Frequency** | Quarterly |
 | **Type** | Peer-reviewed, online, open access |
 | **Focus** | Foundations of quantum theories |
+| **Editor** | Shan Gao |
 
 ---
 
@@ -46,14 +47,16 @@ The journal is dedicated to all aspects of the foundations of quantum theories, 
 ## How to Submit
 
 ### Option 1: IJQF Members
-- Log in to IJQF
-- Post paper as PDF attachment in the Blogs section
-- Write relevant introduction in post
+- Log in at: https://ijqf.org/wps/wp-login.php
+- Post paper as **PDF attachment** in the "Blogs" section
+- Categorize under **"Received papers"**
+- Optionally add relevant text or comments to the post
 
-### Option 2: Non-Members
-- Send email with:
-  - Cover letter
-  - Paper attachment (PDF format)
+### Option 2: Non-Members (most first-time submitters)
+- Email to: **gaoshan2017@sxu.edu.cn** (Editor: Shan Gao)
+- Include:
+  - **Cover letter** (brief introduction to paper and relevance)
+  - Manuscript attached as **PDF**
 
 ---
 
@@ -62,24 +65,24 @@ The journal is dedicated to all aspects of the foundations of quantum theories, 
 | Author Type | APC |
 |-------------|-----|
 | Premier IJQF members | **Free** |
-| Authors with grant funding | $600 USD |
-| Authors without grant funding | $300 USD |
+| Regular IJQF members | $300 USD |
+| Non-members | $500 USD |
 
-**Note:** APC is mandatory for accepted papers (unless Premier member).
+**Note:** APC paid only upon acceptance. Publishing once grants eligibility for membership (reducing future fees).
 
 ---
 
 ## Formatting Requirements
 
-*Note: Specific formatting requirements not found on website. Recommend:*
+**No specific templates or formatting mandates.** Requirements are minimal:
 
-- [ ] PDF format for submission
-- [ ] Standard academic formatting
-- [ ] Clear figures and tables
-- [ ] Complete references
-- [ ] Author contact information
+- [x] **PDF format** (exclusive)
+- [x] Clean, readable, professionally prepared
+- [x] Equations rendered properly
+- [x] Complete references
+- [x] Author contact information
 
-**Action needed:** Contact editorial office for detailed formatting guidelines.
+No required LaTeX template, column layout, or word limits.
 
 ---
 
@@ -88,13 +91,17 @@ The journal is dedicated to all aspects of the foundations of quantum theories, 
 - Peer-reviewed
 - Problem-oriented approach
 - Debate-encouraged forum
+- Papers appear in "Received papers" if accepted for review
 
 ---
 
 ## Contact
 
+**Editor:** Shan Gao
+**Email:** gaoshan2017@sxu.edu.cn
 **Website:** [ijqf.org](https://ijqf.org/)
 **Submission:** [ijqf.org/submit](https://ijqf.org/submit)
+**Member Login:** https://ijqf.org/wps/wp-login.php
 
 ---
 
