@@ -7,7 +7,7 @@
 
 ## Foundational Principle
 
-### All Axioms Are Downstream of 3FLL
+### The Logic Realism Thesis
 
 The Three Fundamental Laws of Logic (3FLL) are constitutive of coherent reality:
 
@@ -15,34 +15,54 @@ The Three Fundamental Laws of Logic (3FLL) are constitutive of coherent reality:
 - **Non-Contradiction (L₂):** ∀A: ¬(A ∧ ¬A)
 - **Excluded Middle (L₃):** ∀A: A ∨ ¬A
 
-**Key insight:** ALL axioms - mathematical, physical, and operational - are downstream derivations from 3FLL. They are theorems of coherent reality, whether or not we explicitly show the derivation chain.
+**The Logic Realism Thesis (LRT's core claim):** All axioms of mathematics and physics are downstream of 3FLL - they are theorems of coherent structure, constrained by the requirement that reality be logically coherent.
+
+**Important clarification:** This is a *research conjecture* and *metaphysical thesis*, not an established result of standard logic. In standard accounts, the laws of thought are constraints on reasoning, not sufficient to fix all substantive axioms. LRT's claim is stronger: that 3FLL are *constitutive* of reality, not merely descriptive of valid reasoning.
 
 ### The Tier System
 
 ```
 3FLL (primitive, self-grounding)
   ↓
-Tier 1: Presuppositions of 3FLL
-  - I (Information Space) - what 3FLL requires as domain of discourse
+Tier 1: Structural assumptions for coherent application of 3FLL
+  - I (Information Space) - domain of discourse
   - I_infinite - no arbitrary bound on distinguishability
+  NOTE: These are substantive extra assumptions, not pure
+  consequences of 3FLL. LRT argues they are *required* for
+  coherent application, but this is part of the thesis.
   ↓
-Tier 2: Theorems of coherent mathematics
+Tier 2: Established mathematical reconstruction results
   - Stone's theorem, Gleason's theorem, Masanes-Müller reconstruction
-  - Valid because coherent mathematics is grounded in 3FLL
-  - Accepted for practical use without re-deriving each one
+  - Each presupposes its own non-logical structural assumptions
+  - Accepted for practical use; presuppositions tracked
   ↓
-Tier 3: Theorems of coherent physics
+Tier 3: Physical principles
   - Energy additivity, conservation laws
-  - Valid because coherent physics is grounded in 3FLL
+  - Track: empirical regularities vs. symmetry consequences
 ```
+
+### Tier 2 Presupposition Tracking
+
+When using Tier 2 theorems, note their non-logical assumptions:
+
+| Theorem | Key Presuppositions |
+|---------|---------------------|
+| Masanes-Müller | Tomographic locality, continuous reversibility, subspace axiom |
+| Stone's theorem | Strongly continuous unitary group, Hilbert space structure |
+| Gleason's theorem | Hilbert space dim ≥ 3, frame functions |
+| Spectral theorem | Self-adjoint operator on Hilbert space |
+
+This tracking shows where features like Hilbert space structure, linearity, or dimensionality first enter the derivation.
 
 ### What This Means for Derivations
 
-1. **Tier 2/3 inputs are legitimate** - Using established mathematical results is not "importing external assumptions." These results are valid because they're part of coherent mathematics, which derives from 3FLL.
+1. **Tier 2/3 inputs are methodologically legitimate** - Using established reconstruction results without re-proving them is standard practice in foundations work. Track their presuppositions.
 
-2. **Explicit derivation chains are valuable but not required** - Showing how a result follows from 3FLL strengthens the framework. But using established results without re-deriving them is valid.
+2. **The LRT thesis is a guiding principle, not a proven result** - "All axioms downstream of 3FLL" is the theory's core claim. Derivations test and develop this thesis.
 
-3. **"Gaps" are unwritten derivations, not missing axioms** - When something isn't explicitly derived, the derivation exists in principle (because 3FLL grounds all coherent structure). The work is to make it explicit.
+3. **Substantive assumptions must be marked** - Tier 1 assumptions and Tier 2 presuppositions are not pure logic. Mark them explicitly to avoid overstating what 3FLL alone delivers.
+
+4. **"Gaps" are research opportunities** - When something isn't explicitly derived, it's an open question whether the derivation exists. The thesis says it should; the work is to show it.
 
 ---
 

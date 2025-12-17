@@ -82,11 +82,19 @@ This file provides essential guidance for Claude Code working in this repository
 - Core thesis (A = L(I)) is non-negotiable unless proven logically impossible
 - Exhaust solutions before escalating to user
 
-### Foundational Principle: 3FLL as Truly Primitive ⚠️ CRITICAL
+### Foundational Principle: The Logic Realism Thesis ⚠️ CRITICAL
 
-**The Three Fundamental Laws of Logic (3FLL) are the primitive system from which everything else derives.**
+**The Three Fundamental Laws of Logic (3FLL) are constitutive of coherent reality:**
 
-This is not just a claim - it is the foundational architecture of LRT:
+- **Identity (L₁):** ∀A: A = A
+- **Non-Contradiction (L₂):** ∀A: ¬(A ∧ ¬A)
+- **Excluded Middle (L₃):** ∀A: A ∨ ¬A
+
+**The Logic Realism Thesis (LRT's core claim):** All axioms of mathematics and physics are downstream of 3FLL - they are theorems of coherent structure, constrained by the requirement that reality be logically coherent.
+
+**Important clarification:** This is a *research conjecture* and *metaphysical thesis*, not an established result of standard logic. In standard accounts, the laws of thought are constraints on reasoning, not sufficient to fix all substantive axioms. LRT's claim is stronger: that 3FLL are *constitutive* of reality, not merely descriptive of valid reasoning.
+
+The derivation hierarchy:
 
 ```
 3FLL (primitive, self-grounding)
@@ -100,38 +108,47 @@ Phase space → Action → Dynamics
 d=3, α=1/137, mass, V(x), all physics
 ```
 
-**Key implications:**
+**What this means for derivations:**
 
-1. **Tier 1 axioms are explicitations, not additions** - `I : Type*` and `I_infinite` in Lean are what 3FLL presuppose to be meaningful, not independent axioms
+1. **Tier 1 axioms are structural assumptions** - `I : Type*` and `I_infinite` are substantive assumptions for coherent application of 3FLL. LRT argues they are *required* for 3FLL to be meaningful, but this is part of the thesis, not a proven consequence.
 
-2. **ℏ is derived, not empirical** - The Planck constant is the *name* for the minimum specification cost that 3FLL + parsimony necessitate
+2. **Tier 2/3 inputs are methodologically legitimate** - Using established reconstruction results (Stone's theorem, Gleason's theorem, Masanes-Müller) without re-proving them is standard practice in foundations work. Track their presuppositions.
 
-3. **ALL axioms are downstream of 3FLL** - Mathematical axioms, physical principles, and operational postulates are theorems of coherent reality. They derive from 3FLL whether or not we explicitly show the derivation chain.
+3. **The Logic Realism Thesis is a guiding principle, not a proven result** - "All axioms downstream of 3FLL" is the theory's core claim. Derivations test and develop this thesis.
 
-4. **Tier 2 axioms are legitimate inputs** - Established mathematical results (Stone's theorem, Gleason's theorem, Masanes-Müller reconstruction, etc.) are valid because they are theorems of coherent mathematics, which is grounded in 3FLL. We accept them for practical use without re-deriving each one.
+4. **Substantive assumptions must be marked** - Tier 1 assumptions and Tier 2 presuppositions are not pure logic. Mark them explicitly to avoid overstating what 3FLL alone delivers.
 
-5. **"Gaps" are incomplete derivation chains, not missing axioms** - When something isn't yet explicitly derived (mass, V(x), etc.), the derivation exists in principle (because 3FLL grounds all coherent structure). The work is to make it explicit, not to add assumptions.
+5. **"Gaps" are research opportunities** - When something isn't explicitly derived (mass, V(x), etc.), it's an open question whether the derivation exists. The thesis says it should; the work is to show it.
 
 **The Tier System (Lean formalization):**
 ```
-Tier 1: Presuppositions of 3FLL (I, I_infinite)
-  → What 3FLL requires to be meaningful
+Tier 1: Structural assumptions for 3FLL application (I, I_infinite)
+  → Substantive extra assumptions (domain, no arbitrary bound)
+  → LRT argues they're required; this is part of the thesis
+  NOTE: Track these explicitly in derivations
 
-Tier 2: Theorems of coherent mathematics (Stone, Gleason, etc.)
-  → Valid because math is grounded in 3FLL
-  → Accepted for practical use
+Tier 2: Established mathematical reconstruction results
+  → Stone's theorem, Gleason's theorem, Masanes-Müller
+  → Each presupposes its own non-logical structural assumptions
+  → Accepted for practical use; presuppositions tracked
 
-Tier 3: Theorems of coherent physics (energy additivity)
-  → Valid because physics is grounded in 3FLL
-  → Accepted for practical use
+Tier 3: Physical principles (energy additivity, conservation)
+  → Empirical regularities vs. symmetry consequences
+  → Accepted for practical use; status tracked
 ```
 
-**This is NOT "importing external assumptions"** - it is acknowledging that established results are downstream of 3FLL and therefore legitimate to use.
+**Tier 2 Presupposition Tracking:**
+
+| Theorem | Key Presuppositions |
+|---------|---------------------|
+| Masanes-Müller | Tomographic locality, continuous reversibility, subspace axiom |
+| Stone's theorem | Strongly continuous unitary group, Hilbert space structure |
+| Gleason's theorem | Hilbert space dim ≥ 3, frame functions |
 
 **When working on derivations:**
-- Tier 2/3 inputs are valid - they're theorems of coherent reality
-- Explicit derivation chains are valuable but not required for every result
-- The goal is a coherent framework, not re-deriving all of mathematics
+- Tier 2/3 inputs are methodologically legitimate (standard foundations practice)
+- Explicit derivation chains are research goals, not prerequisites
+- Mark clearly: what comes from 3FLL vs. what comes from Tier 2/3 assumptions
 
 ### Program Auditor
 - Run before ANY claims about completion status

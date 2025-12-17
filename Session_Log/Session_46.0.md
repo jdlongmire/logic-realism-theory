@@ -323,5 +323,34 @@ Created `theory/derivations/README.md` documenting:
 
 ---
 
-## Interaction Count: 18
+### Task 9: External Review - "Logic Realism Thesis" Framing
+
+Received second external review recommending refinements to foundational framing.
+
+**Key feedback:**
+- "All axioms downstream of 3FLL" is a stronger claim than standard logic supports
+- Frame this as "Logic Realism Thesis" - a research conjecture/metaphysical thesis
+- Tier 1 assumptions are substantive, not pure consequences of 3FLL
+- Track presuppositions of Tier 2 theorems explicitly
+
+**Updates made:**
+
+1. **`theory/derivations/README.md`** - Updated with:
+   - "The Logic Realism Thesis" heading and framing
+   - Clarification as research conjecture, not established fact
+   - "Tier 2 Presupposition Tracking" table
+   - Refined tier descriptions
+
+2. **`CLAUDE.md`** - Updated for consistency:
+   - Renamed section to "Foundational Principle: The Logic Realism Thesis"
+   - Added 3FLL definitions (L₁, L₂, L₃)
+   - Added research conjecture clarification
+   - Added presupposition tracking table
+   - Refined implications section
+
+**Summary:** LRT's core claim is now properly framed as a research thesis being developed and tested through derivations, not as an established result. This maintains intellectual honesty while preserving the program's coherence.
+
+---
+
+## Interaction Count: 19
 
