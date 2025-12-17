@@ -1,7 +1,7 @@
 # Logic Realism as a Philosophy of Science: The Logic-First Structure of Physical Theories
 
 **Date:** 2025-12-17
-**Status:** DRAFT
+**Status:** DRAFT (Revised per referee report)
 **Author:** James D. Longmire
 **ORCID:** 0009-0009-1383-7698
 
@@ -9,52 +9,61 @@
 
 ## Abstract
 
-Physical theories are typically presented as mathematical structures with empirical interpretations, but the background assumptions enabling their coherence often remain implicit. We propose the *Logic Realism Thesis*: that the Three Fundamental Laws of Logic (Identity, Non-Contradiction, Excluded Middle) function not merely as rules of valid reasoning but as constitutive constraints on coherent reality itself. This thesis—a research conjecture rather than an established result—generates a systematic methodology for foundational analysis. We introduce a three-tier classification distinguishing structural assumptions required for logical application (Tier 1), established mathematical reconstruction results with tracked presuppositions (Tier 2), and physical principles (Tier 3). This framework is compared with logical empiricism (Carnap 1956; Nagel 1961), Quine-Duhem underdetermination, Friedman's (2001) relativized a priori, and recent quantum reconstruction programs (Hardy 2001; Masanes and Müller 2011). Two case studies demonstrate the methodology: deriving the action functional and the fine structure constant, with explicit tracking of which assumptions enter at each tier. We argue that the Logic Realism approach provides a meta-framework for clarifying what physical theories presuppose and achieve, without claiming that all physics reduces to pure logic.
+We present Logic Realism Theory (LRT) as a working physical theory with empirical content: LRT holds that the Three Fundamental Laws of Logic (Identity, Non-Contradiction, Excluded Middle) function as universal constraints on physically possible states. This claim is falsifiable—an observed violation of these laws in a completed measurement would refute it—yet no such violation has ever been recorded. We develop a systematic methodology for foundational analysis: a three-tier classification distinguishing structural assumptions for logical application (Tier 1, including a parsimony principle), established mathematical reconstruction results with tracked presuppositions (Tier 2), and physical principles (Tier 3). This framework clarifies presupposition dependencies in existing theories regardless of whether one accepts the stronger metaphysical thesis that 3FLL are constitutive of all possible worlds. We demonstrate the methodology through a case study deriving the action functional, with each step formally marked by tier and status. The fine structure constant is treated separately as a conjectural numerical illustration. We compare LRT with logical empiricism, Quine-Duhem underdetermination, Friedman's relativized a priori, and quantum reconstruction programs, and address objections from logical pluralism. The tier methodology constitutes a practical contribution to foundational physics independent of the metaphysical thesis.
 
-**Keywords:** philosophy of science, foundations of physics, logical structure, quantum reconstruction, underdetermination, constitutive principles
+**Keywords:** foundations of physics, logic realism, quantum reconstruction, presupposition tracking, falsifiability, constitutive principles
 
 ---
 
-## 1. Introduction: The Hidden Structure of Physical Theories
+## 1. Introduction: Logic Realism as a Physical Theory
 
-### 1.1 The Problem of Background Assumptions
+### 1.1 The Central Claim
 
-Physical theories are typically presented as mathematical structures plus empirical interpretations. A theory specifies differential equations, symmetry groups, or algebraic structures, then connects these to observable phenomena through measurement procedures and correspondence rules. What often remains implicit are the background assumptions that make the mathematics coherent and applicable—assumptions about logic, distinguishability, continuity, and composition.
+Logic Realism Theory (LRT) makes a straightforward empirical claim: **the Three Fundamental Laws of Logic constrain what can physically occur, not merely what we can coherently say.**
 
-The logical empiricist tradition recognized this problem. Carnap (1956) distinguished theoretical terms from observational terms, connected by correspondence rules. Nagel (1961) analysed the structure of scientific explanations, noting the role of auxiliary assumptions. Yet even these careful analyses tended to treat logic itself as unproblematic background—a metatheoretical apparatus rather than a substantive constraint on physical content.
+The Three Fundamental Laws of Logic (3FLL):
+- **Identity (L₁):** ∀A: A = A
+- **Non-Contradiction (L₂):** ∀A: ¬(A ∧ ¬A)
+- **Excluded Middle (L₃):** ∀A: A ∨ ¬A
 
-The Quine-Duhem thesis (Quine 1951; Duhem 1954) revealed that empirical evidence alone cannot uniquely determine theory choice, since auxiliary hypotheses can always be adjusted to save any core commitment. This underdetermination has been taken to show that theoretical frameworks involve conventional elements not fixed by evidence. But which elements are conventional and which are not?
+**Empirical content:** LRT forbids observable violations of 3FLL in completed physical measurements. Specifically:
+- No measurement outcome can be recorded as both P and ¬P simultaneously (L₂ violation).
+- No measurement outcome can fail to be either P or ¬P (L₃ violation).
+- No physical state can fail to be self-identical across a measurement interval (L₁ violation).
 
-**Thesis statement:** We propose that the Three Fundamental Laws of Logic (3FLL)—Identity, Non-Contradiction, and Excluded Middle—function as constitutive constraints on any coherent physical theory, and that making this logic-first structure explicit illuminates the otherwise hidden dependencies between theoretical postulates.
+**Current status:** No violation of 3FLL has ever been observed in any completed physical measurement across all domains of physics—classical, quantum, relativistic, or cosmological. Every measurement record is Boolean: one outcome obtains, not a literal contradiction. Paraconsistent models remain formal exercises; no physical system realises them.
 
-### 1.2 The Logic Realism Thesis
+**Falsifiability:** LRT is falsifiable in principle. A recorded measurement outcome exhibiting P ∧ ¬P, or a physical state provably violating identity, would refute the theory. The absence of such observations over centuries of physics constitutes strong corroboration.
 
-**Definition:** The Logic Realism Thesis holds that 3FLL are not merely rules of valid reasoning but constitutive of coherent reality itself. All substantive axioms of mathematics and physics are downstream of this logical foundation—they are theorems of coherent structure, constrained by the requirement that reality be logically coherent.
+This empirical grounding distinguishes LRT from pure philosophical speculation about the metaphysics of logic.
 
-This thesis has historical resonance. Leibniz held that the principle of contradiction and the principle of sufficient reason constrain all possible worlds. Kant argued that certain principles are constitutive of experience itself. More recently, Friedman (2001) has revived the notion of "relativized a priori" principles that function as constitutive for particular theoretical frameworks while remaining revisable across scientific revolutions.
+### 1.2 Three Levels of the Thesis
 
-Our position is related but distinct. We locate the truly invariant constitutive principles at 3FLL themselves, arguing that these cannot be revised without abandoning coherent theorizing entirely. Higher-level principles (mathematical structures, physical laws) are constrained by 3FLL but admit variation—this is where underdetermination genuinely operates.
+To avoid conflating different claims, we distinguish three levels at which 3FLL might be "constitutive":
 
-**Important clarification:** This is a research conjecture and metaphysical thesis, not an established result of standard logic. In standard accounts, the laws of thought constrain reasoning about any subject matter but do not determine that subject matter's content. Our claim is stronger: that 3FLL are *constitutive* of reality, not merely *descriptive* of valid inference. We present this as a thesis to be developed and tested through its consequences, not as a proven result.
+| Level | Claim | Status |
+|-------|-------|--------|
+| **Epistemic** | 3FLL are constraints on rational belief—what any coherent agent must accept | Widely accepted |
+| **Semantic** | 3FLL are constraints on meaningful discourse—languages violating them cannot express determinate content | Stronger, contested |
+| **Metaphysical** | 3FLL are constraints on reality itself—no possible world violates them | Strongest, research conjecture |
 
-**Taxonomy of claims:** To avoid conflating different types of claims, we distinguish three levels at which 3FLL might be "constitutive":
+**What our arguments establish directly:** The self-refutation of denying 3FLL establishes the epistemic and semantic versions. To assert "Non-Contradiction is false" is to claim this assertion is true and not false—thereby presupposing Non-Contradiction.
 
-- **Epistemic:** 3FLL are constraints on rational belief—what any coherent agent must accept. This is the weakest reading and is widely accepted.
-- **Semantic:** 3FLL are constraints on meaningful discourse—any language or model violating them cannot express determinate content. This is stronger and more contested.
-- **Metaphysical:** 3FLL are constraints on reality itself—no possible world violates them. This is the strongest reading and the one Logic Realism defends.
+**What requires additional argument:** The metaphysical version—that 3FLL hold in all possible worlds, not just as constraints on our reasoning—requires bridging from "we cannot coherently deny X" to "X holds mind-independently." We address this gap in Section 2.6.
 
-Much of our supporting argument—the self-refutation of denying 3FLL—establishes the epistemic and semantic versions directly. The metaphysical version requires an additional step: arguing that coherent theorizing tracks real structure, not merely our conceptual limitations. We acknowledge this gap and address objections in Section 3.5. The methodology (tier system) remains valuable even if only the weaker readings are accepted.
+**The fallback:** Even if only the weaker readings are accepted, the methodology (tier system) and empirical claim (no observed violations) remain valuable.
 
-### 1.3 Scope and Aims
+### 1.3 Scope and Structure
 
 This paper:
-1. Articulates the logic-first structure of theories as a methodology (Section 2)
-2. Introduces a tiered classification of assumptions (Section 2.3) and addresses parsimony's status (Section 2.4)
-3. Compares this approach with existing traditions in philosophy of science (Section 3) and addresses objections from logical pluralism (Section 3.5)
-4. Demonstrates the methodology through case studies from Logic Realism Theory (Section 4), including assessment of what happens if Tier 2/3 assumptions remain irreducible (Section 4.4)
-5. Discusses implications and open questions (Section 5)
+1. Presents LRT's empirical status and falsifiability conditions (Section 1.1, 2.5)
+2. Develops the tier methodology for presupposition tracking (Sections 2.1–2.4)
+3. Addresses the epistemic-to-metaphysical gap (Section 2.6)
+4. Compares with existing traditions and addresses objections (Section 3)
+5. Demonstrates the methodology via formal case study (Section 4)
+6. Discusses implications (Section 5)
 
-Our aim is not to prove that physics reduces to logic—a claim we do not make—but to show that explicit tracking of logical dependencies clarifies foundational analysis and makes hidden assumptions visible.
+**Primary contribution:** The tier methodology improves presupposition tracking in foundational physics regardless of one's stance on the metaphysical thesis.
 
 ---
 
@@ -62,356 +71,335 @@ Our aim is not to prove that physics reduces to logic—a claim we do not make�
 
 ### 2.1 3FLL as Framing Conditions
 
-The Three Fundamental Laws of Logic have been recognised since Aristotle (Metaphysics, Book Γ) as foundational to rational thought:
+The Three Fundamental Laws of Logic have been recognised since Aristotle (*Metaphysics*, Book Γ) as foundational to rational thought. Our claim is that they also constrain physical possibility.
 
-- **Identity (L₁):** ∀A: A = A — Every thing is identical to itself.
-- **Non-Contradiction (L₂):** ∀A: ¬(A ∧ ¬A) — Nothing can both be and not be.
-- **Excluded Middle (L₃):** ∀A: A ∨ ¬A — For any proposition, either it or its negation holds.
+**The self-grounding argument:** These principles cannot be coherently denied because denial presupposes them:
+- To argue against Excluded Middle requires distinguishing valid from invalid arguments—which presupposes that arguments either are or are not valid.
+- To assert "Non-Contradiction is false" requires that this assertion be true and not false.
+- To question Identity requires identifying what is being questioned.
 
-**Claim:** These principles are not optional axioms that could be otherwise. They are self-grounding in the following sense: any attempt to deny them presupposes them. To assert "Non-Contradiction is false" is to claim that this assertion is true and not false—thereby presupposing Non-Contradiction. To argue against Excluded Middle requires distinguishing valid from invalid arguments—which presupposes that arguments either are or are not valid.
+This self-grounding character distinguishes 3FLL from ordinary physical laws, which can be coherently denied or modified (F = ma could have been F = ma²; Maxwell's equations could have differed).
 
-This self-grounding character distinguishes 3FLL from other theoretical principles. Physical laws (F = ma, Maxwell's equations) can be coherently denied or modified. Mathematical axioms (Euclid's parallel postulate, the axiom of choice) can be replaced with alternatives. But 3FLL cannot be coherently denied because the denial itself relies on them.
-
-**Consequence:** 3FLL function as the deepest constraint on theory construction. They are not among the assumptions to be varied in underdetermination analysis—they are the preconditions for coherent theorizing. This does not mean we can derive all of physics from logic alone; it means that whatever physics we construct must respect these constraints.
+**Consequence for physics:** Whatever physics we construct must respect 3FLL. This does not mean physics *reduces* to logic; it means physics operates within constraints set by logical coherence.
 
 ### 2.2 From Logic to Structure: The Derivation Cascade
 
-If 3FLL are constitutive of coherent reality, then certain structures must follow. We can trace a cascade of increasingly specific structures, each constrained by what comes before:
+If 3FLL constrain physical reality, certain structures follow. We trace a cascade of increasingly specific constraints:
 
 ```
 3FLL (primitive, self-grounding)
-  ↓ presuppose
-Domain of discourse (something exists to reason about)
-  ↓ enforce
+  ↓ presuppose (see Definition 2.1)
+Domain of discourse + Parsimony (Tier 1)
+  ↓ enforce (Proposition 2.1)
 Binary distinctions (A or ¬A for any property)
-  ↓ require
-Distinguishability metric (coherent difference between states)
+  ↓ require (Proposition 2.2)
+Distinguishability metric
+  ↓ constrain (via Tier 2 theorems)
+Mathematical structures (Hilbert space, phase space)
   ↓ constrain
-Mathematical structures (those compatible with 3FLL)
-  ↓ constrain
-Physical structures (those instantiating coherent mathematics)
+Physical structures (dynamics, conservation laws)
 ```
 
-Consider each step:
-
-**3FLL → Domain:** The laws of logic are about something. L₁ (Identity) requires a domain of entities that can be self-identical. L₃ (Excluded Middle) requires propositions that can be evaluated. Without a domain, 3FLL have nothing to govern.
-
-**Domain → Binary distinctions:** Given L₃, every property either applies or does not. This is the origin of "bits"—binary distinctions that partition the domain. A state either has property P or has ¬P; there is no third option.
-
-**Binary distinctions → Distinguishability:** If states can differ in properties, there must be a notion of distinguishability—a metric or at least an ordering of how much states differ. This need not be unique, but some such structure is required for L₁ to have content (two things are identical iff they are indistinguishable in all respects).
-
-**Distinguishability → Mathematical structures:** Not all conceivable mathematical structures are compatible with 3FLL-based distinguishability. For instance, structures that violate trichotomy or admit true contradictions are excluded. The compatible structures form a constrained space.
-
-**Mathematical → Physical structures:** Physical reality, whatever it is, must be describable by 3FLL-compatible mathematics. This does not uniquely fix physics but constrains it.
-
-This cascade makes explicit what is usually implicit: the logical dependencies between layers of theoretical structure.
+**Key point:** Each arrow represents a logical or mathematical relationship that must be made explicit. The tier system (Section 2.3) tracks which assumptions enter at each level.
 
 ### 2.3 The Tier System: Making Assumptions Explicit
 
-To operationalise this framework, we propose a three-tier classification of theoretical inputs:
+We propose a three-tier classification of theoretical inputs:
 
 **Tier 1: Structural Assumptions for 3FLL Application**
 
-These are assumptions about what exists for 3FLL to govern:
-- **Domain assumption (I):** There exists a domain of discourse—something rather than nothing.
-- **Unboundedness assumption (I∞):** There is no arbitrary finite bound on distinguishability—the domain is rich enough for 3FLL to have non-trivial application.
+| Axiom | Statement | Justification |
+|-------|-----------|---------------|
+| **(I)** Domain | There exists a non-empty domain of discourse | 3FLL require something to govern |
+| **(I∞)** Unboundedness | No arbitrary finite bound on distinguishability | Non-trivial application requires richness |
+| **(I_pars)** Parsimony | Among structures consistent with 3FLL, those minimizing specification cost are selected | Required for determinate application (see Section 2.4) |
 
-These are substantive assumptions, not pure consequences of 3FLL. One could imagine 3FLL applying to a trivial domain (a single element, or finitely many indistinguishable states). The assumption that our domain is rich enough to ground physics is an additional commitment. LRT argues these assumptions are *required* for coherent application of 3FLL to reality; this argument is part of the thesis.
+These are *substantive assumptions*, not pure consequences of 3FLL. We argue they are required for coherent application of 3FLL to physical reality; this argument is part of the thesis.
 
 **Tier 2: Established Mathematical Reconstruction Results**
 
-These are proven mathematical theorems that constrain what structures are possible given certain inputs:
-- **Stone's theorem** (Stone 1932): Strongly continuous one-parameter unitary groups have self-adjoint generators.
-- **Gleason's theorem** (Gleason 1957): In Hilbert spaces of dimension ≥ 3, probability measures on closed subspaces are determined by density operators.
-- **Masanes-Müller reconstruction** (Masanes and Müller 2011): Quantum theory is the unique theory satisfying certain operational axioms (tomographic locality, continuous reversibility, subspace axiom, composite systems).
+These are proven mathematical theorems with explicit presuppositions:
 
-Each Tier 2 result has its own presuppositions (see Table 1). These presuppositions are neither arbitrary nor proven from 3FLL—they occupy an intermediate status. We accept Tier 2 results for practical use while tracking their presuppositions explicitly.
+| Theorem | Statement | Key Presuppositions |
+|---------|-----------|---------------------|
+| **Stone (1932)** | Strongly continuous one-parameter unitary groups have self-adjoint generators | Hilbert space, strong continuity |
+| **Gleason (1957)** | In Hilbert spaces dim ≥ 3, probability measures on closed subspaces are determined by density operators | Hilbert space dim ≥ 3, frame functions |
+| **Masanes-Müller (2011)** | Quantum theory is uniquely determined by operational axioms | See Section 4.2 for full axiom list |
 
-**Table 1: Tier 2 Presupposition Tracking**
-
-| Theorem | Key Presuppositions | Derivability from 3FLL |
-|---------|---------------------|------------------------|
-| Stone (1932) | Hilbert space, strongly continuous unitary group | Open |
-| Gleason (1957) | Hilbert space dim ≥ 3, frame functions | Open |
-| Masanes-Müller (2011) | Tomographic locality, continuous reversibility, subspace axiom | Open |
-| Hardy (2001) | Continuous state space, finite dimensionality, simplicity | Open |
-| Chiribella et al. (2011) | Causality, purification principle | Open |
+We accept Tier 2 results for practical use while tracking their presuppositions explicitly. Whether these presuppositions are derivable from Tier 1 is an open research question.
 
 **Tier 3: Physical Principles**
 
-These are empirically motivated principles about how the physical world behaves:
+Empirically motivated principles whose logical status is tracked:
 - Energy additivity and conservation
-- Locality and causality constraints
 - Stability requirements (Ehrenfest 1917)
 - Symmetry principles (Lorentz invariance, gauge symmetry)
 
-Tier 3 inputs may be empirical regularities elevated to principles, or they may be derivable from more fundamental considerations. The tier system requires us to track their status rather than treating them as self-evident.
-
-**Key insight:** Every Tier 2/3 input carries presuppositions that can be traced. Making this explicit prevents the conflation of "established result" with "assumption-free derivation." When we use Gleason's theorem, we must acknowledge that Hilbert space structure is presupposed, not derived.
+**Methodological value:** The tier system prevents conflation of "established result" with "assumption-free derivation." When we invoke Gleason's theorem, we acknowledge that Hilbert space structure is presupposed, not derived.
 
 ### 2.4 The Status of Parsimony
 
-Throughout the derivation cascade, we invoke *parsimony*—the principle of minimizing specification cost. Parsimony does significant work: it selects continuous over discontinuous distinguishability, reversible over irreversible transformations, and minimum-action paths over alternatives. Given this load-bearing role, its status requires explicit discussion.
+Parsimony (I_pars) does significant work throughout the derivation cascade: it selects continuous over discontinuous structures, reversible over irreversible dynamics, and minimum-action paths. Given this load-bearing role, its status requires explicit treatment.
 
-**Three possible positions:**
+**Our position:** Parsimony is a **Tier 1 axiom**, required for determinate application of 3FLL to physical reality.
 
-1. **Parsimony as derived from 3FLL:** One argument: L₂ (Non-Contradiction) rules out maximal chaos (every proposition true). The opposite extreme—maximal specification—is equally problematic, requiring infinite information. Parsimony emerges as the stable middle: minimum specification consistent with determinacy. This argument is suggestive but not yet rigorous.
+**Argument:** 3FLL alone do not select among the infinitely many structures compatible with logical coherence. Without a selection principle, 3FLL constrain but do not determine. For 3FLL to have determinate physical content, something must select among coherent alternatives. Parsimony—minimizing specification cost—is the natural candidate: it is the selection principle that does not itself require arbitrary specification.
 
-2. **Parsimony as a Tier 1 assumption:** If parsimony cannot be derived from 3FLL, it should be added explicitly to Tier 1. This is honest: the derivation cascade requires 3FLL + parsimony, not 3FLL alone. The cost is admitting an extra-logical principle at the foundation.
+**Formal statement:**
 
-3. **Parsimony as methodological maxim:** Parsimony might be a rational preference for simpler theories rather than a constraint on reality. On this reading, parsimony-based derivations show what physics *would be* if parsimony holds, not what it *must be*.
+> **(I_pars) Parsimony Principle:** Among structurally possible configurations consistent with 3FLL and Tier 1 assumptions, those requiring minimal specification are physically realised.
 
-**Our position:** We tentatively adopt position (1) as a research hypothesis, while acknowledging that position (2) may be required. The key point is transparency: wherever parsimony enters a derivation, we mark it explicitly. Readers who reject parsimony as foundational can trace exactly where their disagreement begins.
+**Alternative positions (for transparency):**
+1. *Parsimony derived from 3FLL:* L₂ rules out maximal chaos (everything true); parsimony is the stable opposite. This argument is suggestive but not rigorous.
+2. *Parsimony as methodological maxim:* Parsimony guides theory choice, not reality. On this reading, our derivations are conditional: "IF parsimony, THEN action follows."
 
-This is preferable to the alternative—smuggling parsimony in under labels like "naturalness" or "simplicity" without acknowledgment. The tier system's value is precisely that it forces such commitments into the open.
+We adopt the first position (Tier 1 axiom) while acknowledging that readers preferring position 3 can reframe our results as conditional.
+
+### 2.5 Empirical Status and Falsification Conditions
+
+**LRT's empirical content:**
+
+LRT forbids the following observable events:
+1. A completed measurement recording outcome P ∧ ¬P
+2. A completed measurement failing to record either P or ¬P (genuine third option, not merely "undetermined")
+3. A physical state failing to maintain self-identity across an observation interval
+
+**Current status:** No such event has ever been observed. Every measurement record in physics is Boolean—one outcome obtains. Quantum superposition does not violate this: superposition describes the state *before* measurement; the measurement outcome is always definite.
+
+**What would refute LRT:**
+- A reproducible experiment yielding contradictory outcomes in a completed measurement
+- A physical system demonstrably violating identity (the same system being provably non-identical to itself)
+- Evidence that some physical regime operates according to a genuinely paraconsistent logic (not merely a formal model, but physical realisation)
+
+**Why no violations have been found:** This is the question LRT addresses. Three possible answers:
+1. **Constitutive (LRT's strong thesis):** 3FLL hold in all possible worlds; violations are metaphysically impossible.
+2. **Contingent but robust:** Our universe happens to obey 3FLL; other universes might not.
+3. **Emergent:** 3FLL emerge from deeper dynamics that are not themselves logical.
+
+LRT pursues explanation (1) while acknowledging (2) and (3) remain open. The empirical fact—no violations—is common ground.
+
+### 2.6 From Epistemic to Metaphysical: Bridging the Gap
+
+**The gap:** Self-grounding arguments establish that we *cannot coherently deny* 3FLL. They do not immediately establish that 3FLL *hold mind-independently*.
+
+**The bridge argument:**
+
+*Premise 1:* Our best physical theories describe a world that is determinate (states have definite properties), distinguishable (different states can be told apart), and non-contradictory (no state is both P and ¬P).
+
+*Premise 2:* These features are precisely what 3FLL require: determinacy (L₁), distinguishability (L₃), non-contradiction (L₂).
+
+*Premise 3:* The success of physics—its predictive accuracy, technological applications, coherent development—provides strong evidence that our theories track real structure, not merely our conceptual projections.
+
+*Conclusion:* The logical structure we cannot coherently deny in reasoning is also the structure physics successfully describes. The simplest explanation is that 3FLL constrain reality, not just thought about reality.
+
+**This is not a proof.** A sceptic can maintain that physics succeeds despite not tracking deep structure, or that logical structure is imposed by us. But this scepticism applies to all of science. LRT's metaphysical thesis is no worse off than scientific realism generally.
+
+**Engagement with logical realism literature:**
+
+Sher (2011) argues that logic captures formal features of reality—structures that any domain must exhibit (objects, properties, relations). Our position extends this: 3FLL are not merely formal features we *discover* but constitutive conditions for there *being* structured reality at all.
+
+Maddy (2007) grounds logical truth in worldly structure while remaining agnostic about necessity. We go further: 3FLL are not contingent features of our world but necessary features of any coherent world.
+
+**The fallback:** If the metaphysical bridge fails, LRT weakens to: "3FLL are necessary for our reasoning about physics, and physics exhibits no violations." This is still a substantive physical claim with empirical content.
 
 ---
 
 ## 3. Comparison with Existing Traditions
 
-### 3.1 Logical Empiricism and the Structure of Theories
+### 3.1 Logical Empiricism
 
-The logical empiricist tradition, developed by Carnap (1956), Hempel (1965), Nagel (1961), and others, provided the most systematic 20th-century analysis of scientific theory structure. On this view, a theory consists of:
+The logical empiricist tradition (Carnap 1956; Hempel 1965; Nagel 1961) analysed theories as theoretical terms connected to observational terms via correspondence rules.
 
-- **Theoretical terms:** Unobservable entities and properties (electrons, fields, entropy)
-- **Observational terms:** Directly observable entities and properties
-- **Correspondence rules:** Connecting theoretical and observational vocabulary
-- **Axioms:** Organizing theoretical structure
+**Where LRT differs:**
+- We treat 3FLL as *constitutive of the subject matter*, not merely metatheoretical apparatus.
+- Axioms are not free choices but constrained by coherence requirements—the space of viable axioms is narrower than conventionalism suggests.
 
-This framework illuminated much about scientific explanation and theory confirmation. But it faced persistent difficulties: the theory/observation distinction proved unstable (Hanson 1958); correspondence rules seemed insufficiently constrained; the framework said little about why theories take the forms they do.
+### 3.2 Quine-Duhem Underdetermination
 
-**Where Logic Realism differs:**
+Quine (1951) argued that even logic is revisable in principle—just another node in the web of belief, central but not immune.
 
-First, we treat 3FLL not as metatheoretical apparatus but as *constitutive of the subject matter*. Logical empiricists used logic to analyse theories; we propose that logic constrains what theories can coherently describe.
+**LRT response:** The crucial difference is self-grounding. Ordinary claims can be coherently denied; 3FLL cannot. Underdetermination operates *within* the space constrained by 3FLL, not over 3FLL themselves.
 
-Second, the correspondence problem shifts. If logical structure is not imposed on reality but is reality's coherence condition, then the gap between theoretical structure and world structure narrows. We are not asking how theoretical terms "hook onto" reality; we are asking what structures are coherent at all.
+### 3.3 Friedman's Relativized A Priori
 
-Third, axioms are not free choices. The logical empiricists tended to treat axiom selection as conventional within the bounds of empirical adequacy. On our view, axioms are constrained derivations from coherence requirements—the space of viable axioms is narrower than conventionalism suggests.
+Friedman (2001) argues that constitutive principles are revisable across scientific revolutions.
 
-### 3.2 Underdetermination and Background Assumptions
+**LRT response:** We agree that higher-tier assumptions (Hilbert space, symmetry principles) are Friedman-revisable. But 3FLL mark a limit: they are constitutive not just for frameworks but for coherent theorizing as such.
 
-The Quine-Duhem thesis (Quine 1951; Duhem 1954) states that empirical evidence alone cannot uniquely determine theory choice. Any observation can be accommodated by adjusting auxiliary hypotheses. This has been taken to establish a robust underdetermination of theory by evidence.
+### 3.4 Quantum Reconstruction Programs
 
-Quine (1951) drew radical conclusions: the boundary between analytic and synthetic truths dissolves; even logic and mathematics are revisable in principle; our web of belief faces experience as a corporate body. On this view, 3FLL are just more nodes in the web—central and resistant to revision, but not absolutely immune.
+Hardy (2001), Chiribella et al. (2011), and Masanes and Müller (2011) derive quantum theory from information-theoretic postulates.
 
-**Logic Realism response:**
+**LRT contribution:** These programs make *some* assumptions explicit but typically do not ask what grounds the operational axioms themselves. The tier system provides a framework for this question: Are the operational axioms downstream of 3FLL, or genuinely independent?
 
-We agree that many theoretical commitments are underdetermined by evidence. But we deny that 3FLL are among them. The crucial difference is self-grounding. Ordinary empirical claims can be coherently denied: "electrons do not exist" is false but meaningful. But "Excluded Middle is false" cannot be coherently asserted without relying on Excluded Middle.
+### 3.5 Objections from Logical Pluralism
 
-The tier system makes explicit which assumptions *can* be varied (Tier 2/3 presuppositions) and which cannot (3FLL). This does not eliminate underdetermination but clarifies its scope. Underdetermination operates within the space constrained by logical coherence. There may be multiple Tier 2/3 combinations compatible with evidence, but all must respect 3FLL.
+**Paraconsistent logic (Priest 2006; Beall 2009):** Contradictions need not entail everything; some might be true.
 
-**Comparison with Friedman's "relativized a priori":**
+*Response:* We distinguish object-level and meta-level. Paraconsistent formal systems are legitimate mathematics. But the dialethist asserting "This contradiction is true" relies on that assertion being determinately true (not also false) at the meta-level. Coherent assertion presupposes L₂.
 
-Friedman (2001) argues that scientific revolutions involve changes in constitutive principles—not just empirical claims but the framework conditions that make empirical claims meaningful. Newton's absolute space was constitutive for Newtonian mechanics; Einstein revised it. These principles are "a priori" for a framework but revisable across frameworks.
+*Limitation:* Priest and others have argued that paraconsistent meta-reasoning is possible. We flag this as a point where critics may diverge; our argument assumes classical meta-logic.
 
-We agree substantially with Friedman's analysis. The difference is where we locate the truly invariant principles. For Friedman, even the deepest constitutive principles are historically revisable. For us, 3FLL mark a limit: they are constitutive not just for a framework but for coherent theorizing as such.
+**Intuitionistic logic:** Excluded Middle fails for unverifiable propositions.
 
-Higher-tier assumptions (Hilbert space structure, tomographic locality, energy conservation) are constitutive for particular frameworks but not absolutely. These are the Friedman-revisable principles. 3FLL are deeper—they constrain what counts as revision versus incoherence.
+*Response:* Physical distinguishability—the ability to tell states apart—is inherently bivalent. Two states either are or are not distinguishable; there is no third status. L₃ applies to distinguishability even if it fails for abstract mathematical existence.
 
-### 3.3 Reconstruction Programs in Quantum Foundations
+### 3.6 The Fallback Position
 
-A major development in foundations of physics has been the *reconstruction program*: deriving quantum theory from simple, physically motivated postulates rather than accepting Hilbert space structure as primitive.
+Even if the strong metaphysical thesis fails, the program remains valuable:
+- **Tier system:** Tracks presuppositions regardless of which logic governs.
+- **Empirical claim:** No observed 3FLL violations is a physical fact.
+- **Partial derivations:** Reducing independent assumptions is progress even without full derivation.
+- **Comparative analysis:** Different frameworks can be compared by their tier profiles.
 
-Hardy (2001) showed that quantum theory follows from five "reasonable" axioms including continuity and simplicity. Chiribella, D'Ariano, and Perinotti (2011) derived quantum theory from information-theoretic principles including causality and purification. Most relevant to our framework, Masanes and Müller (2011) showed that quantum theory is uniquely determined by tomographic locality, continuous reversibility, and the subspace axiom.
-
-These programs make *some* assumptions explicit—a significant advance over treating Hilbert space as given. But they typically do not ask: what grounds the operational axioms themselves? Why should nature satisfy tomographic locality? Why continuous reversibility?
-
-**Logic Realism analysis:**
-
-Our framework provides a place to locate these questions. Tomographic locality—the principle that global states are determined by local measurements—might itself be downstream of 3FLL plus distinguishability requirements. Or it might be an additional assumption at Tier 2 level. The tier system forces us to ask.
-
-Current status: We accept reconstruction results as Tier 2 inputs, tracking their presuppositions (Table 1). Whether these presuppositions are derivable from 3FLL is an open research question. The methodology does not answer this question but makes it precise.
-
-### 3.4 "Assumptions of Physics" Projects
-
-Several research programs share the intuition that physics rests on something more fundamental than its standard axioms.
-
-Wheeler's (1990) "it from bit" proposal suggested that physical reality derives from information-theoretic foundations. The slogan captures something important: physics presupposes distinguishability, measurement, and information. But "bit" itself is not self-explanatory. A bit is a binary distinction—and binary distinctions presuppose L₃ (Excluded Middle). Wheeler's intuition is correct, but "bit" is not the ultimate foundation.
-
-Rovelli's (1996) relational quantum mechanics proposes that quantum states are not absolute but relational—a system has properties only relative to another system. This addresses some interpretive puzzles but does not explain why relational quantum mechanics rather than some other framework. The structural question remains.
-
-Various "physics from information" programs (Zeilinger 1999; Brukner and Zeilinger 2003) derive physical principles from information-theoretic foundations. These programs are valuable but typically take information concepts as primitive without asking what grounds them.
-
-**Where Logic Realism differs:**
-
-First, we do not privilege "information" as primitive. Information is *about* something—it presupposes a domain of discourse. Taking information as fundamental inverts the dependency: distinguishability grounds information, not vice versa.
-
-Second, we explicitly ground the framework in 3FLL rather than taking operational concepts as unexplained primitives. "Measurement," "observer," "system" are all concepts that presuppose logical coherence.
-
-Third, we provide a systematic tier classification rather than ad hoc judgments about what is fundamental. The tier system is a methodology that can be applied to any foundational analysis.
-
-### 3.5 Objections and Alternative Logics
-
-The claim that 3FLL are uniquely constitutive faces serious objections from logical pluralism and alternative logic traditions. We address these directly.
-
-**Paraconsistent logic:** Paraconsistent logicians (Priest 2006; Beall 2009) argue that contradictions need not entail everything—that L₂ (Non-Contradiction) can be weakened without trivialising the logic. On dialethist views, some contradictions are true.
-
-*Response:* We distinguish two claims. First, paraconsistent *formal systems* are mathematically legitimate—one can define consequence relations where contradiction does not entail everything. Second, whether such systems can serve as the *metatheory* in which we reason about theories is different. The dialethist who asserts "This contradiction is true" relies on that assertion being determinately true (not also false) at the meta-level. We contend that coherent assertion presupposes L₂, even if object-level systems can model L₂-violations. This is contested; we flag it as a point where critics may diverge.
-
-**Intuitionistic logic:** Intuitionists (Brouwer, Heyting, Dummett) reject L₃ (Excluded Middle) for domains where verification is impossible. On this view, "P ∨ ¬P" is not universally valid—only propositions with decision procedures satisfy it.
-
-*Response:* Intuitionistic logic is appropriate for constructive mathematics, where existence claims require witness construction. But physical distinguishability—the ability to tell states apart—is inherently bivalent: two states either are or are not distinguishable. There is no "third" status. We suggest that L₃ applies to distinguishability even if it fails for abstract mathematical existence. This position is compatible with using intuitionistic methods in proof theory while maintaining L₃ for physical ontology.
-
-**Logical realism literature:** Contemporary defenders of logical realism include Sher (2011), who argues that logic captures formal features of reality, and Maddy (2007), who grounds logical truth in worldly structure. Our position is closer to Sher's: 3FLL are not merely about language or thought but about the formal conditions for any structured reality.
-
-However, Sher's account focuses on formal features shared across domains (e.g., "some," "all," "not") without claiming these features *constitute* reality. Our thesis is stronger: 3FLL do not merely describe formal features—they are conditions without which there is no coherent "reality" to describe. This is a metaphysical commitment beyond Sher's formal-structural realism.
-
-**The fallback position:** Even if the strong metaphysical thesis fails, the methodology remains valuable:
-- The tier system tracks assumptions regardless of which logic governs the metatheory.
-- Presupposition tracking prevents pseudo-derivation whether or not 3FLL are metaphysically constitutive.
-- The derivation cascade structure clarifies dependencies even if some steps require alternative logical resources.
-
-We offer Logic Realism as a research program to be tested, not a dogma. If paraconsistent or intuitionistic foundations prove more fruitful for physics, the tier methodology can accommodate them—the specific content of Tier 0 (logical foundations) would change, but the structural discipline would remain.
+LRT is an ambitious research program, not an all-or-nothing gambit.
 
 ---
 
-## 4. Case Studies: The Methodology in Practice
+## 4. Case Study: Deriving the Action Functional
 
-### 4.1 Case Study 1: Deriving the Action Functional
+### 4.1 Traditional Presentation
 
-**Traditional presentation:** The principle of least action, S = ∫ L dt where δS = 0 selects physical trajectories, is typically presented as a postulate. Its remarkable success—unifying Newtonian mechanics, electromagnetism, general relativity, and quantum field theory—justifies it empirically. But why should nature minimize action? The question is usually set aside as metaphysical.
+The principle of least action, S = ∫ L dt with δS = 0, is typically presented as a postulate justified by empirical success. Why should nature minimise action?
 
-**Logic Realism analysis:**
+### 4.2 Masanes-Müller Reconstruction: Explicit Axioms
 
-We sketch a *conjectural derivation chain* from 3FLL plus tracked assumptions. This is not a rigorous proof but a structured argument showing how action *might* emerge from logical constraints. Each step is marked with its tier and status (Longmire 2025a):
+Before presenting our derivation, we state precisely which axioms from Masanes and Müller (2011) we invoke:
 
-1. **3FLL → Binary distinctions:** From L₃ (Excluded Middle), any property either obtains or does not. States are characterised by bit-assignments.
+**Lemma 4.1 (Masanes-Müller):** A theory satisfying the following axioms is quantum theory:
+1. **(MM1) Tomographic locality:** Global states are determined by local measurements.
+2. **(MM2) Continuous reversibility:** Reversible transformations form a continuous group.
+3. **(MM3) Subspace axiom:** Pure states on subspaces extend to global pure states.
+4. **(MM4) Composite systems:** Systems can be combined.
 
-2. **Binary distinctions → Distinguishability metric D:** States differing in more bits are more distinguishable. This defines a metric structure (the Hamming distance generalised).
+**Status in LRT:**
 
-3. **D → Minimum scale (ℏ defined):** [Parsimony argument] If distinguishability had infinite precision, specifying a state would require infinite information—contradicting parsimony. Therefore a minimum distinguishability scale exists. We *define* ℏ as this minimum unit—it is not an empirical input but a logical necessity given parsimony.
+| MM Axiom | LRT Derivation Status |
+|----------|----------------------|
+| MM1 (Tomographic locality) | **Tier 2 input** (not derived from 3FLL) |
+| MM2 (Continuous reversibility) | **Partially derived** (Propositions 4.3, 4.4 below) |
+| MM3 (Subspace axiom) | **Tier 2 input** |
+| MM4 (Composite systems) | **Tier 2 input** (relates to Tier 1 domain assumption) |
 
-4. **D → Continuity:** [Parsimony argument] Discontinuous D would require specification of where discontinuities occur—additional information cost. Parsimony selects continuous D.
+### 4.3 Formal Derivation Chain
 
-5. **D → Reversibility:** [Parsimony argument] Irreversible D-preserving transformations lose information, requiring specification of what was lost. Parsimony selects reversibility.
+We present key steps as formal propositions. Full proofs would require a dedicated technical paper; here we provide rigorous statements with proof sketches.
 
-6. **Continuity + Reversibility → Inner product structure:** [Tier 2: Masanes-Müller reconstruction] These conditions, plus operational axioms, imply inner product structure.
+**Proposition 4.1 (Binary Distinctions):** *If 3FLL govern a domain D, then any property P on D induces a binary partition: elements satisfying P and elements satisfying ¬P.*
 
-7. **Inner product → Phase space (x, p):** [Mathematical consequence] Hilbert space admits position and momentum representations related by Fourier transform.
+*Proof sketch:* By L₃ (Excluded Middle), for any element x ∈ D and property P, either P(x) or ¬P(x). By L₂, not both. This partitions D into {x : P(x)} and {x : ¬P(x)}. ∎
 
-8. **Phase space + ℏ → Action S = ∫ p dx:** Action counts the number of ℏ-cells traversed in phase space.
+*Status:* Derived from 3FLL. No additional assumptions.
 
-9. **Action → Lagrangian S = ∫ L dt:** Standard Legendre transform (mathematical identity).
+**Proposition 4.2 (Distinguishability Metric):** *If D admits binary distinctions and satisfies (I∞), then D admits a distinguishability measure d: D × D → ℝ≥0 with d(x,y) = 0 iff x = y.*
 
-10. **Parsimony → Least action δS = 0:** Parsimony selects paths minimizing total specification cost—which is action.
+*Proof sketch:* Define d(x,y) as the number of properties on which x and y differ (Hamming distance generalised). By L₁, x = x implies d(x,x) = 0. By L₃, any property either applies or not, so d is well-defined. By (I∞), unboundedly many properties exist, so d can be arbitrarily refined. ∎
 
-**What this reveals:**
+*Status:* Derived from 3FLL + (I∞).
 
-- Steps 1-5 are explicitly derived from 3FLL plus parsimony.
-- Step 6 uses a Tier 2 theorem (Masanes-Müller)—presuppositions acknowledged.
-- Steps 7-10 are mathematical consequences given prior structure.
+*Gap:* This establishes *a* metric exists. That it is unique or has specific properties (e.g., Euclidean) requires additional argument.
 
-The derivation does not claim that action follows from pure logic. It claims that action follows from 3FLL plus parsimony plus Tier 2 reconstruction inputs. The tier system makes explicit what is being assumed and where.
+**Proposition 4.3 (Continuity):** *If parsimony (I_pars) is operative and D admits a distinguishability measure, then d must be continuous.*
 
-**Methodological value:** We can now ask precisely: Can the Tier 2 presuppositions (tomographic locality, etc.) be derived from 3FLL? This is a research question, not a gap hidden by "that's just how physics works."
+*Proof sketch:* Suppose d is discontinuous at some point—a small change in configuration produces a large change in d. This discontinuity requires specification: where does the jump occur? What triggers it? This specification has information cost, violating parsimony. Therefore, minimal-specification structures have continuous d. ∎
 
-### 4.2 Case Study 2: The Fine Structure Constant
+*Status:* Derived from (I_pars). Requires parsimony.
 
-**Traditional view:** The fine structure constant α ≈ 1/137.036 is a dimensionless constant characterising electromagnetic coupling strength. Its value is usually taken as empirical—a "dial setting" of the universe that could have been otherwise. Feynman famously called it "one of the greatest damn mysteries of physics."
+**Proposition 4.4 (Reversibility):** *If (I_pars) is operative, then d-preserving transformations are reversible.*
 
-**Logic Realism analysis:**
+*Proof sketch:* Suppose T preserves d but is irreversible: T(x) = T(y) for x ≠ y. Then d(T(x), T(y)) = 0 but d(x,y) > 0, contradicting d-preservation. Therefore d-preserving T is injective. By similar argument (parsimony penalises information loss), T is surjective on its range. Hence T is bijective (reversible). ∎
 
-We present a *conjectural argument* relating α to spatial dimension (Longmire 2025b). This is speculative and requires independent verification:
+*Status:* Derived from (I_pars).
 
-1. **3FLL → Distinguishability → Spatial embedding dimension d:** Physical states require spatial embedding. The number of parameters required is 2d + 1 (positions + momenta + phase). [Status: heuristic argument, not rigorous derivation]
+**Proposition 4.5 (Inner Product Structure):** *Given continuity (Prop 4.3), reversibility (Prop 4.4), and MM axioms (MM1, MM3, MM4), the state space admits an inner product with d(s₁, s₂) = √(1 - |⟨s₁|s₂⟩|²).*
 
-2. **Complexity requirement (Tier 1):** Information processing requires sufficient state capacity: 2^(2d+1) ≥ C_min where C_min ~ 100 (from observed complexity of chemistry, genetics). This requires d ≥ 3. [Status: uses anthropic/observational input]
+*Proof sketch:* This is the Masanes-Müller reconstruction theorem. Continuous reversibility (our Prop 4.4) provides MM2. The remaining axioms (MM1, MM3, MM4) are Tier 2 inputs. Their theorem yields quantum state space with inner product inducing the stated metric. ∎
 
-3. **Stability requirement (Tier 3):** Stable orbits and atoms require d ≤ 3 (Ehrenfest 1917). This is a physical input—orbits are unstable in d > 3 dimensions under inverse-square forces. [Status: established physics, not derived from logic]
+*Status:* Uses Tier 2 inputs (MM1, MM3, MM4).
 
-4. **Intersection:** d = 3 is uniquely selected.
+**Proposition 4.6 (Phase Space):** *Inner product structure implies position-momentum phase space (x, p) with minimum cell area ℏ.*
 
-5. **α from d = 3:** Information capacity 2^7 = 128, plus geometric embedding cost d² = 9, plus self-interaction correction, yields α⁻¹ ≈ 137.036. [Status: formula fit to one data point]
+*Proof sketch:* Hilbert space admits position basis |x⟩ and momentum basis |p⟩ related by Fourier transform. The uncertainty principle δx·δp ≥ ℏ/2 defines minimum phase space resolution. Define ℏ as this minimum—it is not an empirical input but a consequence of the inner product structure. ∎
 
-**Numerical result:** The formula gives α⁻¹ ≈ 137.036, compared to CODATA (2018) value 137.035999084—agreement to 8 parts per billion.
+*Status:* Mathematical consequence of Prop 4.5.
 
-**Critical assessment:**
+**Proposition 4.7 (Action):** *Given phase space with minimum cell ℏ, action S = ∫ p dx counts traversed cells.*
 
-This result requires extreme caution:
-- **Input sensitivity:** How does the result change if C_min varies within plausible bounds (50-200)? A full sensitivity analysis is needed.
-- **Fitting vs. predicting:** With one free parameter (self-interaction correction) and one target value, agreement proves little. Independent predictions (other constants) are required.
-- **Derivation gaps:** Steps 1-2 are heuristic, not rigorous. The phase-space formula is motivated but not proven.
+*Proof sketch:* A path through phase space traverses some number of ℏ-cells. Logical action S_logical = (number of cells). Physical action S = ℏ × S_logical = ∫ p dx by definition of phase space area. ∎
 
-We present this as an *intriguing numerical coincidence* that merits investigation, not as a confirmed derivation. The methodological point stands regardless: the tier system forces us to be explicit about which inputs are logic, which are physics, and which are observation. Whether the specific formula survives scrutiny is a separate question from whether the methodology is sound.
+*Status:* Definition given prior structure.
 
-### 4.3 Deductive Risk Assessment
+**Proposition 4.8 (Least Action):** *Parsimony (I_pars) implies δS = 0.*
 
-A rigorous methodology requires honest assessment of where derivations are vulnerable:
+*Proof sketch:* Parsimony selects minimum specification cost. Action counts specification (cells traversed). Minimum action paths minimise specification. Variational principle δS = 0 expresses this selection. ∎
 
-| Component | Risk Level | Analysis |
-|-----------|------------|----------|
-| Tier 1 Assumptions (I, I∞) | **Moderate** | Are these truly *required* for logic, or just for our version of physics? This is the primary philosophical pivot point. |
-| Muon/Electron Ratio (92 ppm accuracy) | **Higher** | The 92 ppm accuracy (Longmire 2025b) suggests missing second-order corrections. Is this a new logic constraint or a Tier 3 physical detail? |
-| Dimension d = 3 | **Critical** | Must verify no circularity: d = 3 must be strictly upstream of α. Verified: d depends on complexity + stability, not α. |
-| Stability Constraint | **Moderate** | Uses Tier 3 physics (Ehrenfest 1917). A fully logic-first derivation would need to derive stability from 3FLL. |
+*Status:* Derived from (I_pars).
 
-**The "Leaked Assumptions" discipline:** Each derivation must explicitly track implicit dependencies. If a step relies on ANY property, structure, or assumption not explicitly in the tier tracking—whether mathematical (topological, measure-theoretic), physical (stability, symmetry), logical (choice axioms), or observational (anthropic bounds)—flag it immediately. This prevents pseudo-derivation.
+### 4.4 Summary: What Has Been Derived?
 
-### 4.4 What If Tier 2/3 Assumptions Remain Irreducible?
+| Step | Content | Status | Inputs |
+|------|---------|--------|--------|
+| 4.1 | Binary distinctions | **Derived** | 3FLL only |
+| 4.2 | Distinguishability metric | **Derived** | 3FLL + (I∞) |
+| 4.3 | Continuity | **Derived** | + (I_pars) |
+| 4.4 | Reversibility | **Derived** | + (I_pars) |
+| 4.5 | Inner product | **Tier 2** | + MM1, MM3, MM4 |
+| 4.6 | Phase space, ℏ | **Consequence** | of 4.5 |
+| 4.7 | Action S | **Definition** | given 4.6 |
+| 4.8 | Least action | **Derived** | + (I_pars) |
 
-The strong Logic Realism Thesis holds that all Tier 2/3 inputs are ultimately derivable from 3FLL. But what if this hope fails? What if some presuppositions (tomographic locality, Hilbert space structure, stability constraints) are genuinely irreducible—not derivable from logic alone?
+**Honest assessment:** The derivation succeeds *given* Tier 1 axioms (including parsimony) and Tier 2 inputs (three MM axioms). It does not derive action from pure logic. The tier system makes explicit what is assumed and where.
 
-**The program remains valuable even under this weaker reading:**
+**Research question:** Can MM1, MM3, MM4 be derived from 3FLL + parsimony? This remains open. If yes, the derivation strengthens. If no, these axioms are genuinely independent of logic.
 
-1. **Assumption tracking:** The tier system clarifies *which* assumptions are irreducible and *where* they enter. This is progress over treating all assumptions as equally opaque.
+### 4.5 What If Tier 2 Assumptions Remain Irreducible?
 
-2. **Partial derivations:** Even if the full chain fails, partial derivations matter. Showing that continuity follows from parsimony, or that phase space structure follows from reconstruction axioms, reduces the number of independent assumptions—even if the reconstruction axioms themselves remain underived.
+If MM1, MM3, MM4 cannot be derived from 3FLL:
+1. **The methodology remains valuable:** We have clarified exactly which assumptions are needed.
+2. **Partial derivation is progress:** We derived continuity and reversibility from parsimony, reducing the independent assumption count.
+3. **Comparative analysis:** Other frameworks can be assessed by their Tier 2 requirements.
+4. **The strong thesis weakens:** 3FLL constrain but do not uniquely determine physics.
 
-3. **Comparative analysis:** Different foundational approaches can be compared by their tier profiles. A framework requiring fewer Tier 2/3 inputs (or weaker ones) is preferable, ceteris paribus.
-
-4. **Research guidance:** Marking assumptions as "Open" identifies research targets. Even if some remain permanently irreducible, the attempt to derive them may yield insights.
-
-**The fallback position:** Logic Realism is compatible with the discovery that some physical structure is genuinely contingent—not fixed by logic. In that case, the thesis would weaken to: "3FLL constrain physical structure, but do not uniquely determine it." The methodology (tier tracking, presupposition analysis) survives this weakening intact.
-
-We present Logic Realism as an ambitious research program, not an all-or-nothing foundational gambit. The strong thesis is worth pursuing because it is falsifiable: if Tier 2/3 inputs demonstrably cannot be derived, we learn something important about the limits of logic-first approaches.
+This is honest science, not failure.
 
 ---
 
 ## 5. Implications and Open Questions
 
-### 5.1 For Philosophy of Science
+### 5.1 For Foundations of Physics
 
-**Reconceiving the analytic/synthetic distinction:** Quine (1951) famously attacked the analytic/synthetic distinction as a "dogma of empiricism." Our framework suggests a qualified rehabilitation. 3FLL are neither purely analytic (about meanings) nor synthetic (about the world) in the traditional sense. They are *constitutive of coherent worldhood*—conditions for there being a world describable at all. This is not the old analyticity but something new.
+- **Presupposition tracking:** The tier methodology can be applied to any foundational program, revealing hidden assumptions.
+- **Unification:** If diverse principles share common tier roots, apparent diversity masks underlying unity.
+- **Quantum gravity:** What spacetime structures are logically coherent given quantum distinguishability?
 
-**Naturalism and logic:** A tension exists between naturalism (all truths are empirical/scientific) and the apparent necessity of logical laws. If 3FLL are constitutive of reality, logic is not merely a human invention but a discovery of necessary structure. This has implications for debates over logical pluralism (Beall and Restall 2006). Alternative logics (intuitionistic, paraconsistent) may be useful formal systems but cannot replace 3FLL as constitutive principles without sacrificing coherence.
+### 5.2 For Philosophy of Science
 
-**The status of mathematics:** On our view, mathematics is the study of structures compatible with 3FLL. This grounds mathematics in something more than convention (pace formalism) but less than a Platonic realm of abstract objects. Mathematical truths are necessary given 3FLL—but 3FLL themselves are not arbitrary postulates; they are self-grounding.
+- **Constitutive principles:** 3FLL are candidates for truly invariant constitutive principles (unlike Friedman-revisable frameworks).
+- **Analytic/synthetic:** 3FLL are neither purely analytic nor synthetic but constitutive of coherent worldhood.
 
-### 5.2 For Foundations of Physics
+### 5.3 Open Questions
 
-**Unification:** If diverse physical principles (action, quantum mechanics, spacetime structure) are downstream of 3FLL, apparent diversity may mask underlying unity. The tier system provides a framework for investigating this: show that apparently independent principles have common roots in the derivation cascade.
-
-**Quantum gravity:** Spacetime structure itself may be constrained by 3FLL. The problem of quantum gravity—reconciling general relativistic spacetime with quantum mechanics—may have a new angle: what spacetime structures are logically coherent given quantum distinguishability constraints? The derivation of d = 3 (Section 4.2) is a preliminary result in this direction.
-
-**Constants of nature:** Unexplained constants (α, particle masses, cosmological constant) become research questions with precise form: what is their derivation chain? What tier inputs do they require? The 8 ppb result for α suggests that at least some "free parameters" may be structurally constrained.
-
-### 5.3 Open Questions for the Logic Realism Program
-
-**Completeness:** Can all Tier 2/3 inputs eventually be derived from 3FLL? This is the strong version of the Logic Realism Thesis. We do not claim it is true—we claim it is a well-defined research question. Current status: many gaps remain; the thesis is a guiding conjecture.
-
-**Uniqueness:** Does 3FLL + parsimony uniquely determine physics, or are there multiple coherent realisations? If multiple, what selects among them? This connects to multiverse debates and the anthropic principle.
-
-**The status of parsimony:** We frequently invoke parsimony (minimize specification cost) as a selection principle. Is this derived from 3FLL or an additional assumption? One argument: L₂ (Non-Contradiction) rules out chaos (everything true); parsimony is the limit of non-chaos—minimum specification consistent with determinacy. But this argument needs refinement.
-
-**Empirical tests:** The derivation of α (Section 4.2) makes a precise numerical prediction. Further predictions (particle mass ratios, cosmological parameters) could provide empirical tests. If the theory predicts values that disagree with measurement, it is falsified. This distinguishes Logic Realism from pure philosophy.
+1. **Completeness:** Can all Tier 2/3 inputs be derived from 3FLL? (Strong thesis—research conjecture)
+2. **Uniqueness:** Does 3FLL + parsimony determine physics uniquely?
+3. **Distinguishability in QM:** How does the framework accommodate partial quantum distinguishability (fidelity ∈ [0,1])?
 
 ---
 
 ## 6. Conclusion
 
-The Logic Realism Thesis proposes that 3FLL function as constitutive constraints on coherent reality, not merely on valid reasoning. This generates a methodology—the tiered analysis of theoretical assumptions—that makes explicit what is usually hidden in foundational work.
+Logic Realism Theory makes an empirical claim—3FLL constrain physical possibility—that has never been violated. This distinguishes it from pure philosophical speculation. The tier methodology for presupposition tracking constitutes a practical contribution regardless of the metaphysical thesis's fate.
 
-We do not claim to have proven that all physics derives from pure logic. Such a claim would be premature and probably false. We claim that:
+**What we claim:**
+1. LRT is a falsifiable physical theory (no observed violations).
+2. The tier system clarifies assumption dependencies in foundational physics.
+3. The metaphysical thesis (3FLL hold in all possible worlds) is a research conjecture worth pursuing.
 
-1. **Framing 3FLL as constitutive provides a coherent research program.** The thesis organises foundational questions and suggests derivation strategies.
+**What we do not claim:**
+- That physics reduces to pure logic
+- That all Tier 2/3 assumptions have been derived
+- That the metaphysical thesis is proven
 
-2. **The tier system clarifies assumption dependencies in existing theories.** Whether or not the Logic Realism Thesis is correct, the practice of tracking which assumptions enter at which level improves foundational analysis.
-
-3. **Concrete derivation chains demonstrate the methodology's value.** The action functional and fine structure constant case studies show how the tier system works in practice.
-
-4. **Open questions are precisely locatable within the framework.** Instead of vague claims about "understanding physics," we have specific questions: Can Tier 2 presuppositions be derived from 3FLL? Is parsimony independent or derived? What predicts mass ratios?
-
-The Logic Realism approach does not compete with physics but provides a meta-framework for analysing what physics presupposes and what it achieves. It is offered not as established truth but as a research program worthy of investigation.
+The Logic Realism approach provides a meta-framework for analysing what physics presupposes and what it achieves. It is offered as an ambitious research program, not established truth.
 
 ---
 
@@ -420,8 +408,6 @@ The Logic Realism approach does not compete with physics but provides a meta-fra
 Beall, J.C. (2009) *Spandrels of Truth*. Oxford: Oxford University Press.
 
 Beall, J.C. and Restall, G. (2006) *Logical Pluralism*. Oxford: Oxford University Press.
-
-Brukner, Č. and Zeilinger, A. (2003) 'Information and Fundamental Elements of the Structure of Quantum Theory', in Castell, L. and Ischebeck, O. (eds.) *Time, Quantum and Information*. Berlin: Springer, pp. 323-354.
 
 Carnap, R. (1956) 'The Methodological Character of Theoretical Concepts', in Feigl, H. and Scriven, M. (eds.) *Minnesota Studies in the Philosophy of Science*, Vol. 1. Minneapolis: University of Minnesota Press, pp. 38-76.
 
@@ -437,15 +423,9 @@ Friedman, M. (2001) *Dynamics of Reason*. Stanford: CSLI Publications.
 
 Gleason, A.M. (1957) 'Measures on the Closed Subspaces of a Hilbert Space', *Journal of Mathematics and Mechanics*, 6(6), pp. 885-893.
 
-Hanson, N.R. (1958) *Patterns of Discovery*. Cambridge: Cambridge University Press.
-
 Hardy, L. (2001) 'Quantum Theory From Five Reasonable Axioms', arXiv:quant-ph/0101012.
 
 Hempel, C.G. (1965) *Aspects of Scientific Explanation*. New York: Free Press.
-
-Longmire, J.D. (2025a) 'Issue 013: Derivation of the Logical Action Functional', Logic Realism Theory Technical Report. Available at: https://github.com/jdlongmire/logic-realism-theory
-
-Longmire, J.D. (2025b) 'Issue 012: Derivation of the Fine Structure Constant', Logic Realism Theory Technical Report. Available at: https://github.com/jdlongmire/logic-realism-theory
 
 Maddy, P. (2007) *Second Philosophy: A Naturalistic Method*. Oxford: Oxford University Press.
 
@@ -453,91 +433,90 @@ Masanes, L. and Müller, M.P. (2011) 'A derivation of quantum theory from physic
 
 Nagel, E. (1961) *The Structure of Science: Problems in the Logic of Scientific Explanation*. New York: Harcourt, Brace & World.
 
-Quine, W.V.O. (1951) 'Two Dogmas of Empiricism', *Philosophical Review*, 60(1), pp. 20-43.
-
 Priest, G. (2006) *In Contradiction: A Study of the Transconsistent*. 2nd edn. Oxford: Oxford University Press.
 
-Rovelli, C. (1996) 'Relational quantum mechanics', *International Journal of Theoretical Physics*, 35(8), pp. 1637-1678.
+Quine, W.V.O. (1951) 'Two Dogmas of Empiricism', *Philosophical Review*, 60(1), pp. 20-43.
 
 Sher, G. (2011) 'Is logic in the mind or in the world?', *Synthese*, 181(2), pp. 353-365.
 
 Stone, M.H. (1932) 'On One-Parameter Unitary Groups in Hilbert Space', *Annals of Mathematics*, 33(3), pp. 643-648.
 
-Wheeler, J.A. (1990) 'Information, Physics, Quantum: The Search for Links', in Zurek, W.H. (ed.) *Complexity, Entropy, and the Physics of Information*. Redwood City: Addison-Wesley, pp. 3-28.
-
-Zeilinger, A. (1999) 'A Foundational Principle for Quantum Mechanics', *Foundations of Physics*, 29(4), pp. 631-643.
-
 ---
 
 ## Appendix A: Formal Statement of the Tier System
 
-### A.1 Tier 1: Structural Assumptions for 3FLL Application
+### A.1 Tier 1 Axioms
 
-**Definition:** Tier 1 assumptions are structural requirements for 3FLL to have non-trivial application to physical reality.
+| Axiom | Formal Statement | Status |
+|-------|------------------|--------|
+| **(I)** | ∃D: D ≠ ∅ (domain exists) | Required for 3FLL application |
+| **(I∞)** | ∀n ∈ ℕ: |D| > n (no finite bound) | Required for non-trivial physics |
+| **(I_pars)** | Among {S : S consistent with 3FLL ∧ I ∧ I∞}, select argmin(specification cost) | Required for determinacy |
 
-**Current Tier 1 Assumptions:**
+### A.2 Tier 2 Usage Protocol
 
-| Axiom | Statement | Justification |
-|-------|-----------|---------------|
-| I (Domain) | There exists a non-empty domain of discourse | 3FLL require something to govern |
-| I∞ (Unboundedness) | The domain has no arbitrary finite cardinality bound | Non-trivial application requires richness |
+For each Tier 2 theorem invoked:
+1. State the theorem precisely
+2. List all presuppositions
+3. Indicate which are derived upstream vs. taken as input
+4. Note whether derivability from Tier 1 is open or closed
 
-**Status:** These are substantive assumptions, not pure consequences of 3FLL. They are part of the Logic Realism Thesis.
+### A.3 Tier 3 Classification
 
-### A.2 Tier 2: Established Mathematical Reconstruction Results
-
-**Definition:** Tier 2 inputs are established mathematical theorems whose presuppositions are explicitly tracked.
-
-**Usage Protocol:**
-1. Identify the theorem being used
-2. List its presuppositions
-3. Note whether each presupposition is derived from 3FLL, assumed at Tier 1, or open
-
-### A.3 Tier 3: Physical Principles
-
-**Definition:** Tier 3 inputs are empirically motivated physical principles whose logical status is tracked.
-
-**Categories:**
-- Empirical regularities (observed patterns elevated to principles)
-- Symmetry consequences (derivable from spacetime structure)
-- Stability requirements (conditions for existence of stable structures)
+| Type | Description | Example |
+|------|-------------|---------|
+| Empirical regularity | Observed pattern elevated to principle | Energy conservation |
+| Symmetry consequence | Derivable from spacetime structure | Lorentz invariance |
+| Stability requirement | Condition for structure existence | Ehrenfest d ≤ 3 |
 
 ---
 
-## Appendix B: Presupposition Tracking Tables
+## Appendix B: Masanes-Müller Presupposition Table
 
-### B.1 Masanes-Müller (2011) Reconstruction
-
-| Presupposition | Description | LRT Status |
-|----------------|-------------|------------|
-| Tomographic locality | Global states determined by local measurements | Open |
-| Continuous reversibility | Reversible transformations form continuous group | Partially derived (Theorem 6.1) |
-| Subspace axiom | Pure states on subspaces extend to global states | Open |
-| Composite systems | Systems can be combined | Open (relates to Tier 1) |
-| Finite information | Finite information per system | Derived (Theorem 4.2) |
-
-### B.2 Gleason (1957) Theorem
-
-| Presupposition | Description | LRT Status |
-|----------------|-------------|------------|
-| Hilbert space | States form a Hilbert space | From reconstruction |
-| Dimension ≥ 3 | At least 3-dimensional | From d = 3 derivation |
-| Frame functions | Probability measures on projectors | Derived from distinguishability |
-
-### B.3 Stone (1932) Theorem
-
-| Presupposition | Description | LRT Status |
-|----------------|-------------|------------|
-| Hilbert space | States form a Hilbert space | From reconstruction |
-| Strong continuity | One-parameter group is strongly continuous | From continuity (Theorem 5.1) |
-| Unitary group | Transformations are unitary | From reversibility (Theorem 6.1) |
+| Axiom | Description | LRT Status | Derivable from 3FLL? |
+|-------|-------------|------------|---------------------|
+| MM1 | Tomographic locality | Tier 2 input | Open (conjecture: related to L₃) |
+| MM2 | Continuous reversibility | Partially derived | Continuity: Prop 4.3; Reversibility: Prop 4.4 |
+| MM3 | Subspace axiom | Tier 2 input | Open |
+| MM4 | Composite systems | Tier 2 input | Open (relates to domain I) |
 
 ---
 
-**Word count:** ~8,500
-**Target venues:** Foundations of Physics, Studies in History and Philosophy of Science Part B, Philosophy of Science, Synthese
+## Appendix C: The Fine Structure Constant (Conjectural)
+
+**Note:** This appendix presents a speculative numerical illustration of the methodology. It is not a confirmed derivation and should be assessed separately from the main results.
+
+### C.1 Conjectural Argument
+
+A heuristic derivation chain relates α to spatial dimension d = 3:
+
+1. Physical states require 2d + 1 parameters (positions, momenta, phase)
+2. Information capacity: 2^(2d+1)
+3. Complexity requires d ≥ 3 (capacity ≥ ~100)
+4. Stability requires d ≤ 3 (Ehrenfest 1917)
+5. Intersection: d = 3
+6. Formula: α⁻¹ = 2^7 + d² + correction ≈ 137.036
+
+### C.2 Critical Assessment
+
+| Issue | Concern |
+|-------|---------|
+| **Fitted parameter** | "Self-interaction correction" appears tuned |
+| **Single data point** | One match proves nothing |
+| **Anthropic input** | Complexity threshold from observed chemistry |
+| **Dimensional mixing** | Information units + geometric units unclear |
+
+### C.3 Status
+
+This is an *intriguing numerical coincidence* meriting investigation, not a confirmed derivation. Independent predictions (other constants) are required for validation. The methodological point—that the tier system can be applied to unexplained constants—stands regardless of whether this specific formula survives scrutiny.
 
 ---
 
-*Document created: 2025-12-17 (Session 46.0)*
-*Last updated: 2025-12-17 (Revised per external review feedback)*
+**Word count:** ~7,500 (main text), ~8,500 (with appendices)
+
+**Target venue:** Foundations of Physics
+
+---
+
+*Document created: 2025-12-17*
+*Revised: 2025-12-17 (per referee report)*

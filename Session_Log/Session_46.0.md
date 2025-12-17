@@ -505,5 +505,74 @@ Incorporated detailed external review feedback into the philosophy paper.
 
 ---
 
-## Interaction Count: 24
+### Task 14: Major Revision per Formal Referee Report
+
+Received formal referee report with verdict: "Reject with strong encouragement to revise and resubmit."
+
+**Key Criticisms:**
+1. Paper conflated methodology/philosophy/physics without clear primary goal
+2. Parsimony status unresolved (derived vs. axiom vs. maxim)
+3. α case study overstated findings
+4. Action functional lacked formal rigor
+5. Epistemic-to-metaphysical gap not bridged
+6. Masanes-Müller inputs not specified
+
+**Complete Restructure Implemented:**
+
+1. **New Abstract** - Leads with LRT as empirical physical theory with falsifiability
+
+2. **Section 1.1 Rewritten** - Central claim with explicit:
+   - Empirical content (3FLL forbid observable violations)
+   - Current status (no violation ever recorded)
+   - Falsifiability conditions
+
+3. **Section 2.4 - Parsimony as Tier 1 Axiom (I_pars)**
+   ```
+   I_pars: For any underdetermined structure required for determinate
+   application of 3FLL, select the minimal option.
+   ```
+   Explicitly added as second Tier 1 axiom alongside I (Information Space).
+
+4. **Section 2.5 - Empirical Status of LRT (NEW)**
+   - Falsification conditions
+   - Corroboration via no-violation observation
+   - Demarcation from speculation
+
+5. **Section 2.6 - From Epistemic to Metaphysical (NEW)**
+   - Bridge argument structure
+   - Recognizes this requires abductive inference
+   - Provides fallback position
+
+6. **Section 4 - Formal Propositions 4.1-4.8**
+   - Each step as formal proposition with proof sketch
+   - Tier/status marked for every step
+   - Lemma 4.1: Masanes-Müller axioms listed explicitly
+     - MM1: Tomographic locality
+     - MM2: Continuous reversibility
+     - MM3: Subspace axiom
+     - MM4: Composite systems
+
+7. **Appendix C - Fine Structure Constant (α moved)**
+   - Clearly marked as conjectural/illustrative
+   - Critical assessment included
+   - Does not affect main methodology contribution
+
+**Referee Suggestions Implemented:**
+
+| Suggestion | Implementation |
+|------------|----------------|
+| Lead with working theory | Section 1.1 complete rewrite |
+| Add parsimony as Tier 1 axiom | Section 2.4 with formal statement |
+| Bridge epistemic → metaphysical | New Section 2.6 |
+| Compress α to appendix | Moved to Appendix C |
+| Formalize derivation steps | Propositions 4.1-4.8 |
+| Specify MM axioms | Lemma 4.1 with table |
+
+**Word count:** ~7,500 main text + ~1,000 appendices = ~8,500 total
+
+**Status:** Ready for re-submission
+
+---
+
+## Interaction Count: 27
 
