@@ -311,5 +311,17 @@ Discussion with user clarified the foundational position:
 
 ---
 
-## Interaction Count: 17
+### Task 8: Create Derivations README
+
+Created `theory/derivations/README.md` documenting:
+- Foundational principle (all axioms downstream of 3FLL)
+- The tier system and what each tier means
+- Why Tier 2/3 inputs are legitimate
+- Index of all derivation files with status
+- Format and quality standards
+- Guidelines for adding new derivations
+
+---
+
+## Interaction Count: 18
 
