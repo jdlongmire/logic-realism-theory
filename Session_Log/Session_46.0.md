@@ -717,5 +717,35 @@ Renumbered fallback position to §3.7.
 
 ---
 
-## Interaction Count: 33
+### Task 21: Red Team Defenses (Three Systematic Responses)
+
+Added three defenses against anticipated specialized critiques:
+
+**1. Parsimony Defense (§2.4)**
+- Objection: Parsimony smuggles physics (smoothness, continuity) into logic
+- Response: Parsimony required for L₁ (Identity) to be verifiable
+- Infinite complexity → infinite info to identify S as S → "S = S" meaningless
+- Maximally chaotic universe satisfies 3FLL vacuously (nothing identifiable)
+- Parsimony ensures non-trivial application of 3FLL
+
+**2. Intuitionist Defense (§3.5)**
+- Objection: L₃ is metaphysical imposition where verification impossible
+- Response: Ground L₃ in *possibility of interaction*, not verification
+- If system can interact, interaction itself is bivalent question
+- At horizons/Planck scale: if no interaction possible, L₃ applies vacuously
+- Conflation of epistemic access with physical determinacy
+
+**3. QBist Defense (§2.6)**
+- Objection: Outcomes are agent experiences, not world properties
+- Response: Intersubjectivity defeats pure agent-centrism
+  - Multiple agents record same outcome
+  - Records transmissible, verifiable by independent parties
+  - Technology works for everyone
+- QBism must deny intersubjectivity (false) or call it coincidence (unparsimonious)
+
+These defenses preempt likely specialized critiques for journal submission.
+
+---
+
+## Interaction Count: 34
 

@@ -157,6 +157,14 @@ Parsimony (I_pars) does significant work throughout the derivation cascade: it s
 
 We adopt the first position (Tier 1 axiom) while acknowledging that readers preferring position 3 can reframe our results as conditional.
 
+**Objection: "Parsimony is hidden physics."** One might object that parsimony smuggles physical content (smoothness, continuity, thermodynamic preferences) into what claims to be logic. If so, the action functional is not "downstream of logic" but an independent physical postulate relabelled.
+
+**Response:** Parsimony is not independent of 3FLL—it is required for L₁ (Identity) to have determinate application.
+
+Consider: a state of infinite complexity would require infinite information to specify. But if infinite information is required to identify state S as S, then "S = S" becomes unverifiable—not false, but meaningless. Identity presupposes that states are *identifiable*, which requires finite specification. Parsimony is not "logic plus physics"; it is the condition under which logic applies to anything at all.
+
+A logically consistent but maximally chaotic universe would satisfy 3FLL vacuously—nothing could be identified as violating them because nothing could be identified, period. Parsimony ensures 3FLL have non-trivial, non-vacuous application. Without it, we have logical constraint over nothing determinately specified.
+
 ### 2.5 Empirical Status and Falsification Conditions
 
 **LRT's empirical content:**
@@ -195,6 +203,15 @@ LRT pursues explanation (1) while acknowledging (2) and (3) remain open. The emp
 *Conclusion:* The logical structure we cannot coherently deny in reasoning is also the structure physics successfully describes. The simplest explanation is that 3FLL constrain reality, not just thought about reality.
 
 **This is not a proof.** A sceptic can maintain that physics succeeds despite not tracking deep structure, or that logical structure is imposed by us. But this scepticism applies to all of science. LRT's metaphysical thesis is no worse off than scientific realism generally.
+
+**Objection: The QBist challenge.** Quantum Bayesianism (QBism) argues that measurement outcomes are not properties of the world but personal experiences of an agent. If outcomes are agent-centric, then 3FLL are merely normative rules for how an agent should "keep their books balanced"—not physical laws. The absence of observed 3FLL violations would simply reflect that we refuse to call an incoherent experience a "measurement."
+
+*Response:* The QBist challenge targets Premise 3 (that physics tracks real structure). We respond by emphasising **intersubjectivity**. If measurement outcomes were purely agent-centric, we would expect systematic disagreement between agents about outcomes. Instead, we find:
+- Multiple agents consistently record the same outcome for the same experiment
+- Measurement records can be transmitted, stored, and verified by independent parties
+- Technological applications (dependent on specific outcomes) work for everyone, not just the original "experiencer"
+
+This intersubjective agreement is precisely what realism predicts and what pure agent-centrism struggles to explain. The simplest account remains: outcomes are properties of world-states, agents access these properties, and 3FLL constrain what properties can obtain. QBism must either deny intersubjectivity (empirically false) or explain it as a remarkable coincidence (unparsimonious).
 
 **Engagement with logical realism literature:**
 
@@ -325,6 +342,12 @@ This supports LRT's position: all actual detector records analysed in mainstream
 **Intuitionistic logic:** Excluded Middle fails for unverifiable propositions.
 
 *Response:* Physical distinguishability—the ability to tell states apart—is inherently bivalent. Two states either are or are not distinguishable; there is no third status. L₃ applies to distinguishability even if it fails for abstract mathematical existence.
+
+**Objection: "L₃ is metaphysical imposition."** A more sophisticated intuitionist challenge: in regimes where verification is impossible (cosmological horizons, Planck-scale physics), asserting P ∨ ¬P is a metaphysical imposition, not an empirical fact. The "Boolean outcome" status may be merely an artifact of the macroscopic limit—the Heisenberg cut—not a fundamental property of I.
+
+*Response:* We ground L₃ not in *verification* (which is epistemic) but in the *possibility of interaction*. If a system S can interact with an environment E, the interaction itself constitutes a bivalent "question" to the state: the interaction either occurs or does not, transfers information or does not, distinguishes states or does not. This is not about whether *we* can verify the outcome, but whether the physical interaction has a determinate character.
+
+At cosmological horizons or Planck scales, if no interaction is possible even in principle, then no physical question is being asked—and L₃ applies vacuously (there is no proposition P about which to assert P ∨ ¬P). Where interaction *is* possible, outcomes are bivalent. The intuitionist conflates epistemic access with physical determinacy; LRT concerns the latter.
 
 ### 3.6 Contrast with Many-Worlds Interpretation
 
