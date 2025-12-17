@@ -124,7 +124,13 @@ Each derivation MUST include a "Leaked Assumptions" section flagging any implici
 | Step 4 | Continuous time parameter | Tier 1? | Needs explicit derivation |
 ```
 
-**Purpose:** If a derivation step relies on a property (e.g., of Hilbert space) not explicitly in Tier 2 presuppositions, flag it immediately. This maintains deductive integrity and prevents pseudo-derivation.
+**Purpose:** If a derivation step relies on ANY property, structure, or assumption not explicitly tracked in the tier system, flag it immediately. Examples include:
+- Mathematical structures (topological assumptions, measure theory, continuity)
+- Physical inputs (stability, empirical bounds, symmetry principles)
+- Implicit logic (excluded middle for infinite domains, choice axioms)
+- Anthropic or observational bounds (C_min ~ 100)
+
+This maintains deductive integrity and prevents pseudo-derivation.
 
 ---
 

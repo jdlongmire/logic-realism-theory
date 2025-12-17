@@ -219,7 +219,7 @@ A rigorous methodology requires honest assessment of where derivations are vulne
 | Dimension d=3 | **Critical** | Must verify no circularity: d=3 must be strictly upstream of α. (Verified: d depends on complexity + stability, not α.) |
 | Stability Constraint | **Moderate** | Uses Tier 3 physics (Ehrenfest stability). A fully logic-first derivation would need to derive stability from 3FLL. |
 
-**The "Leaked Assumptions" discipline:** Each derivation file must include explicit tracking of implicit dependencies. If a step relies on a Hilbert space property not in the Tier 2 presupposition list, flag it immediately. This prevents pseudo-derivation.
+**The "Leaked Assumptions" discipline:** Each derivation file must include explicit tracking of implicit dependencies. If a step relies on ANY property, structure, or assumption not explicitly in the tier tracking - whether mathematical (topological, measure-theoretic), physical (stability, symmetry), logical (choice axioms), or observational (anthropic bounds) - flag it immediately. This prevents pseudo-derivation.
 
 ---
 
