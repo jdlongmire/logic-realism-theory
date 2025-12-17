@@ -9,9 +9,10 @@ Materials for International Journal of Quantum Foundations submission.
 | Item | Status |
 |------|--------|
 | Paper draft | **Complete** (~1,500 words) |
+| Formatted version | **Complete** |
+| Cover letter | **Complete** |
 | Figures | Not required |
 | PDF conversion | Pending |
-| Cover letter | Pending |
 | Submission | Pending |
 
 ## Files
@@ -19,6 +20,8 @@ Materials for International Journal of Quantum Foundations submission.
 | File | Description |
 |------|-------------|
 | `LRT_IJQF_Submission.md` | Main paper (markdown source) |
+| `LRT_IJQF_Formatted.md` | **Submission-ready formatted version** |
+| `IJQF_Cover_Letter.md` | **Cover letter for submission** |
 | `IJQF_Submission_rqts.md` | Journal requirements |
 
 ---
