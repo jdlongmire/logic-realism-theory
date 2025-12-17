@@ -111,10 +111,12 @@ We propose a three-tier classification of theoretical inputs:
 | Axiom | Statement | Justification |
 |-------|-----------|---------------|
 | **(I)** Domain | There exists a non-empty domain of discourse | 3FLL require something to govern |
-| **(I∞)** Unboundedness | No arbitrary finite bound on distinguishability | Non-trivial application requires richness |
+| **(I∞)** Unboundedness | No arbitrary finite bound on distinguishability | Required for continuous refinement (see below) |
 | **(I_pars)** Parsimony | Among structures consistent with 3FLL, those minimizing specification cost are selected | Required for determinate application (see Section 2.4) |
 
 These are *substantive assumptions*, not pure consequences of 3FLL. We argue they are required for coherent application of 3FLL to physical reality; this argument is part of the thesis.
+
+**Why (I∞)?** A strictly finite state space would preclude the continuous refinement of measurements that underpins the Masanes-Müller reconstruction: their derivation requires that pure states form a continuous manifold (specifically, a Bloch sphere for qubits) and that reversible transformations act continuously on this manifold. With only finitely many distinguishable states, these limit procedures fail. Note that (I∞) is compatible with MM's "finite information capacity per system"—individual subsystems may have finite dimension while the total domain of discourse remains unbounded. The tension is between MM's operational finiteness (finite bits per measurement) and the need for unbounded refinement at the level of the state space; (I∞) resolves this by positing no arbitrary cutoff on total distinguishability.
 
 **Tier 2: Established Mathematical Reconstruction Results**
 
@@ -485,12 +487,18 @@ For each Tier 2 theorem invoked:
 
 ## Appendix B: Masanes-Müller Presupposition Table
 
-| Axiom | Description | LRT Status | Derivable from 3FLL? |
-|-------|-------------|------------|---------------------|
-| MM1 | Tomographic locality | Tier 2 input | Open (conjecture: related to L₃) |
-| MM2 | Continuous reversibility | Partially derived | Continuity: Prop 4.3; Reversibility: Prop 4.4 |
-| MM3 | Subspace axiom | Tier 2 input | Open |
-| MM4 | Composite systems | Tier 2 input | Open (relates to domain I) |
+The following table maps our labels (MM1–MM4) to the numbered requirements in Masanes and Müller (2011, §2):
+
+| Our Label | MM Requirement | MM Description | LRT Status | Derivable from 3FLL? |
+|-----------|----------------|----------------|------------|---------------------|
+| MM1 | Requirement 3 | **Local tomography:** The state of a composite system is completely determined by the statistics of local measurements on its subsystems | Tier 2 input | Open (conjecture: related to L₃ applied locally) |
+| MM2 | Requirement 2 | **Continuous reversibility:** For every pair of pure states, there exists a continuous path of reversible transformations connecting them | Partially derived | Continuity: Prop 4.3; Reversibility: Prop 4.4 |
+| MM3 | Requirement 4 | **Subspace axiom:** For each system, there exists a "maximally mixed" state; pure states span a proper subspace | Tier 2 input | Open |
+| MM4 | Requirement 5 | **Composite systems:** Systems can be combined; the joint state space has specific structure | Tier 2 input | Open (relates to domain I) |
+
+**Note:** MM's Requirement 1 ("Existence of an information unit") states that there exists a system carrying exactly one bit of information. This is implicit in LRT's domain axiom (I) together with Proposition 4.1 (binary distinctions). MM's finiteness condition (finite-dimensional state spaces for individual systems) is compatible with LRT's (I∞), which posits no finite bound on the total domain rather than individual subsystems.
+
+**Cross-reference:** Readers wishing to verify our mapping should consult Masanes and Müller (2011), specifically §2 "The framework" (pp. 3–5) and §3 "Main result" (pp. 5–8) where Requirements 1–5 are stated.
 
 ---
 

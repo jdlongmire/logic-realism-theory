@@ -600,5 +600,34 @@ Incorporated new findings report on paraconsistent/dialetheist approaches in phy
 
 ---
 
-## Interaction Count: 28
+### Task 16: Technical Refinements per Review Feedback
+
+Two technical improvements for referee scrutiny:
+
+**1. (I∞) Justification (§2.3)**
+
+Added paragraph explaining why unboundedness is required:
+- Finite state space precludes continuous refinement needed for MM reconstruction
+- MM requires pure states form continuous manifold (Bloch sphere)
+- With only finitely many states, limit procedures fail
+- (I∞) compatible with MM's "finite info per system" — subsystems finite, total domain unbounded
+- Resolves tension between operational finiteness and state space continuity
+
+**2. MM Requirement Mapping (Appendix B)**
+
+Expanded table with explicit cross-references to Masanes-Müller (2011):
+
+| Our Label | MM Requirement | MM Section |
+|-----------|----------------|------------|
+| MM1 | Requirement 3 (Local tomography) | §2 |
+| MM2 | Requirement 2 (Continuous reversibility) | §2 |
+| MM3 | Requirement 4 (Subspace axiom) | §2 |
+| MM4 | Requirement 5 (Composite systems) | §2 |
+
+Added note that MM's Requirement 1 ("information unit") is implicit in (I) + Prop 4.1.
+Added cross-reference to MM §2 pp. 3-5 and §3 pp. 5-8.
+
+---
+
+## Interaction Count: 29
 
