@@ -223,32 +223,32 @@ Maddy (2007) grounds logical truth in worldly structure while remaining agnostic
 
 ### 2.7 Actualization as L-Constraint: The Core Thesis Formalized
 
-The central claim of Logic Realism Theory—that physical actualization equals logical constraint on information space (A = L(I))—can be decomposed into a theorem and an open conjecture.
+The central claim of Logic Realism Theory—that physical actualization equals logical constraint on information space (𝔄 = 𝔏(𝔍))—can be decomposed into a theorem and an open conjecture.
 
-**Scope.** LRT is a theory of **physical reality**: the domain of measurement outcomes, actualized physical states, and what physics describes. It is deliberately agnostic about mathematical reality (whether abstract objects exist independently), the ontological status of 3FLL themselves, and whether there are domains of reality beyond physics. The claim A = L(I) concerns physical actualization, not all possible reality.
+**Scope.** LRT is a theory of **physical reality**: the domain of measurement outcomes, actualized physical states, and what physics describes. It is deliberately agnostic about mathematical reality (whether abstract objects exist independently), the ontological status of 3FLL themselves, and whether there are domains of reality beyond physics. The claim 𝔄 = 𝔏(𝔍) concerns physical actualization, not all possible reality.
 
-**The co-constitutive thesis.** Neither L nor I alone constitutes physical reality. Rather:
-- **I** provides the substrate—the space of possible information configurations
-- **L** provides the structure—the constraint that filters coherent from incoherent configurations
-- **A** emerges from their interaction: physical reality is information-structured-by-logic
+**The co-constitutive thesis.** Neither 𝔏 nor 𝔍 alone constitutes physical reality. Rather:
+- **𝔍** provides the substrate—the space of possible information configurations
+- **𝔏** provides the structure—the constraint that filters coherent from incoherent configurations
+- **𝔄** emerges from their interaction: physical reality is information-structured-by-logic
 
-This is not the claim that "logic alone generates reality" (which would be a strong idealism). It is the claim that L and I are **co-constitutive** of physical actualization.
+This is not the claim that "logic alone generates reality" (which would be a strong idealism). It is the claim that 𝔏 and 𝔍 are **co-constitutive** of physical actualization.
 
 **Definitions.**
 
-Let **I** (information space) be the set of all total assignments of truth values to a σ-algebra P of propositions about physical measurement outcomes (possibly infinite, as required by (I∞)), subject only to syntactic well-formedness.
+Let **𝔍** (information space) be the set of all total assignments of truth values to a σ-algebra P of propositions about physical measurement outcomes (possibly infinite, as required by (I∞)), subject only to syntactic well-formedness.
 
-Let **L** (the 3FLL-constraint operator) act on I by:
+Let **𝔏** (the 3FLL-constraint operator) act on 𝔍 by:
 
 ```
-L(I) := { s ∈ I | s satisfies Identity, Non-Contradiction, and
+𝔏(𝔍) := { s ∈ 𝔍 | s satisfies Identity, Non-Contradiction, and
          Excluded Middle on all outcome propositions in P }
 ```
 
-Let **A** (the physical actualization set) be:
+Let **𝔄** (the physical actualization set) be:
 
 ```
-A := { s ∈ I | s is a physically realizable history given
+𝔄 := { s ∈ 𝔍 | s is a physically realizable history given
        Tier 1–3 axioms and Tier 2 reconstruction results }
 ```
 
@@ -258,31 +258,31 @@ Here "physically realizable" means: there exists some solution of the theory's d
 *Given Tier 1 axioms and the empirical fact that no completed measurement record or physical observation violates 3FLL:*
 
 ```
-A ⊆ L(I)
+𝔄 ⊆ 𝔏(𝔍)
 ```
 
 (This is equivalent to the claim that no physically realizable outcome violates 3FLL—the empirical thesis of §1.1.)
 
-*Proof sketch.* Any s ∈ A encodes outcomes in some physically realizable history. By LRT's empirical hypothesis (Section 1.1) and current evidence, no such outcome is both P and ¬P, neither P nor ¬P, or self-non-identical. Therefore s satisfies 3FLL on all outcome propositions, so s ∈ L(I). ∎
+*Proof sketch.* Any s ∈ 𝔄 encodes outcomes in some physically realizable history. By LRT's empirical hypothesis (Section 1.1) and current evidence, no such outcome is both P and ¬P, neither P nor ¬P, or self-non-identical. Therefore s satisfies 3FLL on all outcome propositions, so s ∈ 𝔏(𝔍). ∎
 
 This is the **derived, empirically-backed direction**: every actualizable history lies in the 3FLL-respecting region of information space.
 
 **Conjecture 2.1 (LRT Completeness).**
-*For any s ∈ L(I), there exists a physically realizable history whose outcome pattern is s:*
+*For any s ∈ 𝔏(𝔍), there exists a physically realizable history whose outcome pattern is s:*
 
 ```
-L(I) ⊆ A
+𝔏(𝔍) ⊆ 𝔄
 ```
 
-If Conjecture 2.1 holds, then **A = L(I)**: the set of physically realizable histories is exactly the 3FLL-constrained subset of information space.
+If Conjecture 2.1 holds, then **𝔄 = 𝔏(𝔍)**: the set of physically realizable histories is exactly the 3FLL-constrained subset of information space.
 
 **Status.** LRT does not derive this completeness result. It would require showing that Tier 1–3 dynamics are rich enough that every 3FLL-respecting information pattern is physically realizable in some solution. This is a substantive open problem—the ambitious heart of the research program.
 
-**The Over-Generation Risk.** One might worry that Conjecture 2.1 could fail if L(I) is "too large"—if there exist physical constraints beyond 3FLL that forbid certain logically coherent states from actualizing. In that case, A ⊂ L(I) strictly: logic would be necessary but not sufficient for actualization.
+**The Over-Generation Risk.** One might worry that Conjecture 2.1 could fail if 𝔏(𝔍) is "too large"—if there exist physical constraints beyond 3FLL that forbid certain logically coherent states from actualizing. In that case, 𝔄 ⊂ 𝔏(𝔍) strictly: logic would be necessary but not sufficient for actualization.
 
-**Resolution via co-constitution.** The co-constitutive framing dissolves this concern. If physical reality is *defined* as L operating on I—not as something independent against which L(I) could be measured—then there is no external "physics" relative to which L(I) could be too large. Tier 2/3 inputs are either:
+**Resolution via co-constitution.** The co-constitutive framing dissolves this concern. If physical reality is *defined* as 𝔏 operating on 𝔍—not as something independent against which 𝔏(𝔍) could be measured—then there is no external "physics" relative to which 𝔏(𝔍) could be too large. Tier 2/3 inputs are either:
 1. **Internal to the framework:** derivable from how 3FLL applies to information space, or
-2. **Part of I's structure:** how information space is constituted for physical systems, or
+2. **Part of 𝔍's structure:** how information space is constituted for physical systems, or
 3. **Incomplete understanding:** artifacts of our current theoretical limitations, not genuine independent constraints.
 
 Under this view, the completeness conjecture shifts from an empirical question ("does physics add extra constraints?") to a definitional claim about what physical reality means.
@@ -291,9 +291,9 @@ Under this view, the completeness conjecture shifts from an empirical question (
 
 | Claim | Status | What it says |
 |-------|--------|--------------|
-| A ⊆ L(I) | **Theorem** (empirically supported) | Physical actualization respects 3FLL |
-| L(I) ⊆ A | **Conjecture** (open) | 3FLL constraint on I suffices for physical actualization |
-| A = L(I) | **Conditional** | Physical reality = L and I co-constituted |
+| 𝔄 ⊆ 𝔏(𝔍) | **Theorem** (empirically supported) | Physical actualization respects 3FLL |
+| 𝔏(𝔍) ⊆ 𝔄 | **Conjecture** (open) | 3FLL constraint on 𝔍 suffices for physical actualization |
+| 𝔄 = 𝔏(𝔍) | **Conditional** | Physical reality = 𝔏 and 𝔍 co-constituted |
 
 ---
 
@@ -357,19 +357,19 @@ The Many-Worlds Interpretation (MWI) of quantum mechanics provides an instructiv
 
 **MWI's over-generation:** MWI posits that all branches of the wave function exist—every outcome permitted by unitary evolution is actualised in some branch. This generates ontological extravagance: infinitely many worlds, with no principled mechanism for why *this* branch exhibits *these* outcomes with *these* probabilities. The Born rule remains unexplained; the preferred basis problem persists.
 
-**LRT's response:** Under co-constitution, physical reality is *defined* as L(I)—not as a subset of some larger space of "all possible worlds." There is no over-generation because:
-- L provides the selection criterion from the start (3FLL filter incoherent configurations)
-- I is the substrate structured by L, not an independent "space of all possibilities"
-- A = L(I) is definitional, not a contingent fact about which branches exist
+**LRT's response:** Under co-constitution, physical reality is *defined* as 𝔏(𝔍)—not as a subset of some larger space of "all possible worlds." There is no over-generation because:
+- 𝔏 provides the selection criterion from the start (3FLL filter incoherent configurations)
+- 𝔍 is the substrate structured by 𝔏, not an independent "space of all possibilities"
+- 𝔄 = 𝔏(𝔍) is definitional, not a contingent fact about which branches exist
 
 | Problem | MWI | LRT |
 |---------|-----|-----|
-| Over-generation | All branches exist | Only L(I) exists |
-| Selection mechanism | None (all actualised) | L constrains I |
+| Over-generation | All branches exist | Only 𝔏(𝔍) exists |
+| Selection mechanism | None (all actualised) | 𝔏 constrains 𝔍 |
 | Born rule | Unexplained add-on | Emerges from distinguishability structure |
 | Ontological cost | Infinite worlds | Single co-constituted reality |
 
-MWI generates everything consistent with the wave equation and then struggles to recover observed physics. LRT begins with logical constraint and derives physical structure within that constraint. The co-constitutive framing ensures there is no "everything exists, then we pick"—there is only what L(I) permits.
+MWI generates everything consistent with the wave equation and then struggles to recover observed physics. LRT begins with logical constraint and derives physical structure within that constraint. The co-constitutive framing ensures there is no "everything exists, then we pick"—there is only what 𝔏(𝔍) permits.
 
 ### 3.7 The Fallback Position
 
