@@ -177,6 +177,23 @@ The framework connects naturally to quantum reconstruction programs while mainta
 
 ---
 
+## Research Program and Collaboration
+
+LRT is an active research program with open questions suitable for collaboration. Key areas include:
+
+- Formal verification of the derivation chain (Lean 4 formalization in progress)
+- Derivation of Masanes-Müller axioms from 3FLL + parsimony
+- Connection to quantum gravity and the measurement problem
+- Experimental proposals for precision tests
+
+The complete research program, including derivations, formal proofs, and documentation, is available at:
+
+> **https://github.com/jdlongmire/logic-realism-theory**
+
+Collaborators with expertise in quantum foundations, mathematical physics, formal verification, or philosophy of physics are welcome to contribute. Contact the author for discussion.
+
+---
+
 ## References
 
 Chiribella, G., D'Ariano, G.M. and Perinotti, P. (2011) 'Informational derivation of quantum theory', *Physical Review A*, 84(1), 012311.
