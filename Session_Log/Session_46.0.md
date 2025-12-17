@@ -464,5 +464,46 @@ Expanded `theory/2025-12-17_logic_realism_philosophy_of_science.md` to full jour
 
 ---
 
-## Interaction Count: 23
+### Task 13: Philosophy Paper Revisions per External Review
+
+Incorporated detailed external review feedback into the philosophy paper.
+
+**Key additions:**
+
+1. **Section 1.2 - Taxonomy of claims:** Added epistemic/semantic/metaphysical distinction to clarify which level the thesis operates at
+
+2. **Section 2.4 - Status of Parsimony:** New section explicitly addressing parsimony's role (derived from 3FLL vs. Tier 1 assumption vs. methodological maxim)
+
+3. **Section 3.5 - Objections and Alternative Logics:** New section addressing:
+   - Paraconsistent logic (Priest 2006, Beall 2009)
+   - Intuitionistic logic (Brouwer, Heyting, Dummett)
+   - Logical realism literature (Sher 2011, Maddy 2007)
+   - Fallback position if metaphysical thesis fails
+
+4. **Section 4.1-4.2 - Toned down claims:**
+   - Changed "derivation" to "conjectural derivation chain"
+   - Added status markers at each step
+   - Added critical assessment for α result
+   - Emphasized "intriguing numerical coincidence" vs. "confirmed derivation"
+
+5. **Section 4.4 - Irreducibility fallback:** New section on what happens if Tier 2/3 assumptions remain irreducible
+
+6. **References added:** Beall (2009), Maddy (2007), Priest (2006), Sher (2011)
+
+**Word count:** ~6,800 → ~8,500
+
+**Reviewer concerns addressed:**
+
+| Concern | Response |
+|---------|----------|
+| Ambiguity epistemic/semantic/metaphysical | Added explicit taxonomy in 1.2 |
+| Parsimony status unclear | New Section 2.4 |
+| No engagement with logical pluralism | New Section 3.5 |
+| Overclaiming in case studies | Toned down language throughout |
+| What if strong thesis fails | New Section 4.4 |
+| Need more references | Added Sher, Maddy, Priest, Beall |
+
+---
+
+## Interaction Count: 24
 
