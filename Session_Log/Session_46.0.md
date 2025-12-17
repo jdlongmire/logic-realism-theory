@@ -795,5 +795,50 @@ Created `theory/LRT_Formal_Core.md` - tightest possible framing of LRT:
 
 ---
 
-## Interaction Count: 37
+### Task 25: Create IJQF Submission
+
+Created submission materials for International Journal of Quantum Foundations:
+
+**Folder structure:**
+```
+theory/submissions/
+├── README.md
+└── IJQF/
+    ├── README.md
+    ├── IJQF_Submission_rqts.md
+    └── LRT_IJQF_Submission.md
+```
+
+**IJQF Journal Info:**
+- ISSN: 2375-4729
+- Type: Peer-reviewed, online, open access
+- Focus: Foundations of quantum theories
+- APC: $600 (funded), $300 (unfunded), Free (Premier members)
+
+**Submission Paper (`LRT_IJQF_Submission.md`):**
+
+~1,500 words covering:
+1. **Abstract** - LRT as co-constitutive framework with theorem + conjecture decomposition
+2. **Formal Framework** - 3FLL definitions, 𝔍, 𝔏, 𝔄 formal definitions
+3. **Central Thesis** - Theorem 1 (𝔄 ⊆ 𝔏(𝔍)) and Conjecture 1 (𝔏(𝔍) ⊆ 𝔄)
+4. **Co-Constitutive Thesis** - Neither 𝔏 nor 𝔍 alone; their interaction produces 𝔄
+5. **Connection to Quantum Reconstruction** - Masanes-Müller derivation pathway
+6. **Contrast with Many-Worlds** - Over-generation problem and LRT's selection mechanism
+7. **Empirical Status** - Falsifiability, current evidence, non-classical logics status
+8. **Discussion** - Scope (physical reality), claims/non-claims
+9. **References** - Hardy 2001, Chiribella et al. 2011, Masanes & Müller 2011
+
+**Key features:**
+- Uses Fraktur notation (𝔄, 𝔏, 𝔍)
+- Clear theorem/conjecture decomposition
+- Honest about open vs. supported components
+- Emphasizes co-constitutive framing
+- Connects to quantum reconstruction literature
+- Addresses MWI over-generation directly
+
+**Recommended submission type:** Research note or Normal paper
+
+---
+
+## Interaction Count: 38
 

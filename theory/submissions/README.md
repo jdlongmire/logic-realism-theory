@@ -9,6 +9,7 @@ Papers prepared for journal submission.
 | Paper | Target Journal | Status |
 |-------|----------------|--------|
 | Philosophy of Science | Foundations of Physics | Draft complete |
+| LRT Quantum Foundations | IJQF | Draft complete |
 
 ---
 
