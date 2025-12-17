@@ -656,5 +656,34 @@ This upgrades A = L(I) from assertion to rigorous formal structure with explicit
 
 ---
 
-## Interaction Count: 30
+### Task 18: Clarify Co-Constitutive Framing and Scope
+
+Updated Section 2.7 per discussion to clarify two key points:
+
+**1. Co-constitutive (not "logic is reality"):**
+- L and I together constitute physical reality
+- I = substrate (possible information configurations)
+- L = structure (3FLL constraint filtering coherent from incoherent)
+- A = their interaction (information-structured-by-logic)
+- Explicitly NOT strong idealism ("logic alone generates reality")
+
+**2. Scope is physical reality (not all reality):**
+- LRT is a theory of physics: measurement outcomes, actualized physical states
+- Deliberately agnostic about:
+  - Mathematical reality (abstract objects)
+  - Ontological status of 3FLL themselves
+  - Domains of reality beyond physics
+- A = L(I) concerns physical actualization, not all possible reality
+
+**Updated summary table:**
+
+| Claim | What it says |
+|-------|--------------|
+| A ⊆ L(I) | Physical actualization respects 3FLL |
+| L(I) ⊆ A | 3FLL constraint on I suffices for physical actualization |
+| A = L(I) | Physical reality = L and I co-constituted |
+
+---
+
+## Interaction Count: 31
 

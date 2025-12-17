@@ -206,11 +206,20 @@ Maddy (2007) grounds logical truth in worldly structure while remaining agnostic
 
 ### 2.7 Actualization as L-Constraint: The Core Thesis Formalized
 
-The central claim of Logic Realism Theory—that actualization equals logical constraint on information space (A = L(I))—can be decomposed into a theorem and an open conjecture.
+The central claim of Logic Realism Theory—that physical actualization equals logical constraint on information space (A = L(I))—can be decomposed into a theorem and an open conjecture.
+
+**Scope.** LRT is a theory of **physical reality**: the domain of measurement outcomes, actualized physical states, and what physics describes. It is deliberately agnostic about mathematical reality (whether abstract objects exist independently), the ontological status of 3FLL themselves, and whether there are domains of reality beyond physics. The claim A = L(I) concerns physical actualization, not all possible reality.
+
+**The co-constitutive thesis.** Neither L nor I alone constitutes physical reality. Rather:
+- **I** provides the substrate—the space of possible information configurations
+- **L** provides the structure—the constraint that filters coherent from incoherent configurations
+- **A** emerges from their interaction: physical reality is information-structured-by-logic
+
+This is not the claim that "logic alone generates reality" (which would be a strong idealism). It is the claim that L and I are **co-constitutive** of physical actualization.
 
 **Definitions.**
 
-Let **I** (information space) be the set of all total assignments of truth values to a σ-algebra P of propositions about measurement outcomes (possibly infinite, as required by (I∞)), subject only to syntactic well-formedness.
+Let **I** (information space) be the set of all total assignments of truth values to a σ-algebra P of propositions about physical measurement outcomes (possibly infinite, as required by (I∞)), subject only to syntactic well-formedness.
 
 Let **L** (the 3FLL-constraint operator) act on I by:
 
@@ -219,7 +228,7 @@ L(I) := { s ∈ I | s satisfies Identity, Non-Contradiction, and
          Excluded Middle on all outcome propositions in P }
 ```
 
-Let **A** (the actualization set) be:
+Let **A** (the physical actualization set) be:
 
 ```
 A := { s ∈ I | s is a physically realizable history given
@@ -258,9 +267,9 @@ If Conjecture 2.1 holds, then **A = L(I)**: the set of physically realizable his
 
 | Claim | Status | What it says |
 |-------|--------|--------------|
-| A ⊆ L(I) | **Theorem** (empirically supported) | Physics cannot violate 3FLL |
-| L(I) ⊆ A | **Conjecture** (open) | 3FLL + axioms suffice for all coherent outcomes |
-| A = L(I) | **Conditional** | Full thesis, pending completeness |
+| A ⊆ L(I) | **Theorem** (empirically supported) | Physical actualization respects 3FLL |
+| L(I) ⊆ A | **Conjecture** (open) | 3FLL constraint on I suffices for physical actualization |
+| A = L(I) | **Conditional** | Physical reality = L and I co-constituted |
 
 ---
 
