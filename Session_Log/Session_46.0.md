@@ -629,5 +629,32 @@ Added cross-reference to MM §2 pp. 3-5 and §3 pp. 5-8.
 
 ---
 
-## Interaction Count: 29
+### Task 17: Formalize Core Thesis A = L(I)
+
+Added new Section 2.7 "Actualization as L-Constraint: The Core Thesis Formalized"
+
+**Key contribution:** Decomposes A = L(I) into theorem + conjecture:
+
+| Component | Statement | Status |
+|-----------|-----------|--------|
+| **Theorem 2.1** | A ⊆ L(I) | Proved (empirically backed) |
+| **Conjecture 2.1** | L(I) ⊆ A | Open (completeness) |
+| **Full thesis** | A = L(I) | Conditional on conjecture |
+
+**Formal definitions added:**
+- **I** (information space): σ-algebra of outcome propositions, possibly infinite per (I∞)
+- **L** (3FLL-constraint operator): filters I to 3FLL-respecting assignments
+- **A** (actualization set): physically realizable histories given Tier 1-3
+
+**Key insight (from external feedback):**
+- Theorem 2.1 = "Reality is logical" (constraint, passive)
+- Conjecture 2.1 = "Logic is reality" (generative, active)
+
+**Over-Generation Risk:** Acknowledged that L(I) might be "too large" - if physical constraints beyond 3FLL exist, then A ⊂ L(I) strictly. Whether Tier 2/3 inputs are derivable from 3FLL or genuinely independent is the central open question.
+
+This upgrades A = L(I) from assertion to rigorous formal structure with explicit proof obligations.
+
+---
+
+## Interaction Count: 30
 

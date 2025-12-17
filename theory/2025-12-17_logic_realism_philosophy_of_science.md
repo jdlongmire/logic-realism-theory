@@ -204,6 +204,64 @@ Maddy (2007) grounds logical truth in worldly structure while remaining agnostic
 
 **The fallback:** If the metaphysical bridge fails, LRT weakens to: "3FLL are necessary for our reasoning about physics, and physics exhibits no violations." This is still a substantive physical claim with empirical content.
 
+### 2.7 Actualization as L-Constraint: The Core Thesis Formalized
+
+The central claim of Logic Realism Theory—that actualization equals logical constraint on information space (A = L(I))—can be decomposed into a theorem and an open conjecture.
+
+**Definitions.**
+
+Let **I** (information space) be the set of all total assignments of truth values to a σ-algebra P of propositions about measurement outcomes (possibly infinite, as required by (I∞)), subject only to syntactic well-formedness.
+
+Let **L** (the 3FLL-constraint operator) act on I by:
+
+```
+L(I) := { s ∈ I | s satisfies Identity, Non-Contradiction, and
+         Excluded Middle on all outcome propositions in P }
+```
+
+Let **A** (the actualization set) be:
+
+```
+A := { s ∈ I | s is a physically realizable history given
+       Tier 1–3 axioms and Tier 2 reconstruction results }
+```
+
+Here "physically realizable" means: there exists some solution of the theory's dynamical equations whose completed measurement records are exactly those encoded by s.
+
+**Theorem 2.1 (3FLL Constraint on Actualization).**
+*Given Tier 1 axioms and the empirical fact that no completed measurement record or physical observation violates 3FLL:*
+
+```
+A ⊆ L(I)
+```
+
+(This is equivalent to the claim that no physically realizable outcome violates 3FLL—the empirical thesis of §1.1.)
+
+*Proof sketch.* Any s ∈ A encodes outcomes in some physically realizable history. By LRT's empirical hypothesis (Section 1.1) and current evidence, no such outcome is both P and ¬P, neither P nor ¬P, or self-non-identical. Therefore s satisfies 3FLL on all outcome propositions, so s ∈ L(I). ∎
+
+This is the **derived, empirically-backed direction**: every actualizable history lies in the 3FLL-respecting region of information space.
+
+**Conjecture 2.1 (LRT Completeness).**
+*For any s ∈ L(I), there exists a physically realizable history whose outcome pattern is s:*
+
+```
+L(I) ⊆ A
+```
+
+If Conjecture 2.1 holds, then **A = L(I)**: the set of physically realizable histories is exactly the 3FLL-constrained subset of information space.
+
+**Status.** LRT does not derive this completeness result. It would require showing that Tier 1–3 dynamics are rich enough that every 3FLL-respecting information pattern is physically realizable in some solution. This is a substantive open problem—the ambitious heart of the research program.
+
+**The Over-Generation Risk.** Conjecture 2.1 could fail if L(I) is "too large"—if there exist physical constraints beyond 3FLL that forbid certain logically coherent states from actualizing. In that case, A ⊂ L(I) strictly: logic would be necessary but not sufficient for actualization. Whether Tier 2/3 inputs represent such independent constraints, or are themselves derivable from 3FLL, remains the central open question.
+
+**What each direction establishes:**
+
+| Claim | Status | What it says |
+|-------|--------|--------------|
+| A ⊆ L(I) | **Theorem** (empirically supported) | Physics cannot violate 3FLL |
+| L(I) ⊆ A | **Conjecture** (open) | 3FLL + axioms suffice for all coherent outcomes |
+| A = L(I) | **Conditional** | Full thesis, pending completeness |
+
 ---
 
 ## 3. Comparison with Existing Traditions
