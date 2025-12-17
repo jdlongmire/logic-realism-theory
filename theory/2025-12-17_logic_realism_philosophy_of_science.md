@@ -261,7 +261,14 @@ If Conjecture 2.1 holds, then **A = L(I)**: the set of physically realizable his
 
 **Status.** LRT does not derive this completeness result. It would require showing that Tier 1–3 dynamics are rich enough that every 3FLL-respecting information pattern is physically realizable in some solution. This is a substantive open problem—the ambitious heart of the research program.
 
-**The Over-Generation Risk.** Conjecture 2.1 could fail if L(I) is "too large"—if there exist physical constraints beyond 3FLL that forbid certain logically coherent states from actualizing. In that case, A ⊂ L(I) strictly: logic would be necessary but not sufficient for actualization. Whether Tier 2/3 inputs represent such independent constraints, or are themselves derivable from 3FLL, remains the central open question.
+**The Over-Generation Risk.** One might worry that Conjecture 2.1 could fail if L(I) is "too large"—if there exist physical constraints beyond 3FLL that forbid certain logically coherent states from actualizing. In that case, A ⊂ L(I) strictly: logic would be necessary but not sufficient for actualization.
+
+**Resolution via co-constitution.** The co-constitutive framing dissolves this concern. If physical reality is *defined* as L operating on I—not as something independent against which L(I) could be measured—then there is no external "physics" relative to which L(I) could be too large. Tier 2/3 inputs are either:
+1. **Internal to the framework:** derivable from how 3FLL applies to information space, or
+2. **Part of I's structure:** how information space is constituted for physical systems, or
+3. **Incomplete understanding:** artifacts of our current theoretical limitations, not genuine independent constraints.
+
+Under this view, the completeness conjecture shifts from an empirical question ("does physics add extra constraints?") to a definitional claim about what physical reality means.
 
 **What each direction establishes:**
 

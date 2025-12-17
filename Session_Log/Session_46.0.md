@@ -685,5 +685,20 @@ Updated Section 2.7 per discussion to clarify two key points:
 
 ---
 
-## Interaction Count: 31
+### Task 19: Co-Constitution Resolves Over-Generation
+
+Added "Resolution via co-constitution" to §2.7 explaining how the co-constitutive framing dissolves the over-generation risk:
+
+- If physical reality IS L(I) (not something independent), there's no external standpoint from which L(I) could be "too large"
+- Tier 2/3 inputs are either:
+  1. Internal to the framework (derivable from 3FLL on I)
+  2. Part of I's structure for physical systems
+  3. Artifacts of incomplete understanding
+- Completeness shifts from empirical question to definitional claim
+
+This is a significant philosophical move: the co-constitutive framing makes A = L(I) near-definitional rather than a contingent hypothesis requiring external verification.
+
+---
+
+## Interaction Count: 32
 
