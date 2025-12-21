@@ -207,4 +207,13 @@ Reason: Obsolete (Session 3.6 era, Oct 2025) - superseded by current documentati
 
 **Updated**: LogicRealismTheory.lean to only import ExternalTheorems
 
+### Lean AI Role Profile
+
+**Created**: `lean/AI_ROLE.md`
+- Lean 4 proof development guidelines
+- Truth labels, response contract, proof doctrine
+- Import discipline, scope control, debugging protocol
+
+**Updated**: CLAUDE.md to reference lean/AI_ROLE.md
+
 ---

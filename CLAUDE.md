@@ -17,6 +17,7 @@ Essential guidance for Claude Code in this repository.
 - **`theory/Comparison_Scorecard.md`** - LRT vs other approaches
 
 ### Lean Status (lean/)
+- **`lean/AI_ROLE.md`** - AI operating mode for Lean development (read first for Lean work)
 - **`lean/AXIOMS.md`** - Axiom count: 2 Tier 1 + ~16 Tier 2 + 1 Tier 3 = ~19
 - **`lean/LogicRealismTheory.lean`** - Root import file (build status)
 - **`lean/BEST_PRACTICES.md`** - Lean 4 development lessons
