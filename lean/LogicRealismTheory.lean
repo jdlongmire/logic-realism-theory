@@ -20,7 +20,13 @@ See lean/AXIOMS.md for the complete 3-tier classification system.
 -/
 
 -- ═══════════════════════════════════════════════════════════════════════════════
--- EXTERNAL THEOREMS (Tier 2 axioms - established math tools)
+-- TIER 0: PRIMITIVES (Self-Grounding)
+-- ═══════════════════════════════════════════════════════════════════════════════
+
+import LogicRealismTheory.D0_1_ThreeFundamentalLaws
+
+-- ═══════════════════════════════════════════════════════════════════════════════
+-- TIER 2: EXTERNAL THEOREMS (Established math tools)
 -- ═══════════════════════════════════════════════════════════════════════════════
 -- All external mathematical results are localized in this module.
 -- See lean/AXIOMS.md for documentation.
@@ -31,7 +37,8 @@ import LogicRealismTheory.ExternalTheorems
 -- BUILD STATUS
 -- ═══════════════════════════════════════════════════════════════════════════════
 --
--- Active modules: 1
+-- Active modules: 2
+--   - D0_1_ThreeFundamentalLaws.lean (Tier 0 - L₃ primitives)
 --   - ExternalTheorems.lean (Tier 2 established math)
 --
 -- Archived (2025-12-21): Foundation/, Dynamics/, Measurement/, Reconstruction/
