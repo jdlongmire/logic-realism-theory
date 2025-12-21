@@ -44,7 +44,7 @@ theory/derivations/      notebooks/               lean/LogicRealismTheory/
 | Notebook | Implementation matches theory, numerical verification, edge cases tested |
 | Lean | Compiles without sorry, axiom count matches tier, no smuggled assumptions |
 
-**Tracking:** See `theory/logic-realism-theory-refactor.md` for derivation chain and progress.
+**Tracking:** See `theory/20251221-logic-realism-theory-refactor.md` for derivation chain and progress.
 
 ### Naming Convention
 
