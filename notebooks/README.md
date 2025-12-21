@@ -1,86 +1,79 @@
-# Logic Realism Theory - Computational Notebooks
+# LRT Derivation Notebooks
 
-**Copyright © 2025 James D. (JD) Longmire**
-**License**: Apache License 2.0
-
-This folder contains the computational validation suite for Logic Realism Theory (LRT).
-
----
-
-## Active Notebooks
-
-### Path 3: T1 vs T2 QuTiP Validation (Primary)
-
-**[`Path3_T1_vs_T2_QuTiP_Validation.ipynb`](Path3_T1_vs_T2_QuTiP_Validation.ipynb)** - QuTiP simulation validation of Path 3 protocol
-- **Purpose**: Validate experimental protocol for detecting T2/T1 ≈ 0.7-0.9 (superposition decoherence)
-- **Status**: Complete (Session 3.6)
-- **Key Results**:
-  - LRT effect (T2/T1 = 0.8) detectable at >4σ significance
-  - 40,000 shots per point provides 97% statistical power
-  - Fitting accuracy ~1-2% matches error budget predictions
-- **Protocol**: [`../theory/predictions/T1_vs_T2_Protocol.md`](../theory/predictions/T1_vs_T2_Protocol.md)
-- **Error Budget**: [`../theory/predictions/T1_vs_T2_Error_Budget.md`](../theory/predictions/T1_vs_T2_Error_Budget.md)
+**Location:** `notebooks/`
+**Purpose:** Stage 1 of 2-stage derivation pipeline (Notebook → Lean)
+**Protocol:** See `LRT-Collaboration-Addendum.md`
 
 ---
 
-## Planned Notebooks (9 Total - In Development)
+## Pipeline Role
 
-### Foundation (01-02)
-- **01_IIS_and_3FLL.ipynb** - Infinite Information Space and Three Fundamental Laws
-- **02_Operator_Formalism.ipynb** - Π_id, {Π_i}, R operators
+Each notebook contains:
+- **Markdown cells**: First-principles theory reasoning
+- **Code cells**: Computational verification
 
-### Derivations (03-07)
-- **03_Time_Emergence.ipynb** - Time from Stone's theorem
-- **04_Energy_Constraint.ipynb** - Energy from Spohn's inequality
-- **05_Born_Rule.ipynb** - Born rule from maximum entropy
-- **06_Quantum_Superposition.ipynb** - Partial constraint → superposition
-- **07_Measurement_Problem.ipynb** - Full constraint → classical state
-
-### Predictions & Bridge (08-09)
-- **08_Beta_Prediction.ipynb** - β ≠ 0 in quantum error correction
-- **09_SN_Realization.ipynb** - Bridge to Approach 2 (S_N hierarchy)
-
-**Note**: These notebooks (01-09) are planned for future development. Current focus is on Path 3 experimental protocol validation.
+No notebook advances to Lean (Stage 2) without completing all quality gates.
 
 ---
 
-## Reference: Approach 2 Archive
+## Derivation Chain
 
-**Approach 2** (Physical Logic Framework): 25 notebooks, ~80,000 words
-- Comprehensive computational exploration
-- All notebooks archived in [`../approach_2_reference/notebooks/`](../approach_2_reference/notebooks/)
+### Tier 0: Primitives (Self-Grounding)
 
-**Logic Realism Theory** (this folder): Focused on core derivations and experimental validation
-- References Approach 2 for computational validation
-- Professional scholarly tone throughout
-- Current focus: Path 3 T1 vs T2 protocol
+| ID | Notebook | Status |
+|----|----------|--------|
+| D0.1 | `D0.1-three-fundamental-laws.ipynb` | Pending |
+| D0.2 | `D0.2-information-space.ipynb` | Pending |
+| D0.3 | `D0.3-co-fundamentality.ipynb` | Pending |
+
+### Tier 1: Structural Consequences
+
+| ID | Notebook | Depends On | Status |
+|----|----------|------------|--------|
+| D1.1 | `D1.1-distinguishability.ipynb` | D0.1, D0.2 | Pending |
+| D1.2 | `D1.2-minimum-resolution.ipynb` | D1.1 | Pending |
+| D1.3 | `D1.3-state-space-structure.ipynb` | D1.1, D1.2 | Pending |
+| D1.4 | `D1.4-hilbert-space-emergence.ipynb` | D1.3 | Pending |
+
+### Tier 2-4: See `theory/20251221-logic-realism-theory-refactor.md`
 
 ---
 
-## Copyright Format (3 Lines)
+## Notebook Header (Mandatory)
 
-All notebooks must use this exact format:
+Every notebook must begin with a markdown cell:
 
 ```markdown
-**Copyright © 2025 James D. (JD) Longmire**
-**License**: Apache License 2.0
-**Citation**: Longmire, J.D. (2025). *Logic Realism Theory: Deriving Quantum Mechanics from Logical Consistency*. Logic Realism Theory Repository.
+# D{tier}.{seq}: {Title}
+
+**Stage**: Notebook | Lean
+**Status**: Draft | Review | Complete
+**Depends On**: [list of D{x}.{y} IDs]
+**Assumptions**: [explicit list]
+**Falsification**: [what would disprove this]
 ```
 
 ---
 
-## Professional Tone Guidelines
+## Quality Gates (Stage 1)
 
-**DO**:
-- Present correct approach directly
-- Use scholarly, professional language
-- Explain reasoning clearly
-- Reference Approach 2 results where applicable
+Before advancing to Lean:
+- [ ] First principles only (no smuggled assumptions)
+- [ ] Explicit dependency chain
+- [ ] Circularity check passed
+- [ ] No undefined terms
+- [ ] Computational verification complete
+- [ ] Edge cases tested
+- [ ] Clear outputs demonstrating correctness
 
-**DO NOT**:
-- Include thinking commentary ("Wait, that doesn't seem right...")
-- Include self-corrections ("Let me recalculate...", "Actually, this is wrong...")
-- Use stream-of-consciousness style
+---
+
+## Archive
+
+Previous notebooks (pre-refactor) archived at:
+- `archive/20251221-pre-refactor/`
+
+Contains valuable reference material but does not follow current protocols.
 
 ---
 
@@ -90,48 +83,12 @@ All notebooks must use this exact format:
 pip install -r requirements.txt
 ```
 
-**Key Dependencies**:
-- `qutip` - Quantum Toolbox in Python (for Path 3 simulation)
-- `numpy`, `matplotlib`, `scipy` - Numerical computation and visualization
-- `jupyter` - Notebook environment
+---
+
+## Tracking
+
+Full progress: `theory/20251221-logic-realism-theory-refactor.md`
 
 ---
 
-## Usage
-
-```bash
-jupyter notebook
-```
-
-Navigate to desired notebook and execute cells sequentially.
-
-**Recommended Start**: `Path3_T1_vs_T2_QuTiP_Validation.ipynb` (primary experimental validation)
-
----
-
-## Outputs
-
-Generated figures and data are saved to `outputs/` (gitignored except .gitkeep).
-
-**Path 3 Simulation Outputs**:
-- `Path3_QuTiP_Validation_Summary.png` - 4-panel validation summary
-- Various intermediate plots (T1 decay, T2 Ramsey, power analysis)
-
----
-
-## Latest Work
-
-**Session 3.6** (October 27, 2025):
-- Created [`Path3_T1_vs_T2_QuTiP_Validation.ipynb`](Path3_T1_vs_T2_QuTiP_Validation.ipynb)
-- Validated Path 3 protocol with realistic noise models
-- Confirmed >95% statistical power with 40,000 shots
-- See [`../Session_Log/Session_3.6.md`](../Session_Log/Session_3.6.md) for details
-
----
-
-## Related Documentation
-
-- **Theory**: [`../theory/Logic-realism-theory-foundational.md`](../theory/Logic-realism-theory-foundational.md)
-- **Protocols**: [`../theory/predictions/`](../theory/predictions/)
-- **Session History**: [`../Session_Log/`](../Session_Log/)
-- **Approach 2 Archive**: [`../approach_2_reference/notebooks/`](../approach_2_reference/notebooks/)
+**Last updated:** 2025-12-21 (Session 49.0)
