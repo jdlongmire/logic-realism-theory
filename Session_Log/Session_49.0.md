@@ -155,4 +155,10 @@ Contents (3 files):
 - main_paper_protocol1_review.md
 - main_paper_review.md
 
+### Audit and Review Response Move
+
+**Moved**:
+- `audit/` -> `processes-protocols/audit/`
+- `review_response/` -> `processes-protocols/review_response/`
+
 ---
