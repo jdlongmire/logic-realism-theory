@@ -161,4 +161,12 @@ Contents (3 files):
 - `audit/` -> `processes-protocols/audit/`
 - `review_response/` -> `processes-protocols/review_response/`
 
+### Additional Moves
+
+**Moved**:
+- `approach_2_reference/` -> `archive/approach_2_reference/`
+- `01_Sanity_Checks/` -> `processes-protocols/sanity_checks/`
+
+**Updated**: CLAUDE.md reference to approach_2_reference
+
 ---

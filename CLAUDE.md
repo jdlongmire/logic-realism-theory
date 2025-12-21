@@ -101,7 +101,7 @@ grep "theorem.*True" file.lean  # Trivial → NOT real proof
 
 *Full protocol in `LRT-Collaboration-Addendum.md`*
 
-### approach_2_reference/
+### archive/approach_2_reference/
 - NEVER reference in public-facing code/docs
 - Zero dependencies from LogicRealismTheory/
 

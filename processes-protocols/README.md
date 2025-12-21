@@ -16,6 +16,7 @@ Documentation for AI-assisted theory development workflow.
 | **reference_validation/** | Citation verification protocol | Verifying bibliographic accuracy |
 | **audit/** | Program auditor, sanity check reports | Quality assurance audits |
 | **review_response/** | Critique responses, defense frameworks | Addressing external feedback |
+| **sanity_checks/** | Sanity check results archive | Historical verification reports |
 
 ---
 
