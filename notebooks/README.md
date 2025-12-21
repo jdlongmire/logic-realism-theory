@@ -22,7 +22,7 @@ No notebook advances to Lean (Stage 2) without completing all quality gates.
 
 | ID | Notebook | Status |
 |----|----------|--------|
-| D0.1 | `D0.1-three-fundamental-laws.ipynb` | Pending |
+| D0.1 | `D0.1-three-fundamental-laws.ipynb` | Draft |
 | D0.2 | `D0.2-information-space.ipynb` | Pending |
 | D0.3 | `D0.3-co-fundamentality.ipynb` | Pending |
 
