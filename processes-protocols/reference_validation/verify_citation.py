@@ -3,7 +3,7 @@
 Citation Verification Script (v1.0.0)
 
 Queries Crossref API to get authoritative bibliographic data for a DOI.
-Part of reference_validation_protocol/reference_validation_protocol.json v0.2.3
+Part of processes-protocols/reference_validation/reference_validation_protocol.json v0.2.3
 
 Usage:
     python verify_citation.py <DOI>

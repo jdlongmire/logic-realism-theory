@@ -6,13 +6,13 @@
 
   "tools": {
     "verify_citation_script": {
-      "path": "reference_validation_protocol/verify_citation.py",
+      "path": "processes-protocols/reference_validation/verify_citation.py",
       "description": "Queries Crossref API (tier_1 source) to get authoritative bibliographic data for a DOI",
       "usage": {
-        "basic_lookup": "python reference_validation_protocol/verify_citation.py <DOI>",
-        "compare_citation": "python reference_validation_protocol/verify_citation.py --compare \"<provided citation>\" <DOI>",
-        "json_output": "python reference_validation_protocol/verify_citation.py --json <DOI>",
-        "batch_mode": "python reference_validation_protocol/verify_citation.py --file <dois.txt>"
+        "basic_lookup": "python processes-protocols/reference_validation/verify_citation.py <DOI>",
+        "compare_citation": "python processes-protocols/reference_validation/verify_citation.py --compare \"<provided citation>\" <DOI>",
+        "json_output": "python processes-protocols/reference_validation/verify_citation.py --json <DOI>",
+        "batch_mode": "python processes-protocols/reference_validation/verify_citation.py --file <dois.txt>"
       },
       "when_to_use": [
         "Phase 2 (bibliographic verification) - REQUIRED for all citations with DOIs",
@@ -39,14 +39,14 @@
         "name": "DOI Verification",
         "action": "Run verify_citation.py with discovered DOI",
         "goal": "Get authoritative bibliographic data from Crossref (tier_1)",
-        "tool": "python reference_validation_protocol/verify_citation.py <DOI>"
+        "tool": "python processes-protocols/reference_validation/verify_citation.py <DOI>"
       },
       {
         "step": 3,
         "name": "Comparison",
         "action": "Compare provided citation against script output",
         "goal": "Identify discrepancies in journal, volume, year, pages",
-        "tool": "python reference_validation_protocol/verify_citation.py --compare \"<citation>\" <DOI>"
+        "tool": "python processes-protocols/reference_validation/verify_citation.py --compare \"<citation>\" <DOI>"
       },
       {
         "step": 4,
@@ -66,7 +66,7 @@
         "name": "Correction",
         "action": "If discrepancies found, use script output as corrected citation",
         "goal": "Generate verified citation from tier_1 source",
-        "tool": "python reference_validation_protocol/verify_citation.py --json <DOI>"
+        "tool": "python processes-protocols/reference_validation/verify_citation.py --json <DOI>"
       },
       {
         "step": "2b",

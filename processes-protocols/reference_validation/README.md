@@ -34,7 +34,7 @@ This protocol ensures citation accuracy through **two-phase verification** with 
 - Goal: Get authoritative bibliographic data from Crossref (tier_1)
 
 ```bash
-python reference_validation_protocol/verify_citation.py <DOI>
+python processes-protocols/reference_validation/verify_citation.py <DOI>
 ```
 
 ### Step 2b: Fallback for Pre-DOI Papers
@@ -48,7 +48,7 @@ python reference_validation_protocol/verify_citation.py <DOI>
 - Goal: Identify discrepancies in journal, volume, year, pages
 
 ```bash
-python reference_validation_protocol/verify_citation.py --compare "<citation>" <DOI>
+python processes-protocols/reference_validation/verify_citation.py --compare "<citation>" <DOI>
 ```
 
 ### Step 4: Page Verification
@@ -60,7 +60,7 @@ python reference_validation_protocol/verify_citation.py --compare "<citation>" <
 - If discrepancies found, use script output as corrected citation
 
 ```bash
-python reference_validation_protocol/verify_citation.py --json <DOI>
+python processes-protocols/reference_validation/verify_citation.py --json <DOI>
 ```
 
 ---
@@ -84,7 +84,7 @@ Books require a separate workflow due to different identifier systems (ISBN vs D
 - Result: `VERIFIED`
 
 ```bash
-python reference_validation_protocol/verify_citation.py 10.1093/oso/9780198812791.001.0001
+python processes-protocols/reference_validation/verify_citation.py 10.1093/oso/9780198812791.001.0001
 ```
 
 ### Step B2: Books with ISBN Only
@@ -156,16 +156,16 @@ Queries Crossref API (tier_1 source) for authoritative bibliographic data.
 **Usage:**
 ```bash
 # Basic lookup
-python reference_validation_protocol/verify_citation.py 10.1103/PhysRevLett.102.020505
+python processes-protocols/reference_validation/verify_citation.py 10.1103/PhysRevLett.102.020505
 
 # Compare citation against DOI
-python reference_validation_protocol/verify_citation.py --compare "McKague QIC 9, 2009" 10.1103/PhysRevLett.102.020505
+python processes-protocols/reference_validation/verify_citation.py --compare "McKague QIC 9, 2009" 10.1103/PhysRevLett.102.020505
 
 # JSON output for protocol compliance
-python reference_validation_protocol/verify_citation.py --json <DOI>
+python processes-protocols/reference_validation/verify_citation.py --json <DOI>
 
 # Batch mode
-python reference_validation_protocol/verify_citation.py --file dois.txt
+python processes-protocols/reference_validation/verify_citation.py --file dois.txt
 ```
 
 **Output fields**: doi, title, authors, journal, volume, issue, pages, article_number, year, publisher
@@ -175,7 +175,7 @@ python reference_validation_protocol/verify_citation.py --file dois.txt
 ## Folder Structure
 
 ```
-reference_validation_protocol/
+processes-protocols/reference_validation/
 ├── README.md                           # This file
 ├── reference_validation_protocol.json  # Full protocol schema
 ├── verify_citation.py                  # Crossref API verification script

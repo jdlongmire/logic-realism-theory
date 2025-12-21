@@ -12,6 +12,7 @@ Documentation for AI-assisted theory development workflow.
 | **SANITY_CHECK_PROTOCOL.md** | Verification checklist | After completing any track or major claim |
 | **DEVELOPMENT_GUIDE.md** | Architecture, commands, workflows | Reference for repo structure, commands |
 | **peer_review_protocol.md** | LLM-based review prompts | Pre-submission quality assurance |
+| **reference_validation/** | Citation verification protocol | Verifying bibliographic accuracy |
 
 ---
 

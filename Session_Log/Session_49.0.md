@@ -135,4 +135,15 @@ Session 48.0 analyzed program revamp options based on two new files:
 - LRT core thesis (condensed)
 - Key protocol references
 
+### Reference Validation Protocol Move
+
+**Moved**: `reference_validation_protocol/` -> `processes-protocols/reference_validation/`
+
+**Updated internal paths**:
+- README.md - all command paths
+- reference_validation_protocol.json - tool paths
+- verify_citation.py - protocol reference
+
+**Updated**: `processes-protocols/README.md` to include reference_validation
+
 ---
