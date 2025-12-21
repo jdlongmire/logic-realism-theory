@@ -24,6 +24,7 @@ See lean/AXIOMS.md for the complete 3-tier classification system.
 -- ═══════════════════════════════════════════════════════════════════════════════
 
 import LogicRealismTheory.D0_1_ThreeFundamentalLaws
+import LogicRealismTheory.D0_2_InformationSpace
 
 -- ═══════════════════════════════════════════════════════════════════════════════
 -- TIER 2: EXTERNAL THEOREMS (Established math tools)
@@ -37,8 +38,9 @@ import LogicRealismTheory.ExternalTheorems
 -- BUILD STATUS
 -- ═══════════════════════════════════════════════════════════════════════════════
 --
--- Active modules: 2
+-- Active modules: 3
 --   - D0_1_ThreeFundamentalLaws.lean (Tier 0 - L₃ primitives)
+--   - D0_2_InformationSpace.lean (Tier 0 - I∞ primitives)
 --   - ExternalTheorems.lean (Tier 2 established math)
 --
 -- Archived (2025-12-21): Foundation/, Dynamics/, Measurement/, Reconstruction/
