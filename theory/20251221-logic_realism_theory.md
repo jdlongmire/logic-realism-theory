@@ -385,6 +385,42 @@ A∗ = {s ∈ I∞ : s satisfies L1 ∧ L2 ∧ L3}
 
 Not all configurations in I∞ actualize; only those satisfying L₃ constraints.
 
+### 3.1.1 Constraint vs. Dynamics: A Critical Distinction
+
+A common misunderstanding must be prevented: the relation A∗ = L₃(I∞) is **not** a dynamical equation.
+
+**What A∗ = L₃(I∞) is:**
+- An ontological constraint specifying which states *can* be physical
+- A filter determining the space of actualizable configurations
+- An explanation of *why* quantum formalism has its structure
+- A timeless relation (not time-evolution)
+
+**What A∗ = L₃(I∞) is not:**
+- A replacement for the Schrödinger equation
+- A dynamical law predicting time evolution
+- A calculation tool for quantum mechanics
+- A competitor to standard formalism
+
+**The Two Levels:**
+
+| Level | Content | Equation |
+|-------|---------|----------|
+| **Ontological** | What CAN exist | A∗ = L₃(I∞) |
+| **Dynamical** | How states EVOLVE | iℏ∂ψ/∂t = Ĥψ |
+
+These operate at different conceptual levels:
+- The Schrödinger equation describes how actualized states evolve in time
+- The actualization relation constrains which states enter the dynamical arena
+
+**Analogy:** The rules of chess (constraint) specify which piece configurations are legal. The players' moves (dynamics) determine which legal configurations occur. LRT provides the "rules"; standard QM provides the "game play."
+
+**Why Both Are Needed:**
+
+1. **Dynamics without constraint:** Would permit logically incoherent evolutions (meaningless)
+2. **Constraint without dynamics:** Would give static universe (no change)
+
+The Schrödinger equation operates entirely within A∗—it describes evolution of L₃-coherent states within the L₃-coherent subspace. LRT explains why the dynamical arena has its specific structure (Hilbert space, unitarity, etc.); standard QM describes what happens within that arena.
+
 ### 3.2 Process of Individuation
 
 **Step 1 (Identity Applied):** L1 creates distinguishability.  
@@ -535,6 +571,26 @@ I∞ contains all limits of convergent sequences. Therefore Hilbert space must b
 **Conclusion:** States live in complex Hilbert space ℋ (complete, complex inner product space). ∎
 
 **Corollary 4.1:** For dim ≥ 3, Born rule P(a) = |⟨a|ψ⟩|² follows from Gleason's theorem (consistency of probability measures on projection operators). For dim = 2, Axiom 4 provides Born rule.
+
+**Note on Axiom 4 (dim = 2):**
+
+The necessity of Axiom 4 for two-dimensional systems reflects a mathematical limitation (Gleason's theorem fails for dim = 2), not a weakness of LRT specifically. Standard quantum mechanics faces the identical situation—the Born rule is axiomatic in all formulations.
+
+**Why this is not a significant limitation:**
+
+1. **Universality:** Axiom 4 is the *same* Born rule that holds for higher dimensions. We're not introducing a different probability rule, merely acknowledging it cannot be derived in the restricted case.
+
+2. **Minimal addition:** A single axiom (|amplitude|² = probability) is far more parsimonious than postulating the entire Hilbert space formalism.
+
+3. **Potential future derivation paths:**
+   - **Zurek's envariance:** Environment-assisted invariance may ground Born rule for all dimensions
+   - **Decision-theoretic approaches:** Deutsch-Wallace style arguments within LRT context
+   - **Symmetry constraints:** The |amplitude|² form may follow from rotational symmetry of the Bloch sphere
+   - **Embedding argument:** Any dim=2 system is subsystem of larger system where Gleason applies
+
+4. **Physical relevance:** No physical qubit exists in perfect isolation—all real two-level systems are embedded in higher-dimensional environments where Gleason's theorem holds. The dim=2 case is a mathematical idealization rarely realized in practice.
+
+**Research direction:** Derive Born rule for dim=2 from LRT primitives using one of the above approaches. This would eliminate the sole remaining axiom beyond framework primitives.
 
 ### 4.2 Tensor Product Structure for Composite Systems
 
@@ -1385,7 +1441,35 @@ Framework interfaces naturally with multiple philosophical traditions while main
 
 ### 8.2 Speculative Extensions
 
-**1. Spacetime Emergence:** Investigate whether spatial geometry emerges from entanglement structure in I∞. Hypothesis: "Distance" corresponds to degree of decoherence/individuation. Nearby = highly entangled; distant = decorrelated. Requires careful development but suggested by pure entanglement principle.
+**1. Spacetime Emergence from Entanglement Structure**
+
+The framework's pre-spatial character (I∞ as pure entanglement without inherent geometry) positions LRT to address spacetime emergence rather than presuppose it. Key research directions:
+
+**The Core Hypothesis:** Spatial distance corresponds to degree of decoherence/individuation in I∞:
+- *Nearby* = strongly entangled, high mutual information
+- *Distant* = decorrelated, low mutual information
+- *Metric* = function of entanglement entropy patterns
+
+**Supporting Evidence from Physics:**
+- **ER=EPR conjecture** (Maldacena-Susskind): Entanglement creates spacetime connectivity
+- **AdS/CFT correspondence**: Bulk geometry encodes boundary entanglement (Ryu-Takayanagi formula)
+- **Tensor network approaches**: Spatial structure from entanglement geometry
+- **Van Raamsdonk's argument**: Reducing entanglement entropy "tears" spacetime
+
+**LRT-Specific Approach:**
+
+1. **Distinguishability → Distance:** Two configurations that are more distinguishable (lower entanglement) require more "separation" to avoid L₃ conflicts. This could ground metric structure.
+
+2. **Individuation → Locality:** L₃-based individuation naturally produces local subsystems. The requirement that actualized states be coherent may force them into spatially organized structures.
+
+3. **Excluded Middle → Causal Order:** Definite actualization states may require well-defined causal ordering, potentially deriving light-cone structure.
+
+**Dimensional Question (3+1):** Why three spatial dimensions plus one time? LRT does not yet derive this. Possible approaches:
+- Information-theoretic: Maximum entanglement connectivity consistent with local tomography
+- Stability arguments: (3+1) as unique dimension permitting stable orbits and complex chemistry
+- Holographic bounds: 3D maximizes the surface-to-volume ratio for entanglement entropy
+
+**Status:** Speculative but grounded. See Section 9.6.1.3 for research program and honest assessment.
 
 **2. Time and Dynamics:** Framework currently treats time as parameter in unitary evolution (Axiom 3). Deeper question: Does temporal structure itself emerge from I∞? Could time be pattern of actualization sequence? Highly speculative but worth exploring.
 
@@ -1909,13 +1993,31 @@ Framework interfaces naturally with multiple philosophical traditions while main
 
 #### 9.6.1 Acknowledged Weaknesses
 
-**1. Actualization Mechanism Unspecified**
+**1. Actualization Mechanism: What LRT Provides and What It Leaves Open**
 
-**Issue:** Framework specifies WHAT can actualize (L₃-coherent states) and probabilities (Born rule) but not HOW selection occurs.
+**Issue:** Framework specifies WHAT can actualize (L₃-coherent states) and probabilities (Born rule) but not the mechanism that selects which L₃-coherent outcome occurs.
 
-**Severity:** Medium. All frameworks face this (Copenhagen: why collapse?, MWI: which branch experienced?, Bohmian: why quantum equilibrium?)
+**What LRT provides:**
+- *Necessity*: Why collapse must occur (L₃ requires definite outcomes)
+- *Constraint*: What can actualize (only L₃-coherent configurations)
+- *Probability*: How likely each outcome is (Born rule, derived for dim ≥ 3)
+- *Uniqueness*: Why exactly one outcome per measurement context (Non-Contradiction + Excluded Middle)
 
-**Mitigation:** May be fundamental limitation (not everything explainable); or future extension possible.
+**What LRT leaves open:**
+- *Selection*: Which particular outcome actualizes in a given instance
+- *Trigger*: What physical process marks the I∞ → A∗ transition
+
+**Severity:** Medium. All frameworks face analogous issues:
+- Copenhagen: Why collapse? What triggers it?
+- MWI: Which branch is experienced? (Indexical problem)
+- Bohmian: Why quantum equilibrium? What sets initial conditions?
+- GRW: Why this collapse rate? (Free parameter)
+
+**Why this is principled restraint, not evasion:**
+
+LRT reframes the measurement problem from "how does collapse occur?" to "which physical criterion marks the I∞ → A∗ transition?" The first question assumes a dynamical mechanism; the second opens empirical investigation.
+
+Candidate mechanisms (decoherence, gravitational, information-theoretic) are compatible with LRT. The framework constrains viable mechanisms (must be derivable from geometry/information, not arbitrary parameters) without uniquely determining the answer. See Section 9.6.3.D for extended discussion.
 
 ---
 
@@ -1929,15 +2031,41 @@ Framework interfaces naturally with multiple philosophical traditions while main
 
 ---
 
-**3. Relativistic Compatibility Unclear**
+**3. Relativistic Compatibility and Spacetime Emergence**
 
-**Issue:** Framework doesn't address special relativity integration. I∞ appears pre-spatial (entanglement has no distance).
+**Issue:** Framework doesn't explicitly derive Lorentz invariance. I∞ appears pre-spatial (entanglement has no distance).
 
 **Severity:** Medium-High. Major extension needed for complete foundation.
 
-**Status:** Spacetime emergence speculative. Requires substantial development.
+**Status:** Active research direction with multiple promising pathways.
 
-**Mitigation:** May be feature, not bug (spacetime emergent from I∞ structure). Extensive research program.
+**Why This May Be a Feature, Not a Bug:**
+
+LRT's primitives (I∞ and L₃) are explicitly pre-spatial. This is not an oversight but a deliberate ontological commitment: spacetime structure should *emerge* from more fundamental information-theoretic constraints rather than being presupposed.
+
+**Evidence this approach is viable:**
+
+1. **Entanglement-geometry connection:** ER=EPR conjecture (Maldacena-Susskind) suggests entanglement structure underlies spacetime connectivity. I∞'s pre-spatial entanglement is naturally suited to this picture.
+
+2. **Causal structure from distinguishability:** Lorentz invariance encodes observer-independent causal order. LRT's distinguishability principle (Section 4.2) may constrain causal structure: events that cannot be distinguished cannot be causally ordered, potentially yielding light-cone structure.
+
+3. **Reconstruction programs:** AdS/CFT and tensor network approaches derive spatial structure from entanglement entropy patterns. I∞'s information-theoretic character aligns with these programs.
+
+**Key difference from Bohmian mechanics:**
+
+Bohmian mechanics posits absolute simultaneity in conflict with special relativity, then struggles to reconcile. LRT takes a different approach: simultaneity, like spacetime itself, is emergent rather than fundamental. The "block universe" vs "presentism" debate dissolves when spacetime is derivative.
+
+**Concrete research directions:**
+
+1. **Derive Lorentz signature from L₃:** Show that consistent actualization across I∞ requires (3+1) signature with Lorentz symmetry.
+
+2. **Entanglement → metric:** Use entanglement entropy patterns in I∞ to construct emergent metric structure, following van Raamsdonk's program.
+
+3. **Individuation → locality:** Show that L₃-based individuation naturally produces local subsystems, recovering the "separability" that underlies relativistic causality.
+
+4. **Non-signaling from coherence:** Derive no-faster-than-light signaling as a consequence of L₃ coherence constraints.
+
+**Current honest assessment:** These directions are promising but undeveloped. Relativistic extension remains the framework's most significant open problem. However, the pre-spatial nature of I∞ positions LRT to address spacetime emergence rather than merely accommodate it.
 
 ---
 
