@@ -12,9 +12,9 @@ This file provides essential guidance for Claude Code working in this repository
 - **`AI-Collaboration-Profile.json`** - General collaboration stance: skeptical, rigorous, helpful. THIS OVERRIDES DEFAULT BEHAVIORS.
 - **`LRT-Collaboration-Addendum.md`** - LRT-specific protocols: circularity checking, verification triggers, quality standards.
 
-### Theory Sources of Truth (ROOT folder)
-- **`Logic_Realism_Theory_Main.md`** (2,456 lines) - Complete theory paper: formalism, derivations, predictions
-- **`Logic_Realism_Theory_AI_Experiment.md`** (602 lines) - Methodology, honest status assessment
+### Theory Sources of Truth
+- **`theory/2025-12-16_logic_realism_theory_foundation.md`** - Core unified framework
+- **`theory/Comparison_Scorecard.md`** - LRT vs other approaches
 
 ### Lean Formalization Status (lean/ folder)
 - **`lean/AXIOMS.md`** - **⚠️ ACTIVE** LRT axiom approach summary: 2 Tier 1 + ~16 Tier 2 + 1 Tier 3 = ~19 axioms, **⚠️ AXIOM COUNT FRAMING**, honest paper framing
@@ -24,10 +24,12 @@ This file provides essential guidance for Claude Code working in this repository
 - **`lean/TIER_LABELING_QUICK_START.md`** - Quick reference for tier classification and inline labels
 - **`lean/LogicRealismTheory.lean`** - Root import file showing all modules
 
-### Development Guides
-- **`DEVELOPMENT_GUIDE.md`** - Architecture, commands, workflows, approach_2 protocol
-- **`LEAN_BEST_PRACTICES.md`** - Lean 4 proof development lessons
-- **`SANITY_CHECK_PROTOCOL.md`** - **⚠️ MANDATORY** track completion verification checklist
+### Processes & Protocols (processes-protocols/)
+- **`processes-protocols/AI_METHODOLOGY.md`** - 10-phase AI-assisted development workflow
+- **`processes-protocols/SANITY_CHECK_PROTOCOL.md`** - **⚠️ MANDATORY** verification checklist
+- **`processes-protocols/DEVELOPMENT_GUIDE.md`** - Architecture, commands, workflows
+- **`processes-protocols/peer_review_protocol.md`** - LLM-based review prompts
+- **`lean/BEST_PRACTICES.md`** - Lean 4 proof development lessons
 
 ### Session Context
 - **`Session_Log/Session_X.Y.md`** - Read LATEST session file (highest X.Y) for complete context
@@ -50,8 +52,8 @@ This file provides essential guidance for Claude Code working in this repository
 1. Read `AI-Collaboration-Profile.json` + `LRT-Collaboration-Addendum.md` (operating mode)
 2. Read latest `Session_Log/Session_X.Y.md` (complete context - tells you what's needed)
 3. Based on session context, skim relevant guides:
-   - `DEVELOPMENT_GUIDE.md` or `LEAN_BEST_PRACTICES.md` (architecture/Lean work)
-   - `lean/PROOF_REFACTOR_STRATEGY.md` (axiom/formalization work)
+   - `processes-protocols/DEVELOPMENT_GUIDE.md` (architecture)
+   - `lean/BEST_PRACTICES.md` (Lean work)
    - `sprints/README.md` + active sprint tracking (if sprint active)
 
 ### Session Logging
@@ -158,7 +160,7 @@ Tier 3: Physical principles (energy additivity, conservation)
 
 ### Sanity Check Protocol ⚠️ MANDATORY
 - **Run after EVERY track completion** before claiming success
-- See **`SANITY_CHECK_PROTOCOL.md`** for full checklist
+- See **`processes-protocols/SANITY_CHECK_PROTOCOL.md`** for full checklist
 - 6 quick checks: Build, Proofs, Imports, Axiom count, Deliverable reality, Professional tone
 - Prevents overclaiming: Distinguishes docs vs structure vs proofs
 - Ensures professionalism: No celebration language, emojis, or superlatives before peer review
@@ -207,7 +209,7 @@ Tier 3: Physical principles (energy additivity, conservation)
 - ✅ Professional tone maintained (sanity check verified)
 
 ### Repository Structure
-- Everything has ONE canonical location (see DEVELOPMENT_GUIDE.md for full structure)
+- Everything has ONE canonical location (see processes-protocols/DEVELOPMENT_GUIDE.md)
 - Never create alternative folders without updating CLAUDE.md
 
 ### Derivation Protocol (Session 13.0+)

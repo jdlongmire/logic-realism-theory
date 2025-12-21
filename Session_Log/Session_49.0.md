@@ -93,4 +93,28 @@ Session 48.0 analyzed program revamp options based on two new files:
 - Circularity protocol 150 lines -> 30 lines (essentials only)
 - Removed outdated content (artifact permissions, historical examples)
 
+### Root Files Optimization
+
+**Created**: `processes-protocols/` folder
+
+**Merged**:
+- `LRT_DEVELOPMENT_PROCESS.md` + `Logic_Realism_Theory_AI_Experiment.md` -> `processes-protocols/AI_METHODOLOGY.md` (~170 lines vs 949 combined)
+
+**Condensed**:
+- `SANITY_CHECK_PROTOCOL.md` 581 lines -> `processes-protocols/SANITY_CHECK_PROTOCOL.md` ~180 lines
+
+**Moved**:
+| File | From | To |
+|------|------|-----|
+| `DEVELOPMENT_GUIDE.md` | root | `processes-protocols/` |
+| `peer_review_protocol.md` | root | `processes-protocols/` |
+| `LEAN_BEST_PRACTICES.md` | root | `lean/BEST_PRACTICES.md` |
+| `LRT_Current_Comparison_Scorecard.md` | root | `theory/Comparison_Scorecard.md` |
+| `AI-Collaboration-Profile-v2.json.bak` | root | `archive/` |
+
+**Updated**: `CLAUDE.md` with new file locations
+
+**Root files before**: 14
+**Root files after**: 6 + 1 folder
+
 ---
