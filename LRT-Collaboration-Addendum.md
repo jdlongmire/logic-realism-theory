@@ -46,6 +46,87 @@ theory/derivations/      notebooks/               lean/LogicRealismTheory/
 
 **Tracking:** See `theory/20251221-logic-realism-theory-refactor.md` for derivation chain and progress.
 
+### Derivation File Header (Mandatory)
+
+Every derivation file must begin with:
+
+```markdown
+# D{tier}.{seq}: {Title}
+
+**Stage**: Theory | Notebook | Lean
+**Status**: Draft | Review | Complete
+**Depends On**: [list of D{x}.{y} IDs]
+**Assumptions**: [explicit list of what this derivation takes as given]
+**Falsification**: [what would disprove this derivation]
+
+---
+```
+
+### Stage Sign-off Protocol
+
+Stage transitions require explicit approval:
+
+| Transition | Requirement |
+|------------|-------------|
+| Draft → Theory Complete | Self-review + circularity check |
+| Theory → Notebook | User approval of theory |
+| Notebook → Lean | User approval of notebook |
+| Lean Complete | User approval + sanity check |
+
+**No silent advancement.** Each stage transition logged in session with user acknowledgment.
+
+### Dependency Graph
+
+Maintain visual DAG in `theory/20251221-logic-realism-theory-refactor.md`:
+
+```
+D0.1 ─┬─→ D1.1 ─→ D1.2 ─→ D1.3 ─→ D1.4 ─┬─→ D2.1 ─→ D2.2 ─→ D2.3
+D0.2 ─┤                    │            │
+D0.3 ─┘                    └────────────┴─→ D3.1 ─→ D3.2
+                                        │
+                           D1.3 ────────┴─→ D4.1 ─→ D4.2
+```
+
+**Update rule:** Graph updated immediately when any derivation advances stage.
+
+### Rollback Protocol
+
+When a flaw is discovered in derivation D{x}.{y}:
+
+1. **STOP** all work on downstream derivations
+2. **Identify** all derivations that depend on D{x}.{y} (trace forward in DAG)
+3. **Demote** affected derivations to "Review" status
+4. **Fix** the flawed derivation
+5. **Cascade** verification through all affected downstream derivations
+6. **Document** the rollback in session log with root cause
+
+**No partial fixes.** If D1.3 is flawed, all of D1.4, D2.x, D3.x, D4.x must be re-verified.
+
+### Falsification Criteria
+
+Each derivation must answer: "What would disprove this?"
+
+| Tier | Example Falsification |
+|------|----------------------|
+| 0 (Primitives) | Demonstration that L₃ or I∞ are not truly primitive (reducible to something else) |
+| 1 (Structure) | Alternative structure that satisfies L₃ constraints but differs from derived structure |
+| 2 (Dynamics) | Physical system that violates derived dynamics while respecting L₃ |
+| 3 (Measurement) | Measurement outcomes inconsistent with derived probabilities |
+| 4 (Constants) | Experimental values inconsistent with derived constants |
+
+**Unfalsifiable derivations are not derivations.** They are assumptions.
+
+### Primitive Justification Protocol (Tier 0 Only)
+
+Tier 0 primitives must satisfy:
+
+1. **Irreducibility**: Cannot be defined in terms of anything simpler
+2. **Necessity**: Required for coherent discourse (cannot be denied without contradiction)
+3. **Independence**: Each primitive is logically independent of others
+4. **Completeness**: Together, primitives are sufficient for the theory
+
+**Documentation requirement:** Each Tier 0 derivation must include explicit argument for why the primitive cannot be further reduced.
+
 ### Naming Convention
 
 **All dated files use format: `yyyymmdd-filename.ext`**

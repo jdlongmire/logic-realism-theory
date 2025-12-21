@@ -71,6 +71,64 @@ theory/derivations/      notebooks/               lean/LogicRealismTheory/
 
 ---
 
+## Dependency Graph (DAG)
+
+```
+                    ┌─────────────────────────────────────────────────────────┐
+                    │                      TIER 0: PRIMITIVES                 │
+                    │  D0.1 (L₃)  ────┬────  D0.2 (I∞)  ────┬────  D0.3 (⊗)  │
+                    └────────┬────────┴──────────┬──────────┴────────┬────────┘
+                             │                   │                   │
+                             ▼                   ▼                   ▼
+                    ┌─────────────────────────────────────────────────────────┐
+                    │                 TIER 1: STRUCTURAL                      │
+                    │         D1.1 (Distinguishability)                       │
+                    │                    │                                    │
+                    │                    ▼                                    │
+                    │         D1.2 (Minimum Resolution ℏ)                     │
+                    │                    │                                    │
+                    │                    ▼                                    │
+                    │         D1.3 (State Space) ──────────────┬──────────    │
+                    │                    │                     │              │
+                    │                    ▼                     │              │
+                    │         D1.4 (Hilbert Space)             │              │
+                    └────────────────────┬─────────────────────┼──────────────┘
+                                         │                     │
+              ┌──────────────────────────┼─────────────────────┘
+              │                          │
+              ▼                          ▼
+┌─────────────────────────┐    ┌─────────────────────────┐
+│     TIER 2: DYNAMICS    │    │    TIER 4: CONSTANTS    │
+│                         │    │                         │
+│  D2.1 (Unitarity)       │    │  D4.1 (d=3+1)           │
+│         │               │    │         │               │
+│         ▼               │    │         ▼               │
+│  D2.2 (Time Evolution)  │    │  D4.2 (α=1/137)         │
+│         │               │    │                         │
+│         ▼               │    └─────────────────────────┘
+│  D2.3 (Schrödinger)     │
+│                         │
+└─────────────────────────┘
+
+              │
+              ▼
+┌─────────────────────────┐
+│   TIER 3: MEASUREMENT   │
+│                         │
+│  D3.1 (Born Rule)       │
+│         │               │
+│         ▼               │
+│  D3.2 (Projection)      │
+│                         │
+└─────────────────────────┘
+```
+
+**Update Rule:** This graph is updated immediately when any derivation advances stage.
+
+**Rollback Rule:** If any node is invalidated, all downstream nodes must be re-verified.
+
+---
+
 ## Notation Standard
 
 | Symbol | Meaning | Usage |
