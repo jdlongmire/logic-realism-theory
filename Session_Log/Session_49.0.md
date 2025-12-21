@@ -146,4 +146,13 @@ Session 48.0 analyzed program revamp options based on two new files:
 
 **Updated**: `processes-protocols/README.md` to include reference_validation
 
+### Peer Review Tracking Move
+
+**Moved**: `peer_review_tracking/` -> `processes-protocols/peer_review_tracking/`
+
+Contents (3 files):
+- Claude-multi-paper-review.md
+- main_paper_protocol1_review.md
+- main_paper_review.md
+
 ---
