@@ -46,6 +46,24 @@ theory/derivations/      notebooks/               lean/LogicRealismTheory/
 
 **Tracking:** See `theory/logic-realism-theory-refactor.md` for derivation chain and progress.
 
+### Naming Convention
+
+**All dated files use format: `yyyymmdd-filename.ext`**
+
+| Location | Pattern | Example |
+|----------|---------|---------|
+| theory/derivations/ | `D{tier}.{seq}-{name}.md` | `D0.1-three-fundamental-laws.md` |
+| notebooks/ | `D{tier}.{seq}-{name}.ipynb` | `D0.1-three-fundamental-laws.ipynb` |
+| lean/.../Derivations/ | `D{tier}{seq}_{Name}.lean` | `D01_ThreeFundamentalLaws.lean` |
+| archive folders | `yyyymmdd-{description}/` | `20251221-theory-consolidation/` |
+| versioned files | `yyyymmdd-{name}.md` | `20251221-logic_realism_theory.md` |
+
+**Rules:**
+- Date stamps use ISO format: `yyyymmdd` (no hyphens in date)
+- Derivation IDs: `D{tier}.{seq}` where tier=0-4, seq=1-9
+- Lean files use PascalCase after prefix
+- Archive folders always dated
+
 ---
 
 ## Circularity Protocol
