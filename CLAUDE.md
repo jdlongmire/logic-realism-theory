@@ -33,7 +33,9 @@ Essential guidance for Claude Code in this repository.
 
 ### Theory Derivations
 - **`theory/derivations/`** - First-principles derivations (~3,700 lines)
+- **`theory/logic-realism-theory-refactor.md`** - Derivation chain tracking (14 derivations, 5 tiers)
 - Markdown is source of truth; LaTeX/PDF generated as needed
+- **MANDATORY**: Follow 3-stage pipeline (Theory → Notebook → Lean) per `LRT-Collaboration-Addendum.md`
 
 ---
 

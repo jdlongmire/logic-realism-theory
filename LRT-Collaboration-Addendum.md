@@ -15,6 +15,39 @@
 
 ---
 
+## Derivation Pipeline
+
+**Every derivation follows a 3-stage pipeline:**
+
+```
+Stage 1: Theory          Stage 2: Notebook        Stage 3: Lean 4
+─────────────────────    ─────────────────────    ─────────────────────
+First principles         Computational            Formal proof
+reasoning                verification
+
+theory/derivations/      notebooks/               lean/LogicRealismTheory/
+  D{tier}.{seq}-*.md       D{tier}.{seq}-*.ipynb    Derivations/D{tier}{seq}_*.lean
+```
+
+**Rules (Non-Negotiable):**
+1. Each derivation is incremental (builds only on prior verified steps)
+2. No Stage 2 without Stage 1 complete
+3. No Stage 3 without Stage 2 complete
+4. Circularity checked at every stage
+5. No advancement without explicit quality gate passage
+
+**Quality Gates:**
+
+| Stage | Gate Requirements |
+|-------|-------------------|
+| Theory | First principles only, explicit dependencies, circularity check, no undefined terms |
+| Notebook | Implementation matches theory, numerical verification, edge cases tested |
+| Lean | Compiles without sorry, axiom count matches tier, no smuggled assumptions |
+
+**Tracking:** See `theory/logic-realism-theory-refactor.md` for derivation chain and progress.
+
+---
+
 ## Circularity Protocol
 
 **Philosophy**: Circularity is the most insidious error in theoretical work. Hunt it aggressively.
