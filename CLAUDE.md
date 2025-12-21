@@ -31,11 +31,11 @@ Essential guidance for Claude Code in this repository.
 - **`Session_Log/Session_X.Y.md`** - Read LATEST (highest X.Y) for context
 - **`sprints/README.md`** - If active sprint exists
 
-### Theory Derivations
-- **`theory/derivations/`** - First-principles derivations (~3,700 lines)
+### Derivations
+- **`notebooks/D{tier}.{seq}-*.ipynb`** - Derivation notebooks (theory + computation)
+- **`lean/LogicRealismTheory/Derivations/`** - Formal proofs
 - **`theory/20251221-logic-realism-theory-refactor.md`** - Derivation chain tracking (14 derivations, 5 tiers)
-- Markdown is source of truth; LaTeX/PDF generated as needed
-- **MANDATORY**: Follow 3-stage pipeline (Theory → Notebook → Lean) per `LRT-Collaboration-Addendum.md`
+- **MANDATORY**: Follow 2-stage pipeline (Notebook → Lean) per `LRT-Collaboration-Addendum.md`
 
 ---
 

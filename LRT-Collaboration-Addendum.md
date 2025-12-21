@@ -17,49 +17,49 @@
 
 ## Derivation Pipeline
 
-**Every derivation follows a 3-stage pipeline:**
+**Every derivation follows a 2-stage pipeline:**
 
 ```
-Stage 1: Theory          Stage 2: Notebook        Stage 3: Lean 4
-─────────────────────    ─────────────────────    ─────────────────────
-First principles         Computational            Formal proof
-reasoning                verification
+Stage 1: Notebook                    Stage 2: Lean 4
+─────────────────────────────────    ─────────────────────────────────
+First principles reasoning           Formal proof
++ Computational verification
 
-theory/derivations/      notebooks/               lean/LogicRealismTheory/
-  D{tier}.{seq}-*.md       D{tier}.{seq}-*.ipynb    Derivations/D{tier}{seq}_*.lean
+notebooks/                           lean/LogicRealismTheory/Derivations/
+  D{tier}.{seq}-{name}.ipynb           D{tier}{seq}_{Name}.lean
 ```
+
+**Notebook contains both:**
+- Markdown cells: First-principles theory reasoning
+- Code cells: Computational verification
 
 **Rules (Non-Negotiable):**
 1. Each derivation is incremental (builds only on prior verified steps)
-2. No Stage 2 without Stage 1 complete
-3. No Stage 3 without Stage 2 complete
-4. Circularity checked at every stage
-5. No advancement without explicit quality gate passage
+2. No Stage 2 (Lean) without Stage 1 (Notebook) complete
+3. Circularity checked at every stage
+4. No advancement without explicit quality gate passage
 
 **Quality Gates:**
 
 | Stage | Gate Requirements |
 |-------|-------------------|
-| Theory | First principles only, explicit dependencies, circularity check, no undefined terms |
-| Notebook | Implementation matches theory, numerical verification, edge cases tested |
+| Notebook | First principles only, explicit dependencies, circularity check, no undefined terms, computational verification, edge cases tested |
 | Lean | Compiles without sorry, axiom count matches tier, no smuggled assumptions |
 
 **Tracking:** See `theory/20251221-logic-realism-theory-refactor.md` for derivation chain and progress.
 
-### Derivation File Header (Mandatory)
+### Notebook Header (Mandatory)
 
-Every derivation file must begin with:
+Every derivation notebook must begin with a markdown cell:
 
 ```markdown
 # D{tier}.{seq}: {Title}
 
-**Stage**: Theory | Notebook | Lean
+**Stage**: Notebook | Lean
 **Status**: Draft | Review | Complete
 **Depends On**: [list of D{x}.{y} IDs]
 **Assumptions**: [explicit list of what this derivation takes as given]
 **Falsification**: [what would disprove this derivation]
-
----
 ```
 
 ### Stage Sign-off Protocol
@@ -68,8 +68,7 @@ Stage transitions require explicit approval:
 
 | Transition | Requirement |
 |------------|-------------|
-| Draft → Theory Complete | Self-review + circularity check |
-| Theory → Notebook | User approval of theory |
+| Draft → Notebook Complete | Self-review + circularity check + computational verification |
 | Notebook → Lean | User approval of notebook |
 | Lean Complete | User approval + sanity check |
 
@@ -133,7 +132,6 @@ Tier 0 primitives must satisfy:
 
 | Location | Pattern | Example |
 |----------|---------|---------|
-| theory/derivations/ | `D{tier}.{seq}-{name}.md` | `D0.1-three-fundamental-laws.md` |
 | notebooks/ | `D{tier}.{seq}-{name}.ipynb` | `D0.1-three-fundamental-laws.ipynb` |
 | lean/.../Derivations/ | `D{tier}{seq}_{Name}.lean` | `D01_ThreeFundamentalLaws.lean` |
 | archive folders | `yyyymmdd-{description}/` | `20251221-theory-consolidation/` |
