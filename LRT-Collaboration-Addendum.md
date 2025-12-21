@@ -63,6 +63,7 @@ theory/derivations/      notebooks/               lean/LogicRealismTheory/
 - Derivation IDs: `D{tier}.{seq}` where tier=0-4, seq=1-9
 - Lean files use PascalCase after prefix
 - Archive folders always dated
+- Same-day revisions: append `_v1.1`, `_v1.2`, etc. (e.g., `20251221-logic_realism_theory_v1.2.md`)
 
 ---
 
