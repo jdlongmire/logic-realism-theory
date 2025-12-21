@@ -233,6 +233,77 @@ No predictions of standard quantum mechanics are altered by this framework. Wher
 - Broader than possible worlds (includes impossible/incoherent specifications)
 - Related to quantum field vacuum but more fundamental
 
+#### 2.1.1 Formal Structure of I∞: Modal vs. Mathematical
+
+A critical question for rigorous formalization: What structure does I∞ possess intrinsically, versus what structure emerges through L₃ constraint?
+
+**The Smuggling Problem:**
+
+If I∞ is defined with too much structure (vector space, inner product, topology), we "smuggle" conclusions into premises. If defined with too little (bare set), we cannot derive anything.
+
+**Resolution: Modal/Informational Primitives, Not Linear Algebra**
+
+I∞'s intrinsic properties are characterized in **modal** and **informational** terms, not mathematical structures:
+
+| Property | Modal/Informational Definition | NOT This (Smuggling) |
+|----------|-------------------------------|---------------------|
+| Distinguishability | Configurations can differ (A ≠ B) | Orthogonality ⟨ψ\|φ⟩ = 0 |
+| Pure Entanglement | Relationality prior to subsystem boundaries | Non-separable ψ ∈ H⊗H |
+| Pure Superposition | Co-existence without mutual exclusion | Linear combination in ℂⁿ |
+| Potentiality | Modal capacity (can be, not just is) | State vector in Hilbert space |
+
+**What I∞ Has Intrinsically:**
+
+1. **Bare differentiability:** Elements are configurations, not featureless points
+2. **Equality relation:** For Identity (L₁) to act, configurations must be self-identical
+3. **Modal structure:** Potentiality—configurations exist as possibilities
+4. **Relationality:** Configurations are not isolated atoms but relationally constituted
+5. **No finite bound:** Infinite (no arbitrary limitation on possibility)
+
+**What I∞ Does NOT Have Intrinsically:**
+
+- Vector space structure (emerges)
+- Inner product (emerges)
+- Complex field (emerges)
+- Topology/continuity (emerges)
+- Subsystem decomposition (emerges through individuation)
+
+**The "Logically Necessary Clothes" Principle:**
+
+Hilbert space structure is not *in* I∞—it is what I∞ must "wear" to appear as physical reality (A∗). The mathematical structure emerges at the I∞ → A∗ transition when L₃ constraints interact with empirical admissibility requirements.
+
+**Formal Derivation Stack:**
+
+| Level | Content | Source |
+|-------|---------|--------|
+| **0: Primitives** | I∞ (differentiability, potentiality) + L₃ | Ontological ground |
+| **1: Logical** | Individuation requirements | L₃ acting on I∞ |
+| **2: Mathematical** | Vector space, inner product | Tier 2 admissibility + L₃ |
+| **3: Physical** | Complex Hilbert space | Continuity + interference requirements |
+
+**Why Modal Capacity Is Essential:**
+
+Without potentiality structure:
+- **No pure entanglement** → must "add" entanglement later (spooky, unexplained)
+- **No pure superposition** → start with classical "menu" (circular for QM derivation)
+
+By treating relationality and co-existence as **pre-mathematical properties of information**, the derivation of quantum structure remains non-circular.
+
+**Lean Formalization Approach:**
+
+```
+-- Tier 1: Structural Primitives
+axiom I : Type*                    -- Information configurations exist
+axiom I_infinite : Infinite I      -- No finite bound on possibility
+-- Distinguishability: automatic in classical logic (a = b ∨ a ≠ b)
+-- Modal capacity: interpretive (I represents potentiality, not actuality)
+
+-- Tier 2: Empirical Admissibility (bridge to Hilbert space)
+-- Continuity, interference, local tomography → derived structure
+```
+
+The gap between bare type and Hilbert space is bridged by Tier 2 constraints acting on L₃-filtered configurations—not by smuggling structure into I∞.
+
 ### 2.2 The Three Fundamental Laws of Logic (L₃)
 
 **Definition 2.2:** The Three Fundamental Laws of Logic comprise:

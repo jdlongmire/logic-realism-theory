@@ -3,7 +3,7 @@
 **Date**: 2025-12-21
 **Focus**: Repository optimization and consolidation
 **Status**: ACTIVE
-**Interaction Count**: 52
+**Interaction Count**: 61
 
 ---
 
@@ -324,6 +324,26 @@ Added new Section 9.7.8 positioning LRT as the ontological completion of the Eve
 - Four problems dissolved (probability, preferred basis, extravagance, objectivity)
 - Historical analogy (SR → GR parallel)
 - Framing for Everettians: preserve formalism, gain finite ontology
+
+### I∞ Formalization Clarification (Interactions 57-61)
+
+Engaged Gemini to clarify formal structure of I∞. Added new Section 2.1.1 "Formal Structure of I∞: Modal vs. Mathematical":
+
+**Core distinction:** I∞ has modal/informational properties, NOT linear algebra structure
+- Distinguishability = configurations can differ (not orthogonality)
+- Pure entanglement = relationality (not non-separable ψ)
+- Pure superposition = co-existence (not linear combination)
+- Potentiality = modal capacity (not state vector)
+
+**The "Logically Necessary Clothes" principle:** Hilbert space is not IN I∞—it's what I∞ must "wear" to appear as A∗
+
+**Derivation stack:**
+- Level 0: Primitives (I∞ + L₃)
+- Level 1: Logical (individuation requirements)
+- Level 2: Mathematical (Tier 2 admissibility → vector space)
+- Level 3: Physical (continuity + interference → complex Hilbert)
+
+**Lean approach:** `axiom I : Type*` + `axiom I_infinite : Infinite I`, with modal capacity as interpretive
 
 ### Git Status
 
