@@ -169,4 +169,10 @@ Contents (3 files):
 
 **Updated**: CLAUDE.md reference to approach_2_reference
 
+### Docs Archive
+
+**Moved**: `docs/` -> `archive/docs_v1/`
+
+Reason: Obsolete (Session 3.6 era, Oct 2025) - superseded by current documentation
+
 ---

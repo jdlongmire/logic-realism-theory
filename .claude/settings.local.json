@@ -39,7 +39,8 @@
       "WebFetch(domain:philsci-archive.pitt.edu)",
       "WebFetch(domain:pmc.ncbi.nlm.nih.gov)",
       "WebFetch(domain:www.academia.edu)",
-      "WebFetch(domain:ijqf.org)"
+      "WebFetch(domain:ijqf.org)",
+      "Bash(find:*)"
     ],
     "deny": [],
     "ask": []
