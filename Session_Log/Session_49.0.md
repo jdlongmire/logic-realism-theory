@@ -194,4 +194,17 @@ Reason: Obsolete (Session 3.6 era, Oct 2025) - superseded by current documentati
 - LogicRealismTheory.lean, Main.lean (entry points)
 - Build config files
 
+### Lean Code Archive
+
+**Archived to lean/archive/2025-12-21_LogicRealismTheory/**:
+- Foundation/ (IIS.lean, Actualization.lean, StateSpace.lean)
+- Dynamics/ (TimeEvolution.lean)
+- Measurement/ (BornRule.lean)
+- Reconstruction/ (LRTReconstruction.lean)
+
+**Kept active**:
+- LogicRealismTheory/ExternalTheorems.lean (Tier 2 established math)
+
+**Updated**: LogicRealismTheory.lean to only import ExternalTheorems
+
 ---
