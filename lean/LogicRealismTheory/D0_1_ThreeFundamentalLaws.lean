@@ -17,6 +17,24 @@ The formalization serves to:
 
 Note: These are not "proven" from simpler principles—they ARE the simplest
 principles. In classical Lean, they are axiomatic/definitional.
+
+## Interpretation Boundary
+
+This file formalizes logical constraints at the level of propositions.
+Ontological interpretation (that reality obeys these laws) is external to
+the formal system. Lean proves structural relations; LRT claims ontological
+significance in the theory documents.
+
+## Classical Dependency
+
+| Law | Intuitionistically Valid | Classical Required |
+|-----|--------------------------|-------------------|
+| L₁ (Identity) | ✓ Yes | No |
+| L₂ (Non-Contradiction) | ✓ Yes | No |
+| L₃ (Excluded Middle) | No | ✓ Yes |
+
+Excluded Middle requires `Classical.em` in Lean. This is intentional—LRT
+claims L₃ applies to actualized reality, which is classical.
 -/
 
 import Mathlib.Logic.Basic
