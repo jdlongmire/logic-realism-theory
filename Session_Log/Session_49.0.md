@@ -216,4 +216,20 @@ Reason: Obsolete (Session 3.6 era, Oct 2025) - superseded by current documentati
 
 **Updated**: CLAUDE.md to reference lean/AI_ROLE.md
 
+### Theory Folder Consolidation
+
+**Archived to theory/archive/20251221-theory-consolidation/**:
+- 13 markdown files (foundation, philosophy, predictions, extensions)
+- 8 subfolders (analysis, drafts, figures, frameworks, predictions, references, synthesis_opportunities, 001_pdfs)
+
+**Kept in theory/ root**:
+- `20251221-logic_realism_theory.md` - Latest theory draft
+- `20251221-Claude-LRT-ground-up.md` - Ground-up exploration
+- `logic-realism-theory-refactor.md` - Refactor tracking
+- `README.md`
+- `derivations/` - First-principles math
+- `submissions/` - IJQF package
+- `issues/` - Open issues
+- `supplementary/`
+
 ---
