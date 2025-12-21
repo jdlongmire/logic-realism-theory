@@ -1,0 +1,96 @@
+# Session 49.0
+
+**Date**: 2025-12-21
+**Focus**: Session startup
+**Status**: ACTIVE
+**Interaction Count**: 1
+
+---
+
+## Previous Session Summary (48.0)
+
+Session 48.0 analyzed program revamp options based on two new files:
+- `theory/20251221-logic_realism_theory.md` - New paper draft with cleaner structure
+- `theory/20251221-Claude-LRT-ground-up.md` (~485KB) - Fresh Claude conversation exploring LRT from first principles
+
+### Best Elements Identified
+
+**From new paper:**
+- I∞, L₃, A* notation (cleaner than 𝔍, 𝔏, 𝔄)
+- Explicit Primitive Criteria (§1.2) and Purity Test
+- Meta-Principles MP1-MP4
+- Gödel Pre-Arithmetic Argument (§2.4)
+- Systematic derivation structure (§4)
+
+**From ground-up conversation:**
+- Type 1/Type 2 distinction (vehicle vs content)
+- Co-Fundamentality analysis
+- Fresh circularity verification
+- Comparison table (LRT vs Physicalism vs Tegmark)
+- Necessity operator analysis (□∃I, □∃L, □(P = L(I)))
+
+### Merge Options
+| Option | Description | Effort |
+|--------|-------------|--------|
+| A: Notation Only | Adopt I∞, L₃, A* across materials | ~2-3 hours |
+| B: Core Paper Refresh | New paper as core, merge missing | ~4-6 hours |
+| C: Full Refresh | Complete documentation overhaul | ~8-12 hours |
+
+**Prior Recommendation**: Option B
+
+---
+
+## Current Project State
+
+### LRT Core Structure
+- **Tier 1**: 2 axioms (I, I_infinite)
+- **Tier 2**: ~16 established math tools
+- **Tier 3**: 1 universal physics axiom
+- **Total**: ~19 axioms
+
+### Key Deliverables
+| Document | Purpose |
+|----------|---------|
+| `theory/2025-12-16_logic_realism_theory_foundation.md` | Core physics paper |
+| `theory/2025-12-17_logic_realism_philosophy_of_science.md` | Philosophy paper (IJQF submission) |
+| `theory/submissions/IJQF/` | Complete submission package |
+
+### Open Issues
+| Issue | Title | Status |
+|-------|-------|--------|
+| 014 | Dimensional Optimality (3+1) | OPEN |
+| 015 | Quantum Gravity Interface | OPEN |
+| 016 | Measurement Mechanism | OPEN |
+| 017 | Simulate Toy Universes | OPEN |
+| 018 | Precision Tests (Falsification) | OPEN |
+| 019 | Alpha Refinements | OPEN |
+
+### Untracked Files
+- `theory/20251221-Claude-LRT-ground-up.md` - pending decision
+
+---
+
+## Session 49.0 Work
+
+### AI-Collaboration-Profile Optimization
+
+**Completed**: Restructured collaboration documents
+
+| Metric | Original | New | Reduction |
+|--------|----------|-----|-----------|
+| Lines | 437 | ~180 | 59% |
+| Files | 1 | 2 | Split by scope |
+
+**Changes**:
+- `AI-Collaboration-Profile.json` - Now general collaboration stance (~100 lines)
+- `LRT-Collaboration-Addendum.md` - LRT-specific protocols (~80 lines)
+- `AI-Collaboration-Profile-v2.json.bak` - Backup of original
+- Updated `CLAUDE.md` to reference both files
+
+**What was consolidated**:
+- 5 redundant uncertainty sections -> 1
+- 4 redundant deference sections -> 1
+- Circularity protocol 150 lines -> 30 lines (essentials only)
+- Removed outdated content (artifact permissions, historical examples)
+
+---

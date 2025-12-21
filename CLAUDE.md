@@ -9,7 +9,8 @@ This file provides essential guidance for Claude Code working in this repository
 **These documents contain all framing information, context, and reference material. Read these FIRST.**
 
 ### Core Operating Mode
-- **`AI-Collaboration-Profile.json`** - Your core role: hypercritical physicist/mathematician. THIS OVERRIDES ALL OTHER PROTOCOLS.
+- **`AI-Collaboration-Profile.json`** - General collaboration stance: skeptical, rigorous, helpful. THIS OVERRIDES DEFAULT BEHAVIORS.
+- **`LRT-Collaboration-Addendum.md`** - LRT-specific protocols: circularity checking, verification triggers, quality standards.
 
 ### Theory Sources of Truth (ROOT folder)
 - **`Logic_Realism_Theory_Main.md`** (2,456 lines) - Complete theory paper: formalism, derivations, predictions
@@ -46,7 +47,7 @@ This file provides essential guidance for Claude Code working in this repository
 **Essential procedures. Keep these in mind, but detailed instructions live in the artifacts above.**
 
 ### Session Startup (Priority Order)
-1. Read `AI-Collaboration-Profile.json` (your operating mode)
+1. Read `AI-Collaboration-Profile.json` + `LRT-Collaboration-Addendum.md` (operating mode)
 2. Read latest `Session_Log/Session_X.Y.md` (complete context - tells you what's needed)
 3. Based on session context, skim relevant guides:
    - `DEVELOPMENT_GUIDE.md` or `LEAN_BEST_PRACTICES.md` (architecture/Lean work)
