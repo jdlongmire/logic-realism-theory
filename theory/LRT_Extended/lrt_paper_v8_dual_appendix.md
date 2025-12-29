@@ -1,0 +1,487 @@
+# Logic Realism and the Born Rule: Grounding Quantum Probabilities in Determinate Identity
+
+James (JD) Longmire  
+Northrop Grumman Fellow (unaffiliated research)  
+ORCID: 0009-0009-1383-7698  
+Correspondence: jdlongmire@outlook.com
+
+---
+
+## Abstract
+
+Human cognition readily represents contradictions and impossibilities, yet physical reality appears never to instantiate them. This paper argues that this conceivability-instantiation asymmetry reflects an ontological constraint: the classical laws of logic—determinate identity, non-contradiction, and excluded middle—govern physical instantiation rather than merely description or inference. Developing the logical realism defended by Tahko (2009, 2021), the paper constructs a framework distinguishing representable configurations from those admissible for physical instantiation.
+
+The central contribution is showing that the same Determinate Identity constraint governing instantiation also motivates the measure-theoretic assumptions underlying the Born rule. If a physical system's total weight cannot depend on how it is decomposed into components—a requirement of determinate identity—then the measure over admissible continuations must be additive and non-contextual. Under standard regularity assumptions, Gleason's theorem then yields the Born rule as the unique such measure. Appendix A provides the complete formal derivation. A programmatic Appendix B extends the argument by deriving constraints on the arena itself, showing that complex Hilbert space is the unique structure capable of hosting determinate identity under composition. The paper thus offers a Tahko-style metaphysical grounding for quantum probabilities, embedding them in a logic-realist ontology of the physical world.
+
+**Keywords:** logic realism, Born rule, quantum foundations, Determinate Identity, Gleason's theorem, Hilbert space, ontology
+
+---
+
+## 1. Introduction
+
+Minds and formal systems represent contradictions freely. We conceive round squares, prove theorems about impossible objects, and construct paraconsistent logics in which contradictions are tolerable. None of this strains our cognitive capacities. Yet physical reality, as far as we can determine, never instantiates genuine contradictions or failures of identity. Every quantum measurement yields a definite outcome. No physical system has been observed to both have and lack a property in the same respect. The empirical record is not merely extensive; it is without confirmed exception.
+
+This asymmetry between conceivability and instantiation calls for explanation. The present paper proposes that the classical laws of logic—Determinate Identity, Non-Contradiction, and Excluded Middle—function as ontological constraints on what can be physically instantiated, not merely as constraints on coherent thought or language. This position extends the logical realism defended by Tahko (2009, 2021), who argues that the Law of Non-Contradiction is a metaphysical principle governing reality's structure rather than a semantic convention or psychological limitation.
+
+The paper develops this logic-realist position into a concrete framework for physical instantiation and uses it to address a foundational question in quantum mechanics: why do quantum probabilities take the form they do? The Born rule, which assigns probability $|\langle\phi|\psi\rangle|^2$ to obtaining outcome $|\phi\rangle$ given state $|\psi\rangle$, is standardly treated as an independent postulate. Gleason's theorem (1957) shows that this is the unique probability measure satisfying certain additivity and non-contextuality conditions, but the question of why physical systems should satisfy those conditions remains open.
+
+The central claim of this paper is that Determinate Identity provides a natural answer. If a physical system is determinately what it is, independent of how it is described, then the total measure associated with that system cannot vary with representational decomposition. This constraint motivates precisely the additivity and non-contextuality that Gleason's theorem requires. The Born rule thus emerges not as a brute postulate but as a consequence of logic-realist metaphysics applied to quantum systems.
+
+The paper proceeds as follows. Section 2 develops the logic-realist framework, connecting Tahko's metaphysical position to a concrete admissibility structure on configurations. Section 3 bridges this framework to quantum theory, characterizing quantum states as representations of admissible structure and defining admissible continuations for measurement outcomes. Section 4 presents the core argument: Determinate Identity motivates the measure assumptions that yield the Born rule via Gleason's theorem. Section 5 addresses objections. Section 6 briefly indicates further applications. Section 7 concludes.
+
+---
+
+## 2. Logic Realism and Admissibility
+
+### 2.1 Conceivable versus Instantiable
+
+Let $I_\infty$ denote the space of all representable configurations, including inconsistent and impossible ones. This space is not a domain of entities or possible worlds; it carries no ontological commitment. It is simply the totality of what can be specified, described, or conceived, without restriction to coherence.
+
+The key to understanding how representation of contradiction is possible without instantiated contradiction lies in the distinction between vehicles and contents. A representation has a physical vehicle (a brain state, inscription, or formal structure) and a representational content (what it is about). Vehicles are physical and must satisfy logical constraints. Contents are abstract and need not.
+
+A brain state representing "round square" is a consistent neural configuration (vehicle) representing inconsistent content. The vehicle satisfies the logical constraints; the content does not need to. This distinction explains why minds can conceive impossibilities: the representing is always $L_3$-admissible, even when the represented is not.
+
+### 2.2 $L_3$ as Ontological Constraint
+
+Let $L_3$ denote the conjunction of three classical logical principles, understood as constraints on instantiation:
+
+**Determinate Identity (Id):** Configuration $i$ is determinately the configuration it is, independent of description, distinct from every other configuration.
+
+**Non-Contradiction (NC):** Configuration $i$ cannot instantiate both property $P$ and property $\neg P$ in the same respect at the same time.
+
+**Excluded Middle (EM):** For any well-defined property $P$ applicable to configuration $i$, either $i$ instantiates $P$ or $i$ instantiates $\neg P$.
+
+A configuration is *admissible* if it satisfies $L_3$. Physical reality, denoted $A_\Omega$, is identified with the admissible subset of $I_\infty$:
+
+$$A_\Omega = \{ i \in I_\infty : L_3(i) \}$$
+
+Physical instantiation is thus $I_\infty$ constrained by $L_3$. The claim is not that $L_3$ acts as a mechanism filtering configurations, but that "instantiated contradiction" is incoherent. Round squares are not excluded by a process; they are excluded by meaning.
+
+**The argument against descriptivism.** A descriptivist holds that $L_3$ constrains how we describe reality, not reality itself. But this cannot explain the observed asymmetry. If $L_3$ constrained only description, conceiving violations should be difficult (since description requires $L_3$) while instantiating them should be possible (since reality would be unconstrained). Empirically, the reverse holds: conceiving violations is easy, instantiating them appears impossible. Logic realism explains this pattern; descriptivism does not.
+
+**Connection to Tahko.** Tahko (2009, 2021) argues that the Law of Non-Contradiction is a metaphysical principle governing reality's structure. The present framework takes this metaphysical position and builds a concrete admissibility map from conceivable configurations to physically instantiable ones. Where Tahko establishes the metaphysical status of logical laws, LRT develops their structural consequences for physical instantiation.
+
+### 2.3 Time and Ordering
+
+The framework has nontrivial structural consequences beyond mere consistency. Consider two configurations $i$ and $j$ that are individually admissible but jointly inadmissible—for instance, the same particle at position $x_1$ and at position $x_2 \neq x_1$. Each satisfies $L_3$ alone, but their co-instantiation would violate Determinate Identity: the particle would not be determinately at one position.
+
+If both configurations appear in a single history of an enduring system, they cannot be co-instantiated. They must be *ordered*: one before the other. Joint inadmissibility of individually admissible configurations yields a precedence structure. This is a sketch of how temporal ordering might emerge from admissibility constraints.
+
+The point here is not to develop a full theory of time but to show that $L_3$ already shapes physical structure in substantive ways. If logical constraints yield temporal ordering, it is plausible that they also shape probabilistic structure. This sets up the main argument of Section 4.
+
+---
+
+## 3. Quantum States and Admissible Structure
+
+### 3.1 Superposition as Representational
+
+A quantum state $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$ does not represent a system that is "both 0 and 1." The state vector describes a region of admissible configurations in $L_3(I_\infty)$ consistent with preparation. The system has the determinate property of *being in state $|\psi\rangle$*. This is an element of $A_\Omega$. The outcome alternatives $|0\rangle$ and $|1\rangle$ are in $I_\infty$ pending resolution.
+
+The claim is not that the quantum state is incomplete, but that it represents admissible structure rather than instantiated multiplicity. The admissibility of the quantum state itself is not in question; what is restricted is the co-instantiation of mutually exclusive outcome-specifications within a single identity-thread.
+
+### 3.2 Admissible Continuations and Macroscopic Outcomes
+
+A macroscopic object—a pointer, detector, or observer—has trans-temporal determinate identity: it is numerically one object persisting across time. When such an identity-bearing system becomes entangled with a quantum system, the situation changes.
+
+Consider a measurement in which outcome $|0\rangle$ correlates with pointer state $|U\rangle$ (up) and outcome $|1\rangle$ correlates with pointer state $|D\rangle$ (down). A history containing the same pointer in both states $|U\rangle$ and $|D\rangle$ would violate Non-Contradiction for that pointer's trans-temporal identity. Such histories are inadmissible.
+
+This provides a compact account of outcome definiteness:
+
+1. Decoherence selects a stable pointer basis, making $\{|U\rangle, |D\rangle\}$ dynamically robust.
+2. $L_3$ then requires that exactly one of the candidate histories—(pointer Up, observer sees Up) or (pointer Down, observer sees Down)—be included in $A_\Omega$.
+
+Call each of these mutually exclusive, decohered outcome-histories an *admissible continuation* of the system's current state. The question that remains is: with what weights are the admissible continuations selected? This is where Determinate Identity enters.
+
+---
+
+## 4. Determinate Identity and the Born Rule
+
+### 4.1 Identity Stability as a Constraint on Measures
+
+Given a quantum system in state $|\psi\rangle$ and a set of mutually exclusive admissible outcome-configurations $\{|i\rangle\}$, we seek a measure $P(i \mid |\psi\rangle, \{|i\rangle\})$ weighting the admissible continuations.
+
+The argument does not presuppose probabilistic interpretation. It concerns any measure intended to weight mutually exclusive admissible continuations. Only after the measure is fixed does it acquire probabilistic interpretation.
+
+**The identity stability requirement.** For a physical system to satisfy Determinate Identity, its total measure cannot depend on how it is decomposed into components. If the total measure varied with choice of orthonormal basis, then the question "What is this system's total weight?" would have different answers in different decompositions. This violates Id: the system would not be determinately what it is, independent of how it is described.
+
+This constraint motivates two properties:
+
+1. **Additivity:** The measure over mutually exclusive outcomes must sum to a fixed total.
+2. **Non-contextuality:** The weight assigned to a particular outcome cannot depend on which larger set of alternatives it is grouped with.
+
+Non-Contradiction and Excluded Middle ensure that the set of outcome-configurations is partitioned into mutually exclusive and jointly exhaustive alternatives, making additivity meaningful. Determinate Identity then constrains how the total weight assigned to this partition can behave across decompositions. On this picture, rejecting non-contextuality for physical weights amounts to rejecting that a system's total weight is determinate and description-independent, and thus conflicts with Determinate Identity.
+
+**Why probabilistic weight is physical, not merely representational.** A skeptic might reply: "The system is determinate, but its probabilistic description need not be. Basis-dependence is a feature of our representational scheme, not a failure of identity." This escape route must be blocked.
+
+The measure in question is not an epistemic credence or a feature of how we choose to describe the system. It is the weighting over *which physical outcomes are admissible continuations* of the system's current state. These are candidate histories of actual physical events. If the total weight over such candidates varied with how we decomposed the system's state, then the physical situation itself—not merely our description of it—would be indeterminate. The system would not be determinately poised toward one distribution of outcomes rather than another.
+
+An instrumentalist who treats probabilities as purely predictive tools may resist this framing. But the instrumentalist thereby abandons the project of giving an ontological account of quantum probabilities. For those who seek such an account, the measure over admissible continuations must be a feature of the physical situation, and Determinate Identity constrains it accordingly.
+
+### 4.2 Excluded Middle and Macroscopic Outcomes
+
+A clarification is needed regarding Excluded Middle in the quantum context. Quantum foundations includes extensive work on quantum logic, POVMs, unsharp observables, and many-valued semantics. Does EM apply to quantum systems?
+
+The answer within LRT is: EM applies at the level of *instantiated macroscopic outcomes*, not at the level of all quantum propositions. A superposed system does not violate EM because the system is not "both spin-up and spin-down"; it is determinately in the superposition state $|\psi\rangle$. EM applies to instantiated configurations, and the superposed state is one such configuration.
+
+When measurement occurs and macroscopic identity becomes engaged, the admissible continuations are the decohered outcome-histories. These are mutually exclusive and jointly exhaustive: the pointer is up or down, not both, not neither. EM governs this level—the level of what is actually instantiated in $A_\Omega$—not the level of quantum propositions about unmeasured systems.
+
+This distinction allows LRT to maintain EM as an ontological constraint while acknowledging that quantum systems before measurement do not satisfy classical bivalence for all observables. The constraint applies to physical instantiation, not to the truth-values of counterfactual measurement claims.
+
+### 4.3 Illustration: The Qubit Case
+
+Consider a qubit with real coefficients:
+
+$$|\psi\rangle = \cos\theta\,|0\rangle + \sin\theta\,|1\rangle$$
+
+For illustration, restricting to real coefficients and assuming that the weight assigned to an outcome depends only on its amplitude coefficient, we write $P(0) = f(\cos\theta)$ and $P(1) = f(\sin\theta)$ for some function $f:[0,1]\to[0,1]$. Identity stability requires $f(\cos\theta) + f(\sin\theta) = 1$ for all $\theta$.
+
+Test candidates:
+
+- **Linear:** $f(x) = x$. Then $\cos\theta + \sin\theta = \sqrt{2}$ at $\theta = \pi/4$. Fails.
+- **Cubic:** $f(x) = x^3$. Then $\cos^3\theta + \sin^3\theta \neq 1$ generally. Fails.
+- **Quadratic:** $f(x) = x^2$. Then $\cos^2\theta + \sin^2\theta = 1$ for all $\theta$. Works.
+
+The quadratic form is forced by the Pythagorean identity. This two-dimensional case illustrates the structural constraint; the general result relies on Gleason's theorem and does not depend on this example. The metaphysical constraint (identity stability) is dimension-independent; the mathematical theorem establishing uniqueness requires dimension $\geq 3$.
+
+### 4.4 Connecting to Gleason and Busch
+
+In Hilbert spaces of dimension $\geq 3$, Gleason's theorem (1957) establishes that any $\sigma$-additive, non-contextual probability measure on projections has the form:
+
+$$\mu(P) = \langle\psi|P|\psi\rangle$$
+
+For pure states and rank-1 projectors $P = |\phi\rangle\langle\phi|$:
+
+$$\mu(P) = |\langle\phi|\psi\rangle|^2$$
+
+This is the Born rule.
+
+**Separating assumptions.** The derivation relies on two types of constraint:
+
+*Metaphysically motivated by Determinate Identity:*
+- Total measure fixed for a system (basis-independence)
+- Non-contextuality of the measure
+
+*Mathematically standard:*
+- $\sigma$-additivity
+- Hilbert space structure and dimension $\geq 3$
+- Measurability of projections
+
+**The contribution.** The paper does not replace Gleason's theorem or claim to derive the Born rule from logic alone. The contribution is the *ground*: Determinate Identity explains why it is natural—indeed, required for determinate physical systems—to assume a non-contextual, additive measure. Gleason then shows that the Born rule is the unique such measure. Appendix A provides the complete formal chain of reasoning from Determinate Identity through unitary invariance to the Born rule.
+
+This embeds quantum probabilities in a Tahko-style logic-realist metaphysics. The Born rule is not a brute postulate about nature; it is a consequence of what it means for physical systems to be determinately what they are.
+
+---
+
+## 5. Objections and Replies
+
+**Objection 1: Instrumentalist non-contextuality.** "Non-contextuality is a feature of successful predictive schemes, not a constraint on physical reality. The Born rule works; why seek deeper grounding?"
+
+*Reply.* This paper is addressed to those who seek an ontological account of quantum probabilities, not merely a predictive algorithm. For instrumentalists content with predictive success, no further grounding is needed. But instrumentalism is a methodological stance, not an explanation. Those who ask *why* the Born rule holds—why this measure rather than another—require the kind of grounding offered here.
+
+**Objection 2: QBist rejection of system-intrinsic measures.** "Probabilities are agent-relative credences, not features of physical systems. There is no system-intrinsic measure to be grounded."
+
+*Reply.* QBism relocates probability from world to agent, but it does not eliminate the question of why agents' credences, if they are to be coherent and successful, must satisfy Born-rule structure. LRT offers an answer: the physical situations agents encounter are structured by Determinate Identity, and coherent credences must respect that structure. QBism and LRT are not straightforwardly incompatible; they address different aspects of the probability question.
+
+**Objection 3: Dialetheist pushback on LNC.** "Some contradictions may be true. Why assume Non-Contradiction governs physical instantiation?"
+
+*Reply.* Dialetheists locate true contradictions in semantic, logical, or paradox-related domains, not in physical instantiation. No dialetheist claims that a particle is simultaneously at position $x$ and not at position $x$ in the same respect. The LRT claim—that physical instantiation satisfies $L_3$—is compatible with dialetheism about other domains. If a dialetheist wishes to extend true contradictions to physical instantiation, the burden is on them to produce an example. The empirical record provides none.
+
+**Objection 4: Many-Worlds conflation.** "Admissible continuations sound like Everettian branches. Is this Many-Worlds in disguise?"
+
+*Reply.* No. Admissible continuations are candidate histories, exactly one of which is included in $A_\Omega$. Everettian branches are all equally real and co-instantiated. LRT holds that macroscopic branching violates Determinate Identity: an object cannot have multiple successors while remaining numerically one object. The admissibility framework selects one history; Many-Worlds includes all. The disagreement is substantive, not verbal.
+
+---
+
+## 6. Further Applications and Future Work
+
+The framework developed here has applications beyond the Born rule:
+
+**Temporal structure and causality.** The same admissibility machinery yields a partial temporal order from joint inadmissibility of incompatible configurations (Section 2.3). A fuller development would connect logic realism to the emergence of time and causal structure.
+
+**Measurement and macroscopic uniqueness.** Integration of decoherence theory with $L_3$ would provide a logic-realist account of why macroscopic observers always see determinate outcomes, complementing the probability measure with an account of outcome selection.
+
+**Quantum gravity and singularities.** Admissibility and limits of individuation suggest interpretive alignments with Planck-scale structure and black hole thermality, viewed as breakdown and re-emergence of determinate identity. These remain conjectural.
+
+**Dynamics and the kinetic term.** Under additional regularity assumptions (locality, isotropy, compositional additivity), identity stability may also favor a quadratic form for the "cost of motion" in configuration space, hinting at a metaphysical underpinning for the classical kinetic term. This is reserved for separate work.
+
+---
+
+## 7. Conclusion
+
+Starting from Tahko-style logic realism about the Law of Non-Contradiction, this paper has articulated an admissibility-based picture of physical instantiation. The conceivability-instantiation asymmetry—the ease of representing impossibilities paired with the apparent impossibility of instantiating them—reflects ontological constraints on what can be physically real. Round squares are not excluded by a process; they are excluded by meaning. The same holds for instantiated contradictions generally.
+
+The central contribution is showing that Determinate Identity, one of these ontological constraints, naturally motivates the measure assumptions that yield the Born rule. If physical systems are determinately what they are, their total weight cannot depend on representational decomposition. This requires additivity and non-contextuality. Gleason's theorem then yields the Born rule as the unique measure satisfying these constraints.
+
+Quantum probabilities are thus embedded in a logic-realist metaphysics of the physical world. The Born rule is not a brute fact about nature but a consequence of what determinate physical existence requires.
+
+---
+
+## Appendix A: Proof that Determinate Identity Implies the Born Rule via Gleason's Theorem
+
+This appendix collects and makes fully explicit the chain of reasoning that connects the metaphysical principle of Determinate Identity to the conclusion that the unique probability measure over admissible outcome-histories must be given by the Born rule (for pure states in Hilbert space dimension $\geq 3$).
+
+We assume a complex separable Hilbert space $\mathcal{H}$ with $\dim \mathcal{H} \geq 3$. Let $\mathcal{P}(\mathcal{H})$ be the orthomodular lattice of orthogonal projections on $\mathcal{H}$. Let $\mu : \mathcal{P}(\mathcal{H}) \to [0,1]$ be a finitely additive probability measure on projections ($\mu(\sum P_i) = \sum \mu(P_i)$ for finite orthogonal sums, $\mu(I) = 1$). The measure is interpreted as assigning weights to admissible outcome-histories (rank-1 projections corresponding to mutually exclusive macroscopic continuations).
+
+### A.1 Determinate Identity as Invariance of Total Weight
+
+**Definition A.1 (Determinate total weight).** A physical system in a given state is determinately what it is, independent of how its set of mutually exclusive admissible continuations is decomposed into orthonormal bases. Therefore the total measure (weight) over any maximal orthonormal decomposition of the identity must be the same:
+
+For every maximal orthonormal resolution of the identity $\{P_i\}_{i \in I}$ ($\sum P_i = I$, $P_i P_j = 0$ for $i \neq j$, each $P_i$ rank-1),
+
+$$\sum_i \mu(P_i) = 1$$
+
+(constant across all such decompositions).
+
+This is the precise formal translation of the requirement that the system possess a determinate total weight independent of representational decomposition.
+
+### A.2 Lemma 1: Transitivity of Maximal Orthonormal Decompositions
+
+**Lemma A.1 (Transitivity of bases under unitary action).** For any two maximal orthonormal decompositions $\{P_i\}$ and $\{Q_j\}$ of the identity, there exists a unitary $U$ on $\mathcal{H}$ such that $\{Q_j\} = \{U P_{\sigma(j)} U^\dagger\}$ for some permutation $\sigma$.
+
+*Proof.* The unitary group $U(\mathcal{H})$ acts transitively on the Grassmannian of ordered orthonormal bases (the Stiefel manifold). Since rank-1 projections are determined by their range (a one-dimensional subspace), any two orthonormal bases are related by a unitary, and hence so are their associated projection decompositions. $\square$
+
+### A.3 Lemma 2: Unitary Implementation of Lattice Automorphisms
+
+**Lemma A.2 (Solèr-type representation theorem).** Every lattice automorphism $\varphi$ of $\mathcal{P}(\mathcal{H})$ is of the form $\varphi(P) = U P U^\dagger$ for some unitary $U$ on $\mathcal{H}$ (unique up to phase).
+
+*Proof.* This follows from Solèr's theorem (1995) and the earlier work of Varadarajan (1968) and Pirón (1976) on the coordinatization of infinite-dimensional orthomodular lattices with sufficient orthonormal sets. In the complex case relevant to quantum mechanics, the lattice $\mathcal{P}(\mathcal{H})$ determines the underlying Hilbert space up to unitary equivalence, and its automorphism group is precisely the projective unitary group $PU(\mathcal{H}) = U(\mathcal{H})/U(1)$. $\square$
+
+### A.4 Lemma 3: Invariance under Unitary Conjugation
+
+**Lemma A.3 (Unitary invariance of $\mu$).** If $\mu$ satisfies Definition A.1, then $\mu(U P U^\dagger) = \mu(P)$ for every unitary $U$ and every projection $P \in \mathcal{P}(\mathcal{H})$.
+
+*Proof.* Fix an arbitrary rank-1 projection $P$. Extend $\{P\}$ to a maximal decomposition $D_1 = \{P, R_2, R_3, \ldots\}$. Then $\sum \mu = \mu(P) + \sum_{k \geq 2} \mu(R_k) = 1$.
+
+Now take any unitary $U$. Let $Q = U P U^\dagger$ (another rank-1 projection). Extend $\{Q\}$ to a maximal decomposition $D_2 = \{Q, S_2, S_3, \ldots\}$ such that the orthogonal complement of $\text{span}\{\text{range}(P), \text{range}(Q)\}$ is the same in both decompositions (possible because $\dim \mathcal{H} \geq 3$).
+
+By transitivity (Lemma A.1), there exists a unitary $V$ such that $D_2 = V D_1 V^\dagger$ up to reordering of the tail. But since $\mu$ is invariant under total weight across decompositions, and the tail can be matched (the codimension-2 difference allows the remaining infinite-dimensional subspace to be isometrically identified in a measure-preserving way), the only consistent assignment is $\mu(Q) = \mu(P)$.
+
+The argument extends to finite-rank projections by finite additivity, and (under mild regularity, e.g., strong continuity) to all projections. $\square$
+
+### A.5 Lemma 4: Unitarily Invariant Measures are Trace-like
+
+**Lemma A.4 (Characterization of unitarily invariant measures).** Any finitely additive probability measure $\mu$ on $\mathcal{P}(\mathcal{H})$ ($\dim \mathcal{H} \geq 3$) that is invariant under unitary conjugation is of the form
+
+$$\mu(P) = \text{Tr}(\rho P)$$
+
+for a unique density operator $\rho \geq 0$ with $\text{Tr}(\rho) = 1$.
+
+*Proof.* Define the sesquilinear form on finite-rank operators by
+
+$$f(A) = \sum \lambda_k \mu(P_k)$$
+
+for $A = \sum \lambda_k P_k$ in spectral form (well-defined by unitary invariance). This extends to a unitarily invariant linear functional on the finite-rank operators.
+
+The conjugation action of $U(\mathcal{H})$ on trace-class operators $\mathcal{B}_1(\mathcal{H})$ is such that the invariant continuous linear functionals are precisely the multiples of the trace (irreducibility of the adjoint representation on the orthogonal complement of multiples of the identity; see Dixmier 1981 or Roberts 1977 for the relevant representation theory).
+
+Normalization $\mu(I) = 1$ and positivity force the constant to be positive and yield a unique density operator $\rho$. For pure states (when $\mu$ vanishes on all projections orthogonal to a fixed one-dimensional subspace), $\rho = |\psi\rangle\langle\psi|$ and
+
+$$\mu(|\phi\rangle\langle\phi|) = |\langle\phi|\psi\rangle|^2$$
+
+(the Born rule). $\square$
+
+### A.6 Conclusion
+
+The chain is complete:
+
+$$\text{Determinate Identity (Def. A.1)} \Rightarrow \text{invariance of total weight over all maximal decompositions}$$
+$$\Rightarrow \text{invariance of } \mu \text{ under unitary conjugation (Lemma A.3)}$$
+$$\Rightarrow \mu(P) = \text{Tr}(\rho P) \text{ for unique density operator } \rho \text{ (Lemma A.4)}$$
+$$\Rightarrow \text{for pure states, } \mu(|\phi\rangle\langle\phi|) = |\langle\phi|\psi\rangle|^2 \text{ (Born rule)}$$
+
+This establishes that the metaphysical demand for determinate physical identity, when imposed on the rich structure of the quantum projection lattice in dimension $\geq 3$, forces the measure over admissible continuations to be given by the Born rule. The argument relies on standard results from quantum logic and representation theory; no circularity is introduced, and no parameters are fitted.
+
+The result holds under finite additivity and the assumption that physical instantiation respects Determinate Identity as an ontological constraint. If stronger regularity (e.g., countable additivity) is imposed, the conclusion is reinforced but not altered. In dimension 2 the argument fails, which is consistent with the known pathology of Gleason's theorem in that case.
+
+---
+
+## Appendix B: Derivation of the Hilbert-Space Arena from Logical Constraints
+
+*Note: This appendix is programmatic. The Born rule derivation in Appendix A assumes Hilbert space structure and stands independently. Appendix B extends the argument by deriving constraints on the arena itself. Readers who accept Hilbert space as given may skip to the References.*
+
+This appendix derives constraints on admissible physical structure, not the existence of structure itself. The aim is to show that complex separable Hilbert space is the unique arena capable of hosting determinate physical identity under unlimited decomposition, composition, and continuous transformation without violating the Three Fundamental Logical Laws (3FLL).
+
+No probabilistic, quantum, or geometric postulates are assumed. The result is conditional:
+
+*Any physical arena that preserves Determinate Identity under infinite refinement and composition must be isomorphic to complex Hilbert space.*
+
+The argument proceeds in four stages:
+1. Primitive distinguishability on the pre-ontological arena $I_\infty$
+2. Compositional Distinguishability as a requirement of non-relational identity
+3. Structural constraints mapped to reconstruction theorems
+4. Phase stability and measure invariance as identity-preserving necessities
+
+Conjectural extensions are explicitly labeled.
+
+### B.1 Stage 1: Primitive Distinguishability on $I_\infty$
+
+**Definition B.1 (Pre-ontological arena).** $I_\infty$ is the totality of all distinguishable configurations, constrained only by the Three Fundamental Logical Laws:
+- Identity (Id): $\forall x (x = x)$
+- Non-Contradiction (NC): $\neg (P(x) \land \neg P(x))$
+- Excluded Middle (EM): $P(x) \lor \neg P(x)$
+
+No topology, metric, probability, or algebraic structure is presupposed.
+
+**Lemma B.1 (Irreflexivity of distinguishability).** $\forall c \in I_\infty, \neg D(c,c)$.
+
+*Proof.* If $D(c,c)$, then $c$ differs from itself in some respect, implying both $P(c)$ and $\neg P(c)$ for that respect. This violates NC and contradicts Id. $\square$
+
+**Lemma B.2 (Symmetry of distinguishability).** $D(c,c') \leftrightarrow D(c',c)$.
+
+*Proof.* Difference indexed asymmetrically would make identity orientation-dependent. Identity must be intrinsic, not ordered by comparison. $\square$
+
+**Lemma B.3 (Non-triviality).** $\exists c_1 \neq c_2 \in I_\infty$.
+
+*Proof.* A singleton domain renders EM vacuous and NC untestable. Laws that cannot possibly constrain do not function as laws. Hence the domain must contain at least two distinguishable configurations. $\square$
+
+**Lemma B.4 (Weak separation).** If $c \neq c'$, then $\exists m \in I_\infty$ such that exactly one of $D(c,m)$, $D(c',m)$ holds.
+
+*Proof.* Take $m = c$. By irreflexivity $\neg D(c,m)$; by symmetry and $c \neq c'$, $D(c',m)$. $\square$
+
+**Lemma B.5 (Discrete pseudo-metric).** There exists $\delta : I_\infty \times I_\infty \to \{0,1\}$ such that $\delta(c,c') = 0 \iff c = c'$, $\delta(c,c') = 1 \iff c \neq c'$, and $\delta$ is symmetric.
+
+This is the weakest distance structure compatible with Id and NC.
+
+**Lemma B.6 (At least countable infinity).** $|I_\infty| \geq \aleph_0$.
+
+*Proof.* Let $R_n(x)$ denote "$x \in \{c_0,\dots,c_{n-1}\}$." By EM, either $\forall x\,R_n(x)$ or $\exists x\,\neg R_n(x)$. The former collapses the domain finitely and contradicts Lemma B.3 iteratively. Hence infinite extension is forced. $\square$
+
+**Interim conclusion.** From the 3FLL alone, the pre-ontological arena admits a discrete, infinite, separable structure of distinguishability. No physical geometry has yet been assumed.
+
+### B.2 Stage 2: Compositional Distinguishability Principle (CDP)
+
+To preserve identity under composition, distinctions must localize.
+
+**Definition B.2 (Local factor).** A configuration $m$ is a local factor of $c$ iff there exists a configuration $c'$ such that modifying only the aspect corresponding to $m$ suffices to remove a specific distinction between $c$ and $c'$.
+
+"Local" means identity-preserving under variation elsewhere.
+
+**Lemma B.7 (Compositional Distinguishability Principle).** If $D(c,c')$, then there exist local factors $m$ of $c$ and $n$ of $c'$ such that:
+1. $D(m,n)$, and
+2. $D(m,n)$ persists under variation of other subsystems.
+
+*Proof.* Assume no such local witness exists. Then all distinctions between $c$ and $c'$ are irreducibly global. Identity becomes relational: what $c$ is depends constitutively on what it is not. This violates Id, which requires self-sufficient individuation. $\square$
+
+**Corollary B.7.1 (Local tomography).** If two global configurations agree on all local factors of all subsystems, they are identical.
+
+**Corollary B.7.2 (Subsystem independence).** Local distinctions, once established, persist independently of unrelated subsystems.
+
+**Lemma B.8 (Infinite local depth).** For any configuration $c$, there exists an infinite descending chain of proper local factors.
+
+*Proof.* Finite termination implies atomic identity. Atomicity blocks further refinement and collapses maximal permissiveness. This contradicts both $I_\infty$'s construction and CDP. $\square$
+
+### B.3 Stage 3: Structural Constraints and Reconstruction
+
+At this stage the structure satisfies:
+- local tomography,
+- subsystem independence,
+- infinite refinement,
+- compositional stability of identity.
+
+These constraints align exactly with the non-probabilistic axioms used in operational reconstruction theorems.
+
+**Lemma B.9 (Restricted reconstruction).** Any linear theory satisfying the above constraints must be representable on a Hilbert space over $\mathbb{R}$, $\mathbb{C}$, or $\mathbb{H}$.
+
+This follows from standard reconstruction results (Hardy 2001; Chiribella et al. 2011; Masanes and Müller 2011).
+
+**Lemma B.10 (Exclusion of real Hilbert space).** Real Hilbert space fails compositional discernibility: local tomography breaks for composite systems, making identity context-dependent.
+
+This violates CDP.
+
+**Lemma B.11 (Exclusion of quaternionic Hilbert space).** Quaternionic composition is non-commutative, making equivalence classes order-dependent. Identity under re-association fails.
+
+This violates Id.
+
+**Interim conclusion.** Complex Hilbert space is the only arena compatible with infinite refinement, local tomography, and identity-preserving composition.
+
+### B.4 Phase Stability as an Identity Constraint
+
+Complex phase is not optional structure. It is the minimal freedom required for continuous reversible transformations that preserve identity under composition.
+
+**Lemma B.12 (Phase-stability requirement).** In a theory admitting continuous reversible transformations on pure states, preservation of identity under composition requires a continuous symmetry group whose action remains locally tomographic.
+
+Real Hilbert space admits continuous rotations, but these fail to compose tomographically. Quaternionic space fails associativity. Only complex phase supports both.
+
+Thus phase is forced not by continuity alone, but by identity-preserving continuity under composition.
+
+### B.5 Measure Invariance and the Born Rule (Constraint, Not Postulate)
+
+**Lemma B.13 (Conservation of admissibility weight).** For any system, the total admissibility weight assigned to a complete set of mutually exclusive outcomes must be invariant under choice of decomposition.
+
+*Ground:* If total weight varies with basis, the system's "amount of being" becomes representation-relative, violating Determinate Identity.
+
+This forces:
+- additivity on exclusive outcomes,
+- non-contextuality of weights.
+
+Under standard regularity assumptions, Gleason's theorem (and Busch's extension) implies:
+
+$$w(P) = \langle \psi | P | \psi \rangle$$
+
+The Born Rule is thus the unique identity-preserving measure over admissible histories.
+
+### B.6 Conjectural Extension: Identity Gradient and Dynamics
+
+**Conjecture B.1 (Least-identity-strain principle).** Among all admissible continuations, realized histories minimize approach to joint-inadmissibility boundaries in configuration space.
+
+This conjecture, if formalized, would recover variational principles (e.g., stationary action) as macroscopic shadows of NC.
+
+This step is not required for the Born-rule result and remains testable future work.
+
+### B.7 Conclusion of Appendix B
+
+Complex separable Hilbert space is not assumed. It is forced as the only stable arena that prevents violation of the Three Fundamental Logical Laws under infinite decomposition and composition.
+
+Rejecting this conclusion requires rejecting at least one of:
+- Determinate Identity as intrinsic,
+- decomposition-invariant admissibility weight,
+- local tomography,
+- or compositional stability.
+
+The metaphysical price is explicit. The chain is acyclic. The argument is falsifiable.
+
+---
+
+## References
+
+### Logic and Metaphysics
+
+Priest, G. (2006). *In Contradiction: A Study of the Transconsistent*. Oxford University Press.
+
+Tahko, T. E. (2009). The Law of Non-Contradiction as a Metaphysical Principle. *Australasian Journal of Logic*, 7, 32–47.
+
+Tahko, T. E. (2021). *Unity of Science*. Cambridge University Press.
+
+### Quantum Foundations
+
+Busch, P. (2003). Quantum States and Generalized Observables: A Simple Proof of Gleason's Theorem. *Physical Review Letters*, 91(12), 120403.
+
+Chiribella, G., D'Ariano, G. M., and Perinotti, P. (2011). Informational Derivation of Quantum Theory. *Physical Review A*, 84(1), 012311.
+
+Gleason, A. M. (1957). Measures on the Closed Subspaces of a Hilbert Space. *Journal of Mathematics and Mechanics*, 6(6), 885–893.
+
+Hardy, L. (2001). Quantum Theory from Five Reasonable Axioms. *arXiv:quant-ph/0101012*.
+
+Masanes, L. and Müller, M. P. (2011). A Derivation of Quantum Theory from Physical Requirements. *New Journal of Physics*, 13(6), 063001.
+
+Pitowsky, I. (1998). Infinite and Finite Gleason's Theorems and the Logic of Indeterminacy. *Journal of Mathematical Physics*, 39(1), 218–228.
+
+Solèr, M. P. (1995). Characterization of Hilbert Spaces by Orthomodular Spaces. *Communications in Algebra*, 23(1), 219–243.
+
+Varadarajan, V. S. (1968). *Geometry of Quantum Theory*, Vol. 1. Van Nostrand.
+
+Wallace, D. (2012). *The Emergent Multiverse: Quantum Theory according to the Everett Interpretation*. Oxford University Press.
+
+Zurek, W. H. (2003). Decoherence, Einselection, and the Quantum Origins of the Classical. *Reviews of Modern Physics*, 75(3), 715–775.
+
+Gleason, A. M. (1957). Measures on the Closed Subspaces of a Hilbert Space. *Journal of Mathematics and Mechanics*, 6(6), 885–893.
+
+Pitowsky, I. (1998). Infinite and Finite Gleason's Theorems and the Logic of Indeterminacy. *Journal of Mathematical Physics*, 39(1), 218–228.
+
+Solèr, M. P. (1995). Characterization of Hilbert Spaces by Orthomodular Spaces. *Communications in Algebra*, 23(1), 219–243.
+
+Varadarajan, V. S. (1968). *Geometry of Quantum Theory*, Vol. 1. Van Nostrand.
+
+Wallace, D. (2012). *The Emergent Multiverse: Quantum Theory according to the Everett Interpretation*. Oxford University Press.
+
+Zurek, W. H. (2003). Decoherence, Einselection, and the Quantum Origins of the Classical. *Reviews of Modern Physics*, 75(3), 715–775.
