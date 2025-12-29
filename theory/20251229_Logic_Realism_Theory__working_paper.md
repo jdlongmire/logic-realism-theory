@@ -1,4 +1,4 @@
-# Logic Realism and the Born Rule: Grounding Quantum Probabilities in Determinate Identity
+# Logic Realism and the Born Rule: Determinate Identity as Ontological Constraint on Physical Reality
 
 James (JD) Longmire  
 Northrop Grumman Fellow (unaffiliated research)  
