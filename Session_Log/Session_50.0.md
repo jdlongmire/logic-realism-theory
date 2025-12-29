@@ -3,7 +3,7 @@
 **Date**: 2025-12-29
 **Focus**: Working Paper Review & CDP Strengthening
 **Status**: ACTIVE
-**Interaction Count**: 16
+**Interaction Count**: 17
 
 ---
 
@@ -270,11 +270,21 @@ Layer 5: Born rule
    - D.4: Vehicle-weight invariance → Born rule
    - D.5: Summary of non-deductive steps
 
+### Polish (per feedback)
+
+**Commit**: `500f15e` - "Polish working paper per feedback"
+
+1. **§4.3**: Connected dim ≥ 3 global embedding to identity-preserving composition from Appendix B
+2. **§2.2**: Added footnote clarifying Tahko (2009) vs (2021) roles
+3. **Appendix B.7**: Added sentence noting full L₃ → Hilbert derivation remains open
+
 ### Git Log
 
 ```
 c9b7abc - Add Session 50.0: CDP strengthening and ontological L₁
 62ee05d - Strengthen working paper: ontological L₁ + Appendix D
+70124e8 - Update Session 50.0 with completed work
+500f15e - Polish working paper per feedback
 ```
 
 ### Session Summary
