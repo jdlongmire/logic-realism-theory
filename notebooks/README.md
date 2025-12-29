@@ -20,11 +20,11 @@ No notebook advances to Lean (Stage 2) without completing all quality gates.
 
 ### Tier 0: Primitives (Self-Grounding)
 
-| ID | Notebook | Status |
-|----|----------|--------|
-| D0.1 | `D0.1-three-fundamental-laws.ipynb` | Complete |
-| D0.2 | `D0.2-information-space.ipynb` | Draft |
-| D0.3 | `D0.3-co-fundamentality.ipynb` | Pending |
+| ID | Notebook | Lean | Status |
+|----|----------|------|--------|
+| D0.1 | `D0.1-three-fundamental-laws.ipynb` | `D0_1_ThreeFundamentalLaws.lean` | Complete |
+| D0.2 | `D0.2-information-space.ipynb` | `D0_2_InformationSpace.lean` | Complete |
+| D0.3 | `D0.3-co-fundamentality.ipynb` | Pending | Pending |
 
 ### Tier 1: Structural Consequences
 

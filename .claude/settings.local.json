@@ -40,7 +40,9 @@
       "WebFetch(domain:pmc.ncbi.nlm.nih.gov)",
       "WebFetch(domain:www.academia.edu)",
       "WebFetch(domain:ijqf.org)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(lake build:*)",
+      "Bash(git pull:*)"
     ],
     "deny": [],
     "ask": []
