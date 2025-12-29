@@ -309,7 +309,49 @@ Both questions are legitimate. The present paper addresses the second.
 
 ---
 
-## 6. Further Applications and Future Work
+## 6. Predictions, Falsification, and Future Work
+
+### 6.1 Predictive Component: Severe Tests and Negative Predictions
+
+LRT is not merely an interpretive framework. It makes negative predictions that are in principle falsifiable and carry genuine risk to the hard core.
+
+The programme lives or dies by whether these predictions hold. If any are overturned, the core claim that $L_3$ constrains physical instantiation (especially via strict trans-temporal determinate identity) is refuted. The following are the principal severe tests.
+
+**6.1.1 No persistent macroscopic superposition after identity engagement.** Once a macroscopic object (pointer, detector, observer trace) engages trans-temporal determinate identity in a decohered basis, only one outcome history is admissible. Persistent superposition of macroscopically distinct states—stable under arbitrary isolation and decoherence suppression—is inadmissible.
+
+*Refutation:* Experimental demonstration of indefinite macroscopic superposition after pointer-basis selection (not merely long-lived relative to current limits).
+
+**6.1.2 No macro-branch interference.** Interference between macroscopically distinct outcome histories is excluded once identity is engaged. Recoherence at microscopic scales is permitted; interference at macroscopic scales is not.
+
+*Refutation:* Observation of measurable interference between macroscopically distinct branches (e.g., distinct pointer positions or observer memories).
+
+**6.1.3 No trans-temporal numerical identity through singularity.** At a classical singularity, the conditions for determinate identity become unsatisfiable. The infalling macroscopic structure ceases to be individuatable and returns to $I_\infty$. Hawking radiation carries quantum information but not the continuity of the original vehicle.
+
+*Refutation:* Demonstration (theoretical or analogue) that numerical identity of the infalling macroscopic object survives passage through the singularity and re-emerges in the radiation (not merely information-theoretic equivalence).
+
+**6.1.4 No sub-Planck individuation.** Individuation below the Planck scale is incompatible with stable determinate identity under current energy conditions.
+
+*Refutation:* Empirical evidence of stable, individuated structure below $\ell_P \approx 1.6 \times 10^{-35}$ m that persists under interaction.
+
+**6.1.5 No instantiated actual infinity.** Completed actual infinities (not potential or mathematical limits) violate the requirement of determinate individuation.
+
+*Refutation:* Physical instantiation of a completed infinity (e.g., infinite degrees of freedom in a finite region with determinate identity).
+
+**6.1.6 Positive alignment with information preservation.** LRT is compatible with unitary evolution and information-theoretic preservation in black-hole evaporation (Page curve). The radiation state can be unitarily equivalent to the initial state. What is forbidden is restoration of *trans-temporal numerical identity* of the infalling macroscopic object.
+
+*Refutation:* Any resolution that restores numerical continuity of the original enduring object (not merely quantum-state recovery).
+
+These are severe tests. They are not hedged or post-hoc. Each strikes directly at the hard core ($L_3$ constraint on instantiation, strict trans-temporal identity). No retreat to "effective" classicality or approximate identity is permitted without weakening the core.
+
+**Current status (December 2025).** No confirmed refutation exists. The mainstream quantum-information consensus (Page curve, entanglement islands, replica wormholes) supports information preservation without numerical-identity restoration, which is compatible with LRT. No macroscopic superposition persists indefinitely. No actual infinities are instantiated. The programme is currently progressive: it unifies disparate phenomena under a single constraint while exposing itself to severe empirical and theoretical risk.
+
+**Lakatosian evaluation.** The hard core is protected by a modest belt (metric details, decoherence mechanisms). The programme generates novel negative content (no identity restoration, no macro-branch interference) and aligns previously disparate regimes (quantum measurement, black-hole thermality, temporal ordering). Degeneration would occur only if the belt grows indefinitely to save the core from refutations. So far, the belt remains small and motivated.
+
+The framework is Popperian in nerve: willing to die on these tests. It is Lakatosian in practice: structured to develop without immediate capitulation.
+
+If any severe test fails, the programme is refuted. Until then, it stands.
+
+### 6.2 Further Applications
 
 The framework developed here has applications beyond the Born rule:
 
@@ -317,7 +359,7 @@ The framework developed here has applications beyond the Born rule:
 
 **Measurement and macroscopic uniqueness.** Integration of decoherence theory with $L_3$ would provide a logic-realist account of why macroscopic observers always see determinate outcomes, complementing the probability measure with an account of outcome selection.
 
-**Quantum gravity and singularities.** Admissibility and limits of individuation suggest interpretive alignments with Planck-scale structure and black hole thermality, viewed as breakdown and re-emergence of determinate identity. These remain conjectural.
+**Quantum gravity and singularities.** Admissibility and limits of individuation suggest interpretive alignments with Planck-scale structure and black hole thermality, viewed as breakdown and re-emergence of determinate identity. These remain conjectural but are constrained by §6.1.3 and §6.1.4.
 
 **Dynamics and the kinetic term.** Under additional regularity assumptions (locality, isotropy, compositional additivity), identity stability may also favor a quadratic form for the "cost of motion" in configuration space, hinting at a metaphysical underpinning for the classical kinetic term. This is reserved for separate work.
 
