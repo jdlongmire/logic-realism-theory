@@ -230,29 +230,40 @@ Bell's theorem can thus be restated: no theory can simultaneously satisfy (1) de
 
 Bell violations are experimental probes of identity structure, not spacetime causation. Appendix C develops this analysis in full detail.
 
-### 4.6 The Measure as Vehicle: A Trilemma for Non-Vehicle Interpretations
+### 4.6 The Measure as Vehicle: A Strict Trilemma
 
-The derivation in this paper rests on the claim that the measure over admissible outcome-histories is a feature of the physical vehicle: the quantum state $|\psi\rangle$ is a determinate configuration of the system that represents a region of admissible continuations (content), and the measure characterizes how that vehicle is objectively disposed or poised toward those outcomes. If the total measure varied with choice of orthonormal decomposition, the physical situation would not be determinately poised toward any particular distribution of outcomes. This would violate Determinate Identity at the level of the vehicle itself.
+The quantum state $|\psi\rangle$ is a physical vehicle: a determinate configuration representing admissible outcome-histories (content). The measure $\mu$ over those histories is the objective disposition of the vehicle: how the physical situation is poised toward the outcomes.
 
-Any interpretation that refuses to locate the measure in the vehicle faces a strict trilemma.
+Any account that denies the measure belongs to the vehicle faces the following trilemma.
 
-**Horn 1: No objective disposition.** The physical situation has no determinate disposition toward outcomes; the measure is purely epistemic, credal, or agent-relative (QBism, radical relational quantum mechanics). But then the vehicle—the physical configuration that is supposed to be poised toward the outcomes—lacks determinate poised-ness. The situation is not determinately what it is. This contradicts Determinate Identity applied directly to the vehicle.
+**Formal statement**
 
-**Horn 2: Objective disposition exists but is not Born-shaped.** The physical situation has an objective disposition toward outcomes, but that disposition is not given by $|\langle\phi|\psi\rangle|^2$. Yet every successful predictive scheme, every calibration of detectors, every technological application of quantum mechanics tracks precisely the Born-rule weights. The agreement between the actual dispositions and the Born rule would then be an unexplained coincidence—a standing miracle of empirical fit. No interpreter who seeks to explain rather than merely accommodate the data accepts such a miracle without further reason.
+1. The quantum state is a physical vehicle representing admissible outcome-histories.
+2. The measure characterizes the objective disposition (poise) of that vehicle toward those histories.
+3. If the measure is not a feature of the vehicle, then either
+   (a) no objective disposition exists, or
+   (b) an objective disposition exists but is not Born-shaped, or
+   (c) an objective Born-shaped disposition exists but is not in the vehicle.
+4. (a) contradicts Determinate Identity applied to the vehicle (the situation lacks determinate poised-ness).
+5. (b) renders the precise predictive success of the Born rule an unexplained coincidence (a miracle of empirical fit).
+6. (c) either introduces a new ontological primitive (disposition without bearer) or collapses the vehicle/content distinction (affirming the measure belongs to the vehicle after all).
+7. Therefore, the measure must belong to the vehicle.
 
-**Horn 3: Objective Born-shaped disposition exists but is not in the vehicle.** The physical situation has an objective disposition toward outcomes, the disposition is Born-shaped, but this disposition does not belong to the vehicle. The measure is objective yet floats free of the physical configuration that is supposed to be poised toward the outcomes. This requires either a new ontological category (a disposition without a bearer) or a collapse of the vehicle/content distinction. Once the distinction collapses, the quantum state simply carries the Born measure as part of its physical reality—which is the position defended here.
+The argument is exhaustive. Horn (a) sacrifices physical determinacy. Horn (b) sacrifices explanatory power. Horn (c) surrenders the denial.
 
-The trilemma is exhaustive. No fourth horn exists.
+**Application to major rivals**
 
-**Application to the Everettian decision-theoretic program.** The pressure is particularly acute for the most sophisticated rival that also aims to derive rather than postulate the Born rule: the decision-theoretic program within Everettian quantum mechanics (Deutsch 1999; Wallace 2012). That program shows that a rational agent in a branching multiverse, knowing the unitary dynamics and accepting that all branches are equally real, is rationally compelled to set credences (and thus betting preferences) proportional to branch weight $|\langle\phi|\psi\rangle|^2$. The derivation is mathematically rigorous and internally consistent.
+The trilemma applies uniformly across the field.
 
-Yet it leaves the weights themselves as an unexplained coincidence between unitary amplitudes and rational preference. The physical situation prior to branching is not determinately poised toward Born weights; instead, the Born rule emerges downstream as the rational credence function of agents who know they will branch. This collapses into Horn 1 on closer inspection: the pre-branching vehicle lacks determinate objective disposition.
+| Rival program | Horn taken | Cost incurred |
+|---------------|------------|---------------|
+| Everettian decision-theoretic (Deutsch 1999; Wallace 2012) | Primarily (a), with pressure toward (b) or (c) | Pre-branching vehicle lacks determinate objective disposition. Miracle of alignment between branch weights and rational preference avoided only by inflating ontology with real branches carrying the weights. |
+| QBist / radical relational | (a) | No objective disposition at all. Physical situation not determinately poised. Direct violation of Determinate Identity at vehicle level. |
+| Strong ontic-postulate views | (b) or (c) | Either Born shape is primitive (unexplained fit with experiment), or requires extra ontological layer for the disposition. More primitives than LRT's derivation from identity. |
 
-The Everettian might reply that the pre-branching state *is* determinately poised—determinately poised to branch with all outcomes actualized, and the amplitudes just *are* the branch weights. But this identification is stipulative rather than explanatory: it does not explain *why* amplitudes play the role of weights. To escape this, the program must either accept an unexplained miracle that branch weights just happen to make rational betting track observed frequencies (Horn 2), or introduce an additional ontological layer in which objective branch weights are real features of the multiverse, separate from the single pre-branching state (Horn 3).
+In each case the cost is real. The Everettian program, being the most sophisticated attempt at derivation, pays the heaviest price: it must either accept indeterminate physical poise, live with a miracle that branch weights just happen to make rational betting track frequencies, or multiply worlds to carry objective weights. LRT escapes all horns by locating the Born measure as an intrinsic disposition of the single determinate vehicle, enforced by the same identity constraint that secures macroscopic records.
 
-In the latter case the ontological price is multiplicity of worlds plus decision theory plus unexplained alignment of weights with amplitudes. LRT avoids all three horns by making the Born measure an intrinsic disposition of the single determinate vehicle, enforced by the same identity constraint that makes macroscopic records possible.
-
-The Everettian program is empirically adequate and mathematically elegant. But it pays different metaphysical costs than LRT. It must either sacrifice determinacy of physical disposition, accept an unexplained miracle of fit, or inflate the ontology with real branches plus floating dispositions. LRT pays none of those prices—though it leaves the selection mechanism for which outcome actualizes as future work (see Section 6).
+The trilemma is not a rhetorical device. It is a logical fork: choose a horn, or accept the measure belongs to the vehicle.
 
 ---
 
