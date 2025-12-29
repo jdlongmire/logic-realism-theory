@@ -872,7 +872,49 @@ $$\sum_i \mu(P_i) = 1 \text{ (constant across all decompositions)}$$
 
 **Circularity audit.** No premise contains the conclusion (Born rule). Unitary invariance is derived from vehicle-weight invariance plus standard Hilbert-space geometry. Gleason/Busch uniqueness is a theorem, not an assumption. The only non-logical inputs are $\dim \mathcal{H} \geq 3$ (empirically motivated) and the decoherence-selected pointer basis.
 
-### D.5 Summary
+### D.5 Reductio: Local Tomography Is Forced at Every Finite Depth
+
+We prove that local tomography must hold for subsystems of every finite dimension. Failure at any finite depth leads to a contradiction with macroscopic self-sufficiency (M₁).
+
+**Remark on status.** Earlier sections described local tomography (via CDP) as a "motivated extension" of M₁. This proof strengthens that status: local tomography is *forced* by M₁ together with the finite-dimensional embedding of macroscopic pointers.
+
+**Premises**
+
+1. **M₁ (Macroscopic self-sufficiency).** Stable macroscopic measurement records exist (empirical/transcendental). The trans-temporal identity of a macroscopic pointer P must be self-sufficient under decomposition and persistence. The pointer's identity is not constitutively dependent on inaccessible relational facts about the global system. Its reduced description must suffice to individuate it across time (Theorem D.2).
+
+2. **Definition of local tomography failure.** Local tomography fails at finite depth N iff there exist distinct global pure states $|\psi_1\rangle$ and $|\psi_2\rangle$ such that, for every subsystem S with $\dim(\mathcal{H}_S) \leq N$,
+$$\rho_S^{(1)} = \text{Tr}_{\mathcal{H}/\mathcal{H}_S}[|\psi_1\rangle\langle\psi_1|] = \text{Tr}_{\mathcal{H}/\mathcal{H}_S}[|\psi_2\rangle\langle\psi_2|] = \rho_S^{(2)}$$
+yet $|\psi_1\rangle \neq |\psi_2\rangle$ globally.
+
+3. **Embedding of macroscopic pointer.** A macroscopic pointer P is a distinguished subsystem with finite effective Hilbert-space dimension (after coarse-graining and environmental tracing). Without loss of generality, $\dim(\mathcal{H}_P) \leq N$ for some finite N.
+
+**Proof by reductio**
+
+Assume local tomography fails at some finite depth N. Then there exist distinct global pure states $|\psi_1\rangle$ and $|\psi_2\rangle$ satisfying Premise 2.
+
+Consider a measurement in which the pointer P becomes entangled with the microscopic degrees of freedom. The reduced density operator of the pointer is
+$$\rho_P^{(1)} = \text{Tr}_{\mathcal{H}/\mathcal{H}_P}[|\psi_1\rangle\langle\psi_1|] = \rho_P^{(2)} = \text{Tr}_{\mathcal{H}/\mathcal{H}_P}[|\psi_2\rangle\langle\psi_2|]$$
+by Premise 3 and the assumption that tomography fails at depth N.
+
+Now consider trans-temporal persistence. The pointer at time $t + \Delta t$ must be determinately the same numerical object as the pointer at time $t$. Its identity is supposed to be self-sufficient: the reduced description $\rho_P$ at $t$ must suffice to individuate "this pointer" at $t + \Delta t$ without reference to inaccessible global relational facts.
+
+Yet $\rho_P$ is identical in both global situations $|\psi_1\rangle$ and $|\psi_2\rangle$, while the global contexts differ. If the pointer's trans-temporal identity depended on which global state it inhabits, then its individuation would be constitutively relational to the global system. This contradicts Premise 1 (M₁): macroscopic identity must be self-sufficient, not reliant on hidden global relational facts.
+
+**Objection: Effective self-sufficiency suffices.** Decoherence suppresses interference between the two embeddings rapidly enough that the pointer's effective state is self-sufficient for all practical purposes, even if the exact pure global states permit tomography failure.
+
+**Reply.** M₁ is not a pragmatic or phenomenological requirement. It is the transcendental precondition that macroscopic records supply observer-independent determinate facts. Science demands that records be determinate, not merely that they appear determinate to observers.
+
+If there exists even one pair of global pure states with identical pointer reductions but different global embeddings, the pointer's identity is ontologically ambiguous. The pointer is not determinately the same object across time; it is only determinately the same object conditional on which global embedding we inhabit. That condition is inaccessible locally. Therefore the record's determinacy is not self-contained; it is parasitic on an inaccessible relational context.
+
+This is relational identity at the macroscopic level—the very global holism ruled out in Theorem D.1 (case 3). Effective self-sufficiency preserves the appearance of determinacy but surrenders its substance. Strict self-sufficiency is required.
+
+Note that the Everettian interpretation explicitly embraces this relational structure: the pointer's identity is relativized to branches. This is precisely why §4.6 classifies the Everettian program under Horn (a) of the vehicle trilemma.
+
+**Conclusion.** Assume local tomography fails at some finite depth N. Then macroscopic pointers can have identical local descriptions in distinct global contexts, so their trans-temporal identity becomes constitutively relational. This contradicts M₁. Therefore local tomography must hold for subsystems of every finite dimension.
+
+**Assessment.** The proof is deductively tight given the premises. No circularity appears: M₁ is independent of the conclusion, the definition of tomography failure is standard, and the pointer embedding is physically reasonable. The commitment is to strict self-sufficiency, not effective self-sufficiency. This makes the claim falsifiable: any future theory that combines finite-depth tomography failure with stable macroscopic records (even if only effectively classical) would refute the argument.
+
+### D.6 Summary
 
 The derivation is not purely a priori. It rests on:
 - The unavoidable logical floor (L₁)
