@@ -320,3 +320,31 @@ c9b7abc - Add Session 50.0: CDP strengthening and ontological L₁
 - Honest about what L₁ alone delivers vs what M₁ adds
 
 ---
+
+### Session Continuation (Resumed from context limit)
+
+**Interaction Count**: 20+
+
+#### Objection 5: Relation to Alternative Approaches
+
+**Commit**: `766610a` - "Add Objection 5: Relation to alternative approaches"
+
+Added new objection addressing critique about over-claiming exclusion of alternatives.
+
+**Key framing**: Generative vs Interpretive approaches
+
+| Approach | Type | Does it derive structure? |
+|----------|------|--------------------------|
+| LRT | Generative | Yes: Born rule, Hilbert space |
+| Decoherent histories | Interpretive | No: accepts formalism |
+| Ontic structural realism | Interpretive | No: reinterprets objects |
+| ψ-epistemic | Interpretive | No: relocates state |
+| Quantum logic | Interpretive | No: weakens inference |
+
+**Two scrutiny points marked**:
+1. **M₁ → CDP extension**: Motivated but not compulsory; alternative (global holism) is barren
+2. **Vehicle-weight objectivity**: Could be resisted by instrumentalist, but exits explanatory project
+
+**Defense**: Both moves are *least-cost extensions* enabling genuine prediction. Critics who reject them abandon the generative project, not merely LRT.
+
+---
