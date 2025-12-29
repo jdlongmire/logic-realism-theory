@@ -914,7 +914,52 @@ Note that the Everettian interpretation explicitly embraces this relational stru
 
 **Assessment.** The proof is deductively tight given the premises. No circularity appears: M₁ is independent of the conclusion, the definition of tomography failure is standard, and the pointer embedding is physically reasonable. The commitment is to strict self-sufficiency, not effective self-sufficiency. This makes the claim falsifiable: any future theory that combines finite-depth tomography failure with stable macroscopic records (even if only effectively classical) would refute the argument.
 
-### D.6 Summary
+### D.6 Incompleteness and the Pre-Mathematical Priority of L₃
+
+Gödel's first incompleteness theorem (1931) states that any consistent formal system sufficiently powerful to express basic arithmetic is incomplete: there exist true statements in the language of the system that cannot be proved within the system itself.
+
+The theorem presupposes a subject matter with determinate objects and stable properties. It operates on a formal system that already assumes the possibility of distinct symbols, determinate identity between terms, non-contradictory derivations, and bivalence for well-defined predicates.
+
+LRT reverses the explanatory order. Mathematics is not the foundation from which physical reality is described. Mathematics is downstream from the same ontological precondition that makes physical instantiation possible: the classical laws L₃, with Determinate Identity at their head.
+
+**Why mathematics requires L₃ a priori**
+
+Mathematics cannot begin without determinate objects. Consider the minimal requirements for even the simplest mathematical practice:
+
+- To count, there must be distinct individuals (1 is 1, 2 is 2, and 1 ≠ 2). Without Determinate Identity, no stable subject exists for the predicate "is a number." The quantifier "there exists a number n such that" has no coherent reference.
+
+- To define a set, its members must be determinately included or excluded. Without Non-Contradiction, a set could both contain and not contain the same element in the same respect. The definition collapses into incoherence.
+
+- To prove basic arithmetic statements ("every integer is either even or odd"), Excluded Middle is required for the relevant predicates. If it fails, there can exist integers that are neither, and classical number theory fails.
+
+These are not optional assumptions mathematics adds later. They are the precondition for mathematics having any determinate subject matter whatsoever. Deny L₃ and mathematics does not become alternative or non-classical; it becomes impossible. There are no objects to reason about, no stable relations to describe, no predicates to apply.
+
+**LRT escapes the Gödelian trap by refusing to enter it**
+
+Gödelian incompleteness requires a system that is:
+
+1. formal and recursively axiomatizable,
+2. arithmetically powerful (capable of expressing Peano arithmetic or equivalent),
+3. aiming at deductive completeness for its own truths,
+4. consistent.
+
+LRT is not a formal deductive system seeking to prove all truths about physics from a finite set of axioms. It does not contain arithmetic as an object language (though it can represent arithmetic as content). It does not aim at completeness; it imposes a necessary boundary condition on instantiation. It is pre-mathematical: it supplies the precondition for there being determinate objects that mathematics can subsequently describe.
+
+Thus LRT does not solve Gödel's incompleteness. It sidesteps the problem by never claiming the kind of self-contained deductive completeness that Gödel targets. Like a fire code that does not claim to describe every possible truth about buildings but simply states the necessary conditions for a building to stand, LRT states the necessary conditions for anything to be physically instantiated at all.
+
+**The deeper question**
+
+The framework derives the Born rule and (given strict self-sufficiency) complex Hilbert space from L₃ as the minimal constraint on instantiation. Mathematics enters as the natural formal language for describing entities that satisfy L₃. The "unreasonable effectiveness" of mathematics in physics is no longer unreasonable: mathematics works because the physical world is already structured by the same determinacy that makes mathematics possible.
+
+If one asks "whence L₃ itself?"—why determinacy rather than indeterminacy, why distinction rather than undifferentiated being—the chain reaches its limit. The source of L₃ may be brute fact, necessary being, transcendental precondition of thought, or something else. LRT remains agnostic on that ultimate ground. The framework does not require settling the question to achieve its explanatory goals in quantum foundations.
+
+**Conclusion**
+
+Mathematics cannot exist without L₃ a priori. Not because L₃ is a theorem of mathematics, but because L₃ is the precondition for mathematics having determinate objects to reason about. LRT places L₃ first, not as a postulate of a formal system, but as the ontological boundary between the merely conceivable and the physically instantiable. Incompleteness threatens only systems that attempt to be complete within themselves. LRT makes no such attempt. It only requires that whatever reality turns out to be, it must respect the minimal condition of determinacy.
+
+The chain is complete for its own purposes.
+
+### D.7 Summary
 
 The derivation is not purely a priori. It rests on:
 - The unavoidable logical floor (L₁)
