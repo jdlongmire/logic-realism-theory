@@ -250,6 +250,28 @@ Bell violations are experimental probes of identity structure, not spacetime cau
 
 *Reply.* No. Admissible continuations are candidate histories, exactly one of which is included in $A_\Omega$. Everettian branches are all equally real and co-instantiated. LRT holds that macroscopic branching violates Determinate Identity: an object cannot have multiple successors while remaining numerically one object. The admissibility framework selects one history; Many-Worlds includes all. The disagreement is substantive, not verbal.
 
+**Objection 5: Over-claim on the exclusion of alternatives.** "The paper implies that rejecting LRT forces abandonment of classical logic. But there are intermediate positions: decoherent histories, ontic structural realism, ψ-epistemic approaches, quantum logic. Is the framing a false dichotomy?"
+
+*Reply.* The dichotomy is not "accept LRT or abandon logic." The contrast is between *generative* and *interpretive* approaches to quantum foundations.
+
+Most quantum foundations work since 1990 is best described as: "We take the mathematical formalism as given and propose a story that makes it less troubling." Decoherent histories accept Hilbert space and the Born rule as primitives, then tell a story about consistent sets. Ontic structural realism accepts the formalism and reinterprets what "object" means. ψ-epistemic approaches accept the formalism and relocate the state to epistemology. Quantum logic accepts the formalism and weakens classical inference.
+
+None of these approaches *derive* the Born rule or Hilbert space structure from anything simpler. They presuppose the formalism and offer interpretive glosses.
+
+LRT is trying something different: "Here is why the mathematical formalism *had* to take this form." The Born rule is derived (Section 4, Appendix A). Complex Hilbert space is derived (Appendix B). Bell correlations are explained as global identity coherence rather than reinterpreted (Appendix C). The framework generates mathematical structure from metaphysical constraints, rather than interpreting pre-given structure.
+
+This framing clarifies the status of LRT's non-trivial moves. Two steps bear scrutiny:
+
+1. **M₁ → CDP extension** (Appendix D, §D.3): The move from macroscopic self-sufficiency to Compositional Distinguishability is motivated but not logically compulsory. The alternative (global holism: only the universe has intrinsic identity) is logically consistent but physically barren—it provides no compositional structure to predict.
+
+2. **Vehicle-weight objectivity** (Section 4.1): The claim that the measure over admissible continuations is physical (belongs to the vehicle, not the content) could be resisted by a sufficiently committed instrumentalist. But an instrumentalist who denies that any physical fact grounds the Born rule thereby exits the explanatory project altogether.
+
+Both moves are defensible as *least-cost extensions*: they introduce minimal structure beyond what logic and empirical record already supply, while enabling genuine prediction. The metaphysical price is explicit. Critics may reject either move, but doing so abandons the generative project, not merely LRT.
+
+The intermediate positions are not rivals to LRT in the same sense that competing generative frameworks would be. They are different enterprises. Decoherent histories and LRT are not competing answers to the same question; they are answers to different questions. The former asks "How can we make sense of the formalism we have?" The latter asks "Why must the formalism take this form?"
+
+Both questions are legitimate. The present paper addresses the second.
+
 ---
 
 ## 6. Further Applications and Future Work
