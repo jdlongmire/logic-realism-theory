@@ -3,7 +3,7 @@
 **Date**: 2025-12-29
 **Focus**: Working Paper Review & CDP Strengthening
 **Status**: ACTIVE
-**Interaction Count**: 14
+**Interaction Count**: 16
 
 ---
 
@@ -242,10 +242,56 @@ Layer 5: Born rule
 
 ---
 
-### Next Steps
+### Working Paper Updates Completed
 
-1. Draft integrated text for working paper (Appendix D + ontological L₁)
-2. Update Appendix B to reflect honest status of CDP
-3. Consider impact on derivation pipeline (D0.1, D0.3)
+**Commit**: `62ee05d` - "Strengthen working paper: ontological L₁ + Appendix D"
+
+**Changes made**:
+
+1. **Section 2.2**: Added "The ontological status of Determinate Identity"
+   - Ontological claim: L₁ constrains being, not just knowability
+   - Transcendental fallback for skeptical readers
+   - Empirical warrant (no counterexamples)
+
+2. **Abstract**: Updated to mention Appendix D theorems
+
+3. **Appendix B.2 (Lemma B.7)**: Changed "Proof" to "Motivation (not proof)"
+   - Now explicitly references Theorem D.1 and D.2
+   - Acknowledges CDP requires M₁, not just L₁
+
+4. **Appendix B.7**: Enhanced assessment of rigor
+   - References Appendix D for formal analysis
+   - Clarifies where logical constraints end and empirical inputs begin
+
+5. **Appendix D**: Added complete formal strengthening
+   - D.1: Theorem on necessity of intrinsic identity terminus
+   - D.2: Theorem on transcendental necessity of M₁
+   - D.3: Complete derivation chain (7 steps)
+   - D.4: Vehicle-weight invariance → Born rule
+   - D.5: Summary of non-deductive steps
+
+### Git Log
+
+```
+c9b7abc - Add Session 50.0: CDP strengthening and ontological L₁
+62ee05d - Strengthen working paper: ontological L₁ + Appendix D
+```
+
+### Session Summary
+
+**Focus**: CDP grounding problem and ontological L₁
+
+**Key Accomplishments**:
+1. Identified gap in CDP derivation (claimed from L₁ alone, actually requires M₁)
+2. Developed grounding argument (Theorem D.1)
+3. Formalized M₁ as transcendental precondition (Theorem D.2)
+4. Refined derivation chain (Layers 0-5)
+5. Resolved transcendental vs ontological L₁ (stratified approach)
+6. Integrated all changes into working paper
+
+**Working Paper Status**: Significantly strengthened
+- Born Rule derivation chain now as tight as mathematics allows
+- Non-deductive steps explicitly acknowledged
+- Honest about what L₁ alone delivers vs what M₁ adds
 
 ---
