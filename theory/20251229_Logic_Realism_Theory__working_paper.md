@@ -276,7 +276,7 @@ Decoherence and identity constraints operate at different levels without circula
 
 Quantum probabilities are thus embedded in a logic-realist metaphysics of the physical world. The Born rule is not a brute fact about nature but a consequence of what determinate physical existence requires.
 
-Two extensions have been sketched. Appendix B outlines a research program showing how complex Hilbert space may be forced as the unique arena compatible with identity-preserving composition; this is a direction for future rigorization rather than a completed derivation. Appendix C recasts Bell non-locality as global identity coherence rather than superluminal causation: Bell violations probe identity structure, not spacetime causation.
+Two extensions have been developed. Appendix B shows that complex Hilbert space is forced as the unique arena compatible with identity-preserving composition, by grounding the Masanes-Müller (2011) reconstruction axioms in L₃ constraints. Appendix C recasts Bell non-locality as global identity coherence rather than superluminal causation: Bell violations probe identity structure, not spacetime causation.
 
 The metaphysical commitment is explicit: logic governs instantiation, not merely description. Those who reject this commitment must explain the conceivability-instantiation asymmetry by other means. Those who accept it gain a unified framework in which quantum probabilities, the structure of state space, and non-local correlations all flow from a single source: the requirement that physical reality be determinately what it is.
 
@@ -363,7 +363,7 @@ The result holds under finite additivity and the assumption that physical instan
 
 ## Appendix B: Derivation of the Hilbert-Space Arena from Logical Constraints
 
-*Note: This appendix is programmatic. The Born rule derivation in Appendix A assumes Hilbert space structure and stands independently. Appendix B extends the argument by deriving constraints on the arena itself. Readers who accept Hilbert space as given may skip to the References.*
+*Note: The Born rule derivation in Appendix A assumes Hilbert space structure and stands independently. This appendix extends the argument by showing that complex Hilbert space is the unique arena compatible with L₃ constraints, via the Masanes-Müller (2011) reconstruction theorem. Readers who accept Hilbert space as given may skip to the References.*
 
 This appendix derives constraints on admissible physical structure, not the existence of structure itself. The aim is to show that complex separable Hilbert space is the unique arena capable of hosting determinate physical identity under unlimited decomposition, composition, and continuous transformation without violating the Three Fundamental Logical Laws (3FLL).
 
@@ -466,7 +466,7 @@ The reconstruction theorem of Masanes and Müller (2011) derives complex Hilbert
 
 **Corollary B.9.1 (Complex Hilbert Space from L₃).** By the Masanes-Müller theorem (2011), any theory satisfying their five requirements is representable on a complex Hilbert space. Therefore, any physical arena compatible with L₃ + CDP must be representable on a complex Hilbert space.
 
-This is no longer programmatic: the heavy mathematical lifting is done by Masanes-Müller's theorem; LRT provides the metaphysical ground showing *why* their axioms hold.
+The heavy mathematical lifting is done by Masanes-Müller's theorem; LRT provides the metaphysical ground showing *why* their axioms hold.
 
 **Lemma B.10 (Exclusion of real Hilbert space).** Real Hilbert space fails compositional discernibility: local tomography breaks for composite systems, making identity context-dependent.
 
