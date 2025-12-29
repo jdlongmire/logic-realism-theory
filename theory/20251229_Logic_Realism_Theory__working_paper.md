@@ -13,7 +13,7 @@ Human cognition readily represents contradictions and impossibilities, yet physi
 
 The central contribution is showing that Determinate Identity motivates the measure-theoretic assumptions underlying the Born rule. The argument proceeds via a vehicle/content distinction: a quantum state is a physical situation (vehicle) representing outcome-possibilities (content). The measure over admissible continuations characterizes how the physical situation is poised toward outcomes; it belongs to the vehicle, not the content. If this measure varied with choice of mathematical decomposition, the physical situation itself would be indeterminate, violating Determinate Identity. This constraint, combined with decoherence's selection of outcome bases, motivates the additivity and non-contextuality that Gleason's theorem requires. The Born rule thus emerges as the unique measure compatible with determinate physical identity.
 
-Appendix A provides the complete formal derivation. Appendix B extends the argument programmatically, sketching how complex Hilbert space may be the unique arena capable of hosting determinate identity under composition; this is a research direction rather than a completed proof. Appendix C applies the framework to Bell non-locality, recasting Bell violations as failures of local identity factorization rather than failures of locality. Appendix D formalizes the derivation chain, proving that Determinate Identity forces intrinsic identity somewhere (Theorem D.1), that macroscopic self-sufficiency is a transcendental precondition of stable records (Theorem D.2), and that vehicle-weight invariance yields the Born rule (Theorem D.4). The paper thus offers a Tahko-style metaphysical grounding for quantum probabilities and non-local correlations, embedding them in a logic-realist ontology of the physical world.
+Appendix A provides the complete formal derivation. Appendix B sketches how complex Hilbert space may be the unique arena capable of hosting determinate identity under composition (a research direction rather than a completed proof). Appendix C recasts Bell violations as failures of local identity factorization rather than failures of locality. Appendix D formalizes the derivation chain: Theorem D.1 shows that Determinate Identity forces intrinsic identity somewhere; Theorem D.2 establishes macroscopic self-sufficiency as a transcendental precondition of stable records; Theorem D.4 derives the Born rule from vehicle-weight invariance. The paper thus offers a Tahko-style metaphysical grounding for quantum probabilities and non-local correlations, embedding them in a logic-realist ontology of the physical world.
 
 **Keywords:** logic realism, Born rule, quantum foundations, Determinate Identity, Gleason's theorem, Bell non-locality, Hilbert space, ontology
 
@@ -65,6 +65,8 @@ Physical instantiation is thus $I_\infty$ constrained by $L_3$. The claim is not
 
 [^1]: The ontological extension here builds primarily on Tahko (2009), which argues directly for logical realism about the Law of Non-Contradiction. Tahko (2021), *Unity of Science*, concerns natural-kind monism and grounding relations; it informs the broader metaphysical framework (particularly the grounding structure of the derivation chain) but is not the direct source of the logical-realist premise.
 
+The preceding considerations establish that $L_3$ constrains physical instantiation, not merely description. But how strong is this constraint? The following paragraphs defend the strongest defensible reading.
+
 **The ontological status of Determinate Identity.** Physical reality is not a neutral arena onto which logic is later imposed. It is constituted such that only configurations satisfying Determinate Identity can be instantiated at all. A configuration without determinate identity is not a borderline or fuzzy entity; it is nothing. There is no "indeterminate thing" waiting to be instantiated and then made determinate by observation or description. To lack determinate identity is to fail to be a thing—not to be a vague thing, not to be a probabilistic thing, not to be a relational thing, but simply not to exist as a distinct entity in any respect whatsoever.
 
 This is not a claim about how we must conceptualize reality. It is a claim about what reality can contain. The Law of Identity is not a law of thought imposed on an otherwise formless substrate. It is the minimal condition of ontological distinctness. Without it there are no entities, no properties, no relations, no events, no outcomes—only undifferentiated being, which is indistinguishable from non-being.
@@ -87,7 +89,7 @@ If both configurations appear in a single history of an enduring system, they ca
 
 ### 3.1 Superposition as Representational
 
-A quantum state $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$ does not represent a system that is "both 0 and 1." The state vector describes a region of admissible configurations in $L_3(I_\infty)$ consistent with preparation. The system has the determinate property of *being in state $|\psi\rangle$*. This is an element of $A_\Omega$. The outcome alternatives $|0\rangle$ and $|1\rangle$ are in $I_\infty$ pending resolution.
+A quantum state $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$ does not represent a system that is "both 0 and 1." The state vector describes a region of admissible configurations in $A_\Omega$ consistent with preparation. The system has the determinate property of *being in state $|\psi\rangle$*. This is an element of $A_\Omega$. The outcome alternatives $|0\rangle$ and $|1\rangle$ are in $I_\infty$ pending resolution.
 
 The claim is not that the quantum state is incomplete, but that it represents admissible structure rather than instantiated multiplicity. The admissibility of the quantum state itself is not in question; what is restricted is the co-instantiation of mutually exclusive outcome-specifications within a single identity-thread.
 
@@ -135,7 +137,7 @@ Non-Contradiction and Excluded Middle ensure that the set of outcome-configurati
 
 **Why probabilistic weight is physical, not merely representational.** A skeptic might reply: "The system is determinate, but its probabilistic description need not be. Basis-dependence is a feature of our representational scheme, not a failure of identity." This escape route must be blocked.
 
-The vehicle/content distinction from Section 2.1 is crucial here. A representation has a physical vehicle (the representing structure) and abstract content (what is represented). Vehicles must satisfy $L_3$; contents need not. Now consider: what kind of thing is the measure over admissible continuations?
+The vehicle/content distinction introduced in Section 2.1 is crucial here; we now develop it further. A representation has a physical vehicle (the representing structure) and abstract content (what is represented). Vehicles must satisfy $L_3$; contents need not. Now consider: what kind of thing is the measure over admissible continuations?
 
 The measure is not content; it is not what the quantum state represents. Rather, it characterizes the physical situation's disposition toward various outcomes. It belongs to the vehicle, not the content. The quantum state $|\psi\rangle$ is a physical configuration (vehicle) that represents a region of outcome-possibilities (content). The measure over those possibilities is a feature of *how the physical situation is poised*, not a feature of how we choose to describe that situation.
 
@@ -145,7 +147,7 @@ This is a failure of Determinate Identity at the level of the vehicle, not merel
 
 An instrumentalist who treats probabilities as purely predictive tools may resist this framing. But the instrumentalist thereby abandons the project of giving an ontological account of quantum probabilities. For those who seek such an account, the measure over admissible continuations must be a feature of the physical situation (part of the vehicle, not the content) and Determinate Identity constrains it accordingly.
 
-### 4.2 Excluded Middle and Macroscopic Outcomes
+### 4.2 Excluded Middle, Quantum Logic, and Macroscopic Outcomes
 
 A clarification is needed regarding Excluded Middle in the quantum context. Quantum foundations includes extensive work on quantum logic, POVMs, unsharp observables, and many-valued semantics. Does EM apply to quantum systems?
 
@@ -264,7 +266,7 @@ The framework developed here has applications beyond the Born rule:
 
 ## 7. Conclusion
 
-Starting from Tahko-style logic realism about the Law of Non-Contradiction, this paper has articulated an admissibility-based picture of physical instantiation. The conceivability-instantiation asymmetry (the ease of representing impossibilities paired with the apparent impossibility of instantiating them) reflects ontological constraints on what can be physically real. Round squares are not excluded by a process; they are excluded by meaning. The same holds for instantiated contradictions generally.
+Starting from Tahko-style logic realism about the Law of Non-Contradiction, this paper has articulated an admissibility-based picture of physical instantiation. The conceivability-instantiation asymmetry (the ease of representing impossibilities paired with the apparent impossibility of instantiating them) reflects ontological constraints on what can be physically real. Round squares are not excluded by a process; they are excluded by meaning—and so too for instantiated contradictions of any kind.
 
 The central contribution is showing that Determinate Identity, one of these ontological constraints, motivates the measure assumptions that yield the Born rule. The argument hinges on the vehicle/content distinction: a quantum state is a physical configuration (vehicle) representing outcome-possibilities (content). The measure over admissible continuations belongs to the vehicle; it characterizes how the physical situation is objectively poised toward various outcomes. If this measure varied with mathematical decomposition, the physical situation itself would fail to be determinate. 
 
@@ -424,9 +426,11 @@ To preserve identity under composition, distinctions must localize.
 
 *Motivation (not proof).* This principle is not derived from Determinate Identity alone. Theorem D.1 (Appendix D) shows that L₁ forces intrinsic identity *somewhere*—but that somewhere could be purely global. The move to *local* intrinsic identity requires empirical input: macroscopic systems exhibit self-sufficient identity under decomposition (M₁, Theorem D.2). CDP is the principled extension of this macroscopic self-sufficiency into the compositional regime, motivated by the pattern that self-sufficiency percolates downward as far as decoherence allows. See Appendix D.3 for the complete derivation chain.
 
-**Corollary B.7.1 (Local tomography).** If two global configurations agree on all local factors of all subsystems, they are identical.
+**Corollary B.7.1 (Local tomography).** If CDP holds, then two global configurations that agree on all local factors of all subsystems are identical.
 
-**Corollary B.7.2 (Subsystem independence).** Local distinctions, once established, persist independently of unrelated subsystems.
+**Corollary B.7.2 (Subsystem independence).** If CDP holds, then local distinctions, once established, persist independently of unrelated subsystems.
+
+These corollaries are consequences of accepting CDP; they inherit its motivated (rather than derived) status.
 
 **Lemma B.8 (Infinite local depth).** For any configuration $c$, there exists an infinite descending chain of proper local factors.
 
