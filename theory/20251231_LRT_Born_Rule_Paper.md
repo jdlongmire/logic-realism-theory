@@ -27,7 +27,7 @@ The central claim is that Determinate Identity — the requirement that any phys
 
 The papers can be read independently, but together form a unified derivation from $L_3$ to quantum mechanics.
 
-**Structure.** Section 2 summarizes the framework. Section 3 characterizes quantum states within this framework. Section 4 presents the core argument: vehicle-weight invariance → Born rule. Section 5 addresses objections. Section 6 concludes. Appendix A provides the formal proof.
+**Structure.** Section 2 summarizes the framework. Section 3 characterizes quantum states within this framework. Section 4 presents the core argument and formal derivation: vehicle-weight invariance → Born rule. Section 5 addresses objections. Section 6 concludes.
 
 ---
 
@@ -113,17 +113,42 @@ This violates Determinate Identity at the vehicle level.
 
 The latter requires $S$ to have objective dispositions toward outcomes. Vehicle-weight objectivity follows.
 
-### 4.4 The Derivation
+### 4.4 Formal Setup
 
-**Theorem (Vehicle-invariance → Born rule)**: Any finitely additive measure $\mu$ on projections in $\mathcal{H}$ (dim $\geq 3$) satisfying vehicle-weight invariance is of the form $\mu(P) = \text{Tr}(\rho P)$. For pure states, this yields $|\langle\phi|\psi\rangle|^2$.
+Let $\mathcal{H}$ be a complex separable Hilbert space with dim$(\mathcal{H}) \geq 3$. Let $\mathcal{P}(\mathcal{H})$ be the lattice of orthogonal projections. Let $\mu: \mathcal{P}(\mathcal{H}) \to [0,1]$ be a finitely additive probability measure on projections.
 
-*Proof*: See Appendix A. The chain:
-1. Vehicle-weight invariance → total weight constant across all decompositions
-2. → Unitary invariance (bases related by unitaries)
-3. → Trace form (representation theory)
-4. → Born rule for pure states
+**Definition (Vehicle-weight invariance)**: A measure $\mu$ satisfies *vehicle-weight invariance* iff for every maximal orthonormal resolution $\{P_i\}$ of the identity ($\sum P_i = I$, orthogonal, rank-1):
+$$\sum_i \mu(P_i) = 1$$
+(constant across all decompositions).
 
-### 4.5 No Circularity
+### 4.5 Key Lemmas
+
+**Lemma 1 (Transitivity)**: Any two maximal orthonormal decompositions are related by a unitary $U$.
+
+*Proof*: The unitary group acts transitively on ordered orthonormal bases (Stiefel manifold). $\square$
+
+**Lemma 2 (Unitary invariance)**: If $\mu$ satisfies vehicle-weight invariance, then $\mu(UPU^\dagger) = \mu(P)$ for every unitary $U$.
+
+*Proof*: Fix rank-1 projection $P$. Extend to maximal decomposition $D_1 = \{P, R_2, \ldots\}$. For any unitary $U$, let $Q = UPU^\dagger$. By transitivity, decompositions containing $P$ and $Q$ are related by a unitary. Invariance of total weight forces $\mu(Q) = \mu(P)$. $\square$
+
+**Lemma 3 (Trace form)**: Any unitarily invariant finitely additive measure on $\mathcal{P}(\mathcal{H})$ (dim $\geq 3$) has form $\mu(P) = \text{Tr}(\rho P)$ for unique density operator $\rho$.
+
+*Proof*: Follows from irreducibility of adjoint representation of $U(\mathcal{H})$ on trace-class operators (Dixmier 1981). $\square$
+
+### 4.6 Main Theorem
+
+**Theorem (Vehicle-invariance → Born rule)**: Any finitely additive measure $\mu$ on $\mathcal{P}(\mathcal{H})$ (dim $\geq 3$) satisfying vehicle-weight invariance yields the Born rule for pure states:
+$$\mu(|\phi\rangle\langle\phi|) = |\langle\phi|\psi\rangle|^2$$
+
+*Proof*:
+1. Vehicle-weight invariance (Definition above)
+2. → Unitary invariance (Lemma 2)
+3. → Trace form $\mu(P) = \text{Tr}(\rho P)$ (Lemma 3)
+4. For pure states $\rho = |\psi\rangle\langle\psi|$, on rank-1 projectors:
+   $$\mu(|\phi\rangle\langle\phi|) = \text{Tr}(|\psi\rangle\langle\psi| \cdot |\phi\rangle\langle\phi|) = |\langle\phi|\psi\rangle|^2$$
+$\square$
+
+### 4.7 No Circularity
 
 The argument does not assume basis-independence to derive basis-independence:
 
@@ -131,6 +156,13 @@ The argument does not assume basis-independence to derive basis-independence:
 - **How must the measure behave over those outcomes?** Constrained by Determinate Identity
 
 These operate at different levels. Decoherence fixes outcomes; Id constrains the measure.
+
+**Circularity audit**:
+- **Input**: Vehicle-weight invariance (from Determinate Identity)
+- **Mathematical machinery**: Gleason-Busch theorem, representation theory
+- **Output**: Born rule
+
+No premise contains the conclusion. The derivation is sound.
 
 ---
 
@@ -176,55 +208,6 @@ The derivation:
 Combined with the Hilbert Space Paper (deriving complex Hilbert space from Id), this completes the derivation of quantum probability structure from $L_3$ constraints.
 
 **What remains empirical**: Which systems exist, their Hamiltonians, initial conditions. The *form* of the probability rule is derived; its *application* to specific systems requires physics.
-
----
-
-## Appendix A: Formal Proof
-
-### A.1 Setup
-
-Let $\mathcal{H}$ be a complex separable Hilbert space with dim$(\mathcal{H}) \geq 3$. Let $\mathcal{P}(\mathcal{H})$ be the lattice of orthogonal projections. Let $\mu: \mathcal{P}(\mathcal{H}) \to [0,1]$ be a finitely additive probability measure on projections.
-
-### A.2 Vehicle-Weight Invariance (Formal)
-
-**Definition A.1**: A measure $\mu$ satisfies *vehicle-weight invariance* iff for every maximal orthonormal resolution $\{P_i\}$ of the identity ($\sum P_i = I$, orthogonal, rank-1):
-$$\sum_i \mu(P_i) = 1$$
-(constant across all decompositions).
-
-### A.3 Key Lemmas
-
-**Lemma A.1 (Transitivity)**: Any two maximal orthonormal decompositions are related by a unitary $U$.
-
-*Proof*: The unitary group acts transitively on ordered orthonormal bases (Stiefel manifold). $\square$
-
-**Lemma A.2 (Unitary invariance)**: If $\mu$ satisfies Definition A.1, then $\mu(UPU^\dagger) = \mu(P)$ for every unitary $U$.
-
-*Proof*: Fix rank-1 projection $P$. Extend to maximal decomposition $D_1 = \{P, R_2, \ldots\}$. For any unitary $U$, let $Q = UPU^\dagger$. By transitivity, decompositions containing $P$ and $Q$ are related by a unitary. Invariance of total weight forces $\mu(Q) = \mu(P)$. $\square$
-
-**Lemma A.3 (Trace form)**: Any unitarily invariant finitely additive measure on $\mathcal{P}(\mathcal{H})$ (dim $\geq 3$) has form $\mu(P) = \text{Tr}(\rho P)$ for unique density operator $\rho$.
-
-*Proof*: Follows from irreducibility of adjoint representation of $U(\mathcal{H})$ on trace-class operators (Dixmier 1981). $\square$
-
-### A.4 Main Theorem
-
-**Theorem A.1**: Any finitely additive measure $\mu$ on $\mathcal{P}(\mathcal{H})$ (dim $\geq 3$) satisfying vehicle-weight invariance yields the Born rule for pure states:
-$$\mu(|\phi\rangle\langle\phi|) = |\langle\phi|\psi\rangle|^2$$
-
-*Proof*:
-1. Vehicle-weight invariance (Def A.1)
-2. → Unitary invariance (Lemma A.2)
-3. → Trace form $\mu(P) = \text{Tr}(\rho P)$ (Lemma A.3)
-4. For pure states $\rho = |\psi\rangle\langle\psi|$, on rank-1 projectors:
-   $$\mu(|\phi\rangle\langle\phi|) = \text{Tr}(|\psi\rangle\langle\psi| \cdot |\phi\rangle\langle\phi|) = |\langle\phi|\psi\rangle|^2$$
-$\square$
-
-### A.5 Circularity Audit
-
-- **Input**: Vehicle-weight invariance (from Determinate Identity)
-- **Mathematical machinery**: Gleason-Busch theorem, representation theory
-- **Output**: Born rule
-
-No premise contains the conclusion. The derivation is sound.
 
 ---
 
