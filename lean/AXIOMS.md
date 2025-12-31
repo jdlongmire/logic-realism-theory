@@ -32,6 +32,36 @@ The external theorems (E1-E8) correspond to Appendix A in:
 
 ---
 
+## Formal Compatibility: LRT and Standard QM
+
+**Key Insight**: LRT adopts essentially all of the formalism of standard complex-Hilbert-space quantum mechanics — the same mathematical machinery used by Many-Worlds, Copenhagen, Bohmian, and textbook QM.
+
+### What This Means for Formalization
+
+1. **Shared Formal Core**: The Hilbert space derivation paper shows that Determinate Identity (Id) forces the Masanes-Müller reconstruction axioms, yielding the standard arena:
+   - Pure states as rays in complex Hilbert space
+   - Tensor products for composite systems
+   - Unitary evolution
+   - Born-rule probabilities
+
+2. **Formalization Strategy**: We can use standard Mathlib constructions for:
+   - Hilbert spaces, inner products, norms
+   - Unitary and Hermitian operators
+   - Tensor products and composite systems
+   - Measure theory for probabilities
+
+3. **LRT-Specific Axioms**: LRT axioms constrain *which* formalisms are admissible, not how to build them from scratch. The Tier 1 axioms (I, I_infinite) define the pre-physical ontology; the theorems show that standard QM formalism is the unique $L_3$-admissible structure.
+
+4. **Compatibility with Extensions**: LRT is compatible with Bohmian-style or collapse-style additions at the vehicle layer, provided they respect $L_3$-admissibility. The formalism is shared; the grounding is LRT-specific.
+
+### Implication for Proof Development
+
+- **Reuse, don't rebuild**: Use Mathlib's existing Hilbert space infrastructure
+- **LRT theorems prove constraints**: Show that Id → local tomography → complex field, etc.
+- **Interpretation is layered on top**: The ontological reading (one-world, record-focused) interprets the shared formalism
+
+---
+
 ## The 3-Tier Classification System
 
 All axioms in this formalization are classified into three tiers:
