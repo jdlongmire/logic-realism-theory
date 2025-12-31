@@ -1,23 +1,19 @@
-# Logic Realism Theory: Physical Foundations from Logical Constraints
-
-**Position Paper — Version 1.0**
-
-**James (JD) Longmire**  
-Northrop Grumman Fellow (unaffiliated research)  
-ORCID: 0009-0009-1383-7698  
-Correspondence: jdlongmire@outlook.com
+---
+title: "Logic Realism Theory: Physical Foundations from Logical Constraints"
+subtitle: "Position Paper — Version 1.0"
+author:
+  - name: James D. Longmire
+    affiliation: Northrop Grumman Fellow (unaffiliated research)
+    orcid: 0009-0009-1383-7698
+    email: jdlongmire@outlook.com
+abstract: |
+  Logic Realism Theory (LRT) treats the three classical logical laws—Determinate Identity, Non-Contradiction, and Excluded Middle—as ontological constraints on physical instantiation, not merely rules of inference. The framework distinguishes $I_\infty$ (all representable configurations) from $A_\Omega$ (the $L_3$-admissible subset that can be physically instantiated as stable records). This boundary condition generates quantum structure: vehicle-invariance under mathematically equivalent decompositions forces the Born rule via Gleason's theorem; local tomography requirements select complex Hilbert space over real alternatives. The framework is falsifiable ($L_3$ violations in stable records would refute it) and progressive (it predicted complex QM before the Renou et al. 2021 test). Extensions to quantum field theory, general relativity, and cosmology are outlined. Full technical derivations appear in companion papers.
+keywords: [logic realism, quantum foundations, Born rule, Hilbert space, determinate identity, non-contradiction, excluded middle]
+---
 
 **Note:** Views expressed are my own and do not represent those of Northrop Grumman Corporation.
 
 **Scope:** This position paper establishes the Logic Realism Theory framework and sketches the derivation of the Born rule from vehicle-invariance constraints. Full technical derivations appear in companion papers: *Complex Hilbert Space from Determinate Identity* (derives reconstruction axioms from Id), *Quantum Statistics from Determinate Identity* (derives symmetrization postulate). Extensions to quantum field theory, general relativity, and cosmology are outlined but not fully developed.
-
----
-
-## Abstract
-
-Logic Realism Theory (LRT) treats the three classical logical laws—Determinate Identity, Non-Contradiction, and Excluded Middle—as ontological constraints on physical instantiation, not merely rules of inference. The framework distinguishes $I_\infty$ (all representable configurations) from $A_\Omega$ (the $L_3$-admissible subset that can be physically instantiated as stable records). This boundary condition generates quantum structure: vehicle-invariance under mathematically equivalent decompositions forces the Born rule via Gleason's theorem; local tomography requirements select complex Hilbert space over real alternatives. The framework is falsifiable ($L_3$ violations in stable records would refute it) and progressive (it predicted complex QM before the Renou et al. 2021 test). Extensions to quantum field theory, general relativity, and cosmology are outlined. Full technical derivations appear in companion papers.
-
----
 
 ## 1. The Discovery
 
