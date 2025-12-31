@@ -348,3 +348,81 @@ Added new objection addressing critique about over-claiming exclusion of alterna
 **Defense**: Both moves are *least-cost extensions* enabling genuine prediction. Critics who reject them abandon the generative project, not merely LRT.
 
 ---
+
+### Session 50.0 Continuation (Context Resumed)
+
+**Interaction Count**: 40+
+
+#### Major Additions
+
+**§4.6 Vehicle Trilemma** (`111417a`)
+- Formal 7-step argument structure
+- Comparison table: Everettian, QBist, ontic-postulate views
+- Exhaustive: no fourth horn exists
+
+**D.5 Local Tomography Forced** (`0f4ac99`)
+- Reductio proof: M₁ forces local tomography at every finite depth
+- Upgrades CDP from "motivated" to "forced"
+- Addresses effective vs strict self-sufficiency objection
+
+**D.6 Incompleteness and Pre-Mathematical Priority** (`65d65c0`)
+- Formal 5-step Gödel sketch
+- L₃ is precondition for mathematics, not theorem within it
+- LRT escapes Gödelian trap by refusing the preconditions
+
+**§6.1 Severe Tests and Falsification** (`72e8981`)
+- Six explicit refutation criteria (6.1.1–6.1.6)
+- Key: information preservation ≠ identity restoration
+- Lakatosian evaluation: Popperian nerve, Lakatosian body
+
+**Appendix E: Speculative Extensions** (`7a3cab9`)
+- E.1: Logical Reality Cycle (coherentist structure)
+- E.2: Black holes as identity failure
+- E.3: Hawking radiation disrupts heat death
+- E.4: Dark energy as structural requirement
+- E.5: Falsification criteria for cosmological extensions
+
+#### Other Changes
+
+- **Title revised** (`49323c9`): "Determinate Identity as Ontological Constraint on Physical Reality"
+- **README revised** (`8a23429`): Working paper as core document
+- **LRT_Extended folder committed** (`8301398`): v5-v8 development versions
+
+---
+
+### Session Summary
+
+**Total Commits This Session**: 15+
+
+| Commit | Description |
+|--------|-------------|
+| 766610a | Add Objection 5: Relation to alternative approaches |
+| 1df75e0 | Update Session 50.0 |
+| 9bcbf44 | Add §4.6: Vehicle trilemma |
+| 111417a | Revise §4.6: formal structure |
+| 0f4ac99 | Add D.5: Local tomography forced |
+| 8f4926b | Add D.6: Incompleteness |
+| 65d65c0 | Revise D.6: formal Gödel sketch |
+| 8301398 | Add LRT_Extended folder |
+| 72e8981 | Add §6.1: Falsification criteria |
+| 49323c9 | Update paper title |
+| 8a23429 | Revise README |
+| 7a3cab9 | Add Appendix E: Speculative Extensions |
+
+**Paper Status**: Substantially complete
+- Born rule derivation: Complete (§4, Appendix A)
+- Hilbert space forcing: Complete (Appendix B)
+- Bell reinterpretation: Complete (§4.5, Appendix C)
+- Formal derivation chain: Complete (Appendix D.1–D.7)
+- Falsification criteria: Complete (§6.1)
+- Speculative extensions: Complete (Appendix E)
+
+**Methodology**: Popperian soul, Lakatosian body
+- Hard core exposed to severe refutation
+- Protective belt small and motivated
+- Programme currently progressive
+
+---
+
+**Session End**: 2025-12-31
+**Next Steps**: External review, potential Zenodo publication of working paper
