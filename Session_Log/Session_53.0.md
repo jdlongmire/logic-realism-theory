@@ -21,11 +21,28 @@ Both papers received:
 
 | # | Task | Status |
 |---|------|--------|
-| 1 | Commit acknowledgment additions | Pending |
-| 2 | Add acknowledgments to remaining 3 papers | Pending |
-| 3 | Zenodo community creation | Pending |
-| 4 | Upload papers to Zenodo | Pending |
+| 1 | Em dash sweep all 5 papers | ✅ Complete |
+| 2 | Commit changes | ✅ Complete |
+| 3 | Add acknowledgments to remaining 3 papers | Pending |
+| 4 | Zenodo community creation | Pending |
+| 5 | Upload papers to Zenodo | Pending |
+
+## Em Dash Sweep Details
+
+Replaced em dashes (—) with:
+- Colons for explanatory clauses
+- Semicolons for closely related independent clauses
+- Commas for lighter breaks
+- Parentheses for parenthetical content
+- En dashes (–) for version indicators only
+
+Papers swept:
+1. Born Rule Paper
+2. QFT Statistics Paper
+3. GR Extension Paper
+4. Position Paper
+5. Hilbert Space Derivation
 
 ---
 
-**Interaction Count**: 1
+**Interaction Count**: 4
