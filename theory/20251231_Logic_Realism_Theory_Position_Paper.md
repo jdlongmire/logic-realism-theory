@@ -13,6 +13,12 @@ Correspondence: jdlongmire@outlook.com
 
 ---
 
+## Abstract
+
+Logic Realism Theory (LRT) treats the three classical logical laws—Determinate Identity, Non-Contradiction, and Excluded Middle—as ontological constraints on physical instantiation, not merely rules of inference. The framework distinguishes I∞ (all representable configurations) from A_Ω (the L-triad-admissible subset that can be physically instantiated as stable records). This boundary condition generates quantum structure: vehicle-invariance under mathematically equivalent decompositions forces the Born rule via Gleason's theorem; local tomography requirements select complex Hilbert space over real alternatives. The framework is falsifiable (L-triad violations in stable records would refute it) and progressive (it predicted complex QM before the Renou et al. 2021 test). Extensions to quantum field theory, general relativity, and cosmology are outlined. Full technical derivations appear in companion papers.
+
+---
+
 ## 1. The Discovery
 
 No stable experimental record, across the history of experimental science, has ever been documented as instantiating a direct violation of the classical laws of Identity, Non-Contradiction, or Excluded Middle. No detector record is both triggered and not triggered in the same respect. No logged outcome is both P and not-P in the same respect and at the same time. No measurement apparatus has yielded a contradiction at the level of actualized, stable records.
