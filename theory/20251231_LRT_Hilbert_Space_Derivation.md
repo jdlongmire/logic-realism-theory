@@ -266,7 +266,7 @@ But Theorem 3 establishes that Id *permits* entanglement. Consider a composite o
 
 Classical composites cannot exhibit non-classical correlations. But we've established:
 - Id permits entanglement (Theorem 3)
-- Entangled states exhibit correlations exceeding classical bounds (Bell violations)
+- Entangled states exhibit correlations exceeding classical bounds (Bell, 1964)
 
 If two-level systems were classical simplexes, composites couldn't violate Bell inequalities. Since Id permits (and reality exhibits) Bell violations, the classical simplex is ruled out.
 
@@ -501,7 +501,7 @@ This corollary is the premise used in Theorem 1 to derive local tomography.
 
 To make the abstract argument of Theorem 1 concrete, we construct a GPT-style example where local tomography fails and show the resulting identity pathology.
 
-**Example (PR-Box World)**. Consider a hypothetical GPT where composite systems can exhibit Popescu-Rohrlich (PR) box correlations, maximally non-local correlations that saturate the algebraic CHSH bound S = 4.
+**Example (PR-Box World)**. Consider a hypothetical GPT where composite systems can exhibit Popescu-Rohrlich (PR) box correlations (Popescu & Rohrlich, 1994), maximally non-local correlations that saturate the algebraic CHSH bound S = 4.
 
 In PR-box world:
 - Alice measures observable $a \in \{0, 1\}$, gets outcome $x \in \{0, 1\}$
@@ -564,7 +564,7 @@ $$|+\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle), \quad |-\rangle = \frac
 
 The relative phase between $|00\rangle$ and $|11\rangle$ can only be detected by measurements that "mix" the computational basis, and in real QM, the full set of such measurements is restricted.
 
-**Theorem (Wootters 1990, Hardy 2001)**: Real Hilbert space violates local tomography for entangled states. Only complex Hilbert space permits local tomography for all composite systems.
+**Theorem (Wootters 1990, Hardy 2001)**: Real Hilbert space violates local tomography for entangled states. Only complex Hilbert space permits local tomography for all composite systems. This theoretical prediction has been experimentally confirmed: Renou et al. (2021) designed and performed a Bell-like test that rules out real quantum mechanics.
 
 **LRT interpretation**: Real QM would allow globally distinct states with identical local parts, violating Determinate Identity. Therefore, Id forces the complex field.
 

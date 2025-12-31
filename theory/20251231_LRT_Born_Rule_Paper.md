@@ -73,7 +73,7 @@ A quantum state $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$ does not repre
 
 When a measurement couples a quantum system to a macroscopic pointer:
 
-1. **Decoherence** selects a stable pointer basis $\{|U\rangle, |D\rangle\}$
+1. **Decoherence** selects a stable pointer basis $\{|U\rangle, |D\rangle\}$ (Zurek, 2003; Schlosshauer, 2007)
 2. **$L_3$** requires exactly one pointer reading to be instantiated
 3. The mutually exclusive decohered outcomes are called *admissible continuations*
 
@@ -188,7 +188,7 @@ No premise contains the conclusion. The derivation is sound.
 
 ### 5.4 "QBism avoids this"
 
-**Objection**: QBism treats probabilities as agent credences, not physical features. No vehicle-weight objectivity needed.
+**Objection**: QBism treats probabilities as agent credences, not physical features (Caves, Fuchs, & Schack, 2002). No vehicle-weight objectivity needed.
 
 **Reply**: QBism abandons the project of giving an ontological account of quantum probabilities. For those who seek such an account, the measure must be objective. Additionally, QBism cannot explain intersubjective convergence: why do independent agents with different priors converge on the same frequencies?
 

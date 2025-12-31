@@ -118,11 +118,11 @@ This is an L₁ violation. The state purports to describe a physical configurati
 
 The philosophical literature offers three responses to the identity problem:
 
-**Haecceities**: Each particle has a primitive "thisness" that distinguishes it from others, independent of any qualitative properties. This view is metaphysically loaded and conflicts with the empirical success of treating identical particles as genuinely indistinguishable.
+**Haecceities**: Each particle has a primitive "thisness" that distinguishes it from others, independent of any qualitative properties. This view is metaphysically loaded and conflicts with the empirical success of treating identical particles as genuinely indistinguishable (French & Redhead, 1988).
 
 **Spatial individuation**: Particles are individuated by their spatial locations. This works in some contexts but fails when particles have overlapping wave functions or when we consider momentum-space representations.
 
-**No individuation**: Identical particles are not individuals at all. The "two-electron system" is a single entity that does not decompose into two distinguishable parts. This view is closest to the LRT approach, but LRT provides a principled reason (L₁) rather than merely accepting it as primitive.
+**No individuation**: Identical particles are not individuals at all. The "two-electron system" is a single entity that does not decompose into two distinguishable parts. This view is closest to the LRT approach, but LRT provides a principled reason (L₁) rather than merely accepting it as primitive. Recent work has shown that fermions can be "weakly discerned" through irreflexive relations (Muller & Saunders, 2008), but this does not restore classical individuality.
 
 ---
 

@@ -18,7 +18,7 @@ We explore the consequences of Determinate Identity (Id) for spacetime structure
 
 ### 1.1 The Problem
 
-General relativity treats spacetime as a dynamical arena whose geometry is determined by matter-energy content via Einstein's field equations. But the framework assumes rather than derives several structural features:
+General relativity treats spacetime as a dynamical arena whose geometry is determined by matter-energy content via Einstein's field equations (Wald, 1984). But the framework assumes rather than derives several structural features:
 
 - **Lorentzian signature**: Why (1,3) rather than (4,0) or (2,2)?
 - **Temporal ordering**: Why is there a distinguished "timelike" direction?
@@ -250,7 +250,7 @@ This is compatible with Id, but requires the singularity to be a transformation,
 
 This has implications for the black hole information paradox:
 
-**Standard problem**: Hawking radiation is thermal (carries no information). If black holes evaporate completely, the information about what fell in is destroyed, violating unitarity.
+**Standard problem**: Hawking radiation is thermal (carries no information) (Hawking, 1975). If black holes evaporate completely, the information about what fell in is destroyed, violating unitarity.
 
 **LRT prediction**: Information (identity-constituting structure) cannot be destroyed. Therefore:
 - Black hole evaporation must be unitary
@@ -330,9 +330,9 @@ These are not complete derivations but programmatic proposals showing that LRT's
 
 ### 7.2 Comparison with Other Approaches
 
-**Causal set theory** (Sorkin): Spacetime emerges from discrete causal relations. LRT's "joint inadmissibility → ordering" is compatible but grounded differently (logic, not discrete structure postulate).
+**Causal set theory** (Sorkin, 2003): Spacetime emerges from discrete causal relations. LRT's "joint inadmissibility → ordering" is compatible but grounded differently (logic, not discrete structure postulate). Malament (1977) established that causal structure determines spacetime topology, supporting the primacy of causal ordering that LRT derives from $L_3$.
 
-**Loop quantum gravity**: Quantizes spacetime geometry directly. LRT would ask: does LQG's structure satisfy $L_3$ constraints? Are its predictions $L_3$-admissible?
+**Loop quantum gravity** (Rovelli, 2004): Quantizes spacetime geometry directly. LRT would ask: does LQG's structure satisfy $L_3$ constraints? Are its predictions $L_3$-admissible?
 
 **String theory**: Requires specific dimensions and structure. LRT might constrain which string vacua are $L_3$-admissible.
 
