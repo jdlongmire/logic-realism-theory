@@ -42,7 +42,8 @@
       "WebFetch(domain:ijqf.org)",
       "Bash(find:*)",
       "Bash(lake build:*)",
-      "Bash(git pull:*)"
+      "Bash(git pull:*)",
+      "Bash(Ontological Constraint on Physical Reality\"\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
     ],
     "deny": [],
     "ask": []
