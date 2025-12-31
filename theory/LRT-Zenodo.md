@@ -24,7 +24,7 @@ Position paper for Logic Realism Theory (LRT). Argues that the Three Fundamental
 
 **License**: CC-BY-4.0
 
-**DOI**: *(pending)*
+**DOI**: 10.5281/zenodo.18111737
 
 ---
 
@@ -49,7 +49,7 @@ Derives complex Hilbert space structure from Determinate Identity (Id). Shows th
 **License**: CC-BY-4.0
 
 **Related Identifiers**:
-- Is supplement to: Position Paper DOI *(add when available)*
+- Is supplement to: 10.5281/zenodo.18111737 (Position Paper)
 
 **DOI**: *(pending)*
 
@@ -76,7 +76,7 @@ Derives the Born rule (p = |⟨φ|ψ⟩|²) from Determinate Identity via vehicl
 **License**: CC-BY-4.0
 
 **Related Identifiers**:
-- Is supplement to: Position Paper DOI *(add when available)*
+- Is supplement to: 10.5281/zenodo.18111737 (Position Paper)
 - Requires: Hilbert Space Derivation DOI *(add when available)*
 
 **DOI**: *(pending)*
@@ -104,7 +104,7 @@ Derives the symmetrization postulate for identical particles from Determinate Id
 **License**: CC-BY-4.0
 
 **Related Identifiers**:
-- Is supplement to: Position Paper DOI *(add when available)*
+- Is supplement to: 10.5281/zenodo.18111737 (Position Paper)
 - Requires: Hilbert Space Derivation DOI *(add when available)*
 
 **DOI**: *(pending)*
@@ -132,7 +132,7 @@ Programmatic exploration of spacetime structure from L₃ constraints. Temporal 
 **License**: CC-BY-4.0
 
 **Related Identifiers**:
-- Is supplement to: Position Paper DOI *(add when available)*
+- Is supplement to: 10.5281/zenodo.18111737 (Position Paper)
 
 **DOI**: *(pending)*
 
@@ -142,7 +142,7 @@ Programmatic exploration of spacetime structure from L₃ constraints. Temporal 
 
 | Paper | Version | DOI |
 |-------|---------|-----|
-| Position Paper | 1.0 | |
+| Position Paper | 1.0 | 10.5281/zenodo.18111737 |
 | Hilbert Space Derivation | 0.2 | |
 | Born Rule | 0.1 | |
 | QFT Statistics | 0.1 | |

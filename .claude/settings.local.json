@@ -43,7 +43,14 @@
       "Bash(find:*)",
       "Bash(lake build:*)",
       "Bash(git pull:*)",
-      "Bash(Ontological Constraint on Physical Reality\"\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+      "Bash(Ontological Constraint on Physical Reality\"\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(quarto:*)",
+      "Bash(\"/c/Program Files/Quarto/bin/quarto.exe\" --version)",
+      "Bash(\"/c/Program Files/Quarto/bin/quarto.exe\" render 20251231_LRT_Born_Rule_Paper.md --to pdf)",
+      "Bash(\"/c/Program Files/Quarto/bin/quarto.exe\" render 20251231_Logic_Realism_Theory_Position_Paper.md --to pdf)",
+      "Bash(\"/c/Program Files/Quarto/bin/quarto.exe\" render 20251231_LRT_QFT_Statistics_Paper.md --to pdf)",
+      "Bash(\"/c/Program Files/Quarto/bin/quarto.exe\" render 20251231_LRT_GR_Extension.md --to pdf)",
+      "Bash(\"/c/Program Files/Quarto/bin/quarto.exe\" render 20251231_LRT_Hilbert_Space_Derivation.md --to pdf)"
     ],
     "deny": [],
     "ask": []

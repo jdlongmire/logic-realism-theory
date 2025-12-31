@@ -14,7 +14,7 @@ format:
     linkcolor: blue
     urlcolor: blue
     toc: false
-    number-sections: true
+    number-sections: false
     pdf-engine: xelatex
     mainfont: "Latin Modern Roman"
     mathfont: "Latin Modern Math"

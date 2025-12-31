@@ -1,21 +1,15 @@
-# The Born Rule from Determinate Identity
-
-**Working Paper — Version 0.1**
-
-**James (JD) Longmire**
-ORCID: 0009-0009-1383-7698
-Correspondence: jdlongmire@outlook.com
-
 ---
+title: "The Born Rule from Determinate Identity: A Logic-Realist Derivation"
+subtitle: "Working Paper — Version 0.1"
+author:
+  - name: James D. Longmire
+    orcid: 0009-0009-1383-7698
+    email: jdlongmire@outlook.com
+abstract: |
+  The Born rule assigns probability $|\langle\phi|\psi\rangle|^2$ to obtaining outcome $|\phi\rangle$ given state $|\psi\rangle$. While Gleason's theorem (1957) establishes this as the unique probability measure satisfying certain additivity and non-contextuality conditions, the question of *why* physical systems should satisfy those conditions remains open. This paper argues that Determinate Identity — the requirement that physical systems be determinately what they are, independent of description — provides the answer.
 
-## Abstract
-
-The Born rule assigns probability $|\langle\phi|\psi\rangle|^2$ to obtaining outcome $|\phi\rangle$ given state $|\psi\rangle$. While Gleason's theorem (1957) establishes this as the unique probability measure satisfying certain additivity and non-contextuality conditions, the question of *why* physical systems should satisfy those conditions remains open. This paper argues that Determinate Identity — the requirement that physical systems be determinately what they are, independent of description — provides the answer.
-
-The core argument: the measure over admissible measurement outcomes is a feature of the physical situation (vehicle), not merely a representational choice (content). If this measure varied with mathematical decomposition, the physical situation itself would be indeterminate, violating Determinate Identity. This constraint forces precisely the invariance conditions that Gleason's theorem requires. The Born rule thus emerges as the unique measure compatible with determinate physical identity.
-
-**Keywords:** Born rule, Determinate Identity, Gleason's theorem, quantum foundations, logic realism, vehicle-invariance
-
+  The core argument: the measure over admissible measurement outcomes is a feature of the physical situation (vehicle), not merely a representational choice (content). If this measure varied with mathematical decomposition, the physical situation itself would be indeterminate, violating Determinate Identity. This constraint forces precisely the invariance conditions that Gleason's theorem requires. The Born rule thus emerges as the unique measure compatible with determinate physical identity.
+keywords: [Born rule, Determinate Identity, Gleason's theorem, quantum foundations, logic realism, vehicle-invariance]
 ---
 
 ## 1. Introduction
@@ -26,7 +20,7 @@ The central claim is that Determinate Identity — the requirement that any phys
 
 **Relation to companion papers.** This paper is part of the Logic Realism Theory (LRT) programme:
 
-- **Position Paper**: Establishes the $L_3$ framework (Id, NC, EM) as ontological constraint
+- **Position Paper** (DOI: 10.5281/zenodo.18111737): Establishes the $L_3$ framework (Id, NC, EM) as ontological constraint
 - **Hilbert Space Paper**: Derives complex Hilbert space from Determinate Identity
 - **This Paper**: Derives Born rule from vehicle-weight invariance
 - **GR Extension**: Explores spacetime implications (programmatic)
