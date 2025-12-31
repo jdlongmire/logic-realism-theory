@@ -15,7 +15,7 @@ Correspondence: jdlongmire@outlook.com
 
 ## Abstract
 
-Logic Realism Theory (LRT) treats the three classical logical laws—Determinate Identity, Non-Contradiction, and Excluded Middle—as ontological constraints on physical instantiation, not merely rules of inference. The framework distinguishes I∞ (all representable configurations) from A_Ω (the L-triad-admissible subset that can be physically instantiated as stable records). This boundary condition generates quantum structure: vehicle-invariance under mathematically equivalent decompositions forces the Born rule via Gleason's theorem; local tomography requirements select complex Hilbert space over real alternatives. The framework is falsifiable (L-triad violations in stable records would refute it) and progressive (it predicted complex QM before the Renou et al. 2021 test). Extensions to quantum field theory, general relativity, and cosmology are outlined. Full technical derivations appear in companion papers.
+Logic Realism Theory (LRT) treats the three classical logical laws—Determinate Identity, Non-Contradiction, and Excluded Middle—as ontological constraints on physical instantiation, not merely rules of inference. The framework distinguishes $I_\infty$ (all representable configurations) from $A_\Omega$ (the L-triad-admissible subset that can be physically instantiated as stable records). This boundary condition generates quantum structure: vehicle-invariance under mathematically equivalent decompositions forces the Born rule via Gleason's theorem; local tomography requirements select complex Hilbert space over real alternatives. The framework is falsifiable (L-triad violations in stable records would refute it) and progressive (it predicted complex QM before the Renou et al. 2021 test). Extensions to quantum field theory, general relativity, and cosmology are outlined. Full technical derivations appear in companion papers.
 
 ---
 
@@ -37,7 +37,7 @@ The discovery claim is modest but sharp: physics only proceeds because its publi
 
 The framework distinguishes two domains (defined formally in §2.1-2.3):
 
-**I∞:** The space of all representable configurations - everything that can be specified, described, conceived, or formally expressed, without restriction to coherence or consistency. This includes contradictions, impossibilities, and violations of every logical principle. I∞ carries no ontological commitment; it is simply the totality of what representation permits.
+**$I_\infty$:** The space of all representable configurations - everything that can be specified, described, conceived, or formally expressed, without restriction to coherence or consistency. This includes contradictions, impossibilities, and violations of every logical principle. $I_\infty$ carries no ontological commitment; it is simply the totality of what representation permits.
 
 **$A_\Omega$:** The constraint-class of configurations that satisfy the Three Fundamental Laws of Logic (L-triad: Identity, Non-Contradiction, and Excluded Middle). These are the configurations that can be physically instantiated as stable records.
 
@@ -47,9 +47,9 @@ The relationship between them is the foundation of Logic Realism Theory.
 
 If the L-triad constrains which configurations can be instantiated, what follows for the structure of physics? What constraints does the L-triad place on admissible physical theories, measurable quantities, and dynamical evolution? What can we derive from the L-triad rather than postulate empirically?
 
-The answers turn out to be substantial. Key structural features of quantum mechanics—most centrally the Born rule and the admissible form of nonlocal correlations—follow from applying the L-triad rigorously to physical systems, with full derivations developed in companion work. These are not independent empirical facts about quantum mechanics but consequences of the requirement that physical records satisfy Identity (L₁).
+The answers turn out to be substantial. Key structural features of quantum mechanics—most centrally the Born rule and the admissible form of nonlocal correlations—follow from applying the L-triad rigorously to physical systems, with full derivations developed in companion work. These are not independent empirical facts about quantum mechanics but consequences of the requirement that physical records satisfy Identity ($L_1$).
 
-This introduction presents the Logic Realism Theory framework and demonstrates its scope. Section 2 develops the formal structure: I∞, $A_\Omega$, and the L-triad as admissibility condition. Section 3 establishes the vehicle/content distinction and its role in quantum mechanics. Section 4 sketches the derivation of quantum structure from the L-triad, with full technical details in companion papers. Section 5 addresses objections. Section 6 outlines the research program extending LRT to quantum field theory, general relativity, and cosmology. Section 7 concludes.
+This introduction presents the Logic Realism Theory framework and demonstrates its scope. Section 2 develops the formal structure: $I_\infty$, $A_\Omega$, and the L-triad as admissibility condition. Section 3 establishes the vehicle/content distinction and its role in quantum mechanics. Section 4 sketches the derivation of quantum structure from the L-triad, with full technical details in companion papers. Section 5 addresses objections. Section 6 outlines the research program extending LRT to quantum field theory, general relativity, and cosmology. Section 7 concludes.
 
 The goal is not to argue for Logic Realism Theory as one interpretation among others but to show that it generates a productive research program with testable consequences. If the L-triad constrains instantiation, physics has logical foundations. The aim here is to show what follows if that constraint is treated as real and load-bearing rather than as a mere feature of language.
 
@@ -106,9 +106,9 @@ This is not metaphysics disguised as physics. It is a scientific research progra
 
 ### 2.1 The Space of Representable Configurations
 
-I∞ is not a domain of entities. It carries no ontological commitment. It is the totality of what can be specified, described, or conceived, including configurations that violate every logical principle.
+$I_\infty$ is not a domain of entities. It carries no ontological commitment. It is the totality of what can be specified, described, or conceived, including configurations that violate every logical principle.
 
-**Examples of elements in I∞:**
+**Examples of elements in $I_\infty$:**
 
 - Consistent configurations: "electron with spin up"
 - Inconsistent configurations: "electron with spin both up and down in the same basis"
@@ -117,44 +117,44 @@ I∞ is not a domain of entities. It carries no ontological commitment. It is th
 - Vague specifications: "somewhat round square"
 - Indeterminate specifications: "object without determinate identity"
 
-The last example is crucial. I∞ includes configurations that violate Determinate Identity itself - configurations specified as lacking determinate identity. These are representable (we just represented one) but not instantiable.
+The last example is crucial. $I_\infty$ includes configurations that violate Determinate Identity itself - configurations specified as lacking determinate identity. These are representable (we just represented one) but not instantiable.
 
-I∞ is closed under representation operations:
+$I_\infty$ is closed under representation operations:
 
 - **Negation:** If configuration $c \in I_\infty$, then "not-$c$" $\in I_\infty$
 - **Conjunction:** If $c_1, c_2 \in I_\infty$, then "$c_1$ and $c_2$" $\in I_\infty$ (even if contradictory)
 - **Disjunction:** If $c_1, c_2 \in I_\infty$, then "$c_1$ or $c_2$" $\in I_\infty$
-- **Quantification:** Universal and existential quantification over I∞ elements
+- **Quantification:** Universal and existential quantification over $I_\infty$ elements
 
-This closure property ensures I∞ contains every representational construction, including those that build contradictions from consistent elements.
+This closure property ensures $I_\infty$ contains every representational construction, including those that build contradictions from consistent elements.
 
 ### 2.2 The Three Fundamental Laws as Ontological Constraints
 
 The L-triad comprises three classical logical principles, understood here as constraints on instantiation rather than constraints on inference or description:
 
-**Determinate Identity (L₁):** Every instantiated configuration is determinately what it is, independent of description or decomposition. For any admissible ways of describing or decomposing configuration $i \in A_\Omega$, they all pick out the same $i$. Formally, this is the requirement that identity is invariant under admissible redescription:
+**Determinate Identity ($L_1$):** Every instantiated configuration is determinately what it is, independent of description or decomposition. For any admissible ways of describing or decomposing configuration $i \in A_\Omega$, they all pick out the same $i$. Formally, this is the requirement that identity is invariant under admissible redescription:
 
 $$\text{For any descriptions } d, d' \text{ of the same configuration: } d(i) = d'(i) = i$$
 
 This is not the trivial claim that identity is reflexive ($i = i$). It is the substantive claim that instantiated configurations have determinate identity - they are self-identical in a way that does not depend on how they are described, measured, or decomposed. A configuration without determinate identity is not vague or indeterminate; it fails to be a configuration at all.
 
-**Non-Contradiction (L₂):** No instantiated configuration simultaneously possesses and lacks a property in the same respect. For any well-defined property $P$ and configuration $i \in A_\Omega$:
+**Non-Contradiction ($L_2$):** No instantiated configuration simultaneously possesses and lacks a property in the same respect. For any well-defined property $P$ and configuration $i \in A_\Omega$:
 
 $$\neg(P(i) \land \neg P(i))$$
 
 The "in the same respect" qualification is essential. An electron can have spin-up relative to the z-axis and spin-down relative to a rotated axis. But it cannot have spin-up *and* spin-down relative to the same measurement basis.
 
-**Excluded Middle (L₃):** For any well-defined property $P$ applicable to an instantiated configuration $i \in A_\Omega$, either $i$ possesses $P$ or $i$ lacks $P$:
+**Excluded Middle ($L_3$):** For any well-defined property $P$ applicable to an instantiated configuration $i \in A_\Omega$, either $i$ possesses $P$ or $i$ lacks $P$:
 
 $$P(i) \lor \neg P(i)$$
 
 Here EM is a constraint on instantiation for sharply specified properties, not a claim about what an agent can know or prove. The law applies to instantiated configurations with respect to well-defined properties - properties that have determinate applicability conditions. It does not require that we know which disjunct holds, only that exactly one does hold.
 
-These three laws are not independent. They are three aspects of determinacy: a configuration is determinate when it is self-identical (L₁), possesses no contradictory properties (L₂), and has definite status with respect to all applicable properties (L₃). Together they define what it means for a configuration to be instantiable.
+These three laws are not independent. They are three aspects of determinacy: a configuration is determinate when it is self-identical ($L_1$), possesses no contradictory properties ($L_2$), and has definite status with respect to all applicable properties ($L_3$). Together they define what it means for a configuration to be instantiable.
 
 ### 2.3 The Admissibility Condition
 
-**Definition.** Let $A_\Omega$ be the constraint-class of L-triad admissible configurations in I∞. Define:
+**Definition.** Let $A_\Omega$ be the constraint-class of L-triad admissible configurations in $I_\infty$. Define:
 
 $$L_{\text{tri}}(i) := L_1(i) \land L_2(i) \land L_3(i)$$
 
@@ -162,15 +162,15 @@ Then:
 
 $$A_\Omega := \{ i \in I_\infty : L_{\text{tri}}(i) \}$$
 
-where L₁ is Determinate Identity, L₂ is Non-Contradiction, and L₃ is Excluded Middle. A configuration here is a candidate state-description in I∞. An instantiated configuration is one that satisfies the L-triad constraints (belongs to the constraint-class $A_\Omega$).
+where $L_1$ is Determinate Identity, $L_2$ is Non-Contradiction, and $L_3$ is Excluded Middle. A configuration here is a candidate state-description in $I_\infty$. An instantiated configuration is one that satisfies the L-triad constraints (belongs to the constraint-class $A_\Omega$).
 
-**Empirical claim.** All stable physical records appear to fall within $A_\Omega$. No experimental record has been documented as belonging to I∞ \ $A_\Omega$. For avoidance of doubt: this is a claim about stable, public records, not about all internal theoretical descriptions or counterfactual propositions.
+**Empirical claim.** All stable physical records appear to fall within $A_\Omega$. No experimental record has been documented as belonging to $I_\infty$ \ $A_\Omega$. For avoidance of doubt: this is a claim about stable, public records, not about all internal theoretical descriptions or counterfactual propositions.
 
 **Substantive thesis.** Defining $A_\Omega$ does not explain why the physical world is confined to it. The definition specifies the constraint-class. The substantive claim is that this confinement is not contingent (a lucky regularity) and not merely methodological (an artifact of how we measure), but rooted in what it is to be physically instantiated. Logic Realism Theory is the claim that instantiation itself is governed by the L-triad. The research program asks what physics looks like under that constraint.
 
 To ask why reality does not instantiate L-triad-violating records is to ask why physics has stable public outcomes at all. LRT's proposal is that "being instantiated as a record" and "being L-triad admissible" pick out the same boundary.
 
-The L-triad functions as an admissibility condition on I∞. The term "filter" is informal shorthand for this admissibility requirement - not a mechanism operating within physics but the boundary condition between representable and instantiable.
+The L-triad functions as an admissibility condition on $I_\infty$. The term "filter" is informal shorthand for this admissibility requirement - not a mechanism operating within physics but the boundary condition between representable and instantiable.
 
 **Key properties of the admissibility condition:**
 
@@ -178,7 +178,7 @@ The L-triad functions as an admissibility condition on I∞. The term "filter" i
 
 2. **Monotonicity:** If $S_1 \subseteq S_2 \subseteq I_\infty$, then the L-triad-admissible subset of $S_1$ is contained in the L-triad-admissible subset of $S_2$. The condition preserves subset relations.
 
-3. **Non-surjectivity:** There is no operation mapping $A_\Omega$ back onto all of I∞. Once the admissibility condition is applied, inadmissible configurations cannot be recovered.
+3. **Non-surjectivity:** There is no operation mapping $A_\Omega$ back onto all of $I_\infty$. Once the admissibility condition is applied, inadmissible configurations cannot be recovered.
 
 4. **Composition:** For configurations $c_1, c_2 \in A_\Omega$, their conjunction is admissible only if it satisfies the L-triad. This is not automatic - jointly inadmissible configurations exist (§2.4).
 
@@ -188,7 +188,7 @@ Two individually admissible configurations may be jointly inadmissible. Let $c_1
 
 $$c_1 \land c_2 \notin A_\Omega$$
 
-This occurs when the conjunction violates L₂ or L₃. For example, "particle at position $x_1$" and "particle at position $x_2 \neq x_1$" are individually admissible but jointly inadmissible for the same particle at the same time.
+This occurs when the conjunction violates $L_2$ or $L_3$. For example, "particle at position $x_1$" and "particle at position $x_2 \neq x_1$" are individually admissible but jointly inadmissible for the same particle at the same time.
 
 Joint inadmissibility generates temporal ordering. If $c_1$ and $c_2$ cannot be co-instantiated but can be sequentially instantiated, time emerges as the ordering structure that separates jointly inadmissible configurations.
 
@@ -238,7 +238,7 @@ If the L-triad constrains only instantiation (as logic realism claims), then:
 
 The empirical record supports the second pattern. Conceiving contradictions is cognitively trivial; instantiating them has never been observed. This asymmetry is evidence that the L-triad constrains instantiation rather than representation.
 
-The point is not merely that we have never observed violations. It is that the pattern of what we can represent versus what we can instantiate matches the logic-realist prediction rather than the psychologist or descriptivist prediction. If the L-triad were merely "how we think," we could not think violations. If the L-triad were merely "how we talk," we could stipulate alternative conventions. But we can think violations, reality never instantiates them, and no stipulation changes this. The constraint is on $A_\Omega$, not on I∞.
+The point is not merely that we have never observed violations. It is that the pattern of what we can represent versus what we can instantiate matches the logic-realist prediction rather than the psychologist or descriptivist prediction. If the L-triad were merely "how we think," we could not think violations. If the L-triad were merely "how we talk," we could stipulate alternative conventions. But we can think violations, reality never instantiates them, and no stipulation changes this. The constraint is on $A_\Omega$, not on $I_\infty$.
 
 ### 3.3 Superposition as Representational Vehicle
 
@@ -250,7 +250,7 @@ $$|\psi\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle)$$
 
 This state is a well-defined mathematical object within the theory. The state vector is a precise representational vehicle that can be manipulated without contradiction. Whatever physical substrate realizes the situation, the representation is determinate as a vehicle: it is the specific superposition with coefficients (1/√2, 1/√2), with definite inner products with other states, with determinate evolution under unitary operators.
 
-The content - what the vehicle represents about outcome-possibilities - concerns what will happen when measurement in the {|0⟩, |1⟩} basis occurs. The state does not describe a configuration that both has and lacks a definite value (L₂ violation), nor does it describe a configuration outside the true/false dichotomy (L₃ violation). It describes a physical situation such that when measurement occurs, exactly one outcome will be recorded, and that record will be L-triad admissible.
+The content - what the vehicle represents about outcome-possibilities - concerns what will happen when measurement in the {|0⟩, |1⟩} basis occurs. The state does not describe a configuration that both has and lacks a definite value ($L_2$ violation), nor does it describe a configuration outside the true/false dichotomy ($L_3$ violation). It describes a physical situation such that when measurement occurs, exactly one outcome will be recorded, and that record will be L-triad admissible.
 
 ### 3.4 What Superposition Represents
 
@@ -268,9 +268,9 @@ This last interpretation is key. The quantum state is a well-defined representat
 
 The measurement basis determines which properties are sharp. For state |ψ⟩ = α|0⟩ + β|1⟩:
 
-- **Property P₁:** "has value 0 in computational basis" - not sharp for |ψ⟩ prior to measurement
-- **Property P₂:** "corresponds to state vector |ψ⟩ in Hilbert space" - sharp for the representational vehicle
-- **Property P₃:** "would yield outcome 0 with probability |α|² upon computational basis measurement" - sharp for the representational vehicle
+- **Property $P_1$:** "has value 0 in computational basis" - not sharp for |ψ⟩ prior to measurement
+- **Property $P_2$:** "corresponds to state vector |ψ⟩ in Hilbert space" - sharp for the representational vehicle
+- **Property $P_3$:** "would yield outcome 0 with probability |α|² upon computational basis measurement" - sharp for the representational vehicle
 
 The third property is crucial. The quantum state determinately possesses the property "encodes probability |α|² for outcome 0." This probability is not epistemological uncertainty about a pre-existing value; it is a determinate feature of how the representational vehicle characterizes the physical situation.
 
@@ -282,11 +282,11 @@ A natural objection: "You've defined measurement as producing determinate outcom
 
 The response has two parts.
 
-**First, the definitional move is legitimate.** We define $A_\Omega$ as configurations satisfying L₃, then observe that experimental records always belong to $A_\Omega$. The substantive claim is not that we *chose* to make outcomes determinate but that the physical world *confines* records to $A_\Omega$. The definition identifies the constraint-class; the empirical fact is that the constraint holds.
+**First, the definitional move is legitimate.** We define $A_\Omega$ as configurations satisfying $L_3$, then observe that experimental records always belong to $A_\Omega$. The substantive claim is not that we *chose* to make outcomes determinate but that the physical world *confines* records to $A_\Omega$. The definition identifies the constraint-class; the empirical fact is that the constraint holds.
 
 **Second, the Born rule is not definitional.** Given that outcomes must be determinate (must belong to $A_\Omega$ as stable records), the question remains: what probability measure governs which outcome actualizes? Here the vehicle/content distinction generates a non-trivial constraint.
 
-If a single physical situation admits multiple mathematically equivalent decompositions into outcome-projectors, L₁ forbids the total weight assigned to that situation from depending on the chosen decomposition. Equivalence here means: decompositions that correspond to the same projector/ray structure (same event) and differ only by basis choice or refinement/coarse-graining that preserves the event. The representational vehicle must characterize the situation determinately, which means the measure it encodes cannot vary with representational choices. Therefore the weight function on projectors must be additive across orthogonal resolutions and non-contextual across embeddings.
+If a single physical situation admits multiple mathematically equivalent decompositions into outcome-projectors, $L_1$ forbids the total weight assigned to that situation from depending on the chosen decomposition. Equivalence here means: decompositions that correspond to the same projector/ray structure (same event) and differ only by basis choice or refinement/coarse-graining that preserves the event. The representational vehicle must characterize the situation determinately, which means the measure it encodes cannot vary with representational choices. Therefore the weight function on projectors must be additive across orthogonal resolutions and non-contextual across embeddings.
 
 This requirement - that measure is vehicle-invariant under mathematically equivalent decompositions - generates the additivity and non-contextuality conditions that Gleason's theorem requires. The Born rule |⟨φ|ψ⟩|² emerges as the unique measure satisfying these constraints.
 
@@ -318,7 +318,7 @@ The appearance of faster-than-light influence dissolves when we recognize that:
 
 The picture that emerges has three layers:
 
-**Layer 1: Representable configurations (I∞)**  
+**Layer 1: Representable configurations ($I_\infty$)**  
 All specifications, including contradictions and impossibilities. No constraint.
 
 **Layer 2: Quantum states as representational vehicles in the theory**  
@@ -328,13 +328,13 @@ Well-defined Hilbert space vectors. These are L-triad-consistent descriptions wi
 Sharp property assignments in stable, public records. These are the L-triad-admissible configurations that experimental records display. Determinately 0 or 1, spin-up or spin-down, etc. Only this layer is directly instantiated as public record.
 
 Layer 2 is the theory's vehicle for representing how Layer 3 distributions arise from physical situations. The vehicle/content distinction operates at each level:
-- Mind states (vehicles satisfying the L-triad) represent impossible configurations (content in I∞)
+- Mind states (vehicles satisfying the L-triad) represent impossible configurations (content in $I_\infty$)
 - Quantum states (vehicles in mathematical formalism) represent outcome-possibility structures (content pointing toward Layer 3 records)
 - Measurement outcomes (instantiated records) represent physical properties (content as property assignments)
 
-The framework is realist about all three layers in different senses: I∞ exists as the space of representational possibility, quantum states exist as well-defined vehicles within our best theory, and measurement outcomes exist as actual instantiated records in $A_\Omega$.
+The framework is realist about all three layers in different senses: $I_\infty$ exists as the space of representational possibility, quantum states exist as well-defined vehicles within our best theory, and measurement outcomes exist as actual instantiated records in $A_\Omega$.
 
-This sets up the Born rule derivation: if quantum states are representational vehicles that encode outcome-possibilities via probability distributions, and these vehicles must characterize physical situations determinately (L₁), then the probability measure must be invariant under mathematically equivalent decompositions. Section 4 makes this precise.
+This sets up the Born rule derivation: if quantum states are representational vehicles that encode outcome-possibilities via probability distributions, and these vehicles must characterize physical situations determinately ($L_1$), then the probability measure must be invariant under mathematically equivalent decompositions. Section 4 makes this precise.
 
 
 ---
@@ -349,7 +349,7 @@ $$P(\phi|\psi) = |\langle\phi|\psi\rangle|^2$$
 
 This is not postulated in LRT but derived from the requirement that representational vehicles characterize physical situations determinately. The derivation proceeds in four steps:
 
-1. **Vehicle-invariance requirement:** L₁ (Determinate Identity) applied to representational vehicles
+1. **Vehicle-invariance requirement:** $L_1$ (Determinate Identity) applied to representational vehicles
 2. **Measure structure:** Vehicle-invariance generates additivity and non-contextuality constraints
 3. **Gleason's theorem:** These constraints uniquely determine the measure form
 4. **Born rule:** The |ψ|² form emerges as the unique solution
@@ -358,7 +358,7 @@ This section sketches the derivation. Full technical details, including rigorous
 
 ### 4.2 Vehicle-Invariance: The Core Requirement
 
-A quantum state |ψ⟩ is a representational vehicle encoding outcome-possibilities for measurement contexts. For any measurement context M with possible outcomes {φᵢ}, the state assigns probabilities:
+A quantum state |ψ⟩ is a representational vehicle encoding outcome-possibilities for measurement contexts. For any measurement context M with possible outcomes {$\phi_i$}, the state assigns probabilities:
 
 $$P(\phi_i|\psi) = \text{some function of } |\psi\rangle \text{ and } |\phi_i\rangle$$
 
@@ -374,17 +374,17 @@ $$P_d(E|\psi) = P_{d'}(E|\psi)$$
 
 The probability assigned to E cannot depend on which mathematically equivalent description we use. As Peres (1993, §6.3) emphasizes, probability assignments to projectors must be basis-independent when the projectors themselves are identical.
 
-This is not a physical assumption about measurement apparatus. It is a logical requirement from L₁: if the representational vehicle determinately characterizes the physical situation, then probability assignments that vary with mere representational choice would violate that determinacy. The vehicle would fail to pick out a determinate probability structure.
+This is not a physical assumption about measurement apparatus. It is a logical requirement from $L_1$: if the representational vehicle determinately characterizes the physical situation, then probability assignments that vary with mere representational choice would violate that determinacy. The vehicle would fail to pick out a determinate probability structure.
 
 ### 4.3 From Vehicle-Invariance to Additivity
 
 Vehicle-invariance immediately generates the additivity constraint.
 
-Consider a measurement with outcomes {φ₁, φ₂, φ₃}. We can describe the event "outcome is φ₁ or φ₂" in two equivalent ways:
+Consider a measurement with outcomes {$\phi_1$, $\phi_2$, $\phi_3$}. We can describe the event "outcome is $\phi_1$ or $\phi_2$" in two equivalent ways:
 
-**Description 1:** Treat the event as a single composite outcome E = {φ₁, φ₂}.
+**Description 1:** Treat the event as a single composite outcome E = {$\phi_1$, $\phi_2$}.
 
-**Description 2:** Treat the event as the disjunction of two separate outcomes φ₁ and φ₂.
+**Description 2:** Treat the event as the disjunction of two separate outcomes $\phi_1$ and $\phi_2$.
 
 Vehicle-invariance requires these assign the same probability:
 
@@ -392,7 +392,7 @@ $$P(E|\psi) = P(\phi_1|\psi) + P(\phi_2|\psi)$$
 
 This is additivity: the probability of a disjoint union of outcomes equals the sum of individual probabilities.
 
-**Key point:** Additivity is not assumed as a probability axiom. It is derived from vehicle-invariance. The representational vehicle must assign the same weight to an event regardless of whether we describe it as "composite outcome E" or "φ₁ or φ₂."
+**Key point:** Additivity is not assumed as a probability axiom. It is derived from vehicle-invariance. The representational vehicle must assign the same weight to an event regardless of whether we describe it as "composite outcome E" or "$\phi_1$ or $\phi_2$."
 
 ### 4.4 From Vehicle-Invariance to Non-Contextuality
 
@@ -400,7 +400,7 @@ Vehicle-invariance also generates non-contextuality of the probability measure.
 
 Consider a two-dimensional system (qubit). We can measure in the computational basis {|0⟩, |1⟩} or in the Hadamard basis {|+⟩, |−⟩}. Both are valid measurement contexts for the same system.
 
-Now consider a specific outcome—say, the projector P₀ = |0⟩⟨0|. This projector can be expressed in multiple bases:
+Now consider a specific outcome—say, the projector $P_0$ = |0⟩⟨0|. This projector can be expressed in multiple bases:
 
 $$P_0 = |0\rangle\langle 0| = \frac{1}{2}(|+\rangle\langle +| + |-\rangle\langle -|) + \frac{1}{2}(|+\rangle\langle -| + |-\rangle\langle +|)$$
 
@@ -418,7 +418,7 @@ This is non-contextuality: the probability assigned to a projector cannot depend
 
 We now have two constraints derived from vehicle-invariance:
 
-1. **Additivity:** For disjoint outcomes, P(E₁ ∪ E₂) = P(E₁) + P(E₂)
+1. **Additivity:** For disjoint outcomes, P($E_1$ ∪ $E_2$) = P($E_1$) + P($E_2$)
 2. **Non-contextuality:** Projector weights independent of basis embedding
 
 Gleason's theorem (1957) proves that in Hilbert spaces of dimension ≥ 3, any probability measure satisfying these two constraints must have the form:
@@ -435,7 +435,7 @@ This is the Born rule. The |ψ|² form is the unique probability measure satisfy
 
 **What Gleason's theorem does:** It proves uniqueness. Given additivity and non-contextuality, the Born rule is the only possibility (in dimension ≥ 3).
 
-**What LRT contributes:** The justification for additivity and non-contextuality. These are not independent probability axioms but consequences of L₁ (Determinate Identity) applied to representational vehicles. The Born rule is derived, not postulated.
+**What LRT contributes:** The justification for additivity and non-contextuality. These are not independent probability axioms but consequences of $L_1$ (Determinate Identity) applied to representational vehicles. The Born rule is derived, not postulated.
 
 ### 4.6 The Dimension-2 Case
 
@@ -455,7 +455,7 @@ These constraints, combined with vehicle-invariance, uniquely determine the |ψ|
 
 The Born rule derivation reveals its physical meaning. The rule is not an independent postulate about measurement but a consequence of requiring that:
 
-1. **Quantum states are determinate vehicles** (L₁ applied to representation)
+1. **Quantum states are determinate vehicles** ($L_1$ applied to representation)
 2. **Vehicles encode probability structure** (outcomes are L-triad admissible but which actualizes is probabilistic)
 3. **Probability assignments are vehicle-invariant** (don't vary with representational choice)
 
@@ -465,9 +465,9 @@ The |⟨φ|ψ⟩|² form emerges as the unique way to assign probabilities that 
 
 **First, from inner product structure.** The Born rule uses the inner product ⟨φ|ψ⟩, which encodes distinguishability structure (technical companion, §3.3). The squared magnitude |⟨φ|ψ⟩|² converts distinguishability (which can be negative/complex-valued) into probability (which must be real and non-negative).
 
-**Second, from normalization.** For state ψ expanded in basis {φᵢ}:
+**Second, from normalization.** For state ψ expanded in basis {$\phi_i$}:
 $$|\psi\rangle = \sum_i c_i |\phi_i\rangle$$
-Normalization requires ⟨ψ|ψ⟩ = 1, giving Σᵢ|cᵢ|² = 1. This matches probability normalization ΣᵢP(φᵢ|ψ) = 1 precisely when P(φᵢ|ψ) = |cᵢ|².
+Normalization requires ⟨ψ|ψ⟩ = 1, giving $\Sigma_i$|$c_i$|² = 1. This matches probability normalization $\Sigma_i$P($\phi_i$|ψ) = 1 precisely when P($\phi_i$|ψ) = |$c_i$|².
 
 **Third, from Gleason's uniqueness.** Given additivity and non-contextuality, the exponent 2 is not chosen but forced. Any other exponent would violate one of these constraints.
 
@@ -477,11 +477,11 @@ The Born rule is not a brute fact about quantum mechanics but the unique probabi
 
 The LRT derivation of the Born rule accomplishes three things:
 
-**First, reduces postulates.** Standard quantum mechanics postulates the Born rule independently. LRT derives it from L₁ (Determinate Identity) applied to representational vehicles. One fewer independent axiom.
+**First, reduces postulates.** Standard quantum mechanics postulates the Born rule independently. LRT derives it from $L_1$ (Determinate Identity) applied to representational vehicles. One fewer independent axiom.
 
 **Second, explains the form.** Why |ψ|² rather than |ψ|, |ψ|³, or some other function? The derivation shows: because |ψ|² is the unique form satisfying vehicle-invariance constraints. The form is not arbitrary.
 
-**Third, connects logic to measurement.** The Born rule is the bridge between logical constraints (L-triad admissibility of outcomes) and empirical statistics (frequencies of measurement results). The derivation shows this bridge is not conventional but forced by L₁.
+**Third, connects logic to measurement.** The Born rule is the bridge between logical constraints (L-triad admissibility of outcomes) and empirical statistics (frequencies of measurement results). The derivation shows this bridge is not conventional but forced by $L_1$.
 
 **Scope limitation:** This derivation assumes Hilbert space structure. The companion technical paper shows that Hilbert space itself follows from distinguishability plus continuity plus local tomography. The complete derivation chain is:
 
@@ -489,9 +489,9 @@ $$\text{L-triad} \to \text{Hilbert space} \to \text{Born rule} \to \text{measure
 
 Each arrow is a derivation, not a postulate. The framework is closed: it generates its own measurement predictions from logical constraints.
 
-![Derivation Chain: L₃ to Born Rule](figures/LRT-flowchart.png)
+![Derivation Chain: $L_3$ to Born Rule](figures/LRT-flowchart.png)
 
-**Figure 1.** The derivation chain from L₃ through vehicle-invariance to the Born rule. Each step is either a logical entailment or relies on established mathematical results (Gleason's theorem).
+**Figure 1.** The derivation chain from $L_3$ through vehicle-invariance to the Born rule. Each step is either a logical entailment or relies on established mathematical results (Gleason's theorem).
 
 ### 4.9 Comparison with Standard Approaches
 
@@ -502,7 +502,7 @@ Each arrow is a derivation, not a postulate. The framework is closed: it generat
 | Bohmian | Emergent | Quantum equilibrium (conditional) |
 | GRW | Modified | Stochastic collapse postulate |
 | Relational QM | Relational | Perspective-dependent |
-| **LRT** | **Derived** | **Vehicle-invariance (L₁)** |
+| **LRT** | **Derived** | **Vehicle-invariance ($L_1$)** |
 
 The LRT derivation is rigorous (using Gleason's theorem), unconditional (not dependent on equilibrium assumptions), and grounded in logical constraints (not decision theory or perspective).
 
@@ -514,7 +514,7 @@ The LRT derivation is rigorous (using Gleason's theorem), unconditional (not dep
 
 ### 5.1 "This Is Just Semantic Relabeling"
 
-**Objection.** You define I∞ and $A_\Omega$, observe that physics uses L-triad language, and declare victory. But all you have done is relabel "measurement outcomes" as "$A_\Omega$ instantiations" and "quantum states" as "vehicles in I∞." This is circular: you define the constraint-class to match observed physics, then claim to have explained why physics has that structure.
+**Objection.** You define $I_\infty$ and $A_\Omega$, observe that physics uses L-triad language, and declare victory. But all you have done is relabel "measurement outcomes" as "$A_\Omega$ instantiations" and "quantum states" as "vehicles in $I_\infty$." This is circular: you define the constraint-class to match observed physics, then claim to have explained why physics has that structure.
 
 **Reply.** The objection confuses two questions: (1) whether $A_\Omega$ exists as a mathematical definition, and (2) whether that definition does explanatory work.
 
@@ -534,7 +534,7 @@ A semantic relabeling would leave all structure unexplained. LRT derives structu
 
 **Non-observation:** Despite conceivability, physical reality never produces L-triad violations at the record level. No detector has ever simultaneously fired and not-fired. No measurement has yielded both A and ¬A. This universal conformity requires explanation.
 
-**Mathematical consequences:** Treating the L-triad as a boundary condition on instantiation restricts mathematical structure. Vehicle-invariance (from L₁) forces Born-rule probability. Non-Boolean representational structure (from L₃ on vehicles vs. L₃ on records) requires complex Hilbert space. Excluded Middle on outcomes constrains correlation bounds (Tsirelson not PR-box). These are derivations, not tautologies.
+**Mathematical consequences:** Treating the L-triad as a boundary condition on instantiation restricts mathematical structure. Vehicle-invariance (from $L_1$) forces Born-rule probability. Non-Boolean representational structure (from $L_3$ on vehicles vs. $L_3$ on records) requires complex Hilbert space. Excluded Middle on outcomes constrains correlation bounds (Tsirelson not PR-box). These are derivations, not tautologies.
 
 **Comparison:** Consider Lorentz invariance. One could object: "Of course physics is Lorentz invariant—we define physical law to be the same in all frames." But treating Lorentz invariance as a real constraint yields Maxwell equations, relativistic energy-momentum, time dilation. Similarly, treating L-triad admissibility as a real constraint yields quantum structure. The mathematical consequences distinguish substantive constraints from semantic stipulations.
 
@@ -566,13 +566,13 @@ The appearance of circularity arises because quantum mechanics is the *output* o
 
 **Reply.** The objection conflates logical structure at different layers.
 
-**Quantum logic:** Describes the lattice of propositions about quantum states (vehicles in I∞). That lattice is indeed non-distributive. LRT does not deny this. What LRT requires is that the L-triad hold at the record level—measurement outcomes, not unmeasured vehicle-states. Every measurement outcome is either A or ¬A (Excluded Middle at record layer), never both A and ¬A (Non-Contradiction at record layer), and self-identical when instantiated (Identity at record layer).
+**Quantum logic:** Describes the lattice of propositions about quantum states (vehicles in $I_\infty$). That lattice is indeed non-distributive. LRT does not deny this. What LRT requires is that the L-triad hold at the record level—measurement outcomes, not unmeasured vehicle-states. Every measurement outcome is either A or ¬A (Excluded Middle at record layer), never both A and ¬A (Non-Contradiction at record layer), and self-identical when instantiated (Identity at record layer).
 
 The non-Boolean structure appears at the vehicle layer precisely because vehicles encode possibility-structure richer than Boolean actuality. Quantum logic is the logic of that richer structure. The L-triad governs the transition from vehicles to records, not the internal structure of vehicles themselves.
 
-**Paraconsistent logic:** Allows formal systems where contradictions do not entail explosion (anything follows). This is legitimate formal work. LRT's claim is empirical: physical instantiation never produces paraconsistent records. Show me a detector output that is both "triggered" and "not triggered" in the same respect. Paraconsistent logics are representable in I∞ (formal systems are representable configurations), but they do not describe instantiated records in $A_\Omega$.
+**Paraconsistent logic:** Allows formal systems where contradictions do not entail explosion (anything follows). This is legitimate formal work. LRT's claim is empirical: physical instantiation never produces paraconsistent records. Show me a detector output that is both "triggered" and "not triggered" in the same respect. Paraconsistent logics are representable in $I_\infty$ (formal systems are representable configurations), but they do not describe instantiated records in $A_\Omega$.
 
-**The key distinction:** I∞ contains formal representations of paraconsistent systems, quantum superpositions, and arbitrary mathematical structures. $A_\Omega$ contains only what can be instantiated as stable public record. The L-triad governs the boundary between these domains, not the internal logic of I∞ itself.
+**The key distinction:** $I_\infty$ contains formal representations of paraconsistent systems, quantum superpositions, and arbitrary mathematical structures. $A_\Omega$ contains only what can be instantiated as stable public record. The L-triad governs the boundary between these domains, not the internal logic of $I_\infty$ itself.
 
 ### 5.5 "Vehicle-Invariance Begs the Question"
 
@@ -582,7 +582,7 @@ The non-Boolean structure appears at the vehicle layer precisely because vehicle
 
 **The argument:** If a vehicle V determinately encodes the physical situation S, then V must pick out a unique probability structure over outcomes. If different mathematically equivalent descriptions of the same event yield different probability assignments, then V fails to determinately specify that probability structure. The vehicle would be indeterminate with respect to the very thing it is supposed to represent.
 
-This is a constraint from L₁ (Determinate Identity), not from quantum mechanics. It applies equally to classical probability: a classical distribution function determinately specifies outcome likelihoods, and those likelihoods do not change when we re-parametrize or change coordinates (so long as the event itself is unchanged).
+This is a constraint from $L_1$ (Determinate Identity), not from quantum mechanics. It applies equally to classical probability: a classical distribution function determinately specifies outcome likelihoods, and those likelihoods do not change when we re-parametrize or change coordinates (so long as the event itself is unchanged).
 
 **What makes quantum mechanics special:** The constraint interacts with interference structure in a distinctive way. Classical vehicles (real functions) can satisfy vehicle-invariance trivially because they represent events as set-unions. Quantum vehicles (complex amplitudes) satisfy vehicle-invariance non-trivially because they must encode interference while respecting additivity. That non-trivial satisfaction forces the Born rule.
 
@@ -615,9 +615,9 @@ The current development focuses on non-relativistic quantum mechanics. Extension
 
 **Lorentz covariance.** How do L-triad constraints interact with Lorentz transformations? The vehicle-invariance principle must generalize to include frame-independence: equivalent descriptions in different inertial frames must yield the same probability assignments.
 
-**Vacuum structure.** QFT's vacuum is not the "empty state" but a complex ground state with quantum fluctuations. How does this fit within the I∞/$A_\Omega$ framework? Conjecture: vacuum fluctuations are vehicle-layer structure (representable but not individually instantiated), while vacuum expectation values are record-layer observables (instantiated as measurement statistics).
+**Vacuum structure.** QFT's vacuum is not the "empty state" but a complex ground state with quantum fluctuations. How does this fit within the $I_\infty$/$A_\Omega$ framework? Conjecture: vacuum fluctuations are vehicle-layer structure (representable but not individually instantiated), while vacuum expectation values are record-layer observables (instantiated as measurement statistics).
 
-**Renormalization.** UV divergences in naive QFT calculations suggest a breakdown of naive state-space assumptions. Conjecture: renormalization is the process of restricting to vehicles that remain vehicle-invariant under scale transformations, ensuring L₁ compliance at all energy scales.
+**Renormalization.** UV divergences in naive QFT calculations suggest a breakdown of naive state-space assumptions. Conjecture: renormalization is the process of restricting to vehicles that remain vehicle-invariant under scale transformations, ensuring $L_1$ compliance at all energy scales.
 
 **Gauge structure.** Local gauge symmetry (U(1), SU(2), SU(3)) is central to the Standard Model. Does gauge structure emerge from vehicle-invariance requirements for field configurations, or is it an additional physical input? This is an open question with significant implications for whether LRT can address the Standard Model's structure.
 
@@ -647,7 +647,7 @@ Several predictions distinguish LRT from alternative frameworks:
 
 Three philosophical questions require deeper treatment:
 
-**Ontological status of I∞.** Is I∞ a Platonic realm, a formal construct, or something else? Current position: I∞ is a representational space with no independent ontological commitment beyond "configurations are mathematically specifiable." This needs precision.
+**Ontological status of $I_\infty$.** Is $I_\infty$ a Platonic realm, a formal construct, or something else? Current position: $I_\infty$ is a representational space with no independent ontological commitment beyond "configurations are mathematically specifiable." This needs precision.
 
 **Modal status of L-triad constraints.** The L-triad constraints are treated here as necessary conditions for physical instantiation, though the precise modal status (metaphysical vs. nomological necessity) is left open for further analysis. The framework demonstrates that treating these constraints as constitutive yields testable consequences; whether that constitutive role reflects metaphysical necessity or a deeper physical principle remains a question for philosophical development.
 
@@ -694,11 +694,11 @@ In Lakatosian terms: hard core violations require program abandonment or radical
 
 Logic Realism Theory offers a novel approach to quantum foundations: treating the Three Fundamental Laws of Logic as constraints on physical instantiation rather than merely on rational discourse. The framework derives quantum structure (complex Hilbert space, Born rule, measurement postulates) from logical constraints plus minimal physical inputs, transforming interpretive puzzles into structural necessities.
 
-**The core insight:** Physics proceeds because its outputs are L-triad shaped. This is not human convention but evidence that instantiation itself is logically constrained. Vehicle-invariance—the requirement that determinate representational vehicles assign probabilities independent of mathematical description—forces the Born rule as the unique probability measure compatible with interference and L₁ compliance.
+**The core insight:** Physics proceeds because its outputs are L-triad shaped. This is not human convention but evidence that instantiation itself is logically constrained. Vehicle-invariance—the requirement that determinate representational vehicles assign probabilities independent of mathematical description—forces the Born rule as the unique probability measure compatible with interference and $L_1$ compliance.
 
 **What this achieves:** LRT reduces quantum postulates (Born rule becomes theorem), explains quantum structure (why |ψ|² not |ψ|), and generates testable predictions (complex QM, derivable collapse parameters, correlation bounds). It reframes the measurement problem by distinguishing structural explanation (why definite at all) from mechanistic explanation (what process produces definiteness), addressing the first while leaving the second to empirical investigation.
 
-**What remains open:** The precise physical criterion marking the vehicle-to-record transition, the extension to quantum field theory and gravity, the modal status of L-triad constraints, and the ontological status of I∞. These are not gaps in the framework but opportunities for development within a well-defined research program.
+**What remains open:** The precise physical criterion marking the vehicle-to-record transition, the extension to quantum field theory and gravity, the modal status of L-triad constraints, and the ontological status of $I_\infty$. These are not gaps in the framework but opportunities for development within a well-defined research program.
 
 **The wager:** If the Three Fundamental Laws of Logic are constraints on physical instantiation, then quantum mechanics is not contingent but necessary—the unique stable interface between non-Boolean possibility and Boolean actuality. The evidence so far: universal L-triad conformity at the record level, Born rule as forced consequence, complex QM experimentally distinguished from real alternatives. The research program invites testing this wager against nature.
 
