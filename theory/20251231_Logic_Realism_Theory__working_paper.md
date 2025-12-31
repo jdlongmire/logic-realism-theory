@@ -77,6 +77,22 @@ Empirical warrant for this claim comes from the complete absence of counterexamp
 
 Even readers who resist this direct ontological claim must accept a weaker transcendental version: any physical reality that admits determinate description, measurement, or record must satisfy Determinate Identity. The minimal precondition that makes determinate thought possible is also the minimal precondition that makes a determinate physical reality possible. If physical reality lacked Determinate Identity altogether, there would be no determinate configurations to instantiate, no determinate outcomes to measure, and no determinate records to read. This weaker claim suffices for the derivation that follows. But the intended interpretation is stronger: Determinate Identity is a constraint on being, not merely on knowability.
 
+---
+
+**Definition (Two readings of Determinate Identity).**
+
+> **Id-Strong:** To lack determinate identity is to be nothing. Indeterminate identity is not a borderline case of existence but a failure to exist at all. There is no ontological category of "indeterminate things"—only things (which have determinate identity) and nothing.
+>
+> **Id-Weak:** Any physical reality that admits determinate description, measurement, or record must satisfy Determinate Identity at least at the level of those descriptions, measurements, and records. This is a transcendental condition on the possibility of determinable physics.
+
+**Which reading does the derivation require?** The Born-rule chain (§4 and Appendices A, D) requires only Id-Weak. The key constraint is that macroscopic records have determinate identity: if the pointer reads "spin up," it determinately reads "spin up," not "spin up ∨ spin down." This suffices to force vehicle-weight invariance and, via Gleason's theorem, the Born rule.
+
+Id-Strong is the intended ontological thesis and strengthens the interpretation, but the mathematics does not require it. A reader may accept Id-Weak as a working hypothesis, run the derivation, and postpone judgment on Id-Strong.
+
+**Scope of Id.** Determinate Identity applies to instantiated physical vehicles and record-bearing systems. It does *not* require classical value definiteness for all counterfactual micro-observables. A superposition of spin states does not violate Id; what would violate Id is a macroscopic pointer that both reads "up" and reads "down" in the same respect at the same time. The constraint bites where instantiation bites—at the vehicle level—not at the level of every hypothetical measurement outcome.
+
+---
+
 ### 2.3 The Ontological Priority of Parts
 
 If Determinate Identity holds non-vacuously for all configurations, then identity must "bottom out" somewhere. The question is: where? Theorem D.1 (Appendix D) analyzes this question and shows that purely relational identity structures are excluded. But one apparent escape remains: global holism, the view that only the universe as a whole has intrinsic identity, while all subsystems have identity only derivatively.
