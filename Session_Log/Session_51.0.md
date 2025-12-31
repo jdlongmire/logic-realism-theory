@@ -232,4 +232,18 @@ bbcdb51 Add process metaphysics engagement to §2.3
 
 ---
 
-## Interaction Count: 14
+## Position Paper
+
+User added: `theory/20251231_Logic_Realism_Theory_Position_Paper.md`
+
+Comprehensive high-level overview of LRT (~770 lines):
+- I∞/A_Ω framework and L-triad as ontological constraint
+- Vehicle/content distinction applied to QM
+- Born rule derivation sketch from vehicle-invariance
+- Popper/Lakatos scientific status framing
+- Research program: QFT, GR, testable predictions
+- Six major objections addressed
+
+---
+
+## Interaction Count: 15
