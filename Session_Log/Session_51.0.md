@@ -133,5 +133,6 @@ The only input is L₃. Everything else is entailment.
 ## Git Log
 
 ```
+0ed8b8b Update README for tightened derivation chain
 66bc12a Major refactor: CDP elimination and tightened derivation chain
 ```

@@ -16,7 +16,7 @@
 
 ## Core Paper
 
-**[Logic Realism and the Born Rule: Determinate Identity as Ontological Constraint on Physical Reality](theory/20251229_Logic_Realism_Theory__working_paper.md)**
+**[Logic Realism and the Born Rule: Determinate Identity as Ontological Constraint on Physical Reality](theory/20251231_Logic_Realism_Theory__working_paper.md)**
 
 The central document of this repository. It derives the Born rule and complex Hilbert space from the classical laws of logic (L₃) understood as ontological constraints on physical instantiation.
 
@@ -85,11 +85,10 @@ Physical reality is not a neutral arena onto which logic is later imposed. It is
 
 ```
 theory/
-├── 20251229_Logic_Realism_Theory__working_paper.md  # CORE PAPER
+├── 20251231_Logic_Realism_Theory__working_paper.md  # CORE PAPER
+├── 20251230-LRT-Refactor.md         # Refactor reasoning (CDP elimination)
 ├── LRT_Extended/                    # Development versions (v5-v8)
 ├── supplementary/                   # Working papers
-│   ├── Scale_Law_Boolean_Actualization.md
-│   └── IIS_LRT_Three_Stage_Framework.md
 └── archive/                         # Historical papers
 
 lean/                                # Lean 4 formalization
