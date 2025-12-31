@@ -489,6 +489,10 @@ $$\text{L-triad} \to \text{Hilbert space} \to \text{Born rule} \to \text{measure
 
 Each arrow is a derivation, not a postulate. The framework is closed: it generates its own measurement predictions from logical constraints.
 
+![Derivation Chain: L₃ to Born Rule](figures/LRT-flowchart.png)
+
+**Figure 1.** The derivation chain from L₃ through vehicle-invariance to the Born rule. Each step is either a logical entailment or relies on established mathematical results (Gleason's theorem).
+
 ### 4.9 Comparison with Standard Approaches
 
 | Approach | Born Rule Status | Justification |
