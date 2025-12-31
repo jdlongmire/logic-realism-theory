@@ -23,7 +23,7 @@ Both papers received:
 |---|------|--------|
 | 1 | Em dash sweep all 5 papers | ✅ Complete |
 | 2 | Commit changes | ✅ Complete |
-| 3 | Add acknowledgments to remaining 3 papers | Pending |
+| 3 | Add acknowledgments to remaining 3 papers | ✅ Complete |
 | 4 | Zenodo community creation | Pending |
 | 5 | Upload papers to Zenodo | Pending |
 
@@ -45,4 +45,4 @@ Papers swept:
 
 ---
 
-**Interaction Count**: 4
+**Interaction Count**: 5
