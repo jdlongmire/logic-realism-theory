@@ -47,6 +47,8 @@ Complex Hilbert Space — unique arena
 Born Rule — unique measure (Gleason/Busch)
 ```
 
+![Derivation Chain](theory/figures/LRT-flowchart.png)
+
 **Key revision**: CDP and M₁ are now consequences of L₁, not separate inputs. The chain is as tight as the mathematics permits.
 
 ### Falsification Criteria (§6.1)

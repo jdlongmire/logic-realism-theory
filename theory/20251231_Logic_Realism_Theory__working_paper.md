@@ -33,6 +33,10 @@ The central claim is that Determinate Identity provides a natural answer. If a p
 
 The paper proceeds as follows. Section 2 develops the logic-realist framework, connecting Tahko's metaphysical position to a concrete admissibility structure on configurations. Section 3 bridges this framework to quantum theory, characterizing quantum states as representations of admissible structure and defining admissible continuations for measurement outcomes. Section 4 presents the core argument: Determinate Identity motivates the measure assumptions that yield the Born rule via Gleason's theorem. Section 5 addresses objections. Section 6 briefly indicates further applications. Section 7 concludes.
 
+![Derivation Chain: L₃ to Born Rule](figures/LRT-flowchart.png)
+
+**Figure 1.** The derivation chain from L₃ (Determinate Identity, Non-Contradiction, Excluded Middle) to the Born rule. Each step is either a logical entailment or relies on Gleason's theorem (a mathematical result). No empirical premises enter until the application to specific physical systems.
+
 ---
 
 ## 2. Logic Realism and Admissibility
