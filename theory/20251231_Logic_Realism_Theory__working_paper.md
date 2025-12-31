@@ -181,7 +181,50 @@ This is a failure of Determinate Identity at the level of the vehicle, not merel
 
 An instrumentalist who treats probabilities as purely predictive tools may resist this framing. But the instrumentalist thereby abandons the project of giving an ontological account of quantum probabilities. For those who seek such an account, the measure over admissible continuations must be a feature of the physical situation (part of the vehicle, not the content) and Determinate Identity constrains it accordingly.
 
-### 4.2 Excluded Middle, Quantum Logic, and Macroscopic Outcomes
+### 4.2 Record-Robustness and Vehicle Dispositions
+
+The previous section argued that the measure belongs to the vehicle. A sophisticated critic might respond: "That is a substantive metaphysical commitment, not forced by L₃ in the same deductive way that the anti-holism argument (Section 2.3) rules out global holism. Why can't I simply deny that dispositions inhere in the vehicle?"
+
+This section provides a stronger grounding for vehicle-weight objectivity by showing that it follows from what we already need for stable macroscopic records.
+
+**Lemma 4.2.1 (Dispositional continuity).** If macroscopic records are objective and counterfactually stable under variation of irrelevant subsystems, then the pre-record physical state must have objective modal structure relative to the record-alternatives.
+
+*Proof.* Consider a measurement that produces a stable macroscopic record R (a pointer position, an ink pattern, a digital readout). By "stable" we mean: (1) R is determinately what it is (satisfies L₁), and (2) R's identity persists under variation of irrelevant subsystems—changing the state of a distant galaxy does not alter whether this pointer reads "up" or "down."
+
+This stability is itself a modal fact. The record is not merely actual; it is counterfactually robust. There is a fact of the matter about what the record would be under various irrelevant perturbations.
+
+Now consider the physical state immediately prior to record formation. Call this the pre-record state S. The question is: does S have objective modal structure relative to the possible records?
+
+Suppose not. Suppose S has no objective disposition toward any particular distribution of record-outcomes. Then:
+
+1. The transition from S to R introduces modal structure ex nihilo.
+2. There is no physical fact about S that explains why R rather than R' was produced.
+3. The stability of R is not grounded in anything about S.
+
+But this creates an identity discontinuity. The record R satisfies L₁ (it is determinately what it is). Yet the state S from which R emerged has no determinate modal profile regarding R. The transition from "no determinate disposition" to "determinate record" is not grounded in any physical transition—it is a brute emergence of determinacy from indeterminacy.
+
+This violates the very principle that secures record identity. If we allow determinacy to emerge without grounding, we lose the resources to explain why records are stable in the first place. The same identity constraint that makes R determinate must apply to S's disposition toward R.
+
+Therefore: if records are objective and stable, then pre-record states must have objective modal structure (dispositions) toward record-alternatives. $\square$
+
+**Corollary.** Vehicle-weight objectivity is not an additional metaphysical posit layered onto L₃. It is the same constraint that secures record stability, applied to the pre-record state. To deny it is to introduce an inexplicable discontinuity in the conditions of identity.
+
+**The calibration argument.** An additional consideration supports vehicle-weight objectivity: the intersubjective convergence of empirical frequencies.
+
+Consider independent agents with different prior beliefs, different theoretical frameworks, and different choices of mathematical representation. When they perform the same preparation-measurement procedure repeatedly, they converge on the same stable empirical frequencies—frequencies that match the Born-rule predictions.
+
+If the measure were merely agent-relative credence (as QBists maintain), this convergence would be a remarkable coincidence. Each agent's credences are their own; there is no objective fact constraining them to agree. Yet they do agree, not because they coordinate, but because they are all tracking the same preparation-level physical fact.
+
+The best explanation is that the preparation-level state has an objective weight toward each outcome—a weight that all agents' credences converge upon through repeated interaction with the same physical situation. This is not a proof, but it is a "no-miracles" argument anchored in actual scientific practice. Intersubjective convergence is expected if the measure is objective; it is miraculous if the measure is merely subjective.
+
+**Summary.** The claim that the Born measure belongs to the vehicle (is an objective feature of the physical situation) is not a free-floating metaphysical add-on. It follows from:
+
+1. The identity conditions required for stable macroscopic records (Lemma 4.2.1).
+2. The intersubjective convergence of empirical frequencies across independent agents.
+
+Both considerations show that vehicle-weight objectivity is cheaper than the alternatives: it uses only the resources already committed to by anyone who accepts determinate records.
+
+### 4.3 Excluded Middle, Quantum Logic, and Macroscopic Outcomes
 
 A clarification is needed regarding Excluded Middle in the quantum context. Quantum foundations includes extensive work on quantum logic, POVMs, unsharp observables, and many-valued semantics. Does EM apply to quantum systems?
 
@@ -191,7 +234,7 @@ When measurement occurs and macroscopic identity becomes engaged, the admissible
 
 This distinction allows LRT to maintain EM as an ontological constraint while acknowledging that quantum systems before measurement do not satisfy classical bivalence for all observables. The constraint applies to physical instantiation, not to the truth-values of counterfactual measurement claims.
 
-### 4.3 Illustration: The Qubit Case
+### 4.4 Illustration: The Qubit Case
 
 Consider a qubit with real coefficients:
 
@@ -213,7 +256,7 @@ No. The dimension-2 pathology reflects the poverty of the two-dimensional projec
 
 Put differently: Determinate Identity is a global constraint on physical systems. The dimension-2 loophole exists only for mathematically idealized systems that cannot be physically instantiated in isolation. For any system embedded in a larger arena (which is to say, for any actual physical system) the constraint bites. This global embedding requirement is itself a consequence of the identity-preserving composition that Appendix B sketches: if subsystem identity must cohere with global identity under arbitrary decomposition, then the measure constraints propagate from the global arena (dimension $\geq 3$) to every embedded subsystem.
 
-### 4.4 Connecting to Gleason and Busch
+### 4.5 Connecting to Gleason and Busch
 
 In Hilbert spaces of dimension $\geq 3$, Gleason's theorem (1957) establishes that any non-contextual probability measure on projections has the form:
 
@@ -242,7 +285,7 @@ This is the Born rule.
 
 This embeds quantum probabilities in a Tahko-style logic-realist metaphysics. The Born rule is not a brute postulate about nature; it is a consequence of what it means for physical systems to be determinately what they are.
 
-### 4.5 Bell Non-Locality as Global Identity Constraint
+### 4.6 Bell Non-Locality as Global Identity Constraint
 
 Bell-type correlations pose an apparent puzzle: spacelike-separated measurements exhibit correlations that cannot be reproduced by any locally factorizable model. The standard narrative frames this as a tension between locality and realism.
 
@@ -262,7 +305,7 @@ Bell's theorem can thus be restated: no theory can simultaneously satisfy (1) de
 
 Bell violations are experimental probes of identity structure, not spacetime causation. Appendix C develops this analysis in full detail.
 
-### 4.6 The Measure as Vehicle: A Strict Trilemma
+### 4.7 The Measure as Vehicle: A Strict Trilemma
 
 The quantum state $|\psi\rangle$ is a physical vehicle: a determinate configuration representing admissible outcome-histories (content). The measure $\mu$ over those histories is the objective disposition of the vehicle: how the physical situation is poised toward the outcomes.
 
@@ -282,6 +325,33 @@ Any account that denies the measure belongs to the vehicle faces the following t
 7. Therefore, the measure must belong to the vehicle.
 
 The argument is exhaustive. Horn (a) sacrifices physical determinacy. Horn (b) sacrifices explanatory power. Horn (c) surrenders the denial.
+
+**Expanded attack on Horn (a): No objective disposition**
+
+Horn (a) claims that no objective disposition exists—the physical situation has no determinate poise toward outcomes. This horn is often taken by QBists and some Everettians (who deny pre-branching objective probabilities).
+
+But Horn (a) collapses the vehicle/content distinction that makes the Born rule intelligible in the first place. If the physical vehicle has no objective disposition toward outcomes, then the same vehicle can be paired with multiple incompatible measures without any fact of the matter determining which is correct. This is representational underdetermination at the vehicle level—precisely what Determinate Identity forbids.
+
+Furthermore, by Lemma 4.2.1 (Dispositional continuity), if macroscopic records are objective and stable, then the pre-record state must have objective modal structure. Horn (a) denies this modal structure. Therefore, Horn (a) must either:
+
+1. Deny that records are objective (contradicting the very data that physics aims to explain), or
+2. Accept a brute emergence of record-determinacy from dispositional-indeterminacy (an inexplicable discontinuity in the conditions of identity).
+
+Neither option is acceptable within a framework committed to Determinate Identity. Horn (a) is not merely costly; it is internally inconsistent with the identity conditions required for macroscopic physics.
+
+**Expanded attack on Horn (c): Disposition exists but not in the vehicle**
+
+Horn (c) accepts that a Born-shaped objective disposition exists, but denies that it is a feature of the physical vehicle. Where, then, does it reside?
+
+The bearer principle in metaphysics holds that properties must be properties *of* something. Free-floating properties without bearers are category errors. If the disposition is real but not in the vehicle, it must be in:
+
+1. *The content* (what the state represents): But content is abstract; it cannot bear causal dispositions.
+2. *A separate ontological layer* (e.g., propensities, chance facts): But this multiplies primitives without explanatory gain. Why does this layer track the Born rule? The question resurfaces at a higher level.
+3. *The agent* (as in QBism): But then we are back to Horn (a) for the physical world itself.
+
+Moreover, if the disposition is objective and Born-shaped, and it is causally relevant to which outcomes occur, then it is doing the work that vehicle properties normally do. To say it is "not in the vehicle" while granting its objectivity and causal relevance is to use "vehicle" in a gerrymandered way that excludes by stipulation what should be included.
+
+Horn (c) either collapses into Horn (a) (no physical vehicle property), introduces unexplained primitives (violating parsimony), or effectively concedes that the disposition belongs to the vehicle (surrendering the denial).
 
 **Application to major rivals**
 
