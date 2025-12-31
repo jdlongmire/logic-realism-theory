@@ -372,11 +372,19 @@ This research was conducted independently. I thank the related online communitie
 
 Gödel, K. (1949). An example of a new type of cosmological solutions of Einstein's field equations of gravitation. *Reviews of Modern Physics*, 21(3), 447–450.
 
+Hawking, S. W. (1975). Particle creation by black holes. *Communications in Mathematical Physics*, 43(3), 199–220.
+
 Hawking, S. W. (1992). Chronology protection conjecture. *Physical Review D*, 46(2), 603–611.
+
+Malament, D. B. (1977). The class of continuous timelike curves determines the topology of spacetime. *Journal of Mathematical Physics*, 18(7), 1399–1404.
 
 Penrose, R. (1965). Gravitational collapse and space-time singularities. *Physical Review Letters*, 14(3), 57–59.
 
+Rovelli, C. (2004). *Quantum Gravity*. Cambridge University Press.
+
 Sorkin, R. D. (2003). Causal sets: Discrete gravity. In *Lectures on Quantum Gravity* (pp. 305–327). Springer.
+
+Wald, R. M. (1984). *General Relativity*. University of Chicago Press.
 
 ---
 

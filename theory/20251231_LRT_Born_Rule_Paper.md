@@ -223,13 +223,19 @@ This research was conducted independently. I thank the related online communitie
 
 Busch, P. (2003). Quantum states and generalized observables: A simple proof of Gleason's theorem. *Physical Review Letters*, 91(12), 120403.
 
+Caves, C. M., Fuchs, C. A., & Schack, R. (2002). Quantum probabilities as Bayesian probabilities. *Physical Review A*, 65(2), 022305.
+
 Dixmier, J. (1981). *Von Neumann Algebras*. North-Holland.
 
 Gleason, A. M. (1957). Measures on the closed subspaces of a Hilbert space. *Journal of Mathematics and Mechanics*, 6(6), 885–893.
 
 Masanes, L., & Müller, M. P. (2011). A derivation of quantum theory from physical requirements. *New Journal of Physics*, 13(6), 063001.
 
+Schlosshauer, M. (2007). *Decoherence and the Quantum-to-Classical Transition*. Springer.
+
 Tahko, T. E. (2009). The law of non-contradiction as a metaphysical principle. *Australasian Journal of Logic*, 7, 32–47.
+
+Zurek, W. H. (2003). Decoherence, einselection, and the quantum origins of the classical. *Reviews of Modern Physics*, 75(3), 715–775.
 
 ---
 

@@ -431,6 +431,8 @@ This research was conducted independently. I thank the related online communitie
 
 ## References
 
+Bell, J. S. (1964). On the Einstein Podolsky Rosen paradox. *Physics Physique Fizika*, 1(3), 195–200.
+
 Chiribella, G., D'Ariano, G. M., & Perinotti, P. (2011). Informational derivation of quantum theory. *Physical Review A*, 84(1), 012311.
 
 Hardy, L. (2001). Quantum theory from five reasonable axioms. arXiv:quant-ph/0101012.
@@ -438,6 +440,10 @@ Hardy, L. (2001). Quantum theory from five reasonable axioms. arXiv:quant-ph/010
 Masanes, L., & Müller, M. P. (2011). A derivation of quantum theory from physical requirements. *New Journal of Physics*, 13(6), 063001.
 
 Pawłowski, M., et al. (2009). Information causality as a physical principle. *Nature*, 461(7267), 1101–1104.
+
+Popescu, S., & Rohrlich, D. (1994). Quantum nonlocality as an axiom. *Foundations of Physics*, 24(3), 379–385.
+
+Renou, M.-O., et al. (2021). Quantum theory based on real numbers can be experimentally falsified. *Nature*, 600(7890), 625–629.
 
 Tsirelson, B. S. (1980). Quantum generalizations of Bell's inequality. *Letters in Mathematical Physics*, 4(2), 93–100.
 

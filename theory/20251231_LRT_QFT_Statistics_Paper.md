@@ -446,11 +446,15 @@ This research was conducted independently. I thank the related online communitie
 
 Duck, I., and Sudarshan, E. C. G. (1997). *Pauli and the Spin-Statistics Theorem*. World Scientific.
 
+French, S., and Redhead, M. (1988). Quantum physics and the identity of indiscernibles. *British Journal for the Philosophy of Science*, 39(2), 233–246.
+
 Longmire, J. D. (2025). Logic Realism and the Born Rule: Determinate Identity as Ontological Constraint on Physical Reality. Working paper. https://github.com/jdlongmire/logic-realism-theory
 
 Masanes, L., and Müller, M. P. (2011). A Derivation of Quantum Theory from Physical Requirements. *New Journal of Physics*, 13, 063001.
 
 Messiah, A. M. L., and Greenberg, O. W. (1964). Symmetrization Postulate and Its Experimental Foundation. *Physical Review*, 136(1B), B248–B267.
+
+Muller, F. A., and Saunders, S. (2008). Discerning fermions. *British Journal for the Philosophy of Science*, 59(3), 499–548.
 
 Pauli, W. (1940). The Connection Between Spin and Statistics. *Physical Review*, 58(8), 716–722.
 
