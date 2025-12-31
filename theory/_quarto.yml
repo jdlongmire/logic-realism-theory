@@ -1,0 +1,28 @@
+project:
+  type: default
+  output-dir: pdf
+
+format:
+  pdf:
+    documentclass: article
+    papersize: letter
+    geometry:
+      - margin=1in
+    fontsize: 11pt
+    linestretch: 1.15
+    colorlinks: true
+    linkcolor: blue
+    urlcolor: blue
+    toc: false
+    number-sections: true
+    pdf-engine: xelatex
+    mainfont: "Latin Modern Roman"
+    mathfont: "Latin Modern Math"
+
+author:
+  - name: James D. Longmire
+    orcid: 0009-0009-1383-7698
+    email: jdlongmire@outlook.com
+
+metadata:
+  keywords: [logic realism, quantum foundations, Born rule, Hilbert space, determinate identity]
