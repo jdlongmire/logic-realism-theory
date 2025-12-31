@@ -1,12 +1,12 @@
 ---
 title: "The Born Rule from Determinate Identity: A Logic-Realist Derivation"
-subtitle: "Working Paper — Version 0.1"
+subtitle: "Working Paper – Version 0.1"
 author:
   - name: James D. Longmire
     orcid: 0009-0009-1383-7698
     email: jdlongmire@outlook.com
 abstract: |
-  The Born rule assigns probability $|\langle\phi|\psi\rangle|^2$ to obtaining outcome $|\phi\rangle$ given state $|\psi\rangle$. While Gleason's theorem (1957) establishes this as the unique probability measure satisfying certain additivity and non-contextuality conditions, the question of *why* physical systems should satisfy those conditions remains open. This paper argues that Determinate Identity — the requirement that physical systems be determinately what they are, independent of description — provides the answer.
+  The Born rule assigns probability $|\langle\phi|\psi\rangle|^2$ to obtaining outcome $|\phi\rangle$ given state $|\psi\rangle$. While Gleason's theorem (1957) establishes this as the unique probability measure satisfying certain additivity and non-contextuality conditions, the question of *why* physical systems should satisfy those conditions remains open. This paper argues that Determinate Identity (the requirement that physical systems be determinately what they are, independent of description) provides the answer.
 
   The core argument: the measure over admissible measurement outcomes is a feature of the physical situation (vehicle), not merely a representational choice (content). If this measure varied with mathematical decomposition, the physical situation itself would be indeterminate, violating Determinate Identity. This constraint forces precisely the invariance conditions that Gleason's theorem requires. The Born rule thus emerges as the unique measure compatible with determinate physical identity.
 keywords: [Born rule, Determinate Identity, Gleason's theorem, quantum foundations, logic realism, vehicle-invariance]
@@ -16,7 +16,7 @@ keywords: [Born rule, Determinate Identity, Gleason's theorem, quantum foundatio
 
 Gleason's theorem shows that the Born rule is the unique probability measure on quantum projections satisfying additivity and non-contextuality. But why should physical probabilities satisfy these conditions? Standard quantum mechanics treats them as postulates; this paper derives them from a more fundamental principle.
 
-The central claim is that Determinate Identity — the requirement that any physical system is determinately what it is, independent of how it is described — constrains the measure over measurement outcomes. The measure belongs to the physical situation itself (what we call the *vehicle*), not to our representational choices. A measure that varied with basis choice would make the physical situation indeterminate, violating identity.
+The central claim is that Determinate Identity (the requirement that any physical system is determinately what it is, independent of how it is described) constrains the measure over measurement outcomes. The measure belongs to the physical situation itself (what we call the *vehicle*), not to our representational choices. A measure that varied with basis choice would make the physical situation indeterminate, violating identity.
 
 **Relation to companion papers.** This paper is part of the Logic Realism Theory (LRT) programme:
 
@@ -49,7 +49,7 @@ A representation has:
 - **Vehicle**: The physical structure doing the representing (brain state, quantum state, measurement apparatus)
 - **Content**: What is represented (outcome possibilities, measurement alternatives)
 
-Vehicles must satisfy $L_3$. Contents need not — we can represent contradictions without instantiating them.
+Vehicles must satisfy $L_3$. Contents need not: we can represent contradictions without instantiating them.
 
 **The key insight**: The measure over measurement outcomes is part of the *vehicle*, not the content. It characterizes how the physical situation is objectively poised toward outcomes, not how we choose to describe it.
 
@@ -67,7 +67,7 @@ The Born rule derivation requires only Id-Weak. The measure over macroscopic out
 
 ### 3.1 Superposition as Representational
 
-A quantum state $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$ does not represent a system that is "both 0 and 1." The state describes admissible structure — what outcomes are possible given the preparation. The system has the determinate property of *being in state* $|\psi\rangle$. This is not a violation of Determinate Identity; it is a specific physical configuration.
+A quantum state $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$ does not represent a system that is "both 0 and 1." The state describes admissible structure: what outcomes are possible given the preparation. The system has the determinate property of *being in state* $|\psi\rangle$. This is not a violation of Determinate Identity; it is a specific physical configuration.
 
 ### 3.2 Admissible Continuations
 
@@ -97,7 +97,7 @@ This forces:
 
 A skeptic might claim: "The system is determinate, but its probabilistic description need not be."
 
-This escape is blocked by the vehicle/content distinction. The measure is not content (what the state represents). It characterizes the physical situation's disposition toward outcomes — part of the vehicle, not the content.
+This escape is blocked by the vehicle/content distinction. The measure is not content (what the state represents). It characterizes the physical situation's disposition toward outcomes, part of the vehicle rather than the content.
 
 If the measure were merely representational, it could vary with decomposition. But then the physical situation would be "70% poised toward outcome A" in one decomposition and "50% poised toward outcome A" in another. The system would fail to be determinately poised toward any distribution.
 
@@ -184,7 +184,7 @@ No premise contains the conclusion. The derivation is sound.
 
 **Objection**: You've just motivated Gleason's premises. The real work is done by Gleason.
 
-**Reply**: Correct — and this is the point. Gleason's theorem is mathematical. The question was: *why* should physical probabilities satisfy Gleason's premises? We answer: because Determinate Identity requires vehicle-weight invariance, which forces additivity and non-contextuality. The "why" is metaphysical; the derivation is mathematical.
+**Reply**: Correct, and that is precisely the point. Gleason's theorem is mathematical. The question was: *why* should physical probabilities satisfy Gleason's premises? We answer: because Determinate Identity requires vehicle-weight invariance, which forces additivity and non-contextuality. The "why" is metaphysical; the derivation is mathematical.
 
 ### 5.4 "QBism avoids this"
 
@@ -208,6 +208,14 @@ The derivation:
 Combined with the Hilbert Space Paper (deriving complex Hilbert space from Id), this completes the derivation of quantum probability structure from $L_3$ constraints.
 
 **What remains empirical**: Which systems exist, their Hamiltonians, initial conditions. The *form* of the probability rule is derived; its *application* to specific systems requires physics.
+
+---
+
+## Acknowledgments
+
+This research was conducted independently. I thank the related online communities for critical feedback on early drafts, particularly regarding circularity concerns and related derivations.
+
+**AI Assistance Disclosure:** This work was developed with assistance from AI language models including Claude (Anthropic), ChatGPT (OpenAI), Gemini (Google), Grok (xAI), and Perplexity. These tools were used for drafting, editing, literature review, and exploring mathematical formulations. All substantive claims, arguments, and errors remain the author's responsibility.
 
 ---
 

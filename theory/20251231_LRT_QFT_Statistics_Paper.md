@@ -10,7 +10,7 @@ ORCID: [0009-0009-1383-7698](https://orcid.org/0009-0009-1383-7698)
 
 ## Abstract
 
-The symmetrization postulate—that multi-particle quantum states must be either symmetric (bosons) or antisymmetric (fermions) under particle exchange—is standardly treated as an independent axiom of quantum mechanics. This paper derives the symmetrization postulate from Determinate Identity (L₁), the first of the three classical logical laws understood as ontological constraints on physical instantiation.
+The symmetrization postulate (that multi-particle quantum states must be either symmetric (bosons) or antisymmetric (fermions) under particle exchange) is standardly treated as an independent axiom of quantum mechanics. This paper derives the symmetrization postulate from Determinate Identity (L₁), the first of the three classical logical laws understood as ontological constraints on physical instantiation.
 
 The core argument: if particles are intrinsically indistinguishable, then any quantum state that transforms non-trivially under permutation attributes distinguishable identity to indistinguishable entities. Such states violate L₁ and are therefore not physically instantiable. The only L₃-admissible states are those invariant (up to phase) under all permutations. Group-theoretic analysis shows that the symmetric group S_N has exactly two one-dimensional representations: the trivial representation (yielding bosons) and the sign representation (yielding fermions). The Fock space structure of quantum field theory follows as a corollary.
 
@@ -24,13 +24,13 @@ This result extends the Logic Realism programme, which previously derived the Bo
 
 ### 1.1 The Symmetrization Postulate
 
-Standard quantum mechanics includes among its axioms the *symmetrization postulate*: the state vector of a system of identical particles must be either symmetric or antisymmetric under exchange of any two particles. Particles with symmetric wave functions are called bosons; those with antisymmetric wave functions are called fermions. This postulate has profound physical consequences—the Pauli exclusion principle, the stability of matter, Bose-Einstein condensation, the periodic table—yet within standard quantum mechanics it is simply posited, not derived.
+Standard quantum mechanics includes among its axioms the *symmetrization postulate*: the state vector of a system of identical particles must be either symmetric or antisymmetric under exchange of any two particles. Particles with symmetric wave functions are called bosons; those with antisymmetric wave functions are called fermions. This postulate has profound physical consequences (the Pauli exclusion principle, the stability of matter, Bose-Einstein condensation, the periodic table), yet within standard quantum mechanics it is simply posited, not derived.
 
 The postulate raises an explanatory question: *why* must identical particles obey these specific symmetry constraints? Why are there exactly two types of quantum statistics, and not one, three, or infinitely many? The mathematical fact that the symmetric group has exactly two one-dimensional irreducible representations is well known, but this fact alone does not explain why physical states must transform according to one-dimensional representations rather than higher-dimensional ones.
 
 ### 1.2 The Logic Realism Programme
 
-This paper addresses the symmetrization question from within the Logic Realism Theory (LRT) framework developed in Longmire (2025). LRT holds that the three classical logical laws—Determinate Identity (L₁), Non-Contradiction (NC), and Excluded Middle (EM), collectively denoted L₃—function as ontological constraints on physical instantiation, not merely as rules of coherent thought.
+This paper addresses the symmetrization question from within the Logic Realism Theory (LRT) framework developed in Longmire (2025). LRT holds that the three classical logical laws (Determinate Identity (L₁), Non-Contradiction (NC), and Excluded Middle (EM), collectively denoted L₃) function as ontological constraints on physical instantiation, not merely as rules of coherent thought.
 
 The core thesis: physical reality is constituted such that only configurations satisfying L₃ can be instantiated. A configuration without determinate identity is not a borderline entity but nothing at all. This constraint, applied to quantum systems, yields substantive physical consequences. Longmire (2025) derives the Born rule for quantum probabilities and the complex Hilbert space structure from L₃ alone, without empirical supplementation.
 
@@ -38,7 +38,7 @@ The present paper extends this programme to quantum statistics. We show that the
 
 ### 1.3 Paper Overview
 
-Section 2 recapitulates the LRT framework, providing sufficient background for readers unfamiliar with the parent paper. Section 3 analyzes the identity problem for identical particles—the conceptual puzzle that the symmetrization postulate addresses. Section 4 presents the core argument: L₁ excludes non-symmetric states, leaving only bosonic and fermionic sectors as physically admissible. Section 5 discusses the connection to the spin-statistics theorem. Section 6 explores implications and predictions. Section 7 addresses objections. Section 8 concludes.
+Section 2 recapitulates the LRT framework, providing sufficient background for readers unfamiliar with the parent paper. Section 3 analyzes the identity problem for identical particles (the conceptual puzzle that the symmetrization postulate addresses). Section 4 presents the core argument: L₁ excludes non-symmetric states, leaving only bosonic and fermionic sectors as physically admissible. Section 5 discusses the connection to the spin-statistics theorem. Section 6 explores implications and predictions. Section 7 addresses objections. Section 8 concludes.
 
 ---
 
@@ -92,7 +92,7 @@ These results provide the quantum-mechanical context within which the present ar
 
 Two particles are *identical* if they share all intrinsic properties: mass, charge, spin, and any other quantum numbers that characterize the particle type. All electrons are identical to all other electrons; all photons are identical to all other photons.
 
-Crucially, "identical" here means *intrinsically indistinguishable*: there is no property intrinsic to particle 1 that distinguishes it from particle 2. The particles may differ in extrinsic properties (position, momentum, entanglement relations), but these are not properties of the particle itself—they are properties of the particle's state or relations.
+Crucially, "identical" here means *intrinsically indistinguishable*: there is no property intrinsic to particle 1 that distinguishes it from particle 2. The particles may differ in extrinsic properties (position, momentum, entanglement relations), but these are not properties of the particle itself; they are properties of the particle's state or relations.
 
 ### 3.2 The Standard Puzzle
 
@@ -108,9 +108,9 @@ The puzzle is fundamentally about identity. Consider an arbitrary two-particle s
 
 $$|\psi\rangle = \sum_{i,j} c_{ij} |i\rangle_1 \otimes |j\rangle_2$$
 
-where |i⟩₁ denotes particle 1 in state i and |j⟩₂ denotes particle 2 in state j. This notation presupposes that "particle 1" and "particle 2" refer to something—that there is a fact about which particle is which.
+where |i⟩₁ denotes particle 1 in state i and |j⟩₂ denotes particle 2 in state j. This notation presupposes that "particle 1" and "particle 2" refer to something, that there is a fact about which particle is which.
 
-But if the particles are intrinsically indistinguishable, what grounds this distinction? If nothing intrinsic distinguishes particle 1 from particle 2, then any state that treats them differently—any state not invariant under the exchange 1 ↔ 2—attributes distinguishable identity to indistinguishable entities.
+But if the particles are intrinsically indistinguishable, what grounds this distinction? If nothing intrinsic distinguishes particle 1 from particle 2, then any state that treats them differently (any state not invariant under the exchange 1 ↔ 2) attributes distinguishable identity to indistinguishable entities.
 
 This is an L₁ violation. The state purports to describe a physical configuration, but it does so by attributing distinct identities where none exist.
 
@@ -160,7 +160,7 @@ are L₃-admissible, where c: S_N → U(1) is a one-dimensional unitary represen
 
 **Proof.**
 
-*Step 1: The physical content of a state.* A quantum state |ψ⟩ ∈ H^(N) represents a physical configuration of N particles. The physical content of this state is everything that can be measured or observed—all expectation values, probabilities, and correlations.
+*Step 1: The physical content of a state.* A quantum state |ψ⟩ ∈ H^(N) represents a physical configuration of N particles. The physical content of this state is everything that can be measured or observed: all expectation values, probabilities, and correlations.
 
 *Step 2: Label independence.* Since the particles are intrinsically indistinguishable, the labels "1", "2", …, "N" are not physical. They are notational devices for bookkeeping within the tensor product formalism. Consequently, the physical content of |ψ⟩ must be independent of how we assign labels to particles.
 
@@ -250,7 +250,7 @@ Duck and Sudarshan (1997) provide a comprehensive review of the various proofs a
 
 ### 5.3 The L₃ Perspective
 
-From the LRT perspective, Section 4 establishes that identical particles must be either bosons or fermions—there is no third option. But it does not yet explain *which* particles are which.
+From the LRT perspective, Section 4 establishes that identical particles must be either bosons or fermions; there is no third option. But it does not yet explain *which* particles are which.
 
 Spin is a property related to behavior under spatial rotations (the rotation group SO(3) or its double cover SU(2)). Statistics is a property related to behavior under particle permutations (the symmetric group S_N). The spin-statistics theorem connects these two different symmetries.
 
@@ -262,7 +262,7 @@ We conjecture that the spin-statistics connection can be derived from L₃ combi
 
 *Sketch of approach:* The connection likely emerges from the interplay between L₁ (Determinate Identity) and the structure of the Lorentz group. The Lorentz group has two types of spinor representations (left-handed and right-handed), and 2π rotations act differently on integer-spin and half-integer-spin representations. If L₁ requires consistency between rotation and exchange, the spin-statistics connection may follow.
 
-A complete proof remains future work. The present paper establishes only that *some* spin-statistics assignment must hold—not which one.
+A complete proof remains future work. The present paper establishes only that *some* spin-statistics assignment must hold, not which one.
 
 ---
 
@@ -270,7 +270,7 @@ A complete proof remains future work. The present paper establishes only that *s
 
 ### 6.1 Pauli Exclusion as L₁ Consequence
 
-The Pauli exclusion principle—that no two fermions can occupy the same quantum state—follows immediately from antisymmetry:
+The Pauli exclusion principle (that no two fermions can occupy the same quantum state) follows immediately from antisymmetry:
 
 $$|ψ, ψ\rangle_A = \frac{1}{\sqrt{2}}(|ψ\rangle ⊗ |ψ\rangle - |ψ\rangle ⊗ |ψ\rangle) = 0$$
 
@@ -282,7 +282,7 @@ For bosons, symmetric states not only allow but favor multiple particles in the 
 
 $$|ψ, ψ\rangle_S = |ψ\rangle ⊗ |ψ\rangle$$
 
-(no antisymmetry to cause cancellation). Bose-Einstein condensation—the macroscopic occupation of a single quantum state—is L₁-admissible for bosons.
+(no antisymmetry to cause cancellation). Bose-Einstein condensation (the macroscopic occupation of a single quantum state) is L₁-admissible for bosons.
 
 ### 6.3 Parastatistics Ruled Out
 
@@ -304,9 +304,9 @@ Similarly, the existence of specific particle types (electrons, photons, quarks,
 
 ### Objection 1: "This just redescribes the postulate."
 
-*Objection:* The argument doesn't derive the symmetrization postulate—it just restates it in different language. Saying "L₁ requires symmetrization" is no more explanatory than saying "quantum mechanics requires symmetrization."
+*Objection:* The argument doesn't derive the symmetrization postulate; it just restates it in different language. Saying "L₁ requires symmetrization" is no more explanatory than saying "quantum mechanics requires symmetrization."
 
-*Reply:* The objection conflates levels of explanation. The standard symmetrization postulate is *sui generis*—it appears in the axioms without connection to anything more fundamental. The L₁ argument grounds symmetrization in a general principle (Determinate Identity) that applies across physics and has independent motivation.
+*Reply:* The objection conflates levels of explanation. The standard symmetrization postulate is *sui generis*: it appears in the axioms without connection to anything more fundamental. The L₁ argument grounds symmetrization in a general principle (Determinate Identity) that applies across physics and has independent motivation.
 
 Moreover, the L₁ argument explains *why* there are exactly two options (bosons and fermions): because S_N has exactly two one-dimensional representations. This structural fact becomes intelligible when we see that L₁ requires one-dimensional representations.
 
@@ -338,7 +338,7 @@ Each step adds constraints without adding new empirical inputs.
 
 ### 8.1 Summary
 
-We have shown that the symmetrization postulate of quantum mechanics—the requirement that multi-particle states be either symmetric (bosons) or antisymmetric (fermions)—is a consequence of Determinate Identity (L₁) applied to identical particles.
+We have shown that the symmetrization postulate of quantum mechanics (the requirement that multi-particle states be either symmetric (bosons) or antisymmetric (fermions)) is a consequence of Determinate Identity (L₁) applied to identical particles.
 
 The argument proceeds as follows:
 

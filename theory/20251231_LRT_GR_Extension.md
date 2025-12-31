@@ -1,6 +1,6 @@
 # Spacetime from Determinate Identity: A Logic-Realist Approach to General Relativity
 
-**Working Paper — Version 0.1**
+**Working Paper – Version 0.1**
 
 **James (JD) Longmire**
 ORCID: 0009-0009-1383-7698
@@ -10,7 +10,7 @@ Correspondence: jdlongmire@outlook.com
 
 ## Abstract
 
-We explore the consequences of Determinate Identity (Id) for spacetime structure, proposing that key features of general relativity emerge from logical constraints on physical instantiation. The derivation proceeds in stages: temporal ordering emerges from joint inadmissibility of configurations (Theorem 1); Lorentzian signature is forced by the asymmetry between jointly-inadmissible and jointly-admissible configuration pairs (Theorem 2); closed timelike curves are excluded by identity-preservation requirements (Theorem 3); and singularities are constrained by the requirement that identity cannot be destroyed (Theorem 4). These results are programmatic — rigorous formalization requires additional mathematical development — but they suggest that spacetime geometry, like Hilbert space structure, may be derivable from $L_3$ constraints rather than postulated independently.
+We explore the consequences of Determinate Identity (Id) for spacetime structure, proposing that key features of general relativity emerge from logical constraints on physical instantiation. The derivation proceeds in stages: temporal ordering emerges from joint inadmissibility of configurations (Theorem 1); Lorentzian signature is forced by the asymmetry between jointly-inadmissible and jointly-admissible configuration pairs (Theorem 2); closed timelike curves are excluded by identity-preservation requirements (Theorem 3); and singularities are constrained by the requirement that identity cannot be destroyed (Theorem 4). These results are programmatic (rigorous formalization requires additional mathematical development), but they suggest that spacetime geometry, like Hilbert space structure, may be derivable from $L_3$ constraints rather than postulated independently.
 
 ---
 
@@ -65,7 +65,7 @@ $$c_1 \land c_2 \in A_\Omega$$
 **Definition (Joint Inadmissibility)**: Configurations $c_1, c_2$ are *jointly inadmissible* if:
 $$c_1 \land c_2 \notin A_\Omega$$
 
-This occurs when the conjunction violates NC or EM — for instance, "particle at position $x_1$" and "same particle at position $x_2 \neq x_1$" at the same time.
+This occurs when the conjunction violates NC or EM, for instance "particle at position $x_1$" and "same particle at position $x_2 \neq x_1$" at the same time.
 
 ### 2.2 Theorem 1: Temporal Ordering Emerges
 
@@ -130,7 +130,7 @@ For jointly-inadmissible configurations (e.g., same particle at two locations):
 
 For jointly-admissible configurations (e.g., different particles at different locations):
 - Both timelike and spacelike separation permit co-instantiation
-- Spacelike separation is "cheaper" — no ordering constraint needed
+- Spacelike separation is "cheaper," requiring no ordering constraint
 
 **(Step 3: Metric signature encodes this asymmetry)**
 
@@ -171,7 +171,7 @@ LRT interprets this as:
 
 ### 4.1 The CTC Problem
 
-Closed timelike curves (CTCs) are worldlines that loop back on themselves — an observer could return to their own past. General relativity permits CTC solutions (Gödel universe, Kerr black holes, wormholes).
+Closed timelike curves (CTCs) are worldlines that loop back on themselves, allowing an observer to return to their own past. General relativity permits CTC solutions (Gödel universe, Kerr black holes, wormholes).
 
 Are CTCs compatible with $L_3$?
 
@@ -208,7 +208,7 @@ Yet $i_1 = i_2$ by assumption (same event). Contradiction.
 
 Hawking conjectured that physics conspires to prevent CTC formation ("chronology protection"). LRT provides a *logical* version: CTCs are excluded not by dynamical mechanisms but by the requirement that instantiated configurations have determinate identity.
 
-This doesn't explain *how* CTC formation is prevented — only *why* it must be.
+This doesn't explain *how* CTC formation is prevented, only *why* it must be.
 
 ---
 
@@ -235,7 +235,7 @@ Suppose $c$ evolves to a singularity where it "ceases to exist." Two options:
 
 **(Option A)**: Identity $i$ is destroyed (no successor configuration).
 
-This violates Id-3: identity cannot simply vanish. If $i$ was determinate, it must either persist or transform into a new identity $i'$ — but not disappear.
+This violates Id-3: identity cannot simply vanish. If $i$ was determinate, it must either persist or transform into a new identity $i'$, but not disappear.
 
 **(Option B)**: Identity $i$ transforms into a new configuration $c'$ with identity $i'$.
 
@@ -268,7 +268,7 @@ The Big Bang singularity poses similar questions:
 LRT perspective:
 - The Big Bang cannot be a genuine creation ex nihilo of identity-bearing configurations
 - Either: the Big Bang is a transformation from a prior state, or "before" is not applicable
-- Initial conditions carry determinate identity — they are not arbitrary
+- Initial conditions carry determinate identity; they are not arbitrary
 
 This is speculative but suggests that LRT may constrain cosmological models.
 
@@ -307,7 +307,7 @@ This is speculative and requires substantial development.
 
 The equivalence principle states that gravitational and inertial mass are identical. Could this follow from Id?
 
-Conjecture: If the identity of a massive configuration is determinate, then there is a unique mass associated with it — not separate "gravitational" and "inertial" masses. The equivalence principle is forced by the requirement that identity is unitary.
+Conjecture: If the identity of a massive configuration is determinate, then there is a unique mass associated with it, not separate "gravitational" and "inertial" masses. The equivalence principle is forced by the requirement that identity is unitary.
 
 Again, speculative.
 

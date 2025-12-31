@@ -1,6 +1,6 @@
 # Complex Hilbert Space from Determinate Identity: A Logic-Realist Derivation
 
-**Working Paper — Version 0.2**
+**Working Paper – Version 0.2**
 
 **James (JD) Longmire**
 ORCID: 0009-0009-1383-7698
@@ -18,13 +18,13 @@ We derive the complex Hilbert space structure of quantum mechanics from the logi
 
 ### 1.1 The Problem
 
-Quantum mechanics uses complex Hilbert space as its state space. Why complex? Why Hilbert space at all? Standard presentations take this as a postulate — the mathematical arena is assumed, not derived.
+Quantum mechanics uses complex Hilbert space as its state space. Why complex? Why Hilbert space at all? Standard presentations take this as a postulate: the mathematical arena is assumed, not derived.
 
 Quantum reconstruction programs (Hardy 2001; Chiribella, D'Ariano & Perinotti 2011; Masanes & Müller 2011) have made progress by showing that complex Hilbert space is *uniquely determined* by certain operational axioms. But this raises a new question: why should those axioms hold?
 
 ### 1.2 The LRT Answer
 
-Logic Realism Theory proposes that the Three Fundamental Laws of Logic ($L_3$: Determinate Identity, Non-Contradiction, Excluded Middle) constrain physical instantiation. If this is correct, the operational axioms of reconstruction theorems should be *derivable* from $L_3$ — they hold because logic demands it.
+Logic Realism Theory proposes that the Three Fundamental Laws of Logic ($L_3$: Determinate Identity, Non-Contradiction, Excluded Middle) constrain physical instantiation. If this is correct, the operational axioms of reconstruction theorems should be *derivable* from $L_3$: they hold because logic demands it.
 
 This paper establishes that derivation.
 
@@ -146,7 +146,7 @@ $$P_B^{\omega_1}(b) = P_B^{\omega_2}(b) \quad \forall b$$
 
 That is, $\omega_1$ and $\omega_2$ yield identical statistics for all local measurements on A and B separately.
 
-Now consider the identity of subsystem A. By Id-1, the identity of A must be intrinsic — determined by A's own properties, not by facts about B or AB.
+Now consider the identity of subsystem A. By Id-1, the identity of A must be intrinsic: determined by A's own properties, not by facts about B or AB.
 
 But the only operationally accessible facts about A are its measurement statistics $P_A(a)$. If A's identity is intrinsic and determinate, then A's identity is fixed by these statistics.
 
@@ -158,7 +158,7 @@ Therefore AB's identity must be the same in both cases. But this contradicts $\o
 
 **Conclusion**: Local tomography must hold. $\square$
 
-**Remark**: This proof depends on the anti-holism established in the LRT working paper (§2.3): parts ground wholes, not vice versa. Global holism — where the whole has properties not grounded in parts — would allow $\omega_1 \neq \omega_2$ with identical marginals. But global holism violates Id (identity would depend on extrinsic global facts).
+**Remark**: This proof depends on the anti-holism established in the LRT working paper (§2.3): parts ground wholes, not vice versa. Global holism (where the whole has properties not grounded in parts) would allow $\omega_1 \neq \omega_2$ with identical marginals. But global holism violates Id (identity would depend on extrinsic global facts).
 
 ### 3.3 Theorem 2: Id Forces Continuous Reversible Dynamics
 
@@ -170,7 +170,7 @@ Therefore AB's identity must be the same in both cases. But this contradicts $\o
 
 Suppose dynamics were discontinuous: a system jumps from state $\psi_1$ to state $\psi_2$ with no intermediate path.
 
-Consider a property P that differs between $\psi_1$ and $\psi_2$. At the moment of transition, the system has no determinate status with respect to P — it is neither in the P-state of $\psi_1$ nor the P-state of $\psi_2$.
+Consider a property P that differs between $\psi_1$ and $\psi_2$. At the moment of transition, the system has no determinate status with respect to P: it is neither in the P-state of $\psi_1$ nor the P-state of $\psi_2$.
 
 This violates Id: the system lacks determinate identity at the transition moment. It is "between" two configurations with no determinate configuration of its own.
 
@@ -180,7 +180,7 @@ Therefore, dynamics must be continuous: for any path $\psi_1 \to \psi_2$, there 
 
 Consider a pure state $\psi$ representing a system with maximal information (no uncertainty about properties within the theory's scope).
 
-Suppose the dynamics $\psi \to \phi$ were irreversible, with $\phi$ also pure. Then information about $\psi$'s identity is lost — given $\phi$, we cannot recover which state preceded it.
+Suppose the dynamics $\psi \to \phi$ were irreversible, with $\phi$ also pure. Then information about $\psi$'s identity is lost: given $\phi$, we cannot recover which state preceded it.
 
 But if $\psi$ has determinate identity (as Id requires), that identity constitutes information. Irreversible dynamics would destroy this information, violating Id-3: identity persists through transformation unless the transformation constitutes a change of identity.
 
@@ -188,7 +188,7 @@ The transformation $\psi \to \phi$ is not a "change of identity" (both are pure 
 
 Therefore, dynamics between pure states must be reversible. $\square$
 
-**Remark**: This does not claim all dynamics are reversible. Measurement, which interfaces with the record level, may involve genuine identity change (the system transitions from "superposition vehicle" to "definite record"). But dynamics within the pure-state manifold — transformations that don't actualize records — must be reversible.
+**Remark**: This does not claim all dynamics are reversible. Measurement, which interfaces with the record level, may involve genuine identity change (the system transitions from "superposition vehicle" to "definite record"). But dynamics within the pure-state manifold (transformations that don't actualize records) must be reversible.
 
 ### 3.4 Theorem 3: Id Permits Non-Classical Correlations
 
@@ -202,16 +202,16 @@ $$|\Psi_{AB}\rangle \neq |\psi_A\rangle \otimes |\phi_B\rangle$$
 
 Does Id forbid such states?
 
-**No**. Id requires that the *vehicle* — the mathematical object representing the state — have determinate identity. The entangled state $|\Psi_{AB}\rangle$ is a specific, well-defined vector in Hilbert space. It has:
+**No**. Id requires that the *vehicle* (the mathematical object representing the state) have determinate identity. The entangled state $|\Psi_{AB}\rangle$ is a specific, well-defined vector in Hilbert space. It has:
 - Definite coefficients
 - Definite inner products with other states
 - Determinate evolution under unitary operators
 
-The vehicle is determinate. What the vehicle *represents* — correlated outcome-possibilities — is not itself a violation of Id. The correlations are encoded determinately.
+The vehicle is determinate. What the vehicle *represents* (correlated outcome-possibilities) is not itself a violation of Id. The correlations are encoded determinately.
 
 Moreover, local tomography (Theorem 1) ensures that the global state is determined by local data. For entangled states, this local data includes correlations visible only in joint measurements. But these correlations are determinate properties of the global state.
 
-**What Id excludes**: States where the vehicle itself lacks determinate identity — e.g., "the system is in $|\Psi_1\rangle$ or $|\Psi_2\rangle$ but indeterminately which." This would violate Id. Entangled states are not of this form; they are specific, determinate vectors.
+**What Id excludes**: States where the vehicle itself lacks determinate identity, e.g. "the system is in $|\Psi_1\rangle$ or $|\Psi_2\rangle$ but indeterminately which." This would violate Id. Entangled states are not of this form; they are specific, determinate vectors.
 
 **Conclusion**: Entanglement is Id-admissible. $\square$
 
@@ -219,7 +219,7 @@ Moreover, local tomography (Theorem 1) ensures that the global state is determin
 
 **Corollary (Tomographic Locality)**. Local tomography plus the existence of entangled states implies tomographic locality: the state space of a composite system is the minimal tensor product of component state spaces.
 
-**Proof sketch**: This is a standard result in GPT theory. Local tomography means global states are determined by local statistics. For this to hold with entangled states, the composite state space must be exactly the tensor product — neither smaller (which would exclude some entangled states) nor larger (which would allow states not determined by local data).
+**Proof sketch**: This is a standard result in GPT theory. Local tomography means global states are determined by local statistics. For this to hold with entangled states, the composite state space must be exactly the tensor product: neither smaller (which would exclude some entangled states) nor larger (which would allow states not determined by local data).
 
 This follows from Theorems 1 and 3 combined with the structure of GPTs. See Masanes-Müller (2011, §4) for details. $\square$
 
@@ -239,7 +239,7 @@ These match axioms (MM1), (MM2), (MM3), and the structural content of (MM5).
 
 ### 4.2 Theorem 4: Bit Equivalence from Id
 
-Axiom (MM4) — that all two-level systems are equivalent — requires a more careful derivation. We now provide it.
+Axiom (MM4), that all two-level systems are equivalent, requires a more careful derivation. We now provide it.
 
 **Theorem 4 (Bit Equivalence)**. All two-level systems satisfying Determinate Identity have the same state-space geometry: the Bloch ball.
 
@@ -262,7 +262,7 @@ In 2D, the only convex sets satisfying these constraints are:
 
 The classical simplex admits only stochastic transformations. Its reversible dynamics are the permutation group $S_2$ (swap $|0\rangle \leftrightarrow |1\rangle$ or do nothing).
 
-But Theorem 3 establishes that Id *permits* entanglement. Consider a composite of two two-level systems. If both were classical simplexes, the composite state space would be the product of simplexes — a 3-simplex.
+But Theorem 3 establishes that Id *permits* entanglement. Consider a composite of two two-level systems. If both were classical simplexes, the composite state space would be the product of simplexes, a 3-simplex.
 
 Classical composites cannot exhibit non-classical correlations. But we've established:
 - Id permits entanglement (Theorem 3)
@@ -274,7 +274,7 @@ If two-level systems were classical simplexes, composites couldn't violate Bell 
 
 The only remaining option is the Bloch ball. But is there a unique Bloch ball, or could different two-level systems have differently-sized or differently-shaped "Bloch-like" spaces?
 
-Apply Id-1 (intrinsic identity): the state-space geometry of a two-level system is an intrinsic property — it's determined by what the system *is*, not by extrinsic factors.
+Apply Id-1 (intrinsic identity): the state-space geometry of a two-level system is an intrinsic property, determined by what the system *is*, not by extrinsic factors.
 
 Two systems with identical intrinsic structure (two distinguishable levels, continuous reversible dynamics, entanglement capacity) must have identical state-space geometry. The Bloch ball is fully determined by:
 - Dimension (2 pure-state parameters for a two-level system)
@@ -368,7 +368,7 @@ Correlations cannot exceed $2\sqrt{2}$ because:
 
 ### 6.1 Comparison with Information Causality
 
-Pawłowski et al. (2009) derive the Tsirelson bound from "Information Causality" — the principle that Bob's accessible information cannot exceed the bits physically sent to him.
+Pawłowski et al. (2009) derive the Tsirelson bound from "Information Causality," the principle that Bob's accessible information cannot exceed the bits physically sent to him.
 
 | Aspect | Information Causality | LRT (this paper) |
 |--------|----------------------|------------------|
@@ -389,7 +389,7 @@ These are complementary, not competing. IC shows *what* is ruled out (super-quan
 - Tsirelson bound follows mathematically
 
 **What remains**:
-- Rigorous derivation of bit equivalence (MM4) — our argument is suggestive, not complete
+- Rigorous derivation of bit equivalence (MM4): our argument is suggestive, not complete
 - Extension to infinite-dimensional Hilbert spaces
 - Extension to quantum field theory (Fock space)
 
@@ -403,7 +403,7 @@ With this derivation, the Tsirelson bound's status changes:
 | Information Causality | Derived from information principle |
 | **LRT** | **Derived from Id via Hilbert space** |
 
-LRT does not claim to derive Tsirelson *independently* of Hilbert space. The claim is that Hilbert space itself — and therefore the bound — follows from Id.
+LRT does not claim to derive Tsirelson *independently* of Hilbert space. The claim is that Hilbert space itself (and therefore the bound) follows from Id.
 
 ---
 
@@ -457,13 +457,13 @@ Assume, for contradiction, that global holism is true. Then there exist:
 - With identical parts: $A_1 = A_2$ and $B_1 = B_2$ (same intrinsic properties)
 - But different global properties: $P(AB_1) \neq P(AB_2)$ for some property P
 
-Now apply Determinate Identity (Id-1): the identity of any configuration must be intrinsic — determined by what the configuration *is*, not by extrinsic facts.
+Now apply Determinate Identity (Id-1): the identity of any configuration must be intrinsic, determined by what the configuration *is*, not by extrinsic facts.
 
 Consider the identity of composite $AB_1$. What determines it?
 
 **Option 1**: The identity of $AB_1$ is determined by the identities of $A_1$ and $B_1$ (anti-holism).
 
-**Option 2**: The identity of $AB_1$ depends on something beyond $A_1$ and $B_1$ — namely, the global property P (holism).
+**Option 2**: The identity of $AB_1$ depends on something beyond $A_1$ and $B_1$, namely the global property P (holism).
 
 If Option 2, then the identity of $AB_1$ depends on a fact (the value of P) that is not grounded in the parts. But what *is* P grounded in?
 
@@ -471,7 +471,7 @@ If Option 2, then the identity of $AB_1$ depends on a fact (the value of P) that
 - Not in $B_1$ (by assumption, P is not reducible to B-properties)
 - Not in some external context (that would violate Id-1: identity is intrinsic)
 
-Therefore P must be a "brute" global fact — a property the composite has that floats free of any grounding.
+Therefore P must be a "brute" global fact, a property the composite has that floats free of any grounding.
 
 But this violates Id in a deeper way: if P is ungrounded, then $AB_1$'s identity (which depends on P) is itself ungrounded. The composite lacks *determinate* identity because there is no fact of the matter about *why* it has P rather than some other value.
 
@@ -487,7 +487,7 @@ This corollary is the premise used in Theorem 1 to derive local tomography.
 
 To make the abstract argument of Theorem 1 concrete, we construct a GPT-style example where local tomography fails and show the resulting identity pathology.
 
-**Example (PR-Box World)**. Consider a hypothetical GPT where composite systems can exhibit Popescu-Rohrlich (PR) box correlations — maximally non-local correlations that saturate the algebraic CHSH bound S = 4.
+**Example (PR-Box World)**. Consider a hypothetical GPT where composite systems can exhibit Popescu-Rohrlich (PR) box correlations, maximally non-local correlations that saturate the algebraic CHSH bound S = 4.
 
 In PR-box world:
 - Alice measures observable $a \in \{0, 1\}$, gets outcome $x \in \{0, 1\}$
@@ -501,7 +501,7 @@ $$P(x=0) = P(x=1) = 1/2, \quad P(y=0) = P(y=1) = 1/2$$
 - State $\omega_1$: Correlations $x \oplus y = a \cdot b$
 - State $\omega_2$: Correlations $x \oplus y = a \cdot b \oplus 1$ (anti-correlated)
 
-Both states have *identical* local marginals (uniform randomness on each side). Yet they are globally distinct — they differ in their correlation structure.
+Both states have *identical* local marginals (uniform randomness on each side). Yet they are globally distinct: they differ in their correlation structure.
 
 **Local tomography fails**: Local measurements cannot distinguish $\omega_1$ from $\omega_2$.
 
@@ -509,7 +509,7 @@ Both states have *identical* local marginals (uniform randomness on each side). 
 - Alice's subsystem has the same local statistics in both states → same local identity
 - Bob's subsystem has the same local statistics in both states → same local identity
 - By Id-2 (composition), if parts have same identity, whole should have same identity
-- But $\omega_1 \neq \omega_2$ — the wholes differ
+- But $\omega_1 \neq \omega_2$: the wholes differ
 
 **Conclusion**: PR-box world violates Determinate Identity. The global states have an identity that floats free of their parts' identities. This is exactly the holism that Lemma A.1 rules out.
 
@@ -521,7 +521,7 @@ We now give a concrete quantum example showing why local tomography forces the c
 
 **Setup**: Consider two qubits in real Hilbert space $\mathbb{R}^2 \otimes \mathbb{R}^2$.
 
-**Real density matrices**: In real QM, density matrices have only real entries. For a single qubit, the state space is a disk (the "Bloch disk" — the equatorial plane of the Bloch ball).
+**Real density matrices**: In real QM, density matrices have only real entries. For a single qubit, the state space is a disk (the "Bloch disk," the equatorial plane of the Bloch ball).
 
 **The problem with entanglement**: Consider the Bell state in complex QM:
 $$|\Phi^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)$$
@@ -540,7 +540,7 @@ $$\rho_A = \rho_B = \frac{1}{2}\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = \f
 
 **In complex QM**: Local tomography still holds because the *correlations* between local measurements distinguish the states. The full set of local product measurements $\{A_i \otimes B_j\}$ spans the operator space and distinguishes any two density matrices.
 
-**In real QM**: The problem is dimensional. Real density matrices on $\mathbb{R}^2 \otimes \mathbb{R}^2$ form a 9-dimensional space. But real local measurements span only a subspace — specifically, local measurements cannot access the "imaginary" correlations that distinguish certain entangled states.
+**In real QM**: The problem is dimensional. Real density matrices on $\mathbb{R}^2 \otimes \mathbb{R}^2$ form a 9-dimensional space. But real local measurements span only a subspace; specifically, local measurements cannot access the "imaginary" correlations that distinguish certain entangled states.
 
 **Concrete failure**: In real QM, consider states related by a local phase:
 $$|\Phi^+\rangle \text{ vs. } |\Phi^-\rangle = \frac{1}{\sqrt{2}}(|00\rangle - |11\rangle)$$
@@ -548,11 +548,11 @@ $$|\Phi^+\rangle \text{ vs. } |\Phi^-\rangle = \frac{1}{\sqrt{2}}(|00\rangle - |
 In complex QM, these are distinguished by measuring in the $|+\rangle, |-\rangle$ basis on each qubit. But this measurement involves the imaginary unit $i$ in its definition:
 $$|+\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle), \quad |-\rangle = \frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)$$
 
-The relative phase between $|00\rangle$ and $|11\rangle$ can only be detected by measurements that "mix" the computational basis — and in real QM, the full set of such measurements is restricted.
+The relative phase between $|00\rangle$ and $|11\rangle$ can only be detected by measurements that "mix" the computational basis, and in real QM, the full set of such measurements is restricted.
 
 **Theorem (Wootters 1990, Hardy 2001)**: Real Hilbert space violates local tomography for entangled states. Only complex Hilbert space permits local tomography for all composite systems.
 
-**LRT interpretation**: Real QM would allow globally distinct states with identical local parts — violating Determinate Identity. Therefore, Id forces the complex field.
+**LRT interpretation**: Real QM would allow globally distinct states with identical local parts, violating Determinate Identity. Therefore, Id forces the complex field.
 
 ### A.4 Lemma: Local Tomography and Field Choice
 
