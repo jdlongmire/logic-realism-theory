@@ -981,7 +981,11 @@ Varadarajan, V. S. (1968). *Geometry of Quantum Theory*, Vol. 1. Van Nostrand.
 
 Wallace, D. (2012). *The Emergent Multiverse: Quantum Theory according to the Everett Interpretation*. Oxford University Press.
 
+Whitehead, A. N. (1929). *Process and Reality: An Essay in Cosmology*. Macmillan.
+
 Zurek, W. H. (2003). Decoherence, Einselection, and the Quantum Origins of the Classical. *Reviews of Modern Physics*, 75(3), 715–775.
+
+Zurek, W. H. (2009). Quantum Darwinism. *Nature Physics*, 5, 181–188.
 
 ---
 
