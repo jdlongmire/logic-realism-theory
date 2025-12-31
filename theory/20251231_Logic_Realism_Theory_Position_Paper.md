@@ -238,6 +238,8 @@ If the $L_3$ constrains only instantiation (as logic realism claims), then:
 
 The empirical record supports the second pattern. Conceiving contradictions is cognitively trivial; instantiating them has never been observed. This asymmetry is evidence that the $L_3$ constrains instantiation rather than representation.
 
+**The track record matters.** $L_3$ is not an unexamined assumption. Philosophers have actively sought violations: Priest defends true contradictions, paraconsistent logics formalize contradiction-tolerance, quantum logic challenges distributivity, vagueness theorists probe borderline cases. These are not marginal efforts—they represent sustained, rigorous attempts to show that $L_3$ can fail. Human minds explore these violations fluently. Yet across a century of precision physics, no stable experimental record has ever instantiated one. The asymmetry is stark: representation permits what instantiation forbids.
+
 The point is not merely that we have never observed violations. It is that the pattern of what we can represent versus what we can instantiate matches the logic-realist prediction rather than the psychologist or descriptivist prediction. If the $L_3$ were merely "how we think," we could not think violations. If the $L_3$ were merely "how we talk," we could stipulate alternative conventions. But we can think violations, reality never instantiates them, and no stipulation changes this. The constraint is on $A_\Omega$, not on $I_\infty$.
 
 ### 3.3 Superposition as Representational Vehicle
