@@ -425,6 +425,19 @@ None of these approaches *derive* the Born rule or Hilbert space structure from 
 
 LRT is trying something different: "Here is why the mathematical formalism *had* to take this form." The Born rule is derived (Section 4, Appendix A). Complex Hilbert space is derived (Appendix B). Bell correlations are explained as global identity coherence rather than reinterpreted (Appendix C). The framework generates mathematical structure from metaphysical constraints, rather than interpreting pre-given structure.
 
+**Parsimony table: LRT in context.** To clarify LRT's novelty and scope, the following table compares independent axiom counts across generative frameworks:
+
+| Framework | Independent Axioms | Type |
+|-----------|-------------------|------|
+| Hardy (2001) | 5 "reasonable axioms" | Operational |
+| Chiribella et al. (2011) | 6 informational axioms | Operational |
+| Masanes-Müller (2011) | 5 physical requirements | Operational |
+| **LRT (this paper)** | L₃ + anti-holism (→ 1 constraint) | Metaphysical |
+
+*Division of labor.* The operational reconstruction programmes (Hardy, Chiribella-D'Ariano-Perinotti, Masanes-Müller) do the formal heavy lifting: they prove that complex Hilbert space is the unique theory satisfying their axioms. LRT does not replace this work. It grounds it. LRT explains *why* those axioms should hold if logic constrains physical instantiation. The operational axioms become theorems of the metaphysical framework (Appendix B, Theorem B.9).
+
+*Trade-off.* You pay in metaphysics what they pay in operational postulates. Hardy pays with five axioms about information-processing capacities. Masanes-Müller pays with five requirements about state spaces and measurements. LRT pays with a single metaphysical constraint (L₃ as ontological condition on instantiation) and the argument that anti-holism follows from it (Section 2.3). The question is which is more fundamental. If L₃ is constitutive of physical reality (the logic-realist claim), then the operational axioms are downstream consequences. If L₃ is merely a feature of coherent thought, the operational axioms remain unexplained primitives.
+
 This framing clarifies the status of LRT's non-trivial moves. One step bears scrutiny:
 
 **Vehicle-weight objectivity** (Section 4.1): The claim that the measure over admissible continuations is physical (belongs to the vehicle, not the content) could be resisted by a sufficiently committed instrumentalist. But an instrumentalist who denies that any physical fact grounds the Born rule thereby exits the explanatory project altogether.
