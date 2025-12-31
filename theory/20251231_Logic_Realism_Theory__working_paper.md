@@ -252,9 +252,21 @@ The quadratic form is forced by the Pythagorean identity. This two-dimensional c
 
 **Note on the dimension-2 case.** Gleason's theorem fails for $\dim \mathcal{H} = 2$: there exist non-Born measures satisfying additivity and non-contextuality in two dimensions. Does this undermine the metaphysical argument?
 
-No. The dimension-2 pathology reflects the poverty of the two-dimensional projection lattice, not a failure of Determinate Identity. In dimension 2, every orthonormal basis contains only two elements, and the constraint structure is too weak to force uniqueness. But actual physical systems are never genuinely two-dimensional in isolation. A qubit is always embedded in a larger Hilbert space (the environment, the measurement apparatus, the rest of the universe). The relevant constraint is that the measure be consistent across *all* subsystems and compositions, not merely within an artificially isolated two-dimensional subspace.
+No. The dimension-2 pathology reflects the poverty of the two-dimensional projection lattice, not a failure of Determinate Identity. The following lemma makes this precise:
 
-Put differently: Determinate Identity is a global constraint on physical systems. The dimension-2 loophole exists only for mathematically idealized systems that cannot be physically instantiated in isolation. For any system embedded in a larger arena (which is to say, for any actual physical system) the constraint bites. This global embedding requirement is itself a consequence of the identity-preserving composition that Appendix B sketches: if subsystem identity must cohere with global identity under arbitrary decomposition, then the measure constraints propagate from the global arena (dimension $\geq 3$) to every embedded subsystem.
+**Lemma 4.4.1 (No physically closed 2D arena).** Any system $S$ that admits (i) a nontrivial measurement interaction and (ii) stable macroscopic records must be composable with at least one additional degree of freedom that participates in record formation. Therefore, the relevant arena for the measure is at least three-dimensional.
+
+*Proof.* Suppose $S$ is strictly two-dimensional and physically closed. A nontrivial measurement requires an apparatus $A$ that correlates with $S$ and produces a stable record. But record stability requires that the $S$–$A$ correlation be robust under variation of irrelevant environmental degrees of freedom (Zurek 2003, 2009). This robustness condition is itself a modal fact about the $S$–$A$ system: certain perturbations leave the record invariant while others do not.
+
+If $S$ is strictly 2D and physically closed, then $A$ cannot share any Hilbert-space factor with $S$ (closure), and no third system can participate in record formation. But then the record has no decoherence arena: there is no environment into which coherence can leak, and the stability of the record becomes either brute (unexplained) or illusory (no genuine measurement has occurred).
+
+Therefore any system admitting genuine measurement with stable records must couple to at least one additional degree of freedom. The composite $S \otimes A$ (or $S \otimes A \otimes E$ with environment $E$) has dimension $\geq 2 \times 2 = 4 > 3$. The constraint structure that forces Born uniqueness applies in this larger arena and propagates to $S$ via the compositional consistency required by Theorem B.7 (CDP). $\square$
+
+**Corollary.** The dimension-2 "loophole" exists only for mathematically idealized systems that cannot be physically instantiated with measurement and records. For any actual physical system, the relevant arena is $\geq 3$-dimensional.
+
+**Clean conditional.** In a hypothetical universe containing only a strictly isolated two-dimensional system with no measurement apparatus and no records, identity constraints do not uniquely fix the measure. That is not a failure of L₃; it is an underconstrained arena. Our world's compositional richness—the fact that systems can be measured and records can be made—is what lets identity constraints bite. The dimension requirement is not a weakness of the argument but a feature: it explains why the Born rule is forced in a world with observers and records, precisely the world we inhabit.
+
+**Reference.** Zurek's decoherence program (Zurek 2003, "Decoherence, einselection, and the quantum origins of the classical"; Zurek 2009, "Quantum Darwinism") establishes that qubits in physically realistic settings are always coupled to higher-dimensional baths. The "isolated qubit" of textbook examples is an idealization that abstracts away the compositional structure on which measurement and record formation depend.
 
 ### 4.5 Connecting to Gleason and Busch
 
@@ -560,7 +572,7 @@ $$\Rightarrow \text{for pure states, } \mu(|\phi\rangle\langle\phi|) = |\langle\
 
 This establishes that the metaphysical demand for determinate physical identity, when imposed on the rich structure of the quantum projection lattice in dimension $\geq 3$, forces the measure over admissible continuations to be given by the Born rule. The argument relies on standard results from quantum logic and representation theory; no circularity is introduced, and no parameters are fitted.
 
-The result holds under finite additivity and the assumption that physical instantiation respects Determinate Identity as an ontological constraint. If stronger regularity (e.g., countable additivity) is imposed, the conclusion is reinforced but not altered. In dimension 2 the argument fails, which is consistent with the known pathology of Gleason's theorem in that case.
+The result holds under finite additivity and the assumption that physical instantiation respects Determinate Identity as an ontological constraint. If stronger regularity (e.g., countable additivity) is imposed, the conclusion is reinforced but not altered. In dimension 2 the argument fails, which is consistent with the known pathology of Gleason's theorem in that case. However, Lemma 4.4.1 establishes that no physically closed 2D arena can support measurement and stable records, so the dimension requirement is satisfied for all actual physical systems.
 
 ---
 
