@@ -125,6 +125,20 @@ This eliminates the need for the Compositional Distinguishability Principle (CDP
 
 **Remark on mereological atomism.** The argument establishes that parts ground wholes, but it does not require a bottom level of partless simples. Whether there exist mereological atoms is a separate question. What the argument establishes is a direction of grounding: at whatever level genuine things exist (things with intrinsic identity satisfying L₁), those things are fundamental relative to any whole they compose. The whole supervenes on the parts, not the reverse.
 
+**Remark on process metaphysics.** A sophisticated alternative to global holism deserves explicit treatment: process metaphysics (Whitehead 1929, and contemporary descendants such as ontic structural realism). On this view, relations are ontologically basic; "things" (actual occasions, relata, substances) are derivative patterns of relational process. The whole does not ground the parts; rather, *relations* ground *relata*.
+
+This differs from global holism: the priority runs from relations to things, not from cosmos to parts. But it faces a parallel L₁ challenge.
+
+*The relata problem.* A relation $R(a,b)$ presupposes relata $a$ and $b$. If $a$ and $b$ have no identity independent of $R$, then $R$ is a relation between... what? Three options:
+
+1. *$a$ and $b$ are constituted entirely by $R$.* Then $R$ is not a relation between two things; it is a single structure misdescribed in relational vocabulary. Call this "structure without relata." But a structure with no distinguishable nodes is featureless—the same collapse into undifferentiated monism that afflicts global holism. Physics requires distinguishable configurations; if the relata have no identity, there are no configurations to distinguish.
+
+2. *$a$ and $b$ have partial independent identity, completed by $R$.* This is coherent but abandons the claim that relations are ontologically basic. If $a$ has some identity prior to $R$, then something grounds that identity—and whatever grounds it is more fundamental than $R$. We are back to things grounding relations, not the reverse.
+
+3. *Relations themselves are the fundamental "things."* This collapses the distinction between relations and relata. If $R$ is a genuine thing with determinate identity, then L₁ applies to $R$: it must be determinately what it is, independent of description. But then process metaphysics has not replaced substance ontology; it has relabeled it. The "relations" are just things under another name.
+
+*Conclusion.* Process metaphysics and ontic structural realism do not escape the L₁ constraint. Either they collapse into featureless monism (option 1), smuggle in prior identity for relata (option 2), or relabel things as relations without changing the underlying ontology (option 3). The argument of this section—that parts (or fundamental relata) must have intrinsic identity—applies to process ontologies as much as to substance ontologies.
+
 ### 2.4 Time and Ordering (Programmatic)
 
 The framework has nontrivial structural consequences beyond mere consistency. Consider two configurations $i$ and $j$ that are individually admissible but jointly inadmissible: the same particle at position $x_1$ and at position $x_2 \neq x_1$. Each satisfies $L_3$ alone, but their co-instantiation would violate Determinate Identity: the particle would not be determinately at one position.
