@@ -198,4 +198,38 @@ bbcdb51 Add process metaphysics engagement to §2.3
 
 ---
 
-## Interaction Count: 11
+## QFT Extension Paper
+
+Created new standalone paper: `theory/20251231_LRT_QFT_Statistics_Paper.md`
+
+**Title**: "Quantum Statistics from Determinate Identity: A Logic-Realist Derivation of the Symmetrization Postulate"
+
+**Core result**: L₁ applied to identical particles forces the symmetrization postulate.
+
+**Key theorems**:
+- Theorem 1: L₁ excludes non-symmetric sectors (non-symmetric states attribute distinguishable identity to indistinguishable particles)
+- Theorem 2: Only symmetric (bosons) and antisymmetric (fermions) survive (S_N has exactly two 1D irreps)
+- Corollary: Fock space structure forced
+
+**Sections**: ~20 pages with full proofs in Appendix A
+
+---
+
+## Git Log (Final)
+
+```
+603adb8 Add QFT extension paper: Quantum Statistics from Determinate Identity
+5ff272a Add derivation chain flowchart to paper and README
+67f37da Add Whitehead and Zurek 2009 references
+bbcdb51 Add process metaphysics engagement to §2.3
+5b487d7 Phase 4: Novelty positioning and parsimony table complete
+2e6870f Phase 3: Id-Strong/Id-Weak clarification complete
+174eb3a Phase 2: Dim ≥ 3 compositional lemma complete
+78264f8 Phase 1: Vehicle-weight hardening complete
+0ed8b8b Update README for tightened derivation chain
+66bc12a Major refactor: CDP elimination and tightened derivation chain
+```
+
+---
+
+## Interaction Count: 14
