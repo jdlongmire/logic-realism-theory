@@ -37,7 +37,7 @@ The discovery claim is modest but sharp: physics only proceeds because its publi
 
 The framework distinguishes two domains (defined formally in §2.1-2.3):
 
-**$I_\infty$:** The space of all representable configurations - everything that can be specified, described, conceived, or formally expressed, without restriction to coherence or consistency. This includes contradictions, impossibilities, and violations of every logical principle. $I_\infty$ carries no ontological commitment; it is simply the totality of what representation permits.
+**$I_\infty$:** The space of all representable configurations — everything that can be specified, described, conceived, or formally expressed, without restriction to coherence or consistency. This includes contradictions, impossibilities, and violations of every logical principle. $I_\infty$ carries no ontological commitment; it is simply the totality of what representation permits.
 
 **$A_\Omega$:** The constraint-class of configurations that satisfy the Three Fundamental Laws of Logic ($L_3$: Identity, Non-Contradiction, and Excluded Middle). These are the configurations that can be physically instantiated as stable records.
 
@@ -121,7 +121,7 @@ $I_\infty$ is not a domain of entities. It carries no ontological commitment. It
 - Vague specifications: "somewhat round square"
 - Indeterminate specifications: "object without determinate identity"
 
-The last example is crucial. $I_\infty$ includes configurations that violate Determinate Identity itself - configurations specified as lacking determinate identity. These are representable (we just represented one) but not instantiable.
+The last example is crucial. $I_\infty$ includes configurations that violate Determinate Identity itself — configurations specified as lacking determinate identity. These are representable (we just represented one) but not instantiable.
 
 $I_\infty$ is closed under representation operations:
 
@@ -140,7 +140,7 @@ The $L_3$ comprises three classical logical principles, understood here as const
 
 $$\text{For any descriptions } d, d' \text{ of the same configuration: } d(i) = d'(i) = i$$
 
-This is not the trivial claim that identity is reflexive ($i = i$). It is the substantive claim that instantiated configurations have determinate identity - they are self-identical in a way that does not depend on how they are described, measured, or decomposed. A configuration without determinate identity is not vague or indeterminate; it fails to be a configuration at all.
+This is not the trivial claim that identity is reflexive ($i = i$). It is the substantive claim that instantiated configurations have determinate identity — they are self-identical in a way that does not depend on how they are described, measured, or decomposed. A configuration without determinate identity is not vague or indeterminate; it fails to be a configuration at all.
 
 **Non-Contradiction (NC):** No instantiated configuration simultaneously possesses and lacks a property in the same respect. For any well-defined property $P$ and configuration $i \in A_\Omega$:
 
@@ -152,7 +152,7 @@ The "in the same respect" qualification is essential. An electron can have spin-
 
 $$P(i) \lor \neg P(i)$$
 
-Here EM is a constraint on instantiation for sharply specified properties, not a claim about what an agent can know or prove. The law applies to instantiated configurations with respect to well-defined properties - properties that have determinate applicability conditions. It does not require that we know which disjunct holds, only that exactly one does hold.
+Here EM is a constraint on instantiation for sharply specified properties, not a claim about what an agent can know or prove. The law applies to instantiated configurations with respect to well-defined properties — properties that have determinate applicability conditions. It does not require that we know which disjunct holds, only that exactly one does hold.
 
 These three laws are not independent. They are three aspects of determinacy: a configuration is determinate when it is self-identical (Id), possesses no contradictory properties (NC), and has definite status with respect to all applicable properties (EM). Together they define what it means for a configuration to be instantiable.
 
@@ -174,7 +174,7 @@ where Id is Determinate Identity, NC is Non-Contradiction, and EM is Excluded Mi
 
 To ask why reality does not instantiate $L_3$-violating records is to ask why physics has stable public outcomes at all. LRT's proposal is that "being instantiated as a record" and "being $L_3$ admissible" pick out the same boundary.
 
-The $L_3$ functions as an admissibility condition on $I_\infty$. The term "filter" is informal shorthand for this admissibility requirement - not a mechanism operating within physics but the boundary condition between representable and instantiable.
+The $L_3$ functions as an admissibility condition on $I_\infty$. The term "filter" is informal shorthand for this admissibility requirement — not a mechanism operating within physics but the boundary condition between representable and instantiable.
 
 **Key properties of the admissibility condition:**
 
@@ -184,7 +184,7 @@ The $L_3$ functions as an admissibility condition on $I_\infty$. The term "filte
 
 3. **Non-surjectivity:** There is no operation mapping $A_\Omega$ back onto all of $I_\infty$. Once the admissibility condition is applied, inadmissible configurations cannot be recovered.
 
-4. **Composition:** For configurations $c_1, c_2 \in A_\Omega$, their conjunction is admissible only if it satisfies the $L_3$. This is not automatic - jointly inadmissible configurations exist (§2.4).
+4. **Composition:** For configurations $c_1, c_2 \in A_\Omega$, their conjunction is admissible only if it satisfies the $L_3$. This is not automatic — jointly inadmissible configurations exist (§2.4).
 
 ### 2.4 Joint Inadmissibility and Temporal Ordering
 
@@ -254,7 +254,7 @@ $$|\psi\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle)$$
 
 This state is a well-defined mathematical object within the theory. The state vector is a precise representational vehicle that can be manipulated without contradiction. Whatever physical substrate realizes the situation, the representation is determinate as a vehicle: it is the specific superposition with coefficients (1/√2, 1/√2), with definite inner products with other states, with determinate evolution under unitary operators.
 
-The content - what the vehicle represents about outcome-possibilities - concerns what will happen when measurement in the {|0⟩, |1⟩} basis occurs. The state does not describe a configuration that both has and lacks a definite value (NC violation), nor does it describe a configuration outside the true/false dichotomy (EM violation). It describes a physical situation such that when measurement occurs, exactly one outcome will be recorded, and that record will be $L_3$ admissible.
+The content — what the vehicle represents about outcome-possibilities - concerns what will happen when measurement in the {|0⟩, |1⟩} basis occurs. The state does not describe a configuration that both has and lacks a definite value (NC violation), nor does it describe a configuration outside the true/false dichotomy (EM violation). It describes a physical situation such that when measurement occurs, exactly one outcome will be recorded, and that record will be $L_3$ admissible.
 
 ### 3.4 What Superposition Represents
 
@@ -266,15 +266,15 @@ The critical question: what does superposition represent in the LRT framework?
 
 **Admissible structure poised toward outcomes.** The superposition represents a physical situation whose public records, when produced in that measurement context, are always $L_3$ admissible and mutually exclusive. The state encodes how the physical situation is disposed toward those outcomes via the Born rule probabilities.
 
-This last interpretation is key. The quantum state is a well-defined representational vehicle in the theory that encodes outcome-possibilities - specifically, it encodes the probability distribution over $L_3$-admissible outcomes that will be produced when measurement occurs.
+This last interpretation is key. The quantum state is a well-defined representational vehicle in the theory that encodes outcome-possibilities — specifically, it encodes the probability distribution over $L_3$-admissible outcomes that will be produced when measurement occurs.
 
 ### 3.5 Measurement Contexts and Sharp Properties
 
 The measurement basis determines which properties are sharp. For state |ψ⟩ = α|0⟩ + β|1⟩:
 
-- **Property $P_1$:** "has value 0 in computational basis" - not sharp for |ψ⟩ prior to measurement
-- **Property $P_2$:** "corresponds to state vector |ψ⟩ in Hilbert space" - sharp for the representational vehicle
-- **Property $P_3$:** "would yield outcome 0 with probability |α|² upon computational basis measurement" - sharp for the representational vehicle
+- **Property $P_1$:** "has value 0 in computational basis" — not sharp for |ψ⟩ prior to measurement
+- **Property $P_2$:** "corresponds to state vector |ψ⟩ in Hilbert space" — sharp for the representational vehicle
+- **Property $P_3$:** "would yield outcome 0 with probability |α|² upon computational basis measurement" — sharp for the representational vehicle
 
 The third property is crucial. The quantum state determinately possesses the property "encodes probability |α|² for outcome 0." This probability is not epistemological uncertainty about a pre-existing value; it is a determinate feature of how the representational vehicle characterizes the physical situation.
 
@@ -292,7 +292,7 @@ The response has two parts.
 
 If a single physical situation admits multiple mathematically equivalent decompositions into outcome-projectors, Id forbids the total weight assigned to that situation from depending on the chosen decomposition. Equivalence here means: decompositions that correspond to the same projector/ray structure (same event) and differ only by basis choice or refinement/coarse-graining that preserves the event. The representational vehicle must characterize the situation determinately, which means the measure it encodes cannot vary with representational choices. Therefore the weight function on projectors must be additive across orthogonal resolutions and non-contextual across embeddings.
 
-This requirement - that measure is vehicle-invariant under mathematically equivalent decompositions - generates the additivity and non-contextuality conditions that Gleason's theorem requires. The Born rule |⟨φ|ψ⟩|² emerges as the unique measure satisfying these constraints.
+This requirement — that measure is vehicle-invariant under mathematically equivalent decompositions — generates the additivity and non-contextuality conditions that Gleason's theorem requires. The Born rule |⟨φ|ψ⟩|² emerges as the unique measure satisfying these constraints.
 
 Section 4 develops this derivation. The point here is that the vehicle/content distinction does real work: it separates "outcomes must be determinate" (from $A_\Omega$ definition) from "probabilities take form |ψ|²" (from vehicle-invariance under decomposition).
 
