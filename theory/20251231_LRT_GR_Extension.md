@@ -360,6 +360,14 @@ This is the ultimate extension of logic realism: not just "physics is logical" b
 
 ---
 
+## Acknowledgments
+
+This research was conducted independently. I thank the related online communities for critical feedback on early drafts, particularly regarding circularity concerns and related derivations.
+
+**AI Assistance Disclosure:** This work was developed with assistance from AI language models including Claude (Anthropic), ChatGPT (OpenAI), Gemini (Google), Grok (xAI), and Perplexity. These tools were used for drafting, editing, literature review, and exploring mathematical formulations. All substantive claims, arguments, and errors remain the author's responsibility.
+
+---
+
 ## References
 
 Gödel, K. (1949). An example of a new type of cosmological solutions of Einstein's field equations of gravitation. *Reviews of Modern Physics*, 21(3), 447–450.
