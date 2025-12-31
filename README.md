@@ -30,19 +30,24 @@ The central document of this repository. It derives the Born rule and complex Hi
 | **Local tomography forced** | Complete | Appendix D.5 |
 | **Vehicle trilemma for rivals** | Complete | §4.6 |
 
-### Derivation Chain
+### Derivation Chain (Revised)
+
+The derivation requires **L₃ alone**—no empirical supplementation, no bridging principles.
 
 ```
-L₁ (Determinate Identity)
-    ↓ [Theorem D.1: forces intrinsic identity somewhere]
-M₁ (Macroscopic Self-Sufficiency) — empirical/transcendental
-    ↓ [Theorem D.2, D.5: forces local tomography]
-CDP (Compositional Distinguishability) — motivated extension
+L₃ (Determinate Identity, Non-Contradiction, Excluded Middle)
+    ↓ [Theorem D.1: global holism ruled out]
+    ↓ [Section 2.3: parts ground wholes]
+Local Self-Sufficiency — theorem from L₁
+    ↓ [Theorem B.7: CDP as theorem]
+Local Tomography — consequence
     ↓ [Theorem B.9: grounds Masanes-Müller axioms]
 Complex Hilbert Space — unique arena
     ↓ [Vehicle-weight invariance from L₁]
 Born Rule — unique measure (Gleason/Busch)
 ```
+
+**Key revision**: CDP and M₁ are now consequences of L₁, not separate inputs. The chain is as tight as the mathematics permits.
 
 ### Falsification Criteria (§6.1)
 
@@ -111,16 +116,25 @@ Session_Log/                         # Development history (50+ sessions)
 | **B** | Complex Hilbert space forced via L₃ + Masanes-Müller | Complete |
 | **C** | Bell non-locality as global identity constraint | Complete |
 | **D** | Formal derivation chain (D.1–D.7) | Complete |
+| **E** | QFT Extension (Programmatic) | Research direction |
+| **F** | GR Extension (Programmatic) | Research direction |
+| **G** | Cosmological Implications (Programmatic) | Research direction |
 
-### Appendix D Theorems
+### Appendix D Theorems (Revised)
 
-- **D.1**: Intrinsic identity forced somewhere (anti-vicious-relational)
-- **D.2**: Macroscopic self-sufficiency as transcendental precondition
-- **D.3**: Complete derivation chain (7 layers)
+- **D.1**: Intrinsic identity forced; global holism ruled out
+- **D.2**: Macroscopic self-sufficiency as consequence of L₁
+- **D.3**: Tightened derivation chain (L₃ alone)
 - **D.4**: Vehicle-weight invariance → Born rule
-- **D.5**: Local tomography forced by M₁ (reductio)
+- **D.5**: Local tomography forced (reductio)
 - **D.6**: Incompleteness and pre-mathematical priority of L₃
 - **D.7**: Summary
+
+### Programmatic Appendices (E–G)
+
+- **E**: QFT — Fock space, vacuum uniqueness, renormalization as L₃-admissibility
+- **F**: GR — Time as logical sequencing, Lorentzian signature, CTC exclusion
+- **G**: Cosmology — Ontological expansion, flexible determinism, Λ > 0 conjecture
 
 ---
 

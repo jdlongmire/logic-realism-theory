@@ -133,5 +133,5 @@ The only input is L₃. Everything else is entailment.
 ## Git Log
 
 ```
-(commits pending)
+66bc12a Major refactor: CDP elimination and tightened derivation chain
 ```
