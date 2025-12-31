@@ -491,7 +491,7 @@ $$\text{$L_3$} \to \text{Hilbert space} \to \text{Born rule} \to \text{measureme
 
 Each arrow is a derivation, not a postulate. The framework is closed: it generates its own measurement predictions from logical constraints.
 
-![Derivation Chain: $L_3$ to Born Rule](figures/LRT-flowchart.png)
+![Derivation Chain: $L_3$ to Born Rule](figures/LRT-flowchart.png){width=60%}
 
 **Figure 1.** The derivation chain from $L_3$ through vehicle-invariance to the Born rule. Each step is either a logical entailment or relies on established mathematical results (Gleason's theorem).
 
