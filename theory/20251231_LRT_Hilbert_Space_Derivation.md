@@ -6,15 +6,13 @@
 ORCID: 0009-0009-1383-7698<br>
 Correspondence: jdlongmire@outlook.com
 
+*Note: Views expressed are my own and do not represent those of Northrop Grumman Corporation.*
+
 ---
 
 ## Abstract
 
 We derive the complex Hilbert space structure of quantum mechanics from the logical constraint of Determinate Identity (Id), showing that the operational axioms of quantum reconstruction theorems are not arbitrary postulates but consequences of logic constraining physical instantiation. The derivation proceeds by establishing that Id forces local tomography (Theorem 1), continuous reversible dynamics (Theorem 2), and the existence of non-classical correlations (Theorem 3). Combined with established reconstruction results (Masanes-Müller 2011, Hardy 2001), these yield complex Hilbert space as the unique state space satisfying Id-constraints on composite systems. The Tsirelson bound emerges as a mathematical consequence.
-
----
-
-*Note: Views expressed are my own and do not represent those of Northrop Grumman Corporation.*
 
 ---
 

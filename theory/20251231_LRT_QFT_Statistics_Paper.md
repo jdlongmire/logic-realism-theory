@@ -6,6 +6,8 @@
 ORCID: 0009-0009-1383-7698<br>
 Correspondence: jdlongmire@outlook.com
 
+*Note: Views expressed are my own and do not represent those of Northrop Grumman Corporation.*
+
 ---
 
 ## Abstract
@@ -17,10 +19,6 @@ The core argument: if particles are intrinsically indistinguishable, then any qu
 This result extends the Logic Realism programme, which previously derived the Born rule and complex Hilbert space structure from the same logical constraints (Longmire 2025). The paper also conjectures a connection between L₃ and the spin-statistics theorem, though a complete derivation remains future work.
 
 **Keywords:** quantum statistics, symmetrization postulate, identical particles, logic realism, Determinate Identity, Fock space, bosons, fermions
-
----
-
-*Note: Views expressed are my own and do not represent those of Northrop Grumman Corporation.*
 
 ---
 
