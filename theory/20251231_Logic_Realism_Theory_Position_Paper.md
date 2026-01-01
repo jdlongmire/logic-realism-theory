@@ -17,6 +17,8 @@ Logic Realism Theory (LRT) treats the three classical logical laws (Determinate 
 
 *Note: Views expressed are my own and do not represent those of Northrop Grumman Corporation.*
 
+---
+
 **Scope:** This position paper establishes the Logic Realism Theory framework and sketches the derivation of the Born rule from vehicle-invariance constraints. Full technical derivations appear in companion papers: *Complex Hilbert Space from Determinate Identity* (derives reconstruction axioms from Id), *Quantum Statistics from Determinate Identity* (derives symmetrization postulate). Extensions to quantum field theory, general relativity, and cosmology are outlined but not fully developed.
 
 ## 1. The Discovery

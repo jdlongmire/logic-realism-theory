@@ -16,6 +16,8 @@ We derive the complex Hilbert space structure of quantum mechanics from the logi
 
 *Note: Views expressed are my own and do not represent those of Northrop Grumman Corporation.*
 
+---
+
 ## 1. Introduction
 
 ### 1.1 The Problem

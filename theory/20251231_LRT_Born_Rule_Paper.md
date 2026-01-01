@@ -20,6 +20,8 @@ The core argument: the measure over admissible measurement outcomes is a feature
 
 *Note: Views expressed are my own and do not represent those of Northrop Grumman Corporation.*
 
+---
+
 ## 1. Introduction
 
 Gleason's theorem shows that the Born rule is the unique probability measure on quantum projections satisfying additivity and non-contextuality. But why should physical probabilities satisfy these conditions? Standard quantum mechanics treats them as postulates; this paper derives them from a more fundamental principle.
