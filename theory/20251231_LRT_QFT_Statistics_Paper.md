@@ -12,7 +12,7 @@ Correspondence: jdlongmire@outlook.com
 
 The symmetrization postulate (that multi-particle quantum states must be either symmetric (bosons) or antisymmetric (fermions) under particle exchange) is standardly treated as an independent axiom of quantum mechanics. This paper derives the symmetrization postulate from Determinate Identity (Id), the first of the three classical logical laws understood as ontological constraints on physical instantiation.
 
-The core argument: if particles are intrinsically indistinguishable, then any quantum state that transforms non-trivially under permutation attributes distinguishable identity to indistinguishable entities. Such states violate Id and are therefore not physically instantiable. The only L₃-admissible states are those invariant (up to phase) under all permutations. Group-theoretic analysis shows that the symmetric group S_N has exactly two one-dimensional representations: the trivial representation (yielding bosons) and the sign representation (yielding fermions). The Fock space structure of quantum field theory follows as a corollary.
+The core argument: if particles are intrinsically indistinguishable, then any quantum state that transforms non-trivially under permutation attributes distinguishable identity to indistinguishable entities. Such states violate Id and are therefore not physically instantiable. The only L₃-admissible states are those invariant (up to phase) under all permutations. Group-theoretic analysis shows that the symmetric group $S_N$ has exactly two one-dimensional representations: the trivial representation (yielding bosons) and the sign representation (yielding fermions). The Fock space structure of quantum field theory follows as a corollary.
 
 This result extends the Logic Realism programme, which previously derived the Born rule and complex Hilbert space structure from the same logical constraints (Longmire 2025). The paper also conjectures a connection between L₃ and the spin-statistics theorem, though a complete derivation remains future work.
 
@@ -112,7 +112,7 @@ Consider two electrons. In classical mechanics, we can label them "electron 1" a
 
 In quantum mechanics, trajectories are not well-defined. If two electrons interact and then separate, we cannot say which outgoing electron is "the same" as which incoming electron. The labels "1" and "2" appear to be mere bookkeeping devices with no physical significance.
 
-This raises a puzzle: if the labels are physically meaningless, why do we use a tensor product Hilbert space H ⊗ H that seems to presuppose two distinguishable systems? And why must physical states respect specific symmetry constraints under label exchange?
+This raises a puzzle: if the labels are physically meaningless, why do we use a tensor product Hilbert space $H \otimes H$ that seems to presuppose two distinguishable systems? And why must physical states respect specific symmetry constraints under label exchange?
 
 ### 3.3 Why This Is an Id Problem
 
@@ -144,7 +144,7 @@ This section presents the core argument. We show that Id excludes non-symmetric 
 
 ### 4.1 Setup: The N-Particle Hilbert Space
 
-Let H be the Hilbert space of a single particle (e.g., L²(R³) ⊗ C² for a spin-½ particle in three dimensions). The N-particle Hilbert space is the tensor product:
+Let $H$ be the Hilbert space of a single particle (e.g., $L^2(\mathbb{R}^3) \otimes \mathbb{C}^2$ for a spin-½ particle in three dimensions). The N-particle Hilbert space is the tensor product:
 
 $$\mathcal{H}^{(N)} = \underbrace{H \otimes H \otimes \cdots \otimes H}_{N \text{ factors}}$$
 
@@ -152,76 +152,76 @@ Elements of $\mathcal{H}^{(N)}$ are written as $|\psi_1\rangle \otimes |\psi_2\r
 
 ### 4.2 Permutation Operators
 
-The symmetric group S_N acts on H^(N) by permuting the tensor factors. For each permutation π ∈ S_N, define the unitary operator P_π by:
+The symmetric group $S_N$ acts on $\mathcal{H}^{(N)}$ by permuting the tensor factors. For each permutation $\pi \in S_N$, define the unitary operator $P_\pi$ by:
 
 $$P_\pi |ψ_1, ψ_2, \ldots, ψ_N\rangle = |ψ_{\pi^{-1}(1)}, ψ_{\pi^{-1}(2)}, \ldots, ψ_{\pi^{-1}(N)}\rangle$$
 
-For example, if π = (12) is the transposition exchanging 1 and 2:
+For example, if $\pi = (12)$ is the transposition exchanging 1 and 2:
 
 $$P_{(12)} |ψ_1, ψ_2, ψ_3\rangle = |ψ_2, ψ_1, ψ_3\rangle$$
 
-The operators {P_π : π ∈ S_N} form a unitary representation of S_N on H^(N).
+The operators $\{P_\pi : \pi \in S_N\}$ form a unitary representation of $S_N$ on $\mathcal{H}^{(N)}$.
 
 ### 4.3 Theorem 1: Id Excludes Non-Symmetric Sectors
 
-**Theorem 1 (Symmetrization Required).** Let the N particles be identical (intrinsically indistinguishable). If Id holds for the N-particle system, then only states |ψ⟩ ∈ H^(N) satisfying
+**Theorem 1 (Symmetrization Required).** Let the N particles be identical (intrinsically indistinguishable). If Id holds for the N-particle system, then only states $|\psi\rangle \in \mathcal{H}^{(N)}$ satisfying
 
 $$P_\pi |\psi\rangle = c(\pi) |\psi\rangle \quad \text{for all } \pi \in S_N$$
 
-are L₃-admissible, where c: S_N → U(1) is a one-dimensional unitary representation.
+are L₃-admissible, where $c: S_N \to U(1)$ is a one-dimensional unitary representation.
 
 **Proof.**
 
-*Step 1: The physical content of a state.* A quantum state |ψ⟩ ∈ H^(N) represents a physical configuration of N particles. The physical content of this state is everything that can be measured or observed: all expectation values, probabilities, and correlations.
+*Step 1: The physical content of a state.* A quantum state $|\psi\rangle \in \mathcal{H}^{(N)}$ represents a physical configuration of N particles. The physical content of this state is everything that can be measured or observed: all expectation values, probabilities, and correlations.
 
-*Step 2: Label independence.* Since the particles are intrinsically indistinguishable, the labels "1", "2", …, "N" are not physical. They are notational devices for bookkeeping within the tensor product formalism. Consequently, the physical content of |ψ⟩ must be independent of how we assign labels to particles.
+*Step 2: Label independence.* Since the particles are intrinsically indistinguishable, the labels "1", "2", …, "N" are not physical. They are notational devices for bookkeeping within the tensor product formalism. Consequently, the physical content of $|\psi\rangle$ must be independent of how we assign labels to particles.
 
 *Step 3: Applying Id.* By Determinate Identity, a physical configuration is determinately what it is, independent of description. If two descriptions (two labelings) yield the same physical content, they describe the same configuration. If they yield different physical content, they describe different configurations.
 
-Consider the states |ψ⟩ and P_π|ψ⟩ for some permutation π. These states arise from the same physical situation with different label assignments. By step 2, if the particles are truly identical, |ψ⟩ and P_π|ψ⟩ must represent the same physical configuration.
+Consider the states $|\psi\rangle$ and $P_\pi|\psi\rangle$ for some permutation π. These states arise from the same physical situation with different label assignments. By step 2, if the particles are truly identical, $|\psi\rangle$ and $P_\pi|\psi\rangle$ must represent the same physical configuration.
 
-*Step 4: Same physical configuration implies same state (up to phase).* In quantum mechanics, two state vectors represent the same physical state if and only if they differ by a global phase: |ψ'⟩ = e^(iθ)|ψ⟩. Observable quantities depend only on the ray [|ψ⟩], not on the specific representative.
+*Step 4: Same physical configuration implies same state (up to phase).* In quantum mechanics, two state vectors represent the same physical state if and only if they differ by a global phase: |ψ'⟩ = e^(iθ)$|\psi\rangle$. Observable quantities depend only on the ray [$|\psi\rangle$], not on the specific representative.
 
-If |ψ⟩ and P_π|ψ⟩ represent the same physical configuration, then:
+If $|\psi\rangle$ and $P_\pi|\psi\rangle$ represent the same physical configuration, then:
 
 $$P_\pi |\psi\rangle = c(\pi) |\psi\rangle$$
 
-for some c(π) ∈ U(1).
+for some $c(\pi) \in U(1)$.
 
-*Step 5: Consistency condition.* This must hold for all permutations π simultaneously. For the assignment π ↦ c(π) to be consistent with the group structure of S_N, we require:
+*Step 5: Consistency condition.* This must hold for all permutations π simultaneously. For the assignment $\pi \mapsto c(\pi)$ to be consistent with the group structure of $S_N$, we require:
 
 $$c(\pi_1 \pi_2) = c(\pi_1) c(\pi_2)$$
 
 (since $P_{\pi_1\pi_2} = P_{\pi_1}P_{\pi_2}$ and the state must be an eigenstate of all $P_\pi$).
 
-Therefore c: S_N → U(1) is a group homomorphism, i.e., a one-dimensional unitary representation of S_N. □
+Therefore $c: S_N \to U(1)$ is a group homomorphism, i.e., a one-dimensional unitary representation of $S_N$. □
 
 ### 4.4 Theorem 2: Only Symmetric and Antisymmetric Survive
 
-**Theorem 2 (Bosons and Fermions Only).** The symmetric group S_N (for N ≥ 2) has exactly two one-dimensional unitary representations:
+**Theorem 2 (Bosons and Fermions Only).** The symmetric group $S_N$ (for N ≥ 2) has exactly two one-dimensional unitary representations:
 
-1. The *trivial representation*: c(π) = 1 for all π.
-2. The *sign representation*: c(π) = sgn(π), where sgn(π) = +1 for even permutations and −1 for odd permutations.
+1. The *trivial representation*: $c(\pi) = 1$ for all $\pi$.
+2. The *sign representation*: $c(\pi) = \text{sgn}(\pi)$, where $\text{sgn}(\pi) = +1$ for even permutations and $-1$ for odd permutations.
 
 Therefore, Id-admissible N-particle states are either:
-- **Symmetric** (c = trivial): P_π|ψ⟩ = |ψ⟩ for all π. These are *bosonic* states.
-- **Antisymmetric** (c = sign): P_π|ψ⟩ = sgn(π)|ψ⟩ for all π. These are *fermionic* states.
+- **Symmetric** (c = trivial): $P_\pi|\psi\rangle = |\psi\rangle$ for all $\pi$. These are *bosonic* states.
+- **Antisymmetric** (c = sign): $P_\pi|\psi\rangle = \text{sgn}(\pi)|\psi\rangle$ for all $\pi$. These are *fermionic* states.
 
 **Proof.**
 
-A one-dimensional unitary representation c: S_N → U(1) is a group homomorphism to the abelian group U(1). The image c(S_N) is a subgroup of U(1).
+A one-dimensional unitary representation $c: S_N \to U(1)$ is a group homomorphism to the abelian group $U(1)$. The image $c(S_N)$ is a subgroup of $U(1)$.
 
-S_N is generated by transpositions (two-element swaps). Each transposition τ satisfies τ² = e (the identity). Therefore c(τ)² = c(τ²) = c(e) = 1, which implies c(τ) = ±1.
+$S_N$ is generated by transpositions (two-element swaps). Each transposition $\tau$ satisfies $\tau^2 = e$ (the identity). Therefore $c(\tau)^2 = c(\tau^2) = c(e) = 1$, which implies $c(\tau) = \pm 1$.
 
-*Case 1:* c(τ) = +1 for all transpositions. Then c(π) = 1 for all π, since every permutation is a product of transpositions. This is the trivial representation.
+*Case 1:* $c(\tau) = +1$ for all transpositions. Then $c(\pi) = 1$ for all $\pi$, since every permutation is a product of transpositions. This is the trivial representation.
 
-*Case 2:* c(τ) = −1 for all transpositions. Then c(π) = (−1)^k where π is a product of k transpositions. This equals sgn(π), the sign representation.
+*Case 2:* $c(\tau) = -1$ for all transpositions. Then $c(\pi) = (-1)^k$ where $\pi$ is a product of k transpositions. This equals $\text{sgn}(\pi)$, the sign representation.
 
 *Case 3:* $c(\tau_1) = +1$ and $c(\tau_2) = -1$ for some transpositions $\tau_1, \tau_2$. But all transpositions are conjugate in $S_N$ (for $N \geq 2$), meaning $\tau_2 = \sigma \tau_1 \sigma^{-1}$ for some $\sigma$. Then:
 
 $$c(\tau_2) = c(\sigma \tau_1 \sigma^{-1}) = c(\sigma) c(\tau_1) c(\sigma)^{-1} = c(\tau_1)$$
 
-(since U(1) is abelian). This contradicts $c(\tau_1) \neq c(\tau_2)$.
+(since $U(1)$ is abelian). This contradicts $c(\tau_1) \neq c(\tau_2)$.
 
 Therefore Cases 1 and 2 are the only possibilities. □
 
@@ -264,7 +264,7 @@ Duck and Sudarshan (1997) provide a comprehensive review of the various proofs a
 
 From the LRT perspective, Section 4 establishes that identical particles must be either bosons or fermions; there is no third option. But it does not yet explain *which* particles are which.
 
-Spin is a property related to behavior under spatial rotations (the rotation group SO(3) or its double cover SU(2)). Statistics is a property related to behavior under particle permutations (the symmetric group S_N). The spin-statistics theorem connects these two different symmetries.
+Spin is a property related to behavior under spatial rotations (the rotation group $SO(3)$ or its double cover $SU(2)$). Statistics is a property related to behavior under particle permutations (the symmetric group $S_N$). The spin-statistics theorem connects these two different symmetries.
 
 ### 5.4 Conjecture: L₃ + Lorentz Invariance → Spin-Statistics
 
@@ -298,7 +298,7 @@ $$|ψ, ψ\rangle_S = |ψ\rangle ⊗ |ψ\rangle$$
 
 ### 6.3 Parastatistics Ruled Out
 
-Parastatistics refers to hypothetical statistics corresponding to higher-dimensional representations of S_N. For example, parafermions of order p would have wave functions transforming according to p-dimensional representations.
+Parastatistics refers to hypothetical statistics corresponding to higher-dimensional representations of $S_N$. For example, parafermions of order p would have wave functions transforming according to p-dimensional representations.
 
 Theorem 1 rules out parastatistics: Id requires one-dimensional representations. States transforming in higher-dimensional representations would attribute distinguishable identities (the different components of the representation) to indistinguishable particles.
 
@@ -326,9 +326,9 @@ Moreover, the Id argument explains *why* there are exactly two options (bosons a
 
 *Objection:* In two spatial dimensions, particles called anyons exhibit statistics intermediate between bosons and fermions. Exchange of two anyons produces a phase e^(iθ) where θ can be any value, not just 0 or π. This seems to contradict Theorem 2.
 
-*Reply:* Anyons arise in two-dimensional systems where the configuration space of identical particles has non-trivial topology. In 2D, the fundamental group of the configuration space is the braid group B_N, not the permutation group S_N. Adiabatic exchange of particles traces a path in configuration space, and different paths can be topologically inequivalent.
+*Reply:* Anyons arise in two-dimensional systems where the configuration space of identical particles has non-trivial topology. In 2D, the fundamental group of the configuration space is the braid group $B_N$, not the permutation group $S_N$. Adiabatic exchange of particles traces a path in configuration space, and different paths can be topologically inequivalent.
 
-The argument of Section 4 assumes that particle exchange corresponds to permutation (elements of S_N). This is correct in three or more spatial dimensions, where all paths implementing an exchange are topologically equivalent. In 2D, the richer topology allows for the continuous statistics parameter.
+The argument of Section 4 assumes that particle exchange corresponds to permutation (elements of $S_N$). This is correct in three or more spatial dimensions, where all paths implementing an exchange are topologically equivalent. In 2D, the richer topology allows for the continuous statistics parameter.
 
 This is not a violation of Id but a refinement: in 2D, "identical particles" can have a richer identity structure due to topological constraints. The requirement that physical states transform consistently under exchange still holds; the group implementing exchange is simply larger.
 
@@ -384,7 +384,7 @@ These questions define the frontier of the LRT programme's extension to quantum 
 
 ### A.1 Complete Proof of Theorem 1
 
-**Theorem 1.** Let the N particles be identical. If Id holds, then only states |ψ⟩ satisfying P_π|ψ⟩ = c(π)|ψ⟩ for all π ∈ S_N are L₃-admissible, where c: S_N → U(1) is a one-dimensional unitary representation.
+**Theorem 1.** Let the N particles be identical. If Id holds, then only states $|\psi\rangle$ satisfying $P_\pi|\psi\rangle = c(\pi)|\psi\rangle$ for all $\pi \in S_N$ are L₃-admissible, where $c: S_N \to U(1)$ is a one-dimensional unitary representation.
 
 **Proof.**
 
@@ -392,33 +392,33 @@ These questions define the frontier of the LRT programme's extension to quantum 
 
 *Premise 2 (Determinate Identity):* Id holds: every physical configuration is determinately what it is, independent of how it is described.
 
-*Definition (Physical equivalence):* Two quantum states |ψ⟩ and |ψ'⟩ are *physically equivalent* if they represent the same physical configuration, i.e., if they yield identical predictions for all observables.
+*Definition (Physical equivalence):* Two quantum states $|\psi\rangle$ and |ψ'⟩ are *physically equivalent* if they represent the same physical configuration, i.e., if they yield identical predictions for all observables.
 
-*Lemma A.1:* Physical equivalence in quantum mechanics coincides with ray equivalence: |ψ⟩ and |ψ'⟩ are physically equivalent if and only if |ψ'⟩ = e^(iθ)|ψ⟩ for some θ ∈ R.
+*Lemma A.1:* Physical equivalence in quantum mechanics coincides with ray equivalence: $|\psi\rangle$ and |ψ'⟩ are physically equivalent if and only if |ψ'⟩ = e^(iθ)$|\psi\rangle$ for some θ ∈ R.
 
-*Proof of Lemma A.1:* Observable quantities are given by expectation values ⟨ψ|A|ψ⟩/⟨ψ|ψ⟩ and transition probabilities |⟨φ|ψ⟩|²/(⟨φ|φ⟩⟨ψ|ψ⟩). Both are invariant under |ψ⟩ ↦ e^(iθ)|ψ⟩. Conversely, if all expectation values agree, the states lie on the same ray. □
+*Proof of Lemma A.1:* Observable quantities are given by expectation values ⟨ψ|A$|\psi\rangle$/⟨ψ$|\psi\rangle$ and transition probabilities |⟨φ$|\psi\rangle$|²/(⟨φ|φ⟩⟨ψ$|\psi\rangle$). Both are invariant under $|\psi\rangle$ ↦ e^(iθ)$|\psi\rangle$. Conversely, if all expectation values agree, the states lie on the same ray. □
 
 *Derivation:*
 
-(1) Consider an N-particle state |ψ⟩ ∈ H⊗N and any permutation π ∈ S_N.
+(1) Consider an N-particle state $|\psi\rangle$ $\in \mathcal{H}^{\otimes N}$ and any permutation $\pi \in S_N$.
 
-(2) The state P_π|ψ⟩ is obtained from |ψ⟩ by relabeling the particles according to π.
+(2) The state $P_\pi|\psi\rangle$ is obtained from $|\psi\rangle$ by relabeling the particles according to π.
 
-(3) Since the particles are identical (Premise 1), this relabeling has no physical significance. The states |ψ⟩ and P_π|ψ⟩ describe the same physical situation.
+(3) Since the particles are identical (Premise 1), this relabeling has no physical significance. The states $|\psi\rangle$ and $P_\pi|\psi\rangle$ describe the same physical situation.
 
-(4) By Id (Premise 2), the physical configuration is determinate independent of description. Since |ψ⟩ and P_π|ψ⟩ are merely different descriptions of the same configuration, they must be physically equivalent.
+(4) By Id (Premise 2), the physical configuration is determinate independent of description. Since $|\psi\rangle$ and $P_\pi|\psi\rangle$ are merely different descriptions of the same configuration, they must be physically equivalent.
 
 (5) By Lemma A.1, physical equivalence implies ray equivalence:
    $$P_\pi|\psi\rangle = c(\pi)|\psi\rangle$$
-   for some c(π) ∈ U(1).
+   for some $c(\pi) \in U(1)$.
 
-(6) This must hold for all π ∈ S_N. For the phases to be consistent under composition:
+(6) This must hold for all $\pi \in S_N$. For the phases to be consistent under composition:
    $$P_{\pi_1 \pi_2}|\psi\rangle = P_{\pi_1}(P_{\pi_2}|\psi\rangle) = P_{\pi_1}(c(\pi_2)|\psi\rangle) = c(\pi_2) c(\pi_1)|\psi\rangle$$
    But also:
    $$P_{\pi_1 \pi_2}|\psi\rangle = c(\pi_1 \pi_2)|\psi\rangle$$
-   Therefore $c(\pi_1\pi_2) = c(\pi_1)c(\pi_2)$ (since U(1) is abelian).
+   Therefore $c(\pi_1\pi_2) = c(\pi_1)c(\pi_2)$ (since $U(1)$ is abelian).
 
-(7) Thus c: S_N → U(1) is a group homomorphism, i.e., a one-dimensional unitary representation. □
+(7) Thus $c: S_N \to U(1)$ is a group homomorphism, i.e., a one-dimensional unitary representation. □
 
 ### A.2 Complete Proof of Theorem 2
 
@@ -426,21 +426,21 @@ These questions define the frontier of the LRT programme's extension to quantum 
 
 **Proof.**
 
-Let c: S_N → U(1) be a one-dimensional unitary representation.
+Let $c: S_N \to U(1)$ be a one-dimensional unitary representation.
 
-*Step 1:* S_N is generated by transpositions τ = (ij), which satisfy τ² = e.
+*Step 1:* S_N is generated by transpositions τ = (ij), which satisfy $\tau^2$ = e.
 
-*Step 2:* For any transposition τ, c(τ)² = c(τ²) = c(e) = 1, so c(τ) ∈ {±1}.
+*Step 2:* For any transposition τ, $c(\tau)$² = c($\tau^2$) = $c(e)$ = 1, so $c(\tau)$ ∈ {±1}.
 
 *Step 3:* All transpositions in $S_N$ are conjugate. If $\tau_1 = (ij)$ and $\tau_2 = (kl)$, there exists $\sigma \in S_N$ such that $\tau_2 = \sigma\tau_1\sigma^{-1}$.
 
-*Step 4:* For any conjugate elements, $c(\sigma\tau_1\sigma^{-1}) = c(\sigma)c(\tau_1)c(\sigma^{-1}) = c(\tau_1)$ (since U(1) is abelian).
+*Step 4:* For any conjugate elements, $c(\sigma\tau_1\sigma^{-1}) = c(\sigma)c(\tau_1)c(\sigma^{-1}) = c(\tau_1)$ (since $U(1)$ is abelian).
 
-*Step 5:* Therefore all transpositions have the same image under c: either c(τ) = +1 for all τ, or c(τ) = −1 for all τ.
+*Step 5:* Therefore all transpositions have the same image under c: either $c(\tau) = +1$ for all $\tau$, or $c(\tau) = -1$ for all $\tau$.
 
-*Case c(τ) = +1:* Every permutation is a product of transpositions, so c(π) = 1 for all π. This is the trivial representation.
+*Case $c(\tau) = +1$:* Every permutation is a product of transpositions, so $c(\pi) = 1$ for all $\pi$. This is the trivial representation.
 
-*Case c(τ) = −1:* If $\pi = \tau_1\tau_2\cdots\tau_k$ (product of k transpositions), then $c(\pi) = (-1)^k$. Since the parity (even/odd) of k depends only on π (not on the specific factorization), $c(\pi) = \text{sgn}(\pi)$. This is the sign representation.
+*Case $c(\tau) = -1$:* If $\pi = \tau_1\tau_2\cdots\tau_k$ (product of k transpositions), then $c(\pi) = (-1)^k$. Since the parity (even/odd) of k depends only on $\pi$ (not on the specific factorization), $c(\pi) = \text{sgn}(\pi)$. This is the sign representation.
 
 No other one-dimensional representations exist. □
 
