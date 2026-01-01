@@ -1,6 +1,6 @@
 # The Born Rule from Determinate Identity: A Logic-Realist Derivation
 
-**Working Paper – Version 0.1**
+**Working Paper**
 
 **James (JD) Longmire**<br>
 ORCID: 0009-0009-1383-7698<br>

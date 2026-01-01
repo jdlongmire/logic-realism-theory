@@ -1,6 +1,6 @@
 # Logic Realism Theory: Physical Foundations from Logical Constraints
 
-**Position Paper – Version 1.0**
+**Position Paper**
 
 **James (JD) Longmire**<br>
 ORCID: 0009-0009-1383-7698<br>

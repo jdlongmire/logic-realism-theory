@@ -1,6 +1,6 @@
 # Quantum Statistics from Determinate Identity: A Logic-Realist Derivation of the Symmetrization Postulate
 
-**Working Paper – Version 0.1**
+**Working Paper**
 
 **James (JD) Longmire**<br>
 ORCID: 0009-0009-1383-7698<br>
