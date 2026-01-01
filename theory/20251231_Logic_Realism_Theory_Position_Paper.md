@@ -12,9 +12,9 @@ Correspondence: jdlongmire@outlook.com
 
 Logic Realism Theory (LRT) treats the three classical logical laws (Determinate Identity, Non-Contradiction, and Excluded Middle) as ontological constraints on physical instantiation, not merely rules of inference. The framework distinguishes $I_\infty$ (all representable configurations) from $A_\Omega$ (the $L_3$-admissible subset that can be physically instantiated as stable records). This boundary condition generates quantum structure: vehicle-invariance under mathematically equivalent decompositions forces the Born rule via Gleason's theorem; local tomography requirements select complex Hilbert space over real alternatives. The framework is falsifiable ($L_3$ violations in stable records would refute it) and progressive (it predicted complex QM before the Renou et al. 2021 test). Extensions to quantum field theory, general relativity, and cosmology are outlined. Full technical derivations appear in companion papers.
 
----
+**Keywords:** logic realism, quantum foundations, Born rule, Gleason's theorem, Determinate Identity, ontology, measurement problem
 
-**Scope:** This position paper establishes the Logic Realism Theory framework and sketches the derivation of the Born rule from vehicle-invariance constraints. Full technical derivations appear in companion papers: *Complex Hilbert Space from Determinate Identity* (derives reconstruction axioms from Id), *Quantum Statistics from Determinate Identity* (derives symmetrization postulate). Extensions to quantum field theory, general relativity, and cosmology are outlined but not fully developed.
+---
 
 ## 1. The Discovery
 
@@ -204,8 +204,6 @@ Joint inadmissibility generates temporal ordering. If $c_1$ and $c_2$ cannot be 
 3. $c_1$ instantiates, then ceases, then $c_2$ instantiates
 
 Time is not geometry. Time is the logical sequencing necessitated by joint inadmissibility of individually admissible configurations.
-
-**Scope limitation:** This is not yet a derivation of Lorentzian time or metric structure. It is a proposal about why an ordering parameter is forced when jointly inadmissible configurations are sequentially realized. Spacetime geometry is treated later as additional structure built on top of that ordering.
 
 ### 2.5 Why This Framework Is Not Operationalism
 
@@ -487,12 +485,6 @@ The LRT derivation of the Born rule accomplishes three things:
 **Second, explains the form.** Why |ψ|² rather than |ψ|, |ψ|³, or some other function? The derivation shows: because |ψ|² is the unique form satisfying vehicle-invariance constraints. The form is not arbitrary.
 
 **Third, connects logic to measurement.** The Born rule is the bridge between logical constraints ($L_3$ admissibility of outcomes) and empirical statistics (frequencies of measurement results). The derivation shows this bridge is not conventional but forced by Id.
-
-**Scope limitation:** This derivation assumes Hilbert space structure. The companion technical paper shows that Hilbert space itself follows from distinguishability plus continuity plus local tomography. The complete derivation chain is:
-
-$$\text{$L_3$} \to \text{Hilbert space} \to \text{Born rule} \to \text{measurement statistics}$$
-
-Each arrow is a derivation, not a postulate. The framework is closed: it generates its own measurement predictions from logical constraints.
 
 <center>
 ![Derivation Chain: $L_3$ to Born Rule](figures/LRT-flowchart.png){width=60%}

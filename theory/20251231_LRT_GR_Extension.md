@@ -12,6 +12,8 @@ Correspondence: jdlongmire@outlook.com
 
 We explore the consequences of Determinate Identity (Id) for spacetime structure, proposing that key features of general relativity emerge from logical constraints on physical instantiation. The derivation proceeds in stages: temporal ordering emerges from joint inadmissibility of configurations (Theorem 1); Lorentzian signature is forced by the asymmetry between jointly-inadmissible and jointly-admissible configuration pairs (Theorem 2); closed timelike curves are excluded by identity-preservation requirements (Theorem 3); and singularities are constrained by the requirement that identity cannot be destroyed (Theorem 4). These results are programmatic (rigorous formalization requires additional mathematical development), but they suggest that spacetime geometry, like Hilbert space structure, may be derivable from $L_3$ constraints rather than postulated independently.
 
+**Keywords:** spacetime, general relativity, Determinate Identity, temporal ordering, Lorentzian signature, closed timelike curves, singularities, logic realism
+
 ---
 
 ## 1. Introduction
