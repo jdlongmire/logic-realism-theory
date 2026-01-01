@@ -44,7 +44,7 @@ structure relative to the record-alternatives.
 Proof sketch: Record stability under irrelevant variation is itself a modal fact.
 Denying modal facts for the immediate pre-record configuration while allowing
 them for records introduces an identity discontinuity not grounded in any
-physical transition. This violates L₁ (no description-dependent identity).
+physical transition. This violates Id (no description-dependent identity).
 ```
 
 **B. Make rival horns pay in identity currency**
@@ -53,7 +53,7 @@ Against horn (a) "no objective poise":
 - Collapses vehicle/content distinction
 - Same physical vehicle paired with multiple incompatible outcome-measure contents
 - = Representational underdetermination at vehicle level
-- = L₁ violation
+- = Id violation
 
 Against horn (c) "disposition exists but not in vehicle":
 - Press the bearer principle

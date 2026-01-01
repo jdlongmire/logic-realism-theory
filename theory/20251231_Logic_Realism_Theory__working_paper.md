@@ -13,7 +13,7 @@ Human cognition readily represents contradictions and impossibilities, yet physi
 
 The central contribution is showing that Determinate Identity motivates the measure-theoretic assumptions underlying the Born rule. The argument proceeds via a vehicle/content distinction: a quantum state is a physical situation (vehicle) representing outcome-possibilities (content). The measure over admissible continuations characterizes how the physical situation is poised toward outcomes; it belongs to the vehicle, not the content. If this measure varied with choice of mathematical decomposition, the physical situation itself would be indeterminate, violating Determinate Identity. This constraint, combined with decoherence's selection of outcome bases, motivates the additivity and non-contextuality that Gleason's theorem requires. The Born rule thus emerges as the unique measure compatible with determinate physical identity.
 
-Appendix A provides the complete formal derivation. Appendix B shows that complex Hilbert space is forced as the unique arena compatible with Determinate Identity under composition, by grounding the Masanes-Müller (2011) reconstruction axioms in L₃ constraints. Appendix C recasts Bell violations as failures of local identity factorization rather than failures of locality. Appendix D formalizes the derivation chain: Theorem D.1 shows that Determinate Identity forces intrinsic identity and rules out global holism; local self-sufficiency follows directly from L₁ applied to genuine subsystems; Theorem D.4 derives the Born rule from vehicle-weight invariance. The derivation requires no empirical supplementation beyond L₃ itself—the chain from logical floor to Born rule is as tight as the mathematics permits. The paper thus offers a Tahko-style metaphysical grounding for quantum probabilities and non-local correlations, embedding them in a logic-realist ontology of the physical world.
+Appendix A provides the complete formal derivation. Appendix B shows that complex Hilbert space is forced as the unique arena compatible with Determinate Identity under composition, by grounding the Masanes-Müller (2011) reconstruction axioms in L₃ constraints. Appendix C recasts Bell violations as failures of local identity factorization rather than failures of locality. Appendix D formalizes the derivation chain: Theorem D.1 shows that Determinate Identity forces intrinsic identity and rules out global holism; local self-sufficiency follows directly from Id applied to genuine subsystems; Theorem D.4 derives the Born rule from vehicle-weight invariance. The derivation requires no empirical supplementation beyond L₃ itself—the chain from logical floor to Born rule is as tight as the mathematics permits. The paper thus offers a Tahko-style metaphysical grounding for quantum probabilities and non-local correlations, embedding them in a logic-realist ontology of the physical world.
 
 **Keywords:** logic realism, Born rule, quantum foundations, Determinate Identity, Gleason's theorem, Bell non-locality, Hilbert space, ontology
 
@@ -117,7 +117,7 @@ This section shows that global holism is not a genuine alternative. It is incomp
 2. If subsystems do not exist as genuine things, then physics is impossible: there are no internal distinctions to measure, no outcomes to record, no configurations to describe. The domain reduces to an undifferentiated One.
 3. If subsystems are genuine things, then Determinate Identity applies to them: each subsystem must be determinately what it is, independent of description.
 4. Global holism says subsystem identity is constitutively fixed by global state $G$.
-5. But $G$ either depends on the parts (circular grounding, L₁ violated) or is independent of them (featureless monism, physics impossible).
+5. But $G$ either depends on the parts (circular grounding, Id violated) or is independent of them (featureless monism, physics impossible).
 6. Therefore global holism is not a coherent position that satisfies Determinate Identity.
 7. Therefore, wherever genuine subsystems exist, their identity must be intrinsic rather than derivative from some prior whole.
 
@@ -127,11 +127,11 @@ For physics, the crucial implication is: wherever decoherence produces a genuine
 
 This eliminates the need for the Compositional Distinguishability Principle (CDP) as a separate postulate. CDP—the requirement that every global distinction admit a local, context-independent witness—is not an additional assumption motivated by macroscopic self-sufficiency. It is a theorem: it follows directly from Determinate Identity applied to any domain with genuine subsystems. The derivation in Appendix B.2 can therefore cite this section rather than appealing to CDP as a bridging principle.
 
-**Remark on mereological atomism.** The argument establishes that parts ground wholes, but it does not require a bottom level of partless simples. Whether there exist mereological atoms is a separate question. What the argument establishes is a direction of grounding: at whatever level genuine things exist (things with intrinsic identity satisfying L₁), those things are fundamental relative to any whole they compose. The whole supervenes on the parts, not the reverse.
+**Remark on mereological atomism.** The argument establishes that parts ground wholes, but it does not require a bottom level of partless simples. Whether there exist mereological atoms is a separate question. What the argument establishes is a direction of grounding: at whatever level genuine things exist (things with intrinsic identity satisfying Id), those things are fundamental relative to any whole they compose. The whole supervenes on the parts, not the reverse.
 
 **Remark on process metaphysics.** A sophisticated alternative to global holism deserves explicit treatment: process metaphysics (Whitehead 1929, and contemporary descendants such as ontic structural realism). On this view, relations are ontologically basic; "things" (actual occasions, relata, substances) are derivative patterns of relational process. The whole does not ground the parts; rather, *relations* ground *relata*.
 
-This differs from global holism: the priority runs from relations to things, not from cosmos to parts. But it faces a parallel L₁ challenge.
+This differs from global holism: the priority runs from relations to things, not from cosmos to parts. But it faces a parallel Id challenge.
 
 *The relata problem.* A relation $R(a,b)$ presupposes relata $a$ and $b$. If $a$ and $b$ have no identity independent of $R$, then $R$ is a relation between... what? Three options:
 
@@ -139,9 +139,9 @@ This differs from global holism: the priority runs from relations to things, not
 
 2. *$a$ and $b$ have partial independent identity, completed by $R$.* This is coherent but abandons the claim that relations are ontologically basic. If $a$ has some identity prior to $R$, then something grounds that identity—and whatever grounds it is more fundamental than $R$. We are back to things grounding relations, not the reverse.
 
-3. *Relations themselves are the fundamental "things."* This collapses the distinction between relations and relata. If $R$ is a genuine thing with determinate identity, then L₁ applies to $R$: it must be determinately what it is, independent of description. But then process metaphysics has not replaced substance ontology; it has relabeled it. The "relations" are just things under another name.
+3. *Relations themselves are the fundamental "things."* This collapses the distinction between relations and relata. If $R$ is a genuine thing with determinate identity, then Id applies to $R$: it must be determinately what it is, independent of description. But then process metaphysics has not replaced substance ontology; it has relabeled it. The "relations" are just things under another name.
 
-*Conclusion.* Process metaphysics and ontic structural realism do not escape the L₁ constraint. Either they collapse into featureless monism (option 1), smuggle in prior identity for relata (option 2), or relabel things as relations without changing the underlying ontology (option 3). The argument of this section—that parts (or fundamental relata) must have intrinsic identity—applies to process ontologies as much as to substance ontologies.
+*Conclusion.* Process metaphysics and ontic structural realism do not escape the Id constraint. Either they collapse into featureless monism (option 1), smuggle in prior identity for relata (option 2), or relabel things as relations without changing the underlying ontology (option 3). The argument of this section—that parts (or fundamental relata) must have intrinsic identity—applies to process ontologies as much as to substance ontologies.
 
 ### 2.4 Time and Ordering (Programmatic)
 
@@ -223,7 +223,7 @@ This section provides a stronger grounding for vehicle-weight objectivity by sho
 
 **Lemma 4.2.1 (Dispositional continuity).** If macroscopic records are objective and counterfactually stable under variation of irrelevant subsystems, then the pre-record physical state must have objective modal structure relative to the record-alternatives.
 
-*Proof.* Consider a measurement that produces a stable macroscopic record R (a pointer position, an ink pattern, a digital readout). By "stable" we mean: (1) R is determinately what it is (satisfies L₁), and (2) R's identity persists under variation of irrelevant subsystems—changing the state of a distant galaxy does not alter whether this pointer reads "up" or "down."
+*Proof.* Consider a measurement that produces a stable macroscopic record R (a pointer position, an ink pattern, a digital readout). By "stable" we mean: (1) R is determinately what it is (satisfies Id), and (2) R's identity persists under variation of irrelevant subsystems—changing the state of a distant galaxy does not alter whether this pointer reads "up" or "down."
 
 This stability is itself a modal fact. The record is not merely actual; it is counterfactually robust. There is a fact of the matter about what the record would be under various irrelevant perturbations.
 
@@ -235,7 +235,7 @@ Suppose not. Suppose S has no objective disposition toward any particular distri
 2. There is no physical fact about S that explains why R rather than R' was produced.
 3. The stability of R is not grounded in anything about S.
 
-But this creates an identity discontinuity. The record R satisfies L₁ (it is determinately what it is). Yet the state S from which R emerged has no determinate modal profile regarding R. The transition from "no determinate disposition" to "determinate record" is not grounded in any physical transition—it is a brute emergence of determinacy from indeterminacy.
+But this creates an identity discontinuity. The record R satisfies Id (it is determinately what it is). Yet the state S from which R emerged has no determinate modal profile regarding R. The transition from "no determinate disposition" to "determinate record" is not grounded in any physical transition—it is a brute emergence of determinacy from indeterminacy.
 
 This violates the very principle that secures record identity. If we allow determinacy to emerge without grounding, we lose the resources to explain why records are stable in the first place. The same identity constraint that makes R determinate must apply to S's disposition toward R.
 
@@ -460,7 +460,7 @@ This framing clarifies the status of LRT's non-trivial moves. One step bears scr
 
 **Vehicle-weight objectivity** (Section 4.1): The claim that the measure over admissible continuations is physical (belongs to the vehicle, not the content) could be resisted by a sufficiently committed instrumentalist. But an instrumentalist who denies that any physical fact grounds the Born rule thereby exits the explanatory project altogether.
 
-**Note on the tightened derivation.** In the original version of this paper, a second step also bore scrutiny: the move from macroscopic self-sufficiency (M₁) to Compositional Distinguishability (CDP). The revised derivation (Section 2.3, Appendix D) eliminates this as a separate move. Global holism is now shown to be incompatible with L₁ itself (not merely less parsimonious). Therefore CDP follows directly from L₁, and M₁ is a consequence rather than a premise. The only remaining non-deductive commitment is vehicle-weight objectivity.
+**Note on the tightened derivation.** In the original version of this paper, a second step also bore scrutiny: the move from macroscopic self-sufficiency (M₁) to Compositional Distinguishability (CDP). The revised derivation (Section 2.3, Appendix D) eliminates this as a separate move. Global holism is now shown to be incompatible with Id itself (not merely less parsimonious). Therefore CDP follows directly from Id, and M₁ is a consequence rather than a premise. The only remaining non-deductive commitment is vehicle-weight objectivity.
 
 This move is defensible as a *least-cost extension*: it introduces minimal structure beyond what logic already supplies, while enabling genuine prediction. The metaphysical price is explicit. Critics may reject it, but doing so abandons the generative project, not merely LRT.
 
@@ -518,7 +518,7 @@ The framework developed here has applications beyond the Born rule. Three progra
 
 **Appendix E: QFT Extension (Programmatic).** The extension of L₃ constraints to quantum field theory: Fock space structure, vacuum uniqueness, renormalization as L₃-admissibility extraction, particle identity in field ontology.
 
-**Appendix F: GR Extension (Programmatic).** Time as logical sequencing (not geometry), space as geometry derived from L₃, Lorentzian signature from the categorical distinction between co-instantiation and ordering, diffeomorphism invariance as L₁ applied to spacetime.
+**Appendix F: GR Extension (Programmatic).** Time as logical sequencing (not geometry), space as geometry derived from L₃, Lorentzian signature from the categorical distinction between co-instantiation and ordering, diffeomorphism invariance as Id applied to spacetime.
 
 **Appendix G: Cosmological Implications (Programmatic).** Ontological expansion (physical reality as L₃-filtered I∞), flexible determinism (infinite future certain, specific path open), and why Λ > 0 may be a structural requirement rather than a contingent parameter.
 
@@ -698,7 +698,7 @@ Therefore, every global distinction $D(c,c')$ admits local factors $m$, $n$ with
 
 **Corollary B.7.2 (Subsystem independence).** Local distinctions, once established, persist independently of unrelated subsystems.
 
-**Remark.** In the previous version of this derivation, CDP was presented as a "motivated extension" requiring empirical input (M₁). The revised argument (Section 2.3, Theorem D.1) shows that CDP follows directly from L₁ once global holism is ruled out. The corollaries now have the status of theorems, not contingent consequences of an assumption.
+**Remark.** In the previous version of this derivation, CDP was presented as a "motivated extension" requiring empirical input (M₁). The revised argument (Section 2.3, Theorem D.1) shows that CDP follows directly from Id once global holism is ruled out. The corollaries now have the status of theorems, not contingent consequences of an assumption.
 
 **Lemma B.8 (Infinite local depth).** For any configuration $c$, there exists an infinite descending chain of proper local factors.
 
@@ -726,7 +726,7 @@ The reconstruction theorem of Masanes and Müller (2011) derives complex Hilbert
 | **Subspace Axiom** | Determinate Identity under composition requires that restricting attention to a subsystem yields a well-defined subsystem state. If restriction produced inconsistent or undefined structure, identity would fail under decomposition. |
 | **No Higher-Order Interference** | Non-Contradiction prohibits configurations that are simultaneously in three or more mutually exclusive states. Interference terms arise from superposition; NC limits these to pairwise terms because genuine three-way contradictions cannot be physically instantiated. |
 
-**Theorem B.9 (Masanes-Müller via L₃).** If a physical theory satisfies Determinate Identity (L₁), Non-Contradiction (NC), and Excluded Middle (EM), then the theory satisfies all five Masanes-Müller requirements. (Local Tomography follows from Theorem B.7, which is itself a consequence of L₁ via Section 2.3.)
+**Theorem B.9 (Masanes-Müller via L₃).** If a physical theory satisfies Determinate Identity (Id), Non-Contradiction (NC), and Excluded Middle (EM), then the theory satisfies all five Masanes-Müller requirements. (Local Tomography follows from Theorem B.7, which is itself a consequence of Id via Section 2.3.)
 
 *Proof.* By the table above, each MM requirement is entailed by L₃. Local Tomography, in particular, follows from the revised derivation: global holism is ruled out (Section 2.3), so subsystem identity is intrinsic (Theorem B.7), so global states are determined by local states. $\square$
 
@@ -793,11 +793,11 @@ Complex separable Hilbert space is not assumed. It is forced as the only stable 
 **Assessment of rigor.** The argument in this appendix has varying degrees of rigor across its stages:
 
 - *Stage 1 (B.1):* The derivation of primitive distinguishability structure from the 3FLL is rigorous, though elementary.
-- *Stage 2 (B.2):* The Compositional Distinguishability Principle is now a theorem, not a motivated extension. Section 2.3 establishes that global holism is incompatible with L₁. Therefore, wherever genuine subsystems exist, their identity must be intrinsic. Theorem B.7 formalizes this: every global distinction admits a local witness.
+- *Stage 2 (B.2):* The Compositional Distinguishability Principle is now a theorem, not a motivated extension. Section 2.3 establishes that global holism is incompatible with Id. Therefore, wherever genuine subsystems exist, their identity must be intrinsic. Theorem B.7 formalizes this: every global distinction admits a local witness.
 - *Stage 3 (B.3):* The connection to Masanes-Müller (2011) is explicit: each of their five requirements is shown to follow from L₃ (Theorem B.9). Local Tomography, in particular, follows from Theorem B.7. The mathematical derivation of complex Hilbert space is their theorem; LRT provides the metaphysical ground explaining *why* their axioms hold. This stage is rigorous.
 - *Lemmas B.10-B.11:* The exclusion arguments provide additional intuition but are now superseded by the Masanes-Müller route, which excludes real and quaternionic structures as part of the reconstruction theorem.
 
-The appendix establishes that complex Hilbert space is forced by L₃ alone, with the mathematical heavy lifting done by Masanes-Müller (2011). CDP (Compositional Distinguishability) is now a theorem from L₁ via Section 2.3 and Theorem B.7, not a separate input. The Born rule derivation in Appendix A does not depend on this appendix and stands independently.
+The appendix establishes that complex Hilbert space is forced by L₃ alone, with the mathematical heavy lifting done by Masanes-Müller (2011). CDP (Compositional Distinguishability) is now a theorem from Id via Section 2.3 and Theorem B.7, not a separate input. The Born rule derivation in Appendix A does not depend on this appendix and stands independently.
 
 Rejecting this conclusion requires rejecting at least one of:
 - Determinate Identity as intrinsic,
@@ -1021,15 +1021,15 @@ Three exhaustive cases arise:
 
 *Case 3: Global holism.* The entire domain is a single global relational fact with no proper parts having independent identity. The only locus of determinacy is the global whole $G$. But this case also fails, for reasons developed in Section 2.3.
 
-Global holism requires that $G$ be ontically prior to its parts. But $G$ is either (a) the mereological sum of its parts, in which case $G$'s identity depends on the parts and the parts' identity depends on $G$—circular grounding, contradicting L₁—or (b) ontically independent of its parts, in which case $G$ is either a featureless One (no internal distinctions, making physics impossible) or has internal structure that consists of distinguishable configurations requiring their own identity grounding.
+Global holism requires that $G$ be ontically prior to its parts. But $G$ is either (a) the mereological sum of its parts, in which case $G$'s identity depends on the parts and the parts' identity depends on $G$—circular grounding, contradicting Id—or (b) ontically independent of its parts, in which case $G$ is either a featureless One (no internal distinctions, making physics impossible) or has internal structure that consists of distinguishable configurations requiring their own identity grounding.
 
-Furthermore, if subsystems exist as genuine things (which they must for physics to be possible), then L₁ applies to them: each subsystem must be determinately what it is, independent of description. But global holism says subsystem identity is constitutively fixed by global context. "Global context" is a specification—a way of describing how the subsystem relates to everything else. If $S$ is only determinately $S$ relative to that specification, then $S$'s identity is description-dependent. L₁ forbids description-dependent identity.
+Furthermore, if subsystems exist as genuine things (which they must for physics to be possible), then Id applies to them: each subsystem must be determinately what it is, independent of description. But global holism says subsystem identity is constitutively fixed by global context. "Global context" is a specification—a way of describing how the subsystem relates to everything else. If $S$ is only determinately $S$ relative to that specification, then $S$'s identity is description-dependent. Id forbids description-dependent identity.
 
 Therefore global holism is not a coherent position. $\square$
 
 **Corollary D.1.1 (Local self-sufficiency).** Wherever genuine subsystems exist, their identity must be intrinsic rather than derivative from some prior whole. The whole is the sum of its parts, not their ground. Parts ground wholes, not wholes parts.
 
-**Remark.** Theorem D.1 establishes that Determinate Identity forces local self-sufficiency directly—not as an empirical input, but as a consequence of applying L₁ to any domain with genuine subsystems. This eliminates the need for CDP as a separate bridging principle and for M₁ as a separate transcendental premise.
+**Remark.** Theorem D.1 establishes that Determinate Identity forces local self-sufficiency directly—not as an empirical input, but as a consequence of applying Id to any domain with genuine subsystems. This eliminates the need for CDP as a separate bridging principle and for M₁ as a separate transcendental premise.
 
 ### D.2 Macroscopic Self-Sufficiency as Consequence
 
@@ -1038,29 +1038,29 @@ Therefore global holism is not a coherent position. $\square$
 2. The identity of $R$ persists through time ($R$ at $t + \Delta t$ is determinately the same record as $R$ at $t$),
 3. The identity of $R$ is independent of the state of any other macroscopic system at arbitrary distance.
 
-**Theorem D.2 (Macroscopic self-sufficiency as consequence of L₁).** Macroscopic identity is self-sufficient under decomposition and persistence.
+**Theorem D.2 (Macroscopic self-sufficiency as consequence of Id).** Macroscopic identity is self-sufficient under decomposition and persistence.
 
-*Proof.* Macroscopic systems (pointers, detectors, measurement records) are genuine things—they exist, we interact with them, we record their states. By Theorem D.1 and Corollary D.1.1, Determinate Identity (L₁) applies to all genuine things, and genuine things have intrinsic rather than derivative identity.
+*Proof.* Macroscopic systems (pointers, detectors, measurement records) are genuine things—they exist, we interact with them, we record their states. By Theorem D.1 and Corollary D.1.1, Determinate Identity (Id) applies to all genuine things, and genuine things have intrinsic rather than derivative identity.
 
 Therefore macroscopic systems have intrinsic identity. Their identity does not depend constitutively on global context or on the states of distant systems. This is precisely what "self-sufficient under decomposition and persistence" means. $\square$
 
-**Remark.** In the previous version of this derivation, M₁ (macroscopic self-sufficiency) was presented as a transcendental precondition requiring empirical input. The revised argument shows that M₁ follows directly from L₁ once global holism is ruled out (Theorem D.1). Macroscopic systems are genuine subsystems; L₁ applies to them; therefore their identity is intrinsic. No separate empirical premise is required.
+**Remark.** In the previous version of this derivation, M₁ (macroscopic self-sufficiency) was presented as a transcendental precondition requiring empirical input. The revised argument shows that M₁ follows directly from Id once global holism is ruled out (Theorem D.1). Macroscopic systems are genuine subsystems; Id applies to them; therefore their identity is intrinsic. No separate empirical premise is required.
 
 ### D.3 The Derivation Chain (Revised)
 
-The complete chain from logical floor to Born rule. The key revision from the previous version: **CDP and M₁ are now consequences of L₁, not separate inputs.**
+The complete chain from logical floor to Born rule. The key revision from the previous version: **CDP and M₁ are now consequences of Id, not separate inputs.**
 
 1. **Proto-distinguishability** (unavoidable): The registering of difference that any determinate thought presupposes.
 
-2. **Determinate Identity (L₁)**: The first well-formed constraint. From L₁ alone, purely relational identity makes L₁ vacuous. Global holism is ruled out as incoherent (Theorem D.1, Section 2.3). **L₁ directly forces local self-sufficiency wherever genuine subsystems exist.**
+2. **Determinate Identity (Id)**: The first well-formed constraint. From Id alone, purely relational identity makes Id vacuous. Global holism is ruled out as incoherent (Theorem D.1, Section 2.3). **Id directly forces local self-sufficiency wherever genuine subsystems exist.**
 
-3. **Local self-sufficiency** (consequence of L₁): Macroscopic systems are genuine things; L₁ applies to them; therefore their identity is intrinsic (Corollary D.1.1, Theorem D.2). What was previously called CDP (Compositional Distinguishability Principle) is now a theorem: every global distinction admits a local witness because subsystem identity is intrinsic, not derivative.
+3. **Local self-sufficiency** (consequence of Id): Macroscopic systems are genuine things; Id applies to them; therefore their identity is intrinsic (Corollary D.1.1, Theorem D.2). What was previously called CDP (Compositional Distinguishability Principle) is now a theorem: every global distinction admits a local witness because subsystem identity is intrinsic, not derivative.
 
 4. **Local tomography** (consequence of local self-sufficiency): If subsystem identity is intrinsic, then the state of a composite system is determined by the states of its parts. This grounds the Masanes-Müller reconstruction axiom (Appendix B.3).
 
 5. **Complex Hilbert space** (forced by L₃ + local tomography): By the Masanes-Müller theorem (2011), any theory satisfying local tomography and the other L₃-derived requirements is representable on complex Hilbert space (Appendix B, Theorem B.9).
 
-6. **Vehicle-weight invariance**: The measure over admissible macroscopic continuations belongs to the physical vehicle. If it varied with decomposition, the physical situation would not be determinately poised toward any distribution of outcomes, violating L₁ at the vehicle level.
+6. **Vehicle-weight invariance**: The measure over admissible macroscopic continuations belongs to the physical vehicle. If it varied with decomposition, the physical situation would not be determinately poised toward any distribution of outcomes, violating Id at the vehicle level.
 
 7. **Born rule**: Vehicle-weight invariance implies additivity and non-contextuality. Gleason's theorem (Busch finite-additivity version) yields the Born rule as the unique such measure in dimension $\geq 3$ (Theorem D.4).
 
@@ -1068,7 +1068,7 @@ The complete chain from logical floor to Born rule. The key revision from the pr
 
 ### D.4 Vehicle-Weight Invariance → Born Rule
 
-**Definition D.4.1 (Vehicle-weight invariance).** A physical situation in state $|\psi\rangle$ is determinately what it is (L₁ at vehicle level) only if the total weight it assigns to any complete set of mutually exclusive admissible continuations is independent of the mathematical decomposition chosen to represent that situation.
+**Definition D.4.1 (Vehicle-weight invariance).** A physical situation in state $|\psi\rangle$ is determinately what it is (Id at vehicle level) only if the total weight it assigns to any complete set of mutually exclusive admissible continuations is independent of the mathematical decomposition chosen to represent that situation.
 
 Formally: for every maximal orthonormal resolution of the identity $\{P_i\}$ ($\sum P_i = I$, orthogonal, rank-1),
 $$\sum_i \mu(P_i) = 1 \text{ (constant across all decompositions)}$$
@@ -1091,13 +1091,13 @@ $$\sum_i \mu(P_i) = 1 \text{ (constant across all decompositions)}$$
 
 ### D.5 Reductio: Local Tomography Is Forced at Every Finite Depth
 
-We prove that local tomography must hold for subsystems of every finite dimension. This proof provides an independent verification that local self-sufficiency (now established directly from L₁ via Theorem D.1 and Section 2.3) has the right structural consequences.
+We prove that local tomography must hold for subsystems of every finite dimension. This proof provides an independent verification that local self-sufficiency (now established directly from Id via Theorem D.1 and Section 2.3) has the right structural consequences.
 
-**Remark on status.** The revised derivation (D.3) establishes local tomography as a direct consequence of L₁ via local self-sufficiency. This reductio provides an alternative route to the same conclusion, showing that failure of local tomography would contradict L₁ applied to macroscopic systems.
+**Remark on status.** The revised derivation (D.3) establishes local tomography as a direct consequence of Id via local self-sufficiency. This reductio provides an alternative route to the same conclusion, showing that failure of local tomography would contradict Id applied to macroscopic systems.
 
 **Premises**
 
-1. **Local self-sufficiency (from L₁).** Macroscopic systems are genuine things; L₁ applies to them; therefore their identity is intrinsic (Theorem D.1, Corollary D.1.1, Theorem D.2). The trans-temporal identity of a macroscopic pointer P is self-sufficient under decomposition and persistence. The pointer's identity is not constitutively dependent on inaccessible relational facts about the global system.
+1. **Local self-sufficiency (from Id).** Macroscopic systems are genuine things; Id applies to them; therefore their identity is intrinsic (Theorem D.1, Corollary D.1.1, Theorem D.2). The trans-temporal identity of a macroscopic pointer P is self-sufficient under decomposition and persistence. The pointer's identity is not constitutively dependent on inaccessible relational facts about the global system.
 
 2. **Definition of local tomography failure.** Local tomography fails at finite depth N iff there exist distinct global pure states $|\psi_1\rangle$ and $|\psi_2\rangle$ such that, for every subsystem S with $\dim(\mathcal{H}_S) \leq N$,
 $$\rho_S^{(1)} = \text{Tr}_{\mathcal{H}/\mathcal{H}_S}[|\psi_1\rangle\langle\psi_1|] = \text{Tr}_{\mathcal{H}/\mathcal{H}_S}[|\psi_2\rangle\langle\psi_2|] = \rho_S^{(2)}$$
@@ -1115,11 +1115,11 @@ by Premise 3 and the assumption that tomography fails at depth N.
 
 Now consider trans-temporal persistence. The pointer at time $t + \Delta t$ must be determinately the same numerical object as the pointer at time $t$. Its identity is supposed to be self-sufficient: the reduced description $\rho_P$ at $t$ must suffice to individuate "this pointer" at $t + \Delta t$ without reference to inaccessible global relational facts.
 
-Yet $\rho_P$ is identical in both global situations $|\psi_1\rangle$ and $|\psi_2\rangle$, while the global contexts differ. If the pointer's trans-temporal identity depended on which global state it inhabits, then its individuation would be constitutively relational to the global system. This contradicts Premise 1 (local self-sufficiency from L₁): macroscopic identity must be intrinsic, not reliant on hidden global relational facts.
+Yet $\rho_P$ is identical in both global situations $|\psi_1\rangle$ and $|\psi_2\rangle$, while the global contexts differ. If the pointer's trans-temporal identity depended on which global state it inhabits, then its individuation would be constitutively relational to the global system. This contradicts Premise 1 (local self-sufficiency from Id): macroscopic identity must be intrinsic, not reliant on hidden global relational facts.
 
 **Objection: Effective self-sufficiency suffices.** Decoherence suppresses interference between the two embeddings rapidly enough that the pointer's effective state is self-sufficient for all practical purposes, even if the exact pure global states permit tomography failure.
 
-**Reply.** Local self-sufficiency (derived from L₁) is not a pragmatic or phenomenological requirement. It is what Determinate Identity requires of genuine things. Science demands that records be determinate, not merely that they appear determinate to observers.
+**Reply.** Local self-sufficiency (derived from Id) is not a pragmatic or phenomenological requirement. It is what Determinate Identity requires of genuine things. Science demands that records be determinate, not merely that they appear determinate to observers.
 
 If there exists even one pair of global pure states with identical pointer reductions but different global embeddings, the pointer's identity is ontologically ambiguous. The pointer is not determinately the same object across time; it is only determinately the same object conditional on which global embedding we inhabit. That condition is inaccessible locally. Therefore the record's determinacy is not self-contained; it is parasitic on an inaccessible relational context.
 
@@ -1127,9 +1127,9 @@ This is relational identity at the macroscopic level—the very global holism ru
 
 Note that the Everettian interpretation explicitly embraces this relational structure: the pointer's identity is relativized to branches. This is precisely why §4.6 classifies the Everettian program under Horn (a) of the vehicle trilemma.
 
-**Conclusion.** Assume local tomography fails at some finite depth N. Then macroscopic pointers can have identical local descriptions in distinct global contexts, so their trans-temporal identity becomes constitutively relational. This contradicts local self-sufficiency (derived from L₁). Therefore local tomography must hold for subsystems of every finite dimension.
+**Conclusion.** Assume local tomography fails at some finite depth N. Then macroscopic pointers can have identical local descriptions in distinct global contexts, so their trans-temporal identity becomes constitutively relational. This contradicts local self-sufficiency (derived from Id). Therefore local tomography must hold for subsystems of every finite dimension.
 
-**Assessment.** The proof is deductively tight given the premises. No circularity appears: local self-sufficiency follows from L₁ via Theorem D.1, the definition of tomography failure is standard, and the pointer embedding is physically reasonable. The commitment is to strict self-sufficiency, not effective self-sufficiency. This makes the claim falsifiable: any future theory that combines finite-depth tomography failure with stable macroscopic records (even if only effectively classical) would refute the argument.
+**Assessment.** The proof is deductively tight given the premises. No circularity appears: local self-sufficiency follows from Id via Theorem D.1, the definition of tomography failure is standard, and the pointer embedding is physically reasonable. The commitment is to strict self-sufficiency, not effective self-sufficiency. This makes the claim falsifiable: any future theory that combines finite-depth tomography failure with stable macroscopic records (even if only effectively classical) would refute the argument.
 
 ### D.6 Incompleteness and the Pre-Mathematical Priority of L₃
 
@@ -1195,9 +1195,9 @@ The revised derivation is as tight as the mathematics permits. It rests on:
 - The unavoidable logical floor (L₃: Determinate Identity, Non-Contradiction, Excluded Middle)
 - No additional empirical or transcendental premises
 
-What was previously called M₁ (macroscopic self-sufficiency) is now a consequence of L₁ once global holism is ruled out (Theorem D.1, Section 2.3). What was previously called CDP (Compositional Distinguishability Principle) is now a theorem: it follows directly from L₁ applied to genuine subsystems.
+What was previously called M₁ (macroscopic self-sufficiency) is now a consequence of Id once global holism is ruled out (Theorem D.1, Section 2.3). What was previously called CDP (Compositional Distinguishability Principle) is now a theorem: it follows directly from Id applied to genuine subsystems.
 
-The chain from L₃ to the Born rule contains no bridging principles, no motivated extensions, no empirical inputs beyond the logical floor itself. Everything follows with high internal consistency. No deeper non-vacuous foundation appears available. If someone claims one, ask them to speak a single determinate sentence about physical instantiation without implicitly relying on something at least as strong as L₁.
+The chain from L₃ to the Born rule contains no bridging principles, no motivated extensions, no empirical inputs beyond the logical floor itself. Everything follows with high internal consistency. No deeper non-vacuous foundation appears available. If someone claims one, ask them to speak a single determinate sentence about physical instantiation without implicitly relying on something at least as strong as Id.
 
 ---
 
@@ -1217,7 +1217,7 @@ The Born rule derivation (Appendix A) and Hilbert space forcing (Appendix B) ass
 
 3. **Renormalization.** Renormalization extracts finite physical predictions from divergent expressions. Within LRT, this might be understood as L₃-admissibility extraction: only configurations with determinate identity survive at physical scales.
 
-4. **Particle identity.** What is a "particle" in field ontology? L₁ applied to excitations of quantum fields may clarify the sense in which particles are genuine things.
+4. **Particle identity.** What is a "particle" in field ontology? Id applied to excitations of quantum fields may clarify the sense in which particles are genuine things.
 
 ### E.3 Research Direction
 
@@ -1245,11 +1245,11 @@ If space and time have categorically different origins (geometry vs. ordering), 
 
 ### F.3 Diffeomorphism Invariance
 
-General relativity's diffeomorphism invariance states that physics is independent of coordinate choice. Within LRT, this may be understood as L₁ applied to spacetime: the physical content of spacetime must be determinately what it is, independent of how we describe it.
+General relativity's diffeomorphism invariance states that physics is independent of coordinate choice. Within LRT, this may be understood as Id applied to spacetime: the physical content of spacetime must be determinately what it is, independent of how we describe it.
 
 ### F.4 Closed Timelike Curves
 
-CTCs (closed timelike curves) allow a configuration to precede itself in the ordering. This appears to violate L₁: the configuration both has and has not yet occurred.
+CTCs (closed timelike curves) allow a configuration to precede itself in the ordering. This appears to violate Id: the configuration both has and has not yet occurred.
 
 **Prediction:** CTCs are L₃-inadmissible. Any consistent theory of quantum gravity must exclude them, not as a contingent fact, but as an L₃ requirement.
 
@@ -1285,7 +1285,7 @@ This is not a derivation of Λ's value from first principles. It is an explanati
 
 ### G.4 Black Holes and Identity Failure
 
-At classical singularities, individuation conditions fail. The singularity is where L₁ cannot be satisfied.
+At classical singularities, individuation conditions fail. The singularity is where Id cannot be satisfied.
 
 **Implication:** Information does not survive passage through a singularity because identity does not survive. Hawking radiation is fresh admissible structure, not scrambled original structure.
 
