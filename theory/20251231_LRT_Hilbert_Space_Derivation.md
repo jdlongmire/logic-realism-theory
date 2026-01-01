@@ -1,4 +1,4 @@
-# Complex Hilbert Space from Determinate Identity: A Logic-Realist Derivation
+# Complex Hilbert Space from Determinate Identity: A Logic Realism Theory Derivation
 
 **Working Paper**
 

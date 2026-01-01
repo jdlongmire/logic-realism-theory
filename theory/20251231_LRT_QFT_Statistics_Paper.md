@@ -1,4 +1,4 @@
-# Quantum Statistics from Determinate Identity: A Logic-Realist Derivation of the Symmetrization Postulate
+# Quantum Statistics from Determinate Identity: A Logic Realism Theory Derivation of the Symmetrization Postulate
 
 **Working Paper**
 

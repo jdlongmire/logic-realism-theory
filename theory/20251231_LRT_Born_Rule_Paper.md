@@ -1,4 +1,4 @@
-# The Born Rule from Determinate Identity: A Logic-Realist Derivation
+# The Born Rule from Determinate Identity: A Logic Realism Theory Derivation
 
 **Working Paper**
 

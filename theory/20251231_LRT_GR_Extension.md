@@ -1,4 +1,4 @@
-# Spacetime from Determinate Identity: A Logic-Realist Approach to General Relativity
+# Spacetime from Determinate Identity: A Logic Realism Theory Approach to General Relativity
 
 **Working Paper**
 
