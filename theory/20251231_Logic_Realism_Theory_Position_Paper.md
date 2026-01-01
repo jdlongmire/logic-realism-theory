@@ -3,7 +3,6 @@
 **Position Paper – Version 1.0**
 
 **James D. Longmire**<br>
-Northrop Grumman Fellow (unaffiliated research)<br>
 ORCID: 0009-0009-1383-7698<br>
 Correspondence: jdlongmire@outlook.com
 
