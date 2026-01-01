@@ -30,7 +30,7 @@ The central claim is that Determinate Identity (the requirement that any physica
 - **Hilbert Space Paper**: Derives complex Hilbert space from Determinate Identity
 - **This Paper**: Derives Born rule from vehicle-weight invariance
 - **QFT Statistics Paper**: Derives the symmetrization postulate from Determinate Identity
-- **GR Extension**: Explores spacetime implications (programmatic)
+- **GR Extension**: Explores spacetime implications; derives identity continuity constraints (programmatic)
 
 The papers can be read independently, but together form a unified derivation from foundational logic to quantum mechanics and beyond.
 

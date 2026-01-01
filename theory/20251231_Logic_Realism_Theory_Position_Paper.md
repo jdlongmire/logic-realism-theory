@@ -79,7 +79,7 @@ This Position Paper establishes the LRT framework. Detailed technical derivation
 - **Hilbert Space Paper**: Derives complex Hilbert space from Determinate Identity via local tomography
 - **Born Rule Paper**: Derives the Born rule from vehicle-weight invariance
 - **QFT Statistics Paper**: Derives the symmetrization postulate (bosons/fermions) from Determinate Identity
-- **GR Extension**: Explores spacetime implications of $L_3$ constraints (programmatic)
+- **GR Extension**: Explores spacetime implications; derives identity continuity constraints and quadratic kinematic structure (programmatic)
 
 The papers can be read independently, but together form a unified derivation from foundational logic to quantum mechanics and beyond.
 
@@ -168,7 +168,25 @@ Here EM is a constraint on instantiation for sharply specified properties, not a
 
 These three laws are not independent. They are three aspects of determinacy: a configuration is determinate when it is self-identical (Id), possesses no contradictory properties (NC), and has definite status with respect to all applicable properties (EM). Together they define what it means for a configuration to be instantiable.
 
-### 2.3 The Admissibility Condition
+### 2.3 Qualitative and Quantitative Identity
+
+Determinate Identity admits a natural distinction between two aspects:
+
+**Qualitative identity** concerns *what kind* of thing a configuration is: an electron rather than a photon, a spin-up state rather than spin-down, configuration A rather than configuration B. Qualitative identity is categorical: a configuration either is or is not of a given type.
+
+**Quantitative identity** concerns *how much* or *where precisely*: the magnitude of a field, the position along a continuum, the degree of some continuous parameter. Quantitative identity admits continuous variation while preserving qualitative type.
+
+This distinction has structural consequences:
+
+**Lemma (Bounded Distinguishability).** For any two configurations $c_1, c_2 \in A_\Omega$ with the same qualitative identity but different quantitative identity, there exists a continuous path in $A_\Omega$ connecting them.
+
+*Proof sketch.* Qualitative identity is preserved under continuous variation of quantitative parameters. Since both endpoints are $L_3$-admissible and differ only quantitatively, and since $A_\Omega$ is closed under $L_3$-preserving limits, the intermediate configurations along any monotonic interpolation remain admissible. $\square$
+
+This lemma grounds the continuity structure of physical configuration space. Configurations of the same type form connected components; discontinuities in physical evolution require qualitative identity changes (which §2.5 links to temporal ordering).
+
+The distinction also illuminates permutation symmetry (see QFT Statistics Paper, §4): intrinsically identical particles share qualitative identity, and any state attributing quantitative differences that would distinguish them violates Id.
+
+### 2.4 The Admissibility Condition
 
 **Definition.** Let $A_\Omega$ be the constraint-class of $L_3$ admissible configurations in $I_\infty$. Define:
 
@@ -196,9 +214,9 @@ The $L_3$ functions as an admissibility condition on $I_\infty$. The term "filte
 
 3. **Non-surjectivity:** There is no operation mapping $A_\Omega$ back onto all of $I_\infty$. Once the admissibility condition is applied, inadmissible configurations cannot be recovered.
 
-4. **Composition:** For configurations $c_1, c_2 \in A_\Omega$, their conjunction is admissible only if it satisfies the $L_3$. This is not automatic; jointly inadmissible configurations exist (§2.4).
+4. **Composition:** For configurations $c_1, c_2 \in A_\Omega$, their conjunction is admissible only if it satisfies the $L_3$. This is not automatic; jointly inadmissible configurations exist (§2.5).
 
-### 2.4 Joint Inadmissibility and Temporal Ordering
+### 2.5 Joint Inadmissibility and Temporal Ordering
 
 Two individually admissible configurations may be jointly inadmissible. Let $c_1, c_2 \in A_\Omega$ be configurations such that:
 
@@ -216,7 +234,7 @@ Joint inadmissibility generates temporal ordering. If $c_1$ and $c_2$ cannot be 
 
 Time is not geometry. Time is the logical sequencing necessitated by joint inadmissibility of individually admissible configurations.
 
-### 2.5 Why This Framework Is Not Operationalism
+### 2.6 Why This Framework Is Not Operationalism
 
 The framework distinguishes representable from instantiable, but this is not operationalism (the view that only observable quantities are meaningful). Three differences:
 

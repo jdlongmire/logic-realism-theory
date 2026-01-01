@@ -48,7 +48,7 @@ This paper is part of the Logic Realism Theory (LRT) programme:
 - **Hilbert Space Paper**: Derives complex Hilbert space from Determinate Identity
 - **Born Rule Paper**: Derives Born rule from vehicle-weight invariance
 - **This Paper**: Derives the symmetrization postulate from Determinate Identity
-- **GR Extension**: Explores spacetime implications (programmatic)
+- **GR Extension**: Explores spacetime implications; derives identity continuity constraints (programmatic)
 
 The papers can be read independently, but together form a unified derivation from foundational logic to quantum mechanics and beyond.
 
@@ -84,7 +84,19 @@ The paper employs the weaker of two possible readings:
 
 The derivations in this paper require only Id-Weak. A reader may accept Id-Weak as a working hypothesis while remaining agnostic about Id-Strong.
 
-### 2.3 Key Results from the Parent Paper
+### 2.3 Qualitative and Quantitative Identity
+
+The Position Paper (Longmire, 2025) introduces a distinction crucial for the present argument:
+
+**Qualitative identity** concerns *what kind* of thing a configuration is: an electron rather than a photon, a boson rather than a fermion.
+
+**Quantitative identity** concerns *how many* or *where precisely*: the number of particles, their positions, the degree of some continuous parameter.
+
+For identical particles, this distinction becomes load-bearing. Two electrons share qualitative identity by definition: they are the same *kind* of thing. Any state that attributes distinguishing quantitative identity (treating "electron 1" as distinct from "electron 2" in a way that affects physical predictions) violates Id, because no physical fact grounds that distinction.
+
+The symmetrization postulate is thus not an independent axiom but a consequence of requiring determinate identity for configurations involving identical particles. Section 4 develops this argument formally.
+
+### 2.4 Key Results from the Parent Paper
 
 Longmire (2025) establishes the following results from L₃:
 
