@@ -237,7 +237,7 @@ $$\mathcal{F}_S = \bigoplus_{N=0}^{\infty} S^N(H) \quad \text{(symmetric/bosonic
 
 $$\mathcal{F}_A = \bigoplus_{N=0}^{\infty} \Lambda^N(H) \quad \text{(antisymmetric/fermionic Fock space)}$$
 
-Here S^N(H) is the N-fold symmetric tensor product and Λ^N(H) is the N-fold antisymmetric tensor product (exterior power).
+Here $S^N(H)$ is the N-fold symmetric tensor product and $\Lambda^N(H)$ is the N-fold antisymmetric tensor product (exterior power).
 
 **Proof.** By Theorems 1 and 2, only symmetric and antisymmetric states are L₃-admissible. A particle type is either a boson (all N-particle states symmetric) or a fermion (all N-particle states antisymmetric); mixing would violate consistency under particle creation/annihilation. The Fock space structure follows from taking the direct sum over particle numbers. □
 
