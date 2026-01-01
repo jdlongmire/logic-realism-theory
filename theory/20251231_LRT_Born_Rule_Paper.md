@@ -6,8 +6,6 @@
 ORCID: 0009-0009-1383-7698<br>
 Correspondence: jdlongmire@outlook.com
 
-*Note: Views expressed are my own and do not represent those of Northrop Grumman Corporation.*
-
 ---
 
 ## Abstract
