@@ -10,9 +10,9 @@ Correspondence: jdlongmire@outlook.com
 
 ## Abstract
 
-The symmetrization postulate (that multi-particle quantum states must be either symmetric (bosons) or antisymmetric (fermions) under particle exchange) is standardly treated as an independent axiom of quantum mechanics. This paper derives the symmetrization postulate from Determinate Identity (L₁), the first of the three classical logical laws understood as ontological constraints on physical instantiation.
+The symmetrization postulate (that multi-particle quantum states must be either symmetric (bosons) or antisymmetric (fermions) under particle exchange) is standardly treated as an independent axiom of quantum mechanics. This paper derives the symmetrization postulate from Determinate Identity (Id), the first of the three classical logical laws understood as ontological constraints on physical instantiation.
 
-The core argument: if particles are intrinsically indistinguishable, then any quantum state that transforms non-trivially under permutation attributes distinguishable identity to indistinguishable entities. Such states violate L₁ and are therefore not physically instantiable. The only L₃-admissible states are those invariant (up to phase) under all permutations. Group-theoretic analysis shows that the symmetric group S_N has exactly two one-dimensional representations: the trivial representation (yielding bosons) and the sign representation (yielding fermions). The Fock space structure of quantum field theory follows as a corollary.
+The core argument: if particles are intrinsically indistinguishable, then any quantum state that transforms non-trivially under permutation attributes distinguishable identity to indistinguishable entities. Such states violate Id and are therefore not physically instantiable. The only L₃-admissible states are those invariant (up to phase) under all permutations. Group-theoretic analysis shows that the symmetric group S_N has exactly two one-dimensional representations: the trivial representation (yielding bosons) and the sign representation (yielding fermions). The Fock space structure of quantum field theory follows as a corollary.
 
 This result extends the Logic Realism programme, which previously derived the Born rule and complex Hilbert space structure from the same logical constraints (Longmire 2025). The paper also conjectures a connection between L₃ and the spin-statistics theorem, though a complete derivation remains future work.
 
@@ -30,7 +30,7 @@ The postulate raises an explanatory question: *why* must identical particles obe
 
 ### 1.2 The Logic Realism Programme
 
-This paper addresses the symmetrization question from within the Logic Realism Theory (LRT) framework (Longmire, 2025). LRT holds that the three classical logical laws (Determinate Identity (L₁), Non-Contradiction (NC), and Excluded Middle (EM), collectively denoted L₃) function as ontological constraints on physical instantiation, not merely as rules of coherent thought.
+This paper addresses the symmetrization question from within the Logic Realism Theory (LRT) framework (Longmire, 2025). LRT holds that the three classical logical laws (Determinate Identity (Id), Non-Contradiction (NC), and Excluded Middle (EM), collectively denoted L₃) function as ontological constraints on physical instantiation, not merely as rules of coherent thought.
 
 The core thesis: physical reality is constituted such that only configurations satisfying L₃ can be instantiated. A configuration without determinate identity is not a borderline entity but nothing at all. This constraint, applied to quantum systems, yields substantive physical consequences. Longmire (2025) derives the Born rule for quantum probabilities and the complex Hilbert space structure from L₃ alone, without empirical supplementation.
 
@@ -38,7 +38,7 @@ The present paper extends this programme to quantum statistics. We show that the
 
 ### 1.3 Paper Overview
 
-Section 2 recapitulates the LRT framework, providing sufficient background for readers unfamiliar with the parent paper. Section 3 analyzes the identity problem for identical particles (the conceptual puzzle that the symmetrization postulate addresses). Section 4 presents the core argument: L₁ excludes non-symmetric states, leaving only bosonic and fermionic sectors as physically admissible. Section 5 discusses the connection to the spin-statistics theorem. Section 6 explores implications and predictions. Section 7 addresses objections. Section 8 concludes.
+Section 2 recapitulates the LRT framework, providing sufficient background for readers unfamiliar with the parent paper. Section 3 analyzes the identity problem for identical particles (the conceptual puzzle that the symmetrization postulate addresses). Section 4 presents the core argument: Id excludes non-symmetric states, leaving only bosonic and fermionic sectors as physically admissible. Section 5 discusses the connection to the spin-statistics theorem. Section 6 explores implications and predictions. Section 7 addresses objections. Section 8 concludes.
 
 ### 1.4 Relation to Companion Papers
 
@@ -62,7 +62,7 @@ This section summarizes the LRT framework. For complete development and proofs, 
 
 Let L₃ denote the conjunction of three classical logical principles, understood as constraints on physical instantiation:
 
-**Determinate Identity (L₁):** Every physical configuration is determinately the configuration it is, independent of description, distinct from every other configuration.
+**Determinate Identity (Id):** Every physical configuration is determinately the configuration it is, independent of description, distinct from every other configuration.
 
 **Non-Contradiction (NC):** No physical configuration instantiates both property P and property ¬P in the same respect at the same time.
 
@@ -88,7 +88,7 @@ The derivations in this paper require only Id-Weak. A reader may accept Id-Weak 
 
 Longmire (2025) establishes the following results from L₃:
 
-1. **Born Rule**: The unique probability measure over quantum outcomes satisfying L₁-motivated constraints (basis-independence, non-contextuality) is the Born rule μ(P) = Tr(ρP).
+1. **Born Rule**: The unique probability measure over quantum outcomes satisfying Id-motivated constraints (basis-independence, non-contextuality) is the Born rule μ(P) = Tr(ρP).
 
 2. **Complex Hilbert Space**: The unique arena for physical theories satisfying L₃ under composition and continuous transformation is complex Hilbert space (via the Masanes-Müller reconstruction theorem).
 
@@ -114,7 +114,7 @@ In quantum mechanics, trajectories are not well-defined. If two electrons intera
 
 This raises a puzzle: if the labels are physically meaningless, why do we use a tensor product Hilbert space H ⊗ H that seems to presuppose two distinguishable systems? And why must physical states respect specific symmetry constraints under label exchange?
 
-### 3.3 Why This Is an L₁ Problem
+### 3.3 Why This Is an Id Problem
 
 The puzzle is fundamentally about identity. Consider an arbitrary two-particle state:
 
@@ -124,7 +124,7 @@ where |i⟩₁ denotes particle 1 in state i and |j⟩₂ denotes particle 2 in 
 
 But if the particles are intrinsically indistinguishable, what grounds this distinction? If nothing intrinsic distinguishes particle 1 from particle 2, then any state that treats them differently (any state not invariant under the exchange 1 ↔ 2) attributes distinguishable identity to indistinguishable entities.
 
-This is an L₁ violation. The state purports to describe a physical configuration, but it does so by attributing distinct identities where none exist.
+This is an Id violation. The state purports to describe a physical configuration, but it does so by attributing distinct identities where none exist.
 
 ### 3.4 Three Traditional Responses
 
@@ -134,13 +134,13 @@ The philosophical literature offers three responses to the identity problem:
 
 **Spatial individuation**: Particles are individuated by their spatial locations. This works in some contexts but fails when particles have overlapping wave functions or when we consider momentum-space representations.
 
-**No individuation**: Identical particles are not individuals at all. The "two-electron system" is a single entity that does not decompose into two distinguishable parts. This view is closest to the LRT approach, but LRT provides a principled reason (L₁) rather than merely accepting it as primitive. Recent work has shown that fermions can be "weakly discerned" through irreflexive relations (Muller & Saunders, 2008), but this does not restore classical individuality.
+**No individuation**: Identical particles are not individuals at all. The "two-electron system" is a single entity that does not decompose into two distinguishable parts. This view is closest to the LRT approach, but LRT provides a principled reason (Id) rather than merely accepting it as primitive. Recent work has shown that fermions can be "weakly discerned" through irreflexive relations (Muller & Saunders, 2008), but this does not restore classical individuality.
 
 ---
 
-## 4. L₁ and the Symmetrization Postulate
+## 4. Id and the Symmetrization Postulate
 
-This section presents the core argument. We show that L₁ excludes non-symmetric multi-particle states, leaving only the symmetric (bosonic) and antisymmetric (fermionic) sectors as physically admissible.
+This section presents the core argument. We show that Id excludes non-symmetric multi-particle states, leaving only the symmetric (bosonic) and antisymmetric (fermionic) sectors as physically admissible.
 
 ### 4.1 Setup: The N-Particle Hilbert Space
 
@@ -162,9 +162,9 @@ $$P_{(12)} |ψ_1, ψ_2, ψ_3\rangle = |ψ_2, ψ_1, ψ_3\rangle$$
 
 The operators {P_π : π ∈ S_N} form a unitary representation of S_N on H^(N).
 
-### 4.3 Theorem 1: L₁ Excludes Non-Symmetric Sectors
+### 4.3 Theorem 1: Id Excludes Non-Symmetric Sectors
 
-**Theorem 1 (Symmetrization Required).** Let the N particles be identical (intrinsically indistinguishable). If L₁ holds for the N-particle system, then only states |ψ⟩ ∈ H^(N) satisfying
+**Theorem 1 (Symmetrization Required).** Let the N particles be identical (intrinsically indistinguishable). If Id holds for the N-particle system, then only states |ψ⟩ ∈ H^(N) satisfying
 
 $$P_\pi |\psi\rangle = c(\pi) |\psi\rangle \quad \text{for all } \pi \in S_N$$
 
@@ -176,7 +176,7 @@ are L₃-admissible, where c: S_N → U(1) is a one-dimensional unitary represen
 
 *Step 2: Label independence.* Since the particles are intrinsically indistinguishable, the labels "1", "2", …, "N" are not physical. They are notational devices for bookkeeping within the tensor product formalism. Consequently, the physical content of |ψ⟩ must be independent of how we assign labels to particles.
 
-*Step 3: Applying L₁.* By Determinate Identity, a physical configuration is determinately what it is, independent of description. If two descriptions (two labelings) yield the same physical content, they describe the same configuration. If they yield different physical content, they describe different configurations.
+*Step 3: Applying Id.* By Determinate Identity, a physical configuration is determinately what it is, independent of description. If two descriptions (two labelings) yield the same physical content, they describe the same configuration. If they yield different physical content, they describe different configurations.
 
 Consider the states |ψ⟩ and P_π|ψ⟩ for some permutation π. These states arise from the same physical situation with different label assignments. By step 2, if the particles are truly identical, |ψ⟩ and P_π|ψ⟩ must represent the same physical configuration.
 
@@ -203,7 +203,7 @@ Therefore c: S_N → U(1) is a group homomorphism, i.e., a one-dimensional unita
 1. The *trivial representation*: c(π) = 1 for all π.
 2. The *sign representation*: c(π) = sgn(π), where sgn(π) = +1 for even permutations and −1 for odd permutations.
 
-Therefore, L₁-admissible N-particle states are either:
+Therefore, Id-admissible N-particle states are either:
 - **Symmetric** (c = trivial): P_π|ψ⟩ = |ψ⟩ for all π. These are *bosonic* states.
 - **Antisymmetric** (c = sign): P_π|ψ⟩ = sgn(π)|ψ⟩ for all π. These are *fermionic* states.
 
@@ -272,7 +272,7 @@ We conjecture that the spin-statistics connection can be derived from L₃ combi
 
 **Conjecture.** If a quantum theory satisfies L₃ and is Lorentz-invariant, then particles of integer spin are bosons and particles of half-integer spin are fermions.
 
-*Sketch of approach:* The connection likely emerges from the interplay between L₁ (Determinate Identity) and the structure of the Lorentz group. The Lorentz group has two types of spinor representations (left-handed and right-handed), and 2π rotations act differently on integer-spin and half-integer-spin representations. If L₁ requires consistency between rotation and exchange, the spin-statistics connection may follow.
+*Sketch of approach:* The connection likely emerges from the interplay between Id (Determinate Identity) and the structure of the Lorentz group. The Lorentz group has two types of spinor representations (left-handed and right-handed), and 2π rotations act differently on integer-spin and half-integer-spin representations. If Id requires consistency between rotation and exchange, the spin-statistics connection may follow.
 
 A complete proof remains future work. The present paper establishes only that *some* spin-statistics assignment must hold, not which one.
 
@@ -280,29 +280,29 @@ A complete proof remains future work. The present paper establishes only that *s
 
 ## 6. Implications and Predictions
 
-### 6.1 Pauli Exclusion as L₁ Consequence
+### 6.1 Pauli Exclusion as Id Consequence
 
 The Pauli exclusion principle (that no two fermions can occupy the same quantum state) follows immediately from antisymmetry:
 
 $$|ψ, ψ\rangle_A = \frac{1}{\sqrt{2}}(|ψ\rangle ⊗ |ψ\rangle - |ψ\rangle ⊗ |ψ\rangle) = 0$$
 
-An antisymmetrized state with two particles in the same single-particle state vanishes identically. This is not an empirical discovery but a mathematical consequence of the antisymmetry required by L₁.
+An antisymmetrized state with two particles in the same single-particle state vanishes identically. This is not an empirical discovery but a mathematical consequence of the antisymmetry required by Id.
 
-### 6.2 Bose-Einstein Condensation as L₁-Admissible
+### 6.2 Bose-Einstein Condensation as Id-Admissible
 
 For bosons, symmetric states not only allow but favor multiple particles in the same state:
 
 $$|ψ, ψ\rangle_S = |ψ\rangle ⊗ |ψ\rangle$$
 
-(no antisymmetry to cause cancellation). Bose-Einstein condensation (the macroscopic occupation of a single quantum state) is L₁-admissible for bosons.
+(no antisymmetry to cause cancellation). Bose-Einstein condensation (the macroscopic occupation of a single quantum state) is Id-admissible for bosons.
 
 ### 6.3 Parastatistics Ruled Out
 
 Parastatistics refers to hypothetical statistics corresponding to higher-dimensional representations of S_N. For example, parafermions of order p would have wave functions transforming according to p-dimensional representations.
 
-Theorem 1 rules out parastatistics: L₁ requires one-dimensional representations. States transforming in higher-dimensional representations would attribute distinguishable identities (the different components of the representation) to indistinguishable particles.
+Theorem 1 rules out parastatistics: Id requires one-dimensional representations. States transforming in higher-dimensional representations would attribute distinguishable identities (the different components of the representation) to indistinguishable particles.
 
-This is a genuine prediction: if parastatistics were ever observed, L₁ (as applied here) would be falsified.
+This is a genuine prediction: if parastatistics were ever observed, Id (as applied here) would be falsified.
 
 ### 6.4 What Remains Empirical
 
@@ -316,11 +316,11 @@ Similarly, the existence of specific particle types (electrons, photons, quarks,
 
 ### Objection 1: "This just redescribes the postulate."
 
-*Objection:* The argument doesn't derive the symmetrization postulate; it just restates it in different language. Saying "L₁ requires symmetrization" is no more explanatory than saying "quantum mechanics requires symmetrization."
+*Objection:* The argument doesn't derive the symmetrization postulate; it just restates it in different language. Saying "Id requires symmetrization" is no more explanatory than saying "quantum mechanics requires symmetrization."
 
-*Reply:* The objection conflates levels of explanation. The standard symmetrization postulate is *sui generis*: it appears in the axioms without connection to anything more fundamental. The L₁ argument grounds symmetrization in a general principle (Determinate Identity) that applies across physics and has independent motivation.
+*Reply:* The objection conflates levels of explanation. The standard symmetrization postulate is *sui generis*: it appears in the axioms without connection to anything more fundamental. The Id argument grounds symmetrization in a general principle (Determinate Identity) that applies across physics and has independent motivation.
 
-Moreover, the L₁ argument explains *why* there are exactly two options (bosons and fermions): because S_N has exactly two one-dimensional representations. This structural fact becomes intelligible when we see that L₁ requires one-dimensional representations.
+Moreover, the Id argument explains *why* there are exactly two options (bosons and fermions): because S_N has exactly two one-dimensional representations. This structural fact becomes intelligible when we see that Id requires one-dimensional representations.
 
 ### Objection 2: "Anyons violate this."
 
@@ -330,11 +330,11 @@ Moreover, the L₁ argument explains *why* there are exactly two options (bosons
 
 The argument of Section 4 assumes that particle exchange corresponds to permutation (elements of S_N). This is correct in three or more spatial dimensions, where all paths implementing an exchange are topologically equivalent. In 2D, the richer topology allows for the continuous statistics parameter.
 
-This is not a violation of L₁ but a refinement: in 2D, "identical particles" can have a richer identity structure due to topological constraints. The requirement that physical states transform consistently under exchange still holds; the group implementing exchange is simply larger.
+This is not a violation of Id but a refinement: in 2D, "identical particles" can have a richer identity structure due to topological constraints. The requirement that physical states transform consistently under exchange still holds; the group implementing exchange is simply larger.
 
-### Objection 3: "You need more than L₁."
+### Objection 3: "You need more than Id."
 
-*Objection:* The argument assumes the Hilbert space framework. Without that assumption, the notions of permutation operators, representations, and tensor products don't make sense. So the derivation isn't really from L₁ alone.
+*Objection:* The argument assumes the Hilbert space framework. Without that assumption, the notions of permutation operators, representations, and tensor products don't make sense. So the derivation isn't really from Id alone.
 
 *Reply:* This is correct: the argument requires quantum mechanics as input. But it does not require *more* quantum mechanics than L₃ itself provides. Longmire (2025) shows that complex Hilbert space is forced by L₃ via the Masanes-Müller reconstruction. The present paper then shows that L₃ further constrains which states in that Hilbert space are admissible.
 
@@ -350,14 +350,14 @@ Each step adds constraints without adding new empirical inputs.
 
 ### 8.1 Summary
 
-We have shown that the symmetrization postulate of quantum mechanics (the requirement that multi-particle states be either symmetric (bosons) or antisymmetric (fermions)) is a consequence of Determinate Identity (L₁) applied to identical particles.
+We have shown that the symmetrization postulate of quantum mechanics (the requirement that multi-particle states be either symmetric (bosons) or antisymmetric (fermions)) is a consequence of Determinate Identity (Id) applied to identical particles.
 
 The argument proceeds as follows:
 
 1. Identical particles have no intrinsic distinguishing properties.
-2. L₁ requires that physical configurations be determinately what they are, independent of arbitrary labeling conventions.
-3. States that transform non-trivially under particle permutation attribute distinguishable identities to indistinguishable particles, violating L₁.
-4. The only L₁-admissible states are eigenstates of all permutation operators with eigenvalues forming a one-dimensional representation.
+2. Id requires that physical configurations be determinately what they are, independent of arbitrary labeling conventions.
+3. States that transform non-trivially under particle permutation attribute distinguishable identities to indistinguishable particles, violating Id.
+4. The only Id-admissible states are eigenstates of all permutation operators with eigenvalues forming a one-dimensional representation.
 5. S_N has exactly two such representations: trivial (bosons) and sign (fermions).
 
 ### 8.2 Relation to LRT Programme
@@ -384,13 +384,13 @@ These questions define the frontier of the LRT programme's extension to quantum 
 
 ### A.1 Complete Proof of Theorem 1
 
-**Theorem 1.** Let the N particles be identical. If L₁ holds, then only states |ψ⟩ satisfying P_π|ψ⟩ = c(π)|ψ⟩ for all π ∈ S_N are L₃-admissible, where c: S_N → U(1) is a one-dimensional unitary representation.
+**Theorem 1.** Let the N particles be identical. If Id holds, then only states |ψ⟩ satisfying P_π|ψ⟩ = c(π)|ψ⟩ for all π ∈ S_N are L₃-admissible, where c: S_N → U(1) is a one-dimensional unitary representation.
 
 **Proof.**
 
 *Premise 1 (Identical particles):* The N particles are intrinsically indistinguishable: they share all intrinsic properties (mass, charge, spin, etc.), and there is no physical property intrinsic to particle i that distinguishes it from particle j.
 
-*Premise 2 (Determinate Identity):* L₁ holds: every physical configuration is determinately what it is, independent of how it is described.
+*Premise 2 (Determinate Identity):* Id holds: every physical configuration is determinately what it is, independent of how it is described.
 
 *Definition (Physical equivalence):* Two quantum states |ψ⟩ and |ψ'⟩ are *physically equivalent* if they represent the same physical configuration, i.e., if they yield identical predictions for all observables.
 
@@ -406,7 +406,7 @@ These questions define the frontier of the LRT programme's extension to quantum 
 
 (3) Since the particles are identical (Premise 1), this relabeling has no physical significance. The states |ψ⟩ and P_π|ψ⟩ describe the same physical situation.
 
-(4) By L₁ (Premise 2), the physical configuration is determinate independent of description. Since |ψ⟩ and P_π|ψ⟩ are merely different descriptions of the same configuration, they must be physically equivalent.
+(4) By Id (Premise 2), the physical configuration is determinate independent of description. Since |ψ⟩ and P_π|ψ⟩ are merely different descriptions of the same configuration, they must be physically equivalent.
 
 (5) By Lemma A.1, physical equivalence implies ray equivalence:
    $$P_\pi|\psi\rangle = c(\pi)|\psi\rangle$$
