@@ -4,25 +4,64 @@ project:
 
 format:
   pdf:
+    # Document class and layout
     documentclass: article
     papersize: letter
-    geometry:
-      - margin=1in
     fontsize: 11pt
-    linestretch: 1.15
-    colorlinks: true
-    linkcolor: blue
-    urlcolor: blue
-    toc: false
-    number-sections: false
+    geometry:
+      - top=1in
+      - bottom=1in
+      - left=1.25in
+      - right=1.25in
+
+    # Typography (philosophy journal style)
+    linestretch: 1.5
     pdf-engine: xelatex
     mainfont: "Latin Modern Roman"
     mathfont: "Latin Modern Math"
 
+    # Structure
+    number-sections: true
+    toc: false
+
+    # Links
+    colorlinks: true
+    linkcolor: black
+    urlcolor: blue
+    citecolor: black
+
+    # Citations - Harvard style
+    cite-method: citeproc
+    csl: https://raw.githubusercontent.com/citation-style-language/styles/master/harvard-cite-them-right.csl
+
+    # Headers and footers
+    header-includes: |
+      \usepackage{fancyhdr}
+      \pagestyle{fancy}
+      \fancyhf{}
+      \fancyhead[L]{\small\leftmark}
+      \fancyhead[R]{\small\thepage}
+      \renewcommand{\headrulewidth}{0.4pt}
+      \fancypagestyle{plain}{
+        \fancyhf{}
+        \fancyfoot[C]{\small\thepage}
+        \renewcommand{\headrulewidth}{0pt}
+      }
+
+      % Abstract formatting
+      \renewenvironment{abstract}{
+        \small
+        \begin{center}
+          \textbf{Abstract}
+        \end{center}
+        \quotation
+      }{\endquotation}
+
+      % Keywords formatting
+      \providecommand{\keywords}[1]{\textbf{Keywords:} #1}
+
+# Default author (can be overridden in individual files)
 author:
-  - name: James D. Longmire
+  - name: James (JD) Longmire
     orcid: 0009-0009-1383-7698
     email: jdlongmire@outlook.com
-
-metadata:
-  keywords: [logic realism, quantum foundations, Born rule, Hilbert space, determinate identity]
