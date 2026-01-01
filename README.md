@@ -107,4 +107,4 @@ Copyright © 2025 JD Longmire
 
 ---
 
-*Human-curated, AI-enabled.*
+*Human-Curated, AI-Enabled (HCAE)*
