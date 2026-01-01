@@ -773,17 +773,3 @@ Wallach, N. R. (2002). Gleason's theorem. In *Quantum Computation and Quantum In
 
 Zurek, W. H. (2003). Decoherence, einselection, and the quantum origins of the classical. *Reviews of Modern Physics*, 75(3), 715–775.
 
----
-
-**Acknowledgments**
-
-This research was conducted independently. I thank the online foundations community for critical feedback on early drafts, particularly regarding circularity concerns and the vehicle-invariance derivation.
-
-**Competing Interests**
-
-None declared.
-
-**Data Availability**
-
-No new empirical data. All cited experiments are publicly available in referenced publications.
-
