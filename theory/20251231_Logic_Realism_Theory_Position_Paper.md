@@ -11,6 +11,17 @@ abstract: |
 keywords: [logic realism, quantum foundations, Born rule, Hilbert space, determinate identity, non-contradiction, excluded middle]
 ---
 
+# Logic Realism Theory: Physical Foundations from Logical Constraints
+
+**Position Paper – Version 1.0**
+
+**James D. Longmire**
+Northrop Grumman Fellow (unaffiliated research)
+ORCID: 0009-0009-1383-7698
+Correspondence: jdlongmire@outlook.com
+
+---
+
 **Note:** Views expressed are my own and do not represent those of Northrop Grumman Corporation.
 
 **Scope:** This position paper establishes the Logic Realism Theory framework and sketches the derivation of the Born rule from vehicle-invariance constraints. Full technical derivations appear in companion papers: *Complex Hilbert Space from Determinate Identity* (derives reconstruction axioms from Id), *Quantum Statistics from Determinate Identity* (derives symmetrization postulate). Extensions to quantum field theory, general relativity, and cosmology are outlined but not fully developed.
