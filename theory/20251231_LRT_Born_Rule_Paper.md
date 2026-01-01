@@ -246,8 +246,3 @@ Tahko, T. E. (2009). The law of non-contradiction as a metaphysical principle. *
 
 Zurek, W. H. (2003). Decoherence, einselection, and the quantum origins of the classical. *Reviews of Modern Physics*, 75(3), 715–775.
 
----
-
-**Document Status**: Working Paper v0.1
-**Created**: 2025-12-31
-**Companion Papers**: Position Paper, Hilbert Space Derivation, QFT Statistics, GR Extension

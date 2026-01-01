@@ -402,8 +402,3 @@ Sorkin, R. D. (2003). Causal sets: Discrete gravity. In *Lectures on Quantum Gra
 
 Wald, R. M. (1984). *General Relativity*. University of Chicago Press.
 
----
-
-**Document Status**: Working Paper v0.1 (Programmatic)
-**Created**: 2025-12-31
-**Next Steps**: Formalize signature argument, connect to Einstein's equations

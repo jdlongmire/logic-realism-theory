@@ -596,8 +596,3 @@ The relative phase between $|00\rangle$ and $|11\rangle$ can only be detected by
 
 - **Complex case**: Local tomography holds because complex density matrices on $\mathcal{H}_A \otimes \mathcal{H}_B$ are spanned by products of local observables. The complex field is exactly the field where local measurements can distinguish all global states. $\square$
 
----
-
-**Document Status**: Working Paper v0.2
-**Created**: 2025-12-31
-**Updated**: 2025-12-31
