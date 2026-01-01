@@ -26,7 +26,7 @@ The central claim is that Determinate Identity (the requirement that any physica
 
 **Relation to companion papers.** This paper is part of the Logic Realism Theory (LRT) programme:
 
-- **Position Paper** ([DOI: 10.5281/zenodo.18111736](https://doi.org/10.5281/zenodo.18111736)): Establishes the $L_3$ framework (Id, NC, EM) as ontological constraint
+- **Position Paper** (Longmire, 2025): Establishes the $L_3$ framework (Id, NC, EM) as ontological constraint
 - **Hilbert Space Paper**: Derives complex Hilbert space from Determinate Identity
 - **This Paper**: Derives Born rule from vehicle-weight invariance
 - **GR Extension**: Explores spacetime implications (programmatic)
@@ -234,6 +234,8 @@ Caves, C. M., Fuchs, C. A., & Schack, R. (2002). Quantum probabilities as Bayesi
 Dixmier, J. (1981). *Von Neumann Algebras*. North-Holland.
 
 Gleason, A. M. (1957). Measures on the closed subspaces of a Hilbert space. *Journal of Mathematics and Mechanics*, 6(6), 885–893.
+
+Longmire, J. (2025). Logic Realism Theory: Physical Foundations from Logical Constraints. Position Paper. Zenodo. https://doi.org/10.5281/zenodo.18111736
 
 Masanes, L., & Müller, M. P. (2011). A derivation of quantum theory from physical requirements. *New Journal of Physics*, 13(6), 063001.
 

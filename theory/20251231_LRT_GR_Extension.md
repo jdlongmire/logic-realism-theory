@@ -29,7 +29,7 @@ Standard GR takes these as inputs. We ask: can they be derived from more fundame
 
 ### 1.2 The LRT Approach
 
-Logic Realism Theory (LRT), established in the Position Paper ([DOI: 10.5281/zenodo.18111736](https://doi.org/10.5281/zenodo.18111736)), proposes that $L_3$ (Determinate Identity, Non-Contradiction, Excluded Middle) constrains physical instantiation. For quantum mechanics, this yields:
+Logic Realism Theory (LRT) proposes that $L_3$ (Determinate Identity, Non-Contradiction, Excluded Middle) constrains physical instantiation (Longmire, 2025). For quantum mechanics, this yields:
 - Complex Hilbert space (from local tomography)
 - Born rule (from vehicle-invariance)
 - Tsirelson bound (from Hilbert space structure)
@@ -375,6 +375,8 @@ Gödel, K. (1949). An example of a new type of cosmological solutions of Einstei
 Hawking, S. W. (1975). Particle creation by black holes. *Communications in Mathematical Physics*, 43(3), 199–220.
 
 Hawking, S. W. (1992). Chronology protection conjecture. *Physical Review D*, 46(2), 603–611.
+
+Longmire, J. (2025). Logic Realism Theory: Physical Foundations from Logical Constraints. Position Paper. Zenodo. https://doi.org/10.5281/zenodo.18111736
 
 Malament, D. B. (1977). The class of continuous timelike curves determines the topology of spacetime. *Journal of Mathematical Physics*, 18(7), 1399–1404.
 
