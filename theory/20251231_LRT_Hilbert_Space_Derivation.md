@@ -443,11 +443,11 @@ Longmire, J. (2025). Logic Realism Theory: Physical Foundations from Logical Con
 
 Masanes, L., & Müller, M. P. (2011). A derivation of quantum theory from physical requirements. *New Journal of Physics*, 13(6), 063001.
 
-Pawłowski, M., et al. (2009). Information causality as a physical principle. *Nature*, 461(7267), 1101–1104.
+Pawłowski, M., Paterek, T., Kaszlikowski, D., Scarani, V., Winter, A., & Żukowski, M. (2009). Information causality as a physical principle. *Nature*, 461(7267), 1101–1104.
 
 Popescu, S., & Rohrlich, D. (1994). Quantum nonlocality as an axiom. *Foundations of Physics*, 24(3), 379–385.
 
-Renou, M.-O., et al. (2021). Quantum theory based on real numbers can be experimentally falsified. *Nature*, 600(7890), 625–629.
+Renou, M.-O., Trillo, D., Weilenmann, M., Le, T. P., Tavakoli, A., Gisin, N., Acín, A., & Navascués, M. (2021). Quantum theory based on real numbers can be experimentally falsified. *Nature*, 600(7890), 625–629.
 
 Tsirelson, B. S. (1980). Quantum generalizations of Bell's inequality. *Letters in Mathematical Physics*, 4(2), 93–100.
 

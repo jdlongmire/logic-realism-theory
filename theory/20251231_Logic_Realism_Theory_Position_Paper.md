@@ -757,7 +757,7 @@ Popper, K. R. (1959). *The Logic of Scientific Discovery*. Hutchinson & Co.
 
 Priest, G. (2006). *In Contradiction: A Study of the Transconsistent* (2nd ed.). Oxford University Press.
 
-Renou, M.-O., Trillo, D., Weilenmann, M., Le, T. P., Tavakoli, A., Gisin, N., Acín, A., & Navascués, M. (2021). Quantum theory based on real numbers can be experimentally falsified. *Nature*, 600(7266), 625–629.
+Renou, M.-O., Trillo, D., Weilenmann, M., Le, T. P., Tavakoli, A., Gisin, N., Acín, A., & Navascués, M. (2021). Quantum theory based on real numbers can be experimentally falsified. *Nature*, 600(7890), 625–629.
 
 Schlosshauer, M. (2007). *Decoherence and the Quantum-to-Classical Transition*. Springer.
 
@@ -769,7 +769,7 @@ Tsirelson, B. S. (1980). Quantum generalizations of Bell's inequality. *Letters 
 
 Wallace, D. (2012). *The Emergent Multiverse: Quantum Theory According to the Everett Interpretation*. Oxford University Press.
 
-Wallach, N. R. (2002). Gleason's theorem. In *Quantum Computation and Quantum Information Theory*. World Scientific. Available: https://mathweb.ucsd.edu/~nwallach/gleasonq.pdf
+Wallach, N. R. (2002). An unentangled Gleason's theorem. In S. J. Lomonaco & H. E. Brandt (Eds.), *Quantum Computation and Quantum Information Science* (pp. 291–298). American Mathematical Society. Available: https://mathweb.ucsd.edu/~nwallach/gleasonq.pdf
 
 Zurek, W. H. (2003). Decoherence, einselection, and the quantum origins of the classical. *Reviews of Modern Physics*, 75(3), 715–775.
 
