@@ -81,7 +81,7 @@ This Position Paper establishes the LRT framework. Detailed technical derivation
 - **QFT Statistics Paper**: Derives the symmetrization postulate (bosons/fermions) from Determinate Identity
 - **GR Extension**: Explores spacetime implications of $L_3$ constraints (programmatic)
 
-Each paper can be read independently, but together they form a unified derivation from $L_3$ to quantum mechanics and beyond.
+The papers can be read independently, but together form a unified derivation from foundational logic to quantum mechanics and beyond.
 
 **One-world realism.** LRT shares structural features with Many-Worlds (Everett): quantum states evolve unitarily, branching structure is real, decoherence explains apparent classicality. But LRT differs fundamentally in ontology. In Many-Worlds, all branches are equally instantiated: the universe continually splits into coexisting worlds. In LRT, branching structure exists in $I_\infty$ (the representational space), but only *one* $L_3$-admissible outcome history is ever instantiated in $A_\Omega$. The Born rule weights don't describe "how much" of reality each branch gets; they describe the objective disposition of a single world toward its possible futures. This is one-world realism with Everettian structure: the mathematics of branching without the ontology of multiplication.
 

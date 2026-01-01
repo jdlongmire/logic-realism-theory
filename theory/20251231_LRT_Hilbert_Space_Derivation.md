@@ -78,7 +78,7 @@ This paper is part of the Logic Realism Theory (LRT) programme:
 - **QFT Statistics Paper**: Derives the symmetrization postulate from Determinate Identity
 - **GR Extension**: Explores spacetime implications (programmatic)
 
-The papers can be read independently, but together form a unified derivation from $L_3$ to quantum mechanics.
+The papers can be read independently, but together form a unified derivation from foundational logic to quantum mechanics and beyond.
 
 ---
 

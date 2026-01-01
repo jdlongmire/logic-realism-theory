@@ -32,7 +32,7 @@ The central claim is that Determinate Identity (the requirement that any physica
 - **QFT Statistics Paper**: Derives the symmetrization postulate from Determinate Identity
 - **GR Extension**: Explores spacetime implications (programmatic)
 
-The papers can be read independently, but together form a unified derivation from $L_3$ to quantum mechanics.
+The papers can be read independently, but together form a unified derivation from foundational logic to quantum mechanics and beyond.
 
 **Structure.** Section 2 summarizes the framework. Section 3 characterizes quantum states within this framework. Section 4 presents the core argument and formal derivation: vehicle-weight invariance → Born rule. Section 5 addresses objections. Section 6 concludes.
 
