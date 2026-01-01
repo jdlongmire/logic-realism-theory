@@ -6,11 +6,17 @@
 
 ## Position Paper
 
-**[Logic Realism Theory: Physical Foundations from Logical Constraints](theory/20251231_Logic_Realism_Theory_Position_Paper.md)**
+### Logic Realism Theory: Physical Foundations from Logical Constraints
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18111736.svg)](https://doi.org/10.5281/zenodo.18111736)
+| | |
+|---|---|
+| **Read** | [View on GitHub](theory/20251231_Logic_Realism_Theory_Position_Paper.md) \| [PDF](theory/pdf/20251231_Logic_Realism_Theory_Position_Paper.pdf) |
+| **Cite** | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18111736.svg)](https://doi.org/10.5281/zenodo.18111736) |
 
 The foundational document of this repository. Logic Realism Theory treats the three classical logical laws (Determinate Identity, Non-Contradiction, Excluded Middle) as ontological constraints on physical instantiation. The framework derives quantum structure from these constraints: the Born rule emerges via Gleason's theorem from vehicle-invariance requirements; complex Hilbert space is selected by local tomography constraints.
+
+**Citation:**
+> Longmire, J. (2025). *Logic Realism Theory: Physical Foundations from Logical Constraints*. Position Paper. Zenodo. https://doi.org/10.5281/zenodo.18111736
 
 ---
 
