@@ -20,6 +20,8 @@ This result extends the Logic Realism programme, which previously derived the Bo
 
 ---
 
+*Note: Views expressed are my own and do not represent those of Northrop Grumman Corporation.*
+
 ## 1. Introduction
 
 ### 1.1 The Symmetrization Postulate

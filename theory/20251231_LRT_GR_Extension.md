@@ -14,6 +14,8 @@ We explore the consequences of Determinate Identity (Id) for spacetime structure
 
 ---
 
+*Note: Views expressed are my own and do not represent those of Northrop Grumman Corporation.*
+
 ## 1. Introduction
 
 ### 1.1 The Problem
