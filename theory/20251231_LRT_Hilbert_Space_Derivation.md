@@ -68,6 +68,18 @@ To ensure transparency, we distinguish results proven here from those imported:
 
 The LRT contribution is the left column (grounding axioms in Id). The right column consists of established mathematical results we invoke.
 
+### 1.6 Relation to Companion Papers
+
+This paper is part of the Logic Realism Theory (LRT) programme:
+
+- **Position Paper** (Longmire, 2025): Establishes the $L_3$ framework (Id, NC, EM) as ontological constraint
+- **This Paper**: Derives complex Hilbert space from Determinate Identity
+- **Born Rule Paper**: Derives Born rule from vehicle-weight invariance
+- **QFT Statistics Paper**: Derives the symmetrization postulate from Determinate Identity
+- **GR Extension**: Explores spacetime implications (programmatic)
+
+The papers can be read independently, but together form a unified derivation from $L_3$ to quantum mechanics.
+
 ---
 
 ## 2. Reconstruction Theorems: Review

@@ -72,6 +72,17 @@ The framework is not unfalsifiable. It takes empirical risk.
 
 **Comparison to rivals:** Copenhagen is not falsifiable (refuses ontological commitment). Many-Worlds makes no novel predictions (empirically equivalent to standard QM). Bohmian mechanics makes no predictions beyond standard QM. GRW makes novel predictions (collapse parameters) but does not derive them from a hard core. Only LRT combines a non-empirical hard core (logical constraints) with empirically testable protective belt (specific mathematical structures).
 
+### 1.4 Companion Papers
+
+This Position Paper establishes the LRT framework. Detailed technical derivations appear in companion papers:
+
+- **Hilbert Space Paper**: Derives complex Hilbert space from Determinate Identity via local tomography
+- **Born Rule Paper**: Derives the Born rule from vehicle-weight invariance
+- **QFT Statistics Paper**: Derives the symmetrization postulate (bosons/fermions) from Determinate Identity
+- **GR Extension**: Explores spacetime implications of $L_3$ constraints (programmatic)
+
+Each paper can be read independently, but together they form a unified derivation from $L_3$ to quantum mechanics and beyond.
+
 **One-world realism.** LRT shares structural features with Many-Worlds (Everett): quantum states evolve unitarily, branching structure is real, decoherence explains apparent classicality. But LRT differs fundamentally in ontology. In Many-Worlds, all branches are equally instantiated: the universe continually splits into coexisting worlds. In LRT, branching structure exists in $I_\infty$ (the representational space), but only *one* $L_3$-admissible outcome history is ever instantiated in $A_\Omega$. The Born rule weights don't describe "how much" of reality each branch gets; they describe the objective disposition of a single world toward its possible futures. This is one-world realism with Everettian structure: the mathematics of branching without the ontology of multiplication.
 
 **Formal compatibility.** LRT adopts essentially all of the formalism of standard complex-Hilbert-space quantum mechanics, the same mathematical machinery used by Many-Worlds, Copenhagen, and textbook QM. The Hilbert space derivation (companion paper) shows that Id forces the Masanes-Müller axioms, yielding the standard arena: pure states, tensor products, unitaries, Born-rule probabilities. LRT is therefore compatible with Bohmian-style or collapse-style additions at the vehicle layer, provided they respect the $L_3$-admissibility constraint on records. The formalism is shared; the grounding is LRT-specific. This is the value proposition: inherit all the mathematical machinery of quantum mechanics while placing a logic-driven constraint on how that formalism hooks onto reality. LRT constrains *which* formalisms are admissible, not how to build them from scratch.

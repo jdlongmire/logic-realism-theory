@@ -53,6 +53,18 @@ We derive spacetime features from Id applied to configurations and their relatio
 
 This paper is more programmatic than the Hilbert space derivation. We sketch arguments rather than provide rigorous proofs. The goal is to show that LRT's constraint-based approach extends naturally to spacetime, not to claim complete derivations.
 
+### 1.5 Relation to Companion Papers
+
+This paper is part of the Logic Realism Theory (LRT) programme:
+
+- **Position Paper** (Longmire, 2025): Establishes the $L_3$ framework (Id, NC, EM) as ontological constraint
+- **Hilbert Space Paper**: Derives complex Hilbert space from Determinate Identity
+- **Born Rule Paper**: Derives Born rule from vehicle-weight invariance
+- **QFT Statistics Paper**: Derives the symmetrization postulate from Determinate Identity
+- **This Paper**: Explores spacetime implications (programmatic)
+
+The papers can be read independently, but together form a unified derivation from $L_3$ to physics.
+
 ---
 
 ## 2. Temporal Ordering from Joint Inadmissibility

@@ -29,6 +29,7 @@ The central claim is that Determinate Identity (the requirement that any physica
 - **Position Paper** (Longmire, 2025): Establishes the $L_3$ framework (Id, NC, EM) as ontological constraint
 - **Hilbert Space Paper**: Derives complex Hilbert space from Determinate Identity
 - **This Paper**: Derives Born rule from vehicle-weight invariance
+- **QFT Statistics Paper**: Derives the symmetrization postulate from Determinate Identity
 - **GR Extension**: Explores spacetime implications (programmatic)
 
 The papers can be read independently, but together form a unified derivation from $L_3$ to quantum mechanics.
@@ -249,4 +250,4 @@ Zurek, W. H. (2003). Decoherence, einselection, and the quantum origins of the c
 
 **Document Status**: Working Paper v0.1
 **Created**: 2025-12-31
-**Companion Papers**: Position Paper, Hilbert Space Derivation, GR Extension
+**Companion Papers**: Position Paper, Hilbert Space Derivation, QFT Statistics, GR Extension

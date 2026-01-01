@@ -40,6 +40,18 @@ The present paper extends this programme to quantum statistics. We show that the
 
 Section 2 recapitulates the LRT framework, providing sufficient background for readers unfamiliar with the parent paper. Section 3 analyzes the identity problem for identical particles (the conceptual puzzle that the symmetrization postulate addresses). Section 4 presents the core argument: L₁ excludes non-symmetric states, leaving only bosonic and fermionic sectors as physically admissible. Section 5 discusses the connection to the spin-statistics theorem. Section 6 explores implications and predictions. Section 7 addresses objections. Section 8 concludes.
 
+### 1.4 Relation to Companion Papers
+
+This paper is part of the Logic Realism Theory (LRT) programme:
+
+- **Position Paper** (Longmire, 2025): Establishes the $L_3$ framework (Id, NC, EM) as ontological constraint
+- **Hilbert Space Paper**: Derives complex Hilbert space from Determinate Identity
+- **Born Rule Paper**: Derives Born rule from vehicle-weight invariance
+- **This Paper**: Derives the symmetrization postulate from Determinate Identity
+- **GR Extension**: Explores spacetime implications (programmatic)
+
+The papers can be read independently, but together form a unified derivation from $L_3$ to quantum mechanics.
+
 ---
 
 ## 2. Logic Realism: Framework
