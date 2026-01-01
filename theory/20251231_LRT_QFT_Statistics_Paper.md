@@ -1,10 +1,10 @@
 # Quantum Statistics from Determinate Identity: A Logic-Realist Derivation of the Symmetrization Postulate
 
-**James D. (JD) Longmire**
-ORCID: [0009-0009-1383-7698](https://orcid.org/0009-0009-1383-7698)
+**Working Paper – Version 0.1**
 
-**Date**: December 2025
-**Status**: Working Paper
+**James D. Longmire**<br>
+ORCID: 0009-0009-1383-7698<br>
+Correspondence: jdlongmire@outlook.com
 
 ---
 
