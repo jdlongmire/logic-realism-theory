@@ -29,7 +29,7 @@ Standard GR takes these as inputs. We ask: can they be derived from more fundame
 
 ### 1.2 The LRT Approach
 
-Logic Realism Theory proposes that $L_3$ (Determinate Identity, Non-Contradiction, Excluded Middle) constrains physical instantiation. For quantum mechanics, this yields:
+Logic Realism Theory (LRT), established in the Position Paper ([DOI: 10.5281/zenodo.18111736](https://doi.org/10.5281/zenodo.18111736)), proposes that $L_3$ (Determinate Identity, Non-Contradiction, Excluded Middle) constrains physical instantiation. For quantum mechanics, this yields:
 - Complex Hilbert space (from local tomography)
 - Born rule (from vehicle-invariance)
 - Tsirelson bound (from Hilbert space structure)

@@ -30,7 +30,7 @@ The postulate raises an explanatory question: *why* must identical particles obe
 
 ### 1.2 The Logic Realism Programme
 
-This paper addresses the symmetrization question from within the Logic Realism Theory (LRT) framework developed in Longmire (2025). LRT holds that the three classical logical laws (Determinate Identity (L₁), Non-Contradiction (NC), and Excluded Middle (EM), collectively denoted L₃) function as ontological constraints on physical instantiation, not merely as rules of coherent thought.
+This paper addresses the symmetrization question from within the Logic Realism Theory (LRT) framework developed in the Position Paper ([DOI: 10.5281/zenodo.18111736](https://doi.org/10.5281/zenodo.18111736)). LRT holds that the three classical logical laws (Determinate Identity (L₁), Non-Contradiction (NC), and Excluded Middle (EM), collectively denoted L₃) function as ontological constraints on physical instantiation, not merely as rules of coherent thought.
 
 The core thesis: physical reality is constituted such that only configurations satisfying L₃ can be instantiated. A configuration without determinate identity is not a borderline entity but nothing at all. This constraint, applied to quantum systems, yields substantive physical consequences. Longmire (2025) derives the Born rule for quantum probabilities and the complex Hilbert space structure from L₃ alone, without empirical supplementation.
 

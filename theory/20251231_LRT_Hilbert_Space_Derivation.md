@@ -24,7 +24,7 @@ Quantum reconstruction programs (Hardy 2001; Chiribella, D'Ariano & Perinotti 20
 
 ### 1.2 The LRT Answer
 
-Logic Realism Theory proposes that the Three Fundamental Laws of Logic ($L_3$: Determinate Identity, Non-Contradiction, Excluded Middle) constrain physical instantiation. If this is correct, the operational axioms of reconstruction theorems should be *derivable* from $L_3$: they hold because logic demands it.
+Logic Realism Theory (LRT) proposes that the Three Fundamental Laws of Logic ($L_3$: Determinate Identity, Non-Contradiction, Excluded Middle) constrain physical instantiation. The framework is established in the Position Paper ([DOI: 10.5281/zenodo.18111736](https://doi.org/10.5281/zenodo.18111736)). If this is correct, the operational axioms of reconstruction theorems should be *derivable* from $L_3$: they hold because logic demands it.
 
 This paper establishes that derivation.
 

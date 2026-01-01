@@ -26,7 +26,7 @@ The central claim is that Determinate Identity (the requirement that any physica
 
 **Relation to companion papers.** This paper is part of the Logic Realism Theory (LRT) programme:
 
-- **Position Paper** (DOI: 10.5281/zenodo.18111737): Establishes the $L_3$ framework (Id, NC, EM) as ontological constraint
+- **Position Paper** ([DOI: 10.5281/zenodo.18111736](https://doi.org/10.5281/zenodo.18111736)): Establishes the $L_3$ framework (Id, NC, EM) as ontological constraint
 - **Hilbert Space Paper**: Derives complex Hilbert space from Determinate Identity
 - **This Paper**: Derives Born rule from vehicle-weight invariance
 - **GR Extension**: Explores spacetime implications (programmatic)
