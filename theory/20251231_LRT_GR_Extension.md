@@ -2,8 +2,8 @@
 
 **Working Paper**
 
-**James (JD) Longmire**<br>
-ORCID: 0009-0009-1383-7698<br>
+**James (JD) Longmire**\
+ORCID: 0009-0009-1383-7698\
 Correspondence: jdlongmire@outlook.com
 
 ---

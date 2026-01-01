@@ -20,8 +20,8 @@ format:
     mainfont: "Latin Modern Roman"
     mathfont: "Latin Modern Math"
 
-    # Structure
-    number-sections: true
+    # Structure - sections already numbered in markdown
+    number-sections: false
     toc: false
 
     # Links
@@ -39,26 +39,32 @@ format:
       \usepackage{fancyhdr}
       \pagestyle{fancy}
       \fancyhf{}
-      \fancyhead[L]{\small\leftmark}
       \fancyhead[R]{\small\thepage}
-      \renewcommand{\headrulewidth}{0.4pt}
+      \renewcommand{\headrulewidth}{0pt}
       \fancypagestyle{plain}{
         \fancyhf{}
         \fancyfoot[C]{\small\thepage}
         \renewcommand{\headrulewidth}{0pt}
       }
 
-      % Abstract formatting
-      \renewenvironment{abstract}{
-        \small
+      % Title page formatting - center title and author block
+      \makeatletter
+      \renewcommand{\maketitle}{
         \begin{center}
-          \textbf{Abstract}
+          {\LARGE\bfseries\@title\par}
+          \vspace{1em}
+          {\large\@author\par}
+          \vspace{2em}
         \end{center}
-        \quotation
-      }{\endquotation}
+      }
+      \makeatother
 
-      % Keywords formatting
-      \providecommand{\keywords}[1]{\textbf{Keywords:} #1}
+      % Abstract formatting - narrower margins (philosophy journal style)
+      \usepackage{abstract}
+      \renewcommand{\abstractnamefont}{\normalfont\bfseries}
+      \renewcommand{\abstracttextfont}{\normalfont\small}
+      \setlength{\absleftindent}{0.5in}
+      \setlength{\absrightindent}{0.5in}
 
 # Default author (can be overridden in individual files)
 author:
