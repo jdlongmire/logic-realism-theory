@@ -292,7 +292,7 @@ Apply Id-1 (intrinsic identity): the state-space geometry of a two-level system 
 
 Two systems with identical intrinsic structure (two distinguishable levels, continuous reversible dynamics, entanglement capacity) must have identical state-space geometry. The Bloch ball is fully determined by:
 - Dimension (2 pure-state parameters for a two-level system)
-- Continuous transitive symmetry group (SU(2) acting on the sphere)
+- Continuous transitive symmetry group ($SU(2)$ acting on the sphere)
 - Consistency with local tomography in composites
 
 These are uniquely fixed. Therefore, all two-level systems have the same Bloch ball geometry.

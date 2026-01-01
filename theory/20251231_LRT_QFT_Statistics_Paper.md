@@ -68,7 +68,7 @@ Let L₃ denote the conjunction of three classical logical principles, understoo
 
 **Excluded Middle (EM):** For any well-defined property P applicable to a physical configuration, either the configuration instantiates P or it instantiates ¬P.
 
-A configuration is *admissible* if it satisfies L₃. Physical reality, denoted A_Ω, is identified with the admissible subset of all conceivable configurations I_∞:
+A configuration is *admissible* if it satisfies L₃. Physical reality, denoted $A_\Omega$, is identified with the admissible subset of all conceivable configurations $I_\infty$:
 
 $$A_\Omega = \{ i \in I_\infty : L_3(i) \}$$
 
@@ -392,11 +392,11 @@ These questions define the frontier of the LRT programme's extension to quantum 
 
 *Premise 2 (Determinate Identity):* Id holds: every physical configuration is determinately what it is, independent of how it is described.
 
-*Definition (Physical equivalence):* Two quantum states $|\psi\rangle$ and |ψ'⟩ are *physically equivalent* if they represent the same physical configuration, i.e., if they yield identical predictions for all observables.
+*Definition (Physical equivalence):* Two quantum states $|\psi\rangle$ and $|\psi'\rangle$ are *physically equivalent* if they represent the same physical configuration, i.e., if they yield identical predictions for all observables.
 
-*Lemma A.1:* Physical equivalence in quantum mechanics coincides with ray equivalence: $|\psi\rangle$ and |ψ'⟩ are physically equivalent if and only if |ψ'⟩ = e^(iθ)$|\psi\rangle$ for some θ ∈ R.
+*Lemma A.1:* Physical equivalence in quantum mechanics coincides with ray equivalence: $|\psi\rangle$ and $|\psi'\rangle$ are physically equivalent if and only if $|\psi'\rangle = e^{i\theta}|\psi\rangle$ for some $\theta \in \mathbb{R}$.
 
-*Proof of Lemma A.1:* Observable quantities are given by expectation values ⟨ψ|A$|\psi\rangle$/⟨ψ$|\psi\rangle$ and transition probabilities |⟨φ$|\psi\rangle$|²/(⟨φ|φ⟩⟨ψ$|\psi\rangle$). Both are invariant under $|\psi\rangle$ ↦ e^(iθ)$|\psi\rangle$. Conversely, if all expectation values agree, the states lie on the same ray. □
+*Proof of Lemma A.1:* Observable quantities are given by expectation values $\langle\psi|A|\psi\rangle/\langle\psi|\psi\rangle$ and transition probabilities $|\langle\phi|\psi\rangle|^2/(\langle\phi|\phi\rangle\langle\psi|\psi\rangle)$. Both are invariant under $|\psi\rangle \mapsto e^{i\theta}|\psi\rangle$. Conversely, if all expectation values agree, the states lie on the same ray. □
 
 *Derivation:*
 

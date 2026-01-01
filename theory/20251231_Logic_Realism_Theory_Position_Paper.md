@@ -256,7 +256,7 @@ The point is not merely that we have never observed violations. It is that the p
 
 ### 3.3 Superposition as Representational Vehicle
 
-The vehicle/content distinction becomes essential when analyzing quantum mechanics. A quantum state |ψ⟩ is not a direct description of an instantiated configuration but a representational vehicle encoding outcome-possibilities.
+The vehicle/content distinction becomes essential when analyzing quantum mechanics. A quantum state $|\psi\rangle$ is not a direct description of an instantiated configuration but a representational vehicle encoding outcome-possibilities.
 
 Consider the paradigm case: a qubit in superposition
 
@@ -264,13 +264,13 @@ $$|\psi\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle)$$
 
 This state is a well-defined mathematical object within the theory. The state vector is a precise representational vehicle that can be manipulated without contradiction. Whatever physical substrate realizes the situation, the representation is determinate as a vehicle: it is the specific superposition with coefficients (1/√2, 1/√2), with definite inner products with other states, with determinate evolution under unitary operators.
 
-The content (what the vehicle represents about outcome-possibilities) concerns what will happen when measurement in the {|0⟩, |1⟩} basis occurs. The state does not describe a configuration that both has and lacks a definite value (NC violation), nor does it describe a configuration outside the true/false dichotomy (EM violation). It describes a physical situation such that when measurement occurs, exactly one outcome will be recorded, and that record will be $L_3$ admissible.
+The content (what the vehicle represents about outcome-possibilities) concerns what will happen when measurement in the {$|0\rangle$, $|1\rangle$} basis occurs. The state does not describe a configuration that both has and lacks a definite value (NC violation), nor does it describe a configuration outside the true/false dichotomy (EM violation). It describes a physical situation such that when measurement occurs, exactly one outcome will be recorded, and that record will be $L_3$ admissible.
 
 ### 3.4 What Superposition Represents
 
 The critical question: what does superposition represent in the LRT framework?
 
-**Not a contradiction.** The state α|0⟩ + β|1⟩ does not represent a configuration that is both "definitely 0" and "definitely 1." It represents a physical situation that is not yet determinate with respect to the sharp property "has definite value 0 or 1 in this basis."
+**Not a contradiction.** The state $\alpha|0\rangle + \beta|1\rangle$ does not represent a configuration that is both "definitely 0" and "definitely 1." It represents a physical situation that is not yet determinate with respect to the sharp property "has definite value 0 or 1 in this basis."
 
 **Not vagueness.** The state is not a vague or imprecise specification of "either 0 or 1 but we don't know which." The superposition has definite mathematical structure: specific coefficients, definite phase relations, determinate inner products with other states. It is precisely what it is as a representational vehicle.
 
@@ -280,13 +280,13 @@ This last interpretation is key. The quantum state is a well-defined representat
 
 ### 3.5 Measurement Contexts and Sharp Properties
 
-The measurement basis determines which properties are sharp. For state |ψ⟩ = α|0⟩ + β|1⟩:
+The measurement basis determines which properties are sharp. For state $|\psi\rangle$ = $\alpha|0\rangle + \beta|1\rangle$:
 
-- **Property $P_1$:** "has value 0 in computational basis," not sharp for |ψ⟩ prior to measurement
-- **Property $P_2$:** "corresponds to state vector |ψ⟩ in Hilbert space," sharp for the representational vehicle
-- **Property $P_3$:** "would yield outcome 0 with probability |α|² upon computational basis measurement," sharp for the representational vehicle
+- **Property $P_1$:** "has value 0 in computational basis," not sharp for $|\psi\rangle$ prior to measurement
+- **Property $P_2$:** "corresponds to state vector $|\psi\rangle$ in Hilbert space," sharp for the representational vehicle
+- **Property $P_3$:** "would yield outcome 0 with probability $|\alpha|^2$ upon computational basis measurement," sharp for the representational vehicle
 
-The third property is crucial. The quantum state determinately possesses the property "encodes probability |α|² for outcome 0." This probability is not epistemological uncertainty about a pre-existing value; it is a determinate feature of how the representational vehicle characterizes the physical situation.
+The third property is crucial. The quantum state determinately possesses the property "encodes probability $|\alpha|^2$ for outcome 0." This probability is not epistemological uncertainty about a pre-existing value; it is a determinate feature of how the representational vehicle characterizes the physical situation.
 
 When we say measurement "actualizes" an outcome, we mean: the physical situation transitions to a configuration that produces a stable record displaying a sharp property assignment. The record is $L_3$ admissible. The transition is from a situation represented by a superposition (vehicle encoding outcome-possibilities) to a situation represented by a definite eigenstate (vehicle encoding sharp property assignment).
 
@@ -302,9 +302,9 @@ The response has two parts.
 
 If a single physical situation admits multiple mathematically equivalent decompositions into outcome-projectors, Id forbids the total weight assigned to that situation from depending on the chosen decomposition. Equivalence here means: decompositions that correspond to the same projector/ray structure (same event) and differ only by basis choice or refinement/coarse-graining that preserves the event. The representational vehicle must characterize the situation determinately, which means the measure it encodes cannot vary with representational choices. Therefore the weight function on projectors must be additive across orthogonal resolutions and non-contextual across embeddings.
 
-This requirement (that measure is vehicle-invariant under mathematically equivalent decompositions) generates the additivity and non-contextuality conditions that Gleason's theorem requires. The Born rule |⟨φ|ψ⟩|² emerges as the unique measure satisfying these constraints.
+This requirement (that measure is vehicle-invariant under mathematically equivalent decompositions) generates the additivity and non-contextuality conditions that Gleason's theorem requires. The Born rule $|\langle\phi|\psi\rangle|^2$ emerges as the unique measure satisfying these constraints.
 
-Section 4 develops this derivation. The point here is that the vehicle/content distinction does real work: it separates "outcomes must be determinate" (from $A_\Omega$ definition) from "probabilities take form |ψ|²" (from vehicle-invariance under decomposition).
+Section 4 develops this derivation. The point here is that the vehicle/content distinction does real work: it separates "outcomes must be determinate" (from $A_\Omega$ definition) from "probabilities take form $|\psi|^2$" (from vehicle-invariance under decomposition).
 
 ### 3.7 Entanglement and Non-Local Correlations
 
@@ -366,13 +366,13 @@ This is not postulated in LRT but derived from the requirement that representati
 1. **Vehicle-invariance requirement:** Id (Determinate Identity) applied to representational vehicles
 2. **Measure structure:** Vehicle-invariance generates additivity and non-contextuality constraints
 3. **Gleason's theorem:** These constraints uniquely determine the measure form
-4. **Born rule:** The |ψ|² form emerges as the unique solution
+4. **Born rule:** The $|\psi|^2$ form emerges as the unique solution
 
 This section sketches the derivation. Full technical details, including rigorous proofs and treatment of edge cases, appear in the companion Born rule paper (Longmire, forthcoming).
 
 ### 4.2 Vehicle-Invariance: The Core Requirement
 
-A quantum state |ψ⟩ is a representational vehicle encoding outcome-possibilities for measurement contexts. For any measurement context M with possible outcomes {$\phi_i$}, the state assigns probabilities:
+A quantum state $|\psi\rangle$ is a representational vehicle encoding outcome-possibilities for measurement contexts. For any measurement context M with possible outcomes {$\phi_i$}, the state assigns probabilities:
 
 $$P(\phi_i|\psi) = \text{some function of } |\psi\rangle \text{ and } |\phi_i\rangle$$
 
@@ -412,9 +412,9 @@ This is additivity: the probability of a disjoint union of outcomes equals the s
 
 Vehicle-invariance also generates non-contextuality of the probability measure.
 
-Consider a two-dimensional system (qubit). We can measure in the computational basis {|0⟩, |1⟩} or in the Hadamard basis {|+⟩, |−⟩}. Both are valid measurement contexts for the same system.
+Consider a two-dimensional system (qubit). We can measure in the computational basis {$|0\rangle$, $|1\rangle$} or in the Hadamard basis {$|+\rangle$, $|-\rangle$}. Both are valid measurement contexts for the same system.
 
-Now consider a specific outcome, the projector $P_0$ = |0⟩⟨0|. This projector can be expressed in multiple bases:
+Now consider a specific outcome, the projector $P_0 = |0\rangle\langle 0|$. This projector can be expressed in multiple bases:
 
 $$P_0 = |0\rangle\langle 0| = \frac{1}{2}(|+\rangle\langle +| + |-\rangle\langle -|) + \frac{1}{2}(|+\rangle\langle -| + |-\rangle\langle +|)$$
 
@@ -441,11 +441,11 @@ $$P(P_\phi|\psi) = \text{Tr}(\rho P_\phi)$$
 
 where ρ is a density operator and Pφ is the projector onto outcome φ.
 
-For pure states, ρ = |ψ⟩⟨ψ|, giving:
+For pure states, $\rho = |\psi\rangle\langle\psi|$, giving:
 
 $$P(P_\phi|\psi) = \text{Tr}(|\psi\rangle\langle\psi| \cdot |\phi\rangle\langle\phi|) = |\langle\phi|\psi\rangle|^2$$
 
-This is the Born rule. The |ψ|² form is the unique probability measure satisfying the constraints that vehicle-invariance imposes.
+This is the Born rule. The $|\psi|^2$ form is the unique probability measure satisfying the constraints that vehicle-invariance imposes.
 
 **What Gleason's theorem does:** It proves uniqueness. Given additivity and non-contextuality, the Born rule is the only possibility (in dimension ≥ 3).
 
@@ -461,7 +461,7 @@ For qubits, the Born rule can be derived using:
 2. **Continuity:** Small changes in state produce small changes in probabilities
 3. **Extremality:** Pure states are extremal points of the probability simplex
 
-These constraints, combined with vehicle-invariance, uniquely determine the |ψ|² form for dimension 2. The derivation is more involved than Gleason but reaches the same conclusion.
+These constraints, combined with vehicle-invariance, uniquely determine the $|\psi|^2$ form for dimension 2. The derivation is more involved than Gleason but reaches the same conclusion.
 
 **Full treatment:** The companion Born rule paper develops the dimension-2 case rigorously, showing that vehicle-invariance plus standard geometric constraints yields the Born rule for all finite dimensions.
 
@@ -473,15 +473,15 @@ The Born rule derivation reveals its physical meaning. The rule is not an indepe
 2. **Vehicles encode probability structure** (outcomes are $L_3$ admissible but which actualizes is probabilistic)
 3. **Probability assignments are vehicle-invariant** (don't vary with representational choice)
 
-The |⟨φ|ψ⟩|² form emerges as the unique way to assign probabilities that respects these requirements.
+The $|\langle\phi|\psi\rangle|^2$ form emerges as the unique way to assign probabilities that respects these requirements.
 
 **Why the squared magnitude?** Three reasons:
 
-**First, from inner product structure.** The Born rule uses the inner product ⟨φ|ψ⟩, which encodes distinguishability structure (technical companion, §3.3). The squared magnitude |⟨φ|ψ⟩|² converts distinguishability (which can be negative/complex-valued) into probability (which must be real and non-negative).
+**First, from inner product structure.** The Born rule uses the inner product $\langle\phi|\psi\rangle$, which encodes distinguishability structure (technical companion, §3.3). The squared magnitude $|\langle\phi|\psi\rangle|^2$ converts distinguishability (which can be negative/complex-valued) into probability (which must be real and non-negative).
 
 **Second, from normalization.** For state ψ expanded in basis {$\phi_i$}:
 $$|\psi\rangle = \sum_i c_i |\phi_i\rangle$$
-Normalization requires ⟨ψ|ψ⟩ = 1, giving $\Sigma_i$|$c_i$|² = 1. This matches probability normalization $\Sigma_i$P($\phi_i$|ψ) = 1 precisely when P($\phi_i$|ψ) = |$c_i$|².
+Normalization requires $\langle\psi|\psi\rangle = 1$, giving $\sum_i |c_i|^2 = 1$. This matches probability normalization $\sum_i P(\phi_i|\psi) = 1$ precisely when $P(\phi_i|\psi) = |c_i|^2$.
 
 **Third, from Gleason's uniqueness.** Given additivity and non-contextuality, the exponent 2 is not chosen but forced. Any other exponent would violate one of these constraints.
 
@@ -493,7 +493,7 @@ The LRT derivation of the Born rule accomplishes three things:
 
 **First, reduces postulates.** Standard quantum mechanics postulates the Born rule independently. LRT derives it from Id (Determinate Identity) applied to representational vehicles. One fewer independent axiom.
 
-**Second, explains the form.** Why |ψ|² rather than |ψ|, |ψ|³, or some other function? The derivation shows: because |ψ|² is the unique form satisfying vehicle-invariance constraints. The form is not arbitrary.
+**Second, explains the form.** Why $|\psi|^2$ rather than |ψ|, |ψ|³, or some other function? The derivation shows: because $|\psi|^2$ is the unique form satisfying vehicle-invariance constraints. The form is not arbitrary.
 
 **Third, connects logic to measurement.** The Born rule is the bridge between logical constraints ($L_3$ admissibility of outcomes) and empirical statistics (frequencies of measurement results). The derivation shows this bridge is not conventional but forced by Id.
 
@@ -532,7 +532,7 @@ Yes, $A_\Omega$ is defined to be the $L_3$ admissible subset. That is not in dis
 
 A semantic relabeling would leave all structure unexplained. LRT derives structure: vehicle-invariance forces the Born rule, $L_3$ boundaries exclude super-quantum correlations, local tomography selects complex over real Hilbert space (Renou et al. 2021). These are not renamings but restrictions with empirical bite.
 
-**Test:** If this were mere relabeling, competing frameworks should produce the same restrictions. They do not. Standard quantum mechanics postulates the Born rule; LRT derives it. Many-Worlds lacks a principled Born-rule derivation; LRT provides one from vehicle-invariance. GRW introduces free collapse parameters; LRT predicts derivability constraints. Operationalism catalogs measurement statistics; LRT explains why those statistics have |ψ|² form. The distinctions are substantive, not verbal.
+**Test:** If this were mere relabeling, competing frameworks should produce the same restrictions. They do not. Standard quantum mechanics postulates the Born rule; LRT derives it. Many-Worlds lacks a principled Born-rule derivation; LRT provides one from vehicle-invariance. GRW introduces free collapse parameters; LRT predicts derivability constraints. Operationalism catalogs measurement statistics; LRT explains why those statistics have $|\psi|^2$ form. The distinctions are substantive, not verbal.
 
 ### 5.2 "The L-Triad Constraint Is Trivial"
 
@@ -604,7 +604,7 @@ This is a constraint from Id (Determinate Identity), not from quantum mechanics.
 
 **Reply.** Correct, and that is intentional. LRT does not claim to solve the measurement problem by providing dynamical collapse mechanisms or hidden-variable completions. Instead, it reframes the problem by distinguishing what requires mechanistic explanation from what requires structural explanation.
 
-**Structural explanation provided:** Why are outcomes always determinate? Because instantiated records are $L_3$ admissible (Excluded Middle + Identity). Why do probabilities follow |ψ|²? Because vehicle-invariance forces Born-rule structure. Why does "collapse" appear discontinuous? Because it represents a category transition (vehicle → record), not dynamics within a single layer. Decoherence theory (Zurek, 2003; Schlosshauer, 2007) provides the dynamical framework for how environmental interaction produces effective classicality; LRT explains why that classicality must be $L_3$ shaped.
+**Structural explanation provided:** Why are outcomes always determinate? Because instantiated records are $L_3$ admissible (Excluded Middle + Identity). Why do probabilities follow $|\psi|^2$? Because vehicle-invariance forces Born-rule structure. Why does "collapse" appear discontinuous? Because it represents a category transition (vehicle → record), not dynamics within a single layer. Decoherence theory (Zurek, 2003; Schlosshauer, 2007) provides the dynamical framework for how environmental interaction produces effective classicality; LRT explains why that classicality must be $L_3$ shaped.
 
 **Mechanistic questions left open:** When exactly does the transition occur? What physical criterion marks the boundary? Why this particular outcome rather than that one? These are legitimate questions, but they are empirical/technical questions, not foundational puzzles. The measurement problem as usually stated conflates structural questions (why definite at all?) with dynamical questions (what process produces definiteness?). LRT addresses the first; the second is left to specific physical theories (decoherence, gravitational collapse, etc.).
 
@@ -629,7 +629,7 @@ The current development focuses on non-relativistic quantum mechanics. Extension
 
 **Renormalization.** UV divergences in naive QFT calculations suggest a breakdown of naive state-space assumptions. Conjecture: renormalization is the process of restricting to vehicles that remain vehicle-invariant under scale transformations, ensuring Id compliance at all energy scales.
 
-**Gauge structure.** Local gauge symmetry (U(1), SU(2), SU(3)) is central to the Standard Model. Does gauge structure emerge from vehicle-invariance requirements for field configurations, or is it an additional physical input? This is an open question with significant implications for whether LRT can address the Standard Model's structure.
+**Gauge structure.** Local gauge symmetry ($U(1)$, $SU(2)$, $SU(3)$) is central to the Standard Model. Does gauge structure emerge from vehicle-invariance requirements for field configurations, or is it an additional physical input? This is an open question with significant implications for whether LRT can address the Standard Model's structure.
 
 ### 6.2 Gravitational Extension
 
@@ -706,7 +706,7 @@ Logic Realism Theory offers a novel approach to quantum foundations: treating th
 
 **The core insight:** *It from Bit, Bit from Fit.* Physical structure emerges from informational structure, which emerges from logical admissibility. Physics proceeds because its outputs are $L_3$ shaped, not by convention but by constraint. Vehicle-invariance forces the Born rule; local tomography forces complex Hilbert space; anti-holism forces parts to ground wholes. These are not separate postulates but consequences of a single requirement: Determinate Identity.
 
-**What this achieves:** LRT reduces quantum postulates (Born rule becomes theorem), explains quantum structure (why |ψ|² not |ψ|), and generates testable predictions (complex QM, derivable collapse parameters, correlation bounds). It reframes the measurement problem by distinguishing structural explanation (why definite at all) from mechanistic explanation (what process produces definiteness), addressing the first while leaving the second to empirical investigation. It offers one-world realism with Everettian mathematical structure: branching in representation, singularity in instantiation.
+**What this achieves:** LRT reduces quantum postulates (Born rule becomes theorem), explains quantum structure (why $|\psi|^2$ not |ψ|), and generates testable predictions (complex QM, derivable collapse parameters, correlation bounds). It reframes the measurement problem by distinguishing structural explanation (why definite at all) from mechanistic explanation (what process produces definiteness), addressing the first while leaving the second to empirical investigation. It offers one-world realism with Everettian mathematical structure: branching in representation, singularity in instantiation.
 
 **What remains open:** The precise physical criterion marking the vehicle-to-record transition, the extension to quantum field theory and gravity, the modal status of $L_3$ constraints, and the ontological status of $I_\infty$. These are not gaps in the framework but the next steps of a well-defined research program.
 
