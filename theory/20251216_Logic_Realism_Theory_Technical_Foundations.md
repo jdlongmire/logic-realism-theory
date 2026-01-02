@@ -10,6 +10,10 @@ Northrop Grumman Fellow (unaffiliated research)
 
 ---
 
+> **Note (January 2026):** This paper represents an early formulation of LRT's technical foundations. The framework has since been refined in a comprehensive 5-paper suite that introduces updated terminology ($I_\infty$, $A_\Omega$, $L_3$, Determinate Identity) and develops the Identity Continuity framework. The technical derivations here have been expanded in the **Hilbert Space Paper** (complex Hilbert space derivation) and **Born Rule Paper** (vehicle-weight invariance). See the [LRT Zenodo Community](https://zenodo.org/communities/logic-realism-theory/) for the current formulation. This version is retained for reference and citation continuity.
+
+---
+
 ## Abstract
 
 This companion paper provides reconstruction-grade mathematical foundations for Logic Realism Theory. We prove the **LRT Reconstruction Theorem**: complex quantum mechanics is the unique probabilistic theory satisfying LRT axioms A1-A5. The proof proceeds through three main results: (1) the distinguishability metric $D$ (trace distance), combined with continuous reversibility and convex state space structure, induces complex Hilbert space inner product via the Masanes-Müller reconstruction pathway; (2) LRT axioms imply all five Masanes-Müller axioms, including MM5 (entanglement connectivity) via the Lee-Selby theorem applied to purification uniqueness; (3) stability criteria eliminate all alternatives (classical, real QM, quaternionic QM, super-quantum GPTs). Given the LRT axiom set, the reconstruction to complex quantum mechanics is rigorous and gap-free.
@@ -1213,11 +1217,23 @@ Lee, C. M. and Selby, J. H. "Deriving Grover's lower bound from simple physical 
 
 McKague, M., Mosca, M., and Gisin, N. "Simulating quantum systems using real Hilbert spaces." *Physical Review Letters* 102, 2009: 020505.
 
+**Early Formulation (December 2025):**
+
 Longmire, J. D. "It from Bit, Bit from Fit: Foundational Physics Logically Remastered." Zenodo, 2025. DOI: [10.5281/zenodo.17831819](https://doi.org/10.5281/zenodo.17831819)
 
 Longmire, J. D. "Logic Realism Theory: Philosophical Foundations." Zenodo, 2025. DOI: [10.5281/zenodo.17831912](https://doi.org/10.5281/zenodo.17831912)
 
 Longmire, J. D. "LRT Constraints on QFT: Deriving Fock Structure and Interpreting Renormalization from Logical Foundations." Zenodo, 2025. DOI: [10.5281/zenodo.17831926](https://doi.org/10.5281/zenodo.17831926)
+
+**Current 5-Paper Suite (January 2026):**
+
+The framework has been refined into a comprehensive 5-paper suite available at the [LRT Zenodo Community](https://zenodo.org/communities/logic-realism-theory/):
+
+- **Position Paper**: Core framework with $I_\infty$/$A_\Omega$ ontology and Identity Continuity
+- **Born Rule Paper**: Derivation of the Born rule from vehicle-weight invariance
+- **Hilbert Space Paper**: Derivation of complex Hilbert space from Determinate Identity via local tomography
+- **QFT Statistics Paper**: Derivation of the symmetrization postulate from Determinate Identity
+- **GR Extension**: Spacetime implications, identity strain, and kinematic constraints
 
 Masanes, L. and Müller, M. P. "A derivation of quantum theory from physical requirements." *New Journal of Physics* 13, 2011: 063001.
 

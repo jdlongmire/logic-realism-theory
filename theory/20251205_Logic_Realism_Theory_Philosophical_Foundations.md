@@ -10,6 +10,10 @@ Northrop Grumman Fellow (unaffiliated research)
 
 ---
 
+> **Note (January 2026):** This paper represents an early formulation of Logic Realism Theory's philosophical foundations. The framework has since been refined in a comprehensive 5-paper suite that introduces updated terminology ($I_\infty$ for representable configurations, $A_\Omega$ for the $L_3$-admissible subset, Determinate Identity as central concept) and develops the Identity Continuity framework. See the Position Paper and companion papers at the [LRT Zenodo Community](https://zenodo.org/communities/logic-realism-theory/) for the current formulation. This version is retained for reference and citation continuity.
+
+---
+
 ## Abstract
 
 Logic Realism Theory (LRT) proposes that the Three Fundamental Laws of Logic (3FLL)—Identity, Non-Contradiction, and Excluded Middle—are not merely rules of reasoning but ontological constraints constitutive of physical distinguishability. The core evidence is an asymmetry: we can conceive of 3FLL violations, yet physical reality never produces them. This asymmetry indicates that 3FLL constrain reality, not merely cognition. This paper develops the philosophical foundations of this claim. We argue that: (1) 3FLL have a dual character, functioning both epistemically and ontologically; (2) quantum mechanics emerges as the unique "interface" structure mediating between non-Boolean possibility and Boolean actuality; (3) this framework resolves longstanding interpretive puzzles while maintaining scientific realism. The result is a form of structural realism grounded in logical necessity rather than contingent physical law.
@@ -468,11 +472,23 @@ Wittgenstein, L. *Tractatus Logico-Philosophicus.* 1921. Trans. D. Pears and B. 
 
 ## Related Papers in This Series
 
+**Early Formulation (December 2025):**
+
 Longmire, J. D. "It from Bit, Bit from Fit: Foundational Physics Logically Remastered." Zenodo, 2025. DOI: [10.5281/zenodo.17831819](https://doi.org/10.5281/zenodo.17831819)
 
 Longmire, J. D. "Logic Realism Theory: Technical Foundations." Zenodo, 2025. DOI: [10.5281/zenodo.17831883](https://doi.org/10.5281/zenodo.17831883)
 
 Longmire, J. D. "LRT Constraints on QFT: Deriving Fock Structure and Interpreting Renormalization from Logical Foundations." Zenodo, 2025. DOI: [10.5281/zenodo.17831926](https://doi.org/10.5281/zenodo.17831926)
+
+**Current 5-Paper Suite (January 2026):**
+
+The framework has been refined into a comprehensive 5-paper suite available at the [LRT Zenodo Community](https://zenodo.org/communities/logic-realism-theory/):
+
+- **Position Paper**: Core framework with $I_\infty$/$A_\Omega$ ontology and Identity Continuity
+- **Born Rule Paper**: Derivation of the Born rule from vehicle-weight invariance
+- **Hilbert Space Paper**: Derivation of complex Hilbert space from Determinate Identity via local tomography
+- **QFT Statistics Paper**: Derivation of the symmetrization postulate from Determinate Identity
+- **GR Extension**: Spacetime implications, identity strain, and kinematic constraints
 
 ---
 
