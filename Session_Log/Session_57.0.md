@@ -1,0 +1,69 @@
+# Session 57.0
+
+**Date**: 2026-01-09
+**Focus**: TBD
+**Status**: ACTIVE
+
+---
+
+## Context
+
+New session following Session 56.0 (CLOSED). Previous session:
+- Fixed overclaim language in Zenodo papers (predict→derive)
+- Renamed papers to current date (20260109)
+- Added rolling activity log protocol to CLAUDE.md
+- Rendered PDFs via Quarto
+
+Git status at session start:
+- Deleted: `theory/pdf/20251231_Logic_Realism_Theory_Position_Paper.pdf`
+- Untracked: `theory/pdf/20251205_...pdf`, `theory/pdf/20260109_...pdf`
+
+---
+
+## Progress
+
+| # | Task | Status |
+|---|------|--------|
+| 1 | Session initialization | ✅ Complete |
+| 2 | Review context files | ✅ Complete |
+| 3 | MVS paper discussion and drafting | ✅ Complete |
+
+---
+
+## Work Products
+
+### MVS Working Paper v0.3
+**File:** `theory/drafts/20260109_Minimal_Viable_Set_Working_Paper.md`
+
+#### v0.2 refinements:
+- Born rule reframed as "discovered constraint" (L₃ → Hilbert → Gleason → Born)
+- "Minimal" claim clarified (sufficient, not unique)
+- §5 (Spacetime) marked as conjectural
+- Falsifiability strengthened with specific predictions
+- MWI comparison tightened on parsimony grounds
+
+#### v0.3 additions (from other theory papers):
+- **§2.3 Anti-Holism Lemma**: Parts ground wholes; global holism violates Id
+- **§3.5 Vehicle-Weight Invariance**: Measure is part of physical situation (vehicle), not representation (content)
+- **§5 Ontic Booleanity**: L₃ constraints are ontic, not epistemic—closes epistemic loophole against MWI
+- **§6 Spacetime**: Joint inadmissibility → temporal ordering theorem
+- **§7 Falsifiability**: Renou et al. (2021) as successful prediction; ontic Booleanity as testable claim
+
+Core insight: We don't postulate rules—we discover the constraints that L₃ admissibility entails.
+
+---
+
+## Commits
+
+| Hash | Description |
+|------|-------------|
+
+---
+
+## Notes
+
+MVS paper establishes measurement as logical selection, with Born rule as discovered (not postulated) constraint. Ready for review.
+
+---
+
+**Interaction Count**: 8
