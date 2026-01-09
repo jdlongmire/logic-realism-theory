@@ -35,6 +35,7 @@ New session following Session 57.0. Previous session established:
 | Hash | Description |
 |------|-------------|
 | c509c9c | Extract Perplexity discussion into theory development notes |
+| 2968ef1 | Integrate Perplexity discussion content into LRT papers |
 
 ---
 
