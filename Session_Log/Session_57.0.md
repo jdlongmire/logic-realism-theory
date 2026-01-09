@@ -57,6 +57,7 @@ Core insight: We don't postulate rules—we discover the constraints that L₃ a
 
 | Hash | Description |
 |------|-------------|
+| 277fb92 | Add MVS Working Paper v0.3: Measurement as Logical Selection |
 
 ---
 
