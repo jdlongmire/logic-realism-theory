@@ -50,7 +50,17 @@
       "Bash(\"/c/Program Files/Quarto/bin/quarto.exe\" render 20251231_Logic_Realism_Theory_Position_Paper.md --to pdf)",
       "Bash(\"/c/Program Files/Quarto/bin/quarto.exe\" render 20251231_LRT_QFT_Statistics_Paper.md --to pdf)",
       "Bash(\"/c/Program Files/Quarto/bin/quarto.exe\" render 20251231_LRT_GR_Extension.md --to pdf)",
-      "Bash(\"/c/Program Files/Quarto/bin/quarto.exe\" render 20251231_LRT_Hilbert_Space_Derivation.md --to pdf)"
+      "Bash(\"/c/Program Files/Quarto/bin/quarto.exe\" render 20251231_LRT_Hilbert_Space_Derivation.md --to pdf)",
+      "Bash(\"/c/Program Files/Quarto/bin/quarto.exe\" render /c/Users/jdlon/OneDrive/Documents/logic-realism-theory/theory/20251231_Logic_Realism_Theory_Position_Paper.md --to pdf)",
+      "Bash(\"/c/Program Files/Quarto/bin/quarto.exe\" render /c/Users/jdlon/OneDrive/Documents/logic-realism-theory/theory/20251231_LRT_Born_Rule_Paper.md --to pdf)",
+      "Bash(\"/c/Program Files/Quarto/bin/quarto.exe\" render /c/Users/jdlon/OneDrive/Documents/logic-realism-theory/theory/20251231_LRT_QFT_Statistics_Paper.md --to pdf)",
+      "Bash(\"/c/Program Files/Quarto/bin/quarto.exe\" render /c/Users/jdlon/OneDrive/Documents/logic-realism-theory/theory/20251231_LRT_GR_Extension.md --to pdf)",
+      "Bash(\"/c/Program Files/Quarto/bin/quarto.exe\" render /c/Users/jdlon/OneDrive/Documents/logic-realism-theory/theory/20251231_LRT_Hilbert_Space_Derivation.md --to pdf)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(together form a unified derivation from foundational logic to)",
+      "Bash(quantum mechanics and beyond.\"\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(\"/c/Program Files \\(x86\\)/Microsoft/Edge/Application/msedge.exe\" --headless --disable-gpu --print-to-pdf=\"C:/Users/jdlon/OneDrive/Documents/logic-realism-theory/theory/20251231_LRT_Born_Rule_Paper.pdf\" \"file:///C:/Users/jdlon/OneDrive/Documents/logic-realism-theory/theory/20251231_LRT_Born_Rule_Paper.html\")",
+      "Bash(\"/c/Program Files \\(x86\\)/Microsoft/Edge/Application/msedge.exe\" --headless --disable-gpu --run-all-compositor-stages-before-draw --virtual-time-budget=10000 --print-to-pdf=\"C:/Users/jdlon/OneDrive/Documents/logic-realism-theory/theory/20251231_LRT_Born_Rule_Paper_v2.pdf\" \"file:///C:/Users/jdlon/OneDrive/Documents/logic-realism-theory/theory/20251231_LRT_Born_Rule_Paper.html\")"
     ],
     "deny": [],
     "ask": []

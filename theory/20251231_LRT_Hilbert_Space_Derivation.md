@@ -49,7 +49,7 @@ Once these axioms are established, we invoke Masanes-Müller (2011) to conclude:
 
 **Explanatory**: The reconstruction axioms are not arbitrary "reasonable assumptions" but logical necessities.
 
-**Consequential**: Tsirelson's bound (2√2 for CHSH) follows mathematically from Hilbert space structure, making it a downstream consequence of $L_3$.
+**Consequential**: Tsirelson's bound ($2\sqrt{2}$ for CHSH) follows mathematically from Hilbert space structure, making it a downstream consequence of $L_3$.
 
 ### 1.5 Logical Dependencies: Proven vs. Imported
 
@@ -360,7 +360,7 @@ Local Tomography
     ↓ [Masanes-Müller reconstruction]
 Complex Hilbert Space
     ↓ [Cauchy-Schwarz inequality]
-Tsirelson Bound: S ≤ 2√2
+Tsirelson Bound: $S \leq 2\sqrt{2}$
 ```
 
 Each step is either:

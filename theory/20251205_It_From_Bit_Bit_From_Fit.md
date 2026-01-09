@@ -478,7 +478,7 @@ The Born Rule Paper establishes a stronger result: the Born rule is derived from
 
 $$P(\text{outcome}) = |\langle\text{outcome}|\psi\rangle|^2$$
 
-*Proof Sketch:* VWI forces the probability measure to respect the structure of density matrices. Combined with Gleason's theorem (which shows the Born rule is the unique frame function on Hilbert spaces of dimension ≥ 3), we obtain the Born rule as a derived consequence, not an independent postulate.
+*Proof Sketch:* VWI forces the probability measure to respect the structure of density matrices. Combined with Gleason's theorem (which shows the Born rule is the unique frame function on Hilbert spaces of dimension $\geq 3$), we obtain the Born rule as a derived consequence, not an independent postulate.
 
 ### 6.3 Complex Hilbert Space from Local Tomography
 
@@ -628,7 +628,7 @@ The "branching" of MWI is reinterpreted as the structure of $I_\infty$ - all pos
 
 **The dissolution:** The wave function is $I_\infty$ structure - real but not actual.
 
-The wave function ψ describes a genuine configuration in $I_\infty$. It is not "just math" or "just our knowledge." But it is also not a physical thing in space like a classical field.
+The wave function $\psi$ describes a genuine configuration in $I_\infty$. It is not "just math" or "just our knowledge." But it is also not a physical thing in space like a classical field.
 
 The wave function is real in the sense that $I_\infty$ is real - it is the structure of possibility constituted by $L_3$. It becomes actual only at the interface, when measurement enforces Boolean determinacy.
 

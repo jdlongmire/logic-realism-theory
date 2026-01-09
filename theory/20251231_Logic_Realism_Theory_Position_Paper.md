@@ -10,7 +10,7 @@ Correspondence: jdlongmire@outlook.com
 
 ## Abstract
 
-Logic Realism Theory (LRT) treats the three classical logical laws (Determinate Identity, Non-Contradiction, and Excluded Middle) as ontological constraints on physical instantiation, not merely rules of inference. The framework distinguishes $I_\infty$ (all representable configurations) from $A_\Omega$ (the $L_3$-admissible subset that can be physically instantiated as stable records). This boundary condition generates quantum structure: vehicle-invariance under mathematically equivalent decompositions forces the Born rule via Gleason's theorem; local tomography requirements select complex Hilbert space over real alternatives. The framework is falsifiable ($L_3$ violations in stable records would refute it) and progressive (it predicted complex QM before the Renou et al. 2021 test). Extensions to quantum field theory, general relativity, and cosmology are outlined. Full technical derivations appear in companion papers.
+Logic Realism Theory (LRT) treats the three classical logical laws (Determinate Identity, Non-Contradiction, and Excluded Middle) as ontological constraints on physical instantiation, not merely rules of inference. The framework distinguishes $I_\infty$ (all representable configurations) from $A_\Omega$ (the $L_3$-admissible subset that can be physically instantiated as stable records). This boundary condition generates quantum structure: vehicle-invariance under mathematically equivalent decompositions forces the Born rule via Gleason's theorem; local tomography requirements select complex Hilbert space over real alternatives. The framework is falsifiable ($L_3$ violations in stable records would refute it) and derives (not merely accommodates) the complex structure of quantum mechanics confirmed by Renou et al. (2021). Extensions to quantum field theory, general relativity, and cosmology are outlined. Full technical derivations appear in companion papers.
 
 **Keywords:** logic realism, quantum foundations, Born rule, Gleason's theorem, Determinate Identity, ontology, measurement problem
 
@@ -87,7 +87,7 @@ The papers can be read independently, but together form a unified derivation fro
 
 **Formal compatibility.** LRT adopts essentially all of the formalism of standard complex-Hilbert-space quantum mechanics, the same mathematical machinery used by Many-Worlds, Copenhagen, and textbook QM. The Hilbert space derivation (companion paper) shows that Id forces the Masanes-Müller axioms, yielding the standard arena: pure states, tensor products, unitaries, Born-rule probabilities. LRT is therefore compatible with Bohmian-style or collapse-style additions at the vehicle layer, provided they respect the $L_3$-admissibility constraint on records. The formalism is shared; the grounding is LRT-specific. This is the value proposition: inherit all the mathematical machinery of quantum mechanics while placing a logic-driven constraint on how that formalism hooks onto reality. LRT constrains *which* formalisms are admissible, not how to build them from scratch.
 
-**Empirical progressiveness:** A research program is progressive if it predicts novel facts that are later confirmed. LRT's complex-QM requirement (from local tomography) preceded the experimental design distinguishing complex from real QM. If future experiments confirm derivable collapse parameters or observe Tsirelson-bound saturation in new regimes, the program gains progressive character. If experiments falsify these predictions, the hard core requires revision or abandonment.
+**Empirical progressiveness:** A research program is progressive if it predicts novel facts that are later confirmed. LRT's complex-QM requirement (from local tomography) provides a principled derivation of why complex numbers are necessary—not merely accommodating the Renou et al. (2021) result but explaining it. Future experiments testing derivable collapse parameters or Tsirelson-bound saturation in new regimes offer opportunities for genuine prediction. If such experiments falsify LRT-derived constraints, the hard core requires revision or abandonment.
 
 This is not metaphysics disguised as physics. It is a scientific research program with a non-empirical hard core (logical constraints) that generates empirically testable consequences (correlation bounds, field selection, collapse constraints). Lakatos would classify it as progressive if the protective belt continues generating confirmed novel predictions. Popper would approve of its falsifiability.
 
@@ -280,7 +280,7 @@ Consider the paradigm case: a qubit in superposition
 
 $$|\psi\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle)$$
 
-This state is a well-defined mathematical object within the theory. The state vector is a precise representational vehicle that can be manipulated without contradiction. Whatever physical substrate realizes the situation, the representation is determinate as a vehicle: it is the specific superposition with coefficients (1/√2, 1/√2), with definite inner products with other states, with determinate evolution under unitary operators.
+This state is a well-defined mathematical object within the theory. The state vector is a precise representational vehicle that can be manipulated without contradiction. Whatever physical substrate realizes the situation, the representation is determinate as a vehicle: it is the specific superposition with coefficients $(1/\sqrt{2}, 1/\sqrt{2})$, with definite inner products with other states, with determinate evolution under unitary operators.
 
 The content (what the vehicle represents about outcome-possibilities) concerns what will happen when measurement in the {$|0\rangle$, $|1\rangle$} basis occurs. The state does not describe a configuration that both has and lacks a definite value (NC violation), nor does it describe a configuration outside the true/false dichotomy (EM violation). It describes a physical situation such that when measurement occurs, exactly one outcome will be recorded, and that record will be $L_3$ admissible.
 
@@ -332,7 +332,7 @@ Consider the Bell state:
 
 $$|\Phi^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)$$
 
-This is a single representational vehicle encoding a two-particle configuration. The vehicle is well-defined in the theory: it is determinately the state |Φ⁺⟩, with definite coefficients and inner products. What it represents is a physical situation where neither particle's outcome is sharp relative to measurement basis prior to measurement, yet the outcomes will be perfectly correlated.
+This is a single representational vehicle encoding a two-particle configuration. The vehicle is well-defined in the theory: it is determinately the state $|\Phi^+\rangle$, with definite coefficients and inner products. What it represents is a physical situation where neither particle's outcome is sharp relative to measurement basis prior to measurement, yet the outcomes will be perfectly correlated.
 
 The key insight: the representational vehicle is non-local. It cannot be factorized into separate vehicles for particles A and B. The physical situation is represented as a unified configuration spanning both locations. When measurement occurs at one location, the global vehicle transitions to a new global vehicle representing a configuration where both particles now produce correlated sharp records.
 
@@ -375,7 +375,7 @@ This sets up the Born rule derivation: if quantum states are representational ve
 
 ### 4.1 The Derivation Strategy
 
-The Born rule states that the probability of measuring outcome φ given state ψ is:
+The Born rule states that the probability of measuring outcome $\phi$ given state $\psi$ is:
 
 $$P(\phi|\psi) = |\langle\phi|\psi\rangle|^2$$
 
@@ -398,9 +398,9 @@ The question: what constrains this probability assignment?
 
 **Key insight:** A single physical situation can be described using different bases, different decompositions, different mathematical representations, all equivalent in the sense that they describe the same measurement event. Vehicle-invariance is the requirement that these equivalent descriptions assign the same total probability weight to the event.
 
-**Equivalence class specification:** An event E is identified with a projector P_E onto a subspace. Two descriptions d and d′ are equivalent for event E if they use different orthonormal resolutions (bases) but both contain the same projector P_E. For example, measuring "spin-up along z-axis" is the same event whether we embed it in the {z-up, z-down} basis or decompose that basis in terms of {x-up, x-down}.
+**Equivalence class specification:** An event E is identified with a projector P_E onto a subspace. Two descriptions $d$ and $d'$ are equivalent for event E if they use different orthonormal resolutions (bases) but both contain the same projector P_E. For example, measuring "spin-up along z-axis" is the same event whether we embed it in the {z-up, z-down} basis or decompose that basis in terms of {x-up, x-down}.
 
-**Formal statement:** Let E be a measurement event (identified with projector P_E). If descriptions d and d′ both represent E using different orthonormal bases or decompositions, then:
+**Formal statement:** Let E be a measurement event (identified with projector P_E). If descriptions $d$ and $d'$ both represent E using different orthonormal bases or decompositions, then:
 
 $$P_d(E|\psi) = P_{d'}(E|\psi)$$
 
@@ -450,14 +450,14 @@ This is non-contextuality: the probability assigned to a projector cannot depend
 
 We now have two constraints derived from vehicle-invariance:
 
-1. **Additivity:** For disjoint outcomes, P($E_1$ ∪ $E_2$) = P($E_1$) + P($E_2$)
+1. **Additivity:** For disjoint outcomes, $P(E_1 \cup E_2) = P(E_1) + P(E_2)$
 2. **Non-contextuality:** Projector weights independent of basis embedding
 
-Gleason's theorem (1957) proves that in Hilbert spaces of dimension ≥ 3, any probability measure satisfying these two constraints must have the form:
+Gleason's theorem (1957) proves that in Hilbert spaces of dimension $\geq 3$, any probability measure satisfying these two constraints must have the form:
 
 $$P(P_\phi|\psi) = \text{Tr}(\rho P_\phi)$$
 
-where ρ is a density operator and Pφ is the projector onto outcome φ.
+where $\rho$ is a density operator and $P_\phi$ is the projector onto outcome $\phi$.
 
 For pure states, $\rho = |\psi\rangle\langle\psi|$, giving:
 
@@ -465,13 +465,13 @@ $$P(P_\phi|\psi) = \text{Tr}(|\psi\rangle\langle\psi| \cdot |\phi\rangle\langle\
 
 This is the Born rule. The $|\psi|^2$ form is the unique probability measure satisfying the constraints that vehicle-invariance imposes.
 
-**What Gleason's theorem does:** It proves uniqueness. Given additivity and non-contextuality, the Born rule is the only possibility (in dimension ≥ 3).
+**What Gleason's theorem does:** It proves uniqueness. Given additivity and non-contextuality, the Born rule is the only possibility (in dimension $\geq 3$).
 
 **What LRT contributes:** The justification for additivity and non-contextuality. These are not independent probability axioms but consequences of Id (Determinate Identity) applied to representational vehicles. The Born rule is derived, not postulated.
 
 ### 4.6 The Dimension-2 Case
 
-Gleason's theorem requires dimension ≥ 3. For qubits (dimension 2), the theorem does not apply directly. This is not a gap but a feature: the two-dimensional case requires separate treatment.
+Gleason's theorem requires dimension $\geq 3$. For qubits (dimension 2), the theorem does not apply directly. This is not a gap but a feature: the two-dimensional case requires separate treatment.
 
 For qubits, the Born rule can be derived using:
 
@@ -497,7 +497,7 @@ The $|\langle\phi|\psi\rangle|^2$ form emerges as the unique way to assign proba
 
 **First, from inner product structure.** The Born rule uses the inner product $\langle\phi|\psi\rangle$, which encodes distinguishability structure (technical companion, §3.3). The squared magnitude $|\langle\phi|\psi\rangle|^2$ converts distinguishability (which can be negative/complex-valued) into probability (which must be real and non-negative).
 
-**Second, from normalization.** For state ψ expanded in basis {$\phi_i$}:
+**Second, from normalization.** For state $\psi$ expanded in basis $\{\phi_i\}$:
 $$|\psi\rangle = \sum_i c_i |\phi_i\rangle$$
 Normalization requires $\langle\psi|\psi\rangle = 1$, giving $\sum_i |c_i|^2 = 1$. This matches probability normalization $\sum_i P(\phi_i|\psi) = 1$ precisely when $P(\phi_i|\psi) = |c_i|^2$.
 
@@ -511,7 +511,7 @@ The LRT derivation of the Born rule accomplishes three things:
 
 **First, reduces postulates.** Standard quantum mechanics postulates the Born rule independently. LRT derives it from Id (Determinate Identity) applied to representational vehicles. One fewer independent axiom.
 
-**Second, explains the form.** Why $|\psi|^2$ rather than |ψ|, |ψ|³, or some other function? The derivation shows: because $|\psi|^2$ is the unique form satisfying vehicle-invariance constraints. The form is not arbitrary.
+**Second, explains the form.** Why $|\psi|^2$ rather than $|\psi|$, $|\psi|^3$, or some other function? The derivation shows: because $|\psi|^2$ is the unique form satisfying vehicle-invariance constraints. The form is not arbitrary.
 
 **Third, connects logic to measurement.** The Born rule is the bridge between logical constraints ($L_3$ admissibility of outcomes) and empirical statistics (frequencies of measurement results). The derivation shows this bridge is not conventional but forced by Id.
 
@@ -590,7 +590,7 @@ The appearance of circularity arises because quantum mechanics is the *output* o
 
 ### 5.4 "What About Quantum Logic and Paraconsistent Logic?"
 
-**Objection.** Quantum logic (Birkhoff-von Neumann) shows that distributivity fails for quantum propositions: A ∧ (B ∨ C) ≠ (A ∧ B) ∨ (A ∧ C). This demonstrates that classical logic does not apply to quantum systems. Similarly, paraconsistent logic allows true contradictions, undermining the claim that Non-Contradiction is universal. If logic itself is revisable, your "logical constraints" are merely conventional.
+**Objection.** Quantum logic (Birkhoff-von Neumann) shows that distributivity fails for quantum propositions: $A \land (B \lor C) \neq (A \land B) \lor (A \land C)$. This demonstrates that classical logic does not apply to quantum systems. Similarly, paraconsistent logic allows true contradictions, undermining the claim that Non-Contradiction is universal. If logic itself is revisable, your "logical constraints" are merely conventional.
 
 **Reply.** The objection conflates logical structure at different layers.
 
@@ -663,11 +663,11 @@ General relativity presents unique challenges:
 
 Several predictions distinguish LRT from alternative frameworks:
 
-**Complex vs. real QM.** LRT predicts complex Hilbert space is required for local tomography (Renou et al. 2021 network scenario). Experimental realization would confirm complex QM over real alternatives.
+**Complex vs. real QM.** LRT derives that complex Hilbert space is required for local tomography. The Renou et al. (2021) network scenario confirms complex QM over real alternatives, consistent with this LRT requirement.
 
 **Collapse parameters.** If objective collapse mechanisms (GRW, Penrose-Diósi) are confirmed, LRT predicts their parameters must be derivable from fundamental constants rather than being free. Tests: macroscopic quantum superpositions, gravitational decoherence experiments.
 
-**Correlation bounds.** LRT predicts Tsirelson bound (Tsirelson, 1980) for quantum correlations (S ≤ 2√2 for CHSH) but excludes PR-box correlations (Popescu & Rohrlich, 1994) that would allow super-quantum correlations. Information causality (Pawłowski et al., 2009) provides independent grounds for this exclusion. Any observation of correlations exceeding the Tsirelson bound would falsify the $L_3$ constraint framework.
+**Correlation bounds.** LRT predicts Tsirelson bound (Tsirelson, 1980) for quantum correlations ($S \leq 2\sqrt{2}$ for CHSH) but excludes PR-box correlations (Popescu & Rohrlich, 1994) that would allow super-quantum correlations. Information causality (Pawłowski et al., 2009) provides independent grounds for this exclusion. Any observation of correlations exceeding the Tsirelson bound would falsify the $L_3$ constraint framework.
 
 **Information preservation.** Fundamental dynamics must preserve vehicle-layer information. Tests: precision tests of unitarity, black hole information recovery via Hawking radiation correlations.
 
@@ -687,9 +687,9 @@ Three technical projects would strengthen the framework:
 
 **Rigorous Hilbert space derivation.** The current derivation (technical companion, §3) uses Hardy kernel construction to build inner product from distinguishability. A fully rigorous treatment would: (a) prove uniqueness up to isomorphism, (b) handle infinite-dimensional cases, (c) treat continuous-variable systems explicitly.
 
-**Gleason theorem extension.** Gleason's theorem applies to dim ≥ 3. The dimension-2 case (qubits) requires separate treatment via symmetry arguments. A unified derivation covering all dimensions would complete the Born rule story.
+**Gleason theorem extension.** Gleason's theorem applies to dim $\geq 3$. The dimension-2 case (qubits) requires separate treatment via symmetry arguments. A unified derivation covering all dimensions would complete the Born rule story.
 
-**Non-locality bounds from $L_3$.** The Tsirelson bound (S ≤ 2√2 for CHSH) is currently asserted as compatible with LRT but not derived. A derivation showing that $L_3$ constraints + vehicle-invariance force the Tsirelson bound would be a major result.
+**Non-locality bounds from $L_3$.** The Tsirelson bound ($S \leq 2\sqrt{2}$ for CHSH) is currently asserted as compatible with LRT but not derived. A derivation showing that $L_3$ constraints + vehicle-invariance force the Tsirelson bound would be a major result.
 
 ### 6.6 Interdisciplinary Connections
 
@@ -699,7 +699,7 @@ LRT intersects with several research areas:
 
 **Quantum information.** The vehicle/content distinction clarifies the ontology of quantum information. Vehicles encode information; records instantiate it. This may illuminate debates about information as physical vs. abstract.
 
-**Quantum foundations experiments.** LRT makes specific predictions (complex QM, derivable collapse parameters, correlation bounds) testable via:
+**Quantum foundations experiments.** LRT derives specific constraints (complex QM requirement, derivable collapse parameters, correlation bounds) testable via:
 - Bell tests with loophole-free protocols
 - Macroscopic superposition experiments (optomechanics, LIGO-style tests)
 - Black hole analogs (acoustic black holes, optical analogs)
@@ -724,7 +724,7 @@ Logic Realism Theory offers a novel approach to quantum foundations: treating th
 
 **The core insight:** *It from Bit, Bit from Fit.* Physical structure emerges from informational structure, which emerges from logical admissibility. Physics proceeds because its outputs are $L_3$ shaped, not by convention but by constraint. Vehicle-invariance forces the Born rule; local tomography forces complex Hilbert space; anti-holism forces parts to ground wholes. These are not separate postulates but consequences of a single requirement: Determinate Identity.
 
-**What this achieves:** LRT reduces quantum postulates (Born rule becomes theorem), explains quantum structure (why $|\psi|^2$ not |ψ|), and generates testable predictions (complex QM, derivable collapse parameters, correlation bounds). It reframes the measurement problem by distinguishing structural explanation (why definite at all) from mechanistic explanation (what process produces definiteness), addressing the first while leaving the second to empirical investigation. It offers one-world realism with Everettian mathematical structure: branching in representation, singularity in instantiation.
+**What this achieves:** LRT reduces quantum postulates (Born rule becomes theorem), explains quantum structure (why $|\psi|^2$ not $|\psi|$), and generates testable constraints (complex QM requirement—confirmed by Renou et al. 2021—plus derivable collapse parameters and correlation bounds). It reframes the measurement problem by distinguishing structural explanation (why definite at all) from mechanistic explanation (what process produces definiteness), addressing the first while leaving the second to empirical investigation. It offers one-world realism with Everettian mathematical structure: branching in representation, singularity in instantiation.
 
 **What remains open:** The precise physical criterion marking the vehicle-to-record transition, the extension to quantum field theory and gravity, the modal status of $L_3$ constraints, and the ontological status of $I_\infty$. These are not gaps in the framework but the next steps of a well-defined research program.
 
@@ -746,7 +746,7 @@ This research was conducted independently. I thank the related online communitie
 
 ## References
 
-Bell, J. S. (1964). On the Einstein Podolsky Rosen paradox. *Physics Physique Физика*, 1(3), 195–200.
+Bell, J. S. (1964). On the Einstein Podolsky Rosen paradox. *Physics Physique Fizika*, 1(3), 195–200.
 
 Birkhoff, G., & von Neumann, J. (1936). The logic of quantum mechanics. *Annals of Mathematics*, 37(4), 823–843.
 

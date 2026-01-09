@@ -59,12 +59,6 @@ format:
       }
       \makeatother
 
-      % Abstract formatting - narrower margins (philosophy journal style)
-      \usepackage{abstract}
-      \renewcommand{\abstractnamefont}{\normalfont\bfseries}
-      \renewcommand{\abstracttextfont}{\normalfont\small}
-      \setlength{\absleftindent}{0.5in}
-      \setlength{\absrightindent}{0.5in}
 
 # Default author (can be overridden in individual files)
 author:

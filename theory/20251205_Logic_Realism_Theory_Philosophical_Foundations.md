@@ -147,7 +147,7 @@ Consequently, what we traditionally classify as "empirical inputs"—such as Lor
 
 For example, while we empirically observe that quantum mechanics uses complex numbers, LRT reveals this is not a random selection. As proven by the failure of Real Quantum Mechanics to satisfy local tomography (Technical companion, Theorem 5.2), the complex field is the *unique* structure capable of preserving distinguishability in composite systems.
 
-**The Local Tomography Constraint:** Although real QM permits globally distinct states with identical marginals (e.g., the Bell states |Φ⁺⟩ and |Φ⁻⟩ both give ρ_A = ρ_B = I/2), LRT excludes this possibility because such states would violate Global Parsimony: the same local statistics would correspond to two metaphysically distinct global configurations with no additional distinguishable consequences—surplus ontological structure forbidden by the truthmaker requirement of 3FLL.
+**The Local Tomography Constraint:** Although real QM permits globally distinct states with identical marginals (e.g., the Bell states $|\Phi^+\rangle$ and $|\Phi^-\rangle$ both give $\rho_A = \rho_B = I/2$), LRT excludes this possibility because such states would violate Global Parsimony: the same local statistics would correspond to two metaphysically distinct global configurations with no additional distinguishable consequences—surplus ontological structure forbidden by the truthmaker requirement of 3FLL.
 
 Therefore, an "empirical fact" in LRT is simply a **logical constraint that we observe as a physical regularity.** The "Wager" of LRT is that *all* fundamental physical laws (including relativistic symmetries) will ultimately be revealed not as contingent inputs, but as the mathematical necessities required to satisfy the Three Fundamental Laws of Logic.
 
@@ -337,7 +337,7 @@ LRT makes specific predictions (see technical companion, §8):
 1. **No fundamental information loss:** Black hole evaporation must be unitary
 2. **Derivable collapse parameters:** If objective collapse occurs, parameters derive from fundamental constants
 3. **Complex QM confirmed:** Real QM is experimentally distinguishable from complex QM (Renou et al. 2021 confirmed complex)
-4. **No 3FLL violations:** Any experiment showing P ∧ ¬P at the outcome level falsifies LRT
+4. **No 3FLL violations:** Any experiment showing $P \land \neg P$ at the outcome level falsifies LRT
 
 ### 5.4 Novel Predictions
 

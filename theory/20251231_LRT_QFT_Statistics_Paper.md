@@ -100,7 +100,7 @@ The symmetrization postulate is thus not an independent axiom but a consequence 
 
 Longmire (2025) establishes the following results from L₃:
 
-1. **Born Rule**: The unique probability measure over quantum outcomes satisfying Id-motivated constraints (basis-independence, non-contextuality) is the Born rule μ(P) = Tr(ρP).
+1. **Born Rule**: The unique probability measure over quantum outcomes satisfying Id-motivated constraints (basis-independence, non-contextuality) is the Born rule $\mu(P) = \text{Tr}(\rho P)$.
 
 2. **Complex Hilbert Space**: The unique arena for physical theories satisfying L₃ under composition and continuous transformation is complex Hilbert space (via the Masanes-Müller reconstruction theorem).
 
@@ -166,11 +166,11 @@ Elements of $\mathcal{H}^{(N)}$ are written as $|\psi_1\rangle \otimes |\psi_2\r
 
 The symmetric group $S_N$ acts on $\mathcal{H}^{(N)}$ by permuting the tensor factors. For each permutation $\pi \in S_N$, define the unitary operator $P_\pi$ by:
 
-$$P_\pi |ψ_1, ψ_2, \ldots, ψ_N\rangle = |ψ_{\pi^{-1}(1)}, ψ_{\pi^{-1}(2)}, \ldots, ψ_{\pi^{-1}(N)}\rangle$$
+$$P_\pi |\psi_1, \psi_2, \ldots, \psi_N\rangle = |\psi_{\pi^{-1}(1)}, \psi_{\pi^{-1}(2)}, \ldots, \psi_{\pi^{-1}(N)}\rangle$$
 
 For example, if $\pi = (12)$ is the transposition exchanging 1 and 2:
 
-$$P_{(12)} |ψ_1, ψ_2, ψ_3\rangle = |ψ_2, ψ_1, ψ_3\rangle$$
+$$P_{(12)} |\psi_1, \psi_2, \psi_3\rangle = |\psi_2, \psi_1, \psi_3\rangle$$
 
 The operators $\{P_\pi : \pi \in S_N\}$ form a unitary representation of $S_N$ on $\mathcal{H}^{(N)}$.
 
@@ -210,7 +210,7 @@ Therefore $c: S_N \to U(1)$ is a group homomorphism, i.e., a one-dimensional uni
 
 ### 4.4 Theorem 2: Only Symmetric and Antisymmetric Survive
 
-**Theorem 2 (Bosons and Fermions Only).** The symmetric group $S_N$ (for N ≥ 2) has exactly two one-dimensional unitary representations:
+**Theorem 2 (Bosons and Fermions Only).** The symmetric group $S_N$ (for $N \geq 2$) has exactly two one-dimensional unitary representations:
 
 1. The *trivial representation*: $c(\pi) = 1$ for all $\pi$.
 2. The *sign representation*: $c(\pi) = \text{sgn}(\pi)$, where $\text{sgn}(\pi) = +1$ for even permutations and $-1$ for odd permutations.
@@ -296,7 +296,7 @@ A complete proof remains future work. The present paper establishes only that *s
 
 The Pauli exclusion principle (that no two fermions can occupy the same quantum state) follows immediately from antisymmetry:
 
-$$|ψ, ψ\rangle_A = \frac{1}{\sqrt{2}}(|ψ\rangle ⊗ |ψ\rangle - |ψ\rangle ⊗ |ψ\rangle) = 0$$
+$$|\psi, \psi\rangle_A = \frac{1}{\sqrt{2}}(|\psi\rangle \otimes |\psi\rangle - |\psi\rangle \otimes |\psi\rangle) = 0$$
 
 An antisymmetrized state with two particles in the same single-particle state vanishes identically. This is not an empirical discovery but a mathematical consequence of the antisymmetry required by Id.
 
@@ -304,7 +304,7 @@ An antisymmetrized state with two particles in the same single-particle state va
 
 For bosons, symmetric states not only allow but favor multiple particles in the same state:
 
-$$|ψ, ψ\rangle_S = |ψ\rangle ⊗ |ψ\rangle$$
+$$|\psi, \psi\rangle_S = |\psi\rangle \otimes |\psi\rangle$$
 
 (no antisymmetry to cause cancellation). Bose-Einstein condensation (the macroscopic occupation of a single quantum state) is Id-admissible for bosons.
 

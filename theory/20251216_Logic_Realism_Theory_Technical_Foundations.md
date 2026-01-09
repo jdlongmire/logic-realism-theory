@@ -570,7 +570,7 @@ The Tsirelson bound $\mathcal{S} \leq 2\sqrt{2}$ is compatible with and interpre
 2. Global Parsimony: No surplus structure beyond 3FLL + physical constraints
 3. No signaling under arbitrary composition
 
-**Status clarification:** This proposition demonstrates *compatibility*, not *derivation*. LRT provides an interpretive framework within which the Tsirelson bound is natural (interface stability, no surplus signaling mechanisms), but the specific value 2√2 is not derived from 3FLL or CBP. The value comes from the mathematics of complex Hilbert space (itself derived via local tomography). A full derivation of *why* 2√2 specifically marks the stability threshold remains open (see Main paper Section 4.4).
+**Status clarification:** This proposition demonstrates *compatibility*, not *derivation*. LRT provides an interpretive framework within which the Tsirelson bound is natural (interface stability, no surplus signaling mechanisms), but the specific value $2\sqrt{2}$ is not derived from 3FLL or CBP. The value comes from the mathematics of complex Hilbert space (itself derived via local tomography). A full derivation of *why* $2\sqrt{2}$ specifically marks the stability threshold remains open (see Main paper Section 4.4).
 
 **Argument:**
 
@@ -589,11 +589,11 @@ $$\mathcal{S} = \langle A_1 B_1 \rangle + \langle A_1 B_2 \rangle + \langle A_2 
 Maximum achieved by measuring $|\Phi^+\rangle$ with optimal angles:
 $$\mathcal{S}_{max} = 2\sqrt{2}$$
 
-**Conclusion:** The Tsirelson bound is the unique maximum compatible with LRT axioms. LRT interprets this as the interface stability limit, but deriving 2√2 from first principles remains future work. ∎
+**Conclusion:** The Tsirelson bound is the unique maximum compatible with LRT axioms. LRT interprets this as the interface stability limit, but deriving $2\sqrt{2}$ from first principles remains future work. ∎
 
 ### 5.4 Observer Stability Theorem
 
-**Theorem 5.6 (dim(H) ≥ 3 + Local Tomography ⇒ Complex Field).**
+**Theorem 5.6 ($\dim(H) \geq 3$ + Local Tomography ⇒ Complex Field).**
 
 For any GPT with:
 - State space dimension $\geq 3$
@@ -1127,7 +1127,7 @@ The standard inner product $\langle\psi|\phi\rangle$ satisfies all requirements 
 **Step 5: Born rule**
 Measurement probabilities: $p(k|\psi) = |\langle k|\psi\rangle|^2$
 
-This follows from Gleason's theorem (dim ≥ 3) or directly from the frame function structure for qubits.
+This follows from Gleason's theorem (dim $\geq 3$) or directly from the frame function structure for qubits.
 
 **Conclusion:** The qubit is reconstructed from LRT axioms. The complex numbers emerge from local tomography (Proposition 3.1-3.2).
 
