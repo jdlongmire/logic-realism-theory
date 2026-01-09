@@ -32,8 +32,8 @@ Git status at session start:
 
 ## Work Products
 
-### MVS Working Paper v0.3
-**File:** `theory/drafts/20260109_Minimal_Viable_Set_Working_Paper.md`
+### MVS Paper v0.3 (Promoted to Theory Root)
+**File:** `theory/20260109_LRT_Minimal_Viable_Set.md`
 
 #### v0.2 refinements:
 - Born rule reframed as "discovered constraint" (L₃ → Hilbert → Gleason → Born)
@@ -58,6 +58,7 @@ Core insight: We don't postulate rules—we discover the constraints that L₃ a
 | Hash | Description |
 |------|-------------|
 | 277fb92 | Add MVS Working Paper v0.3: Measurement as Logical Selection |
+| 7133c48 | Promote MVS paper to theory root |
 
 ---
 
@@ -67,4 +68,4 @@ MVS paper establishes measurement as logical selection, with Born rule as discov
 
 ---
 
-**Interaction Count**: 8
+**Interaction Count**: 11
