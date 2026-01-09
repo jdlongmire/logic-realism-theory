@@ -1,6 +1,6 @@
 # The Minimal Viable Set: Measurement as Logical Selection in Logic Realism Theory
 
-**Working Paper v0.3**
+**Working Paper v0.4**
 
 **James D. (JD) Longmire**
 ORCID: 0009-0009-1383-7698
@@ -221,6 +221,24 @@ LRT explains this directly: only one L₃-consistent configuration exists to obs
 
 **Methodological principle:** When two theories make identical predictions, prefer the one with smaller ontological commitment. LRT posits one world satisfying L₃. MWI posits uncountably many worlds plus an explanation for why we only see one.
 
+### 4.5 Bell Tests and Contextual Actuality
+
+Bell's theorem demonstrates that no local hidden-variable theory can reproduce quantum correlations. This appears to challenge any realist interpretation: if measurement outcomes are determinate, must they not be pre-determined by hidden variables?
+
+LRT resolves this via the **Contextual Actuality Principle**: the three laws of logic (L₃) apply to propositions about outcomes within a *realized context*, not to counterfactual measurements that were never performed.
+
+**Principle (Contextual Actuality).** For each experimental run with chosen measurement settings (a, b), there exist definite, L₃-consistent outcome values (A, B). However, LRT does not require that propositions about *unperformed* measurements have determinate truth-values.
+
+Bell's theorem requires a global assignment of values to all possible measurement combinations—precisely what LRT denies. In the MVS framework:
+
+- **Measured observables** produce outcomes in L(I): determinate, logically crisp records satisfying Id, NC, and EM
+- **Unmeasured observables** remain in R(I): mathematically representable but not logically actualized
+- The quantum state encodes nonlocal correlations as structural features of R(I), not as hidden information transmitted between regions
+
+Each realized history consists of local, definite facts. The *blueprint* (quantum state) is nonlocal, but the *actualization* (measurement record) respects L₃ locally. Bell violations manifest the nonlocal logical structure of entangled states without requiring hidden variables or superluminal signaling.
+
+This resolution is consistent with the Ontic Booleanity theorem (§5): L₃ constraints are ontic for actual tokens, but tokens exist only within realized measurement contexts.
+
 ---
 
 ## 5. Ontic Booleanity: Closing the Epistemic Loophole
@@ -426,6 +444,7 @@ Renou, M. O., et al. (2021). Quantum theory based on real numbers can be experim
 | 0.1 | 2026-01-09 | Initial draft |
 | 0.2 | 2026-01-09 | Added §3.4 (Born rule as discovered constraint); revised §2.2 (clarified "minimal"); strengthened falsifiability (§6); marked §5 as conjectural |
 | 0.3 | 2026-01-09 | Added §2.3 (Anti-Holism Lemma); added §3.5 (Vehicle-Weight Invariance); added §5 (Ontic Booleanity theorem); strengthened §6 (Spacetime) with joint inadmissibility argument; expanded §7 (Falsifiability) with Renou et al. and ontic claims |
+| 0.4 | 2026-01-09 | Added §4.5 (Bell Tests and Contextual Actuality): resolves Bell compatibility via context-bound L₃ application |
 
 ---
 

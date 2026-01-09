@@ -1183,6 +1183,51 @@ $$|\psi\rangle_{(AB)C} \neq |\psi\rangle_{A(BC)}$$
 
 ---
 
+## Appendix C: Bell Compatibility Theorem
+
+This appendix establishes that LRT's commitment to classical logic for actual outcomes is fully compatible with Bell inequality violations.
+
+### C1. Statement
+
+**Theorem (Bell Compatibility).** Classical logic ($L_3$: Identity, Non-Contradiction, Excluded Middle) applied consistently to actualized measurement outcomes is compatible with Bell inequality violations, provided one does not require global pre-assignment of values for unmeasured observables.
+
+### C2. Proof Sketch
+
+**Step 1 (Bell's requirement).** Bell's theorem derives from the assumption that a hidden-variable model $\lambda$ assigns definite values to *all* possible measurement settings $(a, b)$ simultaneously. For settings $(a_1, a_2)$ for Alice and $(b_1, b_2)$ for Bob, Bell locality requires:
+
+$$P(A, B | a, b, \lambda) = P(A | a, \lambda) \cdot P(B | b, \lambda)$$
+
+with $\lambda$ determining outcomes for the full $2 \times 2$ table of setting combinations.
+
+**Step 2 (LRT's weaker commitment).** LRT requires $L_3$-consistency only for *actual* outcomes within each experimental run. For a given run where Alice chooses setting $a$ and Bob chooses setting $b$:
+
+- **Identity:** The outcome pair $(A, B)$ is self-identical
+- **Non-Contradiction:** Not both $A = +1$ and $A = -1$ for Alice's detector
+- **Excluded Middle:** Exactly one of $\{A = +1, A = -1\}$ obtains
+
+LRT does *not* require that counterfactual propositions like "what would Alice have obtained had she chosen $a'$ instead of $a$" possess definite truth-values.
+
+**Step 3 (No global assignment).** The quantum state $|\psi\rangle_{AB}$ (e.g., a Bell state) encodes correlations without specifying a global value table. The nonlocal correlation structure resides in the entangled state, not in pre-assigned hidden variables. Each run produces a *local* Boolean outcome pair; the *pattern* of correlations across many runs reflects the state's nonlocal logical structure.
+
+**Step 4 (Compatibility).** Since Bell's derivation requires the global assignment that LRT explicitly does not posit, the derivation of Bell inequalities does not apply to LRT. Quantum correlations (including violations up to the Tsirelson bound $2\sqrt{2}$) are compatible with $L_3$-consistent actual outcomes.
+
+### C3. Key Insight: Contextual Actuality
+
+**Principle (Contextual Actuality).** The three fundamental laws of logic apply to propositions about outcomes within a *realized measurement context*. LRT does not require that propositions about unperformed measurements have definite truth-values.
+
+This principle resolves the apparent tension between logical realism and nonlocal correlations:
+
+- **What Bell assumes:** A complete specification $\lambda$ that renders all measurement outcomes determinate prior to measurement choice
+- **What LRT requires:** Only that each actualized outcome satisfies $L_3$
+
+The quantum state serves as a *blueprint* for possible actualizations, not a hidden-variable assignment. The nonlocality is in the correlation structure of the blueprint, while each local measurement yields a $L_3$-consistent outcome.
+
+### C4. Relation to Main Results
+
+This theorem complements the Ontic Booleanity result (§7): $L_3$ constraints are ontic for actual outcome tokens, but tokens are indexed to realized measurement contexts. Bell violations do not threaten logical realism because they arise from the structure of entangled states, not from failures of classical logic applied to actual facts.
+
+---
+
 ## References
 
 Adler, S. L. *Quaternionic Quantum Mechanics and Quantum Fields.* Oxford University Press, 1995.

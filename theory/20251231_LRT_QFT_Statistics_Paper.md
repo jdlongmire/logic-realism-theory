@@ -38,7 +38,7 @@ The present paper extends this programme to quantum statistics. We show that the
 
 ### 1.3 Paper Overview
 
-Section 2 recapitulates the LRT framework, providing sufficient background for readers unfamiliar with the parent paper. Section 3 analyzes the identity problem for identical particles (the conceptual puzzle that the symmetrization postulate addresses). Section 4 presents the core argument: Id excludes non-symmetric states, leaving only bosonic and fermionic sectors as physically admissible. Section 5 discusses the connection to the spin-statistics theorem. Section 6 explores implications and predictions. Section 7 addresses objections. Section 8 concludes.
+Section 2 recapitulates the LRT framework, providing sufficient background for readers unfamiliar with the parent paper. Section 3 analyzes the identity problem for identical particles (the conceptual puzzle that the symmetrization postulate addresses). Section 4 presents the core argument: Id excludes non-symmetric states, leaving only bosonic and fermionic sectors as physically admissible. Section 5 discusses the connection to the spin-statistics theorem. Section 6 explores implications and predictions. Section 7 connects symmetrization to quantum error correction. Section 8 addresses objections. Section 9 concludes.
 
 ### 1.4 Relation to Companion Papers
 
@@ -324,7 +324,35 @@ Similarly, the existence of specific particle types (electrons, photons, quarks,
 
 ---
 
-## 7. Objections and Replies
+## 7. Error Correction and Logical Constraints
+
+The symmetrization requirement derived in Section 4 has a natural extension to quantum error correction. Both phenomena concern the enforcement of logical constraints on quantum states.
+
+### 7.1 Stabilizer Codes as Enforced Logical Relations
+
+Quantum error correction employs stabilizer codes, which can be understood as sets of logical constraints that valid code states must satisfy. A stabilizer group $S = \{S_1, S_2, \ldots, S_k\}$ defines the code space as the joint +1 eigenspace of all stabilizer generators:
+
+$$|\psi\rangle_{\text{code}} \in \mathcal{H}_{\text{code}} \iff S_i|\psi\rangle = +|\psi\rangle \text{ for all } i$$
+
+From the LRT perspective, these stabilizer conditions function analogously to the symmetrization constraint: they enforce specific logical relations that physical states must satisfy. A "logical qubit" is a protected equivalence class of states satisfying these constraints.
+
+### 7.2 Decoherence as Logical Constraint Failure
+
+When a system interacts with its environment, decoherence can produce states that violate stabilizer constraints. In LRT terms, noise introduces configurations where the required logical relations fail to hold. Error correction identifies these violations (via syndrome measurement) and restores the state to the constraint-satisfying subspace.
+
+This parallels the symmetrization argument: just as states that transform non-trivially under permutation violate Id for identical particles, states that violate stabilizer constraints represent logical inconsistencies that must be corrected or excluded.
+
+### 7.3 Statistics Protection as Error Correction
+
+The symmetrization postulate itself can be viewed as a form of error correction operating at the fundamental level. The projection onto symmetric or antisymmetric subspaces:
+
+$$P_S = \frac{1}{N!}\sum_{\pi \in S_N} P_\pi, \quad P_A = \frac{1}{N!}\sum_{\pi \in S_N} \text{sgn}(\pi) P_\pi$$
+
+enforces the logical constraint that identical particles cannot carry distinguishing labels. Any process that would create non-symmetric components is automatically projected out, protecting the logical structure required by Id.
+
+---
+
+## 8. Objections and Replies
 
 ### Objection 1: "This just redescribes the postulate."
 
@@ -358,9 +386,9 @@ Each step adds constraints without adding new empirical inputs.
 
 ---
 
-## 8. Conclusion
+## 9. Conclusion
 
-### 8.1 Summary
+### 9.1 Summary
 
 We have shown that the symmetrization postulate of quantum mechanics (the requirement that multi-particle states be either symmetric (bosons) or antisymmetric (fermions)) is a consequence of Determinate Identity (Id) applied to identical particles.
 
@@ -372,11 +400,11 @@ The argument proceeds as follows:
 4. The only Id-admissible states are eigenstates of all permutation operators with eigenvalues forming a one-dimensional representation.
 5. S_N has exactly two such representations: trivial (bosons) and sign (fermions).
 
-### 8.2 Relation to LRT Programme
+### 9.2 Relation to LRT Programme
 
 This result extends the Logic Realism programme in a significant direction. Where Longmire (2025) derived the Born rule and Hilbert space structure from L₃, the present paper derives quantum statistics. Together, these results suggest that much of the mathematical structure of quantum mechanics follows from logical constraints on instantiation.
 
-### 8.3 Future Directions
+### 9.3 Future Directions
 
 Several questions remain for future work:
 
