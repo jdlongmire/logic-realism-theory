@@ -27,7 +27,7 @@ L₃ → Distinguishability → Hilbert Space → Born Rule → Quantum Mechanic
 
 | Paper | Description |
 |-------|-------------|
-| [Position Paper](theory/20260109_Logic_Realism_Theory_Position_Paper.md) | Main framework: L₃ as physical constraints |
+| [Position Paper](theory/20260109_Logic_Realism_Theory_Position_Paper.md) | Main framework: L₃ as physical constraints [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18202130.svg)](https://doi.org/10.5281/zenodo.18202130) |
 | [Technical Foundations](theory/20260109_Logic_Realism_Theory_Technical_Foundations.md) | Detailed derivations and axiom structure |
 | [Minimal Viable Set](theory/20260109_LRT_Minimal_Viable_Set.md) | Measurement as logical selection; Born rule as discovered constraint |
 
@@ -77,7 +77,7 @@ Contact: jdlongmire@outlook.com
   title = {Logic Realism Theory: Physical Foundations from Logical Constraints},
   year = {2025},
   publisher = {Zenodo},
-  doi = {10.5281/zenodo.14581992}
+  doi = {10.5281/zenodo.18202130}
 }
 ```
 
