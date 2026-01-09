@@ -696,7 +696,7 @@ Therefore $\mathcal{T}'$ permits signaling under finite composition, violating A
 
 **Corollary 5.1 (Conditional Derivation).** The reconstruction is *conditional* on the LRT axioms, particularly the Tier-2 physical axioms (A3a-c) and structural principles (A3b, A4). The 3FLL alone (A1-A2) do not fix quantum mechanics; the physical constraints are essential.
 
-**Corollary 5.2 (Experimental Confirmation).** The Renou et al. (2021) experiment confirming complex over real QM is a direct test of the reconstruction. LRT predicted (via A3c + Theorem 5.2) that local tomography requires $\mathbb{C}$. Experiment confirmed this prediction.
+**Corollary 5.2 (Experimental Confirmation).** The Renou et al. (2021) experiment confirming complex over real QM is a direct test of the reconstruction. LRT derives (via A3c + Theorem 5.2) that local tomography requires $\mathbb{C}$. Experiment confirms this derivation.
 
 ---
 
@@ -974,11 +974,11 @@ The "unreasonable effectiveness" of mathematics in physics is explained: the mat
 
 The experiment by Renou et al. distinguishing complex from real quantum mechanics can be reanalyzed through the LRT lens:
 
-- LRT predicts (via A3c + Theorem 5.2): Local tomography requires complex amplitudes
+- LRT derives (via A3c + Theorem 5.2): Local tomography requires complex amplitudes
 - Renou et al. designed a Bell-type experiment where complex QM and real QM make different predictions
 - Result: Nature follows complex QM predictions
 
-*LRT interpretation:* This is the first structural confirmation that distinguishability (3FLL-grounded) + local tomography selects $\mathbb{C}$ over $\mathbb{R}$.
+*LRT interpretation:* This confirms that distinguishability (3FLL-grounded) + local tomography selects $\mathbb{C}$ over $\mathbb{R}$. LRT explains *why* complex numbers are necessary, not merely that they are observed.
 
 ### 9.2 Currently Testable
 

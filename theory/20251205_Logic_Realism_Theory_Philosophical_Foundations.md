@@ -339,9 +339,9 @@ LRT makes specific predictions (see technical companion, §8):
 3. **Complex QM confirmed:** Real QM is experimentally distinguishable from complex QM (Renou et al. 2021 confirmed complex)
 4. **No 3FLL violations:** Any experiment showing $P \land \neg P$ at the outcome level falsifies LRT
 
-### 5.4 Novel Predictions
+### 5.4 Structural Derivations
 
-LRT's prediction of complex (not real or quaternionic) quantum mechanics predates but is confirmed by Renou et al. (2021). This is a genuine predictive success: LRT + local tomography entails complex amplitudes, and experiment confirms complex amplitudes.
+LRT derives (not merely accommodates) the requirement for complex (not real or quaternionic) quantum mechanics. LRT + local tomography entails complex amplitudes; Renou et al. (2021) confirms complex amplitudes experimentally. This is a structural success: LRT explains *why* complex numbers are necessary, not just that they are observed.
 
 ---
 
@@ -406,7 +406,7 @@ Logic Realism Theory offers a novel philosophical framework for understanding qu
 
 3. **Maintains scientific realism:** LRT is realist about the distinguishability structure while remaining agnostic about "hidden" ontology beyond that structure.
 
-4. **Makes predictions:** LRT is falsifiable and has one confirmed structural prediction (complex QM).
+4. **Makes derivations:** LRT is falsifiable and derives the complex-QM requirement (confirmed by Renou et al. 2021).
 
 ### 7.2 What LRT Does Not Achieve
 

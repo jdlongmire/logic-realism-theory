@@ -41,6 +41,16 @@ Added to CLAUDE.md a protocol for maintaining `.claude/activity.log`:
 - Logs session starts, tasks, edits, commits, notes
 - Enables recovery from unexpected terminations
 
+### Overclaim Language Fix
+Fixed "predict→derive" language in historical Zenodo papers:
+
+| File | Lines | Change |
+|------|-------|--------|
+| Philosophical Foundations | 344, 409 | "prediction"→"derivation", removed "predates" claim |
+| Technical Foundations | 699, 977 | "predicted"→"derives" |
+
+**Rationale:** LRT *derives* the complex-QM requirement; it does not claim temporal priority over Renou et al. (2021).
+
 ---
 
-**Interaction Count**: 4
+**Interaction Count**: 5
