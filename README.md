@@ -43,7 +43,7 @@ L₃ → Distinguishability → Hilbert Space → Born Rule → Quantum Mechanic
 | Paper | Derives |
 |-------|---------|
 | [Hilbert Space](theory/20251231_LRT_Hilbert_Space_Derivation.md) | L₃ → Complex Hilbert space (via Masanes-Müller) |
-| [Born Rule](theory/20251231_LRT_Born_Rule_Paper.md) | L₃ → |ψ|² statistics (via Gleason) |
+| [Born Rule](theory/20251231_LRT_Born_Rule_Paper.md) | L₃ → Born statistics (via Gleason) |
 | [QFT Statistics](theory/20251231_LRT_QFT_Statistics_Paper.md) | L₃ → Symmetrization postulate |
 | [GR Extension](theory/20251231_LRT_GR_Extension.md) | L₃ → Spacetime structure (programmatic) |
 
