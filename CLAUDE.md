@@ -51,6 +51,28 @@ Essential guidance for Claude Code in this repository.
 - Update READMEs at end of major sessions
 - Push commits to GitHub
 
+### Rolling Activity Log
+Maintain `.claude/activity.log` as a rolling 500-line log of current work.
+
+**Format** (one line per entry):
+```
+[YYYY-MM-DD HH:MM] ACTION: description
+```
+
+**Actions to log:**
+- `SESSION_START` / `SESSION_END` - Session boundaries
+- `TASK` - Major task started (e.g., "LaTeX standardization sweep")
+- `EDIT` - Significant file changes (e.g., "Updated Position Paper §4.3")
+- `COMMIT` - Git commits with hash
+- `NOTE` - Important context for recovery
+
+**Trim after each update** (keep last 500 lines):
+```bash
+tail -500 .claude/activity.log > .claude/activity.log.tmp && mv .claude/activity.log.tmp .claude/activity.log
+```
+
+**Purpose:** Enables recovery from unexpected terminations by preserving recent work context without accumulating unbounded history.
+
 ### Git Commits
 - Commit incrementally during work
 - Always include Claude Code attribution
