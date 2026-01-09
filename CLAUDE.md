@@ -73,6 +73,23 @@ tail -500 .claude/activity.log > .claude/activity.log.tmp && mv .claude/activity
 
 **Purpose:** Enables recovery from unexpected terminations by preserving recent work context without accumulating unbounded history.
 
+### PDF Rendering (Theory Papers)
+Generate PDFs from markdown using Quarto + XeLaTeX.
+
+**Single paper:**
+```bash
+cd theory && quarto render FILENAME.md --to pdf
+```
+
+**All papers:**
+```bash
+cd theory && for f in 20251231_*.md 20251205_*.md 20251216_*.md; do quarto render "$f" --to pdf; done
+```
+
+**Configuration:** `theory/_quarto.yml` (Latin Modern fonts, Harvard citations, philosophy journal style)
+
+**Output:** `theory/pdf/`
+
 ### Git Commits
 - Commit incrementally during work
 - Always include Claude Code attribution
