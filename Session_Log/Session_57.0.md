@@ -68,6 +68,9 @@ Core insight: We don't postulate rules—we discover the constraints that L₃ a
 | 6c5c0d3 | Fix sanity check issues across 4 theory papers |
 | 2f9b228 | Correct sanity check: no circularity in axiomatic system |
 | 7f40b5d | Update README: reflect current paper set |
+| eaeab6f | Close Session 57.0 |
+| 46e534a | Add Position Paper Zenodo DOI to README |
+| 498c80a | Fix README table: escape pipe characters |
 
 ---
 
@@ -94,4 +97,4 @@ Each step is either an LRT theorem or imported external result. No conclusion ap
 
 ---
 
-**Interaction Count**: 22
+**Interaction Count**: 25
