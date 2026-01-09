@@ -284,6 +284,8 @@ Classical composites cannot exhibit non-classical correlations. But we've establ
 
 If two-level systems were classical simplexes, composites couldn't violate Bell inequalities. Since Id permits (and reality exhibits) Bell violations, the classical simplex is ruled out.
 
+*Note on reasoning structure:* This step uses indirect reasoning. We do not derive the Bloch ball directly from Id; rather, we rule out the classical alternative by showing it conflicts with Theorem 3 (entanglement permitted). The argument is: Id permits entanglement → entanglement enables Bell violations → classical structures cannot produce Bell violations → classical structures are ruled out. This is sound but relies on Theorem 3 rather than providing an independent Id-based derivation.
+
 **(Step 3: Uniqueness of the Bloch ball)**
 
 The only remaining option is the Bloch ball. But is there a unique Bloch ball, or could different two-level systems have differently-sized or differently-shaped "Bloch-like" spaces?

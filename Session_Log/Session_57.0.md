@@ -27,6 +27,8 @@ Git status at session start:
 | 1 | Session initialization | ✅ Complete |
 | 2 | Review context files | ✅ Complete |
 | 3 | MVS paper discussion and drafting | ✅ Complete |
+| 4 | Promote MVS to theory root | ✅ Complete |
+| 5 | Archive superseded files, establish minimal paper set | ✅ Complete |
 
 ---
 
@@ -59,6 +61,7 @@ Core insight: We don't postulate rules—we discover the constraints that L₃ a
 |------|-------------|
 | 277fb92 | Add MVS Working Paper v0.3: Measurement as Logical Selection |
 | 7133c48 | Promote MVS paper to theory root |
+| 9f964a9 | Archive superseded/process files from theory root |
 
 ---
 
@@ -68,4 +71,4 @@ MVS paper establishes measurement as logical selection, with Born rule as discov
 
 ---
 
-**Interaction Count**: 11
+**Interaction Count**: 14

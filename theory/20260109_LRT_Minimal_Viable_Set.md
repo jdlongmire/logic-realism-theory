@@ -114,16 +114,18 @@ This means:
 
 In standard quantum mechanics, a system in superposition |ψ⟩ = α|0⟩ + β|1⟩ yields a definite outcome upon measurement. The transition from superposition to definite state is unexplained by unitary evolution alone. This is the measurement problem.
 
-### 3.2 The LRT Resolution
+### 3.2 The LRT Interpretation
 
-LRT reframes measurement as **L₃ enforcement**. The superposition describes R(I)—all representable configurations of the system. Measurement is the event where the system must enter the macroscopic record as a determinate state satisfying L(I).
+LRT *interprets* measurement as **L₃ enforcement**. The superposition describes R(I)—all representable configurations of the system. Measurement is the event where the system must enter the macroscopic record as a determinate state satisfying L(I).
 
-**The Mechanism:**
+*Note:* This is an interpretation of the measurement transition, not a derivation of the physical mechanism. LRT does not specify *how* the transition occurs (decoherence, collapse, or other dynamics); it specifies *what constraint* the outcome must satisfy (L₃-admissibility). The mechanism remains an open question compatible with multiple physical accounts.
+
+**The Constraint:**
 
 1. System S in superposition interacts with environment E
 2. The interaction must resolve into a joint state (S + E) that can persist as a stable record
 3. Only L₃-admissible configurations can form stable records
-4. The "selection" is not random collapse but logical filtering
+4. The "selection" is interpreted as logical filtering—whatever mechanism produces it must yield L₃-consistent outcomes
 
 ### 3.3 The Funnel of Identity
 

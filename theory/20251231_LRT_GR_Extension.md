@@ -10,7 +10,7 @@ Correspondence: jdlongmire@outlook.com
 
 ## Abstract
 
-We explore the consequences of Determinate Identity (Id) for spacetime structure, proposing that key features of general relativity emerge from logical constraints on physical instantiation. The derivation proceeds in stages: temporal ordering emerges from joint inadmissibility of configurations (Theorem 1); Lorentzian signature is forced by the asymmetry between jointly-inadmissible and jointly-admissible configuration pairs (Theorem 2); closed timelike curves are excluded by identity-preservation requirements (Theorem 3); singularities are constrained by the requirement that identity cannot be destroyed (Theorem 4); and identity continuity imposes bounded distinguishability constraints on temporal evolution, forcing a quadratic leading-order structure for identity strain that points toward variational dynamics. These results are programmatic (rigorous formalization requires additional mathematical development), but they suggest that spacetime geometry and dynamics, like Hilbert space structure, may be derivable from $L_3$ constraints rather than postulated independently.
+We explore the consequences of Determinate Identity (Id) for spacetime structure, proposing that key features of general relativity emerge from logical constraints on physical instantiation. The derivation proceeds in stages: temporal ordering emerges from joint inadmissibility of configurations (Theorem 1); Lorentzian signature is argued heuristically from the asymmetry between jointly-inadmissible and jointly-admissible configuration pairs (§3.2); closed timelike curves are excluded by identity-preservation requirements (Theorem 3); singularities are constrained by the requirement that identity cannot be destroyed (Theorem 4); and identity continuity imposes bounded distinguishability constraints on temporal evolution, forcing a quadratic leading-order structure for identity strain that points toward variational dynamics. These results are programmatic (rigorous formalization requires additional mathematical development), but they suggest that spacetime geometry and dynamics, like Hilbert space structure, may be derivable from $L_3$ constraints rather than postulated independently.
 
 **Keywords:** spacetime, general relativity, Determinate Identity, temporal ordering, Lorentzian signature, closed timelike curves, singularities, logic realism
 
@@ -45,7 +45,7 @@ We derive spacetime features from Id applied to configurations and their relatio
 | Spacetime Feature | Forced by |
 |------------------|-----------|
 | Temporal ordering | Joint inadmissibility (Theorem 1) |
-| Lorentzian signature | Asymmetry in admissibility relations (Theorem 2) |
+| Lorentzian signature | Asymmetry in admissibility relations (Heuristic §3.2) |
 | CTC exclusion | Identity preservation (Theorem 3) |
 | Singularity constraints | Information preservation (Theorem 4) |
 | Identity strain quadratic | Compositional constraints (§6.4) |
@@ -126,11 +126,13 @@ A 4D spacetime metric has signature $(p, q)$ with $p + q = 4$. Options:
 
 Empirically, spacetime has Lorentzian signature $(3, 1)$. Why?
 
-### 3.2 Theorem 2: Lorentzian Signature Forced
+### 3.2 Heuristic Argument: Lorentzian Signature
 
-**Theorem 2 (Lorentzian Signature)**. If temporal ordering arises from joint inadmissibility and spatial separation permits joint admissibility, then the metric signature must be Lorentzian.
+**Proposition (Lorentzian Signature)**. If temporal ordering arises from joint inadmissibility and spatial separation permits joint admissibility, then the metric signature must be Lorentzian.
 
-**Argument** (sketch, not rigorous proof):
+*Note: This is a heuristic argument, not a rigorous proof. The claim is plausible but requires further formalization.*
+
+**Argument sketch**:
 
 **(Step 1: Two types of separation)**
 
@@ -393,7 +395,7 @@ We have shown that $L_3$ constraints, specifically Determinate Identity, have na
 | Result | Status |
 |--------|--------|
 | Temporal ordering emerges | Argued (Theorem 1) |
-| Lorentzian signature forced | Sketched (Theorem 2) |
+| Lorentzian signature forced | Heuristic (§3.2) |
 | CTCs excluded | Argued (Theorem 3) |
 | Singularities constrained | Argued (Theorem 4) |
 | Identity strain quadratic | Argued (§6.4) |

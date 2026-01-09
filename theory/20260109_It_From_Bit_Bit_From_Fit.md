@@ -220,7 +220,7 @@ The answer is not logical necessity. Logic does not dictate that reality must be
 
 But this raises a deeper question: why does quantum structure, rather than classical structure, produce stable physics?
 
-### 4.3 The Parsimony Principle: A Derivation
+### 4.3 The Parsimony Principle: From Constitution to Parsimony
 
 The thesis equation from the companion paper includes a parsimony operator (𝔓):
 
@@ -304,7 +304,7 @@ Therefore:
 3. Actuality requires genuine Boolean values (by constitution)
 4. Therefore, surplus propositions are not in actuality
 
-#### 4.3.4 Parsimony as Derived
+#### 4.3.4 Parsimony as Structural Consequence
 
 The conclusion follows directly:
 
@@ -870,7 +870,7 @@ The Tier-2 derivations are conditional on physical axioms (local tomography, con
 |---------|--------|------|
 | Determinate Identity (Id) | Primitive | Constitutive; NC and EM follow |
 | $I_\infty$ | Primitive | Space of all representable configurations |
-| Parsimony | **Derived** | From constitution + grounding (§4.3) |
+| Parsimony | **Structural consequence** | From constitution + grounding (§4.3); not a new axiom but reorganization |
 
 ### 12.5 What LRT Does Not Explain
 
