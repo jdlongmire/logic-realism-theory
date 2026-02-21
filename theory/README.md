@@ -4,7 +4,32 @@ Physical Foundations from Logical Constraints — deriving quantum mechanics fro
 
 ---
 
-## Current Papers
+## The Theory in Brief
+
+Logic Realism Theory (LRT) treats the three classical laws of logic not as rules of inference but as **ontological constraints on physical instantiation**. No stable experimental record — across the entire history of science — has ever violated them.
+
+| Law | Constraint |
+|-----|------------|
+| **Determinate Identity (Id)** | Every entity is determinately what it is |
+| **Non-Contradiction (NC)** | No entity is both P and not-P in the same respect |
+| **Excluded Middle (EM)** | Every entity is either P or not-P |
+
+LRT distinguishes two domains: **I-infinity** (all representable configurations, including contradictions) and **A-Omega** (the L3-admissible subset that can be physically instantiated as stable records). The boundary between them generates quantum structure:
+
+- **Vehicle-invariance** under equivalent decompositions forces the **Born rule** via Gleason's theorem
+- **Local tomography** requirements select **complex Hilbert space** over real alternatives
+- **Symmetrization** of identical particles yields bosonic and fermionic sectors
+- **Tsirelson bound** emerges as a mathematical consequence, not an empirical postulate
+
+The derivation chain: **L3 → Distinguishability → Hilbert Space → Born Rule → Quantum Mechanics**
+
+The framework is falsifiable: a single stable record instantiating a direct L3 violation would refute it. LRT derives (not merely accommodates) the structure of quantum mechanics.
+
+**Author:** James (JD) Longmire | ORCID: [0009-0009-1383-7698](https://orcid.org/0009-0009-1383-7698)
+
+---
+
+## Papers
 
 ### Position Paper
 
