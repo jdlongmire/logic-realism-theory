@@ -1,0 +1,13 @@
+title: "Logic Realism Theory"
+description: "LRT: Physical Foundations from Logical Constraints"
+theme: jekyll-theme-cayman
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+exclude:
+  - _quarto.yml
+  - pdf/
+  - archive/
+  - LRT_Extended/
+  - submissions/
+  - "*.pdf"
