@@ -1,6 +1,6 @@
-# Theory Documentation
+# Logic Realism Theory
 
-This folder contains all theoretical documents for Logic Realism Theory (LRT).
+Physical Foundations from Logical Constraints — deriving quantum mechanics from the three classical laws of logic.
 
 ---
 
