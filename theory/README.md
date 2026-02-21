@@ -1,8 +1,3 @@
----
-layout: default
-title: "Logic Realism Theory — Papers"
----
-
 # Theory Documentation
 
 This folder contains all theoretical documents for Logic Realism Theory (LRT).
