@@ -109,11 +109,29 @@ The programme derives quantum structure rather than postulating it:
 
 ---
 
-## Simulations
+## Information Circulation Hypothesis
+
+<div class="paper-grid">
+  <div class="paper-card">
+    <h3><a href="{{ site.baseurl }}/articles/information-circulation/">ICH: Theoretical Framework</a></h3>
+    <p>Black holes as de-actualization mechanisms returning information to $I_\infty$. Proposes a circulation cycle that avoids heat death and reframes the black hole information paradox.</p>
+    <div class="meta">February 2026 | Speculative Extension</div>
+    <a href="{{ site.baseurl }}/articles/information-circulation/" class="card-link">Read Article →</a>
+  </div>
+
+  <div class="paper-card">
+    <h3><a href="{{ site.baseurl }}/papers/2026-ich-simulation/">ICH: Numerical Exploration</a></h3>
+    <p>Computational demonstration that influx/outflux imbalance produces $\Lambda$-like behavior ($w_\text{eff} \approx -1$) across broad parameter ranges without fine-tuning.</p>
+    <div class="meta">February 2026 | In Progress</div>
+    <a href="{{ site.baseurl }}/papers/2026-ich-simulation/" class="card-link">Read Paper →</a>
+  </div>
+</div>
+
+### Simulations
 
 <div class="paper-card">
-  <h3><a href="https://github.com/jdlongmire/logic-realism-theory/tree/main/simulations">ICH Dark Energy Model</a></h3>
-  <p>A toy simulation exploring how influx/outflux imbalance in the Information Circulation Hypothesis can drive late-time cosmic acceleration (dark energy analog). Demonstrates Λ-like behavior ($w_\text{eff} \approx -1$) from LRT principles.</p>
+  <h3><a href="https://github.com/jdlongmire/logic-realism-theory/tree/main/simulations">ICH Dark Energy Notebooks</a></h3>
+  <p>Toy simulations exploring how influx/outflux imbalance can drive late-time cosmic acceleration. Includes baseline model and parameter sensitivity analysis.</p>
   <div class="meta">February 2026 | Computational Exploration</div>
   <a href="https://github.com/jdlongmire/logic-realism-theory/blob/main/simulations/ich_dark_energy.ipynb" class="card-link">View Notebook →</a>
 </div>
