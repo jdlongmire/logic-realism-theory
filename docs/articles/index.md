@@ -35,16 +35,12 @@ title: "Articles"
     <div class="meta">February 2026 | Intermediate</div>
     <a href="{{ site.baseurl }}/articles/born-rule/" class="card-link">Read Article →</a>
   </div>
-</div>
-
----
-
-## Coming Soon
-
-<div class="coming-soon-topics">
-  <ul>
-    <li><strong>Common Objections to Logic Realism</strong> — Addressing the skeptics</li>
-  </ul>
+  <div class="paper-card">
+    <h3><a href="{{ site.baseurl }}/articles/common-objections/">Common Objections to Logic Realism</a></h3>
+    <p>Addressing the most frequent critiques—from "logic is just convention" to "it's not falsifiable"—and why each rests on misunderstandings.</p>
+    <div class="meta">February 2026 | Intermediate</div>
+    <a href="{{ site.baseurl }}/articles/common-objections/" class="card-link">Read Article →</a>
+  </div>
 </div>
 
 ---
