@@ -8,26 +8,34 @@ title: "Articles"
   <p>Accessible introductions and explorations of Logic Realism Theory</p>
 </div>
 
-<div class="coming-soon-banner">
-  <div class="coming-soon-icon">📝</div>
-  <h2>Coming Soon</h2>
-  <p>We're preparing a collection of accessible articles that explore LRT concepts for a broader audience—from introductory overviews to deep dives into specific derivations and applications.</p>
-  <div class="coming-soon-topics">
-    <h3>Planned Topics</h3>
-    <ul>
-      <li>What is Logical Realism? A Gentle Introduction</li>
-      <li>Vehicle-Invariance: From Quantum Mechanics to AI</li>
-      <li>Why L₃ Matters: Identity, Non-Contradiction, and Excluded Middle</li>
-      <li>LRT and the Interpretation Wars: Synthesis and Obviation</li>
-      <li>Cryptography Through the LRT Lens</li>
-    </ul>
+## Featured
+
+<div class="paper-grid">
+  <div class="paper-card">
+    <h3><a href="{{ site.baseurl }}/articles/from-logic-to-physics/">From Logic to Physics: The L₃ Journey</a></h3>
+    <p>Why the three classical logical laws constrain physical reality—an accessible introduction to the core thesis of Logic Realism Theory.</p>
+    <div class="meta">February 2026 | Introductory</div>
+    <a href="{{ site.baseurl }}/articles/from-logic-to-physics/" class="card-link">Read Article →</a>
   </div>
 </div>
 
 ---
 
-## Stay Updated
+## Coming Soon
 
-For now, see our [Papers](/logic-realism-theory/papers/) for the full technical treatment, or explore [Topics](/logic-realism-theory/topics/) for concept-by-concept breakdowns.
+<div class="coming-soon-topics">
+  <ul>
+    <li><strong>The Instantiation Barrier Explained</strong> — $I_\infty$ vs $A_\Omega$ and what can actually exist</li>
+    <li><strong>Why Distinguishability Requires Quantum Mechanics</strong> — The mathematical necessity of Hilbert space</li>
+    <li><strong>The Born Rule Is Not Optional</strong> — Probability from logical primitives</li>
+    <li><strong>Common Objections to Logic Realism</strong> — Addressing the skeptics</li>
+  </ul>
+</div>
 
-Follow developments on [GitHub](https://github.com/jdlongmire/logic-realism-theory) or the [Substack](https://logicrealismtheory.substack.com/).
+---
+
+## Go Deeper
+
+For the full technical treatment, see our [Papers](/logic-realism-theory/papers/). For concept-by-concept breakdowns, explore [Topics](/logic-realism-theory/topics/).
+
+Follow developments on [GitHub](https://github.com/jdlongmire/logic-realism-theory).
