@@ -2,6 +2,7 @@
 layout: default
 title: "Numerical Exploration of Information Circulation Cosmology"
 image: /assets/images/lrt-banner.png
+permalink: /papers/2026-ich-simulation/
 ---
 
 <div class="hero-banner-wrapper">
