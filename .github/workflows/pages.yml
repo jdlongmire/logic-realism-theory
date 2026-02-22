@@ -22,7 +22,7 @@ jobs:
       - uses: actions/configure-pages@v5
       - uses: actions/jekyll-build-pages@v1
         with:
-          source: ./theory
+          source: ./docs
           destination: ./_site
       - uses: actions/upload-pages-artifact@v3
 
