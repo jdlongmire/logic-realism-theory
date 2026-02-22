@@ -10,7 +10,7 @@ title: "Born Rule Derivation"
 
 The **Born rule** states that the probability of measuring outcome $\phi$ given state $\psi$ is:
 
-$$P(\phi|\psi) = |\langle\phi|\psi\rangle|^2$$
+$$P(\phi|\psi) = \lvert\langle\phi|\psi\rangle\rvert^2$$
 
 In Logic Realism Theory, this is not a postulate but a **theorem**—derived from Determinate Identity applied to representational vehicles.
 
@@ -83,7 +83,7 @@ $$P(P_\phi|\psi) = \text{Tr}(\rho P_\phi)$$
 
 For pure states, $\rho = |\psi\rangle\langle\psi|$, giving:
 
-$$P(P_\phi|\psi) = |\langle\phi|\psi\rangle|^2$$
+$$P(P_\phi|\psi) = \lvert\langle\phi|\psi\rangle\rvert^2$$
 
 **This is the Born rule.** The $\lvert\psi\rvert^2$ form is the unique probability measure satisfying the constraints that vehicle-invariance imposes.
 
@@ -95,7 +95,7 @@ Three reasons converge:
 
 **From inner product structure:** The Born rule uses $\langle\phi|\psi\rangle$, which encodes distinguishability (possibly negative or complex). The squared magnitude converts this to probability (real, non-negative).
 
-**From normalization:** For $|\psi\rangle = \sum_i c_i |\phi_i\rangle$, normalization gives $\sum_i |c_i|^2 = 1$. This matches probability normalization exactly when $P(\phi_i|\psi) = |c_i|^2$.
+**From normalization:** For $|\psi\rangle = \sum_i c_i |\phi_i\rangle$, normalization gives $\sum_i \lvert c_i\rvert^2 = 1$. This matches probability normalization exactly when $P(\phi_i|\psi) = \lvert c_i\rvert^2$.
 
 **From Gleason's uniqueness:** Given additivity and non-contextuality, the exponent 2 is not chosen but **forced**. Any other exponent would violate one of these constraints.
 
@@ -126,7 +126,7 @@ The Born rule derivation reveals its physical meaning. The rule is a consequence
 2. **Vehicles encode probability structure** (outcomes are $L_3$-admissible but which actualizes is probabilistic)
 3. **Probability assignments are vehicle-invariant** (don't vary with representational choice)
 
-The $|\langle\phi|\psi\rangle|^2$ form emerges as the **unique way to assign probabilities** that respects these requirements.
+The $\lvert\langle\phi|\psi\rangle\rvert^2$ form emerges as the **unique way to assign probabilities** that respects these requirements.
 
 In ontological terms, Determinate Identity functions as a **prohibition against $\emptyset_L$**: a universe with macroscopic records cannot realize the null state where identity, consistency, and modal structure all fail. The Born rule is the unique probability measure that respects this prohibition while remaining compatible with Hilbert-space kinematics.
 
