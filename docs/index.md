@@ -46,37 +46,37 @@ The programme derives quantum structure rather than postulating it:
 
 <div class="paper-grid">
   <div class="paper-card">
-    <h3><a href="/papers/2026-position-paper/">Position Paper</a></h3>
+    <h3><a href="{{ site.baseurl }}/papers/2026-position-paper/">Position Paper</a></h3>
     <p>Core framework establishing $I_\infty$/$A_\Omega$ ontology, vehicle/content distinction, and the derivation of quantum structure from logical constraints.</p>
     <div class="meta">January 2026 | Framework Foundation</div>
   </div>
 
   <div class="paper-card">
-    <h3><a href="/papers/2025-born-rule/">Born Rule Derivation</a></h3>
+    <h3><a href="{{ site.baseurl }}/papers/2025-born-rule/">Born Rule Derivation</a></h3>
     <p>Derives the Born rule ($|\langle\phi|\psi\rangle|^2$) from vehicle-weight invariance via Gleason's theorem.</p>
     <div class="meta">December 2025 | Technical Derivation</div>
   </div>
 
   <div class="paper-card">
-    <h3><a href="/papers/2025-hilbert-space/">Hilbert Space Derivation</a></h3>
+    <h3><a href="{{ site.baseurl }}/papers/2025-hilbert-space/">Hilbert Space Derivation</a></h3>
     <p>Derives complex Hilbert space structure from Determinate Identity via local tomography requirements.</p>
     <div class="meta">December 2025 | Technical Derivation</div>
   </div>
 
   <div class="paper-card">
-    <h3><a href="/papers/2025-qft-statistics/">QFT Statistics</a></h3>
+    <h3><a href="{{ site.baseurl }}/papers/2025-qft-statistics/">QFT Statistics</a></h3>
     <p>Derives the symmetrization postulate (bosons/fermions) from Determinate Identity applied to identical particles.</p>
     <div class="meta">December 2025 | Technical Extension</div>
   </div>
 
   <div class="paper-card">
-    <h3><a href="/papers/2025-gr-extension/">Spacetime Extension</a></h3>
+    <h3><a href="{{ site.baseurl }}/papers/2025-gr-extension/">Spacetime Extension</a></h3>
     <p>Explores consequences of Determinate Identity for spacetime structure: temporal ordering, Lorentzian signature, CTC exclusion.</p>
     <div class="meta">December 2025 | Programmatic Extension</div>
   </div>
 
   <div class="paper-card">
-    <h3><a href="/papers/2026-it-from-bit/">It from Bit, Bit from Fit</a></h3>
+    <h3><a href="{{ site.baseurl }}/papers/2026-it-from-bit/">It from Bit, Bit from Fit</a></h3>
     <p>Grounds Wheeler's "it from bit" in logical foundations. Quantum mechanics as the unique stable interface between $I_\infty$ and $A_\Omega$.</p>
     <div class="meta">January 2026 | Conceptual Synthesis</div>
   </div>

@@ -14,17 +14,17 @@ title: "Topics"
 
 <div class="paper-grid">
   <div class="paper-card">
-    <h3><a href="/topics/l3-constraints/">The $L_3$ Constraints</a></h3>
+    <h3><a href="{{ site.baseurl }}/topics/l3-constraints/">The $L_3$ Constraints</a></h3>
     <p>Identity, Non-Contradiction, and Excluded Middle as ontological constraints on physical instantiation.</p>
   </div>
 
   <div class="paper-card">
-    <h3><a href="/topics/vehicle-content/">Vehicle/Content Distinction</a></h3>
+    <h3><a href="{{ site.baseurl }}/topics/vehicle-content/">Vehicle/Content Distinction</a></h3>
     <p>The representational structure that explains how minds represent contradictions while reality cannot instantiate them.</p>
   </div>
 
   <div class="paper-card">
-    <h3><a href="/topics/born-rule/">Born Rule Derivation</a></h3>
+    <h3><a href="{{ site.baseurl }}/topics/born-rule/">Born Rule Derivation</a></h3>
     <p>How vehicle-invariance forces the $|\psi|^2$ probability measure via Gleason's theorem.</p>
   </div>
 </div>
@@ -35,17 +35,17 @@ title: "Topics"
 
 <div class="paper-grid">
   <div class="paper-card">
-    <h3><a href="/topics/hilbert-space/">Complex Hilbert Space</a></h3>
+    <h3><a href="{{ site.baseurl }}/topics/hilbert-space/">Complex Hilbert Space</a></h3>
     <p>Why local tomography requirements select complex numbers over real or quaternionic alternatives.</p>
   </div>
 
   <div class="paper-card">
-    <h3><a href="/topics/tsirelson-bound/">Tsirelson Bound</a></h3>
+    <h3><a href="{{ site.baseurl }}/topics/tsirelson-bound/">Tsirelson Bound</a></h3>
     <p>Correlation limits from Hilbert space structure—why $S \leq 2\sqrt{2}$ for CHSH.</p>
   </div>
 
   <div class="paper-card">
-    <h3><a href="/topics/symmetrization/">Symmetrization Postulate</a></h3>
+    <h3><a href="{{ site.baseurl }}/topics/symmetrization/">Symmetrization Postulate</a></h3>
     <p>Bosons and fermions from Determinate Identity applied to identical particles.</p>
   </div>
 </div>
@@ -56,17 +56,17 @@ title: "Topics"
 
 <div class="paper-grid">
   <div class="paper-card">
-    <h3><a href="/topics/measurement-problem/">Measurement Problem</a></h3>
+    <h3><a href="{{ site.baseurl }}/topics/measurement-problem/">Measurement Problem</a></h3>
     <p>LRT's reframing: distinguishing structural explanation from mechanistic explanation.</p>
   </div>
 
   <div class="paper-card">
-    <h3><a href="/topics/entanglement/">Entanglement</a></h3>
+    <h3><a href="{{ site.baseurl }}/topics/entanglement/">Entanglement</a></h3>
     <p>Non-local correlations explained through global vehicle structure.</p>
   </div>
 
   <div class="paper-card">
-    <h3><a href="/topics/one-world-realism/">One-World Realism</a></h3>
+    <h3><a href="{{ site.baseurl }}/topics/one-world-realism/">One-World Realism</a></h3>
     <p>Everettian mathematics without Many-Worlds ontology.</p>
   </div>
 </div>
@@ -77,17 +77,17 @@ title: "Topics"
 
 <div class="paper-grid">
   <div class="paper-card">
-    <h3><a href="/topics/spacetime/">Spacetime Structure</a></h3>
+    <h3><a href="{{ site.baseurl }}/topics/spacetime/">Spacetime Structure</a></h3>
     <p>Temporal ordering from joint inadmissibility, Lorentzian signature, CTC exclusion.</p>
   </div>
 
   <div class="paper-card">
-    <h3><a href="/topics/quantum-gravity/">Quantum Gravity</a></h3>
+    <h3><a href="{{ site.baseurl }}/topics/quantum-gravity/">Quantum Gravity</a></h3>
     <p>Black hole information, holographic bounds, and measurement in quantized spacetime.</p>
   </div>
 
   <div class="paper-card">
-    <h3><a href="/topics/wheeler/">Wheeler's "It from Bit"</a></h3>
+    <h3><a href="{{ site.baseurl }}/topics/wheeler/">Wheeler's "It from Bit"</a></h3>
     <p>Grounding information in logical admissibility: *It from Bit, Bit from Fit*.</p>
   </div>
 </div>
@@ -111,4 +111,4 @@ title: "Topics"
 
 ---
 
-*Topic pages are being developed. For now, see the [Papers](/papers/) for detailed treatments.*
+*Topic pages are being developed. For now, see the [Papers]({{ site.baseurl }}/papers/) for detailed treatments.*

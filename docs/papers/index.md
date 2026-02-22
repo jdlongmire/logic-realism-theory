@@ -16,13 +16,13 @@ The LRT research programme consists of a coordinated suite of papers, each build
 
 <div class="paper-grid">
   <div class="paper-card">
-    <h3><a href="/papers/2026-position-paper/">Logic Realism Theory: Physical Foundations from Logical Constraints</a></h3>
+    <h3><a href="{{ site.baseurl }}/papers/2026-position-paper/">Logic Realism Theory: Physical Foundations from Logical Constraints</a></h3>
     <p>The foundational Position Paper establishing the $I_\infty$/$A_\Omega$ ontology, the vehicle/content distinction, and the core thesis that $L_3$ (Identity, Non-Contradiction, Excluded Middle) constrains physical instantiation.</p>
     <div class="meta">Position Paper | January 2026</div>
   </div>
 
   <div class="paper-card">
-    <h3><a href="/papers/2026-it-from-bit/">It from Bit, Bit from Fit: Foundational Physics Logically Remastered</a></h3>
+    <h3><a href="{{ site.baseurl }}/papers/2026-it-from-bit/">It from Bit, Bit from Fit: Foundational Physics Logically Remastered</a></h3>
     <p>Extends LRT to quantum mechanics, arguing that quantum structure is the unique stable interface between $I_\infty$ and $A_\Omega$. Grounds Wheeler's "it from bit" in logical foundations.</p>
     <div class="meta">Conceptual Synthesis | January 2026</div>
   </div>
@@ -34,19 +34,19 @@ The LRT research programme consists of a coordinated suite of papers, each build
 
 <div class="paper-grid">
   <div class="paper-card">
-    <h3><a href="/papers/2025-born-rule/">The Born Rule from Determinate Identity</a></h3>
+    <h3><a href="{{ site.baseurl }}/papers/2025-born-rule/">The Born Rule from Determinate Identity</a></h3>
     <p>Derives the Born rule ($|\langle\phi|\psi\rangle|^2$) from vehicle-weight invariance. Shows that Determinate Identity forces the additivity and non-contextuality conditions required by Gleason's theorem.</p>
     <div class="meta">Technical Derivation | December 2025</div>
   </div>
 
   <div class="paper-card">
-    <h3><a href="/papers/2025-hilbert-space/">Complex Hilbert Space from Determinate Identity</a></h3>
+    <h3><a href="{{ site.baseurl }}/papers/2025-hilbert-space/">Complex Hilbert Space from Determinate Identity</a></h3>
     <p>Derives complex Hilbert space structure from Determinate Identity via local tomography. Shows that the Masanes-Müller axioms are consequences of $L_3$ constraints, not independent postulates.</p>
     <div class="meta">Technical Derivation | December 2025</div>
   </div>
 
   <div class="paper-card">
-    <h3><a href="/papers/2025-qft-statistics/">Quantum Statistics from Determinate Identity</a></h3>
+    <h3><a href="{{ site.baseurl }}/papers/2025-qft-statistics/">Quantum Statistics from Determinate Identity</a></h3>
     <p>Derives the symmetrization postulate (bosons/fermions) from Determinate Identity applied to systems of identical particles. Shows that permutation symmetry is forced by $L_3$, not an independent axiom.</p>
     <div class="meta">Technical Extension | December 2025</div>
   </div>
@@ -58,7 +58,7 @@ The LRT research programme consists of a coordinated suite of papers, each build
 
 <div class="paper-grid">
   <div class="paper-card">
-    <h3><a href="/papers/2025-gr-extension/">Spacetime from Determinate Identity</a></h3>
+    <h3><a href="{{ site.baseurl }}/papers/2025-gr-extension/">Spacetime from Determinate Identity</a></h3>
     <p>Explores consequences of Determinate Identity for spacetime structure. Derives temporal ordering from joint inadmissibility, argues for Lorentzian signature, excludes closed timelike curves. Programmatic.</p>
     <div class="meta">Programmatic Extension | December 2025</div>
   </div>
