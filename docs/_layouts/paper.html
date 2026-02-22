@@ -71,9 +71,50 @@
         </ul>
       </aside>
       {% endif %}
+
+      <!-- Giscus Comments -->
+      <section class="comments-section">
+        <h2>Comments</h2>
+        <p class="comments-intro">Sign in with GitHub to comment, or use the anonymous form below.</p>
+        <script src="https://giscus.app/client.js"
+                data-repo="jdlongmire/logic-realism-theory"
+                data-repo-id="R_kgDOQJCm7g"
+                data-category="General"
+                data-category-id="DIC_kwDOQJCm7s4Cxant"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="0"
+                data-input-position="top"
+                data-theme="preferred_color_scheme"
+                data-lang="en"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+        </script>
+      </section>
+
+      <!-- Anonymous Feedback Form -->
+      <section class="feedback-section">
+        <h3>Anonymous Feedback</h3>
+        <p class="feedback-intro">Don't have a GitHub account? Share your thoughts anonymously.</p>
+        <form action="https://formspree.io/jdlongmire@outlook.com" method="POST" class="feedback-form">
+          <input type="hidden" name="_subject" value="[LRT Feedback] {{ page.title | default: 'Paper' }}">
+          <input type="hidden" name="_page" value="{{ page.url }}">
+          <input type="hidden" name="_next" value="{{ site.url }}{{ site.baseurl }}/">
+          <input type="text" name="name" placeholder="Name (optional)">
+          <input type="email" name="email" placeholder="Email (optional, for reply)">
+          <textarea name="message" placeholder="Your feedback..." required rows="4"></textarea>
+          <button type="submit" class="btn btn-secondary">Send Feedback</button>
+        </form>
+      </section>
     </article>
   </main>
 
   {% include footer.html %}
+
+  <!-- Lunr.js for client-side search -->
+  <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+  <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
 </body>
 </html>
