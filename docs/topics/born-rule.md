@@ -23,7 +23,7 @@ The derivation proceeds in four steps:
 1. **Vehicle-invariance requirement:** Determinate Identity (Id) applied to representational vehicles
 2. **Measure structure:** Vehicle-invariance generates additivity and non-contextuality constraints
 3. **Gleason's theorem:** These constraints uniquely determine the measure form
-4. **Born rule:** The $|\psi|^2$ form emerges as the unique solution
+4. **Born rule:** The $\lvert\psi\rvert^2$ form emerges as the unique solution
 
 ---
 
@@ -85,7 +85,7 @@ For pure states, $\rho = |\psi\rangle\langle\psi|$, giving:
 
 $$P(P_\phi|\psi) = |\langle\phi|\psi\rangle|^2$$
 
-**This is the Born rule.** The $|\psi|^2$ form is the unique probability measure satisfying the constraints that vehicle-invariance imposes.
+**This is the Born rule.** The $\lvert\psi\rvert^2$ form is the unique probability measure satisfying the constraints that vehicle-invariance imposes.
 
 ---
 

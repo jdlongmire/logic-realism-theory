@@ -74,7 +74,7 @@ This is the foundational relationship: physics proceeds because its outputs are 
 
   <div class="paper-card">
     <h3><a href="{{ site.baseurl }}/papers/2025-born-rule/">Born Rule Derivation</a></h3>
-    <p>Vehicle-invariance from Determinate Identity forces the $|\psi|^2$ probability measure.</p>
+    <p>Vehicle-invariance from Determinate Identity forces the $\lvert\psi\rvert^2$ probability measure.</p>
     <a href="{{ site.baseurl }}/papers/2025-born-rule/" class="card-link">Read Paper →</a>
   </div>
 

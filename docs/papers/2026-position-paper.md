@@ -334,7 +334,7 @@ This is not postulated in LRT but derived from the requirement that representati
 1. **Vehicle-invariance requirement:** Id (Determinate Identity) applied to representational vehicles
 2. **Measure structure:** Vehicle-invariance generates additivity and non-contextuality constraints
 3. **Gleason's theorem:** These constraints uniquely determine the measure form
-4. **Born rule:** The $|\psi|^2$ form emerges as the unique solution
+4. **Born rule:** The $\lvert\psi\rvert^2$ form emerges as the unique solution
 
 ### 4.2 Vehicle-Invariance: The Core Requirement
 
@@ -405,7 +405,7 @@ For pure states, $\rho = |\psi\rangle\langle\psi|$, giving:
 
 $$P(P_\phi|\psi) = \text{Tr}(|\psi\rangle\langle\psi| \cdot |\phi\rangle\langle\phi|) = |\langle\phi|\psi\rangle|^2$$
 
-This is the Born rule. The $|\psi|^2$ form is the unique probability measure satisfying the constraints that vehicle-invariance imposes.
+This is the Born rule. The $\lvert\psi\rvert^2$ form is the unique probability measure satisfying the constraints that vehicle-invariance imposes.
 
 **What Gleason's theorem does:** It proves uniqueness. Given additivity and non-contextuality, the Born rule is the only possibility (in dimension $\geq 3$).
 
@@ -494,7 +494,7 @@ The appearance of circularity arises because quantum mechanics is the *output* o
 
 **Reply.** Correct, and that is intentional. LRT does not claim to solve the measurement problem by providing dynamical collapse mechanisms or hidden-variable completions. Instead, it reframes the problem by distinguishing what requires mechanistic explanation from what requires structural explanation.
 
-**Structural explanation provided:** Why are outcomes always determinate? Because instantiated records are $L_3$ admissible (Excluded Middle + Identity). Why do probabilities follow $|\psi|^2$? Because vehicle-invariance forces Born-rule structure. Why does "collapse" appear discontinuous? Because it represents a category transition (vehicle → record), not dynamics within a single layer.
+**Structural explanation provided:** Why are outcomes always determinate? Because instantiated records are $L_3$ admissible (Excluded Middle + Identity). Why do probabilities follow $\lvert\psi\rvert^2$? Because vehicle-invariance forces Born-rule structure. Why does "collapse" appear discontinuous? Because it represents a category transition (vehicle → record), not dynamics within a single layer.
 
 **Mechanistic questions left open:** When exactly does the transition occur? What physical criterion marks the boundary? Why this particular outcome rather than that one? These are legitimate questions, but they are empirical/technical questions, not foundational puzzles.
 
@@ -544,7 +544,7 @@ Logic Realism Theory offers a novel approach to quantum foundations: treating th
 
 **The core insight:** *It from Bit, Bit from Fit.* Physical structure emerges from informational structure, which emerges from logical admissibility. Physics proceeds because its outputs are $L_3$ shaped, not by convention but by constraint. Vehicle-invariance forces the Born rule; local tomography forces complex Hilbert space; anti-holism forces parts to ground wholes. These are not separate postulates but consequences of a single requirement: Determinate Identity.
 
-**What this achieves:** LRT reduces quantum postulates (Born rule becomes theorem), explains quantum structure (why $|\psi|^2$ not $|\psi|$), and generates testable constraints (complex QM requirement—confirmed by Renou et al. 2021—plus derivable collapse parameters and correlation bounds). It reframes the measurement problem by distinguishing structural explanation (why definite at all) from mechanistic explanation (what process produces definiteness), addressing the first while leaving the second to empirical investigation.
+**What this achieves:** LRT reduces quantum postulates (Born rule becomes theorem), explains quantum structure (why $\lvert\psi\rvert^2$ not $\lvert\psi\rvert$), and generates testable constraints (complex QM requirement—confirmed by Renou et al. 2021—plus derivable collapse parameters and correlation bounds). It reframes the measurement problem by distinguishing structural explanation (why definite at all) from mechanistic explanation (what process produces definiteness), addressing the first while leaving the second to empirical investigation.
 
 **The wager:** If the Three Fundamental Laws of Logic are constraints on physical instantiation, then quantum mechanics is not contingent but necessary: the unique stable interface between non-Boolean possibility and Boolean actuality. The evidence so far: universal $L_3$ conformity at the record level, Born rule as forced consequence, complex QM experimentally distinguished from real alternatives. The research program invites testing this wager against nature.
 

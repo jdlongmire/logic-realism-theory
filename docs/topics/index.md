@@ -27,7 +27,7 @@ title: "Topics"
 
   <div class="paper-card">
     <h3><a href="{{ site.baseurl }}/topics/born-rule/">Born Rule Derivation</a></h3>
-    <p>How vehicle-invariance forces the $|\psi|^2$ probability measure via Gleason's theorem.</p>
+    <p>How vehicle-invariance forces the $\lvert\psi\rvert^2$ probability measure via Gleason's theorem.</p>
     <a href="{{ site.baseurl }}/topics/born-rule/" class="card-link">Explore Topic →</a>
   </div>
 </div>

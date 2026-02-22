@@ -79,7 +79,7 @@ The vehicle/content distinction:
 
 3. **Grounds probability objectively:** The measure over outcomes belongs to the vehicle, not the content—it characterizes how the physical situation is objectively poised toward outcomes
 
-4. **Enables the Born rule derivation:** Vehicle-invariance (probability assignments independent of mathematically equivalent decompositions) forces the $|\psi|^2$ form via Gleason's theorem
+4. **Enables the Born rule derivation:** Vehicle-invariance (probability assignments independent of mathematically equivalent decompositions) forces the $\lvert\psi\rvert^2$ form via Gleason's theorem
 
 ---
 

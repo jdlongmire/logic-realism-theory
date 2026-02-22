@@ -145,7 +145,7 @@ The $L_3$ laws are the gatekeepers of existence. Quantum mechanics is what happe
 
 ## Next in the Series
 
-This article showed how distinguishability leads to quantum structure. The next article, **"The Born Rule Is Not Optional,"** examines the probability derivation in more detail: why Gleason's theorem has the force it does, and what the $|\psi|^2$ rule actually represents.
+This article showed how distinguishability leads to quantum structure. The next article, **"The Born Rule Is Not Optional,"** examines the probability derivation in more detail: why Gleason's theorem has the force it does, and what the $\lvert\psi\rvert^2$ rule actually represents.
 
 For the full technical treatment, see the [Position Paper](/logic-realism-theory/papers/2026-position-paper/). For concept-by-concept breakdowns, explore [Topics](/logic-realism-theory/topics/).
 

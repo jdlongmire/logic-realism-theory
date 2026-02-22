@@ -111,7 +111,7 @@ A genuine interpretive puzzle, but it doesn't affect the LRT derivation.
 
 LRT operates at the level of mathematical structure. Whatever the Born rule *represents* (objective probabilities, rational betting weights, branch counting measures), Gleason's theorem says it must have that specific mathematical form.
 
-Many-worlds advocates can interpret the derivation as showing why branch weights must follow $|\psi|^2$. Collapse advocates can interpret it as deriving objective transition probabilities. The structural constraint is interpretation-independent.
+Many-worlds advocates can interpret the derivation as showing why branch weights must follow $\lvert\psi\rvert^2$. Collapse advocates can interpret it as deriving objective transition probabilities. The structural constraint is interpretation-independent.
 
 ---
 

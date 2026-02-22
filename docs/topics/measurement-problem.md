@@ -39,7 +39,7 @@ LRT reframes the problem by distinguishing **structural explanation** from **mec
 
 Because instantiated records must satisfy $L_3$. A detector cannot simultaneously fire and not-fire. Excluded Middle and Non-Contradiction enforce sharp outcomes at the level of stable records.
 
-**Why do probabilities follow $|\psi|^2$?**
+**Why do probabilities follow $\lvert\psi\rvert^2$?**
 
 Because vehicle-invariance forces Born-rule structure via Gleason's theorem. The probability measure cannot depend on how the physical situation is mathematically decomposed.
 
