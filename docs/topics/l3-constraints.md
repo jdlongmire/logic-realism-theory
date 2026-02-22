@@ -3,7 +3,10 @@ layout: default
 title: "The L₃ Constraints"
 ---
 
-# The L₃ Constraints
+<div class="topic-header">
+  <h1>The L₃ Constraints</h1>
+  <p>The Three Fundamental Laws of Logic as Physical Constraints</p>
+</div>
 
 The **Three Fundamental Laws of Logic** ($L_3$) form the ontological foundation of Logic Realism Theory:
 
@@ -62,6 +65,22 @@ This is the foundational relationship: physics proceeds because its outputs are 
 
 ## Related Papers
 
-- [Position Paper](/papers/2026-position-paper/) - Full development of the $L_3$ framework
-- [Born Rule Derivation](/papers/2025-born-rule/) - Vehicle-invariance from Id
-- [Hilbert Space Derivation](/papers/2025-hilbert-space/) - Local tomography from Id
+<div class="paper-grid">
+  <div class="paper-card">
+    <h3><a href="{{ site.baseurl }}/papers/2026-position-paper/">Position Paper</a></h3>
+    <p>Full development of the $L_3$ framework establishing the foundational ontology.</p>
+    <a href="{{ site.baseurl }}/papers/2026-position-paper/" class="card-link">Read Paper →</a>
+  </div>
+
+  <div class="paper-card">
+    <h3><a href="{{ site.baseurl }}/papers/2025-born-rule/">Born Rule Derivation</a></h3>
+    <p>Vehicle-invariance from Determinate Identity forces the $|\psi|^2$ probability measure.</p>
+    <a href="{{ site.baseurl }}/papers/2025-born-rule/" class="card-link">Read Paper →</a>
+  </div>
+
+  <div class="paper-card">
+    <h3><a href="{{ site.baseurl }}/papers/2025-hilbert-space/">Hilbert Space Derivation</a></h3>
+    <p>Local tomography from Determinate Identity selects complex Hilbert space.</p>
+    <a href="{{ site.baseurl }}/papers/2025-hilbert-space/" class="card-link">Read Paper →</a>
+  </div>
+</div>
