@@ -43,6 +43,17 @@ title: "Articles"
   </div>
 </div>
 
+## Extension Hypotheses
+
+<div class="paper-grid">
+  <div class="paper-card">
+    <h3><a href="{{ site.baseurl }}/articles/information-circulation/">The Information Circulation Hypothesis</a></h3>
+    <p>A speculative extension: black holes as de-actualization mechanisms returning information to $I_\infty$, avoiding heat death through logical cycling.</p>
+    <div class="meta">February 2026 | Speculative Extension</div>
+    <a href="{{ site.baseurl }}/articles/information-circulation/" class="card-link">Read Article →</a>
+  </div>
+</div>
+
 ---
 
 ## Go Deeper
