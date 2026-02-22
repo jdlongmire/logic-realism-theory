@@ -5,6 +5,10 @@ permalink: /topics/
 image: /assets/images/lrt-banner.png
 ---
 
+<div class="hero-banner">
+  <img src="{{ site.baseurl }}/assets/images/lrt-banner.png" alt="Logic Realism Theory" class="hero-image">
+</div>
+
 <div class="topic-header">
   <h1>Topics</h1>
   <p>Key concepts and themes in Logic Realism Theory</p>

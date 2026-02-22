@@ -9,6 +9,10 @@ description: Addressing the most frequent critiques of the claim that logic cons
 
 *The fifth in a series exploring how the laws of logic constrain physical reality*
 
+<div class="hero-banner">
+  <img src="{{ site.baseurl }}/assets/images/lrt-banner.png" alt="Logic Realism Theory" class="hero-image">
+</div>
+
 ---
 
 Logic Realism (the thesis that logical laws are ontological constraints on physical instantiation) generates predictable resistance. Here we address the most common objections, showing that each rests on misunderstandings of what the position actually claims.

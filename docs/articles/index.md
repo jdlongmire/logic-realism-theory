@@ -4,6 +4,10 @@ title: "Articles"
 image: /assets/images/lrt-banner.png
 ---
 
+<div class="hero-banner">
+  <img src="{{ site.baseurl }}/assets/images/lrt-banner.png" alt="Logic Realism Theory" class="hero-image">
+</div>
+
 <div class="topic-header">
   <h1>Articles</h1>
   <p>Accessible introductions and explorations of Logic Realism Theory</p>

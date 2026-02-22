@@ -4,6 +4,10 @@ title: "Papers"
 image: /assets/images/lrt-banner.png
 ---
 
+<div class="hero-banner">
+  <img src="{{ site.baseurl }}/assets/images/lrt-banner.png" alt="Logic Realism Theory" class="hero-image">
+</div>
+
 <div class="topic-header">
   <h1>Papers</h1>
   <p>The Logic Realism Theory paper suite</p>
