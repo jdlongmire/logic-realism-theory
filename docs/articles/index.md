@@ -29,6 +29,12 @@ title: "Articles"
     <div class="meta">February 2026 | Intermediate</div>
     <a href="{{ site.baseurl }}/articles/distinguishability-quantum/" class="card-link">Read Article →</a>
   </div>
+  <div class="paper-card">
+    <h3><a href="{{ site.baseurl }}/articles/born-rule/">The Born Rule Is Not Optional</a></h3>
+    <p>Why the quantum probability rule follows from the logic of distinguishable outcomes—Gleason's theorem as an $L_3$ constraint.</p>
+    <div class="meta">February 2026 | Intermediate</div>
+    <a href="{{ site.baseurl }}/articles/born-rule/" class="card-link">Read Article →</a>
+  </div>
 </div>
 
 ---
@@ -37,7 +43,6 @@ title: "Articles"
 
 <div class="coming-soon-topics">
   <ul>
-    <li><strong>The Born Rule Is Not Optional</strong> — Probability from logical primitives</li>
     <li><strong>Common Objections to Logic Realism</strong> — Addressing the skeptics</li>
   </ul>
 </div>
