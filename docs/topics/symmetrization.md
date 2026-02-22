@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Symmetrization Postulate"
+permalink: /topics/symmetrization/
 ---
 
 <div class="topic-header">

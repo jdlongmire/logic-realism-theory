@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Tsirelson Bound"
+permalink: /topics/tsirelson-bound/
 ---
 
 <div class="topic-header">

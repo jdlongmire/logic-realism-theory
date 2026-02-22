@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Topics"
+permalink: /topics/
 ---
 
 <div class="topic-header">

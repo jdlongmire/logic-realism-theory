@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Complex Hilbert Space"
+permalink: /topics/hilbert-space/
 ---
 
 <div class="topic-header">

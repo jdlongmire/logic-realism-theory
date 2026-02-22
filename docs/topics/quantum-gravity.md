@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Quantum Gravity"
+permalink: /topics/quantum-gravity/
 ---
 
 <div class="topic-header">

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "The L₃ Constraints"
+permalink: /topics/l3-constraints/
 ---
 
 <div class="topic-header">

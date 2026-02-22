@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "One-World Realism"
+permalink: /topics/one-world-realism/
 ---
 
 <div class="topic-header">

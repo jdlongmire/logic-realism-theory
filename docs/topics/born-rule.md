@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Born Rule Derivation"
+permalink: /topics/born-rule/
 ---
 
 <div class="topic-header">

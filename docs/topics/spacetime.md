@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Spacetime Structure"
+permalink: /topics/spacetime/
 ---
 
 <div class="topic-header">

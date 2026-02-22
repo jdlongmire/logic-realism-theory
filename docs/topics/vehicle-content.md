@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Vehicle/Content Distinction"
+permalink: /topics/vehicle-content/
 ---
 
 <div class="topic-header">

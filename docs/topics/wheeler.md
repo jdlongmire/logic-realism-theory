@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Wheeler's 'It from Bit'"
+permalink: /topics/wheeler/
 ---
 
 <div class="topic-header">

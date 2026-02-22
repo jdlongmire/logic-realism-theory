@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Entanglement"
+permalink: /topics/entanglement/
 ---
 
 <div class="topic-header">
