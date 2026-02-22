@@ -13,13 +13,13 @@ title: "Articles"
 <div class="paper-grid">
   <div class="paper-card">
     <h3><a href="{{ site.baseurl }}/articles/from-logic-to-physics/">From Logic to Physics: The L₃ Journey</a></h3>
-    <p>Why the three classical logical laws constrain physical reality—an accessible introduction to the core thesis of Logic Realism Theory.</p>
+    <p>Why the three classical logical laws constrain physical reality: an accessible introduction to the core thesis of Logic Realism Theory.</p>
     <div class="meta">February 2026 | Introductory</div>
     <a href="{{ site.baseurl }}/articles/from-logic-to-physics/" class="card-link">Read Article →</a>
   </div>
   <div class="paper-card">
     <h3><a href="{{ site.baseurl }}/articles/instantiation-barrier/">The Instantiation Barrier Explained</a></h3>
-    <p>Why some configurations exist only in thought while others can exist in reality—the $I_\infty$/$A_\Omega$ distinction at the heart of LRT.</p>
+    <p>Why some configurations exist only in thought while others can exist in reality: the $I_\infty$/$A_\Omega$ distinction at the heart of LRT.</p>
     <div class="meta">February 2026 | Introductory</div>
     <a href="{{ site.baseurl }}/articles/instantiation-barrier/" class="card-link">Read Article →</a>
   </div>
@@ -31,13 +31,13 @@ title: "Articles"
   </div>
   <div class="paper-card">
     <h3><a href="{{ site.baseurl }}/articles/born-rule/">The Born Rule Is Not Optional</a></h3>
-    <p>Why the quantum probability rule follows from the logic of distinguishable outcomes—Gleason's theorem as an $L_3$ constraint.</p>
+    <p>Why the quantum probability rule follows from the logic of distinguishable outcomes: Gleason's theorem as an $L_3$ constraint.</p>
     <div class="meta">February 2026 | Intermediate</div>
     <a href="{{ site.baseurl }}/articles/born-rule/" class="card-link">Read Article →</a>
   </div>
   <div class="paper-card">
     <h3><a href="{{ site.baseurl }}/articles/common-objections/">Common Objections to Logic Realism</a></h3>
-    <p>Addressing the most frequent critiques—from "logic is just convention" to "it's not falsifiable"—and why each rests on misunderstandings.</p>
+    <p>Addressing the most frequent critiques (from "logic is just convention" to "it's not falsifiable") and why each rests on misunderstandings.</p>
     <div class="meta">February 2026 | Intermediate</div>
     <a href="{{ site.baseurl }}/articles/common-objections/" class="card-link">Read Article →</a>
   </div>

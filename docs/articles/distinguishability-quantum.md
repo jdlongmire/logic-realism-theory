@@ -14,7 +14,7 @@ description: "How the requirement that physical outcomes be distinguishable lead
 
 If you want to distinguish two things, they have to differ *somehow*.
 
-This sounds trivial. Of course distinguishable things differ. But when you take this requirement seriously—when you ask what mathematical structure is needed for outcomes to be genuinely distinguishable—something surprising happens.
+This sounds trivial. Of course distinguishable things differ. When you take this requirement seriously and ask what mathematical structure is needed for outcomes to be genuinely distinguishable, something surprising happens.
 
 You get quantum mechanics.
 
@@ -28,7 +28,7 @@ This seems obvious. But it creates a mathematical problem.
 
 Different descriptions use different labels, different orderings, different conventions. Yet they must all assign the same *structure* to the physical situation. The physics can't depend on the language.
 
-**Vehicle-invariance is the formal version of Determinate Identity.** If an outcome is genuinely itself—if it has determinate identity—then swapping labels or changing notation can't change what's physically true about it.
+**Vehicle-invariance is the formal version of Determinate Identity.** If an outcome is genuinely itself (if it has determinate identity), swapping labels or changing notation can't change what's physically true about it.
 
 So what mathematical structures respect vehicle-invariance?
 
@@ -44,9 +44,9 @@ Suppose you have a physical system with multiple possible outcomes. You want to 
 
 $$P(\text{outcome}) = |\langle \psi | \text{outcome} \rangle|^2$$
 
-This is the Born rule—the fundamental probability law of quantum mechanics.
+This is the Born rule, the fundamental probability law of quantum mechanics.
 
-The derivation doesn't assume quantum mechanics. It doesn't postulate Hilbert space. It asks: what probability assignments are compatible with vehicle-invariance? And the answer is: the Born rule probabilities, assigned via vectors in Hilbert space.
+The derivation doesn't assume quantum mechanics or postulate Hilbert space. It asks: what probability assignments are compatible with vehicle-invariance? And the answer is: the Born rule probabilities, assigned via vectors in Hilbert space.
 
 **Distinguishability forces the Born rule.**
 
@@ -66,7 +66,7 @@ Hardy (2001), Chiribella et al. (2011), and Masanes & Müller (2011) showed that
 
 - Real Hilbert space fails local tomography. Some distinctions require global access.
 - Quaternionic Hilbert space has the same problem.
-- Complex Hilbert space—the quantum mechanical choice—is the unique structure that passes.
+- Complex Hilbert space (the quantum mechanical choice) is the unique structure that passes.
 
 **Distinguishability forces complex numbers.**
 
@@ -74,16 +74,16 @@ Hardy (2001), Chiribella et al. (2011), and Masanes & Müller (2011) showed that
 
 ## The Symmetrization Postulate
 
-Quantum mechanics distinguishes two kinds of particles: bosons and fermions. Bosons can share quantum states; fermions can't (Pauli exclusion). This isn't an empirical add-on—it follows from Identity.
+Quantum mechanics distinguishes two kinds of particles: bosons and fermions. Bosons can share quantum states; fermions can't (Pauli exclusion). This follows from Identity.
 
-If two particles are truly identical—genuinely indistinguishable in principle—then what happens when you swap them?
+If two particles are truly identical (genuinely indistinguishable in principle), what happens when you swap them?
 
 For a system to have determinate identity, the swap can't produce a new, distinguishable state. The swapped configuration must relate to the original in one of exactly two ways:
 
 - **Same state:** ψ(1,2) = ψ(2,1) → bosons
 - **Opposite sign:** ψ(1,2) = -ψ(2,1) → fermions
 
-These are the only options compatible with determinacy plus linearity. Any other relation would let you distinguish "swapped" from "not swapped" for particles that are supposed to be indistinguishable—a violation of Identity.
+These are the only options compatible with determinacy plus linearity. Any other relation would let you distinguish "swapped" from "not swapped" for particles that are supposed to be indistinguishable: a violation of Identity.
 
 **Distinguishability (plus its limits) forces the boson/fermion distinction.**
 
@@ -91,13 +91,13 @@ These are the only options compatible with determinacy plus linearity. Any other
 
 ## What We've Derived
 
-Starting from a single requirement—that physical outcomes be genuinely distinguishable, that they have determinate identity—we've derived:
+Starting from a single requirement (that physical outcomes be genuinely distinguishable, that they have determinate identity), we've derived:
 
 1. **The Born rule** (via Gleason's theorem)
 2. **Complex Hilbert space** (via local tomography)
 3. **Bosons and fermions** (via symmetrization from Identity)
 
-These aren't the *only* features of quantum mechanics. Specific Hamiltonians, coupling constants, and field content remain empirical. But the *framework*—the mathematical arena in which quantum physics operates—emerges from Identity alone.
+These aren't the *only* features of quantum mechanics. Specific Hamiltonians, coupling constants, and field content remain empirical. The *framework* (the mathematical arena in which quantum physics operates) emerges from Identity alone.
 
 ---
 
@@ -107,7 +107,7 @@ This is where the instantiation barrier becomes vivid.
 
 In $I_\infty$ (the representable), you can describe probability assignments that violate Gleason's theorem. You can specify systems using real or quaternionic Hilbert spaces. You can imagine particles that are "a little bit indistinguishable." The representations exist.
 
-But these configurations can't be *instantiated*. When you try to realize them as physical systems with stable, distinguishable outcomes, the $L_3$ constraint kicks in. Only $L_3$-admissible structures—Born rule probabilities, complex Hilbert space, proper symmetrization—make it through the barrier.
+These configurations can't be *instantiated*. When you try to realize them as physical systems with stable, distinguishable outcomes, the $L_3$ constraint kicks in. Only $L_3$-admissible structures (Born rule probabilities, complex Hilbert space, proper symmetrization) make it through the barrier.
 
 The quantum formalism isn't arbitrary. It's the unique mathematical structure for representing systems whose outcomes must be genuinely distinguishable.
 
@@ -117,7 +117,7 @@ The quantum formalism isn't arbitrary. It's the unique mathematical structure fo
 
 **"Didn't Gleason assume Hilbert space?"**
 
-Gleason's original theorem did assume the system lives in Hilbert space. But that assumption itself derives from more basic requirements. The reconstruction theorems (Hardy, Chiribella et al.) show that Hilbert space is *forced* by operational constraints including local tomography. So the argument is:
+Gleason's original theorem did assume the system lives in Hilbert space. That assumption itself derives from more basic requirements. The reconstruction theorems (Hardy, Chiribella et al.) show that Hilbert space is *forced* by operational constraints including local tomography. So the argument is:
 
 Local tomography → Hilbert space → Gleason's theorem → Born rule
 
@@ -125,11 +125,11 @@ The chain starts from distinguishability, not from assuming quantum mechanics.
 
 **"What about pilot-wave theories or many-worlds?"**
 
-LRT is framework-level, not interpretation-specific. Bohmian mechanics, many-worlds, and Copenhagen all operate within the same mathematical structure—complex Hilbert space with Born rule probabilities. LRT explains why that structure, not which interpretation of it is correct.
+LRT operates at the framework level. Bohmian mechanics, many-worlds, and Copenhagen all operate within the same mathematical structure: complex Hilbert space with Born rule probabilities. LRT explains why that structure, not which interpretation of it is correct.
 
 **"Can you derive the Schrödinger equation?"**
 
-The time evolution aspect (unitary dynamics) is more constrained by symmetry requirements than by $L_3$ alone. Stone's theorem connects continuous symmetry to self-adjoint generators. But the arena in which time evolution occurs—complex Hilbert space—is $L_3$ derived.
+The time evolution aspect (unitary dynamics) is more constrained by symmetry requirements than by $L_3$ alone. Stone's theorem connects continuous symmetry to self-adjoint generators. The arena in which time evolution occurs (complex Hilbert space) is $L_3$ derived.
 
 ---
 
@@ -137,9 +137,9 @@ The time evolution aspect (unitary dynamics) is more constrained by symmetry req
 
 What we're seeing is a pattern: **constraints on existence generate mathematical structure**.
 
-Classical physics assumed any consistent mathematical description could in principle be instantiated. LRT says no—only $L_3$-admissible configurations can cross the instantiation barrier. And that constraint, far from being empty, *forces* the quantum formalism.
+Classical physics assumed any consistent mathematical description could in principle be instantiated. LRT says only $L_3$-admissible configurations can cross the instantiation barrier. That constraint, far from being empty, *forces* the quantum formalism.
 
-The $L_3$ laws aren't just rules for thinking clearly. They're the gatekeepers of existence. And quantum mechanics is what happens when you ask: what can exist?
+The $L_3$ laws are the gatekeepers of existence. Quantum mechanics is what happens when you ask: what can exist?
 
 ---
 

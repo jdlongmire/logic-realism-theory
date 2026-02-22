@@ -18,9 +18,9 @@ $$P(A) = |\langle A | \psi \rangle|^2$$
 
 Every quantum prediction depends on this rule. But where does it come from?
 
-Textbooks typically present it as a postulate—one of the axioms you accept to do quantum mechanics. This has always been unsatisfying. Why *squared* amplitudes? Why not amplitudes directly, or some other function?
+Textbooks typically present it as a postulate, one of the axioms you accept to do quantum mechanics. Why *squared* amplitudes? Why not amplitudes directly, or some other function?
 
-The LRT answer: the Born rule isn't a postulate. It's forced by the requirement that measurement outcomes be distinguishable.
+The LRT answer: the Born rule is forced by the requirement that measurement outcomes be distinguishable.
 
 ---
 
@@ -43,7 +43,7 @@ What rules must this probability measure obey?
 
 This last requirement is crucial. If measuring "spin up in the z-direction" gives probability 0.5, that value can't depend on whether you're also considering spin down, or some arbitrary direction, or nothing else at all.
 
-This is vehicle-invariance applied to probabilities. The probability of A is a fact about A, not a fact about which other outcomes happen to be in your measurement setup.
+This is vehicle-invariance applied to probabilities. The probability of A is a fact about A.
 
 **Gleason's theorem:** The only probability measures satisfying these conditions have the form:
 
@@ -55,7 +55,7 @@ For pure states, this reduces to the familiar Born rule: $P(A) = |\langle A | \p
 
 ## Why This Matters for LRT
 
-The standard reading of Gleason's theorem is: *if* you're working in Hilbert space, *then* the Born rule is forced.
+The standard reading of Gleason's theorem: *if* you're working in Hilbert space, *then* the Born rule is forced.
 
 LRT adds the prior step: *why* are we working in Hilbert space?
 
@@ -63,13 +63,13 @@ The previous article explained how distinguishability constraints (local tomogra
 
 The full chain:
 
-1. **$L_3$ constraint** — outcomes must be determinately distinguishable
-2. **Local tomography** — compound systems are distinguishable from local data
-3. **Complex Hilbert space** — the unique structure respecting (1) and (2)
-4. **Gleason's theorem** — the unique probability measure on that structure
-5. **Born rule** — the operational form of (4)
+1. **$L_3$ constraint**: outcomes must be determinately distinguishable
+2. **Local tomography**: compound systems are distinguishable from local data
+3. **Complex Hilbert space**: the unique structure respecting (1) and (2)
+4. **Gleason's theorem**: the unique probability measure on that structure
+5. **Born rule**: the operational form of (4)
 
-The Born rule isn't one of quantum mechanics' foundational assumptions. It's a *theorem*, derived from deeper requirements about what it means for outcomes to exist determinately.
+The Born rule is a *theorem*, derived from deeper requirements about what it means for outcomes to exist determinately.
 
 ---
 
@@ -79,9 +79,9 @@ Another way to see this: the Born rule ensures **non-contextuality of probabilit
 
 Contextuality means the probability of an outcome depends on what other measurements you might perform. If I measure A in context {A, B, C}, do I get the same probability as measuring A in context {A, D, E}?
 
-Physical outcomes with determinate identity must be non-contextual in this sense. The fact "A occurred" can't depend on which other facts you happened to be tracking.
+Physical outcomes with determinate identity must be non-contextual in this sense.
 
-Gleason's theorem proves that non-contextual probability assignments over Hilbert space *must* take the Born rule form. Any other assignment would be contextual—the probability of A would secretly depend on the measurement context.
+Gleason's theorem proves that non-contextual probability assignments over Hilbert space *must* take the Born rule form. Any other assignment would be contextual: the probability of A would secretly depend on the measurement context.
 
 **Non-contextuality = vehicle-invariance = determinate identity = $L_3$.**
 
@@ -95,21 +95,21 @@ Here's an intuitive way to see why amplitudes get squared rather than used direc
 
 Quantum amplitudes can be negative or complex. Probabilities must be non-negative real numbers between 0 and 1.
 
-The simplest way to get a non-negative real from a complex number is to take its squared magnitude: $|z|^2 = z \cdot z^*$.
+The simplest way to get a non-negative real from a complex number: take its squared magnitude, $|z|^2 = z \cdot z^*$.
 
-But this isn't just convenience—it's necessary. Gleason proves there's no other function that works. If you tried to use $|\langle A | \psi \rangle|$ (without squaring), or $|\langle A | \psi \rangle|^4$, or any other power, you'd violate the frame function requirement. The probabilities would become contextual.
+This is necessary. Gleason proves there's no other function that works. If you tried to use $|\langle A | \psi \rangle|$ (without squaring), or $|\langle A | \psi \rangle|^4$, or any other power, you'd violate the frame function requirement. The probabilities would become contextual.
 
-The squaring in the Born rule isn't arbitrary. It's the unique operation that preserves non-contextuality while converting amplitudes to probabilities.
+The squaring in the Born rule is the unique operation that preserves non-contextuality while converting amplitudes to probabilities.
 
 ---
 
 ## What About Many-Worlds?
 
-In the many-worlds interpretation, all branches of the wavefunction are equally real. So what do Born rule "probabilities" even mean?
+In the many-worlds interpretation, all branches of the wavefunction are equally real. What do Born rule "probabilities" even mean?
 
-This is a genuine interpretive puzzle, but it doesn't affect the LRT derivation.
+A genuine interpretive puzzle, but it doesn't affect the LRT derivation.
 
-LRT operates at the level of mathematical structure, not interpretation. Whatever the Born rule *represents*—objective probabilities, rational betting weights, branch counting measures—Gleason's theorem says it must have that specific mathematical form.
+LRT operates at the level of mathematical structure. Whatever the Born rule *represents* (objective probabilities, rational betting weights, branch counting measures), Gleason's theorem says it must have that specific mathematical form.
 
 Many-worlds advocates can interpret the derivation as showing why branch weights must follow $|\psi|^2$. Collapse advocates can interpret it as deriving objective transition probabilities. The structural constraint is interpretation-independent.
 
@@ -119,11 +119,11 @@ Many-worlds advocates can interpret the derivation as showing why branch weights
 
 Gleason's theorem requires at least 3 dimensions. For a 2-dimensional system (a single qubit), there are other mathematically possible probability assignments that aren't Born rule form.
 
-But here's the catch: no physical system is truly isolated. A qubit interacts with its environment, embedding it in a larger space. The 2D case is an idealization.
+No physical system is truly isolated. A qubit interacts with its environment, embedding it in a larger space. The 2D case is an idealization.
 
-When you treat the qubit-plus-environment system—which is high-dimensional—Gleason applies. The Born rule for the qubit emerges from restricting the full-system Born rule probabilities.
+When you treat the qubit-plus-environment system (which is high-dimensional), Gleason applies. The Born rule for the qubit emerges from restricting the full-system Born rule probabilities.
 
-So the 3D restriction isn't physically limiting. Any system capable of having distinguishable interactions with other systems is embedded in a space where Gleason forces the Born rule.
+The 3D restriction isn't physically limiting. Any system capable of having distinguishable interactions with other systems is embedded in a space where Gleason forces the Born rule.
 
 ---
 
@@ -131,11 +131,11 @@ So the 3D restriction isn't physically limiting. Any system capable of having di
 
 Here's what the Born rule derivation demonstrates about LRT:
 
-**The quantum formalism isn't arbitrary.** It's not that physicists tried various rules and the Born rule happened to fit the data. The Born rule is the *unique* probability assignment compatible with outcomes having determinate identity.
+**The quantum formalism isn't arbitrary.** Physicists didn't try various rules until the Born rule happened to fit the data. The Born rule is the *unique* probability assignment compatible with outcomes having determinate identity.
 
-**Constraints generate structure.** Classical physics assumed anything mathematically consistent could be physical. LRT says: only $L_3$-admissible configurations can be instantiated. That constraint, far from being empty, forces precisely the structures we observe.
+**Constraints generate structure.** Classical physics assumed anything mathematically consistent could be physical. LRT says only $L_3$-admissible configurations can be instantiated. That constraint forces precisely the structures we observe.
 
-**Logic reaches into physics.** The three classical laws—Identity, Non-Contradiction, Excluded Middle—aren't just rules for thinking. Through the instantiation barrier, they constrain what structures can exist. The Born rule is what happens when you ask: how must probability work for outcomes that genuinely exist?
+**Logic reaches into physics.** The three classical laws (Identity, Non-Contradiction, Excluded Middle) constrain what structures can exist through the instantiation barrier. The Born rule is what happens when you ask: how must probability work for outcomes that genuinely exist?
 
 ---
 
