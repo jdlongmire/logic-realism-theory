@@ -23,6 +23,12 @@ title: "Articles"
     <div class="meta">February 2026 | Introductory</div>
     <a href="{{ site.baseurl }}/articles/instantiation-barrier/" class="card-link">Read Article →</a>
   </div>
+  <div class="paper-card">
+    <h3><a href="{{ site.baseurl }}/articles/distinguishability-quantum/">Why Distinguishability Requires Quantum Mechanics</a></h3>
+    <p>How the requirement that physical outcomes be genuinely distinguishable leads inevitably to Hilbert space, the Born rule, and quantum structure.</p>
+    <div class="meta">February 2026 | Intermediate</div>
+    <a href="{{ site.baseurl }}/articles/distinguishability-quantum/" class="card-link">Read Article →</a>
+  </div>
 </div>
 
 ---
@@ -31,7 +37,6 @@ title: "Articles"
 
 <div class="coming-soon-topics">
   <ul>
-    <li><strong>Why Distinguishability Requires Quantum Mechanics</strong> — The mathematical necessity of Hilbert space</li>
     <li><strong>The Born Rule Is Not Optional</strong> — Probability from logical primitives</li>
     <li><strong>Common Objections to Logic Realism</strong> — Addressing the skeptics</li>
   </ul>
