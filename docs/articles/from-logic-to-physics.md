@@ -54,7 +54,7 @@ If the $L_3$ constrains what can exist, then physics operates within a pre-shape
 
 The answer turns out to be substantial. When you work through what Identity demands of physical systems (especially the requirement that outcomes must be "vehicle-invariant," the same regardless of how you describe them), you get specific structures:
 
-- **The Born rule** (the $|\psi|^2$ probability law of quantum mechanics) follows from vehicle-invariance via Gleason's theorem
+- **The Born rule** (the $\lvert\psi\rvert^2$ probability law of quantum mechanics) follows from vehicle-invariance via Gleason's theorem
 - **Complex Hilbert space** (not real, not quaternionic) is selected by local tomography requirements
 - **The symmetrization postulate** (bosons vs. fermions) follows from Identity applied to indistinguishable particles
 
