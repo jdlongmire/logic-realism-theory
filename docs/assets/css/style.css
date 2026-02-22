@@ -482,6 +482,64 @@ li {
   }
 }
 
+/* Coming Soon banner */
+.coming-soon-banner {
+  background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+  border: 2px dashed var(--accent-primary);
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.coming-soon-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.coming-soon-banner h2 {
+  color: var(--accent-primary);
+  border-bottom: none;
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.coming-soon-banner > p {
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.1rem;
+}
+
+.coming-soon-topics {
+  background-color: var(--bg-primary);
+  border-radius: 0.75rem;
+  padding: 1.5rem 2rem;
+  display: inline-block;
+  text-align: left;
+}
+
+.coming-soon-topics h3 {
+  color: var(--accent-secondary);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.coming-soon-topics ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.coming-soon-topics li {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.coming-soon-topics li:last-child {
+  margin-bottom: 0;
+}
+
 /* Print styles */
 @media print {
   .site-header,
