@@ -388,9 +388,15 @@ li {
   text-decoration: none;
 }
 
-/* Hero banner */
+/* Hero banner with full-width black band */
+.hero-banner-wrapper {
+  background-color: #000;
+  margin: 0 -9999px 1.5rem -9999px;
+  padding: 1.5rem 9999px;
+}
+
 .hero-banner {
-  margin: 0 auto 1.5rem auto;
+  margin: 0 auto;
   text-align: center;
   max-width: 500px;
 }
@@ -404,9 +410,14 @@ li {
 }
 
 @media (max-width: 768px) {
+  .hero-banner-wrapper {
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .hero-banner {
     max-width: 280px;
-    margin-bottom: 1rem;
   }
 
   .hero-banner img {

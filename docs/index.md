@@ -4,8 +4,10 @@ title: "Logic Realism Theory"
 image: /assets/images/lrt-banner.png
 ---
 
-<div class="hero-banner">
-  <img src="{{ site.baseurl }}/assets/images/lrt-banner.png" alt="Logic Realism Theory - Physical Structure from Logical Constraint" />
+<div class="hero-banner-wrapper">
+  <div class="hero-banner">
+    <img src="{{ site.baseurl }}/assets/images/lrt-banner.png" alt="Logic Realism Theory - Physical Structure from Logical Constraint" />
+  </div>
 </div>
 
 <div class="topic-header">

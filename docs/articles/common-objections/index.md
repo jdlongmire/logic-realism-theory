@@ -9,8 +9,10 @@ description: Addressing the most frequent critiques of the claim that logic cons
 
 *The fifth in a series exploring how the laws of logic constrain physical reality*
 
-<div class="hero-banner">
-  <img src="{{ site.baseurl }}/assets/images/lrt-banner.png" alt="Logic Realism Theory" class="hero-image">
+<div class="hero-banner-wrapper">
+  <div class="hero-banner">
+    <img src="{{ site.baseurl }}/assets/images/lrt-banner.png" alt="Logic Realism Theory" class="hero-image">
+  </div>
 </div>
 
 ---
