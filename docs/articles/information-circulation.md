@@ -124,6 +124,45 @@ Even as speculation, ICH does useful work:
 
 ---
 
+## Computational Exploration
+
+<div class="callout callout-success">
+<strong>February 2026:</strong> A toy simulation exploring ICH's dark energy mechanism is now under active development.
+</div>
+
+To test whether the influx/outflux imbalance could plausibly drive cosmic acceleration, we built a computational toy model ([`ich_dark_energy.ipynb`](https://github.com/jdlongmire/thinx/blob/main/research-programs/logic-realism/simulations/ich_dark_energy.ipynb)). The simulation implements:
+
+- **Entropy-dependent influx** from $I_\infty$ (self-regulating feedback loop)
+- **Emergent black hole dynamics** (formation from local density, absorption, Hawking-like evaporation, merging)
+- **Friedmann-like expansion** driven by the circulation imbalance
+- **Distance modulus $\mu(z)$** calculation for comparison with SNe Ia observations
+
+### Preliminary Results (v1.0)
+
+| Metric | Result |
+|--------|--------|
+| $w_\text{eff}$ | $\approx -1.19$ (Λ-like, slight phantom) |
+| Particles instantiated | ~7,500 |
+| Particles recycled | ~7,500 |
+| Net imbalance | ~10 (drives acceleration) |
+| Black holes formed | 23 |
+| Active at $z=0$ | 5 |
+
+The key result: **a small persistent imbalance (influx > outflux) produces late-time acceleration** with equation of state matching the cosmological constant. The entropy self-regulation prevents runaway inflation—high entropy suppresses influx, creating stable dynamics.
+
+This is a *mechanism demonstration*, not a cosmological prediction. The absolute distance scale isn't calibrated to physical units. What matters is that the *structure* of ICH (circulation with asymmetry) can generate Λ-like behavior from first principles.
+
+### Ongoing Refinements
+
+See [GitHub Issue #27](https://github.com/jdlongmire/logic-realism-theory/issues/27) for current work on:
+
+- Calibrating distance modulus to physical SNe Ia anchors
+- Improving χ² fit quality
+- Exploring parameter sensitivity
+- Adding 3D spatial dynamics
+
+---
+
 ## Open Questions
 
 ICH raises questions worth investigating:
