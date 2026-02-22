@@ -14,6 +14,8 @@ The Born rule assigns probability $|\langle\phi|\psi\rangle|^2$ to obtaining out
 
 The core argument: the measure over admissible measurement outcomes is a feature of the physical situation (vehicle), not merely a representational choice (content). If this measure varied with mathematical decomposition, the physical situation itself would be indeterminate, violating Determinate Identity. This constraint forces precisely the invariance conditions that Gleason's theorem requires. The Born rule thus emerges as the unique measure compatible with determinate physical identity.
 
+On the Logic Realism Theory view, Id-Strong identifies indeterminate identity with ontological nullity; the Born rule is then the unique probability law that keeps physical vehicles maximally distant from this null condition.
+
 **Keywords:** Born rule, Determinate Identity, Gleason's theorem, quantum foundations, logic realism, vehicle-invariance
 
 ---
@@ -66,6 +68,8 @@ Vehicles must satisfy $L_3$. Contents need not: we can represent contradictions 
 
 > **Id-Weak**: Any physical reality that admits determinate measurement and record must satisfy Determinate Identity at the level of those measurements and records.
 
+> **Ontological Nullity ($\emptyset_L$)**: Id-Strong implies that to lack determinate identity is to be nothing; there is no ontological category of "indeterminate things." Call the limiting condition in which no configuration satisfies Id, NC, or EM *Ontological Nullity* $\emptyset_L$. In $\emptyset_L$, there is no stable domain of states, no consistent event algebra, and no nontrivial modal partition of possibilities. The Non-Nullity postulate for this paper is modest: we assume only Id-Weak—that macroscopic records and their generating processes lie strictly outside $\emptyset_L$.
+
 The Born rule derivation requires only Id-Weak. The measure over macroscopic outcomes must be determinate because macroscopic records have determinate identity.
 
 ---
@@ -93,6 +97,8 @@ The question: with what weights are the admissible continuations selected?
 ### 4.1 The Core Constraint
 
 Given a quantum state $|\psi\rangle$ and admissible outcomes $\{|i\rangle\}$, we seek a measure $\mu(i|\psi)$ weighting the admissible continuations.
+
+**Logic Pressure**: If a physical situation failed Id at the vehicle level, its identity would collapse into Ontological Nullity $\emptyset_L$: there would be no fact of the matter about how it is poised toward outcomes. Vehicle-weight invariance is the formal expression of a *logic pressure* away from $\emptyset_L$: the total measure over admissible continuations must be independent of descriptive decomposition, on pain of indeterminate identity. This is why Id forces additivity and non-contextuality rather than merely recommending them.
 
 **The identity stability requirement**: For a physical system to satisfy Determinate Identity, its total measure cannot depend on how it is decomposed into components. If the total varied with basis choice, the system would not be determinately what it is.
 
@@ -213,6 +219,8 @@ The derivation:
 5. Gleason's theorem → $p_i = |\langle\phi_i|\psi\rangle|^2$
 
 Combined with the Hilbert Space Paper (deriving complex Hilbert space from Id), this completes the derivation of quantum probability structure from $L_3$ constraints.
+
+In ontological terms, Determinate Identity functions as a prohibition against $\emptyset_L$: a universe with macroscopic records cannot realize the null state where identity, consistency, and modal structure all fail. The Born rule is the unique probability measure that respects this prohibition while remaining compatible with Hilbert-space kinematics.
 
 **What remains empirical**: Which systems exist, their Hamiltonians, initial conditions. The *form* of the probability rule is derived; its *application* to specific systems requires physics.
 

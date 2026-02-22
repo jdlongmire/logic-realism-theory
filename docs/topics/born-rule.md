@@ -43,6 +43,18 @@ This is not a physical assumption. It is a **logical requirement from Id**: if t
 
 ---
 
+## Ontological Nullity and Logic Pressure
+
+Id-Strong implies that to lack determinate identity is to be **nothing**. We call this limiting condition—where no configuration satisfies Id, NC, or EM—**Ontological Nullity** ($\emptyset_L$). In $\emptyset_L$ there is no stable domain of states, no consistent event algebra, no nontrivial modal partition.
+
+**Logic Pressure** is the formal expression of how physical systems are "pushed away" from $\emptyset_L$:
+
+> If a physical situation failed Id at the vehicle level, its identity would collapse into $\emptyset_L$: there would be no fact of the matter about how it is poised toward outcomes.
+
+Vehicle-weight invariance **is** this logic pressure made mathematically precise: the total measure over admissible continuations must be independent of descriptive decomposition, on pain of indeterminate identity. This is why Id **forces** additivity and non-contextuality rather than merely recommending them.
+
+---
+
 ## From Vehicle-Invariance to Gleason's Theorem
 
 Vehicle-invariance immediately generates two constraints:
@@ -115,6 +127,8 @@ The Born rule derivation reveals its physical meaning. The rule is a consequence
 3. **Probability assignments are vehicle-invariant** (don't vary with representational choice)
 
 The $|\langle\phi|\psi\rangle|^2$ form emerges as the **unique way to assign probabilities** that respects these requirements.
+
+In ontological terms, Determinate Identity functions as a **prohibition against $\emptyset_L$**: a universe with macroscopic records cannot realize the null state where identity, consistency, and modal structure all fail. The Born rule is the unique probability measure that respects this prohibition while remaining compatible with Hilbert-space kinematics.
 
 ---
 
