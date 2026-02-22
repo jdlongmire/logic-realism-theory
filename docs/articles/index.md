@@ -17,6 +17,12 @@ title: "Articles"
     <div class="meta">February 2026 | Introductory</div>
     <a href="{{ site.baseurl }}/articles/from-logic-to-physics/" class="card-link">Read Article →</a>
   </div>
+  <div class="paper-card">
+    <h3><a href="{{ site.baseurl }}/articles/instantiation-barrier/">The Instantiation Barrier Explained</a></h3>
+    <p>Why some configurations exist only in thought while others can exist in reality—the $I_\infty$/$A_\Omega$ distinction at the heart of LRT.</p>
+    <div class="meta">February 2026 | Introductory</div>
+    <a href="{{ site.baseurl }}/articles/instantiation-barrier/" class="card-link">Read Article →</a>
+  </div>
 </div>
 
 ---
@@ -25,7 +31,6 @@ title: "Articles"
 
 <div class="coming-soon-topics">
   <ul>
-    <li><strong>The Instantiation Barrier Explained</strong> — $I_\infty$ vs $A_\Omega$ and what can actually exist</li>
     <li><strong>Why Distinguishability Requires Quantum Mechanics</strong> — The mathematical necessity of Hilbert space</li>
     <li><strong>The Born Rule Is Not Optional</strong> — Probability from logical primitives</li>
     <li><strong>Common Objections to Logic Realism</strong> — Addressing the skeptics</li>
