@@ -109,6 +109,17 @@ The programme derives quantum structure rather than postulating it:
 
 ---
 
+## Simulations
+
+<div class="paper-card">
+  <h3><a href="https://github.com/jdlongmire/logic-realism-theory/tree/main/simulations">ICH Dark Energy Model</a></h3>
+  <p>A toy simulation exploring how influx/outflux imbalance in the Information Circulation Hypothesis can drive late-time cosmic acceleration (dark energy analog). Demonstrates Λ-like behavior ($w_\text{eff} \approx -1$) from LRT principles.</p>
+  <div class="meta">February 2026 | Computational Exploration</div>
+  <a href="https://github.com/jdlongmire/logic-realism-theory/blob/main/simulations/ich_dark_energy.ipynb" class="card-link">View Notebook →</a>
+</div>
+
+---
+
 ## Archives
 
 - [Zenodo Community](https://zenodo.org/communities/logic-realism-theory) — Persistent DOI-minted archives

@@ -130,7 +130,7 @@ Even as speculation, ICH does useful work:
 <strong>February 2026:</strong> A toy simulation exploring ICH's dark energy mechanism is now under active development.
 </div>
 
-To test whether the influx/outflux imbalance could plausibly drive cosmic acceleration, we built a computational toy model ([`ich_dark_energy.ipynb`](https://github.com/jdlongmire/thinx/blob/main/research-programs/logic-realism/simulations/ich_dark_energy.ipynb)). The simulation implements:
+To test whether the influx/outflux imbalance could plausibly drive cosmic acceleration, we built a computational toy model ([`ich_dark_energy.ipynb`](https://github.com/jdlongmire/logic-realism-theory/blob/main/simulations/ich_dark_energy.ipynb)). The simulation implements:
 
 - **Entropy-dependent influx** from $I_\infty$ (self-regulating feedback loop)
 - **Emergent black hole dynamics** (formation from local density, absorption, Hawking-like evaporation, merging)
