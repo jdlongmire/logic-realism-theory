@@ -71,6 +71,39 @@ This is a **toy model** for conceptual demonstration:
 - Distance modulus normalization is qualitative, not calibrated to real units
 - Not a replacement for full cosmological simulations
 
+---
+
+## Parameter Sensitivity Analysis
+
+**File:** `parameter_sensitivity.ipynb`
+
+### Overview
+
+Systematic exploration of parameter space to assess whether the ICH model requires fine-tuning or produces Λ-like behavior robustly.
+
+### Sweeps
+
+1. **Influx Peak Rate** — How influx intensity affects w_eff
+2. **Entropy Sensitivity** — Self-regulation strength
+3. **Imbalance Coupling** — How strongly imbalance drives expansion
+4. **BH Absorption Radius** — Outflux efficiency
+5. **Dilution Power** — How ρ_Λ_eff scales with expansion
+
+### Output
+
+- Per-parameter w_eff curves with error bars
+- Distribution histogram across all sweeps
+- Summary statistics for fine-tuning assessment
+- Saved to `parameter_sensitivity.png`
+
+### Interpretation
+
+- **Robust**: >50% of runs in Λ-like region (-1.5 < w < -0.7)
+- **Fine-tuned**: w_eff sensitive to specific parameter values
+- Identifies critical parameters for theoretical focus
+
+---
+
 ### References
 
 - Longmire, J.D. (2026). Logic Realism Theory. Zenodo.

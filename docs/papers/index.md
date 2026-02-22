@@ -79,6 +79,19 @@ The LRT research programme consists of a coordinated suite of papers, each build
 
 ---
 
+## Computational
+
+<div class="paper-grid">
+  <div class="paper-card">
+    <h3><a href="{{ site.baseurl }}/papers/2026-ich-simulation/">Numerical Exploration of Information Circulation Cosmology</a></h3>
+    <p>Computational study of the ICH dark energy mechanism. Demonstrates Λ-like behavior ($w_\text{eff} \approx -1$) across parameter space, assesses fine-tuning, and compares with SNe Ia distance modulus observations.</p>
+    <div class="meta">Simulation Study | February 2026 | In Progress</div>
+    <a href="{{ site.baseurl }}/papers/2026-ich-simulation/" class="card-link">Read Paper →</a>
+  </div>
+</div>
+
+---
+
 ## Reading Order
 
 For readers new to LRT, we recommend:
@@ -89,6 +102,7 @@ For readers new to LRT, we recommend:
 4. **It from Bit** — Conceptual synthesis and Wheeler connection
 5. **QFT Statistics** — Extension to particle statistics
 6. **GR Extension** — Programmatic spacetime implications
+7. **ICH Simulation** — Computational exploration (optional, in progress)
 
 Each paper can be read independently, but together they form a unified derivation from foundational logic to quantum mechanics and beyond.
 
