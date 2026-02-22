@@ -372,6 +372,20 @@ li {
 .paper-card .meta {
   font-size: 0.85rem;
   color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.paper-card .card-link {
+  display: inline-block;
+  color: var(--accent-primary);
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.paper-card .card-link:hover {
+  color: var(--link-hover);
+  text-decoration: none;
 }
 
 /* Topic hub pages */
