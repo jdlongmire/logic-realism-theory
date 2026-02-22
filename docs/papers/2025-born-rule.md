@@ -1,5 +1,6 @@
 ---
 layout: paper
+permalink: /papers/2025-born-rule/
 title: "The Born Rule from Determinate Identity: A Logic Realism Theory Derivation"
 short_title: "Born Rule Paper"
 author: "James (JD) Longmire"

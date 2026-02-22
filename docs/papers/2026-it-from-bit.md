@@ -1,5 +1,6 @@
 ---
 layout: paper
+permalink: /papers/2026-it-from-bit/
 title: "It from Bit, Bit from Fit: Foundational Physics Logically Remastered"
 short_title: "It From Bit Paper"
 author: "James (JD) Longmire"

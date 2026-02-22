@@ -17,17 +17,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-# Collections
-collections:
-  papers:
-    output: true
-    permalink: /papers/:name/
-
-# Defaults
+# Defaults - apply paper layout to papers directory
 defaults:
   - scope:
-      path: ""
-      type: "papers"
+      path: "papers"
     values:
       layout: "paper"
 

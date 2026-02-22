@@ -1,5 +1,6 @@
 ---
 layout: paper
+permalink: /papers/2025-hilbert-space/
 title: "Complex Hilbert Space from Determinate Identity: A Logic Realism Theory Derivation"
 short_title: "Hilbert Space Paper"
 author: "James (JD) Longmire"

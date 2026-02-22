@@ -1,5 +1,6 @@
 ---
 layout: paper
+permalink: /papers/2026-position-paper/
 title: "Logic Realism Theory: Physical Foundations from Logical Constraints"
 short_title: "Position Paper"
 author: "James (JD) Longmire"
