@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  {% include header.html %}
+
+  <main class="container">
+    <article class="paper">
+      <header class="paper-header">
+        <h1 class="paper-title">{{ page.title }}</h1>
+
+        <div class="paper-meta">
+          <strong>{{ page.author | default: site.author }}</strong><br>
+          <a href="https://orcid.org/{{ page.orcid | default: '0009-0009-1383-7698' }}">ORCID: {{ page.orcid | default: '0009-0009-1383-7698' }}</a><br>
+          {% if page.date_published %}Published: {{ page.date_published | date: '%B %d, %Y' }}{% endif %}
+          {% if page.last_modified %} | Updated: {{ page.last_modified | date: '%B %d, %Y' }}{% endif %}
+        </div>
+
+        {% if page.keywords %}
+        <div class="paper-keywords">
+          {% for keyword in page.keywords %}
+          <span class="keyword">{{ keyword }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        <div class="paper-links">
+          {% if page.pdf_url %}
+          <a href="{{ page.pdf_url | relative_url }}" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Download PDF
+          </a>
+          {% endif %}
+          {% if page.zenodo_url %}
+          <a href="{{ page.zenodo_url }}" class="btn btn-secondary" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            Zenodo Archive
+          </a>
+          {% endif %}
+        </div>
+      </header>
+
+      {% if page.abstract %}
+      <section class="abstract">
+        <h2>Abstract</h2>
+        <p>{{ page.abstract }}</p>
+      </section>
+      {% endif %}
+
+      <section class="paper-content">
+        {{ content }}
+      </section>
+
+      {% if page.related_papers %}
+      <aside class="related-papers">
+        <h2>Related Papers</h2>
+        <ul class="related-list">
+          {% for paper in page.related_papers %}
+          <li><a href="{{ paper.url | relative_url }}">{{ paper.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </aside>
+      {% endif %}
+    </article>
+  </main>
+
+  {% include footer.html %}
+</body>
+</html>

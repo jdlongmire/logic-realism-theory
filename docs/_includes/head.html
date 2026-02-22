@@ -1,0 +1,80 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ page.abstract | default: site.description | strip_html | truncate: 160 }}">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+<!-- MathJax for LaTeX rendering -->
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    processEscapes: true
+  },
+  options: {
+    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+
+<!-- Open Graph / Social -->
+<meta property="og:title" content="{{ page.title | default: site.title }}">
+<meta property="og:description" content="{{ page.abstract | default: site.description | strip_html | truncate: 200 }}">
+<meta property="og:type" content="{% if page.layout == 'paper' %}article{% else %}website{% endif %}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+
+{% if page.layout == 'paper' %}
+<!-- ScholarlyArticle JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "{{ page.title | escape }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ page.author | default: site.author }}",
+    "identifier": "https://orcid.org/{{ page.orcid | default: '0009-0009-1383-7698' }}"
+  },
+  "datePublished": "{{ page.date_published | date: '%Y-%m-%d' }}",
+  "dateModified": "{{ page.last_modified | default: page.date_published | date: '%Y-%m-%d' }}",
+  "description": "{{ page.abstract | strip_html | escape }}",
+  "keywords": "{{ page.keywords | join: ', ' }}",
+  "identifier": [
+    {% if page.doi %}{
+      "@type": "PropertyValue",
+      "propertyID": "DOI",
+      "value": "{{ page.doi }}"
+    }{% endif %}
+  ],
+  "sameAs": [
+    {% if page.zenodo_url %}"{{ page.zenodo_url }}"{% endif %}{% if page.zenodo_url and page.github_url %},{% endif %}
+    {% if page.github_url %}"{{ page.github_url }}"{% endif %}
+  ],
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Logic Realism Theory Research Programme",
+    "url": "{{ '/' | absolute_url }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "James (JD) Longmire"
+  },
+  "inLanguage": "en",
+  "license": "https://creativecommons.org/licenses/by/4.0/"
+}
+</script>
+{% endif %}
+
+{% seo %}

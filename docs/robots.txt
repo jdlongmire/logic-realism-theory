@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jdlongmire.github.io/logic-realism-theory/sitemap.xml

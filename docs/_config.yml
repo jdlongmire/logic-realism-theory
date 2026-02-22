@@ -1,0 +1,49 @@
+# Logic Realism Theory - Jekyll Configuration
+title: Logic Realism Theory
+description: "Physical Foundations from Logical Constraints"
+author: "James (JD) Longmire"
+email: jdlongmire@outlook.com
+url: "https://jdlongmire.github.io"
+baseurl: "/logic-realism-theory"
+
+# Build settings
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  papers:
+    output: true
+    permalink: /papers/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "papers"
+    values:
+      layout: "paper"
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
+# SEO
+twitter:
+  username: null
+social:
+  name: "James (JD) Longmire"
+  links:
+    - "https://orcid.org/0009-0009-1383-7698"
+    - "https://github.com/jdlongmire"
+    - "https://zenodo.org/communities/logic-realism-theory"
