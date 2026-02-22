@@ -388,6 +388,30 @@ li {
   text-decoration: none;
 }
 
+/* Hero banner */
+.hero-banner {
+  margin: 0 -2rem 2rem -2rem;
+  text-align: center;
+}
+
+.hero-banner img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .hero-banner {
+    margin: 0 -1rem 1.5rem -1rem;
+  }
+
+  .hero-banner img {
+    border-radius: 0;
+  }
+}
+
 /* Topic hub pages */
 .topic-header {
   text-align: center;

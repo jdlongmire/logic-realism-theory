@@ -3,6 +3,7 @@ layout: paper
 permalink: /papers/2026-position-paper/
 title: "Logic Realism Theory: Physical Foundations from Logical Constraints"
 short_title: "Position Paper"
+image: /assets/images/lrt-banner.png
 author: "James (JD) Longmire"
 orcid: "0009-0009-1383-7698"
 email: "jdlongmire@outlook.com"

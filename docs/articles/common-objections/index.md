@@ -1,5 +1,7 @@
 ---
+layout: default
 title: Common Objections to Logic Realism
+image: /assets/images/lrt-banner.png
 description: Addressing the most frequent critiques of the claim that logic constrains physical possibility
 ---
 

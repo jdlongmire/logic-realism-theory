@@ -4,6 +4,7 @@ title: "The Born Rule Is Not Optional"
 permalink: /articles/born-rule/
 date: 2026-02-22
 author: "James (JD) Longmire"
+image: /assets/images/lrt-banner.png
 description: "Why the quantum probability rule follows from the logic of distinguishable outcomes"
 ---
 

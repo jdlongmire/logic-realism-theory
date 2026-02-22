@@ -2,6 +2,7 @@
 layout: default
 title: "Entanglement"
 permalink: /topics/entanglement/
+image: /assets/images/lrt-banner.png
 ---
 
 <div class="topic-header">

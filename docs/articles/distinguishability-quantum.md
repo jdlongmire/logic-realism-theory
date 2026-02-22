@@ -4,6 +4,7 @@ title: "Why Distinguishability Requires Quantum Mechanics"
 permalink: /articles/distinguishability-quantum/
 date: 2026-02-22
 author: "James (JD) Longmire"
+image: /assets/images/lrt-banner.png
 description: "How the requirement that physical outcomes be distinguishable leads inevitably to Hilbert space and quantum structure"
 ---
 

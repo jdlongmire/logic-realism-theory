@@ -2,6 +2,7 @@
 layout: default
 title: "Topics"
 permalink: /topics/
+image: /assets/images/lrt-banner.png
 ---
 
 <div class="topic-header">

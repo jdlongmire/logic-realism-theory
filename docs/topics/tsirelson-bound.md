@@ -2,6 +2,7 @@
 layout: default
 title: "Tsirelson Bound"
 permalink: /topics/tsirelson-bound/
+image: /assets/images/lrt-banner.png
 ---
 
 <div class="topic-header">

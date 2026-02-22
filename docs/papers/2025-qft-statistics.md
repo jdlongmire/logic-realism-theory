@@ -3,6 +3,7 @@ layout: paper
 permalink: /papers/2025-qft-statistics/
 title: "Quantum Statistics from Determinate Identity: A Logic Realism Theory Derivation of the Symmetrization Postulate"
 short_title: "QFT Statistics Paper"
+image: /assets/images/lrt-banner.png
 author: "James (JD) Longmire"
 orcid: "0009-0009-1383-7698"
 email: "jdlongmire@outlook.com"

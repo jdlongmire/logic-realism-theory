@@ -2,6 +2,7 @@
 layout: default
 title: "Complex Hilbert Space"
 permalink: /topics/hilbert-space/
+image: /assets/images/lrt-banner.png
 ---
 
 <div class="topic-header">

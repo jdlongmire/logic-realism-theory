@@ -4,6 +4,7 @@ title: "The Instantiation Barrier Explained"
 permalink: /articles/instantiation-barrier/
 date: 2026-02-22
 author: "James (JD) Longmire"
+image: /assets/images/lrt-banner.png
 description: "Why some configurations exist only in thought while others can exist in reality: the I∞/AΩ distinction at the heart of Logic Realism Theory"
 ---
 

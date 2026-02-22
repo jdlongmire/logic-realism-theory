@@ -2,6 +2,7 @@
 layout: default
 title: "Wheeler's 'It from Bit'"
 permalink: /topics/wheeler/
+image: /assets/images/lrt-banner.png
 ---
 
 <div class="topic-header">

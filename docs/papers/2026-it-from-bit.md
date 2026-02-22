@@ -3,6 +3,7 @@ layout: paper
 permalink: /papers/2026-it-from-bit/
 title: "It from Bit, Bit from Fit: Foundational Physics Logically Remastered"
 short_title: "It From Bit Paper"
+image: /assets/images/lrt-banner.png
 author: "James (JD) Longmire"
 orcid: "0009-0009-1383-7698"
 email: "jdlongmire@outlook.com"

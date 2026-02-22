@@ -2,6 +2,7 @@
 layout: default
 title: "Symmetrization Postulate"
 permalink: /topics/symmetrization/
+image: /assets/images/lrt-banner.png
 ---
 
 <div class="topic-header">

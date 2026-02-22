@@ -2,6 +2,7 @@
 layout: default
 title: "Vehicle/Content Distinction"
 permalink: /topics/vehicle-content/
+image: /assets/images/lrt-banner.png
 ---
 
 <div class="topic-header">

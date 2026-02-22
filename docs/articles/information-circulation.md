@@ -4,6 +4,7 @@ title: "The Information Circulation Hypothesis"
 permalink: /articles/information-circulation/
 date: 2026-02-22
 author: "James (JD) Longmire"
+image: /assets/images/lrt-banner.png
 description: "A speculative extension of LRT: black holes as de-actualization mechanisms returning information to I∞"
 status: extension-hypothesis
 ---

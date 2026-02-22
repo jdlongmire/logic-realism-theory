@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Articles"
+image: /assets/images/lrt-banner.png
 ---
 
 <div class="topic-header">

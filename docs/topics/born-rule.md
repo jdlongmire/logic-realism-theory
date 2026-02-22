@@ -2,6 +2,7 @@
 layout: default
 title: "Born Rule Derivation"
 permalink: /topics/born-rule/
+image: /assets/images/lrt-banner.png
 ---
 
 <div class="topic-header">

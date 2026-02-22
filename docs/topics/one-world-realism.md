@@ -2,6 +2,7 @@
 layout: default
 title: "One-World Realism"
 permalink: /topics/one-world-realism/
+image: /assets/images/lrt-banner.png
 ---
 
 <div class="topic-header">

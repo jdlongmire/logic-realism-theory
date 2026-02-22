@@ -4,6 +4,7 @@ title: "From Logic to Physics: The L₃ Journey"
 permalink: /articles/from-logic-to-physics/
 date: 2026-02-22
 author: "James (JD) Longmire"
+image: /assets/images/lrt-banner.png
 description: "Why the three classical logical laws constrain physical reality: an accessible introduction to Logic Realism Theory"
 ---
 

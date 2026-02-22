@@ -2,6 +2,7 @@
 layout: default
 title: "The L₃ Constraints"
 permalink: /topics/l3-constraints/
+image: /assets/images/lrt-banner.png
 ---
 
 <div class="topic-header">

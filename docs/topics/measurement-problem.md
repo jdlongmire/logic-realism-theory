@@ -2,6 +2,7 @@
 layout: default
 title: "Measurement Problem"
 permalink: /topics/measurement-problem/
+image: /assets/images/lrt-banner.png
 ---
 
 <div class="topic-header">

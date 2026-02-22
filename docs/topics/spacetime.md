@@ -2,6 +2,7 @@
 layout: default
 title: "Spacetime Structure"
 permalink: /topics/spacetime/
+image: /assets/images/lrt-banner.png
 ---
 
 <div class="topic-header">

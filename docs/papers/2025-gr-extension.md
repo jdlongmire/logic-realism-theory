@@ -3,6 +3,7 @@ layout: paper
 permalink: /papers/2025-gr-extension/
 title: "Spacetime from Determinate Identity: A Logic Realism Theory Approach to General Relativity"
 short_title: "GR Extension Paper"
+image: /assets/images/lrt-banner.png
 author: "James (JD) Longmire"
 orcid: "0009-0009-1383-7698"
 email: "jdlongmire@outlook.com"

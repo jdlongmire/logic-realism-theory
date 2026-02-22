@@ -2,6 +2,7 @@
 layout: default
 title: "Quantum Gravity"
 permalink: /topics/quantum-gravity/
+image: /assets/images/lrt-banner.png
 ---
 
 <div class="topic-header">
