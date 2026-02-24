@@ -17,7 +17,7 @@ description: "How LRT synthesizes the best features of Copenhagen, Many-Worlds, 
 
 Quantum mechanics works extraordinarily well but remains conceptually unsettled. Competing interpretations (Copenhagen, Many-Worlds, Bohmian mechanics, QBism, and many more) offer incompatible pictures of what the theory says about reality. None has achieved consensus. That alone suggests we may be missing something deeper.
 
-Logic Realism Theory (LRT) proposes a different starting point. Instead of taking the Hilbert-space formalism as given and then asking how to "interpret" it, LRT starts from the Three Fundamental Laws of Logic (Identity, Non-Contradiction, and Excluded Middle) and treats them as **ontological constraints on physical reality**, not just rules of thought. From there, it aims to *derive* key features of quantum theory, including the Born rule, and to show why many traditional interpretive puzzles are ill-posed.
+Logic Realism Theory (LRT) proposes a different starting point. Instead of taking the Hilbert-space formalism as given and then asking how to "interpret" it, LRT starts from the [Three Fundamental Laws of Logic]({{ site.baseurl }}/topics/l3-constraints/) (Identity, Non-Contradiction, and Excluded Middle) and treats them as **ontological constraints on physical reality**, not just rules of thought. From there, it aims to *derive* key features of quantum theory, including [the Born rule]({{ site.baseurl }}/topics/born-rule/), and to show why many traditional interpretive puzzles are ill-posed.
 
 The central idea is simple but radical: if nothing that actually occurs in physical reality ever violates the laws of logic, and if logic is **real and world-structuring**, then that logical structure should visibly constrain what physical theories are possible.
 
@@ -25,7 +25,7 @@ The central idea is simple but radical: if nothing that actually occurs in physi
 
 ## 2. LRT in One Paragraph
 
-LRT distinguishes two levels:
+LRT distinguishes two levels (see [The Instantiation Barrier Explained]({{ site.baseurl }}/articles/instantiation-barrier/) for an accessible introduction):
 
 - An **Infinite Information Space** $I_\infty$: a non-Boolean space of physically relevant informational structures (superpositions, entanglement, etc.).
 - A **Logical Actuality Layer** $A_\Omega$: the domain of actual measurement records, where each record is a Boolean, $L_3$-compliant proposition (a detector either fires or it doesn't).
@@ -42,11 +42,11 @@ From this starting point, LRT:
 
 ## 3. Deriving the Born Rule from Logical Constraint
 
-One of LRT's main contributions is a derivation of the Born rule from logical and information-theoretic premises, not from decision theory or Bayesian coherence.
+One of LRT's main contributions is a [derivation of the Born rule]({{ site.baseurl }}/papers/2026-born-rule-derivation/) from logical and information-theoretic premises, not from decision theory or Bayesian coherence. (For an accessible overview, see [The Born Rule Is Not Optional]({{ site.baseurl }}/articles/born-rule/).)
 
 The derivation has two main routes:
 
-- **Route A (via reconstruction):** Show that LRT's axioms about states, events, composition, and dynamics (A1-A7) satisfy the assumptions of generalized-probabilistic reconstructions (à la Masanes-Müller). That yields a complex Hilbert-space structure and the standard quantum formalism.
+- **Route A (via reconstruction):** Show that LRT's axioms about states, events, composition, and dynamics (A1-A7) satisfy the assumptions of generalized-probabilistic reconstructions (à la Masanes-Müller). That yields a [complex Hilbert-space structure]({{ site.baseurl }}/papers/2025-hilbert-space/) and the standard quantum formalism.
 - **Route B (Hilbert space assumed):** Assuming Hilbert space (either as an empirical fact or via Route A), use $L_3$ at the level of outcome records to constrain probability assignments and show that only the Born rule survives.
 
 Route B goes roughly like this:
@@ -85,13 +85,13 @@ $$\mu(P) = \mathrm{Tr}(\lvert\psi\rangle\langle\psi\rvert \lvert\phi\rangle\lang
 
 That is the Born rule.
 
-Technically, this relies on existing results (Gleason/Busch, Masanes-Müller) but provides a **new conceptual grounding**: the key constraints they need are justified by $L_3$ at the level of physical records, not assumed ad hoc.
+Technically, this relies on existing results (Gleason/Busch, Masanes-Müller) but provides a **new conceptual grounding**: the key constraints they need are justified by $L_3$ at the level of physical records, not assumed ad hoc. The full technical derivation is available in [Deriving the Born Rule from Logical Constraint]({{ site.baseurl }}/papers/2026-born-rule-derivation/) (Zenodo DOI: [10.5281/zenodo.18756374](https://doi.org/10.5281/zenodo.18756374)).
 
 ---
 
 ## 4. Synthesis: What LRT Retains from Major Interpretations
 
-LRT is not just "another interpretation." It can be seen as synthesizing what works in several dominant views:
+LRT is not just "another interpretation." It can be seen as synthesizing what works in several dominant views (see also [One-World Realism]({{ site.baseurl }}/topics/one-world-realism/)):
 
 ### From Copenhagen
 
@@ -100,7 +100,7 @@ LRT is not just "another interpretation." It can be seen as synthesizing what wo
 
 ### From Many-Worlds
 
-- A **real, global, unitary quantum state**, living in $I_\infty$, that encodes all entanglement and nonlocal correlations.
+- A **real, global, unitary quantum state**, living in $I_\infty$, that encodes all [entanglement]({{ site.baseurl }}/topics/entanglement/) and nonlocal correlations.
 - Decoherence as a way to explain the approximate classicality of records.
 
 However, unlike MWI, LRT does *not* treat all branches as equally actual; only one Boolean record per measurement is ever actualized in $A_\Omega$. That preserves Everett's structural insights without committing to ontological bloat.
@@ -117,7 +117,7 @@ However, unlike MWI, LRT does *not* treat all branches as equally actual; only o
 
 But probabilities are objective **vehicle-weights**, not merely personalist beliefs.
 
-In that sense, LRT is a **logic-driven realist synthesis**: unitary, nonlocal, information-theoretic, classically definite at the macroscopic level, and with probabilities fixed by logical constraint.
+In that sense, LRT is a **logic-driven realist synthesis**: unitary, nonlocal, information-theoretic, classically definite at the macroscopic level, and with probabilities fixed by logical constraint. For the foundational framework, see the [LRT Position Paper]({{ site.baseurl }}/papers/2026-position-paper/) and [It from Bit, Bit from Fit]({{ site.baseurl }}/papers/2026-it-from-bit/).
 
 ---
 
@@ -135,7 +135,7 @@ QBism dissolves the "why Born?" question by making probabilities subjective. LRT
 
 ### Collapse Postulates and Measurement "Mysteries"
 
-In Copenhagenish views, collapse is a primitive, ill-specified rule triggered by "measurement." In LRT, there is no dynamical breakdown: the global state in IIS evolves unitarily; "collapse" is the one-time actualization of a single Boolean outcome in $A_\Omega$, mandated by $L_3$. The mystery moves from "why collapse?" to "why logical actuality?", and LRT answers the latter by construction.
+In Copenhagenish views, collapse is a primitive, ill-specified rule triggered by "measurement." In LRT, there is no dynamical breakdown: the global state in IIS evolves unitarily; "collapse" is the one-time actualization of a single Boolean outcome in $A_\Omega$, mandated by $L_3$. The mystery moves from "why collapse?" to "why logical actuality?", and LRT answers the latter by construction. (See [The Measurement Problem]({{ site.baseurl }}/topics/measurement-problem/) for more.)
 
 ### Hidden-Variable Machinery as the Only Path to Realism
 
@@ -148,10 +148,10 @@ Bohmian mechanics shows that realist, nonlocal theories are possible, but many f
 Because LRT makes strong metaphysical claims, it also has clear failure modes:
 
 - A **reproducible macroscopic violation of Non-Contradiction** (a single measurement record that unavoidably instantiates $P \land \neg P$ in the same respect) would directly falsify its core assumption about the outcome layer.
-- A **distinctive, empirically confirmed non-Hilbertian probability structure** (e.g. robust evidence of post-quantum correlations violating Tsirelson's bound while remaining non-signalling) would undercut LRT's route through reconstruction and Gleason.
+- A **distinctive, empirically confirmed non-Hilbertian probability structure** (e.g. robust evidence of post-quantum correlations violating [Tsirelson's bound]({{ site.baseurl }}/topics/tsirelson-bound/) while remaining non-signalling) would undercut LRT's route through reconstruction and Gleason.
 - Philosophically, a convincing argument that determinate identity at the macroscopic record level does *not* require vehicle-invariance (non-contextual event probabilities) would challenge the core $L_1$ → Born link.
 
-So LRT is not a "purely interpretive" gloss: it is a **testable, vulnerable** metaphysical-physical framework.
+So LRT is not a "purely interpretive" gloss: it is a **testable, vulnerable** metaphysical-physical framework. For more on how LRT responds to challenges, see [Common Objections to Logic Realism]({{ site.baseurl }}/articles/common-objections/).
 
 ---
 
@@ -167,19 +167,47 @@ If that picture is even approximately right, LRT could eventually act as a **bac
 
 ---
 
-## References
+## Further Reading: LRT Papers and Articles
 
-1. [Interpretations of quantum mechanics](https://en.wikipedia.org/wiki/Interpretations_of_quantum_mechanics) - Wikipedia
-2. [Interpretations of Quantum Mechanics](https://iep.utm.edu/int-qm/) - Internet Encyclopedia of Philosophy
-3. [LRT Born Rule Derivation]({{ site.baseurl }}/papers/2026-born-rule-derivation/) - Technical Paper
-4. [Reconstructing Quantum Theory](https://arxiv.org/pdf/1303.1538.pdf) - arXiv
-5. [Reconstructions of Quantum Theory](http://www.iqoqi-vienna.at/research/mueller-group/reconstructions-of-quantum-theory) - IQOQI Vienna
-6. [The Status of the Born Rule and the Role of Gleason's Theorem](https://philsci-archive.pitt.edu/20792/1/Born%20rule%20%206.22.22.pdf) - PhilSci Archive
-7. [Born rule](https://en.wikipedia.org/wiki/Born_rule) - Wikipedia
-8. [Copenhagenish interpretations of quantum mechanics](https://arxiv.org/pdf/2506.00112.pdf) - arXiv
-9. [Towards Better Understanding QBism](https://pmc.ncbi.nlm.nih.gov/articles/PMC5842260/) - PMC
-10. [Tsirelson's bound](https://en.wikipedia.org/wiki/Tsirelson's_bound) - Wikipedia
-11. [Information Causality, the Tsirelson Bound, and the 'Being-Thus' of Things](https://philsci-archive.pitt.edu/14027/1/tbound.pdf) - PhilSci Archive
+### Core Technical Papers
+
+- [**Logic Realism Theory: Physical Foundations from Logical Constraints**]({{ site.baseurl }}/papers/2026-position-paper/) – The foundational Position Paper establishing the $I_\infty$/$A_\Omega$ ontology
+- [**Deriving the Born Rule from Logical Constraint**]({{ site.baseurl }}/papers/2026-born-rule-derivation/) – Full five-stage derivation ([Zenodo DOI: 10.5281/zenodo.18756374](https://doi.org/10.5281/zenodo.18756374))
+- [**Complex Hilbert Space from Determinate Identity**]({{ site.baseurl }}/papers/2025-hilbert-space/) – Derives Hilbert space structure from $L_3$
+- [**It from Bit, Bit from Fit**]({{ site.baseurl }}/papers/2026-it-from-bit/) – Conceptual synthesis grounding Wheeler's "it from bit"
+- [**Quantum Statistics from Determinate Identity**]({{ site.baseurl }}/papers/2025-qft-statistics/) – Extension to bosons/fermions
+- [**Spacetime from Determinate Identity**]({{ site.baseurl }}/papers/2025-gr-extension/) – Programmatic spacetime implications
+
+### Accessible Introductions
+
+- [**From Logic to Physics: The L₃ Journey**]({{ site.baseurl }}/articles/from-logic-to-physics/) – Start here if new to LRT
+- [**The Instantiation Barrier Explained**]({{ site.baseurl }}/articles/instantiation-barrier/) – The $I_\infty$/$A_\Omega$ distinction
+- [**Why Distinguishability Requires Quantum Mechanics**]({{ site.baseurl }}/articles/distinguishability-quantum/) – How distinguishability leads to Hilbert space
+- [**The Born Rule Is Not Optional**]({{ site.baseurl }}/articles/born-rule/) – Accessible overview of the derivation
+- [**Common Objections to Logic Realism**]({{ site.baseurl }}/articles/common-objections/) – Addressing frequent critiques
+
+### Topics
+
+- [**The Three Laws ($L_3$)**]({{ site.baseurl }}/topics/l3-constraints/) – Identity, Non-Contradiction, Excluded Middle
+- [**The Born Rule**]({{ site.baseurl }}/topics/born-rule/) – Why $\lvert\langle\phi\vert\psi\rangle\rvert^2$
+- [**The Measurement Problem**]({{ site.baseurl }}/topics/measurement-problem/) – LRT's resolution
+- [**Entanglement**]({{ site.baseurl }}/topics/entanglement/) – Nonlocal correlations in LRT
+- [**Wheeler's "It from Bit"**]({{ site.baseurl }}/topics/wheeler/) – Connection to participatory universe
+
+---
+
+## External References
+
+1. [Interpretations of quantum mechanics](https://en.wikipedia.org/wiki/Interpretations_of_quantum_mechanics) – Wikipedia
+2. [Interpretations of Quantum Mechanics](https://iep.utm.edu/int-qm/) – Internet Encyclopedia of Philosophy
+3. [Reconstructing Quantum Theory](https://arxiv.org/pdf/1303.1538.pdf) – Masanes & Müller, arXiv
+4. [Reconstructions of Quantum Theory](http://www.iqoqi-vienna.at/research/mueller-group/reconstructions-of-quantum-theory) – IQOQI Vienna
+5. [The Status of the Born Rule and the Role of Gleason's Theorem](https://philsci-archive.pitt.edu/20792/1/Born%20rule%20%206.22.22.pdf) – PhilSci Archive
+6. [Born rule](https://en.wikipedia.org/wiki/Born_rule) – Wikipedia
+7. [Copenhagenish interpretations of quantum mechanics](https://arxiv.org/pdf/2506.00112.pdf) – arXiv
+8. [Towards Better Understanding QBism](https://pmc.ncbi.nlm.nih.gov/articles/PMC5842260/) – PMC
+9. [Tsirelson's bound](https://en.wikipedia.org/wiki/Tsirelson's_bound) – Wikipedia
+10. [Information Causality, the Tsirelson Bound, and the 'Being-Thus' of Things](https://philsci-archive.pitt.edu/14027/1/tbound.pdf) – PhilSci Archive
 
 ---
 
