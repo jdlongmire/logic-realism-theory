@@ -42,9 +42,16 @@ The LRT research programme consists of a coordinated suite of papers, each build
 ## Technical Derivations
 
 <div class="paper-grid">
+  <div class="paper-card featured">
+    <h3><a href="{{ site.baseurl }}/papers/2026-born-rule-derivation/">Deriving the Born Rule from Logical Constraint: A Logic Realism Theory Approach</a></h3>
+    <p>Full five-stage derivation of the Born rule from L₃ constraints. Presents two complementary routes (via reconstruction and via Hilbert space assumption), formal axioms A1–A7, explicit mapping to Masanes–Müller reconstruction, and comprehensive literature connection. Peer-review ready.</p>
+    <div class="meta">Technical Derivation | February 2026 | <a href="https://doi.org/10.5281/zenodo.18756374">DOI: 10.5281/zenodo.18756374</a></div>
+    <a href="{{ site.baseurl }}/papers/2026-born-rule-derivation/" class="card-link">Read Paper →</a>
+  </div>
+
   <div class="paper-card">
-    <h3><a href="{{ site.baseurl }}/papers/2025-born-rule/">The Born Rule from Determinate Identity</a></h3>
-    <p>Derives the Born rule ($|\langle\phi|\psi\rangle|^2$) from vehicle-weight invariance. Shows that Determinate Identity forces the additivity and non-contextuality conditions required by Gleason's theorem.</p>
+    <h3><a href="{{ site.baseurl }}/papers/2025-born-rule/">The Born Rule from Determinate Identity (earlier version)</a></h3>
+    <p>Earlier, more concise treatment. Derives the Born rule ($|\langle\phi|\psi\rangle|^2$) from vehicle-weight invariance. Shows that Determinate Identity forces the additivity and non-contextuality conditions required by Gleason's theorem.</p>
     <div class="meta">Technical Derivation | December 2025</div>
     <a href="{{ site.baseurl }}/papers/2025-born-rule/" class="card-link">Read Paper →</a>
   </div>
@@ -97,12 +104,14 @@ The LRT research programme consists of a coordinated suite of papers, each build
 For readers new to LRT, we recommend:
 
 1. **Position Paper** — Start here for the core framework
-2. **Born Rule Paper** — Key technical derivation
+2. **Born Rule Derivation (2026)** — Full five-stage derivation with formal axioms (recommended)
 3. **Hilbert Space Paper** — Completes the quantum structure derivation
 4. **It from Bit** — Conceptual synthesis and Wheeler connection
 5. **QFT Statistics** — Extension to particle statistics
 6. **GR Extension** — Programmatic spacetime implications
 7. **ICH Simulation** — Computational exploration (optional, in progress)
+
+*Note: The 2025 Born Rule paper is an earlier, more concise version superseded by the 2026 derivation.*
 
 Each paper can be read independently, but together they form a unified derivation from foundational logic to quantum mechanics and beyond.
 
