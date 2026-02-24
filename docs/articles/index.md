@@ -19,6 +19,12 @@ image: /assets/images/lrt-banner.png
 
 <div class="paper-grid">
   <div class="paper-card featured">
+    <h3><a href="{{ site.baseurl }}/articles/empirical-pillar/">The Empirical Pillar: Nature's Stubborn Refusal to Contradict Herself</a></h3>
+    <p>The single most structurally decisive feature of LRT: a century of physics without a contradictory measurement record. Everything else in the theory—the $I_\infty$/$A_\Omega$ distinction, the Born rule derivation, Hilbert space selection—is downstream of this one unrelenting empirical fact.</p>
+    <div class="meta">February 2026 | Foundational</div>
+    <a href="{{ site.baseurl }}/articles/empirical-pillar/" class="card-link">Read Article →</a>
+  </div>
+  <div class="paper-card featured">
     <h3><a href="{{ site.baseurl }}/articles/epr-resolution/">Dissolving the EPR Paradox: LRT's Resolution</a></h3>
     <p>How LRT resolves the Einstein-Podolsky-Rosen paradox by relocating the tension between possibility space ($I_\infty$) and actualized reality ($A_\Omega$), without hidden variables or non-local influence.</p>
     <div class="meta">February 2026 | Advanced</div>
