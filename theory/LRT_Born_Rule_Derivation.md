@@ -40,6 +40,14 @@ The central claim is that these constraints, applied at the "vehicle level" (the
 
 This paper develops that derivation in detail, provides formal axioms, situates the result within existing literature, and addresses potential objections.
 
+**Two Routes to the Born Rule:** This paper presents two complementary derivations:
+
+- **Route A (via reconstruction):** §5–§6 show how Axioms A3–A7, grounded in L₃, satisfy the requirements of Masanes–Müller reconstruction, yielding Hilbert space structure and hence the Born rule.
+
+- **Route B (Hilbert space assumed):** §3 assumes Hilbert space structure (whether empirically motivated or reconstruction-derived) and shows how L₃ constraints at the vehicle level force vehicle-weight invariance, which via Gleason's theorem yields the Born rule.
+
+Both routes arrive at the same destination; Route A justifies the Hilbert space assumption, while Route B shows what happens once that structure is in place.
+
 ---
 
 ## 2. Conceptual Framework
@@ -76,7 +84,9 @@ The measurement process is an interface map f_M : I∞ → A_Ω that, in each ru
 
 ---
 
-## 3. The Derivation Chain
+## 3. The Derivation Chain (Route B: Hilbert Space Assumed)
+
+*This section presents Route B: given Hilbert space structure (whether taken as empirically motivated or derived via reconstruction in §5.1), we show how L₃ constraints fix the probability measure. For how A3–A7 justify importing Hilbert space structure, see §5.1.*
 
 The argument proceeds through five steps:
 
@@ -111,11 +121,15 @@ These dispositions constitute what we call *vehicle-weights*: the system's objec
 
 ### 3.2 Step 2: Vehicle-Weight Invariance
 
-**Definition:** A measure μ on projection operators satisfies *vehicle-weight invariance* if and only if, for every maximal orthonormal resolution {P_i} of the identity:
+**Definition:** A measure μ on projection operators satisfies *vehicle-weight invariance* if and only if:
 
-$$\sum_i \mu(P_i) = 1$$
+1. **Normalization:** For every maximal orthonormal resolution {P_i} of the identity, ∑_i μ(P_i) = 1.
 
-with this total constant across all such decompositions.
+2. **Context-independence:** If the same projector P appears in different maximal orthogonal decompositions D₁ = {P, Q₁, Q₂, ...} and D₂ = {P, R₁, R₂, ...}, then:
+
+$$\mu_{D_1}(P) = \mu_{D_2}(P) = \mu(P)$$
+
+That is, the probability assigned to P is independent of which other projectors appear alongside it.
 
 **Constraint from L₁:** Vehicle-weights characterize what the system *is*, not how we describe it. If a system were "70% disposed toward outcome A" in one measurement basis but "50% disposed toward A" in another basis, the system would lack determinate identity. The question "what is this system's disposition toward A?" would have no fact of the matter—a violation of Determinate Identity at the vehicle level.
 
@@ -234,6 +248,8 @@ One might object: doesn't assuming Hilbert space structure smuggle in quantum th
 
 2. Even taking Hilbert space as input, Gleason's theorem is non-trivial. Many conceivable probability measures on a Hilbert space exist; Gleason shows only one family (the trace measures) satisfies the required constraints. The Born rule is not presupposed but proven.
 
+**Scope of the claim:** Our claim is not that L₃ alone fixes *all* of quantum theory, but that *given* the quantum kinematics (whether taken as empirically motivated or reconstruction-derived), L₃ plus vehicle-invariance uniquely fix the probability rule. Route A shows how to derive the kinematics from A3–A7 grounded in L₃; Route B shows what follows once the kinematics are in place. The modesty is explicit: we derive the Born rule, not the entirety of quantum mechanics.
+
 ### 4.1 Assumptions Imported from the Literature
 
 For transparency, we list the external mathematical results treated as "black boxes" in this derivation:
@@ -274,15 +290,15 @@ that, in each run, produces exactly one record in A_Ω.
 
 ### Axiom A3 (Boolean Event Algebra at the Interface)
 
-Let E be the set of events definable over A_Ω (modulo logical equivalence). Then E is a Boolean σ-algebra with operations ∧, ∨, ¬, null event 0, and unit event 1.
+Let ℰ be the set of events definable over A_Ω (modulo logical equivalence). Then ℰ is a Boolean σ-algebra with operations ∧, ∨, ¬, null event 0, and unit event 1.
 
 ### Axiom A4 (States as Probability Measures on Events)
 
 A physical state at the IIS-LRT interface is a function
 
-$$s: \mathcal{E} \to [0,1]$$
+$$s: ℰ \to [0,1]$$
 
-such that, for all e, f ∈ E:
+such that, for all e, f ∈ ℰ:
 
 1. s(1) = 1, s(0) = 0
 2. If e ∧ f = 0, then s(e ∨ f) = s(e) + s(f)
@@ -292,7 +308,7 @@ So s is a normalized, finitely additive probability measure on the Boolean event
 
 ### Axiom A5 (Vehicle-Invariance / Logical Non-Contextuality)
 
-If an event e ∈ E can be represented, in different measurement contexts, as distinct disjoint unions of finer events,
+If an event e ∈ ℰ can be represented, in different measurement contexts, as distinct disjoint unions of finer events,
 
 $$e = \bigvee_{i} e_i = \bigvee_{j} f_j$$
 
@@ -339,7 +355,9 @@ These capture LRT's "logical-information" requirements: non-classical structure 
 
 ---
 
-## 6. Born-Rule Theorem (IIS-LRT)
+## 6. Born-Rule Theorem (Route A: Via Reconstruction)
+
+*This section presents Route A: deriving Hilbert space structure from Axioms A3–A7, then obtaining the Born rule. The stages below are labeled II.1–II.5 to distinguish them from the Route B steps in §3.*
 
 ### 6.1 Theorem Statement
 
@@ -359,15 +377,15 @@ $$s_\psi(P) = |\langle \phi | \psi \rangle|^2$$
 
 ### 6.2 Proof Outline
 
-**Step 1: IIS-LRT ↔ Generalized Probabilistic Theory**
+**Stage II.1: IIS-LRT ↔ Generalized Probabilistic Theory**
 
 From A3–A4, each system has:
 - A convex set of states S: normalized probability measures s on E
-- An effect algebra E of events
+- An effect algebra ℰ of events
 
 Composition rule A6 and non-classical structure A7 give exactly the data of a generalized probabilistic theory (GPT) with local tomography and nonclassical state space.
 
-**Step 2: Reconstruction to Quantum Formalism**
+**Stage II.2: Reconstruction to Quantum Formalism**
 
 By reconstruction results (Masanes & Müller, 2011; Chiribella et al., 2011), any GPT satisfying:
 - Local tomography (A6)
@@ -384,11 +402,11 @@ Representation:
 
 At this stage we have a Hilbert-space representation but no Born rule yet.
 
-**Step 3: Interface States as Measures on Projectors**
+**Stage II.3: Interface States as Measures on Projectors**
 
 Axioms A4–A5 imply that each IIS-LRT state s restricts to a map
 
-$$s: P(\mathcal{H}) \to [0,1]$$
+$$s: P(H) \to [0,1]$$
 
 on the lattice of orthogonal projectors such that:
 
@@ -399,7 +417,7 @@ on the lattice of orthogonal projectors such that:
 
 So s is a (countably) additive, non-contextual probability measure on P(H).
 
-**Step 4: Gleason-Type Theorem**
+**Stage II.4: Gleason-Type Theorem**
 
 By Gleason's theorem (Gleason, 1957) for dim H ≥ 3, or by Busch's generalization (Busch, 2003):
 
@@ -409,7 +427,7 @@ Thus each IIS-LRT state corresponds to a density operator:
 
 $$s(P) = \mathrm{Tr}(\rho_s P)$$
 
-**Step 5: Pure States → Born Rule**
+**Stage II.5: Pure States → Born Rule**
 
 Define pure IIS-LRT states as extremal points of the convex state space (non-decomposable into distinct convex combinations). In the Hilbert-space representation, these are rank-1 projectors \|ψ⟩⟨ψ\|. For such a pure state,
 
@@ -659,5 +677,5 @@ $$\mu(|\phi\rangle\langle\phi|) = |\langle\phi|\psi\rangle|^2$$
 
 ---
 
-**Word count:** ~6,500
-**Last updated:** 2026-02-24 (revised with Perplexity review feedback)
+**Word count:** ~7,000
+**Last updated:** 2026-02-24 (final revisions: Route A/B labeling, notation standardization, scope clarification)
