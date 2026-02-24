@@ -6,7 +6,7 @@ image: /assets/images/lrt-banner.png
 
 <div class="hero-banner-wrapper">
   <div class="hero-banner">
-    <img src="{{ site.baseurl }}/assets/images/lrt-banner.png" alt="Logic Realism Theory - Physical Structure from Logical Constraint" />
+    <img src="{{ site.baseurl }}/assets/images/lrt-banner.png" alt="Logic Realism Theory diagram showing the relationship between I∞ (representable configuration space), L₃ logical constraints (Identity, Non-Contradiction, Excluded Middle), and AΩ (admissible physical instantiation space) - deriving quantum structure from logical foundations" />
   </div>
 </div>
 
@@ -17,16 +17,18 @@ image: /assets/images/lrt-banner.png
 
 ## The Core Thesis
 
-**Logic Realism Theory (LRT)** treats the three classical logical laws—Determinate Identity, Non-Contradiction, and Excluded Middle (collectively $L_3$)—as *ontological constraints on physical instantiation*, not merely rules of inference.
+**Logic Realism Theory (LRT)** proposes that the three classical logical laws—Determinate Identity, Non-Contradiction, and Excluded Middle (collectively $L_3$)—function as *ontological constraints on physical instantiation*, not merely rules of inference. This approach to the **logical foundations of physics** offers an alternative to ontic structural realism by grounding quantum structure in logical admissibility rather than primitive physical relations.
 
 The framework distinguishes:
 
 - **$I_\infty$**: The space of all representable configurations (including contradictions and impossibilities)
 - **$A_\Omega$**: The $L_3$-admissible subset that can be physically instantiated as stable records
 
-This boundary condition generates quantum structure. Vehicle-invariance under mathematically equivalent decompositions forces the Born rule via Gleason's theorem. Local tomography requirements select complex Hilbert space over real alternatives.
+This boundary condition generates quantum structure. Vehicle-invariance under mathematically equivalent decompositions forces the Born rule via Gleason's theorem. Local tomography requirements select complex Hilbert space over real alternatives. The framework provides a **derivation of the Born rule from first principles** and addresses core problems in **quantum ontology** through logical constraints rather than postulates.
 
 > *It from Bit, Bit from Fit*: Physical structure emerges from informational structure, which emerges from logical admissibility.
+
+The programme connects to broader questions in the **philosophy of physics**, offering novel predictions that distinguish it from interpretive competitors. The requirement for complex (rather than real) quantum mechanics was confirmed by Renou et al. (2021), providing empirical support for the logical realism approach.
 
 ---
 
@@ -140,5 +142,7 @@ The programme derives quantum structure rather than postulating it:
 
 ## Archives
 
+- [Definitions & Glossary]({{ site.baseurl }}/definitions/) — Key terminology and concepts
+- [How to Cite]({{ site.baseurl }}/cite/) — BibTeX, DOIs, and citation information
 - [Zenodo Community](https://zenodo.org/communities/logic-realism-theory) — Persistent DOI-minted archives
 - [GitHub Repository](https://github.com/jdlongmire/logic-realism-theory) — Source code, proofs, and development history
