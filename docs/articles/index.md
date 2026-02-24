@@ -19,6 +19,12 @@ image: /assets/images/lrt-banner.png
 
 <div class="paper-grid">
   <div class="paper-card featured">
+    <h3><a href="{{ site.baseurl }}/articles/epr-resolution/">Dissolving the EPR Paradox: LRT's Resolution</a></h3>
+    <p>How LRT resolves the Einstein-Podolsky-Rosen paradox by relocating the tension between possibility space ($I_\infty$) and actualized reality ($A_\Omega$), without hidden variables or non-local influence.</p>
+    <div class="meta">February 2026 | Advanced</div>
+    <a href="{{ site.baseurl }}/articles/epr-resolution/" class="card-link">Read Article →</a>
+  </div>
+  <div class="paper-card featured">
     <h3><a href="{{ site.baseurl }}/articles/future-interpretations/">LRT and the Future of Quantum Interpretations</a></h3>
     <p>How LRT synthesizes the best features of Copenhagen, Many-Worlds, Bohmian mechanics, and QBism while resolving their core tensions through logical constraint.</p>
     <div class="meta">February 2026 | Advanced</div>
