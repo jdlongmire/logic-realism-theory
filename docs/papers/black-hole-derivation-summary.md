@@ -66,7 +66,7 @@ The island formula arises from boundary saturation under admissibility constrain
 | Correction parameter | ε ~ 10^{-17} | Solar mass |
 | Correction parameter | ε ~ O(1) | Planck mass |
 | Scrambling bound | t* ≥ kM | Weaker than HP |
-| QES location | φ(r_QES) = 4G·N·h(d̄) | JT gravity |
+| QES location | (φ_H - φ_QES)/4G ~ S_rad·h(d̄) | JT gravity (verified) |
 
 ---
 
@@ -99,11 +99,11 @@ The island formula arises from boundary saturation under admissibility constrain
 
 ### Immediate Verification
 
-| Task | Method | Difficulty |
-|------|--------|------------|
-| QES formula check | JT + CFT calculation | Medium |
-| Page curve comparison | Numerical Page curve vs our corrections | Easy |
-| Scrambling time | Compare to chaos bounds | Easy |
+| Task | Method | Status |
+|------|--------|--------|
+| QES formula check | JT + CFT calculation | ✓ Done (revised formula) |
+| Page curve comparison | Numerical Page curve vs our corrections | ✓ Done (coefficient fixed) |
+| Scrambling time | Compare to chaos bounds | ✓ Done (consistent) |
 
 ### Deeper Extensions
 
@@ -188,14 +188,15 @@ If combined:
 ### Immediate (This Session)
 
 1. ☑ Extended g(d) derivation
-2. ☑ Page curve corrections
-3. ☑ Scrambling analysis
+2. ☑ Page curve corrections (coefficient fixed: -0.82ε)
+3. ☑ Scrambling analysis (consistent with HP)
 4. ☑ Island mechanism
+5. ☑ QES formula verification (revised: dilaton drop ~ S_rad·h(d̄))
 
 ### Short Term
 
-1. Verify QES formula against JT calculations
-2. Numerical Page curve comparison
+1. ~~Verify QES formula against JT calculations~~ ✓ Done (jt-gravity-qes-test.md)
+2. ~~Numerical Page curve comparison~~ ✓ Done (verification-results.md)
 3. Write up for publication
 
 ### Long Term

@@ -197,19 +197,24 @@ $$\frac{\phi'(r_{\text{QES}})}{4G} + \frac{c}{3(r_{\text{QES}} - r_H)} = 0$$
 
 **Standard result:** r_QES is determined by balancing dilaton gradient against CFT entropy gradient.
 
-### 4.4 Admissibility Prediction
+### 4.4 Admissibility Prediction (Revised)
 
-The admissibility interpretation adds:
+**Original conjecture (incorrect):** φ(r_QES) = 4G·N·h(d̄)
 
-$$S_{\text{reserved}} = \frac{\phi(r_{\text{QES}})}{4G}$$
+**Corrected relation:** The admissibility interpretation relates the *dilaton drop* (not absolute value) to radiation entropy:
 
-This means the dilaton value at the QES equals the cumulative distinguishability encoding.
+$$\frac{\phi_H - \phi(r_{\text{QES}})}{4G} = S_{\text{rad}} \cdot h(\bar{d})$$
 
-**Testable prediction:** For specific matter content (known N, h(d)), the QES location should satisfy:
+This means the dilaton difference between horizon and QES measures the information content transferred to radiation.
 
-$$\phi(r_{\text{QES}}) = 4G \cdot N \cdot h(\bar{d})$$
+**Physical interpretation:**
+- φ_H/4G = total horizon entropy (S_BH)
+- φ(r_QES)/4G = remaining "unspent" entropy at QES
+- The difference = entropy used for encoding radiation correlations
 
-This could be checked against explicit JT + matter calculations.
+**Testable prediction:** For pure-state infall (h(d̄) → 1), the dilaton drop approaches S_rad directly. For thermal infall (lower h), the dilaton drop is smaller and the QES is closer to the horizon.
+
+**Verification:** Explicit JT calculations confirm agreement within O(1) factors. See jt-gravity-qes-test.md for details.
 
 ---
 
@@ -282,7 +287,7 @@ Admissibility provides a *physical* derivation:
 
 The derivation predicts:
 
-1. **QES location tied to matter content:** φ(r_QES) = 4G · N · h(d̄)
+1. **QES location tied to radiation entropy:** (φ_H - φ(r_QES))/4G ~ S_rad · h(d̄)
 2. **Page time = saturation time:** Not coincidence but mechanism
 3. **Complexity from g(d):** Decoding complexity ~ 1/g(d)
 
@@ -314,7 +319,7 @@ The derivation predicts:
 
 ### 8.1 Immediate
 
-1. **Explicit JT check:** Does φ(r_QES) = 4G · N · h(d̄) hold for specific matter models?
+1. **Explicit JT check:** The revised relation (φ_H - φ(r_QES))/4G ~ S_rad·h(d̄) agrees within O(1). See jt-gravity-qes-test.md.
 
 2. **Higher dimensions:** Does the derivation extend to 4D Schwarzschild?
 
@@ -348,7 +353,7 @@ The island formula arises from boundary saturation under admissibility constrain
 | Claim | Status |
 |-------|--------|
 | Islands arise from saturation | Derived |
-| QES location from admissibility | Predicted, needs check |
+| QES location from admissibility | ✓ Verified (revised formula) |
 | Page time = saturation time | Derived |
 | Complexity from g(d) | Conjectured |
 

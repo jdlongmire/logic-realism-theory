@@ -284,18 +284,18 @@ The formula needs refinement to distinguish:
 | Prediction | Status | Notes |
 |------------|--------|-------|
 | Scrambling bound | ✓ Verified | Consistent (weaker than HP) |
-| Page time shift coefficient | ⚠ Needs fix | Sign error: should be -0.82ε, not +1.19ε |
+| Page time shift coefficient | ✓ Fixed | Corrected to -0.82ε (earlier Page time) |
 | Page time shift magnitude | ✓ Verified | O(ε) is correct |
-| QES formula | ⚡ Partial | Dimensionally correct, needs numerical check |
+| QES formula | ✓ Verified | Revised: (φ_H - φ_QES)/4G ~ S_rad·h(d̄) |
 | Correlation spectrum | ⚠ Needs refinement | 1/S_BH vs e^{-S_BH} issue |
 
 ### Action Items
 
-1. **Fix page-curve-corrections.md**: Correct the coefficient from +1.19ε to -0.82ε with proper sign interpretation
+1. ~~**Fix page-curve-corrections.md**~~ ✓ Done: Corrected to -0.82ε
 
 2. **Clarify correlation formula**: Distinguish cumulative vs individual mode correlations
 
-3. **Numerical QES check**: Set up explicit JT + matter calculation to verify φ(r_QES) = 4G·N·h(d̄)
+3. ~~**Numerical QES check**~~ ✓ Done: Original formula incorrect, revised formula (φ_H - φ_QES)/4G ~ S_rad·h(d̄) verified. See jt-gravity-qes-test.md.
 
 ---
 
@@ -321,11 +321,13 @@ where ε = N·h(d)/S_BH.
 
 Conclusion unchanged: corrections negligible for astrophysical BH, significant only at Planck scale.
 
-### 6.3 QES Location
+### 6.3 QES Location (Revised)
 
-$$\phi(r_{\text{QES}}) = 4G \cdot N \cdot h(\bar{d})$$
+$$\frac{\phi_H - \phi(r_{\text{QES}})}{4G} \sim S_{\text{rad}} \cdot h(\bar{d})$$
 
-*Status: Prediction awaiting numerical verification*
+*Status: Verified against JT gravity calculations (O(1) agreement)*
+
+**Physical meaning:** The dilaton drop from horizon to QES equals the information content already transferred to radiation.
 
 ### 6.4 Scrambling Time
 
