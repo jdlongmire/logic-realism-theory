@@ -99,19 +99,9 @@ The programme derives quantum structure rather than postulating it:
 
 ---
 
-## Author
-
-**James (JD) Longmire**
-
-- ORCID: [0009-0009-1383-7698](https://orcid.org/0009-0009-1383-7698)
-- Email: jdlongmire@outlook.com
-- GitHub: [jdlongmire](https://github.com/jdlongmire)
-
-**AI Assistance Disclosure**: This work was developed with assistance from AI language models including Claude (Anthropic), ChatGPT (OpenAI), Gemini (Google), Grok (xAI), and Perplexity. All substantive claims, arguments, and errors remain the author's responsibility. **Human-Curated, AI-Enabled (HCAE)**.
-
----
-
 ## Information Circulation Hypothesis
+
+The **Information Circulation Hypothesis (ICH)** extends LRT to cosmology: black hole horizons serve as $L_3$-instantiation boundaries where information de-actualizes (returns to $I_\infty$) and re-actualizes (joins $A_\Omega$). The net circulation imbalance produces an effective cosmological constant without fine-tuning.
 
 <div class="paper-grid">
   <div class="paper-card">
@@ -144,6 +134,18 @@ The programme derives quantum structure rather than postulating it:
   <div class="meta">February 2026 | Computational Exploration</div>
   <a href="https://github.com/jdlongmire/logic-realism-theory/blob/main/simulations/ich_dark_energy.ipynb" class="card-link">View Notebook →</a>
 </div>
+
+---
+
+## Author
+
+**James (JD) Longmire**
+
+- ORCID: [0009-0009-1383-7698](https://orcid.org/0009-0009-1383-7698)
+- Email: jdlongmire@outlook.com
+- GitHub: [jdlongmire](https://github.com/jdlongmire)
+
+**AI Assistance Disclosure**: This work was developed with assistance from AI language models including Claude (Anthropic), ChatGPT (OpenAI), Gemini (Google), Grok (xAI), and Perplexity. All substantive claims, arguments, and errors remain the author's responsibility. **Human-Curated, AI-Enabled (HCAE)**.
 
 ---
 
