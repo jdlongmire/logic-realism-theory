@@ -84,6 +84,34 @@ Standard quantum mechanics enforces trace distance contraction under CPTP maps�
 
 **Admissibility vs. Global Unitarity:** This is *stronger* than unitarity + no-cloning. Global unitarity preserves distinguishability in the *total* system B ⊗ R but does not constrain subsystem distribution. Admissibility uniquely restricts *subsystem erasure*.
 
+### 2.2a Independence from Generic Quantum Mechanics
+
+The admissibility postulate forbids isometry classes that standard QM permits. This section makes the distinction explicit.
+
+**The Environment-Encoding Counterexample.** Standard QM allows the following isometry:
+
+$$V\lvert 0\rangle = \lvert b\rangle \otimes \lvert r_0\rangle, \quad V\lvert 1\rangle = \lvert b\rangle \otimes \lvert r_1\rangle$$
+
+where the boundary marginals are *identical* (ρ_B,0 = ρ_B,1 = |b⟩⟨b|) and all distinguishability resides in the environment R. Global unitarity is preserved: D(|r₀⟩, |r₁⟩) = 1. No quantum information principle forbids this.
+
+**Why Horizons Are Different.** For generic quantum channels, environment-only encoding is unproblematic—the environment is accessible. But for horizon crossings during the interval t ∈ [t_cross, t_emit]:
+
+1. **The interior is causally inaccessible.** After crossing, the infalling system enters a region from which no signal can reach the exterior until emission.
+2. **R is not yet the radiation.** During this interval, R represents interior degrees of freedom, not the radiation that will eventually carry information out.
+3. **B is the only mediator.** The boundary/stretched horizon is the *only* subsystem that can establish correlations with future radiation.
+
+**The Time-Indexed Constraint.** Admissibility therefore requires:
+
+> For t ∈ [t_cross, t_emit], distinguishability of input states must reside in the boundary-accessible algebra A_B(t). Records that exist only in the interior algebra A_int(t) do not satisfy the constraint.
+
+**What This Forbids.** The environment-only encoding V|0⟩ = |b⟩⊗|r₀⟩, V|1⟩ = |b⟩⊗|r₁⟩ is *inadmissible* for horizon channels because:
+- ρ_B,0 = ρ_B,1 means D(ρ_B,0, ρ_B,1) = 0
+- The distinguishability resides entirely in interior DOF
+- No boundary measurement can distinguish the inputs
+- Future radiation cannot inherit the distinction without boundary mediation
+
+**Summary:** Standard QM permits complete transfer of distinguishability to any environment. Admissibility forbids this for horizon channels during the pre-emission epoch because no exterior-accessible algebra contains the record. This is the specific new content beyond global unitarity.
+
 ### 2.3 Theorem: Packing Bound Forces Nonzero Floor
 
 We prove that finite boundary capacity forces g_min > 0 using a packing argument.
@@ -100,11 +128,28 @@ $$\frac{1}{2}\sum_k \lvert \text{Tr}[E_k \rho_{B,i}] - \text{Tr}[E_k \rho_{B,j}]
 
 where ρ_B,i = Tr_R[V ρ_i V†].
 
+**Operational Definition (Time-Indexed).** More precisely, a record of alternative i exists in subsystem X at time t iff:
+
+> There exists a POVM {E_k} on the algebra A_X(t) such that D(ρ_X,i, ρ_X,j) ≥ δ for all j ≠ i.
+
+For horizon channels:
+- **A_B(t):** The boundary/exterior-accessible algebra at time t. This includes stretched horizon DOF and any subsystem from which information can propagate to future radiation.
+- **A_int(t):** The interior algebra at time t. For t ∈ [t_cross, t_emit], this is causally disconnected from the exterior.
+
+**The Constraint:** Admissibility requires that for each distinguishable pair, a record exists in A_B(t) during the pre-emission epoch. Records in A_int(t) alone do not satisfy the constraint, because they cannot mediate correlations with radiation until emission occurs.
+
 ---
 
 **Theorem 2.1 (Packing Bound).** Let V: H_in → B ⊗ R satisfy the record-existence constraint at level δ > 0. Then:
 
 $$M \leq \frac{2 S_{BH}}{\delta^2}$$
+
+**Scope Clarification.** This bound applies to the *cumulative* distinguishable alternatives under a single horizon dynamics over time. For M = 2 in isolation, standard QM permits δ = 0 via environment-only encoding (see §2.2a). The constraint emerges from:
+1. **Finite capacity:** The boundary has dim(H_B) = exp(S_BH)
+2. **Cumulative bookkeeping:** Multiple distinguishable pairs must coexist in boundary records
+3. **Record-existence:** Each pair requires δ-separation in the boundary algebra
+
+For single-pair distinguishability, use the h(d)/S_BH ansatz (§2.5). The packing bound governs the *aggregate* constraint.
 
 **Proof.**
 
@@ -335,6 +380,8 @@ At **saturation**, the boundary cannot hold all required distinguishability.
 
 The island is the region whose distinguishability has overflowed to radiation. The QES marks the dividing line.
 
+**Direction of Implication.** The capacity-saturation condition *independently* predicts an extremization structure: when boundary capacity is exhausted, distinguishability must flow to radiation at a rate determined by entropy gradients. The agreement with the generalized entropy formula is a nontrivial alignment, not a definitional identity. We do not derive the island formula from admissibility; rather, we show that admissibility provides a physical mechanism that *reproduces* the island structure through a different route.
+
 ### 5.5 QES Location
 
 The QES appears where saturation occurs:
@@ -365,6 +412,16 @@ For k ~ O(1): admissibility bound is **weaker** than Hayden-Preskill. No overcon
 ### 6.2 Semiclassical Limit
 
 For S_BH >> 1: g_min → 0, ε → 0, corrections vanish. Semiclassical physics recovered.
+
+**Compatibility with "No Drama."** The equivalence principle requires that freely falling observers experience nothing unusual at the horizon. Admissibility is compatible with this because:
+
+1. **Microscopic retention:** The retained distinguishability g(d) ~ h(d)/S_BH is suppressed by the enormous boundary capacity. For solar-mass black holes, g ~ 10^{-77}.
+
+2. **No local drama:** This microscopic deviation is inaccessible to any local measurement by infalling observers. It contributes only to global correlations detectable from the exterior after emission.
+
+3. **Scaling ensures smoothness:** In the large-S_BH limit, the boundary records become arbitrarily dilute. The constraint is consistent with semiclassical smoothness because it operates at information-theoretic scales, not at scales detectable by local field operators.
+
+**In summary:** Admissibility modifies the global entanglement structure but does not produce firewall-type local singularities. Infalling observers cross the horizon without local drama; the constraint manifests only in asymptotic correlations.
 
 ### 6.3 Planck Regime
 
