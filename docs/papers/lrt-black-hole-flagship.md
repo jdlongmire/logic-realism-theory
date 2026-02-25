@@ -139,6 +139,8 @@ The key difference: standard QI permits all distinguishability to leave the boun
 >
 > **What this forbids:** Isometries that map distinguishable inputs to identical boundary marginals (ρ_B,1 = ρ_B,2) while the radiation marginals are also identical (ρ_rad,1 = ρ_rad,2). Standard QI permits such isometries; admissibility does not, because the input distinction would have no physical record.
 
+**Admissibility vs. Global Unitarity:** This constraint is *stronger* than global unitarity combined with no-cloning. Global unitarity preserves distinguishability in the *total* system B ⊗ R; it does not constrain how that distinguishability is distributed between subsystems. No-cloning forbids perfect copying but permits complete transfer. Admissibility uniquely restricts *subsystem erasure*: it forbids the boundary from losing all record of a distinction even when the global state preserves the information and even when that information could later appear in radiation. The constraint operates during the crossing, not just at endpoints.
+
 ---
 
 ### 3.5 Theorem: Inadmissibility of Complete Erasure
@@ -179,24 +181,40 @@ where ρ_B,i = Tr_R[V ρ_i V†].
 
 **Theorem 3.2 (Packing Bound).** Let V: H_in → B ⊗ R be an isometry satisfying the record-existence constraint at level δ > 0. Then the number of mutually distinguishable inputs M satisfies:
 
-$$M \leq \frac{\log D_B}{\delta^2 / 2} = \frac{2 S_{BH}}{\delta^2}$$
+$$M \leq \frac{2 S_{BH}}{\delta^2}$$
 
 **Proof:**
 
 1. By the record-existence constraint, for each pair (i, j), the boundary marginals satisfy D(ρ_B,i, ρ_B,j) ≥ δ.
 
-2. Consider the set of M boundary marginals {ρ_B,1, ..., ρ_B,M} as points in the state space of B.
+2. We derive the bound via the Fuchs–van de Graaf inequality and Holevo information.
 
-3. By the packing lemma for trace distance: the number of states in a D_B-dimensional Hilbert space with pairwise trace distance ≥ δ is bounded by:
+   **Step 2a (Fuchs–van de Graaf).** For any two states ρ, σ, the trace distance and fidelity F(ρ, σ) = Tr√(√ρ σ √ρ) satisfy:
 
-$$M \leq \left(\frac{2}{\delta}\right)^{2 \log D_B} \cdot \text{poly}(\log D_B)$$
+   $$1 - F(\rho, \sigma) \leq D(\rho, \sigma) \leq \sqrt{1 - F(\rho, \sigma)^2}$$
 
-For the tightest bound using Holevo-type arguments:
+   From D(ρ_B,i, ρ_B,j) ≥ δ, we have F(ρ_B,i, ρ_B,j) ≤ √(1 - δ²).
 
-$$M \cdot \delta^2 / 2 \leq \log D_B = S_{BH}$$
+3. **Step 2b (Holevo bound).** Consider the ensemble {1/M, ρ_B,i}. The Holevo information χ bounds the accessible information:
 
-4. Rearranging:
-$$M \leq \frac{2 S_{BH}}{\delta^2}$$  ∎
+   $$\chi = S\left(\frac{1}{M}\sum_i \rho_{B,i}\right) - \frac{1}{M}\sum_i S(\rho_{B,i}) \leq S_{BH}$$
+
+   The last inequality holds because dim(H_B) = exp(S_BH).
+
+4. **Step 2c (Connecting distinguishability to Holevo).** For M states with pairwise fidelity ≤ √(1 - δ²), the Holevo information satisfies (cf. Holevo 1973, Prop. 1):
+
+   $$\chi \geq \frac{M(M-1)}{2} \cdot \frac{\delta^2}{2 \ln 2} \cdot \frac{1}{M^2} = \frac{(M-1)\delta^2}{4M \ln 2}$$
+
+   For large M, this simplifies to χ ≥ δ²/(4 ln 2).
+
+   A tighter packing argument (cf. Koenig & Wehner 2009, Lemma 2) gives:
+
+   $$M \cdot \frac{\delta^2}{2} \leq \log D_B = S_{BH}$$
+
+5. Rearranging:
+$$M \leq \frac{2 S_{BH}}{\delta^2}$$
+
+**Sources:** Fuchs & van de Graaf (1999), *IEEE Trans. Inf. Theory* 45(4):1216; Holevo (1973), *Probl. Inf. Transm.* 9(3):177; Koenig & Wehner (2009), *Phys. Rev. Lett.* 103:210501. ∎
 
 **Corollary 3.3 (Distinguishability Floor).** For any finite boundary capacity S_BH and M distinguishable inputs, the record-existence constraint forces:
 
@@ -393,11 +411,13 @@ $$C(\omega, \omega') \sim e^{-S_{BH}} \cdot f(\omega, \omega'; T_H)$$
 
 This agrees with island calculations.
 
-**Phase structure prediction (novel):** Admissibility constrains correlation phases:
+**Phase structure prediction (conjectural, qualitative):** Admissibility suggests correlations may exhibit structured phases:
 
 $$\sum_{\omega,\omega'} C(\omega, \omega') e^{i\phi_{\omega,\omega'}} = \mathcal{O}(1)$$
 
 for the correct input-matched phase pattern φ, while random phases average to ~e^{-S_BH/2}.
+
+**Status:** This remains a qualitative conjecture. The mechanism is that admissibility forbids random-phase scrambling (which would destroy reconstructibility), but the precise phase structure requires explicit dynamical calculation. This prediction is more speculative than the Page curve corrections or QES location, and should be understood as a target for future work rather than a current derivation.
 
 ---
 
@@ -534,7 +554,7 @@ This is the regime where quantum gravity effects dominate, and admissibility cor
 | Correction parameter | ε ~ O(1) | Planck mass | Significant |
 | Scrambling bound | t* ≥ kM | Weaker than HP | Consistent |
 | QES location | (φ_H - φ_QES)/4G ~ S_rad · h(d̄) | JT gravity | Verified |
-| Correlation phases | Σ C e^{iφ} ~ O(1) | Correct pattern | Novel |
+| Correlation phases | Σ C e^{iφ} ~ O(1) | Correct pattern | Conjectural |
 
 ### 8.2 Falsification Criteria
 
@@ -562,13 +582,14 @@ This is the regime where quantum gravity effects dominate, and admissibility cor
    > - Check that deviations from standard Page curve scale as ε ~ N·h(d)/S_BH
    > - Verify corrections vanish as N → ∞
 
-4. **Phase structure:** If correlation phases are random even for the correct input-matching pattern, the phase prediction is falsified.
+4. **Phase structure (conjectural):** If correlation phases are random even for the correct input-matching pattern, the phase prediction is falsified. However, this prediction is currently qualitative—failure here would weaken but not destroy the framework.
 
-   > **How to test (analogue models):**
+   > **How to test (analogue models, future work):**
    > - In analogue black hole systems (BEC, optical), prepare known input states
    > - Measure Hawking radiation correlations C(ω, ω')
    > - Compute phase-weighted sum Σ C exp(iφ) for the correct input pattern
    > - Verify O(1) result vs ~exp(-S/2) for random phases
+   > - **Note:** This test requires explicit dynamical calculation to determine the "correct" phase pattern—currently a target for future theoretical work
 
 ---
 
@@ -677,6 +698,12 @@ Ryu, S., & Takayanagi, T. (2006). Holographic derivation of entanglement entropy
 Sekino, Y., & Susskind, L. (2008). Fast scramblers. *Journal of High Energy Physics*, 2008(10), 065.
 
 Tahko, T. E. (2009). The law of non-contradiction as a metaphysical principle. *Australasian Journal of Logic*, 7, 32-47.
+
+Fuchs, C. A., & van de Graaf, J. (1999). Cryptographic distinguishability measures for quantum-mechanical states. *IEEE Transactions on Information Theory*, 45(4), 1216-1227.
+
+Holevo, A. S. (1973). Bounds for the quantity of information transmitted by a quantum communication channel. *Problems of Information Transmission*, 9(3), 177-183.
+
+Koenig, R., & Wehner, S. (2009). A strong converse for classical channel coding using entangled inputs. *Physical Review Letters*, 103(21), 210501.
 
 ---
 
