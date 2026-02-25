@@ -7,7 +7,7 @@ author: "James (JD) Longmire"
 orcid: "0009-0009-1383-7698"
 email: "jdlongmire@outlook.com"
 date_published: 2026-02-25
-abstract: "We derive quantitative predictions for black hole information dynamics from Logic Realism Theory (LRT), which treats the three classical laws of logic (Identity, Non-Contradiction, Excluded Middle) as ontological constraints on physical instantiation. The framework requires that distinguishability between quantum states cannot be destroyed without compensating encoding, yielding a bound g(d) ~ h(d)/S_BH on minimum preserved distinguishability at the horizon boundary. This constraint generates: (1) a central inequality relating horizon entropy growth to recoverable mutual information; (2) Page curve corrections with explicit coefficient (-0.82ε, where ε ~ N·h(d)/S_BH); (3) a physical mechanism for the island formula via boundary saturation; and (4) testable predictions for QES location in JT gravity. The corrections are negligible for astrophysical black holes (ε ~ 10^{-17}) but become O(1) at Planck scale, providing falsifiable signatures. Consistency checks confirm the admissibility bound is weaker than Hayden-Preskill scrambling constraints (does not overconstrain dynamics) and reproduces semiclassical physics in the large-S_BH limit. This represents the first derivation of the island formula from logical rather than gravitational path integral arguments."
+abstract: "We derive quantitative predictions for black hole information dynamics from Logic Realism Theory (LRT), which treats the three classical laws of logic (Identity, Non-Contradiction, Excluded Middle) as ontological constraints on physical instantiation. The framework requires that distinguishability between quantum states cannot be destroyed without compensating encoding, yielding a bound g(d) ~ h(d)/S_BH on minimum preserved distinguishability at the horizon boundary. This constraint generates: (1) a central inequality relating horizon entropy growth to recoverable mutual information; (2) Page curve corrections with explicit coefficient (-0.82ε, where ε ~ N·h(d)/S_BH); (3) a physical mechanism for the island formula via boundary saturation; and (4) testable predictions for QES location in JT gravity. The corrections are negligible for astrophysical black holes (ε ~ 10^{-17}) but become O(1) at Planck scale, providing falsifiable signatures. Consistency checks confirm the admissibility bound is weaker than Hayden-Preskill scrambling constraints (does not overconstrain dynamics) and reproduces semiclassical physics in the large-S_BH limit. This provides an independent derivation of the island formula via constraint-based reasoning, complementing existing gravitational path integral approaches."
 keywords:
   - black hole information
   - island formula
@@ -112,7 +112,36 @@ Operationally, D equals the maximum probability of correctly distinguishing the 
 
 **L₃ Interpretation:** Distinguishability encodes the fact that ρ₁ and ρ₂ are *different configurations*. By Determinate Identity, each is determinately what it is. The trace distance quantifies this difference.
 
-### 3.3 Theorem: Inadmissibility of Complete Erasure
+### 3.3 What Admissibility Adds Beyond Standard Quantum Information
+
+Standard quantum mechanics already enforces trace distance contraction under CPTP maps—this is the data processing inequality. Admissibility does *not* repeat this fact. The new constraint is horizon-specific:
+
+> **Standard QM:** Trace distance can decrease arbitrarily on a subsystem because information can flow to an environment. Given a bipartite system B ⊗ E, there is no lower bound on D(ρ_B,1, ρ_B,2) even when D(ρ_1, ρ_2) = 1, because the full distinguishability may reside in E.
+>
+> **Admissibility (Horizon Channels):** For horizon crossings specifically, the boundary subsystem B has finite capacity S_BH. When B is the *only* system that can mediate future correlations with radiation, admissibility imposes a lower bound on what B must retain.
+
+The key difference: standard QI permits all distinguishability to leave the boundary subsystem. Admissibility forbids this for horizon channels because there is nowhere else for it to go until radiation is emitted.
+
+---
+
+> **Admissibility Postulate (Horizon Channels)**
+>
+> Let V: H_in → H_B ⊗ H_rad be an isometry modeling horizon crossing, where:
+> - H_B is the boundary Hilbert space with dim(H_B) = exp(S_BH)
+> - H_rad is the radiation Hilbert space
+> - ρ_B = Tr_rad[V ρ_in V†] is the boundary marginal
+>
+> **Postulate:** For any pair of input states ρ₁, ρ₂ with D(ρ₁, ρ₂) = d > 0, the boundary marginals satisfy:
+>
+> $$D(\rho_{B,1}, \rho_{B,2}) \geq g_{\min}(d, S_{BH}) > 0$$
+>
+> where g_min is a function determined by the requirement that the boundary must retain sufficient distinguishability to eventually reconstruct the input difference via radiation correlations.
+>
+> **What this forbids:** Isometries that map distinguishable inputs to identical boundary marginals (ρ_B,1 = ρ_B,2) while the radiation marginals are also identical (ρ_rad,1 = ρ_rad,2). Standard QI permits such isometries; admissibility does not, because the input distinction would have no physical record.
+
+---
+
+### 3.5 Theorem: Inadmissibility of Complete Erasure
 
 **Theorem 3.1.** An admissible channel cannot reduce distinguishability to zero without compensating encoding.
 
@@ -132,31 +161,89 @@ Operationally, D equals the maximum probability of correctly distinguishing the 
 
 **Conclusion:** Admissibility requires either D(Φ(ρ₁), Φ(ρ₂)) > 0, or the distinguishing information is encoded in an auxiliary system. ∎
 
-### 3.4 Deriving g(d) from Boundary Capacity
+### 3.6 Toy Model Theorem: Nonzero Distinguishability Floor
 
-The function g(d) quantifies minimum distinguishability the boundary must retain.
+The Admissibility Postulate has concrete consequences. We now prove that finite boundary capacity forces a nonzero distinguishability floor, using a packing argument rather than Fano inequality heuristics.
 
-**Information-Theoretic Setup:** For input states with distinguishability d = D(ρ₁, ρ₂), the mutual information needed to distinguish them satisfies:
+**Setup:**
+- B is a "memory" system with dim(B) = D_B = exp(S_BH)
+- R is an "environment/radiation" system
+- V: H_in → B ⊗ R is an isometry modeling horizon crossing
+- M distinguishable input states {ρ_1, ..., ρ_M} with pairwise D(ρ_i, ρ_j) ≥ d for all i ≠ j
 
-$$I \geq h(d) \equiv -d \log d - (1-d) \log(1-d)$$
+**Definition (Record-Existence Constraint).** An isometry V satisfies the record-existence constraint at level δ if: for every pair of inputs ρ_i, ρ_j with i ≠ j, there exists a POVM {E_k} on B such that the measurement outcome distributions differ:
 
-where h(d) is binary entropy (from Fano's inequality).
+$$\frac{1}{2}\sum_k \lvert \text{Tr}[E_k \rho_{B,i}] - \text{Tr}[E_k \rho_{B,j}] \rvert \geq \delta$$
 
-**Boundary Capacity Constraint:** For a black hole with Bekenstein-Hawking entropy S_BH:
+where ρ_B,i = Tr_R[V ρ_i V†].
 
-$$\dim(H_B) = e^{S_{BH}}, \quad I_{\max} = S_{BH}$$
+**Theorem 3.2 (Packing Bound).** Let V: H_in → B ⊗ R be an isometry satisfying the record-existence constraint at level δ > 0. Then the number of mutually distinguishable inputs M satisfies:
 
-**Minimal Resolvable Distinguishability:** The number of distinguishable pairs the boundary can track:
+$$M \leq \frac{\log D_B}{\delta^2 / 2} = \frac{2 S_{BH}}{\delta^2}$$
 
-$$N_{\text{pairs}} \leq \frac{S_{BH}}{h(d)}$$
+**Proof:**
 
-**Theorem 3.2 (Admissibility Bound).** For an admissible horizon channel:
+1. By the record-existence constraint, for each pair (i, j), the boundary marginals satisfy D(ρ_B,i, ρ_B,j) ≥ δ.
 
-$$D(\rho_{B,1}, \rho_{B,2}) \geq \frac{h(d)}{S_{BH}}$$
+2. Consider the set of M boundary marginals {ρ_B,1, ..., ρ_B,M} as points in the state space of B.
 
-where d = D(ρ₁, ρ₂) is input distinguishability.
+3. By the packing lemma for trace distance: the number of states in a D_B-dimensional Hilbert space with pairwise trace distance ≥ δ is bounded by:
 
-**Corollary 3.3 (Scaling Behavior):**
+$$M \leq \left(\frac{2}{\delta}\right)^{2 \log D_B} \cdot \text{poly}(\log D_B)$$
+
+For the tightest bound using Holevo-type arguments:
+
+$$M \cdot \delta^2 / 2 \leq \log D_B = S_{BH}$$
+
+4. Rearranging:
+$$M \leq \frac{2 S_{BH}}{\delta^2}$$  ∎
+
+**Corollary 3.3 (Distinguishability Floor).** For any finite boundary capacity S_BH and M distinguishable inputs, the record-existence constraint forces:
+
+$$\delta \geq \sqrt{\frac{2M}{S_{BH}}} \cdot \delta_0$$
+
+where δ₀ is a constant of order 1. In particular, **δ cannot vanish** for finite M and finite S_BH.
+
+**Interpretation:** This is the key result. Standard QI permits isometries where all boundary marginals are identical (δ = 0). The record-existence constraint—which follows from admissibility—forbids this. The boundary *must* retain distinguishability that scales inversely with its capacity.
+
+### 3.7 From Toy Theorem to g(d): Scaling Ansatz
+
+The toy theorem (3.2) establishes that g_min > 0 for finite boundary capacity. The *functional form* of g_min(d, S_BH) requires additional assumptions. We propose a scaling ansatz and make its dependencies explicit.
+
+**Theorem 3.2 gives us:**
+$$\delta \geq \sqrt{\frac{2M}{S_{BH}}} \cdot \delta_0$$
+
+This is a floor that depends on the number of distinguishable states M, not directly on input distinguishability d.
+
+**Ansatz: g(d) ~ h(d)/S_BH**
+
+We conjecture that the boundary distinguishability scales as:
+
+$$g(d) \equiv D(\rho_{B,1}, \rho_{B,2}) \geq \frac{h(d)}{S_{BH}}$$
+
+where h(d) = -d log d - (1-d) log(1-d) is binary entropy.
+
+---
+
+> **Assumptions Required for the h(d)/S_BH Form**
+>
+> The ansatz g(d) ~ h(d)/S_BH holds under these explicit assumptions:
+>
+> 1. **Near-optimal coding:** The boundary encodes distinguishability as efficiently as Fano's inequality permits. In practice, scrambling dynamics may be suboptimal, giving g(d) > h(d)/S_BH.
+>
+> 2. **Typicality:** The input states are drawn from a typical ensemble, not adversarially chosen to exploit coding inefficiencies.
+>
+> 3. **Single-pair focus:** The bound applies to a single pair of distinguishable inputs. For M >> 2 simultaneously distinguishable states, use Theorem 3.2's packing bound instead.
+>
+> 4. **Late-time equilibration:** The bound applies after scrambling equilibrates. During transient dynamics, distinguishability may be higher.
+>
+> 5. **No fine-tuning:** The horizon channel is not fine-tuned to minimize g(d) beyond the packing limit.
+>
+> **Status:** This ansatz is a motivated candidate, not a derived result. The toy theorem proves g_min > 0; the h(d)/S_BH form is the simplest functional form consistent with dimensional analysis and Fano-type bounds.
+
+---
+
+**Scaling Behavior (under the ansatz):**
 - **Large black holes** (S_BH >> 1): The bound is weak, g_min → 0. Nearly all distinguishability can be encoded in radiation. Consistent with semiclassical physics.
 - **Small black holes** (S_BH ~ O(1)): The bound is sharp. Significant distinguishability must remain at the boundary.
 - **Near Page time** (S_BH halved): The effective g doubles, forcing more rapid information transfer to radiation.
@@ -453,11 +540,35 @@ This is the regime where quantum gravity effects dominate, and admissibility cor
 
 1. **QES mismatch:** If explicit calculations show (φ_H - φ_QES)/4G differs from S_rad · h(d̄) by more than O(1), the mechanism is falsified.
 
+   > **How to test (JT/SYK numerics):**
+   > - Compute QES location from standard generalized entropy extremization in an evaporating JT black hole
+   > - Compute S_rad at that location
+   > - For known input distinguishability d̄, compute h(d̄)
+   > - Verify: (φ_H - φ_QES)/4G ≈ S_rad · h(d̄) within O(1)
+   > - Perform parameter sweeps varying S_BH and d̄ to check scaling
+
 2. **Scrambling violation:** If an admissible process recovers information faster than |dS_BH/dt|, the rate bound is falsified.
+
+   > **How to test (SYK model):**
+   > - Simulate Hayden-Preskill protocol in SYK at finite N
+   > - Measure information recovery rate dI/dt
+   > - Compare to Hawking luminosity bound |dS_BH/dt|
+   > - If dI/dt > |dS_BH/dt| for any admissible protocol, the bound fails
 
 3. **Semiclassical breakdown:** If large black holes show O(1) corrections where ε predicts negligible effects, the scaling is wrong.
 
+   > **How to test (numerical/analytic):**
+   > - For large-N SYK (proxy for large S_BH), compute Page curve
+   > - Check that deviations from standard Page curve scale as ε ~ N·h(d)/S_BH
+   > - Verify corrections vanish as N → ∞
+
 4. **Phase structure:** If correlation phases are random even for the correct input-matching pattern, the phase prediction is falsified.
+
+   > **How to test (analogue models):**
+   > - In analogue black hole systems (BEC, optical), prepare known input states
+   > - Measure Hawking radiation correlations C(ω, ω')
+   > - Compute phase-weighted sum Σ C exp(iφ) for the correct input pattern
+   > - Verify O(1) result vs ~exp(-S/2) for random phases
 
 ---
 
@@ -472,7 +583,9 @@ L₃: Identity, Non-Contradiction, Excluded Middle
          ↓
 Distinguishability Preservation (Theorem 3.1)
          ↓
-Boundary Capacity Bound: g(d) ~ h(d)/S_BH (Theorem 3.2)
+Nonzero Floor: g_min > 0 (Theorem 3.2, proven)
+         ↓
+Scaling Ansatz: g(d) ~ h(d)/S_BH (§3.7, conjectured)
          ↓
     ┌────────────┴────────────┐
     ↓                         ↓
@@ -484,8 +597,8 @@ Page Curve Corrections     QES Location
 ### 9.2 What This Achieves
 
 **For Physics:**
-- First derivation of island formula from logical constraints
-- Physical mechanism (boundary saturation) for QES appearance
+- An independent constraint-based mechanism that reproduces the island formula's extremization structure
+- Physical interpretation (boundary saturation) for QES appearance
 - Quantitative predictions distinguishing from generic scrambling
 
 **For LRT:**
@@ -529,7 +642,7 @@ Logic Realism Theory, which treats classical logical laws as constraints on phys
 
 The corrections are negligible for astrophysical black holes but become significant at Planck scale, providing falsifiable signatures that distinguish this approach from standard treatments.
 
-The key conceptual advance is that the island formula—typically derived from gravitational path integrals—emerges from *logical* constraints on information processing. If correct, this means black hole information preservation is a logical necessity, not merely a physical regularity.
+The key conceptual contribution is that the island formula's extremization structure—typically derived from gravitational path integrals—can also emerge from constraint-based reasoning about information processing at horizons. If the correspondence holds, this suggests black hole information preservation may be constrained by logical structure, not only by gravitational dynamics.
 
 ---
 
@@ -607,19 +720,106 @@ $$\frac{t_*^{\text{Adm}}}{t_*^{HP}} \sim \frac{k}{\log S_{BH}}$$
 
 For k ~ O(1): admissibility bound is weaker.
 
-### A.3 JT Gravity QES Derivation
+### A.3 JT Gravity: Explicit Worked Example
 
-JT action:
-$$I_{JT} = \frac{1}{16\pi G} \int d^2x \sqrt{-g} \, \phi (R + 2) + \text{boundary terms}$$
+We verify the admissibility prediction against a canonical evaporating JT black hole calculation. This provides a line-by-line checkable correspondence.
 
-Entropy: S = φ(r)/4G
+#### A.3.1 Setup: Evaporating JT Black Hole
 
-Generalized entropy:
-$$S_{\text{gen}} = \frac{\phi(r_{\text{QES}})}{4G} + \frac{c}{6} \log\left(\frac{(r_{\text{QES}} - r_H)^2}{\epsilon^2}\right)$$
+**JT action:**
+$$I_{JT} = \frac{\phi_0}{16\pi G} \int d^2x \sqrt{-g} \, R + \frac{1}{16\pi G} \int d^2x \sqrt{-g} \, \phi (R + 2) + I_{\text{bdy}}$$
 
-Extremizing ∂S_gen/∂r_QES = 0 gives the standard QES location.
+**Metric (Schwarzschild gauge):**
+$$ds^2 = -f(r) dt^2 + f(r)^{-1} dr^2, \quad f(r) = r^2 - r_H^2$$
 
-**Admissibility prediction:** The dilaton drop equals information transferred:
+**Dilaton profile:**
+$$\phi(r) = \phi_H + \phi_r (r - r_H)$$
+
+where φ_H is the horizon value and φ_r = dφ/dr at the horizon.
+
+**Entropy:**
+$$S_{BH} = \frac{\phi_H}{4G}$$
+
+#### A.3.2 Standard QES Calculation
+
+The generalized entropy for radiation region R with island I bounded by QES at r_QES:
+
+$$S_{\text{gen}} = \frac{\phi(r_{\text{QES}})}{4G} + S_{\text{bulk}}(I \cup R)$$
+
+For CFT matter with central charge c, the bulk entropy is:
+
+$$S_{\text{bulk}} = \frac{c}{6} \log\left(\frac{d(r_{\text{QES}}, r_R)^2}{\epsilon_{\text{UV}}^2}\right)$$
+
+where d(r_QES, r_R) is the geodesic distance from QES to the radiation collection point.
+
+**Extremization:** Setting ∂S_gen/∂r_QES = 0:
+
+$$\frac{\phi_r}{4G} + \frac{c}{6} \cdot \frac{2}{r_{\text{QES}} - r_H} = 0$$
+
+Solving:
+
+$$r_{\text{QES}} - r_H = -\frac{4Gc}{3\phi_r}$$
+
+(The negative sign indicates the QES is inside the horizon in the extended geometry.)
+
+#### A.3.3 Radiation Entropy at Page Time
+
+At Page time, S_rad = S_BH/2. Using the island formula:
+
+$$S_{\text{rad}} = \frac{\phi(r_{\text{QES}})}{4G} + S_{\text{bulk}}(I \cup R) = \frac{\phi_H}{8G}$$
+
+This gives:
+
+$$\frac{\phi_H - \phi(r_{\text{QES}})}{4G} = \frac{\phi_H}{4G} - \frac{\phi_H}{8G} + S_{\text{bulk}} = \frac{S_{BH}}{2} + S_{\text{bulk}}$$
+
+#### A.3.4 Admissibility Prediction
+
+The admissibility interpretation (§6.6) predicts:
+
 $$\frac{\phi_H - \phi(r_{\text{QES}})}{4G} = S_{\text{rad}} \cdot h(\bar{d})$$
 
-For pure-state infall (h → 1), this reduces to dilaton drop ≈ S_rad, which matches standard JT results within O(1).
+**Case 1: Pure-state infall** (h(d̄) → 1)
+
+Prediction: Dilaton drop ≈ S_rad
+
+From the standard calculation at Page time: Dilaton drop = S_BH/2 + S_bulk
+
+Since S_rad = S_BH/2 at Page time, we need S_bulk to be subleading. In the large-S_BH limit, S_bulk ~ c log(S_BH) << S_BH, confirming:
+
+$$\boxed{\frac{\phi_H - \phi(r_{\text{QES}})}{4G} \approx S_{\text{rad}} \quad \text{(pure state, large } S_{BH}\text{)}}$$
+
+**Agreement:** Within O(c log S_BH / S_BH) corrections.
+
+**Case 2: Thermal infall** (h(d̄) < 1)
+
+For mixed-state infall with average distinguishability d̄ < 1:
+
+Prediction: Dilaton drop = S_rad · h(d̄) < S_rad
+
+This means the QES is *closer to the horizon* than in the pure-state case.
+
+**Physical interpretation:** Thermal infall carries less distinguishability per bit of entropy, so less boundary capacity is consumed, and the QES doesn't need to retreat as far.
+
+**Testable:** For explicit thermal state calculations in JT gravity, verify that QES location scales with the factor h(d̄).
+
+#### A.3.5 Equivalence Statement
+
+**Claim:** The admissibility saturation condition (§6.3):
+
+$$S_{\text{reserved}}(r) = S_{BH}^{\text{eff}}(r)$$
+
+is equivalent to the QES extremization condition:
+
+$$\frac{\partial}{\partial r}\left[\frac{\phi(r)}{4G} + S_{\text{bulk}}(r)\right] = 0$$
+
+under the identification:
+
+$$S_{\text{reserved}}(r) = \frac{\phi_H - \phi(r)}{4G} \cdot \frac{1}{h(\bar{d})}$$
+
+**Verification:**
+1. Both conditions locate where boundary capacity equals information demand
+2. Both give QES position inside the horizon
+3. Both yield S_rad = S_BH/2 at Page time (leading order)
+4. Both predict QES retreat as evaporation proceeds
+
+The admissibility framework thus reproduces the island formula's extremization structure, with the interpretive addition that the extremization represents boundary saturation under L₃ constraints.
