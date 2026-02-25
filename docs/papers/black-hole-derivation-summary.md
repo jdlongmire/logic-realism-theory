@@ -62,7 +62,7 @@ The island formula arises from boundary saturation under admissibility constrain
 
 | Prediction | Formula | Regime |
 |------------|---------|--------|
-| Page time shift | Δt/t ~ 1.19 ε | ε = N·h(d)/S_BH |
+| Page time shift | Δt/t ~ -0.82 ε (earlier) | ε = N·h(d)/S_BH |
 | Correction parameter | ε ~ 10^{-17} | Solar mass |
 | Correction parameter | ε ~ O(1) | Planck mass |
 | Scrambling bound | t* ≥ kM | Weaker than HP |
@@ -88,7 +88,7 @@ The island formula arises from boundary saturation under admissibility constrain
 
 ### Novel Predictions
 
-1. **Page time shift** at Planck scale: Δt ~ t_Page when S_BH ~ 1
+1. **Page time shift** at Planck scale: |Δt| ~ t_Page when S_BH ~ 1 (occurs earlier)
 2. **QES location** tied to matter content: φ = 4G·N·h(d̄)
 3. **Correlation spectrum** with phase structure from g(d)
 4. **Complexity bound** ~ 1/g(d) ~ S_BH

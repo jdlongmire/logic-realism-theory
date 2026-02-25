@@ -109,23 +109,40 @@ $$S_{\text{rad}} = S_{BH} - S_{B,\text{reserved}}$$
 
 ### 3.2 Page Time Shift
 
-Let τ = t/t_evap. Standard Page time: τ_Page = 1/2.
+Let τ = t/t_evap.
+
+**Corrected calculation:**
+
+For a pure-state black hole, the radiation entropy follows:
+$$S_{\text{rad}}(τ) = S_0\left[1 - (1-τ)^{2/3}\right]$$
+
+The standard Page time satisfies S_rad = S_BH:
+$$1 - (1-τ)^{2/3} = (1-τ)^{2/3}$$
+
+Solving: $(1-τ)^{2/3} = 1/2$, so $τ_{\text{Page}}^{(0)} = 1 - 2^{-3/2} \approx 0.646$.
 
 Define the correction parameter:
 
 $$\epsilon = \frac{S_{B,\text{reserved}}(t_{\text{Page}})}{S_0}$$
 
-The modified Page time satisfies:
+The modified Page time satisfies $S_{\text{rad}} = S_{BH}^{\text{eff}} = S_{BH} - \epsilon S_0$:
 
-$$S_0 \left(1 - \tau_{\text{Page}}^{\text{Adm}}\right)^{2/3} - \epsilon S_0 = S_0 \cdot \tau_{\text{Page}}^{\text{Adm}} \cdot \frac{2}{3}$$
+$$S_0\left[1 - (1-τ)^{2/3}\right] = S_0(1-τ)^{2/3} - \epsilon S_0$$
 
-Linearizing around τ = 1/2:
+$$1 + \epsilon = 2(1-τ)^{2/3}$$
 
-$$\tau_{\text{Page}}^{\text{Adm}} \approx \frac{1}{2} + \frac{3\epsilon}{4 \cdot 2^{1/3}}$$
+$$(1-τ)^{2/3} = \frac{1+\epsilon}{2}$$
+
+Expanding for small ε:
+$$1-τ = 2^{-3/2}(1+\epsilon)^{3/2} \approx 2^{-3/2}\left(1 + \frac{3\epsilon}{2}\right)$$
+
+$$τ = 1 - 2^{-3/2} - \frac{3\epsilon}{2^{5/2}} = τ_{\text{Page}}^{(0)} - \frac{3\epsilon}{2^{5/2}}$$
 
 **Result:**
 
-$$\boxed{\frac{\Delta t_{\text{Page}}}{t_{\text{Page}}} = \frac{3\epsilon}{2 \cdot 2^{1/3}} \approx 1.19 \epsilon}$$
+$$\boxed{\frac{\Delta t_{\text{Page}}}{t_{\text{Page}}} = -\frac{3\epsilon}{2^{5/2} \cdot τ_{\text{Page}}^{(0)}} \approx -0.82\epsilon}$$
+
+**Interpretation:** Page time is **earlier** with admissibility. The boundary capacity is reduced by S_reserved, so the radiation entropy catches up to the smaller target sooner.
 
 ### 3.3 Estimating ε
 
@@ -251,7 +268,7 @@ Island formula predicts the same Page curve shape. The admissibility model predi
 
 | Quantity | Formula | Regime |
 |----------|---------|--------|
-| Page time shift | Δt/t ~ 1.19 ε | ε << 1 |
+| Page time shift | Δt/t ~ -0.82 ε (earlier) | ε << 1 |
 | Correction parameter | ε ~ N·h(d)/S_BH | All |
 | Correlation correction | δC ~ 1/S_BH | Late time |
 
