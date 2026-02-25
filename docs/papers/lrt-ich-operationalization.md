@@ -45,7 +45,49 @@ The companion "Admissibility Dynamics" paper [3] formalized the physics but iden
 
 That paper operates *downstream* of this step, showing how physics would behave *if* such a filter exists. The present paper closes the gap by showing that **horizon physics provides the concrete instantiation of L₃ → Adm**.
 
-### 1.2 The Key Move: Horizons as L₃ Instantiation Sites
+### 1.4 Scope of L₃ Constraints
+
+A potential confusion must be addressed at the outset: L₃ does not govern $I_\infty$ itself.
+
+**What L₃ constrains:** The *instantiation* of configurations from $I_\infty$ into $A_\Omega$. L₃ acts as a filter at the boundary between abstract possibility and physical actuality.
+
+**What L₃ does not constrain:** The internal structure of $I_\infty$. The space of logical possibilities contains all coherent configurations, including many that can never instantiate physically. $I_\infty$ is not "made of" L₃-compliant things—it contains the full logical space, and L₃ filters what can cross into physical instantiation.
+
+**Analogy:** A mesh filter doesn't determine what exists upstream—it determines what can pass through. L₃ is the mesh between $I_\infty$ and $A_\Omega$.
+
+This clarification matters because de-actualization (return to $I_\infty$) does not mean information becomes "logically incoherent." It means information loses its physical address while remaining in the space of logical possibilities. L₃ constraints cease to *apply* (because there is no instantiation to constrain), not that they are *violated*.
+
+### 1.5 Framework Assumptions
+
+The derivation proceeds from five core assumptions, stated explicitly:
+
+**A1. Ontological L₃:** The three laws of classical logic (Identity, Non-Contradiction, Excluded Middle) are constraints on physical instantiation, not merely rules of inference.
+
+**A2. Distinguishability Requirement:** For any configuration $x$ to be physically instantiated, it must be distinguishable from all alternative configurations in some accessible algebra.
+
+**A3. Causal Localization:** During causal disconnection, "accessible algebra" means the exterior/boundary algebra—records in causally inaccessible regions do not satisfy the distinguishability requirement.
+
+**A4. Finite Capacity:** Physical systems have finite information capacity bounded by entropy (Bekenstein bound for horizons).
+
+**A5. Circulation Closure:** Information that exits $A_\Omega$ via de-actualization returns to $I_\infty$, maintaining conservation across both domains.
+
+A1 is the core LRT postulate. A2-A4 are physical postulates motivated by L₃ but not derivable from pure logic. A5 is the ICH extension that connects horizon physics to cosmology.
+
+### 1.6 LRT as QFT/GR Bridge
+
+A referee might ask: why should L₃ constraints—operating at the logical level—have anything to say about the GR/QFT interface?
+
+The answer lies in LRT's structural position:
+
+**LRT provides a common substrate.** Both QFT and GR presuppose distinguishability of states. QFT requires orthogonal states for measurement; GR requires distinguishable spacetime points for metric structure. L₃ provides the logical foundation for this shared presupposition.
+
+**Horizons are where the substrate shows.** In ordinary physics, distinguishability is automatic—we don't think about L₃ because it's always satisfied. At horizons, finite capacity and causal structure make the constraint *operative*. The boundary must maintain distinguishability with limited resources under causal constraints.
+
+**LRT doesn't bridge QFT to GR.** Rather, it identifies the logical preconditions both theories assume. When those preconditions become constraining (at horizons, at singularities), L₃ determines what can physically occur.
+
+This is why the L₃ → Adm derivation is possible: horizons are exactly where the logical substrate becomes physically relevant.
+
+### 1.7 The Key Move: Horizons as L₃ Instantiation Sites
 
 The horizon channel constraint paper [4] establishes:
 
@@ -150,7 +192,25 @@ At horizons, these translate to:
 
 **Excluded Middle at horizons:** For each distinguishable pair, the record must be *somewhere accessible*. Not "perhaps in the interior, perhaps in the boundary, perhaps nowhere"—somewhere definite in the accessible algebra.
 
-### 3.2 Deriving the Admissibility Predicate
+### 3.2 Admissibility Localization
+
+Before deriving the admissibility predicate, we must state explicitly a physical postulate that connects logical necessity ("record must exist *somewhere*") to causal constraint ("record must exist in the *accessible* algebra").
+
+**Lemma 3.0 (Admissibility Localization).** Let $x$ be a physically instantiated configuration during interval $t \in [t_{\text{cross}}, t_{\text{emit}}]$. If:
+1. L₃ requires that distinctions between $x$ and alternatives be registered in some definite location, and
+2. The interior algebra $A_{\text{int}}(t)$ is causally disconnected from the exterior during this interval,
+
+then the required record must reside in the accessible algebra $A_B(t)$.
+
+**Justification.** This lemma makes explicit what might appear as a gap: the move from "somewhere" to "somewhere accessible." The justification is not pure logic but the **Causal Localization postulate (A3)**: records in causally inaccessible regions do not satisfy the distinguishability requirement for physical instantiation *within* the accessible domain.
+
+Here is the key physical content: L₃ demands that $x$ be distinguished from alternatives *for any observer who can interact with $x$*. During $[t_{\text{cross}}, t_{\text{emit}}]$, the only observers who can interact with boundary information are exterior observers. If the distinction record exists only in the interior, exterior observers cannot—even in principle—distinguish $x$ from alternatives.
+
+This is not a logical necessity but a physical postulate about how L₃ applies to causally structured spacetimes. The postulate is falsifiable: if some mechanism allowed interior records to satisfy L₃ constraints for exterior observers, Lemma 3.0 would fail.
+
+**Relation to Assumption A3.** Lemma 3.0 is an instance of assumption A3 (Causal Localization) applied to horizon geometry. A3 is a physical postulate, not a logical derivation—we state this explicitly to avoid the appearance of deriving physics from pure logic.
+
+### 3.3 Deriving the Admissibility Predicate
 
 Define the admissibility predicate:
 
@@ -159,7 +219,7 @@ $$\mathsf{Adm}(x, t) = \begin{cases}
 0 & \text{otherwise}
 \end{cases}$$
 
-**Theorem 3.1 (L₃ → Adm).** Let $x$ be a physically instantiated configuration at time $t$. If L₃ holds as ontological constraint, then $\mathsf{Adm}(x, t) = 1$.
+**Theorem 3.1 (L₃ → Adm).** Let $x$ be a physically instantiated configuration at time $t$. If L₃ holds as ontological constraint and Causal Localization (A3) holds, then $\mathsf{Adm}(x, t) = 1$.
 
 **Proof.**
 
@@ -169,15 +229,17 @@ $$\mathsf{Adm}(x, t) = \begin{cases}
 
 *Step 3.* By Non-Contradiction, $x$ cannot both have and lack $P$.
 
-*Step 4.* Together, these require that any distinction between $x$ and alternative $y$ be registered in *some* definite location.
+*Step 4.* Together, these require that any distinction between $x$ and alternative $y$ be registered in *some* definite location. (This is pure L₃.)
 
-*Step 5.* For horizon crossings, "definite location" during $t \in [t_{\text{cross}}, t_{\text{emit}}]$ must be the accessible algebra $A_B(t)$, since the interior is causally disconnected.
+*Step 5.* By Lemma 3.0 (Admissibility Localization), for horizon crossings during $t \in [t_{\text{cross}}, t_{\text{emit}}]$, "definite location" must be the accessible algebra $A_B(t)$. (This invokes A3, not pure logic.)
 
 *Step 6.* Therefore, distinguishability must reside in $A_B(t)$, which is exactly the record-existence constraint.
 
 *Step 7.* By the packing theorem (2.1), this implies $\mathsf{Adm}(x, t) = 1$ with $\delta \geq \sqrt{2M/S_{BH}}$.  ∎
 
-### 3.3 Why Horizons Are Special
+**Note on the derivation structure:** Steps 1-4 are pure L₃. Step 5 invokes a physical postulate (A3). The theorem thus derives Adm from L₃ + A3, not from L₃ alone. This is honest: the causal structure of spacetime is physics, not logic.
+
+### 3.4 Why Horizons Are Special
 
 Horizons are the canonical sites for L₃ → Adm because:
 
@@ -187,7 +249,7 @@ Horizons are the canonical sites for L₃ → Adm because:
 
 In generic quantum systems, "interior-only encoding" is unproblematic because the interior is eventually accessible. At horizons, causal structure makes the pre-emission interval special: L₃ cannot be satisfied by interior records alone during this window.
 
-### 3.4 The Gap Is Closed
+### 3.5 The Gap Is Closed
 
 The Admissibility Dynamics paper [3] required:
 
@@ -361,12 +423,38 @@ ICH derives $\Lambda$-like behavior from:
 
 $\Lambda$ is not a primitive. It is the *cost of maintaining admissible reality* while information circulates.
 
-### 5.5 The Observational Mapping
+### 5.5 Scaling Ansatz: w(z) and Black Hole Demographics
+
+The ICH framework predicts that deviations from $w = -1$ should track the global outflux rate through black holes. We can make this precise with a scaling ansatz.
+
+**Outflux Rate.** Define the global de-actualization rate:
+
+$$F_{\text{out}}(z) = \int dM \, n(M, z) \cdot \dot{S}_{\text{BH}}(M)$$
+
+where $n(M, z)$ is the comoving number density of black holes with mass $M$ at redshift $z$, and $\dot{S}_{\text{BH}}(M)$ is the entropy accretion rate per black hole.
+
+**Scaling Ansatz.** The deviation from $w = -1$ scales with the outflux rate relative to the Hubble rate:
+
+$$w(z) + 1 \approx \alpha \cdot \frac{F_{\text{out}}(z)}{H(z) \cdot \rho_{\Lambda}}$$
+
+where $\alpha$ is a dimensionless coupling constant and $\rho_\Lambda$ is the effective dark energy density.
+
+**Physical Interpretation.** When black hole formation and accretion increase, the outflux rate rises, the circulation imbalance $Q(t)$ increases, and $w$ deviates slightly above $-1$. Conversely, when black hole activity decreases (late universe), the system approaches the fixed-point attractor with $w \to -1$.
+
+**Observational Signature.** The ansatz predicts:
+
+$$\frac{dw}{dz}\bigg|_{z \sim 0} \sim \alpha \cdot \frac{d}{dz}\left[\frac{F_{\text{out}}}{H \rho_\Lambda}\right]_{z=0}$$
+
+Since black hole demographics are independently measurable (gravitational wave mergers, X-ray surveys, quasar luminosity functions), this provides a cross-check: ICH predicts a specific correlation between $w(z)$ evolution and global black hole activity.
+
+**Current Constraints.** With $\lvert w + 1 \rvert < 0.06$ at 2σ and estimated $F_{\text{out}}$ from LIGO/Virgo merger rates, the constraint $\alpha \lesssim 0.1$ is consistent with, but does not yet test, the framework. DESI and Euclid will improve $w(z)$ constraints by an order of magnitude; LISA will improve black hole merger demographics by two orders of magnitude. The combination should provide a genuine test by ~2035.
+
+### 5.6 The Observational Mapping
 
 From [3], the framework predicts:
 
 1. **$\Lambda$ behaves as dynamical attractor** with small deviations from $w = -1$
-2. **Deviations track global entropy sinks** (black hole demographics)
+2. **Deviations track global entropy sinks** (black hole demographics) via the scaling ansatz (§5.5)
 3. **Phase transitions in admissibility** appear as cosmological phase transitions
 
 Current observational bounds constrain $\lvert w + 1 \rvert < 0.06$ at 2σ. Next-generation surveys (DESI, Euclid, Roman) achieving sub-percent precision could detect or rule out ICH-specific signatures.
