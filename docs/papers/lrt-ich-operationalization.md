@@ -7,7 +7,7 @@ author: "James (JD) Longmire"
 orcid: "0009-0009-1383-7698"
 email: "jdlongmire@outlook.com"
 date_published: 2026-02-25
-abstract: "The Information Circulation Hypothesis (ICH) proposes a closed dynamical loop: information flows from the abstract space of logical possibilities (I∞) into physical instantiation (A_Ω), then returns to I∞ via black hole singularities. This is not a relabeling of 'classical physics breaks down'—it is a mechanism. The standard breakdown narrative treats singularities as gaps in description; ICH treats them as transition points where L₃ constraints can no longer be satisfied within spacetime, forcing information back to abstract structure. This paper closes the foundational gap identified in prior work: the derivation of the admissibility predicate Adm from L₃. Horizon physics provides exactly this connection. The boundary distinguishability constraint—proven in the companion horizon paper—instantiates L₃ at gravitational boundaries, generating Adm(x) = 1 iff records exist in accessible algebras. When horizons saturate, information routes to radiation (island mechanism) or singularity (de-actualization). The cosmological constant Λ emerges as the fixed-point cost of maintaining this circulation."
+abstract: "The Information Circulation Hypothesis (ICH) proposes a closed dynamical loop: information flows from the abstract space of logical possibilities (I∞) into physical instantiation (A_Ω), then returns to I∞ via black hole singularities. Unlike the standard breakdown narrative—which treats singularities as gaps in description—ICH treats them as transition points where L₃ constraints can no longer be satisfied within spacetime, forcing information back to abstract structure. This paper closes the foundational gap identified in prior work: the derivation of the admissibility predicate Adm from L₃. Horizon physics provides exactly this connection. The boundary distinguishability constraint—proven in the companion horizon paper—instantiates L₃ at gravitational boundaries, generating Adm(x) = 1 iff records exist in accessible algebras. When horizons saturate, information routes to radiation (island mechanism) or singularity (de-actualization). The cosmological constant Λ emerges as the fixed-point cost of maintaining this circulation."
 keywords:
   - information circulation
   - black hole de-actualization
@@ -45,6 +45,15 @@ The companion "Admissibility Dynamics" paper [3] formalized the physics but iden
 
 That paper operates *downstream* of this step, showing how physics would behave *if* such a filter exists. The present paper closes the gap by showing that **horizon physics provides the concrete instantiation of L₃ → Adm**.
 
+### 1.3 Paper Structure
+
+- **§2:** Importing results from the horizon channel paper
+- **§3:** The L₃ → Adm derivation at horizons
+- **§4:** De-actualization: what happens at saturation
+- **§5:** Cosmological circulation and the Λ fixed point
+- **§6:** The complete ICH picture
+- **§7:** Falsifiable consequences
+
 ### 1.4 Scope of L₃ Constraints
 
 A potential confusion must be addressed at the outset: L₃ does not govern $I_\infty$ itself.
@@ -73,6 +82,8 @@ The derivation proceeds from five core assumptions, stated explicitly:
 
 A1 is the core LRT postulate. A2-A4 are physical postulates motivated by L₃ but not derivable from pure logic. A5 is the ICH extension that connects horizon physics to cosmology.
 
+**Note on A3.** Assumption A3 (Causal Localization) is specific to the ICH framework; alternative proposals could relax or modify it, and doing so would change or remove the L₃ → Adm link at horizons. We do not claim A3 is a necessity of nature—it is a physical postulate that makes ICH's predictions possible.
+
 ### 1.6 LRT as QFT/GR Bridge
 
 A referee might ask: why should L₃ constraints—operating at the logical level—have anything to say about the GR/QFT interface?
@@ -83,7 +94,7 @@ The answer lies in LRT's structural position:
 
 **Horizons are where the substrate shows.** In ordinary physics, distinguishability is automatic—we don't think about L₃ because it's always satisfied. At horizons, finite capacity and causal structure make the constraint *operative*. The boundary must maintain distinguishability with limited resources under causal constraints.
 
-**LRT doesn't bridge QFT to GR.** Rather, it identifies the logical preconditions both theories assume. When those preconditions become constraining (at horizons, at singularities), L₃ determines what can physically occur.
+**LRT does not derive GR from QFT or vice versa.** Rather, it identifies the logical preconditions both theories assume. When those preconditions become constraining (at horizons, at singularities), L₃ determines what can physically occur.
 
 This is why the L₃ → Adm derivation is possible: horizons are exactly where the logical substrate becomes physically relevant.
 
@@ -107,15 +118,6 @@ The horizon is where L₃ becomes operationally constraining because:
 1. The interior is causally disconnected during the pre-emission epoch
 2. The boundary is finite-capacity
 3. Information must eventually couple to radiation
-
-### 1.3 Paper Structure
-
-- **§2:** Importing results from the horizon channel paper
-- **§3:** The L₃ → Adm derivation at horizons
-- **§4:** De-actualization: what happens at saturation
-- **§5:** Cosmological circulation and the Λ fixed point
-- **§6:** The complete ICH picture
-- **§7:** Falsifiable consequences
 
 ---
 
@@ -311,6 +313,8 @@ The information is **de-actualized**: stripped of its physical address and prope
 
 **Key distinction:** This is not information *destruction* but information *de-instantiation*. The logical content persists in $I_\infty$; it ceases to be *physically present* in $A_\Omega$.
 
+**Compatibility with singularity resolution.** If quantum gravity resolves singularities into a non-singular core or bounce, ICH interprets the *effective limit surface*—where spacetime locality breaks down—as the de-actualization site. The mechanism does not require literal classical divergence; it requires a regime where metric-based distinguishability fails and L₃ constraints can no longer be satisfied within spacetime structure. Whether this occurs at a classical singularity or a quantum-resolved near-singular region, the transition logic is the same.
+
 ### 4.4 The Closed Loop
 
 The dynamic completes:
@@ -423,9 +427,9 @@ ICH derives $\Lambda$-like behavior from:
 
 $\Lambda$ is not a primitive. It is the *cost of maintaining admissible reality* while information circulates.
 
-### 5.5 Scaling Ansatz: w(z) and Black Hole Demographics
+### 5.5 Phenomenological Scaling Ansatz: w(z) and Black Hole Demographics
 
-The ICH framework predicts that deviations from $w = -1$ should track the global outflux rate through black holes. We can make this precise with a scaling ansatz.
+The ICH framework predicts that deviations from $w = -1$ should track the global outflux rate through black holes. We adopt the following phenomenological scaling ansatz as a first-pass, order-of-magnitude linkage, to be refined with detailed structure formation and black hole growth models.
 
 **Outflux Rate.** Define the global de-actualization rate:
 
