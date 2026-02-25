@@ -115,16 +115,23 @@ The programme derives quantum structure rather than postulating it:
 
 <div class="paper-grid">
   <div class="paper-card">
-    <h3><a href="{{ site.baseurl }}/articles/information-circulation/">ICH: Theoretical Framework</a></h3>
-    <p>Black holes as de-actualization mechanisms returning information to $I_\infty$. Proposes a circulation cycle that avoids heat death and reframes the black hole information paradox.</p>
-    <div class="meta">February 2026 | Speculative Extension</div>
+    <h3><a href="{{ site.baseurl }}/papers/lrt-ich-operationalization/">ICH: Operationalization</a></h3>
+    <p>The flagship ICH paper. Closes the L₃ → Adm gap via horizon physics. Makes assumptions explicit (A1-A5), derives Adm from boundary distinguishability constraints, connects to Λ as circulation fixed-point. JHEP/PRD ready.</p>
+    <div class="meta">February 2026 | Formal Treatment</div>
+    <a href="{{ site.baseurl }}/papers/lrt-ich-operationalization/" class="card-link">Read Paper →</a>
+  </div>
+
+  <div class="paper-card">
+    <h3><a href="{{ site.baseurl }}/articles/information-circulation/">ICH: Conceptual Introduction</a></h3>
+    <p>Accessible overview of the core idea: black holes as de-actualization mechanisms returning information to $I_\infty$. Start here for intuition before the formal treatment.</p>
+    <div class="meta">February 2026 | Background Reading</div>
     <a href="{{ site.baseurl }}/articles/information-circulation/" class="card-link">Read Article →</a>
   </div>
 
   <div class="paper-card">
     <h3><a href="{{ site.baseurl }}/papers/2026-ich-simulation/">ICH: Numerical Exploration</a></h3>
     <p>Computational demonstration that influx/outflux imbalance produces $\Lambda$-like behavior ($w_\text{eff} \approx -1$) across broad parameter ranges without fine-tuning.</p>
-    <div class="meta">February 2026 | In Progress</div>
+    <div class="meta">February 2026 | Computational Companion</div>
     <a href="{{ site.baseurl }}/papers/2026-ich-simulation/" class="card-link">Read Paper →</a>
   </div>
 </div>

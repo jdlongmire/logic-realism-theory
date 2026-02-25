@@ -5,13 +5,17 @@ permalink: /articles/information-circulation/
 date: 2026-02-22
 author: "James (JD) Longmire"
 image: /assets/images/lrt-banner.png
-description: "A speculative extension of LRT: black holes as de-actualization mechanisms returning information to I∞"
-status: extension-hypothesis
+description: "A conceptual introduction to ICH: black holes as de-actualization mechanisms returning information to I∞"
+status: conceptual-introduction
 ---
 
 <div class="topic-header">
   <h1>The Information Circulation Hypothesis</h1>
-  <p class="article-meta">February 2026 | Speculative Extension</p>
+  <p class="article-meta">February 2026 | Conceptual Introduction</p>
+</div>
+
+<div class="callout callout-info">
+<strong>Reading Guide:</strong> This article provides an <em>accessible introduction</em> to the Information Circulation Hypothesis. For the formal treatment with explicit assumptions (A1-A5), the L₃ → Adm derivation, and falsifiable predictions, see the <a href="/logic-realism-theory/papers/lrt-ich-operationalization/">Operationalization Paper</a>.
 </div>
 
 <div class="callout callout-info">
@@ -183,12 +187,13 @@ These questions don't have answers yet. They're directions for future exploratio
 
 > The Information Circulation Hypothesis proposes that the universe is a finite, $L_3$-constrained subset of $I_\infty$. The instantiation barrier at the Planck scale regulates the entry of information into physical reality, while black hole singularities serve as the mechanism for de-actualizing information and returning it to $I_\infty$, thereby maintaining a perpetual logical cycle and avoiding universal heat death.
 
-This is speculation, clearly labeled. But it's speculation that uses LRT's formal apparatus to address a real problem in physics. Whether it leads anywhere depends on whether it can eventually generate testable consequences.
+This article provides intuition. For the formal treatment—with explicit assumptions, the L₃ → Adm derivation, and falsifiable predictions—see the [Operationalization Paper](/logic-realism-theory/papers/lrt-ich-operationalization/).
 
 ---
 
 ## Further Reading
 
+- **[ICH Operationalization Paper](/logic-realism-theory/papers/lrt-ich-operationalization/)** - The formal treatment with explicit assumptions (A1-A5), Lemma 3.0, and falsifiable predictions
 - [The Instantiation Barrier Explained](/logic-realism-theory/articles/instantiation-barrier/) - The core $I_\infty$/$A_\Omega$ distinction
 - [From Logic to Physics](/logic-realism-theory/articles/from-logic-to-physics/) - Why $L_3$ constrains physical reality
 - [Position Paper](/logic-realism-theory/papers/2026-position-paper/) - Full technical treatment of core LRT
