@@ -89,9 +89,11 @@ The island formula arises from boundary saturation under admissibility constrain
 ### Novel Predictions
 
 1. **Page time shift** at Planck scale: |Δt| ~ t_Page when S_BH ~ 1 (occurs earlier)
-2. **QES location** tied to matter content: φ = 4G·N·h(d̄)
-3. **Correlation spectrum** with phase structure from g(d)
+2. **QES location** tied to matter content: (φ_H - φ_QES)/4G ~ S_rad·h(d̄)
+3. **Correlation phases** constrained (not random): Σ C e^{iφ} ~ O(1) for correct pattern
 4. **Complexity bound** ~ 1/g(d) ~ S_BH
+
+**Note on correlations:** Individual mode correlations scale as C ~ e^{-S_BH} (consistent with islands). The admissibility contribution is phase structure, not magnitude. See correlation-spectrum-analysis.md.
 
 ---
 
@@ -219,6 +221,8 @@ If combined:
 - page-curve-corrections.md
 - scrambling-time-bound.md
 - island-mechanism-derivation.md
+- correlation-spectrum-analysis.md (resolves 1/S_BH vs e^{-S_BH})
+- verification-results.md
 
 ### Standard References
 - Bekenstein (1973) — Black hole entropy

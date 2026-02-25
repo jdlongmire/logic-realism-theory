@@ -227,53 +227,51 @@ The admissibility formula φ(r_QES) = 4G·N·h(d̄) is:
 
 ## 4. Correlation Spectrum
 
-### 4.1 Our Prediction
+### 4.1 Original Prediction (CORRECTED)
 
-From page-curve-corrections.md §5.2:
+The original page-curve-corrections.md (§5.2) stated:
 
 $$\delta C(\omega, \omega') \propto \frac{1}{S_{BH}} \cdot e^{-(\omega + \omega')/T_H}$$
 
-This is a correction to the thermal two-point function from admissibility constraints.
+**This was incorrect.** See correlation-spectrum-analysis.md for full resolution.
 
-### 4.2 Standard Hawking Radiation
+### 4.2 The Discrepancy
 
-The thermal Hawking spectrum gives:
-$$\langle a_\omega^\dagger a_{\omega'} \rangle_{\text{thermal}} = \frac{\delta(\omega - \omega')}{e^{\omega/T_H} - 1}$$
+Island calculations (Penington et al. 2020) give individual mode correlations:
+$$C_{\text{island}}(\omega, \omega') \sim e^{-S_{BH}}$$
 
-For information to be encoded, there must be correlations beyond thermal:
-$$\langle a_\omega^\dagger a_{\omega'} \rangle = \frac{\delta(\omega - \omega')}{e^{\omega/T_H} - 1} + C_{\text{info}}(\omega, \omega')$$
+The ratio 1/S_BH vs e^{-S_BH} is astronomically different.
 
-### 4.3 Island Calculation Comparison
+### 4.3 Resolution: Three Distinct Quantities
 
-From island calculations (Penington et al. 2020), after Page time:
+The original formula conflated three different physical quantities:
 
-The two-point function receives contributions from the island saddle:
-$$G_{\text{island}}(\omega, \omega') \sim e^{-S_{BH}} \cdot (\text{island data})$$
+| Quantity | Formula | Meaning |
+|----------|---------|---------|
+| Individual mode correlation | C ~ e^{-S_BH} | Correlation between specific modes |
+| Distinguishability resolution | d_min ~ 1/S_BH | Minimum resolvable difference at boundary |
+| Cumulative information | I ~ S_BH | Total information in all correlations |
 
-This is exponentially suppressed by e^{-S_BH}, much smaller than our 1/S_BH prediction.
+**Key insight:** The 1/S_BH describes the *boundary encoding capacity* (how many distinguishable pairs can be tracked), not the *radiation correlation magnitude*.
 
-### 4.4 Resolution
+### 4.4 Corrected Predictions
 
-The discrepancy suggests our formula may be too large. However:
+**Individual correlations:** C ~ e^{-S_BH} (agrees with islands)
 
-1. **Regime difference:** Island calculations give leading-order behavior. Admissibility gives the minimum required correlation.
+**New structure prediction (phases):** Admissibility constrains correlation phases:
+$$\sum_{\omega,\omega'} C(\omega, \omega') e^{i\phi_{\omega,\omega'}} = \mathcal{O}(1)$$
 
-2. **Sum vs individual:** The 1/S_BH might apply to cumulative correlations summed over many modes, while individual correlations are e^{-S_BH}.
+for the correct input-matched phase pattern φ, while random phases give ~e^{-S_BH/2}.
 
-3. **g(d) interpretation:** If g(d) ~ h(d)/S_BH, then correlations strong enough to preserve distinguishability require information content ~ h(d), distributed over ~ S_BH modes, giving individual correlations ~ h(d)/S_BH per mode.
+This is testable in principle in analog systems.
 
 ### 4.5 Verdict
 
-**⚠ NEEDS REFINEMENT**
+**✓ RESOLVED**
 
-The correlation spectrum prediction is:
-- Qualitatively correct (correlations exist beyond thermal)
-- Quantitatively uncertain (1/S_BH vs e^{-S_BH})
-
-The formula needs refinement to distinguish:
-- Cumulative information content (~ S_in, eventually reaching S_BH)
-- Individual mode correlations (likely e^{-S_BH} per pair)
-- Measurement distinguishability (~ 1/S_BH for minimal resolution)
+- **Magnitude:** Corrected to C ~ e^{-S_BH}, consistent with islands
+- **New prediction:** Phase structure is constrained (not random)
+- **Admissibility value:** Rate bounds and phase constraints, not tighter magnitude bounds
 
 ---
 
@@ -287,7 +285,7 @@ The formula needs refinement to distinguish:
 | Page time shift coefficient | ✓ Fixed | Corrected to -0.82ε (earlier Page time) |
 | Page time shift magnitude | ✓ Verified | O(ε) is correct |
 | QES formula | ✓ Verified | Revised: (φ_H - φ_QES)/4G ~ S_rad·h(d̄) |
-| Correlation spectrum | ⚠ Needs refinement | 1/S_BH vs e^{-S_BH} issue |
+| Correlation spectrum | ✓ Resolved | C ~ e^{-S_BH} + phase constraints |
 
 ### Action Items
 

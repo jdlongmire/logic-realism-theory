@@ -240,15 +240,21 @@ Not accessible to observation, but potentially relevant for:
 
 Even when ε is negligible, the *structure* of correlations may differ.
 
-**Prediction:** Admissibility-constrained channels produce correlations with:
+**Prediction (CORRECTED):** Individual mode correlations scale as:
 
-$$\langle a_\omega^\dagger a_{\omega'} \rangle_{\text{Adm}} = \langle a_\omega^\dagger a_{\omega'} \rangle_{\text{thermal}} + \delta C(\omega, \omega')$$
+$$C(\omega, \omega') \sim e^{-S_{BH}} \cdot f(\omega, \omega'; T_H)$$
 
-where:
+where f is O(1). This agrees with island calculations (Penington et al. 2020).
 
-$$\delta C(\omega, \omega') \propto \frac{1}{S_{BH}} \cdot e^{-(\omega + \omega')/T_H}$$
+**Note:** The original formula δC ~ 1/S_BH was incorrect. The 1/S_BH describes the *boundary encoding resolution* (minimum distinguishable fraction), not the *radiation correlation magnitude*. See correlation-spectrum-analysis.md for full derivation.
 
-The correction term encodes phase relationships mandated by admissibility.
+**New structural prediction (phases):** Admissibility constrains correlation phases:
+
+$$\sum_{\omega,\omega'} C(\omega, \omega') e^{i\phi_{\omega,\omega'}} = \mathcal{O}(1)$$
+
+for the correct input-matched phase pattern φ, while random phases average to ~e^{-S_BH/2}.
+
+This phase structure is the admissibility contribution beyond standard scrambling.
 
 ### 5.3 Comparison to Island Calculations
 
