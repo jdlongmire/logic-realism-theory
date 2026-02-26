@@ -5,7 +5,7 @@ ORCID: 0009-0009-1383-7698
 Northrop Grumman Fellow (unaffiliated research)
 
 **Version:** 3.0 (February 2026)
-**Status:** Working Draft
+**Status:** Pre-print
 **Target Venues:** Philosophy of Science, BJPS, Studies in History and Philosophy of Modern Physics
 
 ---
