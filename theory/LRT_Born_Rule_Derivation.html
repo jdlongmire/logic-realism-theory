@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Deriving the Born Rule from Logical Constraint</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Deriving the Born Rule from Logical Constraint</h1>
+</header>
+<h1 id="deriving-the-born-rule-from-logical-constraint-a-logic-realism-theory-approach">Deriving the Born Rule from Logical Constraint: A Logic Realism Theory Approach</h1>
+<p><strong>James D. Longmire</strong> ORCID: 0009-0009-1383-7698 jdlongmire@outlook.com</p>
+<hr />
+<h2 id="abstract">Abstract</h2>
+<p>We present a derivation of the Born rule from the ontological constraints imposed by the Three Fundamental Laws of Logic (L₃) within the Logic Realism Theory (LRT) framework. The central argument proceeds through five stages: (1) L₃ constraints at the vehicle level require that physical systems possess determinate dispositions toward measurement outcomes; (2) these dispositions must satisfy vehicle-weight invariance—probability assignments cannot depend on the descriptive decomposition chosen; (3) vehicle-weight invariance, combined with finite additivity, yields the premises of Gleason-type theorems; (4) Gleason’s theorem then forces the trace form μ(P) = Tr(ρP) for all projectors; (5) for pure states, this reduces to the Born rule p = |⟨φ|ψ⟩|². We provide both an intuitive derivation chain and a formal axiom presentation (A1–A7) suitable for rigorous development. The derivation is non-circular: L₃ constraints are conceptually and logically prior to the probability measure they entail. We situate this result within the quantum reconstruction literature and discuss implications for foundational physics.</p>
+<p><strong>Keywords:</strong> Born rule, Gleason’s theorem, quantum foundations, logic realism, quantum reconstruction, probability, measurement problem</p>
+<hr />
+<h2 id="introduction">1. Introduction</h2>
+<p>The Born rule—that the probability of observing a system in state |φ⟩ given preparation |ψ⟩ equals |⟨φ|ψ⟩|²—is the bridge between the mathematical formalism of quantum mechanics and experimental prediction. Despite nearly a century of use, its status remains contested. Is it a fundamental postulate? A theorem derivable from deeper principles? An empirical regularity lacking deeper explanation?</p>
+<p>Max Born introduced the probability interpretation in 1926, initially as a footnote added in proof (Born, 1926). The rule has since been subjected to various derivation attempts:</p>
+<ol type="1">
+<li><p><strong>Gleason’s theorem</strong> (Gleason, 1957) shows that any probability measure on the projection lattice of a Hilbert space (dim ≥ 3) must take the trace form, from which the Born rule follows.</p></li>
+<li><p><strong>Quantum reconstruction programs</strong> (Hardy, 2001; Chiribella et al., 2011; Masanes &amp; Müller, 2011) derive quantum theory, including the Born rule, from operational axioms about information processing.</p></li>
+<li><p><strong>Decision-theoretic approaches</strong> (Deutsch, 1999; Wallace, 2010) attempt to derive Born probabilities from rational betting behavior in Everettian quantum mechanics.</p></li>
+<li><p><strong>QBism</strong> (Caves et al., 2002) treats quantum probabilities as Bayesian degrees of belief, constrained by consistency requirements.</p></li>
+</ol>
+<p>Each approach has merits and limitations. Gleason’s theorem requires assuming a Hilbert space structure. Reconstruction programs derive quantum theory but do not explain why those particular axioms hold. Decision-theoretic approaches face circularity objections. QBism dissolves the question by deflating probability’s ontological status.</p>
+<p>Logic Realism Theory (LRT) offers a different path. Rather than assuming quantum structure and deriving probability, or assuming probability and constraining its form, LRT begins with the Three Fundamental Laws of Logic (L₃) as ontological constraints on physical reality:</p>
+<ul>
+<li><strong>Identity (L₁):</strong> A physical configuration is determinately what it is</li>
+<li><strong>Non-Contradiction (L₂):</strong> No configuration instantiates both P and ¬P</li>
+<li><strong>Excluded Middle (L₃):</strong> Every applicable property is either instantiated or not</li>
+</ul>
+<p>The central claim is that these constraints, applied at the “vehicle level” (the physical structure doing the representing, not the content represented), force a unique probability measure on measurement outcomes—the Born rule.</p>
+<p>This paper develops that derivation in detail, provides formal axioms, situates the result within existing literature, and addresses potential objections.</p>
+<hr />
+<h2 id="conceptual-framework">2. Conceptual Framework</h2>
+<p><em>This section defines the core concepts used throughout the paper. Subsequent sections refer back here rather than repeating definitions.</em></p>
+<h3 id="the-vehiclecontent-distinction">2.1 The Vehicle/Content Distinction</h3>
+<p>A measurement outcome involves two conceptual levels:</p>
+<p><strong>Content:</strong> What is represented—the logical proposition “spin is up” or “particle detected in region A.”</p>
+<p><strong>Vehicle:</strong> The physical structure doing the representing—the measurement apparatus, the recording medium, the macroscopic pointer position.</p>
+<p>This distinction is central to LRT’s derivation. The L₃ constraints apply primarily at the vehicle level. A detector either clicks or it doesn’t (L₃ at vehicle level), even if what the click represents admits quantum indeterminacy at the content level.</p>
+<h3 id="ontological-nullity">2.2 Ontological Nullity</h3>
+<p>LRT introduces the concept of <em>ontological nullity</em> (∅_L): the limiting condition where all three logical laws fail simultaneously. A configuration that lacks determinate identity (L₁ failure), both is and is not P (L₂ failure), and neither is nor is not P (L₃ failure) would possess no ontological status whatsoever.</p>
+<p>Physical systems exhibit what LRT calls “logic pressure”—a tendency away from ∅_L toward determinate existence.</p>
+<p><strong>Important clarification:</strong> “Ontological nullity” and “logic pressure” are <em>heuristic metaphors</em>, not additional dynamical postulates. They provide conceptual scaffolding for understanding why L₃ compliance is necessary for physical existence, but they do not introduce new forces or mechanisms. The formal content of LRT is exhausted by Axioms A1–A7; these metaphors aid intuition without adding to the mathematical structure. One could strip them entirely and the derivation would proceed unchanged—they serve pedagogical, not logical, roles.</p>
+<h3 id="i-and-a_ω">2.3 I∞ and A_Ω</h3>
+<p>LRT distinguishes two domains:</p>
+<p><strong>I∞ (Infinite Information Space):</strong> The space of all representable configurations, including those that may not satisfy classical logic (quantum superpositions, for instance, represent configurations that are neither simply P nor simply ¬P at the content level).</p>
+<p><strong>A_Ω (Logical Actuality Layer):</strong> The domain of completed measurement outcomes, where L₃ constraints hold without exception. Every actual detector record is Boolean—it either registered or it didn’t.</p>
+<p>The measurement process is an interface map f_M : I∞ → A_Ω that, in each run, produces exactly one L₃-admissible record.</p>
+<hr />
+<h2 id="the-derivation-chain">3. The Derivation Chain</h2>
+<p>The argument proceeds through five steps:</p>
+<pre><code>L₃ (Identity, Non-Contradiction, Excluded Middle)
+    ↓
+Determinate Identity at Vehicle Level
+    ↓
+Vehicle-Weight Invariance
+    ↓
+Additivity + Non-Contextuality
+    ↓
+Gleason&#39;s Theorem
+    ↓
+Born Rule: p = |⟨φ|ψ⟩|²</code></pre>
+<h3 id="step-1-vehicle-weight-objectivity">3.1 Step 1: Vehicle-Weight Objectivity</h3>
+<p><strong>Premise:</strong> Macroscopic measurement records have determinate identity (L₁-Weak).</p>
+<p><strong>Consequence:</strong> Pre-measurement physical states must possess objective dispositions toward outcomes.</p>
+<p><em>Argument:</em> Consider a measurement that produces record R. This record satisfies L₁: it is determinately what it is. The transition from pre-measurement state S to record R either:</p>
+<ol type="a">
+<li>Introduces determinacy ex nihilo—the disposition toward R emerges from nothing, or</li>
+<li>Preserves determinacy already present in S—the disposition was objectively there before measurement.</li>
+</ol>
+<p>Option (a) violates the principle that determinacy requires grounding. If R is determinately “spin up,” this determinacy must trace to something in S, not appear miraculously. Therefore option (b): S already possessed objective dispositions toward its possible measurement outcomes.</p>
+<p>These dispositions constitute what we call <em>vehicle-weights</em>: the system’s objective, pre-measurement propensities toward each possible outcome.</p>
+<h3 id="step-2-vehicle-weight-invariance">3.2 Step 2: Vehicle-Weight Invariance</h3>
+<p><strong>Definition:</strong> A measure μ on projection operators satisfies <em>vehicle-weight invariance</em> if and only if, for every maximal orthonormal resolution {P_i} of the identity:</p>
+<p><br /><span class="math display">∑<sub><em>i</em></sub><em>μ</em>(<em>P</em><sub><em>i</em></sub>) = 1</span><br /></p>
+<p>with this total constant across all such decompositions.</p>
+<p><strong>Constraint from L₁:</strong> Vehicle-weights characterize what the system <em>is</em>, not how we describe it. If a system were “70% disposed toward outcome A” in one measurement basis but “50% disposed toward A” in another basis, the system would lack determinate identity. The question “what is this system’s disposition toward A?” would have no fact of the matter—a violation of Determinate Identity at the vehicle level.</p>
+<p>Therefore: Vehicle-weight invariance is a necessary consequence of L₁.</p>
+<h3 id="contextuality-kochenspecker-and-what-lrt-forbidsallows">3.2.1 Contextuality, Kochen–Specker, and What LRT Forbids/Allows</h3>
+<p>A crucial clarification: LRT’s vehicle-invariance (A5) is a claim about <strong>event non-contextuality</strong>, not about hidden variables.</p>
+<p><strong>Kochen–Specker theorem</strong> (1967): No non-contextual hidden variable model assigns pre-existing values to all observables consistently with quantum predictions (in dim ≥ 3).</p>
+<p><strong>What Kochen–Specker forbids:</strong> Hidden variable theories where each observable has a definite pre-measurement value independent of which other observables are measured alongside it.</p>
+<p><strong>What LRT requires (and what is different):</strong> Vehicle-invariance is a constraint on <em>probability measures</em>, not on value assignments. It says:</p>
+<blockquote>
+<p>If event <em>e</em> (a Boolean record in A_Ω) can be reached via different experimental decompositions, its probability is independent of which decomposition is used.</p>
+</blockquote>
+<p>Formally, for projector P appearing in two maximal orthonormal decompositions D₁ = {P, Q₁, Q₂, …} and D₂ = {P, R₁, R₂, …}:</p>
+<p><br /><span class="math display"><em>μ</em><sub><em>D</em><sub>1</sub></sub>(<em>P</em>) = <em>μ</em><sub><em>D</em><sub>2</sub></sub>(<em>P</em>)</span><br /></p>
+<p>This is non-contextuality <em>for events</em>, not for values. Kochen–Specker shows that <strong>value assignments</strong> cannot be non-contextual. LRT shows that <strong>probability assignments</strong> must be non-contextual at the vehicle level—and Gleason’s theorem confirms that such measures exist (the trace measures).</p>
+<p><strong>Why this distinction matters:</strong></p>
+<ul>
+<li>Kochen–Specker refutes deterministic hidden variables</li>
+<li>LRT’s vehicle-invariance constrains probabilistic theories</li>
+<li>Both are consistent: quantum theory has non-contextual probabilities but contextual (or absent) values</li>
+</ul>
+<p><strong>Clarification of “same event”:</strong> Two decompositions involve the “same event” P when they correspond to the same Boolean record in A_Ω. For example, “spin measured up along z-axis” is the same A_Ω record regardless of whether the measurement apparatus also distinguishes x-spin or y-spin. The <em>pointer position</em> (vehicle) recording “z-spin up” is identical in both cases.</p>
+<h3 id="step-3-vehicle-weight-invariance-forces-gleasons-premises">3.3 Step 3: Vehicle-Weight Invariance Forces Gleason’s Premises</h3>
+<p><strong>Lemma 1 (Transitivity).</strong> Any two maximal orthonormal decompositions of the identity are related by a unitary transformation U.</p>
+<p><em>Proof.</em> If {|e_i⟩} and {|f_j⟩} are both orthonormal bases, define U by U|e_i⟩ = |f_i⟩. This U is unitary, and UΣ_i |e_i⟩⟨e_i| U† = Σ_i |f_i⟩⟨f_i| = I. □</p>
+<p><strong>Lemma 2 (Unitary Invariance).</strong> Vehicle-weight invariance implies μ(UPU†) = μ(P) for all unitaries U and all projectors P.</p>
+<p><em>Proof sketch.</em> Consider projector P appearing in some orthonormal decomposition D₁. The transformed projector UPU† appears in the unitarily related decomposition UD₁U†. Vehicle-weight invariance requires both decompositions to sum to 1 with the same distribution of weights. Tracing through the relations, μ(UPU†) = μ(P). □</p>
+<p><strong>Lemma 3 (Trace Form).</strong> Any unitarily invariant, finitely additive probability measure on the projection lattice P(H) of a Hilbert space with dim(H) ≥ 3 takes the form:</p>
+<p><br /><span class="math display"><em>μ</em>(<em>P</em>) = <em>T</em><em>r</em>(<em>ρ</em><em>P</em>)</span><br /></p>
+<p>for a unique density operator ρ.</p>
+<p><em>Proof.</em> This is the content of Gleason’s theorem (Gleason, 1957). The original proof is technically demanding. Busch (2003) provides a simplified proof using positive operator-valued measures. The essential point: the constraints of unitarily invariant additivity, applied to the geometry of Hilbert space in dimension ≥ 3, uniquely determine the trace form. □</p>
+<h3 id="step-4-from-trace-form-to-born-rule">3.4 Step 4: From Trace Form to Born Rule</h3>
+<p><strong>Theorem (Vehicle-Weight Invariance → Born Rule).</strong> If vehicle-weight invariance holds, then for pure states the probability measure on outcomes takes the Born form.</p>
+<p><em>Proof:</em></p>
+<ol type="1">
+<li>Vehicle-weight invariance (from L₁ at vehicle level) [Step 2]</li>
+<li>Implies unitary invariance of μ [Lemma 2]</li>
+<li>Combined with additivity, yields trace form μ(P) = Tr(ρP) [Lemma 3]</li>
+<li>For pure states, ρ = |ψ⟩⟨ψ| is a rank-1 projector</li>
+<li>For measurement outcome corresponding to rank-1 projector P = |φ⟩⟨φ|:</li>
+</ol>
+<p><br /><span class="math display"><em>μ</em>(|<em>ϕ</em>⟩⟨<em>ϕ</em>|) = <em>T</em><em>r</em>(|<em>ψ</em>⟩⟨<em>ψ</em>| ⋅ |<em>ϕ</em>⟩⟨<em>ϕ</em>|) = |⟨<em>ϕ</em>|<em>ψ</em>⟩|<sup>2</sup></span><br /></p>
+<p><strong>This is the Born rule. QED</strong> □</p>
+<h3 id="dimension-2-edge-case-and-additivity">3.5 Dimension-2 Edge Case and Additivity</h3>
+<p><strong>The dim-2 problem:</strong> Gleason’s theorem requires dim(H) ≥ 3. In a two-dimensional Hilbert space (qubit), non-Gleasonian measures exist that satisfy additivity but not the trace form. Specifically, one can define probability measures on a qubit’s projection lattice that are not of the form Tr(ρP).</p>
+<p><strong>Resolution via composition (standard move):</strong> Any physical qubit capable of interaction with other systems lives in a composite Hilbert space. Consider a qubit A measured jointly with another qubit B. The composite system AB inhabits H_A ⊗ H_B, which has dimension 4. Gleason’s theorem applies to the composite, forcing:</p>
+<p><br /><span class="math display"><em>μ</em><sub><em>A</em><em>B</em></sub>(<em>P</em><sub><em>A</em></sub> ⊗ <em>P</em><sub><em>B</em></sub>) = <em>T</em><em>r</em>(<em>ρ</em><sub><em>A</em><em>B</em></sub>(<em>P</em><sub><em>A</em></sub> ⊗ <em>P</em><sub><em>B</em></sub>))</span><br /></p>
+<p>By marginalization, the local measure on A inherits the trace form:</p>
+<p><br /><span class="math display"><em>μ</em><sub><em>A</em></sub>(<em>P</em><sub><em>A</em></sub>) = <em>μ</em><sub><em>A</em><em>B</em></sub>(<em>P</em><sub><em>A</em></sub> ⊗ <em>I</em><sub><em>B</em></sub>) = <em>T</em><em>r</em>(<em>ρ</em><sub><em>A</em></sub><em>P</em><sub><em>A</em></sub>)</span><br /></p>
+<p>where ρ_A = Tr_B(ρ_{AB}). Hence even qubits satisfy the Born rule once we recognize they never exist in complete isolation.</p>
+<p><strong>LRT’s take:</strong> Axiom A6 (local tomography) implicitly handles this. Systems are defined via their compositional behavior. A “qubit” that cannot participate in any composite would violate A6, since its state could not be determined from correlations. Physical qubits satisfy A6 and hence Gleason via composition.</p>
+<p><strong>Countable vs. finite additivity:</strong> Gleason’s original theorem assumes countable (σ-) additivity: for any countable collection of mutually orthogonal projections {P_i} with Σ_i P_i = P, we have μ(P) = Σ_i μ(P_i).</p>
+<p>LRT’s A4 states finite additivity explicitly. For finite-dimensional Hilbert spaces, finite and countable additivity coincide (all sums are finite). For infinite-dimensional spaces, the extension to σ-additivity follows from a regularity assumption: μ must be continuous in the strong operator topology. This is physically natural—small changes in projectors should produce small changes in probability—and is implied by the requirement that probability measures arise from density operators (which are trace-class and hence satisfy the needed continuity).</p>
+<p><strong>Alternative route:</strong> Masanes–Müller reconstruction does not require dim ≥ 3. Their Theorem 1 derives quantum structure (including Born rule) for all dimensions from local tomography, continuous reversibility, and non-classicality—exactly what LRT axiomatizes in A5–A7. This provides a complementary path avoiding the dim-2 technicality entirely.</p>
+<hr />
+<h2 id="no-circularity">4. No Circularity</h2>
+<p>A derivation is circular if its conclusion appears among its premises. Let us audit the dependency structure:</p>
+<p><strong>Inputs:</strong> - L₃ constraints (Identity, Non-Contradiction, Excluded Middle) - Vehicle/content distinction - Hilbert space structure of quantum states (or: derivable via reconstruction)</p>
+<p><strong>Intermediate constructs:</strong> - Vehicle-weight objectivity - Vehicle-weight invariance - Unitary invariance of measure</p>
+<p><strong>Mathematical machinery:</strong> - Gleason-Busch theorem</p>
+<p><strong>Output:</strong> - Born rule: p = |⟨φ|ψ⟩|²</p>
+<p>The Born rule appears nowhere in the premises. The derivation is acyclic.</p>
+<p>One might object: doesn’t assuming Hilbert space structure smuggle in quantum theory, including the Born rule? Two responses:</p>
+<ol type="1">
+<li><p>Hilbert space structure can itself be derived from operational axioms (reconstruction programs). The Born rule is <em>not</em> among those axioms; it is a <em>consequence</em>.</p></li>
+<li><p>Even taking Hilbert space as input, Gleason’s theorem is non-trivial. Many conceivable probability measures on a Hilbert space exist; Gleason shows only one family (the trace measures) satisfies the required constraints. The Born rule is not presupposed but proven.</p></li>
+</ol>
+<h3 id="assumptions-imported-from-the-literature">4.1 Assumptions Imported from the Literature</h3>
+<p>For transparency, we list the external mathematical results treated as “black boxes” in this derivation:</p>
+<table>
+<colgroup>
+<col style="width: 15%"></col>
+<col style="width: 19%"></col>
+<col style="width: 35%"></col>
+<col style="width: 29%"></col>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Result</th>
+<th>Citation</th>
+<th>What It Provides</th>
+<th>What LRT Adds</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Gleason’s theorem</strong></td>
+<td>Gleason (1957), Busch (2003)</td>
+<td>Unique trace-form measures on P(H) for dim ≥ 3</td>
+<td>Grounds <em>why</em> Gleason’s premises hold (vehicle-invariance from L₁)</td>
+</tr>
+<tr class="even">
+<td><strong>Masanes–Müller reconstruction</strong></td>
+<td>Masanes &amp; Müller (2011)</td>
+<td>Derives quantum formalism from operational axioms</td>
+<td>Maps A3–A7 to their requirements; grounds <em>why</em> those axioms hold</td>
+</tr>
+<tr class="odd">
+<td><strong>Complex Hilbert space selection</strong></td>
+<td>Renou et al. (2021)</td>
+<td>Empirical distinction between real and complex QM</td>
+<td>Confirms the selection in Step 2 of the formal proof</td>
+</tr>
+<tr class="even">
+<td><strong>Local tomography</strong></td>
+<td>Chiribella et al. (2011)</td>
+<td>Composite states from marginals + correlations</td>
+<td>Follows from Boolean product structure in A_Ω (Axiom A6)</td>
+</tr>
+<tr class="odd">
+<td><strong>Continuous reversibility</strong></td>
+<td>Hardy (2001)</td>
+<td>Dynamics form connected Lie group</td>
+<td>Follows from L₁: discontinuous dynamics would create identification ambiguity</td>
+</tr>
+</tbody>
+</table>
+<p><strong>What is genuinely new in LRT:</strong> The vehicle/content distinction, the grounding of non-contextuality in L₁ (Determinate Identity), and the claim that reconstruction axioms are <em>consequences</em> of deeper logical constraints rather than primitive postulates.</p>
+<hr />
+<h2 id="formal-axiom-presentation-iis-lrt">5. Formal Axiom Presentation (IIS-LRT)</h2>
+<p>For rigorous development, we provide a minimal axiom set sufficient for a Born-rule theorem, framed in LRT terminology.</p>
+<h3 id="axiom-a1-logical-actuality-layer">Axiom A1 (Logical Actuality Layer)</h3>
+<p>There is a distinguished set A_Ω of actual outcome records. For any well-formed proposition P about an outcome in A_Ω, at a given time and in a single reference frame:</p>
+<ul>
+<li>P = P (Identity)</li>
+<li>Not (P ∧ ¬P) (Non-Contradiction)</li>
+<li>Exactly one of P, ¬P holds (Excluded Middle)</li>
+</ul>
+<p>Each completed measurement yields a single, Boolean, L₃-admissible record.</p>
+<h3 id="axiom-a2-infinite-information-space-and-interface">Axiom A2 (Infinite Information Space and Interface)</h3>
+<p>There exists an Infinite Information Space I∞ of representable configurations (non-Boolean, possibly nonlocal). A measurement with setting M is an interface map</p>
+<p><br /><span class="math display"><em>f</em><sub><em>M</em></sub> : <em>I</em><sub>∞</sub> → <em>A</em><sub><em>Ω</em></sub></span><br /></p>
+<p>that, in each run, produces exactly one record in A_Ω.</p>
+<h3 id="axiom-a3-boolean-event-algebra-at-the-interface">Axiom A3 (Boolean Event Algebra at the Interface)</h3>
+<p>Let E be the set of events definable over A_Ω (modulo logical equivalence). Then E is a Boolean σ-algebra with operations ∧, ∨, ¬, null event 0, and unit event 1.</p>
+<h3 id="axiom-a4-states-as-probability-measures-on-events">Axiom A4 (States as Probability Measures on Events)</h3>
+<p>A physical state at the IIS-LRT interface is a function</p>
+<p><br /><span class="math display"><em>s</em> : ℰ → [0, 1]</span><br /></p>
+<p>such that, for all e, f ∈ E:</p>
+<ol type="1">
+<li>s(1) = 1, s(0) = 0</li>
+<li>If e ∧ f = 0, then s(e ∨ f) = s(e) + s(f)</li>
+<li>s(¬e) = 1 - s(e)</li>
+</ol>
+<p>So s is a normalized, finitely additive probability measure on the Boolean event algebra.</p>
+<h3 id="axiom-a5-vehicle-invariance-logical-non-contextuality">Axiom A5 (Vehicle-Invariance / Logical Non-Contextuality)</h3>
+<p>If an event e ∈ E can be represented, in different measurement contexts, as distinct disjoint unions of finer events,</p>
+<p><br /><span class="math display"><em>e</em> = ⋁<sub><em>i</em></sub><em>e</em><sub><em>i</em></sub> = ⋁<sub><em>j</em></sub><em>f</em><sub><em>j</em></sub></span><br /></p>
+<p>where each {e_i} and {f_j} is a partition (mutually exclusive, jointly exhaustive) in its context, then for every state s:</p>
+<p><br /><span class="math display"><em>s</em>(<em>e</em>) = ∑<sub><em>i</em></sub><em>s</em>(<em>e</em><sub><em>i</em></sub>) = ∑<sub><em>j</em></sub><em>s</em>(<em>f</em><sub><em>j</em></sub>)</span><br /></p>
+<p>Probabilities depend only on the <strong>logical content</strong> of e in A_Ω, not on the “vehicle” by which it is realized in I∞.</p>
+<h3 id="axiom-a6-local-tomography-for-composites">Axiom A6 (Local Tomography for Composites)</h3>
+<p>For systems A, B, composite events are generated by products e_A ∧ e_B with e_A ∈ E_A, e_B ∈ E_B. A joint state s_{AB} is fully determined by the joint probabilities</p>
+<p><br /><span class="math display"><em>s</em><sub><em>A</em><em>B</em></sub>(<em>e</em><sub><em>A</em></sub> ∧ <em>e</em><sub><em>B</em></sub>)  for all <em>e</em><sub><em>A</em></sub>, <em>e</em><sub><em>B</em></sub></span><br /></p>
+<p>The global state is fixed by statistics of local outcomes and their correlations (local tomography).</p>
+<h3 id="axiom-a7-non-classicality-and-continuous-reversibility">Axiom A7 (Non-Classicality and Continuous Reversibility)</h3>
+<ol type="1">
+<li><p><strong>Non-classicality:</strong> There exist incompatible measurements on a single system whose statistics cannot be embedded in a single Kolmogorovian probability space (interference).</p></li>
+<li><p><strong>Continuous reversibility:</strong> For any two pure states s₁, s₂ there exists a continuous one-parameter family of reversible transformations connecting them, T_t(s₁) = s(t), with s(0) = s₁, s(1) = s₂.</p></li>
+</ol>
+<p>These capture LRT’s “logical-information” requirements: non-classical structure plus information-preserving, reversible dynamics.</p>
+<h3 id="explicit-mapping-to-reconstruction-theorems">5.1 Explicit Mapping to Reconstruction Theorems</h3>
+<p><strong>Proposition.</strong> Axioms A3–A7 satisfy the assumptions of the Masanes–Müller reconstruction theorem.</p>
+<p><em>Mapping:</em></p>
+<table>
+<colgroup>
+<col style="width: 28%"></col>
+<col style="width: 71%"></col>
+</colgroup>
+<thead>
+<tr class="header">
+<th>LRT Axiom</th>
+<th>Masanes–Müller Requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A3 (Boolean event algebra)</td>
+<td>Sharp measurements form a Boolean algebra</td>
+</tr>
+<tr class="even">
+<td>A4 (States as probability measures)</td>
+<td>States are convex, normalized functionals on effects</td>
+</tr>
+<tr class="odd">
+<td>A5 (Vehicle-invariance)</td>
+<td>Non-contextuality: probability depends only on the event, not the context</td>
+</tr>
+<tr class="even">
+<td>A6 (Local tomography)</td>
+<td>Composite states determined by local statistics</td>
+</tr>
+<tr class="odd">
+<td>A7a (Non-classicality)</td>
+<td>State space is non-simplex (interference)</td>
+</tr>
+<tr class="even">
+<td>A7b (Continuous reversibility)</td>
+<td>Reversible transformations form a connected Lie group</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Corollary.</strong> By Masanes &amp; Müller (2011, Theorem 1), any system satisfying A3–A7 is represented by quantum theory over a (real, complex, or quaternionic) Hilbert space.</p>
+<p><em>What LRT adds:</em> The reconstruction theorems take local tomography, non-classicality, and continuous reversibility as <em>given</em>. LRT provides a potential <em>grounding</em> for these axioms: they follow from the requirement that physical systems maintain determinate identity (L₁) at the vehicle level while interfacing with a richer information space (I∞). The vehicle/content distinction explains <em>why</em> local tomography holds (composite records in A_Ω are Boolean products of local records) and <em>why</em> dynamics must be continuous and reversible (discontinuity or irreversibility would create identification ambiguity at the vehicle level).</p>
+<hr />
+<h2 id="born-rule-theorem-iis-lrt">6. Born-Rule Theorem (IIS-LRT)</h2>
+<h3 id="theorem-statement">6.1 Theorem Statement</h3>
+<p><strong>Theorem (Born Rule from A1–A7).</strong> Suppose Axioms A1–A7 hold. Then there exists a complex Hilbert space H such that:</p>
+<ul>
+<li>Pure physical states correspond to rays [ψ] ∈ H</li>
+<li>Sharp events correspond to orthogonal projectors P on H</li>
+<li>For each pure state, the interface probability map is uniquely</li>
+</ul>
+<p><br /><span class="math display"><em>s</em><sub><em>ψ</em></sub>(<em>P</em>) = ⟨<em>ψ</em>|<em>P</em>|<em>ψ</em>⟩</span><br /></p>
+<p>and in particular, for any rank-1 projector P = |φ⟩⟨φ|,</p>
+<p><br /><span class="math display"><em>s</em><sub><em>ψ</em></sub>(<em>P</em>) = |⟨<em>ϕ</em>|<em>ψ</em>⟩|<sup>2</sup></span><br /></p>
+<p><strong>The Born rule holds.</strong></p>
+<h3 id="proof-outline">6.2 Proof Outline</h3>
+<p><strong>Step 1: IIS-LRT ↔︎ Generalized Probabilistic Theory</strong></p>
+<p>From A3–A4, each system has: - A convex set of states S: normalized probability measures s on E - An effect algebra E of events</p>
+<p>Composition rule A6 and non-classical structure A7 give exactly the data of a generalized probabilistic theory (GPT) with local tomography and nonclassical state space.</p>
+<p><strong>Step 2: Reconstruction to Quantum Formalism</strong></p>
+<p>By reconstruction results (Masanes &amp; Müller, 2011; Chiribella et al., 2011), any GPT satisfying: - Local tomography (A6) - Non-classical state space and continuous reversible dynamics (A7)</p>
+<p>is isomorphic to quantum theory on a (real/complex/quaternionic) Hilbert space.</p>
+<p>Empirical results (Renou et al., 2021) and LRT’s further constraints select the <strong>complex</strong> case: real quantum theory makes different predictions in Bell-type network scenarios, and experiments favor the complex formulation.</p>
+<p>Representation: - States by density operators ρ on complex Hilbert space H - Sharp events by projectors P ∈ P(H) - General effects by positive operators E with 0 ≤ E ≤ I</p>
+<p>At this stage we have a Hilbert-space representation but no Born rule yet.</p>
+<p><strong>Step 3: Interface States as Measures on Projectors</strong></p>
+<p>Axioms A4–A5 imply that each IIS-LRT state s restricts to a map</p>
+<p><br /><span class="math display"><em>s</em> : <em>P</em>(ℋ) → [0, 1]</span><br /></p>
+<p>on the lattice of orthogonal projectors such that:</p>
+<ul>
+<li><strong>Normalization:</strong> s(I) = 1</li>
+<li><strong>Non-negativity:</strong> s(P) ≥ 0 for all projectors</li>
+<li><strong>Additivity on orthogonal projectors:</strong> If P_i P_j = 0 for i ≠ j and Σ_i P_i = P, then s(P) = Σ_i s(P_i)</li>
+<li><strong>Non-contextuality:</strong> If the same projector P appears in different decompositions (different “vehicles”), its probability is independent of decomposition (A5)</li>
+</ul>
+<p>So s is a (countably) additive, non-contextual probability measure on P(H).</p>
+<p><strong>Step 4: Gleason-Type Theorem</strong></p>
+<p>By Gleason’s theorem (Gleason, 1957) for dim H ≥ 3, or by Busch’s generalization (Busch, 2003):</p>
+<blockquote>
+<p>Every such probability measure s on the projection lattice is given by a unique density operator ρ such that s(P) = Tr(ρP) for all projectors P.</p>
+</blockquote>
+<p>Thus each IIS-LRT state corresponds to a density operator:</p>
+<p><br /><span class="math display"><em>s</em>(<em>P</em>) = <em>T</em><em>r</em>(<em>ρ</em><sub><em>s</em></sub><em>P</em>)</span><br /></p>
+<p><strong>Step 5: Pure States → Born Rule</strong></p>
+<p>Define pure IIS-LRT states as extremal points of the convex state space (non-decomposable into distinct convex combinations). In the Hilbert-space representation, these are rank-1 projectors |ψ⟩⟨ψ|. For such a pure state,</p>
+<p><br /><span class="math display"><em>s</em><sub><em>ψ</em></sub>(<em>P</em>) = <em>T</em><em>r</em>(|<em>ψ</em>⟩⟨<em>ψ</em>|<em>P</em>) = ⟨<em>ψ</em>|<em>P</em>|<em>ψ</em>⟩</span><br /></p>
+<p>For a rank-1 projector P = |φ⟩⟨φ|,</p>
+<p><br /><span class="math display"><em>s</em><sub><em>ψ</em></sub>(<em>P</em>) = |⟨<em>ϕ</em>|<em>ψ</em>⟩|<sup>2</sup></span><br /></p>
+<p><strong>QED</strong> □</p>
+<hr />
+<h2 id="why-only-the-born-rule">7. Why Only the Born Rule?</h2>
+<p>Given the constraints derived from L₃, is any other probability rule possible?</p>
+<p><strong>Uniqueness:</strong> The Born rule is the <em>unique</em> measure satisfying: 1. Vehicle-weight invariance (from L₁) 2. Finite additivity over orthogonal projections 3. Non-contextuality (from A5)</p>
+<p>Any alternative measure would make the system’s disposition toward outcomes vary with the descriptive decomposition chosen. The question “what is the probability of outcome A?” would have different answers depending on which other outcomes we consider alongside A—even when A itself is unchanged. This violates Determinate Identity.</p>
+<h3 id="a-toy-alternative-fourth-power-rule">7.1 A Toy Alternative: Fourth-Power Rule</h3>
+<p>Consider the hypothesis that probability follows a “fourth-power rule”:</p>
+<p><br /><span class="math display">$$p(\phi|\psi) = \frac{|\langle\phi|\psi\rangle|^4}{\sum_i |\langle\phi_i|\psi\rangle|^4}$$</span><br /></p>
+<p>where {φ_i} is a complete orthonormal basis. This satisfies normalization (probabilities sum to 1) and non-negativity. Why doesn’t it work?</p>
+<p><strong>Failure of additivity:</strong> Consider a qutrit (3-dimensional system) in state |ψ⟩ = (1/√3)(|0⟩ + |1⟩ + |2⟩).</p>
+<p>For the Born rule with projector P = |0⟩⟨0| + |1⟩⟨1|: <br /><span class="math display">$$p_{\text{Born}}(P) = |\langle 0|\psi\rangle|^2 + |\langle 1|\psi\rangle|^2 = \frac{1}{3} + \frac{1}{3} = \frac{2}{3}$$</span><br /></p>
+<p>For the fourth-power rule: - Individual: p(|0⟩) = (1/9)/(3 × 1/9) = 1/3, similarly p(|1⟩) = 1/3 - But p(P) computed directly from the rule would require defining the fourth-power measure for rank-2 projectors</p>
+<p>The problem: the fourth-power rule does not decompose additively. Given orthogonal projectors P₁ and P₂:</p>
+<p><br /><span class="math display">$$\frac{|\langle\psi|P_1 + P_2|\psi\rangle|^4}{\text{normalization}} \neq \frac{|\langle\psi|P_1|\psi\rangle|^4 + |\langle\psi|P_2|\psi\rangle|^4}{\text{normalization}}$$</span><br /></p>
+<p>This violates LRT’s A4 (finite additivity over orthogonal events) and hence fails vehicle-weight invariance.</p>
+<p><strong>General failure:</strong> Any rule of the form p ∝ |⟨φ|ψ⟩|^(2n) for n ≠ 1 fails additivity. Only n = 1 (the Born rule) yields a measure that is both additive and non-contextual.</p>
+<h3 id="gleason-uniqueness-in-dim-3">7.2 Gleason Uniqueness in Dim ≥ 3</h3>
+<p>Once the projector lattice and invariance conditions (A4–A5) are in place, <strong>Gleason’s theorem provides mathematical uniqueness</strong>: the only measures satisfying the constraints are trace measures. LRT’s contribution is <em>conceptual</em>—explaining why those constraints hold—not providing an independent mathematical uniqueness proof. The argument structure is:</p>
+<ol type="1">
+<li><strong>L₁ (conceptual)</strong> → Vehicle-weight invariance must hold</li>
+<li><strong>Vehicle-weight invariance (formal)</strong> → Satisfies Gleason’s premises</li>
+<li><strong>Gleason’s theorem (mathematical)</strong> → Unique trace-form measures</li>
+<li><strong>Pure states (calculation)</strong> → Born rule</li>
+</ol>
+<p>LRT grounds Step 1; Steps 2–4 are known mathematics.</p>
+<p><strong>No Escape Routes:</strong> - Non-additive measures fail basic probability theory requirements - Contextual measures make probability decomposition-dependent, violating L₁ - Measures not of trace form (in dim ≥ 3) violate Gleason’s constraints</p>
+<p>The Born rule is not merely <em>a</em> consistent choice; it is the <em>only</em> consistent choice given L₃ constraints at the vehicle level.</p>
+<hr />
+<h2 id="connection-to-existing-literature">8. Connection to Existing Literature</h2>
+<h3 id="quantum-reconstruction-programs">8.1 Quantum Reconstruction Programs</h3>
+<p>LRT’s derivation complements quantum reconstruction programs:</p>
+<table>
+<colgroup>
+<col style="width: 26%"></col>
+<col style="width: 47%"></col>
+<col style="width: 26%"></col>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Program</th>
+<th>Starting Point</th>
+<th>Derives</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hardy (2001)</td>
+<td>5 reasonable axioms</td>
+<td>Quantum state space</td>
+</tr>
+<tr class="even">
+<td>Chiribella et al. (2011)</td>
+<td>Informational axioms + purification</td>
+<td>Quantum theory</td>
+</tr>
+<tr class="odd">
+<td>Masanes &amp; Müller (2011)</td>
+<td>Physical requirements</td>
+<td>Quantum formalism</td>
+</tr>
+<tr class="even">
+<td>Dakić &amp; Brukner (2011)</td>
+<td>Information + reversibility</td>
+<td>Entanglement structure</td>
+</tr>
+<tr class="odd">
+<td><strong>LRT</strong></td>
+<td>L₃ constraints</td>
+<td>Born rule (+ connects to above)</td>
+</tr>
+</tbody>
+</table>
+<p>LRT provides a potential grounding for the operational axioms these programs assume. Why should physical theories satisfy local tomography? Continuous reversibility? LRT suggests: because these properties are downstream of more fundamental logical constraints.</p>
+<h3 id="gleasons-theorem-and-contextuality">8.2 Gleason’s Theorem and Contextuality</h3>
+<p>The Kochen-Specker theorem (Kochen &amp; Specker, 1967) establishes that no non-contextual hidden variable model can reproduce quantum predictions for dim ≥ 3. LRT’s derivation invokes a positive form of this: quantum probability <em>must</em> be non-contextual at the vehicle level (A5), which then forces the Gleasonian form.</p>
+<h3 id="qbism-and-probability-interpretation">8.3 QBism and Probability Interpretation</h3>
+<p>Caves, Fuchs, and Schack (2002) argue that quantum probabilities are Bayesian degrees of belief, not objective propensities. LRT takes a different view: vehicle-weights are <em>objective</em> features of physical systems, constrained by L₃. However, both approaches agree that consistency requirements (coherence for QBism, vehicle-invariance for LRT) constrain the form of quantum probability.</p>
+<h3 id="many-worlds-and-probability">8.4 Many-Worlds and Probability</h3>
+<p>The Everettian interpretation faces the “probability problem”: if all branches exist, what grounds the Born weights? Decision-theoretic approaches (Wallace, 2010) attempt derivations from rational agency. LRT offers an alternative: the Born rule emerges from logical constraint, independent of branching structure or agent beliefs.</p>
+<h3 id="complex-vs.-real-hilbert-spaces">8.5 Complex vs. Real Hilbert Spaces</h3>
+<p>Renou et al. (2021) showed that real and complex quantum theories make different predictions in network scenarios. Experimental results favor the complex formulation. This supports LRT’s selection of complex Hilbert space in Step 2 of the formal proof.</p>
+<hr />
+<h2 id="potential-objections">9. Potential Objections</h2>
+<h3 id="youve-assumed-hilbert-space-structure">9.1 “You’ve Assumed Hilbert Space Structure”</h3>
+<p><em>Objection:</em> The derivation requires Hilbert space, which already contains quantum structure.</p>
+<p><em>Response:</em> Hilbert space structure is derivable from operational axioms (reconstruction programs) that do not include the Born rule. Alternatively, LRT’s axioms A1–A7 derive Hilbert space from more basic requirements about events, states, and composition. The Born rule is a <em>consequence</em>, not an assumption, of these structures.</p>
+<h3 id="l₃-constraints-are-too-weak">9.2 “L₃ Constraints Are Too Weak”</h3>
+<p><em>Objection:</em> Many probability measures satisfy basic logical consistency. Why does L₃ force the Born rule specifically?</p>
+<p><em>Response:</em> The crucial constraint is not L₃ in general but L₃ <em>at the vehicle level</em> combined with <em>vehicle-weight invariance</em>. It is this invariance—that probability assignments cannot depend on descriptive decomposition—that, combined with Hilbert space geometry, forces Gleason’s theorem and hence the Born rule.</p>
+<h3 id="what-about-non-standard-logics">9.3 “What About Non-Standard Logics?”</h3>
+<p><em>Objection:</em> Paraconsistent and quantum logics relax L₂ or L₃. Doesn’t this undermine LRT?</p>
+<p><em>Response:</em> LRT applies L₃ to the <em>vehicle level</em>—completed measurement records—not to the content level (quantum states in superposition). At the vehicle level, no physical measurement record has ever violated L₃. Every detector either clicks or doesn’t. Alternative logics describe relationships at the content level, which LRT accommodates via I∞.</p>
+<h3 id="this-is-just-gleasons-theorem-in-disguise">9.4 “This Is Just Gleason’s Theorem in Disguise”</h3>
+<p><em>Objection:</em> The derivation reduces to “assume Gleason’s premises, get Gleason’s conclusion.”</p>
+<p><em>Response:</em> The contribution is showing <em>why</em> Gleason’s premises hold. Gleason’s theorem takes additivity and non-contextuality as given; LRT derives them from L₃ constraints on physical identity. This grounds mathematical assumptions in metaphysical principles.</p>
+<hr />
+<h2 id="implications-and-future-directions">10. Implications and Future Directions</h2>
+<h3 id="for-quantum-foundations">10.1 For Quantum Foundations</h3>
+<p>If the Born rule follows from logical constraint rather than being a fundamental postulate, this shifts the burden of explanation. The question “why the Born rule?” becomes “why L₃?”—and L₃, being self-grounding (any denial presupposes what it denies), may be the appropriate terminus of explanation.</p>
+<h3 id="for-quantum-gravity">10.2 For Quantum Gravity</h3>
+<p>In regimes where spacetime itself may be quantum-superposed, LRT suggests that L₃ constraints still apply at the vehicle level of any actualized measurement. This may constrain approaches to quantum gravity that would permit true L₃ violations.</p>
+<h3 id="for-experimental-physics">10.3 For Experimental Physics</h3>
+<p>LRT predicts: no completed measurement will ever violate L₃. This is consistent with all observations to date and continues to be empirically falsifiable. Additionally, the selection of complex over real Hilbert space (supported by Renou et al., 2021) aligns with LRT’s framework.</p>
+<h3 id="open-questions">10.4 Open Questions</h3>
+<ol type="1">
+<li>Can Masanes-Müller axioms be fully derived from L₃ + parsimony?</li>
+<li>What is the precise relationship between LRT and other non-collapse interpretations?</li>
+<li>Can Lean formalization strengthen the proof chain?</li>
+</ol>
+<hr />
+<h2 id="conclusion">11. Conclusion</h2>
+<p>The Born rule can be derived from the Three Fundamental Laws of Logic applied at the vehicle level of physical measurement. The derivation proceeds through vehicle-weight objectivity, vehicle-weight invariance, Gleason’s theorem premises, trace-form probability measures, and finally the Born rule for pure states.</p>
+<p>This derivation is non-circular: L₃ constraints are conceptually prior to the probability measure they entail. It provides a principled answer to “why the Born rule?”—not as an arbitrary postulate, but as a necessary consequence of what it means for physical systems to possess determinate identity.</p>
+<p>The framework connects naturally to quantum reconstruction programs, suggests constraints on quantum gravity, and maintains clear empirical content. Logic Realism Theory offers the Born rule not as a mystery to be accepted but as a theorem to be understood.</p>
+<hr />
+<h2 id="references">References</h2>
+<h3 id="primary-sources">Primary Sources</h3>
+<p>Born, M. (1926). Zur Quantenmechanik der Stoßvorgänge. <em>Zeitschrift für Physik</em>, 37, 863–867. https://doi.org/10.1007/BF01397477</p>
+<p>Gleason, A. M. (1957). Measures on the closed subspaces of a Hilbert space. <em>Journal of Mathematics and Mechanics</em>, 6(4), 885–893. https://www.jstor.org/stable/24900629</p>
+<p>Kochen, S., &amp; Specker, E. P. (1967). The problem of hidden variables in quantum mechanics. <em>Journal of Mathematics and Mechanics</em>, 17(1), 59–87. https://doi.org/10.1512/iumj.1968.17.17004</p>
+<h3 id="quantum-reconstruction">Quantum Reconstruction</h3>
+<p>Chiribella, G., D’Ariano, G. M., &amp; Perinotti, P. (2011). Informational derivation of quantum theory. <em>Physical Review A</em>, 84(1), 012311. https://doi.org/10.1103/PhysRevA.84.012311</p>
+<p>Dakić, B., &amp; Brukner, Č. (2011). Quantum theory and beyond: Is entanglement special? In H. Halvorson (Ed.), <em>Deep Beauty: Understanding the Quantum World through Mathematical Innovation</em> (pp. 365–392). Cambridge University Press. arXiv:0911.0695</p>
+<p>Hardy, L. (2001). Quantum theory from five reasonable axioms. arXiv:quant-ph/0101012. https://arxiv.org/abs/quant-ph/0101012</p>
+<p>Masanes, L., &amp; Müller, M. P. (2011). A derivation of quantum theory from physical requirements. <em>New Journal of Physics</em>, 13, 063001. https://doi.org/10.1088/1367-2630/13/6/063001</p>
+<p>Masanes, L., Müller, M. P., Augusiak, R., &amp; Pérez-García, D. (2013). Existence of an information unit as a postulate of quantum theory. <em>Proceedings of the National Academy of Sciences</em>, 110(41), 16373–16378. https://doi.org/10.1073/pnas.1304884110</p>
+<h3 id="gleason-type-theorems">Gleason-Type Theorems</h3>
+<p>Busch, P. (2003). Quantum states and generalized observables: A simple proof of Gleason’s theorem. <em>Physical Review Letters</em>, 91(12), 120403. https://doi.org/10.1103/PhysRevLett.91.120403</p>
+<p>Wright, V. J., &amp; Weigert, S. (2021). General probabilistic theories with a Gleason-type theorem. <em>Quantum</em>, 5, 588. https://doi.org/10.22331/q-2021-11-25-588</p>
+<h3 id="complex-hilbert-space-selection">Complex Hilbert Space Selection</h3>
+<p>Renou, M. O., Trillo, D., Weilenmann, M., Le, T. P., Tavakoli, A., Gisin, N., Acín, A., &amp; Navascués, M. (2021). Quantum theory based on real numbers can be experimentally falsified. <em>Nature</em>, 600(7890), 625–629. https://doi.org/10.1038/s41586-021-04160-4</p>
+<h3 id="probability-and-interpretation">Probability and Interpretation</h3>
+<p>Caves, C. M., Fuchs, C. A., &amp; Schack, R. (2002). Quantum probabilities as Bayesian probabilities. <em>Physical Review A</em>, 65(2), 022305. https://doi.org/10.1103/PhysRevA.65.022305</p>
+<p>Saunders, S., Barrett, J., Kent, A., &amp; Wallace, D. (Eds.). (2010). <em>Many Worlds? Everett, Quantum Theory, and Reality</em>. Oxford University Press. https://doi.org/10.1093/acprof:oso/9780199560561.001.0001</p>
+<h3 id="logic-realism-theory">Logic Realism Theory</h3>
+<p>Longmire, J. D. (2025). Logic Realism Theory: A co-constitutive framework for quantum foundations. Position paper. Zenodo. https://doi.org/10.5281/zenodo.14575657</p>
+<hr />
+<h2 id="appendix-a-notation-summary">Appendix A: Notation Summary</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>L₁, L₂, L₃</td>
+<td>Identity, Non-Contradiction, Excluded Middle</td>
+</tr>
+<tr class="even">
+<td>L₃ (collective)</td>
+<td>The Three Fundamental Laws of Logic</td>
+</tr>
+<tr class="odd">
+<td>I∞</td>
+<td>Infinite Information Space (representable configurations)</td>
+</tr>
+<tr class="even">
+<td>A_Ω</td>
+<td>Logical Actuality Layer (L₃-admissible outcomes)</td>
+</tr>
+<tr class="odd">
+<td>∅_L</td>
+<td>Ontological Nullity (total logical failure)</td>
+</tr>
+<tr class="even">
+<td>H</td>
+<td>Hilbert space</td>
+</tr>
+<tr class="odd">
+<td>P(H)</td>
+<td>Projection lattice of H</td>
+</tr>
+<tr class="even">
+<td>ρ</td>
+<td>Density operator</td>
+</tr>
+<tr class="odd">
+<td>|ψ⟩, |φ⟩</td>
+<td>State vectors</td>
+</tr>
+<tr class="even">
+<td>Tr(·)</td>
+<td>Trace operation</td>
+</tr>
+<tr class="odd">
+<td>μ, s</td>
+<td>Probability measures</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="appendix-b-gleasons-theorem-statement">Appendix B: Gleason’s Theorem (Statement)</h2>
+<p><strong>Theorem (Gleason, 1957).</strong> Let H be a separable Hilbert space with dim(H) ≥ 3. Let μ be a function from the projection operators on H to [0,1] such that:</p>
+<ol type="1">
+<li>μ(I) = 1 (normalization)</li>
+<li>For any countable collection {P_i} of mutually orthogonal projections with Σ_i P_i = P, we have μ(P) = Σ_i μ(P_i) (σ-additivity)</li>
+</ol>
+<p>Then there exists a unique density operator ρ (positive, trace-class, Tr(ρ) = 1) such that:</p>
+<p><br /><span class="math display"><em>μ</em>(<em>P</em>) = <em>T</em><em>r</em>(<em>ρ</em><em>P</em>)</span><br /></p>
+<p>for all projections P.</p>
+<p><strong>Corollary.</strong> For pure states (ρ = |ψ⟩⟨ψ|) and rank-1 projectors (P = |φ⟩⟨φ|):</p>
+<p><br /><span class="math display"><em>μ</em>(|<em>ϕ</em>⟩⟨<em>ϕ</em>|) = |⟨<em>ϕ</em>|<em>ψ</em>⟩|<sup>2</sup></span><br /></p>
+<hr />
+<p><em>Correspondence: jdlongmire@outlook.com</em> <em>Repository: https://github.com/jdlongmire/logic-realism-theory</em></p>
+<hr />
+<p><strong>Word count:</strong> ~6,500 <strong>Last updated:</strong> 2026-02-24 (revised with Perplexity review feedback)</p>
+</body>
+</html>

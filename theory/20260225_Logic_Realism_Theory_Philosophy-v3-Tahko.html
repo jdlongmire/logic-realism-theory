@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>20260225_Logic_Realism_Theory_Philosophy-v3-Tahko</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#logic-realism-theory-philosophical-foundations">Logic Realism Theory: Philosophical Foundations</a>
+<ul>
+<li><a href="#abstract">Abstract</a></li>
+<li><a href="#introduction">1. Introduction</a>
+<ul>
+<li><a href="#the-philosophical-problem">1.1 The Philosophical Problem</a></li>
+<li><a href="#the-core-thesis">1.2 The Core Thesis</a></li>
+<li><a href="#what-this-paper-does">1.3 What This Paper Does</a></li>
+<li><a href="#plan-of-the-paper">1.4 Plan of the Paper</a></li>
+</ul></li>
+<li><a href="#the-ontological-status-of-logical-laws">2. The Ontological Status of Logical Laws</a>
+<ul>
+<li><a href="#the-dual-character-of-logic">2.1 The Dual Character of Logic</a></li>
+<li><a href="#the-constitutive-argument">2.2 The Constitutive Argument</a></li>
+<li><a href="#the-modality-of-logical-laws">2.3 The Modality of Logical Laws</a></li>
+<li><a href="#avoiding-psychologism">2.4 Avoiding Psychologism</a></li>
+<li><a href="#the-relation-to-wittgenstein">2.5 The Relation to Wittgenstein</a></li>
+<li><a href="#the-structural-necessity-of-empirical-fact">2.6 The Structural Necessity of Empirical Fact</a></li>
+</ul></li>
+<li><a href="#interface-metaphysics">3. Interface Metaphysics</a>
+<ul>
+<li><a href="#the-two-realms">3.1 The Two Realms</a></li>
+<li><a href="#what-is-the-interface">3.2 What Is the Interface?</a></li>
+<li><a href="#why-interface-rather-than-reality">3.3 Why “Interface” Rather Than “Reality”?</a></li>
+<li><a href="#the-iis-as-maximal-distinguishability">3.4 The IIS as Maximal Distinguishability</a></li>
+<li><a href="#actuality-as-boolean-resolution">3.5 Actuality as Boolean Resolution</a></li>
+</ul></li>
+<li><a href="#comparison-with-interpretations">4. Comparison with Interpretations</a>
+<ul>
+<li><a href="#the-interpretation-landscape">4.1 The Interpretation Landscape</a></li>
+<li><a href="#lrt-vs.-copenhagen">4.2 LRT vs. Copenhagen</a></li>
+<li><a href="#lrt-vs.-many-worlds">4.3 LRT vs. Many-Worlds</a></li>
+<li><a href="#lrt-vs.-bohmian-mechanics">4.4 LRT vs. Bohmian Mechanics</a></li>
+<li><a href="#lrt-vs.-objective-collapse">4.5 LRT vs. Objective Collapse</a></li>
+<li><a href="#lrt-vs.-qbism">4.6 LRT vs. QBism</a></li>
+</ul></li>
+<li><a href="#explanatory-virtues">5. Explanatory Virtues</a>
+<ul>
+<li><a href="#unification">5.1 Unification</a></li>
+<li><a href="#parsimony">5.2 Parsimony</a></li>
+<li><a href="#falsifiability">5.3 Falsifiability</a></li>
+<li><a href="#novel-predictions">5.4 Novel Predictions</a></li>
+</ul></li>
+<li><a href="#objections-and-replies">6. Objections and Replies</a>
+<ul>
+<li><a href="#objection-logic-cannot-constrain-physics">6.1 Objection: Logic Cannot Constrain Physics</a></li>
+<li><a href="#objection-this-is-just-reconstruction-not-interpretation">6.2 Objection: This Is Just Reconstruction, Not Interpretation</a></li>
+<li><a href="#objection-the-interface-is-mysterious">6.3 Objection: The Interface Is Mysterious</a></li>
+<li><a href="#objection-3fll-are-revisable">6.4 Objection: 3FLL Are Revisable</a></li>
+<li><a href="#objection-this-is-idealism">6.5 Objection: This Is Idealism</a></li>
+<li><a href="#objection-what-about-pre-measurement-reality">6.6 Objection: What About Pre-Measurement Reality?</a></li>
+</ul></li>
+<li><a href="#conclusion">7. Conclusion</a>
+<ul>
+<li><a href="#what-lrt-achieves">7.1 What LRT Achieves</a></li>
+<li><a href="#what-lrt-does-not-achieve">7.2 What LRT Does Not Achieve</a></li>
+<li><a href="#the-philosophical-significance">7.3 The Philosophical Significance</a></li>
+<li><a href="#future-directions">7.4 Future Directions</a></li>
+</ul></li>
+<li><a href="#references">References</a></li>
+<li><a href="#related-papers-in-this-series">Related Papers in This Series</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="logic-realism-theory-philosophical-foundations">Logic Realism Theory: Philosophical Foundations</h1>
+<p><strong>James (JD) Longmire</strong> ORCID: 0009-0009-1383-7698 Northrop Grumman Fellow (unaffiliated research)</p>
+<p><strong>Version:</strong> 3.0 (February 2026) <strong>Status:</strong> Working Draft <strong>Target Venues:</strong> Philosophy of Science, BJPS, Studies in History and Philosophy of Modern Physics</p>
+<hr />
+<h2 id="abstract">Abstract</h2>
+<p>Logic Realism Theory (LRT) proposes that the Three Fundamental Laws of Logic (3FLL)—Identity, Non-Contradiction, and Excluded Middle—are not merely rules of reasoning but ontological constraints constitutive of physical distinguishability. The core evidence is an asymmetry: we can conceive of 3FLL violations, yet physical reality never produces them. This asymmetry indicates that 3FLL constrain reality, not merely cognition. This paper develops the philosophical foundations of this claim. We argue that: (1) 3FLL have a dual character, functioning both epistemically and ontologically; (2) quantum mechanics emerges as the unique “interface” structure mediating between non-Boolean possibility and Boolean actuality; (3) this framework resolves longstanding interpretive puzzles while maintaining scientific realism. The result is a form of structural realism grounded in logical necessity rather than contingent physical law.</p>
+<hr />
+<h2 id="introduction">1. Introduction</h2>
+<h3 id="the-philosophical-problem">1.1 The Philosophical Problem</h3>
+<p>Quantum mechanics presents philosophy with a distinctive challenge: the formalism works, but what does it describe? After a century of debate, no consensus interpretation exists. Copenhagen, Many-Worlds, Bohmian mechanics, and objective collapse theories each purchase explanatory power at significant metaphysical cost.</p>
+<p>This paper proposes a different approach. Rather than asking “What is the world like, given quantum mechanics?”, we ask: <strong>“What must the interface between distinguishable states and determinate outcomes be like, given the logical structure of distinguishability itself?”</strong></p>
+<p>The answer, we argue, is quantum mechanics.</p>
+<h3 id="the-core-thesis">1.2 The Core Thesis</h3>
+<p><strong>Logic Realism Theory (LRT)</strong> advances three interrelated claims:</p>
+<ol type="1">
+<li><p><strong>Ontological Claim:</strong> The Three Fundamental Laws of Logic (Identity, Non-Contradiction, Excluded Middle) are not merely cognitive constraints or linguistic conventions but constitutive conditions for physical distinguishability.</p></li>
+<li><p><strong>Interface Claim:</strong> Quantum mechanics is the unique mathematical structure that mediates between non-Boolean possibility (the space of all distinguishable configurations) and Boolean actuality (determinate measurement outcomes).</p></li>
+<li><p><strong>Derivation Claim:</strong> Given 3FLL-grounded distinguishability plus minimal physical constraints (continuity, local tomography, information preservation), complex quantum mechanics follows uniquely.</p></li>
+</ol>
+<h3 id="what-this-paper-does">1.3 What This Paper Does</h3>
+<p>The companion technical paper (Longmire, this volume) establishes the mathematical derivation. This paper addresses the philosophical questions:</p>
+<ul>
+<li>What does it mean to say logical laws are “ontological”?</li>
+<li>How can logic constrain physics?</li>
+<li>What kind of realism does LRT support?</li>
+<li>How does LRT compare to existing interpretations?</li>
+<li>What are the limits of this approach?</li>
+</ul>
+<h3 id="plan-of-the-paper">1.4 Plan of the Paper</h3>
+<p>Section 2 develops the ontological status of 3FLL. Section 3 articulates the interface metaphysics. Section 4 compares LRT to existing interpretations. Section 5 examines LRT’s explanatory virtues. Section 6 responds to objections. Section 7 concludes.</p>
+<hr />
+<h2 id="the-ontological-status-of-logical-laws">2. The Ontological Status of Logical Laws</h2>
+<h3 id="the-dual-character-of-logic">2.1 The Dual Character of Logic</h3>
+<p>Logical laws have traditionally been understood in one of three ways:</p>
+<table>
+<thead>
+<tr class="header">
+<th>View</th>
+<th>3FLL Status</th>
+<th>Relation to World</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Psychologism</td>
+<td>Cognitive constraints</td>
+<td>Describe how minds work</td>
+</tr>
+<tr class="even">
+<td>Conventionalism</td>
+<td>Linguistic rules</td>
+<td>Define meaning, silent on world</td>
+</tr>
+<tr class="odd">
+<td>Platonism</td>
+<td>Abstract truths</td>
+<td>True of abstract objects</td>
+</tr>
+</tbody>
+</table>
+<p>LRT proposes a fourth option:</p>
+<p><strong>Logic Realism</strong> | Constitutive constraints | Make distinguishability possible |</p>
+<p>On this view, 3FLL have a dual character: they function both as conditions for rational discourse <em>and</em> as conditions for physical distinguishability. The novelty is taking the second role seriously.</p>
+<p>Recent work in the metaphysics of logic has systematized these options. Tahko (2021) surveys varieties of logical realism, characterizing the core position as holding that “logical facts are mind- and language-independent.” He notes that logical realism may collapse into standard metaphysical realism—a result LRT embraces. The logical structure of distinguishability <em>is</em> the fundamental metaphysical structure. Where Tahko’s survey maps the conceptual terrain, LRT stakes out a specific position: the laws of logic are not merely <em>about</em> the world’s structure but <em>constitutive</em> of it.</p>
+<h3 id="the-constitutive-argument">2.2 The Constitutive Argument</h3>
+<p><strong>Premise 1:</strong> Physical measurement yields determinate outcomes.</p>
+<p>Every physical measurement ever performed has produced exactly one outcome—never zero outcomes, never two simultaneous contradictory outcomes, never an outcome that both is and is not what it is.</p>
+<p><strong>Premise 2:</strong> Determinate outcomes require distinguishability.</p>
+<p>An outcome is determinate only if it can be distinguished from alternatives. A measurement that cannot distinguish “spin-up” from “spin-down” has not measured spin.</p>
+<p><strong>Premise 3:</strong> Distinguishability presupposes 3FLL.</p>
+<p>For states <span class="math inline"><em>s</em><sub>1</sub></span> and <span class="math inline"><em>s</em><sub>2</sub></span> to be distinguishable: - Each must be self-identical (Identity) - They cannot be both identical and non-identical (Non-Contradiction) - They are either identical or non-identical (Excluded Middle)</p>
+<p><strong>Conclusion:</strong> Physical measurement presupposes 3FLL as constitutive conditions.</p>
+<p>This is not the claim that we <em>think using</em> 3FLL (trivially true) but that 3FLL are <em>conditions for the possibility</em> of determinate physical outcomes.</p>
+<h3 id="the-modality-of-logical-laws">2.3 The Modality of Logical Laws</h3>
+<p>On the LRT view, 3FLL are:</p>
+<ul>
+<li><strong>Metaphysically necessary:</strong> No possible world permits distinguishability without 3FLL</li>
+<li><strong>Not merely epistemic:</strong> Their necessity is not just “for us” but for any possible physics</li>
+<li><strong>Constitutive rather than descriptive:</strong> They don’t describe a pre-existing realm but make distinguishability possible</li>
+</ul>
+<p>This places LRT in dialogue with Kant’s transcendental idealism, but with a crucial difference: for Kant, the forms of intuition (space and time) are imposed by mind on experience. For LRT, 3FLL are conditions for distinguishability <em>itself</em>, prior to any mind-world distinction.</p>
+<p>This view finds support in Tahko’s (2009) treatment of the Law of Non-Contradiction as a metaphysical principle. Tahko argues that LNC is “a general principle derived from how things are in the world”—specifically, that objects cannot simultaneously possess mutually exclusive properties. This is not a claim about how we must think but about “certain constraints as to what kind of properties an object can have.” LRT generalizes this insight: all three fundamental laws (Identity, Non-Contradiction, Excluded Middle) function as metaphysical constraints on what physical reality can instantiate. Where Tahko grounds LNC in the incompatibility of properties, LRT grounds all three laws in the structure of distinguishability itself.</p>
+<h3 id="avoiding-psychologism">2.4 Avoiding Psychologism</h3>
+<p>A natural objection: “Logical laws are just how we think. They say nothing about external reality.”</p>
+<p><strong>Reply:</strong> The decisive evidence against psychologism is the asymmetry between conceivability and observation:</p>
+<p><strong>We can conceive of 3FLL violations. Physical reality never produces them.</strong></p>
+<p>This asymmetry is crucial. If 3FLL were merely cognitive constraints—limits on what we can <em>think</em>—then we could not conceive of their violation. But we can:</p>
+<ul>
+<li>We can imagine a particle that is both spin-up and spin-down <em>at the outcome level</em> (not merely in superposition)</li>
+<li>We can conceive of a detector that fires and does not fire simultaneously</li>
+<li>We can entertain the proposition “this measurement yielded result A and not-A”</li>
+</ul>
+<p>These scenarios are conceivable. We can form coherent mental representations of them, discuss them, and reason about their implications. Nothing in cognition prevents us from entertaining 3FLL violations.</p>
+<p>Yet physical reality never produces them. Despite a century of quantum mechanics—a theory that routinely describes superposition, entanglement, and non-classical correlations—no measurement has ever yielded a contradictory outcome. No detector has ever recorded P and ¬P. No experimental notebook contains a genuine 3FLL violation at the outcome level.</p>
+<p><strong>The constraint is on reality, not cognition.</strong></p>
+<p>If psychologism were true, the conceivability of 3FLL violations would be impossible. Since such violations are conceivable but never observed, the constraint must be external to mind. The 3FLL govern what physical reality can produce, not merely what minds can represent.</p>
+<p>This argument is strengthened by noting that physicists have <em>actively sought</em> 3FLL violations. Experiments testing Bell inequalities, probing quantum contextuality, and searching for deviations from standard quantum mechanics represent sustained attempts to find cracks in the logical structure of outcomes. None have succeeded. The 3FLL hold not for lack of trying, but because reality enforces them.</p>
+<p>The Technical companion (Theorem 7.1) provides a rigorous proof that this constraint is ontic rather than epistemic: even “hidden” outcome tokens that never occur with positive probability cannot violate 3FLL without contradicting the continuity structure of the theory. The epistemic loophole is mathematically closed.</p>
+<p>Tahko’s (2021) survey articulates this point as the independence criterion (IND) for logical realism: logical facts must be “mind- and language-independent.” The conceivability asymmetry provides direct evidence for IND—we can mentally represent violations that reality refuses to instantiate. This is precisely what we would expect if logical structure constrains the world rather than merely our representations of it.</p>
+<h3 id="the-relation-to-wittgenstein">2.5 The Relation to Wittgenstein</h3>
+<p>Wittgenstein (<em>Tractatus</em> 5.4731) claimed logical propositions are tautologies that say nothing about the world. LRT partially agrees: 3FLL do not <em>describe</em> contingent features of the world. But LRT adds: 3FLL are <em>conditions for</em> anything being describable at all.</p>
+<p>This is closer to the <em>Tractatus</em> claim that logic is “transcendental” (6.13)—not a theory <em>about</em> the world but the <em>form</em> of any possible theory.</p>
+<h3 id="the-structural-necessity-of-empirical-fact">2.6 The Structural Necessity of Empirical Fact</h3>
+<p>A central tenet of Logic Realism Theory is that there are no “brute” empirical facts. Under the <strong>Structural Principle of Global Parsimony</strong>, any feature of reality that is not grounded in the constitutive base (3FLL) would constitute “surplus structure” and is therefore forbidden.</p>
+<p><strong>Status note:</strong> Global Parsimony is a <em>structural principle</em> adopted by LRT, not a consequence derived from 3FLL. It functions as a methodological commitment: prefer minimal ontology. Alternative approaches (e.g., accepting brute facts, modal realism) are coherent but rejected by LRT as introducing unjustified surplus structure. See Main paper Section 2.6 for discussion of alternatives.</p>
+<p>Consequently, what we traditionally classify as “empirical inputs”—such as Lorentz invariance, the dimensionality of Hilbert space, or the necessity of complex amplitudes—are not arbitrary rules written on top of reality. Rather, they are the <strong>structural preconditions</strong> required for distinguishability to obtain in a stable interface.</p>
+<p>For example, while we empirically observe that quantum mechanics uses complex numbers, LRT reveals this is not a random selection. As proven by the failure of Real Quantum Mechanics to satisfy local tomography (Technical companion, Theorem 5.2), the complex field is the <em>unique</em> structure capable of preserving distinguishability in composite systems.</p>
+<p><strong>The Local Tomography Constraint:</strong> Although real QM permits globally distinct states with identical marginals (e.g., the Bell states |Φ⁺⟩ and |Φ⁻⟩ both give ρ_A = ρ_B = 1/2), LRT excludes this possibility because such states would correspond to two metaphysically distinct global configurations with no additional distinguishable consequences—surplus ontological structure forbidden by the truthmaker requirement of 3FLL.</p>
+<p>Therefore, an “empirical fact” in LRT is simply a <strong>logical constraint that we observe as a physical regularity.</strong> The “Wager” of LRT is that <em>all</em> fundamental physical laws (including relativistic symmetries) will ultimately be revealed not as contingent inputs, but as the mathematical necessities required to satisfy the Three Fundamental Laws of Logic.</p>
+<hr />
+<h2 id="interface-metaphysics">3. Interface Metaphysics</h2>
+<h3 id="the-two-realms">3.1 The Two Realms</h3>
+<p>LRT posits a fundamental distinction:</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 22%" />
+<col style="width: 14%" />
+<col style="width: 48%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Realm</th>
+<th>Character</th>
+<th>Logic</th>
+<th>Mathematical Structure</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Possibility Space (IIS)</td>
+<td>Non-Boolean</td>
+<td>Superposition permitted</td>
+<td>Complex Hilbert space</td>
+</tr>
+<tr class="even">
+<td>Actuality</td>
+<td>Boolean</td>
+<td>Determinate outcomes only</td>
+<td>Classical state space</td>
+</tr>
+</tbody>
+</table>
+<p>The Infinite Information Space (IIS) contains all distinguishable configurations. It is “non-Boolean” in the sense that superpositions of distinguishable states are themselves distinguishable states—the space is closed under linear combination.</p>
+<p>Actuality is the realm of determinate outcomes. It is Boolean: every proposition has a definite truth value, and classical logic applies.</p>
+<h3 id="what-is-the-interface">3.2 What Is the Interface?</h3>
+<p>The “interface” is not a physical boundary but a <em>structural constraint</em>: the requirement that non-Boolean possibilities resolve to Boolean actualities upon measurement.</p>
+<p><strong>Definition (Interface Structure):</strong> A mathematical structure Q is an <em>interface</em> between IIS and Actuality iff:</p>
+<ol type="1">
+<li>Q embeds the full distinguishability structure of IIS</li>
+<li>Q admits a probability measure over Boolean outcomes</li>
+<li>The measure is consistent (no contradictory outcome assignments)</li>
+<li>The measure is complete (every state yields some outcome distribution)</li>
+</ol>
+<p>Quantum mechanics is the unique structure satisfying these constraints (Theorem 5.7 of the technical companion).</p>
+<h3 id="why-interface-rather-than-reality">3.3 Why “Interface” Rather Than “Reality”?</h3>
+<p>A crucial feature of LRT: quantum mechanics describes the <em>interface</em> between possibility and actuality, not “underlying reality” directly.</p>
+<p>This has several implications:</p>
+<ol type="1">
+<li><p><strong>Wavefunction status:</strong> The wavefunction is not a direct description of reality but a representation of the distinguishability structure prior to actualization.</p></li>
+<li><p><strong>Measurement:</strong> Measurement is not an unexplained “collapse” but the <em>actualization</em> of one among several distinguishable possibilities—the transition from IIS to Boolean actuality.</p></li>
+<li><p><strong>Superposition:</strong> Superposition is not ontologically mysterious; it reflects the non-Boolean structure of the possibility space, which is richer than Boolean actuality.</p></li>
+</ol>
+<h3 id="the-iis-as-maximal-distinguishability">3.4 The IIS as Maximal Distinguishability</h3>
+<p>The Infinite Information Space is defined as the maximal set closed under distinguishability:</p>
+<p><br /><span class="math display">ℐ = {<em>s</em> : <em>D</em> is defined on <em>s</em> × ℐ}</span><br /></p>
+<p>This is not a postulate about “what exists” but a characterization of the space of <em>possible</em> distinguishable configurations.</p>
+<p><strong>Philosophical note on IIS ontology:</strong> IIS is not exotic new metaphysics—it is what physics already assumes. Physicists routinely work with Hilbert space, configuration space, Fock space, and phase space—mathematical structures that are not “in” spacetime yet are treated as describing something physically meaningful. IIS names what these structures represent: the space of distinguishable possibilities constrained by 3FLL.</p>
+<p>The methodological point is crucial: LRT does not ask “what does quantum mechanics mean?” (interpretation) but “why does quantum mechanics have this structure?” (derivation). The answer is that quantum mechanics is the unique interface structure between IIS and Boolean actuality. This inverts the usual philosophical approach of starting with formalism and seeking interpretation. Instead, we start with the metaphysical requirement (distinguishability requires 3FLL) and derive the formalism.</p>
+<p>Critics who find IIS ontologically suspicious should ask themselves: What do <em>they</em> think Hilbert space describes? If the wavefunction is physically meaningful (as realists maintain), it must represent something. IIS provides a direct answer: the structure of distinguishable possibilities. The richness of IIS (infinite-dimensional Hilbert space) follows from:</p>
+<ol type="1">
+<li><strong>Richness of distinguishability:</strong> For any n, there exist n mutually distinguishable states</li>
+<li><strong>Closure under superposition:</strong> If <span class="math inline"><em>s</em><sub>1</sub></span>, <span class="math inline"><em>s</em><sub>2</sub></span> are distinguishable, their linear combinations are also distinguishable states</li>
+<li><strong>Completeness:</strong> The space is complete under the distinguishability metric</li>
+</ol>
+<h3 id="actuality-as-boolean-resolution">3.5 Actuality as Boolean Resolution</h3>
+<p>Actuality is characterized by:</p>
+<ol type="1">
+<li><strong>Determinacy:</strong> Every proposition has a definite truth value</li>
+<li><strong>Exclusivity:</strong> Incompatible outcomes do not co-occur</li>
+<li><strong>Completeness:</strong> Some outcome occurs</li>
+</ol>
+<p>These are precisely the 3FLL applied to measurement outcomes:</p>
+<ul>
+<li>Identity: The outcome is what it is</li>
+<li>Non-Contradiction: The outcome is not both A and ¬A</li>
+<li>Excluded Middle: The outcome is either A or ¬A</li>
+</ul>
+<p>The “mystery” of quantum measurement is reframed: it is not mysterious that measurements have definite outcomes. What requires explanation is the <em>structure of the interface</em> between non-Boolean possibility and Boolean actuality. LRT provides that explanation.</p>
+<hr />
+<h2 id="comparison-with-interpretations">4. Comparison with Interpretations</h2>
+<h3 id="the-interpretation-landscape">4.1 The Interpretation Landscape</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 22%" />
+<col style="width: 28%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Interpretation</th>
+<th>Ontology</th>
+<th>Measurement</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Copenhagen</td>
+<td>Pragmatic/instrumentalist</td>
+<td>Primitive</td>
+<td>Completeness question unanswered</td>
+</tr>
+<tr class="even">
+<td>Many-Worlds</td>
+<td>Universal wavefunction</td>
+<td>Branching</td>
+<td>Preferred basis, probability problem</td>
+</tr>
+<tr class="odd">
+<td>Bohmian</td>
+<td>Particles + pilot wave</td>
+<td>Effective collapse</td>
+<td>Non-locality, surplus structure</td>
+</tr>
+<tr class="even">
+<td>GRW/Collapse</td>
+<td>Wavefunction + collapse</td>
+<td>Objective</td>
+<td>Ad hoc parameters</td>
+</tr>
+<tr class="odd">
+<td>QBism</td>
+<td>Beliefs of agents</td>
+<td>Belief update</td>
+<td>Solipsism worry</td>
+</tr>
+<tr class="even">
+<td>LRT</td>
+<td>Distinguishability + interface</td>
+<td>Actualization</td>
+<td>Ontological status of logic</td>
+</tr>
+</tbody>
+</table>
+<h3 id="lrt-vs.-copenhagen">4.2 LRT vs. Copenhagen</h3>
+<p><strong>Copenhagen</strong> treats measurement as primitive and refuses to ask what the wavefunction represents. LRT agrees that measurement is fundamental but <em>explains why</em>: measurement is the actualization of Boolean outcomes from non-Boolean possibilities, and the Born rule follows from the interface structure.</p>
+<p><strong>Advantage of LRT:</strong> Explains rather than stipulates the Born rule and measurement postulates.</p>
+<h3 id="lrt-vs.-many-worlds">4.3 LRT vs. Many-Worlds</h3>
+<p><strong>Many-Worlds</strong> takes the wavefunction as fundamental and eliminates collapse by postulating that all branches are equally real.</p>
+<p><strong>LRT’s response:</strong> 1. MWI faces the preferred basis problem: why does branching occur in a particular basis? LRT answers: the basis is determined by the measurement context, which imposes Boolean resolution. 2. MWI faces the probability problem: why does the Born rule hold? LRT derives it from the interface structure. 3. MWI postulates an enormous ontology (all branches exist). LRT is parsimonious: only actualized outcomes are “real” in the Boolean sense.</p>
+<p><strong>Key difference:</strong> MWI makes superposition ontologically fundamental. LRT makes <em>distinguishability</em> fundamental; superposition is a feature of the non-Boolean possibility space.</p>
+<h3 id="lrt-vs.-bohmian-mechanics">4.4 LRT vs. Bohmian Mechanics</h3>
+<p><strong>Bohmian mechanics</strong> adds particle positions and a guiding equation to standard QM.</p>
+<p><strong>LRT’s response:</strong> 1. Bohmian mechanics adds ontology (particles) beyond the wavefunction. LRT adds nothing beyond the distinguishability structure. 2. Bohmian mechanics is explicitly non-local (the guiding equation depends on the full configuration). LRT’s non-locality is structural—it follows from the non-Boolean nature of IIS—not dynamical. 3. Bohmian mechanics faces the “empty wave” problem (branches without particles still exist in the wavefunction). LRT has no analogous problem.</p>
+<p><strong>Key difference:</strong> Bohmian mechanics privileges position. LRT privileges distinguishability, from which position (and all observables) emerge.</p>
+<h3 id="lrt-vs.-objective-collapse">4.5 LRT vs. Objective Collapse</h3>
+<p><strong>Objective collapse theories</strong> (GRW, Penrose-Diósi) modify the Schrödinger equation to include stochastic collapse.</p>
+<p><strong>LRT’s response:</strong> 1. Collapse theories introduce free parameters (collapse rate, localization width) that must fit to experiment. LRT predicts that if collapse occurs, parameters must be derivable from fundamental constants (Global Parsimony). 2. Collapse theories face the “tails problem” (wavefunction never exactly localizes). LRT’s actualization is exact: Boolean outcomes are fully determinate. 3. Collapse theories are ad hoc modifications. LRT derives the need for actualization from the interface structure.</p>
+<p><strong>Potential convergence:</strong> If collapse experiments confirm objective collapse with derivable parameters, LRT is compatible. If parameters are fundamental and underivable, LRT requires revision.</p>
+<h3 id="lrt-vs.-qbism">4.6 LRT vs. QBism</h3>
+<p><strong>QBism</strong> treats the wavefunction as encoding an agent’s beliefs, with measurement updating beliefs.</p>
+<p><strong>LRT’s response:</strong> 1. QBism faces the “why these beliefs?” question: why do rational agents converge on quantum probability assignments? LRT answers: the Born rule is the unique probability measure compatible with the interface structure. 2. QBism appears solipsistic (each agent has their own “reality”). LRT is realist: the distinguishability structure is agent-independent. 3. QBism treats the success of QM as a lucky constraint on beliefs. LRT explains it as structural necessity.</p>
+<p><strong>Key difference:</strong> QBism is anti-realist about quantum states. LRT is realist about the distinguishability structure.</p>
+<hr />
+<h2 id="explanatory-virtues">5. Explanatory Virtues</h2>
+<h3 id="unification">5.1 Unification</h3>
+<p>LRT unifies 17 quantum phenomena under a single explanatory principle:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Phenomenon</th>
+<th>Standard Status</th>
+<th>LRT Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Superposition</td>
+<td>Postulate</td>
+<td>Non-Boolean structure of IIS</td>
+</tr>
+<tr class="even">
+<td>Interference</td>
+<td>From superposition</td>
+<td>Distinguishability metric geometry</td>
+</tr>
+<tr class="odd">
+<td>Entanglement</td>
+<td>Postulate</td>
+<td>Non-factorizable distinguishability</td>
+</tr>
+<tr class="even">
+<td>Born rule</td>
+<td>Postulate</td>
+<td>Gleason + interface structure</td>
+</tr>
+<tr class="odd">
+<td>No-cloning</td>
+<td>Theorem</td>
+<td>Distinguishability preservation</td>
+</tr>
+<tr class="even">
+<td>Uncertainty</td>
+<td>Theorem</td>
+<td>Non-commutativity from interface</td>
+</tr>
+<tr class="odd">
+<td>Contextuality</td>
+<td>Theorem</td>
+<td>IIS structure</td>
+</tr>
+<tr class="even">
+<td>Non-locality</td>
+<td>Experimental fact</td>
+<td>Non-Boolean global structure</td>
+</tr>
+<tr class="odd">
+<td>Hilbert space</td>
+<td>Postulate</td>
+<td>Derived from distinguishability</td>
+</tr>
+<tr class="even">
+<td>Complex amplitudes</td>
+<td>Postulate</td>
+<td>Derived from local tomography</td>
+</tr>
+<tr class="odd">
+<td>Unitarity</td>
+<td>Postulate</td>
+<td>Information preservation</td>
+</tr>
+<tr class="even">
+<td>Measurement postulate</td>
+<td>Postulate</td>
+<td>Interface actualization</td>
+</tr>
+</tbody>
+</table>
+<p>The explanatory gain is substantial: postulates become theorems, and the remaining postulates (continuity, local tomography, information preservation) are physically motivated.</p>
+<h3 id="parsimony">5.2 Parsimony</h3>
+<p><strong>Ontological parsimony:</strong> LRT adds no entities beyond what is required for distinguishability. Compare:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Framework</th>
+<th>Added Ontology</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bohmian</td>
+<td>Particles + guiding field</td>
+</tr>
+<tr class="even">
+<td>Many-Worlds</td>
+<td>Infinite branches</td>
+</tr>
+<tr class="odd">
+<td>GRW</td>
+<td>Collapse mechanism + parameters</td>
+</tr>
+<tr class="even">
+<td>LRT</td>
+<td>None (3FLL are constitutive, not additional)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ideological parsimony:</strong> LRT uses only standard logical and mathematical concepts. No new primitive notions are introduced.</p>
+<h3 id="falsifiability">5.3 Falsifiability</h3>
+<p>LRT makes specific predictions (see technical companion, §8):</p>
+<ol type="1">
+<li><strong>No fundamental information loss:</strong> Black hole evaporation must be unitary</li>
+<li><strong>Derivable collapse parameters:</strong> If objective collapse occurs, parameters derive from fundamental constants</li>
+<li><strong>Complex QM confirmed:</strong> Real QM is experimentally distinguishable from complex QM (Renou et al. 2021 confirmed complex)</li>
+<li><strong>No 3FLL violations:</strong> Any experiment showing P ∧ ¬P at the outcome level falsifies LRT</li>
+</ol>
+<h3 id="novel-predictions">5.4 Novel Predictions</h3>
+<p>LRT’s prediction of complex (not real or quaternionic) quantum mechanics predates but is confirmed by Renou et al. (2021). This is a genuine predictive success: LRT + local tomography entails complex amplitudes, and experiment confirms complex amplitudes.</p>
+<hr />
+<h2 id="objections-and-replies">6. Objections and Replies</h2>
+<h3 id="objection-logic-cannot-constrain-physics">6.1 Objection: Logic Cannot Constrain Physics</h3>
+<p><strong>Objection:</strong> “Logical laws are about inference, not about the physical world. You cannot derive physics from logic.”</p>
+<p><strong>Reply:</strong> LRT does not derive physics from logic <em>alone</em>. The derivation requires physical axioms (continuity, local tomography, information preservation). These are classified as <strong>Tier-2 physical axioms</strong>—empirically motivated constraints that are not derived from 3FLL but are required for the derivation of quantum mechanics. What LRT shows is that <em>given</em> these minimal physical constraints, the logical structure of distinguishability uniquely determines quantum mechanics.</p>
+<p>The claim is not “logic entails QM” but “3FLL + Tier-2 physical axioms entails QM.” This honest accounting distinguishes LRT’s constitutive claims (3FLL as conditions for distinguishability) from its physical assumptions (continuity, local tomography, information preservation).</p>
+<p>Tahko’s (2009) defense of LNC as a metaphysical principle provides independent support for this approach. Against Priest’s dialetheism, Tahko argues that accepting true contradictions would undermine the very possibility of property instantiation—objects could not have determinate properties if LNC fails. LRT extends this argument: physical distinguishability requires not just LNC but all three fundamental laws. The metaphysical grounding Tahko provides for LNC applies <em>a fortiori</em> to the full 3FLL.</p>
+<h3 id="objection-this-is-just-reconstruction-not-interpretation">6.2 Objection: This Is Just Reconstruction, Not Interpretation</h3>
+<p><strong>Objection:</strong> “Reconstruction theorems (Hardy, Masanes-Müller, Chiribella et al.) already derive QM from operational axioms. LRT adds nothing new.”</p>
+<p><strong>Reply:</strong> Reconstruction theorems derive QM structure but do not explain <em>why</em> those axioms hold. LRT provides the explanation: the reconstruction axioms follow from 3FLL-constituted distinguishability. The reconstructions are technically prior; LRT provides the philosophical grounding.</p>
+<h3 id="objection-the-interface-is-mysterious">6.3 Objection: The Interface Is Mysterious</h3>
+<p><strong>Objection:</strong> “You’ve replaced ‘collapse’ with ‘actualization’ and ‘wavefunction’ with ‘interface.’ This is verbal substitution, not explanation.”</p>
+<p><strong>Reply:</strong> The interface is not mysterious; it is <em>necessary</em>. Any framework with non-Boolean possibility and Boolean actuality requires a mediating structure. LRT identifies that structure (complex QM) and derives its properties. The “mystery” of measurement is not dissolved but relocated: from “why collapse?” to “why this interface?” The second question has an answer (uniqueness theorems).</p>
+<h3 id="objection-3fll-are-revisable">6.4 Objection: 3FLL Are Revisable</h3>
+<p><strong>Objection:</strong> “Quantum logic (Birkhoff-von Neumann) shows that 3FLL can be revised in quantum contexts. So 3FLL cannot be constitutive.”</p>
+<p><strong>Reply:</strong> LRT is compatible with non-distributive quantum logic <em>at the level of IIS</em>. What LRT requires is that 3FLL hold <em>at the level of measurement outcomes</em>. No experiment has ever yielded an outcome violating Identity, Non-Contradiction, or Excluded Middle. Quantum logic describes the structure of propositions <em>about</em> quantum states; 3FLL describe the structure of <em>outcomes</em> upon measurement.</p>
+<h3 id="objection-this-is-idealism">6.5 Objection: This Is Idealism</h3>
+<p><strong>Objection:</strong> “Making logic constitutive of physics sounds like idealism: mind-dependent reality.”</p>
+<p><strong>Reply:</strong> LRT is not idealist. The distinguishability structure is <em>objective</em>—it does not depend on any particular mind. What LRT claims is that distinguishability (an objective relation) presupposes logical structure. This is closer to structural realism than idealism: the world has the structure it has independently of us, but that structure has a logical character.</p>
+<h3 id="objection-what-about-pre-measurement-reality">6.6 Objection: What About Pre-Measurement Reality?</h3>
+<p><strong>Objection:</strong> “Before measurement, is there anything ‘real’? LRT seems to make reality measurement-dependent.”</p>
+<p><strong>Reply:</strong> LRT distinguishes two senses of “real”:</p>
+<ol type="1">
+<li><strong>IIS-real:</strong> The space of distinguishable possibilities exists (in a modal sense) prior to any measurement</li>
+<li><strong>Actualized-real:</strong> Determinate Boolean outcomes exist upon measurement</li>
+</ol>
+<p>The wavefunction describes IIS-structure, which is objectively real in sense (1). Measurement does not “create” reality but <em>actualizes</em> one among several IIS-real possibilities.</p>
+<p>This is analogous to how a probability distribution over outcomes is objectively real before a coin flip, even though only one outcome becomes actual.</p>
+<hr />
+<h2 id="conclusion">7. Conclusion</h2>
+<h3 id="what-lrt-achieves">7.1 What LRT Achieves</h3>
+<p>Logic Realism Theory offers a novel philosophical framework for understanding quantum mechanics:</p>
+<ol type="1">
+<li><p><strong>Grounds QM in logical necessity:</strong> The peculiar features of QM (superposition, entanglement, Born rule) are not brute facts but follow from the logical structure of distinguishability.</p></li>
+<li><p><strong>Resolves the interpretation problem:</strong> The “measurement problem” is reframed as the interface between non-Boolean possibility and Boolean actuality—a necessary structure, not an embarrassing gap.</p></li>
+<li><p><strong>Maintains scientific realism:</strong> LRT is realist about the distinguishability structure while remaining agnostic about “hidden” ontology beyond that structure.</p></li>
+<li><p><strong>Makes predictions:</strong> LRT is falsifiable and has one confirmed structural prediction (complex QM).</p></li>
+</ol>
+<h3 id="what-lrt-does-not-achieve">7.2 What LRT Does Not Achieve</h3>
+<p>LRT does not:</p>
+<ul>
+<li>Explain <em>why</em> there is something rather than nothing</li>
+<li>Derive the specific value of physical constants</li>
+<li>Resolve all open problems in physics (QFT extension remains open)</li>
+<li>Eliminate all metaphysical questions (the status of IIS remains debatable)</li>
+</ul>
+<h3 id="the-philosophical-significance">7.3 The Philosophical Significance</h3>
+<p>If LRT is correct, the relationship between logic and physics is deeper than usually supposed. Logic is not merely a tool for reasoning about physics but a constraint on what physics <em>can be</em>. The “unreasonable effectiveness of mathematics” (Wigner) finds partial explanation: mathematics is effective because it articulates the logical structure that physical distinguishability presupposes.</p>
+<p>This suggests a form of <strong>logico-physical structuralism</strong>: the fundamental level of reality is neither physical stuff nor abstract objects but the structure of distinguishability itself—a structure that is simultaneously logical and physical.</p>
+<h3 id="future-directions">7.4 Future Directions</h3>
+<p>Philosophical work remains:</p>
+<ol type="1">
+<li><strong>Modal status:</strong> What kind of necessity attaches to the LRT claims?</li>
+<li><strong>Relationship to mathematics:</strong> Is mathematics discovered or constructed, on the LRT view?</li>
+<li><strong>Extension to QFT:</strong> Can the interface framework accommodate relativistic field theory?</li>
+<li><strong>Consciousness:</strong> Does the Boolean/non-Boolean distinction illuminate the measurement problem’s connection to consciousness?</li>
+</ol>
+<p>These questions lie beyond the present paper but define a research program.</p>
+<hr />
+<h2 id="references">References</h2>
+<p>Birkhoff, G. and von Neumann, J. “The logic of quantum mechanics.” <em>Annals of Mathematics</em> 37(4), 1936: 823-843.</p>
+<p>Chiribella, G., D’Ariano, G. M., and Perinotti, P. “Informational derivation of quantum theory.” <em>Physical Review A</em> 84(1), 2011: 012311.</p>
+<p>French, S. and Ladyman, J. “Remodelling structural realism: Quantum physics and the metaphysics of structure.” <em>Synthese</em> 136, 2003: 31-56. DOI: 10.1023/A:1024156116636</p>
+<p>Fuchs, C. A. and Schack, R. “Quantum-Bayesian coherence.” <em>Reviews of Modern Physics</em> 85(4), 2013: 1693-1715.</p>
+<p>Hardy, L. “Quantum theory from five reasonable axioms.” arXiv:quant-ph/0101012, 2001.</p>
+<p>Ladyman, J. “What is structural realism?” <em>Studies in History and Philosophy of Science</em> 29(3), 1998: 409-424. DOI: 10.1016/S0039-3681(98)80129-5</p>
+<p>Longmire, J. D. “It from Bit, Bit from Fit: Foundational Physics Logically Remastered.” [Main LRT paper, available at: https://github.com/jdlongmire/logic-realism-theory/blob/master/theory/Logic_Realism_Theory_Main.md]</p>
+<p>Longmire, J. D. “Logic Realism Theory: Technical Companion.” [Available at: https://github.com/jdlongmire/logic-realism-theory/blob/master/theory/Logic_Realism_Theory_Technical.md]</p>
+<p>Masanes, L. and Müller, M. P. “A derivation of quantum theory from physical requirements.” <em>New Journal of Physics</em> 13, 2011: 063001.</p>
+<p>Maudlin, T. “Three measurement problems.” <em>Topoi</em> 14(1), 1995: 7-15. DOI: 10.1007/BF00763473</p>
+<p>Putnam, H. “Is logic empirical?” In <em>Boston Studies in the Philosophy of Science</em>, Vol. 5, 1968.</p>
+<p>Renou, M.-O. et al. “Quantum theory based on real numbers can be experimentally falsified.” <em>Nature</em> 600, 2021: 625-629.</p>
+<p>Tahko, T. E. “The Law of Non-Contradiction as a Metaphysical Principle.” <em>Australasian Journal of Logic</em> 7, 2009: 32-47.</p>
+<p>Tahko, T. E. “A Survey of Logical Realism.” <em>Synthese</em> 198, 2021: 4775-4790. DOI: 10.1007/s11229-019-02369-5</p>
+<p>Wallace, D. <em>The Emergent Multiverse: Quantum Theory According to the Everett Interpretation.</em> Oxford University Press, 2012.</p>
+<p>Wigner, E. P. “The unreasonable effectiveness of mathematics in the natural sciences.” <em>Communications on Pure and Applied Mathematics</em> 13(1), 1960: 1-14.</p>
+<p>Wittgenstein, L. <em>Tractatus Logico-Philosophicus.</em> 1921. Trans. D. Pears and B. McGuinness. Routledge, 1961.</p>
+<hr />
+<h2 id="related-papers-in-this-series">Related Papers in This Series</h2>
+<p>Longmire, J. D. “It from Bit, Bit from Fit: Foundational Physics Logically Remastered.” Zenodo, 2025. DOI: 10.5281/zenodo.17831819</p>
+<p>Longmire, J. D. “Logic Realism Theory: Technical Foundations.” Zenodo, 2025. DOI: 10.5281/zenodo.17831883</p>
+<p>Longmire, J. D. “LRT Constraints on QFT: Deriving Fock Structure and Interpreting Renormalization from Logical Foundations.” Zenodo, 2025. DOI: 10.5281/zenodo.17831926</p>
+<hr />
+<p><em>Philosophical companion to Longmire (this volume). Targets philosophy of science venues (Philosophy of Science, BJPS, Studies in HPS).</em></p>
+</body>
+</html>

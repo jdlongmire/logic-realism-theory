@@ -35,6 +35,13 @@ The LRT research programme consists of a coordinated suite of papers, each build
     <div class="meta">Conceptual Synthesis | January 2026</div>
     <a href="{{ site.baseurl }}/papers/2026-it-from-bit/" class="card-link">Read Paper →</a>
   </div>
+
+  <div class="paper-card">
+    <h3><a href="{{ site.baseurl }}/assets/pdf/20260307_LRT_Philosophy_v3_Tahko.pdf">Logic Realism Theory: Philosophical Foundations (v3, Tahko)</a></h3>
+    <p>Revised philosophical foundations paper engaging Tahko's work on grounding and ontological dependence. Situates LRT within contemporary analytic metaphysics, clarifying the relationship between logical admissibility and physical necessity.</p>
+    <div class="meta">Philosophical Foundations | March 2026 | PDF</div>
+    <a href="{{ site.baseurl }}/assets/pdf/20260307_LRT_Philosophy_v3_Tahko.pdf" class="card-link">Download PDF →</a>
+  </div>
 </div>
 
 ---
@@ -99,6 +106,19 @@ The LRT research programme consists of a coordinated suite of papers, each build
 
 ---
 
+## AI Systems / Related Work
+
+<div class="paper-grid">
+  <div class="paper-card">
+    <h3><a href="{{ site.baseurl }}/assets/pdf/20260307_Demonstrating_Structural_Drift_Stabilization_in_Autoregressive_Transformers.pdf">Demonstrating Structural Drift Stabilization in Autoregressive Transformers</a></h3>
+    <p>Empirical study of structural drift in autoregressive transformer models and methods for stabilization. Related to LRT's treatment of representational stability and the admissibility constraints that govern coherent inference over extended sequences.</p>
+    <div class="meta">AI Systems Research | March 2026 | PDF</div>
+    <a href="{{ site.baseurl }}/assets/pdf/20260307_Demonstrating_Structural_Drift_Stabilization_in_Autoregressive_Transformers.pdf" class="card-link">Download PDF →</a>
+  </div>
+</div>
+
+---
+
 ## Reading Order
 
 For readers new to LRT, we recommend:
@@ -109,7 +129,8 @@ For readers new to LRT, we recommend:
 4. **It from Bit** — Conceptual synthesis and Wheeler connection
 5. **QFT Statistics** — Extension to particle statistics
 6. **GR Extension** — Programmatic spacetime implications
-7. **ICH Simulation** — Computational exploration (optional, in progress)
+7. **Philosophical Foundations v3 (Tahko)** — Metaphysical grounding and analytic context
+8. **ICH Simulation** — Computational exploration (optional, in progress)
 
 *Note: The 2025 Born Rule paper is an earlier, more concise version superseded by the 2026 derivation.*
 
