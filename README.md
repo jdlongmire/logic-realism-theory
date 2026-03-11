@@ -37,6 +37,7 @@ L₃ → Distinguishability → Hilbert Space → Born Rule → Quantum Mechanic
 |-------|-----|
 | [Philosophical Foundations](theory/20260109_Logic_Realism_Theory_Philosophical_Foundations.md) | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14581992.svg)](https://doi.org/10.5281/zenodo.14581992) |
 | [It From Bit, Bit From Fit](theory/20260109_It_From_Bit_Bit_From_Fit.md) | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17831883.svg)](https://doi.org/10.5281/zenodo.17831883) |
+| [Non-Decomposability Bell Analysis](20260311_003414_LRT_NonDecomp_Bell_v3.pdf) | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18950181.svg)](https://doi.org/10.5281/zenodo.18950181) |
 
 ### Derivation Details
 
