@@ -52,7 +52,10 @@ These three are co-constitutive. None exists without the others. The laws of log
 
 ### 2.4 Minimal Grounding
 
-The phrase "in virtue of" means: X is the condition under which any record exists at all. We are not appealing to causal or temporal relations. X does not *cause* actuality; X *is* the primitive whose operation constitutes actuality.
+"In virtue of" means: X is the condition under which any record exists at all. X does not *cause* actuality; X *is* actuality's primitive ground.¹
+
+---
+¹ More precisely: X does not stand in causal or temporal relations to actuality. It is the transcendental constitution of there being any actual record at all. For those who find this language unhelpful, read "X is primitive" and move on.
 
 ---
 
@@ -84,6 +87,8 @@ The inference from metaphysical supervenience (no floating holistic facts) to op
 **Cite:** Full argument in *H1-H2 Tomography Bridge* (2026-03-12).
 
 **Result (Masanes-Müller 2011):** Among generalized probabilistic theories, local tomography plus standard operational axioms (continuous reversible dynamics, existence of entangled states, no restriction on observables) uniquely selects **complex Hilbert space** as the state space.
+
+**Contrast with other reconstructions:** Hardy (2001) and Chiribella-D'Ariano-Perinotti (2011) also derive Hilbert space, but from stipulated operational axioms: "systems combine according to a tensor product," "there exists a continuous reversible transformation between any two pure states," etc. These are *starting points*. LRT differs by *deriving* the key operational axiom (local tomography) from something prior: the structure of determinate identity under $L_3$. The reconstruction machinery is the same; what changes is where the explanatory buck stops. CDP axioms describe what the theory looks like from inside; X explains why a theory with those features exists at all.
 
 ### 3.2 Why Events Are PVMs (Not Primitive POVMs)
 
