@@ -1,79 +1,68 @@
 # Logic Realism Theory
 
-Physical Foundations from Logical Constraints — deriving quantum mechanics from the three classical laws of logic.
+Physical Foundations from Logical Constraints: deriving quantum mechanics from the three classical laws of logic.
 
 ---
 
 ## The Theory in Brief
 
-Logic Realism Theory (LRT) treats the three classical laws of logic not as rules of inference but as **ontological constraints on physical instantiation**. No stable experimental record — across the entire history of science — has ever violated them.
+Logic Realism Theory (LRT) proposes a single ground-level commitment: reality is logical, informational, and dynamic. Expressed formally as X ≡ [L₃ : I∞ : A], this commitment grounds a derivation architecture for non-relativistic quantum mechanics: complex Hilbert space, projection-valued measures, the Born rule, continuous time, and the Schrödinger equation.
 
-| Law | Constraint |
-|-----|------------|
-| **Determinate Identity (Id)** | Every entity is determinately what it is |
-| **Non-Contradiction (NC)** | No entity is both P and not-P in the same respect |
-| **Excluded Middle (EM)** | Every entity is either P or not-P |
+| Component | Symbol | Role |
+|-----------|--------|------|
+| Three Fundamental Laws of Logic | L₃ | Admissibility filter (Identity, Non-Contradiction, Excluded Middle) |
+| Infinite Information Space | I∞ | All representable configurations; structured by distinguishability |
+| Continuous Binary Action | A | Instantiation primitive: actual vs. non-actual |
 
-LRT distinguishes two domains: **I-infinity** (all representable configurations, including contradictions) and **A-Omega** (the L3-admissible subset that can be physically instantiated as stable records). The boundary between them generates quantum structure:
+The core equation: **A_Ω = L₃(I∞)** — actuality is the L₃-admissible subset of all representable configurations.
 
-- **Vehicle-invariance** under equivalent decompositions forces the **Born rule** via Gleason's theorem
-- **Local tomography** requirements select **complex Hilbert space** over real alternatives
-- **Symmetrization** of identical particles yields bosonic and fermionic sectors
-- **Tsirelson bound** emerges as a mathematical consequence, not an empirical postulate
+The derivation chain runs through 13 explicit steps, each marked by epistemic status: **ESTABLISHED** (peer-reviewed mathematics imported), **ARGUED** (LRT-specific grounding defended), or **OPEN** (further work identified).
 
-The derivation chain: **L3 → Distinguishability → Hilbert Space → Born Rule → Quantum Mechanics**
-
-The framework is falsifiable: a single stable record instantiating a direct L3 violation would refute it. LRT derives (not merely accommodates) the structure of quantum mechanics.
+**Falsifiable:** A stable physical record violating Boolean outcome structure would refute the framework.
 
 **Author:** James (JD) Longmire | ORCID: [0009-0009-1383-7698](https://orcid.org/0009-0009-1383-7698)
 
 ---
 
-## Papers
+## Master Document
 
-### Position Paper
+| Document | Description |
+|----------|-------------|
+| **[LRT-MASTER.md](LRT-MASTER.md)** | The canonical, unified source document for LRT. Contains the complete 13-step derivation chain, problem dissolutions, interpretive comparisons, falsification hierarchy, and open problems. |
 
-| Document | Status | DOI |
-|----------|--------|-----|
-| [Logic Realism Theory: Physical Foundations from Logical Constraints](20251231_Logic_Realism_Theory_Position_Paper.md) | Published | [10.5281/zenodo.18111736](https://doi.org/10.5281/zenodo.18111736) |
-
-The foundational document establishing the LRT framework. Treats the three classical logical laws ($L_3$) as ontological constraints on physical instantiation.
-
-### Companion Working Papers
-
-| Paper | Focus | Status |
-|-------|-------|--------|
-| [Complex Hilbert Space from Determinate Identity](20251231_LRT_Hilbert_Space_Derivation.md) | Derives Hilbert space structure from Id via reconstruction theorems | Working Paper |
-| [The Born Rule from Determinate Identity](20251231_LRT_Born_Rule_Paper.md) | Derives Born rule from vehicle-weight invariance | Working Paper |
-| [Quantum Statistics from Determinate Identity](20251231_LRT_QFT_Statistics_Paper.md) | Derives symmetrization postulate for identical particles | Working Paper |
-| [Spacetime from Determinate Identity](20251231_LRT_GR_Extension.md) | Explores GR implications (programmatic) | Working Paper |
-
-### PDF Versions
-
-All papers are available in PDF format in the `pdf/` subfolder.
+This is the authoritative document. All other theory materials derive from or support this master file.
 
 ---
 
-## Development Progress
+## Key Results
 
-### Completed (December 2025)
+### Derivation Chain (Steps 0-13)
 
-- Position Paper published on Zenodo with DOI
-- Four companion working papers drafted
-- Em dash sweep and formatting standardization
-- Proper citation structure with Position Paper DOI
-- Keywords sections added to all papers
-- Acknowledgments and AI disclosure standardized
+| Step | Content | Status |
+|------|---------|--------|
+| 0 | X ≡ [L₃ : I∞ : A] | ESTABLISHED |
+| 1 | X ⊣ A_Ω; A_Ω = L₃(I∞) | ESTABLISHED |
+| 2 | Determinate Identity for all c ∈ A_Ω | ESTABLISHED |
+| 3 | Local tomography from DI + L₃ framing | ARGUED |
+| 4 | Complex Hilbert space ℂH (Masanes-Müller) | ESTABLISHED |
+| 5 | PVM structure from Boolean A | ARGUED |
+| 6 | Frame function on PVM structure | ESTABLISHED |
+| 7 | Born rule via Gleason (1957) | ESTABLISHED |
+| 8 | Unique Next State theorem | ARGUED |
+| 9 | Ordinal time from UNS | ESTABLISHED |
+| 10 | Continuous time via Debreu-Nachbin | ARGUED |
+| 11 | G-equivariance; U(t) unitary | ARGUED |
+| 12 | Stone's theorem; H self-adjoint | ESTABLISHED |
+| 13 | Schrödinger equation | ESTABLISHED |
 
-### In Progress
+### Standing Problems Dissolved
 
-- Zenodo upload for companion papers (pending DOI assignment)
-- Cross-referencing between papers
-
-### Planned
-
-- Lean 4 formalization of key theorems
-- Experimental predictions refinement
+- Measurement problem
+- Wave-particle duality
+- EPR and nonlocality
+- Schrödinger's cat
+- Preferred basis problem
+- Role of the observer
 
 ---
 
@@ -81,55 +70,46 @@ All papers are available in PDF format in the `pdf/` subfolder.
 
 ```
 theory/
-├── 20251231_Logic_Realism_Theory_Position_Paper.md   # Position Paper
-├── 20251231_LRT_Hilbert_Space_Derivation.md          # Hilbert Space
-├── 20251231_LRT_Born_Rule_Paper.md                   # Born Rule
-├── 20251231_LRT_QFT_Statistics_Paper.md              # Quantum Statistics
-├── 20251231_LRT_GR_Extension.md                      # GR Extension
-├── pdf/                                               # PDF versions
-├── figures/                                           # Paper figures
-├── supplementary/                                     # Supporting materials
-├── LRT_Extended/                                      # Development versions
-└── archive/                                           # Historical documents
+├── LRT-MASTER.md              # Canonical source document
+├── README.md                   # This file
+├── 202603-pre-refactor/        # Archived pre-March-2026 materials
+│   ├── 20251231_*.md           # December 2025 papers
+│   ├── 20260312_*.md           # March 2026 working drafts
+│   └── LRT_*.md                # Earlier versions
+├── archive/                    # Older historical materials
+├── figures/                    # Diagrams and images
+├── issues/                     # Tracked issues and gaps
+├── LRT_Extended/               # Development and extension work
+├── pdf/                        # PDF exports
+├── submissions/                # Journal submission materials
+└── supplementary/              # Technical supplements
 ```
 
 ---
 
-## Key Results by Paper
+## Open Problems
 
-### Position Paper
-- $L_3$ as ontological constraint on physical instantiation
-- Vehicle/content distinction for quantum states
-- Framework falsifiability criteria
-
-### Hilbert Space Derivation
-- **Theorem 1**: Id forces local tomography
-- **Theorem 2**: Id forces continuous reversible dynamics
-- **Theorem 3**: Id forces non-classical correlations
-- Tsirelson bound as mathematical consequence
-
-### Born Rule Derivation
-- Vehicle-weight invariance from Determinate Identity
-- Gleason's theorem application
-- Connection to measurement statistics
-
-### Quantum Statistics
-- Symmetrization postulate from Id applied to identical particles
-- Bosonic and fermionic sectors as unique $L_3$-admissible options
-- Connection to spin-statistics theorem
-
-### GR Extension (Programmatic)
-- Temporal ordering from joint inadmissibility
-- Lorentzian signature from configuration asymmetry
-- CTC exclusion from identity preservation
-- Singularity constraints
+| Problem | Type | Priority |
+|---------|------|----------|
+| Lean 4 formalization of Steps 3, 5, 8, 10, 11 | Gap | Primary |
+| D_sing connection to Bekenstein-Hawking entropy | Gap | High |
+| Relativistic extension / Lorentz covariance | Extension | Medium |
+| Quantum field theory within I∞/A_Ω | Extension | Long-range |
+| Fine-structure constant α as theorem | Extension | Long-range |
 
 ---
 
 ## Citation
 
-See main repository README for BibTeX citation with Zenodo DOI.
+```bibtex
+@article{longmire2026lrt,
+  author = {Longmire, James D.},
+  title = {Logic Realism Theory: Grounding Reality as Logical, Informational, and Dynamic},
+  year = {2026},
+  note = {ORCID: 0009-0009-1383-7698}
+}
+```
 
 ---
 
-**Last Updated**: 2025-12-31 (Session 53)
+**Last Updated**: 2026-03-13
