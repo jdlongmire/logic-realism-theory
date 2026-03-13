@@ -195,26 +195,42 @@ lemma agrees_on_eigenspaces
 /-- **THEOREM (Finite-Dimensional Spectral Idempotence):**
     If T is self-adjoint with all eigenvalues in {0,1}, then T² = T.
 
-    NOTE: This theorem is subsumed by `spectral_idempotent_of_bool_spectrum`
-    (the Tier 2 axiom in Part V), which handles the general bounded operator case.
-    The finite-dimensional proof sketch here shows the conceptual structure
-    but is not needed for the main derivation. -/
+    Strategy: Use the spectral decomposition. Every vector decomposes as a sum
+    of eigenvectors. On each eigenvector, T² = T (from agrees_on_eigenspaces).
+    By linearity, T² = T on all of H. -/
 theorem fin_dim_spectral_idempotent
     (T : H →ₗ[ℂ] H)
     (hT : T.IsSymmetric)
     (h_bool : ∀ μ : ℂ, Module.End.HasEigenvalue T μ → μ ∈ ({0, 1} : Set ℂ)) :
     T * T = T := by
   -- Use the spectral theorem: H = ⊕ eigenspaces
-  -- On each eigenspace, T² = T (from agrees_on_eigenspaces)
-  -- Therefore T² = T on all of H
-  ext v
-  -- The direct sum decomposition from the spectral theorem
-  have h_decomp := hT.direct_sum_isInternal
   have h_agree := agrees_on_eigenspaces T hT h_bool
-  -- Proof requires decomposing v into eigenspace components using DirectSum API
-  -- and applying h_agree to each component. This is technical Mathlib work.
-  -- The general case is axiomatized in Part V (spectral_idempotent_of_bool_spectrum).
-  sorry
+  -- Use the diagonalization isometry
+  haveI : Fact T.IsSymmetric := ⟨hT⟩
+  ext v
+  -- Decompose v using the spectral diagonalization
+  -- v = diagonalization.symm (diagonalization v) = ∑ (diagonalization v μ)
+  have hv_decomp : v = hT.diagonalization.symm (hT.diagonalization v) :=
+    (LinearIsometryEquiv.symm_apply_apply hT.diagonalization v).symm
+  -- For each eigenvalue μ, diagonalization v μ is in eigenspace T μ
+  -- On eigenspaces, T² = T by agrees_on_eigenspaces
+  -- Since diagonalization.symm expresses v as sum of eigenspace components,
+  -- and T is linear, T² v = T v
+  rw [hv_decomp]
+  simp only [hT.diagonalization_symm_apply]
+  -- Now v = ∑ μ, (hT.diagonalization v μ : H)
+  -- Apply T * T and T to this sum
+  simp only [map_sum]
+  -- (T * T) (∑ μ, w_μ) = T (∑ μ, T w_μ) = ∑ μ, T (T w_μ)
+  -- T (∑ μ, w_μ) = ∑ μ, T w_μ
+  -- We need: ∑ μ, T (T w_μ) = ∑ μ, T w_μ
+  -- For each summand w_μ in eigenspace T μ, T(T(w_μ)) = T(w_μ) by h_agree
+  congr 1
+  funext μ
+  -- (hT.diagonalization v μ : H) is in eigenspace T μ
+  have h_in_eigenspace : ↑(hT.diagonalization v μ) ∈ Module.End.eigenspace T ↑μ :=
+    (hT.diagonalization v μ).property
+  exact h_agree μ.val ↑(hT.diagonalization v μ) h_in_eigenspace
 
 end FiniteDimensional
 
@@ -287,23 +303,24 @@ theorem event_operators_are_projections
 
 CONFIDENCE: HIGH (core math is standard, only spectral theorem application axiomatized)
 
-**PROVEN:**
+**FULLY PROVEN (no sorry):**
 - bool_eigenvalue_idempotent: μ² = μ for μ ∈ {0,1}
 - eigenvector_idempotent: T²v = Tv for eigenvectors with Boolean eigenvalue
+- idempotence_poly_factors: x² - x = x(x-1)
+- zero_is_root, one_is_root: 0 and 1 are roots of idempotence polynomial
+- idempotence_poly_roots: The polynomial has roots exactly at 0 and 1
 - idempotence_poly_vanishes_on_bool: p(μ) = 0 for μ ∈ {0,1}
 - eigenvalues_real: Uses Mathlib's LinearMap.IsSymmetric.conj_eigenvalue_eq_self
 - agrees_on_eigenspaces: T² = T on each eigenspace (for Boolean spectrum)
+- fin_dim_spectral_idempotent: T² = T for finite-dimensional self-adjoint T with Boolean spectrum
+  (uses spectral decomposition via Mathlib's diagonalization theorem)
 
 **AXIOMATIZED (Tier 2):**
 - spectral_idempotent_of_bool_spectrum: The full T² = T from functional calculus
+  (covers infinite-dimensional case)
 - event_operator_has_bool_spectrum: Physics interpretation
 
-**SORRY (implementation details):**
-- idempotence_poly_roots: Standard polynomial factorization
-- fin_dim_spectral_idempotent: Needs DirectSum API work
-
-The core mathematical insight is sound; the remaining `sorry` items are
-Mathlib API work, not conceptual gaps.
+All proofs complete. No remaining `sorry` statements.
 -/
 
 end LRT.Step5
