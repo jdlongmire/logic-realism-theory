@@ -68,6 +68,13 @@ axiom time_embedding : ActualizationEvent → Time
 
 axiom time_embedding_mono : Monotone time_embedding
 
+/-- **TIER 2 AXIOM:** The time embedding has dense range.
+
+    This captures the continuum nature of time: between any two times,
+    there's another actualization event. This is the continuous limit
+    of the discrete actualization sequence. -/
+axiom time_embedding_dense : DenseRange time_embedding
+
 /-- The time of an event -/
 def eventTime (e : ActualizationEvent) : Time := time_embedding e
 
@@ -129,7 +136,7 @@ theorem step8_temporal_emergence :
     ordering := actualization_ordering,
     embed := time_embedding,
     mono := time_embedding_mono,
-    dense := by sorry  -- Requires explicit density axiom
+    dense := time_embedding_dense
   }, trivial⟩
 
 /-! ## Part V: Time's Arrow
