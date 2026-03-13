@@ -94,10 +94,10 @@ The inference from metaphysical supervenience (no floating holistic facts) to op
 
 The central idea:
 
-1. $\mathbf{A}$ is Boolean: actualization returns 0 or 1, nothing else.
-2. Event operators encode actualization → spectrum $\subseteq \{0,1\}$.
-3. Spectral theorem: such operators are projections ($P^2 = P$).
-4. Normalized projection families = **PVMs**.
+1. The action primitive $\mathbf{A}$ is Boolean: every actualization event returns 0 or 1, not an intermediate value.
+2. Event operators whose eigenvalues encode actualization status must therefore have spectrum $\subseteq \{0,1\}$.
+3. By the spectral theorem, bounded self-adjoint operators with this spectrum are projections ($P^2 = P$).
+4. Families of projections satisfying normalization are **projection-valued measures (PVMs)**.
 
 **What about POVMs?** Positive operator-valued measures appear as effective descriptions when you trace over apparatus or environment. By Naimark's dilation theorem, every POVM on $\mathcal{H}$ arises as the reduction of a PVM on a larger space $\mathcal{H} \otimes \mathcal{K}$. Ontologically, events are PVMs; POVMs are epistemic reductions.
 
