@@ -34,6 +34,29 @@ This is the authoritative document. All other theory materials derive from or su
 
 ---
 
+## Technical Supplements
+
+Located in `supplementary/`:
+
+| ID | Document | Description |
+|----|----------|-------------|
+| S1 | [S1_PPC_Derivation.md](supplementary/S1_PPC_Derivation.md) | Pure Point Continuity Derivation: proves continuous time emergence from ordinal succession via Debreu-Nachbin order topology. Supports Step 10. |
+
+### Legacy Supplementary Materials
+
+The following materials in `supplementary/` predate the March 2026 refactor and may be incorporated into future numbered supplements:
+
+| Document | Topic |
+|----------|-------|
+| IIS_LRT_MWI_Paper_Outline.md | Many-worlds comparison framework |
+| IIS_LRT_Three_Stage_Framework.md | Information-based interpretation structure |
+| LRT_Prediction_Beta_Bound_Development.md | β-bound prediction development |
+| Scale_Law_Boolean_Actualization.md | Scale law derivation |
+| The_Fundamental_Laws_of_Physical_Reality.md | Laws overview |
+| Linking_LRT_MToE_*.pdf | Meta-Theory of Everything equivalence proofs |
+
+---
+
 ## Key Results
 
 ### Derivation Chain (Steps 0-13)
