@@ -1,19 +1,58 @@
 # Logic Realism Theory: Core Derivation
 ## From X to the Schrödinger Equation
 
-**Version**: 1.0
+**Version**: 1.1
 **Date**: 2026-03-12
 **Author**: James D. Longmire
-**Status**: Publishable Draft
+**Status**: Publishable Draft (Revised)
 **Epistemic Discipline**: Each step marked ESTABLISHED, ARGUED, CONJECTURED, or PARTIALLY ARGUED
 
 ---
 
 ## Abstract
 
-This document presents the complete derivation chain from the primitive ontic state **X** to the Schrödinger equation. The derivation proceeds through 18 steps, each with explicit assumptions and epistemic status. The chain demonstrates that quantum mechanics emerges from logical necessity given the structure of actuality itself.
+This document presents the complete derivation chain from the primitive ontic state **X** to the Schrödinger equation. The derivation proceeds through 13 steps, each with explicit assumptions and epistemic status. The chain demonstrates that quantum mechanics emerges from logical necessity given the structure of actuality itself.
 
 $$\mathbf{X} \to A_\Omega \to \text{Id} \to \text{Local Tomography} \to \mathbb{C}\mathcal{H} \to \text{PVM} \to \text{Born} \to \text{UNS} \to t \to G\text{-eq} \to H \to i\hbar\frac{d}{dt}\lvert\psi\rangle = H\lvert\psi\rangle$$
+
+**Terminological Note**: "ESTABLISHED" means logically immediate from definitions or proven in peer-reviewed mathematics. It does not mean formally machine-checked.
+
+---
+
+## Dependency Graph
+
+The following conjectural steps, if they fail, would break downstream derivations:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    CRITICAL DEPENDENCIES                        │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  Step 3 (Local Tomography) ─── CONJECTURED ────┐               │
+│         │                                       │               │
+│         ▼                                       │               │
+│  Step 4 (ℂℋ) ◄──────────────────────────────────┘               │
+│         │                                                       │
+│         ▼                                                       │
+│  Step 5 (PVM) ─── CONJECTURED ─────────┐                       │
+│         │                               │                       │
+│         ▼                               │                       │
+│  Step 6 (Gleason) ◄─────────────────────┘                       │
+│         │                                                       │
+│         ▼                                                       │
+│  Step 7 (Born Rule) ◄───── Inherits conjectural status         │
+│                                                                 │
+│  Step 10 (Continuous t) ─── PARTIALLY ARGUED ──┐               │
+│         │                                       │               │
+│         ▼                                       │               │
+│  Steps 11-13 (Dynamics) ◄──────────────────────┘               │
+│                                                                 │
+│  IF Step 3 fails: Steps 4-7 collapse                           │
+│  IF Step 5 fails: Steps 6-7 require alternative                │
+│  IF Step 10 fails: Steps 11-13 are conditional                 │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
@@ -55,7 +94,9 @@ A co-constitutive unity of three irreducible aspects:
 2. $A_\Omega$ obtains in virtue of X
 3. The grounding relation is non-causal and non-temporal
 
-**Epistemic Status**: ESTABLISHED (follows from the architecture of X)
+**Note**: This step rests on accepting the Bridge Principle from the synthesis paper. The Bridge Principle is an explicit axiom; it is not derivable within standard grounding frameworks alone.
+
+**Epistemic Status**: ESTABLISHED (within LRT framework, given Bridge Principle)
 
 ---
 
@@ -79,14 +120,19 @@ $$c = c \quad \text{(from } L_3\text{)}$$
 
 **Definition**: A theory is *locally tomographic* if the state of a composite system is completely determined by the statistics of local measurements on its subsystems.
 
-**Argument**: Given Determinate Identity, each subsystem possesses a determinate state. The composite state must be reconstructible from subsystem data because:
-1. Each subsystem has determinate identity
-2. The composite is nothing over and above its subsystems relationally organized
-3. Any "holistic" information not accessible locally would violate Determinate Identity
+**Argument**: Given Determinate Identity, each subsystem possesses a determinate state. We argue:
 
-**Epistemic Status**: ARGUED
+1. **(H1) Metaphysical supervenience**: Each subsystem has determinate identity. The composite is nothing over and above its subsystems relationally organized.
 
-**Note**: This is the first step requiring substantive physical reasoning beyond pure logic.
+2. **(H2) Operational accessibility**: All relations between subsystems are operationally accessible via local measurements.
+
+**The Gap**: H1 (metaphysical anti-holism) does not automatically produce H2 (operational local tomography). The inference requires showing that any relation which is *not* locally accessible would violate Determinate Identity. This is the crux of the argument and remains unproven.
+
+**Specifically**: A metaphysical supervenience claim ("no extra stuff beyond the parts") is distinct from an operational reconstruction theorem ("state determined by local statistics"). We argue they are equivalent in this context, but the equivalence is not established.
+
+**Epistemic Status**: CONJECTURED
+
+**Note**: This is a critical step. If the H1→H2 equivalence fails, Steps 4-7 may require alternative foundations.
 
 ---
 
@@ -95,14 +141,16 @@ $$c = c \quad \text{(from } L_3\text{)}$$
 **Theorem (Masanes-Müller 2011)**: Among generalized probabilistic theories, local tomography plus additional operational axioms uniquely selects complex Hilbert space quantum mechanics.
 
 **Imported Result**: Given:
-1. Local tomography (Step 3)
+1. Local tomography (Step 3) — **CONJECTURED**
 2. Continuous reversible dynamics
 3. Existence of entangled states
 4. No restriction on observables
 
 Then the state space is $\mathbb{C}\mathcal{H}$ (complex Hilbert space over $\mathbb{C}$).
 
-**Epistemic Status**: ESTABLISHED (peer-reviewed mathematics; we inherit it)
+**Conditional Status**: This step is mathematically established but depends on the conjectured Step 3.
+
+**Epistemic Status**: ESTABLISHED (peer-reviewed mathematics, conditional on Step 3)
 
 **Citation**: Masanes, L. & Müller, M.P. (2011). A derivation of quantum theory from physical requirements. *New Journal of Physics*, 13, 063001.
 
@@ -110,17 +158,28 @@ Then the state space is $\mathbb{C}\mathcal{H}$ (complex Hilbert space over $\ma
 
 ### Step 5: Projection-Valued Measures (Problem 2)
 
-**Claim**: Measurements in $\mathbb{C}\mathcal{H}$ correspond to projection-valued measures (PVMs).
+**Claim**: Measurements in $\mathbb{C}\mathcal{H}$ correspond to projection-valued measures (PVMs), not general POVMs.
 
-**Argument**: Given Determinate Identity and CP($\mathcal{H}$) as the state space:
-1. Measurement outcomes must be determinate (from Determinate Identity)
-2. Determinate outcomes require orthogonal decomposition of the state space
-3. Orthogonal decomposition ↔ projection operators
-4. Families of projection operators satisfying normalization = PVMs
+**Argument Structure**:
 
-**Gap**: The inference from "outcomes must be determinate" to "projections" requires showing that no other mathematical structure could guarantee determinacy. This is the content of Problem 2 in the open problems list.
+We distinguish two maps:
+- **Truth-value map**: $A(\text{event}) \in \{0,1\}$ — whether an event is actual
+- **Probability map**: $p(\text{event}|\psi) \in [0,1]$ — the probability given state $\psi$
 
-**Epistemic Status**: ARGUED (requires formalization)
+The argument proceeds:
+1. The action primitive $\mathbf{A}$ is Boolean: configurations are either actual (1) or non-actual (0)
+2. Measurement outcomes must correspond to actualization events
+3. Actualization events require operators with eigenvalues in $\{0,1\}$ (the Boolean outputs of $\mathbf{A}$)
+4. Operators with eigenvalues only in $\{0,1\}$ are projections
+5. Families of projections satisfying normalization = PVMs
+
+**The Conjectured Lemma**: Step 3 above (Boolean outputs ⇒ 0/1 spectrum ⇒ PVM-only events) is not yet proven. The eigenvalue-restriction argument requires formal demonstration.
+
+**POVM Status**: POVMs arise via Naimark dilation as effective descriptions when part of a larger system is traced out. They are not fundamental event operators in LRT.
+
+**Gap**: Absent the conjectured lemma, quantum logic with POVMs as primitive events remains a live alternative.
+
+**Epistemic Status**: CONJECTURED
 
 ---
 
@@ -132,7 +191,9 @@ $$p(P) = \text{Tr}(\rho P)$$
 
 for some density operator $\rho$.
 
-**Application**: Given PVMs (Step 5), Gleason's theorem provides the unique probability assignment compatible with the lattice structure.
+**Application**: Given PVMs (Step 5 — **CONJECTURED**), Gleason's theorem provides the unique probability assignment compatible with the lattice structure.
+
+**Conditional Status**: Mathematically established, but application depends on the conjectured PVM structure.
 
 **Epistemic Status**: ESTABLISHED (peer-reviewed mathematics)
 
@@ -150,11 +211,11 @@ $$p(\phi|\psi) = \text{Tr}(\lvert\psi\rangle\langle\psi\rvert \cdot \lvert\phi\r
 
 **Key Point**: The Born rule is *derived*, not postulated. It follows from:
 1. Determinate Identity (from X)
-2. Local tomography (from Determinate Identity)
-3. PVM structure (from determinacy requirement)
+2. Local tomography (from Determinate Identity) — **CONJECTURED**
+3. PVM structure (from determinacy requirement) — **CONJECTURED**
 4. Gleason's theorem (from PVM lattice)
 
-**Epistemic Status**: ARGUED (inherits status from Step 5)
+**Epistemic Status**: ARGUED (inherits conjectural status from Steps 3 and 5)
 
 **Vehicle Invariance**: The Born rule is vehicle-invariant: any physical system that can represent $\lvert\psi\rangle$ yields the same probabilities. This is crucial for measurement theory.
 
@@ -176,7 +237,9 @@ $$\text{UNS}(c) = c' \text{ such that } L_3(c \cup c') \text{ is admissible}$$
 - If two distinct $c'_1, c'_2$ both satisfied joint admissibility, then $c'_1 \neq c'_2$ would violate Identity for the "next state of $c$"
 - Non-existence would mean $c$ has no admissible continuation, violating the structure of $A_\Omega$
 
-**Epistemic Status**: ESTABLISHED (Steps A & B proven in earlier work)
+**Scope Clarification**: UNS establishes uniqueness *within a given dynamical scheme*. It does not by itself determine *which* dynamical law (which Hamiltonian H) governs the system. That requires the additional symmetry constraints in Steps 11-12.
+
+**Epistemic Status**: ESTABLISHED (Steps A & B proven in earlier work; scope clarified)
 
 ---
 
@@ -194,6 +257,8 @@ $$c \prec c' \Leftrightarrow \text{UNS}(c) = c' \wedge L_3(c \cup c') \text{ adm
 3. Transitivity: UNS chains compose
 4. Totality on chains: every configuration in a maximal chain is comparable
 
+**Result**: This gives us **ordinal time** — a strict total order.
+
 **Epistemic Status**: ARGUED
 
 ---
@@ -204,19 +269,23 @@ $$c \prec c' \Leftrightarrow \text{UNS}(c) = c' \wedge L_3(c \cup c') \text{ adm
 
 **Approach**: Debreu-Nachbin metric extension theorem.
 
-**Sketch**: If $(S, \prec)$ is a totally ordered set with appropriate topological properties (separability, order-density), then there exists an order-preserving embedding $\phi: S \to \mathbb{R}$.
+**Theorem (Debreu 1954, Nachbin)**: If $(S, \prec)$ is a totally ordered set with appropriate topological properties (separability, order-density, continuity in the relevant topology), then there exists an order-preserving embedding $\phi: S \to \mathbb{R}$.
 
-**Gap**: The required topological properties must be derived from the structure of $A_\Omega$. This is not yet complete.
+**Conditional Statement**: *If* the Debreu-Nachbin continuity conditions can be derived from the structure of $A_\Omega$, *then* there exists an embedding of ordinal time into $\mathbb{R}$.
 
-**Epistemic Status**: PARTIALLY ARGUED
+**Gap**: The required topological properties (specifically, continuity of the order in the Fubini-Study topology of CP($\mathcal{H}$)) must be derived from the structure of $A_\Omega$. This derivation is not yet complete.
 
-**Open Problem**: Debreu-Nachbin extension (see theory/LRT_OpenProblem2_Continuity.md)
+**Epistemic Status**: PARTIALLY ARGUED (conditional on deriving topological properties)
+
+**Note**: Steps 11-13 below assume continuous time. They should be read as conditional on the success of this step.
 
 ---
 
 ### Step 11: G-Equivariance
 
 **Claim**: Dynamics on $\mathbb{C}\mathcal{H}$ must be G-equivariant for appropriate symmetry group G.
+
+**Conditional Note**: This step assumes continuous time (Step 10). Assuming the Debreu-Nachbin continuity conditions hold:
 
 **Argument**:
 1. $A_\Omega$ is invariant under relabeling of configurations (no privileged labels)
@@ -225,7 +294,7 @@ $$c \prec c' \Leftrightarrow \text{UNS}(c) = c' \wedge L_3(c \cup c') \text{ adm
 
 **For non-relativistic QM**: G includes spatial rotations SO(3), translations $\mathbb{R}^3$, and time translations $\mathbb{R}$.
 
-**Epistemic Status**: ARGUED
+**Epistemic Status**: ARGUED (conditional on Step 10)
 
 ---
 
@@ -237,9 +306,11 @@ $$U(t) = e^{-iHt/\hbar}$$
 
 for some self-adjoint operator H (the generator).
 
-**Application**: Time-translation symmetry (from G-equivariance) gives a one-parameter unitary group. Stone's theorem yields the Hamiltonian H.
+**Application**: Time-translation symmetry (from G-equivariance, Step 11) gives a one-parameter unitary group. Stone's theorem yields the Hamiltonian H.
 
-**Epistemic Status**: ESTABLISHED (peer-reviewed mathematics)
+**Conditional Note**: This application assumes continuous time from Step 10.
+
+**Epistemic Status**: ESTABLISHED (peer-reviewed mathematics; application conditional on Steps 10-11)
 
 ---
 
@@ -253,53 +324,86 @@ Rearranging:
 
 $$\boxed{i\hbar\frac{d}{dt}\lvert\psi\rangle = H\lvert\psi\rangle}$$
 
-**Epistemic Status**: ESTABLISHED (follows from Stone's theorem)
+**Epistemic Status**: ESTABLISHED (follows from Stone's theorem; conditional on Steps 10-11)
 
 ---
 
-## Part V: Summary and Open Problems
+## Part V: For Physicists — QM Primitives to LRT Origins
+
+| Standard QM Primitive | LRT Origin | Derivation Step |
+|-----------------------|------------|-----------------|
+| Hilbert space $\mathcal{H}$ | Local tomography from Determinate Identity | Steps 3-4 |
+| Complex coefficients $\mathbb{C}$ | Masanes-Müller reconstruction | Step 4 |
+| Projective measurements (PVM) | Boolean action primitive $\mathbf{A}$ | Step 5 |
+| Born rule $\lvert\langle\phi\|\psi\rangle\rvert^2$ | Gleason's theorem + PVM structure | Steps 6-7 |
+| Time parameter $t$ | Joint inadmissibility ordering | Steps 9-10 |
+| Unitary evolution $U(t)$ | G-equivariance + Stone's theorem | Steps 11-12 |
+| Schrödinger equation | Differentiation of $U(t)$ | Step 13 |
+| Hamiltonian $H$ | Generator of time-translation symmetry | Step 12 |
+
+**What X provides**: The primitive $\mathbf{X} = [L_3 : I_\infty : \mathbf{A}]$ grounds all of the above. The three laws of logic $L_3$ enforce determinacy and admissibility. The information space $I_\infty$ provides the configuration domain. The action primitive $\mathbf{A}$ selects what is actual.
+
+---
+
+## Part VI: Summary and Open Problems
 
 ### Complete Derivation Chain
 
-| Step | Content | Status |
-|------|---------|--------|
-| 0 | X ≡ [L₃ : I∞ : A] (definition) | ESTABLISHED |
-| 1 | X ⊣ $A_\Omega$ (transcendental constitution) | ESTABLISHED |
-| 2 | Determinate Identity | ESTABLISHED |
-| 3 | Local tomography | ARGUED |
-| 4 | Complex Hilbert space (Masanes-Müller) | ESTABLISHED |
-| 5 | PVM structure (Problem 2) | ARGUED |
-| 6 | Gleason's theorem | ESTABLISHED |
-| 7 | Born rule derived | ARGUED |
-| 8 | UNS (Steps A & B) | ESTABLISHED |
-| 9 | Temporal ordering | ARGUED |
-| 10 | Ordinal → continuous time | PARTIALLY ARGUED |
-| 11 | G-equivariance | ARGUED |
-| 12 | Stone's theorem → Hamiltonian | ESTABLISHED |
-| 13 | Schrödinger equation | ESTABLISHED |
+| Step | Content | Status | Dependencies |
+|------|---------|--------|--------------|
+| 0 | X ≡ [L₃ : I∞ : A] (definition) | ESTABLISHED | — |
+| 1 | X ⊣ $A_\Omega$ (transcendental constitution) | ESTABLISHED | Bridge Principle (axiom) |
+| 2 | Determinate Identity | ESTABLISHED | Step 1 |
+| 3 | Local tomography | **CONJECTURED** | Step 2; H1→H2 equivalence unproven |
+| 4 | Complex Hilbert space (Masanes-Müller) | ESTABLISHED | Step 3 (conjectured) |
+| 5 | PVM structure (Problem 2) | **CONJECTURED** | Step 4; eigenvalue lemma unproven |
+| 6 | Gleason's theorem | ESTABLISHED | Step 5 (conjectured) |
+| 7 | Born rule derived | ARGUED | Steps 3, 5 (conjectured) |
+| 8 | UNS (Steps A & B) | ESTABLISHED | Step 2 |
+| 9 | Temporal ordering (ordinal) | ARGUED | Step 8 |
+| 10 | Ordinal → continuous time | **PARTIALLY ARGUED** | Step 9; Debreu-Nachbin conditions unproven |
+| 11 | G-equivariance | ARGUED | Step 10 (partially argued) |
+| 12 | Stone's theorem → Hamiltonian | ESTABLISHED | Step 11 |
+| 13 | Schrödinger equation | ESTABLISHED | Step 12 |
 
 ### Epistemic Summary
 
-| Status | Count |
-|--------|-------|
-| ESTABLISHED | 8 |
-| ARGUED | 6 |
-| PARTIALLY ARGUED | 1 |
+| Status | Count | Description |
+|--------|-------|-------------|
+| ESTABLISHED | 8 | Definitional, logically immediate, or imported from peer-reviewed mathematics |
+| ARGUED | 3 | Defended with explicit reasoning; not yet formally proven |
+| CONJECTURED | 2 | Central to the derivation; explicit gaps identified |
+| PARTIALLY ARGUED | 1 | Conditional statement; requires additional derivation |
+
+### Critical Conjectures
+
+The derivation chain depends on three unproven claims:
+
+1. **H1→H2 Equivalence (Step 3)**: Metaphysical supervenience entails operational local tomography. *If this fails*: Steps 4-7 require alternative foundations.
+
+2. **Eigenvalue Lemma (Step 5)**: Boolean action outputs entail 0/1 operator spectrum (PVM-only). *If this fails*: POVM-based quantum logic remains viable.
+
+3. **Debreu-Nachbin Conditions (Step 10)**: Ordinal time admits continuous embedding. *If this fails*: Steps 11-13 hold only conditionally.
 
 ### Open Problems (Priority Order)
 
-1. **Lean 4 Formalization**: Steps 3, 5, 7, 9, 11 need formal proof
-2. **Debreu-Nachbin Extension** (Step 10): Derive required topological properties from $A_\Omega$
-3. **Problem 2** (Step 5): Prove PVM structure follows from determinacy
-4. **Fine-Structure Constant**: No current strategy for deriving α ≈ 1/137
+1. **H1→H2 Equivalence** (Step 3): Prove or derive conditions under which metaphysical supervenience implies operational local tomography
+
+2. **Eigenvalue Lemma** (Step 5): Formal proof that Boolean action → projection operators
+
+3. **Debreu-Nachbin Extension** (Step 10): Derive required topological properties from $A_\Omega$ structure
+
+4. **Lean 4 Formalization**: Machine-check Steps 3, 5, 7, 9, 11
+
+5. **Fine-Structure Constant**: No current strategy for deriving α ≈ 1/137
 
 ### What This Derivation Achieves
 
-1. **Born rule derived**, not postulated
-2. **Complex Hilbert space derived** from local tomography
+1. **Born rule derived**, not postulated (conditional on Steps 3, 5)
+2. **Complex Hilbert space derived** from local tomography (conditional on Step 3)
 3. **Time derived** from joint inadmissibility structure
 4. **One-world realism** with Everettian structure but without branch multiplication
-5. **Wheeler's "it from bit"** grounded in the action primitive A
+5. **Wheeler's "it from bit"** grounded in the action primitive A (not taken as primitive)
 
 ### What This Derivation Does Not (Yet) Achieve
 
@@ -307,6 +411,7 @@ $$\boxed{i\hbar\frac{d}{dt}\lvert\psi\rangle = H\lvert\psi\rangle}$$
 2. Relativistic extension (Lorentz covariance not addressed)
 3. Fine-structure constant derivation
 4. Cosmological applications
+5. Proof of the three critical conjectures
 
 ---
 
@@ -326,6 +431,6 @@ Stone, M.H. (1930). Linear transformations in Hilbert space. III. Operational me
 
 ---
 
-*Document generated: 2026-03-12*
+*Document generated: 2026-03-12 (v1.1 — revised per external review)*
 *Logic Realism Theory Project*
 *ORCID: 0009-0009-1383-7698*
