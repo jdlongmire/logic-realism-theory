@@ -5,34 +5,21 @@ Tasks are processed sequentially. Mark completed tasks with `[x]` prefix.
 ## Task Format
 
 ```markdown
-- [ ] **Task ID**: Brief description
-  - Type: supplement | derivation | formalization | review
-  - Target: output file path (relative to theory/)
-  - Supports: Step N or Open Problem reference
-  - Details: Specific requirements or context
+- [ ] **S8**: Description of next supplement
+  - Target: supplementary/S8_Filename.md
+  - Supports: Step N
+  - Details: Specific requirements for the supplement.
 ```
 
 ## Active Tasks
 
-- [ ] **S6**: Formalize the Unique Next State (UNS) theorem
-  - Type: supplement
-  - Target: supplementary/S6_UNS_Theorem.md
-  - Supports: Step 8
-  - Details: Prove that L₃ + PVM structure entails a unique successor state. Currently ARGUED in master; needs explicit proof.
-
-- [ ] **S7**: G-equivariance derivation from L₃ symmetry constraints
-  - Type: supplement
-  - Target: supplementary/S7_G_Equivariance.md
-  - Supports: Step 11
-  - Details: Derive group equivariance requirement from logical indistinguishability of symmetric configurations.
+*(No pending tasks)*
 
 ## Completed Tasks
 
-- [x] **TEST**: Verify Physics Agent pipeline (2026-03-13)
-  - Type: test
-  - Target: supplementary/TEST_Agent_Verification.md
-  - Supports: Infrastructure
-  - Details: Create a minimal test file confirming the agent can read context, write files, and commit/push. File should contain: test ID, timestamp, confirmation of LRT-MASTER.md access.
+- [x] **S7**: G-equivariance derivation from L₃ symmetry constraints *(2026-03-13)*
+- [x] **S6**: Formalize the Unique Next State (UNS) theorem *(2026-03-13)*
+- [x] **TEST**: Verify Physics Agent pipeline *(2026-03-13)*
 
 ---
 
