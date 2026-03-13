@@ -14,12 +14,6 @@ Tasks are processed sequentially. Mark completed tasks with `[x]` prefix.
 
 ## Active Tasks
 
-- [ ] **TEST**: Verify Physics Agent pipeline
-  - Type: test
-  - Target: supplementary/TEST_Agent_Verification.md
-  - Supports: Infrastructure
-  - Details: Create a minimal test file confirming the agent can read context, write files, and commit/push. File should contain: test ID, timestamp, confirmation of LRT-MASTER.md access.
-
 - [ ] **S6**: Formalize the Unique Next State (UNS) theorem
   - Type: supplement
   - Target: supplementary/S6_UNS_Theorem.md
@@ -34,7 +28,11 @@ Tasks are processed sequentially. Mark completed tasks with `[x]` prefix.
 
 ## Completed Tasks
 
-<!-- Completed tasks are moved here with [x] prefix and completion date -->
+- [x] **TEST**: Verify Physics Agent pipeline (2026-03-13)
+  - Type: test
+  - Target: supplementary/TEST_Agent_Verification.md
+  - Supports: Infrastructure
+  - Details: Create a minimal test file confirming the agent can read context, write files, and commit/push. File should contain: test ID, timestamp, confirmation of LRT-MASTER.md access.
 
 ---
 
