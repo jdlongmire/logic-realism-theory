@@ -38,9 +38,13 @@ This is the authoritative document. All other theory materials derive from or su
 
 Located in `supplementary/`:
 
-| ID | Document | Description |
-|----|----------|-------------|
-| S1 | [S1_PPC_Derivation.md](supplementary/S1_PPC_Derivation.md) | Pure Point Continuity Derivation: proves continuous time emergence from ordinal succession via Debreu-Nachbin order topology. Supports Step 10. |
+| ID | Document | Description | Supports |
+|----|----------|-------------|----------|
+| S1 | [S1_PPC_Derivation.md](supplementary/S1_PPC_Derivation.md) | Physical Proposition Criterion: derives operational distinguishability requirement from L₃'s constitutive status. Foundation for all downstream arguments. | Foundation |
+| S2 | [S2_H1_H2_Bridge.md](supplementary/S2_H1_H2_Bridge.md) | H1-H2 Tomography Bridge: proves that metaphysical supervenience (H1) entails operational local tomography (H2) via Operational Determinacy. | Step 3 |
+| S3 | [S3_Eigenvalue_Restriction.md](supplementary/S3_Eigenvalue_Restriction.md) | Eigenvalue Restriction Lemma: proves Boolean action primitive entails PVM-only event operators (projections). | Step 5 |
+| S4 | [S4_Debreu_Nachbin.md](supplementary/S4_Debreu_Nachbin.md) | Debreu-Nachbin Derivation: derives topological conditions for continuous time embedding from UNS dynamics and Hilbert space structure. | Step 10 |
+| S5 | [S5_Dsing_BH_Entropy.md](supplementary/S5_Dsing_BH_Entropy.md) | D<sub>sing</sub> → Bekenstein-Hawking Entropy: connects the singularity decomposition operator to horizon area quantization and S = A/4. | Open Problem 9.5 |
 
 ### Legacy Supplementary Materials
 
@@ -50,7 +54,7 @@ The following materials in `supplementary/` predate the March 2026 refactor and 
 |----------|-------|
 | IIS_LRT_MWI_Paper_Outline.md | Many-worlds comparison framework |
 | IIS_LRT_Three_Stage_Framework.md | Information-based interpretation structure |
-| LRT_Prediction_Beta_Bound_Development.md | β-bound prediction development |
+| LRT_Prediction_Beta_Bound_Development.md | Beta-bound prediction development |
 | Scale_Law_Boolean_Actualization.md | Scale law derivation |
 | The_Fundamental_Laws_of_Physical_Reality.md | Laws overview |
 | Linking_LRT_MToE_*.pdf | Meta-Theory of Everything equivalence proofs |
@@ -115,7 +119,7 @@ theory/
 | Problem | Type | Priority |
 |---------|------|----------|
 | Lean 4 formalization of Steps 3, 5, 8, 10, 11 | Gap | Primary |
-| D_sing connection to Bekenstein-Hawking entropy | Gap | High |
+| D<sub>sing</sub> → Bekenstein-Hawking entropy | Gap | High (see S5) |
 | Relativistic extension / Lorentz covariance | Extension | Medium |
 | Quantum field theory within I∞/A_Ω | Extension | Long-range |
 | Fine-structure constant α as theorem | Extension | Long-range |
