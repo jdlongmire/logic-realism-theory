@@ -45,6 +45,8 @@ Located in `supplementary/`:
 | S3 | [S3_Eigenvalue_Restriction.md](supplementary/S3_Eigenvalue_Restriction.md) | Eigenvalue Restriction Lemma: proves Boolean action primitive entails PVM-only event operators (projections). | Step 5 |
 | S4 | [S4_Debreu_Nachbin.md](supplementary/S4_Debreu_Nachbin.md) | Debreu-Nachbin Derivation: derives topological conditions for continuous time embedding from UNS dynamics and Hilbert space structure. | Step 10 |
 | S5 | [S5_Dsing_BH_Entropy.md](supplementary/S5_Dsing_BH_Entropy.md) | D<sub>sing</sub> → Bekenstein-Hawking Entropy: connects the singularity decomposition operator to horizon area quantization and S = A/4. | Open Problem 9.5 |
+| S6 | [S6_UNS_Theorem.md](supplementary/S6_UNS_Theorem.md) | Unique Next State Theorem: formalizes existence and uniqueness of successor states from DI + Boolean A. | Step 8 |
+| S7 | [S7_G_Equivariance.md](supplementary/S7_G_Equivariance.md) | G-Equivariance Derivation: derives symmetry group equivariance requirement from L₃ identity preservation constraints. | Step 11 |
 
 ### Legacy Supplementary Materials
 
