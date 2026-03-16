@@ -1,5 +1,7 @@
 # The Actualization Bridge: Transcendental Foundations of Logic Realism Theory
 
+## Part I: Ontological Groundwork
+
 **James D. Longmire**
 Northrop Grumman Fellow (unaffiliated research)
 ORCID: 0009-0009-1383-7698
@@ -320,7 +322,9 @@ The transcendental derivation of the Bridge Identity
 
 $$A_\Omega \equiv L_3(I_\infty)$$
 
-establishes a prescriptive floor beneath contemporary information-based ontologies of physics. Much recent work proposes that physical reality is informational or mathematical in character. These frameworks often identify informational structure as fundamental but leave unresolved a central question: under what condition does informational possibility become concrete physical actuality?
+establishes a prescriptive floor beneath contemporary information-based ontologies of physics.[^1]
+
+[^1]: Throughout §7, the triple bar (≡) marks metaphysical identity of domains, not stipulative definition. The claim is that A_Ω and L₃(I∞) pick out the same domain by different conceptual routes; the identity is derived from the primitives, not posited by fiat. Much recent work proposes that physical reality is informational or mathematical in character. These frameworks often identify informational structure as fundamental but leave unresolved a central question: under what condition does informational possibility become concrete physical actuality?
 
 The TAB framework addresses this gap by identifying the minimal primitives required for determinate being and clarifying the structural relationship between logical constraint, informational possibility, and physical realization. This section situates TAB within the broader landscape of informational metaphysics while also locating it within the philosophical orientation sometimes described as **Logic Realism**, where logical structure is treated as ontologically prior rather than merely epistemic.
 
@@ -465,7 +469,7 @@ $$A_\Omega = L_3(I_\infty)$$
 
 Actuality coincides with the logically admissible informational configurations of the total possibility space.
 
-This result provides the ontological foundation from which subsequent work can reconstruct physical structure. The present paper contains no physics; its task has been to secure the ground. The reconstruction of quantum mechanics, presented separately, proceeds by supplementing this foundation with operational assumptions about the empirical regularities of the physical domain.
+This result provides the ontological foundation from which subsequent work can reconstruct physical structure. The reconstruction of quantum mechanics, presented in Part II, proceeds by supplementing this foundation with operational assumptions about the empirical regularities of the physical domain.
 
 ### 9.1 Outlook for Physics
 
