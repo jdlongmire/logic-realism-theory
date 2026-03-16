@@ -3,13 +3,13 @@
 ## Corpus Architecture (v2.0)
 
 **Decision date:** 2026-03-16
-**Status:** APPROVED — drafting in progress
+**Status:** TAB v2.0 ready for journal submission; other documents pending
 
 ### Document Stack
 
 | Document | Role | Scope | Status |
 |----------|------|-------|--------|
-| **TAB v2.0** | Foundation | X through bridge equation | Drafting |
+| **TAB v2.0** | Foundation | X through bridge equation | **READY FOR SUBMISSION** |
 | **LRT-MASTER v2.0** | Reconstruction | Assumes bridge + R1–R4 + PPC → QM | Pending |
 | **LRT-Formalization-Methods.md** | Methodology | What Lean verifies (and doesn't) | Pending |
 | **LRT-Cosmology.md** | Extension | Information circulation hypothesis | Future |
@@ -45,22 +45,37 @@ Each document follows a distinct format to signal its claim type to referees.
 
 #### TAB v2.0 — Philosophy Paper (Transcendental Argument)
 
+**Status:** ✅ READY FOR SUBMISSION (2026-03-16)
+**Target journals:** Foundations of Physics, Foundations of Science
 **Target length:** ~15 pages
-**Contains no physics.**
+**Subtitle:** Part I: Ontological Groundwork
 
 | Section | Content |
 |---------|---------|
-| Front matter | Title, Abstract (150–200 words), Keywords: logic, information ontology, metaphysics of reality, transcendental grounding |
-| §1 | Problem statement: impossibility of derivation from nothing; minimal ontic structure |
-| §2 | Necessity of logical constraint (L₃ as prescriptive, not merely descriptive) |
-| §3 | Necessity of informational domain (I∞ as total possibility space) |
-| §4 | Necessity of actualization (A as primitive marking obtaining) |
-| §5 | Interaction of primitives (why jointly determine actuality structure) |
-| §6 | Bridge argument: X ≡ [L₃ : I∞ : A] → X ⊢ A_Ω → A_Ω = L₃(I∞) |
-| §7 | Consequences for ontology (what the equation claims and disclaims) |
-| §8 | Conclusion |
+| Front matter | Title + Part I subtitle, Abstract (150–200 words), Keywords |
+| §1 | Three Guiding Observations (motivating primitives) |
+| §2 | Necessity of logical constraint (L₃); includes §2.4 epistemic vs transcendental necessity |
+| §3 | Necessity of informational domain (I∞); §3.3 completeness as logical closure |
+| §4 | Necessity of actualization (A); §4.4 A's grounding role vs bridge structure |
+| §5 | Mutual constitution of primitives |
+| §6 | Bridge argument: χ → χ ⊢ A_Ω → A_Ω = L₃(I∞); §6.2 explicit derivation |
+| §7 | Discussion: Information Ontology and Logic Realism (Wheeler, Tegmark, Floridi, Tahko); §7.7 contrast with modal realism |
+| §8 | Consequences for Ontology |
+| §9 | Conclusion; §9.1 Physics Outlook |
 | App A | Primitive definitions |
 | App B | Logical notation |
+| References | Wheeler, Tegmark, Floridi, Tahko, Hardy, Chiribella et al. |
+
+**Key refinements (Perplexity review cycle 2026-03-16):**
+- §2.4: Explicit distinction between epistemic and transcendental necessity
+- §3.3: Completeness reframed as closure under L₃-admissible differentiation (not geometric regress)
+- §4.4: A's grounding role clarified (grounds *why* actuality exists, not just its structure)
+- §6.2: Three-premise derivation made explicit
+- §7.7: Contrast with Lewisian modal realism (TAB is actualist)
+- §9.1: Concrete physics outlook (constraints on physical theories, measurement problem reframing)
+- Subtitle added: "Part I: Ontological Groundwork"
+- Notation footnote in §7 (≡ marks metaphysical identity, not stipulative definition)
+- Abstract refined: "develops no new physical formalisms"
 
 ---
 
@@ -413,11 +428,25 @@ This preserves:
 
 ---
 
-### Pending Offer
+---
 
-GPT offered to produce **formal numbered proof structure** for bridge argument (analytic metaphysics format). Would strengthen TAB against dismissal.
+## TAB v2.0 Perplexity Review Summary (2026-03-16)
 
-**Status:** Awaiting user decision.
+**Initial assessment:** Major revisions required
+**Final assessment:** Ready for submission to Foundations of Physics or Foundations of Science
+
+**Issues raised and resolved:**
+
+| Issue | Resolution |
+|-------|------------|
+| L₃: epistemic vs ontological necessity gap | §2.4 added; identity conditions bridge both |
+| I∞ completeness argument (boundary regress) | §3.3 reframed as logical closure |
+| A redundancy given bridge identity | §4.4 distinguishes grounding role from structural characterization |
+| Bridge equation status (stipulative?) | §6.2 makes three-premise derivation explicit |
+| Modal realism contrast missing | §7.7 added (TAB is actualist) |
+| Physics outlook too vague | §9.1 gives concrete constraints |
+
+**Perplexity verdict:** "Strong, coherent foundations-of-physics / metaphysics-of-science manuscript suitable for submission."
 
 ---
 
