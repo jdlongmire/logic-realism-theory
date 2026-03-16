@@ -19,7 +19,7 @@ This paper establishes the minimal ontological structure required for anything t
 The present argument begins from three observations about the structure of physical reality. Figure 1 displays the complete grounding sequence from observations through primitives to core results.
 
 ![Figure 1: The grounding sequence from guiding observations to core equations](figures/TAB-grounding-sequence.png)
-*Figure 1: The complete grounding sequence. Guiding observations motivate the primitive ontology X = [L₃ : I∞ : A], which grounds the actualized domain characterized by A_Ω = L₃(I∞).*
+*Figure 1: The complete grounding sequence. Guiding observations motivate the primitive ontology χ = [L₃ : I∞ : A], which grounds the actualized domain characterized by A_Ω = L₃(I∞).*
 
 ### 1.1 Physical Reality Has an Origin
 
@@ -49,19 +49,19 @@ The three observations motivate three primitives:
 
 | Observation | Primitive |
 |-------------|-----------|
-| Reality has an origin | Ontological unity X |
+| Reality has an origin | Ontological unity χ |
 | Logical/informational/dynamic structure | L₃, I∞, A |
 | No actuality violates logic | Bridge constraint |
 
 The primitives form a co-constitutive unity:
 
-$$X \equiv [L_3 : I_\infty : A]$$
+$$\chi \equiv [L_3 : I_\infty : A]$$
 
 The third observation yields the bridge equation: actuality coincides with the logically admissible configurations of the informational domain:
 
 $$A_\Omega = L_3(I_\infty)$$
 
-The remainder of this paper justifies these claims. Sections 2–4 establish that each primitive is transcendentally necessary. Section 5 demonstrates their mutual constitution. Section 6 derives the bridge identity. Section 7 draws consequences.
+The remainder of this paper justifies these claims. Sections 2–4 establish that each primitive is transcendentally necessary. Section 5 demonstrates their mutual constitution. Section 6 derives the bridge identity. Section 7 situates TAB within information ontology and the Logic Realism tradition. Sections 8–9 draw consequences and conclude.
 
 ### 1.5 Method
 
@@ -197,9 +197,9 @@ We now have three primitives, each transcendentally necessary:
 - **I∞:** Total informational possibility space
 - **A:** Actualization primitive
 
-We designate their unity as X:
+We designate their unity as χ:
 
-$$X \equiv [L_3 : I_\infty : A]$$
+$$\chi \equiv [L_3 : I_\infty : A]$$
 
 The brackets indicate that these primitives are not merely conjoined but co-constitutive. Each requires the others for its full specification.
 
@@ -232,13 +232,13 @@ We now present the core argument in three steps (see Figure 2).
 
 **Step 1: The Primitive Ontology**
 
-$$X \equiv [L_3 : I_\infty : A]$$
+$$\chi \equiv [L_3 : I_\infty : A]$$
 
 This is not a postulate but the conclusion of Sections 2–4: these primitives are each transcendentally necessary, and they form a co-constitutive unity.
 
 **Step 2: The Grounding Relation**
 
-$$X \vdash A_\Omega$$
+$$\chi \vdash A_\Omega$$
 
 From the primitive ontology, actuality follows. The turnstile (⊢) signifies ontological grounding, not logical derivation in the narrow sense. Grounding here denotes constitutive dependence rather than logical inference. The claim is that actuality exists in virtue of the primitive ontology rather than being logically deduced from it.
 
@@ -275,15 +275,114 @@ The bridge equation is the core result of this paper. Everything else in Logic R
 
 ---
 
-## 7. Consequences for Ontology
+## 7. Discussion: Locating TAB in Information Ontology and Logic Realism
 
-### 7.1 What the Equation Claims
+The transcendental derivation of the Bridge Identity
+
+$$A_\Omega \equiv L_3(I_\infty)$$
+
+establishes a prescriptive floor beneath contemporary information-based ontologies of physics. Much recent work proposes that physical reality is informational or mathematical in character. These frameworks often identify informational structure as fundamental but leave unresolved a central question: under what condition does informational possibility become concrete physical actuality?
+
+The TAB framework addresses this gap by identifying the minimal primitives required for determinate being and clarifying the structural relationship between logical constraint, informational possibility, and physical realization. This section situates TAB within the broader landscape of informational metaphysics while also locating it within the philosophical orientation sometimes described as **Logic Realism**, where logical structure is treated as ontologically prior rather than merely epistemic.
+
+### 7.1 From "It from Bit" to Logical Actualization
+
+John Archibald Wheeler's "It from Bit" proposal suggested that physical reality arises from binary informational distinctions (Wheeler 1990). Physical states correspond to answers to yes–no questions, and the structure of the universe reflects the accumulation of such informational choices.
+
+The proposal captured an important insight but remained heuristic. Wheeler did not provide a formal account of the mechanism through which informational potential becomes determinate physical states.
+
+Within TAB the distinction becomes explicit. Informational possibility is represented by the total informational domain I∞, the space of all structured distinctions. Physical actuality corresponds to the domain of configurations that obtain, A_Ω.
+
+The transition between these domains is governed by the prescriptive constraint structure of the three fundamental laws of logic L₃. The Bridge Identity expresses the condition under which informational configurations qualify as actual:
+
+$$A_\Omega \equiv L_3(I_\infty)$$
+
+Physical reality therefore consists of the informational configurations that satisfy the minimal logical conditions required for determinate being. Informational structure supplies the possible configurations; logical admissibility determines which configurations can obtain.
+
+In this way Wheeler's intuition receives a precise formulation. Informational possibility alone is insufficient for actuality. Logical constraint determines which informational configurations are capable of becoming real.
+
+### 7.2 Static Plenums and the Role of Primitive Action
+
+A different informational ontology appears in Max Tegmark's Mathematical Universe Hypothesis (MUH), which proposes that mathematical structure itself constitutes physical reality (Tegmark 2014). Within this framework every consistent mathematical structure exists. Possibility and actuality collapse into a single category.
+
+TAB preserves a distinction between these domains. Logical syntax and informational structure provide the formal vocabulary of possible configurations, but possibility does not entail actuality. A further primitive is required to mark which configurations obtain.
+
+TAB therefore introduces a primitive **actualization operator A**. This operator represents the irreducible marking of configurations as obtaining or not obtaining. Logical constraint determines admissibility, informational structure supplies the domain of possibilities, and primitive action performs the ongoing selection of actual states.
+
+This preserves a central ontological distinction absent from purely mathematical ontologies:
+
+$$\text{logical possibility} \neq \text{actuality}$$
+
+Actuality emerges through the continuous operation of primitive action under logical constraint. Logical admissibility determines what can obtain; primitive action determines what does obtain.
+
+### 7.3 Information as Transcendental Infrastructure
+
+The informational domain invoked in TAB aligns with insights from Informational Structural Realism. Luciano Floridi characterizes information as structured distinction, a configuration in which differences are organized into meaningful relations (Floridi 2011).
+
+TAB adopts this insight but grounds it transcendentally. Determinate existence requires distinguishability. For any entity to be this rather than that, a domain of possible distinctions must already exist. The informational domain I∞ therefore functions not as a physical medium but as the transcendental infrastructure of differentiation.
+
+In this framework informational structure precedes any specific physical geometry. Geometry describes particular patterns within the informational domain once actualization occurs. The informational substrate therefore serves as a necessary condition for the intelligibility of physical reality rather than as a physical entity among others.
+
+### 7.4 TAB within the Logic Realism Tradition
+
+The ontological commitments of TAB also place it within a broader philosophical orientation sometimes described as **Logic Realism**, the view that logical structure is not merely descriptive of thought but prescriptive for being itself (Tahko 2014).
+
+In many metaphysical frameworks the laws of logic function as rules governing reasoning about the world. Logic constrains inference but does not determine the structure of reality. Logic Realism reverses this priority. Logical principles express the minimal structural conditions required for anything to exist in a determinate way.
+
+TAB develops this position formally. The three logical constraints L₃ are not treated as external rules imposed on an independently existing universe. They constitute the prescriptive conditions that any configuration must satisfy in order to obtain. Logical constraint therefore operates prior to both informational specification and physical instantiation.
+
+Within this framework the informational domain I∞ represents the space of structured distinctions that logical constraint makes intelligible. The actualized domain A_Ω represents those configurations that satisfy the admissibility conditions determined by L₃. The Bridge Identity
+
+$$A_\Omega \equiv L_3(I_\infty)$$
+
+expresses this relationship directly. Logical structure determines the admissible informational configurations capable of appearing as physical reality.
+
+This positioning clarifies the metaphysical orientation of TAB. The theory does not simply claim that reality is informational or mathematical. It advances the stronger thesis that logical structure is ontologically prior and that informational and physical structures arise within the domain that logical constraint permits.
+
+### 7.5 The Ontological Hierarchy of LRT
+
+The interaction of the primitives produces a hierarchical ontology that connects logical structure to physical realization.
+
+1. **Logic (L₃)**
+   The prescriptive constraint structure governing determinate being.
+
+2. **Information (I∞)**
+   The total domain of structured distinctions.
+
+3. **Action (A)**
+   The primitive operator marking configurations as obtaining.
+
+4. **Actualized Domain (A_Ω)**
+   The informational configurations satisfying logical admissibility.
+
+5. **Geometry and Physics**
+   The structured patterns that emerge within the actualized domain.
+
+The Bridge Identity marks the critical transition within this hierarchy. Logical constraint applied to informational possibility yields the domain within which physical structures can appear.
+
+### 7.6 Relation to Quantum Reconstruction Programs
+
+Modern quantum reconstruction programs derive the formal structure of quantum theory from operational or informational principles (Hardy 2001; Chiribella, D'Ariano, and Perinotti 2011). These approaches demonstrate that quantum mechanics can be recovered from general axioms governing information processing.
+
+TAB operates at a deeper ontological level. Rather than reconstructing quantum theory from informational axioms, it seeks to explain the metaphysical conditions that make informational structure itself possible. Logical constraint establishes the admissibility conditions for determinate configurations, while primitive action provides the mechanism through which informational possibility becomes actual physical structure.
+
+From this perspective quantum reconstruction programs describe the geometric and probabilistic structures that arise within the already-actualized informational domain A_Ω. TAB therefore complements these approaches by supplying an ontological grounding for the informational principles they employ.
+
+---
+
+This positioning clarifies the role of the Bridge Identity within contemporary metaphysics of physics. TAB does not merely assert that reality is informational or mathematical. It identifies the minimal transcendental structure required for informational possibility to become determinate physical actuality, situating the theory at the intersection of information ontology and the Logic Realism tradition.
+
+---
+
+## 8. Consequences for Ontology
+
+### 8.1 What the Equation Claims
 
 The bridge equation establishes that the structure of actuality is not arbitrary. Reality has a form: it is the logically admissible informational configurations of the total possibility space. This form is not imposed from outside but constituted by the interaction of the primitives.
 
 This is a structural claim. It says nothing yet about the specific configurations that obtain, only that whatever obtains must have this form. The equation provides the framework within which physics operates, not the physics itself.
 
-### 7.2 What the Equation Does Not Claim
+### 8.2 What the Equation Does Not Claim
 
 The bridge equation does not claim:
 
@@ -291,7 +390,7 @@ The bridge equation does not claim:
 - **That the primitives are causally prior to the physical world.** The grounding relation is not temporal. The primitives do not exist "before" the physical world and then produce it. They are constitutively co-present with whatever exists.
 - **That the bridge equation is empirically testable in isolation.** The equation is a framework, not a hypothesis. It becomes testable only when combined with specific physical claims.
 
-### 7.3 The Scope of Transcendental Grounding
+### 8.3 The Scope of Transcendental Grounding
 
 The transcendental arguments of this paper establish the form of any possible actuality. They do not establish the content. A skeptic might grant that L₃, I∞, and A are necessary and still ask: why is the physical world we observe selected from the space of possibilities?
 
@@ -299,7 +398,7 @@ This question is legitimate, but it is not answerable at the level of pure ontol
 
 ---
 
-## 8. Conclusion
+## 9. Conclusion
 
 We have argued that three primitives—prescriptive logical constraint (L₃), total informational possibility (I∞), and actualization (A)—are each transcendentally necessary and jointly constitute the minimal ontology of reality. Their interaction yields the core physics bridge of Logic Realism Theory.
 
@@ -307,9 +406,9 @@ We have argued that three primitives—prescriptive logical constraint (L₃), t
 
 **Bridge Result**
 
-$$X \equiv [L_3 : I_\infty : A]$$
+$$\chi \equiv [L_3 : I_\infty : A]$$
 
-$$X \vdash A_\Omega$$
+$$\chi \vdash A_\Omega$$
 
 $$A_\Omega = L_3(I_\infty)$$
 
@@ -330,7 +429,7 @@ The bridge equation is not the end of the story but its beginning. Logic Realism
 | L₃ | Prescriptive logical constraint structure | The triadic constraint of identity, non-contradiction, and excluded middle, understood as governing what can obtain, not merely what can be thought. |
 | I∞ | Total informational possibility space | The complete domain of distinguishable configurations; exhausts the space of what might obtain. |
 | A | Actualization primitive | The irreducible marking of configurations as obtaining; bridges possibility and actuality. |
-| X | Primitive ontology | The co-constitutive unity of L₃, I∞, and A: X ≡ [L₃ : I∞ : A]. |
+| χ | Primitive ontology | The co-constitutive unity of L₃, I∞, and A: χ ≡ [L₃ : I∞ : A]. |
 | A_Ω | Actualized domain | The totality of what obtains; the result of A operating on I∞ under L₃. |
 | L₃(I∞) | Logically admissible configurations | The subset of I∞ consisting of configurations that satisfy L₃. |
 
@@ -342,12 +441,29 @@ The bridge equation is not the end of the story but its beginning. Logic Realism
 |--------|---------|
 | ≡ | Definitional equivalence |
 | ⊢ | Ontological grounding (read: "grounds" or "constitutes") |
+| χ | Chi; the primitive ontological unity |
 | = | Identity |
 | [A : B : C] | Co-constitutive unity of A, B, and C |
 | ∞ (subscript) | Completeness; exhausting the domain |
 | Ω (subscript) | Actualized; obtaining |
 
-The turnstile (⊢) is adapted from its use in formal logic, where it signifies derivability. Here it signifies ontological grounding: X ⊢ A_Ω means that the primitive ontology X constitutes the actualized domain A_Ω. This is stronger than material implication and weaker than logical derivation in the technical sense.
+The turnstile (⊢) is adapted from its use in formal logic, where it signifies derivability. Here it signifies ontological grounding: χ ⊢ A_Ω means that the primitive ontology χ constitutes the actualized domain A_Ω. This is stronger than material implication and weaker than logical derivation in the technical sense.
+
+---
+
+## References
+
+**Chiribella, G., D'Ariano, G. M., & Perinotti, P.** (2011). Informational derivation of quantum theory. *Physical Review A*, 84(1), 012311. https://doi.org/10.1103/PhysRevA.84.012311
+
+**Floridi, L.** (2011). *The Philosophy of Information*. Oxford University Press. https://doi.org/10.1093/acprof:oso/9780199232383.001.0001
+
+**Hardy, L.** (2001). Quantum theory from five reasonable axioms. *arXiv preprint quant-ph/0101012*. https://arxiv.org/abs/quant-ph/0101012
+
+**Tahko, T. E.** (2014). The metaphysics of logic. In P. Rush (Ed.), *The Metaphysics of Logic* (pp. 1–17). Cambridge University Press.
+
+**Tegmark, M.** (2014). *Our Mathematical Universe: My Quest for the Ultimate Nature of Reality*. Knopf.
+
+**Wheeler, J. A.** (1990). Information, physics, quantum: The search for links. In W. H. Zurek (Ed.), *Complexity, Entropy, and the Physics of Information* (pp. 3–28). Addison-Wesley.
 
 ---
 
