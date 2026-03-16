@@ -86,6 +86,33 @@ Also: `202603-pre-refactor/` contains earlier development documents (IIS, Scale 
 
 ---
 
+## Gemini Adversarial Review (2026-03-16)
+
+**Verdict:** Formalization internally consistent but axioms largely re-postulate QM rather than derive it.
+
+**Critical findings (ranked by severity):**
+
+| Rank | Step | Issue |
+|------|------|-------|
+| 1 | 10 | `schrodinger_from_stone` is axiomatized, not derived |
+| 2 | 3 | `LRT_StateSpace` placeholder; H1/H2 asserted without L₃ connection |
+| 3 | 7 | Circular: `evolution_preserves_distinguishability` assumes QM orthogonality |
+| 4 | 5 | `event_operator_has_bool_spectrum` uses `h_event : True` (unformalized bridge) |
+| 5 | 9 | `planck_constant` axiomatically introduced (empirical import) |
+| 6 | 8 | Time structure axiomatized, not derived |
+| 7 | 1 | `Admissible (_c : I) := True` trivializes L₃ filter |
+
+**Pervasive issues:**
+- Placeholder abuse (`True`, `trivial`)
+- No formal I → H mapping
+- Boolean → spectrum connection asserted
+
+**Full review:** `memory/gemini/20260316_074913_you_are_a_skeptical_mathematic.md`
+
+**Status:** UNDER REVIEW — remediation pending
+
+---
+
 ## Commands
 
 - **Build Lean:** `cd formalization && ~/.elan/bin/lake build`
