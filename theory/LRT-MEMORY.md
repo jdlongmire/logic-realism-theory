@@ -45,7 +45,7 @@ X → A_Ω → Determinate Identity → Local Tomography → ℂℋ → PVM → 
 - ToC removed from PDF generation
 - Commit: `7b89aac`
 
-**Section 10:** Needs revision to reflect completed (not planned) Lean formalization.
+**Section 9.1:** Updated 2026-03-16 to reflect completed Lean formalization.
 
 ---
 
@@ -63,10 +63,26 @@ X → A_Ω → Determinate Identity → Local Tomography → ℂℋ → PVM → 
 
 ## Technical Supplements
 
-Located in `theory/`:
-- Eigenvalue Restriction Proof
-- H1-H2 Tomography Bridge
-- Decoherence supplement
+Located in `theory/supplementary/`:
+
+| Doc | Title |
+|-----|-------|
+| S1 | PPC Derivation |
+| S2 | H1-H2 Bridge |
+| S3 | Eigenvalue Restriction |
+| S4 | Debreu-Nachbin |
+| S5 | D_sing and BH Entropy |
+| S6 | UNS Theorem |
+| S7 | G-Equivariance |
+| S8 | Lean4 Step 3 Strategy |
+| S9 | Lean4 Step 5 Strategy |
+| S10 | Lorentz Covariance |
+| S11 | Lean Formalization Guide |
+| S12 | Product Effects |
+| S13 | Field Selection |
+| S14 | Boolean Spectrum |
+
+Also: `202603-pre-refactor/` contains earlier development documents (IIS, Scale Law, etc.)
 
 ---
 
