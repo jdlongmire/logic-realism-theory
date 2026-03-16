@@ -3,7 +3,7 @@
 ## Corpus Architecture (v2.0)
 
 **Decision date:** 2026-03-16
-**Status:** TAB v2.0 ready for journal submission; other documents pending
+**Status:** TAB v2.0 ready for journal submission; Lean formalization in active development
 
 ### Document Stack
 
@@ -231,6 +231,7 @@ Lean does NOT verify:
 ## Lean Formalization Status
 
 **Location:** `formalization/`
+**Development approach:** `theory/LRT-Lean-Approach.md`
 
 **Build status:** ✅ VERIFIED (2026-03-13)
 - 2483 jobs completed
@@ -243,24 +244,23 @@ X → A_Ω → Determinate Identity → Local Tomography → ℂℋ → PVM → 
 ```
 
 **Step structure:**
-| Step | File | Content |
-|------|------|---------|
-| 0 | `Step0_Primitives.lean` | I type, X, A_Ω primitives |
-| 1 | `Step1_Constitution.lean` | Bridge principle X → A_Ω |
-| 2 | `Step2_DeterminateIdentity.lean` | Determinate identity from constitution |
-| 3 | `Step3_LocalTomography.lean` | Hardy H1/H2, k=2 |
-| 4 | `Step4_HardyAxiom.lean` | CPH structure, Hilbert space |
-| 5 | `Step5_EigenvalueRestriction/` | Spectral idempotent axioms |
-| 6 | `Step6_BornRule.lean` | Projection norm, Born rule |
-| 7 | `Step7_Unitarity.lean` | Wigner theorem, evolution |
-| 8 | `Step8_TemporalEmergence.lean` | Actualization ordering → time |
-| 9 | `Step9_EnergyAction.lean` | Stone, Planck, Noether |
-| 10 | `Step10_Schrodinger.lean` | Schrödinger from Stone |
+| Step | File | Content | Status |
+|------|------|---------|--------|
+| 0 | `Step0_Primitives.lean` | I type, X, A_Ω primitives | **NEEDS FIX** (Admissible trivial) |
+| 1 | `Step1_Constitution.lean` | Bridge principle X → A_Ω | Axiom (target: derive weak form) |
+| 2 | `Step2_DeterminateIdentity.lean` | Determinate identity from constitution | OK |
+| 3 | `Step3_LocalTomography.lean` | Hardy H1/H2, k=2 | **NEEDS DERIVATION** |
+| 4 | `Step4_HardyAxiom.lean` | CPH structure, Hilbert space | Depends on Step 3 |
+| 5 | `Step5_EigenvalueRestriction/` | Spectral idempotent axioms | **NEEDS DERIVATION** (key leverage point) |
+| 6 | `Step6_BornRule.lean` | Projection norm, Born rule | Needs Gleason import |
+| 7 | `Step7_Unitarity.lean` | Wigner theorem, evolution | OK (import Wigner from Mathlib) |
+| 8 | `Step8_TemporalEmergence.lean` | Actualization ordering → time | Axiom (weak link) |
+| 9 | `Step9_EnergyAction.lean` | Stone, Planck, Noether | Planck empirically imported |
+| 10 | `Step10_Schrodinger.lean` | Schrödinger from Stone | **NEEDS DERIVATION** |
 
-**Axioms (30 total):**
-- Foundational ontology: `bridge_principle`, `actualization_ordering`, `I_infinite`
-- Established theorems (axiomatic in Lean): Wigner, Stone, Noether
-- Tomography: Hardy H1/H2, k=2 constraint
+**Axiom reduction target:** 12 → ≤5
+
+**Next action:** Phase 0 — Fix `Admissible (_c : I) := True`
 
 ---
 
@@ -450,30 +450,90 @@ This preserves:
 
 ---
 
-## Gemini Adversarial Review (2026-03-16)
+## Multi-Reviewer Synthesis (2026-03-16)
 
-**Verdict:** Formalization internally consistent but axioms largely re-postulate QM rather than derive it.
+**Sources:** Grok, ChatGPT, Gemini adversarial reviews
+**Full analysis:** `theory/LRT-Lean-Approach.md`
 
-**Critical findings (ranked by severity):**
+### The Core Insight
 
-| Rank | Step | Issue |
-|------|------|-------|
-| 1 | 10 | `schrodinger_from_stone` is axiomatized, not derived |
-| 2 | 3 | `LRT_StateSpace` placeholder; H1/H2 asserted without L₃ connection |
-| 3 | 7 | Circular: `evolution_preserves_distinguishability` assumes QM orthogonality |
-| 4 | 5 | `event_operator_has_bool_spectrum` uses `h_event : True` (unformalized bridge) |
-| 5 | 9 | `planck_constant` axiomatically introduced (empirical import) |
-| 6 | 8 | Time structure axiomatized, not derived |
-| 7 | 1 | `Admissible (_c : I) := True` trivializes L₃ filter |
+> "The actual mathematical leverage point is not I∞. It is the **binary actualization operator**. That is where the physics can emerge." — ChatGPT
 
-**Pervasive issues:**
-- Placeholder abuse (`True`, `trivial`)
-- No formal I → H mapping
-- Boolean → spectrum connection asserted
+The derivation chain that matters:
+```
+A(E,c) ∈ {0,1} → HasBooleanSpectrum E → Projection → PVM → Gleason → Born
+```
 
-**Full review:** `memory/gemini/20260316_074913_you_are_a_skeptical_mathematic.md`
+**Target theorem:** Derive `event_operator_has_bool_spectrum` rather than axiomatize it.
 
-**Status:** UNDER REVIEW — remediation pending
+### Critical Gaps (All Reviewers Converge)
+
+| Gap | Source | Current Status |
+|-----|--------|----------------|
+| **Admissibility trivial** | ChatGPT | `Admissible := True` does nothing |
+| **Bridge principle unformalized** | Grok, ChatGPT | Axiom, not derived |
+| **H1/H2 asserted** | Grok, Gemini | No formal L₃ connection |
+| **K=2 forcing axiomatized** | Grok | Most distinctive claim |
+| **Born rule placeholders** | Grok, ChatGPT | Gleason not imported |
+| **I → H mapping missing** | Gemini | No formal bridge |
+
+### Development Phases
+
+| Phase | Task | Priority | Estimated Effort |
+|-------|------|----------|------------------|
+| 0 | Fix `Admissible := True` | CRITICAL | 1 day |
+| 1 | Define Events + Boolean algebra | CRITICAL | 2–3 days |
+| 2 | H1/H2 derivation | HIGH | 1–2 weeks |
+| 3 | K=2 forcing | HIGH | 1–2 weeks |
+| 4 | Stone representation | MEDIUM | 1–2 weeks |
+| 5 | Boolean spectrum theorem | HIGH | 1 week |
+| 6 | Born rule via Gleason | HIGH | 1–2 weeks |
+| 7 | Time structure | MEDIUM | 1 week |
+
+### Axiom Reduction Target
+
+**Current:** ~12 Tier-2 philosophical axioms
+**Target:** ≤5 by end of development cycle
+
+### ChatGPT's Five-Step Path
+
+1. Define event predicate class (queries over I that A resolves)
+2. Show admissible events form Boolean algebra under L₃
+3. Represent Boolean algebra in observable algebra (Stone)
+4. Prove represented sharp events are idempotent
+5. Recover projection structure → Gleason → Born
+
+### Status
+
+**ACTIVE DEVELOPMENT** — Phase 0 (Fix Admissibility) is immediate next step
+
+---
+
+## Honest Epistemics: What LRT Claims
+
+### What LRT Actually Derives (once formalized)
+
+- Given the operational framework physicists already accept (R1–R4)
+- LRT grounds why those axioms hold rather than leaving them as brute postulates
+- The bridge equation constrains what can obtain
+
+### What LRT Grounds (but doesn't derive)
+
+- Hardy's axioms (H1/H2) — consistent with χ, not derived
+- Masanes-Müller inputs (R1–R4) — operational physical inputs
+- Continuous time — stronger philosophical commitment
+
+### What Remains Imported
+
+- ℏ (Planck's constant) — empirical
+- Specific Hamiltonians — physical domain
+- The particular physical world we inhabit
+
+### The Genuine Contribution
+
+**Structural necessity:** QM is structurally necessary given χ + operational inputs.
+
+The reconstruction is real but more modest than the current paper claims. The key insight: grounding operational axioms rather than deriving physics from pure logic.
 
 ---
 
