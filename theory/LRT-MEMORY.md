@@ -299,6 +299,128 @@ Also: `202603-pre-refactor/` contains earlier development documents (IIS, Scale 
 
 ---
 
+## GPT Refinement Report (2026-03-16)
+
+**Purpose:** Structural recommendations after TAB v2.0 review cycle.
+
+### Confirmed Architecture
+
+The corpus architecture is **coherent and stable**:
+
+| Document | Role | Boundary |
+|----------|------|----------|
+| TAB v2.0 | Metaphysical foundation | Ends at bridge equation; no physics |
+| LRT-MASTER v2.0 | Physics reconstruction | Assumes bridge; derives QM |
+| Formalization Methods | Methodology | What Lean verifies (and doesn't) |
+| Cosmology | Extension | Speculative; isolated from core |
+
+**Key principle:** TAB supplies metaphysics. MASTER reconstructs physics.
+
+---
+
+### Three Motivating Observations
+
+**Recommended:** Place at very beginning of TAB to motivate primitives.
+
+| Observation | Content | Primitive |
+|-------------|---------|-----------|
+| 1 | Physical reality has an origin in something (not self-explanatory) | → A |
+| 2 | Reality exhibits logical structure (identity, non-contradiction, determinacy) | → L₃ |
+| 3 | Reality exhibits informational structure (quantum states, entropy, "It from Bit") | → I∞ |
+
+These observations establish **why** the primitives are required before deriving their interaction.
+
+---
+
+### Revised TAB Logical Flow
+
+| Section | Content |
+|---------|---------|
+| §1 | Motivating Observations (1–3 above) |
+| §2 | Primitive Requirements (L₃, I∞, A) |
+| §3 | Mutual Constitution: X = [L₃ : I∞ : A] |
+| §4 | Derivation of Actualization (why A resolves indeterminacy) |
+| §5 | Bridge Argument → A_Ω = L₃(I∞) |
+| §6 | Consequences (what the equation claims/disclaims) |
+
+**Benefit:** Cleaner pathway from observations → primitives → bridge.
+
+---
+
+### Bridge Equation Placement
+
+| Document | Role |
+|----------|------|
+| TAB | First appearance — result of transcendental derivation |
+| MASTER | Second appearance — starting assumption for physics |
+
+The equation functions as a **metaphysical boundary condition** for physics.
+
+---
+
+### Lean Formalization Strategy
+
+Proof stack layers (each formalizable independently):
+
+| Layer | Content |
+|-------|---------|
+| 1 | Primitive axioms: L₃, I∞, A |
+| 2 | Mutual constitution: X = [L₃ : I∞ : A] |
+| 3 | Actualization theorem: A_Ω = L₃(I∞) |
+| 4 | Physics reconstruction: Hilbert space, Born rule, Schrödinger |
+
+---
+
+### Visual Diagram Flow
+
+Recommended for TAB after motivating observations:
+
+```
+Guiding Observations
+        ↓
+Logical Structure → L₃
+Informational Domain → I∞
+Actualization → A
+        ↓
+Mutual Constitution
+X = [L₃ : I∞ : A]
+        ↓
+Actualized Domain
+AΩ = L₃(I∞)
+```
+
+Figure 1 (`figures/TAB-grounding-sequence.png`) already implements this.
+
+---
+
+### Perplexity/GPT Consensus on Bridge Status
+
+**Confirmed:** Bridge equation is **argued metaphysical identity** (not definition, not theorem).
+
+This preserves:
+- Transcendental force
+- Intellectual honesty
+- Compatibility with formalization
+
+---
+
+### Next Steps (recommended)
+
+1. **Finalize TAB v2.0:** Add explicit motivating observations; verify diagram placement
+2. **Fork LRT-MASTER v2.0:** Insert "Assuming the result of TAB..." and begin physics derivation
+3. **Create Formalization Methods file:** Define axioms, proof targets, Lean roadmap
+4. **Isolate cosmology:** Move speculative physics to separate paper
+
+---
+
+### Pending Offer
+
+GPT offered to produce **formal numbered proof structure** for bridge argument (analytic metaphysics format). Would strengthen TAB against dismissal.
+
+**Status:** Awaiting user decision.
+
+---
+
 ## Gemini Adversarial Review (2026-03-16)
 
 **Verdict:** Formalization internally consistent but axioms largely re-postulate QM rather than derive it.

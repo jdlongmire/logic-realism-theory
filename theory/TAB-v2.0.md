@@ -16,10 +16,10 @@ This paper establishes the minimal ontological structure required for anything t
 
 ## 1. Three Guiding Observations
 
-The present argument begins from three observations about the structure of physical reality (see Figure 2).
+The present argument begins from three observations about the structure of physical reality. Figure 1 displays the complete grounding sequence from observations through primitives to core results.
 
-![Figure 2: Mapping from guiding observations to primitives to core results](figures/LRT-observation-primitive-map.png)
-*Figure 2: The logical arc of the paper. Three guiding observations motivate three primitives, which jointly yield two core results.*
+![Figure 1: The grounding sequence from guiding observations to core equations](figures/TAB-grounding-sequence.png)
+*Figure 1: The complete grounding sequence. Guiding observations motivate the primitive ontology X = [L₃ : I∞ : A], which grounds the actualized domain characterized by A_Ω = L₃(I∞).*
 
 ### 1.1 Physical Reality Has an Origin
 
@@ -225,10 +225,10 @@ A therefore operates within the space of logically admissible configurations of 
 
 ### 6.1 The Grounding Sequence
 
-We now present the core argument in three steps (see Figure 3).
+We now present the core argument in three steps (see Figure 2).
 
-![Figure 3: The three-step grounding sequence from primitive ontology to bridge identity](figures/TAB-grounding-sequence.png)
-*Figure 3: The grounding sequence. The primitive ontology (X) grounds the actualized domain (A_Ω), which is then characterized by the bridge identity.*
+![Figure 2: Mapping from guiding observations to primitives to core results](figures/LRT-observation-primitive-map.png)
+*Figure 2: The equations-only view. Three observations motivate three primitives, yielding the primitive ontology and bridge identity.*
 
 **Step 1: The Primitive Ontology**
 
