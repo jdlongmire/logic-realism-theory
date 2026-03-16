@@ -1,5 +1,149 @@
 # LRT Theory Memory
 
+## Corpus Architecture (v2.0)
+
+**Decision date:** 2026-03-16
+**Status:** APPROVED — drafting in progress
+
+### Document Stack
+
+| Document | Role | Scope | Status |
+|----------|------|-------|--------|
+| **TAB v2.0** | Foundation | X through bridge equation | Drafting |
+| **LRT-MASTER v2.0** | Reconstruction | Assumes bridge + R1–R4 + PPC → QM | Pending |
+| **LRT-Formalization-Methods.md** | Methodology | What Lean verifies (and doesn't) | Pending |
+| **LRT-Cosmology.md** | Extension | Information circulation hypothesis | Future |
+
+### Bridge Equation Status
+
+**The core physics bridge:**
+```
+X ⊢ A_Ω = L₃(I∞)
+```
+
+**Classification:** Argued metaphysical identity (not definition, not yet theorem)
+
+**Argument structure:**
+1. L₃ constrains admissible structure
+2. I∞ supplies all possible configurations
+3. A marks configurations as obtaining
+4. Contradiction cannot obtain (L₃ forbids inconsistent states ontologically)
+5. A cannot operate outside I∞ (I∞ exhausts possibility — completeness claim)
+6. Therefore: A_Ω = L₃(I∞)
+
+**Key refinements (per ChatGPT review):**
+- Step 4 requires ontological argument, not mere logical assertion
+- Step 5 requires explicit completeness premise
+- Avoid "subset of possibility" — use "logically admissible informational configurations"
+- Present grounding relation (X ⊢ A_Ω) before identity (A_Ω = L₃(I∞))
+
+### Document Formats (per epistemic role)
+
+Each document follows a distinct format to signal its claim type to referees.
+
+---
+
+#### TAB v2.0 — Philosophy Paper (Transcendental Argument)
+
+**Target length:** ~15 pages
+**Contains no physics.**
+
+| Section | Content |
+|---------|---------|
+| Front matter | Title, Abstract (150–200 words), Keywords: logic, information ontology, metaphysics of reality, transcendental grounding |
+| §1 | Problem statement: impossibility of derivation from nothing; minimal ontic structure |
+| §2 | Necessity of logical constraint (L₃ as prescriptive, not merely descriptive) |
+| §3 | Necessity of informational domain (I∞ as total possibility space) |
+| §4 | Necessity of actualization (A as primitive marking obtaining) |
+| §5 | Interaction of primitives (why jointly determine actuality structure) |
+| §6 | Bridge argument: X ≡ [L₃ : I∞ : A] → X ⊢ A_Ω → A_Ω = L₃(I∞) |
+| §7 | Consequences for ontology (what the equation claims and disclaims) |
+| §8 | Conclusion |
+| App A | Primitive definitions |
+| App B | Logical notation |
+
+---
+
+#### LRT-MASTER v2.0 — Mathematical Physics Paper (Reconstruction)
+
+**Target length:** 40–50 pages
+**Format:** Explicit assumption sections + theorem statements
+
+| Section | Content |
+|---------|---------|
+| Front matter | Title, Abstract (200–250 words), Keywords: quantum reconstruction, information ontology, logical realism |
+| §1 | Foundational assumption: state TAB result (X ⊢ A_Ω = L₃(I∞)); physics proceeds from this |
+| §2 | Operational assumptions: R1–R4 + PPC (all introduced together) |
+| §3 | Informational state structure within A_Ω |
+| §4 | Hilbert space emergence (reference Masanes–Müller) |
+| §5 | Measurement + probability: PVM + Born rule (Gleason) |
+| §6 | Dynamical evolution: continuous transformations → Schrödinger (Stone) |
+| §7 | Interpretational implications (wavefunction meaning under LRT) |
+| §8 | Discussion and limitations |
+| §9 | Conclusion |
+| App A | Imported theorems and dependencies |
+| App B | Notation |
+
+---
+
+#### LRT-Formalization-Methods.md — Methods Note
+
+**Target length:** ~10 pages
+**Goal:** Explain exactly what Lean verifies
+
+| Section | Content |
+|---------|---------|
+| Front matter | Title, Short abstract |
+| §1 | Purpose of formalization |
+| §2 | Scope: which definitions/theorems are formalized |
+| §3 | Lean module structure (code organization) |
+| §4 | Dependency graph (which propositions rely on which axioms) |
+| §5 | Limits of formal verification (verifies reconstruction chain, NOT metaphysics) |
+| §6 | Repository structure + verification instructions |
+| Appendix | Axiom inventory |
+
+---
+
+#### LRT-Cosmology.md — Speculative Theoretical Physics
+
+**Format:** Introduction explicitly marks work as exploratory
+
+| Section | Content |
+|---------|---------|
+| Front matter | Title, Abstract |
+| §1 | Motivation (how cosmology questions arise in LRT ontology) |
+| §2 | Actualization and informational domains (brief bridge equation review) |
+| §3 | Information circulation hypothesis |
+| §4 | Black hole information dynamics |
+| §5 | Cosmic expansion and informational pressure |
+| §6 | Observational implications |
+| §7 | Open problems |
+| §8 | Conclusion |
+| Appendix | Mathematical sketches if needed |
+
+---
+
+### Boundary Principle
+
+**TAB argues the ontology.**
+**MASTER reconstructs physics within it.**
+**Formalization explains verification.**
+**Cosmology explores extensions.**
+
+### Formalization Methods Scope
+
+Lean verifies:
+- Logical dependency structure of reconstruction
+- Selected definitions from foundation
+- Internal consistency of derivation chain
+
+Lean does NOT verify:
+- Transcendental argument validity
+- Metaphysical necessity claims
+- Bridge equation justification
+
+---
+
 ## Lean Formalization Status
 
 **Location:** `formalization/`
