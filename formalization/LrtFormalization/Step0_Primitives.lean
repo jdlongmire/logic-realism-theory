@@ -250,7 +250,39 @@ def Admissible (c : Configuration) : Prop := L3Admissible c
 theorem all_configs_admissible (c : Configuration) : Admissible c :=
   all_configs_l3_admissible c
 
-/-! ## Part VIII: Forward-Looking Stubs
+/-! ## Part VIII: Configuration Separation Axiom
+
+I∞ provides distinguishability: distinct configurations can be distinguished by events.
+This is the key axiom enabling H1 derivation.
+-/
+
+/-- **TIER 2 AXIOM: Configuration Separation**
+
+    Distinct configurations are distinguished by some event.
+    This is the Stone-type separation property that enables
+    configurations to be characterized by their event profiles.
+
+    Philosophical motivation:
+    - I∞ is the space of all formally specifiable configurations
+    - "Formally specifiable" means describable by properties
+    - Properties are events (predicates over configurations)
+    - Therefore distinct configurations must differ on some property
+
+    This axiom bridges I∞'s distinguishability to Event structure.
+-/
+axiom config_separation :
+  ∀ (c₁ c₂ : Configuration), c₁ ≠ c₂ →
+    ∃ (e : Event), e.query c₁ ∧ ¬e.query c₂
+
+/-- Configurations are extensional with respect to events:
+    if two configs agree on all events, they are identical. -/
+theorem configs_determined_by_events (c₁ c₂ : Configuration)
+    (h : ∀ (e : Event), e.query c₁ ↔ e.query c₂) : c₁ = c₂ := by
+  by_contra h_ne
+  obtain ⟨e, he₁, he₂⟩ := config_separation c₁ c₂ h_ne
+  exact he₂ ((h e).mp he₁)
+
+/-! ## Part IX: Forward-Looking Stubs
 
 These comments indicate future development directions for downstream steps.
 -/

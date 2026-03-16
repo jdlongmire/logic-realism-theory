@@ -1,0 +1,46 @@
+# ONT-004: Configuration Separation
+id: ONT-004
+name: Configuration Separation
+statement: |
+  Distinct configurations in I∞ are distinguished by some event.
+  For all c₁, c₂ ∈ I, if c₁ ≠ c₂, then there exists an event e
+  such that e(c₁) = true and e(c₂) = false.
+
+role: bridge
+proof_status: axiomatized
+epistemic_status: argued
+
+formal_artifacts:
+  lean:
+    - file: Step0_Primitives.lean
+      symbol: config_separation
+      status: axiom
+    - file: Step0_Primitives.lean
+      symbol: configs_determined_by_events
+      status: proven
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "2.2"
+
+depends_on:
+  - claim_id: ONT-002
+    dependency_type: logical
+    notes: I∞ provides distinguishability substrate
+
+risk_if_false: |
+  Without configuration separation, the H1 derivation fails.
+  Configurations become indistinguishable despite being unequal,
+  breaking the event-to-state bridge.
+
+notes: |
+  Added 2026-03-16 per Grok/ChatGPT reviews.
+
+  Philosophical motivation:
+  - I∞ is the space of all formally specifiable configurations
+  - "Formally specifiable" means describable by properties
+  - Properties are events (predicates over configurations)
+  - Therefore distinct configurations must differ on some property
+
+  This is a Stone-type separation property enabling configurations
+  to be characterized extensionally by their event profiles.

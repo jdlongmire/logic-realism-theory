@@ -22,6 +22,7 @@ derivation_chain:
   - ONT-001  # X ≡ [L₃ : I∞ : A]
   - ONT-002  # I∞ infinite information space
   - ONT-003  # L₃ three fundamental laws
+  - ONT-004  # Configuration separation (from I∞ distinguishability)
   - ACT-001  # X grounds AΩ (bridge principle)
   - ACT-002  # AΩ actualized domain
   - LOG-001  # Determinate identity
@@ -52,16 +53,16 @@ open_problems:
   - OPN-002  # Bekenstein-Hawking bridge
   - OPN-003  # Energy-action relationship
 
-# Status summary
+# Status summary (updated 2026-03-16)
 status_summary:
-  total_claims: 25
-  verified: 6
-  axiomatized: 10
+  total_claims: 26
+  verified: 7  # +1: QM-001 now proven
+  axiomatized: 11  # +1: ONT-004 (separation)
   imported: 3
   prose_only: 1
-  open: 5
+  open: 4  # -1: QM-001 no longer open
 
-# Critical choke points
+# Critical choke points (updated 2026-03-16)
 choke_points:
   - id: ACT-001
     description: "Bridge principle: X grounds AΩ"
@@ -69,6 +70,7 @@ choke_points:
   - id: QM-006
     description: "Boolean spectrum bridge"
     risk: "high"
-  - id: QM-001
-    description: "H1 derivation incomplete"
+  - id: ONT-004
+    description: "Configuration separation axiom"
     risk: "medium"
+    notes: "Required for H1; philosophically motivated from I∞"

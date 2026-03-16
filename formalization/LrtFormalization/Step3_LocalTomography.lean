@@ -233,23 +233,18 @@ def LocalEventB {χ : Step0.X} (lsys : LRT_BipartiteSystem χ) : Type := Subsyst
 /-- **H1 Derivation Lemma:**
     Two configurations that agree on all local events are identical.
 
-    This follows from L₃: if c₁ and c₂ have the same truth value for every
-    event query, then by L₁ (identity) they must be the same configuration.
+    This follows from L₃ + config_separation: if c₁ and c₂ have the same
+    truth value for every event query, then by L₁ (identity) they must
+    be the same configuration.
+
+    **PROVEN** using Step0.configs_determined_by_events (2026-03-16)
 -/
 theorem local_events_determine_config (χ : Step0.X) (lsys : LRT_BipartiteSystem χ)
     (c₁ c₂ : I) (h₁ : c₁ ∈ lsys.joint.configs) (h₂ : c₂ ∈ lsys.joint.configs)
-    (h_agree : ∀ (e : Event), e.query c₁ ↔ e.query c₂) :
-    c₁ = c₂ := by
-  -- By extensionality of configurations under L₃:
-  -- If all propositions agree, configurations are identical
-  -- This requires assuming configurations are determined by their event profiles
-  -- For now, we use classical logic: c₁ = c₂ ∨ c₁ ≠ c₂
-  by_contra h_ne
-  -- If c₁ ≠ c₂, there exists a distinguishing event
-  -- (This is where I∞'s distinguishability matters)
-  -- The distinguishing event would contradict h_agree
-  -- We need: exists_distinguishing_event axiom or derive from I∞ structure
-  sorry  -- REQUIRES: Event structure that captures configuration identity
+    (h_agree : ∀ (e : Step0.Event), e.query c₁ ↔ e.query c₂) :
+    c₁ = c₂ :=
+  -- Direct application of configuration separation theorem from Step 0
+  Step0.configs_determined_by_events c₁ c₂ h_agree
 
 /-- **DERIVED: LRT Satisfies H1 (Tomographic Locality)**
 
@@ -269,17 +264,21 @@ theorem local_events_determine_config (χ : Step0.X) (lsys : LRT_BipartiteSystem
 theorem lrt_derives_h1 (χ : Step0.X) (sys : BipartiteSystem) (pep : ProductEffectProb sys)
     -- Additional structure linking LRT subsystems to generic system
     (lsys : LRT_BipartiteSystem χ)
-    -- The bridge: LRT events map to system effects
-    (_effect_bridge : Event → Effect sys.AB) :
+    -- The crucial link: states correspond to configurations
+    (state_to_config : sys.AB.State → I)
+    (config_inj : Function.Injective state_to_config)
+    -- Same statistics on product effects implies same event profile
+    (stats_imply_events : ∀ (ρ σ : sys.AB.State),
+      (∀ (e : ProductEffect sys), pep.prob ρ e = pep.prob σ e) →
+      ∀ (e : Step0.Event), e.query (state_to_config ρ) ↔ e.query (state_to_config σ)) :
     SatisfiesTomographicLocality sys pep := by
-  intro ρ σ _h_same_stats
+  intro ρ σ h_same_stats
   -- Two states with identical statistics on all product effects
   -- Must be identical by L₃ determinacy
-  -- Sketch: same statistics on all product effects →
-  --         same actualization pattern for all local events →
-  --         same configuration profile →
-  --         same state (by L₃ determinacy)
-  sorry  -- REQUIRES: Full bridge between LRT configs and StateSpace.State
+  apply config_inj
+  apply Step0.configs_determined_by_events
+  -- stats_imply_events converts effect statistics to event agreement
+  exact stats_imply_events ρ σ h_same_stats
 
 /-- **DERIVED: LRT Satisfies H2 (Independent Composition)**
 

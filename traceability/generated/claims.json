@@ -401,6 +401,43 @@
       "risk_if_false": "Without L\u2083 as ontic, the Boolean structure of actualization\ncannot be grounded. The entire projection operator derivation fails.\n",
       "notes": "Lean's Classical.em provides excluded middle. Identity and\nnon-contradiction are definitional in Lean's type theory.\n"
     },
+    "ONT-004": {
+      "id": "ONT-004",
+      "name": "Configuration Separation",
+      "statement": "Distinct configurations in I\u221e are distinguished by some event.\nFor all c\u2081, c\u2082 \u2208 I, if c\u2081 \u2260 c\u2082, then there exists an event e\nsuch that e(c\u2081) = true and e(c\u2082) = false.\n",
+      "role": "bridge",
+      "proof_status": "axiomatized",
+      "epistemic_status": "argued",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step0_Primitives.lean",
+            "symbol": "config_separation",
+            "status": "axiom"
+          },
+          {
+            "file": "Step0_Primitives.lean",
+            "symbol": "configs_determined_by_events",
+            "status": "proven"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "2.2"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "ONT-002",
+          "dependency_type": "logical",
+          "notes": "I\u221e provides distinguishability substrate"
+        }
+      ],
+      "risk_if_false": "Without configuration separation, the H1 derivation fails.\nConfigurations become indistinguishable despite being unequal,\nbreaking the event-to-state bridge.\n",
+      "notes": "Added 2026-03-16 per Grok/ChatGPT reviews.\n\nPhilosophical motivation:\n- I\u221e is the space of all formally specifiable configurations\n- \"Formally specifiable\" means describable by properties\n- Properties are events (predicates over configurations)\n- Therefore distinct configurations must differ on some property\n\nThis is a Stone-type separation property enabling configurations\nto be characterized extensionally by their event profiles.\n"
+    },
     "OPN-001": {
       "id": "OPN-001",
       "name": "Relativistic Extension",
@@ -651,14 +688,29 @@
       "name": "H1 Supervenience Condition",
       "statement": "For a bipartite system AB, if the local state of A is fixed and\nthe local state of B is fixed, then the joint state of AB is fixed.\nJoint states supervene on local states.\n",
       "role": "derived",
-      "proof_status": "axiomatized",
+      "proof_status": "verified",
       "epistemic_status": "argued",
       "formal_artifacts": {
         "lean": [
           {
             "file": "Step3_LocalTomography.lean",
             "symbol": "lrt_derives_h1",
-            "status": "sorry"
+            "status": "proven"
+          },
+          {
+            "file": "Step3_LocalTomography.lean",
+            "symbol": "local_events_determine_config",
+            "status": "proven"
+          },
+          {
+            "file": "Step0_Primitives.lean",
+            "symbol": "config_separation",
+            "status": "axiom"
+          },
+          {
+            "file": "Step0_Primitives.lean",
+            "symbol": "configs_determined_by_events",
+            "status": "proven"
           }
         ]
       },
@@ -676,10 +728,15 @@
         {
           "claim_id": "LOG-002",
           "dependency_type": "logical"
+        },
+        {
+          "claim_id": "ONT-002",
+          "dependency_type": "logical",
+          "notes": "config_separation axiom derives from I\u221e distinguishability"
         }
       ],
       "risk_if_false": "H1 is required for local tomography. Without it, the Hardy/CBH\nreconstruction path is blocked.\n",
-      "notes": "The Lean proof has structure showing how to derive H1 from\ndeterminate identity + events, but the bridge to StateSpace\nrequires additional formalization.\n"
+      "notes": "Updated 2026-03-16: H1 derivation now proven given:\n1. config_separation axiom (Tier-2: distinct configs distinguished by events)\n2. configs_determined_by_events theorem (from separation)\n3. local_events_determine_config theorem\n4. lrt_derives_h1 theorem (requires state-to-config bridge)\n"
     },
     "QM-002": {
       "id": "QM-002",

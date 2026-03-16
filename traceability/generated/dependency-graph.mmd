@@ -15,6 +15,7 @@ graph TD
     ONT-001["ONT-001: Primitive Ontic State X"]
     ONT-002["ONT-002: Infinite Information Space I∞"]
     ONT-003["ONT-003: Three Fundamental Logical Laws..."]
+    ONT-004["ONT-004: Configuration Separation"]
     OPN-001["OPN-001: Relativistic Extension"]
     OPN-002["OPN-002: Bekenstein-Hawking Entropy Bri..."]
     OPN-003["OPN-003: Energy-Action Relationship"]
@@ -43,6 +44,7 @@ graph TD
     LOG-001 --> LOG-002
     ONT-001 --> ONT-002
     ONT-001 --> ONT-003
+    ONT-002 --> ONT-004
     PHY-002 -.->|interpretive| OPN-001
     PHY-004 --> OPN-001
     ONT-002 -.->|interpretive| OPN-002
@@ -58,6 +60,7 @@ graph TD
     EXT-001 -.->|formal| PRD-001
     LOG-001 --> QM-001
     LOG-002 --> QM-001
+    ONT-002 --> QM-001
     ONT-002 --> QM-002
     LOG-002 --> QM-002
     QM-001 --> QM-003
@@ -81,6 +84,7 @@ graph TD
     class ONT-001 primitive
     class ONT-002 primitive
     class ONT-003 primitive
+    class ONT-004 bridge
     class OPN-001 open
     class OPN-002 open
     class OPN-003 open

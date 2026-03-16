@@ -594,6 +594,97 @@ Next step: Phase 3 (K=2 forcing) — most distinctive LRT claim
 
 ---
 
+## ChatGPT Step 2/3 Review (2026-03-16)
+
+**Assessment:** Architecturally coherent; mid-stage mathematical maturity
+
+### Confirmed Architecture
+
+```
+Primitives → Actualization → Determinate Identity → Physical Proposition Criterion → Local Tomography
+```
+
+This matches Hardy/Masanes-Müller/CDP reconstruction frameworks but adds metaphysical grounding beneath.
+
+### Step 2 (Determinate Identity)
+
+- Implements Physical Proposition Criterion (PPC)
+- Ontological filter, not yet physical theorem
+- Correctly operates at logical layer
+
+### Step 3 (Local Tomography)
+
+- Critical bridge from ontology to operational physics
+- Local tomography is **derived/motivated** from LRT, not just assumed
+- This is where reviewers will probe hardest
+
+### Mathematical State
+
+| Layer | Status |
+|-------|--------|
+| Ontology | ✅ Implemented |
+| Proposition | ⚠️ Partially implemented |
+| Operational | 🔄 Beginning |
+| Operator Algebra | ❌ Not yet |
+| Probability Structure | ❌ Not yet |
+| Dynamics | ❌ Not yet |
+
+### Risk
+
+Reconstruction programs usually require additional principles (continuous reversible transformations, purification, information capacity constraints). If these appear only as imported assumptions, reviewers may argue ontology isn't doing heavy lifting.
+
+---
+
+## Grok Step 2/3 Review (2026-03-16)
+
+**Assessment:** Significant conceptual and technical advance
+
+### Confidence Ratings
+
+| Aspect | Rating |
+|--------|--------|
+| Technical soundness | 90–95% |
+| Philosophical alignment | 85–90% |
+| Progress toward derivation | 70–80% |
+| Readiness for downstream | 60–70% |
+
+### Step 2 Verdict
+
+**Fully established and elegant.** All theorems proven without `sorry`. Delivers: every actual configuration has determinate identity, decidability of equality, no fuzzy identities in AΩ.
+
+Key proofs:
+- `step2_determinate_identity`, `all_configs_determinate` (from L₃)
+- `actual_non_contradiction`, `actuality_exclusive` (binary sharpness)
+- `l3_propagates_to_subsystem`, `subsystem_event_determinate` (scale-independence)
+
+### Step 3 Verdict
+
+**Real progress.** H2 essentially complete. H1 sketched/derived modulo bridge.
+
+Key developments:
+- `lrt_derives_h2`: Complete (product structure → multiplicative dimension)
+- `lrt_derives_h1`: Conceptually sound (L₃ determinacy → tomographic locality)
+- `hardys_theorem` retained as Tier-2 (honest about external dependence)
+- K=2 axiom motivated but not proven
+
+### Remaining Blockers
+
+| Blocker | Priority |
+|---------|----------|
+| `local_events_determine_config` has `sorry` | **HIGHEST** |
+| Event structure underdeveloped | HIGH |
+| StateSpace is placeholder | MEDIUM |
+| K=2 still axiomatic | MEDIUM |
+
+### Highest-Priority Fixes
+
+1. Define `Event` properly (with Boolean algebra instance)
+2. Prove/axiomatize separation: configs distinguished by event family
+3. Fill `local_events_determine_config` via contradiction + distinguishing event
+4. Link actual configs → states with probability measure
+
+---
+
 ## Honest Epistemics: What LRT Claims
 
 ### What LRT Actually Derives (once formalized)

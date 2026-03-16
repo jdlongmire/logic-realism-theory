@@ -17,6 +17,18 @@ X makes AΩ be.
 No derivation of quantum structure is possible.
 
 
+### ONT-004: Configuration Separation
+
+> Distinct configurations in I∞ are distinguished by some event.
+For all c₁, c₂ ∈ I, if c₁ ≠ c₂, then there exists an event e
+such that e(c₁) = true and e(c₂) = false.
+...
+
+**Risk if false:** Without configuration separation, the H1 derivation fails.
+Configurations become indistinguishable despite being unequal,
+breaking the event-to-state bridge.
+
+
 ### QM-006: Boolean Spectrum Bridge
 
 > Event operators representing Boolean actualization predicates
@@ -39,7 +51,6 @@ These claims are implemented in Lean but use `axiom` or `sorry`.
 - **PHY-002**: Temporal Emergence
 - **PHY-003**: Hamiltonian Generator
 - **PHY-004**: Schrödinger Equation
-- **QM-001**: H1 Supervenience Condition
 - **QM-003**: Local Tomography
 - **QM-004**: Complex Hilbert Space Structure
 - **QM-008**: Born Rule

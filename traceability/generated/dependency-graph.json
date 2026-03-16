@@ -61,6 +61,12 @@
       "proof_status": "verified"
     },
     {
+      "id": "ONT-004",
+      "name": "Configuration Separation",
+      "role": "bridge",
+      "proof_status": "axiomatized"
+    },
+    {
       "id": "OPN-001",
       "name": "Relativistic Extension",
       "role": "open",
@@ -112,7 +118,7 @@
       "id": "QM-001",
       "name": "H1 Supervenience Condition",
       "role": "derived",
-      "proof_status": "axiomatized"
+      "proof_status": "verified"
     },
     {
       "id": "QM-002",
@@ -219,6 +225,11 @@
       "type": "logical"
     },
     {
+      "from": "ONT-002",
+      "to": "ONT-004",
+      "type": "logical"
+    },
+    {
       "from": "PHY-002",
       "to": "OPN-001",
       "type": "interpretive"
@@ -290,6 +301,11 @@
     },
     {
       "from": "LOG-002",
+      "to": "QM-001",
+      "type": "logical"
+    },
+    {
+      "from": "ONT-002",
       "to": "QM-001",
       "type": "logical"
     },

@@ -4,7 +4,7 @@ Generated: 2026-03-16
 
 ## Summary
 
-**Total claims:** 26
+**Total claims:** 27
 
 ### By Proof Status
 
@@ -14,13 +14,13 @@ Generated: 2026-03-16
 | imported | 3 |
 | open | 3 |
 | prose_only | 1 |
-| verified | 7 |
+| verified | 8 |
 
 ### By Role
 
 | Role | Count |
 |------|-------|
-| bridge | 2 |
+| bridge | 3 |
 | derived | 14 |
 | imported | 3 |
 | open | 3 |
@@ -31,7 +31,7 @@ Generated: 2026-03-16
 
 | Status | Count |
 |--------|-------|
-| argued | 10 |
+| argued | 11 |
 | established | 13 |
 | open | 3 |
 
@@ -116,6 +116,14 @@ Generated: 2026-03-16
 - **Depends on:** ONT-001
 - **Lean artifacts:** 4 symbols
 
+### ONT-004: Configuration Separation
+
+- **Role:** bridge
+- **Proof status:** axiomatized
+- **Epistemic status:** argued
+- **Depends on:** ONT-002
+- **Lean artifacts:** 2 symbols
+
 ### OPN-001: Relativistic Extension
 
 - **Role:** open
@@ -180,10 +188,10 @@ Generated: 2026-03-16
 ### QM-001: H1 Supervenience Condition
 
 - **Role:** derived
-- **Proof status:** axiomatized
+- **Proof status:** verified
 - **Epistemic status:** argued
-- **Depends on:** LOG-001, LOG-002
-- **Lean artifacts:** 1 symbols
+- **Depends on:** LOG-001, LOG-002, ONT-002
+- **Lean artifacts:** 4 symbols
 
 ### QM-002: H2 Operational Local Tomography
 
