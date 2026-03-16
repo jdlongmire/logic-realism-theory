@@ -50,7 +50,21 @@ The first objection holds that logic is merely conventional—a set of rules we 
 
 The second objection holds that logic is descriptive of our cognitive limitations rather than prescriptive of being. This psychologizing move fails because it cannot account for the normative force of logical constraint. When we recognize that contradictions cannot obtain, we are not reporting a fact about our brains; we are grasping a constraint that would hold whether or not any minds existed.
 
-### 2.2 L₃ as Prescriptive Constraint Structure
+### 2.2 From Inference to Ontology
+
+A referee will rightly ask: why does the impossibility of *asserting* contradictions entail the impossibility of *ontological* contradiction? The bridge requires an additional step.
+
+Determinate existence requires stable identity conditions. For something to be, it must be what it is and not something else. Contradictory states destroy identity conditions: if Px and not-Px hold simultaneously, x has no stable identity with respect to P. Such a state is not merely unthinkable; it is ontologically inadmissible. There is nothing for it to be.
+
+The argument therefore runs:
+
+1. Determinate existence requires stable identity conditions.
+2. Contradictory states destroy identity conditions.
+3. Therefore, contradictions cannot constitute determinate existence.
+
+This step ties logical constraint directly to ontology rather than inference practice.
+
+### 2.3 L₃ as Prescriptive Constraint Structure
 
 We designate the prescriptive logical constraint structure as L₃, signifying its triadic character: identity, non-contradiction, and excluded middle. These are not separate principles but aspects of a unified constraint on determinate being.
 
@@ -60,7 +74,7 @@ We designate the prescriptive logical constraint structure as L₃, signifying i
 
 These constraints are not merely logical in the sense of governing inference. They are ontological in the sense of governing existence. Nothing that violates them can obtain.
 
-### 2.3 The Ontological Status of L₃
+### 2.4 The Ontological Status of L₃
 
 L₃ does not exist as a thing alongside other things. It is not an entity but a constraint on entities. Its mode of being is prescriptive: it determines what structures are admissible for any configuration that obtains.
 
@@ -86,9 +100,15 @@ An informational domain is a space of possible configurations that can be distin
 
 ### 3.3 I∞ as Total Possibility Space
 
-We designate the total informational possibility space as I∞. The subscript signifies that this domain is not arbitrarily bounded. Any finite restriction would require a principle of restriction, and that principle would itself presuppose the larger space within which the restriction operates.
+We designate the total informational possibility space as I∞. The subscript signifies that this domain is not arbitrarily bounded. The argument for completeness requires precision:
 
-I∞ is not infinite in the sense of being unmanageably large. It is infinite in the sense of being complete: it exhausts the domain of possible configurations. Nothing outside I∞ can be actualized because there is nothing outside it to actualize. The completeness of I∞ is not an empirical claim but a conceptual requirement.
+1. Determinate actuality requires differentiation.
+2. Differentiation presupposes a space of distinguishable configurations.
+3. Any bounded possibility space requires a boundary condition.
+4. Boundary conditions presuppose a larger space in which the boundary is defined.
+5. Therefore, the possibility domain must be complete.
+
+I∞ is not infinite in the sense of being unmanageably large. It is infinite in the sense of being complete: it exhausts the domain of possible configurations. Nothing outside I∞ can be actualized because there is nothing outside it to actualize. The completeness of I∞ is not an empirical claim but a conceptual requirement—any finite restriction would require a principle of restriction operating within a larger space, generating regress.
 
 ### 3.4 The Ontological Status of I∞
 
@@ -114,7 +134,7 @@ We designate the actualization primitive as A. Its role is to mark configuration
 
 To demand an explanation of why A marks some configurations rather than others is to misunderstand its status. A is not a mechanism that selects according to criteria; it is the primitive fact that some configurations obtain. The question "why these rather than those?" presupposes that there must be a prior principle determining A's operation. But A is the primitive; there is nothing prior.
 
-This does not make A arbitrary or random. Randomness would be a positive characteristic (operating according to a probability distribution), but A has no such characteristic. It is simply the primitive of obtaining.
+A critical distinction: actualization is **ontologically primitive**, not **random**. Randomness is a positive characteristic—it presupposes a probability distribution governing outcomes. A has no such characteristic. It is not that A "randomly chooses" configurations; rather, A is the primitive marking of obtaining, prior to any selection mechanism. The distinction matters: randomness is a mode of selection, while A is the fact that selection occurs at all.
 
 ### 4.3 The Ontological Status of A
 
@@ -174,7 +194,7 @@ This is not a postulate but the conclusion of Sections 2–4: these primitives a
 
 $$X \vdash A_\Omega$$
 
-From the primitive ontology, actuality follows. The turnstile (⊢) signifies ontological grounding, not logical derivation in the narrow sense. A_Ω designates the actualized domain—the totality of what obtains.
+From the primitive ontology, actuality follows. The turnstile (⊢) signifies ontological grounding, not logical derivation in the narrow sense. A_Ω designates the actualized domain—the totality of what obtains. (The subscript Ω marks actualization throughout: configurations that are not merely possible but obtain.)
 
 This step is secured by the argument of Section 4: A is the primitive of obtaining, and its operation on I∞ under L₃ constitutes actuality.
 
@@ -186,11 +206,13 @@ The actualized domain coincides with the logically admissible informational conf
 
 This identity is not a definition of A_Ω (which would trivialize the claim) but a structural consequence of the primitives operating together:
 
-1. A operates only on I∞ (there is nothing else for it to operate on).
-2. A cannot actualize L₃-inconsistent configurations (contradiction cannot obtain).
-3. Therefore, A_Ω is the subset of I∞ that satisfies L₃.
-4. But L₃(I∞) just is that subset—the logically admissible configurations of I∞.
+1. A operates on I∞ (there is nothing outside I∞ for A to operate on).
+2. L₃ constrains which configurations are admissible.
+3. A can only actualize configurations admissible under L₃ (contradiction cannot obtain).
+4. The set of L₃-admissible configurations of I∞ is denoted L₃(I∞).
 5. Therefore, A_Ω = L₃(I∞).
+
+The difference from a naive formulation is subtle but philosophically important: step 3 does not presuppose the conclusion but derives it from the constraint structure established in Section 2.
 
 ### 6.2 Status of the Bridge Equation
 
@@ -229,9 +251,19 @@ This question is legitimate, but it is not answerable at the level of pure ontol
 
 ## 8. Conclusion
 
-We have argued that three primitives—prescriptive logical constraint (L₃), total informational possibility (I∞), and actualization (A)—are each transcendentally necessary and jointly constitute the minimal ontology of reality. Their interaction yields the core physics bridge of Logic Realism Theory:
+We have argued that three primitives—prescriptive logical constraint (L₃), total informational possibility (I∞), and actualization (A)—are each transcendentally necessary and jointly constitute the minimal ontology of reality. Their interaction yields the core physics bridge of Logic Realism Theory.
+
+---
+
+**Bridge Result**
+
+$$X \equiv [L_3 : I_\infty : A]$$
+
+$$X \vdash A_\Omega$$
 
 $$A_\Omega = L_3(I_\infty)$$
+
+---
 
 Actuality coincides with the logically admissible informational configurations of the total possibility space.
 
