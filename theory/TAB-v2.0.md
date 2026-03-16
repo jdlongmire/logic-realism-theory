@@ -190,7 +190,10 @@ A therefore operates within the space of logically admissible configurations of 
 
 ### 6.1 The Grounding Sequence
 
-We now present the core argument in three steps.
+We now present the core argument in three steps (see Figure 1).
+
+![Figure 1: The three-step grounding sequence from primitive ontology to bridge identity](figures/TAB-grounding-sequence.png)
+*Figure 1: The grounding sequence. The primitive ontology (X) grounds the actualized domain (A_Ω), which is then characterized by the bridge identity.*
 
 **Step 1: The Primitive Ontology**
 
