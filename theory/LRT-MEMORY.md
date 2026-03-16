@@ -463,7 +463,7 @@ This preserves:
 
 ## Multi-Reviewer Synthesis (2026-03-16)
 
-**Sources:** Grok, ChatGPT, Gemini adversarial reviews
+**Sources:** Grok, ChatGPT (×2), Gemini adversarial reviews
 **Full analysis:** `theory/LRT-Lean-Approach.md`
 
 ### The Core Insight
@@ -477,16 +477,59 @@ A(E,c) ∈ {0,1} → HasBooleanSpectrum E → Projection → PVM → Gleason →
 
 **Target theorem:** Derive `event_operator_has_bool_spectrum` rather than axiomatize it.
 
+### Why A, Not I∞
+
+- I∞ gives breadth (maximal configuration domain) — mathematically too permissive
+- A discretizes ontological verdicts into binary selector — spectral theory bites
+- Truth-value map `A(E,c) ∈ {0,1}` is **ontological**
+- Probability map `p(E|ψ) ∈ [0,1]` is **epistemic/dispositional**
+- This distinction blocks the objection that continuous probabilities undermine Boolean actuality
+
+### Strategic Priority
+
+> **Boolean actualization induces projection structure.**
+
+Formally: `Boolean valuation on event algebra → representation as projection lattice`
+
+Once established, the remainder of QM formalism becomes accessible through known theorems.
+
+### Engineering Assessment (ChatGPT 2026-03-16)
+
+| Dimension | Grade |
+|-----------|-------|
+| Engineering quality | **High** |
+| Conceptual architecture | **Interesting and coherent** |
+| Current formal proof power | **Foundational only** |
+| Physics derivation | **Not yet demonstrated** |
+
+**Strengths:** Modularity, minimalism, clarity of ontological roles (L₃ / I∞ / A separation preserved)
+
+**Risks:**
+- Ontological underconstraint (if A remains arbitrary selector, no physics follows)
+- Reconstruction difficulty (Hilbert-space step demanding; leverage Hardy/Chiribella)
+
 ### Critical Gaps (All Reviewers Converge)
 
 | Gap | Source | Current Status |
 |-----|--------|----------------|
 | ~~**Admissibility trivial**~~ | ChatGPT | ✅ **FIXED** (2026-03-16) |
+| ~~**Events not formalized**~~ | ChatGPT | ✅ **FIXED** (2026-03-16) |
 | **Bridge principle unformalized** | Grok, ChatGPT | Axiom, not derived |
 | **H1/H2 asserted** | Grok, Gemini | No formal L₃ connection |
 | **K=2 forcing axiomatized** | Grok | Most distinctive claim |
 | **Born rule placeholders** | Grok, ChatGPT | Gleason not imported |
 | **I → H mapping missing** | Gemini | No formal bridge |
+
+### ChatGPT's Mathematical Roadmap (Steps 2–7)
+
+| Step | Content | Status |
+|------|---------|--------|
+| 2 | Configuration structure (Event, Context types) | ✅ **DONE** (Event type) |
+| 3 | Event algebra (`BooleanAlgebra Event`) | ✅ **DONE** (event_lnc, event_lem proven) |
+| 4 | Actualization constraint (valuation rules) | **NEXT** |
+| 5 | Projection representation (bool_spectrum → idempotent) | Pending |
+| 6 | Probability structure (Gleason → Born) | Pending |
+| 7 | Dynamical structure (unitary → Schrödinger) | Pending |
 
 ### Development Phases
 
@@ -518,7 +561,9 @@ A(E,c) ∈ {0,1} → HasBooleanSpectrum E → Projection → PVM → Gleason →
 
 **ACTIVE DEVELOPMENT** — Phase 0 + Phase 1 COMPLETED (2026-03-16)
 
-Next step: Phase 2 (H1/H2 derivation)
+**Overall assessment:** The Lean work shows LRT as a typed ontological system (internal consistency). Whether it derives QM depends on formalizing the Boolean-actualization bridge. If achieved, the project becomes a candidate reconstruction of QM from logical foundations.
+
+Next step: Phase 2 (H1/H2 derivation) — prerequisite for Stone representation
 
 ---
 
