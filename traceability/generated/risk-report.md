@@ -76,3 +76,10 @@ Can the relationship between energy and action (E = ∂S/∂t) be
 derived from LRT's actualization structure? How does the action
 principle emerge?
 
+
+### OPN-004: K=2 Forcing (Complex over Real/Quaternionic)
+
+Derive from LRT primitives that Hardy's parameter K must equal 2,
+forcing complex Hilbert space structure over real (K=1) or
+quaternionic (K=4) alternatives.
+

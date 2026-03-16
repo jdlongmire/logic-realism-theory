@@ -85,6 +85,12 @@
       "proof_status": "open"
     },
     {
+      "id": "OPN-004",
+      "name": "K=2 Forcing (Complex over Real/Quaternionic)",
+      "role": "open",
+      "proof_status": "open"
+    },
+    {
       "id": "PHY-001",
       "name": "Unitarity",
       "role": "derived",
@@ -252,6 +258,16 @@
     {
       "from": "PHY-003",
       "to": "OPN-003",
+      "type": "logical"
+    },
+    {
+      "from": "QM-005",
+      "to": "OPN-004",
+      "type": "logical"
+    },
+    {
+      "from": "LOG-002",
+      "to": "OPN-004",
       "type": "logical"
     },
     {

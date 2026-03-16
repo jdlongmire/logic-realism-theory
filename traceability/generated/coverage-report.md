@@ -4,7 +4,7 @@ Generated: 2026-03-16
 
 ## Summary
 
-**Total claims:** 27
+**Total claims:** 28
 
 ### By Proof Status
 
@@ -12,7 +12,7 @@ Generated: 2026-03-16
 |--------|-------|
 | axiomatized | 12 |
 | imported | 3 |
-| open | 3 |
+| open | 4 |
 | prose_only | 1 |
 | verified | 8 |
 
@@ -23,7 +23,7 @@ Generated: 2026-03-16
 | bridge | 3 |
 | derived | 14 |
 | imported | 3 |
-| open | 3 |
+| open | 4 |
 | prediction | 1 |
 | primitive | 3 |
 
@@ -31,7 +31,7 @@ Generated: 2026-03-16
 
 | Status | Count |
 |--------|-------|
-| argued | 11 |
+| argued | 12 |
 | established | 13 |
 | open | 3 |
 
@@ -144,6 +144,14 @@ Generated: 2026-03-16
 - **Proof status:** open
 - **Epistemic status:** open
 - **Depends on:** PHY-003
+- **Lean artifacts:** 1 symbols
+
+### OPN-004: K=2 Forcing (Complex over Real/Quaternionic)
+
+- **Role:** open
+- **Proof status:** open
+- **Epistemic status:** argued
+- **Depends on:** QM-005, LOG-002
 - **Lean artifacts:** 1 symbols
 
 ### PHY-001: Unitarity

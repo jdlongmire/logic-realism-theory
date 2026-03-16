@@ -1,0 +1,49 @@
+# OPN-004: K=2 Forcing Derivation
+id: OPN-004
+name: K=2 Forcing (Complex over Real/Quaternionic)
+statement: |
+  Derive from LRT primitives that Hardy's parameter K must equal 2,
+  forcing complex Hilbert space structure over real (K=1) or
+  quaternionic (K=4) alternatives.
+
+role: open
+proof_status: open
+epistemic_status: argued
+
+formal_artifacts:
+  lean:
+    - file: LrtFormalization/Step3_LocalTomography.lean
+      symbol: lrt_forces_k_equals_2
+      status: axiom
+
+source_documents:
+  - doc: Step3_LocalTomography.lean
+    section: "Part VI: K = 2 Derivation"
+  - doc: Hardy (2012)
+    section: "Limited Holism and Real-Vector-Space Quantum Theory"
+
+depends_on:
+  - claim_id: QM-005
+    dependency_type: logical
+  - claim_id: LOG-002
+    dependency_type: logical
+
+derivation_sketch: |
+  1. Boolean actualization forces measurement events to have Boolean spectrum
+  2. Interference requires non-Boolean state evolution (phase relationships)
+  3. K = 1 (reals): No phase structure → no interference → rejected
+  4. K = 4 (quaternions): Non-associative tensor products for >2 systems → rejected
+  5. K = 2 (complex): Unique field satisfying Boolean measurement + interference + associativity
+
+  Key insight: A selects definite outcomes (Boolean), but A_Ω contains
+  superposition structure (from I∞). The interplay forces complex amplitudes.
+
+risk_if_false: |
+  Without K=2 derivation, LRT must import complex structure as assumption.
+  This weakens the claim that QM is derived rather than postulated.
+  The distinctive LRT claim collapses to reconstruction + metaphysics.
+
+notes: |
+  This is the most important open derivation in the program.
+  Currently axiomatized; Phase 3 target for derivation.
+  References: Hardy 2012, Stueckelberg 1960, Wootters 1990.

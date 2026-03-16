@@ -521,6 +521,46 @@
       "risk_if_false": "Without energy-action derivation, the Hamiltonian's physical\nmeaning remains imported rather than derived.\n",
       "notes": "Active open problem. See LRT_OpenProblem1_EnergyAction.md.\n"
     },
+    "OPN-004": {
+      "id": "OPN-004",
+      "name": "K=2 Forcing (Complex over Real/Quaternionic)",
+      "statement": "Derive from LRT primitives that Hardy's parameter K must equal 2,\nforcing complex Hilbert space structure over real (K=1) or\nquaternionic (K=4) alternatives.\n",
+      "role": "open",
+      "proof_status": "open",
+      "epistemic_status": "argued",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "LrtFormalization/Step3_LocalTomography.lean",
+            "symbol": "lrt_forces_k_equals_2",
+            "status": "axiom"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "Step3_LocalTomography.lean",
+          "section": "Part VI: K = 2 Derivation"
+        },
+        {
+          "doc": "Hardy (2012)",
+          "section": "Limited Holism and Real-Vector-Space Quantum Theory"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "QM-005",
+          "dependency_type": "logical"
+        },
+        {
+          "claim_id": "LOG-002",
+          "dependency_type": "logical"
+        }
+      ],
+      "derivation_sketch": "1. Boolean actualization forces measurement events to have Boolean spectrum\n2. Interference requires non-Boolean state evolution (phase relationships)\n3. K = 1 (reals): No phase structure \u2192 no interference \u2192 rejected\n4. K = 4 (quaternions): Non-associative tensor products for >2 systems \u2192 rejected\n5. K = 2 (complex): Unique field satisfying Boolean measurement + interference + associativity\n\nKey insight: A selects definite outcomes (Boolean), but A_\u03a9 contains\nsuperposition structure (from I\u221e). The interplay forces complex amplitudes.\n",
+      "risk_if_false": "Without K=2 derivation, LRT must import complex structure as assumption.\nThis weakens the claim that QM is derived rather than postulated.\nThe distinctive LRT claim collapses to reconstruction + metaphysics.\n",
+      "notes": "This is the most important open derivation in the program.\nCurrently axiomatized; Phase 3 target for derivation.\nReferences: Hardy 2012, Stueckelberg 1960, Wootters 1990.\n"
+    },
     "PHY-001": {
       "id": "PHY-001",
       "name": "Unitarity",

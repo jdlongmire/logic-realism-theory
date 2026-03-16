@@ -19,6 +19,7 @@ graph TD
     OPN-001["OPN-001: Relativistic Extension"]
     OPN-002["OPN-002: Bekenstein-Hawking Entropy Bri..."]
     OPN-003["OPN-003: Energy-Action Relationship"]
+    OPN-004["OPN-004: K=2 Forcing (Complex over Real..."]
     PHY-001["PHY-001: Unitarity"]
     PHY-002["PHY-002: Temporal Emergence"]
     PHY-003["PHY-003: Hamiltonian Generator"]
@@ -50,6 +51,8 @@ graph TD
     ONT-002 -.->|interpretive| OPN-002
     OPN-001 --> OPN-002
     PHY-003 --> OPN-003
+    QM-005 --> OPN-004
+    LOG-002 --> OPN-004
     QM-008 --> PHY-001
     QM-004 -.->|formal| PHY-001
     PHY-001 --> PHY-002
@@ -88,6 +91,7 @@ graph TD
     class OPN-001 open
     class OPN-002 open
     class OPN-003 open
+    class OPN-004 open
     class PHY-001 derived
     class PHY-002 derived
     class PHY-003 derived
