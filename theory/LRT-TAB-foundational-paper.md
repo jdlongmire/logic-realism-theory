@@ -28,7 +28,7 @@ We propose a different approach. The Transcendental Argument for Being (TAB) doe
 
 **Two independent stages:** The argument proceeds in two stages that are logically independent. The first is purely metaphysical and makes no reference to physics whatsoever. It establishes, from first philosophy alone, that determinate being requires actualization under logical constraint (the Core Equation A_Ω = L₃(I∞)). The second stage shows that, given this metaphysical result plus standard regularity assumptions, the quantum formalism is forced by mathematical necessity. The physics does not inform the metaphysics; the metaphysics constrains the physics. One could accept Stage I while remaining agnostic about Stage II, or one could dispute our reconstruction of QM while accepting the transcendental argument. The stages are separable precisely because the first makes no appeal to empirical physics.
 
-**Thesis:** Determinate being follows necessarily from the primitive X ≡ [L₃ : I∞ : A], where L₃ denotes the three fundamental laws of logic, I∞ denotes infinite information space (pure indeterminacy), and A denotes primitive action (the capacity for state transition). The interaction of these co-constitutive elements yields the Core Equation A_Ω = L₃(I∞). Given X and standard regularity assumptions (continuity, minimality, composition, non-contextual probability), quantum mechanical structure follows as the unique satisfying formalism.
+**Thesis:** Determinate being follows necessarily from the primitive X ≡ [L₃ : I∞ : A], where L₃ denotes the three fundamental laws of logic, I∞ denotes infinite information space (pure indeterminacy), and A denotes primitive action (the capacity for state transition). The interaction of these co-constitutive elements yields the Core Equation A_Ω = L₃(I∞). Given X and standard regularity assumptions (continuity, minimality, composition, non-contextual probability), quantum mechanical structure follows as the natural satisfying formalism.
 
 **Paper structure:** Section 2 states axioms and definitions. Section 3 derives the Core Equation from the primitives. Section 4 derives quantum mechanical structure from the Core Equation. Section 5 addresses objections. Section 6 concludes.
 
@@ -101,7 +101,7 @@ These assumptions are not arbitrary. Each can be motivated as the natural or def
 - **R3** follows from the informational nature of I∞: composite configurations are products of component configurations.
 - **R4** follows from the objectivity of A_Ω: what is actual does not depend on what else might be measured.
 
-Nevertheless, we mark them explicitly. The main argument is: **X plus R1–R4 yields quantum mechanics as the unique satisfying structure.** This is a strong result. The regularity assumptions are standard in reconstruction programs (Hardy, Chiribella et al.) but typically taken as primitive. Our contribution is grounding X transcendentally and motivating R1–R4 as natural consequences rather than brute postulates.
+Nevertheless, we mark them explicitly. The main argument is: **X plus R1–R4 yields the standard quantum formalism as the natural satisfying structure under these reconstruction-style constraints.** This is a strong result. The regularity assumptions are standard in reconstruction programs (Hardy, Chiribella et al.) but typically taken as primitive. Our contribution is grounding X transcendentally and motivating R1–R4 as natural consequences rather than brute postulates.
 
 ---
 
@@ -165,7 +165,7 @@ The transition χ → A_Ω(χ) is logically necessary. Being is not a brute fact
 
 ## 4. Derivation Part II: From A_Ω to Quantum Structure
 
-The Core Equation establishes that the actualized domain is the logical filtration of information space. We now show that, given the regularity assumptions R1–R4 (Section 2.4), quantum mechanical formalism is the unique mathematical structure satisfying these constraints.
+The Core Equation establishes that the actualized domain is the logical filtration of information space. We now show that, given the regularity assumptions R1–R4 (Section 2.4), the standard quantum formalism emerges as the natural mathematical realization of these constraints.
 
 ### Step 4: A_Ω induces projective Hilbert space
 
@@ -203,7 +203,7 @@ Gleason's theorem (Gleason, 1957) establishes that in Hilbert spaces of dimensio
 
 ### Conclusion: QM as Necessary Structure
 
-Quantum mechanics is not contingent physics—not one possible set of physical laws among many that might have obtained. Given X and the regularity assumptions R1–R4, it is the unique mathematical structure satisfying the logical constraints that define A_Ω.
+Quantum mechanics is not contingent physics—not one possible set of physical laws among many that might have obtained. Given X and the regularity assumptions R1–R4, the standard quantum formalism is the natural mathematical structure satisfying the logical constraints that define A_Ω.
 
 The derivation chain is complete:
 
