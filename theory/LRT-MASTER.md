@@ -9,8 +9,6 @@
 **Epistemic Discipline:** Each claim marked ESTABLISHED, ARGUED, or OPEN
 **Created:** 2026-03-13
 
-**Notation note:** In prose, symbols appear as L₃, I∞, A_Ω, and X. In display and inline math blocks, the equivalent LaTeX forms are used: $L_3$, $I_\infty$, $A_\Omega$. On conversion to LaTeX or Word, all prose symbol instances convert to their math equivalents. For supplementary documents and cross-platform viewing, prefer HTML `<sub>` tags over Unicode subscript characters to avoid rendering artifacts (mojibake).
-
 -----
 
 Logic Realism Theory (LRT) proposes a single ground-level commitment: reality is logical, informational, and dynamic. Expressed formally as the primitive ontic state X ≡ [L₃ : I∞ : A], this commitment grounds a candidate derivation architecture for the full structure of non-relativistic quantum mechanics – complex Hilbert space, projection-valued measures, the Born rule, continuous time, and the Schrödinger equation – through a thirteen-step chain in which each step is explicitly marked by epistemic status: ESTABLISHED where peer-reviewed mathematics is imported, ARGUED where LRT-specific grounding arguments are defended, and OPEN where further work is identified.
