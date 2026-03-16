@@ -111,7 +111,20 @@ These constraints are not merely logical in the sense of governing inference. Th
 
 A clarification regarding logical systems: the argument does not depend on classical logic as a formal calculus. It depends on the minimal constraints required for determinate identity conditions. A paraconsistent logician might reject explosion (the principle that contradictions entail everything), but even paraconsistent systems typically preserve identity and some form of non-contradiction at the level of truth-values. The commitment here is ontological: any system allowing genuine contradiction—not merely formal inconsistency tolerance—would collapse the identity conditions required for determinate existence.
 
-### 2.4 The Ontological Status of L₃
+### 2.4 From Epistemic to Transcendental Necessity
+
+A careful distinction is required here between two types of necessity:
+
+- **Epistemic necessity:** We cannot coherently represent or reason about reality without presupposing L₃.
+- **Transcendental necessity:** L₃ is required for the possibility of any determinate being whatsoever.
+
+The arguments above establish epistemic necessity directly. The skeptic cannot formulate their skepticism without invoking what they deny. But does this entail transcendental necessity? Could reality itself violate L₃ even if we cannot represent that possibility?
+
+The answer is no, and the reason goes beyond mere representational limits. The argument from §2.2 establishes that determinate existence requires stable identity conditions. Contradictions do not merely evade our representation; they fail to constitute anything at all. A putative state that is both P and not-P has no determinate identity with respect to P. There is nothing for such a state to be.
+
+This is not a claim about the limits of thought but about the conditions for being. Epistemic necessity tracks transcendental necessity in this case because the very features that make L₃ indispensable for thought (the requirement of stable identity, the contrast between truth and falsity) are the same features required for determinate existence. The constraints are not parallel but identical: what cannot be coherently represented cannot obtain, not because representation limits reality, but because both representation and reality require the same structural conditions.
+
+### 2.5 The Ontological Status of L₃
 
 L₃ does not exist as a thing alongside other things. It is not an entity but a constraint on entities. Its mode of being is prescriptive: it determines what structures are admissible for any configuration that obtains.
 
@@ -141,15 +154,17 @@ A clarification is essential here. Information is not treated as a substance or 
 
 We designate the total informational possibility space as I∞. The subscript signifies completeness rather than cardinality. This distinction matters: the argument does not claim that the possibility space is numerically infinite, but that it is complete with respect to possible distinctions.
 
-The argument for completeness requires precision:
+The argument for completeness proceeds from closure rather than boundlessness:
 
 1. Determinate actuality requires differentiation.
 2. Differentiation presupposes a space of distinguishable configurations.
-3. Any bounded possibility space requires a boundary condition.
-4. Boundary conditions presuppose a larger space in which the boundary is defined.
-5. Therefore, the possibility domain must be complete.
+3. For any two configurations to be distinguishable, L₃ must permit their distinction.
+4. I∞ is the space of all configurations whose mutual distinguishability is L₃-admissible.
+5. Therefore, I∞ is complete as the closure of L₃-admissible differentiation.
 
-I∞ is complete in the sense of exhausting the domain of possible configurations. Nothing outside I∞ can be actualized because there is nothing outside it to actualize. The completeness of I∞ is not an empirical claim but a conceptual requirement—any finite restriction would require a principle of restriction operating within a larger space, generating regress.
+This formulation avoids the geometric imagery of boundaries and larger spaces. Completeness is not spatial unboundedness but logical closure: I∞ contains all the distinctions that L₃ permits, and no distinctions that L₃ prohibits. A configuration "outside" I∞ would be a configuration that cannot be distinguished from others in an L₃-admissible way, which is to say, not a configuration at all.
+
+I∞ is complete in the sense of exhausting the domain of possible configurations. Nothing outside I∞ can be actualized because there is nothing outside it to actualize. The completeness of I∞ is not an empirical claim but a conceptual requirement: it is the maximal set of mutually distinguishable configurations under L₃.
 
 ### 3.4 The Ontological Status of I∞
 
@@ -184,6 +199,20 @@ Primitive status does not imply arbitrariness. A primitive marks the point where
 A is transcendentally necessary because without it, the gap between possibility and actuality cannot be bridged. L₃ constrains what can obtain. I∞ provides the domain of what might obtain. But neither makes anything actual. Actuality requires a primitive that is not reducible to constraint or possibility.
 
 The denial of A would be the claim that possibility and constraint suffice for actuality. But this conflates the conditions for actuality with actuality itself. That a configuration is consistent and distinguishable does not make it actual. Something more is required, and that something is A.
+
+### 4.4 A's Grounding Role and the Bridge Identity
+
+A potential objection arises from the bridge identity derived below: if A_Ω = L₃(I∞), has A disappeared from the resulting ontology? Is it explanatorily idle?
+
+The answer requires distinguishing two questions:
+
+1. **What is the structure of the actualized domain?** The bridge identity answers: L₃(I∞). The structural profile of actuality coincides with the L₃-admissible configurations of I∞.
+
+2. **Why is there an actualized domain at all?** A answers: because actualization is a primitive fact. Without A, there would be a space of admissible configurations with no fact of the matter about which obtain.
+
+The bridge identity tells us what actuality looks like. A grounds the fact that there is actuality at all. These are different explanatory burdens. The laws of physics describe the structure of physical reality but do not explain why there is physical reality. Similarly, L₃(I∞) describes the structure of what obtains, while A grounds the obtaining itself.
+
+A is therefore not rendered otiose by the bridge identity. The identity characterizes the domain that A constitutes. A's role is to ground the fact that some domain of configurations obtains; the identity specifies which domain that is, given the constraints.
 
 ---
 
@@ -270,6 +299,16 @@ The bridge equation is an argued metaphysical identity. It is not:
 
 - **A definition:** We are not stipulating that A_Ω means L₃(I∞). We are arguing that the structure of actuality, given the primitives, coincides with this characterization.
 - **A formal theorem:** The argument is transcendental, not axiomatic. Formal verification can establish the internal consistency of the derivation chain, but the metaphysical warrant comes from the transcendental arguments of Sections 2–4.
+
+The identity is derived, not stipulated, from the conjunction of three claims established above:
+
+1. Only L₃-admissible configurations can obtain (§2).
+2. I∞ exhausts the space of possible configurations (§3).
+3. A operates over I∞ under L₃ constraint (§4–5).
+
+Given (i)–(iii), the identity follows necessarily. There is no coherent way to hold the three premises while denying that A_Ω = L₃(I∞). The identity is substantive because its derivation depends on the transcendental arguments for each primitive; it would fail if any premise failed.
+
+The notion of identity at stake is structural identity: A_Ω and L₃(I∞) pick out the same domain by different conceptual routes. A_Ω picks it out as "what obtains"; L₃(I∞) picks it out as "the admissible configurations of the possibility space." The claim is that these extensionally coincide, and that this coincidence is necessary given the primitives.
 
 The bridge equation is the core result of this paper. Everything else in Logic Realism Theory—the reconstruction of quantum mechanics, the interpretational implications—flows from this ground.
 
@@ -368,6 +407,16 @@ TAB operates at a deeper ontological level. Rather than reconstructing quantum t
 
 From this perspective quantum reconstruction programs describe the geometric and probabilistic structures that arise within the already-actualized informational domain A_Ω. TAB therefore complements these approaches by supplying an ontological grounding for the informational principles they employ.
 
+### 7.7 Contrast with Modal Realism
+
+A natural question arises concerning the ontological status of non-actual configurations in I∞. If I∞ contains all L₃-admissible configurations, do the non-actualized ones "exist" in some robust sense?
+
+TAB differs sharply from Lewisian modal realism, which treats non-actual possible worlds as concrete existents on par with our own. In TAB, non-actualized configurations in I∞ are structural possibilities, not concrete worlds. They are the configurations that L₃ permits and that A could mark as obtaining, but which lack the obtaining marker.
+
+The asymmetry between actuality and mere possibility is ontologically fundamental. Actuality carries weight that possibility does not. The actualized domain A_Ω is not merely one region of I∞ among others; it is the domain constituted by A's operation. Configurations in I∞ \ A_Ω are not "elsewhere"; they simply do not obtain.
+
+This preserves the modal distinction that Tegmark's MUH tends to efface while avoiding the inflationary metaphysics of concrete possible worlds. TAB is actualist about existence while realist about the structural space of possibilities.
+
 ---
 
 This positioning clarifies the role of the Bridge Identity within contemporary metaphysics of physics. TAB does not merely assert that reality is informational or mathematical. It identifies the minimal transcendental structure required for informational possibility to become determinate physical actuality, situating the theory at the intersection of information ontology and the Logic Realism tradition.
@@ -417,6 +466,14 @@ $$A_\Omega = L_3(I_\infty)$$
 Actuality coincides with the logically admissible informational configurations of the total possibility space.
 
 This result provides the ontological foundation from which subsequent work can reconstruct physical structure. The present paper contains no physics; its task has been to secure the ground. The reconstruction of quantum mechanics, presented separately, proceeds by supplementing this foundation with operational assumptions about the empirical regularities of the physical domain.
+
+### 9.1 Outlook for Physics
+
+The bridge identity constrains candidate physical theories in at least one concrete way: any physical structure must be realizable within A_Ω = L₃(I∞). This rules out physical theories that require ontological contradictions (states that are both P and not-P), configurations that cannot be distinguished from others (violations of identity), or structures that presuppose a possibility space narrower than L₃ permits without explanatory justification.
+
+More specifically, the framework motivates the informational axioms used in quantum reconstruction programs. The requirement that physical states be L₃-admissible configurations of I∞ suggests that state spaces must satisfy certain structural constraints (distinguishability, composition rules, update dynamics) that track the underlying logical admissibility conditions. Subsequent work develops these connections, deriving the Hilbert space formalism from the interaction of L₃ and I∞ under specific operational assumptions about measurement and preparation.
+
+The bridge identity also bears on interpretive questions. If actuality coincides with L₃(I∞), then the measurement problem in quantum mechanics becomes a question about which configurations A marks as obtaining during measurement interactions, rather than a question about wave function collapse or branching worlds. This reframing may clarify the relationship between the quantum state and physical reality.
 
 The bridge equation is not the end of the story but its beginning. Logic Realism Theory contends that the framework established here, when properly developed, yields a unique theory of physical reality. Whether that contention succeeds is a matter for subsequent investigation.
 
