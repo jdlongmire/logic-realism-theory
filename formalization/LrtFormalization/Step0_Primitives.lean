@@ -135,13 +135,38 @@ section Properties
 
 end Properties
 
+/-! ## Part VI: Forward-Looking Stubs
+
+These comments indicate future development directions for downstream steps.
+-/
+
+-- Future: Map configurations to quantum states (Step 4+)
+-- class ConfigToState (H : Type*) where
+--   toState : Configuration → H  -- H is Hilbert space from later steps
+--   injective : Function.Injective toState  -- Distinct configs → distinct states
+
+-- Future: Event structure over configurations (Phase 2)
+-- structure Event where
+--   query : Configuration → Prop
+--   decidable : ∀ c, Decidable (query c)
+
 /-! ## Status
 
-CONFIDENCE: HIGH
+CONFIDENCE: HIGH (Grok review: 90-95% soundness)
 - L₃: Lean foundational (no axioms needed beyond Classical.em)
 - I∞: Axiomatized (primitive)
 - A: Defined (structure)
 - X: Defined (bundled structure)
+
+Note on Admissibility: L₃ constrains propositions, not configurations directly.
+All elements of I are type-level admissible; filtering happens post-hoc via A
+(actualization selects from the full I∞). See Step 1 for this selection.
 -/
+
+-- Axiom audit: uncomment to verify dependencies
+-- #print axioms law_of_identity
+-- #print axioms law_of_non_contradiction
+-- #print axioms law_of_excluded_middle
+-- #print axioms exists_distinct_configurations
 
 end LRT.Step0

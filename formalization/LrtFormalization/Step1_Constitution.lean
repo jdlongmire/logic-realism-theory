@@ -26,8 +26,15 @@ A_Ω is the set of all configurations that survive the L₃ admissibility filter
 -/
 
 /-- A configuration is admissible if it satisfies L₃.
-    By construction, all configurations in I are admissible
-    (L₃ filters at the propositional level, not configuration level). -/
+
+    NOTE: All configurations in I are type-level admissible.
+    L₃ operates at the propositional level, not configuration level.
+    Filtering is post-hoc via A: the actualization primitive selects
+    which admissible configurations become actual.
+
+    This is intentional: I∞ is the maximal distinguishability substrate,
+    while A performs ontological selection within that substrate.
+-/
 def Admissible (_c : I) : Prop := True
 
 /-- The total actual structure: all configurations marked actual by A -/
@@ -85,13 +92,40 @@ theorem step1_constitution (X : Step0.X) :
 -- Note: A_Ω being non-empty doesn't mean it's infinite.
 -- That depends on A. But the *potential* from I∞ is infinite.
 
-/-- Every actual configuration comes from I∞ -/
+/-- Every actual configuration comes from I∞ (type closure) -/
 theorem actual_configs_in_I (X : Step0.X) (c : I) (_h : c ∈ A_Omega X) : c ∈ (Set.univ : Set I) :=
   Set.mem_univ c
 
+/-- A_Ω is a subset of I (strengthened form) -/
+theorem A_Omega_subset_I (X : Step0.X) : A_Omega X ⊆ Set.univ := Set.subset_univ _
+
+/-- If A_Ω is empty, no configuration is actual -/
+theorem empty_A_Omega_means_nothing_actual (X : Step0.X) (h : A_Omega X = ∅) :
+    ∀ c : I, X.action.A c = ActualityValue.nonActual := by
+  intro c
+  have : c ∉ A_Omega X := by simp [h]
+  unfold A_Omega at this
+  simp at this
+  cases X.action.determinate c with
+  | inl h_act => exact absurd h_act this
+  | inr h_non => exact h_non
+
+/-! ## Part V: Bridge Principle Motivation
+
+The Bridge Principle is axiomatic, but philosophically motivated:
+- Empirical fact: something exists (actuality is non-empty)
+- L₃ alone cannot force existence (logic doesn't entail ontology)
+- A alone doesn't guarantee non-trivial selection
+- The combination X = [L₃ : I∞ : A] is co-constitutive of actuality
+
+Future work: Explore whether empty A_Ω leads to contradiction with
+L₃ (distinguishability requires something to be distinguished).
+See `empty_A_Omega_means_nothing_actual` above.
+-/
+
 /-! ## Status
 
-CONFIDENCE: HIGH
+CONFIDENCE: HIGH (Grok review: 75-85% sufficiency for downstream)
 - A_Omega: Defined (set comprehension)
 - Bridge Principle: Tier 2 axiom (necessary philosophical input)
 - step1_constitution: Proven from definitions + axiom
@@ -99,5 +133,10 @@ CONFIDENCE: HIGH
 The Bridge Principle is the key philosophical axiom of Step 1.
 Without it, we cannot establish that A_Ω is non-empty.
 -/
+
+-- Axiom audit: uncomment to verify dependencies
+-- #print axioms bridge_principle
+-- #print axioms step1_constitution
+-- #print axioms A_Omega_determined_by_X
 
 end LRT.Step1
