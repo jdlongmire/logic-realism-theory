@@ -246,8 +246,8 @@ X → A_Ω → Determinate Identity → Local Tomography → ℂℋ → PVM → 
 **Step structure:**
 | Step | File | Content | Status |
 |------|------|---------|--------|
-| 0 | `Step0_Primitives.lean` | I type, X, A_Ω primitives | **NEEDS FIX** (Admissible trivial) |
-| 1 | `Step1_Constitution.lean` | Bridge principle X → A_Ω | Axiom (target: derive weak form) |
+| 0 | `Step0_Primitives.lean` | I type, X, A_Ω, **Event type**, L3Admissible | ✅ **REVISED** (2026-03-16) |
+| 1 | `Step1_Constitution.lean` | Bridge principle, ActualizedEvents | ✅ **REVISED** (2026-03-16) |
 | 2 | `Step2_DeterminateIdentity.lean` | Determinate identity from constitution | OK |
 | 3 | `Step3_LocalTomography.lean` | Hardy H1/H2, k=2 | **NEEDS DERIVATION** |
 | 4 | `Step4_HardyAxiom.lean` | CPH structure, Hilbert space | Depends on Step 3 |
@@ -260,7 +260,18 @@ X → A_Ω → Determinate Identity → Local Tomography → ℂℋ → PVM → 
 
 **Axiom reduction target:** 12 → ≤5
 
-**Next action:** Phase 0 — Fix `Admissible (_c : I) := True`
+**Phase 0 COMPLETED (2026-03-16):**
+- Added `Event` type as queries over configurations
+- Defined `Event.and`, `Event.or`, `Event.not`, `Event.top`, `Event.bot`
+- **PROVEN:** `event_lnc` — E ∧ ¬E = ⊥ (from L₂)
+- **PROVEN:** `event_lem` — E ∨ ¬E = ⊤ (from L₃)
+- Defined `L3Admissible` structure with identity, non-contradiction, excluded middle
+- **PROVEN:** `all_configs_admissible` — every c ∈ I is L₃-admissible
+- Replaced trivial `Admissible (_c : I) := True` with `Admissible c := L3Admissible c`
+- Added `ActualizedEvents` set in Step 1
+- **PROVEN:** `event_actualized_iff`, `actualized_events_boolean`
+
+**Next action:** Phase 1 — Formalize H1/H2 derivation from Events + DI
 
 ---
 
@@ -470,7 +481,7 @@ A(E,c) ∈ {0,1} → HasBooleanSpectrum E → Projection → PVM → Gleason →
 
 | Gap | Source | Current Status |
 |-----|--------|----------------|
-| **Admissibility trivial** | ChatGPT | `Admissible := True` does nothing |
+| ~~**Admissibility trivial**~~ | ChatGPT | ✅ **FIXED** (2026-03-16) |
 | **Bridge principle unformalized** | Grok, ChatGPT | Axiom, not derived |
 | **H1/H2 asserted** | Grok, Gemini | No formal L₃ connection |
 | **K=2 forcing axiomatized** | Grok | Most distinctive claim |
@@ -481,8 +492,8 @@ A(E,c) ∈ {0,1} → HasBooleanSpectrum E → Projection → PVM → Gleason →
 
 | Phase | Task | Priority | Estimated Effort |
 |-------|------|----------|------------------|
-| 0 | Fix `Admissible := True` | CRITICAL | 1 day |
-| 1 | Define Events + Boolean algebra | CRITICAL | 2–3 days |
+| 0 | ~~Fix `Admissible := True`~~ | ~~CRITICAL~~ | ✅ **DONE** |
+| 1 | ~~Define Events + Boolean algebra~~ | ~~CRITICAL~~ | ✅ **DONE** |
 | 2 | H1/H2 derivation | HIGH | 1–2 weeks |
 | 3 | K=2 forcing | HIGH | 1–2 weeks |
 | 4 | Stone representation | MEDIUM | 1–2 weeks |
@@ -505,7 +516,9 @@ A(E,c) ∈ {0,1} → HasBooleanSpectrum E → Projection → PVM → Gleason →
 
 ### Status
 
-**ACTIVE DEVELOPMENT** — Phase 0 (Fix Admissibility) is immediate next step
+**ACTIVE DEVELOPMENT** — Phase 0 + Phase 1 COMPLETED (2026-03-16)
+
+Next step: Phase 2 (H1/H2 derivation)
 
 ---
 

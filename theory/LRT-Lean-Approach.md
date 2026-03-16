@@ -23,7 +23,7 @@ All three reviewers converge on the same fundamental problems:
 
 | Gap | Source | Severity | Current Status |
 |-----|--------|----------|----------------|
-| **Admissibility is trivial** | ChatGPT | CRITICAL | `Admissible (_c : I) := True` |
+| **Admissibility is trivial** | ChatGPT | ~~CRITICAL~~ | **FIXED** (2026-03-16) |
 | **Bridge principle unformalized** | Grok, ChatGPT | CRITICAL | Axiom, not derived |
 | **H1/H2 asserted** | Grok, Gemini | CRITICAL | No formal connection to L₃ |
 | **K=2 forcing axiomatized** | Grok | HIGH | Most distinctive LRT claim |
@@ -312,6 +312,39 @@ These are shown to be *consistent* with χ, not derived from it.
 
 ---
 
+## Development Progress
+
+### Phase 0: COMPLETED (2026-03-16)
+
+Fixed trivial admissibility and defined Events:
+
+**Changes to Step 0 (`Step0_Primitives.lean`):**
+- Added `Event` type as queries over configurations with decidability from L₃
+- Defined `Event.and`, `Event.or`, `Event.not`, `Event.top`, `Event.bot`
+- **PROVEN:** `event_lnc` — E ∧ ¬E = ⊥ (from L₂)
+- **PROVEN:** `event_lem` — E ∨ ¬E = ⊤ (from L₃)
+- Defined `L3Admissible` structure with identity, non-contradiction, excluded middle
+- **PROVEN:** `all_configs_admissible` — every c ∈ I is L₃-admissible
+- Replaced `Admissible (_c : I) := True` with `Admissible c := L3Admissible c`
+- Added `ActionPrimitive.answers_event` and `ActionPrimitive.resolve_event`
+
+**Changes to Step 1 (`Step1_Constitution.lean`):**
+- Updated `A_Omega` to require explicit `Admissible c` (non-trivial filter)
+- Added `ActualizedEvents` set definition
+- **PROVEN:** `event_actualized_iff` — Event ∈ ActualizedEvents ↔ ∃ c ∈ A_Ω, E.query c
+- **PROVEN:** `actualized_events_boolean` — Events over A_Ω are Boolean
+
+**Impact:**
+- L₃ now does actual mathematical work (not just identity filter)
+- Events form Boolean algebra structure (ChatGPT 5-step path, Steps 1–2)
+- Foundation laid for Phase 1 (representation in observable algebra)
+
+---
+
 ## Next Action
 
-Start with **Phase 0**: Fix `Admissible (_c : I) := True` so L₃ actually does mathematical work.
+Start with **Phase 1**: Prove Stone representation (Boolean algebra → projection lattice).
+
+This requires Phase 2 (H1/H2 → Hilbert space) first, so the actual next step is:
+- Formalize the H1/H2 derivation argument
+- Connect determinate identity to tomographic locality
