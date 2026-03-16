@@ -74,6 +74,8 @@ We designate the prescriptive logical constraint structure as L₃, signifying i
 
 These constraints are not merely logical in the sense of governing inference. They are ontological in the sense of governing existence. Nothing that violates them can obtain.
 
+A clarification regarding logical systems: the argument does not depend on classical logic as a formal calculus. It depends on the minimal constraints required for determinate identity conditions. A paraconsistent logician might reject explosion (the principle that contradictions entail everything), but even paraconsistent systems typically preserve identity and some form of non-contradiction at the level of truth-values. The commitment here is ontological: any system allowing genuine contradiction—not merely formal inconsistency tolerance—would collapse the identity conditions required for determinate existence.
+
 ### 2.4 The Ontological Status of L₃
 
 L₃ does not exist as a thing alongside other things. It is not an entity but a constraint on entities. Its mode of being is prescriptive: it determines what structures are admissible for any configuration that obtains.
@@ -98,9 +100,13 @@ We understand information in the fundamental sense as structured distinction. In
 
 An informational domain is a space of possible configurations that can be distinguished from one another. For reality to be determinate, such a domain is required.
 
+A clarification is essential here. Information is not treated as a substance or physical medium. It is the formal characterization of distinguishability among configurations. Any relational structure capable of supporting determinate existence therefore instantiates informational structure. The informational domain is not an extra layer of reality but the minimal description of structured differentiation. A structural realist who prefers to speak of relations rather than information is welcome to do so—the argument requires only that some domain of distinguishable configurations exists, whatever terminology one employs.
+
 ### 3.3 I∞ as Total Possibility Space
 
-We designate the total informational possibility space as I∞. The subscript signifies that this domain is not arbitrarily bounded. The argument for completeness requires precision:
+We designate the total informational possibility space as I∞. The subscript signifies completeness rather than cardinality. This distinction matters: the argument does not claim that the possibility space is numerically infinite, but that it is complete with respect to possible distinctions.
+
+The argument for completeness requires precision:
 
 1. Determinate actuality requires differentiation.
 2. Differentiation presupposes a space of distinguishable configurations.
@@ -108,7 +114,7 @@ We designate the total informational possibility space as I∞. The subscript si
 4. Boundary conditions presuppose a larger space in which the boundary is defined.
 5. Therefore, the possibility domain must be complete.
 
-I∞ is not infinite in the sense of being unmanageably large. It is infinite in the sense of being complete: it exhausts the domain of possible configurations. Nothing outside I∞ can be actualized because there is nothing outside it to actualize. The completeness of I∞ is not an empirical claim but a conceptual requirement—any finite restriction would require a principle of restriction operating within a larger space, generating regress.
+I∞ is complete in the sense of exhausting the domain of possible configurations. Nothing outside I∞ can be actualized because there is nothing outside it to actualize. The completeness of I∞ is not an empirical claim but a conceptual requirement—any finite restriction would require a principle of restriction operating within a larger space, generating regress.
 
 ### 3.4 The Ontological Status of I∞
 
@@ -135,6 +141,8 @@ We designate the actualization primitive as A. Its role is to mark configuration
 To demand an explanation of why A marks some configurations rather than others is to misunderstand its status. A is not a mechanism that selects according to criteria; it is the primitive fact that some configurations obtain. The question "why these rather than those?" presupposes that there must be a prior principle determining A's operation. But A is the primitive; there is nothing prior.
 
 A critical distinction: actualization is **ontologically primitive**, not **random**. Randomness is a positive characteristic—it presupposes a probability distribution governing outcomes. A has no such characteristic. It is not that A "randomly chooses" configurations; rather, A is the primitive marking of obtaining, prior to any selection mechanism. The distinction matters: randomness is a mode of selection, while A is the fact that selection occurs at all.
+
+Primitive status does not imply arbitrariness. A primitive marks the point where explanatory regress terminates. The requirement that actuality be primitive follows from the impossibility of deriving existence from possibility alone. Any explanation of why A marks particular configurations would presuppose a further principle—and that principle would itself require either a primitive ground or an infinite regress. A is therefore logically unavoidable, not merely unexplained.
 
 ### 4.3 The Ontological Status of A
 
@@ -194,7 +202,9 @@ This is not a postulate but the conclusion of Sections 2–4: these primitives a
 
 $$X \vdash A_\Omega$$
 
-From the primitive ontology, actuality follows. The turnstile (⊢) signifies ontological grounding, not logical derivation in the narrow sense. A_Ω designates the actualized domain—the totality of what obtains. (The subscript Ω marks actualization throughout: configurations that are not merely possible but obtain.)
+From the primitive ontology, actuality follows. The turnstile (⊢) signifies ontological grounding, not logical derivation in the narrow sense. Grounding here denotes constitutive dependence rather than logical inference. The claim is that actuality exists in virtue of the primitive ontology rather than being logically deduced from it.
+
+A_Ω designates the actualized domain—the totality of what obtains. (The subscript Ω marks actualization throughout: configurations that are not merely possible but obtain.)
 
 This step is secured by the argument of Section 4: A is the primitive of obtaining, and its operation on I∞ under L₃ constitutes actuality.
 
@@ -204,7 +214,9 @@ $$A_\Omega = L_3(I_\infty)$$
 
 The actualized domain coincides with the logically admissible informational configurations of the total possibility space.
 
-This identity is not a definition of A_Ω (which would trivialize the claim) but a structural consequence of the primitives operating together:
+The identity arises from the operational interaction of the primitives. It is not stipulated that actuality equals L₃(I∞); rather, the structure of actuality is determined by the fact that actualization operates on the informational domain under logical constraint.
+
+The argument proceeds in five steps:
 
 1. A operates on I∞ (there is nothing outside I∞ for A to operate on).
 2. L₃ constrains which configurations are admissible.

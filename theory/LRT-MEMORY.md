@@ -130,6 +130,75 @@ Each document follows a distinct format to signal its claim type to referees.
 **Formalization explains verification.**
 **Cosmology explores extensions.**
 
+---
+
+## Referee Attack Vector Analysis
+
+**Purpose:** Pre-emptive hardening of TAB v2.0 against likely objections.
+
+### Attack Vector 1: "The Transcendental Move Is Too Fast"
+
+**Target:** §3 (I∞ argument)
+**Objection:** Why must differentiation imply an informational domain rather than merely structural relations?
+
+**Defense (implemented):** Information is not an additional entity but the formal description of distinguishable configurations. Any relational structure supporting determinate existence instantiates informational structure. The domain is not an extra layer but the minimal description of structured differentiation.
+
+---
+
+### Attack Vector 2: "Why Must the Possibility Space Be Infinite?"
+
+**Target:** §3.3 (I∞ completeness)
+**Objection:** Why completeness rather than merely very large or unspecified?
+
+**Defense (implemented):** Reframe as domain completeness, not numerical infinity. The ∞ subscript denotes completeness with respect to possible distinctions, not cardinality. Any bounded domain requires a boundary principle operating within a larger space, generating regress.
+
+---
+
+### Attack Vector 3: "Actualization Looks Like a Brute Fact"
+
+**Target:** §4 (A primitive)
+**Objection:** This replaces the mystery of existence with an unexplained primitive.
+
+**Defense (implemented):** Primitive status does not imply arbitrariness. A primitive marks the point where explanatory regress terminates. A is logically unavoidable, not merely unexplained—the impossibility of deriving existence from possibility alone necessitates it.
+
+---
+
+### Attack Vector 4: "Does the Bridge Equation Collapse Into a Definition?"
+
+**Target:** §6.1 (bridge argument)
+**Objection:** L₃(I∞) simply names the logically admissible subset; the equation looks analytic.
+
+**Defense (implemented):** The identity arises from operational interaction of primitives. It is not stipulated that actuality equals L₃(I∞); the structure of actuality is determined by the fact that actualization operates on the informational domain under logical constraint. Structural rather than semantic.
+
+---
+
+### Attack Vector 5: "Why Only Three Logical Laws?"
+
+**Target:** §2.3 (L₃ specification)
+**Objection:** Classical logic is assumed without justification; paraconsistent alternatives exist.
+
+**Defense (implemented):** The argument does not depend on classical logic as a formal calculus but on minimal constraints for determinate identity conditions. Any system allowing genuine contradiction (not merely formal inconsistency tolerance) would collapse those conditions.
+
+---
+
+### Attack Vector 6: "Grounding vs Derivation Confusion"
+
+**Target:** §6.1 (grounding symbol ⊢)
+**Objection:** Readers unfamiliar with metaphysical grounding notation may be confused.
+
+**Defense (implemented):** Explicit clarification that grounding denotes constitutive dependence rather than logical inference. Actuality exists in virtue of the primitive ontology rather than being logically deduced from it.
+
+---
+
+### Referee Outlook
+
+| Audience | Expected Response |
+|----------|-------------------|
+| Philosophy reviewers | Serious engagement; structure clear enough for debate |
+| Physics reviewers | Ignore until reconstruction paper appears |
+
+**This is correct:** TAB should be evaluated by philosophers first.
+
 ### Formalization Methods Scope
 
 Lean verifies:
