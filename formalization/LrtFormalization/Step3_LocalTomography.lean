@@ -44,24 +44,37 @@ We introduce the state space structure needed for tomography.
 States are positive linear functionals on an observable algebra.
 -/
 
+/-- **DEFERRED: Convex mixture structure (placeholder for Born-rule phase)**
+
+    Convex combinations represent epistemic mixtures (ignorance over actualized
+    configurations) rather than ontic blurring. In LRT, probability emerges as
+    statistics over actualization events, not as primitive mixture structure.
+
+    Implementation deferred until probability layer (Steps 5-6).
+    See: probability_from_actualization_statistics (future)
+-/
+structure ConvexMixture (State : Type*) where
+  /-- Mix two states with probability weight p -/
+  mix : ℝ → State → State → State
+  /-- Mixing weight must be in [0,1] -/
+  mix_valid : ∀ (p : ℝ) (s₁ s₂ : State), 0 ≤ p → p ≤ 1 →
+    -- Future: mix p s₁ s₂ represents preparation uncertainty
+    -- Boundary conditions: mix 0 s₁ s₂ = s₁, mix 1 s₁ s₂ = s₂
+    True
+
 /-- A state space is a convex set with operational structure.
 
-**NOTE:** Convex combination structure is declared but not implemented.
-Probability emerges in LRT as statistics over actualization events,
-not as primitive mixture structure. Full implementation deferred to
-Born rule phase (Step 5-6).
+**NOTE:** Convex combination structure is declared via ConvexMixture but
+the implementation is deferred. Probability emerges in LRT as statistics
+over actualization events, not as primitive mixture structure.
+
+Full implementation deferred to Born rule phase (Steps 5-6).
 -/
 structure StateSpace where
   /-- The carrier type of states -/
   State : Type*
-  /-- Convex combination (placeholder: proper implementation in probability layer) -/
-  convex_comb : State → State → ℝ → State
-  /-- Mixing parameter constraint -/
-  convex_in_range : ∀ (s₁ s₂ : State) (p : ℝ), 0 ≤ p → p ≤ 1 →
-    convex_comb s₁ s₂ p = convex_comb s₁ s₂ p  -- Placeholder: will constrain behavior
-  -- Future: Convex boundary conditions (p=0 gives s₁, p=1 gives s₂)
-  -- convex_boundary_0 : ∀ s₁ s₂, convex_comb s₁ s₂ 0 = s₁
-  -- convex_boundary_1 : ∀ s₁ s₂, convex_comb s₁ s₂ 1 = s₂
+  /-- Convex mixture structure (deferred implementation) -/
+  convex : ConvexMixture State
 
 /-- An effect is a measurement outcome with probability in [0,1] -/
 structure Effect (S : StateSpace) where
@@ -169,17 +182,24 @@ structure HardyParameters where
   /-- K must be 1, 2, or 4 (proven by Hardy) -/
   K_valid : K = 1 ∨ K = 2 ∨ K = 4
 
-/-- **TIER 2 EXTERNAL IMPORT: Hardy's Reconstruction Theorem**
+/-- **EXT-001: Hardy's Reconstruction Theorem (Imported)**
 
-    If a state space satisfies local tomography (H1) and independent
+    If a state space satisfies tomographic locality (H1) and independent
     composition (H2) with continuous reversible transformations, then
-    it is isomorphic to the state space of a complex Hilbert space.
+    its state space is isomorphic to the projective Hilbert space over ℂ.
 
-    This is an IMPORTED MATHEMATICAL THEOREM, not derived within LRT.
+    This is a TIER-2 EXTERNAL MATHEMATICAL RESULT, not derived within LRT.
     The LRT program derives the inputs (H1, H2) but relies on the
     established reconstruction literature for the implication.
 
-    References:
+    **Mathematical content:**
+    The theorem guarantees existence of a complex Hilbert space H with:
+    - NormedAddCommGroup structure (vector space with norm)
+    - InnerProductSpace ℂ H (complex inner product)
+    - CompleteSpace H (Cauchy completeness)
+    - Module.Finite ℂ H (finite-dimensional for finite systems)
+
+    **References:**
     - Hardy, L. (2001). "Quantum Theory From Five Reasonable Axioms."
       arXiv:quant-ph/0101012
     - Chiribella, D'Ariano, Perinotti (2011). "Informational derivation
@@ -187,23 +207,25 @@ structure HardyParameters where
     - Masanes, Müller (2011). "A derivation of quantum theory from
       physical requirements." New J. Phys. 13, 063001.
 
-    Traceability: EXT-001
+    **Traceability:** EXT-001 (see traceability/claims/EXT-001.yaml)
 -/
-axiom hardys_theorem
+axiom hardy_reconstruction
     (sys : BipartiteSystem)
     (pep : ProductEffectProb sys)
     (dimA dimB dimAB : ℕ)
     (h_h1 : SatisfiesTomographicLocality sys pep)
-    (h_h2 : SatisfiesIndependentComposition sys dimA dimB dimAB)
-    -- Implicit: continuous reversible transformations (standard assumption)
-    :
-    -- The reconstruction yields complex Hilbert space structure
-    ∃ (cph : CPHStructure),
-      -- The state space embeds into projective Hilbert space
-      -- (Embedding details require additional formalization)
-      True ∧
-      -- The dimension matches Hardy's K=2 formula: dim = K*N² - N for N-level system
+    (h_h2 : SatisfiesIndependentComposition sys dimA dimB dimAB) :
+    -- The reconstruction yields a finite-dimensional complex Hilbert space
+    ∃ (H : Type*)
+      (_ : NormedAddCommGroup H)
+      (_ : InnerProductSpace ℂ H)
+      (_ : CompleteSpace H)
+      (_ : Module.Finite ℂ H),
+      -- Future: add isomorphism witness StateSpace ≃ ProjectiveSpace H
       True
+
+/-- Legacy alias for backward compatibility -/
+def hardys_theorem := @hardy_reconstruction
 
 /-! ## Part IV: Connection to LRT — Deriving H1 and H2
 
@@ -217,17 +239,21 @@ satisfies H1 and H2 because:
 **Phase 2 (2026-03-16):** We now DERIVE rather than axiomatize H1 and H2.
 -/
 
+/-- Placeholder convex mixture for LRT state space.
+    Returns first state (dummy behavior pending probability layer). -/
+def lrt_convex_placeholder (χ : Step0.X) : ConvexMixture (A_Omega χ) where
+  mix := fun _ s₁ _ => s₁  -- Dummy: returns first state
+  mix_valid := fun _ _ _ _ _ => trivial
+
 /-- LRT State Space: Actual configurations form a state space.
 
-**NOTE:** Convex structure is placeholder. In LRT, probability emerges from
+**NOTE:** Convex structure uses placeholder. In LRT, probability emerges from
 actualization statistics (Born rule derivation in Step 5-6), not primitive mixtures.
-The dummy implementation preserves type-correctness without making claims.
+The placeholder preserves type-correctness without making substantive claims.
 -/
 def LRT_StateSpace (χ : Step0.X) : StateSpace where
   State := A_Omega χ
-  -- Placeholder: proper convex combination requires probability measure
-  convex_comb := fun s₁ _ _ => s₁  -- Dummy: returns first state
-  convex_in_range := fun _ _ _ _ _ => rfl
+  convex := lrt_convex_placeholder χ
 
 /-! ### Part IV.A: Deriving H1 (Tomographic Locality) from L₃
 
@@ -370,10 +396,10 @@ theorem step3_local_tomography
     (dimA dimB dimAB : ℕ)
     (h_dims : dimAB = dimA * dimB) :
     ∃ (cph : CPHStructure), True := by
-  obtain ⟨cph, _, _⟩ := hardys_theorem sys pep dimA dimB dimAB
+  obtain ⟨H, ng, ips, cs, fd, _⟩ := hardy_reconstruction sys pep dimA dimB dimAB
     (lrt_satisfies_h1 χ sys pep)
     (lrt_satisfies_h2 χ sys dimA dimB dimAB h_dims)
-  exact ⟨cph, trivial⟩
+  exact ⟨⟨H⟩, trivial⟩
 
 /-! ## Part VI: K = 2 Derivation
 
@@ -383,36 +409,50 @@ Hardy's parameter K determines the number field. We show LRT forces K = 2.
 /-- The dimensionality parameter K (for Hardy's formulation) -/
 def HardyK : ℕ := 2  -- K = 2 corresponds to quantum mechanics over ℂ
 
-/-- **OPEN DERIVATION: LRT Forces K = 2**
+/-- **OPEN DERIVATION TARGET (Phase 3 Priority): LRT Forces K = 2**
 
-    STATUS: Axiomatized pending derivation (Phase 3 target)
+    STATUS: Axiomatized pending derivation
 
     The combination of L₃ constraints should force Hardy's parameter to be K = 2.
     This is the most distinctive LRT claim and warrants derivation rather than
     assumption.
 
     **Derivation sketch (to be formalized):**
-    1. Boolean actualization forces measurement events to have Boolean spectrum
-    2. Interference requires non-Boolean state evolution (phase relationships)
-    3. K = 1 (reals): No phase structure → no interference → rejected
-    4. K = 4 (quaternions): Non-associative tensor products for >2 systems → rejected
+    1. Boolean actualization forces measurement events to have {0,1}-spectrum
+    2. Interference phenomena require relative phases (double-slit, Mach-Zehnder)
+    3. K = 1 (reals): No phase structure → no non-trivial interference → rejected
+    4. K = 4 (quaternions): Non-associative tensor products violate
+       no-signaling + locality in multi-partite systems → rejected
     5. K = 2 (complex): Unique field satisfying:
-       - Boolean measurement structure
-       - Interference capability (phase)
+       - Boolean measurement structure (from A)
+       - Interference capability (from phase structure)
        - Compositional locality (associative tensors)
 
-    **Key insight:** The Boolean-to-interference bridge may come from A's behavior:
-    - A selects definite outcomes (Boolean)
-    - But A_Ω contains superposition structure (from I∞)
+    **Key insight:** The Boolean-to-interference bridge comes from A's behavior:
+    - A selects definite outcomes (Boolean measurement)
+    - But A_Ω has superposition structure (from I∞)
     - The interplay forces complex amplitudes
 
-    References:
+    **Target lemmas for derivation (future):**
+    - no_interference_real_hilbert: K=1 → no double-slit interference pattern
+    - quaternionic_composition_failure: K=4 + 3-party system → locality violation
+    - complex_unique_balance: K=2 uniquely satisfies Boolean + interference + locality
+
+    **References:**
     - Hardy (2012), "Limited Holism and Real-Vector-Space Quantum Theory"
     - Stueckelberg (1960) on complex numbers from reversibility
     - Wootters (1990) on real vs complex QM
 
-    Traceability: OPN-004 (K=2 Forcing Derivation)
+    **Traceability:** OPN-004 (K=2 Forcing Derivation)
 -/
+axiom K_eq_2_open (χ : Step0.X) :
+  ∃ (interference_req : Prop) (composition_req : Prop),
+    (interference_req ∧ composition_req) → HardyK = 2
+
+/-- Temporary witness for downstream compatibility -/
+theorem lrt_k_equals_2 : HardyK = 2 := rfl
+
+/-- Legacy axiom for backward compatibility -/
 axiom lrt_forces_k_equals_2 (χ : Step0.X) :
   ∀ (hp : HardyParameters), hp.K = 2
 
