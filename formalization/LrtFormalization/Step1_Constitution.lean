@@ -25,17 +25,25 @@ open LRT.Step0
 A_Ω is the set of all configurations that survive the L₃ admissibility filter.
 -/
 
-/-- A configuration is admissible if it satisfies L₃.
+/-! ### Admissibility
 
-    NOTE: All configurations in I are type-level admissible.
-    L₃ operates at the propositional level, not configuration level.
-    Filtering is post-hoc via A: the actualization primitive selects
-    which admissible configurations become actual.
+A configuration is admissible if it satisfies L₃.
 
-    This is intentional: I∞ is the maximal distinguishability substrate,
-    while A performs ontological selection within that substrate.
+NOTE: All configurations in I are type-level admissible.
+L₃ operates at the propositional level, not configuration level.
+Filtering is post-hoc via A: the actualization primitive selects
+which admissible configurations become actual.
+
+This is intentional: I∞ is the maximal distinguishability substrate,
+while A performs ontological selection within that substrate.
+
+The `Admissible` predicate is defined in Step0 via L3Admissible.
+Here we confirm all configurations satisfy it.
 -/
-def Admissible (_c : I) : Prop := True
+
+/-- All configurations in I are admissible (Step0.Admissible) -/
+theorem all_configs_step1_admissible (c : I) : Step0.Admissible c :=
+  Step0.all_configs_admissible c
 
 /-- The total actual structure: all configurations marked actual by A -/
 def A_Omega (X : Step0.X) : Set I :=

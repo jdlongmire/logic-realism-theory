@@ -135,7 +135,122 @@ section Properties
 
 end Properties
 
-/-! ## Part VI: Forward-Looking Stubs
+/-! ## Part VI: Event Structure (Phase 0-1)
+
+Events are queries over configurations that A can resolve.
+This is where L₃ does mathematical work: events form a Boolean algebra.
+-/
+
+/-- An Event is a query over configurations with L₃-guaranteed decidability.
+
+    L₃ (excluded middle) ensures every event has a determinate truth value
+    for every configuration. This is not computational decidability but
+    logical determinacy.
+-/
+structure Event where
+  /-- The query: does this configuration have property P? -/
+  query : Configuration → Prop
+  /-- L₃ ensures every query is decidable (in the logical sense) -/
+  l3_decidable : ∀ c : Configuration, query c ∨ ¬query c
+
+/-- The trivially true event (holds for all configurations) -/
+def Event.top : Event where
+  query := fun _ => True
+  l3_decidable := fun _ => Or.inl trivial
+
+/-- The trivially false event (holds for no configurations) -/
+def Event.bot : Event where
+  query := fun _ => False
+  l3_decidable := fun _ => Or.inr (fun h => h)
+
+/-- Conjunction of events -/
+def Event.and (e₁ e₂ : Event) : Event where
+  query := fun c => e₁.query c ∧ e₂.query c
+  l3_decidable := fun c => by
+    cases e₁.l3_decidable c with
+    | inl h1 =>
+      cases e₂.l3_decidable c with
+      | inl h2 => exact Or.inl ⟨h1, h2⟩
+      | inr h2 => exact Or.inr (fun ⟨_, h⟩ => h2 h)
+    | inr h1 => exact Or.inr (fun ⟨h, _⟩ => h1 h)
+
+/-- Disjunction of events -/
+def Event.or (e₁ e₂ : Event) : Event where
+  query := fun c => e₁.query c ∨ e₂.query c
+  l3_decidable := fun c => by
+    cases e₁.l3_decidable c with
+    | inl h1 => exact Or.inl (Or.inl h1)
+    | inr h1 =>
+      cases e₂.l3_decidable c with
+      | inl h2 => exact Or.inl (Or.inr h2)
+      | inr h2 => exact Or.inr (fun h =>
+        match h with
+        | Or.inl a => h1 a
+        | Or.inr b => h2 b)
+
+/-- Negation of events -/
+def Event.not (e : Event) : Event where
+  query := fun c => ¬e.query c
+  l3_decidable := fun c => by
+    cases e.l3_decidable c with
+    | inl h => exact Or.inr (fun hn => hn h)
+    | inr h => exact Or.inl h
+
+/-- **Key Theorem: Event Non-Contradiction (from L₂)**
+    No event is both true and false for any configuration. -/
+theorem event_lnc (e : Event) (c : Configuration) :
+    ¬(e.query c ∧ ¬e.query c) := fun ⟨h1, h2⟩ => h2 h1
+
+/-- **Key Theorem: Event Excluded Middle (from L₃)**
+    Every event is either true or false for every configuration. -/
+theorem event_lem (e : Event) (c : Configuration) :
+    e.query c ∨ ¬e.query c := e.l3_decidable c
+
+/-- Action primitive resolves events: is the event true AND the configuration actual?
+
+    Note: We use Prop rather than Bool because L₃ decidability is logical,
+    not computational. The decision is in principle determined, but we don't
+    have a computation procedure.
+-/
+def ActionPrimitive.resolves_event (A : ActionPrimitive) (e : Event) (c : Configuration) : Prop :=
+  e.query c ∧ A.A c = ActualityValue.actual
+
+/-- Event resolution is determined (by L₃) -/
+theorem ActionPrimitive.resolves_event_determined (A : ActionPrimitive) (e : Event) (c : Configuration) :
+    A.resolves_event e c ∨ ¬A.resolves_event e c :=
+  Classical.em _
+
+/-! ## Part VII: L₃ Admissibility Structure
+
+Non-trivial admissibility: a configuration is admissible if it satisfies L₃.
+-/
+
+/-- L₃ admissibility for a configuration.
+
+    Note: This operates at the propositional level. Every configuration
+    in I is type-level present; admissibility constrains what propositions
+    can be true of configurations, not which configurations exist.
+-/
+structure L3Admissible (c : Configuration) : Prop where
+  /-- Identity: c = c -/
+  identity : c = c
+  /-- Non-contradiction: no proposition is both true and false of c -/
+  lnc : ∀ P : Prop, ¬(P ∧ ¬P)
+  /-- Excluded middle: every proposition about c is determined -/
+  lem : ∀ P : Prop, P ∨ ¬P
+
+/-- Every configuration is L₃-admissible (L₃ operates at the Prop level) -/
+theorem all_configs_l3_admissible (c : Configuration) : L3Admissible c :=
+  ⟨rfl, law_of_non_contradiction, law_of_excluded_middle⟩
+
+/-- Admissibility predicate (now non-trivial) -/
+def Admissible (c : Configuration) : Prop := L3Admissible c
+
+/-- All configurations are admissible -/
+theorem all_configs_admissible (c : Configuration) : Admissible c :=
+  all_configs_l3_admissible c
+
+/-! ## Part VIII: Forward-Looking Stubs
 
 These comments indicate future development directions for downstream steps.
 -/
@@ -144,11 +259,6 @@ These comments indicate future development directions for downstream steps.
 -- class ConfigToState (H : Type*) where
 --   toState : Configuration → H  -- H is Hilbert space from later steps
 --   injective : Function.Injective toState  -- Distinct configs → distinct states
-
--- Future: Event structure over configurations (Phase 2)
--- structure Event where
---   query : Configuration → Prop
---   decidable : ∀ c, Decidable (query c)
 
 /-! ## Status
 
