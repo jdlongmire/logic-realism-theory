@@ -5,7 +5,7 @@
 **ORCID:** 0009-0009-1383-7698
 **Correspondence:** jdlongmire@outlook.com
 **Date:** March 2026
-**Status:** Publishable Draft
+**Status:** Pre-print
 **Epistemic Discipline:** Each claim marked ESTABLISHED, ARGUED, or OPEN
 **Created:** 2026-03-13
 
