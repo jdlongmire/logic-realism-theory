@@ -1,0 +1,39 @@
+# QM-003: Local Tomography
+id: QM-003
+name: Local Tomography
+statement: |
+  Local tomography holds: the joint state of a composite system
+  is uniquely determined by the statistics of local measurements
+  on its components. This is the conjunction of H1 and H2.
+
+role: derived
+proof_status: axiomatized
+epistemic_status: argued
+
+formal_artifacts:
+  lean:
+    - file: Step3_LocalTomography.lean
+      symbol: LocalTomography
+      status: sorry
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "3.3"
+
+depends_on:
+  - claim_id: QM-001
+    dependency_type: logical
+  - claim_id: QM-002
+    dependency_type: logical
+
+external_citations:
+  - "Hardy 2001"
+  - "Chiribella et al. 2011"
+
+risk_if_false: |
+  Local tomography is the key input to quantum reconstruction
+  theorems. Without it, the path to complex Hilbert space is blocked.
+
+notes: |
+  H2 is proven; H1 has structure but needs the StateSpace bridge
+  to be fully verified.

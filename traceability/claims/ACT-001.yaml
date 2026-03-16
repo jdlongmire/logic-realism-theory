@@ -1,0 +1,36 @@
+# ACT-001: X Grounds AΩ
+id: ACT-001
+name: X Grounds AΩ (Bridge Principle)
+statement: |
+  The primitive ontic state X constitutively grounds the actualized
+  domain AΩ. This is not logical entailment but ontological constitution:
+  X makes AΩ be.
+
+role: bridge
+proof_status: axiomatized
+epistemic_status: argued
+
+formal_artifacts:
+  lean:
+    - file: Step1_Constitution.lean
+      symbol: bridge_principle
+      status: axiom
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "2.2"
+  - doc: PhilArchive-2026
+    section: "Section 3"
+
+depends_on:
+  - claim_id: ONT-001
+    dependency_type: logical
+
+risk_if_false: |
+  Without the bridge principle, the ontology floats free of physics.
+  No derivation of quantum structure is possible.
+
+notes: |
+  This is Tier-2 in the epistemic hierarchy: philosophically argued
+  but not derivable from pure logic. The Bridge Principle is the
+  distinctive move of LRT.

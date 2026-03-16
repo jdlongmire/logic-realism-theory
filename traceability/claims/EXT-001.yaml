@@ -1,0 +1,37 @@
+# EXT-001: Hardy Reconstruction Theorem
+id: EXT-001
+name: Hardy Reconstruction Theorem
+statement: |
+  Given local tomography and certain operational axioms, the state
+  space of a physical theory must be a complex Hilbert space
+  (not real, not quaternionic).
+
+role: imported
+proof_status: imported
+epistemic_status: established
+
+formal_artifacts:
+  lean:
+    - file: Step4_HardyAxiom.lean
+      symbol: hardy_axiom
+      status: axiom
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "3.4"
+
+depends_on:
+  - claim_id: QM-003
+    dependency_type: logical
+
+external_citations:
+  - "Hardy, L. (2001). Quantum Theory From Five Reasonable Axioms. arXiv:quant-ph/0101012"
+  - "Chiribella, G., D'Ariano, G.M., Perinotti, P. (2011). Informational derivation of quantum theory. Physical Review A 84, 012311"
+
+risk_if_false: |
+  If Hardy's theorem is false, LRT cannot claim to derive complex
+  quantum mechanics. However, this is established mathematics.
+
+notes: |
+  LRT imports Hardy's theorem rather than re-proving it. The work
+  is in showing that LRT's ontology satisfies Hardy's premises.

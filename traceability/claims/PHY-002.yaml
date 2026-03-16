@@ -1,0 +1,33 @@
+# PHY-002: Temporal Emergence
+id: PHY-002
+name: Temporal Emergence
+statement: |
+  Time is not primitive but emerges from the structure of unitary
+  evolution. The time parameter t indexes the continuous family
+  of unitary operators U(t).
+
+role: derived
+proof_status: axiomatized
+epistemic_status: argued
+
+formal_artifacts:
+  lean:
+    - file: Step8_TemporalEmergence.lean
+      symbol: time_parameter
+      status: axiom
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "4.2"
+
+depends_on:
+  - claim_id: PHY-001
+    dependency_type: logical
+
+risk_if_false: |
+  If time is primitive, LRT loses parsimony and the emergence
+  narrative fails.
+
+notes: |
+  This is an interpretive claim about the status of time, not
+  a mathematical derivation. Time's emergence is philosophical.

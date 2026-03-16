@@ -1,0 +1,36 @@
+# PHY-001: Unitarity
+id: PHY-001
+name: Unitarity
+statement: |
+  The dynamics of quantum states is unitary: time evolution
+  preserves inner products and hence probabilities. This follows
+  from probability conservation and the Hilbert space structure.
+
+role: derived
+proof_status: axiomatized
+epistemic_status: argued
+
+formal_artifacts:
+  lean:
+    - file: Step7_Unitarity.lean
+      symbol: unitarity
+      status: axiom
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "4.1"
+
+depends_on:
+  - claim_id: QM-008
+    dependency_type: logical
+  - claim_id: QM-004
+    dependency_type: formal
+
+risk_if_false: |
+  Without unitarity, quantum dynamics is not reversible and
+  probability is not conserved. The Schrödinger equation cannot
+  be derived.
+
+notes: |
+  Unitarity is a consequence of probability conservation in
+  Hilbert space, not an independent postulate in LRT.

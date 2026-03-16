@@ -1,0 +1,35 @@
+# QM-008: Born Rule
+id: QM-008
+name: Born Rule
+statement: |
+  The probability of an event E given state ψ is P(E|ψ) = ⟨ψ|P_E|ψ⟩,
+  where P_E is the projection operator for event E. This follows
+  from Gleason's theorem applied to the LRT projection structure.
+
+role: derived
+proof_status: axiomatized
+epistemic_status: argued
+
+formal_artifacts:
+  lean:
+    - file: Step6_BornRule.lean
+      symbol: born_rule
+      status: axiom
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "3.6"
+
+depends_on:
+  - claim_id: QM-007
+    dependency_type: logical
+  - claim_id: EXT-002
+    dependency_type: formal
+
+risk_if_false: |
+  The Born rule is the central predictive apparatus of quantum
+  mechanics. Without it, LRT cannot connect to experiment.
+
+notes: |
+  The derivation is complete modulo the dim ≥ 3 condition, which
+  follows from infinite distinguishability of I∞.

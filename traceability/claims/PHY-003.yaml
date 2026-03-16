@@ -1,0 +1,34 @@
+# PHY-003: Hamiltonian Generator
+id: PHY-003
+name: Hamiltonian Generator
+statement: |
+  The Hamiltonian H is the self-adjoint generator of time evolution,
+  obtained via Stone's theorem from the unitary group U(t).
+  H has the physical interpretation of total energy.
+
+role: derived
+proof_status: axiomatized
+epistemic_status: argued
+
+formal_artifacts:
+  lean:
+    - file: Step9_EnergyAction.lean
+      symbol: hamiltonian_generator
+      status: axiom
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "4.3"
+
+depends_on:
+  - claim_id: PHY-001
+    dependency_type: logical
+  - claim_id: EXT-003
+    dependency_type: formal
+
+risk_if_false: |
+  Without the Hamiltonian, there is no Schrödinger equation.
+
+notes: |
+  The energy interpretation of H requires additional physical
+  arguments connecting spectral properties to conserved quantities.

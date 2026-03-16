@@ -1,0 +1,43 @@
+# ONT-001: Primitive Ontic State X
+id: ONT-001
+name: Primitive Ontic State X
+statement: |
+  The primitive ontic state X is constituted by three co-fundamental elements:
+  X ≡ [L₃ : I∞ : A], where L₃ is the three fundamental logical laws,
+  I∞ is an infinite information space, and A is the actualization operator.
+  These are co-constitutive: none is prior to the others.
+
+role: primitive
+proof_status: axiomatized
+epistemic_status: established
+
+formal_artifacts:
+  lean:
+    - file: Step0_Primitives.lean
+      symbol: X
+      status: axiom
+    - file: Step0_Primitives.lean
+      symbol: L3
+      status: axiom
+    - file: Step0_Primitives.lean
+      symbol: I
+      status: axiom
+    - file: Step0_Primitives.lean
+      symbol: ActionPrimitive
+      status: axiom
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "2.1"
+  - doc: PhilArchive-2026
+    section: "Section 2"
+
+depends_on: []
+
+risk_if_false: |
+  The entire derivation chain collapses. X is the foundation.
+
+notes: |
+  This is the metaphysical starting point. The co-constitution claim
+  distinguishes LRT from theories that derive logic from physics or
+  physics from logic alone.

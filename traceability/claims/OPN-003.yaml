@@ -1,0 +1,32 @@
+# OPN-003: Energy-Action Relationship
+id: OPN-003
+name: Energy-Action Relationship
+statement: |
+  Can the relationship between energy and action (E = ∂S/∂t) be
+  derived from LRT's actualization structure? How does the action
+  principle emerge?
+
+role: open
+proof_status: open
+epistemic_status: open
+
+formal_artifacts:
+  lean:
+    - file: Step9_EnergyAction.lean
+      symbol: energy_action_relationship
+      status: sorry
+
+source_documents:
+  - doc: LRT-OpenProblem1
+    section: "Full document"
+
+depends_on:
+  - claim_id: PHY-003
+    dependency_type: logical
+
+risk_if_false: |
+  Without energy-action derivation, the Hamiltonian's physical
+  meaning remains imported rather than derived.
+
+notes: |
+  Active open problem. See LRT_OpenProblem1_EnergyAction.md.

@@ -1,0 +1,943 @@
+{
+  "version": "1.0.0",
+  "generated": "2026-03-16",
+  "claims": {
+    "ACT-001": {
+      "id": "ACT-001",
+      "name": "X Grounds A\u03a9 (Bridge Principle)",
+      "statement": "The primitive ontic state X constitutively grounds the actualized\ndomain A\u03a9. This is not logical entailment but ontological constitution:\nX makes A\u03a9 be.\n",
+      "role": "bridge",
+      "proof_status": "axiomatized",
+      "epistemic_status": "argued",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step1_Constitution.lean",
+            "symbol": "bridge_principle",
+            "status": "axiom"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "2.2"
+        },
+        {
+          "doc": "PhilArchive-2026",
+          "section": "Section 3"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "ONT-001",
+          "dependency_type": "logical"
+        }
+      ],
+      "risk_if_false": "Without the bridge principle, the ontology floats free of physics.\nNo derivation of quantum structure is possible.\n",
+      "notes": "This is Tier-2 in the epistemic hierarchy: philosophically argued\nbut not derivable from pure logic. The Bridge Principle is the\ndistinctive move of LRT.\n"
+    },
+    "ACT-002": {
+      "id": "ACT-002",
+      "name": "Actualized Domain A\u03a9",
+      "statement": "A\u03a9 = { c \u2208 I\u221e | A(c) = actual }. The actualized domain is the\nset of configurations selected by the actualization operator A.\nA\u03a9 is non-empty (something exists).\n",
+      "role": "derived",
+      "proof_status": "verified",
+      "epistemic_status": "established",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step1_Constitution.lean",
+            "symbol": "A_Omega",
+            "status": "proven"
+          },
+          {
+            "file": "Step1_Constitution.lean",
+            "symbol": "A_Omega_determined_by_X",
+            "status": "proven"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "2.2"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "ONT-001",
+          "dependency_type": "logical"
+        },
+        {
+          "claim_id": "ACT-001",
+          "dependency_type": "logical"
+        }
+      ],
+      "risk_if_false": "If A\u03a9 is empty, nothing exists. This contradicts the empirical\nfact of our own existence.\n",
+      "notes": "Non-emptiness is axiomatized via bridge_principle in Lean.\nCould potentially be derived via contradiction argument\n(empty A\u03a9 \u2192 no distinguishability \u2192 contradicts L\u2083 existence).\n"
+    },
+    "EXT-001": {
+      "id": "EXT-001",
+      "name": "Hardy Reconstruction Theorem",
+      "statement": "Given local tomography and certain operational axioms, the state\nspace of a physical theory must be a complex Hilbert space\n(not real, not quaternionic).\n",
+      "role": "imported",
+      "proof_status": "imported",
+      "epistemic_status": "established",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step4_HardyAxiom.lean",
+            "symbol": "hardy_axiom",
+            "status": "axiom"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "3.4"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "QM-003",
+          "dependency_type": "logical"
+        }
+      ],
+      "external_citations": [
+        "Hardy, L. (2001). Quantum Theory From Five Reasonable Axioms. arXiv:quant-ph/0101012",
+        "Chiribella, G., D'Ariano, G.M., Perinotti, P. (2011). Informational derivation of quantum theory. Physical Review A 84, 012311"
+      ],
+      "risk_if_false": "If Hardy's theorem is false, LRT cannot claim to derive complex\nquantum mechanics. However, this is established mathematics.\n",
+      "notes": "LRT imports Hardy's theorem rather than re-proving it. The work\nis in showing that LRT's ontology satisfies Hardy's premises.\n"
+    },
+    "EXT-002": {
+      "id": "EXT-002",
+      "name": "Gleason's Theorem",
+      "statement": "Any probability measure \u03bc on the projection lattice of a Hilbert\nspace H with dim(H) \u2265 3 has the form \u03bc(P) = Tr(\u03c1P) for some\ndensity operator \u03c1.\n",
+      "role": "imported",
+      "proof_status": "imported",
+      "epistemic_status": "established",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step6_BornRule.lean",
+            "symbol": "gleason_theorem",
+            "status": "axiom"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "3.6"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "QM-007",
+          "dependency_type": "formal"
+        }
+      ],
+      "external_citations": [
+        "Gleason, A.M. (1957). Measures on the closed subspaces of a Hilbert space. Journal of Mathematics and Mechanics 6, 885-893"
+      ],
+      "risk_if_false": "Gleason's theorem is established mathematics. If it were false,\nmost of quantum foundations would need revision.\n",
+      "notes": "LRT imports Gleason rather than re-proving it. The work is in\nshowing LRT satisfies the premises (projections, dim \u2265 3).\n"
+    },
+    "EXT-003": {
+      "id": "EXT-003",
+      "name": "Stone's Theorem",
+      "statement": "Every strongly continuous one-parameter unitary group U(t) on\na Hilbert space has the form U(t) = exp(-iHt) for some self-adjoint\noperator H (the generator).\n",
+      "role": "imported",
+      "proof_status": "imported",
+      "epistemic_status": "established",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step9_EnergyAction.lean",
+            "symbol": "stone_theorem",
+            "status": "axiom"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "4.3"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "PHY-001",
+          "dependency_type": "formal"
+        }
+      ],
+      "external_citations": [
+        "Stone, M.H. (1932). On one-parameter unitary groups in Hilbert space. Annals of Mathematics 33, 643-648"
+      ],
+      "risk_if_false": "Stone's theorem is established mathematics. If false, functional\nanalysis would need major revision.\n",
+      "notes": "LRT imports Stone's theorem to obtain the Hamiltonian generator.\n"
+    },
+    "LOG-001": {
+      "id": "LOG-001",
+      "name": "Determinate Identity",
+      "statement": "Every actualized configuration has determinate identity: for any\nconfiguration c \u2208 A\u03a9 and any property P, either P(c) or \u00acP(c).\nThere is no ontic indeterminacy at the level of actualization.\n",
+      "role": "derived",
+      "proof_status": "verified",
+      "epistemic_status": "established",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step2_DeterminateIdentity.lean",
+            "symbol": "DeterminateIdentity",
+            "status": "proven"
+          },
+          {
+            "file": "Step0_Primitives.lean",
+            "symbol": "ActionPrimitive.determinate",
+            "status": "proven"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "3.1"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "ONT-003",
+          "dependency_type": "logical"
+        },
+        {
+          "claim_id": "ACT-002",
+          "dependency_type": "logical"
+        }
+      ],
+      "risk_if_false": "Without determinate identity, Boolean event structure fails.\nProjection operators cannot be derived.\n",
+      "notes": "This follows directly from L\u2083 (excluded middle) applied to\nactualized configurations.\n"
+    },
+    "LOG-002": {
+      "id": "LOG-002",
+      "name": "Physical Proposition Criterion",
+      "statement": "A physical proposition is a predicate E over configurations that\nrespects L\u2083: for every c \u2208 I\u221e, either E(c) or \u00acE(c) holds, and\nnever both. Physical propositions form a Boolean algebra under\nconjunction, disjunction, and negation.\n",
+      "role": "derived",
+      "proof_status": "verified",
+      "epistemic_status": "established",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step0_Primitives.lean",
+            "symbol": "Event",
+            "status": "proven"
+          },
+          {
+            "file": "Step0_Primitives.lean",
+            "symbol": "event_lnc",
+            "status": "proven"
+          },
+          {
+            "file": "Step0_Primitives.lean",
+            "symbol": "event_lem",
+            "status": "proven"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "3.2"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "ONT-003",
+          "dependency_type": "logical"
+        },
+        {
+          "claim_id": "LOG-001",
+          "dependency_type": "logical"
+        }
+      ],
+      "risk_if_false": "Without Boolean event structure, the bridge to projection\noperators is blocked.\n",
+      "notes": "Events are queries over configurations. L\u2083 forces them to be\nclassical (Boolean), not quantum logic.\n"
+    },
+    "ONT-001": {
+      "id": "ONT-001",
+      "name": "Primitive Ontic State X",
+      "statement": "The primitive ontic state X is constituted by three co-fundamental elements:\nX \u2261 [L\u2083 : I\u221e : A], where L\u2083 is the three fundamental logical laws,\nI\u221e is an infinite information space, and A is the actualization operator.\nThese are co-constitutive: none is prior to the others.\n",
+      "role": "primitive",
+      "proof_status": "axiomatized",
+      "epistemic_status": "established",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step0_Primitives.lean",
+            "symbol": "X",
+            "status": "axiom"
+          },
+          {
+            "file": "Step0_Primitives.lean",
+            "symbol": "L3",
+            "status": "axiom"
+          },
+          {
+            "file": "Step0_Primitives.lean",
+            "symbol": "I",
+            "status": "axiom"
+          },
+          {
+            "file": "Step0_Primitives.lean",
+            "symbol": "ActionPrimitive",
+            "status": "axiom"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "2.1"
+        },
+        {
+          "doc": "PhilArchive-2026",
+          "section": "Section 2"
+        }
+      ],
+      "depends_on": [],
+      "risk_if_false": "The entire derivation chain collapses. X is the foundation.\n",
+      "notes": "This is the metaphysical starting point. The co-constitution claim\ndistinguishes LRT from theories that derive logic from physics or\nphysics from logic alone.\n"
+    },
+    "ONT-002": {
+      "id": "ONT-002",
+      "name": "Infinite Information Space I\u221e",
+      "statement": "I\u221e is an infinite space of distinguishable configurations.\nIt serves as the substrate of all possible ontic states.\nNo additional structure (topology, metric, algebra) is imposed\nat the primitive level.\n",
+      "role": "primitive",
+      "proof_status": "axiomatized",
+      "epistemic_status": "established",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step0_Primitives.lean",
+            "symbol": "I",
+            "status": "axiom"
+          },
+          {
+            "file": "Step0_Primitives.lean",
+            "symbol": "I_infinite",
+            "status": "axiom"
+          },
+          {
+            "file": "Step0_Primitives.lean",
+            "symbol": "exists_distinct_configurations",
+            "status": "proven"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "2.1"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "ONT-001",
+          "dependency_type": "logical"
+        }
+      ],
+      "risk_if_false": "Without infinite distinguishability, the configuration space\ncannot support quantum state spaces of arbitrary dimension.\n",
+      "notes": "Minimalism is intentional. Structure emerges from actualization,\nnot from I\u221e directly.\n"
+    },
+    "ONT-003": {
+      "id": "ONT-003",
+      "name": "Three Fundamental Logical Laws L\u2083",
+      "statement": "L\u2083 comprises three laws: Identity (\u2200x. x = x), Non-Contradiction\n(\u00ac(P \u2227 \u00acP)), and Excluded Middle (P \u2228 \u00acP). These are ontic constraints,\nnot merely epistemic or linguistic conventions. They constrain what\ncan be actual.\n",
+      "role": "primitive",
+      "proof_status": "verified",
+      "epistemic_status": "established",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step0_Primitives.lean",
+            "symbol": "L3",
+            "status": "proven"
+          },
+          {
+            "file": "Step0_Primitives.lean",
+            "symbol": "L3.identity",
+            "status": "proven"
+          },
+          {
+            "file": "Step0_Primitives.lean",
+            "symbol": "L3.non_contradiction",
+            "status": "proven"
+          },
+          {
+            "file": "Step0_Primitives.lean",
+            "symbol": "L3.excluded_middle",
+            "status": "proven"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "2.1"
+        },
+        {
+          "doc": "PhilArchive-2026",
+          "section": "Section 2"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "ONT-001",
+          "dependency_type": "logical"
+        }
+      ],
+      "risk_if_false": "Without L\u2083 as ontic, the Boolean structure of actualization\ncannot be grounded. The entire projection operator derivation fails.\n",
+      "notes": "Lean's Classical.em provides excluded middle. Identity and\nnon-contradiction are definitional in Lean's type theory.\n"
+    },
+    "OPN-001": {
+      "id": "OPN-001",
+      "name": "Relativistic Extension",
+      "statement": "Can LRT be extended to incorporate special and general relativity?\nDoes the emergence of time in LRT connect to spacetime structure?\n",
+      "role": "open",
+      "proof_status": "open",
+      "epistemic_status": "open",
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "6.1"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "PHY-002",
+          "dependency_type": "interpretive"
+        },
+        {
+          "claim_id": "PHY-004",
+          "dependency_type": "logical"
+        }
+      ],
+      "risk_if_false": "If LRT cannot accommodate relativity, it remains a non-relativistic\ntheory and cannot be a complete foundation for physics.\n",
+      "notes": "This is a major research direction. The non-relativistic Schr\u00f6dinger\nequation is a starting point, not an endpoint.\n"
+    },
+    "OPN-002": {
+      "id": "OPN-002",
+      "name": "Bekenstein-Hawking Entropy Bridge",
+      "statement": "Can the Bekenstein-Hawking entropy formula S = A/(4l_P\u00b2) be derived\nor understood within LRT? Does I\u221e provide a microstate basis for\nblack hole entropy?\n",
+      "role": "open",
+      "proof_status": "open",
+      "epistemic_status": "open",
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "6.2"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "ONT-002",
+          "dependency_type": "interpretive"
+        },
+        {
+          "claim_id": "OPN-001",
+          "dependency_type": "logical"
+        }
+      ],
+      "risk_if_false": "If LRT cannot connect to black hole thermodynamics, it misses\na major nexus of quantum gravity.\n",
+      "notes": "Highly speculative. Requires relativistic extension first.\n"
+    },
+    "OPN-003": {
+      "id": "OPN-003",
+      "name": "Energy-Action Relationship",
+      "statement": "Can the relationship between energy and action (E = \u2202S/\u2202t) be\nderived from LRT's actualization structure? How does the action\nprinciple emerge?\n",
+      "role": "open",
+      "proof_status": "open",
+      "epistemic_status": "open",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step9_EnergyAction.lean",
+            "symbol": "energy_action_relationship",
+            "status": "sorry"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-OpenProblem1",
+          "section": "Full document"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "PHY-003",
+          "dependency_type": "logical"
+        }
+      ],
+      "risk_if_false": "Without energy-action derivation, the Hamiltonian's physical\nmeaning remains imported rather than derived.\n",
+      "notes": "Active open problem. See LRT_OpenProblem1_EnergyAction.md.\n"
+    },
+    "PHY-001": {
+      "id": "PHY-001",
+      "name": "Unitarity",
+      "statement": "The dynamics of quantum states is unitary: time evolution\npreserves inner products and hence probabilities. This follows\nfrom probability conservation and the Hilbert space structure.\n",
+      "role": "derived",
+      "proof_status": "axiomatized",
+      "epistemic_status": "argued",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step7_Unitarity.lean",
+            "symbol": "unitarity",
+            "status": "axiom"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "4.1"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "QM-008",
+          "dependency_type": "logical"
+        },
+        {
+          "claim_id": "QM-004",
+          "dependency_type": "formal"
+        }
+      ],
+      "risk_if_false": "Without unitarity, quantum dynamics is not reversible and\nprobability is not conserved. The Schr\u00f6dinger equation cannot\nbe derived.\n",
+      "notes": "Unitarity is a consequence of probability conservation in\nHilbert space, not an independent postulate in LRT.\n"
+    },
+    "PHY-002": {
+      "id": "PHY-002",
+      "name": "Temporal Emergence",
+      "statement": "Time is not primitive but emerges from the structure of unitary\nevolution. The time parameter t indexes the continuous family\nof unitary operators U(t).\n",
+      "role": "derived",
+      "proof_status": "axiomatized",
+      "epistemic_status": "argued",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step8_TemporalEmergence.lean",
+            "symbol": "time_parameter",
+            "status": "axiom"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "4.2"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "PHY-001",
+          "dependency_type": "logical"
+        }
+      ],
+      "risk_if_false": "If time is primitive, LRT loses parsimony and the emergence\nnarrative fails.\n",
+      "notes": "This is an interpretive claim about the status of time, not\na mathematical derivation. Time's emergence is philosophical.\n"
+    },
+    "PHY-003": {
+      "id": "PHY-003",
+      "name": "Hamiltonian Generator",
+      "statement": "The Hamiltonian H is the self-adjoint generator of time evolution,\nobtained via Stone's theorem from the unitary group U(t).\nH has the physical interpretation of total energy.\n",
+      "role": "derived",
+      "proof_status": "axiomatized",
+      "epistemic_status": "argued",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step9_EnergyAction.lean",
+            "symbol": "hamiltonian_generator",
+            "status": "axiom"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "4.3"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "PHY-001",
+          "dependency_type": "logical"
+        },
+        {
+          "claim_id": "EXT-003",
+          "dependency_type": "formal"
+        }
+      ],
+      "risk_if_false": "Without the Hamiltonian, there is no Schr\u00f6dinger equation.\n",
+      "notes": "The energy interpretation of H requires additional physical\narguments connecting spectral properties to conserved quantities.\n"
+    },
+    "PHY-004": {
+      "id": "PHY-004",
+      "name": "Schr\u00f6dinger Equation",
+      "statement": "The time evolution of quantum states satisfies i\u210f \u2202\u03c8/\u2202t = H\u03c8.\nThis follows from U(t) = exp(-iHt/\u210f) via differentiation.\n",
+      "role": "derived",
+      "proof_status": "axiomatized",
+      "epistemic_status": "argued",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step10_Schrodinger.lean",
+            "symbol": "schrodinger_equation",
+            "status": "axiom"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "4.4"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "PHY-003",
+          "dependency_type": "logical"
+        }
+      ],
+      "risk_if_false": "The Schr\u00f6dinger equation is the dynamical law of quantum mechanics.\nWithout it, LRT cannot reproduce quantum predictions.\n",
+      "notes": "This is the endpoint of the LRT derivation chain: from \u03c7 to\nthe fundamental equation of quantum dynamics.\n"
+    },
+    "PRD-001": {
+      "id": "PRD-001",
+      "name": "Complex Over Real QM Prediction",
+      "statement": "LRT predicts that quantum mechanics uses complex numbers, not\nreal or quaternionic. This follows from local tomography via\nHardy reconstruction.\n",
+      "role": "prediction",
+      "proof_status": "prose_only",
+      "epistemic_status": "established",
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "5.1"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "QM-003",
+          "dependency_type": "logical"
+        },
+        {
+          "claim_id": "EXT-001",
+          "dependency_type": "formal"
+        }
+      ],
+      "external_citations": [
+        "Renou et al. (2021). Quantum theory based on real numbers can be experimentally falsified. Nature 600, 625-629"
+      ],
+      "risk_if_false": "Recent experiments (Renou et al. 2021) have confirmed complex QM.\nThis prediction is already verified.\n",
+      "falsifies": "If experiments showed real or quaternionic QM equally viable,\nLRT's local tomography derivation would be undermined.\n",
+      "notes": "This is a successful retrodiction: LRT explains why QM must be\ncomplex, and experiments confirm it.\n"
+    },
+    "QM-001": {
+      "id": "QM-001",
+      "name": "H1 Supervenience Condition",
+      "statement": "For a bipartite system AB, if the local state of A is fixed and\nthe local state of B is fixed, then the joint state of AB is fixed.\nJoint states supervene on local states.\n",
+      "role": "derived",
+      "proof_status": "axiomatized",
+      "epistemic_status": "argued",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step3_LocalTomography.lean",
+            "symbol": "lrt_derives_h1",
+            "status": "sorry"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "3.3"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "LOG-001",
+          "dependency_type": "logical"
+        },
+        {
+          "claim_id": "LOG-002",
+          "dependency_type": "logical"
+        }
+      ],
+      "risk_if_false": "H1 is required for local tomography. Without it, the Hardy/CBH\nreconstruction path is blocked.\n",
+      "notes": "The Lean proof has structure showing how to derive H1 from\ndeterminate identity + events, but the bridge to StateSpace\nrequires additional formalization.\n"
+    },
+    "QM-002": {
+      "id": "QM-002",
+      "name": "H2 Operational Local Tomography",
+      "statement": "Local measurements on subsystems A and B suffice to determine\nthe joint state of AB. No irreducibly global measurement is needed.\n",
+      "role": "derived",
+      "proof_status": "verified",
+      "epistemic_status": "established",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step3_LocalTomography.lean",
+            "symbol": "lrt_derives_h2",
+            "status": "proven"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "3.3"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "ONT-002",
+          "dependency_type": "logical"
+        },
+        {
+          "claim_id": "LOG-002",
+          "dependency_type": "logical"
+        }
+      ],
+      "risk_if_false": "H2 is the operational half of local tomography. Without it,\nstandard quantum mechanics cannot be recovered.\n",
+      "notes": "Proven in Lean from I\u221e independence (subsystems don't share\nconfigurations) and event structure.\n"
+    },
+    "QM-003": {
+      "id": "QM-003",
+      "name": "Local Tomography",
+      "statement": "Local tomography holds: the joint state of a composite system\nis uniquely determined by the statistics of local measurements\non its components. This is the conjunction of H1 and H2.\n",
+      "role": "derived",
+      "proof_status": "axiomatized",
+      "epistemic_status": "argued",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step3_LocalTomography.lean",
+            "symbol": "LocalTomography",
+            "status": "sorry"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "3.3"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "QM-001",
+          "dependency_type": "logical"
+        },
+        {
+          "claim_id": "QM-002",
+          "dependency_type": "logical"
+        }
+      ],
+      "external_citations": [
+        "Hardy 2001",
+        "Chiribella et al. 2011"
+      ],
+      "risk_if_false": "Local tomography is the key input to quantum reconstruction\ntheorems. Without it, the path to complex Hilbert space is blocked.\n",
+      "notes": "H2 is proven; H1 has structure but needs the StateSpace bridge\nto be fully verified.\n"
+    },
+    "QM-004": {
+      "id": "QM-004",
+      "name": "Complex Hilbert Space Structure",
+      "statement": "The state space of actualized systems is a complex Hilbert space H.\nThis follows from local tomography via Hardy reconstruction.\n",
+      "role": "derived",
+      "proof_status": "axiomatized",
+      "epistemic_status": "argued",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step4_HardyAxiom.lean",
+            "symbol": "ComplexHilbertSpace",
+            "status": "axiom"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "3.4"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "QM-003",
+          "dependency_type": "logical"
+        },
+        {
+          "claim_id": "EXT-001",
+          "dependency_type": "formal"
+        }
+      ],
+      "risk_if_false": "Without Hilbert space, there is no quantum mechanics to derive.\n",
+      "notes": "The derivation depends on both LRT-derived local tomography\nand imported Hardy theorem.\n"
+    },
+    "QM-005": {
+      "id": "QM-005",
+      "name": "Boolean Actualization",
+      "statement": "Actualization is Boolean: for any event E and configuration c,\nA(E,c) \u2208 {0,1}. Events are either actual or not, never partially\nactual. This follows from L\u2083 (excluded middle, non-contradiction).\n",
+      "role": "derived",
+      "proof_status": "verified",
+      "epistemic_status": "established",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step0_Primitives.lean",
+            "symbol": "ActualityValue",
+            "status": "proven"
+          },
+          {
+            "file": "Step0_Primitives.lean",
+            "symbol": "ActionPrimitive.determinate",
+            "status": "proven"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "3.5"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "ONT-003",
+          "dependency_type": "logical"
+        },
+        {
+          "claim_id": "LOG-002",
+          "dependency_type": "logical"
+        }
+      ],
+      "risk_if_false": "Boolean actualization is the key bridge to projection operators.\nWithout it, the spectrum restriction argument fails.\n",
+      "notes": "This is where ontology meets operator theory. Boolean values\nbecome eigenvalue constraints.\n"
+    },
+    "QM-006": {
+      "id": "QM-006",
+      "name": "Boolean Spectrum Bridge",
+      "statement": "Event operators representing Boolean actualization predicates\nhave spectrum \u2286 {0,1}. This follows from: actualization yields\nonly 0 or 1, eigenvalues are possible measurement outcomes,\ntherefore eigenvalues \u2208 {0,1}.\n",
+      "role": "bridge",
+      "proof_status": "axiomatized",
+      "epistemic_status": "argued",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step5/EigenvalueRestriction.lean",
+            "symbol": "event_operator_has_bool_spectrum",
+            "status": "axiom"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "3.5"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "QM-004",
+          "dependency_type": "formal"
+        },
+        {
+          "claim_id": "QM-005",
+          "dependency_type": "logical"
+        }
+      ],
+      "risk_if_false": "This is the central choke point. Without Boolean spectrum,\nprojection operators cannot be derived, and Gleason's theorem\ncannot be applied.\n",
+      "notes": "ChatGPT identified this as the \"critical leverage point\" of the\nentire program. The eigenvalue-measurement bridge is philosophically\nargued, not logically forced.\n"
+    },
+    "QM-007": {
+      "id": "QM-007",
+      "name": "PVM Structure",
+      "statement": "Event operators with spectrum \u2286 {0,1} are orthogonal projections\n(P\u00b2 = P = P\u2020). The set of such projections forms a projection-valued\nmeasure on the event algebra.\n",
+      "role": "derived",
+      "proof_status": "verified",
+      "epistemic_status": "established",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step5/EigenvalueRestriction.lean",
+            "symbol": "bool_spectrum_implies_projection",
+            "status": "proven"
+          },
+          {
+            "file": "Step5/EigenvalueRestriction.lean",
+            "symbol": "event_operators_are_projections",
+            "status": "proven"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "3.5"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "QM-006",
+          "dependency_type": "logical"
+        }
+      ],
+      "external_citations": [
+        "Spectral theorem for self-adjoint operators"
+      ],
+      "risk_if_false": "Without projections, no Gleason theorem. No Born rule.\n",
+      "notes": "This follows from standard functional analysis once Boolean\nspectrum is established.\n"
+    },
+    "QM-008": {
+      "id": "QM-008",
+      "name": "Born Rule",
+      "statement": "The probability of an event E given state \u03c8 is P(E|\u03c8) = \u27e8\u03c8|P_E|\u03c8\u27e9,\nwhere P_E is the projection operator for event E. This follows\nfrom Gleason's theorem applied to the LRT projection structure.\n",
+      "role": "derived",
+      "proof_status": "axiomatized",
+      "epistemic_status": "argued",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step6_BornRule.lean",
+            "symbol": "born_rule",
+            "status": "axiom"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "3.6"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "QM-007",
+          "dependency_type": "logical"
+        },
+        {
+          "claim_id": "EXT-002",
+          "dependency_type": "formal"
+        }
+      ],
+      "risk_if_false": "The Born rule is the central predictive apparatus of quantum\nmechanics. Without it, LRT cannot connect to experiment.\n",
+      "notes": "The derivation is complete modulo the dim \u2265 3 condition, which\nfollows from infinite distinguishability of I\u221e.\n"
+    }
+  }
+}

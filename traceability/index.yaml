@@ -1,0 +1,74 @@
+# LRT Traceability Index
+# Auto-generated claim registry index
+# Version: 1.0.0
+# Last updated: 2026-03-16
+
+schema_version: "1.0.0"
+
+# Claim prefixes and their meanings
+prefixes:
+  ONT: "Ontological primitives"
+  LOG: "Logical constraints"
+  ACT: "Actualization and constitution"
+  QM: "Quantum reconstruction chain"
+  PHY: "Dynamics and temporal structure"
+  INT: "Interpretive consequences"
+  PRD: "Empirical predictions"
+  OPN: "Open problems"
+  EXT: "Imported external theorems"
+
+# Core derivation chain (ordered)
+derivation_chain:
+  - ONT-001  # X ≡ [L₃ : I∞ : A]
+  - ONT-002  # I∞ infinite information space
+  - ONT-003  # L₃ three fundamental laws
+  - ACT-001  # X grounds AΩ (bridge principle)
+  - ACT-002  # AΩ actualized domain
+  - LOG-001  # Determinate identity
+  - LOG-002  # Physical proposition criterion
+  - QM-001   # H1 supervenience
+  - QM-002   # H2 operational local tomography
+  - QM-003   # Local tomography (H1 + H2)
+  - EXT-001  # Hardy reconstruction (imported)
+  - QM-004   # Complex Hilbert space
+  - QM-005   # Boolean actualization
+  - QM-006   # Boolean spectrum bridge
+  - QM-007   # PVM structure
+  - EXT-002  # Gleason theorem (imported)
+  - QM-008   # Born rule
+  - PHY-001  # Unitarity
+  - PHY-002  # Temporal emergence
+  - EXT-003  # Stone theorem (imported)
+  - PHY-003  # Hamiltonian generator
+  - PHY-004  # Schrödinger equation
+
+# Predictions
+predictions:
+  - PRD-001  # Complex over real QM
+
+# Open problems
+open_problems:
+  - OPN-001  # Relativistic extension
+  - OPN-002  # Bekenstein-Hawking bridge
+  - OPN-003  # Energy-action relationship
+
+# Status summary
+status_summary:
+  total_claims: 25
+  verified: 6
+  axiomatized: 10
+  imported: 3
+  prose_only: 1
+  open: 5
+
+# Critical choke points
+choke_points:
+  - id: ACT-001
+    description: "Bridge principle: X grounds AΩ"
+    risk: "high"
+  - id: QM-006
+    description: "Boolean spectrum bridge"
+    risk: "high"
+  - id: QM-001
+    description: "H1 derivation incomplete"
+    risk: "medium"

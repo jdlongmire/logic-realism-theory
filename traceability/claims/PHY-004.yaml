@@ -1,0 +1,32 @@
+# PHY-004: Schrödinger Equation
+id: PHY-004
+name: Schrödinger Equation
+statement: |
+  The time evolution of quantum states satisfies iℏ ∂ψ/∂t = Hψ.
+  This follows from U(t) = exp(-iHt/ℏ) via differentiation.
+
+role: derived
+proof_status: axiomatized
+epistemic_status: argued
+
+formal_artifacts:
+  lean:
+    - file: Step10_Schrodinger.lean
+      symbol: schrodinger_equation
+      status: axiom
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "4.4"
+
+depends_on:
+  - claim_id: PHY-003
+    dependency_type: logical
+
+risk_if_false: |
+  The Schrödinger equation is the dynamical law of quantum mechanics.
+  Without it, LRT cannot reproduce quantum predictions.
+
+notes: |
+  This is the endpoint of the LRT derivation chain: from χ to
+  the fundamental equation of quantum dynamics.

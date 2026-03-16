@@ -1,0 +1,33 @@
+# QM-004: Complex Hilbert Space Structure
+id: QM-004
+name: Complex Hilbert Space Structure
+statement: |
+  The state space of actualized systems is a complex Hilbert space H.
+  This follows from local tomography via Hardy reconstruction.
+
+role: derived
+proof_status: axiomatized
+epistemic_status: argued
+
+formal_artifacts:
+  lean:
+    - file: Step4_HardyAxiom.lean
+      symbol: ComplexHilbertSpace
+      status: axiom
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "3.4"
+
+depends_on:
+  - claim_id: QM-003
+    dependency_type: logical
+  - claim_id: EXT-001
+    dependency_type: formal
+
+risk_if_false: |
+  Without Hilbert space, there is no quantum mechanics to derive.
+
+notes: |
+  The derivation depends on both LRT-derived local tomography
+  and imported Hardy theorem.

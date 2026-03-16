@@ -1,0 +1,35 @@
+# EXT-003: Stone's Theorem
+id: EXT-003
+name: Stone's Theorem
+statement: |
+  Every strongly continuous one-parameter unitary group U(t) on
+  a Hilbert space has the form U(t) = exp(-iHt) for some self-adjoint
+  operator H (the generator).
+
+role: imported
+proof_status: imported
+epistemic_status: established
+
+formal_artifacts:
+  lean:
+    - file: Step9_EnergyAction.lean
+      symbol: stone_theorem
+      status: axiom
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "4.3"
+
+depends_on:
+  - claim_id: PHY-001
+    dependency_type: formal
+
+external_citations:
+  - "Stone, M.H. (1932). On one-parameter unitary groups in Hilbert space. Annals of Mathematics 33, 643-648"
+
+risk_if_false: |
+  Stone's theorem is established mathematics. If false, functional
+  analysis would need major revision.
+
+notes: |
+  LRT imports Stone's theorem to obtain the Hamiltonian generator.

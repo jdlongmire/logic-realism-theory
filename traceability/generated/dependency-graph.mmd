@@ -1,0 +1,99 @@
+graph TD
+    classDef primitive fill:#e1f5fe
+    classDef bridge fill:#fff3e0
+    classDef derived fill:#e8f5e9
+    classDef imported fill:#f3e5f5
+    classDef open fill:#ffebee
+    classDef prediction fill:#e0f2f1
+    ACT-001["ACT-001: X Grounds AΩ (Bridge Principle..."]
+    ACT-002["ACT-002: Actualized Domain AΩ"]
+    EXT-001["EXT-001: Hardy Reconstruction Theorem"]
+    EXT-002["EXT-002: Gleason's Theorem"]
+    EXT-003["EXT-003: Stone's Theorem"]
+    LOG-001["LOG-001: Determinate Identity"]
+    LOG-002["LOG-002: Physical Proposition Criterion"]
+    ONT-001["ONT-001: Primitive Ontic State X"]
+    ONT-002["ONT-002: Infinite Information Space I∞"]
+    ONT-003["ONT-003: Three Fundamental Logical Laws..."]
+    OPN-001["OPN-001: Relativistic Extension"]
+    OPN-002["OPN-002: Bekenstein-Hawking Entropy Bri..."]
+    OPN-003["OPN-003: Energy-Action Relationship"]
+    PHY-001["PHY-001: Unitarity"]
+    PHY-002["PHY-002: Temporal Emergence"]
+    PHY-003["PHY-003: Hamiltonian Generator"]
+    PHY-004["PHY-004: Schrödinger Equation"]
+    PRD-001["PRD-001: Complex Over Real QM Predictio..."]
+    QM-001["QM-001: H1 Supervenience Condition"]
+    QM-002["QM-002: H2 Operational Local Tomograph..."]
+    QM-003["QM-003: Local Tomography"]
+    QM-004["QM-004: Complex Hilbert Space Structur..."]
+    QM-005["QM-005: Boolean Actualization"]
+    QM-006["QM-006: Boolean Spectrum Bridge"]
+    QM-007["QM-007: PVM Structure"]
+    QM-008["QM-008: Born Rule"]
+    ONT-001 --> ACT-001
+    ONT-001 --> ACT-002
+    ACT-001 --> ACT-002
+    QM-003 --> EXT-001
+    QM-007 -.->|formal| EXT-002
+    PHY-001 -.->|formal| EXT-003
+    ONT-003 --> LOG-001
+    ACT-002 --> LOG-001
+    ONT-003 --> LOG-002
+    LOG-001 --> LOG-002
+    ONT-001 --> ONT-002
+    ONT-001 --> ONT-003
+    PHY-002 -.->|interpretive| OPN-001
+    PHY-004 --> OPN-001
+    ONT-002 -.->|interpretive| OPN-002
+    OPN-001 --> OPN-002
+    PHY-003 --> OPN-003
+    QM-008 --> PHY-001
+    QM-004 -.->|formal| PHY-001
+    PHY-001 --> PHY-002
+    PHY-001 --> PHY-003
+    EXT-003 -.->|formal| PHY-003
+    PHY-003 --> PHY-004
+    QM-003 --> PRD-001
+    EXT-001 -.->|formal| PRD-001
+    LOG-001 --> QM-001
+    LOG-002 --> QM-001
+    ONT-002 --> QM-002
+    LOG-002 --> QM-002
+    QM-001 --> QM-003
+    QM-002 --> QM-003
+    QM-003 --> QM-004
+    EXT-001 -.->|formal| QM-004
+    ONT-003 --> QM-005
+    LOG-002 --> QM-005
+    QM-004 -.->|formal| QM-006
+    QM-005 --> QM-006
+    QM-006 --> QM-007
+    QM-007 --> QM-008
+    EXT-002 -.->|formal| QM-008
+    class ACT-001 bridge
+    class ACT-002 derived
+    class EXT-001 imported
+    class EXT-002 imported
+    class EXT-003 imported
+    class LOG-001 derived
+    class LOG-002 derived
+    class ONT-001 primitive
+    class ONT-002 primitive
+    class ONT-003 primitive
+    class OPN-001 open
+    class OPN-002 open
+    class OPN-003 open
+    class PHY-001 derived
+    class PHY-002 derived
+    class PHY-003 derived
+    class PHY-004 derived
+    class PRD-001 prediction
+    class QM-001 derived
+    class QM-002 derived
+    class QM-003 derived
+    class QM-004 derived
+    class QM-005 derived
+    class QM-006 bridge
+    class QM-007 derived
+    class QM-008 derived

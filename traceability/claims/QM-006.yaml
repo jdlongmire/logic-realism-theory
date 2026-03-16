@@ -1,0 +1,38 @@
+# QM-006: Boolean Spectrum Bridge
+id: QM-006
+name: Boolean Spectrum Bridge
+statement: |
+  Event operators representing Boolean actualization predicates
+  have spectrum ⊆ {0,1}. This follows from: actualization yields
+  only 0 or 1, eigenvalues are possible measurement outcomes,
+  therefore eigenvalues ∈ {0,1}.
+
+role: bridge
+proof_status: axiomatized
+epistemic_status: argued
+
+formal_artifacts:
+  lean:
+    - file: Step5/EigenvalueRestriction.lean
+      symbol: event_operator_has_bool_spectrum
+      status: axiom
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "3.5"
+
+depends_on:
+  - claim_id: QM-004
+    dependency_type: formal
+  - claim_id: QM-005
+    dependency_type: logical
+
+risk_if_false: |
+  This is the central choke point. Without Boolean spectrum,
+  projection operators cannot be derived, and Gleason's theorem
+  cannot be applied.
+
+notes: |
+  ChatGPT identified this as the "critical leverage point" of the
+  entire program. The eigenvalue-measurement bridge is philosophically
+  argued, not logically forced.

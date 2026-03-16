@@ -1,0 +1,36 @@
+# PRD-001: Complex Over Real QM
+id: PRD-001
+name: Complex Over Real QM Prediction
+statement: |
+  LRT predicts that quantum mechanics uses complex numbers, not
+  real or quaternionic. This follows from local tomography via
+  Hardy reconstruction.
+
+role: prediction
+proof_status: prose_only
+epistemic_status: established
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "5.1"
+
+depends_on:
+  - claim_id: QM-003
+    dependency_type: logical
+  - claim_id: EXT-001
+    dependency_type: formal
+
+external_citations:
+  - "Renou et al. (2021). Quantum theory based on real numbers can be experimentally falsified. Nature 600, 625-629"
+
+risk_if_false: |
+  Recent experiments (Renou et al. 2021) have confirmed complex QM.
+  This prediction is already verified.
+
+falsifies: |
+  If experiments showed real or quaternionic QM equally viable,
+  LRT's local tomography derivation would be undermined.
+
+notes: |
+  This is a successful retrodiction: LRT explains why QM must be
+  complex, and experiments confirm it.

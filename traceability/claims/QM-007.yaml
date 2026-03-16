@@ -1,0 +1,38 @@
+# QM-007: PVM Structure (Projection-Valued Measure)
+id: QM-007
+name: PVM Structure
+statement: |
+  Event operators with spectrum ⊆ {0,1} are orthogonal projections
+  (P² = P = P†). The set of such projections forms a projection-valued
+  measure on the event algebra.
+
+role: derived
+proof_status: verified
+epistemic_status: established
+
+formal_artifacts:
+  lean:
+    - file: Step5/EigenvalueRestriction.lean
+      symbol: bool_spectrum_implies_projection
+      status: proven
+    - file: Step5/EigenvalueRestriction.lean
+      symbol: event_operators_are_projections
+      status: proven
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "3.5"
+
+depends_on:
+  - claim_id: QM-006
+    dependency_type: logical
+
+external_citations:
+  - "Spectral theorem for self-adjoint operators"
+
+risk_if_false: |
+  Without projections, no Gleason theorem. No Born rule.
+
+notes: |
+  This follows from standard functional analysis once Boolean
+  spectrum is established.

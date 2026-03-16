@@ -1,0 +1,39 @@
+# ACT-002: Actualized Domain AΩ
+id: ACT-002
+name: Actualized Domain AΩ
+statement: |
+  AΩ = { c ∈ I∞ | A(c) = actual }. The actualized domain is the
+  set of configurations selected by the actualization operator A.
+  AΩ is non-empty (something exists).
+
+role: derived
+proof_status: verified
+epistemic_status: established
+
+formal_artifacts:
+  lean:
+    - file: Step1_Constitution.lean
+      symbol: A_Omega
+      status: proven
+    - file: Step1_Constitution.lean
+      symbol: A_Omega_determined_by_X
+      status: proven
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "2.2"
+
+depends_on:
+  - claim_id: ONT-001
+    dependency_type: logical
+  - claim_id: ACT-001
+    dependency_type: logical
+
+risk_if_false: |
+  If AΩ is empty, nothing exists. This contradicts the empirical
+  fact of our own existence.
+
+notes: |
+  Non-emptiness is axiomatized via bridge_principle in Lean.
+  Could potentially be derived via contradiction argument
+  (empty AΩ → no distinguishability → contradicts L₃ existence).

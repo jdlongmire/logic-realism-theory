@@ -1,0 +1,141 @@
+# LRT Claim Schema
+# Version: 1.0.0
+# Purpose: Define the structure for all claim files in the traceability system
+
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "https://logic-realism-theory/claim.schema.yaml"
+
+type: object
+required:
+  - id
+  - name
+  - statement
+  - role
+  - proof_status
+  - epistemic_status
+
+properties:
+  id:
+    type: string
+    pattern: "^(ONT|LOG|ACT|QM|PHY|INT|PRD|OPN|EXT)-[0-9]{3}$"
+    description: |
+      Unique identifier with semantic prefix:
+        ONT - ontological primitives
+        LOG - logical constraints
+        ACT - actualization/constitution
+        QM  - quantum reconstruction chain
+        PHY - dynamics/temporal structure
+        INT - interpretive consequences
+        PRD - empirical predictions
+        OPN - open problems
+        EXT - imported external theorems
+
+  name:
+    type: string
+    maxLength: 100
+    description: Short descriptive name
+
+  statement:
+    type: string
+    description: Precise statement of the claim
+
+  role:
+    type: string
+    enum:
+      - primitive        # Foundational ontological element
+      - bridge           # Constitutive principle connecting levels
+      - derived          # Follows from prior claims
+      - imported         # External mathematics/physics
+      - prediction       # Empirical consequence
+      - open             # Unresolved problem
+    description: Grounding role in the theory
+
+  proof_status:
+    type: string
+    enum:
+      - verified         # Lean-proven theorem
+      - axiomatized      # Lean axiom or sorry
+      - imported         # External theorem used without re-proof
+      - prose_only       # Argued in text, no formalization
+      - open             # Not yet addressed
+    description: Formalization status
+
+  epistemic_status:
+    type: string
+    enum:
+      - established      # Well-grounded, minimal dispute
+      - argued           # Supported by argument, could be challenged
+      - conjectured      # Plausible but uncertain
+      - open             # No current position
+    description: Philosophical confidence level
+
+  depends_on:
+    type: array
+    items:
+      type: object
+      required:
+        - claim_id
+      properties:
+        claim_id:
+          type: string
+          pattern: "^(ONT|LOG|ACT|QM|PHY|INT|PRD|OPN|EXT)-[0-9]{3}$"
+        dependency_type:
+          type: string
+          enum:
+            - logical        # Logical entailment
+            - formal         # Lean import
+            - interpretive   # Conceptual connection
+            - empirical      # Empirical support
+    description: Immediate dependencies only
+
+  formal_artifacts:
+    type: object
+    properties:
+      lean:
+        type: array
+        items:
+          type: object
+          required:
+            - file
+            - symbol
+          properties:
+            file:
+              type: string
+              description: Path relative to formalization/LrtFormalization/
+            symbol:
+              type: string
+              description: Lean definition/theorem name
+            status:
+              type: string
+              enum: [proven, axiom, sorry]
+    description: Links to Lean implementation
+
+  source_documents:
+    type: array
+    items:
+      type: object
+      properties:
+        doc:
+          type: string
+          description: Document identifier (e.g., LRT-MASTER, TAB-2026)
+        section:
+          type: string
+    description: Where this claim appears in prose
+
+  external_citations:
+    type: array
+    items:
+      type: string
+    description: External theorems or papers cited
+
+  risk_if_false:
+    type: string
+    description: What breaks downstream if this claim fails
+
+  falsifies:
+    type: string
+    description: For predictions - what evidence would refute this
+
+  notes:
+    type: string
+    description: Additional context or caveats

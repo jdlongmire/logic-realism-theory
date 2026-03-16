@@ -1,0 +1,40 @@
+# ONT-002: Infinite Information Space
+id: ONT-002
+name: Infinite Information Space I∞
+statement: |
+  I∞ is an infinite space of distinguishable configurations.
+  It serves as the substrate of all possible ontic states.
+  No additional structure (topology, metric, algebra) is imposed
+  at the primitive level.
+
+role: primitive
+proof_status: axiomatized
+epistemic_status: established
+
+formal_artifacts:
+  lean:
+    - file: Step0_Primitives.lean
+      symbol: I
+      status: axiom
+    - file: Step0_Primitives.lean
+      symbol: I_infinite
+      status: axiom
+    - file: Step0_Primitives.lean
+      symbol: exists_distinct_configurations
+      status: proven
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "2.1"
+
+depends_on:
+  - claim_id: ONT-001
+    dependency_type: logical
+
+risk_if_false: |
+  Without infinite distinguishability, the configuration space
+  cannot support quantum state spaces of arbitrary dimension.
+
+notes: |
+  Minimalism is intentional. Structure emerges from actualization,
+  not from I∞ directly.

@@ -1,0 +1,34 @@
+# QM-002: H2 Operational Local Tomography
+id: QM-002
+name: H2 Operational Local Tomography
+statement: |
+  Local measurements on subsystems A and B suffice to determine
+  the joint state of AB. No irreducibly global measurement is needed.
+
+role: derived
+proof_status: verified
+epistemic_status: established
+
+formal_artifacts:
+  lean:
+    - file: Step3_LocalTomography.lean
+      symbol: lrt_derives_h2
+      status: proven
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "3.3"
+
+depends_on:
+  - claim_id: ONT-002
+    dependency_type: logical
+  - claim_id: LOG-002
+    dependency_type: logical
+
+risk_if_false: |
+  H2 is the operational half of local tomography. Without it,
+  standard quantum mechanics cannot be recovered.
+
+notes: |
+  Proven in Lean from I∞ independence (subsystems don't share
+  configurations) and event structure.

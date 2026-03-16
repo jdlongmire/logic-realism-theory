@@ -1,0 +1,45 @@
+# ONT-003: Three Fundamental Logical Laws
+id: ONT-003
+name: Three Fundamental Logical Laws L₃
+statement: |
+  L₃ comprises three laws: Identity (∀x. x = x), Non-Contradiction
+  (¬(P ∧ ¬P)), and Excluded Middle (P ∨ ¬P). These are ontic constraints,
+  not merely epistemic or linguistic conventions. They constrain what
+  can be actual.
+
+role: primitive
+proof_status: verified
+epistemic_status: established
+
+formal_artifacts:
+  lean:
+    - file: Step0_Primitives.lean
+      symbol: L3
+      status: proven
+    - file: Step0_Primitives.lean
+      symbol: L3.identity
+      status: proven
+    - file: Step0_Primitives.lean
+      symbol: L3.non_contradiction
+      status: proven
+    - file: Step0_Primitives.lean
+      symbol: L3.excluded_middle
+      status: proven
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "2.1"
+  - doc: PhilArchive-2026
+    section: "Section 2"
+
+depends_on:
+  - claim_id: ONT-001
+    dependency_type: logical
+
+risk_if_false: |
+  Without L₃ as ontic, the Boolean structure of actualization
+  cannot be grounded. The entire projection operator derivation fails.
+
+notes: |
+  Lean's Classical.em provides excluded middle. Identity and
+  non-contradiction are definitional in Lean's type theory.

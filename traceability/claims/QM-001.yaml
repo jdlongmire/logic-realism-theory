@@ -1,0 +1,36 @@
+# QM-001: H1 Supervenience Condition
+id: QM-001
+name: H1 Supervenience Condition
+statement: |
+  For a bipartite system AB, if the local state of A is fixed and
+  the local state of B is fixed, then the joint state of AB is fixed.
+  Joint states supervene on local states.
+
+role: derived
+proof_status: axiomatized
+epistemic_status: argued
+
+formal_artifacts:
+  lean:
+    - file: Step3_LocalTomography.lean
+      symbol: lrt_derives_h1
+      status: sorry
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "3.3"
+
+depends_on:
+  - claim_id: LOG-001
+    dependency_type: logical
+  - claim_id: LOG-002
+    dependency_type: logical
+
+risk_if_false: |
+  H1 is required for local tomography. Without it, the Hardy/CBH
+  reconstruction path is blocked.
+
+notes: |
+  The Lean proof has structure showing how to derive H1 from
+  determinate identity + events, but the bridge to StateSpace
+  requires additional formalization.

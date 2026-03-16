@@ -622,9 +622,85 @@ The reconstruction is real but more modest than the current paper claims. The ke
 
 ---
 
+## Traceability Architecture (2026-03-16)
+
+**Location:** `traceability/`
+
+**Purpose:** Claim-control system making every statement traceable across prose, Lean, imported math, bridge principles, open problems, and predictions.
+
+### Structure
+
+```
+traceability/
+├── claims/           # One YAML per claim (25 initial)
+├── schemas/          # claim.schema.yaml
+├── scripts/          # build.py generates reports
+├── generated/        # Auto-generated outputs
+│   ├── claims.json
+│   ├── dependency-graph.json
+│   ├── dependency-graph.mmd
+│   ├── coverage-report.md
+│   └── risk-report.md
+├── index.yaml
+└── README.md
+```
+
+### Claim Prefixes
+
+| Prefix | Meaning |
+|--------|---------|
+| ONT | Ontological primitives |
+| LOG | Logical constraints |
+| ACT | Actualization/constitution |
+| QM | Quantum reconstruction chain |
+| PHY | Dynamics/temporal structure |
+| PRD | Empirical predictions |
+| OPN | Open problems |
+| EXT | Imported external theorems |
+
+### Status Fields
+
+**proof_status:** verified | axiomatized | imported | prose_only | open
+**epistemic_status:** established | argued | conjectured | open
+
+### Core Derivation Chain (from index.yaml)
+
+```
+ONT-001 → ACT-001 → LOG-001 → LOG-002 → QM-001/002 → QM-003
+→ EXT-001 → QM-004 → QM-005 → QM-006 → QM-007 → EXT-002
+→ QM-008 → PHY-001 → PHY-002 → EXT-003 → PHY-003 → PHY-004
+```
+
+### Critical Choke Points
+
+| Claim | Description | Risk |
+|-------|-------------|------|
+| ACT-001 | Bridge Principle (X grounds AΩ) | HIGH |
+| QM-006 | Boolean Spectrum Bridge | HIGH |
+| QM-001 | H1 derivation incomplete | MEDIUM |
+
+### Governance Rules
+
+1. Every major claim in prose must have a claim ID
+2. Every Lean theorem that matters must reference a claim ID
+3. No claim is "proved" unless `proof_status: verified`
+4. Axiomatized claims remain visibly labeled
+5. Imported mathematics must cite primary source
+6. Open problems must not mix with established derivations
+7. Predictions must identify exact dependencies
+
+### Usage
+
+```bash
+cd traceability && python3 scripts/build.py --all
+```
+
+---
+
 ## Commands
 
 - **Build Lean:** `cd formalization && ~/.elan/bin/lake build`
 - **Check for sorry:** `grep -r "sorry" formalization/LRT/`
 - **List axioms:** `grep -r "^axiom" formalization/LRT/`
 - **Generate PDF:** `pandoc LRT-MASTER.md -o LRT-MASTER.pdf --pdf-engine=xelatex -V geometry:margin=1in`
+- **Build traceability reports:** `cd traceability && python3 scripts/build.py --all`
