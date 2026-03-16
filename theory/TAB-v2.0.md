@@ -14,25 +14,60 @@ This paper establishes the minimal ontological structure required for anything t
 
 ---
 
-## 1. The Problem of Derivation
+## 1. Three Guiding Observations
 
-### 1.1 Absolute Nothing and the Impossibility of Emergence
+The present argument begins from three observations about the structure of physical reality (see Figure 2).
 
-The question of why anything exists rather than nothing admits no answer from within nothing itself. Absolute nothing—the complete absence of being, structure, constraint, and possibility—cannot generate or ground existence. This is not merely an empirical observation but a logical necessity: nothing has no properties, including the property of being able to produce something.
+![Figure 2: Mapping from guiding observations to primitives to core results](figures/LRT-observation-primitive-map.png)
+*Figure 2: The logical arc of the paper. Three guiding observations motivate three primitives, which jointly yield two core results.*
+
+### 1.1 Physical Reality Has an Origin
+
+Physical reality has an origin in something. The origin need not be temporal; it may be ontological. But the idea that the totality of what exists is simply brute and underived is unstable. Even the denial that reality has an origin presupposes some background structure in virtue of which the denial is meaningful.
+
+This observation deepens into an impossibility argument. Absolute nothing (the complete absence of being, structure, constraint, and possibility) cannot generate or ground existence. This is not merely an empirical observation but a logical necessity: nothing has no properties, including the property of being able to produce something.
 
 Attempts to derive existence from nothing face an immediate dilemma. Either "nothing" is truly absolute, in which case no derivation is possible, or "nothing" is qualified (a vacuum, a field, a potential), in which case something already exists and the question is merely pushed back.
 
-The project of fundamental ontology therefore cannot begin with nothing. It must identify the minimal structure that is presupposed by any possible existence whatever.
+The project of fundamental ontology therefore cannot begin with nothing. It must identify the minimal structure that is presupposed by any possible existence whatever. The question arises: what is the minimal "something" in virtue of which there is anything at all?
 
-### 1.2 The Transcendental Question
+### 1.2 Physical Reality Is Logical, Informational, and Dynamic
 
-Our approach is transcendental in the Kantian sense: we ask what conditions must obtain for any determinate existence to be possible. The answer to this question is not empirical but necessary. We are not asking what exists but what must be the case for existence to be determinate rather than chaotic, structured rather than formless.
+Our physical theories presuppose logical constraint: certain configurations are excluded as impossible. They describe systems through structured distinctions (states, fields, amplitudes) which are naturally interpreted as informational. And they encode change: systems evolve, transition, and actualize states.
+
+These features suggest that any adequate primitive ontology must include logical constraint, informational possibility, and a principle of actualization. The three features are not independent: logical constraint requires a domain to constrain, informational structure requires principles of coherence, and actualization requires both a space of candidates and criteria of admissibility.
+
+### 1.3 No Actuality Violates the Fundamental Laws of Logic
+
+Apparent anomalies in physics never license genuine contradiction. Superposition, contextuality, and nonlocal correlations challenge classical intuitions, but they do not instantiate violations of identity, non-contradiction, or excluded middle. The working assumption of physics is that whatever is physically actual must be logically admissible.
+
+This is not merely a methodological convenience. It reflects a deeper structural fact: the actual domain is bounded by logical constraint. Nothing that violates the fundamental laws of logic can obtain. This observation will become the core of the bridge argument.
+
+### 1.4 The Primitive Ontology and Two Core Results
+
+The three observations motivate three primitives:
+
+| Observation | Primitive |
+|-------------|-----------|
+| Reality has an origin | Ontological unity X |
+| Logical/informational/dynamic structure | L₃, I∞, A |
+| No actuality violates logic | Bridge constraint |
+
+The primitives form a co-constitutive unity:
+
+$$X \equiv [L_3 : I_\infty : A]$$
+
+The third observation yields the bridge equation: actuality coincides with the logically admissible configurations of the informational domain:
+
+$$A_\Omega = L_3(I_\infty)$$
+
+The remainder of this paper justifies these claims. Sections 2–4 establish that each primitive is transcendentally necessary. Section 5 demonstrates their mutual constitution. Section 6 derives the bridge identity. Section 7 draws consequences.
+
+### 1.5 Method
+
+Our approach is transcendental in the Kantian sense: we ask what conditions must obtain for any determinate existence to be possible. The answer is not empirical but necessary. We are not asking what exists but what must be the case for existence to be determinate rather than chaotic, structured rather than formless.
 
 The criterion for success is not that we derive the furniture of the world from pure reason. The criterion is that we identify primitives that cannot be coherently denied without presupposing them. Any account of reality that purports to dispense with these primitives will, upon examination, depend upon them.
-
-### 1.3 Method
-
-The argument proceeds by showing that three candidates—logical constraint, informational domain, and actualization—each satisfy the criterion of transcendental necessity. We then demonstrate that these primitives jointly determine the structure of actuality through what we call the bridge argument.
 
 The method requires precision about what "necessity" means in this context. We are not claiming causal necessity (as if the primitives caused reality to exist) or modal necessity in the possible-worlds sense. We are claiming constitutive necessity: these primitives are what it is for anything to be determinately actual.
 
@@ -190,10 +225,10 @@ A therefore operates within the space of logically admissible configurations of 
 
 ### 6.1 The Grounding Sequence
 
-We now present the core argument in three steps (see Figure 1).
+We now present the core argument in three steps (see Figure 3).
 
-![Figure 1: The three-step grounding sequence from primitive ontology to bridge identity](figures/TAB-grounding-sequence.png)
-*Figure 1: The grounding sequence. The primitive ontology (X) grounds the actualized domain (A_Ω), which is then characterized by the bridge identity.*
+![Figure 3: The three-step grounding sequence from primitive ontology to bridge identity](figures/TAB-grounding-sequence.png)
+*Figure 3: The grounding sequence. The primitive ontology (X) grounds the actualized domain (A_Ω), which is then characterized by the bridge identity.*
 
 **Step 1: The Primitive Ontology**
 
