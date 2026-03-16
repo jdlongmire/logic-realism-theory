@@ -8,7 +8,7 @@ Correspondence: jdlongmire@outlook.com
 
 ## Abstract
 
-Why is there determinate being rather than indeterminacy? Standard answers either terminate in brute fact or generate infinite regress. This paper presents the Transcendental Argument for Being (TAB), which derives determinate existence from a primitive that cannot coherently be denied. We define X ≡ [L₃ : I∞ : A]: the mutual constitution of logic, information, and action. Each component is transcendentally necessary: denying it presupposes it. From X, we derive the Core Equation A_Ω = L₃(I∞), which states that the actualized domain is identical to the logical filtration of all possible configurations. We then show that, given X and standard regularity assumptions (continuity, minimality, composition, non-contextual probability), quantum mechanical formalism (projective Hilbert space, Born rule, Schrödinger equation) is the unique mathematical structure satisfying these constraints. The derivation is deductive at each stage: given X plus the regularity assumptions, determinate being and its quantum structure follow necessarily. Logic Realism Theory (LRT) thus grounds physics in metaphysics rather than the reverse.
+Why is there determinate being rather than indeterminacy? Standard answers either terminate in brute fact or generate infinite regress. This paper presents the Transcendental Argument for Being (TAB), which derives determinate existence from a primitive that cannot coherently be denied. We define X ≡ [L₃ : I∞ : A]: the mutual constitution of logic, information, and action. Each component is transcendentally necessary: denying it presupposes it. From X, we derive the Core Equation A_Ω = L₃(I∞), which states that the actualized domain is identical to the logical filtration of all possible configurations. We then show that, given X and standard regularity assumptions (continuity, minimality, composition, non-contextual probability), the standard quantum formalism (projective Hilbert space, Born rule, Schrödinger equation) emerges as the natural mathematical structure satisfying these constraints. Within each phase, the derivation is deductive: from X alone to A_Ω, and from A_Ω plus the regularity assumptions to the quantum formalism. Logic Realism Theory (LRT) thus grounds physics in metaphysics rather than the reverse.
 
 ---
 
@@ -121,7 +121,7 @@ But I∞ cannot persist as such. It violates each law of L₃:
 
 **I∞ violates LEM:** I∞ refuses resolution. For any proposition about I∞, neither the proposition nor its negation determinately holds. I∞ is neither P nor not-P; it is both and neither.
 
-L₃ is not a law imposed on I∞ from outside. L₃ is the condition for the possibility of coherent existence. I∞, as pure indeterminacy, is incoherent. It cannot exist as such.
+L₃ is not a law imposed on I∞ from outside. L₃ is the condition for the possibility of coherent existence. I∞, as pure indeterminacy, is incoherent as a candidate for determinate being; it cannot serve as an ontic state of affairs.
 
 ### Step 2: Constraint requires action to become operative
 
@@ -169,7 +169,7 @@ The Core Equation establishes that the actualized domain is the logical filtrati
 
 The structure of A_Ω is not arbitrary. The constraints that define it, together with the regularity assumptions, induce specific mathematical geometry.
 
-**Why Hilbert space:** States in A_Ω must be distinguishable (by LOI), mutually exclusive where contradictory (by LNC), and exhaustive of possibilities (by LEM). A complex Hilbert space H provides the natural arena for such states: vectors represent configurations, orthogonality represents mutual exclusion, and completeness represents exhaustiveness.
+**Why Hilbert space:** States in A_Ω must be distinguishable (by LOI), mutually exclusive where contradictory (by LNC), and exhaustive of possibilities (by LEM). A complex Hilbert space H provides the natural arena for such states: vectors represent configurations, orthogonality represents mutual exclusion, and completeness represents exhaustiveness. More precisely, the constraints from A_Ω together with R1–R3 place us in the setting of existing reconstruction theorems (Hardy 2001, Chiribella et al. 2011), which show that a complex Hilbert space is forced once such structural conditions are met.
 
 **Why projective:** Physical states are rays in Hilbert space, not vectors. Two vectors differing by a phase factor represent the same state. This projectivization (CP(H) rather than H itself) emerges from the fact that what matters is the *configuration*, not arbitrary labeling conventions. Normalization to unit vectors ensures we are tracking states, not magnitudes.
 
