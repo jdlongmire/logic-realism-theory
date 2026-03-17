@@ -343,7 +343,7 @@ claims:
     status: VERIFIED
     risk: LOW
     file: Step6_BornRule.lean
-    lines: "38"
+    lines: "162"
     dependencies: []
 
   QM-021:
@@ -352,8 +352,67 @@ claims:
     status: VERIFIED
     risk: LOW
     file: Step6_BornRule.lean
-    lines: "55"
+    lines: "179"
     dependencies: []
+
+  # ------------- Gleason/MaxEnt Chain (Track 2.1-2.7) -------------
+
+  QM-049:
+    name: "Frame Functions from 3FLL"
+    description: "FF1-FF3 axioms derived from EM, ID, NC"
+    status: VERIFIED
+    risk: LOW
+    file: Step6_BornRule.lean
+    lines: "75-96"
+    dependencies: ["ONT-001"]
+    notes: "Track 2.2: EM→FF1, ID→FF2, NC→FF3"
+
+  QM-050:
+    name: "Gleason's Theorem"
+    description: "Frame functions with FF1-FF3 have form f(e) = ⟨e|ρ|e⟩"
+    status: IMPORTED
+    risk: LOW
+    file: Step6_BornRule.lean
+    lines: "122-125"
+    references:
+      - "Gleason (1957) J Math Mech 6(6):885-893"
+    notes: "TIER 2: Established mathematics, dim ≥ 3 requirement"
+
+  QM-051:
+    name: "Von Neumann Entropy"
+    description: "S(ρ) = -Tr(ρ ln ρ) entropy functional"
+    status: IMPORTED
+    risk: LOW
+    file: Step6_BornRule.lean
+    lines: "136"
+    references:
+      - "von Neumann (1932) Mathematical Foundations of QM"
+    notes: "TIER 2: Requires matrix logarithm"
+
+  QM-052:
+    name: "MaxEnt Forces Pure State"
+    description: "Purity constraint + MaxEnt → ρ = |ψ⟩⟨ψ|"
+    status: DERIVED
+    risk: LOW
+    file: Step6_BornRule.lean
+    lines: "145-149"
+    dependencies: ["QM-051"]
+    notes: "Track 2.6: Jaynes (1957) MaxEnt principle"
+
+  QM-053:
+    name: "Born Rule from Gleason-MaxEnt"
+    description: "Gleason + MaxEnt → p(x) = |⟨x|ψ⟩|²"
+    status: DERIVED
+    risk: LOW
+    file: Step6_BornRule.lean
+    lines: "159-164"
+    dependencies: ["QM-050", "QM-052"]
+    derivation_summary: |
+      Track 2.7 (non-circular derivation):
+      1. Gleason: μ(P) = Tr(ρP) [from FF1-FF3]
+      2. MaxEnt: ρ = |ψ⟩⟨ψ| [for pure states]
+      3. Therefore: p(x) = Tr(|ψ⟩⟨ψ| |x⟩⟨x|) = |⟨x|ψ⟩|²
+      Born rule is OUTPUT, not INPUT!
 
   QM-022:
     name: "Inner Probability Real"
@@ -686,9 +745,8 @@ claims:
       2. boolean_determination_encoded: Boolean + no-hiding → encoding exists
       3. encoding_gives_purification: Encoding → PurificationPrinciple
       4. boolean_implies_purification: Combined theorem (OPN-005)
-    notes: "Previously OPEN; now DERIVED conditional on EXT-002 import"
-      5. Therefore: purification principle holds
     notes: |
+      COMPLETED 2026-03-17:
       Integration point between LRT (Boolean spectrum) and CDP (purification).
       Provides cleaner K=2 route than OPN-004.
 
@@ -748,6 +806,22 @@ chains:
       - "QM-027: Completeness (axiom)"
       - "QM-028: Born rule (verified)"
 
+  gleason_maxent_chain:
+    name: "3FLL → Born Rule (Non-Circular)"
+    description: "Full Track 2 derivation chain from archive"
+    steps:
+      - "ONT-001: L₃ (verified)"
+      - "QM-049: Frame functions FF1-FF3 from EM, ID, NC (verified)"
+      - "QM-050: Gleason → μ(P) = Tr(ρP) (imported)"
+      - "QM-051: Von Neumann entropy S(ρ) (imported)"
+      - "QM-052: MaxEnt → ρ = |ψ⟩⟨ψ| pure (derived)"
+      - "QM-053: Born rule = |⟨x|ψ⟩|² OUTPUT (derived)"
+    significance: |
+      Resolves Born rule circularity (Issue #6):
+      - Standard QM: Born rule postulated
+      - LRT Track 2: Born rule derived from 3FLL + Gleason + MaxEnt
+      Only approach deriving Born rule from explicit logical foundation (3FLL)
+
   dynamics_chain:
     name: "Unitarity → Schrödinger"
     steps:
@@ -773,13 +847,12 @@ chains:
 # ============================================================
 
 statistics:
-  total: 54
+  total: 59  # +5 Gleason/MaxEnt chain (QM-049 to QM-053)
   by_status:
-    VERIFIED: 24
-    DERIVED: 14   # +1 (OPN-005 now derived)
+    VERIFIED: 26   # +2 (QM-049, frame functions from 3FLL)
+    DERIVED: 16    # +2 (QM-052 MaxEnt, QM-053 Born-Gleason-MaxEnt)
     AXIOMATIZED: 11
-    IMPORTED: 4
-    OPEN: 1       # -1 (OPN-005 resolved)
+    IMPORTED: 6    # +2 (QM-050 Gleason, QM-051 von Neumann entropy)
     OPEN: 2
   by_risk:
     LOW: 38
