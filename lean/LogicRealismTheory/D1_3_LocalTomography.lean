@@ -116,23 +116,25 @@ section OperationalAccessibility
 
 /-- A measurement on a subsystem -/
 structure Measurement (S : Subsystem) where
-  outcomes : Type*
+  outcomes : Type
   measure : S.carrier → outcomes
 
 /-- A local measurement protocol (measurements on A and B without communication) -/
 structure LocalProtocol (C : CompositeSystem) where
-  M_A : Measurement C.A
-  M_B : Measurement C.B
-  statistics : M_A.outcomes × M_B.outcomes → Prop  -- Joint statistics
+  outcomes_A : Type
+  outcomes_B : Type
+  measure_A : C.A.carrier → outcomes_A
+  measure_B : C.B.carrier → outcomes_B
+  statistics : outcomes_A × outcomes_B → Prop  -- Joint statistics
 
 /-- A relation is operationally accessible via local measurements -/
 def OperationallyAccessible (C : CompositeSystem) (R : SubsystemRelation C.A C.B) : Prop :=
   ∃ (protocol : LocalProtocol C),
     -- The protocol's statistics distinguish R-holds from R-doesn't-hold
     ∀ (a : C.A.carrier) (b : C.B.carrier),
-      R.rel a b ↔ ∃ (out_a : protocol.M_A.outcomes) (out_b : protocol.M_B.outcomes),
-        protocol.M_A.measure a = out_a ∧
-        protocol.M_B.measure b = out_b ∧
+      R.rel a b ↔ ∃ (out_a : protocol.outcomes_A) (out_b : protocol.outcomes_B),
+        protocol.measure_A a = out_a ∧
+        protocol.measure_B b = out_b ∧
         protocol.statistics (out_a, out_b)
 
 /-- Locally accessible: can be determined by local measurements alone -/
@@ -192,8 +194,9 @@ def H2 (C : CompositeSystem) : Prop :=
   ∀ (ab₁ ab₂ : C.A.carrier × C.B.carrier),
     C.composite_state ab₁ → C.composite_state ab₂ →
     -- If all local measurement statistics agree...
-    (∀ (protocol : LocalProtocol C) (out_a out_b),
-      protocol.statistics (out_a, out_b) ↔ protocol.statistics (out_a, out_b)) →
+    (∀ (protocol : LocalProtocol C),
+      ∀ (out_a : protocol.outcomes_A) (out_b : protocol.outcomes_B),
+        protocol.statistics (out_a, out_b) ↔ protocol.statistics (out_a, out_b)) →
     -- ...then the states are identical
     ab₁ = ab₂
 
