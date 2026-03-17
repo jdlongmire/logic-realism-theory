@@ -1,10 +1,10 @@
 /-
-  Logic Realism Theory — Step 4c: Boolean Actualization to Purification Bridge
+  Logic Realism Theory — Step 4.Purification: Boolean Actualization to Purification Bridge
 
   **OPN-005: Boolean Actualization Implies Purification**
 
   This file establishes the integration point between:
-  - LRT's Boolean actualization (from Step 0, Step 4b)
+  - LRT's Boolean actualization (from Step 0, Step 4.Boolean)
   - CDP's purification principle (external result)
 
   The combined derivation yields K=2 without relying solely on either approach.
@@ -13,22 +13,23 @@
   Boolean spectrum + no-hiding theorem → purification principle
 
   **Chain:**
-  L₃ → Boolean spectrum (Step 4b) → Purification (this file) → K=2 (CDP import)
+  L₃ → Boolean spectrum (Step 4.Boolean) → Purification (this file) → K=2 (CDP import)
 
   **Traceability:** OPN-005
   **Status:** Open derivation (axiomatized with justification sketch)
 
   Author: James D. Longmire
   Date: 2026-03-16
+  Refactored: 2026-03-17 (namespace unification)
   Epistemic Status: CONJECTURED (pending derivation)
 -/
 
-import LrtFormalization.Step4_BooleanBridge
+import LrtFormalization.Step4.Boolean
 import Mathlib.Analysis.InnerProductSpace.Basic
 
-namespace LRT.Step4c
+namespace LRT.Step4.Purification
 
-open LRT.Step0 LRT.Step4b
+open LRT.Step0 LRT.Step4.Boolean
 
 /-! ## Part I: The Purification Principle
 
@@ -105,10 +106,10 @@ axiom no_hiding_theorem :
 
 **Derivation sketch:**
 
-1. **Boolean actualization** (from Step 4b):
+1. **Boolean actualization** (from Step 4.Boolean):
    - All events have determinate truth values (from L₃)
    - Measurement outcomes are in {0, 1} (from A's binary character)
-   - Event operators have Boolean spectrum (proven in Step 4b)
+   - Event operators have Boolean spectrum (proven in Step 4.Boolean)
 
 2. **Determinacy requires encoding:**
    - For each configuration c, A(c) ∈ {actual, nonActual} is determinate
@@ -131,7 +132,7 @@ axiom no_hiding_theorem :
     STATUS: Open derivation (axiomatized pending full proof)
 
     If:
-    - All events have Boolean spectrum (from Step 4b)
+    - All events have Boolean spectrum (from Step 4.Boolean)
     - Information cannot be hidden (no-hiding theorem)
 
     Then:
@@ -150,7 +151,7 @@ axiom no_hiding_theorem :
     **Traceability:** OPN-005
 -/
 axiom boolean_implies_purification (χ : X) :
-  -- Premise 1: All events have Boolean spectrum (from Step 4b)
+  -- Premise 1: All events have Boolean spectrum (from Step 4.Boolean)
   (∀ (H : Type*) [NormedAddCommGroup H] [InnerProductSpace ℂ H] [CompleteSpace H]
      (E : H →L[ℂ] H), IsSelfAdjoint' E → HasBooleanSpectrum E) →
   -- Premise 2: No-hiding theorem holds
@@ -198,7 +199,7 @@ Status: Open derivation (requires showing K=1 forbids interference)
 
 **Route B (New - OPN-005 + EXT-003):**
 ```
-L₃ → Boolean spectrum (Step 4b)
+L₃ → Boolean spectrum (Step 4.Boolean)
          ↓
     + no-hiding (EXT-002)
          ↓
@@ -211,7 +212,7 @@ L₃ → Boolean spectrum (Step 4b)
 Status: Axiomatized but with clearer import structure
 
 The second route has the advantage that:
-1. Step 4b (Boolean spectrum) is largely derived
+1. Step 4.Boolean (Boolean spectrum) is largely derived
 2. No-hiding is an established physics result
 3. CDP's K=2 proof is well-vetted
 
@@ -238,7 +239,7 @@ theorem k2_via_purification (χ : X)
 
 | Claim ID | Name | Status | Dependencies |
 |----------|------|--------|--------------|
-| OPN-005 | Boolean → Purification | OPEN | Step 4b, EXT-002 |
+| OPN-005 | Boolean → Purification | OPEN | Step 4.Boolean, EXT-002 |
 | EXT-002 | No-Hiding Theorem | IMPORTED | External |
 | EXT-003 | CDP Purification K=2 | IMPORTED | External |
 
@@ -286,4 +287,4 @@ interference argument (OPN-004), because it leverages well-established
 results from quantum information theory.
 -/
 
-end LRT.Step4c
+end LRT.Step4.Purification

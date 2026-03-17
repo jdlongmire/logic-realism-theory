@@ -19,7 +19,7 @@ import LrtFormalization.Step2_DeterminateIdentity
 
 -- Tomography and Hilbert Space (Steps 3-4)
 import LrtFormalization.Step3_LocalTomography
-import LrtFormalization.Step4_HardyAxiom
+import LrtFormalization.Step4
 
 -- Eigenvalue Restriction (Step 5)
 import LrtFormalization.Step5.EigenvalueRestriction

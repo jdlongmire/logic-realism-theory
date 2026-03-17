@@ -1,5 +1,5 @@
 /-
-  Logic Realism Theory — Step 4: Hardy's Axiom and Hilbert Space Structure
+  Logic Realism Theory — Step 4.Hardy: Hardy's Axiom and Hilbert Space Structure
 
   Formalizes the consequence of Step 3: once CP(H) is established,
   standard Hilbert space properties follow.
@@ -14,6 +14,7 @@
 
   Author: James D. Longmire
   Date: 2026-03-13
+  Refactored: 2026-03-17 (namespace unification)
   Status: Foundation
   Epistemic Status: ESTABLISHED (conditional on Step 3)
 -/
@@ -22,7 +23,7 @@ import LrtFormalization.Step3_LocalTomography
 import Mathlib.Analysis.InnerProductSpace.Basic
 import Mathlib.Analysis.InnerProductSpace.Projection.Basic
 
-namespace LRT.Step4
+namespace LRT.Step4.Hardy
 
 open LRT.Step0 LRT.Step1 LRT.Step2 LRT.Step3
 
@@ -202,4 +203,4 @@ The quantum mechanical formalism is now established.
 Step 5 will use this to derive the projection property.
 -/
 
-end LRT.Step4
+end LRT.Step4.Hardy

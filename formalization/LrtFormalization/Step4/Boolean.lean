@@ -1,5 +1,5 @@
 /-
-  Logic Realism Theory — Step 4b: Boolean Actualization to Projection Bridge
+  Logic Realism Theory — Step 4.Boolean: Boolean Actualization to Projection Bridge
 
   **PHASE 4 (2026-03-16): The Mathematical Hinge**
 
@@ -33,6 +33,7 @@
 
   Author: James D. Longmire
   Date: 2026-03-16
+  Refactored: 2026-03-17 (namespace unification)
   Status: Foundation (Phase 4)
   Epistemic Status: DERIVED (conditional on representation axiom)
 -/
@@ -42,7 +43,7 @@ import LrtFormalization.Step5.EigenvalueRestriction
 import Mathlib.Analysis.InnerProductSpace.Basic
 import Mathlib.Algebra.Algebra.Spectrum.Basic
 
-namespace LRT.Step4b
+namespace LRT.Step4.Boolean
 
 open LRT.Step0 LRT.Step1 LRT.Step2 LRT.Step3 LRT.Step5
 
@@ -318,4 +319,4 @@ This gap is exactly what Phase 5 (Born rule) will address: showing that
 probability of outcome = |⟨ψ|P|ψ⟩| derives from actualization statistics.
 -/
 
-end LRT.Step4b
+end LRT.Step4.Boolean
