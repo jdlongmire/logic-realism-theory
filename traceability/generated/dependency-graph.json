@@ -184,13 +184,13 @@
       "id": "QM-011",
       "name": "Eigenvalue-Outcome Correspondence",
       "role": "bridge",
-      "proof_status": "axiomatized"
+      "proof_status": "verified"
     },
     {
       "id": "QM-012",
       "name": "Faithful Event Representation",
       "role": "bridge",
-      "proof_status": "axiomatized"
+      "proof_status": "derived"
     },
     {
       "id": "QM-013",
@@ -474,6 +474,11 @@
       "from": "QM-005",
       "to": "QM-012",
       "type": "logical"
+    },
+    {
+      "from": "EXT-001",
+      "to": "QM-012",
+      "type": "formal"
     },
     {
       "from": "QM-006",

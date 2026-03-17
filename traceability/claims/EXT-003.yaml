@@ -13,8 +13,14 @@ epistemic_status: established
 formal_artifacts:
   lean:
     - file: Step9_EnergyAction.lean
-      symbol: stone_theorem
+      symbol: stones_theorem
       status: axiom
+    - file: Step9_EnergyAction.lean
+      symbol: StronglyContUnitaryGroup
+      status: definition
+    - file: Step9_EnergyAction.lean
+      symbol: stones_theorem_from_group
+      status: theorem
 
 source_documents:
   - doc: LRT-MASTER
@@ -33,3 +39,19 @@ risk_if_false: |
 
 notes: |
   LRT imports Stone's theorem to obtain the Hamiltonian generator.
+
+  **Phase 4 Update (2026-03-17):** Stone's theorem now requires explicit
+  StronglyContUnitaryGroup input, making the strong continuity precondition
+  explicit in the type signature. This is more precise than the original
+  formulation which implicitly assumed strong continuity.
+
+agent_history:
+  - agent_id: C6
+    date: "2026-03-17"
+    action: strengthened
+    summary: |
+      Added StronglyContUnitaryGroup structure to make Stone's theorem precondition
+      (strong continuity) explicit. Added stones_theorem_from_group as a backwards-
+      compatible theorem that takes UnitaryGroup plus a proof of strong continuity.
+      This doesn't change the proof_status (still imported/axiom) but makes the
+      mathematical requirements more precise. Build verified successfully.

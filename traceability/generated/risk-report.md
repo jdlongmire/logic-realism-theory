@@ -47,8 +47,7 @@ cannot be applied.
 - Eigenvalue λ = 1 occurs iff some configuration c satisfies e.query(c) = true
 - Eigenvalue λ = 0 occurs iff some configuration c satisfies e.query(c)...
 
-**Risk if false:** This is the remaining Tier 2 axiom in the Boolean bridge chain.
-If eigenvalues don't correspond to outcomes, the entire operator
+**Risk if false:** If eigenvalues don't correspond to outcomes, the entire operator
 representation loses physical meaning.
 
 

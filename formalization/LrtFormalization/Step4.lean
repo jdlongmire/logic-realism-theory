@@ -44,7 +44,7 @@ export LRT.Step4.Hardy (
 
 -- Re-export from Boolean
 export LRT.Step4.Boolean (
-  Event.isSharp
+  isSharp
   all_events_sharp
   EventRepresentation
   RepresentsBooleanActualization
@@ -56,7 +56,7 @@ export LRT.Step4.Boolean (
 
 -- Re-export from Purification
 export LRT.Step4.Purification (
-  PurificationPrinciple
+  PurificationHolds
   boolean_implies_purification
   k2_via_purification
 )

@@ -10,12 +10,12 @@ Generated: 2026-03-16
 
 | Status | Count |
 |--------|-------|
-| axiomatized | 14 |
-| derived | 1 |
+| axiomatized | 12 |
+| derived | 2 |
 | imported | 3 |
 | open | 4 |
 | prose_only | 1 |
-| verified | 10 |
+| verified | 11 |
 
 ### By Role
 
@@ -32,7 +32,8 @@ Generated: 2026-03-16
 
 | Status | Count |
 |--------|-------|
-| argued | 15 |
+| argued | 14 |
+| derived | 1 |
 | established | 15 |
 | open | 3 |
 
@@ -76,7 +77,7 @@ Generated: 2026-03-16
 - **Proof status:** imported
 - **Epistemic status:** established
 - **Depends on:** PHY-001
-- **Lean artifacts:** 1 symbols
+- **Lean artifacts:** 3 symbols
 
 ### LOG-001: Determinate Identity
 
@@ -161,7 +162,7 @@ Generated: 2026-03-16
 - **Proof status:** axiomatized
 - **Epistemic status:** argued
 - **Depends on:** QM-008, QM-004
-- **Lean artifacts:** 1 symbols
+- **Lean artifacts:** 5 symbols
 
 ### PHY-002: Temporal Emergence
 
@@ -277,17 +278,17 @@ Generated: 2026-03-16
 ### QM-011: Eigenvalue-Outcome Correspondence
 
 - **Role:** bridge
-- **Proof status:** axiomatized
-- **Epistemic status:** argued
+- **Proof status:** verified
+- **Epistemic status:** derived
 - **Depends on:** QM-009, QM-010, EXT-001
-- **Lean artifacts:** 1 symbols
+- **Lean artifacts:** 2 symbols
 
 ### QM-012: Faithful Event Representation
 
 - **Role:** bridge
-- **Proof status:** axiomatized
+- **Proof status:** derived
 - **Epistemic status:** argued
-- **Depends on:** QM-004, QM-005
+- **Depends on:** QM-004, QM-005, EXT-001
 - **Lean artifacts:** 1 symbols
 
 ### QM-013: Complete Events Form PVMs

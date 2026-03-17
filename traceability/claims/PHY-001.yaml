@@ -15,6 +15,18 @@ formal_artifacts:
     - file: Step7_Unitarity.lean
       symbol: unitarity
       status: axiom
+    - file: Step9_EnergyAction.lean
+      symbol: unitary_group_inverse
+      status: theorem
+    - file: Step9_EnergyAction.lean
+      symbol: unitary_group_preserves_norm
+      status: theorem
+    - file: Step9_EnergyAction.lean
+      symbol: toSymmetry
+      status: definition
+    - file: Step9_EnergyAction.lean
+      symbol: time_translation_is_symmetry
+      status: theorem
 
 source_documents:
   - doc: LRT-MASTER
@@ -34,3 +46,27 @@ risk_if_false: |
 notes: |
   Unitarity is a consequence of probability conservation in
   Hilbert space, not an independent postulate in LRT.
+
+agent_history:
+  - agent_id: C5
+    date: "2026-03-17"
+    action: strengthened
+    summary: |
+      Converted wigner_theorem from axiom to theorem using mathlib's
+      LinearMap.norm_map_iff_inner_map_map. This establishes that norm-preserving
+      linear maps preserve inner products (the key step in unitarity derivation).
+      The main step7_unitarity theorem still relies on LRT-specific axioms
+      (evolution_preserves_norm, evolution_bijective) but now uses a proven lemma.
+      Build verified successfully.
+  - agent_id: C6
+    date: "2026-03-17"
+    action: strengthened
+    summary: |
+      Added derived theorems in Step9_EnergyAction.lean that extend unitarity structure:
+      - unitary_group_inverse: U(t)*U(-t) = I (derived from group axioms)
+      - unitary_group_preserves_norm: norm preservation at all times
+      - toSymmetry: converts UnitaryGroup to Symmetry structure
+      - time_translation_is_symmetry: unitary evolution = symmetry
+      These are fully derived from group axioms with no additional assumptions.
+      Also added StronglyContUnitaryGroup structure for explicit strong continuity.
+      Build verified successfully.

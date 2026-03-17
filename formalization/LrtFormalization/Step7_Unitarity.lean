@@ -20,6 +20,7 @@ import LrtFormalization.Step6_BornRule
 import Mathlib.Analysis.InnerProductSpace.Basic
 import Mathlib.Analysis.InnerProductSpace.Adjoint
 import Mathlib.Analysis.InnerProductSpace.Projection.Basic
+import Mathlib.Analysis.InnerProductSpace.LinearMap
 
 namespace LRT.Step7
 
@@ -99,15 +100,21 @@ The LRT argument: if evolution preserves:
 Then evolution must be unitary.
 -/
 
-/-- **TIER 2 AXIOM:** Wigner's theorem — norm-preserving linear maps are unitary.
+/-- **THEOREM (from mathlib):** Wigner's theorem — norm-preserving linear maps preserve inner products.
 
-    Justification: Standard result in functional analysis. A linear isometry
-    on a Hilbert space is necessarily unitary (up to a phase factor on rays). -/
-axiom wigner_theorem
+    Derived from mathlib's `LinearMap.norm_map_iff_inner_map_map`: norm preservation
+    is equivalent to inner product preservation for linear maps on inner product spaces.
+    This is the content of Wigner's theorem for linear (not anti-linear) maps. -/
+theorem wigner_theorem
     (U : H →L[ℂ] H)
     (h_norm : PreservesNorm U)
-    (h_bij : Function.Bijective U) :
-    IsUnitary U
+    (_h_bij : Function.Bijective U) :
+    IsUnitary U := by
+  constructor
+  intro ψ φ
+  -- Use mathlib's LinearMap.norm_map_iff_inner_map_map
+  have h := (LinearMap.norm_map_iff_inner_map_map U.toLinearMap).mp h_norm
+  exact h ψ φ
 
 /-- **TIER 2 AXIOM (LRT):** Time evolution preserves distinguishability.
 
@@ -172,7 +179,7 @@ CONFIDENCE: HIGH (conditional on Steps 4-6)
 
 - PreservesNorm, PreservesInner: Defined
 - IsUnitary: Defined
-- Wigner's theorem: Axiomatized (Tier 2)
+- Wigner's theorem: **PROVEN** (derived from mathlib's LinearMap.norm_map_iff_inner_map_map)
 - LRT constraints: Axiomatized (L₃ → distinguishability preservation)
 - step7_unitarity: Proven
 - UnitaryGroup: Defined

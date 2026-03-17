@@ -50,23 +50,35 @@ attribute [local instance] actualization_ordering
 
 /-- Events form a chain (totally ordered set) -/
 theorem events_are_chain : IsChain (· ≤ ·) (Set.univ : Set ActualizationEvent) := by
-  intro a _ b _
-  exact le_or_lt a b |>.imp le_of_lt id |>.symm.imp (fun h => h.le) id
+  intro a _ b _ _
+  exact le_total a b
 
 /-! ## Part II: Time Parameter Extraction
 
 Given the ordering, we extract a continuous parameter.
 -/
 
-/-- Time is a real parameter labeling the actualization sequence -/
-def Time := ℝ
+/-- Time is a real parameter labeling the actualization sequence.
+    We use an abbreviation to inherit ℝ's type class instances. -/
+abbrev Time := ℝ
 
 /-- **TIER 2 AXIOM:** There exists a monotonic embedding of events into ℝ.
 
     This makes the discrete actualization sequence continuous. -/
 axiom time_embedding : ActualizationEvent → Time
 
+noncomputable instance : Preorder Time := inferInstanceAs (Preorder ℝ)
+noncomputable instance : TopologicalSpace Time := inferInstanceAs (TopologicalSpace ℝ)
+noncomputable instance : LT Time := inferInstanceAs (LT ℝ)
+noncomputable instance : Sub Time := inferInstanceAs (Sub ℝ)
+
 axiom time_embedding_mono : Monotone time_embedding
+
+/-- **TIER 2 AXIOM:** The time embedding is strictly monotone.
+
+    This is stronger than just monotone: e₁ < e₂ → f(e₁) < f(e₂).
+    Ensures distinct events get distinct times. -/
+axiom time_embedding_strict_mono : StrictMono time_embedding
 
 /-- **TIER 2 AXIOM:** The time embedding has dense range.
 
@@ -76,12 +88,12 @@ axiom time_embedding_mono : Monotone time_embedding
 axiom time_embedding_dense : DenseRange time_embedding
 
 /-- The time of an event -/
-def eventTime (e : ActualizationEvent) : Time := time_embedding e
+noncomputable def eventTime (e : ActualizationEvent) : Time := time_embedding e
 
 /-- Earlier events have smaller time values -/
 theorem earlier_smaller_time (e₁ e₂ : ActualizationEvent) (h : e₁ < e₂) :
-    eventTime e₁ < eventTime e₂ := by
-  exact time_embedding_mono.strictMono h
+    eventTime e₁ < eventTime e₂ :=
+  time_embedding_strict_mono h
 
 /-! ## Part III: Connection to Unitary Evolution
 
@@ -90,11 +102,15 @@ The time parameter connects to Step 7's unitary group.
 
 /-- **TIER 2 AXIOM:** Time evolution U(t) corresponds to actualization ordering.
 
-    Moving forward in time = moving along the actualization sequence. -/
+    Moving forward in time = moving along the actualization sequence.
+
+    The original formulation used inverse notation, but ContinuousLinearMap
+    doesn't have a general Inv instance. Instead, we express the relationship
+    via the group property: U(t₂) = U(t₂-t₁) * U(t₁), which is equivalent. -/
 axiom evolution_matches_actualization
     (U : UnitaryGroup (H := H))
     (e₁ e₂ : ActualizationEvent) :
-    U.U (eventTime e₂ - eventTime e₁) = U.U (eventTime e₂) * (U.U (eventTime e₁))⁻¹
+    U.U (eventTime e₂) = U.U (eventTime e₂ - eventTime e₁) * U.U (eventTime e₁)
 
 /-! ## Part IV: LRT Derivation
 
@@ -113,13 +129,9 @@ The philosophical content: why does time have these properties?
     4. The real line ℝ is the unique continuous completion of such orderings
 
     This is why time is a real-valued parameter, not by assumption but by derivation. -/
-structure TemporalEmergence where
-  /-- Actualization events -/
-  events : Type*
-  /-- Linear ordering -/
-  [ordering : LinearOrder events]
+structure TemporalEmergence (E : Type) [LinearOrder E] where
   /-- Embedding into reals -/
-  embed : events → ℝ
+  embed : E → ℝ
   /-- Monotonicity -/
   mono : Monotone embed
   /-- Density (between any two event-times, there could be another) -/
@@ -130,10 +142,8 @@ structure TemporalEmergence where
     The existence of a temporal ordering is a consequence of A_Ω's operation,
     not an independent metaphysical posit. -/
 theorem step8_temporal_emergence :
-    ∃ T : TemporalEmergence, True :=
+    ∃ T : TemporalEmergence ActualizationEvent, True :=
   ⟨{
-    events := ActualizationEvent,
-    ordering := actualization_ordering,
     embed := time_embedding,
     mono := time_embedding_mono,
     dense := time_embedding_dense

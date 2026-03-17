@@ -34,3 +34,18 @@ risk_if_false: |
 notes: |
   LRT imports Gleason rather than re-proving it. The work is in
   showing LRT satisfies the premises (projections, dim ≥ 3).
+
+agent_history:
+  - agent_id: C4
+    date: "2026-03-17"
+    action: strengthened
+    summary: |
+      Strengthened frame function axiom definitions in Step6_BornRule.lean:
+      - FF1_Normalization now uses OrthonormalBasis and Fintype sums
+      - FF2_BasisIndependence now uses Complex.normSq inner product conditions
+      - FF3_Additivity now includes orthogonality via inner product = 0
+      - Added FF0_NonNegative for explicit non-negativity constraint
+      - ValidFrameFunction structure now requires FiniteDimensional instance
+      - Added import for Mathlib.Analysis.InnerProductSpace.PiL2
+      gleason_theorem axiom unchanged (correctly Tier 2 imported math).
+      Build successful (2476 jobs). No proof_status change (remains axiom).
