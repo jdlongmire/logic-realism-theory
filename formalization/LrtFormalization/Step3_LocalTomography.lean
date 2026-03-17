@@ -411,13 +411,13 @@ def HardyK : ℕ := 2  -- K = 2 corresponds to quantum mechanics over ℂ
 
 /-- **OPEN DERIVATION TARGET (Phase 3 Priority): LRT Forces K = 2**
 
-    STATUS: Axiomatized pending derivation
+    STATUS: Axiomatized pending derivation (two routes available)
 
     The combination of L₃ constraints should force Hardy's parameter to be K = 2.
     This is the most distinctive LRT claim and warrants derivation rather than
     assumption.
 
-    **Derivation sketch (to be formalized):**
+    **Route A (OPN-004): Boolean-Interference Path**
     1. Boolean actualization forces measurement events to have {0,1}-spectrum
     2. Interference phenomena require relative phases (double-slit, Mach-Zehnder)
     3. K = 1 (reals): No phase structure → no non-trivial interference → rejected
@@ -428,22 +428,41 @@ def HardyK : ℕ := 2  -- K = 2 corresponds to quantum mechanics over ℂ
        - Interference capability (from phase structure)
        - Compositional locality (associative tensors)
 
+    Target lemmas:
+    - no_interference_real_hilbert: K=1 → no double-slit interference pattern
+    - quaternionic_composition_failure: K=4 + 3-party system → locality violation
+    - complex_unique_balance: K=2 uniquely satisfies Boolean + interference + locality
+
+    **Route B (OPN-005): Boolean-Purification Path** (NEW)
+    1. Boolean spectrum (from Step 4b)
+    2. No-hiding theorem (imported, EXT-002)
+    3. Boolean + no-hiding → purification (OPN-005)
+    4. Purification + H1 → K=2 (CDP, EXT-003)
+
+    This route leverages established results and may be easier to formalize.
+    See Step4_Purification.lean for details.
+
+    **Integration insight:** The Boolean-purification bridge exists because
+    Boolean determinacy requires the outcome to be encoded somewhere (no-hiding),
+    and the encoding system purifies the "mixed" subsystem state.
+
     **Key insight:** The Boolean-to-interference bridge comes from A's behavior:
     - A selects definite outcomes (Boolean measurement)
     - But A_Ω has superposition structure (from I∞)
     - The interplay forces complex amplitudes
 
-    **Target lemmas for derivation (future):**
-    - no_interference_real_hilbert: K=1 → no double-slit interference pattern
-    - quaternionic_composition_failure: K=4 + 3-party system → locality violation
-    - complex_unique_balance: K=2 uniquely satisfies Boolean + interference + locality
-
     **References:**
     - Hardy (2012), "Limited Holism and Real-Vector-Space Quantum Theory"
     - Stueckelberg (1960) on complex numbers from reversibility
     - Wootters (1990) on real vs complex QM
+    - Braunstein & Pati (2007), no-hiding theorem
+    - CDP (2011), purification-based reconstruction
 
-    **Traceability:** OPN-004 (K=2 Forcing Derivation)
+    **Traceability:**
+    - OPN-004: K=2 via Boolean-Interference (original route)
+    - OPN-005: Boolean → Purification (integration point, new route)
+    - EXT-002: No-Hiding Theorem (imported)
+    - EXT-003: CDP Purification K=2 (imported)
 -/
 axiom K_eq_2_open (χ : Step0.X) :
   ∃ (interference_req : Prop) (composition_req : Prop),
