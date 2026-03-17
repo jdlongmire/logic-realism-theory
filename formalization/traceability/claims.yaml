@@ -277,10 +277,10 @@ claims:
     name: "Purification Principle"
     description: "Every mixed state has a purification"
     status: DERIVED
-    risk: MEDIUM
-    file: Step4_Purification.lean
-    dependencies: ["QM-006", "EXT-002"]
-    notes: "Via OPN-005 (Boolean → Purification)"
+    risk: LOW
+    file: Step4/Purification.lean
+    dependencies: ["QM-006", "EXT-002", "OPN-005"]
+    notes: "Via OPN-005 (Boolean → Purification), now fully derived"
 
   # ============================================================
   # STEP 5: Eigenvalue Restriction (Projections)
@@ -671,19 +671,22 @@ claims:
   OPN-005:
     name: "Boolean → Purification"
     description: "Boolean spectrum + no-hiding → purification"
-    status: OPEN
-    risk: MEDIUM
-    file: Step4_Purification.lean
+    status: DERIVED
+    risk: LOW
+    file: Step4/Purification.lean
     dependencies: ["QM-006", "EXT-002"]
-    target_lemmas:
+    proven_lemmas:
+      - "EncodedDetermination (structure)"
       - "boolean_determination_encoded"
-      - "encoding_gives_pure_joint"
-      - "pure_joint_is_purification"
-    derivation_sketch: |
-      1. Boolean actualization: A determines outcomes in {0,1}
-      2. No-hiding: determination must be encoded somewhere
-      3. Encoded determination implies pure joint state
-      4. Pure joint state marginalizes to "mixed" state
+      - "encoding_gives_purification"
+      - "boolean_implies_purification"
+    derivation_summary: |
+      COMPLETED 2026-03-17:
+      1. EncodedDetermination: Formalized encoding of Boolean outcomes
+      2. boolean_determination_encoded: Boolean + no-hiding → encoding exists
+      3. encoding_gives_purification: Encoding → PurificationPrinciple
+      4. boolean_implies_purification: Combined theorem (OPN-005)
+    notes: "Previously OPEN; now DERIVED conditional on EXT-002 import"
       5. Therefore: purification principle holds
     notes: |
       Integration point between LRT (Boolean spectrum) and CDP (purification).
@@ -760,7 +763,7 @@ chains:
     steps:
       - "QM-006: Boolean spectrum (derived)"
       - "EXT-002: No-hiding (imported)"
-      - "OPN-005: Boolean → Purification (open)"
+      - "OPN-005: Boolean → Purification (DERIVED 2026-03-17)"
       - "QM-001: H1 (derived)"
       - "EXT-003: CDP K=2 (imported)"
       - "QM-008: K=2 (derived via this route)"
@@ -773,9 +776,10 @@ statistics:
   total: 54
   by_status:
     VERIFIED: 24
-    DERIVED: 13
+    DERIVED: 14   # +1 (OPN-005 now derived)
     AXIOMATIZED: 11
     IMPORTED: 4
+    OPEN: 1       # -1 (OPN-005 resolved)
     OPEN: 2
   by_risk:
     LOW: 38
@@ -817,4 +821,4 @@ choke_points:
 
   - id: OPN-005
     description: "Boolean → Purification bridge"
-    mitigation: "Leverages established results; medium difficulty"
+    mitigation: "RESOLVED 2026-03-17: Now derived conditional on EXT-002"
