@@ -38,6 +38,7 @@ claims L₃ applies to actualized reality, which is classical.
 -/
 
 import Mathlib.Logic.Basic
+import Mathlib.Data.Nat.Basic
 
 namespace LRT.D0_1
 
