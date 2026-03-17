@@ -33,8 +33,14 @@ derivation_chain:
   - EXT-001  # Hardy reconstruction (imported)
   - QM-004   # Complex Hilbert space
   - QM-005   # Boolean actualization
-  - QM-006   # Boolean spectrum bridge
+  # Phase 4 Boolean Bridge Chain (2026-03-16)
+  - QM-009   # Sharp event interpretation (from L₃)
+  - QM-010   # Event evaluation binary (from A)
+  - QM-011   # Eigenvalue-outcome correspondence (bridge axiom)
+  - QM-012   # Faithful event representation (bridge axiom)
+  - QM-006   # Boolean spectrum bridge (now derived)
   - QM-007   # PVM structure
+  - QM-013   # Complete events form PVMs
   - EXT-002  # Gleason theorem (imported)
   - QM-008   # Born rule
   - PHY-001  # Unitarity
@@ -52,25 +58,46 @@ open_problems:
   - OPN-001  # Relativistic extension
   - OPN-002  # Bekenstein-Hawking bridge
   - OPN-003  # Energy-action relationship
+  - OPN-004  # K=2 forcing derivation
 
-# Status summary (updated 2026-03-16)
+# Status summary (updated 2026-03-16, Phase 4)
 status_summary:
-  total_claims: 26
-  verified: 7  # +1: QM-001 now proven
-  axiomatized: 11  # +1: ONT-004 (separation)
+  total_claims: 33  # +5 from Phase 4 (QM-009 through QM-013), +1 OPN-004
+  verified: 9  # +2: QM-009, QM-010 proven
+  axiomatized: 13  # +2: QM-011, QM-012 axioms
+  derived: 2  # QM-006 now derived, QM-013 axiomatized but bridge
   imported: 3
   prose_only: 1
-  open: 4  # -1: QM-001 no longer open
+  open: 5  # +1: OPN-004
 
-# Critical choke points (updated 2026-03-16)
+# Critical choke points (updated 2026-03-16, Phase 4)
 choke_points:
   - id: ACT-001
     description: "Bridge principle: X grounds AΩ"
     risk: "high"
-  - id: QM-006
-    description: "Boolean spectrum bridge"
+  - id: QM-011
+    description: "Eigenvalue-outcome correspondence"
     risk: "high"
+    notes: "Phase 4 replacement for QM-006. Connects measurement outcomes to eigenvalues."
+  - id: QM-012
+    description: "Faithful event representation"
+    risk: "medium"
+    notes: "Events embed in projection lattice. Justified by Stone theorem + quantum logic."
   - id: ONT-004
     description: "Configuration separation axiom"
     risk: "medium"
     notes: "Required for H1; philosophically motivated from I∞"
+
+# Phase 4 notes (2026-03-16)
+phase4_summary:
+  description: "Boolean actualization → projection structure bridge"
+  new_claims: [QM-009, QM-010, QM-011, QM-012, QM-013]
+  upgraded_claims:
+    - id: QM-006
+      old_status: "axiomatized"
+      new_status: "derived"
+      notes: "Now derived from QM-009 through QM-012"
+  key_insight: |
+    The chain L₃ → sharp events → binary evaluation → eigenvalue correspondence
+    → Boolean spectrum → idempotence → projections → PVMs is now explicit.
+    The remaining axioms (QM-011, QM-012) are well-motivated rather than black-box.

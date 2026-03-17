@@ -250,8 +250,9 @@ X → A_Ω → Determinate Identity → Local Tomography → ℂℋ → PVM → 
 | 1 | `Step1_Constitution.lean` | Bridge principle, ActualizedEvents | ✅ **REVISED** (2026-03-16) |
 | 2 | `Step2_DeterminateIdentity.lean` | Determinate identity, Subsystem, SubsystemEvent | ✅ **REVISED** (2026-03-16) |
 | 3 | `Step3_LocalTomography.lean` | Hardy H1/H2, k=2, **H1/H2 DERIVATION STRUCTURE** | ✅ **REVISED** (2026-03-16) |
-| 4 | `Step4_HardyAxiom.lean` | CPH structure, Hilbert space | Depends on Step 3 |
-| 5 | `Step5_EigenvalueRestriction/` | Spectral idempotent axioms | **NEEDS DERIVATION** (key leverage point) |
+| 4a | `Step4_HardyAxiom.lean` | CPH structure, Hilbert space | Depends on Step 3 |
+| 4b | `Step4_BooleanBridge.lean` | **Boolean actualization → projections** | ✅ **NEW** (2026-03-16) |
+| 5 | `Step5_EigenvalueRestriction/` | Spectral idempotent axioms | **Justified via Step 4b** |
 | 6 | `Step6_BornRule.lean` | Projection norm, Born rule | Needs Gleason import |
 | 7 | `Step7_Unitarity.lean` | Wigner theorem, evolution | OK (import Wigner from Mathlib) |
 | 8 | `Step8_TemporalEmergence.lean` | Actualization ordering → time | Axiom (weak link) |
@@ -293,7 +294,51 @@ X → A_Ω → Determinate Identity → Local Tomography → ℂℋ → PVM → 
 - H2: **DERIVED** — dimension scales multiplicatively from I∞ product structure
 - Hardy's theorem remains external (Tier 2)
 
-**Next action:** Phase 3 — K=2 forcing derivation (most distinctive LRT claim)
+**Phase 4 COMPLETED (2026-03-16):**
+
+**Step 4b (`Step4_BooleanBridge.lean`) — NEW FILE:**
+
+This is the "mathematical hinge" connecting LRT ontology to quantum measurement theory.
+
+**Chain formalized:**
+```
+L₃ → sharp events → binary evaluation → eigenvalue correspondence
+    → Boolean spectrum → idempotence → projections → PVMs
+```
+
+**Key definitions:**
+- `Event.isSharp` — event has determinate truth value for all configs
+- `EventRepresentation` — structure linking LRT Event to Hilbert operator
+- `RepresentsBooleanActualization` — spectrum ⊆ {0,1}
+- `PVM` — projection-valued measure structure
+
+**PROVEN (from LRT primitives):**
+- `all_events_sharp` — direct from L₃ (event_lem)
+- `event_evaluation_binary` — A evaluates to {actual, nonActual}
+
+**DERIVED (conditional on representation):**
+- `event_operator_boolean_spectrum` — from eigenvalue-outcome correspondence
+- `event_operator_is_projection` — from Step 5 + above
+- `phase4_boolean_bridge` — main theorem
+
+**AXIOMATIZED (Tier 2, well-motivated):**
+- `faithful_representation` — events embed in projection lattice (Stone theorem)
+- `eigenvalue_outcome_correspondence` — eigenvalues = measurement outcomes
+- `complete_events_form_pvm` — event families form PVMs
+
+**Traceability claims added:**
+- QM-009: Sharp event interpretation (PROVEN)
+- QM-010: Event evaluation binary (PROVEN)
+- QM-011: Eigenvalue-outcome correspondence (AXIOM)
+- QM-012: Faithful event representation (AXIOM)
+- QM-013: Complete events form PVMs (AXIOM)
+- QM-006: Updated from "axiomatized" to "derived"
+
+**Impact:** Step 5's `event_operator_has_bool_spectrum` axiom is now justified.
+The ontological chain from L₃ to Boolean spectrum is explicit. Two well-motivated
+axioms (QM-011, QM-012) replace one black-box axiom.
+
+**Next action:** Phase 5 — Born rule derivation (after Phase 4 stabilizes)
 
 ---
 

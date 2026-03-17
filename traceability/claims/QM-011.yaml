@@ -1,0 +1,46 @@
+# QM-011: Eigenvalue-Outcome Correspondence
+id: QM-011
+name: Eigenvalue-Outcome Correspondence
+statement: |
+  For an event operator E representing LRT event e:
+  - Eigenvalue λ = 1 occurs iff some configuration c satisfies e.query(c) = true
+  - Eigenvalue λ = 0 occurs iff some configuration c satisfies e.query(c) = false
+
+  This is the spectral postulate specialized to LRT: eigenvalues are
+  exactly the possible outcomes of the Boolean action A.
+
+role: bridge
+proof_status: axiomatized
+epistemic_status: argued
+
+formal_artifacts:
+  lean:
+    - file: Step4_BooleanBridge.lean
+      symbol: eigenvalue_outcome_correspondence
+      status: axiom
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "3.5"
+
+depends_on:
+  - claim_id: QM-009
+    dependency_type: logical
+  - claim_id: QM-010
+    dependency_type: logical
+  - claim_id: EXT-001
+    dependency_type: interpretive
+
+risk_if_false: |
+  This is the remaining Tier 2 axiom in the Boolean bridge chain.
+  If eigenvalues don't correspond to outcomes, the entire operator
+  representation loses physical meaning.
+
+notes: |
+  Phase 4 contribution. This axiom encodes the standard QM interpretation
+  that measurement outcomes are eigenvalues. The LRT innovation is that
+  we derive the {0,1} restriction from Boolean actualization, then invoke
+  this correspondence.
+
+  The gap: fully deriving this requires the Born rule (Phase 5) to show
+  that probability of outcome = |⟨ψ|P|ψ⟩|, closing the circle.

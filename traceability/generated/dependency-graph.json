@@ -154,7 +154,7 @@
       "id": "QM-006",
       "name": "Boolean Spectrum Bridge",
       "role": "bridge",
-      "proof_status": "axiomatized"
+      "proof_status": "derived"
     },
     {
       "id": "QM-007",
@@ -165,6 +165,36 @@
     {
       "id": "QM-008",
       "name": "Born Rule",
+      "role": "derived",
+      "proof_status": "axiomatized"
+    },
+    {
+      "id": "QM-009",
+      "name": "Sharp Event Interpretation",
+      "role": "derived",
+      "proof_status": "verified"
+    },
+    {
+      "id": "QM-010",
+      "name": "Event Evaluation Binary",
+      "role": "derived",
+      "proof_status": "verified"
+    },
+    {
+      "id": "QM-011",
+      "name": "Eigenvalue-Outcome Correspondence",
+      "role": "bridge",
+      "proof_status": "axiomatized"
+    },
+    {
+      "id": "QM-012",
+      "name": "Faithful Event Representation",
+      "role": "bridge",
+      "proof_status": "axiomatized"
+    },
+    {
+      "id": "QM-013",
+      "name": "Complete Events Form PVMs",
       "role": "derived",
       "proof_status": "axiomatized"
     }
@@ -366,14 +396,24 @@
       "type": "logical"
     },
     {
-      "from": "QM-004",
+      "from": "QM-009",
+      "to": "QM-006",
+      "type": "logical"
+    },
+    {
+      "from": "QM-010",
+      "to": "QM-006",
+      "type": "logical"
+    },
+    {
+      "from": "QM-011",
       "to": "QM-006",
       "type": "formal"
     },
     {
-      "from": "QM-005",
+      "from": "QM-012",
       "to": "QM-006",
-      "type": "logical"
+      "type": "formal"
     },
     {
       "from": "QM-006",
@@ -388,6 +428,66 @@
     {
       "from": "EXT-002",
       "to": "QM-008",
+      "type": "formal"
+    },
+    {
+      "from": "LOG-001",
+      "to": "QM-009",
+      "type": "logical"
+    },
+    {
+      "from": "ONT-001",
+      "to": "QM-009",
+      "type": "formal"
+    },
+    {
+      "from": "ONT-003",
+      "to": "QM-010",
+      "type": "formal"
+    },
+    {
+      "from": "QM-009",
+      "to": "QM-010",
+      "type": "logical"
+    },
+    {
+      "from": "QM-009",
+      "to": "QM-011",
+      "type": "logical"
+    },
+    {
+      "from": "QM-010",
+      "to": "QM-011",
+      "type": "logical"
+    },
+    {
+      "from": "EXT-001",
+      "to": "QM-011",
+      "type": "interpretive"
+    },
+    {
+      "from": "QM-004",
+      "to": "QM-012",
+      "type": "formal"
+    },
+    {
+      "from": "QM-005",
+      "to": "QM-012",
+      "type": "logical"
+    },
+    {
+      "from": "QM-006",
+      "to": "QM-013",
+      "type": "formal"
+    },
+    {
+      "from": "QM-007",
+      "to": "QM-013",
+      "type": "logical"
+    },
+    {
+      "from": "QM-012",
+      "to": "QM-013",
       "type": "formal"
     }
   ]

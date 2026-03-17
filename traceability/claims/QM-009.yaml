@@ -1,0 +1,41 @@
+# QM-009: Sharp Event Interpretation
+id: QM-009
+name: Sharp Event Interpretation
+statement: |
+  All LRT Events are "sharp" - their truth values are always determinate
+  for every configuration. This follows immediately from L₃ (excluded middle):
+  for any event e and configuration c, either e.query(c) or ¬e.query(c).
+
+  Sharpness is the ontological ground for Boolean spectrum: events admit
+  exactly two truth values {true, false} → {1, 0}.
+
+role: derived
+proof_status: verified
+epistemic_status: established
+
+formal_artifacts:
+  lean:
+    - file: Step4_BooleanBridge.lean
+      symbol: all_events_sharp
+      status: proven
+    - file: Step0_Primitives.lean
+      symbol: event_lem
+      status: proven
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "2.2"
+
+depends_on:
+  - claim_id: LOG-001
+    dependency_type: logical
+  - claim_id: ONT-001
+    dependency_type: formal
+
+risk_if_false: |
+  Without sharp events, actualization could yield indeterminate values.
+  The Boolean spectrum derivation fails at its first step.
+
+notes: |
+  Phase 4 contribution. This theorem is trivial given L₃ but makes
+  explicit the ontological grounding for Boolean measurement outcomes.

@@ -1,0 +1,55 @@
+# QM-013: Complete Events Form PVMs
+id: QM-013
+name: Complete Events Form PVMs
+statement: |
+  A complete family of mutually exclusive LRT events corresponds to a
+  projection-valued measure (PVM) on Hilbert space.
+
+  Requirements for "complete family":
+  - Events are mutually exclusive: at most one true for any configuration
+  - Events are exhaustive: at least one true for any configuration
+
+  The resulting PVM satisfies:
+  - Projections are orthogonal for different outcomes
+  - Projections are idempotent and self-adjoint
+  - Sum to identity over the full outcome space
+
+role: derived
+proof_status: axiomatized
+epistemic_status: argued
+
+formal_artifacts:
+  lean:
+    - file: Step4_BooleanBridge.lean
+      symbol: complete_events_form_pvm
+      status: axiom
+    - file: Step4_BooleanBridge.lean
+      symbol: PVM
+      status: definition
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "3.6"
+
+depends_on:
+  - claim_id: QM-006
+    dependency_type: formal
+  - claim_id: QM-007
+    dependency_type: logical
+  - claim_id: QM-012
+    dependency_type: formal
+
+external_citations:
+  - "Boolean algebra homomorphism to projection lattice"
+  - "Quantum logic: compatible observables form joint PVM"
+
+risk_if_false: |
+  Without PVMs, Gleason's theorem cannot be applied. The Born rule
+  derivation requires projection-valued measures.
+
+notes: |
+  Phase 4 contribution. This completes the Boolean bridge chain.
+  The chain is now:
+
+  L₃ → sharp events → binary evaluation → eigenvalue correspondence
+      → Boolean spectrum → idempotence → projections → PVMs

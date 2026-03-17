@@ -1,0 +1,39 @@
+# QM-010: Event Evaluation Binary
+id: QM-010
+name: Event Evaluation Binary
+statement: |
+  The action primitive A evaluates any event e at any configuration c
+  to exactly one of {actual, nonActual}. This is the operational
+  realization of L₃: measurement outcomes are binary, never indeterminate.
+
+  Formally: A.evaluate_event(e, c) ∈ {actual, nonActual} for all e, c.
+
+role: derived
+proof_status: verified
+epistemic_status: established
+
+formal_artifacts:
+  lean:
+    - file: Step4_BooleanBridge.lean
+      symbol: event_evaluation_binary
+      status: proven
+    - file: Step0_Primitives.lean
+      symbol: ActionPrimitive.resolves_event_determined
+      status: proven
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "2.3"
+
+depends_on:
+  - claim_id: ONT-003
+    dependency_type: formal
+  - claim_id: QM-009
+    dependency_type: logical
+
+risk_if_false: |
+  If A could yield values outside {0,1}, eigenvalues could exceed
+  the Boolean set, breaking the projection derivation.
+
+notes: |
+  Phase 4 contribution. Follows directly from A's type signature.

@@ -4,24 +4,25 @@ Generated: 2026-03-16
 
 ## Summary
 
-**Total claims:** 28
+**Total claims:** 33
 
 ### By Proof Status
 
 | Status | Count |
 |--------|-------|
-| axiomatized | 12 |
+| axiomatized | 14 |
+| derived | 1 |
 | imported | 3 |
 | open | 4 |
 | prose_only | 1 |
-| verified | 8 |
+| verified | 10 |
 
 ### By Role
 
 | Role | Count |
 |------|-------|
-| bridge | 3 |
-| derived | 14 |
+| bridge | 5 |
+| derived | 17 |
 | imported | 3 |
 | open | 4 |
 | prediction | 1 |
@@ -31,8 +32,8 @@ Generated: 2026-03-16
 
 | Status | Count |
 |--------|-------|
-| argued | 12 |
-| established | 13 |
+| argued | 15 |
+| established | 15 |
 | open | 3 |
 
 ## Claim Details
@@ -236,10 +237,10 @@ Generated: 2026-03-16
 ### QM-006: Boolean Spectrum Bridge
 
 - **Role:** bridge
-- **Proof status:** axiomatized
+- **Proof status:** derived
 - **Epistemic status:** argued
-- **Depends on:** QM-004, QM-005
-- **Lean artifacts:** 1 symbols
+- **Depends on:** QM-009, QM-010, QM-011, QM-012
+- **Lean artifacts:** 3 symbols
 
 ### QM-007: PVM Structure
 
@@ -256,3 +257,43 @@ Generated: 2026-03-16
 - **Epistemic status:** argued
 - **Depends on:** QM-007, EXT-002
 - **Lean artifacts:** 1 symbols
+
+### QM-009: Sharp Event Interpretation
+
+- **Role:** derived
+- **Proof status:** verified
+- **Epistemic status:** established
+- **Depends on:** LOG-001, ONT-001
+- **Lean artifacts:** 2 symbols
+
+### QM-010: Event Evaluation Binary
+
+- **Role:** derived
+- **Proof status:** verified
+- **Epistemic status:** established
+- **Depends on:** ONT-003, QM-009
+- **Lean artifacts:** 2 symbols
+
+### QM-011: Eigenvalue-Outcome Correspondence
+
+- **Role:** bridge
+- **Proof status:** axiomatized
+- **Epistemic status:** argued
+- **Depends on:** QM-009, QM-010, EXT-001
+- **Lean artifacts:** 1 symbols
+
+### QM-012: Faithful Event Representation
+
+- **Role:** bridge
+- **Proof status:** axiomatized
+- **Epistemic status:** argued
+- **Depends on:** QM-004, QM-005
+- **Lean artifacts:** 1 symbols
+
+### QM-013: Complete Events Form PVMs
+
+- **Role:** derived
+- **Proof status:** axiomatized
+- **Epistemic status:** argued
+- **Depends on:** QM-006, QM-007, QM-012
+- **Lean artifacts:** 2 symbols

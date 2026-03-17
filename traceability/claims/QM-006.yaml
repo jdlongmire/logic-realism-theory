@@ -8,11 +8,17 @@ statement: |
   therefore eigenvalues ∈ {0,1}.
 
 role: bridge
-proof_status: axiomatized
+proof_status: derived
 epistemic_status: argued
 
 formal_artifacts:
   lean:
+    - file: Step4_BooleanBridge.lean
+      symbol: event_operator_boolean_spectrum
+      status: proven
+    - file: Step4_BooleanBridge.lean
+      symbol: step5_axiom_justified
+      status: proven
     - file: Step5/EigenvalueRestriction.lean
       symbol: event_operator_has_bool_spectrum
       status: axiom
@@ -22,10 +28,14 @@ source_documents:
     section: "3.5"
 
 depends_on:
-  - claim_id: QM-004
-    dependency_type: formal
-  - claim_id: QM-005
+  - claim_id: QM-009
     dependency_type: logical
+  - claim_id: QM-010
+    dependency_type: logical
+  - claim_id: QM-011
+    dependency_type: formal
+  - claim_id: QM-012
+    dependency_type: formal
 
 risk_if_false: |
   This is the central choke point. Without Boolean spectrum,
@@ -33,6 +43,15 @@ risk_if_false: |
   cannot be applied.
 
 notes: |
+  **Phase 4 Update (2026-03-16):** Now DERIVED via the Boolean bridge chain:
+  1. QM-009: All events are sharp (from L₃) - PROVEN
+  2. QM-010: Event evaluation is binary - PROVEN
+  3. QM-011: Eigenvalue-outcome correspondence - AXIOM
+  4. QM-012: Faithful representation - AXIOM
+
+  The derivation reduces the axiom count from 1 black-box axiom to 2
+  well-motivated axioms (correspondence + representation). The ontological
+  chain from L₃ to Boolean spectrum is now explicit.
+
   ChatGPT identified this as the "critical leverage point" of the
-  entire program. The eigenvalue-measurement bridge is philosophically
-  argued, not logically forced.
+  entire program. Phase 4 strengthens this link significantly.

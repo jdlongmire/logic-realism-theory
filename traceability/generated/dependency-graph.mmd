@@ -33,6 +33,11 @@ graph TD
     QM-006["QM-006: Boolean Spectrum Bridge"]
     QM-007["QM-007: PVM Structure"]
     QM-008["QM-008: Born Rule"]
+    QM-009["QM-009: Sharp Event Interpretation"]
+    QM-010["QM-010: Event Evaluation Binary"]
+    QM-011["QM-011: Eigenvalue-Outcome Corresponde..."]
+    QM-012["QM-012: Faithful Event Representation"]
+    QM-013["QM-013: Complete Events Form PVMs"]
     ONT-001 --> ACT-001
     ONT-001 --> ACT-002
     ACT-001 --> ACT-002
@@ -72,11 +77,25 @@ graph TD
     EXT-001 -.->|formal| QM-004
     ONT-003 --> QM-005
     LOG-002 --> QM-005
-    QM-004 -.->|formal| QM-006
-    QM-005 --> QM-006
+    QM-009 --> QM-006
+    QM-010 --> QM-006
+    QM-011 -.->|formal| QM-006
+    QM-012 -.->|formal| QM-006
     QM-006 --> QM-007
     QM-007 --> QM-008
     EXT-002 -.->|formal| QM-008
+    LOG-001 --> QM-009
+    ONT-001 -.->|formal| QM-009
+    ONT-003 -.->|formal| QM-010
+    QM-009 --> QM-010
+    QM-009 --> QM-011
+    QM-010 --> QM-011
+    EXT-001 -.->|interpretive| QM-011
+    QM-004 -.->|formal| QM-012
+    QM-005 --> QM-012
+    QM-006 -.->|formal| QM-013
+    QM-007 --> QM-013
+    QM-012 -.->|formal| QM-013
     class ACT-001 bridge
     class ACT-002 derived
     class EXT-001 imported
@@ -105,3 +124,8 @@ graph TD
     class QM-006 bridge
     class QM-007 derived
     class QM-008 derived
+    class QM-009 derived
+    class QM-010 derived
+    class QM-011 bridge
+    class QM-012 bridge
+    class QM-013 derived

@@ -1,0 +1,45 @@
+# QM-012: Faithful Event Representation
+id: QM-012
+name: Faithful Event Representation
+statement: |
+  Every LRT Event admits a faithful representation as a self-adjoint
+  operator on a Hilbert space H. The Boolean event algebra embeds
+  into the projection lattice on H.
+
+  This is the representation theorem: LRT's event structure is rich
+  enough to embed into quantum observables.
+
+role: bridge
+proof_status: axiomatized
+epistemic_status: argued
+
+formal_artifacts:
+  lean:
+    - file: Step4_BooleanBridge.lean
+      symbol: faithful_representation
+      status: axiom
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "3.4"
+
+depends_on:
+  - claim_id: QM-004
+    dependency_type: formal
+  - claim_id: QM-005
+    dependency_type: logical
+
+external_citations:
+  - "Stone representation theorem (Boolean algebras embed in P(Ω))"
+  - "Quantum logic: event algebras → projection lattices"
+
+risk_if_false: |
+  Without representation, LRT events remain purely ontological with
+  no connection to Hilbert space operators. The entire operator
+  theory section becomes disconnected.
+
+notes: |
+  Phase 4 contribution. Justification: Events form a Boolean algebra
+  (Step 0: Event.and, Event.or, Event.not with proven LNC/LEM).
+  Stone's theorem guarantees embedding into a Boolean algebra of sets.
+  The quantum logic tradition extends this to projection lattices.

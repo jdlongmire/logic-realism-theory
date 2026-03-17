@@ -41,6 +41,30 @@ projection operators cannot be derived, and Gleason's theorem
 cannot be applied.
 
 
+### QM-011: Eigenvalue-Outcome Correspondence
+
+> For an event operator E representing LRT event e:
+- Eigenvalue λ = 1 occurs iff some configuration c satisfies e.query(c) = true
+- Eigenvalue λ = 0 occurs iff some configuration c satisfies e.query(c)...
+
+**Risk if false:** This is the remaining Tier 2 axiom in the Boolean bridge chain.
+If eigenvalues don't correspond to outcomes, the entire operator
+representation loses physical meaning.
+
+
+### QM-012: Faithful Event Representation
+
+> Every LRT Event admits a faithful representation as a self-adjoint
+operator on a Hilbert space H. The Boolean event algebra embeds
+into the projection lattice on H.
+
+This is the representation theorem...
+
+**Risk if false:** Without representation, LRT events remain purely ontological with
+no connection to Hilbert space operators. The entire operator
+theory section becomes disconnected.
+
+
 ## Axiomatized Claims (Not Yet Verified)
 
 These claims are implemented in Lean but use `axiom` or `sorry`.
@@ -54,6 +78,7 @@ These claims are implemented in Lean but use `axiom` or `sorry`.
 - **QM-003**: Local Tomography
 - **QM-004**: Complex Hilbert Space Structure
 - **QM-008**: Born Rule
+- **QM-013**: Complete Events Form PVMs
 
 ## Open Problems
 
