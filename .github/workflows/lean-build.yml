@@ -44,6 +44,7 @@ jobs:
       run: |
         cd lean
         lake update
+        lake exe cache get
         lake build
 
     - name: Check for sorry statements
