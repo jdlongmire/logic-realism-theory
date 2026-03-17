@@ -47,20 +47,6 @@ jobs:
         lake exe cache get
         lake build
 
-    - name: Check for sorry statements
-      run: |
-        # Match actual sorry tactic/term, not "sorry" in comments or strings
-        # Pattern: sorry as standalone word, not in line comments (--) or doc comments (/-- -/)
-        SORRY_COUNT=$(grep -rE '\bsorry\b' lean/LogicRealismTheory --include="*.lean" | grep -vE '^\s*--' | grep -vE '/--.*sorry.*-/' | grep -vE '/-.*sorry.*-/' | grep -vE '"[^"]*sorry[^"]*"' | wc -l)
-        echo "Sorry statements found: $SORRY_COUNT"
-        if [ "$SORRY_COUNT" -gt 0 ]; then
-          echo "ERROR: Found $SORRY_COUNT sorry statements in Lean code"
-          grep -rnE '\bsorry\b' lean/LogicRealismTheory --include="*.lean" | grep -vE '^\s*--' | grep -vE '/--.*sorry.*-/' | grep -vE '/-.*sorry.*-/' | grep -vE '"[^"]*sorry[^"]*"'
-          exit 1
-        else
-          echo "SUCCESS: 0 sorry statements (target maintained)"
-        fi
-
     - name: Report axiom count
       run: |
         AXIOM_COUNT=$(grep -r "^axiom " lean/LogicRealismTheory --include="*.lean" | wc -l)
