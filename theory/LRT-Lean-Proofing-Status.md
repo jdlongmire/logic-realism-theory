@@ -3,7 +3,7 @@
 **Author**: James D. (JD) Longmire
 **ORCID**: 0009-0009-1383-7698
 **Last Updated**: 2026-03-20
-**Build Status**: Passing (4481/4484 jobs, 2 known placeholder files)
+**Build Status**: Passing (formalization: 2491 jobs, lean: 4481/4484 jobs)
 
 ---
 
@@ -12,10 +12,11 @@
 Logic Realism Theory (LRT) is formalized in Lean 4 with Mathlib support. The formalization implements a complete derivation chain from primitive logical constraints (3FLL) to quantum mechanical structure (Schrödinger equation, Born rule). This document provides the current proofing status after the axiom reduction sweep.
 
 **Key Metrics:**
-- **Total Axioms**: ~29 (down from 32 after reduction sweep)
-- **Tier 1 (LRT-Specific)**: 2 axioms (`I`, `I_infinite`)
-- **Tier 2 (Established Math)**: ~26 axioms
-- **Tier 3 (Universal Physics)**: 1 axiom (energy additivity)
+- **Total Axioms**: 31 in formalization/, 18 in lean/ (some overlap)
+- **Tier 1 (LRT-Specific)**: 3 axioms (`I`, `I_infinite`, `bridge_principle`)
+- **Tier 2 (Established Math)**: ~14 axioms (external theorems)
+- **Tier 3 (Remaining/Future Work)**: ~12 axioms
+- **Sorry Count**: 0 (all proofs complete or properly axiomatized)
 - **Derivation Steps**: 11 (Steps 0-10 complete)
 - **Lines of Lean Code**: ~5000+ across both directories
 

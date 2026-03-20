@@ -22,6 +22,8 @@
 
 import LrtFormalization.Step5.EigenvalueRestriction
 import Mathlib.LinearAlgebra.Eigenspace.Basic
+import Mathlib.Analysis.InnerProductSpace.Spectrum
+import Mathlib.Topology.Algebra.Module.FiniteDimension
 
 namespace LRT.Step5
 
@@ -123,6 +125,10 @@ theorem eigenstate_definite_outcome (O : Observable H) (ψ : H) (ev : ℂ)
 theorem eigenvectors_orthogonal (O : Observable H) (ev₁ ev₂ : ℂ) (h_ne : ev₁ ≠ ev₂)
     (v : H) (w : H) (hv : v ∈ O.eigenspace ev₁) (hw : w ∈ O.eigenspace ev₂) :
     @inner ℂ H _ v w = 0 := by
+  -- Handle trivial case: if v = 0, inner product is 0
+  by_cases hv0 : v = 0
+  · simp [hv0]
+
   -- Standard proof from self-adjointness:
   -- ⟨Ov|w⟩ = ⟨ev₁·v|w⟩ = conj(ev₁)⟨v|w⟩
   -- ⟨v|Ow⟩ = ⟨v|ev₂·w⟩ = ev₂⟨v|w⟩
@@ -138,30 +144,41 @@ theorem eigenvectors_orthogonal (O : Observable H) (ev₁ ev₂ : ℂ) (h_ne : e
 
   have h_sa := O.self_adjoint
   unfold IsSelfAdjoint' at h_sa
-
   -- Self-adjoint: ⟨Ov|w⟩ = ⟨v|Ow⟩
   have h1 : @inner ℂ H _ (O.op v) w = @inner ℂ H _ v (O.op w) := h_sa v w
-
   -- Use eigenvalue equations: O.op v = ev₁ • v and O.op w = ev₂ • w
   -- Note: O.op v is the ContinuousLinearMap applied, which equals O.op.toLinearMap v
   have hv' : O.op v = ev₁ • v := hv
   have hw' : O.op w = ev₂ • w := hw
-
   -- Substitute eigenvalue equations
   rw [hv', hw'] at h1
   -- h1 : ⟨ev₁ • v | w⟩ = ⟨v | ev₂ • w⟩
   simp only [inner_smul_left, inner_smul_right] at h1
   -- h1 : conj(ev₁) * ⟨v|w⟩ = ev₂ * ⟨v|w⟩
 
-  -- For self-adjoint operators, eigenvalues are real, so conj(ev₁) = ev₁
-  -- This requires the eigenvalues_real lemma; we use sorry here
+  -- Key: For self-adjoint operators, eigenvalues satisfy conj(μ) = μ
+  -- We use LinearMap.IsSymmetric.conj_eigenvalue_eq_self from Mathlib
+  have h_sym : (O.op : H →ₗ[ℂ] H).IsSymmetric :=
+    isSelfAdjoint'_toLinearMap_isSymmetric O.op O.self_adjoint
+  -- ev₁ is an eigenvalue (v ≠ 0 and v is in eigenspace)
+  have h_hasEigen : Module.End.HasEigenvalue O.op.toLinearMap ev₁ := by
+    rw [Module.End.hasEigenvalue_iff]
+    intro h_bot
+    have hmem := Module.End.mem_eigenspace_iff.mpr hv
+    rw [h_bot] at hmem
+    exact hv0 ((Submodule.mem_bot ℂ).mp hmem)
+  -- Apply the Mathlib theorem: conj(ev₁) = ev₁
+  have h_conj : starRingEnd ℂ ev₁ = ev₁ := h_sym.conj_eigenvalue_eq_self h_hasEigen
+  -- Now we can prove the result
   by_contra h_nonzero
   have h2 : starRingEnd ℂ ev₁ - ev₂ ≠ 0 := by
     intro h_eq
     apply h_ne
-    -- Would need: eigenvalues of self-adjoint are real, so conj(ev₁) = ev₁
-    -- Then conj(ev₁) = ev₂ implies ev₁ = ev₂
-    sorry
+    -- From h_eq: conj(ev₁) = ev₂
+    -- From h_conj: conj(ev₁) = ev₁
+    -- Therefore: ev₁ = ev₂
+    calc ev₁ = starRingEnd ℂ ev₁ := h_conj.symm
+      _ = ev₂ := sub_eq_zero.mp h_eq
   -- From h1: conj(ev₁) * ⟨v|w⟩ = ev₂ * ⟨v|w⟩
   -- Therefore: (conj(ev₁) - ev₂) * ⟨v|w⟩ = 0
   have h3 : (starRingEnd ℂ ev₁ - ev₂) * @inner ℂ H _ v w = 0 := by
@@ -247,7 +264,7 @@ def IsEventObservable (O : Observable H) : Prop :=
     - A(event) = 1 corresponds to eigenvalue 1 (event occurred)
     - A(event) = 0 corresponds to eigenvalue 0 (event did not occur)
     - These are the ONLY possible outcomes -/
-theorem event_observable_boolean_outcomes (O : Observable H)
+theorem event_observable_boolean_outcomes [FiniteDimensional ℂ H] (O : Observable H)
     (h_event : IsEventObservable O) (ev : ℂ) (h_eigen : O.hasEigenvalue ev) :
     ev ∈ ({0, 1} : Set ℂ) := by
   unfold IsEventObservable HasBooleanSpectrum at h_event
@@ -255,8 +272,17 @@ theorem event_observable_boolean_outcomes (O : Observable H)
   -- HasEigenvalue T ev → ev ∈ spectrum T (for finite dim, eigenvalues = spectrum)
   -- spectrum T ⊆ {0, 1} from h_event
   -- Therefore ev ∈ {0, 1}
-  -- This requires the finite-dimensional eigenvalue-spectrum equivalence
-  sorry -- Would need eigenvalue ∈ spectrum lemma
+  -- In finite dimensions: spectrum ℂ O.op = spectrum ℂ O.op.toLinearMap
+  have h_spec_eq : spectrum ℂ O.op = spectrum ℂ (O.op : H →ₗ[ℂ] H) := by
+    let e : (H →ₗ[ℂ] H) ≃ₐ[ℂ] (H →L[ℂ] H) := Module.End.toContinuousLinearMap (𝕜 := ℂ) H
+    have h_e : e (O.op : H →ₗ[ℂ] H) = O.op := rfl
+    rw [← h_e]
+    exact AlgEquiv.spectrum_eq e (O.op : H →ₗ[ℂ] H)
+  rw [h_spec_eq] at h_event
+  have h_in_spectrum : ev ∈ spectrum ℂ (O.op : H →ₗ[ℂ] H) := by
+    rw [← Module.End.hasEigenvalue_iff_mem_spectrum]
+    exact h_eigen
+  exact h_event h_in_spectrum
 
 /-! ## Part VI: Summary
 
@@ -270,15 +296,11 @@ theorem event_observable_boolean_outcomes (O : Observable H)
 **Tier Classification:**
 - `spectral_correspondence`: Tier 2 (von Neumann 1932)
 - `eigenstate_definite_outcome`: Derived (no sorry)
-- `eigenvectors_orthogonal`: Derived (one sorry for real eigenvalues)
+- `eigenvectors_orthogonal`: Derived (no sorry - uses Mathlib's `conj_eigenvalue_eq_self`)
 - `eigenvalue_outcome_correspondence_general`: Main theorem (derived from above)
-- `event_observable_boolean_outcomes`: Derived (one sorry for spectrum inclusion)
+- `event_observable_boolean_outcomes`: Derived (no sorry)
 
-**Remaining sorry statements:**
-1. `eigenvectors_orthogonal`: Needs eigenvalues_real for self-adjoint operators
-2. `event_observable_boolean_outcomes`: Needs eigenvalue ∈ spectrum equivalence
-
-These are standard results in spectral theory, axiomatized in EigenvalueRestriction.lean.
+**No remaining sorry statements in this file.**
 
 **Relationship to Step4/Boolean.lean:**
 The `eigenvalue_outcome_correspondence` theorem there handles the Boolean event
