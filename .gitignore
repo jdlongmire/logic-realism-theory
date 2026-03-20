@@ -42,3 +42,6 @@ IBM_Q_API.txt
 IBM_Q_CRN.txt
 IBM_Q_Instance.png
 formalization/.lake
+
+# Claude Code
+.claude/
