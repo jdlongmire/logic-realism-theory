@@ -59,7 +59,7 @@ L₃ → Distinguishability → Hilbert Space → Born Rule → Quantum Mechanic
 | **Tier 2** (Established Math) | ~9 | Gleason, Masanes-Müller, Stone |
 | **Tier 3** (Universal Physics) | 1 | Energy additivity |
 
-See [lean/AXIOMS.md](lean/AXIOMS.md) for full classification.
+See [formalization/docs/axiom-status.md](formalization/docs/axiom-status.md) for current axiom audit and classification.
 
 ---
 
