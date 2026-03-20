@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" width="800" height="900">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+    <linearGradient id="primitiveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a365d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c5282;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bridgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#744210;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#975a16;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="stepGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22543d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#276749;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="resultGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#553c9a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6b46c1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="900" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="400" y="35" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#1a202c" text-anchor="middle">LRT Reconstruction Chain</text>
+  <text x="400" y="55" font-family="Georgia, serif" font-size="12" fill="#666" text-anchor="middle">From Ontological Primitives to Quantum Mechanics</text>
+
+  <!-- Legend -->
+  <rect x="580" y="70" width="200" height="100" fill="white" stroke="#ddd" rx="5"/>
+  <text x="680" y="90" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333" text-anchor="middle">Legend</text>
+  <rect x="595" y="100" width="16" height="12" fill="url(#primitiveGrad)" rx="2"/>
+  <text x="618" y="110" font-family="Arial, sans-serif" font-size="10" fill="#333">Primitive (TAB)</text>
+  <rect x="595" y="118" width="16" height="12" fill="url(#bridgeGrad)" rx="2"/>
+  <text x="618" y="128" font-family="Arial, sans-serif" font-size="10" fill="#333">Bridge Equation</text>
+  <rect x="595" y="136" width="16" height="12" fill="url(#stepGrad)" rx="2"/>
+  <text x="618" y="146" font-family="Arial, sans-serif" font-size="10" fill="#333">Derivation Step</text>
+  <rect x="595" y="154" width="16" height="12" fill="url(#resultGrad)" rx="2"/>
+  <text x="618" y="164" font-family="Arial, sans-serif" font-size="10" fill="#333">Physics Result</text>
+
+  <!-- Step 0: Primitives -->
+  <rect x="200" y="80" width="360" height="50" rx="8" fill="url(#primitiveGrad)"/>
+  <text x="380" y="100" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">χ = [ L₃ : I∞ : A ]</text>
+  <text x="380" y="118" font-family="Arial, sans-serif" font-size="10" fill="#bee3f8" text-anchor="middle">Logic : Information : Actualization</text>
+
+  <!-- Arrow 0→1 -->
+  <line x1="380" y1="130" x2="380" y2="155" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 1: Bridge -->
+  <rect x="200" y="160" width="360" height="45" rx="8" fill="url(#bridgeGrad)"/>
+  <text x="380" y="180" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">A_Ω = L₃(I∞)</text>
+  <text x="380" y="195" font-family="Arial, sans-serif" font-size="10" fill="#fefcbf" text-anchor="middle">Bridge Principle: Actualized domain under logical constraint</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="380" y1="205" x2="380" y2="230" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 2: Determinate Identity -->
+  <rect x="220" y="235" width="320" height="40" rx="6" fill="url(#stepGrad)"/>
+  <text x="380" y="255" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Step 2: Determinate Identity</text>
+  <text x="380" y="268" font-family="Arial, sans-serif" font-size="9" fill="#c6f6d5" text-anchor="middle">All actualized configurations have definite identity (from L₃)</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="380" y1="275" x2="380" y2="295" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 3: Local Tomography -->
+  <rect x="220" y="300" width="320" height="40" rx="6" fill="url(#stepGrad)"/>
+  <text x="380" y="320" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Step 3: Local Tomography</text>
+  <text x="380" y="333" font-family="Arial, sans-serif" font-size="9" fill="#c6f6d5" text-anchor="middle">H1 + H2 → Hardy reconstruction applies</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="380" y1="340" x2="380" y2="360" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 4: Hilbert Space -->
+  <rect x="220" y="365" width="320" height="40" rx="6" fill="url(#stepGrad)"/>
+  <text x="380" y="385" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Step 4: Complex Hilbert Space (K=2)</text>
+  <text x="380" y="398" font-family="Arial, sans-serif" font-size="9" fill="#c6f6d5" text-anchor="middle">Hardy + Boolean → ℂℋ via Gleason/CDP routes</text>
+
+  <!-- Arrow 4→5 -->
+  <line x1="380" y1="405" x2="380" y2="425" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 5: Boolean Spectrum -->
+  <rect x="220" y="430" width="320" height="40" rx="6" fill="url(#stepGrad)"/>
+  <text x="380" y="450" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Step 5: Boolean Spectrum</text>
+  <text x="380" y="463" font-family="Arial, sans-serif" font-size="9" fill="#c6f6d5" text-anchor="middle">A binary → eigenvalues ∈ {0,1} → projections → PVM</text>
+
+  <!-- Arrow 5→6 -->
+  <line x1="380" y1="470" x2="380" y2="490" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 6: Born Rule -->
+  <rect x="200" y="495" width="360" height="45" rx="8" fill="url(#resultGrad)"/>
+  <text x="380" y="515" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Step 6: Born Rule</text>
+  <text x="380" y="530" font-family="Arial, sans-serif" font-size="10" fill="#e9d8fd" text-anchor="middle">p(E|ψ) = ⟨ψ|P_E|ψ⟩ via Gleason's theorem</text>
+
+  <!-- Arrow 6→7 -->
+  <line x1="380" y1="540" x2="380" y2="560" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 7: Unitarity -->
+  <rect x="220" y="565" width="320" height="40" rx="6" fill="url(#stepGrad)"/>
+  <text x="380" y="585" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Step 7: Unitary Evolution</text>
+  <text x="380" y="598" font-family="Arial, sans-serif" font-size="9" fill="#c6f6d5" text-anchor="middle">Norm preservation + group structure → U(t)</text>
+
+  <!-- Arrow 7→8 -->
+  <line x1="380" y1="605" x2="380" y2="625" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 8: Temporal Structure -->
+  <rect x="220" y="630" width="320" height="40" rx="6" fill="url(#stepGrad)"/>
+  <text x="380" y="650" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Step 8: Temporal Structure</text>
+  <text x="380" y="663" font-family="Arial, sans-serif" font-size="9" fill="#c6f6d5" text-anchor="middle">Actualization ordering → time embedding t: ℕ → ℝ</text>
+
+  <!-- Arrow 8→9 -->
+  <line x1="380" y1="670" x2="380" y2="690" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 9: Energy-Action -->
+  <rect x="220" y="695" width="320" height="40" rx="6" fill="url(#stepGrad)"/>
+  <text x="380" y="715" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Step 9: Energy-Action Structure</text>
+  <text x="380" y="728" font-family="Arial, sans-serif" font-size="9" fill="#c6f6d5" text-anchor="middle">Stone theorem + Planck relation → Hamiltonian H</text>
+
+  <!-- Arrow 9→10 -->
+  <line x1="380" y1="735" x2="380" y2="755" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 10: Schrödinger -->
+  <rect x="200" y="760" width="360" height="50" rx="8" fill="url(#resultGrad)"/>
+  <text x="380" y="782" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Step 10: Schrödinger Equation</text>
+  <text x="380" y="800" font-family="Georgia, serif" font-size="12" fill="#e9d8fd" text-anchor="middle">iℏ ∂|ψ⟩/∂t = H|ψ⟩</text>
+
+  <!-- Side annotations: External imports -->
+  <rect x="25" y="365" width="140" height="180" fill="#fff5f5" stroke="#fc8181" rx="5" stroke-dasharray="4"/>
+  <text x="95" y="385" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#c53030" text-anchor="middle">External Imports</text>
+  <text x="95" y="405" font-family="Arial, sans-serif" font-size="9" fill="#742a2a" text-anchor="middle">Hardy (2001)</text>
+  <text x="95" y="420" font-family="Arial, sans-serif" font-size="9" fill="#742a2a" text-anchor="middle">CDP (2011)</text>
+  <text x="95" y="435" font-family="Arial, sans-serif" font-size="9" fill="#742a2a" text-anchor="middle">Masanes-Müller</text>
+  <text x="95" y="455" font-family="Arial, sans-serif" font-size="9" fill="#742a2a" text-anchor="middle">Gleason (1957)</text>
+  <text x="95" y="470" font-family="Arial, sans-serif" font-size="9" fill="#742a2a" text-anchor="middle">Stone (1932)</text>
+  <text x="95" y="490" font-family="Arial, sans-serif" font-size="9" fill="#742a2a" text-anchor="middle">Fiorentino-Weigert</text>
+  <text x="95" y="505" font-family="Arial, sans-serif" font-size="9" fill="#742a2a" text-anchor="middle">(2025)</text>
+  <text x="95" y="525" font-family="Arial, sans-serif" font-size="9" fill="#742a2a" text-anchor="middle">Moretti-Oppio</text>
+  <text x="95" y="540" font-family="Arial, sans-serif" font-size="9" fill="#742a2a" text-anchor="middle">(2017)</text>
+
+  <!-- Side annotations: What's resolved -->
+  <rect x="615" y="365" width="160" height="180" fill="#f0fff4" stroke="#68d391" rx="5" stroke-dasharray="4"/>
+  <text x="695" y="385" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#276749" text-anchor="middle">Phenomena Resolved</text>
+  <text x="695" y="405" font-family="Arial, sans-serif" font-size="9" fill="#22543d" text-anchor="middle">Measurement problem</text>
+  <text x="695" y="420" font-family="Arial, sans-serif" font-size="9" fill="#22543d" text-anchor="middle">Born rule origin</text>
+  <text x="695" y="435" font-family="Arial, sans-serif" font-size="9" fill="#22543d" text-anchor="middle">EPR paradox</text>
+  <text x="695" y="450" font-family="Arial, sans-serif" font-size="9" fill="#22543d" text-anchor="middle">Superposition meaning</text>
+  <text x="695" y="465" font-family="Arial, sans-serif" font-size="9" fill="#22543d" text-anchor="middle">Entanglement</text>
+  <text x="695" y="480" font-family="Arial, sans-serif" font-size="9" fill="#22543d" text-anchor="middle">Decoherence</text>
+  <text x="695" y="495" font-family="Arial, sans-serif" font-size="9" fill="#22543d" text-anchor="middle">Complex field (K=2)</text>
+  <text x="695" y="510" font-family="Arial, sans-serif" font-size="9" fill="#22543d" text-anchor="middle">Local tomography</text>
+  <text x="695" y="525" font-family="Arial, sans-serif" font-size="9" fill="#22543d" text-anchor="middle">Temporal structure</text>
+  <text x="695" y="540" font-family="Arial, sans-serif" font-size="9" fill="#22543d" text-anchor="middle">Quantization</text>
+
+  <!-- Footer -->
+  <text x="400" y="840" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle">Logic Realism Theory v2.0 — March 2026</text>
+  <text x="400" y="855" font-family="Arial, sans-serif" font-size="9" fill="#888" text-anchor="middle">Lean 4 formalization: 31 axioms, 0 sorries</text>
+  <text x="400" y="870" font-family="Arial, sans-serif" font-size="9" fill="#888" text-anchor="middle">J.D. Longmire (jdlongmire@outlook.com)</text>
+</svg>
