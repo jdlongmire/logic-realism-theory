@@ -250,29 +250,44 @@ def Admissible (c : Configuration) : Prop := L3Admissible c
 theorem all_configs_admissible (c : Configuration) : Admissible c :=
   all_configs_l3_admissible c
 
-/-! ## Part VIII: Configuration Separation Axiom
+/-! ## Part VIII: Configuration Separation (Derived from L₃)
 
 I∞ provides distinguishability: distinct configurations can be distinguished by events.
-This is the key axiom enabling H1 derivation.
+This is derived from L₃ determinacy and the Event algebra structure.
 -/
 
-/-- **TIER 2 AXIOM: Configuration Separation**
+/-- The equality event: "is this configuration equal to c?" -/
+def Event.eq (c : Configuration) : Event where
+  query := fun c' => c' = c
+  l3_decidable := fun c' => Classical.em (c' = c)
+
+/-- **THEOREM: Configuration Separation** (derived from L₃ + Event algebra)
 
     Distinct configurations are distinguished by some event.
     This is the Stone-type separation property that enables
     configurations to be characterized by their event profiles.
 
-    Philosophical motivation:
-    - I∞ is the space of all formally specifiable configurations
-    - "Formally specifiable" means describable by properties
-    - Properties are events (predicates over configurations)
-    - Therefore distinct configurations must differ on some property
+    **Derivation:**
+    Given c₁ ≠ c₂, construct the equality event Event.eq c₁.
+    - Event.eq c₁ has query (· = c₁) with L₃-guaranteed decidability
+    - (Event.eq c₁).query c₁ = (c₁ = c₁) = True  (by reflexivity)
+    - (Event.eq c₁).query c₂ = (c₂ = c₁) = False (by c₁ ≠ c₂)
 
-    This axiom bridges I∞'s distinguishability to Event structure.
+    This converts the former axiom to a theorem by leveraging:
+    1. L₃ (excluded middle) for Event construction
+    2. Event algebra structure allowing equality predicates
 -/
-axiom config_separation :
-  ∀ (c₁ c₂ : Configuration), c₁ ≠ c₂ →
-    ∃ (e : Event), e.query c₁ ∧ ¬e.query c₂
+theorem config_separation :
+    ∀ (c₁ c₂ : Configuration), c₁ ≠ c₂ →
+      ∃ (e : Event), e.query c₁ ∧ ¬e.query c₂ := by
+  intro c₁ c₂ hne
+  use Event.eq c₁
+  constructor
+  · -- (Event.eq c₁).query c₁ = (c₁ = c₁) = True
+    rfl
+  · -- ¬(Event.eq c₁).query c₂ = ¬(c₂ = c₁)
+    intro heq
+    exact hne heq.symm
 
 /-- Configurations are extensional with respect to events:
     if two configs agree on all events, they are identical. -/

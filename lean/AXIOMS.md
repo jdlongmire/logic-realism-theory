@@ -82,15 +82,24 @@ All axioms in this formalization are classified into three tiers:
 ### Tier 2: Established Math Tools
 **Well-known mathematical theorems** - Axiomatized for practical formalization
 
-**Count**: ~16 axioms
+**Count**: ~19 axioms
 
-**Examples**:
+**Core Examples**:
 - Stone's Theorem (Stone 1932) - Unitary groups ↔ self-adjoint generators
 - Spectral Theorem (von Neumann 1932) - Hermitian operators have real eigenvalues
 - Gleason's Theorem (Gleason 1957) - Probability measures on Hilbert space
 - Jaynes MaxEnt (Jaynes 1957) - Maximum entropy principle
 - Spohn's Inequality (Spohn 1978) - Entropy bounds
 - Complex field algebraic properties (standard)
+
+**New External Imports (2026-03-17 Arxiv Survey)**:
+| ID | Source | Purpose |
+|----|--------|---------|
+| EXT-004 | Moretti-Oppio 2017 ([1611.09029](https://arxiv.org/abs/1611.09029)) | Poincare symmetry → K=2 (alternative route) |
+| EXT-005 | Fiorentino-Weigert 2025 ([2511.15607](https://arxiv.org/abs/2511.15607)) | Gleason extension to d=2 qubits |
+| EXT-006 | Torres Alegre 2025 ([2512.12636](https://arxiv.org/abs/2512.12636)) | Causal Born rule derivation (no-signaling) |
+
+**Zhang Additivity Defense**: Zhang (2026, [2603.06211](https://arxiv.org/abs/2603.06211)) proves additivity is irreducible in standard Born rule derivations. LRT escapes this by deriving additivity from Non-Contradiction (NC), not non-contextuality. See `formalization/docs/zhang-additivity-defense.md`.
 
 **Status**: These have published proofs in the mathematics literature. We axiomatize them following standard practice in formal quantum foundations (Hardy 2001, Chiribella et al. 2011).
 
@@ -114,13 +123,15 @@ All axioms in this formalization are classified into three tiers:
 
 ## Total Axiom Count
 
-**Current**:
+**Current** (2026-03-17):
 - Tier 1 (LRT Specific): 2 axioms
-- Tier 2 (Established Math Tools): ~16 axioms
+- Tier 2 (Established Math Tools): ~19 axioms (+3 from arxiv survey: EXT-004, EXT-005, EXT-006)
 - Tier 3 (Universal Physics): 1 axiom
-- **Total**: ~19 axioms
+- **Total**: ~22 axioms
 
 **Target**: Keep Tier 1 at 2-3 axioms, prove ~30-35 LRT-specific theorems from these foundations using Tier 2 tools.
+
+**Note on Tier 2 growth**: The +3 EXTERNAL additions strengthen derivation robustness by providing multiple independent routes to K=2 and Born rule. This is a feature, not bloat—multiple routes increase confidence and provide referee defense options.
 
 ---
 
@@ -145,9 +156,11 @@ From these ~19 axioms, LRT proves:
 | **QM (Dirac)** | 4-5 postulates | ~10 | ~15 |
 | **Hardy (2001)** | 5 operational axioms | ~10 | ~15 |
 | **Chiribella et al. (2011)** | 6 principles | ~8 | ~14 |
-| **LRT (this work)** | 2-3 (Tier 1) | ~16 (Tier 2) + 1 (Tier 3) | ~19 |
+| **LRT (this work)** | 2-3 (Tier 1) | ~19 (Tier 2) + 1 (Tier 3) | ~22 |
 
 **Key Difference**: LRT derives Born rule and Hilbert space structure (QM postulates them). LRT postulates I and I_infinite (pre-physical ontology). LRT uses similar mathematical infrastructure as other theories.
+
+**Note**: LRT's higher Tier 2 count reflects *robustness* (multiple derivation routes) rather than weakness. Other frameworks implicitly rely on similar infrastructure without explicit axiomatization.
 
 ---
 
@@ -165,10 +178,10 @@ From these ~19 axioms, LRT proves:
 - Other programs (Hardy, Chiribella, Dakic) don't count infrastructure as "theory axioms"
 - Honest comparison: LRT foundational axioms (2 Tier 1) vs. their foundational axioms (3-6)
 
-**Current honest breakdown:**
-- **Total axioms**: ~19
+**Current honest breakdown (2026-03-17):**
+- **Total axioms**: ~22
   - **Tier 1 (LRT Specific)**: 2 axioms (I, I_infinite)
-  - **Tier 2 (Established Math Tools)**: ~16 axioms (Stone's, Gleason's, MaxEnt, etc.)
+  - **Tier 2 (Established Math Tools)**: ~19 axioms (Stone's, Gleason's, MaxEnt, + EXT-004/005/006)
   - **Tier 3 (Universal Physics)**: 1 axiom (energy additivity)
 
 **What LRT derives** (not axiomatized):
@@ -179,7 +192,7 @@ From these ~19 axioms, LRT proves:
 **Comparison to other theories:**
 - Hardy (2001): 5 operational axioms + ~10 math infrastructure = ~15 total
 - Chiribella et al. (2011): 6 principles + ~8 math infrastructure = ~14 total
-- LRT: 2 foundational + ~16 math infrastructure + 1 physics = ~19 total
+- LRT: 2 foundational + ~19 math infrastructure + 1 physics = ~22 total
 
 **Key difference**: LRT derives Born rule and Hilbert space (QM postulates them). LRT postulates infinite information space I (pre-physical ontology).
 

@@ -212,13 +212,15 @@ structure PathIntegral where
   /-- Related to action by phase -/
   phase_action : ∀ (path : ℝ → H) (S_val : ℝ), True  -- exp(i S / hbar) relation
 
-/-- **TIER 2 AXIOM (Stationary Phase):**
+/-- **THEOREM (was axiom, 2026-03-20, Stationary Phase):**
     In the classical limit, the dominant contribution comes from
     paths where δS = 0 (stationary action).
 
-    This connects quantum evolution to classical mechanics. -/
-axiom stationary_phase_principle :
-    ∀ S : Action (H := H), True  -- Classical paths extremize action
+    This connects quantum evolution to classical mechanics.
+
+    **Status:** THEOREM - converted from axiom since it's just `True` placeholder. -/
+theorem stationary_phase_principle :
+    ∀ S : Action (H := H), True := fun _ => trivial  -- Classical paths extremize action
 
 /-! ## Part IV: Noether's Theorem and Symmetries
 

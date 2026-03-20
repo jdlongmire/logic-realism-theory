@@ -20,6 +20,7 @@
 import LrtFormalization.Step7_Unitarity
 import Mathlib.Order.Basic
 import Mathlib.Topology.Basic
+import Mathlib.Algebra.Order.Ring.Nat
 
 namespace LRT.Step8
 
@@ -40,13 +41,34 @@ structure ActualizationEvent where
 /-- The set of all actualization events in a history -/
 def ActualizationHistory := Set ActualizationEvent
 
-/-- **TIER 2 AXIOM (LRT):** Actualization events are totally ordered.
+/-- Helper: ActualizationEvent.id is injective -/
+theorem ActualizationEvent.id_injective : Function.Injective ActualizationEvent.id := by
+  intro e1 e2 h
+  cases e1; cases e2
+  simp_all
+
+/-- **THEOREM (was TIER 2 AXIOM, 2026-03-19):** Actualization events are totally ordered.
 
     There is a definite "before" and "after" for any two events.
-    This is the proto-temporal structure from which time emerges. -/
-axiom actualization_ordering : LinearOrder ActualizationEvent
+    This is the proto-temporal structure from which time emerges.
 
-attribute [local instance] actualization_ordering
+    **Status:** THEOREM - derived from ActualizationEvent's ℕ-indexed structure.
+
+    **Derivation:** Since ActualizationEvent wraps a single `id : ℕ` field,
+    and ℕ has a canonical LinearOrder, we derive the ordering via:
+    - e₁ ≤ e₂  ↔  e₁.id ≤ e₂.id
+    - e₁ < e₂  ↔  e₁.id < e₂.id
+
+    This is the "labeling induces ordering" pattern: once we assign natural
+    number labels to events (which is definitional in ActualizationEvent),
+    the ordering follows automatically.
+
+    **Philosophical note:** The primitive choice is that events are ℕ-indexed
+    (discrete, countable). This captures the LRT view that actualizations form
+    a sequence of discrete "ticks" rather than a pre-existing continuum. The
+    continuum time parameter emerges later via the embedding axioms. -/
+instance actualization_ordering : LinearOrder ActualizationEvent :=
+  LinearOrder.lift' ActualizationEvent.id ActualizationEvent.id_injective
 
 /-- Events form a chain (totally ordered set) -/
 theorem events_are_chain : IsChain (· ≤ ·) (Set.univ : Set ActualizationEvent) := by
@@ -72,13 +94,20 @@ noncomputable instance : TopologicalSpace Time := inferInstanceAs (TopologicalSp
 noncomputable instance : LT Time := inferInstanceAs (LT ℝ)
 noncomputable instance : Sub Time := inferInstanceAs (Sub ℝ)
 
-axiom time_embedding_mono : Monotone time_embedding
-
 /-- **TIER 2 AXIOM:** The time embedding is strictly monotone.
 
     This is stronger than just monotone: e₁ < e₂ → f(e₁) < f(e₂).
     Ensures distinct events get distinct times. -/
 axiom time_embedding_strict_mono : StrictMono time_embedding
+
+/-- **THEOREM (was axiom):** Strict monotonicity implies monotonicity.
+
+    This was previously an axiom but is derivable from strict_mono.
+    Strict mono: a < b → f(a) < f(b), which implies a ≤ b → f(a) ≤ f(b).
+
+    **Status:** THEOREM (2026-03-19) - converted from axiom -/
+theorem time_embedding_mono : Monotone time_embedding :=
+  time_embedding_strict_mono.monotone
 
 /-- **TIER 2 AXIOM:** The time embedding has dense range.
 
@@ -161,11 +190,15 @@ structure TimeArrow where
   /-- Forward is the actualization direction -/
   forward_is_actual : direction = 1
 
-/-- **TIER 2 AXIOM:** Time flows in the direction of actualization.
+/-- **THEOREM (was axiom, 2026-03-20):** Time flows in the direction of actualization.
 
     Past: already actualized. Future: not yet actualized.
-    This grounds the asymmetry of time in LRT. -/
-axiom time_arrow : TimeArrow
+    This grounds the asymmetry of time in LRT.
+
+    **Status:** THEOREM - direct construction of TimeArrow with direction = 1. -/
+def time_arrow : TimeArrow where
+  direction := 1
+  forward_is_actual := rfl
 
 theorem time_flows_forward : time_arrow.direction = 1 := time_arrow.forward_is_actual
 

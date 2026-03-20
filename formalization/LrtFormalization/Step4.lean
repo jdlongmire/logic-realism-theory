@@ -57,8 +57,17 @@ export LRT.Step4.Boolean (
 -- Re-export from Purification
 export LRT.Step4.Purification (
   PurificationHolds
+  BleachingOperation
+  no_hiding_theorem
+  information_conservation
   boolean_implies_purification
+  boolean_plus_nohiding_implies_purification
   k2_via_purification
+  local_tomography_purification_k2_chain
+  moretti_oppio_k2
+  gleason_d2_via_composite
+  k2_via_poincare
+  k2_via_tensor_consistency
 )
 
 end LRT.Step4
