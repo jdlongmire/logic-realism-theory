@@ -232,13 +232,50 @@ Lean does NOT verify:
 
 **Location:** `formalization/`
 **Development approach:** `theory/LRT-Lean-Approach.md`
+**Status document:** `theory/LRT-Lean-Proofing-Status.md`
 
-**Build status:** ✅ VERIFIED (2026-03-17)
-- All Steps 0–10 compile successfully
-- No `sorry` placeholders
-- ~30 legitimate foundational axioms
+**Build status:** ✅ VERIFIED (2026-03-20)
+- Build: SUCCESS (2491 jobs)
+- Axioms: **29** (3 PRIMITIVE + 14 EXTERNAL + 12 REMAINING)
+- Sorries: **5** (all in Step5/EigenvalueOutcome.lean and Step10_Schrodinger.lean)
 
-**Build scripts (2026-03-17):**
+### Axiom Classification
+
+| Category | Count | Description |
+|----------|-------|-------------|
+| **PRIMITIVE** | 3 | `I`, `I_infinite`, `bridge_principle` — irreducible |
+| **EXTERNAL** | 14 | Established math/physics (Gleason, Stone, Hardy, CDP, etc.) |
+| **REMAINING** | 12 | Open derivation targets |
+
+### Current Sorries (5)
+
+| File | Line | Theorem | Content | Difficulty |
+|------|------|---------|---------|------------|
+| Step10 | 101 | `hamiltonian_generates_unitary` | Self-adjoint H → U(t) unitary | HARD |
+| Step10 | 125 | `hamiltonian_generates_group` | exp(A+B) = exp(A)exp(B) commuting | HARD |
+| Step10 | 127 | `hamiltonian_generates_group` | exp(0) = I | TRIVIAL |
+| Step5/EO | 164 | `eigenvectors_orthogonal` | Eigenvalues real for self-adjoint | MEDIUM |
+| Step5/EO | 259 | `event_observable_boolean_outcomes` | Eigenvalue ∈ spectrum | MEDIUM |
+
+### REMAINING Axioms (12 derivation targets)
+
+| Group | Axioms | Notes |
+|-------|--------|-------|
+| Step 5: Eigenvalue | `spectral_correspondence`, `event_operator_has_bool_spectrum` | Spectral theory |
+| Step 6: Born Rule | `proj_norm_le`, `born_rule_completeness` | One trivial |
+| Step 7: Unitarity | `time_evolution_family`, `evolution_preserves_norm`, `evolution_group_composition`, `evolution_identity` | 4 → 2 with Hamiltonian approach |
+| Step 8: Temporal | `time_embedding`, `time_embedding_strict_mono`, `time_embedding_dense`, `evolution_matches_actualization` | `dense` mathematically impossible (ℕ → ℝ) |
+| Step 10: Schrödinger | `schrodinger_from_stone` | Blocked on Stone infra |
+
+### Key Findings (2026-03-20)
+
+1. **`time_embedding_dense` is mathematically impossible** — No strictly monotone ℕ → ℝ has dense range
+2. **Step 7/8 reducible** — 4+4 axioms → ~2 with Hamiltonian-based approach
+3. **`proj_norm_le`** — Should be trivial from Mathlib (Cauchy-Schwarz)
+4. **Realistic target:** 29 → ~24 axioms with focused effort
+
+### Build Scripts
+
 | Script | Purpose |
 |--------|---------|
 | `scripts/build.sh` | Fetches Mathlib cache, then builds (~2 min vs ~30 min) |
@@ -252,23 +289,24 @@ Usage: `cd formalization && ./scripts/build.sh`
 X → A_Ω → Determinate Identity → Local Tomography → ℂℋ → PVM → Born Rule → UNS → t → G-eq → H → Schrödinger
 ```
 
-**Step structure:**
-| Step | File | Content | Status |
-|------|------|---------|--------|
-| 0 | `Step0_Primitives.lean` | I type, X, A_Ω, **Event type**, L3Admissible | ✅ **REVISED** (2026-03-16) |
-| 1 | `Step1_Constitution.lean` | Bridge principle, ActualizedEvents | ✅ **REVISED** (2026-03-16) |
-| 2 | `Step2_DeterminateIdentity.lean` | Determinate identity, Subsystem, SubsystemEvent | ✅ **REVISED** (2026-03-16) |
-| 3 | `Step3_LocalTomography.lean` | Hardy H1/H2, k=2, **H1/H2 DERIVATION STRUCTURE** | ✅ **REVISED** (2026-03-16) |
-| 4a | `Step4_HardyAxiom.lean` | CPH structure, Hilbert space | Depends on Step 3 |
-| 4b | `Step4_BooleanBridge.lean` | **Boolean actualization → projections** | ✅ **NEW** (2026-03-16) |
-| 5 | `Step5_EigenvalueRestriction/` | Spectral idempotent axioms | **Justified via Step 4b** |
-| 6 | `Step6_BornRule.lean` | Projection norm, Born rule | Needs Gleason import |
-| 7 | `Step7_Unitarity.lean` | Wigner theorem, evolution | OK (import Wigner from Mathlib) |
-| 8 | `Step8_TemporalEmergence.lean` | Actualization ordering → time | Axiom (weak link) |
-| 9 | `Step9_EnergyAction.lean` | Stone, Planck, Noether | Planck empirically imported |
-| 10 | `Step10_Schrodinger.lean` | Schrödinger from Stone | **NEEDS DERIVATION** |
+**Step structure (2026-03-20):**
+| Step | File | Content | Axioms | Sorries | Status |
+|------|------|---------|--------|---------|--------|
+| 0 | `Step0_Primitives.lean` | I type, X, A_Ω, Event type, L3Admissible | 2 | 0 | ✅ |
+| 1 | `Step1_Constitution.lean` | Bridge principle, ActualizedEvents | 1 | 0 | ✅ |
+| 2 | `Step2_DeterminateIdentity.lean` | Determinate identity, Subsystem, SubsystemEvent | 0 | 0 | ✅ |
+| 3 | `Step3_LocalTomography.lean` | Hardy H1/H2, k=2, derivation structure | 2 | 0 | ✅ |
+| 4 | `Step4/*.lean` | Hardy, Boolean, Purification | 4 | 0 | ✅ |
+| 5 | `Step5/*.lean` | Eigenvalue restriction, outcomes | 2 | **2** | ⚠️ |
+| 6 | `Step6_BornRule.lean` | Projection norm, Born rule, Gleason | 5 | 0 | ✅ |
+| 7 | `Step7_Unitarity.lean` | Evolution family, norm preservation | 4 | 0 | ✅ |
+| 8 | `Step8_TemporalEmergence.lean` | Time embedding, actualization ordering | 4 | 0 | ⚠️ (`dense` impossible) |
+| 9 | `Step9_EnergyAction.lean` | Stone, Planck, Noether | 4 | 0 | ✅ |
+| 10 | `Step10_Schrodinger.lean` | Schrödinger from Stone | 1 | **3** | ⚠️ |
 
-**Axiom reduction target:** 12 → ≤5
+**Total:** 29 axioms, 5 sorries
+
+**Axiom reduction target:** 29 → ~24 (realistic) → ≤20 (stretch)
 
 **Phase 0 COMPLETED (2026-03-16):**
 - Added `Event` type as queries over configurations
@@ -437,6 +475,67 @@ Route B is cleaner because it imports well-established results (no-hiding, CDP) 
 4. **OPN-005: Boolean → Purification**
    - Status: Formalized (MEDIUM difficulty)
    - Cleaner K=2 derivation route
+
+5. **`time_embedding_dense` impossible**
+   - Status: DOCUMENTED (2026-03-20)
+   - Finding: No strictly monotone ℕ → ℝ can have dense range
+   - Options: Remove axiom, use ℚ-indexed events, or completion semantics
+
+---
+
+## Research Documentation (formalization/docs/)
+
+**Generated 2026-03-17–20:** 30+ research documents
+
+### Axiom Audits
+| Doc | Purpose |
+|-----|---------|
+| `axiom-status.md` | Current 29-axiom classification (PRIMITIVE/EXTERNAL/REMAINING) |
+| `axiom-inventory.md` | Full axiom inventory with sources |
+| `axiom-audit-20260320.yaml` | Machine-readable audit |
+| `axiom-audit-phase2.md` | Phase 2 reduction analysis |
+| `final-axiom-audit-20260319.md` | Pre-reduction audit |
+
+### Analysis Documents
+| Doc | Purpose |
+|-----|---------|
+| `time-evolution-family-analysis.md` | Step 7 Hamiltonian approach (4 → 2 axioms) |
+| `temporal-embedding-analysis.md` | Step 8 findings (dense impossible) |
+| `axiom-triage-medium-priority.md` | Derivation candidates |
+| `reduction-report.md` | Reduction history |
+
+### arXiv Literature
+| Doc | Content |
+|-----|---------|
+| `moretti-oppio-analysis.md` | Relativistic symmetry, K=2 via Poincaré |
+| `torres-alegre-analysis.md` | Born rule from causality |
+| `yang-fullwood-analysis.md` | Effect algebras |
+| `fiorentino-weigert-analysis.md` | Gleason d=2 |
+| `zhang-additivity-defense.md` | Measure additivity |
+
+### Subsumption Arguments
+| Doc | Content |
+|-----|---------|
+| `mwi-subsumption.md` | MWI as L₃ special case |
+| `categorical-qm-subsumption.md` | Categorical QM integration |
+| `einselection-l3.md` | Decoherence/einselection |
+| `effect-algebras-step3.md` | Effect algebra connection |
+
+### AI Consultations
+| Doc | Content |
+|-----|---------|
+| `ai-consult-step3.md` | Multi-model review of Step 3 |
+| `ai-consult-k2.md` | K=2 derivation routes |
+| `ai-consult-actualization.md` | Actualization semantics |
+| `ao-topos-formalization.md` | Topos theory approach |
+
+### Reviews
+| Doc | Source |
+|-----|--------|
+| `gemini-review-20260317.md` | Gemini adversarial |
+| `gpt-review-20260317.md` | GPT-4 structural |
+| `perplexity-review-20260317.md` | Perplexity |
+| `research-synthesis-20260317.md` | Multi-source synthesis |
 
 ---
 
@@ -699,11 +798,11 @@ Once established, the remainder of QM formalism becomes accessible through known
 
 ### Status
 
-**ACTIVE DEVELOPMENT** — Full reconstruction chain COMPLETED (2026-03-17)
+**AXIOM REDUCTION PHASE** — Full reconstruction chain COMPLETED (2026-03-17), now reducing axiom/sorry count
 
-**Overall assessment:** The Lean work shows LRT as a typed ontological system (internal consistency). The reconstruction chain from X to Schrödinger is complete. Remaining work: derive K=2 (OPN-005 provides cleaner path than OPN-004).
+**Overall assessment:** The Lean work shows LRT as a typed ontological system (internal consistency). The reconstruction chain from X to Schrödinger is complete. Current focus: axiom reduction and sorry elimination.
 
-**Progress (2026-03-17):**
+**Progress (2026-03-20):**
 - Phase 0: ✅ Admissibility fixed
 - Phase 1: ✅ Events + Boolean algebra
 - Phase 2: ✅ H1/H2 derivation structure (H2 proven)
@@ -712,8 +811,16 @@ Once established, the remainder of QM formalism becomes accessible through known
 - Phase 5: ✅ Boolean spectrum (Step 5)
 - Phase 6: ✅ Born rule (Step 6)
 - Phase 7: ✅ Time/dynamics (Steps 7–10)
+- **Axiom reduction:** 44 → 31 → **29** axioms
+- **Sorry reduction:** Active (5 remaining)
 
-**Next step:** OPN-005 derivation (Boolean → Purification → K=2)
+**Orchestrator active (2026-03-20):** Stacked sorry reduction plan running:
+- Phase 1: `exp(0) = I` (TRIVIAL)
+- Phase 2: `eigenvalues_real`, `eigenvalue ∈ spectrum` (MEDIUM, parallel)
+- Phase 3: `exp additivity`, `hamiltonian_generates_unitary` (HARD)
+- Phase 4: Consolidate, update docs, commit
+
+**Next step:** Complete sorry reduction, then OPN-005 derivation
 
 ---
 
@@ -914,10 +1021,19 @@ cd traceability && python3 scripts/build.py --all
 ## Commands
 
 - **Build Lean (recommended):** `cd formalization && ./scripts/build.sh`
-- **Build Lean (manual):** `cd formalization && lake exe cache get && lake build`
+- **Build Lean (manual):** `cd formalization && source ~/.elan/env && lake exe cache get && lake build`
 - **Clean LRT only:** `cd formalization && ./scripts/clean.sh`
 - **Update Mathlib:** `cd formalization && ./scripts/update-mathlib.sh`
-- **Check for sorry:** `grep -r "sorry" formalization/LRT/`
-- **List axioms:** `grep -r "^axiom" formalization/LRT/`
+- **Check for sorry:** `grep -r "sorry" formalization/LrtFormalization/ --include="*.lean" | grep -v "no sorry"`
+- **List axioms:** `grep -rh "^axiom" formalization/LrtFormalization/ --include="*.lean" | wc -l`
 - **Generate PDF:** `pandoc LRT-MASTER.md -o LRT-MASTER.pdf --pdf-engine=xelatex -V geometry:margin=1in`
 - **Build traceability reports:** `cd traceability && python3 scripts/build.py --all`
+
+### Quick Status Check
+
+```bash
+cd /media/jdlongmire/Macro-Drive-2TB/GitHub_Repos/logic-realism-theory/formalization
+grep -r "sorry" LrtFormalization/ --include="*.lean" | grep -v "\.lake" | grep -v "no sorry" | wc -l  # Sorries
+grep -rh "^axiom" LrtFormalization/ --include="*.lean" | wc -l  # Axioms
+source ~/.elan/env && lake build 2>&1 | tail -5  # Build status
+```
