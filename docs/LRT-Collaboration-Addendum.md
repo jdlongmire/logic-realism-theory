@@ -20,22 +20,22 @@
 **Every derivation follows a 2-stage pipeline:**
 
 ```
-Stage 1: Notebook                    Stage 2: Lean 4
+Stage 1: Theory Document             Stage 2: Lean 4
 ─────────────────────────────────    ─────────────────────────────────
 First principles reasoning           Formal proof
-+ Computational verification
++ Documentation
 
-notebooks/                           lean/LogicRealismTheory/Derivations/
-  D{tier}.{seq}-{name}.ipynb           D{tier}{seq}_{Name}.lean
+theory/                              formalization/LrtFormalization/
+  {topic}.md or supplements/           Step{N}_{Name}.lean
 ```
 
-**Notebook contains both:**
-- Markdown cells: First-principles theory reasoning
-- Code cells: Computational verification
+**Theory documents contain:**
+- First-principles reasoning with explicit dependencies
+- Circularity checks and falsification criteria
 
 **Rules (Non-Negotiable):**
 1. Each derivation is incremental (builds only on prior verified steps)
-2. No Stage 2 (Lean) without Stage 1 (Notebook) complete
+2. No Lean formalization without theory documentation complete
 3. Circularity checked at every stage
 4. No advancement without explicit quality gate passage
 
@@ -43,21 +43,20 @@ notebooks/                           lean/LogicRealismTheory/Derivations/
 
 | Stage | Gate Requirements |
 |-------|-------------------|
-| Notebook | First principles only, explicit dependencies, circularity check, no undefined terms, computational verification, edge cases tested |
-| Lean | Compiles without sorry, axiom count matches tier, no smuggled assumptions |
+| Theory | First principles only, explicit dependencies, circularity check, no undefined terms |
+| Lean | Compiles without sorry, axiom count documented, no smuggled assumptions |
 
-**Tracking:** See `theory/20251221-logic-realism-theory-refactor.md` for derivation chain and progress.
+**Tracking:** See `theory/LRT-Lean-Proofing-Status.md` for derivation chain and progress.
 
-### Notebook Header (Mandatory)
+### Document Header (Mandatory)
 
-Every derivation notebook must begin with a markdown cell:
+Every derivation document should begin with:
 
 ```markdown
-# D{tier}.{seq}: {Title}
+# Step {N}: {Title}
 
-**Stage**: Notebook | Lean
 **Status**: Draft | Review | Complete
-**Depends On**: [list of D{x}.{y} IDs]
+**Depends On**: [list of prior Step IDs]
 **Assumptions**: [explicit list of what this derivation takes as given]
 **Falsification**: [what would disprove this derivation]
 ```
@@ -68,25 +67,24 @@ Stage transitions require explicit approval:
 
 | Transition | Requirement |
 |------------|-------------|
-| Draft → Notebook Complete | Self-review + circularity check + computational verification |
-| Notebook → Lean | User approval of notebook |
+| Draft → Theory Complete | Self-review + circularity check |
+| Theory → Lean | User approval of theory document |
 | Lean Complete | User approval + sanity check |
 
-**No silent advancement.** Each stage transition logged in session with user acknowledgment.
+**No silent advancement.** Each stage transition logged with user acknowledgment.
 
 ### Dependency Graph
 
-Maintain visual DAG in `theory/20251221-logic-realism-theory-refactor.md`:
+See `traceability/` for formal dependency tracking. The derivation chain:
 
 ```
-D0.1 ─┬─→ D1.1 ─→ D1.2 ─→ D1.3 ─→ D1.4 ─┬─→ D2.1 ─→ D2.2 ─→ D2.3
-D0.2 ─┤                    │            │
-D0.3 ─┘                    └────────────┴─→ D3.1 ─→ D3.2
-                                        │
-                           D1.3 ────────┴─→ D4.1 ─→ D4.2
+Step 0 (Primitives) → Step 1 (Constitution) → Step 2 (Determinate Identity)
+    → Step 3 (Local Tomography) → Step 4 (Boolean/Hardy/Purification)
+    → Step 5 (Eigenvalue) → Step 6 (Born Rule) → Step 7 (Unitarity)
+    → Step 8 (Temporal) → Step 9 (Energy) → Step 10 (Schrödinger)
 ```
 
-**Update rule:** Graph updated immediately when any derivation advances stage.
+**Update rule:** Traceability artifacts regenerated when any step changes.
 
 ### Rollback Protocol
 
@@ -132,17 +130,16 @@ Tier 0 primitives must satisfy:
 
 | Location | Pattern | Example |
 |----------|---------|---------|
-| notebooks/ | `D{tier}.{seq}-{name}.ipynb` | `D0.1-three-fundamental-laws.ipynb` |
-| lean/.../Derivations/ | `D{tier}{seq}_{Name}.lean` | `D01_ThreeFundamentalLaws.lean` |
-| archive folders | `yyyymmdd-{description}/` | `20251221-theory-consolidation/` |
-| versioned files | `yyyymmdd-{name}.md` | `20251221-logic_realism_theory.md` |
+| theory/ | `{topic}.md` | `LRT-MASTER.md`, `TAB-v2.0.md` |
+| formalization/ | `Step{N}_{Name}.lean` | `Step0_Primitives.lean` |
+| archive/ | `yyyymmdd-{description}/` | `20251221-theory-consolidation/` |
+| docs/ | `{topic}.md` | `axiom-status.md` |
 
 **Rules:**
 - Date stamps use ISO format: `yyyymmdd` (no hyphens in date)
-- Derivation IDs: `D{tier}.{seq}` where tier=0-4, seq=1-9
+- Step IDs: `Step{N}` where N=0-10
 - Lean files use PascalCase after prefix
 - Archive folders always dated
-- Same-day revisions: append `_v1.1`, `_v1.2`, etc. (e.g., `20251221-logic_realism_theory_v1.2.md`)
 
 ---
 
