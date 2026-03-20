@@ -6,17 +6,27 @@
 
 ## Core Thesis
 
-The Three Fundamental Laws of Logic (L₃) are ontological constraints constitutive of physical reality:
+Three primitives are jointly necessary and sufficient for the constitution of reality:
 
-| Law | Constraint |
-|-----|------------|
-| **Determinate Identity** | Every entity is determinately what it is |
-| **Non-Contradiction** | No entity is both P and not-P |
-| **Excluded Middle** | Every entity is either P or not-P |
+| Primitive | Role |
+|-----------|------|
+| **L₃** | Prescriptive logical constraint (identity, non-contradiction, excluded middle) |
+| **I∞** | Total informational possibility space |
+| **A** | Actualization — marks configurations as obtaining |
 
-**Derivation Chain:**
+These primitives form a co-constitutive unity:
+
+$$\chi \equiv [L_3 : I_\infty : A]$$
+
+Their interaction yields the **Bridge Identity**:
+
+$$A_\Omega = L_3(I_\infty)$$
+
+Actuality coincides with the logically admissible informational configurations of the total possibility space.
+
+**Reconstruction Chain:**
 ```
-X → A_Ω → Determinate Identity → Local Tomography → ℂℋ → PVM → Born Rule → UNS → t → Schrödinger
+χ → A_Ω → Determinate Identity → Local Tomography → ℂℋ → PVM → Born Rule → UNS → t → Schrödinger
 ```
 
 ---
