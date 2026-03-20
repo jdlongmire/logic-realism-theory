@@ -354,18 +354,39 @@ theorem proj_prob_nonneg (P : H →L[ℂ] H) (ψ : H) :
   unfold projectionProbability
   exact sq_nonneg ‖P ψ‖
 
-/-- **TIER 2 AXIOM (Projection Contraction):**
-    Orthogonal projections satisfy ‖Pψ‖ ≤ ‖ψ‖.
+/-- **Orthogonal projections are contractive: ‖Pψ‖ ≤ ‖ψ‖**
 
     This is standard functional analysis: projections onto closed subspaces
     are contractive. The proof uses:
-    - ‖Pψ‖² = ⟨ψ|Pψ⟩ (from idempotence + self-adjointness)
-    - Cauchy-Schwarz: |⟨ψ|Pψ⟩| ≤ ‖ψ‖·‖Pψ‖
-    - Combining: ‖Pψ‖² ≤ ‖ψ‖·‖Pψ‖, so ‖Pψ‖ ≤ ‖ψ‖
-
-    Axiomatized here to avoid complex norm_abs API issues in Mathlib. -/
-axiom proj_norm_le (P : H →L[ℂ] H) (h_proj : IsOrthogonalProjection P) (ψ : H) :
-    ‖P ψ‖ ≤ ‖ψ‖
+    - ‖Pψ‖² = Re⟨ψ|Pψ⟩ (from idempotence + self-adjointness, via proj_norm_sq_eq_inner)
+    - Cauchy-Schwarz: Re⟨ψ|Pψ⟩ ≤ ‖ψ‖·‖Pψ‖
+    - Combining: ‖Pψ‖² ≤ ‖ψ‖·‖Pψ‖, so ‖Pψ‖ ≤ ‖ψ‖ -/
+theorem proj_norm_le (P : H →L[ℂ] H) (h_proj : IsOrthogonalProjection P) (ψ : H) :
+    ‖P ψ‖ ≤ ‖ψ‖ := by
+  -- Handle the trivial case where P ψ = 0
+  by_cases h_zero : P ψ = 0
+  · simp [h_zero]
+  -- Non-trivial case: ‖P ψ‖ > 0
+  have h_pos : 0 < ‖P ψ‖ := norm_pos_iff.mpr h_zero
+  -- Step 1: ‖Pψ‖² = Re⟨ψ|Pψ⟩
+  have h_sq := proj_norm_sq_eq_inner P h_proj ψ
+  unfold innerProbability at h_sq
+  -- Step 2: Cauchy-Schwarz gives Re⟨ψ|Pψ⟩ ≤ ‖ψ‖ * ‖Pψ‖
+  have h_cs : (@inner ℂ H _ ψ (P ψ)).re ≤ ‖ψ‖ * ‖P ψ‖ := by
+    have h := re_inner_le_norm (𝕜 := ℂ) ψ (P ψ)
+    -- RCLike.re on ℂ equals Complex.re
+    simp only [RCLike.re_to_complex] at h
+    exact h
+  -- Step 3: Combine to get ‖Pψ‖² ≤ ‖ψ‖ * ‖Pψ‖
+  have h_sq_le : ‖P ψ‖^2 ≤ ‖ψ‖ * ‖P ψ‖ := by
+    rw [h_sq]
+    exact h_cs
+  -- Step 4: Divide by ‖Pψ‖ to get ‖Pψ‖ ≤ ‖ψ‖
+  have h_div : ‖P ψ‖^2 / ‖P ψ‖ ≤ (‖ψ‖ * ‖P ψ‖) / ‖P ψ‖ := by
+    apply div_le_div_of_nonneg_right h_sq_le (le_of_lt h_pos)
+  rw [sq, mul_div_assoc, div_self (ne_of_gt h_pos), mul_one] at h_div
+  rw [mul_div_assoc, div_self (ne_of_gt h_pos), mul_one] at h_div
+  exact h_div
 
 /-- For normalized state, projection probability ≤ 1 -/
 theorem proj_prob_le_one

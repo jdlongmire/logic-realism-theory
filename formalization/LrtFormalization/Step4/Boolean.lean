@@ -261,7 +261,7 @@ This follows from Step 5 (EigenvalueRestriction.lean). We restate for clarity.
 
     **Status:** THEOREM (2026-03-17) - requires EventRepresentation witness
 -/
-theorem event_operator_is_projection
+theorem event_operator_is_projection [FiniteDimensional ℂ H]
     (rep : EventRepresentation (H := H)) :
     IsOrthogonalProjection rep.op :=
   step5_eigenvalue_restriction rep.op rep.self_adjoint (event_operator_boolean_spectrum rep)
@@ -345,7 +345,7 @@ The complete bridge from Boolean actualization to projection structure.
 
     **Status:** THEOREM (2026-03-17) - requires EventRepresentation witness
 -/
-theorem phase4_boolean_bridge
+theorem phase4_boolean_bridge [FiniteDimensional ℂ H]
     (χ : X)
     (rep : EventRepresentation (H := H)) :
     IsOrthogonalProjection rep.op :=
