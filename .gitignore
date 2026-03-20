@@ -45,3 +45,5 @@ formalization/.lake
 
 # Claude Code
 .claude/
+CLAUDE.md
+AI-Collaboration-Profile.json
