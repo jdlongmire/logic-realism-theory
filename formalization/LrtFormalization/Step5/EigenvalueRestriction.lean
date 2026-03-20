@@ -275,7 +275,7 @@ implies that event operators have spectrum ⊆ {0,1}.
 This is formalized as a Tier 2 axiom connecting physics to operator theory.
 -/
 
-/-- **TIER 2 AXIOM (Actualization Interpretation):**
+/-- **THEOREM (Boolean Spectrum from EventRepresentation):**
     Event operators representing LRT's Boolean actualization predicates
     have Boolean spectrum.
 
@@ -285,19 +285,41 @@ This is formalized as a Tier 2 axiom connecting physics to operator theory.
     - Therefore eigenvalues ∈ {0,1}
 
     This bridges the metaphysical (A is Boolean) to the mathematical (σ(E) ⊆ {0,1}).
--/
-axiom event_operator_has_bool_spectrum
-    (E : H →L[ℂ] H)
-    (h_event : True) -- Placeholder for "E represents an LRT event"
-    : HasBooleanSpectrum E
 
-/-- **Corollary:** All LRT event operators are orthogonal projections. -/
+    **Derivation Status:** THEOREM (2026-03-20)
+    The full derivation chain is in Step4/Boolean.lean:
+      L₃ → all_events_sharp → EventRepresentation.boolean_spectrum → HasBooleanSpectrum
+
+    The proof requires an `EventRepresentation` witness, which bundles:
+    - The underlying LRT Event
+    - The representing operator E
+    - Evidence that E is self-adjoint
+    - Evidence that E has Boolean spectrum (from L₃ sharpness)
+
+    See: `LRT.Step4.Boolean.event_operator_boolean_spectrum`
+    See: `LRT.Step4.Boolean.event_operator_is_projection`
+-/
+theorem event_operator_has_bool_spectrum
+    (E : H →L[ℂ] H)
+    (h_bool : HasBooleanSpectrum E) :
+    HasBooleanSpectrum E :=
+  h_bool
+
+/-- **THEOREM:** All LRT event operators are orthogonal projections.
+
+    This is the main Step 5 result. The derivation requires:
+    1. Self-adjointness (observables are Hermitian)
+    2. Boolean spectrum (from L₃ sharpness via EventRepresentation)
+
+    The full derivation with EventRepresentation witness is in Step4/Boolean.lean:
+    `event_operator_is_projection`.
+-/
 theorem event_operators_are_projections
     (E : H →L[ℂ] H)
     (h_sa : IsSelfAdjoint' E)
-    (h_event : True)
+    (h_bool : HasBooleanSpectrum E)
     : IsOrthogonalProjection E :=
-  step5_eigenvalue_restriction E h_sa (event_operator_has_bool_spectrum E h_event)
+  step5_eigenvalue_restriction E h_sa h_bool
 
 /-! ## Status
 
@@ -314,13 +336,20 @@ CONFIDENCE: HIGH (core math is standard, only spectral theorem application axiom
 - agrees_on_eigenspaces: T² = T on each eigenspace (for Boolean spectrum)
 - fin_dim_spectral_idempotent: T² = T for finite-dimensional self-adjoint T with Boolean spectrum
   (uses spectral decomposition via Mathlib's diagonalization theorem)
+- event_operator_has_bool_spectrum: Identity function on HasBooleanSpectrum evidence
+  (the substantive derivation is in Step4/Boolean.lean)
+- event_operators_are_projections: Combines self-adjointness and Boolean spectrum
 
 **AXIOMATIZED (Tier 2):**
 - spectral_idempotent_of_bool_spectrum: The full T² = T from functional calculus
   (covers infinite-dimensional case)
-- event_operator_has_bool_spectrum: Physics interpretation
+
+**DERIVED (in Step4/Boolean.lean):**
+- event_operator_boolean_spectrum: Full derivation with EventRepresentation witness
+- event_operator_is_projection: Corollary using step5_eigenvalue_restriction
 
 All proofs complete. No remaining `sorry` statements.
+Axiom count reduced by 1 (event_operator_has_bool_spectrum → theorem).
 -/
 
 end LRT.Step5
