@@ -99,7 +99,7 @@ All axioms in this formalization are classified into three tiers:
 | EXT-005 | Fiorentino-Weigert 2025 ([2511.15607](https://arxiv.org/abs/2511.15607)) | Gleason extension to d=2 qubits |
 | EXT-006 | Torres Alegre 2025 ([2512.12636](https://arxiv.org/abs/2512.12636)) | Causal Born rule derivation (no-signaling) |
 
-**Zhang Additivity Defense**: Zhang (2026, [2603.06211](https://arxiv.org/abs/2603.06211)) proves additivity is irreducible in standard Born rule derivations. LRT escapes this by deriving additivity from Non-Contradiction (NC), not non-contextuality. See `formalization/docs/zhang-additivity-defense.md`.
+**Zhang Additivity Defense**: Zhang (2026, [2603.06211](https://arxiv.org/abs/2603.06211)) proves additivity is irreducible in standard Born rule derivations. LRT escapes this by deriving additivity from Non-Contradiction (NC), not non-contextuality. See `docs/formalization/zhang-additivity-defense.md`.
 
 **Status**: These have published proofs in the mathematics literature. We axiomatize them following standard practice in formal quantum foundations (Hardy 2001, Chiribella et al. 2011).
 

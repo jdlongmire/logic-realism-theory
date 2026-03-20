@@ -54,7 +54,7 @@ The authoritative Lean formalization is now:
 /formalization/
 ```
 
-See `/formalization/docs/axiom-status.md` for current axiom counts and build status.
+See `/docs/formalization/axiom-status.md` for current axiom counts and build status.
 
 ---
 

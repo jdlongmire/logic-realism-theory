@@ -31,7 +31,7 @@
    - LRT-CDP-K2 (no-hiding → purification → K=2)
    - LRT-AO-Topos (topos-theoretic A_Ω formalization)
 
-### Key Outputs (formalization/docs/)
+### Key Outputs (docs/formalization/)
 
 | Document | Size | Purpose |
 |----------|------|---------|
@@ -77,7 +77,7 @@ Check status and review outputs.
 Push the 25 research documents to GitHub:
 ```bash
 cd /media/jdlongmire/Macro-Drive-2TB/GitHub_Repos/logic-realism-theory
-git add formalization/docs/
+git add docs/formalization/
 git commit -m "Add LRT formalization research (25 docs from 2026-03-17)"
 git push
 ```

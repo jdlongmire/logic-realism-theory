@@ -274,4 +274,4 @@ The dagger symmetric monoidal category structure of quantum mechanics is not fun
 
 *Generated: 2026-03-17*
 *Status: Complete subsumption analysis*
-*Integration: formalization/docs/*
+*Integration: docs/formalization/*

@@ -325,4 +325,4 @@ This analysis recommends **adding Torres Alegre as a parallel derivation route**
 - Yang-Fullwood (2025). "Born rule as natural transformation." arXiv:2509.08323
 - Agrawal-Wilson (2025). "Process-theoretic Born derivation." arXiv:2511.21355
 - LRT Step 6: `formalization/LrtFormalization/Step6_BornRule.lean`
-- LRT arxiv survey: `formalization/docs/arxiv-survey-20260317.md`
+- LRT arxiv survey: `docs/formalization/arxiv-survey-20260317.md`

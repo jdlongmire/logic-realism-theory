@@ -482,7 +482,7 @@ Route B is cleaner because it imports well-established results (no-hiding, CDP) 
 
 ---
 
-## Research Documentation (formalization/docs/)
+## Research Documentation (docs/formalization/)
 
 **Generated 2026-03-17–20:** 30+ research documents
 

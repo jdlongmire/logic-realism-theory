@@ -421,7 +421,7 @@ The topos framing makes the role of A clearer:
 
 ### LRT Background
 5. LRT Foundation Document: `theory/archive/20251221-theory-consolidation/20251216-logic_realism_theory_foundation.md`
-6. AI Consultation on Actualization: `formalization/docs/ai-consult-actualization.md`
+6. AI Consultation on Actualization: `docs/formalization/ai-consult-actualization.md`
 
 ### Modal Logic
 7. Kripke, S. (1963). Semantical analysis of modal logic. *J. Symbolic Logic* 28, 113-134.
