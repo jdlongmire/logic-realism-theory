@@ -16,50 +16,81 @@ The Three Fundamental Laws of Logic (L₃) are ontological constraints constitut
 
 **Derivation Chain:**
 ```
-L₃ → Distinguishability → Hilbert Space → Born Rule → Quantum Mechanics
+X → A_Ω → Determinate Identity → Local Tomography → ℂℋ → PVM → Born Rule → UNS → t → Schrödinger
 ```
 
 ---
 
-## Papers
+## Repository Structure
 
-### Core Framework
+```
+logic-realism-theory/
+├── theory/                 # Active theory documents (LRT-MASTER.md, TAB-v2.0.md)
+├── formalization/          # Lean 4 formalization (Steps 0-10)
+├── docs/                   # Consolidated documentation
+│   ├── formalization/      # Lean research and axiom audits
+│   ├── traceability/       # Claim tracking reports
+│   ├── papers/             # Technical papers
+│   └── articles/           # Expository content
+├── traceability/           # Claim-control infrastructure
+├── archive/                # All deprecated/historical content
+└── scripts/                # Build and utility scripts
+```
 
-| Paper | Description |
-|-------|-------------|
-| [Position Paper](theory/20260109_Logic_Realism_Theory_Position_Paper.md) | Main framework: L₃ as physical constraints [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18202130.svg)](https://doi.org/10.5281/zenodo.18202130) |
-| [Technical Foundations](theory/20260109_Logic_Realism_Theory_Technical_Foundations.md) | Detailed derivations and axiom structure |
-| [Minimal Viable Set](theory/20260109_LRT_Minimal_Viable_Set.md) | Measurement as logical selection; Born rule as discovered constraint |
+---
+
+## Formalization Status (2026-03-20)
+
+| Metric | Value |
+|--------|-------|
+| **Build** | ✅ SUCCESS (2491 jobs, 0 errors) |
+| **Total Axioms** | 31 |
+| **PRIMITIVE** | 3 (I∞, I_infinite, bridge_principle) |
+| **EXTERNAL** | 14 (established math: Gleason, Stone, Hardy, CDP) |
+| **REMAINING** | 14 (derivable with more work) |
+| **Sorries** | 0 |
+
+See [docs/formalization/axiom-status.md](docs/formalization/axiom-status.md) for current axiom classification.
+
+---
+
+## Key Documents
+
+### Theory
+
+| Document | Description |
+|----------|-------------|
+| [LRT-MASTER.md](theory/LRT-MASTER.md) | Canonical unified source: complete 13-step derivation |
+| [TAB-v2.0.md](theory/TAB-v2.0.md) | Transcendental Argument for the Bridge: metaphysical groundwork |
+
+### Formalization
+
+| Document | Description |
+|----------|-------------|
+| [LRT-Lean-Proofing-Status.md](theory/LRT-Lean-Proofing-Status.md) | Current Lean formalization status |
+| [LRT-Lean-Approach.md](theory/LRT-Lean-Approach.md) | Formalization methodology and strategy |
 
 ### Published (Zenodo)
 
 | Paper | DOI |
 |-------|-----|
+| [Position Paper](theory/20260109_Logic_Realism_Theory_Position_Paper.md) | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18202130.svg)](https://doi.org/10.5281/zenodo.18202130) |
 | [Philosophical Foundations](theory/20260109_Logic_Realism_Theory_Philosophical_Foundations.md) | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14581992.svg)](https://doi.org/10.5281/zenodo.14581992) |
 | [It From Bit, Bit From Fit](theory/20260109_It_From_Bit_Bit_From_Fit.md) | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17831883.svg)](https://doi.org/10.5281/zenodo.17831883) |
-| [Non-Decomposability Bell Analysis](20260311_003414_LRT_NonDecomp_Bell_v3.pdf) | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18950181.svg)](https://doi.org/10.5281/zenodo.18950181) |
-| [Black Hole Operator Formalism](theory/20260311_005704_LRT_BH_Operator_Formalism_v2.pdf) | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18950706.svg)](https://doi.org/10.5281/zenodo.18950706) |
-
-### Derivation Details
-
-| Paper | Derives |
-|-------|---------|
-| [Hilbert Space](theory/20251231_LRT_Hilbert_Space_Derivation.md) | L₃ → Complex Hilbert space (via Masanes-Müller) |
-| [Born Rule](theory/20251231_LRT_Born_Rule_Paper.md) | L₃ → Born statistics (via Gleason) |
-| [QFT Statistics](theory/20251231_LRT_QFT_Statistics_Paper.md) | L₃ → Symmetrization postulate |
-| [GR Extension](theory/20251231_LRT_GR_Extension.md) | L₃ → Spacetime structure (programmatic) |
 
 ---
 
-## Axiom Structure
+## Building the Formalization
 
-| Tier | Count | Examples |
-|------|-------|----------|
-| **Tier 1** (LRT Specific) | 2 | I, I_infinite |
-| **Tier 2** (Established Math) | ~9 | Gleason, Masanes-Müller, Stone |
-| **Tier 3** (Universal Physics) | 1 | Energy additivity |
+```bash
+cd formalization
+./scripts/build.sh    # Fetches Mathlib cache, then builds (~2 min)
+```
 
-See [formalization/docs/axiom-status.md](formalization/docs/axiom-status.md) for current axiom audit and classification.
+Or manually:
+```bash
+source ~/.elan/env && lake exe cache get && lake build
+```
 
 ---
 
@@ -74,10 +105,10 @@ Contact: jdlongmire@outlook.com
 ## Citation
 
 ```bibtex
-@misc{longmire2025lrt,
+@misc{longmire2026lrt,
   author = {Longmire, James},
   title = {Logic Realism Theory: Physical Foundations from Logical Constraints},
-  year = {2025},
+  year = {2026},
   publisher = {Zenodo},
   doi = {10.5281/zenodo.18202130}
 }
@@ -94,3 +125,5 @@ This work is licensed under [Creative Commons Attribution 4.0 International](htt
 ---
 
 *Human-Curated, AI-Enabled (HCAE)*
+
+**Last Updated**: 2026-03-20
