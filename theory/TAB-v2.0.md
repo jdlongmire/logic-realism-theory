@@ -140,7 +140,7 @@ Dialetheism therefore presupposes L₃ at the ontological level in order to oper
 
 A physical dialetheism, claiming that some configurations are ontologically both P and not-P, would destroy the identity conditions required for any truth-value assignment to make sense. Without identity, there is nothing to predicate of, and no proposition has content. This is not a restriction dialetheists accept; it is a condition they implicitly rely upon.
 
-### 2.5 The Ontological Status of L₃
+### 2.6 The Ontological Status of L₃
 
 L₃ does not exist as a thing alongside other things. It is not an entity but a constraint on entities. Its mode of being is prescriptive: it determines what structures are admissible for any configuration that obtains.
 
