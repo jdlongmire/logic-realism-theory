@@ -1,6 +1,5 @@
 # The Actualization Bridge: Transcendental Foundations of Logic Realism Theory
-
-## Part I: Ontological Groundwork
+## Part I: Ontological Groundwork — The Transcendental Argument for χ ≡ [L₃ : I∞ : A]
 
 **James D. Longmire**
 Northrop Grumman Fellow (unaffiliated research)
@@ -64,6 +63,12 @@ The third observation yields the bridge equation: actuality coincides with the l
 $$A_\Omega = L_3(I_\infty)$$
 
 The remainder of this paper justifies these claims. Sections 2–4 establish that each primitive is transcendentally necessary. Section 5 demonstrates their mutual constitution. Section 6 derives the bridge identity. Section 7 situates TAB within information ontology and the Logic Realism tradition. Sections 8–9 draw consequences and conclude.
+
+### 1.6 Division of Labor: TAB and LRT-MASTER
+
+This paper (TAB, Part I) develops the *ontological groundwork* only: the transcendental argument for χ ≡ [L₃ : I∞ : A] and the bridge identity A_Ω = L₃(I∞). No physical formalisms are derived here.
+
+The *physics reconstruction* proceeds in the companion paper (LRT-MASTER, Part II), which imports the bridge identity as its starting point and derives the full structure of non-relativistic quantum mechanics: complex Hilbert space, projection-valued measures, the Born rule, continuous time, and the Schrödinger equation.
 
 ### 1.5 Method
 
@@ -355,6 +360,16 @@ Given (i)–(iii), the identity follows necessarily. There is no coherent way to
 The notion of identity at stake is structural identity: A_Ω and L₃(I∞) pick out the same domain by different conceptual routes. A_Ω picks it out as "what obtains"; L₃(I∞) picks it out as "the admissible configurations of the possibility space." The claim is that these extensionally coincide, and that this coincidence is necessary given the primitives.
 
 The bridge equation is the core result of this paper. Everything else in Logic Realism Theory—the reconstruction of quantum mechanics, the interpretational implications—flows from this ground.
+
+### 6.3 The Bridge Lemma
+
+The physics reconstruction in Part II requires a specific connection between the ontological primitives established here and the operational constraints that generate quantum structure. This connection is summarized as the **Bridge Lemma**:
+
+**Bridge Lemma.** *If A_Ω = L₃(I∞), then any proposition about a configuration c ∈ A_Ω satisfies L₃. Satisfying L₃ requires determinate content, which requires operational distinguishability. Therefore, every physical proposition is operationally distinguishable.*
+
+This lemma licenses the transition from ontological grounding (TAB, Part I) to physics reconstruction (LRT-MASTER, Part II). The Physical Proposition Criterion (PPC) stated in Part II is a direct consequence: a claim counts as a physical proposition if and only if it satisfies L₃, which requires that its truth-states be operationally distinguishable.
+
+The lemma is not an additional assumption. It follows from the constitutive role of L₃ established in Section 2. Because L₃ is not a constraint *on* propositions but the condition *under which* anything counts as a proposition, the connection to operational distinguishability is internal to the framework rather than externally imposed.
 
 ---
 

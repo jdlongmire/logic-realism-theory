@@ -5,6 +5,27 @@
 **Build Status:** Verified (2491 jobs, 0 errors, 0 sorries)
 **Axiom Count:** 30 foundational axioms
 
+## How to Read This File
+
+This document consolidates the Lean 4 formalization of LRT. It serves three purposes:
+
+1. **Archival reference** for the complete formal structure
+2. **Axiom audit** showing exactly what is assumed vs. derived
+3. **Bridge documentation** connecting formal code to the prose derivation in LRT-MASTER.md
+
+**Notation conventions:**
+- `axiom` = assumed without proof (classified as PRIMITIVE, EXTERNAL, or REMAINING)
+- `theorem`/`lemma` = derived from prior definitions and axioms
+- `def` = definition (no proof obligation)
+- `sorry` = unfinished proof (build reports zero of these)
+
+**Tier classification:**
+- **PRIMITIVE (Tier 1):** Ontological commitments defended philosophically in TAB
+- **EXTERNAL (Tier 2):** Established mathematics imported as axioms (Gleason, Stone, etc.)
+- **REMAINING (Tier 3):** Derivation targets for future work
+
+Each axiom's philosophical justification is found in TAB-v2.0.md (Part I) or LRT-MASTER.md (Part II). The formalization verifies logical consistency; it does not mechanize transcendental arguments.
+
 ## Overview
 
 This document contains the complete Lean 4 formalization of Logic Realism Theory (LRT). The derivation chain proves:

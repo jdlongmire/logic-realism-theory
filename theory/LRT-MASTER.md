@@ -1,4 +1,5 @@
 # Logic Realism Theory: Grounding Reality as Logical, Informational, and Dynamic
+## Part II: Physics Reconstruction — From A_Ω = L₃(I∞) to the Schrödinger Equation
 
 **Author:** James D. Longmire
 **Affiliation:** Northrop Grumman Fellow (unaffiliated research)
@@ -8,6 +9,7 @@
 **Status:** Pre-print
 **Epistemic Discipline:** Each claim marked ESTABLISHED, ARGUED, or OPEN
 **Created:** 2026-03-13
+**Part I:** The Actualization Bridge (TAB-v2.0.md) — Ontological Groundwork
 
 -----
 
@@ -118,6 +120,22 @@ No step is presented as more secure than its status warrants. A distinction betw
 The paper is structured as follows. Section 2 develops the move from X to actuality: transcendental constitution, the core equation A_Ω = L₃(I∞), and Determinate Identity. Section 3 derives the structure of quantum theory: local tomography via the logical framing of L₃, complex Hilbert space via Masanes-Müller, and projection-valued measure structure via the eigenvalue restriction argument. Section 4 derives the Born rule via Gleason's theorem applied to the PVM structure established in Section 3. Section 5 derives time and dynamics: the Unique Next State theorem, ordinal time, continuous time via Debreu-Nachbin, G-equivariance, Stone's theorem, and the Schrödinger equation.
 
 Section 6 addresses the resolution of standing problems in quantum foundations – the measurement problem, wave-particle duality, EPR and nonlocality, Schrödinger's cat, the preferred basis problem, and the role of the observer – showing in each case that LRT dissolves rather than merely reinterprets the problem. Section 7 compares LRT systematically against the major interpretive positions: Copenhagen, Many-Worlds, Bohmian mechanics, GRW, Relational QM, and operational reconstruction programs. Section 8 addresses scientific status: Popperian falsifiability, the Lakatosian research program structure, the null hypothesis as standard QM, and the falsification hierarchy from categorical to empirical. Section 9 identifies open problems. Section 10 concludes. An appendix maps standard QM primitives to their LRT derivation origins for readers approaching from the physics side.
+
+### 1.6 Scope and Limits
+
+This paper (Part II) presupposes the ontological groundwork established in Part I (TAB). The transcendental arguments for the necessity of L₃, I∞, and A, and the derivation of the bridge identity A_Ω = L₃(I∞), are developed there. This paper imports that result and proceeds with physics reconstruction.
+
+**What this paper does:**
+- Derives the structure of non-relativistic quantum mechanics from A_Ω = L₃(I∞)
+- Grounds the axioms of operational reconstruction programs
+- Dissolves (not merely reinterprets) standing problems in quantum foundations
+
+**What this paper does not do:**
+- Extend to relativistic quantum mechanics or quantum field theory
+- Derive specific Hamiltonians for particular physical systems
+- Derive dimensionless constants (e.g., the fine-structure constant α)
+
+The derivation chain is explicitly non-relativistic. Extensions to Lorentz covariance, QFT, and cosmology are identified in Section 9 as open research directions, not claimed achievements.
 
 -----
 
@@ -438,6 +456,25 @@ The measurement problem does not arise in LRT because LRT does not treat measure
 
 Interference is a feature of I∞ – the wave structure of uninstantiated configurations can contribute to the probability distribution over outcomes via the Born rule. Detection is a feature of A_Ω – what A selects is Boolean. The duality is not a mystery about a single thing's nature; it is a consequence of the two-level structure of X.
 
+**The Two-Level Ontology (Figure)**
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                        I∞ (Possibility)                         │
+│   All L₃-admissible configurations; unitary evolution; wave     │
+│   structure; superpositions representable; interference real    │
+├─────────────────────────────────────────────────────────────────┤
+│                              ↓ A                                │
+│                    (Boolean selection)                          │
+├─────────────────────────────────────────────────────────────────┤
+│                       A_Ω (Actuality)                           │
+│   Instantiated configurations; Boolean outcomes; particle       │
+│   aspect; definite measurement results; A_Ω ⊆ I∞                │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+The diagram summarizes LRT's resolution strategy for standing problems. Wave-particle duality, Schrödinger's cat, and the measurement problem all arise from conflating I∞ and A_Ω. Keeping the levels distinct dissolves the apparent paradoxes.
+
 ### 6.3 EPR, Nonlocality, and Entanglement
 
 **The problem:** Entangled systems exhibit correlations that violate Bell inequalities. No local hidden variable theory can reproduce these correlations. Something in quantum mechanics is nonlocal, but quantum mechanics does not permit faster-than-light signaling. What is the nature of this nonlocality?
@@ -616,9 +653,11 @@ LRT is a research program, not a completed theory. This section identifies the o
 
 ### 9.1 Lean 4 Formalization Status
 
-The full derivation chain has been formalized in Lean 4 and verified (March 2026). The formalization resides in `formalization/` and implements all steps from X through the Schrödinger equation. See `theory/LRT-Formalization-Methods.md` for detailed methodology.
+The derivation chain has been formalized in Lean 4 (March 2026). The formalization resides in `formalization/` and encodes all steps from X through the Schrödinger equation. See `theory/LRT-Formalization-Methods.md` for detailed methodology.
 
 **Build status (2026-03-20):** 2491 jobs completed with zero errors and zero `sorry` placeholders.
+
+**Clarification on "verified":** The formalization compiles without errors or unresolved proof obligations. This verifies *logical consistency* of the derivation structure. It does not mechanize transcendental claims (the Physical Proposition Criterion, the bridge principle justification) or convert philosophical arguments into mathematical proofs. ESTABLISHED steps import peer-reviewed theorems as axioms; ARGUED steps encode the claimed logical structure without formalizing their philosophical warrant.
 
 **Axiom classification (31 total):**
 
