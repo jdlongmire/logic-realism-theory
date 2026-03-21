@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <style>
+      .title { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #1a1a2e; }
+      .subtitle { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 14px; fill: #666; }
+      .category-label { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 16px; font-weight: bold; fill: white; }
+      .count-label { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 36px; font-weight: bold; fill: white; }
+      .axiom-text { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 10px; fill: white; opacity: 0.9; }
+      .footer { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 11px; fill: #888; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" class="title">LRT Axiom Classification</text>
+  <text x="400" y="55" text-anchor="middle" class="subtitle">31 Total Axioms — March 2026 Audit</text>
+
+  <!-- Treemap boxes -->
+
+  <!-- PRIMITIVE (3 axioms) - Blue - smallest box -->
+  <rect x="40" y="80" width="150" height="180" rx="8" fill="#2563eb"/>
+  <text x="115" y="110" text-anchor="middle" class="category-label">PRIMITIVE</text>
+  <text x="115" y="160" text-anchor="middle" class="count-label">3</text>
+  <text x="115" y="185" text-anchor="middle" class="axiom-text">I∞ (information space)</text>
+  <text x="115" y="200" text-anchor="middle" class="axiom-text">I_infinite</text>
+  <text x="115" y="215" text-anchor="middle" class="axiom-text">bridge_principle</text>
+  <text x="115" y="245" text-anchor="middle" class="axiom-text" style="font-style: italic; opacity: 0.7;">Irreducible</text>
+
+  <!-- EXTERNAL (14 axioms) - Amber - large box -->
+  <rect x="200" y="80" width="280" height="360" rx="8" fill="#d97706"/>
+  <text x="340" y="110" text-anchor="middle" class="category-label">EXTERNAL</text>
+  <text x="340" y="170" text-anchor="middle" class="count-label">14</text>
+  <text x="340" y="205" text-anchor="middle" class="axiom-text">Hardy reconstruction (H1, H2)</text>
+  <text x="340" y="222" text-anchor="middle" class="axiom-text">CDP purification (Boolean, NoHiding)</text>
+  <text x="340" y="239" text-anchor="middle" class="axiom-text">Gleason theorem (d≥2, d=2 extension)</text>
+  <text x="340" y="256" text-anchor="middle" class="axiom-text">Stone's theorem</text>
+  <text x="340" y="273" text-anchor="middle" class="axiom-text">Spectral theory imports</text>
+  <text x="340" y="290" text-anchor="middle" class="axiom-text">Noether's theorem</text>
+  <text x="340" y="307" text-anchor="middle" class="axiom-text">Planck quantization</text>
+  <text x="340" y="340" text-anchor="middle" class="axiom-text" style="font-style: italic; opacity: 0.7;">Established mathematical physics</text>
+  <text x="340" y="357" text-anchor="middle" class="axiom-text" style="font-style: italic; opacity: 0.7;">theorems — imported, not derived</text>
+
+  <!-- REMAINING (14 axioms) - Green - large box -->
+  <rect x="490" y="80" width="270" height="360" rx="8" fill="#059669"/>
+  <text x="625" y="110" text-anchor="middle" class="category-label">REMAINING</text>
+  <text x="625" y="170" text-anchor="middle" class="count-label">14</text>
+  <text x="625" y="205" text-anchor="middle" class="axiom-text">Step 5: spectral_correspondence</text>
+  <text x="625" y="222" text-anchor="middle" class="axiom-text">Step 5: event_operator_has_bool_spectrum</text>
+  <text x="625" y="239" text-anchor="middle" class="axiom-text">Step 6: proj_norm_le, born_rule_completeness</text>
+  <text x="625" y="256" text-anchor="middle" class="axiom-text">Step 7: time_evolution_family (4 axioms)</text>
+  <text x="625" y="273" text-anchor="middle" class="axiom-text">Step 8: time_embedding (4 axioms)</text>
+  <text x="625" y="290" text-anchor="middle" class="axiom-text">Step 10: schrodinger_from_stone</text>
+  <text x="625" y="307" text-anchor="middle" class="axiom-text">Step 10: exp_add, exp_selfadjoint_unitary</text>
+  <text x="625" y="340" text-anchor="middle" class="axiom-text" style="font-style: italic; opacity: 0.7;">Derivation targets — reducible</text>
+  <text x="625" y="357" text-anchor="middle" class="axiom-text" style="font-style: italic; opacity: 0.7;">with additional Mathlib work</text>
+
+  <!-- Bottom connector showing relationship -->
+  <rect x="40" y="270" width="150" height="170" rx="8" fill="#1e40af" opacity="0.15"/>
+  <text x="115" y="300" text-anchor="middle" class="axiom-text" style="fill: #1e40af; font-weight: bold;">χ = [L₃ : I∞ : A]</text>
+  <text x="115" y="320" text-anchor="middle" class="axiom-text" style="fill: #1e40af;">Primitive ontology</text>
+  <text x="115" y="340" text-anchor="middle" class="axiom-text" style="fill: #1e40af;">grounds everything</text>
+  <text x="115" y="360" text-anchor="middle" class="axiom-text" style="fill: #1e40af;">above</text>
+
+  <!-- Arrows showing grounding -->
+  <path d="M190 350 L200 350" stroke="#1e40af" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M190 200 L200 200" stroke="#1e40af" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1e40af"/>
+    </marker>
+  </defs>
+
+  <!-- Footer -->
+  <text x="400" y="470" text-anchor="middle" class="footer">
+    PRIMITIVE: Ontologically irreducible | EXTERNAL: Established theorems (imported) | REMAINING: Derivation targets
+  </text>
+  <text x="400" y="488" text-anchor="middle" class="footer">
+    Build: SUCCESS (2491 jobs) | 0 sorries | Target: 31 → ~24 axioms
+  </text>
+</svg>
