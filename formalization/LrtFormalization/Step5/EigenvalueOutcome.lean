@@ -83,7 +83,7 @@ section FiniteDimensional
 
 variable [FiniteDimensional ℂ H]
 
-/-- **TIER 2 AXIOM (Spectral Correspondence):**
+/-- **THEOREM (Spectral Correspondence) — was TIER 2 AXIOM:**
     For a self-adjoint operator, the set of possible measurement outcomes
     is exactly the spectrum (set of eigenvalues).
 
@@ -97,11 +97,57 @@ variable [FiniteDimensional ℂ H]
     - Only eigenvalues can appear as pointer readings
     - This is the eigenvalue-outcome correspondence
 
+    **Derivation (2026-03-21):**
+    The biconditional follows directly from the definitions:
+    - (→) OutcomePossible requires v ∈ eigenspace ev with inner v ψ ≠ 0.
+          This v ≠ 0, so eigenspace ev ≠ ⊥, i.e., HasEigenvalue ev.
+    - (←) HasEigenvalue ev means eigenspace ev ≠ ⊥, so ∃ v ∈ eigenspace ev, v ≠ 0.
+          For any v ≠ 0 in Hilbert space, inner v v ≠ 0, giving OutcomePossible O v ev.
+
     **References:**
     - von Neumann (1932), Mathematical Foundations of QM, Ch. III
-    - Dirac (1930), Principles of Quantum Mechanics, §10 -/
-axiom spectral_correspondence (O : Observable H) :
-  ∀ ev : ℂ, (∃ ψ : H, ψ ≠ 0 ∧ OutcomePossible O ψ ev) ↔ O.hasEigenvalue ev
+    - Dirac (1930), Principles of Quantum Mechanics, §10
+
+    **Status:** THEOREM (2026-03-21) — converted from axiom, resolves Issue #38 -/
+theorem spectral_correspondence (O : Observable H) :
+    ∀ ev : ℂ, (∃ ψ : H, ψ ≠ 0 ∧ OutcomePossible O ψ ev) ↔ O.hasEigenvalue ev := by
+  intro ev
+  constructor
+  · -- (→) OutcomePossible for some ψ ≠ 0 implies HasEigenvalue
+    intro ⟨ψ, _hψ_ne, hψ_poss⟩
+    unfold OutcomePossible at hψ_poss
+    obtain ⟨v, hv_mem, hv_inner⟩ := hψ_poss
+    -- v ∈ eigenspace ev and inner v ψ ≠ 0 implies v ≠ 0
+    have hv_ne : v ≠ 0 := by
+      intro hv_zero
+      rw [hv_zero] at hv_inner
+      simp at hv_inner
+    -- eigenspace ev ≠ ⊥ means HasEigenvalue ev
+    rw [Observable.hasEigenvalue, Module.End.hasEigenvalue_iff]
+    intro h_bot
+    unfold Observable.eigenspace at hv_mem
+    rw [h_bot] at hv_mem
+    exact hv_ne ((Submodule.mem_bot ℂ).mp hv_mem)
+  · -- (←) HasEigenvalue implies OutcomePossible for some ψ ≠ 0
+    intro h_eigen
+    -- HasEigenvalue means eigenspace ev ≠ ⊥
+    rw [Observable.hasEigenvalue, Module.End.hasEigenvalue_iff] at h_eigen
+    -- Get a non-zero vector in eigenspace
+    have h_exists : ∃ v : H, v ∈ O.eigenspace ev ∧ v ≠ 0 := by
+      unfold Observable.eigenspace
+      by_contra h_none
+      push_neg at h_none
+      apply h_eigen
+      rw [Submodule.eq_bot_iff]
+      intro x hx
+      exact h_none x hx
+    obtain ⟨v, hv_mem, hv_ne⟩ := h_exists
+    -- Use v as both the state ψ and the witness for OutcomePossible
+    use v, hv_ne
+    unfold OutcomePossible
+    use v, hv_mem
+    -- inner v v ≠ 0 for v ≠ 0 in inner product space
+    exact inner_self_ne_zero.mpr hv_ne
 
 /-- **Eigenstate Postulate:**
     If a state is an eigenvector of observable O with eigenvalue ev,
@@ -288,19 +334,22 @@ theorem event_observable_boolean_outcomes [FiniteDimensional ℂ H] (O : Observa
 
 **Eigenvalue-Outcome Correspondence (General)** is now established:
 
-1. **Spectral Correspondence:** Outcomes ↔ Eigenvalues (Axiom, standard QM)
+1. **Spectral Correspondence:** Outcomes ↔ Eigenvalues (THEOREM, 2026-03-21)
 2. **Orthogonality:** Distinct outcomes are mutually exclusive (Theorem)
 3. **Eigenstate Postulate:** Eigenstates have definite outcomes (Theorem)
 4. **Boolean Events:** LRT events have {0,1} outcomes (Corollary)
 
-**Tier Classification:**
-- `spectral_correspondence`: Tier 2 (von Neumann 1932)
+**Tier Classification (Updated 2026-03-21):**
+- `spectral_correspondence`: THEOREM (converted from Tier 2 axiom, Issue #38)
+  - Derivation: Follows from definitions of `OutcomePossible`, `HasEigenvalue`,
+    and Hilbert space inner product properties (`inner_self_ne_zero`)
 - `eigenstate_definite_outcome`: Derived (no sorry)
 - `eigenvectors_orthogonal`: Derived (no sorry - uses Mathlib's `conj_eigenvalue_eq_self`)
 - `eigenvalue_outcome_correspondence_general`: Main theorem (derived from above)
 - `event_observable_boolean_outcomes`: Derived (no sorry)
 
 **No remaining sorry statements in this file.**
+**No remaining axioms in this file (spectral_correspondence converted 2026-03-21).**
 
 **Relationship to Step4/Boolean.lean:**
 The `eigenvalue_outcome_correspondence` theorem there handles the Boolean event
