@@ -560,6 +560,61 @@ The turnstile (⊢) is adapted from its use in formal logic, where it signifies 
 
 ---
 
+## Appendix C: Formalization Status
+
+The ontological framework presented in this paper has been partially formalized in Lean 4. The formalization project verifies the logical structure of the reconstruction chain that proceeds from the primitives established here. This appendix summarizes the boundary between transcendental argumentation and machine-verified derivation.
+
+### What Is Formalized
+
+The Lean formalization covers the physics reconstruction chain:
+
+```
+X → A_Ω → Determinate Identity → Local Tomography → ℂℋ →
+PVM → Born Rule → Unitarity → Time → Schrödinger
+```
+
+Each step is implemented as a separate module with explicit dependencies. The current build (2026-03-20) compiles with zero errors and zero unresolved proof obligations.
+
+### The Formalization Boundary
+
+The transcendental arguments of Sections 2–4 are **not formalized**. No proof assistant can verify transcendental reasoning, which concerns the conditions for the possibility of determinate existence rather than logical derivability within a fixed formal system.
+
+The formalization begins at the bridge principle, which appears as an axiom:
+
+```lean
+axiom bridge_principle (X : Step0.X) : Nonempty (A_Omega X)
+```
+
+This axiom corresponds to the result of Section 6: χ ⊢ A_Ω. The formalization takes this as given and verifies what follows.
+
+### Axiom Classification
+
+The formalization uses 31 axioms, classified as:
+
+| Category | Count | Description |
+|----------|-------|-------------|
+| PRIMITIVE | 3 | Ontological commitments (I, I_infinite, bridge_principle) |
+| EXTERNAL | 14 | Established mathematics (Gleason, Stone, Hardy, etc.) |
+| REMAINING | 14 | Derivable with additional infrastructure |
+
+The primitive axioms correspond to the transcendental necessities argued in this paper. External axioms are standard mathematical results imported rather than re-proven. Remaining axioms are derivation targets for ongoing work.
+
+### Verification Instructions
+
+The formalization is available in the repository `formalization/`. Build commands:
+
+```bash
+cd formalization && ./scripts/build.sh
+```
+
+See `theory/LRT-Formalization-Methods.md` for detailed documentation.
+
+### Significance
+
+The formalization demonstrates that the physics reconstruction (Part II) is internally consistent given the ontological foundation (Part I). It does not mechanize the transcendental arguments themselves. The combination of philosophical argumentation and formal verification is the methodological innovation of Logic Realism Theory.
+
+---
+
 ## References
 
 **Chiribella, G., D'Ariano, G. M., & Perinotti, P.** (2011). Informational derivation of quantum theory. *Physical Review A*, 84(1), 012311. https://doi.org/10.1103/PhysRevA.84.012311

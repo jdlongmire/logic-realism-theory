@@ -616,17 +616,23 @@ LRT is a research program, not a completed theory. This section identifies the o
 
 ### 9.1 Lean 4 Formalization Status
 
-The full derivation chain has been formalized in Lean 4 and verified (March 2026). The formalization resides in `formalization/` and implements all thirteen steps from X through the Schrödinger equation.
+The full derivation chain has been formalized in Lean 4 and verified (March 2026). The formalization resides in `formalization/` and implements all steps from X through the Schrödinger equation. See `theory/LRT-Formalization-Methods.md` for detailed methodology.
 
-**Build status:** 2483 jobs completed with no `sorry` placeholders. The formalization employs 30 foundational axioms:
+**Build status (2026-03-20):** 2491 jobs completed with zero errors and zero `sorry` placeholders.
 
-- **Ontological primitives:** `I` type (index set), `I_infinite`, `bridge_principle` (X → A_Ω constitution)
-- **Tomography:** Hardy H1/H2 axioms, k=2 constraint
-- **Established theorems (axiomatic in Lean):** Wigner theorem, Stone's theorem, Noether theorem
-- **Temporal emergence:** Actualization ordering, time embedding axioms
-- **Physical constants:** Planck constant axiom
+**Axiom classification (31 total):**
 
-These axioms are appropriate: either established mathematical results imported without proof (Wigner, Stone, Noether) or the core ontological posits of LRT itself (bridge principle, actualization ordering). The derivation chain is complete with no proof gaps.
+| Category | Count | Description |
+|----------|-------|-------------|
+| PRIMITIVE | 3 | `I`, `I_infinite`, `bridge_principle` — irreducible |
+| EXTERNAL | 14 | Established mathematics (Gleason, Stone, Hardy, CDP, etc.) |
+| REMAINING | 14 | Derivable with additional infrastructure |
+
+PRIMITIVE axioms correspond to the ontological commitments defended in TAB. EXTERNAL axioms are peer-reviewed mathematical results imported rather than re-proven. REMAINING axioms are derivation targets for ongoing work, blocked primarily by Mathlib's limited support for unbounded operator theory.
+
+**Known issue:** `time_embedding_dense` is mathematically impossible (no strictly monotone ℕ → ℝ has dense range). This axiom requires reformulation.
+
+The formalization verifies the logical structure of the derivation chain. It does not mechanize transcendental claims (e.g., the Physical Proposition Criterion) or the bridge equation justification. Those remain defended philosophical arguments.
 
 **Step structure:**
 
