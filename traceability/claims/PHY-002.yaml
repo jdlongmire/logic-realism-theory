@@ -2,9 +2,10 @@
 id: PHY-002
 name: Temporal Emergence
 statement: |
-  Time is not primitive but emerges from the structure of unitary
-  evolution. The time parameter t indexes the continuous family
-  of unitary operators U(t).
+  Time is not primitive but emerges from the discrete sequencing of
+  actualization events. Actualizations are ℕ-indexed; the time parameter t
+  provides real-valued coordinates for this discrete sequence. Continuous
+  physics (Schrödinger equation) interpolates between discrete actualizations.
 
 role: derived
 proof_status: axiomatized
@@ -13,15 +14,31 @@ epistemic_status: argued
 formal_artifacts:
   lean:
     - file: Step8_TemporalEmergence.lean
-      symbol: time_parameter
+      symbol: ActualizationEvent
+      status: definition
+    - file: Step8_TemporalEmergence.lean
+      symbol: time_embedding
       status: axiom
+    - file: Step8_TemporalEmergence.lean
+      symbol: time_embedding_strict_mono
+      status: axiom
+    - file: Step8_TemporalEmergence.lean
+      symbol: TemporalEmergence
+      status: structure
+    - file: Step8_TemporalEmergence.lean
+      symbol: step8_temporal_emergence
+      status: theorem
 
 source_documents:
   - doc: LRT-MASTER
     section: "4.2"
+  - doc: TAB-v2.0
+    section: "5.3"
 
 depends_on:
   - claim_id: PHY-001
+    dependency_type: logical
+  - claim_id: ACT-001
     dependency_type: logical
 
 risk_if_false: |
@@ -29,5 +46,24 @@ risk_if_false: |
   narrative fails.
 
 notes: |
-  This is an interpretive claim about the status of time, not
-  a mathematical derivation. Time's emergence is philosophical.
+  **2026-03-21 Update:** The axiom `time_embedding_dense` was removed.
+  It was mathematically impossible: no strictly monotone ℕ → ℝ has dense range.
+
+  LRT's position: time IS the actualization sequencing. Actualizations are
+  discrete (ℕ-indexed). The continuum time parameter is a coordinate system
+  for these discrete events, not an ontologically dense medium. Continuous
+  dynamics (Stone's theorem, Schrödinger equation) describes interpolation
+  between actualizations, not infinitely many actualizations between any two.
+
+  This is philosophically consistent with LRT's core claim that time emerges
+  from actualization rather than being a pre-existing container.
+
+agent_history:
+  - agent_id: Claude
+    date: "2026-03-21"
+    action: updated
+    summary: |
+      Removed `time_embedding_dense` axiom as mathematically impossible.
+      Clarified that LRT holds time is discrete actualization sequencing.
+      Updated formal_artifacts to reflect current Step8 structure.
+      Added note explaining the philosophical rationale.

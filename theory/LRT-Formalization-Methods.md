@@ -1,7 +1,7 @@
 # LRT Formalization Methods
 
 **Author:** James D. Longmire
-**Date:** 2026-03-20
+**Date:** 2026-03-21 (updated)
 **Status:** Methodological supplement to TAB and LRT-MASTER
 
 ---
@@ -126,7 +126,8 @@ axiom evolution_identity                    -- REMAINING
 -- Step 8: Temporal Emergence
 axiom time_embedding                        -- REMAINING
 axiom time_embedding_strict_mono            -- REMAINING
-axiom time_embedding_dense                  -- IMPOSSIBLE (documented)
+-- time_embedding_dense REMOVED (2026-03-21): mathematically impossible;
+-- LRT holds that time is discrete actualization sequencing
 
 -- Step 9: Energy Action
 axiom stones_theorem                        -- EXTERNAL (Stone 1932)
@@ -149,9 +150,9 @@ axiom hamiltonian_generates_group_mul       -- REMAINING (exp additivity)
 |----------|-------|-------------|
 | **PRIMITIVE** | 3 | Irreducible ontological commitments |
 | **EXTERNAL** | 14 | Established mathematics/physics |
-| **REMAINING** | 14 | Derivable with additional work |
+| **REMAINING** | 13 | Derivable with additional work |
 
-**Total:** 31 axioms
+**Total:** 30 axioms
 
 ### 4.2 PRIMITIVE Axioms
 
@@ -193,15 +194,15 @@ These are derivable in principle but blocked by Mathlib limitations or infrastru
 | `evolution_identity` | exp(0) = I |
 | `time_embedding` | Actualization ordering |
 | `time_embedding_strict_mono` | Monotonicity |
-| `time_embedding_dense` | **IMPOSSIBLE** (no monotone ℕ → ℝ is dense) |
+| ~~`time_embedding_dense`~~ | **REMOVED** (2026-03-21): no monotone ℕ → ℝ is dense; LRT accepts discrete time |
 | `schrodinger_from_stone` | Unbounded operator theory |
 | `hamiltonian_generates_unitary` | Unbounded operators |
 | `hamiltonian_generates_group_mul` | exp additivity |
 | `evolution_matches_actualization` | Physics-ontology bridge |
 
-### 4.5 Known Issues
+### 4.5 Design Decisions
 
-**`time_embedding_dense` is mathematically impossible:** No strictly monotone function ℕ → ℝ can have dense range. This axiom should be either removed or reformulated using ℚ-indexed events or completion semantics.
+**Discrete Time (2026-03-21):** The axiom `time_embedding_dense` was removed because no strictly monotone function ℕ → ℝ can have dense range. This is now recognized as philosophically correct: LRT claims time *is* the actualization sequencing of events. Actualizations are discrete (ℕ-indexed). Continuous physics (Stone's theorem, Schrödinger equation) describes interpolation between discrete actualization events, not the events themselves. The continuum is derived, not fundamental.
 
 **Unbounded operator theory:** Mathlib's operator theory is focused on bounded operators. The Hamiltonian generator requires unbounded self-adjoint operators, which are not yet well-supported.
 
@@ -343,7 +344,7 @@ cd traceability && python3 scripts/build.py --all
 
 ## 9. Conclusion
 
-The Lean formalization demonstrates that LRT's reconstruction chain is internally consistent and explicitly grounded. The 31 axioms are classified as primitive (3), external (14), or remaining (14), with clear reduction targets for future work.
+The Lean formalization demonstrates that LRT's reconstruction chain is internally consistent and explicitly grounded. The 30 axioms are classified as primitive (3), external (14), or remaining (13), with clear reduction targets for future work.
 
 The formalization boundary is honest: transcendental arguments cannot be mechanized, but the physics derivation (given operational assumptions) is machine-verified. This combination of philosophical argumentation and formal verification is the methodological contribution of LRT.
 
@@ -378,7 +379,7 @@ axiom planck_constant_pos : planck_constant > 0
 axiom QuantumStateSpace.ofCPH : ...
 ```
 
-### REMAINING (14)
+### REMAINING (13)
 
 ```lean
 axiom event_operator_has_bool_spectrum : ...
@@ -388,7 +389,7 @@ axiom evolution_group_composition : ...
 axiom evolution_identity : ...
 axiom time_embedding : ...
 axiom time_embedding_strict_mono : ...
-axiom time_embedding_dense : ...  -- IMPOSSIBLE
+-- time_embedding_dense REMOVED (2026-03-21): mathematically impossible
 axiom evolution_matches_actualization : ...
 axiom schrodinger_from_stone : ...
 axiom hamiltonian_generates_unitary : ...

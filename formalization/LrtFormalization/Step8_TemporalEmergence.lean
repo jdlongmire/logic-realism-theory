@@ -109,12 +109,24 @@ axiom time_embedding_strict_mono : StrictMono time_embedding
 theorem time_embedding_mono : Monotone time_embedding :=
   time_embedding_strict_mono.monotone
 
-/-- **TIER 2 AXIOM:** The time embedding has dense range.
+/-- **DESIGN NOTE: Discrete Time is Fundamental**
 
-    This captures the continuum nature of time: between any two times,
-    there's another actualization event. This is the continuous limit
-    of the discrete actualization sequence. -/
-axiom time_embedding_dense : DenseRange time_embedding
+    In LRT, time is the actualization sequencing of events. Actualizations form
+    a discrete sequence (ℕ-indexed), not a pre-existing continuum. This reflects
+    the core LRT insight: time *emerges from* actualization, rather than being
+    a container in which actualizations occur.
+
+    A previous axiom `time_embedding_dense : DenseRange time_embedding` was
+    **mathematically impossible**: no strictly monotone ℕ → ℝ can have dense range
+    (consecutive points f(n), f(n+1) leave the open interval (f(n), f(n+1)) empty).
+
+    The resolution: accept that actualization events are discrete. Continuous
+    physics (Stone's theorem, Schrödinger equation) describes *interpolation
+    between* discrete actualizations, not the actualizations themselves.
+
+    This is philosophically correct: LRT claims time is logical sequencing,
+    not that reality has infinitely many actualization events between any two.
+-/
 
 /-- The time of an event -/
 noncomputable def eventTime (e : ActualizationEvent) : Time := time_embedding e
@@ -155,27 +167,30 @@ The philosophical content: why does time have these properties?
        - Total (any two events are comparable)
        - Transitive (if A before B and B before C, then A before C)
        - Antisymmetric (A before B and B before A implies A = B)
-    4. The real line ℝ is the unique continuous completion of such orderings
+    4. The embedding into ℝ provides time coordinates for actualization events
 
-    This is why time is a real-valued parameter, not by assumption but by derivation. -/
+    **Note:** We do NOT require density. Actualizations are fundamentally discrete
+    (ℕ-indexed). Continuous time is a derived/interpolated structure for physics,
+    not an ontological primitive. The embedding gives coordinates; it need not be dense. -/
 structure TemporalEmergence (E : Type) [LinearOrder E] where
   /-- Embedding into reals -/
   embed : E → ℝ
-  /-- Monotonicity -/
+  /-- Monotonicity preserves ordering -/
   mono : Monotone embed
-  /-- Density (between any two event-times, there could be another) -/
-  dense : DenseRange embed
 
 /-- **Step 8 Theorem:** Given actualization, time emerges as a parameter.
 
     The existence of a temporal ordering is a consequence of A_Ω's operation,
-    not an independent metaphysical posit. -/
+    not an independent metaphysical posit.
+
+    **Note:** This theorem no longer requires density. The embedding gives
+    time coordinates to discrete actualization events. Continuous dynamics
+    (Schrödinger equation) interpolates between these discrete events. -/
 theorem step8_temporal_emergence :
     ∃ T : TemporalEmergence ActualizationEvent, True :=
   ⟨{
     embed := time_embedding,
-    mono := time_embedding_mono,
-    dense := time_embedding_dense
+    mono := time_embedding_mono
   }, trivial⟩
 
 /-! ## Part V: Time's Arrow

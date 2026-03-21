@@ -1,8 +1,8 @@
 # Axiom Status — formalization/
 
-**Date:** 2026-03-20 (Post Sorry-Reduction Update)
+**Date:** 2026-03-21 (Discrete Time Clarification)
 **Build Status:** VERIFIED
-**Total Axioms:** 31 (updated count after recent additions)
+**Total Axioms:** 30 (removed `time_embedding_dense`)
 **Sorry count:** 0 (all proofs complete or properly axiomatized)
 
 ---
@@ -13,7 +13,7 @@
 |----------|-------|-------------|
 | **PRIMITIVE** | 3 | Core LRT commitments (Tier 1 — cannot be derived) |
 | **EXTERNAL** | 14 | Established mathematical results (Tier 2 — standard theorems) |
-| **REMAINING** | 14 | Open derivations (future work — could become theorems) |
+| **REMAINING** | 13 | Open derivations (future work — could become theorems) |
 
 ---
 
@@ -101,14 +101,15 @@ Axioms that could potentially become theorems with additional proof work.
 | Step7_Unitarity.lean | `evolution_group_composition` | U(s+t) = U(s)U(t) | Derivable from exp_add |
 | Step7_Unitarity.lean | `evolution_identity` | U(0) = id | Derivable from exp_zero |
 
-### Step 8: Temporal Emergence (4)
+### Step 8: Temporal Emergence (3)
 
 | File | Axiom | Notes | Derivability |
 |------|-------|-------|--------------|
 | Step8_TemporalEmergence.lean | `time_embedding` | ActualizationEvent → ℝ | CONSTRUCTIBLE |
 | Step8_TemporalEmergence.lean | `time_embedding_strict_mono` | Strict monotonicity | Derivable |
-| Step8_TemporalEmergence.lean | `time_embedding_dense` | Dense range in ℝ | **MATHEMATICALLY IMPOSSIBLE** |
 | Step8_TemporalEmergence.lean | `evolution_matches_actualization` | Links U(t) to actualization | Derivable from group law |
+
+**Removed:** `time_embedding_dense` — mathematically impossible (no strictly monotone ℕ → ℝ has dense range). Removed 2026-03-21. LRT holds that time is discrete actualization sequencing; continuous physics interpolates between events.
 
 ### Step 10: Schrödinger (3)
 
@@ -124,14 +125,16 @@ Axioms that could potentially become theorems with additional proof work.
 
 ### Temporal Embedding Analysis (docs/temporal-embedding-analysis.md)
 
-**Key Finding:** `time_embedding_dense` is **mathematically inconsistent** with ℕ-indexed ActualizationEvent structure.
+**Key Finding:** `time_embedding_dense` was **mathematically inconsistent** with ℕ-indexed ActualizationEvent structure.
 
 - No strictly monotone embedding ℕ → ℝ can have dense range
-- Three of four Step 8 axioms can be converted to theorems/definitions
-- Net potential reduction: 4 axioms → 0-1 axioms
+- **Resolution (2026-03-21):** Removed `time_embedding_dense`. LRT claims time is discrete actualization sequencing. Continuous physics (Schrödinger equation) interpolates between discrete events.
+- Remaining potential reduction: 3 axioms → 0-1 axioms
 
-**Recommendations:**
-1. Remove `time_embedding_dense` (impossible as stated)
+**Completed:**
+1. ✅ Remove `time_embedding_dense` (2026-03-21)
+
+**Future work:**
 2. Convert `time_embedding` to definition: `fun e => (e.id : ℝ)`
 3. Derive `time_embedding_strict_mono` from definition
 4. Derive `evolution_matches_actualization` from group law
@@ -178,9 +181,12 @@ LrtFormalization/Step9_EnergyAction.lean:4
 | Baseline | 3 | 16 | 25 | 44 |
 | Previous (doc) | 3 | 17 | 12 | 32 |
 | 2026-03-20 Consolidation | 3 | 14 | 12 | 29 |
-| **Current (post-strengthening)** | **3** | **14** | **14** | **31** |
-| Potential (after analysis) | 3 | ~16 | ~5 | ~24 |
+| Post-strengthening | 3 | 14 | 14 | 31 |
+| **Current (2026-03-21)** | **3** | **14** | **13** | **30** |
+| Potential (after analysis) | 3 | ~16 | ~4 | ~23 |
 | Target | 3 | ~15 | ~5 | ~23 |
+
+**2026-03-21:** Removed `time_embedding_dense` (mathematically impossible). Time is discrete actualization sequencing.
 
 **Note:** Step10_Schrodinger.lean gained 2 axioms (exp additivity, self-adjoint exponential) during strengthening.
 
@@ -190,9 +196,9 @@ LrtFormalization/Step9_EnergyAction.lean:4
 
 ### High Priority
 
-1. **`time_embedding_dense`** — **MATHEMATICALLY IMPOSSIBLE**
-   - Decision required: Remove axiom or reconceptualize ActualizationEvent structure
-   - Options: Accept discrete time, change `id : ℕ` to `id : ℚ/ℝ`, or use completion semantics
+1. ~~**`time_embedding_dense`** — **MATHEMATICALLY IMPOSSIBLE**~~ ✅ **RESOLVED 2026-03-21**
+   - Decision: Accept discrete time — LRT's core claim is that time is actualization sequencing
+   - `time_embedding_dense` axiom removed
 
 2. **Step 7 Unitarity Axioms** — Can be reduced 4 → 2 with Hamiltonian approach
    - Requires: Verify `NormedSpace.exp` works on `H →L[ℂ] H`
@@ -217,15 +223,16 @@ LrtFormalization/Step9_EnergyAction.lean:4
 The 12 REMAINING axioms cluster as follows:
 
 1. **Unitarity axioms (4)** — Could become 2 axioms + derived theorems
-2. **Temporal emergence (4)** — 1 impossible, 3 derivable → net 0-1 axioms
+2. **Temporal emergence (3)** — Density removed; 3 remaining derivable → net 0-1 axioms
 3. **Spectral theory (2)** — Need functional calculus formalization
 4. **Born Rule extras (2)** — One likely derivable (`proj_norm_le`)
-5. **Schrödinger (1)** — Blocked awaiting Stone's theorem in Mathlib
+5. **Schrödinger (3)** — Blocked awaiting Stone's theorem in Mathlib
 
-**Realistic target:** 29 → ~24 axioms with focused effort on Step 7/8 derivations.
+**Realistic target:** 30 → ~23 axioms with focused effort on Step 7/8 derivations.
 
 ---
 
 *Post sorry-reduction update on 2026-03-20*
+*Discrete time clarification on 2026-03-21: removed `time_embedding_dense`*
 *Command: `grep -c '^axiom' LrtFormalization/*.lean LrtFormalization/**/*.lean`*
 *Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>*
