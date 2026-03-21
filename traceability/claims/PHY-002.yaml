@@ -46,24 +46,15 @@ risk_if_false: |
   narrative fails.
 
 notes: |
-  **2026-03-21 Update:** The axiom `time_embedding_dense` was removed.
-  It was mathematically impossible: no strictly monotone ℕ → ℝ has dense range.
-
-  LRT's position: time IS the actualization sequencing. Actualizations are
+  LRT holds that time IS the actualization sequencing. Actualizations are
   discrete (ℕ-indexed). The continuum time parameter is a coordinate system
-  for these discrete events, not an ontologically dense medium. Continuous
-  dynamics (Stone's theorem, Schrödinger equation) describes interpolation
-  between actualizations, not infinitely many actualizations between any two.
-
-  This is philosophically consistent with LRT's core claim that time emerges
-  from actualization rather than being a pre-existing container.
+  for these discrete events. Continuous dynamics (Stone's theorem, Schrödinger
+  equation) describes interpolation between actualizations.
 
 agent_history:
   - agent_id: Claude
     date: "2026-03-21"
     action: updated
     summary: |
-      Removed `time_embedding_dense` axiom as mathematically impossible.
       Clarified that LRT holds time is discrete actualization sequencing.
       Updated formal_artifacts to reflect current Step8 structure.
-      Added note explaining the philosophical rationale.

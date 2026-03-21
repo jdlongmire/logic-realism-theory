@@ -1,5 +1,7 @@
 # Temporal Embedding Axioms: Derivability Analysis
 
+> **HISTORICAL NOTE (2026-03-21):** This analysis led to the decision that LRT adopts discrete time (ℕ-indexed actualizations). The `time_embedding_dense` axiom was removed. Continuous physics interpolates between discrete actualization events.
+
 **Date:** 2026-03-20
 **Scope:** Step 8 axioms connecting actualization (ℕ) to continuous time (ℝ)
 **Files:** `LrtFormalization/Step8_TemporalEmergence.lean`
@@ -8,16 +10,15 @@
 
 ## Executive Summary
 
-This analysis examines the four Step 8 axioms that connect the discrete actualization sequence (ℕ-indexed) to continuous time evolution (ℝ-parameterized):
+This analysis examined the Step 8 axioms that connect the discrete actualization sequence (ℕ-indexed) to continuous time evolution (ℝ-parameterized):
 
-| Axiom | Derivability | Rating |
-|-------|--------------|--------|
-| `time_embedding` | CONSTRUCTIBLE | Medium |
-| `time_embedding_strict_mono` | DERIVABLE | Easy |
-| `time_embedding_dense` | IMPOSSIBLE (as stated) | Hard/Blocked |
-| `evolution_matches_actualization` | DERIVABLE | Easy |
+| Axiom | Status |
+|-------|--------|
+| `time_embedding` | DEFINITION |
+| `time_embedding_strict_mono` | THEOREM |
+| `evolution_matches_actualization` | THEOREM |
 
-**Key Finding:** The `time_embedding_dense` axiom is mathematically inconsistent with the current ℕ-indexed ActualizationEvent structure. No embedding ℕ → ℝ can have dense range.
+**Outcome:** LRT holds that time IS the actualization sequencing of events. Actualizations are discrete (ℕ-indexed). Continuous physics describes interpolation between discrete actualization events.
 
 ---
 

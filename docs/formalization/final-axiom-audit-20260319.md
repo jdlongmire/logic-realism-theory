@@ -90,8 +90,7 @@ Standard results from mathematics and physics literature.
 |---|-------|------|-------------|
 | 23 | `time_embedding` | Step8_TemporalEmergence.lean:90 | Events → ℝ |
 | 24 | `time_embedding_strict_mono` | Step8_TemporalEmergence.lean:101 | Strict monotonicity |
-| 25 | `time_embedding_dense` | Step8_TemporalEmergence.lean:117 | Dense range |
-| 26 | `evolution_matches_actualization` | Step8_TemporalEmergence.lean:139 | U connects to actualization |
+| 25 | `evolution_matches_actualization` | Step8_TemporalEmergence.lean:139 | U connects to actualization |
 
 #### Step 9: Energy-Action
 
@@ -168,7 +167,6 @@ TIER 2 (Step 7: Unitarity)                              │
 TIER 2 (Step 8: Temporal Emergence)                     │
 ├── time_embedding ◄────────────────────────────────────┤
 ├── time_embedding_strict_mono                          │
-├── time_embedding_dense                                │
 └── evolution_matches_actualization                     │
                                                         │
 TIER 2 (Step 9: Energy-Action)                          │

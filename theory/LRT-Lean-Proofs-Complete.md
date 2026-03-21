@@ -3,7 +3,7 @@
 **Date:** 2026-03-20
 **Author:** James D. Longmire
 **Build Status:** Verified (2491 jobs, 0 errors, 0 sorries)
-**Axiom Count:** 31 foundational axioms
+**Axiom Count:** 30 foundational axioms
 
 ## Overview
 
@@ -14,13 +14,13 @@ X ≡ [L₃ : I∞ : A] → A_Ω → Determinate Identity → Local Tomography �
 PVM → Born Rule → Unitarity → Time → Energy → Schrödinger Equation
 ```
 
-### Axiom Classification (31 total)
+### Axiom Classification (30 total)
 
 | Category | Count | Description |
 |----------|-------|-------------|
 | **PRIMITIVE** | 3 | `I`, `I_infinite`, `bridge_principle` — irreducible ontological commitments |
 | **EXTERNAL** | 14 | Established math/physics (Gleason, Stone, Hardy, CDP, Noether, etc.) |
-| **REMAINING** | 14 | Derivation targets for future work |
+| **REMAINING** | 13 | Derivation targets for future work |
 
 ### Tier 1 (Ontological Primitives — 3 axioms)
 
@@ -58,7 +58,7 @@ These are derivation targets, not fundamental commitments:
 | Step 5 (Eigenvalue) | `event_operator_has_bool_spectrum` |
 | Step 6 (Born Rule) | `born_rule_completeness`, `maxent_forces_pure_state` |
 | Step 7 (Unitarity) | `time_evolution_family`, `evolution_preserves_norm`, `evolution_group_composition`, `evolution_identity` |
-| Step 8 (Temporal) | `time_embedding`, `time_embedding_strict_mono`, `time_embedding_dense`, `evolution_matches_actualization` |
+| Step 8 (Temporal) | `time_embedding`, `time_embedding_strict_mono`, `evolution_matches_actualization` |
 | Step 10 (Schrödinger) | `schrodinger_from_stone`, `hamiltonian_generates_unitary`, `hamiltonian_generates_group_mul` |
 
 ---
@@ -2130,13 +2130,6 @@ axiom time_embedding : ActualizationEvent → Time
 
 axiom time_embedding_mono : Monotone time_embedding
 
-/-- **TIER 2 AXIOM:** The time embedding has dense range.
-
-    This captures the continuum nature of time: between any two times,
-    there's another actualization event. This is the continuous limit
-    of the discrete actualization sequence. -/
-axiom time_embedding_dense : DenseRange time_embedding
-
 /-- The time of an event -/
 def eventTime (e : ActualizationEvent) : Time := time_embedding e
 
@@ -2184,8 +2177,6 @@ structure TemporalEmergence where
   embed : events → ℝ
   /-- Monotonicity -/
   mono : Monotone embed
-  /-- Density (between any two event-times, there could be another) -/
-  dense : DenseRange embed
 
 /-- **Step 8 Theorem:** Given actualization, time emerges as a parameter.
 
@@ -2197,8 +2188,7 @@ theorem step8_temporal_emergence :
     events := ActualizationEvent,
     ordering := actualization_ordering,
     embed := time_embedding,
-    mono := time_embedding_mono,
-    dense := time_embedding_dense
+    mono := time_embedding_mono
   }, trivial⟩
 
 /-! ## Part V: Time's Arrow
@@ -2708,7 +2698,6 @@ Derivation targets for future work:
 | `evolution_identity` | 7 | Reducible via Hamiltonian approach |
 | `time_embedding` | 8 | Event → ℝ embedding |
 | `time_embedding_strict_mono` | 8 | Ordering preservation |
-| `time_embedding_dense` | 8 | **NOTE:** Mathematically impossible (ℕ → ℝ cannot have dense range) |
 | `evolution_matches_actualization` | 8 | U(t) matches event ordering |
 | `schrodinger_from_stone` | 10 | Blocked on unbounded operator theory |
 | `hamiltonian_generates_unitary` | 10 | Blocked on unbounded operator theory |
@@ -2716,7 +2705,7 @@ Derivation targets for future work:
 
 ---
 
-**Total: 31 axioms**
+**Total: 30 axioms**
 - PRIMITIVE: 3 (irreducible)
 - EXTERNAL: 14 (established theorems)
 - REMAINING: 14 (derivation targets)

@@ -113,7 +113,6 @@ These are theorems with incomplete proofs, NOT pseudo-axioms:
 | Step8_TemporalEmergence.lean:68 | `time_embedding` | Embedding function |
 | Step8_TemporalEmergence.lean:75 | `time_embedding_mono` | Monotonicity |
 | Step8_TemporalEmergence.lean:81 | `time_embedding_strict_mono` | Strict monotonicity |
-| Step8_TemporalEmergence.lean:88 | `time_embedding_dense` | Dense range |
 | Step8_TemporalEmergence.lean:110 | `evolution_matches_actualization` | Bridge axiom |
 | Step8_TemporalEmergence.lean:168 | `time_arrow` | Arrow of time |
 | Step9_EnergyAction.lean:141 | `stones_theorem` | Stone (1930) |

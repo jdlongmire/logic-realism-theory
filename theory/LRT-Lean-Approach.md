@@ -377,7 +377,6 @@ Weakest part of the formalization. Options:
 | `actualization_ordering` | Derive or keep |
 | `time_embedding` | Consequent |
 | `time_embedding_mono` | Consequent |
-| `time_embedding_dense` | Keep (strong assumption) |
 
 ---
 

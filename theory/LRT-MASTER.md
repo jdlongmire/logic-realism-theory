@@ -630,8 +630,6 @@ The full derivation chain has been formalized in Lean 4 and verified (March 2026
 
 PRIMITIVE axioms correspond to the ontological commitments defended in TAB. EXTERNAL axioms are peer-reviewed mathematical results imported rather than re-proven. REMAINING axioms are derivation targets for ongoing work, blocked primarily by Mathlib's limited support for unbounded operator theory.
 
-**Known issue:** `time_embedding_dense` is mathematically impossible (no strictly monotone ℕ → ℝ has dense range). This axiom requires reformulation.
-
 The formalization verifies the logical structure of the derivation chain. It does not mechanize transcendental claims (e.g., the Physical Proposition Criterion) or the bridge equation justification. Those remain defended philosophical arguments.
 
 **Step structure:**

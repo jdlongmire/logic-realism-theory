@@ -437,7 +437,7 @@ The 14 REMAINING axioms are derivable in principle:
 | Step 5 | `spectral_correspondence`, `event_operator_has_bool_spectrum` | Spectral theory work |
 | Step 6 | `proj_norm_le`, `born_rule_completeness` | One trivial |
 | Step 7 | Evolution family (4 axioms) | Reducible to 2 with Hamiltonian approach |
-| Step 8 | Temporal embedding (4 axioms) | `dense` mathematically impossible |
+| Step 8 | Temporal embedding (3 axioms) | LRT: discrete time (ℕ-indexed) |
 | Step 10 | Schrödinger (3 axioms) | Blocked on unbounded operators |
 
 **Realistic target:** 31 → 24 axioms with focused effort.

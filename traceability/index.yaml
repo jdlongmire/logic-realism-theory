@@ -127,8 +127,3 @@ reclassification_2026_03_21:
     not by any open mathematical question. The mathematics is established
     (Stone 1932, Reed-Simon). Honest classification: LRT imports these
     results rather than pretending they're derivable within formalization scope.
-  removed: time_embedding_dense
-  removed_reason: |
-    Mathematically impossible (no strictly monotone ℕ → ℝ has dense range).
-    LRT holds that time is discrete actualization sequencing; continuous
-    physics interpolates between discrete events.

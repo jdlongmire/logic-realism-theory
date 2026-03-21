@@ -263,15 +263,14 @@ All 5 sorries from previous audit have been resolved:
 | Step 5: Eigenvalue | `spectral_correspondence`, `event_operator_has_bool_spectrum` | Spectral theory |
 | Step 6: Born Rule | `proj_norm_le`, `born_rule_completeness` | One trivial |
 | Step 7: Unitarity | `time_evolution_family`, `evolution_preserves_norm`, `evolution_group_composition`, `evolution_identity` | 4 → 2 with Hamiltonian approach |
-| Step 8: Temporal | `time_embedding`, `time_embedding_strict_mono`, `time_embedding_dense`, `evolution_matches_actualization` | `dense` mathematically impossible (ℕ → ℝ) |
+| Step 8: Temporal | `time_embedding`, `time_embedding_strict_mono`, `evolution_matches_actualization` | LRT: discrete time (ℕ-indexed) |
 | Step 10: Schrödinger | `schrodinger_from_stone`, `exp_add_of_commute`, `exp_selfadjoint_unitary` | Blocked on unbounded operator theory |
 
 ### Key Findings (2026-03-20)
 
-1. **`time_embedding_dense` is mathematically impossible** — No strictly monotone ℕ → ℝ has dense range
-2. **Step 7/8 reducible** — 4+4 axioms → ~2 with Hamiltonian-based approach
-3. **`proj_norm_le`** — Should be trivial from Mathlib (Cauchy-Schwarz)
-4. **Realistic target:** 29 → ~24 axioms with focused effort
+1. **Step 7/8 reducible** — 4+4 axioms → ~2 with Hamiltonian-based approach
+2. **`proj_norm_le`** — Should be trivial from Mathlib (Cauchy-Schwarz)
+3. **Realistic target:** 29 → ~24 axioms with focused effort
 
 ### Build Scripts
 
@@ -474,11 +473,6 @@ Route B is cleaner because it imports well-established results (no-hiding, CDP) 
 4. **OPN-005: Boolean → Purification**
    - Status: Formalized (MEDIUM difficulty)
    - Cleaner K=2 derivation route
-
-5. **`time_embedding_dense` impossible**
-   - Status: DOCUMENTED (2026-03-20)
-   - Finding: No strictly monotone ℕ → ℝ can have dense range
-   - Options: Remove axiom, use ℚ-indexed events, or completion semantics
 
 ---
 

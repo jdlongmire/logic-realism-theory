@@ -419,34 +419,6 @@ remaining_axioms:
     priority: 2  # Medium — follows from R9 construction
 
   - id: "R11"
-    name: "time_embedding_dense"
-    file: "Step8_TemporalEmergence.lean"
-    line: 117
-    signature: "axiom time_embedding_dense : DenseRange time_embedding"
-    description: "Actualization events densely cover continuous time"
-
-    derivability: "HARD"
-    rationale: |
-      This is the strongest temporal emergence claim: between any two real
-      times, there's an actualization event. With ℕ-indexed events, this is
-      FALSE for the natural embedding (ℕ ⊂ ℝ is not dense).
-
-    dependencies:
-      - "time_embedding (R9)"
-      - "Philosophical commitment to continuous actualization"
-
-    reduction_path: |
-      Options:
-      A) Accept as philosophical axiom (time has actualization structure)
-      B) Weaken to: DenseRange time_embedding.closure (closure is dense)
-      C) Change ActualizationEvent to use ℚ or real indices
-
-      Current ℕ-indexed structure CANNOT satisfy DenseRange.
-      This axiom may need reconceptualization.
-
-    priority: 3  # Low — may require architectural changes
-
-  - id: "R12"
     name: "evolution_matches_actualization"
     file: "Step8_TemporalEmergence.lean"
     line: 139
@@ -536,11 +508,6 @@ priority_ranking:
       effort: "4-8 hours"
       rationale: "Requires philosophical decisions about time structure"
 
-    - id: "R11"
-      name: "time_embedding_dense"
-      effort: "Unknown"
-      rationale: "Current ℕ-indexed structure cannot satisfy DenseRange"
-
 # ═══════════════════════════════════════════════════════════════════════════════
 # RECOMMENDED ACTION PLAN
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -573,11 +540,6 @@ action_plan:
       description: "Either wait for Mathlib updates or contribute operator exponential lemmas"
       estimated_effort: "8+ hours"
       dependencies: ["Mathlib development"]
-
-    - action: "Reconceptualize R11 (time_embedding_dense)"
-      description: "Decide whether to change ActualizationEvent structure or accept as axiom"
-      estimated_effort: "Architecture decision"
-      dependencies: ["Philosophical clarity on time structure"]
 
     - action: "Document R1 (bridge_principle) as philosophical primitive"
       description: "If irreducible, document why and update tier classification"

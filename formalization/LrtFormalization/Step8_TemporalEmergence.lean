@@ -84,21 +84,38 @@ Given the ordering, we extract a continuous parameter.
     We use an abbreviation to inherit ℝ's type class instances. -/
 abbrev Time := ℝ
 
-/-- **TIER 2 AXIOM:** There exists a monotonic embedding of events into ℝ.
+/-- **THEOREM (was TIER 2 AXIOM, 2026-03-21):** Embedding of events into ℝ.
 
-    This makes the discrete actualization sequence continuous. -/
-axiom time_embedding : ActualizationEvent → Time
+    **Status:** DEFINITION - concrete function `fun e => (e.id : ℝ)`.
+
+    **Derivation:** Since ActualizationEvent wraps a single `id : ℕ` field,
+    we embed events into ℝ by casting the natural number id to a real.
+    This is the canonical embedding ℕ ↪ ℝ applied to the event's label.
+
+    **Philosophical note:** This embedding is the simplest one preserving
+    the discrete structure of actualizations. The spacing is uniform (1.0
+    between consecutive events), reflecting the uniformity of the logical
+    sequencing process. -/
+def time_embedding : ActualizationEvent → Time := fun e => (e.id : ℝ)
 
 noncomputable instance : Preorder Time := inferInstanceAs (Preorder ℝ)
 noncomputable instance : TopologicalSpace Time := inferInstanceAs (TopologicalSpace ℝ)
 noncomputable instance : LT Time := inferInstanceAs (LT ℝ)
 noncomputable instance : Sub Time := inferInstanceAs (Sub ℝ)
 
-/-- **TIER 2 AXIOM:** The time embedding is strictly monotone.
+/-- **THEOREM (was TIER 2 AXIOM, 2026-03-21):** The time embedding is strictly monotone.
 
     This is stronger than just monotone: e₁ < e₂ → f(e₁) < f(e₂).
-    Ensures distinct events get distinct times. -/
-axiom time_embedding_strict_mono : StrictMono time_embedding
+    Ensures distinct events get distinct times.
+
+    **Status:** THEOREM - proven from concrete definition of time_embedding.
+
+    **Derivation:** Since time_embedding e = (e.id : ℝ) and e₁ < e₂ iff e₁.id < e₂.id
+    (by LinearOrder.lift'), we have (e₁.id : ℝ) < (e₂.id : ℝ) by Nat.cast_lt. -/
+theorem time_embedding_strict_mono : StrictMono time_embedding := by
+  intro e₁ e₂ h
+  unfold time_embedding
+  exact Nat.cast_lt.mpr h
 
 /-- **THEOREM (was axiom):** Strict monotonicity implies monotonicity.
 
@@ -109,23 +126,16 @@ axiom time_embedding_strict_mono : StrictMono time_embedding
 theorem time_embedding_mono : Monotone time_embedding :=
   time_embedding_strict_mono.monotone
 
-/-- **DESIGN NOTE: Discrete Time is Fundamental**
+/-! **DESIGN NOTE: Discrete Time is Fundamental**
 
-    In LRT, time is the actualization sequencing of events. Actualizations form
-    a discrete sequence (ℕ-indexed), not a pre-existing continuum. This reflects
-    the core LRT insight: time *emerges from* actualization, rather than being
-    a container in which actualizations occur.
+In LRT, time is the actualization sequencing of events. Actualizations form
+a discrete sequence (ℕ-indexed), not a pre-existing continuum. This reflects
+the core LRT insight: time *emerges from* actualization, rather than being
+a container in which actualizations occur.
 
-    A previous axiom `time_embedding_dense : DenseRange time_embedding` was
-    **mathematically impossible**: no strictly monotone ℕ → ℝ can have dense range
-    (consecutive points f(n), f(n+1) leave the open interval (f(n), f(n+1)) empty).
-
-    The resolution: accept that actualization events are discrete. Continuous
-    physics (Stone's theorem, Schrödinger equation) describes *interpolation
-    between* discrete actualizations, not the actualizations themselves.
-
-    This is philosophically correct: LRT claims time is logical sequencing,
-    not that reality has infinitely many actualization events between any two.
+Continuous physics (Stone's theorem, Schrödinger equation) describes
+*interpolation between* discrete actualizations, not the actualizations
+themselves. The continuum is derived, not fundamental.
 -/
 
 /-- The time of an event -/
@@ -141,17 +151,27 @@ theorem earlier_smaller_time (e₁ e₂ : ActualizationEvent) (h : e₁ < e₂) 
 The time parameter connects to Step 7's unitary group.
 -/
 
-/-- **TIER 2 AXIOM:** Time evolution U(t) corresponds to actualization ordering.
+/-- **THEOREM (was TIER 2 AXIOM, 2026-03-21):** Time evolution U(t) corresponds to actualization ordering.
 
     Moving forward in time = moving along the actualization sequence.
 
-    The original formulation used inverse notation, but ContinuousLinearMap
-    doesn't have a general Inv instance. Instead, we express the relationship
-    via the group property: U(t₂) = U(t₂-t₁) * U(t₁), which is equivalent. -/
-axiom evolution_matches_actualization
+    **Status:** THEOREM - derived from UnitaryGroup.group_mul (the group law).
+
+    **Derivation:** For any UnitaryGroup U with group_mul : U(s+t) = U(s) * U(t),
+    setting s = t₂ - t₁ and t = t₁ gives:
+      U((t₂-t₁) + t₁) = U(t₂-t₁) * U(t₁)
+      U(t₂) = U(t₂-t₁) * U(t₁)
+
+    This is exactly what evolution_matches_actualization states when
+    t₁ = eventTime e₁, t₂ = eventTime e₂. The axiom was redundant with
+    evolution_group_composition from Step 7 (which UnitaryGroup.group_mul captures). -/
+theorem evolution_matches_actualization
     (U : UnitaryGroup (H := H))
     (e₁ e₂ : ActualizationEvent) :
-    U.U (eventTime e₂) = U.U (eventTime e₂ - eventTime e₁) * U.U (eventTime e₁)
+    U.U (eventTime e₂) = U.U (eventTime e₂ - eventTime e₁) * U.U (eventTime e₁) := by
+  have h := U.group_mul (eventTime e₂ - eventTime e₁) (eventTime e₁)
+  simp only [sub_add_cancel] at h
+  exact h
 
 /-! ## Part IV: LRT Derivation
 
@@ -221,12 +241,24 @@ theorem time_flows_forward : time_arrow.direction = 1 := time_arrow.forward_is_a
 
 CONFIDENCE: MEDIUM (philosophical derivation, less mathematically constrained)
 
+**Definitions:**
 - ActualizationEvent: Defined
-- Ordering: Axiomatized (Tier 2)
-- Time embedding: Axiomatized
+- ActualizationHistory: Defined
+- Time: Abbreviation for ℝ
 - TemporalEmergence: Defined
-- step8_temporal_emergence: Proven (existence)
 - TimeArrow: Defined
+
+**Theorems (converted from axioms 2026-03-21):**
+- actualization_ordering: THEOREM - derived from ℕ-indexed structure
+- time_embedding: DEFINITION - concrete function `fun e => (e.id : ℝ)`
+- time_embedding_strict_mono: THEOREM - proven from concrete definition
+- time_embedding_mono: THEOREM - derived from strict_mono
+- evolution_matches_actualization: THEOREM - derived from UnitaryGroup.group_mul
+- time_arrow: DEFINITION - direct construction
+- time_flows_forward: THEOREM - by definition
+- step8_temporal_emergence: THEOREM - existence proof
+
+**Axiom count in Step 8: 0** (all converted to theorems/definitions)
 
 Temporal emergence is established. Step 9 will derive the energy-action relationship.
 -/

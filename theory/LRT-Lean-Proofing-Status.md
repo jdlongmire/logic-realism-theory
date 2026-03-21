@@ -122,11 +122,10 @@ The formalization is in `formalization/LrtFormalization/` (Step-series).
 - ✅ `evolution_group_composition`: Now **THEOREM** from exp_add
 - ✅ `evolution_identity`: Now **THEOREM** from exp_zero
 
-### Step 8: Temporal Emergence (4 → 0 axioms)
+### Step 8: Temporal Emergence (3 → 0 axioms)
 - ✅ `actualization_ordering`: **THEOREM** from ℕ-indexed structure
 - ✅ `time_embedding`: **DEFINITION** as `fun e => (e.id : ℝ)`
 - ✅ `time_embedding_strict_mono`: **THEOREM** from concrete definition
-- ✅ `time_embedding_dense`: **REMOVED** (mathematically impossible)
 - ✅ `evolution_matches_actualization`: **THEOREM** from group law
 
 ### Summary

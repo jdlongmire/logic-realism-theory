@@ -123,11 +123,9 @@ axiom evolution_preserves_norm              -- REMAINING
 axiom evolution_group_composition           -- REMAINING
 axiom evolution_identity                    -- REMAINING
 
--- Step 8: Temporal Emergence
+-- Step 8: Temporal Emergence (LRT: discrete time, ℕ-indexed)
 axiom time_embedding                        -- REMAINING
 axiom time_embedding_strict_mono            -- REMAINING
--- time_embedding_dense REMOVED (2026-03-21): mathematically impossible;
--- LRT holds that time is discrete actualization sequencing
 
 -- Step 9: Energy Action
 axiom stones_theorem                        -- EXTERNAL (Stone 1932)
@@ -194,7 +192,6 @@ These are derivable in principle but blocked by Mathlib limitations or infrastru
 | `evolution_identity` | exp(0) = I |
 | `time_embedding` | Actualization ordering |
 | `time_embedding_strict_mono` | Monotonicity |
-| ~~`time_embedding_dense`~~ | **REMOVED** (2026-03-21): no monotone ℕ → ℝ is dense; LRT accepts discrete time |
 | `schrodinger_from_stone` | Unbounded operator theory |
 | `hamiltonian_generates_unitary` | Unbounded operators |
 | `hamiltonian_generates_group_mul` | exp additivity |
@@ -202,7 +199,7 @@ These are derivable in principle but blocked by Mathlib limitations or infrastru
 
 ### 4.5 Design Decisions
 
-**Discrete Time (2026-03-21):** The axiom `time_embedding_dense` was removed because no strictly monotone function ℕ → ℝ can have dense range. This is now recognized as philosophically correct: LRT claims time *is* the actualization sequencing of events. Actualizations are discrete (ℕ-indexed). Continuous physics (Stone's theorem, Schrödinger equation) describes interpolation between discrete actualization events, not the events themselves. The continuum is derived, not fundamental.
+**Discrete Time:** LRT holds that time IS the actualization sequencing of events. Actualizations are discrete (ℕ-indexed). Continuous physics (Stone's theorem, Schrödinger equation) describes interpolation between discrete actualization events, not the events themselves. The continuum is derived, not fundamental.
 
 **Unbounded operator theory:** Mathlib's operator theory is focused on bounded operators. The Hamiltonian generator requires unbounded self-adjoint operators, which are not yet well-supported.
 
@@ -389,7 +386,6 @@ axiom evolution_group_composition : ...
 axiom evolution_identity : ...
 axiom time_embedding : ...
 axiom time_embedding_strict_mono : ...
--- time_embedding_dense REMOVED (2026-03-21): mathematically impossible
 axiom evolution_matches_actualization : ...
 axiom schrodinger_from_stone : ...
 axiom hamiltonian_generates_unitary : ...

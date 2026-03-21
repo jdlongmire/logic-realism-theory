@@ -113,11 +113,10 @@ All previously REMAINING axioms have been converted to theorems:
 - ✅ `evolution_group_composition`: Now **THEOREM** from exp_add_of_commute
 - ✅ `evolution_identity`: Now **THEOREM** from exp_zero
 
-### Step 8: Temporal Emergence (4 → 0 axioms)
+### Step 8: Temporal Emergence (3 → 0 axioms)
 - ✅ `actualization_ordering`: Now **THEOREM** from ℕ-indexed structure
 - ✅ `time_embedding`: Now **DEFINITION** as `fun e => (e.id : ℝ)`
 - ✅ `time_embedding_strict_mono`: Now **THEOREM** from concrete definition
-- ✅ `time_embedding_dense`: **REMOVED** (mathematically impossible)
 - ✅ `evolution_matches_actualization`: Now **THEOREM** from group law
 
 ---

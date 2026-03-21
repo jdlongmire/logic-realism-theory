@@ -102,7 +102,6 @@ These define LRT itself and cannot be derived.
 | `actualization_ordering` | Step8_TemporalEmergence.lean | LinearOrder on events |
 | `time_embedding` | Step8_TemporalEmergence.lean | Embedding into ℝ |
 | `time_embedding_strict_mono` | Step8_TemporalEmergence.lean | Strict monotonicity |
-| `time_embedding_dense` | Step8_TemporalEmergence.lean | Dense range |
 | `evolution_matches_actualization` | Step8_TemporalEmergence.lean | U(t) ↔ actualization |
 
 ---

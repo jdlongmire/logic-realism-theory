@@ -63,7 +63,6 @@ All previously DERIVABLE axioms have been converted to theorems:
 | `actualization_ordering` | Step8_TemporalEmergence.lean | **THEOREM** | — |
 | `time_embedding` | Step8_TemporalEmergence.lean | **DEFINITION** | — |
 | `time_embedding_strict_mono` | Step8_TemporalEmergence.lean | **THEOREM** | — |
-| `time_embedding_dense` | Step8_TemporalEmergence.lean | **REMOVED** | — |
 | `evolution_matches_actualization` | Step8_TemporalEmergence.lean | **THEOREM** | — |
 
 ---

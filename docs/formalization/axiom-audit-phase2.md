@@ -138,7 +138,7 @@ Require substantial infrastructure or new approaches.
 | Step4/Purification.lean | 335 | `boolean_implies_purification` | HIGH | OPN-005 main theorem. Combines above two. |
 | Step4/Purification.lean | 412 | `k2_via_purification` | HIGH | Combined K=2 derivation via Route B. |
 | Step8_TemporalEmergence.lean | 47 | `actualization_ordering` | HIGH | LinearOrder on ActualizationEvent. Philosophical commitment. |
-| Step8_TemporalEmergence.lean | 70-86 | `time_embedding`, `time_embedding_mono`, `time_embedding_dense`, `time_embedding_strict_mono` | HIGH | Embedding into ℝ. Requires order theory. |
+| Step8_TemporalEmergence.lean | 70-86 | `time_embedding`, `time_embedding_mono`, `time_embedding_strict_mono` | HIGH | Embedding into ℝ. Requires order theory. |
 | Step8_TemporalEmergence.lean | 106 | `evolution_matches_actualization` | HIGH | Links U(t) to actualization. Deep conceptual. |
 | Step10_Schrodinger.lean | 147 | `schrodinger_from_stone` | HIGH | Full Stone → Schrödinger requires unbounded operator theory. |
 | Step7_Unitarity.lean | 167 | `time_evolution_group` | HIGH | Existence of unitary group. Follows from Stone. |
@@ -249,12 +249,11 @@ axiom evolution_preserves_norm : ...       -- DERIVABLE
 axiom time_evolution_group : ...           -- DERIVABLE
 ```
 
-### Step8_TemporalEmergence.lean (6 axioms)
+### Step8_TemporalEmergence.lean (5 axioms)
 ```lean
 axiom actualization_ordering : ...         -- DERIVABLE (philosophical)
 axiom time_embedding : ...                 -- DERIVABLE
 axiom time_embedding_mono : ...            -- DERIVABLE
-axiom time_embedding_dense : ...           -- DERIVABLE
 axiom time_embedding_strict_mono : ...     -- DERIVABLE
 axiom evolution_matches_actualization : ... -- DERIVABLE
 axiom time_arrow : ...                     -- DERIVABLE (easy)
