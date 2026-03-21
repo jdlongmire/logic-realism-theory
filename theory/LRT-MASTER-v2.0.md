@@ -115,6 +115,10 @@ The argument proceeds in two stages:
 
 Local tomography is derived at Step 3. The remaining axioms are physical inputs characterizing the domain. Given these inputs, the state space is ℂH. The field is complex, not real (Renou et al. 2021 confirms experimentally).
 
+![Dimension Scaling](figures/dimension-scaling.png)
+
+*Figure 5: State space dimension scaling for different field parameters K. Only K=2 (complex) maintains manageable information scaling while supporting entanglement. K=1 (real) lacks interference; K≥3 grows too rapidly for physical tractability.*
+
 ### 2.4 Projection-Valued Measures
 
 **Claim:** Event operators on ℂH representing actualization predicates are projections. *[ARGUED]*
@@ -145,6 +149,10 @@ The PVM structure from Step 5 provides the frame function conditions. Gleason's 
 $$p(E|\psi) = \langle \psi | P_E | \psi \rangle$$
 
 The Born rule is not postulated. It is the unique consistent probability measure the PVM structure admits.
+
+![Born Rule Emergence](figures/born-rule-simplex.png)
+
+*Figure 7: Born rule emergence from Gleason constraints. Left: probability simplex showing valid probability distributions. Right: Bloch sphere representation of qubit states. Gleason's theorem forces the unique probability measure on the derived PVM structure.*
 
 ### 2.6 Unitarity
 
@@ -226,6 +234,10 @@ The standing problems of quantum foundations dissolve under LRT. Each arises fro
 **Dissolution:** Entangled states are non-decomposable configurations in I∞—their identity cannot be factored into subsystem identities. A_Ω is global; A evaluates joint configurations, not local subsystems independently. Correlations are constitutive constraints on actualization, not causal influences between spatially separated regions.
 
 Einstein's locality is correct—no superluminal signaling. What fails is separability: the assumption that composite states factor. EPR presupposes that measurement reveals pre-existing local facts. Under LRT, A *constitutes* facts globally. The paradox dissolves because its framing is category-mistaken.
+
+![EPR Dissolution](figures/epr-dissolution.png)
+
+*Figure 4: EPR dissolution under LRT. Left: standard framing assumes local measurement reveals pre-existing facts, generating the paradox. Right: LRT's global A evaluates joint configurations, dissolving the paradox.*
 
 ### 3.4 Schrödinger's Cat
 
@@ -318,6 +330,10 @@ LRT stands in a specific relation to operational reconstruction programs (Hardy 
 | Formal Rigor | 4 | 5 | 5 | 5 | 5 |
 | **TOTAL** | **31** | 28 | 27 | 28 | 31 |
 
+![Competitor Comparison Matrix](figures/competitor-matrix.png)
+
+*Figure 3: Visual comparison of LRT against reconstruction programs (Hardy, CDP, Masanes-Müller) and interpretations (Copenhagen, MWI, Bohmian, GRW). Green: derived/resolved. Amber: partially addressed. Red: assumed/problematic.*
+
 ### 4.4 Predictive Constraints
 
 LRT rules out:
@@ -328,6 +344,10 @@ LRT rules out:
 - K≠2 fields (contradicts reconstruction chain)
 - Super-quantum correlations beyond Tsirelson bound (contradicts ℂH structure)
 - Primitive POVMs (must dilate to PVMs)
+
+![Entanglement Constraints](figures/entanglement-constraints.png)
+
+*Figure 6: Entanglement correlation constraints under LRT. The Tsirelson bound (2√2) emerges from ℂH structure; super-quantum correlations (PR-box region) are ruled out. The CHSH inequality (classical bound 2) is violated by quantum mechanics but bounded by logical structure.*
 
 ### 4.5 Falsification and Null Hypothesis
 
@@ -365,6 +385,14 @@ LRT rules out:
 | PRIMITIVE | 3 (I, I_infinite, bridge_principle) |
 | EXTERNAL | 14 (Gleason, Stone, Hardy, CDP, etc.) |
 | REMAINING | 14 (derivation targets) |
+
+![Axiom Reduction Timeline](figures/axiom-timeline.png)
+
+*Figure 8: Axiom reduction journey from December 2025 to March 2026. Initial count: 55 axioms with 12 sorries. Current: 31 axioms with 0 sorries. Major reductions occurred during Phase 2 (H1/H2 bridge) and Phase 4 (Boolean spectrum derivation).*
+
+![Dependency Graph](figures/dependency-graph.png)
+
+*Figure 9: Traceability dependency graph showing 33 claims with 59 directed edges. Node colors indicate claim type (ONT, LOG, ACT, QM, PHY, PRD, OPN, EXT). The graph is acyclic, confirming no circular dependencies in the reconstruction chain.*
 
 ### 5.2 Derivation Targets
 
@@ -460,3 +488,7 @@ Stone, M. H. (1930). Linear transformations in Hilbert space III. *PNAS*, 16(2),
 **REMAINING (14):** Open derivation targets
 - Could become theorems with additional proof work
 - Some blocked on missing Mathlib infrastructure
+
+![Axiom Classification](figures/axiom-treemap.png)
+
+*Figure 2: Visual breakdown of 31 axioms by classification. PRIMITIVE (3): irreducible LRT commitments. EXTERNAL (14): established mathematics imported for Lean efficiency. REMAINING (14): open derivation targets.*
