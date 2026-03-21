@@ -424,15 +424,117 @@ structure PartitionOfUnity where
 
 attribute [instance] PartitionOfUnity.fin
 
-/-- **Born Rule (Completeness):**
-    For a partition of unity, probabilities sum to 1 on normalized states.
+/-- Projected images of different projections in a partition are orthogonal.
 
-    TIER 2 AXIOM: Proved in full spectral theory; axiomatized here. -/
-axiom born_rule_completeness
+    For orthogonal projections Pᵢ, Pⱼ with PᵢPⱼ = 0, we have ⟨Pᵢψ, Pⱼψ⟩ = 0.
+
+    Proof: By self-adjointness, ⟨Pᵢψ, Pⱼψ⟩ = ⟨ψ, PᵢPⱼψ⟩ = ⟨ψ, 0⟩ = 0. -/
+lemma partition_projections_orthogonal
+    (M : PartitionOfUnity (H := H))
+    (i j : M.I) (h_neq : i ≠ j) (ψ : H) :
+    @inner ℂ H _ (M.proj i ψ) (M.proj j ψ) = 0 := by
+  -- PᵢPⱼ = 0 for i ≠ j
+  have h_zero : M.proj i * M.proj j = 0 := M.orthogonal i j h_neq
+  -- Pᵢ is self-adjoint: ⟨Pᵢx, y⟩ = ⟨x, Pᵢy⟩
+  have h_sa := (M.is_proj i).self_adjoint
+  unfold IsSelfAdjoint' at h_sa
+  -- ⟨Pᵢψ, Pⱼψ⟩ = ⟨ψ, Pᵢ(Pⱼψ)⟩ = ⟨ψ, (PᵢPⱼ)ψ⟩ = ⟨ψ, 0⟩ = 0
+  calc @inner ℂ H _ (M.proj i ψ) (M.proj j ψ)
+      = @inner ℂ H _ ψ (M.proj i (M.proj j ψ)) := h_sa ψ (M.proj j ψ)
+    _ = @inner ℂ H _ ψ ((M.proj i * M.proj j) ψ) := rfl
+    _ = @inner ℂ H _ ψ ((0 : H →L[ℂ] H) ψ) := by rw [h_zero]
+    _ = @inner ℂ H _ ψ 0 := rfl
+    _ = 0 := inner_zero_right ψ
+
+/-- Resolution of identity: ψ = ∑ᵢ Pᵢψ when ∑Pᵢ = I -/
+lemma partition_sum_eq_self (M : PartitionOfUnity (H := H)) (ψ : H) :
+    ∑ i, M.proj i ψ = ψ := by
+  have h_complete := M.complete
+  calc ∑ i, M.proj i ψ = (∑ i, M.proj i) ψ := by
+         simp only [ContinuousLinearMap.coe_sum', Finset.sum_apply]
+    _ = ContinuousLinearMap.id ℂ H ψ := by rw [h_complete]
+    _ = ψ := rfl
+
+/-- **Born Rule (Completeness) — Parseval Identity for Partitions of Unity:**
+    For a partition of unity {Pᵢ}, the probabilities sum to 1 on normalized states:
+    ∑ᵢ ‖Pᵢψ‖² = 1 when ‖ψ‖ = 1.
+
+    **THEOREM (formerly Tier 2 axiom, Issue #40):**
+    This is the Parseval identity / Pythagorean theorem for orthogonal decompositions.
+
+    **Proof structure:**
+    1. ψ = ∑ᵢ Pᵢψ (from M.complete: ∑Pᵢ = I)
+    2. ⟨Pᵢψ, Pⱼψ⟩ = 0 for i ≠ j (from orthogonality + self-adjointness)
+    3. ‖ψ‖² = ‖∑ᵢ Pᵢψ‖² = ∑ᵢ ‖Pᵢψ‖² (Pythagorean theorem for orthogonal sum)
+    4. ‖ψ‖ = 1 ⟹ ∑ᵢ ‖Pᵢψ‖² = 1
+
+    **References:**
+    - Halmos, P.R. (1957). "Introduction to Hilbert Space", Theorem on Orthogonal Decomposition
+    - Conway, J.B. (1990). "A Course in Functional Analysis", II.3 -/
+theorem born_rule_completeness
     (M : PartitionOfUnity (H := H))
     (ψ : H)
     (h_norm : IsNormalized ψ) :
-    ∑ i, projectionProbability (M.proj i) ψ = 1
+    ∑ i, projectionProbability (M.proj i) ψ = 1 := by
+  haveI : DecidableEq M.I := Classical.decEq M.I
+  unfold projectionProbability IsNormalized at *
+  -- Goal: ∑ᵢ ‖Pᵢψ‖² = 1
+  -- Strategy: ‖ψ‖² = ⟨ψ, ψ⟩ = ⟨∑ᵢPᵢψ, ψ⟩ = ∑ᵢ⟨Pᵢψ, ψ⟩ = ∑ᵢ⟨Pᵢψ, Pᵢψ⟩ = ∑ᵢ‖Pᵢψ‖²
+
+  -- Step 1: ‖ψ‖² = 1
+  have h_norm_sq : ‖ψ‖^2 = 1 := by rw [h_norm]; ring
+
+  -- Step 2: ψ = ∑ᵢ Pᵢψ
+  have h_sum : ∑ i, M.proj i ψ = ψ := partition_sum_eq_self M ψ
+
+  -- Step 3: ⟨ψ, ψ⟩ = ∑ᵢ⟨Pᵢψ, Pᵢψ⟩
+  -- Proof: ψ = ∑ⱼPⱼψ, so ⟨ψ, ψ⟩ = ⟨∑ᵢPᵢψ, ∑ⱼPⱼψ⟩ = ∑ᵢ∑ⱼ⟨Pᵢψ, Pⱼψ⟩
+  -- For i ≠ j: ⟨Pᵢψ, Pⱼψ⟩ = 0, so only diagonal terms survive
+  have h_inner_sum : @inner ℂ H _ ψ ψ = ∑ i, @inner ℂ H _ (M.proj i ψ) (M.proj i ψ) := by
+    -- Let v = ∑ᵢ Pᵢψ, so v = ψ
+    set v := ∑ i, M.proj i ψ with hv_def
+    have hv : v = ψ := h_sum
+    -- Show ⟨v, v⟩ = ∑ᵢ⟨Pᵢψ, Pᵢψ⟩
+    have h_expand : @inner ℂ H _ v v = ∑ i, @inner ℂ H _ (M.proj i ψ) (M.proj i ψ) := by
+      rw [hv_def, sum_inner]
+      apply Finset.sum_congr rfl
+      intro i _
+      rw [inner_sum]
+      -- ∑ⱼ⟨Pᵢψ, Pⱼψ⟩ = ⟨Pᵢψ, Pᵢψ⟩ (only diagonal survives)
+      rw [← Finset.add_sum_erase _ _ (Finset.mem_univ i)]
+      have h_off_diag : ∑ j ∈ Finset.univ.erase i,
+          @inner ℂ H _ (M.proj i ψ) (M.proj j ψ) = 0 := by
+        apply Finset.sum_eq_zero
+        intro j hj
+        rw [Finset.mem_erase] at hj
+        exact partition_projections_orthogonal M i j (Ne.symm hj.1) ψ
+      rw [h_off_diag, add_zero]
+    -- Substitute v = ψ
+    rw [← hv]
+    -- h_expand has ψ but goal has v; since v = ψ, substitute
+    simp only [hv] at h_expand ⊢
+    exact h_expand
+
+  -- ‖ψ‖² = Re⟨ψ, ψ⟩ and ⟨x, x⟩ is real so Re⟨x, x⟩ = ⟨x, x⟩ as real
+  have h_norm_eq_inner : ‖ψ‖^2 = (@inner ℂ H _ ψ ψ).re := by
+    rw [inner_self_eq_norm_sq_to_K]
+    norm_cast
+
+  -- Similarly for each term: ‖Pᵢψ‖² = Re⟨Pᵢψ, Pᵢψ⟩
+  have h_term_eq : ∀ i, ‖M.proj i ψ‖^2 = (@inner ℂ H _ (M.proj i ψ) (M.proj i ψ)).re := by
+    intro i
+    rw [inner_self_eq_norm_sq_to_K]
+    norm_cast
+
+  -- Combine: ∑ᵢ‖Pᵢψ‖² = Re(∑ᵢ⟨Pᵢψ, Pᵢψ⟩) = Re⟨ψ, ψ⟩ = ‖ψ‖² = 1
+  calc ∑ i, ‖M.proj i ψ‖^2
+      = ∑ i, (@inner ℂ H _ (M.proj i ψ) (M.proj i ψ)).re := by
+        apply Finset.sum_congr rfl; intro i _; exact h_term_eq i
+    _ = (∑ i, @inner ℂ H _ (M.proj i ψ) (M.proj i ψ)).re := by
+        simp only [Complex.re_sum]
+    _ = (@inner ℂ H _ ψ ψ).re := by rw [← h_inner_sum]
+    _ = ‖ψ‖^2 := h_norm_eq_inner.symm
+    _ = 1 := h_norm_sq
 
 /-! ## Part V: The Born Rule Theorem
 
@@ -533,10 +635,12 @@ Born rule: p(x) = |⟨x|ψ⟩|² = ‖Pψ‖² (OUTPUT, not INPUT!)
 **Tier 2 Axioms (Established Mathematics):**
 1. `gleason_theorem` — Gleason 1957, frame functions → density operators
 2. `von_neumann_entropy` — von Neumann 1932, matrix logarithm entropy
-3. `proj_norm_le` — Standard functional analysis, projection contraction
-4. `born_rule_completeness` — Spectral theory, partition of unity
 
-**LRT Theorems:**
+**LRT Theorems (Derived):**
+- `proj_norm_le` — Orthogonal projections are contractive (Cauchy-Schwarz)
+- `born_rule_completeness` — Parseval identity / Pythagorean theorem (Issue #40 RESOLVED)
+- `partition_projections_orthogonal` — Projected images are orthogonal
+- `partition_sum_eq_self` — Resolution of identity
 - `frame_functions_from_3FLL` — FF1-FF3 from 3FLL (placeholder)
 - `maxent_forces_pure_state` — MaxEnt → pure state (sorry)
 - `born_rule_from_gleason_maxent` — Born rule derivation (placeholder)
