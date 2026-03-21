@@ -107,6 +107,26 @@ The argument proceeds in two stages:
 
 **The H1→H2 argument:** For any relation R between subsystems to be a genuine physical relation, R must satisfy L₃. This requires operational distinguishability (PPC). Therefore every relation in H1's supervenience base is operationally accessible. Local tomography follows.
 
+#### 2.2.1 Bell State Example
+
+Consider the Bell state:
+
+$$|\Phi^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)$$
+
+**Non-decomposable identity:** The composite system's identity cannot be factored. There is no pair of subsystem states $|\psi_A\rangle$, $|\psi_B\rangle$ such that $|\Phi^+\rangle = |\psi_A\rangle \otimes |\psi_B\rangle$. The identity-constituting relations include the correlation structure itself.
+
+**Locally accessible relations:** Despite non-decomposability, every identity-determining relation is locally measurable:
+
+1. Measure $\sigma_z \otimes I$ on system A: statistics reveal $p(0) = p(1) = 1/2$
+2. Measure $I \otimes \sigma_z$ on system B: same statistics
+3. Measure $\sigma_z \otimes \sigma_z$: perfect correlation ($p(00) = p(11) = 1/2$, $p(01) = p(10) = 0$)
+
+The correlation structure is itself locally probed via coincidence counting. No relation escapes local access.
+
+**Reconciliation:** A operates globally, selecting one joint outcome (either $|00\rangle$ or $|11\rangle$) from the composite configuration. But local tomography does not require separable states. It requires that all identity-determining facts be locally measurable. The Bell state satisfies this: its non-decomposable identity is encoded in correlation patterns that local measurements with classical communication fully determine.
+
+This dissolves the apparent tension: A is global (evaluates joint configurations), but the identity-making relations A evaluates are locally accessible (PPC). The entangled composite satisfies both H1 (metaphysical supervenience: composite identity supervenes on relational structure) and H2 (operational local tomography: that structure is locally measurable).
+
 ### 2.3 Complex Hilbert Space
 
 **Claim:** The state space is complex Hilbert space ℂH. *[ESTABLISHED]*
@@ -137,6 +157,16 @@ For any configuration c and event E, A(E, c) ∈ {0, 1}. There is no intermediat
 4. Bounded self-adjoint operators with spectrum ⊆ {0, 1} satisfy P² = P
 
 Event operators are projections. Collections form projection-valued measures (PVMs).
+
+#### 2.4.1 Why Not POVMs?
+
+Generalized measurements in quantum theory employ positive operator-valued measures (POVMs), whose effects $E_i$ satisfy $0 \leq E_i \leq I$ with $\sum_i E_i = I$. POVM effects can have eigenvalues in the open interval $(0,1)$, not just $\{0,1\}$.
+
+**The LRT exclusion:** A is Boolean by definition: $\mathbf{A}(E,c) \in \{0,1\}$. An eigenvalue $\lambda \in (0,1)$ would represent "partial actualization": the event is neither fully actual nor fully non-actual. This violates Excluded Middle at the ontological level. Therefore A cannot operate via POVMs at the fundamental level.
+
+**Derivation, not assumption:** This is not stipulated but follows from A's constitutive character. POVMs arise derivatively through Naimark dilation: every POVM on $\mathcal{H}$ is the restriction of a PVM on an extended space $\mathcal{H} \otimes \mathcal{K}$. Physically, POVMs describe coarse-grained or environmentally coupled measurements. At the fundamental level where A constitutes actuality, only PVMs are admissible.
+
+**Physical consequence:** Any measurement describable by a POVM admits a PVM representation in a larger system. LRT predicts this is not merely mathematical convenience but reflects the ontological structure: A evaluates Boolean facts; apparent non-Boolean measurements are incomplete descriptions of Boolean facts in extended configurations.
 
 ### 2.5 The Born Rule
 
@@ -216,6 +246,10 @@ The standing problems of quantum foundations dissolve under LRT. Each arises fro
 **Presupposition:** Measurement outcomes require dynamical explanation.
 
 **Dissolution:** A is the primitive dynamic aspect of χ, not a process within A_Ω. There is no collapse because nothing collapses—the superposition |ψ⟩ is the state in ℂH; A selects one Boolean outcome from its PVM decomposition. The measurement problem does not arise because LRT does not treat measurement as requiring a dynamical account.
+
+**Clarification:** This dissolution transforms rather than eliminates the question. What LRT dissolves is the *dynamical* measurement problem: why does linear unitary evolution yield definite outcomes? The answer is that outcomes are not produced by evolution but constituted by A.
+
+The residual question—why does A select one outcome rather than another?—remains. But this is a question about A's primitive character, not about physics within A_Ω. It is analogous to "why is there something rather than nothing?": a legitimate metaphysical question, but not one that physics must answer or could answer. Admitting a primitive stopping point does not undermine the physics that proceeds from it. The dynamical problem dissolves; the selection question is relocated to where it belongs—the primitive layer.
 
 ### 3.2 Wave-Particle Duality
 
