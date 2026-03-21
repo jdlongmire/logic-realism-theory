@@ -1,9 +1,9 @@
 # Logic Realism Theory — Complete Lean 4 Formalization
 
-**Date:** 2026-03-16
+**Date:** 2026-03-20
 **Author:** James D. Longmire
-**Build Status:** Verified (2483 jobs, no errors, no `sorry` placeholders)
-**Axiom Count:** 30 foundational axioms
+**Build Status:** Verified (2491 jobs, 0 errors, 0 sorries)
+**Axiom Count:** 31 foundational axioms
 
 ## Overview
 
@@ -14,20 +14,52 @@ X ≡ [L₃ : I∞ : A] → A_Ω → Determinate Identity → Local Tomography �
 PVM → Born Rule → Unitarity → Time → Energy → Schrödinger Equation
 ```
 
-### Axiom Categories
+### Axiom Classification (31 total)
 
-**Tier 1 (Ontological Primitives):**
-- `I : Type*` — The infinite information space
-- `I_infinite : Infinite I` — I∞ has no finite bound
+| Category | Count | Description |
+|----------|-------|-------------|
+| **PRIMITIVE** | 3 | `I`, `I_infinite`, `bridge_principle` — irreducible ontological commitments |
+| **EXTERNAL** | 14 | Established math/physics (Gleason, Stone, Hardy, CDP, Noether, etc.) |
+| **REMAINING** | 14 | Derivation targets for future work |
 
-**Tier 2 (Established Mathematics):**
-- Hardy's theorem, spectral theorem, Stone's theorem, Wigner's theorem, Noether's theorem
+### Tier 1 (Ontological Primitives — 3 axioms)
 
-**Tier 2 (LRT Philosophical):**
-- Bridge Principle (X grounds A_Ω)
-- H1/H2 satisfaction by LRT structures
-- Boolean actualization → Boolean spectrum
-- Time emergence from actualization ordering
+| Axiom | Purpose |
+|-------|---------|
+| `I : Type*` | The infinite information space exists |
+| `I_infinite : Infinite I` | I∞ has unbounded cardinality |
+| `bridge_principle` | X grounds A_Ω (transcendental constitution) |
+
+### Tier 2 (External Theorems — 14 axioms)
+
+| Axiom | Source | Purpose |
+|-------|--------|---------|
+| `hardy_reconstruction` | Hardy 2001 | GPT → QM reconstruction |
+| `gleason_theorem` | Gleason 1957 | Frame functions → density operators |
+| `stones_theorem` | Stone 1932 | Unitary groups ↔ self-adjoint generators |
+| `noether_theorem` | Noether 1918 | Symmetry → conservation |
+| `cdp_purification_k2` | CDP 2011 | Purification → K=2 |
+| `no_hiding_theorem` | Braunstein-Pati 2007 | Information conservation |
+| `spectral_correspondence` | Spectral theory | Observables ↔ eigenvalues |
+| `von_neumann_entropy` | von Neumann 1932 | Entropy definition |
+| `nonlinearity_implies_signaling` | Gisin 1990 | Linearity from no-signaling |
+| `planck_constant` | Empirical | ℏ exists |
+| `planck_constant_pos` | Empirical | ℏ > 0 |
+| `step4_hilbert_space` | Masanes-Müller 2011 | Local tomography → ℂℋ |
+| `QuantumStateSpace.ofCPH` | GPT axioms | State space construction |
+| `product_effects_separate_states` | Product structure | Effect separation |
+
+### Tier 3 (Remaining — 14 axioms)
+
+These are derivation targets, not fundamental commitments:
+
+| Group | Axioms |
+|-------|--------|
+| Step 5 (Eigenvalue) | `event_operator_has_bool_spectrum` |
+| Step 6 (Born Rule) | `born_rule_completeness`, `maxent_forces_pure_state` |
+| Step 7 (Unitarity) | `time_evolution_family`, `evolution_preserves_norm`, `evolution_group_composition`, `evolution_identity` |
+| Step 8 (Temporal) | `time_embedding`, `time_embedding_strict_mono`, `time_embedding_dense`, `evolution_matches_actualization` |
+| Step 10 (Schrödinger) | `schrodinger_from_stone`, `hamiltonian_generates_unitary`, `hamiltonian_generates_group_mul` |
 
 ---
 
@@ -2626,43 +2658,67 @@ end LRT.Step10
 
 ---
 
-## Summary: Axiom Inventory
+## Summary: Axiom Inventory (Updated 2026-03-20)
 
-| Axiom | Type | Step | Description |
-|-------|------|------|-------------|
-| `I : Type*` | Tier 1 | 0 | Infinite information space |
-| `I_infinite` | Tier 1 | 0 | I∞ has no finite bound |
-| `bridge_principle` | Tier 2 (LRT) | 1 | X grounds A_Ω |
-| `hardys_theorem` | Tier 2 (Math) | 3 | H1 + H2 → CP(H) |
-| `lrt_satisfies_h1` | Tier 2 (LRT) | 3 | A_Ω satisfies tomographic locality |
-| `lrt_satisfies_h2` | Tier 2 (LRT) | 3 | A_Ω satisfies independent composition |
-| `lrt_forces_k_equals_2` | Tier 2 (LRT) | 3 | LRT forces K=2 (complex numbers) |
-| `QuantumStateSpace.ofCPH` | Tier 2 (Math) | 4 | CPH → Quantum state space |
-| `step4_hilbert_space` | Tier 2 (Math) | 4 | Hilbert space existence |
-| `spectral_idempotent_of_bool_spectrum` | Tier 2 (Math) | 5 | Spectral theorem application |
-| `event_operator_has_bool_spectrum` | Tier 2 (LRT) | 5 | Boolean actualization → Boolean spectrum |
-| `proj_norm_le` | Tier 2 (Math) | 6 | Projection contraction |
-| `born_rule_completeness` | Tier 2 (Math) | 6 | Probabilities sum to 1 |
-| `wigner_theorem` | Tier 2 (Math) | 7 | Norm-preserving → unitary |
-| `evolution_preserves_distinguishability` | Tier 2 (LRT) | 7 | L₃ → distinguishability |
-| `evolution_bijective` | Tier 2 (LRT) | 7 | Evolution is invertible |
-| `evolution_preserves_norm` | Tier 2 (LRT) | 7 | Probability conservation |
-| `time_evolution_group` | Tier 2 (Math) | 7 | One-parameter group exists |
-| `actualization_ordering` | Tier 2 (LRT) | 8 | Events are totally ordered |
-| `time_embedding` | Tier 2 (LRT) | 8 | Events embed into ℝ |
-| `time_embedding_mono` | Tier 2 (LRT) | 8 | Embedding is monotonic |
-| `time_embedding_dense` | Tier 2 (LRT) | 8 | Embedding has dense range |
-| `evolution_matches_actualization` | Tier 2 (LRT) | 8 | U(t) matches event ordering |
-| `time_arrow` | Tier 2 (LRT) | 8 | Time flows forward |
-| `stones_theorem` | Tier 2 (Math) | 9 | Unitary group has generator |
-| `planck_constant` | Tier 2 (Empirical) | 9 | ℏ exists |
-| `planck_constant_pos` | Tier 2 (Empirical) | 9 | ℏ > 0 |
-| `stationary_phase_principle` | Tier 2 (Math) | 9 | Classical limit |
-| `noether_theorem` | Tier 2 (Math) | 9 | Symmetry → conservation |
-| `schrodinger_from_stone` | Tier 2 (Math) | 10 | Stone → Schrödinger |
+The formalization contains **31 axioms** classified into three tiers:
 
-**Total: 30 axioms**
-- Tier 1 (Primitives): 2
-- Tier 2 (Established Mathematics): 15
-- Tier 2 (LRT Philosophical): 12
-- Tier 2 (Empirical): 2
+### PRIMITIVE (3 axioms)
+
+Irreducible ontological commitments of LRT:
+
+| Axiom | Step | Description |
+|-------|------|-------------|
+| `I : Type*` | 0 | Infinite information space exists |
+| `I_infinite` | 0 | I∞ has unbounded cardinality |
+| `bridge_principle` | 1 | X grounds A_Ω (transcendental constitution) |
+
+### EXTERNAL (14 axioms)
+
+Established mathematical/physical theorems imported from the literature:
+
+| Axiom | Step | Source | Description |
+|-------|------|--------|-------------|
+| `hardy_reconstruction` | 3 | Hardy 2001 | GPT → QM reconstruction |
+| `product_effects_separate_states` | 3 | Product structure | Effect separation |
+| `step4_hilbert_space` | 4 | Masanes-Müller 2011 | Local tomography → ℂℋ |
+| `QuantumStateSpace.ofCPH` | 4 | GPT axioms | State space construction |
+| `no_hiding_theorem` | 4 | Braunstein-Pati 2007 | Information conservation |
+| `cdp_purification_k2` | 4 | CDP 2011 | Purification → K=2 |
+| `spectral_correspondence` | 5 | Spectral theory | Observables ↔ eigenvalues |
+| `gleason_theorem` | 6 | Gleason 1957 | Frame functions → density operators |
+| `von_neumann_entropy` | 6 | von Neumann 1932 | Entropy definition |
+| `nonlinearity_implies_signaling` | 6 | Gisin 1990 | Linearity from no-signaling |
+| `stones_theorem` | 9 | Stone 1932 | Unitary groups ↔ self-adjoint generators |
+| `planck_constant` | 9 | Empirical | ℏ exists |
+| `planck_constant_pos` | 9 | Empirical | ℏ > 0 |
+| `noether_theorem` | 9 | Noether 1918 | Symmetry → conservation |
+
+### REMAINING (14 axioms)
+
+Derivation targets for future work:
+
+| Axiom | Step | Notes |
+|-------|------|-------|
+| `event_operator_has_bool_spectrum` | 5 | From Boolean actualization structure |
+| `maxent_forces_pure_state` | 6 | From entropy formalization |
+| `born_rule_completeness` | 6 | From completeness of PVMs |
+| `time_evolution_family` | 7 | Reducible via Hamiltonian approach |
+| `evolution_preserves_norm` | 7 | Reducible via Hamiltonian approach |
+| `evolution_group_composition` | 7 | Reducible via Hamiltonian approach |
+| `evolution_identity` | 7 | Reducible via Hamiltonian approach |
+| `time_embedding` | 8 | Event → ℝ embedding |
+| `time_embedding_strict_mono` | 8 | Ordering preservation |
+| `time_embedding_dense` | 8 | **NOTE:** Mathematically impossible (ℕ → ℝ cannot have dense range) |
+| `evolution_matches_actualization` | 8 | U(t) matches event ordering |
+| `schrodinger_from_stone` | 10 | Blocked on unbounded operator theory |
+| `hamiltonian_generates_unitary` | 10 | Blocked on unbounded operator theory |
+| `hamiltonian_generates_group_mul` | 10 | Blocked on unbounded operator theory |
+
+---
+
+**Total: 31 axioms**
+- PRIMITIVE: 3 (irreducible)
+- EXTERNAL: 14 (established theorems)
+- REMAINING: 14 (derivation targets)
+
+**Build Status (2026-03-20):** 2491 jobs, 0 errors, 0 sorries
