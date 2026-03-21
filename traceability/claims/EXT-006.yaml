@@ -1,0 +1,49 @@
+# EXT-006: Self-Adjoint Exponential is Unitary
+id: EXT-006
+name: exp(iH) is Unitary for Self-Adjoint H
+statement: |
+  For a self-adjoint operator H on a Hilbert space,
+  exp(iH)† = exp(-iH), making exp(iH) unitary.
+
+role: imported
+proof_status: imported
+epistemic_status: established
+
+formal_artifacts:
+  lean:
+    - file: Step10_Schrodinger.lean
+      symbol: exp_selfadjoint_unitary
+      status: axiom
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "4.4"
+
+depends_on: []
+
+external_citations:
+  - "Reed, M. & Simon, B. (1980). Methods of Modern Mathematical Physics I: Functional Analysis. Academic Press. Ch. VIII"
+  - "Stone, M.H. (1932). On one-parameter unitary groups in Hilbert space. Annals of Mathematics 33, 643-648"
+
+risk_if_false: |
+  This follows directly from the spectral theorem and functional
+  calculus. It's the foundation of quantum dynamics. If false,
+  unitary evolution would not preserve norms.
+
+notes: |
+  Reclassified from REMAINING to EXTERNAL on 2026-03-21.
+
+  This is a consequence of the spectral theorem for self-adjoint
+  operators. For bounded H, Mathlib can prove this. For unbounded H
+  (physical Hamiltonians), the infrastructure is missing.
+
+  LRT imports this as established mathematics rather than
+  treating it as an open derivation target.
+
+agent_history:
+  - agent_id: VSCODE_20260321
+    date: "2026-03-21"
+    action: created
+    summary: |
+      Reclassified exp_selfadjoint_unitary from REMAINING to EXTERNAL.
+      Standard functional analysis; Mathlib lacks unbounded ops. Created EXT-006.

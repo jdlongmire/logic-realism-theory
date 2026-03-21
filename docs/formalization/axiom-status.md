@@ -12,8 +12,8 @@
 | Category | Count | Description |
 |----------|-------|-------------|
 | **PRIMITIVE** | 3 | Core LRT commitments (Tier 1 — cannot be derived) |
-| **EXTERNAL** | 14 | Established mathematical results (Tier 2 — standard theorems) |
-| **REMAINING** | 13 | Open derivations (future work — could become theorems) |
+| **EXTERNAL** | 17 | Established mathematical results (Tier 2 — standard theorems) |
+| **REMAINING** | 10 | Open derivations (future work — could become theorems) |
 
 ---
 
@@ -34,7 +34,7 @@ These are the irreducible commitments of LRT. They define the theory itself.
 
 ---
 
-## EXTERNAL (14 axioms) — Established Math
+## EXTERNAL (17 axioms) — Established Math
 
 Established mathematical results axiomatized for practical reasons. Could be proven in principle with sufficient formalization infrastructure.
 
@@ -57,13 +57,16 @@ Established mathematical results axiomatized for practical reasons. Could be pro
 | Step6_BornRule.lean | `maxent_forces_pure_state` | Jaynes 1957 / N&C Thm 11.8 |
 | Step6_BornRule.lean | `nonlinearity_implies_signaling` | No-signaling theorem |
 
-### Functional Analysis / Operator Theory (3)
+### Functional Analysis / Operator Theory (6)
 
 | File | Axiom | Source |
 |------|-------|--------|
 | Step5/EigenvalueRestriction.lean | `spectral_idempotent_of_bool_spectrum` | Spectral theorem / functional calculus |
 | Step9_EnergyAction.lean | `stones_theorem` | Stone 1932 (unbounded operator theory) |
 | Step9_EnergyAction.lean | `noether_theorem` | Noether 1918 (field theory) |
+| Step10_Schrodinger.lean | `schrodinger_from_stone` | Schrödinger from Stone generator (unbounded ops) |
+| Step10_Schrodinger.lean | `exp_add_of_commute` | exp(A+B) = exp(A)exp(B) for [A,B]=0 (unbounded) |
+| Step10_Schrodinger.lean | `exp_selfadjoint_unitary` | exp(iH)† = exp(-iH) for self-adjoint H (unbounded) |
 
 ### Physical Constants / Technical (2)
 
@@ -74,7 +77,7 @@ Established mathematical results axiomatized for practical reasons. Could be pro
 
 ---
 
-## REMAINING (12 axioms) — Future Work
+## REMAINING (10 axioms) — Future Work
 
 Axioms that could potentially become theorems with additional proof work.
 
@@ -101,23 +104,22 @@ Axioms that could potentially become theorems with additional proof work.
 | Step7_Unitarity.lean | `evolution_group_composition` | U(s+t) = U(s)U(t) | Derivable from exp_add |
 | Step7_Unitarity.lean | `evolution_identity` | U(0) = id | Derivable from exp_zero |
 
-### Step 8: Temporal Emergence (3)
+### Step 8: Temporal Emergence (2)
 
 | File | Axiom | Notes | Derivability |
 |------|-------|-------|--------------|
 | Step8_TemporalEmergence.lean | `time_embedding` | ActualizationEvent → ℝ | CONSTRUCTIBLE |
 | Step8_TemporalEmergence.lean | `time_embedding_strict_mono` | Strict monotonicity | Derivable |
-| Step8_TemporalEmergence.lean | `evolution_matches_actualization` | Links U(t) to actualization | Derivable from group law |
+
+**Note:** `evolution_matches_actualization` is redundant with `evolution_group_composition` (same property restated).
 
 **Removed:** `time_embedding_dense` — mathematically impossible (no strictly monotone ℕ → ℝ has dense range). Removed 2026-03-21. LRT holds that time is discrete actualization sequencing; continuous physics interpolates between events.
 
-### Step 10: Schrödinger (3)
+### Step 10: Schrödinger
 
-| File | Axiom | Notes | Derivability |
-|------|-------|-------|--------------|
-| Step10_Schrodinger.lean | `schrodinger_from_stone` | Derives Schrödinger from Stone | Blocked (needs Stone infra) |
-| Step10_Schrodinger.lean | `exp_add_of_commute` | exp(A+B) = exp(A)exp(B) for [A,B]=0 | Mathlib gap (unbounded) |
-| Step10_Schrodinger.lean | `exp_selfadjoint_unitary` | exp(iH)† = exp(-iH) for self-adjoint H | Mathlib gap (unbounded) |
+**All Step 10 axioms reclassified as EXTERNAL (2026-03-21).** These require unbounded operator theory not present in Mathlib. The mathematics is established (Stone 1932, functional calculus) — Mathlib simply lacks the infrastructure.
+
+See: EXT-004, EXT-005, EXT-006
 
 ---
 
@@ -182,13 +184,14 @@ LrtFormalization/Step9_EnergyAction.lean:4
 | Previous (doc) | 3 | 17 | 12 | 32 |
 | 2026-03-20 Consolidation | 3 | 14 | 12 | 29 |
 | Post-strengthening | 3 | 14 | 14 | 31 |
-| **Current (2026-03-21)** | **3** | **14** | **13** | **30** |
-| Potential (after analysis) | 3 | ~16 | ~4 | ~23 |
-| Target | 3 | ~15 | ~5 | ~23 |
+| Discrete time fix | 3 | 14 | 13 | 30 |
+| **Current (2026-03-21)** | **3** | **17** | **10** | **30** |
+| Target (after Step 7/8 work) | 3 | ~17 | ~5 | ~25 |
 
-**2026-03-21:** Removed `time_embedding_dense` (mathematically impossible). Time is discrete actualization sequencing.
-
-**Note:** Step10_Schrodinger.lean gained 2 axioms (exp additivity, self-adjoint exponential) during strengthening.
+**2026-03-21 changes:**
+- Removed `time_embedding_dense` (mathematically impossible). Time is discrete actualization sequencing.
+- Reclassified 3 Step 10 axioms from REMAINING to EXTERNAL (established math, Mathlib infrastructure gap)
+- `evolution_matches_actualization` marked redundant with group law
 
 ---
 
@@ -211,24 +214,25 @@ LrtFormalization/Step9_EnergyAction.lean:4
 
 4. **Step 8 temporal axioms** — 3 of 4 are derivable once `time_embedding` is defined
 
-### Low Priority (Blocked by Mathlib)
+### Low Priority (Now EXTERNAL)
 
-5. **`schrodinger_from_stone`** — Requires Stone's theorem formalization (not in Mathlib)
-6. **`stones_theorem`** — Listed in Mathlib 1000.yaml but not formalized
+5. **Step 10 Schrödinger axioms (3)** — Reclassified to EXTERNAL (EXT-004, EXT-005, EXT-006)
+   - Mathlib lacks unbounded operator theory
+   - The mathematics is established (Stone 1932, functional calculus)
+   - Honest classification: we import these results, not derive them
 
 ---
 
 ## Reduction Path Forward
 
-The 12 REMAINING axioms cluster as follows:
+The 10 REMAINING axioms cluster as follows:
 
-1. **Unitarity axioms (4)** — Could become 2 axioms + derived theorems
-2. **Temporal emergence (3)** — Density removed; 3 remaining derivable → net 0-1 axioms
+1. **Unitarity axioms (4)** — Could become 2 axioms + derived theorems (Hamiltonian approach)
+2. **Temporal emergence (2)** — Both constructible/derivable → net 0 axioms
 3. **Spectral theory (2)** — Need functional calculus formalization
 4. **Born Rule extras (2)** — One likely derivable (`proj_norm_le`)
-5. **Schrödinger (3)** — Blocked awaiting Stone's theorem in Mathlib
 
-**Realistic target:** 30 → ~23 axioms with focused effort on Step 7/8 derivations.
+**Realistic target:** 30 → ~25 axioms with focused effort on Step 7/8 derivations.
 
 ---
 

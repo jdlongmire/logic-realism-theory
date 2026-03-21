@@ -1,0 +1,52 @@
+# EXT-004: Schrödinger from Stone Generator
+id: EXT-004
+name: Schrödinger Equation from Stone Generator
+statement: |
+  Given a strongly continuous one-parameter unitary group U(t) with
+  self-adjoint generator H (via Stone's theorem), differentiating
+  U(t)ψ with respect to t yields iℏ(dψ/dt) = Hψ.
+
+role: imported
+proof_status: imported
+epistemic_status: established
+
+formal_artifacts:
+  lean:
+    - file: Step10_Schrodinger.lean
+      symbol: schrodinger_from_stone
+      status: axiom
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "4.4"
+
+depends_on:
+  - claim_id: EXT-003
+    dependency_type: formal
+
+external_citations:
+  - "Stone, M.H. (1932). On one-parameter unitary groups in Hilbert space. Annals of Mathematics 33, 643-648"
+  - "Reed, M. & Simon, B. (1980). Methods of Modern Mathematical Physics I: Functional Analysis. Academic Press. Ch. VIII"
+
+risk_if_false: |
+  This is a standard consequence of Stone's theorem and the definition
+  of the generator. If false, functional analysis would need revision.
+
+notes: |
+  Reclassified from REMAINING to EXTERNAL on 2026-03-21.
+
+  The mathematics is established (Stone 1932, Reed-Simon). Mathlib lacks
+  unbounded operator theory infrastructure to formalize this. LRT imports
+  the endpoint rather than pretending it's an open derivation.
+
+  This is honest classification: we rely on established functional analysis,
+  not something LRT proves internally.
+
+agent_history:
+  - agent_id: VSCODE_20260321
+    date: "2026-03-21"
+    action: created
+    summary: |
+      Reclassified schrodinger_from_stone from REMAINING to EXTERNAL.
+      The axiom is blocked by Mathlib infrastructure (unbounded operators),
+      not by any open mathematical question. Created EXT-004 claim.

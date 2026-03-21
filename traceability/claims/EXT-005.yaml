@@ -1,0 +1,49 @@
+# EXT-005: Exponential Additivity for Commuting Operators
+id: EXT-005
+name: exp(A+B) = exp(A)exp(B) for Commuting Operators
+statement: |
+  For unbounded self-adjoint operators A, B on a Hilbert space with
+  [A, B] = 0 (on appropriate domain), the functional calculus gives
+  exp(A + B) = exp(A) · exp(B).
+
+role: imported
+proof_status: imported
+epistemic_status: established
+
+formal_artifacts:
+  lean:
+    - file: Step10_Schrodinger.lean
+      symbol: exp_add_of_commute
+      status: axiom
+
+source_documents:
+  - doc: LRT-MASTER
+    section: "4.4"
+
+depends_on: []
+
+external_citations:
+  - "Reed, M. & Simon, B. (1980). Methods of Modern Mathematical Physics I: Functional Analysis. Academic Press. Ch. VIII"
+  - "Kato, T. (1966). Perturbation Theory for Linear Operators. Springer"
+
+risk_if_false: |
+  This is a standard result in functional calculus for self-adjoint
+  operators. If false, spectral theory would need major revision.
+
+notes: |
+  Reclassified from REMAINING to EXTERNAL on 2026-03-21.
+
+  Mathlib has this for bounded operators (NormedSpace.exp_add_of_commute)
+  but not for unbounded operators. The mathematics is established;
+  the infrastructure is missing.
+
+  LRT imports this as an external theorem rather than pretending
+  it's derivable within our formalization scope.
+
+agent_history:
+  - agent_id: VSCODE_20260321
+    date: "2026-03-21"
+    action: created
+    summary: |
+      Reclassified exp_add_of_commute from REMAINING to EXTERNAL.
+      Mathlib gap (unbounded operators), not open math. Created EXT-005.
