@@ -5,11 +5,15 @@ graph TD
     classDef imported fill:#f3e5f5
     classDef open fill:#ffebee
     classDef prediction fill:#e0f2f1
+    PHY-001["PHY-001: Unitarity"]
     ACT-001["ACT-001: X Grounds AΩ (Bridge Principle..."]
     ACT-002["ACT-002: Actualized Domain AΩ"]
     EXT-001["EXT-001: Hardy Reconstruction Theorem"]
     EXT-002["EXT-002: Gleason's Theorem"]
     EXT-003["EXT-003: Stone's Theorem"]
+    EXT-004["EXT-004: Schrödinger Equation from Ston..."]
+    EXT-005["EXT-005: exp(A+B) = exp(A)exp(B) for Co..."]
+    EXT-006["EXT-006: exp(iH) is Unitary for Self-Ad..."]
     LOG-001["LOG-001: Determinate Identity"]
     LOG-002["LOG-002: Physical Proposition Criterion"]
     ONT-001["ONT-001: Primitive Ontic State X"]
@@ -20,7 +24,6 @@ graph TD
     OPN-002["OPN-002: Bekenstein-Hawking Entropy Bri..."]
     OPN-003["OPN-003: Energy-Action Relationship"]
     OPN-004["OPN-004: K=2 Forcing (Complex over Real..."]
-    PHY-001["PHY-001: Unitarity"]
     PHY-002["PHY-002: Temporal Emergence"]
     PHY-003["PHY-003: Hamiltonian Generator"]
     PHY-004["PHY-004: Schrödinger Equation"]
@@ -38,12 +41,15 @@ graph TD
     QM-011["QM-011: Eigenvalue-Outcome Corresponde..."]
     QM-012["QM-012: Faithful Event Representation"]
     QM-013["QM-013: Complete Events Form PVMs"]
+    QM-008 --> PHY-001
+    QM-004 -.->|formal| PHY-001
     ONT-001 --> ACT-001
     ONT-001 --> ACT-002
     ACT-001 --> ACT-002
     QM-003 --> EXT-001
     QM-007 -.->|formal| EXT-002
     PHY-001 -.->|formal| EXT-003
+    EXT-003 -.->|formal| EXT-004
     ONT-003 --> LOG-001
     ACT-002 --> LOG-001
     ONT-003 --> LOG-002
@@ -58,9 +64,8 @@ graph TD
     PHY-003 --> OPN-003
     QM-005 --> OPN-004
     LOG-002 --> OPN-004
-    QM-008 --> PHY-001
-    QM-004 -.->|formal| PHY-001
     PHY-001 --> PHY-002
+    ACT-001 --> PHY-002
     PHY-001 --> PHY-003
     EXT-003 -.->|formal| PHY-003
     PHY-003 --> PHY-004
@@ -97,11 +102,15 @@ graph TD
     QM-006 -.->|formal| QM-013
     QM-007 --> QM-013
     QM-012 -.->|formal| QM-013
+    class PHY-001 derived
     class ACT-001 bridge
     class ACT-002 derived
     class EXT-001 imported
     class EXT-002 imported
     class EXT-003 imported
+    class EXT-004 imported
+    class EXT-005 imported
+    class EXT-006 imported
     class LOG-001 derived
     class LOG-002 derived
     class ONT-001 primitive
@@ -112,7 +121,6 @@ graph TD
     class OPN-002 open
     class OPN-003 open
     class OPN-004 open
-    class PHY-001 derived
     class PHY-002 derived
     class PHY-003 derived
     class PHY-004 derived

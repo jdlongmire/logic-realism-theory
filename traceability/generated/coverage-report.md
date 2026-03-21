@@ -4,7 +4,7 @@ Generated: 2026-03-16
 
 ## Summary
 
-**Total claims:** 33
+**Total claims:** 36
 
 ### By Proof Status
 
@@ -12,7 +12,7 @@ Generated: 2026-03-16
 |--------|-------|
 | axiomatized | 12 |
 | derived | 2 |
-| imported | 3 |
+| imported | 6 |
 | open | 4 |
 | prose_only | 1 |
 | verified | 11 |
@@ -23,7 +23,7 @@ Generated: 2026-03-16
 |------|-------|
 | bridge | 5 |
 | derived | 17 |
-| imported | 3 |
+| imported | 6 |
 | open | 4 |
 | prediction | 1 |
 | primitive | 3 |
@@ -34,7 +34,7 @@ Generated: 2026-03-16
 |--------|-------|
 | argued | 14 |
 | derived | 1 |
-| established | 15 |
+| established | 18 |
 | open | 3 |
 
 ## Claim Details
@@ -78,6 +78,28 @@ Generated: 2026-03-16
 - **Epistemic status:** established
 - **Depends on:** PHY-001
 - **Lean artifacts:** 3 symbols
+
+### EXT-004: Schrödinger Equation from Stone Generator
+
+- **Role:** imported
+- **Proof status:** imported
+- **Epistemic status:** established
+- **Depends on:** EXT-003
+- **Lean artifacts:** 1 symbols
+
+### EXT-005: exp(A+B) = exp(A)exp(B) for Commuting Operators
+
+- **Role:** imported
+- **Proof status:** imported
+- **Epistemic status:** established
+- **Lean artifacts:** 1 symbols
+
+### EXT-006: exp(iH) is Unitary for Self-Adjoint H
+
+- **Role:** imported
+- **Proof status:** imported
+- **Epistemic status:** established
+- **Lean artifacts:** 1 symbols
 
 ### LOG-001: Determinate Identity
 
@@ -169,8 +191,8 @@ Generated: 2026-03-16
 - **Role:** derived
 - **Proof status:** axiomatized
 - **Epistemic status:** argued
-- **Depends on:** PHY-001
-- **Lean artifacts:** 1 symbols
+- **Depends on:** PHY-001, ACT-001
+- **Lean artifacts:** 5 symbols
 
 ### PHY-003: Hamiltonian Generator
 

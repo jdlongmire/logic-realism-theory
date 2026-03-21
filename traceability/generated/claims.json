@@ -2,6 +2,75 @@
   "version": "1.0.0",
   "generated": "2026-03-16",
   "claims": {
+    "PHY-001": {
+      "id": "PHY-001",
+      "name": "Unitarity",
+      "statement": "The dynamics of quantum states is unitary: time evolution\npreserves inner products and hence probabilities. This follows\nfrom probability conservation and the Hilbert space structure.\n",
+      "role": "derived",
+      "proof_status": "axiomatized",
+      "epistemic_status": "argued",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step7_Unitarity.lean",
+            "symbol": "unitarity",
+            "status": "axiom"
+          },
+          {
+            "file": "Step9_EnergyAction.lean",
+            "symbol": "unitary_group_inverse",
+            "status": "theorem"
+          },
+          {
+            "file": "Step9_EnergyAction.lean",
+            "symbol": "unitary_group_preserves_norm",
+            "status": "theorem"
+          },
+          {
+            "file": "Step9_EnergyAction.lean",
+            "symbol": "toSymmetry",
+            "status": "definition"
+          },
+          {
+            "file": "Step9_EnergyAction.lean",
+            "symbol": "time_translation_is_symmetry",
+            "status": "theorem"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "4.1"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "QM-008",
+          "dependency_type": "logical"
+        },
+        {
+          "claim_id": "QM-004",
+          "dependency_type": "formal"
+        }
+      ],
+      "risk_if_false": "Without unitarity, quantum dynamics is not reversible and\nprobability is not conserved. The Schr\u00f6dinger equation cannot\nbe derived.\n",
+      "notes": "Unitarity is a consequence of probability conservation in\nHilbert space, not an independent postulate in LRT.\n",
+      "agent_history": [
+        {
+          "agent_id": "C5",
+          "date": "2026-03-17",
+          "action": "strengthened",
+          "summary": "Converted wigner_theorem from axiom to theorem using mathlib's\nLinearMap.norm_map_iff_inner_map_map. This establishes that norm-preserving\nlinear maps preserve inner products (the key step in unitarity derivation).\nThe main step7_unitarity theorem still relies on LRT-specific axioms\n(evolution_preserves_norm, evolution_bijective) but now uses a proven lemma.\nBuild verified successfully.\n"
+        },
+        {
+          "agent_id": "C6",
+          "date": "2026-03-17",
+          "action": "strengthened",
+          "summary": "Added derived theorems in Step9_EnergyAction.lean that extend unitarity structure:\n- unitary_group_inverse: U(t)*U(-t) = I (derived from group axioms)\n- unitary_group_preserves_norm: norm preservation at all times\n- toSymmetry: converts UnitaryGroup to Symmetry structure\n- time_translation_is_symmetry: unitary evolution = symmetry\nThese are fully derived from group axioms with no additional assumptions.\nAlso added StronglyContUnitaryGroup structure for explicit strong continuity.\nBuild verified successfully.\n"
+        }
+      ]
+    },
     "ACT-001": {
       "id": "ACT-001",
       "name": "X Grounds A\u03a9 (Bridge Principle)",
@@ -203,6 +272,125 @@
           "date": "2026-03-17",
           "action": "strengthened",
           "summary": "Added StronglyContUnitaryGroup structure to make Stone's theorem precondition\n(strong continuity) explicit. Added stones_theorem_from_group as a backwards-\ncompatible theorem that takes UnitaryGroup plus a proof of strong continuity.\nThis doesn't change the proof_status (still imported/axiom) but makes the\nmathematical requirements more precise. Build verified successfully.\n"
+        }
+      ]
+    },
+    "EXT-004": {
+      "id": "EXT-004",
+      "name": "Schr\u00f6dinger Equation from Stone Generator",
+      "statement": "Given a strongly continuous one-parameter unitary group U(t) with\nself-adjoint generator H (via Stone's theorem), differentiating\nU(t)\u03c8 with respect to t yields i\u210f(d\u03c8/dt) = H\u03c8.\n",
+      "role": "imported",
+      "proof_status": "imported",
+      "epistemic_status": "established",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step10_Schrodinger.lean",
+            "symbol": "schrodinger_from_stone",
+            "status": "axiom"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "4.4"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "EXT-003",
+          "dependency_type": "formal"
+        }
+      ],
+      "external_citations": [
+        "Stone, M.H. (1932). On one-parameter unitary groups in Hilbert space. Annals of Mathematics 33, 643-648",
+        "Reed, M. & Simon, B. (1980). Methods of Modern Mathematical Physics I: Functional Analysis. Academic Press. Ch. VIII"
+      ],
+      "risk_if_false": "This is a standard consequence of Stone's theorem and the definition\nof the generator. If false, functional analysis would need revision.\n",
+      "notes": "Reclassified from REMAINING to EXTERNAL on 2026-03-21.\n\nThe mathematics is established (Stone 1932, Reed-Simon). Mathlib lacks\nunbounded operator theory infrastructure to formalize this. LRT imports\nthe endpoint rather than pretending it's an open derivation.\n\nThis is honest classification: we rely on established functional analysis,\nnot something LRT proves internally.\n",
+      "agent_history": [
+        {
+          "agent_id": "VSCODE_20260321",
+          "date": "2026-03-21",
+          "action": "created",
+          "summary": "Reclassified schrodinger_from_stone from REMAINING to EXTERNAL.\nThe axiom is blocked by Mathlib infrastructure (unbounded operators),\nnot by any open mathematical question. Created EXT-004 claim.\n"
+        }
+      ]
+    },
+    "EXT-005": {
+      "id": "EXT-005",
+      "name": "exp(A+B) = exp(A)exp(B) for Commuting Operators",
+      "statement": "For unbounded self-adjoint operators A, B on a Hilbert space with\n[A, B] = 0 (on appropriate domain), the functional calculus gives\nexp(A + B) = exp(A) \u00b7 exp(B).\n",
+      "role": "imported",
+      "proof_status": "imported",
+      "epistemic_status": "established",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step10_Schrodinger.lean",
+            "symbol": "exp_add_of_commute",
+            "status": "axiom"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "4.4"
+        }
+      ],
+      "depends_on": [],
+      "external_citations": [
+        "Reed, M. & Simon, B. (1980). Methods of Modern Mathematical Physics I: Functional Analysis. Academic Press. Ch. VIII",
+        "Kato, T. (1966). Perturbation Theory for Linear Operators. Springer"
+      ],
+      "risk_if_false": "This is a standard result in functional calculus for self-adjoint\noperators. If false, spectral theory would need major revision.\n",
+      "notes": "Reclassified from REMAINING to EXTERNAL on 2026-03-21.\n\nMathlib has this for bounded operators (NormedSpace.exp_add_of_commute)\nbut not for unbounded operators. The mathematics is established;\nthe infrastructure is missing.\n\nLRT imports this as an external theorem rather than pretending\nit's derivable within our formalization scope.\n",
+      "agent_history": [
+        {
+          "agent_id": "VSCODE_20260321",
+          "date": "2026-03-21",
+          "action": "created",
+          "summary": "Reclassified exp_add_of_commute from REMAINING to EXTERNAL.\nMathlib gap (unbounded operators), not open math. Created EXT-005.\n"
+        }
+      ]
+    },
+    "EXT-006": {
+      "id": "EXT-006",
+      "name": "exp(iH) is Unitary for Self-Adjoint H",
+      "statement": "For a self-adjoint operator H on a Hilbert space,\nexp(iH)\u2020 = exp(-iH), making exp(iH) unitary.\n",
+      "role": "imported",
+      "proof_status": "imported",
+      "epistemic_status": "established",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step10_Schrodinger.lean",
+            "symbol": "exp_selfadjoint_unitary",
+            "status": "axiom"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "LRT-MASTER",
+          "section": "4.4"
+        }
+      ],
+      "depends_on": [],
+      "external_citations": [
+        "Reed, M. & Simon, B. (1980). Methods of Modern Mathematical Physics I: Functional Analysis. Academic Press. Ch. VIII",
+        "Stone, M.H. (1932). On one-parameter unitary groups in Hilbert space. Annals of Mathematics 33, 643-648"
+      ],
+      "risk_if_false": "This follows directly from the spectral theorem and functional\ncalculus. It's the foundation of quantum dynamics. If false,\nunitary evolution would not preserve norms.\n",
+      "notes": "Reclassified from REMAINING to EXTERNAL on 2026-03-21.\n\nThis is a consequence of the spectral theorem for self-adjoint\noperators. For bounded H, Mathlib can prove this. For unbounded H\n(physical Hamiltonians), the infrastructure is missing.\n\nLRT imports this as established mathematics rather than\ntreating it as an open derivation target.\n",
+      "agent_history": [
+        {
+          "agent_id": "VSCODE_20260321",
+          "date": "2026-03-21",
+          "action": "created",
+          "summary": "Reclassified exp_selfadjoint_unitary from REMAINING to EXTERNAL.\nStandard functional analysis; Mathlib lacks unbounded ops. Created EXT-006.\n"
         }
       ]
     },
@@ -587,79 +775,10 @@
       "risk_if_false": "Without K=2 derivation, LRT must import complex structure as assumption.\nThis weakens the claim that QM is derived rather than postulated.\nThe distinctive LRT claim collapses to reconstruction + metaphysics.\n",
       "notes": "This is the most important open derivation in the program.\nCurrently axiomatized; Phase 3 target for derivation.\nReferences: Hardy 2012, Stueckelberg 1960, Wootters 1990.\n"
     },
-    "PHY-001": {
-      "id": "PHY-001",
-      "name": "Unitarity",
-      "statement": "The dynamics of quantum states is unitary: time evolution\npreserves inner products and hence probabilities. This follows\nfrom probability conservation and the Hilbert space structure.\n",
-      "role": "derived",
-      "proof_status": "axiomatized",
-      "epistemic_status": "argued",
-      "formal_artifacts": {
-        "lean": [
-          {
-            "file": "Step7_Unitarity.lean",
-            "symbol": "unitarity",
-            "status": "axiom"
-          },
-          {
-            "file": "Step9_EnergyAction.lean",
-            "symbol": "unitary_group_inverse",
-            "status": "theorem"
-          },
-          {
-            "file": "Step9_EnergyAction.lean",
-            "symbol": "unitary_group_preserves_norm",
-            "status": "theorem"
-          },
-          {
-            "file": "Step9_EnergyAction.lean",
-            "symbol": "toSymmetry",
-            "status": "definition"
-          },
-          {
-            "file": "Step9_EnergyAction.lean",
-            "symbol": "time_translation_is_symmetry",
-            "status": "theorem"
-          }
-        ]
-      },
-      "source_documents": [
-        {
-          "doc": "LRT-MASTER",
-          "section": "4.1"
-        }
-      ],
-      "depends_on": [
-        {
-          "claim_id": "QM-008",
-          "dependency_type": "logical"
-        },
-        {
-          "claim_id": "QM-004",
-          "dependency_type": "formal"
-        }
-      ],
-      "risk_if_false": "Without unitarity, quantum dynamics is not reversible and\nprobability is not conserved. The Schr\u00f6dinger equation cannot\nbe derived.\n",
-      "notes": "Unitarity is a consequence of probability conservation in\nHilbert space, not an independent postulate in LRT.\n",
-      "agent_history": [
-        {
-          "agent_id": "C5",
-          "date": "2026-03-17",
-          "action": "strengthened",
-          "summary": "Converted wigner_theorem from axiom to theorem using mathlib's\nLinearMap.norm_map_iff_inner_map_map. This establishes that norm-preserving\nlinear maps preserve inner products (the key step in unitarity derivation).\nThe main step7_unitarity theorem still relies on LRT-specific axioms\n(evolution_preserves_norm, evolution_bijective) but now uses a proven lemma.\nBuild verified successfully.\n"
-        },
-        {
-          "agent_id": "C6",
-          "date": "2026-03-17",
-          "action": "strengthened",
-          "summary": "Added derived theorems in Step9_EnergyAction.lean that extend unitarity structure:\n- unitary_group_inverse: U(t)*U(-t) = I (derived from group axioms)\n- unitary_group_preserves_norm: norm preservation at all times\n- toSymmetry: converts UnitaryGroup to Symmetry structure\n- time_translation_is_symmetry: unitary evolution = symmetry\nThese are fully derived from group axioms with no additional assumptions.\nAlso added StronglyContUnitaryGroup structure for explicit strong continuity.\nBuild verified successfully.\n"
-        }
-      ]
-    },
     "PHY-002": {
       "id": "PHY-002",
       "name": "Temporal Emergence",
-      "statement": "Time is not primitive but emerges from the structure of unitary\nevolution. The time parameter t indexes the continuous family\nof unitary operators U(t).\n",
+      "statement": "Time is not primitive but emerges from the discrete sequencing of\nactualization events. Actualizations are \u2115-indexed; the time parameter t\nprovides real-valued coordinates for this discrete sequence. Continuous\nphysics (Schr\u00f6dinger equation) interpolates between discrete actualizations.\n",
       "role": "derived",
       "proof_status": "axiomatized",
       "epistemic_status": "argued",
@@ -667,8 +786,28 @@
         "lean": [
           {
             "file": "Step8_TemporalEmergence.lean",
-            "symbol": "time_parameter",
+            "symbol": "ActualizationEvent",
+            "status": "definition"
+          },
+          {
+            "file": "Step8_TemporalEmergence.lean",
+            "symbol": "time_embedding",
             "status": "axiom"
+          },
+          {
+            "file": "Step8_TemporalEmergence.lean",
+            "symbol": "time_embedding_strict_mono",
+            "status": "axiom"
+          },
+          {
+            "file": "Step8_TemporalEmergence.lean",
+            "symbol": "TemporalEmergence",
+            "status": "structure"
+          },
+          {
+            "file": "Step8_TemporalEmergence.lean",
+            "symbol": "step8_temporal_emergence",
+            "status": "theorem"
           }
         ]
       },
@@ -676,16 +815,32 @@
         {
           "doc": "LRT-MASTER",
           "section": "4.2"
+        },
+        {
+          "doc": "TAB-v2.0",
+          "section": "5.3"
         }
       ],
       "depends_on": [
         {
           "claim_id": "PHY-001",
           "dependency_type": "logical"
+        },
+        {
+          "claim_id": "ACT-001",
+          "dependency_type": "logical"
         }
       ],
       "risk_if_false": "If time is primitive, LRT loses parsimony and the emergence\nnarrative fails.\n",
-      "notes": "This is an interpretive claim about the status of time, not\na mathematical derivation. Time's emergence is philosophical.\n"
+      "notes": "**2026-03-21 Update:** The axiom `time_embedding_dense` was removed.\nIt was mathematically impossible: no strictly monotone \u2115 \u2192 \u211d has dense range.\n\nLRT's position: time IS the actualization sequencing. Actualizations are\ndiscrete (\u2115-indexed). The continuum time parameter is a coordinate system\nfor these discrete events, not an ontologically dense medium. Continuous\ndynamics (Stone's theorem, Schr\u00f6dinger equation) describes interpolation\nbetween actualizations, not infinitely many actualizations between any two.\n\nThis is philosophically consistent with LRT's core claim that time emerges\nfrom actualization rather than being a pre-existing container.\n",
+      "agent_history": [
+        {
+          "agent_id": "Claude",
+          "date": "2026-03-21",
+          "action": "updated",
+          "summary": "Removed `time_embedding_dense` axiom as mathematically impossible.\nClarified that LRT holds time is discrete actualization sequencing.\nUpdated formal_artifacts to reflect current Step8 structure.\nAdded note explaining the philosophical rationale.\n"
+        }
+      ]
     },
     "PHY-003": {
       "id": "PHY-003",

@@ -68,9 +68,9 @@ theory section becomes disconnected.
 
 These claims are implemented in Lean but use `axiom` or `sorry`.
 
+- **PHY-001**: Unitarity
 - **ONT-001**: Primitive Ontic State X
 - **ONT-002**: Infinite Information Space I∞
-- **PHY-001**: Unitarity
 - **PHY-002**: Temporal Emergence
 - **PHY-003**: Hamiltonian Generator
 - **PHY-004**: Schrödinger Equation

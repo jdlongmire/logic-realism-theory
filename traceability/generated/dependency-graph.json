@@ -1,6 +1,12 @@
 {
   "nodes": [
     {
+      "id": "PHY-001",
+      "name": "Unitarity",
+      "role": "derived",
+      "proof_status": "axiomatized"
+    },
+    {
       "id": "ACT-001",
       "name": "X Grounds A\u03a9 (Bridge Principle)",
       "role": "bridge",
@@ -27,6 +33,24 @@
     {
       "id": "EXT-003",
       "name": "Stone's Theorem",
+      "role": "imported",
+      "proof_status": "imported"
+    },
+    {
+      "id": "EXT-004",
+      "name": "Schr\u00f6dinger Equation from Stone Generator",
+      "role": "imported",
+      "proof_status": "imported"
+    },
+    {
+      "id": "EXT-005",
+      "name": "exp(A+B) = exp(A)exp(B) for Commuting Operators",
+      "role": "imported",
+      "proof_status": "imported"
+    },
+    {
+      "id": "EXT-006",
+      "name": "exp(iH) is Unitary for Self-Adjoint H",
       "role": "imported",
       "proof_status": "imported"
     },
@@ -89,12 +113,6 @@
       "name": "K=2 Forcing (Complex over Real/Quaternionic)",
       "role": "open",
       "proof_status": "open"
-    },
-    {
-      "id": "PHY-001",
-      "name": "Unitarity",
-      "role": "derived",
-      "proof_status": "axiomatized"
     },
     {
       "id": "PHY-002",
@@ -201,6 +219,16 @@
   ],
   "edges": [
     {
+      "from": "QM-008",
+      "to": "PHY-001",
+      "type": "logical"
+    },
+    {
+      "from": "QM-004",
+      "to": "PHY-001",
+      "type": "formal"
+    },
+    {
       "from": "ONT-001",
       "to": "ACT-001",
       "type": "logical"
@@ -228,6 +256,11 @@
     {
       "from": "PHY-001",
       "to": "EXT-003",
+      "type": "formal"
+    },
+    {
+      "from": "EXT-003",
+      "to": "EXT-004",
       "type": "formal"
     },
     {
@@ -301,17 +334,12 @@
       "type": "logical"
     },
     {
-      "from": "QM-008",
-      "to": "PHY-001",
+      "from": "PHY-001",
+      "to": "PHY-002",
       "type": "logical"
     },
     {
-      "from": "QM-004",
-      "to": "PHY-001",
-      "type": "formal"
-    },
-    {
-      "from": "PHY-001",
+      "from": "ACT-001",
       "to": "PHY-002",
       "type": "logical"
     },
