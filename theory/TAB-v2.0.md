@@ -126,6 +126,20 @@ The answer is no, and the reason goes beyond mere representational limits. The a
 
 This is not a claim about the limits of thought but about the conditions for being. Epistemic necessity tracks transcendental necessity in this case because the very features that make L₃ indispensable for thought (the requirement of stable identity, the contrast between truth and falsity) are the same features required for determinate existence. The constraints are not parallel but identical: what cannot be coherently represented cannot obtain, not because representation limits reality, but because both representation and reality require the same structural conditions.
 
+### 2.5 Engagement with Dialetheism
+
+A sophisticated objection comes from dialetheist logicians (Priest 2006), who argue that some contradictions are true. If dialetheism is coherent, does it undermine the transcendental necessity of L₃?
+
+The objection conflates two levels of analysis. Dialetheism concerns truth-value assignments to propositions: it holds that some propositions P are both true and false (truth-value gluts). This is a claim about the logical behavior of sentences in formal systems.
+
+The TAB argument operates at a prior level: the conditions for determinate identity. For P to have any truth-value at all, there must be some fact of the matter about what P is about. P must have determinate content. But determinate content requires identity conditions: P is about this configuration rather than that one.
+
+The dialetheist cannot reject identity at this level. To assert that "the liar sentence is both true and false" requires that the liar sentence be determinately the sentence it is. If the liar sentence lacked stable identity (if it were somehow both the liar sentence and not the liar sentence), there would be nothing for the truth-value glut to attach to.
+
+Dialetheism therefore presupposes L₃ at the ontological level in order to operate at the propositional level. The dialetheist accepts identity conditions for sentences and meanings, then claims that some meaningful sentences have inconsistent truth-value assignments. This is logically possible. But it is not an objection to TAB, which concerns the conditions for anything to be determinately what it is in the first place.
+
+A physical dialetheism, claiming that some configurations are ontologically both P and not-P, would destroy the identity conditions required for any truth-value assignment to make sense. Without identity, there is nothing to predicate of, and no proposition has content. This is not a restriction dialetheists accept; it is a condition they implicitly rely upon.
+
 ### 2.5 The Ontological Status of L₃
 
 L₃ does not exist as a thing alongside other things. It is not an entity but a constraint on entities. Its mode of being is prescriptive: it determines what structures are admissible for any configuration that obtains.
@@ -216,6 +230,20 @@ The bridge identity tells us what actuality looks like. A grounds the fact that 
 
 A is therefore not rendered otiose by the bridge identity. The identity characterizes the domain that A constitutes. A's role is to ground the fact that some domain of configurations obtains; the identity specifies which domain that is, given the constraints.
 
+### 4.5 Worked Example: Spin Measurement
+
+To make A's role concrete, consider a spin-1/2 system before and during measurement.
+
+**Before measurement:** The system is prepared in a superposition state, say $\lvert\psi\rangle = \alpha\lvert\uparrow\rangle + \beta\lvert\downarrow\rangle$. Within I∞, both $\lvert\uparrow\rangle$ and $\lvert\downarrow\rangle$ are L₃-admissible configurations. Each has determinate identity (spin-up is spin-up, not spin-down). The superposition is a representation of epistemic indeterminacy about which configuration will obtain when A operates; it is not an ontological contradiction.
+
+**During measurement:** A marks one configuration as obtaining. The outcome is spin-up or spin-down, not both, and not neither. This is the primitive actualization event. There is no prior principle determining which outcome A selects; the selection is the primitive fact.
+
+**What A does not do:** A does not explain why the probabilities are $\lvert\alpha\rvert^2$ and $\lvert\beta\rvert^2$. That is the province of the Born rule, derived elsewhere from Gleason's theorem and the structure of L₃(I∞). A does not explain why measurement interactions trigger actualization rather than continued superposition. That requires additional physical structure (the measurement postulate or a dynamical account).
+
+**What A does do:** A grounds the fact that one outcome obtains. Without A, the system would remain in superposition indefinitely, and there would be no fact of the matter about outcomes. A is the primitive of obtaining, not the mechanism of selection.
+
+This example illustrates the division of labor. L₃ excludes contradictory outcomes (spin-up and spin-down simultaneously). I∞ supplies the space of possible outcomes. A marks one as actual. The bridge identity, A_Ω = L₃(I∞), says that whatever A marks is an L₃-admissible configuration; it cannot be otherwise.
+
 ---
 
 ## 5. Interaction of the Primitives
@@ -240,7 +268,21 @@ L₃ without I∞ would be constraint on nothing—a structure with no domain to
 
 The primitives therefore form a unity. They cannot be pried apart without rendering each incoherent.
 
-### 5.3 The Constitution of Actuality
+### 5.3 Non-Redundancy of the Primitive Set
+
+The mutual dependence argument establishes that the primitives require one another. A stronger claim is available: no proper subset of {L₃, I∞, A} suffices for determinate actuality.
+
+Consider each pair:
+
+1. **L₃ + I∞ without A:** Constraint and possibility space exist, but nothing obtains. The result is a static modal structure with no fact of the matter about actuality. This is the Tegmarkian scenario: all consistent mathematical structures "exist" but none is distinguished as actual.
+
+2. **L₃ + A without I∞:** Constraint and actuality exist, but there is no domain of configurations for A to operate on. A marks something as obtaining, but "something" has no content. The result is actuality without differentiation—a single undifferentiated fact, not a structured world.
+
+3. **I∞ + A without L₃:** Possibility space and actuality exist, but there is no constraint on what can obtain. A could mark contradictory configurations, destroying the identity conditions required for determinate existence. The result is not a coherent world but a chaos in which nothing is stably what it is.
+
+Each pair fails in a distinct way. The triad is therefore irreducible: all three primitives are individually necessary, and no pair is jointly sufficient.
+
+### 5.4 The Constitution of Actuality
 
 The key question is: what does A produce when operating on I∞ under the constraints of L₃?
 
@@ -475,6 +517,12 @@ This result provides the ontological foundation from which subsequent work can r
 
 The bridge identity constrains candidate physical theories in at least one concrete way: any physical structure must be realizable within A_Ω = L₃(I∞). This rules out physical theories that require ontological contradictions (states that are both P and not-P), configurations that cannot be distinguished from others (violations of identity), or structures that presuppose a possibility space narrower than L₃ permits without explanatory justification.
 
+**A concrete example of a ruled-out ontology:** Paraconsistent Quantum Mechanics (PQM) programs (da Costa & de Ronde 2013) interpret quantum superposition as genuine ontological contradiction. On this view, when a system is in state $\lvert\psi\rangle = \alpha\lvert\uparrow\rangle + \beta\lvert\downarrow\rangle$, the system is literally both spin-up and spin-down. The superposition is not epistemic indeterminacy but ontological contradiction.
+
+TAB rules this out. Superposition in the standard quantum formalism represents a configuration that is neither spin-up nor spin-down with respect to actualization; it is indeterminate, not contradictory. Indeterminacy is the absence of a fact; contradiction is the presence of incompatible facts. These are structurally different. An indeterminate configuration can be L₃-admissible (A has not yet operated with respect to the relevant property). A contradictory configuration cannot be L₃-admissible (it violates non-contradiction).
+
+The PQM advocate might reply that paraconsistent logic permits localized contradiction without explosion. But the TAB objection is not about explosion; it is about identity. A system that is both P and not-P has no stable identity with respect to P. Without identity, there is nothing for measurement to determine, and no fact of the matter about outcomes. PQM's apparent solution to the measurement problem dissolves the very structure required to pose the problem.
+
 More specifically, the framework motivates the informational axioms used in quantum reconstruction programs. The requirement that physical states be L₃-admissible configurations of I∞ suggests that state spaces must satisfy certain structural constraints (distinguishability, composition rules, update dynamics) that track the underlying logical admissibility conditions. Subsequent work develops these connections, deriving the Hilbert space formalism from the interaction of L₃ and I∞ under specific operational assumptions about measurement and preparation.
 
 The bridge identity also bears on interpretive questions. If actuality coincides with L₃(I∞), then the measurement problem in quantum mechanics becomes a question about which configurations A marks as obtaining during measurement interactions, rather than a question about wave function collapse or branching worlds. This reframing may clarify the relationship between the quantum state and physical reality.
@@ -516,9 +564,13 @@ The turnstile (⊢) is adapted from its use in formal logic, where it signifies 
 
 **Chiribella, G., D'Ariano, G. M., & Perinotti, P.** (2011). Informational derivation of quantum theory. *Physical Review A*, 84(1), 012311. https://doi.org/10.1103/PhysRevA.84.012311
 
+**da Costa, N. C. A., & de Ronde, C.** (2013). The paraconsistent logic of quantum superpositions. *Foundations of Physics*, 43(7), 845–858. https://doi.org/10.1007/s10701-013-9721-9
+
 **Floridi, L.** (2011). *The Philosophy of Information*. Oxford University Press. https://doi.org/10.1093/acprof:oso/9780199232383.001.0001
 
 **Hardy, L.** (2001). Quantum theory from five reasonable axioms. *arXiv preprint quant-ph/0101012*. https://arxiv.org/abs/quant-ph/0101012
+
+**Priest, G.** (2006). *In Contradiction: A Study of the Transconsistent* (2nd ed.). Oxford University Press. https://doi.org/10.1093/acprof:oso/9780199263301.001.0001
 
 **Tahko, T. E.** (2014). The metaphysics of logic. In P. Rush (Ed.), *The Metaphysics of Logic* (pp. 1–17). Cambridge University Press.
 
