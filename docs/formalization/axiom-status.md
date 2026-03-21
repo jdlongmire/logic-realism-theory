@@ -1,8 +1,8 @@
 # Axiom Status — formalization/
 
-**Date:** 2026-03-21 (Post-Axiom Reduction Campaign)
+**Date:** 2026-03-21 (Post-Axiom Reduction Campaign — Final)
 **Build Status:** VERIFIED
-**Total Axioms:** 24
+**Total Axioms:** 22
 **Sorry count:** 2 (technical lemmas requiring Mathlib infrastructure)
 
 ---
@@ -12,8 +12,8 @@
 | Category | Count | Description |
 |----------|-------|-------------|
 | **PRIMITIVE** | 3 | Core LRT commitments (Tier 1 — cannot be derived) |
-| **EXTERNAL** | 18 | Established mathematical results (Tier 2 — standard theorems) |
-| **REMAINING** | 3 | Open derivations (future work — could become theorems) |
+| **EXTERNAL** | 19 | Established mathematical results (Tier 2 — standard theorems) |
+| **REMAINING** | 0 | All derivable axioms now converted to theorems |
 
 ---
 
@@ -34,7 +34,7 @@ These are the irreducible commitments of LRT. They define the theory itself.
 
 ---
 
-## EXTERNAL (18 axioms) — Established Math
+## EXTERNAL (19 axioms) — Established Math
 
 Established mathematical results axiomatized for practical reasons. Could be proven in principle with sufficient formalization infrastructure.
 
@@ -56,7 +56,7 @@ Established mathematical results axiomatized for practical reasons. Could be pro
 | Step6_BornRule.lean | `gleason_theorem` | Gleason 1957 |
 | Step6_BornRule.lean | `von_neumann_entropy` | von Neumann 1932 |
 | Step6_BornRule.lean | `maxent_forces_pure_state` | Jaynes 1957 / N&C Thm 11.8 |
-| Step6_BornRule.lean | `nonlinearity_implies_signaling` | No-signaling theorem |
+| Step6_BornRule.lean | `nonlinearity_implies_signaling` | Torres Alegre 2025 / No-signaling |
 
 ### Unitarity / Time Evolution (2)
 
@@ -65,7 +65,7 @@ Established mathematical results axiomatized for practical reasons. Could be pro
 | Step7_Unitarity.lean | `hamiltonian` | Generator of time evolution |
 | Step7_Unitarity.lean | `hamiltonian_isSelfAdjoint` | H† = H (Stone 1932) |
 
-### Functional Analysis / Operator Theory (4)
+### Functional Analysis / Operator Theory (5)
 
 | File | Axiom | Source |
 |------|-------|--------|
@@ -84,31 +84,28 @@ Established mathematical results axiomatized for practical reasons. Could be pro
 
 ---
 
-## REMAINING (3 axioms) — Future Work
+## REMAINING (0 axioms) — All Derived!
 
-Axioms that could potentially become theorems with additional proof work.
+All previously REMAINING axioms have been converted to theorems:
 
-### Step 5: Eigenvalue Theory (1)
-
-| File | Axiom | Notes | Derivability |
-|------|-------|-------|--------------|
-| Step5/EigenvalueOutcome.lean | `spectral_correspondence` | Observable eigenvalues ↔ outcomes | Medium |
-
-### Step 6: Born Rule (2)
-
-| File | Axiom | Notes | Derivability |
-|------|-------|-------|--------------|
-| Step6_BornRule.lean | `born_rule_completeness` | Spectral theory completeness | Medium |
-
-**Note:** `proj_norm_le` was removed — now derivable from standard Mathlib.
+| Former Axiom | Now | Issue |
+|--------------|-----|-------|
+| `spectral_correspondence` | **THEOREM** (Step5/EigenvalueOutcome.lean) | #38 |
+| `born_rule_completeness` | **THEOREM** (Step6_BornRule.lean) | #40 |
+| `proj_norm_le` | **THEOREM** (Step6_BornRule.lean) | — |
 
 ---
 
 ## Completed Reductions (2026-03-21)
 
-### Step 5: EigenvalueRestriction
+### Step 5: Eigenvalue Theory (2 → 0 axioms)
 - ✅ `spectral_idempotent_of_bool_spectrum`: Converted from axiom to **THEOREM**
 - ✅ `event_operator_has_bool_spectrum`: Replaced by EventRepresentation structure
+- ✅ `spectral_correspondence`: Converted from axiom to **THEOREM** (Issue #38)
+
+### Step 6: Born Rule (5 → 4 axioms, 1 theorem added)
+- ✅ `born_rule_completeness`: Converted from axiom to **THEOREM** (Issue #40)
+- ✅ `proj_norm_le`: Derived via Cauchy-Schwarz
 
 ### Step 7: Unitarity (4 → 2 axioms)
 - ✅ `time_evolution_family`: Now **DEFINITION** as exp(-iHt)
@@ -125,24 +122,34 @@ Axioms that could potentially become theorems with additional proof work.
 
 ---
 
-## Complete Axiom List (grep output)
+## Complete Axiom List (verified 2026-03-21)
 
 ```
-LrtFormalization/Step0_Primitives.lean:2
-LrtFormalization/Step1_Constitution.lean:1
-LrtFormalization/Step3_LocalTomography.lean:2
-LrtFormalization/Step4/Hardy.lean:2
-LrtFormalization/Step4/Purification.lean:2
-LrtFormalization/Step5/EigenvalueOutcome.lean:1
-LrtFormalization/Step5/EigenvalueRestriction.lean:0
-LrtFormalization/Step6_BornRule.lean:5
-LrtFormalization/Step7_Unitarity.lean:2
-LrtFormalization/Step8_TemporalEmergence.lean:0
-LrtFormalization/Step9_EnergyAction.lean:4
-LrtFormalization/Step10_Schrodinger.lean:3
+formalization/LrtFormalization/Step0_Primitives.lean:54:axiom I : Type*
+formalization/LrtFormalization/Step0_Primitives.lean:57:axiom I_infinite : Infinite I
+formalization/LrtFormalization/Step1_Constitution.lean:67:axiom bridge_principle
+formalization/LrtFormalization/Step3_LocalTomography.lean:212:axiom hardy_reconstruction
+formalization/LrtFormalization/Step3_LocalTomography.lean:476:axiom product_effects_separate_states
+formalization/LrtFormalization/Step4/Hardy.lean:50:axiom QuantumStateSpace.ofCPH
+formalization/LrtFormalization/Step4/Hardy.lean:161:axiom step4_hilbert_space
+formalization/LrtFormalization/Step4/Purification.lean:235:axiom no_hiding_theorem
+formalization/LrtFormalization/Step4/Purification.lean:508:axiom cdp_purification_k2
+formalization/LrtFormalization/Step6_BornRule.lean:197:axiom gleason_theorem
+formalization/LrtFormalization/Step6_BornRule.lean:214:axiom von_neumann_entropy
+formalization/LrtFormalization/Step6_BornRule.lean:234:axiom maxent_forces_pure_state
+formalization/LrtFormalization/Step6_BornRule.lean:804:axiom nonlinearity_implies_signaling
+formalization/LrtFormalization/Step7_Unitarity.lean:143:axiom hamiltonian
+formalization/LrtFormalization/Step7_Unitarity.lean:153:axiom hamiltonian_isSelfAdjoint
+formalization/LrtFormalization/Step9_EnergyAction.lean:141:axiom stones_theorem
+formalization/LrtFormalization/Step9_EnergyAction.lean:189:axiom planck_constant
+formalization/LrtFormalization/Step9_EnergyAction.lean:190:axiom planck_constant_pos
+formalization/LrtFormalization/Step9_EnergyAction.lean:263:axiom noether_theorem
+formalization/LrtFormalization/Step10_Schrodinger.lean:96:axiom hamiltonian_generates_unitary
+formalization/LrtFormalization/Step10_Schrodinger.lean:128:axiom hamiltonian_generates_group_mul
+formalization/LrtFormalization/Step10_Schrodinger.lean:170:axiom schrodinger_from_stone
 ```
 
-**Total: 24 axioms**
+**Total: 22 axioms (3 PRIMITIVE + 19 EXTERNAL)**
 
 ---
 
@@ -155,14 +162,15 @@ LrtFormalization/Step10_Schrodinger.lean:3
 | 2026-03-20 Consolidation | 3 | 14 | 12 | 29 |
 | Post-strengthening | 3 | 14 | 14 | 31 |
 | Discrete time fix | 3 | 14 | 13 | 30 |
-| **Current (2026-03-21)** | **3** | **18** | **3** | **24** |
+| 2026-03-21 AM | 3 | 18 | 3 | 24 |
+| **Final (2026-03-21)** | **3** | **19** | **0** | **22** |
 
-**2026-03-21 changes (Axiom Reduction Campaign):**
-- Step 5: `spectral_idempotent_of_bool_spectrum` → THEOREM (finite-dimensional spectral theorem)
-- Step 7: 4 axioms → 2 axioms (Hamiltonian approach: hamiltonian + hamiltonian_isSelfAdjoint)
-- Step 8: 4 axioms → 0 axioms (all converted to definitions/theorems)
-- Removed `time_embedding_dense` (mathematically impossible for ℕ → ℝ)
-- Reclassified Step 10 axioms as EXTERNAL (Mathlib infrastructure gap)
+**Net reduction: 44 → 22 axioms (50% reduction)**
+
+**Key 2026-03-21 achievements:**
+- `spectral_correspondence` → THEOREM (Issue #38)
+- `born_rule_completeness` → THEOREM (Parseval identity, Issue #40)
+- All REMAINING axioms eliminated
 
 ---
 
@@ -182,17 +190,17 @@ These are **technical gaps**, not conceptual — the mathematics is standard.
 
 ---
 
-## Reduction Path Forward
+## Summary
 
-The 3 REMAINING axioms:
+The LRT formalization now has:
+- **3 irreducible primitive axioms** (I, I_infinite, bridge_principle)
+- **19 external mathematical axioms** (standard theorems not yet in Mathlib)
+- **0 remaining derivable axioms** (all converted to theorems)
 
-1. **`spectral_correspondence`** — Requires operational → functional calculus bridge
-2. **`born_rule_completeness`** — Spectral theory completeness (standard but technical)
-
-**Realistic assessment:** 24 axioms is a strong foundation. Further reduction would require substantial Mathlib infrastructure work (unbounded operators, full spectral theory).
+This represents the theoretical minimum for LRT given current Mathlib coverage.
 
 ---
 
-*Post axiom-reduction update: 2026-03-21*
-*Command: `grep -c '^axiom' LrtFormalization/*.lean LrtFormalization/**/*.lean`*
+*Final axiom-reduction update: 2026-03-21*
+*Command: `grep -n '^axiom' LrtFormalization/*.lean LrtFormalization/**/*.lean`*
 *Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>*
