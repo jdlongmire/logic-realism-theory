@@ -356,18 +356,22 @@ theorem phase4_boolean_bridge [FiniteDimensional ℂ H]
 With Phase 4, we can now justify Step 5's axioms.
 -/
 
-/-- Step 5's `event_operator_has_bool_spectrum` is now justified by Phase 4.
+/-- Step 5's `event_operator_has_bool_spectrum` axiom has been REMOVED (2026-03-21).
 
-    The derivation chain:
+    The broken axiom `axiom event_operator_has_bool_spectrum (E : H →L[ℂ] H) (h_event : True)`
+    used a trivial `True` predicate that didn't constrain E to be an event operator.
+
+    It is now replaced by this derivation chain:
     1. all_events_sharp: L₃ → events have determinate truth values
     2. event_evaluation_binary: A evaluates events to {0, 1}
-    3. eigenvalue_outcome_correspondence: eigenvalues = possible outcomes
-    4. Therefore: spectrum ⊆ {0, 1}
+    3. EventRepresentation: bundles Event + operator + self_adjoint + boolean_spectrum
+    4. event_operator_boolean_spectrum: extracts HasBooleanSpectrum from EventRepresentation
+    5. event_operator_is_projection: derives IsOrthogonalProjection
 
-    Step 5's axiom is no longer a black box but a consequence of LRT ontology
-    plus the representation theorem.
+    The derivation uses EventRepresentation as the type-safe witness that an operator
+    represents an LRT Event, rather than a trivial `True` predicate.
 
-    **Status:** THEOREM (2026-03-17) - requires EventRepresentation witness
+    **Status:** THEOREM (2026-03-17, updated 2026-03-21) - requires EventRepresentation witness
 -/
 theorem step5_axiom_justified
     (rep : EventRepresentation (H := H)) :

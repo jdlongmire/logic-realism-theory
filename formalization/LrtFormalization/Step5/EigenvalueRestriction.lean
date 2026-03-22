@@ -175,13 +175,22 @@ theorem step5_eigenvalue_restriction
 
 end SpectralIdempotentTheorem
 
-/-! ## Part VI: Physical Axiom -/
+/-! ## Part VI: Event Operators Bridge (to Step4/Boolean.lean)
 
-axiom event_operator_has_bool_spectrum (E : H →L[ℂ] H) (h_event : True) : HasBooleanSpectrum E
+The original axiom `event_operator_has_bool_spectrum (E : H →L[ℂ] H) (h_event : True)`
+was a placeholder with trivial predicate. It has been replaced by:
 
-theorem event_operators_are_projections [FiniteDimensional ℂ H]
-    (E : H →L[ℂ] H) (h_sa : IsSelfAdjoint' E) (h_event : True) :
-    IsOrthogonalProjection E :=
-  step5_eigenvalue_restriction E h_sa (event_operator_has_bool_spectrum E h_event)
+- `Step4.Boolean.EventRepresentation`: Structure bundling an Event with its
+  Hilbert space operator, self-adjointness, and Boolean spectrum property
+- `Step4.Boolean.event_operator_boolean_spectrum`: Extracts HasBooleanSpectrum from EventRepresentation
+- `Step4.Boolean.event_operator_is_projection`: Derives IsOrthogonalProjection from EventRepresentation
+
+The derivation chain is:
+  L₃ (excluded middle) → Event.l3_decidable (sharp events)
+    → EventRepresentation.boolean_spectrum → HasBooleanSpectrum
+    → step5_eigenvalue_restriction → IsOrthogonalProjection
+
+See Step4/Boolean.lean for the complete bridge from LRT ontology to projection structure.
+-/
 
 end LRT.Step5

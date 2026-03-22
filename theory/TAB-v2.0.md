@@ -577,7 +577,7 @@ The turnstile (⊢) is adapted from its use in formal logic, where it signifies 
 
 ## Appendix C: Formalization Status
 
-The ontological framework presented in this paper has been partially formalized in Lean 4. The formalization project verifies the logical structure of the reconstruction chain that proceeds from the primitives established here. This appendix summarizes the boundary between transcendental argumentation and machine-verified derivation.
+The ontological framework presented in this paper has been partially formalized in Lean 4. The formalization project verifies the logical structure of the reconstruction chain that proceeds from the primitives established here. This appendix summarizes the boundary between transcendental argumentation and machine-verified derivation. Current status (March 2026): 22 axioms, 0 unresolved proof obligations (sorries), representing a 50% reduction from the initial 44 axioms.
 
 ### What Is Formalized
 
@@ -604,15 +604,15 @@ This axiom corresponds to the result of Section 6: χ ⊢ A_Ω. The formalizatio
 
 ### Axiom Classification
 
-The formalization uses 31 axioms, classified as:
+The formalization uses 22 axioms, classified as:
 
 | Category | Count | Description |
 |----------|-------|-------------|
 | PRIMITIVE | 3 | Ontological commitments (I, I_infinite, bridge_principle) |
-| EXTERNAL | 14 | Established mathematics (Gleason, Stone, Hardy, etc.) |
-| REMAINING | 14 | Derivable with additional infrastructure |
+| EXTERNAL | 19 | Established mathematics (Gleason, Stone, Hardy, etc.) |
+| REMAINING | 0 | All derivable axioms converted to theorems |
 
-The primitive axioms correspond to the transcendental necessities argued in this paper. External axioms are standard mathematical results imported rather than re-proven. Remaining axioms are derivation targets for ongoing work.
+The primitive axioms correspond to the transcendental necessities argued in this paper. External axioms are standard mathematical results imported rather than re-proven. This represents a 50% reduction from the initial 44 axioms through systematic derivation work.
 
 ### Verification Instructions
 

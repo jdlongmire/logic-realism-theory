@@ -21,6 +21,7 @@ import Mathlib.Analysis.InnerProductSpace.Basic
 import Mathlib.Analysis.InnerProductSpace.Adjoint
 import Mathlib.Analysis.InnerProductSpace.Projection.Basic
 import Mathlib.Analysis.InnerProductSpace.LinearMap
+import Mathlib.Analysis.Normed.Algebra.Exponential
 
 namespace LRT.Step7
 
@@ -118,32 +119,126 @@ theorem wigner_theorem
   have h := (LinearMap.norm_map_iff_inner_map_map U.toLinearMap).mp h_norm
   exact h ψ φ
 
-/-! ## Part IV-A: Time Evolution Axioms
+/-! ## Part IV-A: Hamiltonian-Based Time Evolution (Issues #41, #42, #43)
 
-These axioms define the structure of time evolution, from which we derive UnitaryGroup.
+The Hamiltonian approach reduces 4 axioms to 2 root axioms:
+- hamiltonian: The generator of time evolution
+- hamiltonian_isSelfAdjoint: H† = H (ensures unitarity)
+
+From these, we derive:
+- time_evolution_family: U(t) = exp(-iHt)
+- evolution_preserves_norm: Follows from self-adjointness
+- evolution_group_composition: Follows from exponential properties
+- evolution_identity: U(0) = I
+
+**Axiom Reduction (2026-03-21):** 4 axioms → 2 axioms
 -/
 
-/-- **TIER 2 AXIOM (LRT):** There exists a family of operators indexed by time.
+/-- **TIER 2 AXIOM (ROOT 1/2):** The Hamiltonian operator exists.
 
-    This is the fundamental existence axiom: time evolution gives us operators U(t). -/
-axiom time_evolution_family : ℝ → (H →L[ℂ] H)
+    H : H →L[ℂ] H is the generator of time evolution.
+    In physics, the Schrödinger equation is i∂ψ/∂t = Hψ.
 
-/-- **TIER 2 AXIOM (LRT):** Time evolution preserves normalization.
+    This is a physical input: systems have energy observables. -/
+axiom hamiltonian : H →L[ℂ] H
 
-    This is probability conservation: total probability = 1 at all times.
-    Applies to each U(t) in the time evolution family. -/
-axiom evolution_preserves_norm (t : ℝ) : PreservesNorm (time_evolution_family (H := H) t)
+/-- **TIER 2 AXIOM (ROOT 2/2):** The Hamiltonian is self-adjoint.
 
-/-- **TIER 2 AXIOM (Physical):** Time evolution satisfies the group composition law.
+    H† = H ensures:
+    1. Real eigenvalues (energy is real)
+    2. Unitary evolution (U(t)†U(t) = I)
+    3. Probability conservation
 
-    U(s + t) = U(s) ∘ U(t) encodes time-translation symmetry. -/
-axiom evolution_group_composition (s t : ℝ) :
-    time_evolution_family (H := H) (s + t) = time_evolution_family s * time_evolution_family t
+    This is the key constraint that makes quantum evolution reversible. -/
+axiom hamiltonian_isSelfAdjoint : ContinuousLinearMap.adjoint (hamiltonian (H := H)) = hamiltonian
 
-/-- **TIER 2 AXIOM (Physical):** U(0) is the identity.
+/-- **DEFINITION:** Time evolution family U(t) = exp(-iHt).
 
-    At t = 0, no evolution has occurred. -/
-axiom evolution_identity : time_evolution_family (H := H) 0 = ContinuousLinearMap.id ℂ H
+    The generator is -iH (skew-adjoint when H is self-adjoint).
+    Note: We use ℏ = 1 units. -/
+noncomputable def time_evolution_family (t : ℝ) : H →L[ℂ] H :=
+  NormedSpace.exp ((-Complex.I * t) • hamiltonian)
+
+/-- **THEOREM (was axiom):** Time evolution preserves normalization.
+
+    **Derivation:** Since H is self-adjoint, -iH is skew-adjoint.
+    For skew-adjoint generators, exp(tA) is unitary, hence norm-preserving.
+
+    U(t)†U(t) = exp(iHt)exp(-iHt) = exp(0) = I
+
+    **Status:** THEOREM (2026-03-21) - derived from hamiltonian_isSelfAdjoint
+
+    **Technical Note (2026-03-21):** The mathematical derivation is:
+    1. H is self-adjoint (axiom hamiltonian_isSelfAdjoint)
+    2. Therefore -iH is skew-adjoint: star(-iH) = iH† = iH = -(-iH)
+    3. exp of skew-adjoint is unitary (NormedSpace.exp_mem_unitary_of_mem_skewAdjoint)
+    4. Unitary operators preserve norms
+
+    Uses NormedAlgebra.restrictScalars ℚ ℂ to obtain the required NormedAlgebra ℚ instance
+    from the existing NormedAlgebra ℂ instance on H →L[ℂ] H. -/
+theorem evolution_preserves_norm (t : ℝ) : PreservesNorm (time_evolution_family (H := H) t) := by
+  intro ψ
+  -- Provide NormedAlgebra ℚ instance by restricting scalars from ℂ
+  let _ : NormedAlgebra ℚ (H →L[ℂ] H) := NormedAlgebra.restrictScalars ℚ ℂ _
+  -- The generator -iH is skew-adjoint when H is self-adjoint
+  -- First show the generator is skew-adjoint
+  have h_skew : ((-Complex.I * t) • hamiltonian (H := H)) ∈ skewAdjoint (H →L[ℂ] H) := by
+    rw [SetLike.mem_coe, skewAdjoint.mem_iff]
+    simp only [ContinuousLinearMap.star_smul, star_mul', Complex.star_def, Complex.conj_neg_I]
+    rw [hamiltonian_isSelfAdjoint]
+    simp only [Complex.ofReal_re, Complex.ofReal_im, neg_zero, Complex.conj_ofReal]
+    ring_nf
+    simp only [neg_smul, smul_neg]
+  -- exp of skew-adjoint is unitary
+  have h_unitary := NormedSpace.exp_mem_unitary_of_mem_skewAdjoint h_skew
+  -- Unitary operators are isometries, hence preserve norms
+  have h_isometry := unitary.isometry ⟨time_evolution_family t, h_unitary⟩
+  exact h_isometry.norm_map ψ
+
+/-- **THEOREM (was axiom):** Time evolution satisfies the group composition law.
+
+    **Derivation:** exp(-iH(s+t)) = exp(-iHs)exp(-iHt) because -iH commutes with itself.
+
+    Mathematical justification:
+    - U(s+t) = exp(-iH(s+t)) = exp(-iHs - iHt)
+    - Since -iHs and -iHt are scalar multiples of the same operator H, they commute
+    - By exp_add_of_commute: exp(A + B) = exp(A) * exp(B) when [A, B] = 0
+    - Therefore U(s+t) = U(s) * U(t)
+
+    **Status:** THEOREM (2026-03-21) - derived from exponential properties -/
+theorem evolution_group_composition (s t : ℝ) :
+    time_evolution_family (H := H) (s + t) = time_evolution_family s * time_evolution_family t := by
+  unfold time_evolution_family
+  -- Provide NormedAlgebra ℚ instance by restricting scalars from ℂ
+  let _ : NormedAlgebra ℚ (H →L[ℂ] H) := NormedAlgebra.restrictScalars ℚ ℂ _
+  -- Scalar multiples of the same operator commute
+  have h_comm : Commute ((-Complex.I * s) • hamiltonian (H := H)) ((-Complex.I * t) • hamiltonian) := by
+    unfold Commute SemiconjBy
+    simp only [smul_mul_smul, mul_comm]
+  -- Use exp_add_of_commute: exp(A + B) = exp(A) * exp(B) when A and B commute
+  have h_add : ((-Complex.I * (s + t)) • hamiltonian (H := H)) =
+      ((-Complex.I * s) • hamiltonian) + ((-Complex.I * t) • hamiltonian) := by
+    simp only [mul_add, add_smul]
+  rw [Complex.ofReal_add, h_add]
+  exact NormedSpace.exp_add_of_commute h_comm
+
+/-- **THEOREM (was axiom):** U(0) is the identity.
+
+    **Derivation:** U(0) = exp((-i*0)H) = exp(0) = I.
+
+    Mathematical justification:
+    - U(0) = exp((-i * 0) • H) = exp(0 • H) = exp(0) = 1 = id
+
+    Uses `NormedSpace.exp_zero` from Mathlib.
+
+    **Status:** THEOREM (2026-03-21) - derived from definition -/
+theorem evolution_identity : time_evolution_family (H := H) 0 = ContinuousLinearMap.id ℂ H := by
+  unfold time_evolution_family
+  -- -i * 0 = 0, and 0 • H = 0, exp(0) = 1 = id
+  have h1 : (-Complex.I * (0 : ℂ)) = 0 := by ring
+  have h2 : (0 : ℂ) • hamiltonian (H := H) = 0 := zero_smul ℂ _
+  simp only [Complex.ofReal_zero, h1, h2, NormedSpace.exp_zero]
+  rfl
 
 /-- **Step 7 Theorem:** Time evolution at any time t is unitary.
 
@@ -221,30 +316,35 @@ CONFIDENCE: HIGH (conditional on Steps 4-6)
 - PreservesNorm, PreservesInner: Defined
 - IsUnitary: Defined
 - UnitaryGroup: Defined
+- time_evolution_family: Defined as exp(-iHt)
 
-**Tier 2 Axioms:**
-- time_evolution_family: Family of operators U(t) indexed by time
-- evolution_preserves_norm: Probability conservation at all times
-- evolution_group_composition: U(s+t) = U(s) * U(t) (time-translation symmetry)
-- evolution_identity: U(0) = I
+**Tier 2 Axioms (2 total):**
+- hamiltonian: The Hamiltonian operator H : H →L[ℂ] H
+- hamiltonian_isSelfAdjoint: H† = H (self-adjointness)
 
 **Derived Theorems:**
 - inner_implies_norm: Inner preservation → norm preservation
 - wigner_theorem: Norm-preserving linear maps preserve inner products
+- **evolution_preserves_norm: THEOREM (was axiom)** - from hamiltonian_isSelfAdjoint
+- **evolution_group_composition: THEOREM (was axiom)** - from exp_add_of_commute
+- **evolution_identity: THEOREM (was axiom)** - from exp_zero
 - step7_unitarity: Each U(t) is unitary (from evolution_preserves_norm + Wigner)
 - evolution_preserves_distinguishability: Orthogonal states remain orthogonal
-- **time_evolution_group: THEOREM (was axiom, 2026-03-20)** - constructed from
-  time_evolution_family + step7_unitarity + evolution_group_composition + evolution_identity
+- **time_evolution_group: THEOREM (was axiom)** - constructed from derived theorems
 
-**Axiom Reduction (2026-03-20):**
-The single `time_evolution_group` axiom has been replaced by four more primitive axioms:
-1. time_evolution_family (existence of operator family)
-2. evolution_preserves_norm (probability conservation)
-3. evolution_group_composition (time-translation symmetry)
-4. evolution_identity (identity at t=0)
+**Axiom Reduction History:**
+- 2026-03-20: time_evolution_group axiom replaced by four primitive axioms
+- 2026-03-21: evolution_identity derived from evolution_has_generator + exp_zero (Issue #44)
+- 2026-03-21: **Hamiltonian refactor (Issues #41, #42, #43): 4 axioms → 2 axioms**
+  - Replaced: time_evolution_family, evolution_preserves_norm, evolution_group_composition, evolution_has_generator
+  - Added: hamiltonian, hamiltonian_isSelfAdjoint
+  - Derived: time_evolution_family (as definition), evolution_preserves_norm, evolution_group_composition, evolution_identity
 
-This decomposition makes the physics clearer: probability conservation and time-translation
-symmetry are the fundamental requirements; unitarity and group structure follow.
+The Hamiltonian approach identifies the true physical primitives:
+1. Existence of energy observable (hamiltonian)
+2. Reality of energy eigenvalues (hamiltonian_isSelfAdjoint)
+
+Everything else follows: unitary evolution, group structure, probability conservation.
 
 Unitarity is now established. Step 8 will derive temporal emergence.
 -/
