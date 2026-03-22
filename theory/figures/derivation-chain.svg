@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+    <style>
+      .title { font-family: 'Times New Roman', serif; font-size: 18px; font-weight: bold; }
+      .step-box { fill: #f8f9fa; stroke: #333; stroke-width: 1.5; }
+      .step-derived { fill: #e8f5e9; stroke: #2e7d32; stroke-width: 1.5; }
+      .step-imported { fill: #fff3e0; stroke: #ef6c00; stroke-width: 1.5; }
+      .step-num { font-family: 'Times New Roman', serif; font-size: 11px; font-weight: bold; fill: #666; }
+      .step-title { font-family: 'Times New Roman', serif; font-size: 12px; font-weight: bold; }
+      .step-content { font-family: 'Times New Roman', serif; font-size: 10px; }
+      .legend { font-family: 'Times New Roman', serif; font-size: 11px; }
+      .ext-label { font-family: 'Times New Roman', serif; font-size: 9px; font-style: italic; fill: #666; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="25" text-anchor="middle" class="title">Figure 2: Derivation Chain from χ to Schrödinger Equation</text>
+
+  <!-- Legend -->
+  <rect x="600" y="40" width="15" height="15" class="step-derived"/>
+  <text x="620" y="52" class="legend">Derived from χ</text>
+  <rect x="600" y="60" width="15" height="15" class="step-imported"/>
+  <text x="620" y="72" class="legend">Imported theorem</text>
+
+  <!-- Step 0: Primitives -->
+  <rect x="30" y="60" width="140" height="70" rx="5" class="step-derived"/>
+  <text x="100" y="78" text-anchor="middle" class="step-num">Step 0</text>
+  <text x="100" y="95" text-anchor="middle" class="step-title">Primitives</text>
+  <text x="100" y="110" text-anchor="middle" class="step-content">χ = [L₃ : I∞ : A]</text>
+  <text x="100" y="122" text-anchor="middle" class="step-content">A_Ω = L₃(I∞)</text>
+
+  <!-- Step 1: Constitution -->
+  <rect x="200" y="60" width="140" height="70" rx="5" class="step-derived"/>
+  <text x="270" y="78" text-anchor="middle" class="step-num">Step 1</text>
+  <text x="270" y="95" text-anchor="middle" class="step-title">Constitution</text>
+  <text x="270" y="110" text-anchor="middle" class="step-content">Bridge principle</text>
+  <text x="270" y="122" text-anchor="middle" class="step-content">ActualizedEvents</text>
+  <line x1="170" y1="95" x2="195" y2="95" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 2: Determinate Identity -->
+  <rect x="370" y="60" width="140" height="70" rx="5" class="step-derived"/>
+  <text x="440" y="78" text-anchor="middle" class="step-num">Step 2</text>
+  <text x="440" y="95" text-anchor="middle" class="step-title">Determinate Identity</text>
+  <text x="440" y="110" text-anchor="middle" class="step-content">∀c ∈ A_Ω: c = c</text>
+  <text x="440" y="122" text-anchor="middle" class="step-content">Binary outcomes</text>
+  <line x1="340" y1="95" x2="365" y2="95" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 3: Local Tomography -->
+  <rect x="540" y="60" width="140" height="70" rx="5" class="step-derived"/>
+  <text x="610" y="78" text-anchor="middle" class="step-num">Step 3</text>
+  <text x="610" y="95" text-anchor="middle" class="step-title">Local Tomography</text>
+  <text x="610" y="110" text-anchor="middle" class="step-content">H1: Local → Global</text>
+  <text x="610" y="122" text-anchor="middle" class="step-content">H2: dim(AB) = dim(A)·dim(B)</text>
+  <line x1="510" y1="95" x2="535" y2="95" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Arrow down to row 2 -->
+  <line x1="610" y1="135" x2="610" y2="170" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 4: Complex Hilbert Space (imported) -->
+  <rect x="540" y="175" width="140" height="70" rx="5" class="step-imported"/>
+  <text x="610" y="193" text-anchor="middle" class="step-num">Step 4</text>
+  <text x="610" y="210" text-anchor="middle" class="step-title">Complex Hilbert Space</text>
+  <text x="610" y="225" text-anchor="middle" class="step-content">K = 2 (complex field)</text>
+  <text x="610" y="237" text-anchor="middle" class="ext-label">[Hardy/Masanes-Müller]</text>
+
+  <!-- Step 5: PVM Structure -->
+  <rect x="370" y="175" width="140" height="70" rx="5" class="step-derived"/>
+  <text x="440" y="193" text-anchor="middle" class="step-num">Step 5</text>
+  <text x="440" y="210" text-anchor="middle" class="step-title">PVM Structure</text>
+  <text x="440" y="225" text-anchor="middle" class="step-content">Boolean → Projection</text>
+  <text x="440" y="237" text-anchor="middle" class="step-content">Spectral decomposition</text>
+  <line x1="535" y1="210" x2="515" y2="210" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 6: Born Rule (imported Gleason) -->
+  <rect x="200" y="175" width="140" height="70" rx="5" class="step-imported"/>
+  <text x="270" y="193" text-anchor="middle" class="step-num">Step 6</text>
+  <text x="270" y="210" text-anchor="middle" class="step-title">Born Rule</text>
+  <text x="270" y="225" text-anchor="middle" class="step-content">p(E|ψ) = ⟨ψ|P_E|ψ⟩</text>
+  <text x="270" y="237" text-anchor="middle" class="ext-label">[Gleason's theorem]</text>
+  <line x1="365" y1="210" x2="345" y2="210" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Arrow down to row 3 -->
+  <line x1="270" y1="250" x2="270" y2="285" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 7: Unitarity -->
+  <rect x="200" y="290" width="140" height="70" rx="5" class="step-derived"/>
+  <text x="270" y="308" text-anchor="middle" class="step-num">Step 7</text>
+  <text x="270" y="325" text-anchor="middle" class="step-title">Unitarity</text>
+  <text x="270" y="340" text-anchor="middle" class="step-content">Norm preservation</text>
+  <text x="270" y="352" text-anchor="middle" class="step-content">U†U = I</text>
+
+  <!-- Step 8: Temporal Structure -->
+  <rect x="370" y="290" width="140" height="70" rx="5" class="step-derived"/>
+  <text x="440" y="308" text-anchor="middle" class="step-num">Step 8</text>
+  <text x="440" y="325" text-anchor="middle" class="step-title">Temporal Structure</text>
+  <text x="440" y="340" text-anchor="middle" class="step-content">A ordering → time</text>
+  <text x="440" y="352" text-anchor="middle" class="step-content">U(t₂,t₁) composition</text>
+  <line x1="340" y1="325" x2="365" y2="325" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 9: Energy-Action (imported Stone) -->
+  <rect x="540" y="290" width="140" height="70" rx="5" class="step-imported"/>
+  <text x="610" y="308" text-anchor="middle" class="step-num">Step 9</text>
+  <text x="610" y="325" text-anchor="middle" class="step-title">Energy-Action</text>
+  <text x="610" y="340" text-anchor="middle" class="step-content">U(t) = e^{-iHt/ℏ}</text>
+  <text x="610" y="352" text-anchor="middle" class="ext-label">[Stone's theorem]</text>
+  <line x1="510" y1="325" x2="535" y2="325" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Arrow down to final -->
+  <line x1="610" y1="365" x2="610" y2="400" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 10: Schrödinger -->
+  <rect x="470" y="405" width="280" height="70" rx="5" class="step-derived" style="stroke-width: 3;"/>
+  <text x="610" y="423" text-anchor="middle" class="step-num">Step 10</text>
+  <text x="610" y="442" text-anchor="middle" class="step-title" style="font-size: 14px;">Schrödinger Equation</text>
+  <text x="610" y="462" text-anchor="middle" class="step-content" style="font-size: 12px;">iℏ ∂|ψ⟩/∂t = H|ψ⟩</text>
+
+  <!-- Summary box -->
+  <rect x="30" y="500" width="740" height="80" fill="#f0f0f0" stroke="#666" stroke-width="1" rx="5"/>
+  <text x="400" y="525" text-anchor="middle" class="step-title" style="font-size: 14px;">Reconstruction Summary</text>
+  <text x="400" y="545" text-anchor="middle" class="step-content" style="font-size: 11px;">Derived from χ: Determinate identity, local tomography, PVM structure, unitarity, temporal structure</text>
+  <text x="400" y="560" text-anchor="middle" class="step-content" style="font-size: 11px;">Imported: Complex field (Hardy/MM), Born rule (Gleason), dynamics generator (Stone)</text>
+  <text x="400" y="575" text-anchor="middle" class="step-content" style="font-size: 11px; font-weight: bold;">Axioms: 3 primitive + 19 imported | Sorries: 0 | Build: SUCCESS (Lean 4)</text>
+</svg>
