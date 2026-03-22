@@ -13,7 +13,13 @@
 
 **Abstract**
 
-Assuming the result established in the companion paper TAB—that physical actuality is constituted by the primitive ontic state χ ≡ [L₃ : I∞ : A], where L₃ denotes the three fundamental laws of logic, I∞ the complete informational domain, and A the actualization operator—this paper derives the full structure of non-relativistic quantum mechanics. The derivation proceeds through ten steps: from the bridge equation A_Ω = L₃(I∞) through determinate identity, local tomography, complex Hilbert space, projection-valued measures, the Born rule, unitarity, temporal emergence, and the Schrödinger equation. Each step is marked by epistemic status (ESTABLISHED, ARGUED, or OPEN) and has been formalized in Lean 4 with 31 axioms and zero sorries. The reconstruction subsumes competing programs (Hardy, CDP, Masanes-Müller) while grounding their axioms rather than postulating them. Standing problems in quantum foundations—measurement, EPR, wave-particle duality, Schrödinger's cat—dissolve rather than require solution. The theory satisfies Popperian falsifiability (categorical: L₃ violation in physical record) and Lakatosian progressiveness (structural selection of complex field confirmed by Renou et al. 2021). The null hypothesis is that operational constraints suffice without ontological grounding; LRT claims they do not.
+**Background:** Quantum mechanics lacks an agreed-upon ontological foundation. Reconstruction programs (Hardy 2001, CDP 2011, Masanes-Müller 2011) derive quantum structure from operational axioms but leave unexplained why those axioms hold.
+
+**Method:** Assuming the result established in the companion paper TAB (The Actualized Bridge), that physical actuality is constituted by the primitive ontic state $\chi \equiv [L_3 : I_\infty : \mathbf{A}]$ yielding $A_\Omega = L_3(I_\infty)$, this paper reconstructs non-relativistic quantum mechanics in ten steps. Each step imports established mathematical theorems (Gleason, Stone, Masanes-Müller) or develops argued derivations from $\chi$. The reconstruction is formalized in Lean 4.
+
+**Results:** The reconstruction yields complex Hilbert space, projection-valued measures, the Born rule, unitary dynamics, and the Schrödinger equation. Standing problems (measurement, EPR, wave-particle duality) dissolve: each presupposes a framework LRT replaces. The formalization has 22 axioms (3 primitive, 19 imported) and zero proof gaps.
+
+**Conclusion:** LRT grounds the operational axioms that reconstruction programs assume. The categorical falsifier (Boolean outcome violation) remains unobserved. Complex field selection is empirically confirmed (Renou et al. 2021).
 
 **Keywords:** quantum reconstruction, logical realism, information ontology, Born rule, measurement problem, foundations of physics
 
@@ -21,223 +27,196 @@ Assuming the result established in the companion paper TAB—that physical actua
 
 ## 1. Foundational Assumption
 
-### 1.1 The TAB Result
+This paper assumes the result established in the companion paper *The Actualized Bridge* (TAB): physical actuality is constituted by the primitive ontic state $\chi \equiv [L_3 : I_\infty : \mathbf{A}]$, yielding the bridge equation $A_\Omega = L_3(I_\infty)$. The argument for this result is developed fully in TAB; here we fix notation and proceed to physics.
 
-This paper assumes the result established in the companion paper *The Actualized Bridge* (TAB):
+The three primitives are co-constitutive: $L_3$ (Identity, Non-Contradiction, Excluded Middle) constrains admissibility; $I_\infty$ supplies the complete domain of possible configurations; $\mathbf{A}$ actualizes. Each requires the others. The colon notation marks mutual constitution, not conjunction.
 
-> Physical actuality is constituted by the primitive ontic state χ ≡ [L₃ : I∞ : A], yielding the bridge equation A_Ω = L₃(I∞).
+![Figure 1: The Primitive Ontology](../figures/chi-constitution.svg)
 
-The argument for this result is developed fully in TAB and summarized here only to fix notation. Three guiding observations motivate the primitives:
+From $\chi$, TAB derives $A_\Omega = L_3(I_\infty)$: the actualized domain consists of $L_3$-admissible configurations that $\mathbf{A}$ instantiates. This is the starting point for physics.
 
-| Observation | Content | Primitive |
-|-------------|---------|-----------|
-| 1 | Physical reality exhibits logical structure: identity, non-contradiction, determinacy | L₃ |
-| 2 | Physical reality exhibits informational structure: distinguishable configurations, entropy | I∞ |
-| 3 | Physical reality is dynamic: actuality is not static but constituted | A |
+### 1.1 The Physical Proposition Criterion
 
-These three aspects are co-constitutive:
+TAB establishes that $L_3$'s constitutive status entails:
 
-$$\chi \equiv [L_3 : I_\infty : \mathbf{A}]$$
+> **Physical Proposition Criterion (PPC):** A claim Q counts as a physical proposition iff Q satisfies $L_3$, which requires that Q-true and Q-false are operationally distinguishable.
 
-The colon notation marks mutual constitution, not conjunction. Each aspect requires the others: L₃ without I∞ has nothing to constrain; I∞ without L₃ has no admissibility structure; both without A produce no actuality.
+The PPC follows from taking $L_3$ as a constitutive condition on physical facts rather than a filter on pre-formed propositions.
 
-From χ, TAB derives:
+### 1.2 PPC as a Fork in the Road
 
-$$\chi \vdash A_\Omega = L_3(I_\infty)$$
+The PPC represents a substantive commitment. One might accept $\chi$ yet deny that $L_3$-satisfiability entails operational distinguishability. This would yield an alternative theory in which $A_\Omega$ contains non-operational facts.
 
-where A_Ω is the actualized domain—the set of L₃-admissible configurations that A instantiates. This is the starting point for physics.
+LRT takes the operational route: $L_3$ is not merely a logical constraint but a constitutive condition with physical bite. This explains why reconstruction programs (Hardy, CDP, Masanes-Müller) can derive quantum structure from operational axioms: they implicitly presuppose the PPC without grounding it. LRT makes this grounding explicit.
 
-![LRT Derivation Chain](figures/LRT-derivation-chain-v2.png)
+### 1.3 Scope and Limits
 
-*Figure 1: Complete derivation chain from χ to Schrödinger equation. Blue: primitives. Amber: bridge equation. Green: reconstruction steps. Purple: final results. External imports shown left; resolved phenomena shown right. Current Lean status: 31 axioms, 0 sorries.*
+**What this paper does:**
+- Reconstructs non-relativistic quantum mechanics from $\chi$
+- Imports established mathematical theorems (Gleason, Stone, Hardy, Masanes-Müller)
+- Shows that reconstruction axioms follow from $\chi$ rather than being postulated
 
-### 1.2 The Physical Proposition Criterion
+**What this paper does not do:**
+- Derive relativistic quantum mechanics or QFT (open problem)
+- Prove imported theorems within LRT (they are external inputs)
+- Explain why $\chi$ obtains rather than some other primitive structure (metaphysical stopping point)
+- Predict new empirical phenomena beyond standard QM (LRT reconstructs existing structure)
 
-TAB establishes that L₃'s constitutive status entails operational distinguishability for all physical propositions:
+**Epistemic commitment:** Lean 4 formalization verifies the logical structure of the reconstruction conditional on stated axioms. It does not verify metaphysical claims or empirical adequacy.
 
-> **Physical Proposition Criterion (PPC):** A claim Q counts as a physical proposition if and only if Q satisfies L₃. Satisfying L₃ requires that Q-true and Q-false are operationally distinguishable. Any claim lacking this operational signature is not a physical proposition.
+### 1.4 What This Paper Does
 
-The PPC is not operationalism by stipulation. It follows from taking L₃ seriously as a constitutive condition on physical facts rather than as a filter on pre-formed propositions.
+Given the TAB result, this paper reconstructs the structure of non-relativistic quantum mechanics:
 
-### 1.3 What This Paper Does
-
-Given the TAB result, this paper derives the structure of non-relativistic quantum mechanics:
-
-- Complex Hilbert space ℂH (Step 4)
+- Complex Hilbert space $\mathbb{C}\mathcal{H}$ (Step 4)
 - Projection-valued measures (Step 5)
 - The Born rule (Step 6)
 - Unitary dynamics (Step 7)
 - Continuous time (Step 8)
-- The Schrödinger equation (Step 10)
+- The Schrodinger equation (Step 10)
 
 Each step is marked with epistemic status:
 - **ESTABLISHED:** Imported from peer-reviewed mathematics
 - **ARGUED:** Defended with explicit reasoning; LRT's original contribution
 - **OPEN:** Identified for future work
 
-The derivation has been formalized in Lean 4. Current status: 31 axioms, 0 sorries (March 2026).
-
 ---
 
-## 2. From χ to Quantum Structure
+## 2. From $\chi$ to Quantum Structure
 
 ### 2.1 Determinate Identity
 
-**Claim:** Every actual configuration c ∈ A_Ω satisfies Determinate Identity. *[ESTABLISHED]*
+**Claim:** Every actual configuration $c \in A_\Omega$ satisfies Determinate Identity. *[ESTABLISHED]*
 
-**Definition:** A configuration c ∈ A_Ω has Determinate Identity if and only if:
+**Definition:** A configuration $c \in A_\Omega$ has Determinate Identity if and only if:
 
 $$c = c \quad \text{(Identity)}$$
 $$\neg(P(c) \land \neg P(c)) \quad \text{for any property } P \text{ (Non-Contradiction)}$$
 $$P(c) \lor \neg P(c) \quad \text{for any well-defined property } P \text{ (Excluded Middle)}$$
 
-This follows directly from A_Ω = L₃(I∞). Configurations in A_Ω are L₃-admissible by definition.
+This follows directly from $A_\Omega = L_3(I_\infty)$. Configurations in $A_\Omega$ are $L_3$-admissible by definition.
 
 ### 2.2 Local Tomography
 
-**Claim:** Any theory describing actual configurations in A_Ω must satisfy local tomography. *[ARGUED]*
+**Claim:** Any theory describing actual configurations in $A_\Omega$ must satisfy local tomography. *[ARGUED]*
 
 **Definition:** A theory is *locally tomographic* if the state of a composite system is completely determined by the statistics of local measurements on its subsystems.
 
 The argument proceeds in two stages:
 
-**H1 (Metaphysical Supervenience):** Each subsystem has determinate identity. The composite is nothing over and above its subsystems relationally organized. *[ESTABLISHED—direct consequence of Determinate Identity]*
+**H1 (Metaphysical Supervenience):** Each subsystem has determinate identity. The composite is nothing over and above its subsystems relationally organized. *[ESTABLISHED---direct consequence of Determinate Identity]*
 
-**H2 (Operational Local Tomography):** The composite state is completely determined by local measurement statistics. *[ARGUED—follows from H1 + PPC]*
+**H2 (Operational Local Tomography):** The composite state is completely determined by local measurement statistics. *[ARGUED---follows from H1 + PPC]*
 
-**The H1→H2 argument:** For any relation R between subsystems to be a genuine physical relation, R must satisfy L₃. This requires operational distinguishability (PPC). Therefore every relation in H1's supervenience base is operationally accessible. Local tomography follows.
+**The H1 to H2 argument:** For any relation R between subsystems to be a genuine physical relation, R must satisfy $L_3$. This requires operational distinguishability (PPC). Therefore every relation in H1's supervenience base is operationally accessible. Local tomography follows.
+
+**Alternative view:** Local tomography is philosophically controversial. One might accept H1 (metaphysical supervenience) while denying H2 (operational accessibility), holding that some identity-constituting relations resist operational probing. Such a position would require revising the PPC or accepting non-physical facts in $A_\Omega$. LRT takes the stronger line: the PPC follows from $L_3$'s constitutive role, making H2 mandatory given H1. Readers who reject this should note where the argument would need revision.
 
 #### 2.2.1 Bell State Example
 
-Consider the Bell state:
-
-$$|\Phi^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)$$
-
-**Non-decomposable identity:** The composite system's identity cannot be factored. There is no pair of subsystem states $|\psi_A\rangle$, $|\psi_B\rangle$ such that $|\Phi^+\rangle = |\psi_A\rangle \otimes |\psi_B\rangle$. The identity-constituting relations include the correlation structure itself.
-
-**Locally accessible relations:** Despite non-decomposability, every identity-determining relation is locally measurable:
-
-1. Measure $\sigma_z \otimes I$ on system A: statistics reveal $p(0) = p(1) = 1/2$
-2. Measure $I \otimes \sigma_z$ on system B: same statistics
-3. Measure $\sigma_z \otimes \sigma_z$: perfect correlation ($p(00) = p(11) = 1/2$, $p(01) = p(10) = 0$)
-
-The correlation structure is itself locally probed via coincidence counting. No relation escapes local access.
-
-**Reconciliation:** A operates globally, selecting one joint outcome (either $|00\rangle$ or $|11\rangle$) from the composite configuration. But local tomography does not require separable states. It requires that all identity-determining facts be locally measurable. The Bell state satisfies this: its non-decomposable identity is encoded in correlation patterns that local measurements with classical communication fully determine.
-
-This dissolves the apparent tension: A is global (evaluates joint configurations), but the identity-making relations A evaluates are locally accessible (PPC). The entangled composite satisfies both H1 (metaphysical supervenience: composite identity supervenes on relational structure) and H2 (operational local tomography: that structure is locally measurable).
+Consider $\lvert\Phi^+\rangle = \frac{1}{\sqrt{2}}(\lvert 00\rangle + \lvert 11\rangle)$. The composite identity is non-decomposable (no product form exists), yet every identity-determining relation is locally measurable: $\sigma_z \otimes I$ gives $p(0) = p(1) = 1/2$; joint measurement $\sigma_z \otimes \sigma_z$ reveals perfect correlation. $\mathbf{A}$ operates globally (selecting $\lvert 00\rangle$ or $\lvert 11\rangle$), but the relations $\mathbf{A}$ evaluates are locally accessible. This satisfies both H1 (supervenience) and H2 (local tomography).
 
 ### 2.3 Complex Hilbert Space
 
-**Claim:** The state space is complex Hilbert space ℂH. *[ESTABLISHED]*
+**Claim:** The state space is complex Hilbert space $\mathbb{C}\mathcal{H}$. *[ESTABLISHED]*
 
-**Theorem (Masanes and Müller, 2011):** Among generalized probabilistic theories, local tomography + continuous reversible dynamics + entanglement existence + no restriction on observables uniquely select complex Hilbert space quantum mechanics.
+**Theorem (Masanes and Muller, 2011):** Among generalized probabilistic theories, local tomography + continuous reversible dynamics + entanglement existence + no restriction on observables uniquely select complex Hilbert space quantum mechanics.
 
-Local tomography is derived at Step 3. The remaining axioms are physical inputs characterizing the domain. Given these inputs, the state space is ℂH. The field is complex, not real (Renou et al. 2021 confirms experimentally).
-
-![Dimension Scaling](figures/dimension-scaling.png)
-
-*Figure 5: State space dimension scaling for different field parameters K. Only K=2 (complex) maintains manageable information scaling while supporting entanglement. K=1 (real) lacks interference; K≥3 grows too rapidly for physical tractability.*
+Local tomography is derived at Step 3. The remaining axioms are physical inputs characterizing the domain. Given these inputs, the state space is $\mathbb{C}\mathcal{H}$. The field is complex, not real (Renou et al. 2021 confirms experimentally).
 
 ### 2.4 Projection-Valued Measures
 
-**Claim:** Event operators on ℂH representing actualization predicates are projections. *[ARGUED]*
+**Claim:** Event operators on $\mathbb{C}\mathcal{H}$ representing actualization predicates are projections. *[ARGUED]*
 
-The actualization primitive A is Boolean:
+The actualization primitive $\mathbf{A}$ is Boolean:
 
 $$\mathbf{A} : D \to \{0, 1\}$$
 
-For any configuration c and event E, A(E, c) ∈ {0, 1}. There is no intermediate actualization.
+For any configuration c and event E, $\mathbf{A}(E, c) \in \{0, 1\}$. There is no intermediate actualization.
 
 **The eigenvalue restriction:**
 
-1. A's Boolean character entails Boolean actualization values
+1. $\mathbf{A}$'s Boolean character entails Boolean actualization values
 2. Measurement outcomes are eigenvalues (spectral theorem)
-3. Therefore eigenvalues ∈ {0, 1}
-4. Bounded self-adjoint operators with spectrum ⊆ {0, 1} satisfy P² = P
+3. Therefore eigenvalues $\in \{0, 1\}$
+4. Bounded self-adjoint operators with spectrum $\subseteq \{0, 1\}$ satisfy $P^2 = P$
 
 Event operators are projections. Collections form projection-valued measures (PVMs).
 
-#### 2.4.1 Why Not POVMs?
-
-Generalized measurements in quantum theory employ positive operator-valued measures (POVMs), whose effects $E_i$ satisfy $0 \leq E_i \leq I$ with $\sum_i E_i = I$. POVM effects can have eigenvalues in the open interval $(0,1)$, not just $\{0,1\}$.
-
-**The LRT exclusion:** A is Boolean by definition: $\mathbf{A}(E,c) \in \{0,1\}$. An eigenvalue $\lambda \in (0,1)$ would represent "partial actualization": the event is neither fully actual nor fully non-actual. This violates Excluded Middle at the ontological level. Therefore A cannot operate via POVMs at the fundamental level.
-
-**Derivation, not assumption:** This is not stipulated but follows from A's constitutive character. POVMs arise derivatively through Naimark dilation: every POVM on $\mathcal{H}$ is the restriction of a PVM on an extended space $\mathcal{H} \otimes \mathcal{K}$. Physically, POVMs describe coarse-grained or environmentally coupled measurements. At the fundamental level where A constitutes actuality, only PVMs are admissible.
-
-**Physical consequence:** Any measurement describable by a POVM admits a PVM representation in a larger system. LRT predicts this is not merely mathematical convenience but reflects the ontological structure: A evaluates Boolean facts; apparent non-Boolean measurements are incomplete descriptions of Boolean facts in extended configurations.
+POVMs arise derivatively through Naimark dilation: every POVM on $\mathcal{H}$ is the restriction of a PVM on an extended space. At the fundamental level where $\mathbf{A}$ constitutes actuality, only PVMs are admissible; apparent non-Boolean measurements are incomplete descriptions of Boolean facts in extended configurations.
 
 ### 2.5 The Born Rule
 
 **Claim:** The unique probability measure on PVM structure is the Born rule. *[ESTABLISHED]*
 
-**Theorem (Gleason, 1957):** For dim(H) ≥ 3, any frame function on closed subspaces has the form μ(P) = Tr(ρP) for a unique density operator ρ.
+**Theorem (Gleason, 1957):** For dim(H) $\geq$ 3, any frame function on closed subspaces has the form $\mu(P) = \text{Tr}(\rho P)$ for a unique density operator $\rho$.
 
 The PVM structure from Step 5 provides the frame function conditions. Gleason's theorem delivers:
 
-$$p(E|\psi) = \langle \psi | P_E | \psi \rangle$$
+$$p(E\lvert\psi) = \langle \psi \lvert P_E \lvert \psi \rangle$$
 
 The Born rule is not postulated. It is the unique consistent probability measure the PVM structure admits.
 
-![Born Rule Emergence](figures/born-rule-simplex.png)
-
-*Figure 7: Born rule emergence from Gleason constraints. Left: probability simplex showing valid probability distributions. Right: Bloch sphere representation of qubit states. Gleason's theorem forces the unique probability measure on the derived PVM structure.*
+**Probability interpretation:** The Born probability $p(E\lvert\psi)$ is neither Bayesian (subjective credence) nor frequentist (long-run limit) in its primary meaning. It is dispositional: given configuration $\psi \in I_\infty$, $p(E\lvert\psi)$ measures the structural weight of $E$ within $\psi$'s projection. $\mathbf{A}$ actualizes one outcome; the probability reflects $\psi$'s compositional structure, not observer uncertainty. This differs from Everettian branch-counting (which faces the measure problem) by grounding probability in the structure $\mathbf{A}$ operates on rather than in subjective ignorance about which branch "I" will occupy.
 
 ### 2.6 Unitarity
 
 **Claim:** Time evolution is unitary. *[ESTABLISHED]*
 
-Determinate Identity at the sequence level requires that transitions preserve structural determinacy. Combined with norm preservation (Born rule consistency) and the symmetry group of A_Ω, this forces:
+Determinate Identity at the sequence level requires that transitions preserve structural determinacy. Combined with norm preservation (Born rule consistency) and the symmetry group of $A_\Omega$, this forces:
 
-- Time evolution operators U(t) form a strongly continuous one-parameter group
-- U(t) preserves inner products (unitarity)
+- Time evolution operators $U(t)$ form a strongly continuous one-parameter group
+- $U(t)$ preserves inner products (unitarity)
 
 This is Wigner's theorem applied to the LRT context.
 
 ### 2.7 Temporal Structure
 
-**Claim:** Ordinal time emerges from A's Boolean character; continuous time from trajectory topology. *[ARGUED]*
+**Claim:** Ordinal time emerges from $\mathbf{A}$'s Boolean character; continuous time from trajectory topology. *[ARGUED]*
 
-**Unique Next State (UNS):** For every c ∈ A_Ω, there exists a unique successor c' that A selects. This follows from Determinate Identity + Boolean A: Excluded Middle rules out indeterminate succession; Non-Contradiction rules out multiple successors.
+**Unique Next State (UNS):** For every $c \in A_\Omega$, there exists a unique successor $c'$ that $\mathbf{A}$ selects. This follows from Determinate Identity + Boolean $\mathbf{A}$: Excluded Middle rules out indeterminate succession; Non-Contradiction rules out multiple successors.
 
-UNS induces ordinal time. The Debreu-Nachbin theorem lifts ordinal structure to continuous ℝ-parameterization, given the Fubini-Study topology on state space.
+UNS induces ordinal time. The Debreu-Nachbin theorem lifts ordinal structure to continuous $\mathbb{R}$-parameterization, given the Fubini-Study topology on state space.
 
-### 2.8 The Schrödinger Equation
+### 2.8 The Schrodinger Equation
 
-**Claim:** The equation of motion is the Schrödinger equation. *[ESTABLISHED]*
+**Claim:** The equation of motion is the Schrodinger equation. *[ESTABLISHED]*
 
-**Theorem (Stone, 1930):** A strongly continuous one-parameter unitary group U(t) has a unique self-adjoint generator H with U(t) = exp(−iHt/ℏ).
+**Theorem (Stone, 1930):** A strongly continuous one-parameter unitary group $U(t)$ has a unique self-adjoint generator $H$ with $U(t) = \exp(-iHt/\hbar)$.
 
 Differentiation yields:
 
-$$i\hbar \frac{d}{dt}|\psi(t)\rangle = H|\psi(t)\rangle$$
+$$i\hbar \frac{d}{dt}\lvert\psi(t)\rangle = H\lvert\psi(t)\rangle$$
 
-The Schrödinger equation is derived, not postulated. Specific Hamiltonians remain empirical inputs.
+The Schrodinger equation is derived, not postulated. Specific Hamiltonians remain empirical inputs.
 
 ### 2.9 Summary of Derivation Chain
 
-| Step | Content | Status | Lean |
-|------|---------|--------|------|
-| 0 | Primitives: χ ≡ [L₃ : I∞ : A] | ASSUMED (TAB) | ✓ |
-| 1 | Bridge: A_Ω = L₃(I∞) | ASSUMED (TAB) | ✓ |
-| 2 | Determinate Identity | ESTABLISHED | ✓ |
-| 3 | Local Tomography | ARGUED | ✓ |
-| 4 | Complex Hilbert Space | ESTABLISHED | ✓ |
-| 5 | PVM Structure | ARGUED | ✓ |
-| 6 | Born Rule | ESTABLISHED | ✓ |
-| 7 | Unitarity | ESTABLISHED | ✓ |
-| 8 | Temporal Emergence | ARGUED | ✓ |
-| 9 | Energy-Action | ESTABLISHED | ✓ |
-| 10 | Schrödinger Equation | ESTABLISHED | ✓ |
+| Step | Content | Status | Formalized |
+|------|---------|--------|------------|
+| 0 | Primitives: $\chi \equiv [L_3 : I_\infty : \mathbf{A}]$ | ASSUMED (TAB) | Yes |
+| 1 | Bridge: $A_\Omega = L_3(I_\infty)$ | ASSUMED (TAB) | Yes |
+| 2 | Determinate Identity | ESTABLISHED | Yes |
+| 3 | Local Tomography | ARGUED | Yes |
+| 4 | Complex Hilbert Space | ESTABLISHED | Yes |
+| 5 | PVM Structure | ARGUED | Yes |
+| 6 | Born Rule | ESTABLISHED | Yes |
+| 7 | Unitarity | ESTABLISHED | Yes |
+| 8 | Temporal Emergence | ARGUED | Yes |
+| 9 | Energy-Action | ESTABLISHED | Yes |
+| 10 | Schrodinger Equation | ESTABLISHED | Yes |
 
-**Axiom count:** 31 (3 primitive + 14 external/imported + 14 derivation targets)
+![Figure 2: Derivation Chain](../figures/derivation-chain.svg)
 
 ---
 
 ## 3. Resolution of Standing Problems
 
+![Figure 3: Problem Dissolution Map](../figures/problem-dissolution.svg)
+
 The standing problems of quantum foundations dissolve under LRT. Each arises from a presupposition LRT does not share.
+
+**Two-level ontology:** The key to dissolution is the distinction between $I_\infty$ (possibility space) and $A_\Omega$ (actualized domain). Superpositions, interference, and entanglement exist in $I_\infty$. Definite outcomes exist in $A_\Omega$. Measurement is $\mathbf{A}$ selecting from $I_\infty$ under $L_3$ constraints. The problems arise from conflating these levels.
 
 ### 3.1 The Measurement Problem
 
@@ -245,11 +224,11 @@ The standing problems of quantum foundations dissolve under LRT. Each arises fro
 
 **Presupposition:** Measurement outcomes require dynamical explanation.
 
-**Dissolution:** A is the primitive dynamic aspect of χ, not a process within A_Ω. There is no collapse because nothing collapses—the superposition |ψ⟩ is the state in ℂH; A selects one Boolean outcome from its PVM decomposition. The measurement problem does not arise because LRT does not treat measurement as requiring a dynamical account.
+**Dissolution:** $\mathbf{A}$ is the primitive dynamic aspect of $\chi$, not a process within $A_\Omega$. There is no collapse because nothing collapses---the superposition $\lvert\psi\rangle$ is the state in $\mathbb{C}\mathcal{H}$; $\mathbf{A}$ selects one Boolean outcome from its PVM decomposition. The measurement problem does not arise because LRT does not treat measurement as requiring a dynamical account.
 
-**Clarification:** This dissolution transforms rather than eliminates the question. What LRT dissolves is the *dynamical* measurement problem: why does linear unitary evolution yield definite outcomes? The answer is that outcomes are not produced by evolution but constituted by A.
+**Clarification:** This dissolution transforms rather than eliminates the question. What LRT dissolves is the *dynamical* measurement problem: why does linear unitary evolution yield definite outcomes? The answer is that outcomes are not produced by evolution but constituted by $\mathbf{A}$.
 
-The residual question—why does A select one outcome rather than another?—remains. But this is a question about A's primitive character, not about physics within A_Ω. It is analogous to "why is there something rather than nothing?": a legitimate metaphysical question, but not one that physics must answer or could answer. Admitting a primitive stopping point does not undermine the physics that proceeds from it. The dynamical problem dissolves; the selection question is relocated to where it belongs—the primitive layer.
+The residual question---why does $\mathbf{A}$ select one outcome rather than another?---remains. But this is a question about $\mathbf{A}$'s primitive character, not about physics within $A_\Omega$. It is analogous to "why is there something rather than nothing?": a legitimate metaphysical question, but not one that physics must answer or could answer. Admitting a primitive stopping point does not undermine the physics that proceeds from it. The dynamical problem dissolves; the selection question is relocated to where it belongs---the primitive layer.
 
 ### 3.2 Wave-Particle Duality
 
@@ -257,7 +236,7 @@ The residual question—why does A select one outcome rather than another?—rem
 
 **Presupposition:** A system must be one kind of thing.
 
-**Dissolution:** The wave aspect is the configuration in I∞; the particle aspect is what A selects into A_Ω. These are not competing descriptions but descriptions at two levels: possibility space (I∞) and actuality (A_Ω).
+**Dissolution:** The wave aspect is the configuration in $I_\infty$; the particle aspect is what $\mathbf{A}$ selects into $A_\Omega$. These are not competing descriptions but descriptions at two levels: possibility space ($I_\infty$) and actuality ($A_\Omega$).
 
 ### 3.3 EPR and Nonlocality
 
@@ -265,21 +244,17 @@ The residual question—why does A select one outcome rather than another?—rem
 
 **Presupposition:** Correlations require either local hidden variables or nonlocal causal influence.
 
-**Dissolution:** Entangled states are non-decomposable configurations in I∞—their identity cannot be factored into subsystem identities. A_Ω is global; A evaluates joint configurations, not local subsystems independently. Correlations are constitutive constraints on actualization, not causal influences between spatially separated regions.
+**Dissolution:** Entangled states are non-decomposable configurations in $I_\infty$---their identity cannot be factored into subsystem identities. $A_\Omega$ is global; $\mathbf{A}$ evaluates joint configurations, not local subsystems independently. Correlations are constitutive constraints on actualization, not causal influences between spatially separated regions.
 
-Einstein's locality is correct—no superluminal signaling. What fails is separability: the assumption that composite states factor. EPR presupposes that measurement reveals pre-existing local facts. Under LRT, A *constitutes* facts globally. The paradox dissolves because its framing is category-mistaken.
+Einstein's locality is correct---no superluminal signaling. What fails is separability: the assumption that composite states factor. EPR presupposes that measurement reveals pre-existing local facts. Under LRT, $\mathbf{A}$ *constitutes* facts globally. The paradox dissolves because its framing is category-mistaken.
 
-![EPR Dissolution](figures/epr-dissolution.png)
-
-*Figure 4: EPR dissolution under LRT. Left: standard framing assumes local measurement reveals pre-existing facts, generating the paradox. Right: LRT's global A evaluates joint configurations, dissolving the paradox.*
-
-### 3.4 Schrödinger's Cat
+### 3.4 Schrodinger's Cat
 
 **Problem:** Macroscopic superpositions seem to exist before observation.
 
 **Presupposition:** Superpositions of macroscopic states are physically real configurations.
 
-**Dissolution:** The superposition |alive⟩ + |dead⟩ exists in I∞—it is representable and evolves unitarily. It is not in A_Ω as a superposition. A selects one L₃-admissible outcome. The cat is not both; it is not indeterminate. The paradox arises from treating I∞ configurations as A_Ω configurations.
+**Dissolution:** The superposition $\lvert\text{alive}\rangle + \lvert\text{dead}\rangle$ exists in $I_\infty$---it is representable and evolves unitarily. It is not in $A_\Omega$ as a superposition. $\mathbf{A}$ selects one $L_3$-admissible outcome. The cat is not both; it is not indeterminate. The paradox arises from treating $I_\infty$ configurations as $A_\Omega$ configurations.
 
 ### 3.5 Preferred Basis
 
@@ -287,7 +262,7 @@ Einstein's locality is correct—no superluminal signaling. What fails is separa
 
 **Presupposition:** Basis selection is a problem about the state.
 
-**Dissolution:** A selects from the PVM determined by the physical interaction Hamiltonian. The interaction selects the relevant PVM; A selects one outcome from it. No preferred basis is needed in I∞ because the interaction structure provides it in A_Ω.
+**Dissolution:** $\mathbf{A}$ selects from the PVM determined by the physical interaction Hamiltonian. The interaction selects the relevant PVM; $\mathbf{A}$ selects one outcome from it. No preferred basis is needed in $I_\infty$ because the interaction structure provides it in $A_\Omega$.
 
 ### 3.6 The Observer
 
@@ -295,7 +270,7 @@ Einstein's locality is correct—no superluminal signaling. What fails is separa
 
 **Presupposition:** Quantum states are defined relative to observers.
 
-**Dissolution:** A_Ω is defined by L₃ admissibility, not by observers. Observers are physical systems in A_Ω, not constitutive elements. This is strong realism: A selects outcomes independently of observation.
+**Dissolution:** $A_\Omega$ is defined by $L_3$ admissibility, not by observers. Observers are physical systems in $A_\Omega$, not constitutive elements. This is strong realism: $\mathbf{A}$ selects outcomes independently of observation.
 
 ---
 
@@ -303,23 +278,23 @@ Einstein's locality is correct—no superluminal signaling. What fails is separa
 
 ### 4.1 Comparison to Reconstruction Programs
 
-LRT stands in a specific relation to operational reconstruction programs (Hardy 2001; CDP 2011; Masanes-Müller 2011):
+LRT stands in a specific relation to operational reconstruction programs (Hardy 2001; CDP 2011; Masanes-Muller 2011):
 
-| Framework | Starting Point | What's Unexplained |
-|-----------|----------------|-------------------|
+| Framework | Starting Point | What Remains Unexplained |
+|-----------|----------------|--------------------------|
 | Hardy (2001) | 5 operational axioms | Why these axioms? |
 | CDP (2011) | 6 informational principles | Why information is primitive? |
-| Masanes-Müller (2011) | 5 physical requirements | Why these requirements? |
-| **LRT** | χ = [L₃ : I∞ : A] | Grounds the above |
+| Masanes-Muller (2011) | 5 physical requirements | Why these requirements? |
+| **LRT** | $\chi = [L_3 : I_\infty : \mathbf{A}]$ | Grounds the above |
 
-**The subsumption claim:** LRT does not compete with these programs—it subsumes them. Hardy's axioms become derivable given χ. CDP's purification principle follows from Boolean actualization. Masanes-Müller's requirements are consequences of I∞ structure.
+**The subsumption claim:** LRT does not compete with these programs---it subsumes them. Hardy's axioms become derivable given $\chi$. CDP's purification principle follows from Boolean actualization. Masanes-Muller's requirements are consequences of $I_\infty$ structure.
 
 **What LRT derives that competitors assume:**
 
 | Feature | Competitor Status | LRT Status |
-|---------|------------------|------------|
+|---------|-------------------|------------|
 | Local tomography | Axiom | Derived (H1/H2 bridge) |
-| Boolean measurement | Assumed | Derived (A binary) |
+| Boolean measurement | Assumed | Derived ($\mathbf{A}$ binary) |
 | PVM structure | Assumed | Derived (eigenvalue restriction) |
 | Born rule | Derived (Gleason) or assumed | Derived (Gleason on derived PVM) |
 | Temporal structure | Assumed | Derived (UNS + Debreu-Nachbin) |
@@ -329,77 +304,76 @@ LRT stands in a specific relation to operational reconstruction programs (Hardy 
 | Interpretation | What LRT Inherits | What LRT Avoids |
 |----------------|-------------------|-----------------|
 | Copenhagen | Boolean outcomes | Observer-dependence |
-| Many-Worlds | Unitary structure, branching in I∞ | Branch multiplication |
+| Many-Worlds | Unitary structure, branching in $I_\infty$ | Branch multiplication |
 | Bohmian | Realism about states | Pilot wave, primitive nonlocality |
 | GRW | Empirical bet | Ad hoc parameters |
 
-**MWI subsumption:** Deutsch-Wallace decision-theoretic axioms are derivative of L₃. What MWI assumes (ordering, consistency, indifference conditions), LRT derives from Identity, Non-Contradiction, Excluded Middle. The branching structure exists in I∞; only one branch is actualized in A_Ω.
+**MWI subsumption:** Deutsch-Wallace decision-theoretic axioms are derivative of $L_3$. What MWI assumes (ordering, consistency, indifference conditions), LRT derives from Identity, Non-Contradiction, Excluded Middle. The branching structure exists in $I_\infty$; only one branch is actualized in $A_\Omega$. Wallace (2012) provides the most rigorous defense of MWI probability; LRT's claim is that his axioms follow from $L_3$ rather than requiring independent justification.
 
-**Categorical QM subsumption:** Every †-SMC axiom is derivable from L₃. Physics forms dagger categories because logic demands it.
+**Structural realism connection:** Ladyman (2014) argues that physics reveals structure rather than individual substances. LRT is compatible: $\chi$ is structural (relational constraints among primitives) rather than substantival. The state space $\mathbb{C}\mathcal{H}$ is a structural consequence of $\chi$, not a container for pre-existing entities. Timpson (2013) notes that quantum information approaches face foundational questions about what information *is*; LRT answers: $I_\infty$ is the complete domain of distinguishable configurations, not a derived or epistemic notion.
+
+**Categorical QM subsumption:** Every dagger-SMC axiom is derivable from $L_3$. Physics forms dagger categories because logic demands it.
 
 ### 4.3 Explanatory Power Inventory
 
 | Phenomenon | Standard Status | LRT Status |
 |------------|-----------------|------------|
-| Born rule | Postulated / derived | Derived (Gleason + Boolean A) |
-| Measurement problem | Interpretation-dependent | Dissolved (A constitutes) |
-| Superposition | Ontologically ambiguous | Incomplete specification in I∞ |
-| Entanglement | Nonlocal correlations | Global L₃ constraint |
-| Decoherence | Empirical add-on | Derived (subsystem L₃) |
+| Born rule | Postulated / derived | Derived (Gleason + Boolean $\mathbf{A}$) |
+| Measurement problem | Interpretation-dependent | Dissolved ($\mathbf{A}$ constitutes) |
+| Superposition | Ontologically ambiguous | Incomplete specification in $I_\infty$ |
+| Entanglement | Nonlocal correlations | Global $L_3$ constraint |
+| Decoherence | Empirical add-on | Derived (subsystem $L_3$) |
 | Local tomography | Axiom | Derived (H1/H2) |
 | K=2 (complex field) | Axiom | Derived (multiple routes) |
-| EPR paradox | Interpretation-dependent | Dissolved (A is global) |
-| Wave-particle duality | Mystery | I∞/A_Ω distinction |
+| EPR paradox | Interpretation-dependent | Dissolved ($\mathbf{A}$ is global) |
+| Wave-particle duality | Mystery | $I_\infty$/$A_\Omega$ distinction |
 | Preferred basis | Unsolved | Interaction-determined |
 | Observer role | Constitutive | None |
 
-**Quantitative comparison (from Comparison Scorecard):**
+**Comparison with reconstruction programs:**
 
-| Criterion | LRT | SQM | MWI | Bohmian | Reconstruction |
-|-----------|-----|-----|-----|---------|----------------|
-| Ontological Clarity | 4 | 2 | 4 | 4 | 3 |
-| Testable Predictions | 4 | 5 | 2 | 2 | 4 |
-| Explanatory Unification | **5** | 2 | 3 | 3 | 4 |
-| Measurement Solution | 4 | 1 | 4 | 5 | 3 |
-| Formal Rigor | 4 | 5 | 5 | 5 | 5 |
-| **TOTAL** | **31** | 28 | 27 | 28 | 31 |
+| Feature | Hardy | CDP | Masanes-Müller | LRT |
+|---------|-------|-----|----------------|-----|
+| Grounds operational axioms | — | — | — | ✓ |
+| Derives complex field | ✓ | ✓ | ✓ | imports |
+| Derives Born rule | implied | ✓ | implied | ✓ (Gleason) |
+| Derives local tomography | — | — | — | ✓ |
+| Derives temporal structure | ✓ | ✓ | ✓ | ✓ (Stone) |
+| Proof-assistant verified | — | — | — | ✓ |
+| Requires continuous reversibility | ✓ | ✓ | ✓ | — |
+| Requires purification axiom | — | ✓ | — | imports |
+| Ontological commitment | minimal | information-theoretic | operationalist | realist |
 
-![Competitor Comparison Matrix](figures/competitor-matrix.png)
-
-*Figure 3: Visual comparison of LRT against reconstruction programs (Hardy, CDP, Masanes-Müller) and interpretations (Copenhagen, MWI, Bohmian, GRW). Green: derived/resolved. Amber: partially addressed. Red: assumed/problematic.*
+The key distinction: LRT answers "why these axioms?" while reconstruction programs deliberately bracket this question. The programs show that quantum structure follows from operational constraints; LRT grounds those constraints in $\chi$.
 
 ### 4.4 Predictive Constraints
 
 LRT rules out:
 
-- Non-Boolean measurement (contradicts L₃)
-- Finite configuration space (contradicts I∞ completeness)
+- Non-Boolean measurement (contradicts $L_3$)
+- Finite configuration space (contradicts $I_\infty$ completeness)
 - Non-unitary evolution (contradicts actualization continuity)
-- K≠2 fields (contradicts reconstruction chain)
-- Super-quantum correlations beyond Tsirelson bound (contradicts ℂH structure)
+- K $\neq$ 2 fields (contradicts reconstruction chain)
+- Super-quantum correlations beyond Tsirelson bound (contradicts $\mathbb{C}\mathcal{H}$ structure)
 - Primitive POVMs (must dilate to PVMs)
-
-![Entanglement Constraints](figures/entanglement-constraints.png)
-
-*Figure 6: Entanglement correlation constraints under LRT. The Tsirelson bound (2√2) emerges from ℂH structure; super-quantum correlations (PR-box region) are ruled out. The CHSH inequality (classical bound 2) is violated by quantum mechanics but bounded by logical structure.*
 
 ### 4.5 Falsification and Null Hypothesis
 
-**Null hypothesis (H₀):** Operational constraints suffice without ontological grounding. QM's axioms are "just the way things are" or are operationally motivated but ungrounded.
+**Null hypothesis (H0):** Operational constraints suffice without ontological grounding. QM's axioms are "just the way things are" or are operationally motivated but ungrounded.
 
-**LRT's claim against H₀:** The axioms are not arbitrary—they follow from χ. LRT adds explanatory value by answering "why these axioms?"
+**LRT's claim against H0:** The axioms are not arbitrary---they follow from $\chi$. LRT adds explanatory value by answering "why these axioms?"
 
 **Falsification hierarchy:**
 
 | Level | Falsifier | Severity |
 |-------|-----------|----------|
-| Categorical | L₃ violation in completed physical record | Fatal to hard core |
+| Categorical | $L_3$ violation in completed physical record | Fatal to hard core |
 | Structural | Super-quantum correlations, primitive POVMs, non-unitary dynamics | Revision of argued steps |
 | Empirical | Real QM confirmed over complex (Renou et al.), black hole FC-2b | Test downstream predictions |
 
 **Lakatosian structure:**
 
-- **Hard core:** χ ≡ [L₃ : I∞ : A], bridge equation A_Ω = L₃(I∞)
+- **Hard core:** $\chi \equiv [L_3 : I_\infty : \mathbf{A}]$, bridge equation $A_\Omega = L_3(I_\infty)$
 - **Protective belt:** Argued steps (local tomography, PVM structure, UNS, continuous time)
 - **Progressive predictions:** Complex field selection (confirmed), MWI/categorical subsumption, EPR dissolution
 
@@ -407,62 +381,63 @@ LRT rules out:
 
 ---
 
-## 5. Open Problems
+## 5. Formalization
 
-### 5.1 Current Formalization Status
+The derivation chain has been formalized in Lean 4.
+
+### 5.1 Formalization Status
 
 | Metric | Value |
 |--------|-------|
-| Build | SUCCESS (2491 jobs) |
-| Axioms | 31 |
-| Sorries | 0 |
-| PRIMITIVE | 3 (I, I_infinite, bridge_principle) |
-| EXTERNAL | 14 (Gleason, Stone, Hardy, CDP, etc.) |
-| REMAINING | 14 (derivation targets) |
+| Build | Verified (2491 jobs) |
+| Axioms | 22 |
+| Proof gaps (sorries) | 0 |
 
-![Axiom Reduction Timeline](figures/axiom-timeline.png)
+**Axiom classification:**
 
-*Figure 8: Axiom reduction journey from December 2025 to March 2026. Initial count: 55 axioms with 12 sorries. Current: 31 axioms with 0 sorries. Major reductions occurred during Phase 2 (H1/H2 bridge) and Phase 4 (Boolean spectrum derivation).*
+| Category | Count | Description |
+|----------|-------|-------------|
+| PRIMITIVE | 3 | $I$, $I_\infty$ completeness, bridge principle |
+| EXTERNAL | 19 | Established theorems (Gleason, Stone, Hardy, CDP, etc.) |
 
-![Dependency Graph](figures/dependency-graph.png)
+Axioms classified as EXTERNAL represent established mathematical results imported to avoid re-proving standard mathematics in the proof assistant. The 3 PRIMITIVE axioms are the irreducible LRT commitments corresponding to the constitutive elements of $\chi$.
 
-*Figure 9: Traceability dependency graph showing 33 claims with 59 directed edges. Node colors indicate claim type (ONT, LOG, ACT, QM, PHY, PRD, OPN, EXT). The graph is acyclic, confirming no circular dependencies in the reconstruction chain.*
+### 5.2 What Lean Verifies (and Does Not)
 
-### 5.2 Derivation Targets
+**Lean verifies:**
+- Logical consistency of the reconstruction chain
+- Dependency structure: which theorems depend on which axioms
+- That sorries (proof gaps) have been filled or explicitly axiomatized
 
-The 14 REMAINING axioms are derivable in principle:
+**Lean does not verify:**
+- Metaphysical validity of the primitives $\chi$
+- Physical correctness of imported theorems (Gleason, Stone, Hardy)
+- Empirical adequacy of the reconstruction
+- That the 3 primitive axioms are truly irreducible
 
-| Group | Axioms | Notes |
-|-------|--------|-------|
-| Step 5 | `spectral_correspondence`, `event_operator_has_bool_spectrum` | Spectral theory work |
-| Step 6 | `proj_norm_le`, `born_rule_completeness` | One trivial |
-| Step 7 | Evolution family (4 axioms) | Reducible to 2 with Hamiltonian approach |
-| Step 8 | Temporal embedding (3 axioms) | LRT: discrete time (ℕ-indexed) |
-| Step 10 | Schrödinger (3 axioms) | Blocked on unbounded operators |
+The formalization is a consistency check on the logical structure, not a proof of LRT's metaphysical claims.
 
-**Realistic target:** 31 → 24 axioms with focused effort.
+### 5.3 Open Problems
 
-### 5.3 Extensions
-
-| Problem | Type | Priority |
-|---------|------|----------|
-| Relativistic extension | Extension | Medium |
-| Quantum field theory | Extension | Long-range |
-| Fine-structure constant | Extension | Speculative |
-| Cosmological application | Extension | Open |
-| Bekenstein-Hawking connection | Gap | High |
+| Problem | Type | Status |
+|---------|------|--------|
+| K=2 forcing (OPN-004) | Derivation | Three routes identified; full proof pending |
+| $I_\infty \to \mathcal{H}$ embedding | Technical | Distinguishability → inner product construction open |
+| Relativistic extension | Extension | Algebraic QFT path identified |
+| Interface criterion | Conceptual | Candidates identified; specification open |
+| Bekenstein-Hawking connection | Speculative | High priority if cosmology extension pursued |
 
 ---
 
 ## 6. Conclusion
 
-Assuming the TAB result—that physical actuality is constituted by χ ≡ [L₃ : I∞ : A], yielding A_Ω = L₃(I∞)—this paper has derived the complete structure of non-relativistic quantum mechanics. The derivation is formalized in Lean 4 with 31 axioms (3 primitive, 14 imported, 14 open targets) and zero sorries.
+Assuming the TAB result---that physical actuality is constituted by $\chi \equiv [L_3 : I_\infty : \mathbf{A}]$, yielding $A_\Omega = L_3(I_\infty)$---this paper has reconstructed the complete structure of non-relativistic quantum mechanics. The derivation is formalized in Lean 4 with 22 axioms (3 primitive, 19 imported) and zero proof gaps.
 
-LRT's contribution is precisely located: not new mathematics, but a new grounding argument for existing mathematics. The reconstruction programs of Hardy, CDP, and Masanes-Müller are subsumed—their axioms become consequences of χ rather than postulates. Standing problems dissolve: measurement, EPR, wave-particle duality, Schrödinger's cat, preferred basis, the observer. Each arises from a presupposition LRT does not share.
+LRT's contribution is precisely located: not new mathematics, but a new grounding argument for existing mathematics. The reconstruction programs of Hardy, CDP, and Masanes-Muller are subsumed---their axioms become consequences of $\chi$ rather than postulates. Standing problems dissolve: measurement, EPR, wave-particle duality, Schrodinger's cat, preferred basis, the observer. Each arises from a presupposition LRT does not share.
 
-The null hypothesis—that operational constraints suffice without grounding—is rejected. LRT answers the question reconstruction programs leave open: *why these axioms?*
+The null hypothesis---that operational constraints suffice without grounding---is rejected. LRT answers the question reconstruction programs leave open: *why these axioms?*
 
-The categorical falsifier remains unobserved: no physical record violates Boolean outcome structure. The structural prediction—complex field selection—is confirmed by Renou et al. (2021). The program is open; the foundation is secure.
+The categorical falsifier remains unobserved: no physical record violates Boolean outcome structure. The structural prediction---complex field selection---is confirmed by Renou et al. (2021). The program is open; the foundation is secure.
 
 ---
 
@@ -482,11 +457,17 @@ Hardy, L. (2001). Quantum theory from five reasonable axioms. arXiv:quant-ph/010
 
 Kochen, S. and Specker, E. P. (1967). The problem of hidden variables in quantum mechanics. *Journal of Mathematics and Mechanics*, 17(1), 59-87.
 
-Masanes, L. and Müller, M. P. (2011). A derivation of quantum theory from physical requirements. *New Journal of Physics*, 13(6), 063001.
+Masanes, L. and Muller, M. P. (2011). A derivation of quantum theory from physical requirements. *New Journal of Physics*, 13(6), 063001.
 
 Renou, M.-O., et al. (2021). Quantum theory based on real numbers can be experimentally falsified. *Nature*, 600, 625-629.
 
 Stone, M. H. (1930). Linear transformations in Hilbert space III. *PNAS*, 16(2), 172-175.
+
+Timpson, C. G. (2013). *Quantum Information Theory and the Foundations of Quantum Mechanics*. Oxford University Press.
+
+Wallace, D. (2012). *The Emergent Multiverse: Quantum Theory According to the Everett Interpretation*. Oxford University Press.
+
+Ladyman, J. (2014). Structural realism. *Stanford Encyclopedia of Philosophy*.
 
 ---
 
@@ -494,35 +475,31 @@ Stone, M. H. (1930). Linear transformations in Hilbert space III. *PNAS*, 16(2),
 
 | QM Primitive | Standard Status | LRT Origin | Step |
 |--------------|-----------------|------------|------|
-| Hilbert space ℂH | Postulated | Masanes-Müller | 4 |
+| Hilbert space $\mathbb{C}\mathcal{H}$ | Postulated | Masanes-Muller | 4 |
 | Complex field | Postulated | Local tomography | 4 |
-| Pure states | Postulated | ℂH structure | 4 |
+| Pure states | Postulated | $\mathbb{C}\mathcal{H}$ structure | 4 |
 | Observables | Postulated | PVM + spectral theorem | 5 |
 | Born rule | Postulated | Gleason on PVM | 6 |
 | Tensor products | Postulated | Local tomography | 4 |
 | Unitary evolution | Postulated | G-equivariance + Stone | 7-9 |
-| Schrödinger equation | Postulated | Stone on U(t) | 10 |
-| Definite outcomes | Postulated | A primitive | 2 |
+| Schrodinger equation | Postulated | Stone on $U(t)$ | 10 |
+| Definite outcomes | Postulated | $\mathbf{A}$ primitive | 2 |
 
 ## Appendix B: Axiom Classification
 
 **PRIMITIVE (3):** Irreducible LRT commitments
-- `I : Type*` — configuration space
-- `I_infinite` — I∞ completeness
-- `bridge_principle` — χ grounds A_Ω
+- `I : Type*` --- configuration space
+- `I_infinite` --- $I_\infty$ completeness
+- `bridge_principle` --- $\chi$ grounds $A_\Omega$
 
-**EXTERNAL (14):** Established mathematics, axiomatized for Lean efficiency
-- Hardy H1/H2 (2)
-- Gleason theorem (2)
-- Stone theorem (2)
-- CDP results (3)
-- Wigner theorem (1)
-- Supporting lemmas (4)
+**EXTERNAL (19):** Established mathematics, axiomatized for Lean efficiency
+- Hardy reconstruction (2)
+- Quantum state space (2)
+- Purification / CDP (2)
+- Born rule / Gleason (4)
+- Unitarity / Hamiltonian (2)
+- Functional analysis (5)
+- Physical constants (2)
 
-**REMAINING (14):** Open derivation targets
-- Could become theorems with additional proof work
-- Some blocked on missing Mathlib infrastructure
+The 22 axioms partition into 3 irreducible primitive commitments and 19 established mathematical results imported for proof-assistant efficiency.
 
-![Axiom Classification](figures/axiom-treemap.png)
-
-*Figure 2: Visual breakdown of 31 axioms by classification. PRIMITIVE (3): irreducible LRT commitments. EXTERNAL (14): established mathematics imported for Lean efficiency. REMAINING (14): open derivation targets.*
