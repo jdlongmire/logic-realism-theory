@@ -47,3 +47,7 @@ formalization/.lake
 .claude/
 CLAUDE.md
 AI-Collaboration-Profile.json
+
+# Node
+node_modules/
+theory/node_modules/
