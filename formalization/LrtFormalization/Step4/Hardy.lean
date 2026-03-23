@@ -22,6 +22,8 @@
 import LrtFormalization.Step3_LocalTomography
 import Mathlib.Analysis.InnerProductSpace.Basic
 import Mathlib.Analysis.InnerProductSpace.Projection.Basic
+import Mathlib.Analysis.Normed.Module.FiniteDimension
+import Mathlib.Topology.MetricSpace.ProperSpace
 
 namespace LRT.Step4.Hardy
 
@@ -46,8 +48,26 @@ structure QuantumStateSpace where
 
 attribute [instance] QuantumStateSpace.ng QuantumStateSpace.ips QuantumStateSpace.complete
 
-/-- Extract quantum state space from CPH structure (axiomatized) -/
-axiom QuantumStateSpace.ofCPH (cph : CPHStructure) : QuantumStateSpace
+/-- Extract quantum state space from CPH structure
+
+    For finite-dimensional inner product spaces over ℂ, completeness follows from
+    Mathlib's `FiniteDimensional.proper` (finite-dim → proper → complete).
+
+    This replaces the previous axiom with a constructive definition.
+-/
+def QuantumStateSpace.ofCPH (cph : CPHStructure) : QuantumStateSpace := by
+  letI := cph.ng
+  letI := cph.ips
+  letI := cph.fd
+  letI : NormedSpace ℂ cph.H := InnerProductSpace.toNormedSpace
+  letI : ProperSpace ℂ := .of_locallyCompactSpace ℂ
+  letI : ProperSpace cph.H := FiniteDimensional.proper ℂ cph.H
+  exact {
+    H := cph.H
+    ng := cph.ng
+    ips := cph.ips
+    complete := inferInstance  -- from complete_of_proper
+  }
 
 /-! ## Part II: States as Rays
 

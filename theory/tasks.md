@@ -14,34 +14,31 @@ Tasks are processed sequentially. Mark completed tasks with `[x]` prefix.
 
 ## Active Tasks
 
-- [ ] **LEAN-PROOF-CPH001**: Prove QuantumStateSpace.ofCPH from CPHStructure
-  - Type: lean_proof
-  - Target: formalization/LrtFormalization/Step4/Hardy.lean
-  - Supports: QM-003 / step4_hilbert_space reduction
-  - Details: Replace axiom `QuantumStateSpace.ofCPH`. The CPHStructure from Step3 already
-    contains the Hilbert space data — this should be a straightforward type construction.
-    Replace: `QuantumStateSpace.ofCPH`
-    ```lean
-    def QuantumStateSpace.ofCPH (cph : CPHStructure) : QuantumStateSpace where
-      H := cph.H
-    ```
-    If CPHStructure contains the InnerProductSpace/CompleteSpace instances, this may
-    resolve immediately. Check what fields CPHStructure has first. Issue: #54.
-
-- [ ] **LEAN-ISSUE-003**: Assess remaining 4 HARD axioms for Mathlib unbounded operator support
-  - Type: lean_build
-  - Target: docs/formalization/build-reports/mathlib-assessment-20260323.md
-  - Supports: hamiltonian_generates_unitary, hamiltonian_generates_group_mul, schrodinger_from_stone, step4_hilbert_space
-  - Details: Search Mathlib for: (1) SelfAdjoint unbounded operator theory, (2) StronglyMeasurable
-    unitary groups, (3) Stone's theorem statement in Mathlib (look for `isSelfAdjoint_generator`
-    or similar). Report what exists vs what is missing. This will determine whether the 4 HARD
-    axioms are reducible or should be reclassified as EXTERNAL. Issue: #54.
+(None)
 
 
 
 
 
 ## Completed Tasks
+
+- [x] **LEAN-PROOF-CPH001**: Derive QuantumStateSpace.ofCPH from CPHStructure *(completed 2026-03-23)*
+  - Result: **SUCCESS** — axiom replaced with definition
+  - Method: `Module.Finite ℂ H` → `FiniteDimensional.proper ℂ H` → `ProperSpace H` → `CompleteSpace H`
+  - Mathlib chain: `FiniteDimensional → ProperSpace → complete_of_proper`
+  - **Axiom count: 22 → 21**
+  - Build: SUCCESS (2491 jobs, 21 axioms, 0 sorries)
+
+- [x] **LEAN-ISSUE-003**: Mathlib unbounded operator assessment *(completed 2026-03-23)*
+  - Result: Report generated at `docs/formalization/build-reports/mathlib-assessment-20260323.md`
+  - Key findings:
+    - `step4_hilbert_space`: **REMOVED** (via CPH001)
+    - `hamiltonian_generates_unitary`: **POTENTIALLY DERIVABLE** via `selfAdjoint.expUnitary`
+    - `hamiltonian_generates_group_mul`: **POTENTIALLY DERIVABLE** via `Commute.expUnitary_add`
+    - `schrodinger_from_stone`: **NOT DERIVABLE** — Mathlib lacks unbounded operator theory
+    - `stones_theorem`: **EXTERNAL** — must remain axiom
+  - Recommendation: Reclassify Stone's theorem as EXTERNAL (Tier-2)
+
 - [x] **LEAN-PROOF-SEP001**: Analysis of product_effects_separate_states *(completed 2026-03-23)*
   - Result: **NOT DERIVABLE** — circular dependency detected
   - Analysis: The suggested approach using `gleason_uniqueness_states` won't work because:
