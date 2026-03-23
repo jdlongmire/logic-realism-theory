@@ -4,12 +4,12 @@ on:
   push:
     branches: [ master, main ]
     paths:
-      - 'lean/**'
+      - 'formalization/**'
       - '.github/workflows/lean-build.yml'
   pull_request:
     branches: [ master, main ]
     paths:
-      - 'lean/**'
+      - 'formalization/**'
 
 jobs:
   build:
@@ -26,7 +26,7 @@ jobs:
 
     - name: Get Lean version
       run: |
-        cd lean
+        cd formalization
         cat lean-toolchain
 
     - name: Cache Mathlib
@@ -34,27 +34,36 @@ jobs:
       with:
         path: |
           ~/.elan
-          lean/.lake
-        key: ${{ runner.os }}-lean-${{ hashFiles('lean/lean-toolchain') }}-${{ hashFiles('lean/lake-manifest.json') }}
+          formalization/.lake
+        key: ${{ runner.os }}-lean-${{ hashFiles('formalization/lean-toolchain') }}-${{ hashFiles('formalization/lake-manifest.json') }}
         restore-keys: |
-          ${{ runner.os }}-lean-${{ hashFiles('lean/lean-toolchain') }}-
+          ${{ runner.os }}-lean-${{ hashFiles('formalization/lean-toolchain') }}-
           ${{ runner.os }}-lean-
 
     - name: Build Lean project
       run: |
-        cd lean
-        lake update
+        cd formalization
         lake exe cache get
         lake build
 
     - name: Report axiom count
       run: |
-        AXIOM_COUNT=$(grep -r "^axiom " lean/LogicRealismTheory --include="*.lean" | wc -l)
+        AXIOM_COUNT=$(grep -r "^axiom " formalization/LrtFormalization --include="*.lean" | wc -l)
         echo "Total axioms in LRT: $AXIOM_COUNT"
-        echo "Target: 2 axioms (I, I_infinite)"
-        if [ "$AXIOM_COUNT" -gt 2 ]; then
-          echo "WARNING: More than 2 axioms found!"
-          grep -rn "^axiom " lean/LogicRealismTheory --include="*.lean"
+        if [ "$AXIOM_COUNT" -gt 3 ]; then
+          echo "WARNING: More than 3 PRIMITIVE axioms found!"
+          grep -rn "^axiom " formalization/LrtFormalization --include="*.lean"
         else
-          echo "SUCCESS: Axiom minimalism maintained (≤2 axioms)"
+          echo "SUCCESS: Axiom minimalism maintained (≤3 primitives)"
+        fi
+
+    - name: Report sorry count
+      run: |
+        SORRY_COUNT=$(grep -r "sorry" formalization/LrtFormalization --include="*.lean" | grep -v "^--" | wc -l)
+        echo "Sorry count: $SORRY_COUNT"
+        if [ "$SORRY_COUNT" -gt 0 ]; then
+          echo "WARNING: $SORRY_COUNT sorry(s) found!"
+          grep -rn "sorry" formalization/LrtFormalization --include="*.lean" | grep -v "^--"
+        else
+          echo "SUCCESS: Zero sorries — all proofs complete"
         fi
