@@ -88,9 +88,10 @@ Step 10 ✅  Schrödinger Equation          — DERIVED
 | 2026-03-17 | 31 | 3 | 14 | 14 |
 | 2026-03-21 | 24 | 3 | 18 | 3 |
 | 2026-03-23 | **22** | 3 | 14 | **5** |
+| 2026-03-23 (CPH001) | **21** | 3 | 15 | **3** |
 
 **Target:** 3 PRIMITIVE axioms (I∞, I_infinite, bridge_principle) — maintained.  
-**Net reduction this session: Δ −9 axioms.** EXTERNAL: 14, REMAINING: 5 (post-reclassification).
+**Net reduction this session: Δ −10 axioms.** EXTERNAL: 15, REMAINING: 3. CPH001 proven; step4_hilbert_space removed.
 
 ---
 
