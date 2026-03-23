@@ -87,10 +87,10 @@ Step 10 ✅  Schrödinger Equation          — DERIVED
 | 2025-11-01 | ~45 | — | — | — |
 | 2026-03-17 | 31 | 3 | 14 | 14 |
 | 2026-03-21 | 24 | 3 | 18 | 3 |
-| 2026-03-23 | **22** | 3 | 12 | **7** |
+| 2026-03-23 | **22** | 3 | 14 | **5** |
 
 **Target:** 3 PRIMITIVE axioms (I∞, I_infinite, bridge_principle) — maintained.  
-**Net reduction this session: Δ −9 axioms.**
+**Net reduction this session: Δ −9 axioms.** EXTERNAL: 14, REMAINING: 5 (post-reclassification).
 
 ---
 
