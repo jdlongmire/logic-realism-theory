@@ -14,7 +14,42 @@ Tasks are processed sequentially. Mark completed tasks with `[x]` prefix.
 
 ## Active Tasks
 
-(None)
+- [ ] **LEAN-PROOF-HGU001**: Prove hamiltonian_generates_unitary via selfAdjoint.expUnitary
+  - Type: lean_proof
+  - Target: formalization/LrtFormalization/Step7_Unitarity.lean
+  - Supports: QM-035 (Unitarity theorem)
+  - Details: Replace axiom `hamiltonian_generates_unitary`. Mathlib has `selfAdjoint.expUnitary`
+    in C*-algebra theory. The Hamiltonian H is self-adjoint (axiom `hamiltonian_isSelfAdjoint`),
+    so U(t) = exp(-i * t * H) should be a unitary operator via this path.
+    First check: does Step7 import `Mathlib.Analysis.CStarAlgebra.Exponential` or similar?
+    Replace: `hamiltonian_generates_unitary`
+    ```lean
+    theorem hamiltonian_generates_unitary (t : ℝ) :
+        ∀ ψ : H, ‖(timeEvolution t) ψ‖ = ‖ψ‖ := by
+      intro ψ
+      have := IsSelfAdjoint.expUnitary (hamiltonian_isSelfAdjoint.smul_real t)
+      exact this.isometric ψ
+    ```
+    Issue: #54.
+
+- [ ] **LEAN-PROOF-HGM001**: Prove hamiltonian_generates_group_mul via Commute.expUnitary_add
+  - Type: lean_proof
+  - Target: formalization/LrtFormalization/Step7_Unitarity.lean
+  - Supports: QM-035 (Unitarity — group composition law)
+  - Details: Replace axiom `hamiltonian_generates_group_mul`. Mathlib has
+    `Commute.expUnitary_add` — for commuting self-adjoint operators, exp(A+B) = exp(A)*exp(B).
+    Since exp(-i*s*H) and exp(-i*t*H) commute (same operator, scalar multiples),
+    U(s+t) = U(s)*U(t) should follow.
+    Replace: `hamiltonian_generates_group_mul`
+    ```lean
+    theorem hamiltonian_generates_group_mul (s t : ℝ) :
+        timeEvolution (s + t) = timeEvolution s * timeEvolution t := by
+      simp [timeEvolution]
+      rw [← neg_add, smul_add]
+      exact (IsSelfAdjoint.commute_expUnitary_smul hamiltonian_isSelfAdjoint s t).expUnitary_add
+    ```
+    Issue: #54.
+
 
 
 
