@@ -295,7 +295,7 @@ Consider each pair:
 
 1. **L₃ + I∞ without A:** Constraint and possibility space exist, but nothing obtains. The result is a static modal structure with no fact of the matter about actuality. This is the Tegmarkian scenario: all consistent mathematical structures "exist" but none is distinguished as actual.
 
-2. **L₃ + A without I∞:** Constraint and actuality exist, but there is no domain of configurations for A to operate on. A marks something as obtaining, but "something" has no content. The result is actuality without differentiation—a single undifferentiated fact, not a structured world.
+2. **L₃ + A without I∞:** Constraint and actuality exist, but there is no domain of configurations for A to operate on. A marks something as obtaining, but "something" has no content. The result is actuality without differentiation—a single undifferentiated fact, not a structured world. This case also establishes the independence of I∞ from L₃: logical constraint alone does not generate the domain it constrains. L₃ presupposes a space of configurations to filter; I∞ supplies that space and cannot be derived from L₃ without circularity.
 
 3. **I∞ + A without L₃:** Possibility space and actuality exist, but there is no constraint on what can obtain. A could mark contradictory configurations, destroying the identity conditions required for determinate existence. The result is not a coherent world but a chaos in which nothing is stably what it is.
 
@@ -362,7 +362,7 @@ The five steps above establish directly that A_Ω ⊆ L₃(I∞): whatever is ac
 
 ### 6.2 Status of the Bridge Equation
 
-The bridge equation is an argued metaphysical identity expressing structural coincidence: A_Ω and L₃(I∞) pick out the same domain by different conceptual routes, and the five-step argument together with the plenitude argument above establish that neither domain extends beyond the other. This is structural coincidence, not logical entailment in the narrow sense — the warrant is transcendental, not axiomatic. A critic who holds that A could systematically exclude some L₃-admissible configurations from the actualized domain occupies a coherent logical position, but an unmotivated one: such exclusion would require a further constraint on A beyond L₃-admissibility, which would entail that L₃ is not the complete admissibility criterion — contradicting the result of §2. In the absence of any such additional constraint, the identity stands. The equation is not:
+The bridge equation is an argued metaphysical identity expressing structural coincidence: A_Ω and L₃(I∞) pick out the same domain by different conceptual routes, and the five-step argument together with the plenitude argument above establish that neither domain extends beyond the other. This is structural coincidence, not logical entailment in the narrow sense — the warrant is transcendental, not axiomatic. A critic who holds that A could systematically exclude some L₃-admissible configurations from the actualized domain occupies a coherent logical position, but an unmotivated one: such exclusion would require a further constraint on A beyond L₃-admissibility, which would entail that L₃ is not the complete admissibility criterion — contradicting the result of §2. In the absence of any such additional constraint, and given the plenitude premise established in §6.1, the identity holds. The equation is not:
 
 - **A definition:** We are not stipulating that A_Ω means L₃(I∞). We are arguing that the structure of actuality, given the primitives, coincides with this characterization.
 - **A formal theorem:** The argument is transcendental, not axiomatic. Formal verification can establish the internal consistency of the derivation chain, but the metaphysical warrant comes from the transcendental arguments of Sections 2–4.
@@ -659,6 +659,8 @@ The formalization demonstrates that the physics reconstruction (Part II) is inte
 **da Costa, N. C. A., & de Ronde, C.** (2013). The paraconsistent logic of quantum superpositions. *Foundations of Physics*, 43(7), 845–858. https://doi.org/10.1007/s10701-013-9721-9
 
 **Floridi, L.** (2011). *The Philosophy of Information*. Oxford University Press. https://doi.org/10.1093/acprof:oso/9780199232383.001.0001
+
+**Fine, K.** (2012). Guide to ground. In F. Correia & B. Schnieder (Eds.), *Metaphysical Grounding: Understanding the Structure of Reality* (pp. 37–80). Cambridge University Press.
 
 **Hardy, L.** (2001). Quantum theory from five reasonable axioms. *arXiv preprint quant-ph/0101012*. https://arxiv.org/abs/quant-ph/0101012
 
