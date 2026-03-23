@@ -166,6 +166,16 @@ claims:
         result: FAIL
         score: 0.46
         trigger: "On-demand (first live MMR demonstration)"
+      - issue: 54
+        date: "2026-03-23"
+        result: FAIL
+        score: 0.66
+        trigger: "Re-run 1 (after LRT-MASTER restructuring)"
+      - issue: 54
+        date: "2026-03-23"
+        result: PASS
+        score: 0.85
+        trigger: "Re-run 2 (after REMAINING=0, EXTERNAL reclassification)"
 
   QM-002:
     name: "Independent Composition (H2)"
