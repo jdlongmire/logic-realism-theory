@@ -865,17 +865,20 @@ statistics:
     MEDIUM: 10
     HIGH: 6
   lean_axiom_count:
-    # Updated 2026-03-23 from ThinxS build report
+    # Updated 2026-03-23 (post ThinxS SEP001/HSA001 analysis)
     last_updated: "2026-03-23"
     total: 22
     primitive: 3      # I, I_infinite, bridge_principle
-    external: 12      # Gleason, Stone, Hardy, CDP, etc.
-    remaining: 7      # derivation targets
+    external: 14      # +2 reclassified: product_effects_separate_states, hamiltonian_isSelfAdjoint
+    remaining: 5      # -2 reclassified to EXTERNAL
     sorries: 0
     build_jobs: 2491
     build_status: SUCCESS
     previous_total: 31   # 2026-03-20
     delta: -9
+    # Reclassifications 2026-03-23:
+    # product_effects_separate_states → EXTERNAL (content of tomographic completeness from Hardy/CDP/MM)
+    # hamiltonian_isSelfAdjoint → EXTERNAL (physical input: real energy spectrum requirement)
   coverage:
     step0: 100%
     step1: 100%
