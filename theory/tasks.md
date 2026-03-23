@@ -14,7 +14,13 @@ Tasks are processed sequentially. Mark completed tasks with `[x]` prefix.
 
 ## Active Tasks
 
-(None)
+- [ ] **LEAN-BUILD-002**: Final baseline build report — post all 2026-03-23 changes
+  - Type: lean_build
+  - Target: docs/formalization/build-reports/build-report-20260323-final.md
+  - Supports: M1 TAB Submission (publication evidence), MMR #54 closure
+  - Details: Run full lake build. Expected: 19 axioms (PRIMITIVE:3, EXTERNAL:16, REMAINING:0), 0 sorries.
+    This is the canonical formalization state for the TAB submission. Post summary to issue #54.
+
 
 
 
