@@ -853,17 +853,29 @@ chains:
 # ============================================================
 
 statistics:
-  total: 59  # +5 Gleason/MaxEnt chain (QM-049 to QM-053)
+  total: 59
   by_status:
-    VERIFIED: 26   # +2 (QM-049, frame functions from 3FLL)
-    DERIVED: 16    # +2 (QM-052 MaxEnt, QM-053 Born-Gleason-MaxEnt)
+    VERIFIED: 26
+    DERIVED: 16
     AXIOMATIZED: 11
-    IMPORTED: 6    # +2 (QM-050 Gleason, QM-051 von Neumann entropy)
+    IMPORTED: 6
     OPEN: 2
   by_risk:
     LOW: 38
     MEDIUM: 10
     HIGH: 6
+  lean_axiom_count:
+    # Updated 2026-03-23 from ThinxS build report
+    last_updated: "2026-03-23"
+    total: 22
+    primitive: 3      # I, I_infinite, bridge_principle
+    external: 12      # Gleason, Stone, Hardy, CDP, etc.
+    remaining: 7      # derivation targets
+    sorries: 0
+    build_jobs: 2491
+    build_status: SUCCESS
+    previous_total: 31   # 2026-03-20
+    delta: -9
   coverage:
     step0: 100%
     step1: 100%
