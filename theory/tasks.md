@@ -14,7 +14,29 @@ Tasks are processed sequentially. Mark completed tasks with `[x]` prefix.
 
 ## Active Tasks
 
-*No active tasks.*
+- [ ] **LEAN-PROOF-CPH001**: Prove QuantumStateSpace.ofCPH from CPHStructure
+  - Type: lean_proof
+  - Target: formalization/LrtFormalization/Step4/Hardy.lean
+  - Supports: QM-003 / step4_hilbert_space reduction
+  - Details: Replace axiom `QuantumStateSpace.ofCPH`. The CPHStructure from Step3 already
+    contains the Hilbert space data — this should be a straightforward type construction.
+    Replace: `QuantumStateSpace.ofCPH`
+    ```lean
+    def QuantumStateSpace.ofCPH (cph : CPHStructure) : QuantumStateSpace where
+      H := cph.H
+    ```
+    If CPHStructure contains the InnerProductSpace/CompleteSpace instances, this may
+    resolve immediately. Check what fields CPHStructure has first. Issue: #54.
+
+- [ ] **LEAN-ISSUE-003**: Assess remaining 4 HARD axioms for Mathlib unbounded operator support
+  - Type: lean_build
+  - Target: docs/formalization/build-reports/mathlib-assessment-20260323.md
+  - Supports: hamiltonian_generates_unitary, hamiltonian_generates_group_mul, schrodinger_from_stone, step4_hilbert_space
+  - Details: Search Mathlib for: (1) SelfAdjoint unbounded operator theory, (2) StronglyMeasurable
+    unitary groups, (3) Stone's theorem statement in Mathlib (look for `isSelfAdjoint_generator`
+    or similar). Report what exists vs what is missing. This will determine whether the 4 HARD
+    axioms are reducible or should be reclassified as EXTERNAL. Issue: #54.
+
 
 
 
