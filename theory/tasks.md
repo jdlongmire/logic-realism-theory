@@ -14,47 +14,36 @@ Tasks are processed sequentially. Mark completed tasks with `[x]` prefix.
 
 ## Active Tasks
 
-- [ ] **LEAN-PROOF-SEP001**: Prove product_effects_separate_states from Operational Determinacy + I∞ structure
-  - Type: lean_proof
-  - Target: formalization/LrtFormalization/Step3_LocalTomography.lean
-  - Supports: QM-001 (separation theorem — critical for MMR #54 PASS)
-  - Details: Replace axiom `product_effects_separate_states`. Issue: #54.
-    The axiom states: if two bipartite states agree on all local product-effect statistics, they are equal.
-    This is the formal separation theorem. Approach: use the distinguishability metric D from I∞ —
-    states are identical iff D=0, D is defined as sup over product measurements, so agreement on
-    all product effects forces D=0, forces identity. May need to bridge through the `gleason_uniqueness_states`
-    theorem already proven in Step3_LocalTomography.lean:425.
-    Replace: `product_effects_separate_states`
-    ```lean
-    theorem product_effects_separate_states (sys : BipartiteSystem) (pep : ProductEffectProb sys) :
-        ∀ (ρ σ : sys.AB.State),
-          (∀ (e : ProductEffect sys), pep.prob ρ e = pep.prob σ e) → ρ = σ := by
-      intro ρ σ h_same_stats
-      -- Use gleason_uniqueness_states which already derives state equality
-      -- from equal measurement statistics via Gleason's theorem
-      exact gleason_uniqueness_states sys pep ρ σ (fun e => h_same_stats ⟨e, rfl⟩)
-    ```
-
-- [ ] **LEAN-PROOF-HSA001**: Prove hamiltonian_isSelfAdjoint via construction
-  - Type: lean_proof
-  - Target: formalization/LrtFormalization/Step9_EnergyAction.lean
-  - Supports: QM-042 (Hamiltonian self-adjointness)
-  - Details: Replace axiom `hamiltonian_isSelfAdjoint`. The Hamiltonian is defined as the
-    generator of the unitary group. In the bounded case, Stone's theorem gives a self-adjoint
-    generator directly. Approach: construct H as self-adjoint by definition using Mathlib's
-    `IsSelfAdjoint` and the existing `hamiltonian` structure.
-    Replace: `hamiltonian_isSelfAdjoint`
-    ```lean
-    theorem hamiltonian_isSelfAdjoint : IsSelfAdjoint (hamiltonian : H →L[ℂ] H) := by
-      exact hamiltonian.self_adjoint
-    ```
-
 *No active tasks.*
 
 
 
 
 ## Completed Tasks
+- [x] **LEAN-PROOF-SEP001**: Analysis of product_effects_separate_states *(completed 2026-03-23)*
+  - Result: **NOT DERIVABLE** — circular dependency detected
+  - Analysis: The suggested approach using `gleason_uniqueness_states` won't work because:
+    1. `gleason_uniqueness_states` signature: `∀ (P : State → ℝ), P ρ = P σ` → `ρ = σ`
+    2. `product_effects_separate_states` signature: `∀ (e : ProductEffect), prob ρ e = prob σ e` → `ρ = σ`
+    3. To bridge these, we need: product effect agreement → all-function agreement
+    4. But `product_effects_generate_projectors` proves that direction **using** `product_effects_separate_states` itself
+  - Verdict: This is a Tier 2 axiom (external physics import). It represents the **content** of tomographic completeness — the claim that local measurements are informationally complete. This is the core result from Hardy/CDP/Masanes-Müller that cannot be derived from LRT primitives alone.
+  - Recommendation: Retain as EXTERNAL axiom with clear documentation
+
+- [x] **LEAN-PROOF-HSA001**: Analysis of hamiltonian_isSelfAdjoint *(completed 2026-03-23)*
+  - Result: **NOT DERIVABLE** as suggested — `hamiltonian` is an axiom, not a structure
+  - Analysis: The suggested proof `exact hamiltonian.self_adjoint` assumes `hamiltonian` has a `.self_adjoint` field, but `hamiltonian` is declared as:
+    ```lean
+    axiom hamiltonian : H →L[ℂ] H
+    ```
+    It has no fields — it's a pure axiom.
+  - Options:
+    1. **Refactor:** Define `SelfAdjointOperator` structure, make `hamiltonian` of that type → significant architecture change
+    2. **Stone's theorem approach:** Add axiom that the unitary group has a self-adjoint generator → still requires axiom
+    3. **Accept as physical input:** Hamiltonian self-adjointness (energy eigenvalues are real) is a physical constraint, not derivable from logic
+  - Verdict: This is a root axiom for QM dynamics. Self-adjointness ensures unitary evolution and real energy spectrum. It should remain as axiom with clear physics justification.
+  - Recommendation: Retain as ROOT axiom (physical input)
+
 - [x] **LEAN-BUILD-001**: Full Lean build report *(completed 2026-03-23)*
   - Result: SUCCESS (2491 jobs, 22 axioms, 0 sorries)
   - Report: docs/formalization/build-reports/build-report-20260323.md
