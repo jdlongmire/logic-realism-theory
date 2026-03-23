@@ -221,3 +221,41 @@ Activate hypercritical mode when encountering:
 - Sanity Check Protocol: Run after every track completion
 - Research Philosophy: Core thesis A=L(I) non-negotiable unless no_other_path criteria met
 - Session Logging: Update progressively, push to GitHub at milestones
+---
+
+## Multi-Model Review (MMR) Protocol
+
+**Full spec:** `docs/MMR-PROTOCOL.md`
+
+### Summary
+
+Structured adversarial review using a fixed three-model panel before any stage gate. Replaces ad hoc LLM consultation.
+
+### Panel
+
+| Model | Role |
+|-------|------|
+| Claude Opus 4.6 | Philosophical Coherence + Circularity |
+| GPT-5.4 | Formal/Mathematical Rigor |
+| Gemini 3.1 Pro | Literature + Competing Frameworks |
+| Claude Sonnet 4.6 | Synthesis + Scoring |
+
+### Mandatory Triggers
+
+- Theory → Lean gate (any ARGUED claim)
+- Publication draft gate (TAB, MASTER sections)
+- New open problem issues
+
+### Quality Threshold
+
+Consensus score ≥ **0.70** across five dimensions: Logical Validity, Derivation Completeness, Circularity, Epistemic Honesty, Falsifiability.
+
+Score < 0.70 → claim demoted; action items generated; re-review required before proceeding.
+
+### Output
+
+Each review produces a GitHub Issue (template: `.github/ISSUE_TEMPLATE/mmr.md`) labeled `multi-model-review` + `mmr:pass` or `mmr:fail`. Result recorded in `claims.yaml` under the claim's `mmr` field.
+
+### How to Initiate
+
+Tell Perplexity Computer: *"Run MMR on [claim ID / section]"* — the full parallel review runs automatically and the issue is filed.
