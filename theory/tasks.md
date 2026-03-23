@@ -14,22 +14,21 @@ Tasks are processed sequentially. Mark completed tasks with `[x]` prefix.
 
 ## Active Tasks
 
-- [ ] **LEAN-BUILD-001**: Run full Lean build and report current status
-  - Type: lean_build
-  - Target: docs/formalization/build-reports/build-report-20260323.md
-  - Supports: QM-001 (separation theorem baseline), MMR #54
-  - Details: Run lake build in formalization/, report axiom count, sorry count, errors. Post summary to issue #54.
-
-- [ ] **LEAN-PROOF-OPN006**: Derive projection contraction from Mathlib (OPN-006)
-  - Type: lean_proof
-  - Target: formalization/LrtFormalization/Step6_BornRule.lean
-  - Supports: QM-025 (axiom → theorem reduction)
-  - Details: Replace axiom projection_contraction with Mathlib proof. Replace: `projection_contraction`. Issue: #54.
+*No active tasks.*
 
 
 
 
 ## Completed Tasks
+- [x] **LEAN-BUILD-001**: Full Lean build report *(completed 2026-03-23)*
+  - Result: SUCCESS (2491 jobs, 22 axioms, 0 sorries)
+  - Report: docs/formalization/build-reports/build-report-20260323.md
+  - Comment: https://github.com/jdlongmire/logic-realism-theory/issues/55#issuecomment-4112797909
+
+- [x] **LEAN-PROOF-OPN006**: Projection contraction proof *(completed 2026-03-23)*
+  - Result: ALREADY COMPLETE — `proj_norm_le` proven in Step6_BornRule.lean:364-389
+  - The requested axiom `projection_contraction` does not exist; equivalent theorem already proven via Cauchy-Schwarz
+
 - [x] **S14**: Boolean Spectrum — Derive eigenvalue restriction from actualization semantics *(completed 2026-03-13)*
 - [x] **S14**: Boolean Spectrum — Derive eigenvalue restriction from actualization semantics *(completed 2026-03-13)*
 - [x] **S13**: Field Selection (K=2) — Derive complex numbers from Hardy axioms and L₃ *(completed 2026-03-13)*
