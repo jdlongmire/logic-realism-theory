@@ -160,6 +160,12 @@ claims:
     file: Step3_LocalTomography.lean
     lines: "322-339"
     dependencies: ["ONT-001", "LOG-003", "ONT-004"]
+    mmr:
+      - issue: 54
+        date: "2026-03-23"
+        result: FAIL
+        score: 0.46
+        trigger: "On-demand (first live MMR demonstration)"
 
   QM-002:
     name: "Independent Composition (H2)"
