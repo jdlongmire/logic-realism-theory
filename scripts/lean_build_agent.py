@@ -25,8 +25,9 @@ from typing import Optional
 # Configuration (mirrors physics_agent.py paths)
 # ─────────────────────────────────────────────
 
-LRT_REPO = Path("/media/jdlongmire/Macro-Drive-2TB/GitHub_Repos/logic-realism-theory")
-FORMALIZATION_DIR = LRT_REPO / "formalization"
+# Resolve repo root relative to this script (scripts/ is one level below repo root)
+LRT_REPO = Path(__file__).parent.parent.resolve()
+FORMALIZATION_DIR = LRT_REPO / "formalization"  # lake build runs here
 BUILD_REPORTS_DIR = LRT_REPO / "docs" / "formalization" / "build-reports"
 LEAN_SRC_DIR = FORMALIZATION_DIR / "LrtFormalization"
 
