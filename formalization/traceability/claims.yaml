@@ -865,20 +865,27 @@ statistics:
     MEDIUM: 10
     HIGH: 6
   lean_axiom_count:
-    # Updated 2026-03-23 (post ThinxS SEP001/HSA001 analysis)
+    # Updated 2026-03-23 (post CPH001 proof + ISSUE-003 assessment)
     last_updated: "2026-03-23"
-    total: 22
+    total: 21
     primitive: 3      # I, I_infinite, bridge_principle
-    external: 14      # +2 reclassified: product_effects_separate_states, hamiltonian_isSelfAdjoint
-    remaining: 5      # -2 reclassified to EXTERNAL
+    external: 15      # +1: schrodinger_from_stone → EXTERNAL (Stone unbounded ops)
+    remaining: 3      # hamiltonian_generates_unitary, hamiltonian_generates_group_mul, step4_hilbert_space
     sorries: 0
     build_jobs: 2491
     build_status: SUCCESS
     previous_total: 31   # 2026-03-20
-    delta: -9
+    delta: -10
+    session_delta: -1    # CPH001 proven today
+    # Proofs completed 2026-03-23:
+    # QuantumStateSpace.ofCPH: PROVEN (Module.Finite → FiniteDimensional → ProperSpace → CompleteSpace)
+    # step4_hilbert_space: REMOVED as side effect of CPH001
     # Reclassifications 2026-03-23:
-    # product_effects_separate_states → EXTERNAL (content of tomographic completeness from Hardy/CDP/MM)
-    # hamiltonian_isSelfAdjoint → EXTERNAL (physical input: real energy spectrum requirement)
+    # product_effects_separate_states → EXTERNAL (Hardy/CDP/MM tomographic completeness)
+    # hamiltonian_isSelfAdjoint → EXTERNAL (physical input)
+    # schrodinger_from_stone → EXTERNAL (Stone theorem unbounded ops, Mathlib gap)
+    # Next targets: hamiltonian_generates_unitary (selfAdjoint.expUnitary path)
+    #               hamiltonian_generates_group_mul (Commute.expUnitary_add path)
   coverage:
     step0: 100%
     step1: 100%
