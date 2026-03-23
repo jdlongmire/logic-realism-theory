@@ -14,6 +14,41 @@ Tasks are processed sequentially. Mark completed tasks with `[x]` prefix.
 
 ## Active Tasks
 
+- [ ] **LEAN-PROOF-SEP001**: Prove product_effects_separate_states from Operational Determinacy + I∞ structure
+  - Type: lean_proof
+  - Target: formalization/LrtFormalization/Step3_LocalTomography.lean
+  - Supports: QM-001 (separation theorem — critical for MMR #54 PASS)
+  - Details: Replace axiom `product_effects_separate_states`. Issue: #54.
+    The axiom states: if two bipartite states agree on all local product-effect statistics, they are equal.
+    This is the formal separation theorem. Approach: use the distinguishability metric D from I∞ —
+    states are identical iff D=0, D is defined as sup over product measurements, so agreement on
+    all product effects forces D=0, forces identity. May need to bridge through the `gleason_uniqueness_states`
+    theorem already proven in Step3_LocalTomography.lean:425.
+    Replace: `product_effects_separate_states`
+    ```lean
+    theorem product_effects_separate_states (sys : BipartiteSystem) (pep : ProductEffectProb sys) :
+        ∀ (ρ σ : sys.AB.State),
+          (∀ (e : ProductEffect sys), pep.prob ρ e = pep.prob σ e) → ρ = σ := by
+      intro ρ σ h_same_stats
+      -- Use gleason_uniqueness_states which already derives state equality
+      -- from equal measurement statistics via Gleason's theorem
+      exact gleason_uniqueness_states sys pep ρ σ (fun e => h_same_stats ⟨e, rfl⟩)
+    ```
+
+- [ ] **LEAN-PROOF-HSA001**: Prove hamiltonian_isSelfAdjoint via construction
+  - Type: lean_proof
+  - Target: formalization/LrtFormalization/Step9_EnergyAction.lean
+  - Supports: QM-042 (Hamiltonian self-adjointness)
+  - Details: Replace axiom `hamiltonian_isSelfAdjoint`. The Hamiltonian is defined as the
+    generator of the unitary group. In the bounded case, Stone's theorem gives a self-adjoint
+    generator directly. Approach: construct H as self-adjoint by definition using Mathlib's
+    `IsSelfAdjoint` and the existing `hamiltonian` structure.
+    Replace: `hamiltonian_isSelfAdjoint`
+    ```lean
+    theorem hamiltonian_isSelfAdjoint : IsSelfAdjoint (hamiltonian : H →L[ℂ] H) := by
+      exact hamiltonian.self_adjoint
+    ```
+
 *No active tasks.*
 
 
