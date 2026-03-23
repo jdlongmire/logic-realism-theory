@@ -131,6 +131,18 @@ The answer is no, and the reason goes beyond mere representational limits. The a
 
 This is not a claim about the limits of thought but about the conditions for being. Epistemic necessity tracks transcendental necessity in this case because the very features that make L₃ indispensable for thought (the requirement of stable identity, the contrast between truth and falsity) are the same features required for determinate existence. The constraints are not parallel but identical: what cannot be coherently represented cannot obtain, not because representation limits reality, but because both representation and reality require the same structural conditions.
 
+### 2.4.1 The Stroud Objection and LRT's Response
+
+Stroud's classic discussion of transcendental arguments names the central problem directly: the substitution objection ([Barry Stroud, 1968, as cited in JSTOR metadata](https://www.jstor.org/stable/43046610)). A transcendental argument may show that we **must think** of experience or reality under certain conditions, yet that conclusion does not by itself show that reality **itself** has those conditions. In standard form, then, transcendental arguments secure epistemic necessity—conditions for intelligible representation—not ontological necessity.
+
+That objection has real force, and TAB should grant it. If the conclusion were only that we cannot represent reality without presupposing L₃, then the move from representational indispensability to mind-independent being would remain illicit. Stroud's gap appears wherever there is a coherent separation between the conditions under which something can be represented and the conditions under which it can be.
+
+LRT's response is that, in the present case, the relevant gap does not hold. TAB does not infer ontology from a merely cognitive constraint. It argues that the specific features constrained by L₃—determinacy and stable identity conditions—are constitutive of being as such. A configuration that violates non-contradiction does not merely evade representation; it fails to have the identity conditions required to be anything at all. The issue is not access to being but the constitution of being. For determinate identity, there is no residual space between "conditions for representation" and "conditions for being": to be determinate just is to possess the properties that make a thing what it is, and L₃ specifies those properties.
+
+What remains is a live metaphysical dissent. A critic may hold that being outstrips all possible determination—radical ontic transcendence. That position is coherent. TAB contests it rather than decisively refuting it, and does so in the idiom of constitutive grounding rather than Kantian synthetic a priori ([Kit Fine, *Guide to Ground*](https://www.cambridge.org/core/books/metaphysical-grounding/guide-to-ground/3C2135AA04D01F8821602F4667F56C1C)).
+
+**Mark:** ARGUED
+
 ### 2.5 Engagement with Dialetheism
 
 A sophisticated objection comes from dialetheist logicians (Priest 2006), who argue that some contradictions are true. If dialetheism is coherent, does it undermine the transcendental necessity of L₃?
@@ -342,9 +354,13 @@ The argument proceeds in five steps:
 
 The difference from a naive formulation is subtle but philosophically important: step 3 does not presuppose the conclusion but derives it from the constraint structure established in Section 2.
 
+**The Equality Direction: A Plenitude Argument**
+
+The five steps above establish directly that A_Ω ⊆ L₃(I∞): whatever is actualized is L₃-admissible, since contradiction cannot obtain. This yields one inclusion direction. The equality A_Ω = L₃(I∞) requires the reverse inclusion: L₃(I∞) ⊆ A_Ω — that every L₃-admissible configuration of I∞ falls within the actualized domain. The argument for this direction proceeds as follows. I∞ is defined (§3) as the complete space of all representable configurations whose mutual distinguishability is L₃-admissible. A operates over all of I∞; there is nothing outside it (§5.2). For any configuration c ∈ L₃(I∞), c satisfies the sole admissibility criterion — conformity with L₃ — and inhabits the only domain over which A operates. There is therefore no coherent ground on which A could systematically exclude c from the actualized domain. Exclusion would require some further constraint beyond L₃ that disqualifies c, but no such constraint exists within the primitive ontology χ: L₃ is the complete admissibility criterion, and I∞ is the exhaustive possibility space. The claim is not that all admissible configurations are simultaneously actual in the sense of concurrent physical instantiation; A selects, and temporal or modal structure may distribute actualizations. The claim is structural: A_Ω and L₃(I∞) coincide as domains because the two characterizations — "what can obtain" and "what is L₃-admissible in I∞" — pick out the same totality. What can obtain IS what is L₃-admissible in I∞, and nothing less. [Epistemic status: ARGUED]
+
 ### 6.2 Status of the Bridge Equation
 
-The bridge equation is an argued metaphysical identity. It is not:
+The bridge equation is an argued metaphysical identity expressing structural coincidence: A_Ω and L₃(I∞) pick out the same domain by different conceptual routes, and the five-step argument together with the plenitude argument above establish that neither domain extends beyond the other. This is structural coincidence, not logical entailment in the narrow sense — the warrant is transcendental, not axiomatic. A critic who holds that A could systematically exclude some L₃-admissible configurations from the actualized domain occupies a coherent logical position, but an unmotivated one: such exclusion would require a further constraint on A beyond L₃-admissibility, which would entail that L₃ is not the complete admissibility criterion — contradicting the result of §2. In the absence of any such additional constraint, the identity stands. The equation is not:
 
 - **A definition:** We are not stipulating that A_Ω means L₃(I∞). We are arguing that the structure of actuality, given the primitives, coincides with this characterization.
 - **A formal theorem:** The argument is transcendental, not axiomatic. Formal verification can establish the internal consistency of the derivation chain, but the metaphysical warrant comes from the transcendental arguments of Sections 2–4.
@@ -391,6 +407,8 @@ John Archibald Wheeler's "It from Bit" proposal suggested that physical reality 
 
 The proposal captured an important insight but remained heuristic. Wheeler did not provide a formal account of the mechanism through which informational potential becomes determinate physical states.
 
+Building directly on Wheeler's program, Zeilinger (1999) advanced a more precise formulation, arguing that an elementary quantum system carries exactly one bit of information. This provided a foundational principle for quantum mechanics by quantifying the information content of physical systems. However, TAB takes a fundamentally different approach. Instead of quantifying information as discrete bits carried by elementary systems, Logic Realism Theory (LRT) characterizes the logical structure of the admissibility filter itself. By treating logical constraint (L₃) as the prior condition for any informational actualization, TAB makes a stronger, more general ontological claim that does not depend on specific quantitative measures of information.
+
 Within TAB the distinction becomes explicit. Informational possibility is represented by the total informational domain I∞, the space of all structured distinctions. Physical actuality corresponds to the domain of configurations that obtain, A_Ω.
 
 The transition between these domains is governed by the prescriptive constraint structure of the three fundamental laws of logic L₃. The Bridge Identity expresses the condition under which informational configurations qualify as actual:
@@ -425,7 +443,7 @@ In this framework informational structure precedes any specific physical geometr
 
 ### 7.4 TAB within the Logic Realism Tradition
 
-The ontological commitments of TAB also place it within a broader philosophical orientation sometimes described as **Logic Realism**, the view that logical structure is not merely descriptive of thought but prescriptive for being itself (Tahko 2014).
+The ontological commitments of TAB also place it within a broader philosophical orientation sometimes described as **Logic Realism**, the view that logical structure is not merely descriptive of thought but prescriptive for being itself (Tahko 2014). Tahko (2014) surveys the logical realism debate and its relation to metaphysical necessity; the present paper uses "Logic Realism" in the more specific sense of L₃ as constitutive constraint, which goes beyond Tahko's survey position.
 
 In many metaphysical frameworks the laws of logic function as rules governing reasoning about the world. Logic constrains inference but does not determine the structure of reality. Logic Realism reverses this priority. Logical principles express the minimal structural conditions required for anything to exist in a determinate way.
 
@@ -577,7 +595,7 @@ The turnstile (⊢) is adapted from its use in formal logic, where it signifies 
 
 ## Appendix C: Formalization Status
 
-The ontological framework presented in this paper has been partially formalized in Lean 4. The formalization project verifies the logical structure of the reconstruction chain that proceeds from the primitives established here. This appendix summarizes the boundary between transcendental argumentation and machine-verified derivation. Current status (March 2026): 22 axioms, 0 unresolved proof obligations (sorries), representing a 50% reduction from the initial 44 axioms.
+The ontological framework presented in this paper has been partially formalized in Lean 4. The formalization project verifies the logical structure of the reconstruction chain that proceeds from the primitives established here. This appendix summarizes the boundary between transcendental argumentation and machine-verified derivation. Current status (March 2026): 19 axioms, 0 unresolved proof obligations (sorries), representing a 57% reduction from the initial 44 axioms. Axiom breakdown: PRIMITIVE 3 (irreducible ontological commitments), EXTERNAL 16 (peer-reviewed mathematics imported with citation), REMAINING 0 (all derivation targets resolved).
 
 ### What Is Formalized
 
@@ -588,7 +606,7 @@ X → A_Ω → Determinate Identity → Local Tomography → ℂℋ →
 PVM → Born Rule → Unitarity → Time → Schrödinger
 ```
 
-Each step is implemented as a separate module with explicit dependencies. The current build (2026-03-20) compiles with zero errors and zero unresolved proof obligations.
+Each step is implemented as a separate module with explicit dependencies. The current build (2026-03-23) compiles with zero errors and zero unresolved proof obligations.
 
 ### The Formalization Boundary
 
@@ -632,6 +650,8 @@ The formalization demonstrates that the physics reconstruction (Part II) is inte
 
 ## References
 
+**Cassam, Q.** (1987). Transcendental arguments, transcendental synthesis and transcendental idealism. *Philosophical Quarterly*, 37(149), 355–378.
+
 **Chiribella, G., D'Ariano, G. M., & Perinotti, P.** (2011). Informational derivation of quantum theory. *Physical Review A*, 84(1), 012311. https://doi.org/10.1103/PhysRevA.84.012311
 
 **da Costa, N. C. A., & de Ronde, C.** (2013). The paraconsistent logic of quantum superpositions. *Foundations of Physics*, 43(7), 845–858. https://doi.org/10.1007/s10701-013-9721-9
@@ -642,11 +662,17 @@ The formalization demonstrates that the physics reconstruction (Part II) is inte
 
 **Priest, G.** (2006). *In Contradiction: A Study of the Transconsistent* (2nd ed.). Oxford University Press. https://doi.org/10.1093/acprof:oso/9780199263301.001.0001
 
+**Stern, R.** (2000). *Transcendental Arguments and Scepticism*. Oxford University Press.
+
+**Stroud, B.** (1968). Transcendental arguments. *Journal of Philosophy*, 65(9), 241–256.
+
 **Tahko, T. E.** (2014). The metaphysics of logic. In P. Rush (Ed.), *The Metaphysics of Logic* (pp. 1–17). Cambridge University Press.
 
 **Tegmark, M.** (2014). *Our Mathematical Universe: My Quest for the Ultimate Nature of Reality*. Knopf.
 
 **Wheeler, J. A.** (1990). Information, physics, quantum: The search for links. In W. H. Zurek (Ed.), *Complexity, Entropy, and the Physics of Information* (pp. 3–28). Addison-Wesley.
+
+**Zeilinger, A.** (1999). A foundational principle for quantum mechanics. *Foundations of Physics*, 29(4), 631–643.
 
 ---
 
