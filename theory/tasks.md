@@ -14,41 +14,7 @@ Tasks are processed sequentially. Mark completed tasks with `[x]` prefix.
 
 ## Active Tasks
 
-- [ ] **LEAN-PROOF-HGU001**: Prove hamiltonian_generates_unitary via selfAdjoint.expUnitary
-  - Type: lean_proof
-  - Target: formalization/LrtFormalization/Step7_Unitarity.lean
-  - Supports: QM-035 (Unitarity theorem)
-  - Details: Replace axiom `hamiltonian_generates_unitary`. Mathlib has `selfAdjoint.expUnitary`
-    in C*-algebra theory. The Hamiltonian H is self-adjoint (axiom `hamiltonian_isSelfAdjoint`),
-    so U(t) = exp(-i * t * H) should be a unitary operator via this path.
-    First check: does Step7 import `Mathlib.Analysis.CStarAlgebra.Exponential` or similar?
-    Replace: `hamiltonian_generates_unitary`
-    ```lean
-    theorem hamiltonian_generates_unitary (t : ℝ) :
-        ∀ ψ : H, ‖(timeEvolution t) ψ‖ = ‖ψ‖ := by
-      intro ψ
-      have := IsSelfAdjoint.expUnitary (hamiltonian_isSelfAdjoint.smul_real t)
-      exact this.isometric ψ
-    ```
-    Issue: #54.
-
-- [ ] **LEAN-PROOF-HGM001**: Prove hamiltonian_generates_group_mul via Commute.expUnitary_add
-  - Type: lean_proof
-  - Target: formalization/LrtFormalization/Step7_Unitarity.lean
-  - Supports: QM-035 (Unitarity — group composition law)
-  - Details: Replace axiom `hamiltonian_generates_group_mul`. Mathlib has
-    `Commute.expUnitary_add` — for commuting self-adjoint operators, exp(A+B) = exp(A)*exp(B).
-    Since exp(-i*s*H) and exp(-i*t*H) commute (same operator, scalar multiples),
-    U(s+t) = U(s)*U(t) should follow.
-    Replace: `hamiltonian_generates_group_mul`
-    ```lean
-    theorem hamiltonian_generates_group_mul (s t : ℝ) :
-        timeEvolution (s + t) = timeEvolution s * timeEvolution t := by
-      simp [timeEvolution]
-      rw [← neg_add, smul_add]
-      exact (IsSelfAdjoint.commute_expUnitary_smul hamiltonian_isSelfAdjoint s t).expUnitary_add
-    ```
-    Issue: #54.
+(None)
 
 
 
@@ -56,6 +22,20 @@ Tasks are processed sequentially. Mark completed tasks with `[x]` prefix.
 
 
 ## Completed Tasks
+
+- [x] **LEAN-PROOF-HGU001**: Eliminate hamiltonian_generates_unitary axiom *(completed 2026-03-23)*
+  - Result: **SUCCESS** — axiom DELETED (was redundant)
+  - Analysis: The axiom in Step10 used an unfillable placeholder `_h_generates : ∀ t : ℝ, True`.
+    Step7 already had concrete proofs using `time_evolution_family := exp((-Complex.I * t) • hamiltonian)`.
+  - Solution: Refactored Step10 to delegate to Step7's proven theorems:
+    - `hamiltonian_generates_unitary t` now returns `step7_unitarity t`
+    - `hamiltonian_generates_group_mul s t` now returns `evolution_group_composition s t`
+  - **Axiom count: 21 → 19**
+  - Build: SUCCESS (2491 jobs, 19 axioms, 0 sorries)
+
+- [x] **LEAN-PROOF-HGM001**: Eliminate hamiltonian_generates_group_mul axiom *(completed 2026-03-23)*
+  - Result: **SUCCESS** — axiom DELETED (bundled with HGU001)
+  - Same refactoring as HGU001. Both axioms were redundant abstractions over Step7's concrete proofs.
 
 - [x] **LEAN-PROOF-CPH001**: Derive QuantumStateSpace.ofCPH from CPHStructure *(completed 2026-03-23)*
   - Result: **SUCCESS** — axiom replaced with definition
