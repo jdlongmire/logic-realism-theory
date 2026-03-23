@@ -139,7 +139,7 @@ That objection has real force, and TAB should grant it. If the conclusion were o
 
 LRT's response is that, in the present case, the relevant gap does not hold. TAB does not infer ontology from a merely cognitive constraint. It argues that the specific features constrained by L₃—determinacy and stable identity conditions—are constitutive of being as such. A configuration that violates non-contradiction does not merely evade representation; it fails to have the identity conditions required to be anything at all. The issue is not access to being but the constitution of being. For determinate identity, there is no residual space between "conditions for representation" and "conditions for being": to be determinate just is to possess the properties that make a thing what it is, and L₃ specifies those properties.
 
-What remains is a live metaphysical dissent. A critic may hold that being outstrips all possible determination—radical ontic transcendence. That position is coherent. TAB contests it rather than decisively refuting it, and does so in the idiom of constitutive grounding rather than Kantian synthetic a priori ([Kit Fine, *Guide to Ground*](https://www.cambridge.org/core/books/metaphysical-grounding/guide-to-ground/3C2135AA04D01F8821602F4667F56C1C)).
+What remains is a live metaphysical dissent. A critic may hold that being outstrips all possible determination—radical ontic transcendence. That position is coherent. TAB contests it rather than decisively refuting it, and does so in the idiom of constitutive grounding rather than Kantian synthetic a priori (Fine 2012). This strategy — grounding the ontological conclusion in constitutive necessity rather than synthetic a priori inference — follows the revisionary approach to transcendental arguments developed by Cassam (1987) and Stern (2000), both of whom argue that transcendental arguments can establish objective conclusions when the relevant conditions are genuinely constitutive of the domain rather than merely regulative of thought about it. The present argument claims exactly this: L₃ is constitutive of determinate being, not merely regulative of our reasoning about it, and that is why the Stroud gap does not open.
 
 **Mark:** ARGUED
 
@@ -198,6 +198,8 @@ The argument for completeness proceeds from closure rather than boundlessness:
 This formulation avoids the geometric imagery of boundaries and larger spaces. Completeness is not spatial unboundedness but logical closure: I∞ contains all the distinctions that L₃ permits, and no distinctions that L₃ prohibits. A configuration "outside" I∞ would be a configuration that cannot be distinguished from others in an L₃-admissible way, which is to say, not a configuration at all.
 
 I∞ is complete in the sense of exhausting the domain of possible configurations. Nothing outside I∞ can be actualized because there is nothing outside it to actualize. The completeness of I∞ is not an empirical claim but a conceptual requirement: it is the maximal set of mutually distinguishable configurations under L₃.
+
+The completeness argument is not merely definitional — it proceeds by constructive reductio. Suppose there were a configuration c that is L₃-admissible (satisfies Identity, Non-Contradiction, and Excluded Middle) yet falls outside I∞. By the definition of I∞ as the closure of L₃-admissible distinguishability, c would have to be indistinguishable from every configuration already in I∞. But indistinguishability under L₃ means there is no respect in which c differs from any member of I∞ — which, by Identity, means c is identical to some member of I∞. The supposition that c is outside I∞ while being L₃-admissible is therefore self-undermining: any L₃-admissible configuration that appears to stand outside I∞ is, upon examination, already in it. The closure is genuine, not merely stipulated. *[Epistemic status: ARGUED — the reductio assumes that L₃-admissible distinguishability is the complete criterion for configurational distinctness, which a critic who posits non-L₃ modes of distinction would reject.]*
 
 ### 3.4 The Ontological Status of I∞
 
@@ -622,15 +624,15 @@ This axiom corresponds to the result of Section 6: χ ⊢ A_Ω. The formalizatio
 
 ### Axiom Classification
 
-The formalization uses 22 axioms, classified as:
+The formalization uses 19 axioms, classified as:
 
 | Category | Count | Description |
 |----------|-------|-------------|
 | PRIMITIVE | 3 | Ontological commitments (I, I_infinite, bridge_principle) |
-| EXTERNAL | 19 | Established mathematics (Gleason, Stone, Hardy, etc.) |
-| REMAINING | 0 | All derivable axioms converted to theorems |
+| EXTERNAL | 16 | Established mathematics (Gleason, Stone, Hardy, etc.) |
+| REMAINING | 0 | All post-bridge derivation targets resolved |
 
-The primitive axioms correspond to the transcendental necessities argued in this paper. External axioms are standard mathematical results imported rather than re-proven. This represents a 50% reduction from the initial 44 axioms through systematic derivation work.
+The primitive axioms correspond to the transcendental necessities argued in this paper. External axioms are standard mathematical results imported rather than re-proven — the standard methodology of all quantum reconstruction programs. REMAINING axioms have been reduced to zero through systematic proof construction and honest reclassification of physically-grounded inputs. This represents a 57% reduction from the initial 44 axioms. Note: the Lean formalization verifies the physics reconstruction chain from the bridge principle onward; it does not formalize the transcendental arguments of Sections 2–4, and the bridge_principle axiom represents the boundary between the two.
 
 ### Verification Instructions
 
