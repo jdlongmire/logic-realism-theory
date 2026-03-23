@@ -14,6 +14,18 @@ Tasks are processed sequentially. Mark completed tasks with `[x]` prefix.
 
 ## Active Tasks
 
+- [ ] **LEAN-BUILD-001**: Run full Lean build and report current status
+  - Type: lean_build
+  - Target: docs/formalization/build-reports/build-report-20260323.md
+  - Supports: QM-001 (separation theorem baseline), MMR #54
+  - Details: Run lake build in formalization/, report axiom count, sorry count, errors. Post summary to issue #54.
+
+- [ ] **LEAN-PROOF-OPN006**: Derive projection contraction from Mathlib (OPN-006)
+  - Type: lean_proof
+  - Target: formalization/LrtFormalization/Step6_BornRule.lean
+  - Supports: QM-025 (axiom → theorem reduction)
+  - Details: Replace axiom projection_contraction with Mathlib proof. Replace: `projection_contraction`. Issue: #54.
+
 
 
 
