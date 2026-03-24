@@ -19,6 +19,12 @@ image: /assets/images/lrt-banner.png
 
 <div class="paper-grid">
   <div class="paper-card featured">
+    <h3><a href="{{ site.baseurl }}/articles/subsumption-architecture/">The Subsumption Architecture: LRT as Operating System for Physics</a></h3>
+    <p>How LRT functions as a structural "operating system" for physics, extracting the functional components of Copenhagen, Many-Worlds, Bohmian mechanics, and reconstruction programs while filtering out their ontological conflicts.</p>
+    <div class="meta">March 2026 | Advanced</div>
+    <a href="{{ site.baseurl }}/articles/subsumption-architecture/" class="card-link">Read Article →</a>
+  </div>
+  <div class="paper-card featured">
     <h3><a href="{{ site.baseurl }}/articles/empirical-pillar/">The Empirical Pillar: Nature's Stubborn Refusal to Contradict Herself</a></h3>
     <p>The single most structurally decisive feature of LRT: a century of physics without a contradictory measurement record. Everything else in the theory—the $I_\infty$/$A_\Omega$ distinction, the Born rule derivation, Hilbert space selection—is downstream of this one unrelenting empirical fact.</p>
     <div class="meta">February 2026 | Foundational</div>
