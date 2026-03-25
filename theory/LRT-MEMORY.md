@@ -12,7 +12,7 @@
 | **TAB v2.0** | Foundation | X through bridge equation | **READY FOR SUBMISSION** |
 | **LRT-MASTER v2.0** | Reconstruction | Assumes bridge + R1–R4 + PPC → QM | Pending |
 | **LRT-Formalization-Methods.md** | Methodology | What Lean verifies (and doesn't) | Pending |
-| **LRT-Cosmology.md** | Extension | Information circulation hypothesis | Future |
+| **LRT-Cosmology.md** | Extension | Information circulation hypothesis | **ACTIVE** (2026-03-25) |
 
 ### Bridge Equation Status
 
@@ -473,6 +473,91 @@ Route B is cleaner because it imports well-established results (no-hiding, CDP) 
 4. **OPN-005: Boolean → Purification**
    - Status: Formalized (MEDIUM difficulty)
    - Cleaner K=2 derivation route
+
+---
+
+## LRT Cosmology Development (2026-03-25)
+
+**File:** `theory/LRT-Cosmology.md`
+**Status:** Active development
+**GitHub Project:** https://github.com/users/jdlongmire/projects/4
+
+### Issue #61: Dark Energy as Accumulated Actualization
+
+**Core insight:** Dark energy is not a fundamental constant ($\Lambda$) but accumulated "unabsorbed actualization" from cosmic emitters.
+
+**Complete information cycle formalized:**
+```
+I∞ → A → A_Ω → D → I∞
+```
+
+- **Input:** $I_\infty$ (possibility space)
+- **Process:** $A$ (actualization operator)
+- **Output:** $A_\Omega$ (actual configurations)
+- **Recycling:** $D$ (deactualization at horizons)
+
+**Emitter-source framing:**
+- Micro emitters: any quantum process producing actualization events
+- Macro emitters: stars (~10³⁸ reactions/s each), quasars, accretion disks
+- Observable universe: ~10²⁴ stars × ~10³⁸ = ~10⁶² events/s
+- Cumulative: ~10⁸⁰+ events over cosmic history
+
+**Dark energy = running balance:**
+$$\rho_\Lambda = f(\Gamma_{\text{emission}} - \Gamma_{\text{absorption}})$$
+
+**Black hole deactualization cycle (commit 88c8fa3):**
+- Hawking radiation as deactualization: $A_\Omega \to I_\infty$
+- Black hole evaporation returns information to possibility space
+- Completes the conservation loop (information neither created nor destroyed)
+- Addresses information paradox: information *transformed*, not *lost*
+
+**Solves:**
+- Coincidence problem (why $\rho_\Lambda \sim \rho_m$ today)
+- Information paradox (deactualization returns info to $I_\infty$)
+- "Why this value?" ($\Lambda$ emerges from cosmic history, not brute fact)
+
+### Issue #62: Double-Slit Under LRT
+
+**Key insight:** Actualization is selective — emitter actualizes *some* properties while leaving others in $I_\infty$.
+
+**Photon emission actualizes:**
+- Existence (not vacuum)
+- Frequency $\nu$ (energy)
+- Polarization state
+- Propagation direction
+
+**Remains in $I_\infty$ until absorption:**
+- Exact position during propagation
+- Which slit
+- Detection location
+
+**Why interference occurs:** Only fully actualized properties are determinate. Position remains in possibility space, allowing coherent evolution of disposition structure.
+
+**Electron vs photon:** Same LRT machinery, different kinematics:
+- Electron: $\lambda = h/p = h/\sqrt{2mE}$
+- Photon: $\lambda = c/\nu = hc/E$
+
+**At absorption:** Full actualization occurs — position becomes determinate, wavefunction collapses.
+
+**Cosmology connection:** Non-absorbed photons remain partially actualized, potentially contributing to $\rho_\Lambda$.
+
+### Decomposition Issues
+
+| Issue | Title | Status |
+|-------|-------|--------|
+| #61 | LRT Cosmology: Dark energy as accumulated actualization | Anchor |
+| #62 | Double-slit examined under LRT partial actualization | Open |
+| #63 | Derive w=-1 (negative pressure) from LRT mechanics | Open |
+| #64 | Formalize information circulation cycle | Open |
+| #65 | Derive coincidence problem resolution | Open |
+| #66 | Connect double-slit to CMB photon cosmology | Open |
+
+### Open Derivation Target
+
+**OPN-006: Derive $w = -1$**
+- Why does actualization residue exhibit negative pressure?
+- Needed for cosmological constant equivalence
+- Candidate approaches: dimensional analysis, conservation constraints
 
 ---
 
