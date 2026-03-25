@@ -4,13 +4,13 @@
 
 **To:** Editors, Foundations of Physics
 
-**Re:** Submission of "The Actualization Bridge: Transcendental Foundations of Logic Realism Theory, Part I: Ontological Groundwork"
+**Re:** Submission of "The Transcendental Argument for Being: Foundations of Logic Realism Theory, Part I: Ontological Groundwork"
 
 ---
 
 Dear Editors,
 
-I submit for your consideration the manuscript "The Actualization Bridge: Transcendental Foundations of Logic Realism Theory, Part I: Ontological Groundwork."
+I submit for your consideration the manuscript "The Transcendental Argument for Being: Foundations of Logic Realism Theory, Part I: Ontological Groundwork."
 
 ## Summary
 

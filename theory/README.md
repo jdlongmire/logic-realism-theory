@@ -25,7 +25,7 @@ Logic Realism Theory (LRT) proposes a single ground-level commitment: reality is
 | Document | Description |
 |----------|-------------|
 | **[LRT-MASTER.md](LRT-MASTER.md)** | Canonical unified source: complete 13-step derivation chain |
-| **[TAB-v2.0.md](TAB-v2.0.md)** | Transcendental Argument for the Bridge: metaphysical groundwork |
+| **[TAB-v2.0.md](TAB-v2.0.md)** | Transcendental Argument for Being: metaphysical groundwork |
 | **[LRT-Lean-Proofing-Status.md](LRT-Lean-Proofing-Status.md)** | Current Lean formalization status |
 | **[LRT-Lean-Approach.md](LRT-Lean-Approach.md)** | Formalization methodology |
 | **[lrt-memory.md](lrt-memory.md)** | Project memory for AI agents |

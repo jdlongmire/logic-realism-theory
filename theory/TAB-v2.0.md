@@ -62,13 +62,13 @@ The third observation yields the bridge equation: actuality coincides with the l
 
 $$A_\Omega = L_3(I_\infty)$$
 
-The remainder of this paper justifies these claims. Sections 2–4 establish that each primitive is transcendentally necessary. Section 5 demonstrates their mutual constitution. Section 6 derives the bridge identity. Section 7 situates TAB within information ontology and the Logic Realism tradition. Sections 8–9 draw consequences and conclude.
+The remainder of this paper justifies these claims. Sections 2–4 establish that each primitive is transcendentally necessary. Section 5 demonstrates their mutual constitution. Section 6 derives the bridge equation. Section 7 situates TAB within information ontology and the Logic Realism tradition. Sections 8–9 draw consequences and conclude.
 
 ### 1.6 Division of Labor: TAB and LRT-MASTER
 
-This paper (TAB, Part I) develops the *ontological groundwork* only: the transcendental argument for χ ≡ [L₃ : I∞ : A] and the bridge identity A_Ω = L₃(I∞). No physical formalisms are derived here.
+This paper (TAB, Part I) develops the *ontological groundwork* only: the transcendental argument for χ ≡ [L₃ : I∞ : A] and the bridge equation A_Ω = L₃(I∞). No physical formalisms are derived here.
 
-The *physics reconstruction* proceeds in the companion paper (LRT-MASTER, Part II), which imports the bridge identity as its starting point and derives the full structure of non-relativistic quantum mechanics: complex Hilbert space, projection-valued measures, the Born rule, continuous time, and the Schrödinger equation.
+The *physics reconstruction* proceeds in the companion paper (LRT-MASTER, Part II), which imports the bridge equation as its starting point and derives the full structure of non-relativistic quantum mechanics: complex Hilbert space, projection-valued measures, the Born rule, continuous time, and the Schrödinger equation.
 
 ### 1.5 Method
 
@@ -235,19 +235,19 @@ A is transcendentally necessary because without it, the gap between possibility 
 
 The denial of A would be the claim that possibility and constraint suffice for actuality. But this conflates the conditions for actuality with actuality itself. That a configuration is consistent and distinguishable does not make it actual. Something more is required, and that something is A.
 
-### 4.4 A's Grounding Role and the Bridge Identity
+### 4.4 A's Grounding Role and the Bridge Equation
 
-A potential objection arises from the bridge identity derived below: if A_Ω = L₃(I∞), has A disappeared from the resulting ontology? Is it explanatorily idle?
+A potential objection arises from the bridge equation derived below: if A_Ω = L₃(I∞), has A disappeared from the resulting ontology? Is it explanatorily idle?
 
 The answer requires distinguishing two questions:
 
-1. **What is the structure of the actualized domain?** The bridge identity answers: L₃(I∞). The structural profile of actuality coincides with the L₃-admissible configurations of I∞.
+1. **What is the structure of the actualized domain?** The bridge equation answers: L₃(I∞). The structural profile of actuality coincides with the L₃-admissible configurations of I∞.
 
 2. **Why is there an actualized domain at all?** A answers: because actualization is a primitive fact. Without A, there would be a space of admissible configurations with no fact of the matter about which obtain.
 
-The bridge identity tells us what actuality looks like. A grounds the fact that there is actuality at all. These are different explanatory burdens. The laws of physics describe the structure of physical reality but do not explain why there is physical reality. Similarly, L₃(I∞) describes the structure of what obtains, while A grounds the obtaining itself.
+The bridge equation tells us what actuality looks like. A grounds the fact that there is actuality at all. These are different explanatory burdens. The laws of physics describe the structure of physical reality but do not explain why there is physical reality. Similarly, L₃(I∞) describes the structure of what obtains, while A grounds the obtaining itself.
 
-A is therefore not rendered otiose by the bridge identity. The identity characterizes the domain that A constitutes. A's role is to ground the fact that some domain of configurations obtains; the identity specifies which domain that is, given the constraints.
+A is therefore not rendered otiose by the bridge equation. The identity characterizes the domain that A constitutes. A's role is to ground the fact that some domain of configurations obtains; the identity specifies which domain that is, given the constraints.
 
 ### 4.5 Worked Example: Spin Measurement
 
@@ -261,7 +261,7 @@ To make A's role concrete, consider a spin-1/2 system before and during measurem
 
 **What A does do:** A grounds the fact that one outcome obtains. Without A, the system would remain in superposition indefinitely, and there would be no fact of the matter about outcomes. A is the primitive of obtaining, not the mechanism of selection.
 
-This example illustrates the division of labor. L₃ excludes contradictory outcomes (spin-up and spin-down simultaneously). I∞ supplies the space of possible outcomes. A marks one as actual. The bridge identity, A_Ω = L₃(I∞), says that whatever A marks is an L₃-admissible configuration; it cannot be otherwise.
+This example illustrates the division of labor. L₃ excludes contradictory outcomes (spin-up and spin-down simultaneously). I∞ supplies the space of possible outcomes. A marks one as actual. The bridge equation, A_Ω = L₃(I∞), says that whatever A marks is an L₃-admissible configuration; it cannot be otherwise.
 
 ---
 
@@ -320,7 +320,7 @@ A therefore operates within the space of logically admissible configurations of 
 We now present the core argument in three steps (see Figure 2).
 
 ![Figure 2: Mapping from guiding observations to primitives to core results](figures/LRT-observation-primitive-map.png)
-*Figure 2: The equations-only view. Three observations motivate three primitives, yielding the primitive ontology and bridge identity.*
+*Figure 2: The equations-only view. Three observations motivate three primitives, yielding the primitive ontology and bridge equation.*
 
 **Step 1: The Primitive Ontology**
 
@@ -338,7 +338,7 @@ A_Ω designates the actualized domain—the totality of what obtains. (The subsc
 
 This step is secured by the argument of Section 4: A is the primitive of obtaining, and its operation on I∞ under L₃ constitutes actuality.
 
-**Step 3: The Bridge Identity**
+**Step 3: The Bridge Equation**
 
 $$A_\Omega = L_3(I_\infty)$$
 
@@ -362,22 +362,27 @@ The five steps above establish directly that A_Ω ⊆ L₃(I∞): whatever is ac
 
 ### 6.2 Status of the Bridge Equation
 
-The bridge equation is an argued metaphysical identity expressing structural coincidence: A_Ω and L₃(I∞) pick out the same domain by different conceptual routes, and the five-step argument together with the plenitude argument above establish that neither domain extends beyond the other. This is structural coincidence, not logical entailment in the narrow sense — the warrant is transcendental, not axiomatic. A critic who holds that A could systematically exclude some L₃-admissible configurations from the actualized domain occupies a coherent logical position, but an unmotivated one: such exclusion would require a further constraint on A beyond L₃-admissibility, which would entail that L₃ is not the complete admissibility criterion — contradicting the result of §2. In the absence of any such additional constraint, and given the plenitude premise established in §6.1, the identity holds. The equation is not:
+The bridge equation expresses two related claims that must be distinguished:
 
-- **A definition:** We are not stipulating that A_Ω means L₃(I∞). We are arguing that the structure of actuality, given the primitives, coincides with this characterization.
-- **A formal theorem:** The argument is transcendental, not axiomatic. Formal verification can establish the internal consistency of the derivation chain, but the metaphysical warrant comes from the transcendental arguments of Sections 2–4.
+**Grounding:** χ ⊢ A_Ω
 
-The identity is derived, not stipulated, from the conjunction of three claims established above:
+The primitive ontology χ = [L₃ : I∞ : A] grounds the actualized domain. This is the transcendental claim: actuality exists *in virtue of* the interaction of the three primitives. Without logical constraint, no admissibility conditions. Without the informational domain, nothing to constrain. Without actualization, no transition from possibility to obtaining. The grounding relation (⊢) carries the metaphysical weight of the argument.
 
-1. Only L₃-admissible configurations can obtain (§2).
-2. I∞ exhausts the space of possible configurations (§3).
-3. A operates over I∞ under L₃ constraint (§4–5).
+**Characterization:** A_Ω := L₃(I∞)
 
-Given (i)–(iii), the identity follows necessarily. There is no coherent way to hold the three premises while denying that A_Ω = L₃(I∞). The identity is substantive because its derivation depends on the transcendental arguments for each primitive; it would fail if any premise failed.
+Given the primitives, the actualized domain is *characterized as* the L₃-admissible configurations of I∞. The `:=` notation marks this as constitutive rather than as a discovery of identity between independently-specifiable entities. We are not claiming that A_Ω and L₃(I∞) are two things that turn out to be identical (as with "Hesperus = Phosphorus"). We are specifying what A_Ω is, given the framework.
 
-The notion of identity at stake is structural identity: A_Ω and L₃(I∞) pick out the same domain by different conceptual routes. A_Ω picks it out as "what obtains"; L₃(I∞) picks it out as "the admissible configurations of the possibility space." The claim is that these extensionally coincide, and that this coincidence is necessary given the primitives.
+This two-step structure addresses a natural objection: "Isn't the equation trivially true by definition?" The answer is no. The *grounding* claim is not trivial: that the primitives interact to produce any actualized domain at all is the substantive transcendental result. The characterization makes explicit what structure that domain has.
 
-The bridge equation is the core result of this paper. Everything else in Logic Realism Theory—the reconstruction of quantum mechanics, the interpretational implications—flows from this ground.
+A critic who holds that A could systematically exclude some L₃-admissible configurations from the actualized domain occupies a coherent logical position, but an unmotivated one: such exclusion would require a further constraint on A beyond L₃-admissibility, which would entail that L₃ is not the complete admissibility criterion — contradicting the result of §2. In the absence of any such additional constraint, and given the plenitude premise established in §6.1, the characterization holds.
+
+The bridge equation is therefore:
+
+- **Not a stipulative definition:** We are not merely defining A_Ω to mean L₃(I∞). The grounding claim (χ ⊢ A_Ω) does substantive metaphysical work.
+- **Not a formal theorem:** The argument is transcendental, not axiomatic. Formal verification can establish the internal consistency of the derivation chain, but the metaphysical warrant comes from the transcendental arguments of Sections 2–4.
+- **A grounded characterization:** Given the primitives and their transcendental necessity, the structure of A_Ω is characterized as L₃(I∞).
+
+The bridge equation is the core result of this paper. The grounding relation explains *why* actuality exists; the characterization specifies *what form* it takes. Everything else in Logic Realism Theory — the reconstruction of quantum mechanics, the interpretational implications — flows from this ground.
 
 ### 6.3 The Bridge Lemma
 
@@ -393,13 +398,13 @@ The lemma is not an additional assumption. It follows from the constitutive role
 
 ## 7. Discussion: Locating TAB in Information Ontology and Logic Realism
 
-The transcendental derivation of the Bridge Identity
+The transcendental derivation of the Bridge Equation
 
-$$A_\Omega \equiv L_3(I_\infty)$$
+$$\chi \vdash A_\Omega, \quad A_\Omega := L_3(I_\infty)$$
 
 establishes a prescriptive floor beneath contemporary information-based ontologies of physics.[^1]
 
-[^1]: Throughout §7, the triple bar (≡) marks metaphysical identity of domains, not stipulative definition. The claim is that A_Ω and L₃(I∞) pick out the same domain by different conceptual routes; the identity is derived from the primitives, not posited by fiat. Much recent work proposes that physical reality is informational or mathematical in character. These frameworks often identify informational structure as fundamental but leave unresolved a central question: under what condition does informational possibility become concrete physical actuality?
+[^1]: The notation separates grounding (⊢) from characterization (:=). The grounding claim asserts that the primitive ontology χ explains why an actualized domain exists; the characterization specifies its structure as the L₃-admissible configurations of I∞. This is not a discovery of identity between independently-specifiable entities but a constitutive specification given the primitives. Much recent work proposes that physical reality is informational or mathematical in character. These frameworks often identify informational structure as fundamental but leave unresolved a central question: under what condition does informational possibility become concrete physical actuality?
 
 The TAB framework addresses this gap by identifying the minimal primitives required for determinate being and clarifying the structural relationship between logical constraint, informational possibility, and physical realization. This section situates TAB within the broader landscape of informational metaphysics while also locating it within the philosophical orientation sometimes described as **Logic Realism**, where logical structure is treated as ontologically prior rather than merely epistemic.
 
@@ -413,9 +418,7 @@ Building directly on Wheeler's program, Zeilinger (1999) advanced a more precise
 
 Within TAB the distinction becomes explicit. Informational possibility is represented by the total informational domain I∞, the space of all structured distinctions. Physical actuality corresponds to the domain of configurations that obtain, A_Ω.
 
-The transition between these domains is governed by the prescriptive constraint structure of the three fundamental laws of logic L₃. The Bridge Identity expresses the condition under which informational configurations qualify as actual:
-
-$$A_\Omega \equiv L_3(I_\infty)$$
+The transition between these domains is governed by the prescriptive constraint structure of the three fundamental laws of logic L₃. The Bridge Equation expresses the condition under which informational configurations qualify as actual: grounded by the primitives, the actualized domain is characterized as the L₃-admissible subset of I∞.
 
 Physical reality therefore consists of the informational configurations that satisfy the minimal logical conditions required for determinate being. Informational structure supplies the possible configurations; logical admissibility determines which configurations can obtain.
 
@@ -451,11 +454,7 @@ In many metaphysical frameworks the laws of logic function as rules governing re
 
 TAB develops this position formally. The three logical constraints L₃ are not treated as external rules imposed on an independently existing universe. They constitute the prescriptive conditions that any configuration must satisfy in order to obtain. Logical constraint therefore operates prior to both informational specification and physical instantiation.
 
-Within this framework the informational domain I∞ represents the space of structured distinctions that logical constraint makes intelligible. The actualized domain A_Ω represents those configurations that satisfy the admissibility conditions determined by L₃. The Bridge Identity
-
-$$A_\Omega \equiv L_3(I_\infty)$$
-
-expresses this relationship directly. Logical structure determines the admissible informational configurations capable of appearing as physical reality.
+Within this framework the informational domain I∞ represents the space of structured distinctions that logical constraint makes intelligible. The actualized domain A_Ω represents those configurations that satisfy the admissibility conditions determined by L₃. The Bridge Equation expresses this relationship directly: χ grounds A_Ω, which is characterized as L₃(I∞). Logical structure determines the admissible informational configurations capable of appearing as physical reality.
 
 This positioning clarifies the metaphysical orientation of TAB. The theory does not simply claim that reality is informational or mathematical. It advances the stronger thesis that logical structure is ontologically prior and that informational and physical structures arise within the domain that logical constraint permits.
 
@@ -478,7 +477,7 @@ The interaction of the primitives produces a hierarchical ontology that connects
 5. **Geometry and Physics**
    The structured patterns that emerge within the actualized domain.
 
-The Bridge Identity marks the critical transition within this hierarchy. Logical constraint applied to informational possibility yields the domain within which physical structures can appear.
+The Bridge Equation marks the critical transition within this hierarchy. Logical constraint applied to informational possibility yields the domain within which physical structures can appear.
 
 ### 7.6 Relation to Quantum Reconstruction Programs
 
@@ -500,7 +499,7 @@ This preserves the modal distinction that Tegmark's MUH tends to efface while av
 
 ---
 
-This positioning clarifies the role of the Bridge Identity within contemporary metaphysics of physics. TAB does not merely assert that reality is informational or mathematical. It identifies the minimal transcendental structure required for informational possibility to become determinate physical actuality, situating the theory at the intersection of information ontology and the Logic Realism tradition.
+This positioning clarifies the role of the Bridge Equation within contemporary metaphysics of physics. TAB does not merely assert that reality is informational or mathematical. It identifies the minimal transcendental structure required for informational possibility to become determinate physical actuality, situating the theory at the intersection of information ontology and the Logic Realism tradition.
 
 ---
 
@@ -550,7 +549,7 @@ This result provides the ontological foundation from which subsequent work can r
 
 ### 9.1 Outlook for Physics
 
-The bridge identity constrains candidate physical theories in at least one concrete way: any physical structure must be realizable within A_Ω = L₃(I∞). This rules out physical theories that require ontological contradictions (states that are both P and not-P), configurations that cannot be distinguished from others (violations of identity), or structures that presuppose a possibility space narrower than L₃ permits without explanatory justification.
+The bridge equation constrains candidate physical theories in at least one concrete way: any physical structure must be realizable within A_Ω = L₃(I∞). This rules out physical theories that require ontological contradictions (states that are both P and not-P), configurations that cannot be distinguished from others (violations of identity), or structures that presuppose a possibility space narrower than L₃ permits without explanatory justification.
 
 **A concrete example of a ruled-out ontology:** Paraconsistent Quantum Mechanics (PQM) programs (da Costa & de Ronde 2013) interpret quantum superposition as genuine ontological contradiction. On this view, when a system is in state $\lvert\psi\rangle = \alpha\lvert\uparrow\rangle + \beta\lvert\downarrow\rangle$, the system is literally both spin-up and spin-down. The superposition is not epistemic indeterminacy but ontological contradiction.
 
@@ -560,7 +559,7 @@ The PQM advocate might reply that paraconsistent logic permits localized contrad
 
 More specifically, the framework motivates the informational axioms used in quantum reconstruction programs. The requirement that physical states be L₃-admissible configurations of I∞ suggests that state spaces must satisfy certain structural constraints (distinguishability, composition rules, update dynamics) that track the underlying logical admissibility conditions. Subsequent work develops these connections, deriving the Hilbert space formalism from the interaction of L₃ and I∞ under specific operational assumptions about measurement and preparation.
 
-The bridge identity also bears on interpretive questions. If actuality coincides with L₃(I∞), then the measurement problem in quantum mechanics becomes a question about which configurations A marks as obtaining during measurement interactions, rather than a question about wave function collapse or branching worlds. This reframing may clarify the relationship between the quantum state and physical reality.
+The bridge equation also bears on interpretive questions. If actuality coincides with L₃(I∞), then the measurement problem in quantum mechanics becomes a question about which configurations A marks as obtaining during measurement interactions, rather than a question about wave function collapse or branching worlds. This reframing may clarify the relationship between the quantum state and physical reality.
 
 The bridge equation is not the end of the story but its beginning. Logic Realism Theory contends that the framework established here, when properly developed, yields a unique theory of physical reality. Whether that contention succeeds is a matter for subsequent investigation.
 
@@ -583,8 +582,9 @@ The bridge equation is not the end of the story but its beginning. Logic Realism
 
 | Symbol | Meaning |
 |--------|---------|
-| ≡ | Definitional equivalence |
+| ≡ | Definitional equivalence (for constitution: χ ≡ [L₃ : I∞ : A]) |
 | ⊢ | Ontological grounding (read: "grounds" or "constitutes") |
+| := | Constitutive characterization (not stipulative definition) |
 | χ | Chi; the primitive ontological unity |
 | = | Identity |
 | [A : B : C] | Co-constitutive unity of A, B, and C |
@@ -592,6 +592,8 @@ The bridge equation is not the end of the story but its beginning. Logic Realism
 | Ω (subscript) | Actualized; obtaining |
 
 The turnstile (⊢) is adapted from its use in formal logic, where it signifies derivability. Here it signifies ontological grounding: χ ⊢ A_Ω means that the primitive ontology χ constitutes the actualized domain A_Ω. This is stronger than material implication and weaker than logical derivation in the technical sense.
+
+The characterization symbol (:=) distinguishes constitutive specification from stipulative definition. A_Ω := L₃(I∞) says that, given the primitives, the actualized domain has the structure of L₃-admissible configurations. This is not a discovery of identity between independently-specifiable entities (which would use =) but a specification of what the grounded domain is.
 
 ---
 
