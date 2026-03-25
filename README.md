@@ -71,7 +71,7 @@ See [docs/formalization/axiom-status.md](docs/formalization/axiom-status.md) for
 | Document | Description |
 |----------|-------------|
 | [LRT-MASTER.md](theory/LRT-MASTER.md) | Canonical unified source: complete 13-step derivation |
-| [TAB-v2.0.md](theory/TAB-v2.0.md) | Transcendental Argument for the Bridge: metaphysical groundwork |
+| [TAB-v2.0.md](theory/TAB-v2.0.md) | Transcendental Argument for Being: metaphysical groundwork |
 
 ### Formalization
 

@@ -13,7 +13,7 @@ description: "Integrating ontological grounding with formal physics reconstructi
   <p class="article-meta">March 2026 | Advanced</p>
 </div>
 
-This synthesis integrates the ontological grounding of **The Actualization Bridge (TAB)** with the formal physics reconstruction of **Logic Realism Theory (LRT)**, incorporating verified 2025-2026 empirical benchmarks.
+This synthesis integrates the ontological grounding of **The Transcendental Argument for Being (TAB)** with the formal physics reconstruction of **Logic Realism Theory (LRT)**, incorporating verified 2025-2026 empirical benchmarks.
 
 ---
 
@@ -110,7 +110,7 @@ This prediction diverges from standard black hole thermodynamics and represents 
 
 ### Technical Papers
 
-- [**TAB v2.0: Transcendental Argument for the Bridge**]({{ site.baseurl }}/theory/TAB-v2.0/) – The ontological foundation
+- [**TAB v2.0: Transcendental Argument for Being**]({{ site.baseurl }}/theory/TAB-v2.0/) – The ontological foundation
 - [**LRT-MASTER: The Full Reconstruction**]({{ site.baseurl }}/theory/LRT-MASTER/) – Complete derivation chain
 
 ---
