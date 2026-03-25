@@ -38,6 +38,29 @@ Actualization is not rare. At fundamental scales, $A$ operates continuously and 
 
 Let $\Gamma_A$ denote the actualization rate density (events per spacetime volume). In high-energy environments (stellar cores, quasars, early universe), $\Gamma_A$ is enormous.
 
+### 3.1.1 Emitter Sources: Micro and Macro
+
+**Micro emitters:** Any quantum process that produces actualization events. This includes particle decay, photon emission, scattering interactions, and state transitions. Each micro emitter operates at the fundamental scale.
+
+**Macro emitters:** Aggregations of micro emitters operating collectively at enormous rates. These include:
+
+- **Stars:** ~10²⁴ stars in the observable universe. The Sun alone produces ~10³⁸ fusion reactions per second; each reaction involves multiple actualization events.
+- **Quasars and AGN:** Accretion disks around supermassive black holes, converting gravitational potential into radiation through vast numbers of actualizations.
+- **Cosmic ray sources:** Supernova remnants, magnetars, and other accelerators producing high-energy particles.
+- **Early universe processes:** Big Bang nucleosynthesis, recombination, and reheating — all involving actualization at cosmological scales.
+
+**Scale of the phenomenon:**
+
+| Source Type | Count | Rate per source | Cosmic total |
+|-------------|-------|-----------------|--------------|
+| Stars | ~10²⁴ | ~10³⁸ events/s | ~10⁶² events/s |
+| Quasars | ~10⁹ (peak) | ~10⁴⁵ events/s | ~10⁵⁴ events/s |
+| Cosmic history | — | — | ~10⁸⁰+ cumulative |
+
+The cumulative actualization count over cosmic history is comparable to the baryon number (~10⁸⁰). This is not coincidence: baryons *are* the interacted, aggregated product of actualization history.
+
+**The key insight:** Matter concentrations are actualization factories. They output more actualizations than their local environment can absorb. The surplus propagates outward indefinitely.
+
 ### 3.2 Interaction and Binding
 
 Actualized configurations can interact with other actualized configurations. When two configurations $c_1, c_2$ are spatially proximate, they may form a composite:
@@ -111,6 +134,19 @@ Standard cosmology treats $\Lambda$ as a parameter with no mechanism. The LRT pr
 | Why does $\Lambda$ exist? | No explanation | Actualization produces residue |
 | Why is $\Lambda$ uniform? | Assumed | Non-interaction implies non-clustering |
 | Why is $\Lambda$ roughly constant? | Assumed | Emission rate per comoving volume is stable |
+
+### 4.5 The Emitter-Source Connection
+
+The dark energy density reflects cumulative cosmic actualization history:
+
+1. **Matter concentrations as factories:** Stars, galaxies, and other structures are not just matter — they are actualization factories outputting events continuously.
+2. **Surplus production:** Each factory outputs more actualizations than its local environment can absorb. Stellar cores produce photons and neutrinos; most escape.
+3. **Outward propagation:** The non-absorbed fraction propagates into intergalactic space indefinitely.
+4. **Cosmic accumulation:** Over 13+ billion years, this surplus fills the universe homogeneously.
+
+**Prediction:** Dark energy density should correlate with integrated star formation history, not be a primordial constant set at the Big Bang. This is a testable difference from pure $\Lambda$CDM.
+
+**Reframing "dark":** The energy is not dark because it's mysterious vacuum fluctuations or a new field. It's dark because non-interacted actualizations don't couple to detectors. They're the *exhaust* of cosmic actualization — real, accumulated, and filling space.
 
 ---
 
