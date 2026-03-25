@@ -150,7 +150,85 @@ The dark energy density reflects cumulative cosmic actualization history:
 
 ---
 
-## 5. Open Problems
+## 5. Black Holes as Deactualization Sinks
+
+### 5.1 The Cycle Completion
+
+If emitters are sources (actualization → output), black holes are sinks (input → deactualization). The cosmological picture becomes a closed cycle:
+
+```
+I_∞ ──→ Actualization (emitters) ──→ A_Ω ──→ Deactualization (black holes) ──→ I_∞
+           ↓                                         ↑
+      non-interacted                            interacted
+           ↓                                         |
+      accumulates (Λ)                     absorbed/transformed
+```
+
+This is not mere mass accretion. In LRT terms, a black hole event horizon is the locus where actualized configurations are *removed* from $A_\Omega$ and returned to the unactualized domain $I_\infty$.
+
+### 5.2 Deactualization at the Horizon
+
+Standard physics describes black holes as regions where information is scrambled and (perhaps) eventually radiated via Hawking radiation. LRT reframes this:
+
+- **Crossing the horizon:** An actualized configuration $c \in A_\Omega$ enters a region from which it cannot causally influence the exterior.
+- **LRT interpretation:** The configuration is no longer available for interaction with the rest of $A_\Omega$. It has been *deactualized* with respect to the observable universe.
+- **Return to $I_\infty$:** The information content persists (no violation of unitarity), but its status changes from *actual* to *possible*.
+
+This preserves information while removing it from the actualized domain — precisely what a deactualization operator should do.
+
+### 5.3 Equilibrium Dynamics
+
+The observed dark energy density $\rho_\Lambda$ is not monotonically increasing without bound. Black holes provide the drain. The measured value reflects a *steady-state balance*:
+
+$$\frac{d\rho_\Lambda}{dt} = \Gamma_{\text{emission}} - \Gamma_{\text{absorption}}$$
+
+where:
+- $\Gamma_{\text{emission}}$ = rate at which non-interacted actualizations contribute to residue
+- $\Gamma_{\text{absorption}}$ = rate at which black holes remove actualizations from $A_\Omega$
+
+**Implication:** $\Lambda$ is small but nonzero because it's the equilibrium value of a dynamic process, not a fundamental constant.
+
+### 5.4 Cosmological Phases
+
+The balance between emission and absorption varies across cosmic history:
+
+| Era | Emission | Absorption | Net Effect |
+|-----|----------|------------|------------|
+| **Early universe** | High (dense, hot) | Low (few black holes) | Rapid $\Lambda$ buildup |
+| **Present** | Moderate (star formation) | Moderate (SMBHs) | Stable $\Lambda$ |
+| **Far future** | Low (stellar death) | Dominant (black holes) | $\Lambda$ decrease? |
+
+This inverts the standard "heat death" narrative. If black holes are information recyclers returning configurations to $I_\infty$, the universe has a metabolism:
+
+- Matter forms from interacted actualizations
+- Dark energy accumulates from non-interacted actualizations
+- Black holes drain both back to the possibility space
+- The cycle continues
+
+### 5.5 Relation to Black Hole Information Paradox
+
+The LRT framing offers a perspective on the information paradox:
+
+**Standard paradox:** Information appears to be destroyed at the singularity, violating unitarity.
+
+**LRT reframing:** Information is not destroyed but *deactualized*. It returns to $I_\infty$, where it remains available for re-actualization. The "loss" is only from the perspective of $A_\Omega$; from the total ontology $\chi = [L_3 : I_\infty : A]$, nothing is lost.
+
+Hawking radiation, in this view, is not information leaking back out — it's *new* actualization events at the horizon, thermally distributed because the deactualization process is maximally entropic.
+
+### 5.6 The Coincidence Problem
+
+Standard cosmology has no explanation for why $\rho_\Lambda \sim \rho_m$ today (the "coincidence problem"). In the cycle picture:
+
+- $\rho_m$ = matter density from *interacted* actualizations
+- $\rho_\Lambda$ = dark energy density from *non-interacted* actualizations
+
+Both are functions of the same underlying process: cosmic actualization history. The ratio $\rho_\Lambda / \rho_m$ reflects the interaction fraction $f_{\text{int}}$, which is set by physical conditions (density, temperature, cross-sections) rather than fundamental constants.
+
+The coincidence is explained: both densities track the same source.
+
+---
+
+## 7. Open Problems
 
 ### OPN-COSM-001: Equation of State
 
@@ -187,9 +265,31 @@ The dark energy density reflects cumulative cosmic actualization history:
 
 **Status:** Conceptually unclear. Needs theoretical work.
 
+### OPN-COSM-005: Deactualization Mechanism
+
+**Problem:** What exactly happens at a black hole horizon in LRT terms? The claim that configurations are "deactualized" and returned to $I_\infty$ needs formalization.
+
+**Possible directions:**
+- The horizon marks a causal disconnection from $A_\Omega$; causal inaccessibility *just is* deactualization
+- Deactualization requires formalization as an operator $D: A_\Omega \to I_\infty$, dual to $A$
+- The singularity is where $D$ completes; Hawking radiation is independent re-actualization at the horizon
+
+**Status:** Conceptually plausible. Needs operator formalization.
+
+### OPN-COSM-006: Emission-Absorption Balance
+
+**Problem:** What determines the equilibrium value $\rho_\Lambda^{\text{eq}}$? The claim that black holes "drain" dark energy requires quantitative modeling.
+
+**Required:**
+- Black hole accretion rates as a function of cosmic time
+- Relation between mass accretion and deactualization rate
+- Whether Hawking radiation affects the balance (probably negligible for stellar/supermassive BHs)
+
+**Status:** Needs numerical cosmology. Could yield testable predictions.
+
 ---
 
-## 6. Predictions and Testability
+## 8. Predictions and Testability
 
 If the actualization residue proposal is correct:
 
@@ -203,7 +303,7 @@ If the actualization residue proposal is correct:
 
 ---
 
-## 7. Relation to Other LRT Work
+## 9. Relation to Other LRT Work
 
 This cosmological proposal sits downstream of:
 
@@ -216,7 +316,7 @@ It does *not* affect the core derivation chain. The cosmological extension is sp
 
 ---
 
-## 8. Conclusion
+## 10. Conclusion
 
 The proposal that dark energy is actualization residue is *coherent* and *explanatory*. It follows from the LRT framework without contradiction and provides a mechanism where standard cosmology has only a parameter.
 
