@@ -384,6 +384,16 @@ The bridge equation is therefore:
 
 The bridge equation is the core result of this paper. The grounding relation explains *why* actuality exists; the characterization specifies *what form* it takes. Everything else in Logic Realism Theory — the reconstruction of quantum mechanics, the interpretational implications — flows from this ground.
 
+### Burden on the Objector
+
+Two challenges confront anyone who would reject this framework:
+
+1. **Demonstrate that physical reality is not logical, informational, and dynamic.** Any such demonstration must itself employ logical inference, informational content, and dynamical reasoning — thereby presupposing the very features it denies. This is not a rhetorical trick but a transcendental constraint: the conditions for coherent theorizing are the conditions χ identifies.
+
+2. **Produce a physical configuration that obtains while violating L₃.** The objector must exhibit an actualized state that fails identity (something that is not what it is), violates non-contradiction (something that both obtains and does not obtain in the same respect), or escapes excluded middle (something for which a determinate property neither holds nor fails to hold). Apparent quantum counterexamples dissolve under scrutiny: superposition is a determinate state, not a violation of identity; entanglement involves determinate joint states with indeterminate marginals, not contradiction.
+
+Until both challenges are met, the bridge equation stands: the primitives ground actuality, and the actualized domain is characterized as L₃-admissible configurations of I∞.
+
 ### 6.3 The Bridge Lemma
 
 The physics reconstruction in Part II requires a specific connection between the ontological primitives established here and the operational constraints that generate quantum structure. This connection is summarized as the **Bridge Lemma**:
