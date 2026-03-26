@@ -447,6 +447,20 @@ Two challenges confront anyone who would reject this framework:
 
 Until both challenges are met, the bridge equation stands: the primitives ground actuality, and the actualized domain is characterized as L₃-admissible configurations of I∞.
 
+### Consequences of Rejection
+
+The burden just stated identifies what the objector must *do*. But it is equally important to trace what the objector becomes *committed to* upon rejecting χ.
+
+**Rejecting L₃ as ontologically constitutive** eliminates the ground of determinate identity conditions for physical states. Without identity ($A = A$), no configuration is determinately itself; without non-contradiction, configurations both obtain and fail to obtain in the same respect; without excluded middle, determinacy of properties has no guarantee. The objector does not thereby simplify ontology; she inherits the same explanatory obligations with fewer resources. Moreover, the quantum phenomena sometimes cited against classical logic (superposition, entanglement) already satisfy L₃, as §6 demonstrates. Rejecting L₃ does not resolve quantum puzzles; it renders them inarticulable.
+
+**Rejecting I∞ as the possibility domain** requires an alternative account of why reality exhibits distinguishable states at all. Bare structure without an informational domain leaves differentiation unexplained: there would be "something" but no principled basis for "something *rather than something else*." Any bounded alternative to I∞ demands a boundary principle specifying which distinctions are available, and such a principle (per §3.3) either presupposes a larger space of possible distinctions or posits a brute cutoff. The first generates regress; the second replaces one primitive with two (the bounded domain plus its boundary).
+
+**Rejecting A as primitive** collapses the actuality/possibility distinction. If actualization is not primitive, it must derive from something else. But derivation from logical constraint alone yields only admissibility, not obtaining: L₃ tells us *what can* be but not *that anything is*. Derivation from informational structure alone yields only possibility: I∞ specifies *what is distinguishable* but not *what is actual*. The objector must either accept that actuality is brute (which is what primitivity claims) or derive it from a source that itself presupposes actuality (which is circular).
+
+**Rejecting the bridge equation while accepting the primitives** yields an ontology with three primitives whose interaction produces nothing. L₃ constrains, I∞ supplies, A actualizes, but on this view, the result of their joint operation is left uncharacterized. The objector has the ingredients but refuses the recipe. §6.2.2 sharpens the point: no coherent non-logical constraint on A can exclude L₃-admissible configurations, so the only alternative to the bridge equation is an unmotivated restriction: ontological waste posing as parsimony.
+
+In each case, rejection does not yield a leaner ontology. It yields the same explanatory burdens with strictly fewer resources to discharge them.
+
 **Result of §6:** The primitive ontology χ grounds the actualized domain (χ ⊢ A_Ω), and the actualized domain is characterized as the L₃-admissible configurations of I∞ (A_Ω = L₃(I∞)); this is a grounded characterization, not a stipulative definition. (On the formal side, this result corresponds to the `bridge_principle` axiom in the Lean formalization; see Appendix C.)
 
 ### 6.2.1 Why Plenitude?
