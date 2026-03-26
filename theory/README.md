@@ -26,8 +26,8 @@ Logic Realism Theory (LRT) proposes a single ground-level commitment: reality is
 |----------|-------------|
 | **[001-LRT-TAB-PHILOSOPHY.md](001-LRT-TAB-PHILOSOPHY.md)** | Transcendental Argument for Being: metaphysical groundwork |
 | **[002-LRT-CORE-PHYSICS.md](002-LRT-CORE-PHYSICS.md)** | Canonical unified source: complete 13-step derivation chain |
-| **[007-LRT-LEAN-PROOFING-STATUS.md](007-LRT-LEAN-PROOFING-STATUS.md)** | Current Lean formalization status |
-| **[006-LRT-LEAN-APPROACH.md](006-LRT-LEAN-APPROACH.md)** | Formalization methodology |
+| **[400-LRT-FORMALIZATION.md](400-LRT-FORMALIZATION.md)** | Complete formalization reference (static) |
+| **[500-LRT-FORMALIZATION-STATUS.md](500-LRT-FORMALIZATION-STATUS.md)** | Current formalization status (living doc) |
 | **[lrt-memory.md](lrt-memory.md)** | Project memory for AI agents |
 
 ---
@@ -76,10 +76,8 @@ theory/
 ├── 001-LRT-TAB-PHILOSOPHY.md   # Philosophical foundation
 ├── 002-LRT-CORE-PHYSICS.md    # Core physics derivation
 ├── 003-LRT-COSMOLOGY.md       # Dark energy extension
-├── 004-LRT-FORMALIZATION.md   # Lean formalization overview
-├── 005-LRT-FORMALIZATION-METHODS.md  # Formal methods
-├── 006-LRT-LEAN-APPROACH.md   # Lean 4 approach
-├── 007-LRT-LEAN-PROOFING-STATUS.md  # Proof tracking
+├── 400-LRT-FORMALIZATION.md   # Complete formalization reference
+├── 500-LRT-FORMALIZATION-STATUS.md  # Formalization status (living doc)
 ├── LRT-MEMORY.md               # Agent memory
 ├── tasks.md                    # Task tracking
 ├── figures/                    # Diagrams

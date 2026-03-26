@@ -11,7 +11,8 @@
 |----------|------|-------|--------|
 | **TAB v2.0** | Foundation | X through bridge equation | **READY FOR SUBMISSION** |
 | **LRT-MASTER v2.0** | Reconstruction | Assumes bridge + R1–R4 + PPC → QM | Pending |
-| **005-LRT-FORMALIZATION-METHODS.md** | Methodology | What Lean verifies (and doesn't) | Pending |
+| **400-LRT-FORMALIZATION.md** | Reference | Complete formalization guide (static) | Current |
+| **500-LRT-FORMALIZATION-STATUS.md** | Status | Axiom counts, build state, dev phases (living) | Current |
 | **LRT-Cosmology.md** | Extension | Information circulation hypothesis | **ACTIVE** (2026-03-25) |
 
 ### Bridge Equation Status
@@ -101,10 +102,10 @@ Each document follows a distinct format to signal its claim type to referees.
 
 ---
 
-#### 005-LRT-FORMALIZATION-METHODS.md — Methods Note
+#### 400-LRT-FORMALIZATION.md — Complete Formalization Reference
 
-**Target length:** ~10 pages
-**Goal:** Explain exactly what Lean verifies
+**Consolidates:** Former 004 (overview) + 005 (methods)
+**Goal:** Static reference for what the formalization is, derivation chain, methodology, what Lean proves vs. doesn't
 
 | Section | Content |
 |---------|---------|
@@ -231,8 +232,8 @@ Lean does NOT verify:
 ## Lean Formalization Status
 
 **Location:** `formalization/`
-**Development approach:** `theory/006-LRT-LEAN-APPROACH.md`
-**Status document:** `theory/007-LRT-LEAN-PROOFING-STATUS.md`
+**Formalization reference:** `theory/400-LRT-FORMALIZATION.md`
+**Status document:** `theory/500-LRT-FORMALIZATION-STATUS.md`
 
 **Build status:** ✅ VERIFIED (2026-03-20)
 - Build: SUCCESS (2491 jobs)
@@ -781,7 +782,7 @@ This preserves:
 ## Multi-Reviewer Synthesis (2026-03-16)
 
 **Sources:** Grok, ChatGPT (×2), Gemini adversarial reviews
-**Full analysis:** `theory/006-LRT-LEAN-APPROACH.md`
+**Full analysis:** `theory/500-LRT-FORMALIZATION-STATUS.md` §8-9
 
 ### The Core Insight
 

@@ -747,7 +747,7 @@ The formalization is available in the repository `formalization/`. Build command
 cd formalization && ./scripts/build.sh
 ```
 
-See `theory/005-LRT-FORMALIZATION-METHODS.md` for detailed documentation.
+See `theory/400-LRT-FORMALIZATION.md` for detailed documentation.
 
 ### Significance
 
