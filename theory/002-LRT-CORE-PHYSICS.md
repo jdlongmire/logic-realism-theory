@@ -9,8 +9,8 @@
 **Status:** Pre-print
 **Epistemic Discipline:** Each claim marked ESTABLISHED, ARGUED, or OPEN
 **Created:** 2026-03-13
-**Last Updated:** 2026-03-23
-**Part I:** The Actualization Bridge (TAB-v2.0.md) — Ontological Groundwork
+**Last Updated:** 2026-03-25
+**Part I:** The Transcendental Argument for Being (Longmire, 2026c). Zenodo. https://doi.org/10.5281/zenodo.19226396
 
 -----
 
@@ -20,7 +20,7 @@
 
 **Method.** Logic Realism Theory (LRT) reverses the grounding direction. It begins with a single commitment: reality is logical, informational, and dynamic, expressed formally as X ≡ [L₃ : I∞ : A]. The Three Fundamental Laws of Logic (L₃) are taken as constitutive conditions on what counts as a physical fact — not constraints on reasoning about reality but conditions on reality itself. From this commitment, a thirteen-step derivation chain reconstructs, given imported peer-reviewed mathematics (Gleason, 1957; Stone, 1930; Masanes and Müller, 2011), the full structure of non-relativistic quantum mechanics. Each step is marked by epistemic status: ESTABLISHED where peer-reviewed theorems are imported, ARGUED where LRT-specific grounding arguments are defended, OPEN where further work is identified.
 
-**Results.** The derivation chain grounds the axioms of operational reconstruction programs — local tomography follows from Determinate Identity under L₃'s constitutive framing; complex Hilbert space follows via Masanes-Müller; the Born rule is the unique probability measure on the projection-valued measure structure forced by the Boolean action primitive; the Schrödinger equation follows from Stone's theorem applied to the continuous unitary group that Determinate Identity and G-equivariance require. Five steps remain ARGUED rather than formally verified; the full chain has been formalized in Lean 4 (2491 jobs, zero errors, zero `sorry` placeholders, March 2026). The standing problems of quantum foundations — measurement, wave-particle duality, EPR, Schrödinger's cat, preferred basis, the observer — dissolve under LRT's framework rather than requiring new physical mechanisms.
+**Results.** The derivation chain grounds the axioms of operational reconstruction programs — local tomography follows from Determinate Identity under L₃'s constitutive framing; complex Hilbert space follows via Masanes-Müller; the Born rule is the unique probability measure on the projection-valued measure structure forced by the Boolean action primitive; the Schrödinger equation follows from Stone's theorem applied to the continuous unitary group that Determinate Identity and G-equivariance require. Five steps remain ARGUED rather than formally verified; the full chain has been formalized in Lean 4 (2491 jobs, zero errors, zero `sorry` placeholders, March 2026). The standing problems of quantum foundations — measurement, wave-particle duality, EPR, Schrödinger's cat, preferred basis, the observer — are re-expressed within LRT's two-level ontology in forms that require no additional dynamical postulates or interpretive supplements.
 
 **Conclusion.** LRT's original contribution is not new mathematics but a grounding argument: showing that the inputs the imported theorems require follow from X rather than standing as independent postulates. The program is falsifiable at three levels — categorical, structural, and empirical — and is progressive in the Lakatosian sense: complex over real Hilbert space is structurally selected and subsequently confirmed by Renou et al. (2021). The relativistic extension, black hole thermodynamics connection, and cosmological domain remain open.
 
@@ -46,11 +46,15 @@ $$\mathbf{X} \equiv [L_3 : I_\infty : \mathbf{A}]$$
 |I∞    |Infinite Information Space     |All representable configurations; structured by distinguishability |
 |A     |Continuous Binary Action       |Instantiation primitive: actual vs. non-actual                     |
 
-X is the primitive ontic state — the terminus of grounding chains. The co-constitutive notation [L₃ : I∞ : A] marks mutual constitution: each aspect is what it is only in relation to the others. The core equation follows:
+X is the primitive ontic state — the terminus of grounding chains. The co-constitutive notation [L₃ : I∞ : A] marks mutual constitution: each aspect is what it is only in relation to the others. Two results follow. The first is a grounding claim:
 
-$$A_\Omega = L_3(I_\infty)$$
+$$\chi \vdash A_\Omega$$
 
-where $A_\Omega$ is the actualized domain — the set of all configurations in $I_\infty$ that satisfy $L_3$. Actualization is inclusion, not creation: $A_\Omega \subseteq I_\infty$. X grounds this equation; the equation expresses what X produces. The relationship is grounding in the sense of Fine (2012) and Schaffer (2009), not causation.
+X transcendentally constitutes the actualized domain. The turnstile (⊢) signifies ontological grounding, not logical derivation: A_Ω obtains *in virtue of* X. The second is a characterization:
+
+$$A_\Omega := L_3(I_\infty)$$
+
+where $A_\Omega$ is the actualized domain — the set of all configurations in $I_\infty$ that satisfy $L_3$. The `:=` marks constitutive specification rather than discovery of identity between independently-specifiable entities: given the primitives, the actualized domain has the structure of L₃-admissible configurations. Actualization is inclusion, not creation: $A_\Omega \subseteq I_\infty$. The grounding claim explains *why* actuality exists; the characterization specifies *what form* it takes. The relationship is grounding in the sense of Fine (2012) and Schaffer (2009), not causation. The full transcendental derivation of both results appears in Part I (Longmire, 2026c).
 
 ### 1.3 The Status of L₃
 
@@ -66,7 +70,7 @@ This inference is the governing bridge principle of the entire derivation chain.
 
 The PPC licenses every subsequent move from ontological condition to physical structure in the derivation chain. At Step 3, the PPC entails that all identity-making relations in a composite system must be operationally distinguishable, yielding local tomography. At Step 5, the PPC entails that event operators must have Boolean spectra, yielding PVM structure. At Step 8, the PPC entails that succession relations must be determinate, yielding the Unique Next State theorem. The PPC is not a new axiom introduced alongside X; it is a consequence of taking L₃'s constitutive status seriously as stated in the opening of this section. Its scope is all physical propositions; its failure condition is a physically real claim that satisfies L₃ but lacks any operational signature — which LRT holds to be unrealizable rather than merely unobserved.
 
-*[Epistemic status of the PPC: ARGUED. The inference from "L₃ requires determinate content and distinct truth-value states" to "there must be a possible measurement distinguishing P-true from P-false" rests on the identification of distinct physical states of affairs with operationally distinguishable configurations. This identification is defensible but not logically compelled; a critic who holds that physical reality outstrips all possible operational access has a coherent position that LRT contests rather than refutes.]*
+*[Epistemic status of the PPC: ARGUED. The PPC is the central philosophical commitment of the physics reconstruction. The inference from "L₃ requires determinate content and distinct truth-value states" to "there must be a possible measurement distinguishing P-true from P-false" rests on the identification of distinct physical states of affairs with operationally distinguishable configurations. This identification is defensible but not logically compelled; a critic who holds that physical reality outstrips all possible operational access has a coherent position that LRT contests rather than refutes. The cost of that rejection, however, is significant: without some bridge principle connecting ontological structure to operational structure, no reconstruction program — including Hardy, Masanes-Müller, and CDP — can claim that its operational axioms are grounded in anything beyond pragmatic success. The PPC is the minimal such bridge; rejecting it returns the grounding question to exactly the open state that motivated this work.]*
 
 <!-- MMR-54 revision: Supplement S1 reference added -->
 Full derivation of the PPC from L₃'s constitutive status appears in Supplement S1 (PPC Derivation).
@@ -117,6 +121,8 @@ From the Copenhagen interpretation, LRT inherits the insistence that measurement
 
 From Everett's relative-state formulation, LRT inherits the unitary structure and the branching geometry of the quantum state space. Branches exist in I∞ as representable configurations. But only one L₃-admissible outcome history is ever instantiated in A_Ω. This is one-world realism with Everettian mathematical structure — the branching without the ontological multiplication.
 
+The question "what selects the one history?" has a precise answer in LRT, and the answer differentiates it from every other one-world program. Collapse theories (GRW, CSL, Penrose-Diósi) add a *dynamical law* — a stochastic modification to the Schrödinger equation that produces definite outcomes within the physics. Hidden-variable theories (Bohmian mechanics) add *hidden structure* — particle positions guided by a pilot wave that selects outcomes within the physics. Both modify the physics to achieve definiteness. LRT does neither. A operates at the ontological level: it is a primitive of X that determines which L₃-admissible configurations obtain. It does not modify unitary evolution, add stochastic terms, or introduce hidden structure. The Schrödinger equation is exact in LRT. Definiteness is not achieved by supplementing the physics but by recognizing that the question "which outcome obtains?" is answered at the level of the ontological primitives, not at the level of the dynamical laws. This is the sense in which LRT modifies the metaphysics beneath the physics while leaving the physics untouched.
+
 From Bohmian mechanics, LRT inherits realism about the quantum state and about outcomes. The quantum state is not a summary of knowledge; it is a structural feature of I∞. Outcomes are not relative to observers; they are determinate instantiations in A_Ω. But LRT requires no pilot wave, no preferred basis, and no nonlocality as a primitive.
 
 From the operational reconstruction programs of Hardy (2001), Masanes and Müller (2011), and Chiribella, D'Ariano, and Perinotti (2011), LRT inherits the derivation methodology and imports their mathematical results directly. The difference is that LRT grounds the axioms of these programs in X rather than leaving them as operationally motivated postulates. LRT answers the question these programs leave open: why do the reconstruction axioms hold?
@@ -129,7 +135,7 @@ These inheritances are within the quantum mechanical domain. Extensions to cosmo
 
 ### 1.5 Scope and Limits
 
-This paper presents the complete derivation chain from X to the Schrödinger equation and develops its consequences for quantum foundations. It presupposes the ontological groundwork established in Part I (TAB). The transcendental arguments for the necessity of L₃, I∞, and A, and the derivation of the bridge identity A_Ω = L₃(I∞), are developed there. This paper imports that result and proceeds with physics reconstruction.
+This paper presents the complete derivation chain from X to the Schrödinger equation and develops its consequences for quantum foundations. It presupposes the ontological groundwork established in Part I (Longmire, 2026c). The transcendental arguments for the necessity of L₃, I∞, and A, and the derivation of the bridge identity A_Ω := L₃(I∞), are developed there. This paper imports that result and proceeds with physics reconstruction.
 
 Each step in the derivation is marked with one of three epistemic statuses:
 
@@ -175,9 +181,9 @@ Why transcendental rather than merely logical or causal? Because X is the condit
 
 ### 2.2 The Core Equation
 
-From transcendental constitution, the core equation follows:
+From transcendental constitution, the characterization follows:
 
-$$A_\Omega = L_3(I_\infty)$$
+$$A_\Omega := L_3(I_\infty)$$
 
 A_Ω is the actualized domain — the set of all configurations in I∞ that satisfy L₃. L₃ acts as an admissibility filter: configurations that violate Identity, Non-Contradiction, or Excluded Middle are not excluded from I∞ by an external rule. They are no-things. A contradiction is not a configuration that fails to be instantiated; it is the absence of any configuration at all. To be precise: configurations violating L₃ are formally representable in I∞ as surrogates — they can be written down — but they cannot be instantiated. A_Ω is exactly the L₃-admissible subset of I∞; the surrogates never enter it.
 
@@ -220,7 +226,7 @@ This operational grounding of I∞ is not empiricism by stipulation. It is a con
 |Step|Content                             |Status     |
 |----|------------------------------------|-----------|
 |0   |X ≡ [L₃ : I∞ : A]                   |ESTABLISHED|
-|1   |X ⊣ A_Ω; A_Ω = L₃(I∞)               |ESTABLISHED|
+|1   |X ⊢ A_Ω; A_Ω := L₃(I∞)              |ESTABLISHED|
 |2   |Determinate Identity for all c ∈ A_Ω|ESTABLISHED|
 
 The foundation is secure. Steps 0-2 carry no argued gaps. Everything downstream inherits from this base.
@@ -274,7 +280,7 @@ Real-vector-space quantum theories (Wootters, 1990; Hardy, 2012) are often cited
 Furthermore, symmetry-twirled generalized probabilistic theories (arXiv:2407.21688) demonstrate that metaphysical supervenience can coexist with the failure of local tomography. LRT responds by noting that such theories introduce symmetry constraints that generate operationally inaccessible correlations. Under LRT's Bridge Principle of Operational Determinacy, a relation with no operational signature is not a physical fact, and thus cannot be part of the composite's identity under $L_3$. Symmetry-twirled GPTs are excluded because they violate Operational Determinacy, not because supervenience logically entails local tomography in a vacuum.
 
 **Spekkens-Style Epistemic Models**
-Epistemic models in the style of Spekkens (2007) present a different challenge: they reproduce operational local tomography without adopting LRT's ontological commitments. This is not a counterexample to LRT, but rather a case of operational equivalence with ontological divergence. LRT does not claim its ontology is the *unique* source of local tomography; it claims local tomography is a *necessary consequence* of its specific ontology. Spekkens models are fully compatible with LRT's predictions at the operational level. The adjudication between LRT's logical constitution and Spekkens' epistemic restriction belongs to the broader Truth-Actuality Bridge (TAB) argument, not the local tomography derivation.
+Epistemic models in the style of Spekkens (2007) present a different challenge: they reproduce operational local tomography without adopting LRT's ontological commitments. This is not a counterexample to LRT, but rather a case of operational equivalence with ontological divergence. LRT does not claim its ontology is the *unique* source of local tomography; it claims local tomography is a *necessary consequence* of its specific ontology. Spekkens models are fully compatible with LRT's predictions at the operational level. The adjudication between LRT's logical constitution and Spekkens' epistemic restriction belongs to the broader transcendental argument developed in Part I (Longmire, 2026c), not the local tomography derivation.
 
 **The Renou et al. Result and Operational Independence**
 The selection of the complex field is empirically supported by Renou et al. (2021). However, Hoffreumon & Woods (2026) have raised the question of whether the Renou et al. result holds under operational independence. It is important to acknowledge that this dispute concerns the empirical verification of the $K=2$ selection (Step 4), not the logical derivation of local tomography (Step 3). LRT's local tomography argument does not depend on the outcome of the Hoffreumon & Woods dispute.
@@ -486,7 +492,7 @@ The full derivation chain from X to the Schrödinger equation is now in place. O
 
 ## 6. Resolution of Standing Problems
 
-The standing problems of quantum foundations are not solved by LRT in the sense of providing new physical mechanisms. They are dissolved: each problem is shown to arise from a false presupposition that LRT's framework does not share. This section works through six problems in sequence, showing in each case what presupposition generates the problem and why LRT does not inherit it.
+The standing problems of quantum foundations are not solved by LRT in the sense of providing new physical mechanisms. They are dissolved^[The term "dissolution" is used here in its philosophical sense (cf. Wittgenstein, 1953, §133): a problem dissolves when the framework that generated it is replaced by one in which the presupposition producing the problem does not arise. Dissolution is not denial that a genuine puzzle existed; it is the demonstration that the puzzle was an artifact of a particular conceptual framework rather than a feature of reality itself.]: each problem is shown to arise from a false presupposition that LRT's framework does not share. This section works through six problems in sequence, showing in each case what presupposition generates the problem and why LRT does not inherit it.
 
 ### 6.1 The Measurement Problem
 
@@ -751,7 +757,7 @@ The derivation chain has been formalized in Lean 4 (March 2026). The formalizati
 | EXTERNAL | 16 | Established mathematics (Gleason, Stone, Hardy, CDP, etc.) |
 | REMAINING | 0 | ✅ No remaining derivation targets |
 
-PRIMITIVE axioms correspond to the ontological commitments defended in TAB and cannot be derived — they define the theory. EXTERNAL axioms are peer-reviewed mathematical results imported with citation rather than re-proven; this is the standard methodology of reconstruction programs (Hardy, CDP, Masanes-Müller all proceed similarly). REMAINING axioms have been reduced to zero: every step in the chain is either derived from primitives or explicitly grounded in established mathematics.
+PRIMITIVE axioms correspond to the ontological commitments defended in Part I (Longmire, 2026c) and cannot be derived — they define the theory. EXTERNAL axioms are peer-reviewed mathematical results imported with citation rather than re-proven; this is the standard methodology of reconstruction programs (Hardy, CDP, Masanes-Müller all proceed similarly). REMAINING axioms have been reduced to zero: every step in the chain is either derived from primitives or explicitly grounded in established mathematics.
 
 The zero-REMAINING result was achieved through a combination of proof construction (e.g., `QuantumStateSpace.ofCPH` via the `Module.Finite → ProperSpace → CompleteSpace` Mathlib chain), redundancy elimination (two Step 10 axioms delegated to already-proven Step 7 theorems), and honest reclassification of physically-grounded inputs as EXTERNAL rather than derivation targets.
 
@@ -875,6 +881,8 @@ Ladyman, J. and Ross, D. (2007). *Every Thing Must Go: Metaphysics Naturalized*.
 Longmire, J. D. (2026a). LRT: Non-decomposability, entanglement, and Bell's theorem derived from A_Ω = L₃(I∞). Zenodo. https://doi.org/10.5281/zenodo.18950181
 
 Longmire, J. D. (2026b). LRT: Black hole information return — operator formalism and FC-2 prediction. Zenodo. https://doi.org/10.5281/zenodo.18950706
+
+Longmire, J. D. (2026c). The Transcendental Argument for Being: Foundations of Logic Realism Theory — Part I: Ontological Groundwork. Zenodo. https://doi.org/10.5281/zenodo.19226396
 
 Masanes, L. and Müller, M. P. (2011). A derivation of quantum theory from physical requirements. *New Journal of Physics*, 13(6), 063001.
 

@@ -147,7 +147,7 @@ def generate_tab_docx():
     style.font.size = Pt(12)
 
     # Title
-    title = doc.add_heading('The Actualization Bridge: Transcendental Foundations of Logic Realism Theory', 0)
+    title = doc.add_heading('The Transcendental Argument for Being: Foundations of Logic Realism Theory', 0)
     title.alignment = WD_ALIGN_PARAGRAPH.CENTER
 
     # Subtitle
@@ -498,7 +498,7 @@ def generate_master_docx():
         ['Date:', 'March 2026'],
         ['Version:', '2.0'],
         ['Status:', 'Pre-print'],
-        ['Companion paper:', 'The Actualization Bridge (TAB, Part I)']
+        ['Companion paper:', 'The Transcendental Argument for Being (TAB, Part I)']
     ]
     for label, value in info_table:
         p = doc.add_paragraph()
@@ -522,7 +522,7 @@ def generate_master_docx():
     add_heading(doc, '1. Foundational Assumption', 1)
 
     add_heading(doc, '1.1 The TAB Result', 2)
-    add_paragraph(doc, 'This paper assumes the result established in the companion paper The Actualization Bridge (TAB):')
+    add_paragraph(doc, 'This paper assumes the result established in the companion paper The Transcendental Argument for Being (TAB):')
     p = doc.add_paragraph()
     p.add_run('Physical actuality is constituted by the primitive ontic state χ ≡ [L₃ : I∞ : A], yielding the bridge equation A_Ω = L₃(I∞).').italic = True
 
