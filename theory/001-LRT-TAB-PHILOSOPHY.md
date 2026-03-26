@@ -164,9 +164,7 @@ That objection has real force, and TAB should grant it. If the conclusion were o
 
 LRT's response is that, in the present case, the relevant gap does not hold. TAB does not infer ontology from a merely cognitive constraint. It argues that the specific features constrained by L₃—determinacy and stable identity conditions—are constitutive of being as such. A configuration that violates non-contradiction does not merely evade representation; it fails to have the identity conditions required to be anything at all. The issue is not access to being but the constitution of being. For determinate identity, there is no residual space between "conditions for representation" and "conditions for being": to be determinate just is to possess the properties that make a thing what it is, and L₃ specifies those properties.
 
-What remains is a live metaphysical dissent. A critic may hold that being outstrips all possible determination—radical ontic transcendence. That position is coherent. TAB contests it rather than decisively refuting it, and does so in the idiom of constitutive grounding rather than Kantian synthetic a priori (Fine 2012). This strategy — grounding the ontological conclusion in constitutive necessity rather than synthetic a priori inference — follows the revisionary approach to transcendental arguments developed by Cassam (1987) and Stern (2000), both of whom argue that transcendental arguments can establish objective conclusions when the relevant conditions are genuinely constitutive of the domain rather than merely regulative of thought about it. The present argument claims exactly this: L₃ is constitutive of determinate being, not merely regulative of our reasoning about it, and that is why the Stroud gap does not open.
-
-**Mark:** ARGUED
+What remains is a live metaphysical dissent. A critic may hold that being outstrips all possible determination—radical ontic transcendence. That position is coherent. TAB contests it rather than decisively refuting it, and does so in the idiom of constitutive grounding rather than Kantian synthetic a priori (Fine 2012). This strategy — grounding the ontological conclusion in constitutive necessity rather than synthetic a priori inference — follows the revisionary approach to transcendental arguments developed by Cassam (1987) and Stern (2000), both of whom argue that transcendental arguments can establish objective conclusions when the relevant conditions are genuinely constitutive of the domain rather than merely regulative of thought about it. The present argument claims exactly this: L₃ is constitutive of determinate being, not merely regulative of our reasoning about it, and that is why the Stroud gap does not open. *[Epistemic status: ARGUED — the closure of Stroud's gap depends on the constitutive-grounding move; radical ontic transcendence remains live dissent.]*
 
 ### 2.5 Engagement with Dialetheism
 
@@ -226,7 +224,7 @@ The argument for completeness proceeds from closure rather than boundlessness:
 
 This formulation avoids the geometric imagery of boundaries and larger spaces. Completeness is not spatial unboundedness but logical closure: I∞ contains all the distinctions that L₃ permits, and no distinctions that L₃ prohibits. A configuration "outside" I∞ would be a configuration that cannot be distinguished from others in an L₃-admissible way, which is to say, not a configuration at all.
 
-I∞ is complete in the sense of exhausting the domain of possible configurations. Nothing outside I∞ can be actualized because there is nothing outside it to actualize. The completeness of I∞ is not an empirical claim but a conceptual requirement: it is the maximal set of mutually distinguishable configurations under L₃.
+I∞ is complete in the sense of exhausting the domain of possible configurations. Nothing outside I∞ can be actualized because there is nothing outside it to actualize. The completeness of I∞ is not an empirical claim but a conceptual requirement: it is the maximal set of mutually distinguishable configurations under L₃. This is a constitutive claim, not a trivial consequence of the definition: completeness asserts that $L_3$-admissible distinguishability is the *exhaustive* criterion for configurational distinctness, with no further mode of differentiation available. *[Epistemic status: ARGUED]*
 
 The completeness argument is not merely definitional — it proceeds by constructive reductio. Suppose there were a configuration c that is L₃-admissible (satisfies Identity, Non-Contradiction, and Excluded Middle) yet falls outside I∞. By the definition of I∞ as the closure of L₃-admissible distinguishability, c would have to be indistinguishable from every configuration already in I∞. But indistinguishability under L₃ means there is no respect in which c differs from any member of I∞ — which, by Identity, means c is identical to some member of I∞. The supposition that c is outside I∞ while being L₃-admissible is therefore self-undermining: any L₃-admissible configuration that appears to stand outside I∞ is, upon examination, already in it. The closure is genuine, not merely stipulated. *[Epistemic status: ARGUED — the reductio assumes that L₃-admissible distinguishability is the complete criterion for configurational distinctness, which a critic who posits non-L₃ modes of distinction would reject.]*
 
@@ -275,7 +273,7 @@ Clarity about A's primitive status requires specifying what A is not:
 
 A is transcendentally necessary because without it, the gap between possibility and actuality cannot be bridged. L₃ constrains what can obtain. I∞ provides the domain of what might obtain. But neither makes anything actual. Actuality requires a primitive that is not reducible to constraint or possibility.
 
-The denial of A would be the claim that possibility and constraint suffice for actuality. But this conflates the conditions for actuality with actuality itself. That a configuration is consistent and distinguishable does not make it actual. Something more is required, and that something is A.
+The denial of A would be the claim that possibility and constraint suffice for actuality. But this conflates the conditions for actuality with actuality itself. That a configuration is consistent and distinguishable does not make it actual. Something more is required, and that something is A. *[Epistemic status: ARGUED — A's necessity is transcendental; its irreducibility is STIPULATED as primitive.]*
 
 ### 4.4 A's Grounding Role and the Bridge Equation
 
@@ -355,7 +353,7 @@ A cannot actualize configurations outside I∞. There is nothing outside I∞ to
 
 A therefore operates within the space of logically admissible configurations of I∞. What A produces—the actual—is the result of actualization operating on possibility under constraint.
 
-**Result of §5:** The three primitives form a co-constitutive unity χ ≡ [L₃ : I∞ : A]; no proper subset suffices for determinate actuality, and A operates only within L₃-admissible configurations of I∞.
+**Result of §5:** The three primitives form a co-constitutive unity χ ≡ [L₃ : I∞ : A]; no proper subset suffices for determinate actuality, and A operates only within L₃-admissible configurations of I∞. *[Epistemic status: ARGUED — mutual constitution follows from the transcendental arguments of §§2–4; the claim is that no proper subset of the primitives can account for determinate actuality.]*
 
 ---
 
@@ -435,7 +433,7 @@ The bridge equation is therefore:
 - **Not a formal theorem:** The argument is transcendental, not axiomatic. Formal verification can establish the internal consistency of the derivation chain, but the metaphysical warrant comes from the transcendental arguments of Sections 2–4.
 - **A grounded characterization:** Given the primitives and their transcendental necessity, the structure of A_Ω is characterized as L₃(I∞).
 
-The bridge equation is the core result of this paper. The grounding relation explains *why* actuality exists; the characterization specifies *what form* it takes. Everything else in Logic Realism Theory — the reconstruction of quantum mechanics, the interpretational implications — flows from this ground.
+The bridge equation is the core result of this paper. The grounding relation explains *why* actuality exists; the characterization specifies *what form* it takes. Everything else in Logic Realism Theory — the reconstruction of quantum mechanics, the interpretational implications — flows from this ground. *[Epistemic status: grounding (χ ⊢ A_Ω) is ARGUED; characterization (A_Ω := L₃(I∞)) is ARGUED, conditional on the plenitude premise of §6.1.]*
 
 ### Burden on the Objector
 
@@ -501,7 +499,7 @@ The point is not that A is "structurally indifferent" in some mysterious sense. 
 
 The objector's move therefore collapses. Any attempt to specify a non-logical constraint on A either presupposes L₃ (and is therefore not independent of it) or presupposes actualization (and is therefore circular). No coherent constraint on A can exclude L₃-admissible configurations from the actualized domain.
 
-This transforms the plenitude argument. We are no longer claiming merely that A "does not exclude." We are claiming that exclusion *cannot be coherently specified*. The equality A_Ω = L₃(I∞) holds because there is no coherent way to articulate a principle that would render it false.
+This transforms the plenitude argument. We are no longer claiming merely that A "does not exclude." We are claiming that exclusion *cannot be coherently specified*. The equality A_Ω = L₃(I∞) holds because there is no coherent way to articulate a principle that would render it false. *[Epistemic status: ARGUED — the constraint collapse is a transcendental argument, not a formal proof; a critic who posits non-logical, non-physical constraints at the primitive level would reject it.]*
 
 ### 6.3 The Bridge Lemma
 
@@ -670,9 +668,9 @@ This result provides the ontological foundation from which subsequent work can r
 
 The bridge equation constrains candidate physical theories in at least one concrete way: any physical structure must be realizable within A_Ω = L₃(I∞). This rules out physical theories that require ontological contradictions (states that are both P and not-P), configurations that cannot be distinguished from others (violations of identity), or structures that presuppose a possibility space narrower than L₃ permits without explanatory justification.
 
-**A concrete example of a ruled-out ontology:** Paraconsistent Quantum Mechanics (PQM) programs (da Costa & de Ronde 2013) interpret quantum superposition as genuine ontological contradiction. On this view, when a system is in state $\lvert\psi\rangle = \alpha\lvert\uparrow\rangle + \beta\lvert\downarrow\rangle$, the system is literally both spin-up and spin-down. The superposition is not epistemic indeterminacy but ontological contradiction.
+**A concrete example of an ontology that TAB cannot accommodate:** Paraconsistent Quantum Mechanics (PQM) programs (da Costa & de Ronde 2013) interpret quantum superposition as genuine ontological contradiction. On this view, when a system is in state $\lvert\psi\rangle = \alpha\lvert\uparrow\rangle + \beta\lvert\downarrow\rangle$, the system is literally both spin-up and spin-down. The superposition is not epistemic indeterminacy but ontological contradiction.
 
-TAB rules this out. Superposition in the standard quantum formalism represents a configuration that is neither spin-up nor spin-down with respect to actualization; it is indeterminate, not contradictory. Indeterminacy is the absence of a fact; contradiction is the presence of incompatible facts. These are structurally different. An indeterminate configuration can be L₃-admissible (A has not yet operated with respect to the relevant property). A contradictory configuration cannot be L₃-admissible (it violates non-contradiction).
+TAB cannot accommodate this ontology. Superposition in the standard quantum formalism represents a configuration that is neither spin-up nor spin-down with respect to actualization; it is indeterminate, not contradictory. Indeterminacy is the absence of a fact; contradiction is the presence of incompatible facts. These are structurally different. An indeterminate configuration can be L₃-admissible (A has not yet operated with respect to the relevant property). A contradictory configuration cannot be L₃-admissible (it violates non-contradiction).
 
 The PQM advocate might reply that paraconsistent logic permits localized contradiction without explosion. But the TAB objection is not about explosion; it is about identity. A system that is both P and not-P has no stable identity with respect to P. Without identity, there is nothing for measurement to determine, and no fact of the matter about outcomes. PQM's apparent solution to the measurement problem dissolves the very structure required to pose the problem.
 
@@ -680,7 +678,7 @@ More specifically, the framework motivates the informational axioms used in quan
 
 The bridge equation also bears on interpretive questions. If actuality coincides with L₃(I∞), then the measurement problem in quantum mechanics becomes a question about which configurations A marks as obtaining during measurement interactions, rather than a question about wave function collapse or branching worlds. This reframing may clarify the relationship between the quantum state and physical reality.
 
-The bridge equation is not the end of the story but its beginning. Logic Realism Theory contends that the framework established here, when properly developed, yields a unique theory of physical reality. Whether that contention succeeds is a matter for subsequent investigation.
+The bridge equation is not the end of the story but its beginning. Part I alone fixes no formalism. The bridge equation constrains what *kind* of physics is admissible; it does not select a specific dynamics, state space, or measurement theory. Those require the operational axioms and empirical inputs introduced in Part II. Logic Realism Theory contends that the framework established here, when combined with those operational constraints, yields a unique theory of physical reality. Whether that contention succeeds is a matter for subsequent investigation.
 
 ---
 
