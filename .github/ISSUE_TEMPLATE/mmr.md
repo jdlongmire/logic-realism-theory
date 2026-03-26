@@ -10,7 +10,7 @@ assignees: jdlongmire
 
 - **Claim ID:** <!-- e.g. QM-001, ACT-001 -->
 - **Trigger:** <!-- Theory→Lean | Publication | Open Problem | On-demand -->
-- **Document/Section:** <!-- e.g. LRT-MASTER.md §3.1 -->
+- **Document/Section:** <!-- e.g. 002-LRT-CORE-PHYSICS.md §3.1 -->
 - **Epistemic Status (current):** <!-- ESTABLISHED | ARGUED | OPEN -->
 
 ## Claim Text

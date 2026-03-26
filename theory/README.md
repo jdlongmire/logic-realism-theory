@@ -1,6 +1,6 @@
 # LRT Theory Documents
 
-Active theory documents for Logic Realism Theory. The canonical unified source is **LRT-MASTER.md**.
+Active theory documents for Logic Realism Theory. The canonical unified source is **002-LRT-CORE-PHYSICS.md**.
 
 ---
 
@@ -24,10 +24,10 @@ Logic Realism Theory (LRT) proposes a single ground-level commitment: reality is
 
 | Document | Description |
 |----------|-------------|
-| **[LRT-MASTER.md](LRT-MASTER.md)** | Canonical unified source: complete 13-step derivation chain |
-| **[TAB-v2.0.md](TAB-v2.0.md)** | Transcendental Argument for Being: metaphysical groundwork |
-| **[LRT-Lean-Proofing-Status.md](LRT-Lean-Proofing-Status.md)** | Current Lean formalization status |
-| **[LRT-Lean-Approach.md](LRT-Lean-Approach.md)** | Formalization methodology |
+| **[001-LRT-TAB-PHILOSOPHY.md](001-LRT-TAB-PHILOSOPHY.md)** | Transcendental Argument for Being: metaphysical groundwork |
+| **[002-LRT-CORE-PHYSICS.md](002-LRT-CORE-PHYSICS.md)** | Canonical unified source: complete 13-step derivation chain |
+| **[007-LRT-LEAN-PROOFING-STATUS.md](007-LRT-LEAN-PROOFING-STATUS.md)** | Current Lean formalization status |
+| **[006-LRT-LEAN-APPROACH.md](006-LRT-LEAN-APPROACH.md)** | Formalization methodology |
 | **[lrt-memory.md](lrt-memory.md)** | Project memory for AI agents |
 
 ---
@@ -73,19 +73,22 @@ Located in `supplementary/`:
 
 ```
 theory/
-├── LRT-MASTER.md               # Canonical source
-├── TAB-v2.0.md                 # Transcendental argument
-├── LRT-Lean-*.md               # Formalization docs
-├── lrt-memory.md               # Agent memory
+├── 001-LRT-TAB-PHILOSOPHY.md   # Philosophical foundation
+├── 002-LRT-CORE-PHYSICS.md    # Core physics derivation
+├── 003-LRT-COSMOLOGY.md       # Dark energy extension
+├── 004-LRT-FORMALIZATION.md   # Lean formalization overview
+├── 005-LRT-FORMALIZATION-METHODS.md  # Formal methods
+├── 006-LRT-LEAN-APPROACH.md   # Lean 4 approach
+├── 007-LRT-LEAN-PROOFING-STATUS.md  # Proof tracking
+├── LRT-MEMORY.md               # Agent memory
+├── tasks.md                    # Task tracking
 ├── figures/                    # Diagrams
 ├── issues/                     # Tracked gaps
-├── LRT_Extended/               # Extension work
-├── pdf/                        # PDF exports
 ├── submissions/                # Journal materials
 └── supplementary/              # Technical supplements (S1-S7+)
 ```
 
-**Archived materials:** See `/archive/theory-versions/` and `/archive/theory-pre-refactor/`.
+**Archived materials:** See `/archive/` (theory-versions, theory-pre-refactor, 2026-03-pre-rename).
 
 ---
 

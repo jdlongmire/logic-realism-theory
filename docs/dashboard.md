@@ -102,8 +102,8 @@ Full derivation chain X → Schrödinger: PRIMITIVE (3) + EXTERNAL (16) only.
 
 | Document | Description |
 |----------|-------------|
-| [LRT-MASTER.md](https://github.com/jdlongmire/logic-realism-theory/blob/master/theory/LRT-MASTER.md) | Canonical 13-step derivation |
-| [TAB-v2.0.md](https://github.com/jdlongmire/logic-realism-theory/blob/master/theory/TAB-v2.0.md) | Transcendental Argument for Being |
+| [002-LRT-CORE-PHYSICS.md](https://github.com/jdlongmire/logic-realism-theory/blob/master/theory/002-LRT-CORE-PHYSICS.md) | Canonical 13-step derivation |
+| [001-LRT-TAB-PHILOSOPHY.md](https://github.com/jdlongmire/logic-realism-theory/blob/master/theory/001-LRT-TAB-PHILOSOPHY.md) | Transcendental Argument for Being |
 | [claims.yaml](https://github.com/jdlongmire/logic-realism-theory/blob/master/formalization/traceability/claims.yaml) | Full traceability matrix |
 | [axiom-status.md](https://github.com/jdlongmire/logic-realism-theory/blob/master/docs/formalization/axiom-status.md) | Axiom classification and audit |
 

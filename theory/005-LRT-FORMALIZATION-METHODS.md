@@ -265,9 +265,9 @@ logic-realism-theory/
 │       ├── build.sh                  # Build with Mathlib cache
 │       └── clean.sh                  # Clean LRT artifacts only
 ├── theory/
-│   ├── TAB-v2.0.md                   # Transcendental argument
-│   ├── LRT-MASTER.md                 # Physics reconstruction
-│   ├── LRT-Formalization-Methods.md  # This document
+│   ├── 001-LRT-TAB-PHILOSOPHY.md     # Transcendental argument
+│   ├── 002-LRT-CORE-PHYSICS.md      # Physics reconstruction
+│   ├── 005-LRT-FORMALIZATION-METHODS.md  # This document
 │   └── supplementary/                # Technical supplements
 └── traceability/
     ├── claims/                       # YAML claim files

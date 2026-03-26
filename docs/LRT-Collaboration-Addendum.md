@@ -46,7 +46,7 @@ theory/                              formalization/LrtFormalization/
 | Theory | First principles only, explicit dependencies, circularity check, no undefined terms |
 | Lean | Compiles without sorry, axiom count documented, no smuggled assumptions |
 
-**Tracking:** See `theory/LRT-Lean-Proofing-Status.md` for derivation chain and progress.
+**Tracking:** See `theory/007-LRT-LEAN-PROOFING-STATUS.md` for derivation chain and progress.
 
 ### Document Header (Mandatory)
 
@@ -130,7 +130,7 @@ Tier 0 primitives must satisfy:
 
 | Location | Pattern | Example |
 |----------|---------|---------|
-| theory/ | `{topic}.md` | `LRT-MASTER.md`, `TAB-v2.0.md` |
+| theory/ | `{NNN}-LRT-{TOPIC}.md` | `001-LRT-TAB-PHILOSOPHY.md`, `002-LRT-CORE-PHYSICS.md` |
 | formalization/ | `Step{N}_{Name}.lean` | `Step0_Primitives.lean` |
 | archive/ | `yyyymmdd-{description}/` | `20251221-theory-consolidation/` |
 | docs/ | `{topic}.md` | `axiom-status.md` |

@@ -11,7 +11,7 @@
 |----------|------|-------|--------|
 | **TAB v2.0** | Foundation | X through bridge equation | **READY FOR SUBMISSION** |
 | **LRT-MASTER v2.0** | Reconstruction | Assumes bridge + R1–R4 + PPC → QM | Pending |
-| **LRT-Formalization-Methods.md** | Methodology | What Lean verifies (and doesn't) | Pending |
+| **005-LRT-FORMALIZATION-METHODS.md** | Methodology | What Lean verifies (and doesn't) | Pending |
 | **LRT-Cosmology.md** | Extension | Information circulation hypothesis | **ACTIVE** (2026-03-25) |
 
 ### Bridge Equation Status
@@ -101,7 +101,7 @@ Each document follows a distinct format to signal its claim type to referees.
 
 ---
 
-#### LRT-Formalization-Methods.md — Methods Note
+#### 005-LRT-FORMALIZATION-METHODS.md — Methods Note
 
 **Target length:** ~10 pages
 **Goal:** Explain exactly what Lean verifies
@@ -119,7 +119,7 @@ Each document follows a distinct format to signal its claim type to referees.
 
 ---
 
-#### LRT-Cosmology.md — Speculative Theoretical Physics
+#### 003-LRT-COSMOLOGY.md — Speculative Theoretical Physics
 
 **Format:** Introduction explicitly marks work as exploratory
 
@@ -231,8 +231,8 @@ Lean does NOT verify:
 ## Lean Formalization Status
 
 **Location:** `formalization/`
-**Development approach:** `theory/LRT-Lean-Approach.md`
-**Status document:** `theory/LRT-Lean-Proofing-Status.md`
+**Development approach:** `theory/006-LRT-LEAN-APPROACH.md`
+**Status document:** `theory/007-LRT-LEAN-PROOFING-STATUS.md`
 
 **Build status:** ✅ VERIFIED (2026-03-20)
 - Build: SUCCESS (2491 jobs)
@@ -389,8 +389,8 @@ axioms (QM-011, QM-012) replace one black-box axiom.
 
 ## LRT-MASTER Paper
 
-**File:** `LRT-MASTER.md`
-**PDF:** `LRT-MASTER.pdf`
+**File:** `002-LRT-CORE-PHYSICS.md`
+**PDF:** (regenerate from 002-LRT-CORE-PHYSICS.md when needed)
 
 **Last update:** 2026-03-16
 - ToC removed from PDF generation
@@ -478,7 +478,7 @@ Route B is cleaner because it imports well-established results (no-hiding, CDP) 
 
 ## LRT Cosmology Development (2026-03-25)
 
-**File:** `theory/LRT-Cosmology.md`
+**File:** `theory/003-LRT-COSMOLOGY.md`
 **Status:** Active development
 **GitHub Project:** https://github.com/users/jdlongmire/projects/4
 
@@ -781,7 +781,7 @@ This preserves:
 ## Multi-Reviewer Synthesis (2026-03-16)
 
 **Sources:** Grok, ChatGPT (×2), Gemini adversarial reviews
-**Full analysis:** `theory/LRT-Lean-Approach.md`
+**Full analysis:** `theory/006-LRT-LEAN-APPROACH.md`
 
 ### The Core Insight
 
@@ -1104,7 +1104,7 @@ cd traceability && python3 scripts/build.py --all
 - **Update Mathlib:** `cd formalization && ./scripts/update-mathlib.sh`
 - **Check for sorry:** `grep -r "sorry" formalization/LrtFormalization/ --include="*.lean" | grep -v "no sorry"`
 - **List axioms:** `grep -rh "^axiom" formalization/LrtFormalization/ --include="*.lean" | wc -l`
-- **Generate PDF:** `pandoc LRT-MASTER.md -o LRT-MASTER.pdf --pdf-engine=xelatex -V geometry:margin=1in`
+- **Generate PDF:** `pandoc 002-LRT-CORE-PHYSICS.md -o 002-LRT-CORE-PHYSICS.pdf --pdf-engine=xelatex -V geometry:margin=1in`
 - **Build traceability reports:** `cd traceability && python3 scripts/build.py --all`
 
 ### Quick Status Check

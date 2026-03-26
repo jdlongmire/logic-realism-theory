@@ -35,7 +35,7 @@ Actuality coincides with the logically admissible informational configurations o
 
 ```
 logic-realism-theory/
-├── theory/                 # Active theory documents (LRT-MASTER.md, TAB-v2.0.md)
+├── theory/                 # Active theory documents (001-007 numbered sequence)
 ├── formalization/          # Lean 4 formalization (Steps 0-10)
 ├── docs/                   # Consolidated documentation
 │   ├── formalization/      # Lean research and axiom audits
@@ -70,15 +70,15 @@ See [docs/formalization/axiom-status.md](docs/formalization/axiom-status.md) for
 
 | Document | Description |
 |----------|-------------|
-| [LRT-MASTER.md](theory/LRT-MASTER.md) | Canonical unified source: complete 13-step derivation |
-| [TAB-v2.0.md](theory/TAB-v2.0.md) | Transcendental Argument for Being: metaphysical groundwork |
+| [001-LRT-TAB-PHILOSOPHY.md](theory/001-LRT-TAB-PHILOSOPHY.md) | Transcendental Argument for Being: metaphysical groundwork |
+| [002-LRT-CORE-PHYSICS.md](theory/002-LRT-CORE-PHYSICS.md) | Canonical unified source: complete 13-step derivation |
 
 ### Formalization
 
 | Document | Description |
 |----------|-------------|
-| [LRT-Lean-Proofing-Status.md](theory/LRT-Lean-Proofing-Status.md) | Current Lean formalization status |
-| [LRT-Lean-Approach.md](theory/LRT-Lean-Approach.md) | Formalization methodology and strategy |
+| [007-LRT-LEAN-PROOFING-STATUS.md](theory/007-LRT-LEAN-PROOFING-STATUS.md) | Current Lean formalization status |
+| [006-LRT-LEAN-APPROACH.md](theory/006-LRT-LEAN-APPROACH.md) | Formalization methodology and strategy |
 
 ### Published (Zenodo)
 
