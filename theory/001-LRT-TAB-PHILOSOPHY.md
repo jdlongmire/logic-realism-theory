@@ -269,7 +269,7 @@ Clarity about A's primitive status requires specifying what A is not:
 - **Not a random variable.** Randomness presupposes a probability distribution; A has no such characteristic. A is the fact that something obtains, not the mechanism by which selection occurs. The Born rule (derived elsewhere) supplies probabilities; A supplies the primitive of actualization that the probabilities concern.
 - **Not a hidden variable.** A is not an unknown parameter that, if discovered, would render quantum indeterminacy deterministic. It is the ontological primitive that makes the distinction between possibility and actuality coherent.
 
-**What A is:** the irreducible marking of configurations as obtaining. Part I leaves A deliberately unmodeled beyond this minimal characterization. Part II shows what follows when A operates on I∞ under L₃ in the context of physical measurement. The refusal to reduce A to something prior is not a gap in the theory but its central move: actuality cannot be derived from possibility.
+**What A is:** the irreducible marking of configurations as obtaining. A is non-temporal: temporal succession is an emergent ordering within A_Ω, not a feature of A itself. Part I leaves A deliberately unmodeled beyond this minimal characterization. Part II shows what follows when A operates on I∞ under L₃ in the context of physical measurement. The refusal to reduce A to something prior is not a gap in the theory but its central move: actuality cannot be derived from possibility.
 
 ### 4.3 The Ontological Status of A
 
@@ -427,7 +427,7 @@ Given the primitives, the actualized domain is *characterized as* the L₃-admis
 
 This two-step structure addresses a natural objection: "Isn't the equation trivially true by definition?" The answer is no. The *grounding* claim is not trivial: that the primitives interact to produce any actualized domain at all is the substantive transcendental result. The characterization makes explicit what structure that domain has.
 
-A critic who holds that A could systematically exclude some L₃-admissible configurations from the actualized domain occupies a coherent logical position, but an unmotivated one: such exclusion would require a further constraint on A beyond L₃-admissibility, which would entail that L₃ is not the complete admissibility criterion — contradicting the result of §2. In the absence of any such additional constraint, and given the plenitude premise established in §6.1, the characterization holds.
+A critic who holds that A could systematically exclude some L₃-admissible configurations from the actualized domain occupies a coherent logical position, but an unmotivated one: such exclusion would require a further constraint on A beyond L₃-admissibility, which would entail that L₃ is not the complete admissibility criterion — contradicting the result of §2. In the absence of any such additional constraint, and given the plenitude premise established in §6.1, the characterization holds. The characterization is forced: no non-trivial alternative mapping from χ to A_Ω is coherent, because any deviation from L₃(I∞) requires a constraint that §6.2.2 shows cannot be specified.
 
 The bridge equation is therefore:
 
@@ -474,6 +474,8 @@ The answer turns on A's primitive status. Suppose A systematically excludes some
 2. A is governed by a further principle that selects among admissibles. But then A is not primitive; it is conditioned by something else. This violates the architecture in which A marks the basic fact of obtaining.
 
 Neither option is coherent with the framework. Therefore, if A is primitive and L₃ is the complete logical constraint, no systematic exclusion of admissible configurations can be grounded. What L₃ permits, A does not selectively refuse.
+
+A subtler version of the objection concedes both points but insists that A might be *primitively selective*: not governed by a rule, not violating L₃, simply a brute fact that some admissibles obtain and others do not. This move treats selectivity as a feature of A's primitive character rather than a constraint imposed on it. But a partition without distinguishing criteria is not a partition. If A excludes configuration *k* without any property differentiating *k* from included configurations, then "excluded" and "included" fail to denote distinct categories: there is nothing in virtue of which *k* falls on one side rather than the other. Exclusion without differentiation is not a primitive fact; it is a contentless label. And differentiation, as §6.2.2 demonstrates, requires L₃-governed identity conditions, returning us to structured constraint. Primitive selectivity is therefore not a third option. It collapses into either structured constraint (option 2) or vacuous assertion.
 
 This does not commit TAB to modal realism in the Lewisian sense. Lewis posits the actual existence of spatiotemporally isolated concrete worlds. TAB claims that actuality is coextensive with logical admissibility within a single unified domain—a structural identity, not a plurality of worlds. The contrast with modal realism is preserved precisely because A_Ω is not carved into disconnected totalities but constitutes the single actualized domain constrained by L₃.
 
