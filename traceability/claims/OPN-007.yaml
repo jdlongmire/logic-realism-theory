@@ -1,0 +1,44 @@
+# OPN-007: Action Principle from X
+id: OPN-007
+name: Action Principle from X (Quantum Action on State Space)
+statement: |
+  The quantum action on state space CP(H) is:
+    S[gamma] = hbar * integral(A_FS) - integral(<H> dt)
+  where A_FS is the Fubini-Study connection (from D, Step 4) and
+  <H> is the Hamiltonian expectation (from Stone, Step 10).
+  Hamilton's principle (delta S = 0) recovers the Schrodinger equation.
+
+role: derived
+proof_status: prose_only
+epistemic_status: established
+
+source_documents:
+  - doc: 002-LRT-CORE-PHYSICS
+    section: "5.7.3"
+  - doc: 002-LRT-CORE-PHYSICS
+    section: "9.7"
+
+depends_on:
+  - claim_id: QM-004
+    dependency_type: logical
+  - claim_id: PHY-003
+    dependency_type: logical
+  - claim_id: PHY-004
+    dependency_type: logical
+
+external_citations:
+  - "Anandan, J. & Aharonov, Y. (1990). Geometry of quantum evolution. PRL 65, 1697."
+  - "Kibble, T.W.B. (1979). Geometrization of quantum mechanics. CMP 65, 189."
+
+risk_if_false: |
+  The action principle provides a second derivation route to Schrodinger.
+  If it fails, the Stone's theorem route (Step 13) remains valid.
+  The Anandan-Aharonov relation would also fail, breaking the
+  energy-distinguishability connection.
+
+notes: |
+  Created 2026-03-27. RESOLVED in 002 section 5.7.3.
+  Dependency chain is acyclic: D established at Step 4, H at Step 10,
+  neither invokes the action functional.
+  OPN-001 (Energy-Action) is a corollary via the Anandan-Aharonov relation.
+  Configuration-space action remains open (requires representation-specific input).

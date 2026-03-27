@@ -394,6 +394,26 @@
         }
       ]
     },
+    "EXT-007": {
+      "id": "EXT-007",
+      "name": "No-Hiding Theorem",
+      "statement": "If information is missing from a subsystem, it must reside in the\nremainder of the composite system. Quantum information cannot be\ncompletely hidden in correlations between subsystems.\n",
+      "role": "imported",
+      "proof_status": "imported",
+      "epistemic_status": "established",
+      "source_documents": [
+        {
+          "doc": "002-LRT-CORE-PHYSICS",
+          "section": "3.2.1"
+        }
+      ],
+      "depends_on": [],
+      "external_citations": [
+        "Braunstein, S.L. & Pati, A.K. (2007). Quantum information cannot be completely hidden in correlations: Implications for the black-hole information paradox. Physical Review Letters, 98(8), 080502."
+      ],
+      "risk_if_false": "If the No-Hiding theorem fails, OPN-005 (K=2 via purification)\nloses its grounding argument for the purification principle.\n",
+      "notes": "Created 2026-03-27. Tier 2 external theorem, same status as\nGleason (EXT-002) and Stone (EXT-003). Used in OPN-005 to\nground the purification principle from Boolean actualization.\nPresupposes unitary evolution and Hilbert space structure,\nboth established by prior steps in the reconstruction.\n"
+    },
     "LOG-001": {
       "id": "LOG-001",
       "name": "Determinate Identity",
@@ -654,73 +674,16 @@
     },
     "OPN-001": {
       "id": "OPN-001",
-      "name": "Relativistic Extension",
-      "statement": "Can LRT be extended to incorporate special and general relativity?\nDoes the emergence of time in LRT connect to spacetime structure?\n",
-      "role": "open",
-      "proof_status": "open",
-      "epistemic_status": "open",
-      "source_documents": [
-        {
-          "doc": "LRT-MASTER",
-          "section": "6.1"
-        }
-      ],
-      "depends_on": [
-        {
-          "claim_id": "PHY-002",
-          "dependency_type": "interpretive"
-        },
-        {
-          "claim_id": "PHY-004",
-          "dependency_type": "logical"
-        }
-      ],
-      "risk_if_false": "If LRT cannot accommodate relativity, it remains a non-relativistic\ntheory and cannot be a complete foundation for physics.\n",
-      "notes": "This is a major research direction. The non-relativistic Schr\u00f6dinger\nequation is a starting point, not an endpoint.\n"
-    },
-    "OPN-002": {
-      "id": "OPN-002",
-      "name": "Bekenstein-Hawking Entropy Bridge",
-      "statement": "Can the Bekenstein-Hawking entropy formula S = A/(4l_P\u00b2) be derived\nor understood within LRT? Does I\u221e provide a microstate basis for\nblack hole entropy?\n",
-      "role": "open",
-      "proof_status": "open",
-      "epistemic_status": "open",
-      "source_documents": [
-        {
-          "doc": "LRT-MASTER",
-          "section": "6.2"
-        }
-      ],
-      "depends_on": [
-        {
-          "claim_id": "ONT-002",
-          "dependency_type": "interpretive"
-        },
-        {
-          "claim_id": "OPN-001",
-          "dependency_type": "logical"
-        }
-      ],
-      "risk_if_false": "If LRT cannot connect to black hole thermodynamics, it misses\na major nexus of quantum gravity.\n",
-      "notes": "Highly speculative. Requires relativistic extension first.\n"
-    },
-    "OPN-003": {
-      "id": "OPN-003",
       "name": "Energy-Action Relationship",
-      "statement": "Can the relationship between energy and action (E = \u2202S/\u2202t) be\nderived from LRT's actualization structure? How does the action\nprinciple emerge?\n",
+      "statement": "Can the relationship between energy and action (E = dS/dt) be\nderived from LRT's actualization structure? How does the action\nprinciple emerge?\n",
       "role": "open",
-      "proof_status": "open",
-      "epistemic_status": "open",
-      "formal_artifacts": {
-        "lean": [
-          {
-            "file": "Step9_EnergyAction.lean",
-            "symbol": "energy_action_relationship",
-            "status": "sorry"
-          }
-        ]
-      },
+      "proof_status": "prose_only",
+      "epistemic_status": "established",
       "source_documents": [
+        {
+          "doc": "002-LRT-CORE-PHYSICS",
+          "section": "5.7.3"
+        },
         {
           "doc": "LRT-OpenProblem1",
           "section": "Full document"
@@ -730,10 +693,74 @@
         {
           "claim_id": "PHY-003",
           "dependency_type": "logical"
+        },
+        {
+          "claim_id": "OPN-007",
+          "dependency_type": "logical"
         }
       ],
       "risk_if_false": "Without energy-action derivation, the Hamiltonian's physical\nmeaning remains imported rather than derived.\n",
-      "notes": "Active open problem. See LRT_OpenProblem1_EnergyAction.md.\n"
+      "notes": "Renumbered from OPN-003 (2026-03-27) to align with paper numbering.\nRESOLVED as corollary of OPN-007: the Anandan-Aharonov relation\nidentifies energy uncertainty as the rate of distinguishability change,\nmaking energy-action a direct consequence of the quantum action principle.\nSee 002 section 5.7.3.\n"
+    },
+    "OPN-002": {
+      "id": "OPN-002",
+      "name": "Continuity of Actualization",
+      "statement": "Does the actualization operator A exhibit continuity or smoothness\nproperties? Can the discrete-to-continuous transition (Step 10)\nbe grounded in A's structure rather than imported via Debreu-Nachbin?\n",
+      "role": "open",
+      "proof_status": "open",
+      "epistemic_status": "open",
+      "source_documents": [
+        {
+          "doc": "LRT-OpenProblem2",
+          "section": "Full document"
+        },
+        {
+          "doc": "002-LRT-CORE-PHYSICS",
+          "section": "4.3"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "PHY-002",
+          "dependency_type": "logical"
+        },
+        {
+          "claim_id": "ACT-001",
+          "dependency_type": "logical"
+        }
+      ],
+      "risk_if_false": "Without continuity derivation, the continuous time representation\ndepends on an external topological theorem (Debreu-Nachbin) rather\nthan emerging from LRT's own structure.\n",
+      "notes": "Created 2026-03-27. See LRT_OpenProblem2_Continuity.md.\nMedium priority. The Debreu-Nachbin import is legitimate but\na native continuity argument would strengthen the framework.\n"
+    },
+    "OPN-003": {
+      "id": "OPN-003",
+      "name": "Separation Theorem for Local Tomography",
+      "statement": "For any two composite states rho_1, rho_2 in I_inf with rho_1 != rho_2\n(under the distinguishability metric D), there exist local measurements\nM_A, M_B such that the joint statistics p(a,b|M_A,M_B) differ for\nrho_1 and rho_2.\n",
+      "role": "open",
+      "proof_status": "open",
+      "epistemic_status": "argued",
+      "source_documents": [
+        {
+          "doc": "002-LRT-CORE-PHYSICS",
+          "section": "9.2"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "QM-001",
+          "dependency_type": "logical"
+        },
+        {
+          "claim_id": "QM-002",
+          "dependency_type": "logical"
+        },
+        {
+          "claim_id": "LOG-001",
+          "dependency_type": "logical"
+        }
+      ],
+      "risk_if_false": "Without the separation theorem, the H1-to-H2 bridge remains argued\nrather than established. Step 3 (local tomography) stays at ARGUED\nepistemic status.\n",
+      "notes": "Created 2026-03-27. Proving this within LRT would elevate Step 3\nfrom ARGUED to ESTABLISHED. Appropriate target for Lean formalization.\n"
     },
     "OPN-004": {
       "id": "OPN-004",
@@ -774,6 +801,174 @@
       "derivation_sketch": "1. Boolean actualization forces measurement events to have Boolean spectrum\n2. Interference requires non-Boolean state evolution (phase relationships)\n3. K = 1 (reals): No phase structure \u2192 no interference \u2192 rejected\n4. K = 4 (quaternions): Non-associative tensor products for >2 systems \u2192 rejected\n5. K = 2 (complex): Unique field satisfying Boolean measurement + interference + associativity\n\nKey insight: A selects definite outcomes (Boolean), but A_\u03a9 contains\nsuperposition structure (from I\u221e). The interplay forces complex amplitudes.\n",
       "risk_if_false": "Without K=2 derivation, LRT must import complex structure as assumption.\nThis weakens the claim that QM is derived rather than postulated.\nThe distinctive LRT claim collapses to reconstruction + metaphysics.\n",
       "notes": "This is the most important open derivation in the program.\nCurrently axiomatized; Phase 3 target for derivation.\nReferences: Hardy 2012, Stueckelberg 1960, Wootters 1990.\n"
+    },
+    "OPN-005": {
+      "id": "OPN-005",
+      "name": "K=2 via Purification (Boolean + CDP Route)",
+      "statement": "Derive K=2 (complex field selection) via: Boolean spectrum (from L3)\n+ No-Hiding Theorem (Braunstein-Pati, EXT-007) grounds the purification\nprinciple, which combined with local tomography (Step 3) and the CDP\nreconstruction (2011) selects K=2.\n",
+      "role": "open",
+      "proof_status": "prose_only",
+      "epistemic_status": "argued",
+      "formal_artifacts": {
+        "lean": [
+          {
+            "file": "Step4/Purification.lean",
+            "symbol": "boolean_implies_purification",
+            "status": "proven"
+          },
+          {
+            "file": "Step4/Purification.lean",
+            "symbol": "boolean_plus_nohiding_implies_purification",
+            "status": "proven"
+          }
+        ]
+      },
+      "source_documents": [
+        {
+          "doc": "002-LRT-CORE-PHYSICS",
+          "section": "3.2.1"
+        },
+        {
+          "doc": "ai-consult-k2.md",
+          "section": "Route B"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "QM-005",
+          "dependency_type": "logical"
+        },
+        {
+          "claim_id": "QM-003",
+          "dependency_type": "logical"
+        },
+        {
+          "claim_id": "EXT-007",
+          "dependency_type": "logical"
+        }
+      ],
+      "external_citations": [
+        "Braunstein, S.L. & Pati, A.K. (2007). Quantum information cannot be completely hidden in correlations. PRL 98(8), 080502.",
+        "Chiribella, G., D'Ariano, G.M. & Perinotti, P. (2011). Informational derivation of quantum theory. PRA 84, 012311."
+      ],
+      "risk_if_false": "If the Boolean-to-purification grounding fails, K=2 depends entirely\non Masanes-Mueller (which requires three additional physical axioms)\nor OPN-004 (internal derivation, HIGH difficulty, OPEN).\n",
+      "notes": "Created 2026-03-27. Key defense against classical counterexample:\nlocal tomography (Step 3) excludes classical probability theories\nBEFORE the purification argument runs. K(N^2) != K(N)^2 for\nclassical (K=N-1) and real (K=N(N+1)/2-1) theories.\nNo-Hiding is Tier 2 (same status as Gleason, Stone).\nLean formalization compiles with zero sorries.\n"
+    },
+    "OPN-006": {
+      "id": "OPN-006",
+      "name": "Derive w=-1 from LRT Actualization Mechanics",
+      "statement": "Why does accumulated actualization residue exhibit negative pressure\n(equation of state parameter w=-1)? Derive the cosmological constant\nbehavior from the information circulation cycle.\n",
+      "role": "open",
+      "proof_status": "open",
+      "epistemic_status": "conjectured",
+      "source_documents": [
+        {
+          "doc": "003-LRT-COSMOLOGY",
+          "section": "Issue #63"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "ACT-001",
+          "dependency_type": "logical"
+        },
+        {
+          "claim_id": "PHY-001",
+          "dependency_type": "interpretive"
+        }
+      ],
+      "risk_if_false": "Without w=-1 derivation, the dark energy interpretation remains\na qualitative narrative rather than a quantitative prediction.\n",
+      "notes": "Created 2026-03-27. Cosmology extension (003-LRT-COSMOLOGY).\nRelated to GitHub issue #63 in logic-realism-theory repo.\nCandidate approaches: dimensional analysis, conservation constraints.\nLow priority relative to core derivation chain.\n"
+    },
+    "OPN-007": {
+      "id": "OPN-007",
+      "name": "Action Principle from X (Quantum Action on State Space)",
+      "statement": "The quantum action on state space CP(H) is:\n  S[gamma] = hbar * integral(A_FS) - integral(<H> dt)\nwhere A_FS is the Fubini-Study connection (from D, Step 4) and\n<H> is the Hamiltonian expectation (from Stone, Step 10).\nHamilton's principle (delta S = 0) recovers the Schrodinger equation.\n",
+      "role": "derived",
+      "proof_status": "prose_only",
+      "epistemic_status": "established",
+      "source_documents": [
+        {
+          "doc": "002-LRT-CORE-PHYSICS",
+          "section": "5.7.3"
+        },
+        {
+          "doc": "002-LRT-CORE-PHYSICS",
+          "section": "9.7"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "QM-004",
+          "dependency_type": "logical"
+        },
+        {
+          "claim_id": "PHY-003",
+          "dependency_type": "logical"
+        },
+        {
+          "claim_id": "PHY-004",
+          "dependency_type": "logical"
+        }
+      ],
+      "external_citations": [
+        "Anandan, J. & Aharonov, Y. (1990). Geometry of quantum evolution. PRL 65, 1697.",
+        "Kibble, T.W.B. (1979). Geometrization of quantum mechanics. CMP 65, 189."
+      ],
+      "risk_if_false": "The action principle provides a second derivation route to Schrodinger.\nIf it fails, the Stone's theorem route (Step 13) remains valid.\nThe Anandan-Aharonov relation would also fail, breaking the\nenergy-distinguishability connection.\n",
+      "notes": "Created 2026-03-27. RESOLVED in 002 section 5.7.3.\nDependency chain is acyclic: D established at Step 4, H at Step 10,\nneither invokes the action functional.\nOPN-001 (Energy-Action) is a corollary via the Anandan-Aharonov relation.\nConfiguration-space action remains open (requires representation-specific input).\n"
+    },
+    "OPN-008": {
+      "id": "OPN-008",
+      "name": "Relativistic Extension",
+      "statement": "Can LRT be extended to incorporate special and general relativity?\nDoes the emergence of time in LRT connect to spacetime structure?\n",
+      "role": "open",
+      "proof_status": "open",
+      "epistemic_status": "open",
+      "source_documents": [
+        {
+          "doc": "002-LRT-CORE-PHYSICS",
+          "section": "9.3"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "PHY-002",
+          "dependency_type": "interpretive"
+        },
+        {
+          "claim_id": "PHY-004",
+          "dependency_type": "logical"
+        }
+      ],
+      "risk_if_false": "If LRT cannot accommodate relativity, it remains a non-relativistic\ntheory and cannot be a complete foundation for physics.\n",
+      "notes": "Renumbered from OPN-001 (2026-03-27) to align with paper numbering.\nThis is a major research direction. The non-relativistic Schrodinger\nequation is a starting point, not an endpoint.\n"
+    },
+    "OPN-009": {
+      "id": "OPN-009",
+      "name": "Bekenstein-Hawking Entropy Bridge",
+      "statement": "Can the Bekenstein-Hawking entropy formula S = A/(4l_P^2) be derived\nor understood within LRT? Does I_inf provide a microstate basis for\nblack hole entropy?\n",
+      "role": "open",
+      "proof_status": "open",
+      "epistemic_status": "open",
+      "source_documents": [
+        {
+          "doc": "002-LRT-CORE-PHYSICS",
+          "section": "9.6"
+        }
+      ],
+      "depends_on": [
+        {
+          "claim_id": "ONT-002",
+          "dependency_type": "interpretive"
+        },
+        {
+          "claim_id": "OPN-008",
+          "dependency_type": "logical"
+        }
+      ],
+      "risk_if_false": "If LRT cannot connect to black hole thermodynamics, it misses\na major nexus of quantum gravity.\n",
+      "notes": "Renumbered from OPN-002 (2026-03-27) to align with paper numbering.\nHighly speculative. Requires relativistic extension (OPN-008) first.\n"
     },
     "PHY-002": {
       "id": "PHY-002",
@@ -832,13 +1027,13 @@
         }
       ],
       "risk_if_false": "If time is primitive, LRT loses parsimony and the emergence\nnarrative fails.\n",
-      "notes": "**2026-03-21 Update:** The axiom `time_embedding_dense` was removed.\nIt was mathematically impossible: no strictly monotone \u2115 \u2192 \u211d has dense range.\n\nLRT's position: time IS the actualization sequencing. Actualizations are\ndiscrete (\u2115-indexed). The continuum time parameter is a coordinate system\nfor these discrete events, not an ontologically dense medium. Continuous\ndynamics (Stone's theorem, Schr\u00f6dinger equation) describes interpolation\nbetween actualizations, not infinitely many actualizations between any two.\n\nThis is philosophically consistent with LRT's core claim that time emerges\nfrom actualization rather than being a pre-existing container.\n",
+      "notes": "LRT holds that time IS the actualization sequencing. Actualizations are\ndiscrete (\u2115-indexed). The continuum time parameter is a coordinate system\nfor these discrete events. Continuous dynamics (Stone's theorem, Schr\u00f6dinger\nequation) describes interpolation between actualizations.\n",
       "agent_history": [
         {
           "agent_id": "Claude",
           "date": "2026-03-21",
           "action": "updated",
-          "summary": "Removed `time_embedding_dense` axiom as mathematically impossible.\nClarified that LRT holds time is discrete actualization sequencing.\nUpdated formal_artifacts to reflect current Step8 structure.\nAdded note explaining the philosophical rationale.\n"
+          "summary": "Clarified that LRT holds time is discrete actualization sequencing.\nUpdated formal_artifacts to reflect current Step8 structure.\n"
         }
       ]
     },

@@ -4,13 +4,13 @@ Lean 4 formalization of Logic Realism Theory, implementing the complete derivati
 
 ---
 
-## Status (2026-03-21)
+## Status (2026-03-27)
 
 | Metric | Value |
 |--------|-------|
 | **Build** | ✅ SUCCESS |
-| **Total Axioms** | 22 |
-| **Sorries** | 2 (technical, not conceptual) |
+| **Total Axioms** | 19 |
+| **Sorries** | 3 (technical, not conceptual) |
 | **Toolchain** | leanprover/lean4:v4.28.0 |
 
 ### Axiom Classification
@@ -18,10 +18,10 @@ Lean 4 formalization of Logic Realism Theory, implementing the complete derivati
 | Category | Count | Description |
 |----------|-------|-------------|
 | **PRIMITIVE** | 3 | I∞, I_infinite, bridge_principle |
-| **EXTERNAL** | 19 | Established math (Gleason, Stone, Hardy, CDP, etc.) |
+| **EXTERNAL** | 16 | Established math (Gleason, Stone, Hardy, CDP, No-Hiding, etc.) |
 | **REMAINING** | 0 | All derivable axioms converted to theorems |
 
-**Net reduction: 44 → 22 axioms (50% reduction)**
+**Net reduction: 44 → 19 axioms (57% reduction)**
 
 ---
 
@@ -83,13 +83,13 @@ X → A_Ω → Determinate Identity → Local Tomography → ℂℋ → PVM → 
 | 1 | Step1_Constitution | Bridge principle | 1 |
 | 2 | Step2_DeterminateIdentity | Determinate identity, subsystems | 0 |
 | 3 | Step3_LocalTomography | Hardy H1/H2, k=2 | 2 |
-| 4 | Step4/*.lean | Hardy, Boolean, Purification | 4 |
+| 4 | Step4/*.lean | Hardy, Boolean, Purification | 3 |
 | 5 | Step5/*.lean | Eigenvalue restriction (theorems) | 0 |
 | 6 | Step6_BornRule | Gleason, Born rule | 4 |
 | 7 | Step7_Unitarity | Evolution family | 2 |
 | 8 | Step8_TemporalEmergence | Time embedding (theorems) | 0 |
 | 9 | Step9_EnergyAction | Stone, Planck, Noether | 4 |
-| 10 | Step10_Schrodinger | Schrödinger from Stone | 3 |
+| 10 | Step10_Schrodinger | Schrödinger from Stone | 1 |
 
 ---
 
@@ -145,4 +145,4 @@ source ~/.elan/env && lake build 2>&1 | tail -5
 
 ---
 
-**Last Updated**: 2026-03-21
+**Last Updated**: 2026-03-27

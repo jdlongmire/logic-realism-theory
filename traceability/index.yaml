@@ -1,7 +1,7 @@
 # LRT Traceability Index
 # Auto-generated claim registry index
-# Version: 1.1.0
-# Last updated: 2026-03-21
+# Version: 2.0.0
+# Last updated: 2026-03-27
 
 schema_version: "1.0.0"
 
@@ -19,12 +19,12 @@ prefixes:
 
 # Core derivation chain (ordered)
 derivation_chain:
-  - ONT-001  # X ≡ [L₃ : I∞ : A]
-  - ONT-002  # I∞ infinite information space
-  - ONT-003  # L₃ three fundamental laws
-  - ONT-004  # Configuration separation (from I∞ distinguishability)
-  - ACT-001  # X grounds AΩ (bridge principle)
-  - ACT-002  # AΩ actualized domain
+  - ONT-001  # X = [L3 : I_inf : A]
+  - ONT-002  # I_inf infinite information space
+  - ONT-003  # L3 three fundamental laws
+  - ONT-004  # Configuration separation (from I_inf distinguishability)
+  - ACT-001  # X grounds A_Omega (bridge principle)
+  - ACT-002  # A_Omega actualized domain
   - LOG-001  # Determinate identity
   - LOG-002  # Physical proposition criterion
   - QM-001   # H1 supervenience
@@ -34,11 +34,11 @@ derivation_chain:
   - QM-004   # Complex Hilbert space
   - QM-005   # Boolean actualization
   # Phase 4 Boolean Bridge Chain (2026-03-16)
-  - QM-009   # Sharp event interpretation (from L₃)
+  - QM-009   # Sharp event interpretation (from L3)
   - QM-010   # Event evaluation binary (from A)
   - QM-011   # Eigenvalue-outcome correspondence (bridge axiom)
   - QM-012   # Faithful event representation (bridge axiom)
-  - QM-006   # Boolean spectrum bridge (now derived)
+  - QM-006   # Boolean spectrum bridge (derived)
   - QM-007   # PVM structure
   - QM-013   # Complete events form PVMs
   - EXT-002  # Gleason theorem (imported)
@@ -47,36 +47,44 @@ derivation_chain:
   - PHY-002  # Temporal emergence
   - EXT-003  # Stone theorem (imported)
   - PHY-003  # Hamiltonian generator
-  - EXT-004  # Schrödinger from Stone generator (imported)
+  - EXT-004  # Schrodinger from Stone generator (imported)
   - EXT-005  # exp(A+B) = exp(A)exp(B) commuting (imported)
   - EXT-006  # exp(iH) unitary for self-adjoint H (imported)
-  - PHY-004  # Schrödinger equation
+  - PHY-004  # Schrodinger equation
+  - EXT-007  # No-Hiding theorem (Braunstein-Pati, imported)
+  - OPN-007  # Action principle from X (RESOLVED, section 5.7.3)
 
 # Predictions
 predictions:
   - PRD-001  # Complex over real QM
 
-# Open problems
+# Open problems (renumbered 2026-03-27 to align with 002 paper)
 open_problems:
-  - OPN-001  # Relativistic extension
-  - OPN-002  # Bekenstein-Hawking bridge
-  - OPN-003  # Energy-action relationship
-  - OPN-004  # K=2 forcing derivation
+  - OPN-001  # Energy-action relationship (RESOLVED, corollary of OPN-007)
+  - OPN-002  # Continuity of actualization
+  - OPN-003  # Separation theorem (Step 3 upgrade)
+  - OPN-004  # K=2 forcing via internal argument (HIGH, OPEN)
+  - OPN-005  # K=2 via Boolean + CDP purification (ARGUED)
+  - OPN-006  # Dark energy w=-1 derivation (cosmology, CONJECTURED)
+  - OPN-007  # Action principle from X (RESOLVED)
+  - OPN-008  # Relativistic extension (was OPN-001)
+  - OPN-009  # Bekenstein-Hawking entropy bridge (was OPN-002)
 
-# Status summary (updated 2026-03-21)
+# Status summary (updated 2026-03-27)
 status_summary:
-  total_claims: 36  # +3 from EXT-004, EXT-005, EXT-006
+  total_claims: 43  # 36 + 5 new OPN + EXT-007 + OPN-007
   verified: 9
   axiomatized: 13
-  derived: 2
-  imported: 6  # +3: EXT-004, EXT-005, EXT-006 (unbounded operator theory)
-  prose_only: 1
-  open: 5
+  derived: 3       # QM-006 + OPN-007
+  imported: 7      # +1: EXT-007 (No-Hiding)
+  prose_only: 2    # PRD-001, OPN-001 (resolved), OPN-005
+  open: 7          # OPN-002,003,004,006,008,009 + partial OPN-001
+  established: 2   # OPN-001 (resolved), OPN-007 (resolved)
 
-# Critical choke points (updated 2026-03-16, Phase 4)
+# Critical choke points (updated 2026-03-27)
 choke_points:
   - id: ACT-001
-    description: "Bridge principle: X grounds AΩ"
+    description: "Bridge principle: X grounds A_Omega"
     risk: "high"
   - id: QM-011
     description: "Eigenvalue-outcome correspondence"
@@ -89,11 +97,15 @@ choke_points:
   - id: ONT-004
     description: "Configuration separation axiom"
     risk: "medium"
-    notes: "Required for H1; philosophically motivated from I∞"
+    notes: "Required for H1; philosophically motivated from I_inf"
+  - id: OPN-004
+    description: "K=2 internal forcing"
+    risk: "high"
+    notes: "Biggest remaining vulnerability. OPN-005 provides alternative route (ARGUED)."
 
 # Phase 4 notes (2026-03-16)
 phase4_summary:
-  description: "Boolean actualization → projection structure bridge"
+  description: "Boolean actualization to projection structure bridge"
   new_claims: [QM-009, QM-010, QM-011, QM-012, QM-013]
   upgraded_claims:
     - id: QM-006
@@ -101,13 +113,13 @@ phase4_summary:
       new_status: "derived"
       notes: "Now derived from QM-009 through QM-012"
   key_insight: |
-    The chain L₃ → sharp events → binary evaluation → eigenvalue correspondence
-    → Boolean spectrum → idempotence → projections → PVMs is now explicit.
+    The chain L3 to sharp events to binary evaluation to eigenvalue correspondence
+    to Boolean spectrum to idempotence to projections to PVMs is now explicit.
     The remaining axioms (QM-011, QM-012) are well-motivated rather than black-box.
 
 # 2026-03-21 Reclassification
 reclassification_2026_03_21:
-  description: "Step 10 Schrödinger axioms → EXTERNAL"
+  description: "Step 10 Schrodinger axioms to EXTERNAL"
   new_claims: [EXT-004, EXT-005, EXT-006]
   reclassified:
     - id: schrodinger_from_stone
@@ -127,3 +139,31 @@ reclassification_2026_03_21:
     not by any open mathematical question. The mathematics is established
     (Stone 1932, Reed-Simon). Honest classification: LRT imports these
     results rather than pretending they're derivable within formalization scope.
+
+# 2026-03-27 Reconciliation
+reconciliation_2026_03_27:
+  description: "OPN renumbering and new claims to align with 002 paper"
+  renumbered:
+    - old_id: OPN-001
+      new_id: OPN-008
+      reason: "Relativistic extension; paper section 9.3 has no OPN label"
+    - old_id: OPN-002
+      new_id: OPN-009
+      reason: "Bekenstein-Hawking; paper section 9.6 has no OPN label"
+    - old_id: OPN-003
+      new_id: OPN-001
+      reason: "Energy-action; paper uses OPN-001 for this"
+  new_claims:
+    - OPN-002  # Continuity (from open problem docs)
+    - OPN-003  # Separation theorem (from 002 section 9.2)
+    - OPN-005  # K=2 via purification (from 002 section 3.2.1)
+    - OPN-006  # w=-1 derivation (from cosmology)
+    - OPN-007  # Action principle (RESOLVED, from 002 section 5.7.3/9.7)
+    - EXT-007  # No-Hiding theorem (used in OPN-005)
+  resolved:
+    - id: OPN-007
+      status: "established"
+      notes: "Quantum action derived in section 5.7.3"
+    - id: OPN-001
+      status: "established (corollary of OPN-007)"
+      notes: "Anandan-Aharonov relation makes energy-action a consequence"

@@ -25,7 +25,7 @@ Logic Realism Theory (LRT) proposes a single ground-level commitment: reality is
 | Document | Description |
 |----------|-------------|
 | **[001-LRT-TAB-PHILOSOPHY.md](001-LRT-TAB-PHILOSOPHY.md)** | Transcendental Argument for Being: metaphysical groundwork |
-| **[002-LRT-CORE-PHYSICS.md](002-LRT-CORE-PHYSICS.md)** | Canonical unified source: complete 13-step derivation chain |
+| **[002-LRT-CORE-PHYSICS.md](002-LRT-CORE-PHYSICS.md)** | Canonical unified source: complete 14-step derivation (Steps 0-14) |
 | **[400-LRT-FORMALIZATION.md](400-LRT-FORMALIZATION.md)** | Complete formalization reference (static) |
 | **[500-LRT-FORMALIZATION-STATUS.md](500-LRT-FORMALIZATION-STATUS.md)** | Current formalization status (living doc) |
 | **[lrt-memory.md](lrt-memory.md)** | Project memory for AI agents |
@@ -45,10 +45,11 @@ Located in `supplementary/`:
 | S5 | [S5_Dsing_BH_Entropy.md](supplementary/S5_Dsing_BH_Entropy.md) | Open Problem 9.5 |
 | S6 | [S6_UNS_Theorem.md](supplementary/S6_UNS_Theorem.md) | Step 8 |
 | S7 | [S7_G_Equivariance.md](supplementary/S7_G_Equivariance.md) | Step 11 |
+| S8-S14 | Additional supplements | Various |
 
 ---
 
-## Derivation Chain (Steps 0-13)
+## Derivation Chain (Steps 0-14)
 
 | Step | Content | Status |
 |------|---------|--------|
@@ -66,6 +67,7 @@ Located in `supplementary/`:
 | 11 | G-equivariance; U(t) unitary | ARGUED |
 | 12 | Stone's theorem; H self-adjoint | ESTABLISHED |
 | 13 | Schrödinger equation | ESTABLISHED |
+| 14 | Lagrangian and path integral | ESTABLISHED |
 
 ---
 
@@ -99,4 +101,4 @@ theory/
 
 ---
 
-**Last Updated**: 2026-03-20
+**Last Updated**: 2026-03-27

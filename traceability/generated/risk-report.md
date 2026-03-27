@@ -81,24 +81,26 @@ These claims are implemented in Lean but use `axiom` or `sorry`.
 
 ## Open Problems
 
-### OPN-001: Relativistic Extension
+### OPN-001: Energy-Action Relationship
 
-Can LRT be extended to incorporate special and general relativity?
-Does the emergence of time in LRT connect to spacetime structure?
-
-
-### OPN-002: Bekenstein-Hawking Entropy Bridge
-
-Can the Bekenstein-Hawking entropy formula S = A/(4l_P²) be derived
-or understood within LRT? Does I∞ provide a microstate basis for
-black hole entropy?
-
-
-### OPN-003: Energy-Action Relationship
-
-Can the relationship between energy and action (E = ∂S/∂t) be
+Can the relationship between energy and action (E = dS/dt) be
 derived from LRT's actualization structure? How does the action
 principle emerge?
+
+
+### OPN-002: Continuity of Actualization
+
+Does the actualization operator A exhibit continuity or smoothness
+properties? Can the discrete-to-continuous transition (Step 10)
+be grounded in A's structure rather than imported via Debreu-Nachbin?
+
+
+### OPN-003: Separation Theorem for Local Tomography
+
+For any two composite states rho_1, rho_2 in I_inf with rho_1 != rho_2
+(under the distinguishability metric D), there exist local measurements
+M_A, M_B such that the joint statistics p(a,b|M_A,M_B) differ for
+rho_1 and rho_2.
 
 
 ### OPN-004: K=2 Forcing (Complex over Real/Quaternionic)
@@ -106,4 +108,32 @@ principle emerge?
 Derive from LRT primitives that Hardy's parameter K must equal 2,
 forcing complex Hilbert space structure over real (K=1) or
 quaternionic (K=4) alternatives.
+
+
+### OPN-005: K=2 via Purification (Boolean + CDP Route)
+
+Derive K=2 (complex field selection) via: Boolean spectrum (from L3)
++ No-Hiding Theorem (Braunstein-Pati, EXT-007) grounds the purification
+principle, which combined with local tomography (Step 3) and the CDP
+reconstruction (2011) selects K=2.
+
+
+### OPN-006: Derive w=-1 from LRT Actualization Mechanics
+
+Why does accumulated actualization residue exhibit negative pressure
+(equation of state parameter w=-1)? Derive the cosmological constant
+behavior from the information circulation cycle.
+
+
+### OPN-008: Relativistic Extension
+
+Can LRT be extended to incorporate special and general relativity?
+Does the emergence of time in LRT connect to spacetime structure?
+
+
+### OPN-009: Bekenstein-Hawking Entropy Bridge
+
+Can the Bekenstein-Hawking entropy formula S = A/(4l_P^2) be derived
+or understood within LRT? Does I_inf provide a microstate basis for
+black hole entropy?
 

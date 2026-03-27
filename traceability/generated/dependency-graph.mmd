@@ -14,16 +14,22 @@ graph TD
     EXT-004["EXT-004: Schrödinger Equation from Ston..."]
     EXT-005["EXT-005: exp(A+B) = exp(A)exp(B) for Co..."]
     EXT-006["EXT-006: exp(iH) is Unitary for Self-Ad..."]
+    EXT-007["EXT-007: No-Hiding Theorem"]
     LOG-001["LOG-001: Determinate Identity"]
     LOG-002["LOG-002: Physical Proposition Criterion"]
     ONT-001["ONT-001: Primitive Ontic State X"]
     ONT-002["ONT-002: Infinite Information Space I∞"]
     ONT-003["ONT-003: Three Fundamental Logical Laws..."]
     ONT-004["ONT-004: Configuration Separation"]
-    OPN-001["OPN-001: Relativistic Extension"]
-    OPN-002["OPN-002: Bekenstein-Hawking Entropy Bri..."]
-    OPN-003["OPN-003: Energy-Action Relationship"]
+    OPN-001["OPN-001: Energy-Action Relationship"]
+    OPN-002["OPN-002: Continuity of Actualization"]
+    OPN-003["OPN-003: Separation Theorem for Local T..."]
     OPN-004["OPN-004: K=2 Forcing (Complex over Real..."]
+    OPN-005["OPN-005: K=2 via Purification (Boolean ..."]
+    OPN-006["OPN-006: Derive w=-1 from LRT Actualiza..."]
+    OPN-007["OPN-007: Action Principle from X (Quant..."]
+    OPN-008["OPN-008: Relativistic Extension"]
+    OPN-009["OPN-009: Bekenstein-Hawking Entropy Bri..."]
     PHY-002["PHY-002: Temporal Emergence"]
     PHY-003["PHY-003: Hamiltonian Generator"]
     PHY-004["PHY-004: Schrödinger Equation"]
@@ -57,13 +63,27 @@ graph TD
     ONT-001 --> ONT-002
     ONT-001 --> ONT-003
     ONT-002 --> ONT-004
-    PHY-002 -.->|interpretive| OPN-001
-    PHY-004 --> OPN-001
-    ONT-002 -.->|interpretive| OPN-002
-    OPN-001 --> OPN-002
-    PHY-003 --> OPN-003
+    PHY-003 --> OPN-001
+    OPN-007 --> OPN-001
+    PHY-002 --> OPN-002
+    ACT-001 --> OPN-002
+    QM-001 --> OPN-003
+    QM-002 --> OPN-003
+    LOG-001 --> OPN-003
     QM-005 --> OPN-004
     LOG-002 --> OPN-004
+    QM-005 --> OPN-005
+    QM-003 --> OPN-005
+    EXT-007 --> OPN-005
+    ACT-001 --> OPN-006
+    PHY-001 -.->|interpretive| OPN-006
+    QM-004 --> OPN-007
+    PHY-003 --> OPN-007
+    PHY-004 --> OPN-007
+    PHY-002 -.->|interpretive| OPN-008
+    PHY-004 --> OPN-008
+    ONT-002 -.->|interpretive| OPN-009
+    OPN-008 --> OPN-009
     PHY-001 --> PHY-002
     ACT-001 --> PHY-002
     PHY-001 --> PHY-003
@@ -111,6 +131,7 @@ graph TD
     class EXT-004 imported
     class EXT-005 imported
     class EXT-006 imported
+    class EXT-007 imported
     class LOG-001 derived
     class LOG-002 derived
     class ONT-001 primitive
@@ -121,6 +142,11 @@ graph TD
     class OPN-002 open
     class OPN-003 open
     class OPN-004 open
+    class OPN-005 open
+    class OPN-006 open
+    class OPN-007 derived
+    class OPN-008 open
+    class OPN-009 open
     class PHY-002 derived
     class PHY-003 derived
     class PHY-004 derived

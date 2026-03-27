@@ -1,32 +1,33 @@
-# OPN-003: Energy-Action Relationship
+# OPN-003: Separation Theorem
 id: OPN-003
-name: Energy-Action Relationship
+name: Separation Theorem for Local Tomography
 statement: |
-  Can the relationship between energy and action (E = ∂S/∂t) be
-  derived from LRT's actualization structure? How does the action
-  principle emerge?
+  For any two composite states rho_1, rho_2 in I_inf with rho_1 != rho_2
+  (under the distinguishability metric D), there exist local measurements
+  M_A, M_B such that the joint statistics p(a,b|M_A,M_B) differ for
+  rho_1 and rho_2.
 
 role: open
 proof_status: open
-epistemic_status: open
-
-formal_artifacts:
-  lean:
-    - file: Step9_EnergyAction.lean
-      symbol: energy_action_relationship
-      status: sorry
+epistemic_status: argued
 
 source_documents:
-  - doc: LRT-OpenProblem1
-    section: "Full document"
+  - doc: 002-LRT-CORE-PHYSICS
+    section: "9.2"
 
 depends_on:
-  - claim_id: PHY-003
+  - claim_id: QM-001
+    dependency_type: logical
+  - claim_id: QM-002
+    dependency_type: logical
+  - claim_id: LOG-001
     dependency_type: logical
 
 risk_if_false: |
-  Without energy-action derivation, the Hamiltonian's physical
-  meaning remains imported rather than derived.
+  Without the separation theorem, the H1-to-H2 bridge remains argued
+  rather than established. Step 3 (local tomography) stays at ARGUED
+  epistemic status.
 
 notes: |
-  Active open problem. See LRT_OpenProblem1_EnergyAction.md.
+  Created 2026-03-27. Proving this within LRT would elevate Step 3
+  from ARGUED to ESTABLISHED. Appropriate target for Lean formalization.

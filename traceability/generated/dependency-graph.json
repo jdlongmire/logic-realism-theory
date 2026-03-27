@@ -55,6 +55,12 @@
       "proof_status": "imported"
     },
     {
+      "id": "EXT-007",
+      "name": "No-Hiding Theorem",
+      "role": "imported",
+      "proof_status": "imported"
+    },
+    {
       "id": "LOG-001",
       "name": "Determinate Identity",
       "role": "derived",
@@ -92,25 +98,55 @@
     },
     {
       "id": "OPN-001",
-      "name": "Relativistic Extension",
+      "name": "Energy-Action Relationship",
       "role": "open",
-      "proof_status": "open"
+      "proof_status": "prose_only"
     },
     {
       "id": "OPN-002",
-      "name": "Bekenstein-Hawking Entropy Bridge",
+      "name": "Continuity of Actualization",
       "role": "open",
       "proof_status": "open"
     },
     {
       "id": "OPN-003",
-      "name": "Energy-Action Relationship",
+      "name": "Separation Theorem for Local Tomography",
       "role": "open",
       "proof_status": "open"
     },
     {
       "id": "OPN-004",
       "name": "K=2 Forcing (Complex over Real/Quaternionic)",
+      "role": "open",
+      "proof_status": "open"
+    },
+    {
+      "id": "OPN-005",
+      "name": "K=2 via Purification (Boolean + CDP Route)",
+      "role": "open",
+      "proof_status": "prose_only"
+    },
+    {
+      "id": "OPN-006",
+      "name": "Derive w=-1 from LRT Actualization Mechanics",
+      "role": "open",
+      "proof_status": "open"
+    },
+    {
+      "id": "OPN-007",
+      "name": "Action Principle from X (Quantum Action on State Space)",
+      "role": "derived",
+      "proof_status": "prose_only"
+    },
+    {
+      "id": "OPN-008",
+      "name": "Relativistic Extension",
+      "role": "open",
+      "proof_status": "open"
+    },
+    {
+      "id": "OPN-009",
+      "name": "Bekenstein-Hawking Entropy Bridge",
       "role": "open",
       "proof_status": "open"
     },
@@ -299,27 +335,37 @@
       "type": "logical"
     },
     {
-      "from": "PHY-002",
-      "to": "OPN-001",
-      "type": "interpretive"
-    },
-    {
-      "from": "PHY-004",
-      "to": "OPN-001",
-      "type": "logical"
-    },
-    {
-      "from": "ONT-002",
-      "to": "OPN-002",
-      "type": "interpretive"
-    },
-    {
-      "from": "OPN-001",
-      "to": "OPN-002",
-      "type": "logical"
-    },
-    {
       "from": "PHY-003",
+      "to": "OPN-001",
+      "type": "logical"
+    },
+    {
+      "from": "OPN-007",
+      "to": "OPN-001",
+      "type": "logical"
+    },
+    {
+      "from": "PHY-002",
+      "to": "OPN-002",
+      "type": "logical"
+    },
+    {
+      "from": "ACT-001",
+      "to": "OPN-002",
+      "type": "logical"
+    },
+    {
+      "from": "QM-001",
+      "to": "OPN-003",
+      "type": "logical"
+    },
+    {
+      "from": "QM-002",
+      "to": "OPN-003",
+      "type": "logical"
+    },
+    {
+      "from": "LOG-001",
       "to": "OPN-003",
       "type": "logical"
     },
@@ -331,6 +377,66 @@
     {
       "from": "LOG-002",
       "to": "OPN-004",
+      "type": "logical"
+    },
+    {
+      "from": "QM-005",
+      "to": "OPN-005",
+      "type": "logical"
+    },
+    {
+      "from": "QM-003",
+      "to": "OPN-005",
+      "type": "logical"
+    },
+    {
+      "from": "EXT-007",
+      "to": "OPN-005",
+      "type": "logical"
+    },
+    {
+      "from": "ACT-001",
+      "to": "OPN-006",
+      "type": "logical"
+    },
+    {
+      "from": "PHY-001",
+      "to": "OPN-006",
+      "type": "interpretive"
+    },
+    {
+      "from": "QM-004",
+      "to": "OPN-007",
+      "type": "logical"
+    },
+    {
+      "from": "PHY-003",
+      "to": "OPN-007",
+      "type": "logical"
+    },
+    {
+      "from": "PHY-004",
+      "to": "OPN-007",
+      "type": "logical"
+    },
+    {
+      "from": "PHY-002",
+      "to": "OPN-008",
+      "type": "interpretive"
+    },
+    {
+      "from": "PHY-004",
+      "to": "OPN-008",
+      "type": "logical"
+    },
+    {
+      "from": "ONT-002",
+      "to": "OPN-009",
+      "type": "interpretive"
+    },
+    {
+      "from": "OPN-008",
+      "to": "OPN-009",
       "type": "logical"
     },
     {

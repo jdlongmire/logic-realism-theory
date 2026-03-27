@@ -1,0 +1,31 @@
+# OPN-006: Dark Energy w=-1 Derivation
+id: OPN-006
+name: Derive w=-1 from LRT Actualization Mechanics
+statement: |
+  Why does accumulated actualization residue exhibit negative pressure
+  (equation of state parameter w=-1)? Derive the cosmological constant
+  behavior from the information circulation cycle.
+
+role: open
+proof_status: open
+epistemic_status: conjectured
+
+source_documents:
+  - doc: 003-LRT-COSMOLOGY
+    section: "Issue #63"
+
+depends_on:
+  - claim_id: ACT-001
+    dependency_type: logical
+  - claim_id: PHY-001
+    dependency_type: interpretive
+
+risk_if_false: |
+  Without w=-1 derivation, the dark energy interpretation remains
+  a qualitative narrative rather than a quantitative prediction.
+
+notes: |
+  Created 2026-03-27. Cosmology extension (003-LRT-COSMOLOGY).
+  Related to GitHub issue #63 in logic-realism-theory repo.
+  Candidate approaches: dimensional analysis, conservation constraints.
+  Low priority relative to core derivation chain.

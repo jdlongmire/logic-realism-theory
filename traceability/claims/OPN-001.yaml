@@ -1,28 +1,34 @@
-# OPN-001: Relativistic Extension
+# OPN-001: Energy-Action Relationship
 id: OPN-001
-name: Relativistic Extension
+name: Energy-Action Relationship
 statement: |
-  Can LRT be extended to incorporate special and general relativity?
-  Does the emergence of time in LRT connect to spacetime structure?
+  Can the relationship between energy and action (E = dS/dt) be
+  derived from LRT's actualization structure? How does the action
+  principle emerge?
 
 role: open
-proof_status: open
-epistemic_status: open
+proof_status: prose_only
+epistemic_status: established
 
 source_documents:
-  - doc: LRT-MASTER
-    section: "6.1"
+  - doc: 002-LRT-CORE-PHYSICS
+    section: "5.7.3"
+  - doc: LRT-OpenProblem1
+    section: "Full document"
 
 depends_on:
-  - claim_id: PHY-002
-    dependency_type: interpretive
-  - claim_id: PHY-004
+  - claim_id: PHY-003
+    dependency_type: logical
+  - claim_id: OPN-007
     dependency_type: logical
 
 risk_if_false: |
-  If LRT cannot accommodate relativity, it remains a non-relativistic
-  theory and cannot be a complete foundation for physics.
+  Without energy-action derivation, the Hamiltonian's physical
+  meaning remains imported rather than derived.
 
 notes: |
-  This is a major research direction. The non-relativistic Schrödinger
-  equation is a starting point, not an endpoint.
+  Renumbered from OPN-003 (2026-03-27) to align with paper numbering.
+  RESOLVED as corollary of OPN-007: the Anandan-Aharonov relation
+  identifies energy uncertainty as the rate of distinguishability change,
+  making energy-action a direct consequence of the quantum action principle.
+  See 002 section 5.7.3.

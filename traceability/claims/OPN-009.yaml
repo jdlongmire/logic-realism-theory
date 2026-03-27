@@ -1,0 +1,29 @@
+# OPN-009: Bekenstein-Hawking Entropy Bridge
+id: OPN-009
+name: Bekenstein-Hawking Entropy Bridge
+statement: |
+  Can the Bekenstein-Hawking entropy formula S = A/(4l_P^2) be derived
+  or understood within LRT? Does I_inf provide a microstate basis for
+  black hole entropy?
+
+role: open
+proof_status: open
+epistemic_status: open
+
+source_documents:
+  - doc: 002-LRT-CORE-PHYSICS
+    section: "9.6"
+
+depends_on:
+  - claim_id: ONT-002
+    dependency_type: interpretive
+  - claim_id: OPN-008
+    dependency_type: logical
+
+risk_if_false: |
+  If LRT cannot connect to black hole thermodynamics, it misses
+  a major nexus of quantum gravity.
+
+notes: |
+  Renumbered from OPN-002 (2026-03-27) to align with paper numbering.
+  Highly speculative. Requires relativistic extension (OPN-008) first.

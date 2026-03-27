@@ -1,0 +1,31 @@
+# EXT-007: No-Hiding Theorem (Braunstein-Pati)
+id: EXT-007
+name: No-Hiding Theorem
+statement: |
+  If information is missing from a subsystem, it must reside in the
+  remainder of the composite system. Quantum information cannot be
+  completely hidden in correlations between subsystems.
+
+role: imported
+proof_status: imported
+epistemic_status: established
+
+source_documents:
+  - doc: 002-LRT-CORE-PHYSICS
+    section: "3.2.1"
+
+depends_on: []
+
+external_citations:
+  - "Braunstein, S.L. & Pati, A.K. (2007). Quantum information cannot be completely hidden in correlations: Implications for the black-hole information paradox. Physical Review Letters, 98(8), 080502."
+
+risk_if_false: |
+  If the No-Hiding theorem fails, OPN-005 (K=2 via purification)
+  loses its grounding argument for the purification principle.
+
+notes: |
+  Created 2026-03-27. Tier 2 external theorem, same status as
+  Gleason (EXT-002) and Stone (EXT-003). Used in OPN-005 to
+  ground the purification principle from Boolean actualization.
+  Presupposes unitary evolution and Hilbert space structure,
+  both established by prior steps in the reconstruction.

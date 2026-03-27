@@ -1,0 +1,29 @@
+# OPN-008: Relativistic Extension
+id: OPN-008
+name: Relativistic Extension
+statement: |
+  Can LRT be extended to incorporate special and general relativity?
+  Does the emergence of time in LRT connect to spacetime structure?
+
+role: open
+proof_status: open
+epistemic_status: open
+
+source_documents:
+  - doc: 002-LRT-CORE-PHYSICS
+    section: "9.3"
+
+depends_on:
+  - claim_id: PHY-002
+    dependency_type: interpretive
+  - claim_id: PHY-004
+    dependency_type: logical
+
+risk_if_false: |
+  If LRT cannot accommodate relativity, it remains a non-relativistic
+  theory and cannot be a complete foundation for physics.
+
+notes: |
+  Renumbered from OPN-001 (2026-03-27) to align with paper numbering.
+  This is a major research direction. The non-relativistic Schrodinger
+  equation is a starting point, not an endpoint.

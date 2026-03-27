@@ -4,7 +4,7 @@ Generated: 2026-03-16
 
 ## Summary
 
-**Total claims:** 36
+**Total claims:** 42
 
 ### By Proof Status
 
@@ -12,9 +12,9 @@ Generated: 2026-03-16
 |--------|-------|
 | axiomatized | 12 |
 | derived | 2 |
-| imported | 6 |
-| open | 4 |
-| prose_only | 1 |
+| imported | 7 |
+| open | 6 |
+| prose_only | 4 |
 | verified | 11 |
 
 ### By Role
@@ -22,9 +22,9 @@ Generated: 2026-03-16
 | Role | Count |
 |------|-------|
 | bridge | 5 |
-| derived | 17 |
-| imported | 6 |
-| open | 4 |
+| derived | 18 |
+| imported | 7 |
+| open | 8 |
 | prediction | 1 |
 | primitive | 3 |
 
@@ -32,9 +32,10 @@ Generated: 2026-03-16
 
 | Status | Count |
 |--------|-------|
-| argued | 14 |
+| argued | 16 |
+| conjectured | 1 |
 | derived | 1 |
-| established | 18 |
+| established | 21 |
 | open | 3 |
 
 ## Claim Details
@@ -101,6 +102,12 @@ Generated: 2026-03-16
 - **Epistemic status:** established
 - **Lean artifacts:** 1 symbols
 
+### EXT-007: No-Hiding Theorem
+
+- **Role:** imported
+- **Proof status:** imported
+- **Epistemic status:** established
+
 ### LOG-001: Determinate Identity
 
 - **Role:** derived
@@ -148,27 +155,26 @@ Generated: 2026-03-16
 - **Depends on:** ONT-002
 - **Lean artifacts:** 2 symbols
 
-### OPN-001: Relativistic Extension
+### OPN-001: Energy-Action Relationship
+
+- **Role:** open
+- **Proof status:** prose_only
+- **Epistemic status:** established
+- **Depends on:** PHY-003, OPN-007
+
+### OPN-002: Continuity of Actualization
 
 - **Role:** open
 - **Proof status:** open
 - **Epistemic status:** open
-- **Depends on:** PHY-002, PHY-004
+- **Depends on:** PHY-002, ACT-001
 
-### OPN-002: Bekenstein-Hawking Entropy Bridge
-
-- **Role:** open
-- **Proof status:** open
-- **Epistemic status:** open
-- **Depends on:** ONT-002, OPN-001
-
-### OPN-003: Energy-Action Relationship
+### OPN-003: Separation Theorem for Local Tomography
 
 - **Role:** open
 - **Proof status:** open
-- **Epistemic status:** open
-- **Depends on:** PHY-003
-- **Lean artifacts:** 1 symbols
+- **Epistemic status:** argued
+- **Depends on:** QM-001, QM-002, LOG-001
 
 ### OPN-004: K=2 Forcing (Complex over Real/Quaternionic)
 
@@ -177,6 +183,42 @@ Generated: 2026-03-16
 - **Epistemic status:** argued
 - **Depends on:** QM-005, LOG-002
 - **Lean artifacts:** 1 symbols
+
+### OPN-005: K=2 via Purification (Boolean + CDP Route)
+
+- **Role:** open
+- **Proof status:** prose_only
+- **Epistemic status:** argued
+- **Depends on:** QM-005, QM-003, EXT-007
+- **Lean artifacts:** 2 symbols
+
+### OPN-006: Derive w=-1 from LRT Actualization Mechanics
+
+- **Role:** open
+- **Proof status:** open
+- **Epistemic status:** conjectured
+- **Depends on:** ACT-001, PHY-001
+
+### OPN-007: Action Principle from X (Quantum Action on State Space)
+
+- **Role:** derived
+- **Proof status:** prose_only
+- **Epistemic status:** established
+- **Depends on:** QM-004, PHY-003, PHY-004
+
+### OPN-008: Relativistic Extension
+
+- **Role:** open
+- **Proof status:** open
+- **Epistemic status:** open
+- **Depends on:** PHY-002, PHY-004
+
+### OPN-009: Bekenstein-Hawking Entropy Bridge
+
+- **Role:** open
+- **Proof status:** open
+- **Epistemic status:** open
+- **Depends on:** ONT-002, OPN-008
 
 ### PHY-001: Unitarity
 

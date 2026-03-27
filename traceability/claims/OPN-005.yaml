@@ -1,0 +1,52 @@
+# OPN-005: K=2 via Boolean Actualization + CDP
+id: OPN-005
+name: K=2 via Purification (Boolean + CDP Route)
+statement: |
+  Derive K=2 (complex field selection) via: Boolean spectrum (from L3)
+  + No-Hiding Theorem (Braunstein-Pati, EXT-007) grounds the purification
+  principle, which combined with local tomography (Step 3) and the CDP
+  reconstruction (2011) selects K=2.
+
+role: open
+proof_status: prose_only
+epistemic_status: argued
+
+formal_artifacts:
+  lean:
+    - file: Step4/Purification.lean
+      symbol: boolean_implies_purification
+      status: proven
+    - file: Step4/Purification.lean
+      symbol: boolean_plus_nohiding_implies_purification
+      status: proven
+
+source_documents:
+  - doc: 002-LRT-CORE-PHYSICS
+    section: "3.2.1"
+  - doc: ai-consult-k2.md
+    section: "Route B"
+
+depends_on:
+  - claim_id: QM-005
+    dependency_type: logical
+  - claim_id: QM-003
+    dependency_type: logical
+  - claim_id: EXT-007
+    dependency_type: logical
+
+external_citations:
+  - "Braunstein, S.L. & Pati, A.K. (2007). Quantum information cannot be completely hidden in correlations. PRL 98(8), 080502."
+  - "Chiribella, G., D'Ariano, G.M. & Perinotti, P. (2011). Informational derivation of quantum theory. PRA 84, 012311."
+
+risk_if_false: |
+  If the Boolean-to-purification grounding fails, K=2 depends entirely
+  on Masanes-Mueller (which requires three additional physical axioms)
+  or OPN-004 (internal derivation, HIGH difficulty, OPEN).
+
+notes: |
+  Created 2026-03-27. Key defense against classical counterexample:
+  local tomography (Step 3) excludes classical probability theories
+  BEFORE the purification argument runs. K(N^2) != K(N)^2 for
+  classical (K=N-1) and real (K=N(N+1)/2-1) theories.
+  No-Hiding is Tier 2 (same status as Gleason, Stone).
+  Lean formalization compiles with zero sorries.

@@ -35,7 +35,7 @@ Actuality coincides with the logically admissible informational configurations o
 
 ```
 logic-realism-theory/
-├── theory/                 # Active theory documents (001-007 numbered sequence)
+├── theory/                 # Active theory documents (001-003, 400, 500)
 ├── formalization/          # Lean 4 formalization (Steps 0-10)
 ├── docs/                   # Consolidated documentation
 │   ├── formalization/      # Lean research and axiom audits
@@ -49,16 +49,16 @@ logic-realism-theory/
 
 ---
 
-## Formalization Status (2026-03-20)
+## Formalization Status (2026-03-27)
 
 | Metric | Value |
 |--------|-------|
-| **Build** | ✅ SUCCESS (2491 jobs, 0 errors) |
-| **Total Axioms** | 31 |
+| **Build** | ✅ SUCCESS |
+| **Total Axioms** | 19 |
 | **PRIMITIVE** | 3 (I∞, I_infinite, bridge_principle) |
-| **EXTERNAL** | 14 (established math: Gleason, Stone, Hardy, CDP) |
-| **REMAINING** | 14 (derivable with more work) |
-| **Sorries** | 0 |
+| **EXTERNAL** | 16 (established math: Gleason, Stone, Hardy, CDP, No-Hiding, etc.) |
+| **REMAINING** | 0 |
+| **Sorries** | 3 (technical, not conceptual) |
 
 See [docs/formalization/axiom-status.md](docs/formalization/axiom-status.md) for current axiom classification.
 
@@ -71,14 +71,14 @@ See [docs/formalization/axiom-status.md](docs/formalization/axiom-status.md) for
 | Document | Description |
 |----------|-------------|
 | [001-LRT-TAB-PHILOSOPHY.md](theory/001-LRT-TAB-PHILOSOPHY.md) | Transcendental Argument for Being: metaphysical groundwork |
-| [002-LRT-CORE-PHYSICS.md](theory/002-LRT-CORE-PHYSICS.md) | Canonical unified source: complete 13-step derivation |
+| [002-LRT-CORE-PHYSICS.md](theory/002-LRT-CORE-PHYSICS.md) | Canonical unified source: complete 14-step derivation (Steps 0-14) |
 
 ### Formalization
 
 | Document | Description |
 |----------|-------------|
-| [007-LRT-LEAN-PROOFING-STATUS.md](theory/007-LRT-LEAN-PROOFING-STATUS.md) | Current Lean formalization status |
-| [006-LRT-LEAN-APPROACH.md](theory/006-LRT-LEAN-APPROACH.md) | Formalization methodology and strategy |
+| [400-LRT-FORMALIZATION.md](theory/400-LRT-FORMALIZATION.md) | Complete formalization reference (static) |
+| [500-LRT-FORMALIZATION-STATUS.md](theory/500-LRT-FORMALIZATION-STATUS.md) | Current formalization status (living doc) |
 
 ### Published (Zenodo)
 
@@ -136,4 +136,4 @@ This work is licensed under [Creative Commons Attribution 4.0 International](htt
 
 *Human-Curated, AI-Enabled (HCAE)*
 
-**Last Updated**: 2026-03-20
+**Last Updated**: 2026-03-27

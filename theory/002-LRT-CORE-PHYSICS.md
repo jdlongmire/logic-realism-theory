@@ -301,6 +301,32 @@ Given these inputs, the state space is ℂH: a complex Hilbert space over ℂ. T
 
 **What this delivers:** Pure states are unit vectors in ℂH (up to global phase). Mixed states are density operators. Composite systems are represented by tensor products. The inner product structure is fixed. Everything downstream — measurement, probability, dynamics — operates within this arena.
 
+#### 3.2.1 Alternative $K = 2$ Derivation: Boolean Actualization via CDP (OPN-005)
+
+The Masanes-Müller route to $K = 2$ (§3.2) imports three physical axioms alongside local tomography. An alternative derivation, designated OPN-005, reduces the external dependency by grounding the purification principle — the key axiom of the Chiribella-D'Ariano-Perinotti (CDP, 2011) reconstruction — in LRT's Boolean actualization primitive.
+
+**The purification principle** states that every mixed state $\rho$ on a subsystem $S$ is the partial trace of a pure state $\lvert\Psi\rangle$ on $S \otimes E$ for some environment $E$. In CDP's framework, purification is postulated. In LRT, it is grounded as follows.
+
+**Preliminary: Why classical probability is not a counterexample.** One might object that classical probability has Boolean outcomes and information conservation, yet lacks purification — so Boolean actualization + No-Hiding cannot suffice. This objection fails because classical probability theory is already excluded by the time the purification argument runs. Local tomography (Step 3) requires $K(N^2) = K(N)^2$, where $K(N)$ is the number of real parameters specifying a state of an $N$-level system. Classical probability has $K(N) = N - 1$, giving $K(N^2) = N^2 - 1 \neq (N - 1)^2 = K(N)^2$ for any $N > 1$. Real quantum theory likewise fails: $K(N) = N(N+1)/2 - 1$ does not satisfy the product rule. Only complex quantum theory, with $K(N) = N^2 - 1$, satisfies $K(N^2) = K(N)^2$ exactly (see S13 for the full derivation). The argument below operates within the class of theories that survive local tomography — classical and real theories are not in this class.
+
+**Step 1: Boolean spectrum from $L_3$.** The action primitive $\mathbf{A}$ is Boolean: $\mathbf{A}(E, c) \in \{0, 1\}$ for every event $E$ and configuration $c$. Excluded Middle ($L_3$) ensures there is always a fact of the matter. As established in §3.3, the corresponding event operators have spectrum $\subseteq \{0, 1\}$ — they are projections. Measurement outcomes are determinate: each individual measurement yields a definite result, never a superposition of outcomes.
+
+**Step 2: Information conservation (No-Hiding Theorem).** The No-Hiding Theorem (Braunstein and Pati, 2007) establishes that quantum information cannot be completely hidden in correlations. If a unitary operation maps an arbitrary state $\lvert\psi\rangle$ on $S$ to a fixed output $\lvert\sigma\rangle$ independent of $\lvert\psi\rangle$, then the $\lvert\psi\rangle$-information must be entirely transferred to an ancilla system: the ancilla states preserve inner products, $\langle A_\phi \lvert A_\psi \rangle = \langle \phi \lvert \psi \rangle$. Information is conserved — it cannot vanish.
+
+**On the status of No-Hiding as an import.** The No-Hiding Theorem is a mathematical result within quantum theory (Braunstein and Pati, 2007), proved using unitarity and Hilbert space structure. One might worry that invoking it before unitarity is derived (Step 7) introduces circularity. The resolution: No-Hiding is imported as an *external theorem* (Tier 2, EXT-005), on the same footing as Gleason's theorem (Step 6) and Stone's theorem (Step 10). These are established mathematical results about the structure of Hilbert spaces and unitary operators; they do not require derivation within LRT. The reconstruction proceeds by showing that LRT's ontological primitives pick out the specific mathematical framework in which these theorems hold, not by re-deriving the theorems themselves. The dependency chain is: $L_3 \to$ Boolean spectrum (Step 1, LRT-internal) + No-Hiding (EXT-005, external mathematics) $\to$ purification. No loop is present — the chain from purification to $K = 2$ to Hilbert space to unitarity does not feed back into the premises.
+
+**Step 3: Boolean + No-Hiding $\to$ Purification.** Consider a subsystem $S$ in a mixed state $\rho$. The mixedness means: the state is not an eigenstate of all event operators. But Boolean spectrum (Step 1) guarantees that there IS a definite outcome for every event — the determinacy is ontic, not merely epistemic. If $S$ appears mixed, the definite information that would specify which pure state obtained has not vanished (Step 2: No-Hiding forbids this). That information must be encoded in an environment $E$. The joint state $\lvert\Psi\rangle_{SE}$ is pure — it contains all the determinacy. The mixed state $\rho$ is recovered by tracing out $E$:
+
+$$\rho = \mathrm{Tr}_E(\lvert\Psi\rangle\langle\Psi\rvert_{SE})$$
+
+This IS the purification principle. What appears mixed at the subsystem level is pure at the joint level; apparent randomness is ignorance of the environment's state, not intrinsic indeterminacy. Boolean actualization provides the *definiteness* that No-Hiding *conserves*.
+
+**Step 4: Purification + Local Tomography $\to K = 2$ (CDP).** Chiribella, D'Ariano, and Perinotti (2011) proved that within the class of generalized probabilistic theories satisfying causality, perfect discriminability, ideal compression, and local discriminability (local tomography), adding the purification principle uniquely selects quantum theory over complex numbers ($K = 2$). The remaining CDP axioms — causality (no signaling from future), perfect discriminability (orthogonal pure states are distinguishable), and ideal compression (lossless encoding at effective dimension) — are grounded within LRT: causality follows from the temporal ordering of actualization events (Step 8); perfect discriminability follows from Determinate Identity (Step 2), which guarantees operational distinguishability of distinct actualized configurations; ideal compression follows from the informational structure of $I_\infty$, which imposes no restriction beyond $L_3$ admissibility on the encoding of configurations.
+
+**What Route B delivers.** The $K = 2$ selection follows from: (i) $L_3 \to$ Boolean spectrum (LRT-internal), (ii) No-Hiding Theorem (established physics, Braunstein and Pati, 2007), (iii) local tomography (Step 3), and (iv) CDP reconstruction (established result, CDP, 2011). This reduces the external dependency relative to the Masanes-Müller route: instead of importing continuous reversible dynamics, entanglement existence, and no restriction on observables as independent physical axioms, the purification principle is grounded in $\mathbf{A}$'s Boolean character, and CDP's remaining axioms are grounded in LRT's prior derivation steps.
+
+*[Epistemic status: ARGUED. The grounding of purification in Boolean actualization + No-Hiding is a philosophical argument within the class of theories surviving local tomography (classical probability is excluded at Step 3). The No-Hiding Theorem is a Tier 2 external import (Braunstein and Pati, 2007), not derived from $X$. The CDP reconstruction is likewise Tier 2 (CDP, 2011). The claim is that LRT motivates rather than assumes the purification axiom — it provides a reason WHY purification holds (Boolean determinacy + information conservation), where CDP leaves it as an ungrounded postulate. The Lean formalization (Step4/Purification.lean) encodes the full chain from Boolean spectrum through No-Hiding to purification with zero sorries. See S13 for the local tomography dimension-matching proof that excludes classical and real theories.]*
+
 ### 3.3 Projection-Valued Measures from the Boolean Action Primitive
 
 **Claim:** Every event operator on ℂH representing an actualization predicate is a projection operator. POVMs arise only as derived structure. *[Epistemic status: ARGUED.]*
@@ -703,16 +729,16 @@ The following matrix compares LRT against the principal operational reconstructi
 | Feature | Hardy (2001) | CDP (2011) | Masanes-Müller (2011) | **LRT** |
 |---------|:---:|:---:|:---:|:---:|
 | Grounds operational axioms | ✗ | ✗ | ✗ | **✓** |
-| Derives complex field | ✗ | ✓ | ✓ | **✓** (via MM + K=2) |
+| Derives complex field | ✗ | ✓ | ✓ | **✓** (MM §3.2; CDP Route B §3.2.1) |
 | Derives Born rule | ✗ | ✗ | ✗ | **✓** (Gleason) |
 | Derives local tomography | ✗ (axiom) | ✗ (axiom) | ✗ (axiom) | **✓** (from DI + L₃) |
 | Derives temporal structure | ✗ | ✗ | ✗ | **✓** (UNS → Debreu-Nachbin → Stone) |
 | Proof-assistant verified | ✗ | ✗ | ✗ | **✓** (Lean 4, March 2026) |
 | Requires continuous reversibility | ✓ | ✓ | ✓ | ✓ (physical input) |
-| Requires purification axiom | ✗ | ✓ | ✗ | **✗** |
+| Requires purification axiom | ✗ | ✓ | ✗ | **✗** (grounds it, §3.2.1) |
 | Ontological commitment | Agnostic | Agnostic | Agnostic | **X ≡ [L₃ : I∞ : A]** |
 
-**Reading the matrix:** Hardy's five-axiom reconstruction, CDP's informational derivation, and Masanes-Müller's physical-requirements derivation each achieve the formal derivation of quantum theory from operational axioms but leave those axioms ungrounded and make no ontological commitment. LRT's distinguishing contribution is the grounding layer: local tomography, the Born rule, and temporal structure are reconstructed rather than postulated, and the reconstruction is backed by a Lean 4 formalization. The "Requires continuous reversibility" row is marked ✓ for all four programs because this assumption is a physical input in each case — LRT does not claim to derive it from X. The purification axiom, required by CDP but not by Hardy, MM, or LRT, illustrates a structural difference: LRT's route to quantum theory does not pass through purification.
+**Reading the matrix:** Hardy's five-axiom reconstruction, CDP's informational derivation, and Masanes-Müller's physical-requirements derivation each achieve the formal derivation of quantum theory from operational axioms but leave those axioms ungrounded and make no ontological commitment. LRT's distinguishing contribution is the grounding layer: local tomography, the Born rule, and temporal structure are reconstructed rather than postulated, and the reconstruction is backed by a Lean 4 formalization. The "Requires continuous reversibility" row is marked ✓ for all four programs because this assumption is a physical input in each case — LRT does not claim to derive it from X. The purification axiom, required by CDP but not by Hardy, MM, or LRT, illustrates a structural difference: LRT's primary route to quantum theory (via Masanes-Müller) does not pass through purification. However, §3.2.1 argues that LRT *grounds* the purification principle via Boolean actualization + the No-Hiding Theorem, providing an alternative derivation of $K = 2$ through CDP's framework with fewer ungrounded inputs.
 
 ### 7.2 LRT and Copenhagen
 
@@ -878,11 +904,11 @@ The ARGUED epistemic markers in the main derivation text indicate where LRT's or
 
 ### 9.2 Derivation Gaps: K=2 Forcing and the Separation Theorem
 
-Two specific gaps in the derivation chain are identified for priority resolution:
+**OPN-004: K=2 via Internal Argument.** An LRT-internal derivation showing why the complex field ($K = 2$) — rather than the real or quaternionic field — is uniquely compatible with $X$ would eliminate all dependence on external reconstruction programs for field selection. The question is whether $L_3$'s constitutive requirements, combined with the structure of $I_\infty$, force $K = 2$ without importing any reconstruction axiom. This remains HIGH difficulty and OPEN.
 
-**OPN-004: K=2 Forcing.** The selection of the complex field ($K = 2$, i.e., $\mathbb{C}$ over $\mathbb{R}$ or $\mathbb{H}$) is currently imported via Masanes-Müller's reconstruction theorem, which takes local tomography and continuous reversibility as axioms and outputs $K = 2$ as a consequence. LRT grounds local tomography (Step 3) but does not independently ground the $K = 2$ selection from L₃. An independent LRT-internal argument for why the complex field — rather than the real or quaternionic field — is the unique field compatible with $X$ would strengthen the derivation chain by reducing dependence on Masanes-Müller's auxiliary axioms. This is designated OPN-004 in the project tracker. The empirical constraint from Renou et al. (2021) supports $K = 2$ but does not constitute a derivation from $X$. The question is whether L₃'s constitutive requirements, combined with the structure of $I_\infty$, force $K = 2$ without the continuous-reversibility axiom as an independent input.
+**OPN-005: K=2 via Boolean Actualization + CDP — Argued (§3.2.1).** An alternative route to $K = 2$ is now argued in §3.2.1: Boolean spectrum (from $L_3$) + the No-Hiding Theorem (Braunstein and Pati, 2007) grounds the purification principle, which — combined with local tomography (Step 3) and the CDP reconstruction (2011) — selects $K = 2$. This reduces the external dependency relative to the Masanes-Müller route (§3.2) by grounding the purification axiom in $\mathbf{A}$'s Boolean character rather than postulating it. The argument is ARGUED rather than ESTABLISHED: the connection from Boolean determinacy + information conservation to the purification principle is a philosophical grounding argument, not a formal derivation from $X$ alone. The CDP and No-Hiding imports are Tier 2 (established, peer-reviewed results).
 
-**OPN-005: The Separation Theorem.** The H1→H2 bridge argument in §3.1 establishes that all identity-making relations in a composite system are operationally accessible, and the Separation Step argues that local measurement statistics are tomographically complete. The final step — that no two distinct composite states in $I_\infty$ can agree on all local statistics while differing in $I_\infty$-identity — is argued but not formally proven. A separation theorem establishing this rigorously is an appropriate target for Lean formalization. The theorem would state: for any two composite states $\rho_1, \rho_2$ in $I_\infty$ with $\rho_1 \neq \rho_2$ (under the distinguishability metric $D$), there exist local measurements $M_A, M_B$ such that the joint statistics $p(a,b|M_A, M_B)$ differ for $\rho_1$ and $\rho_2$. Proving this within the LRT framework would elevate Step 3 from ARGUED to ESTABLISHED.
+**Separation Theorem.** The H1$\to$H2 bridge argument in §3.1 establishes that all identity-making relations in a composite system are operationally accessible, and the Separation Step argues that local measurement statistics are tomographically complete. The final step — that no two distinct composite states in $I_\infty$ can agree on all local statistics while differing in $I_\infty$-identity — is argued but not formally proven. A separation theorem establishing this rigorously is an appropriate target for Lean formalization. The theorem would state: for any two composite states $\rho_1, \rho_2$ in $I_\infty$ with $\rho_1 \neq \rho_2$ (under the distinguishability metric $D$), there exist local measurements $M_A, M_B$ such that the joint statistics $p(a,b|M_A, M_B)$ differ for $\rho_1$ and $\rho_2$. Proving this within the LRT framework would elevate Step 3 from ARGUED to ESTABLISHED.
 
 ### 9.3 Relativistic Extension
 
@@ -930,8 +956,9 @@ The I∞/A_Ω framework has potential cosmological implications — the actualiz
 
 |Problem                                        |Type                 |Priority                  |
 |-----------------------------------------------|---------------------|--------------------------|
-|K=2 forcing (OPN-004)                          |Gap (derivation chain)|High                     |
-|Separation theorem (OPN-005)                   |Gap (derivation chain)|High                     |
+|K=2 internal forcing (OPN-004)                 |Gap (derivation chain)|High (open)              |
+|K=2 via purification (OPN-005)                 |**Argued** (§3.2.1)  |Grounding argument given |
+|Separation theorem                             |Gap (Step 3 upgrade)  |Medium                   |
 |D_sing connection to Bekenstein-Hawking entropy|Gap (companion paper)|High                      |
 |Action principle from X (OPN-007)              |**Resolved** (§5.7.3)|Quantum action derived    |
 |Relativistic extension / Lorentz covariance    |Extension            |Medium                    |
@@ -954,7 +981,7 @@ What the derivation does establish is a reorientation of the explanatory order i
 
 The central methodological claim — that L₃ is not a constraint on reasoning about reality but a constitutive condition on what counts as a physical fact — distinguishes LRT from all previous quantum foundations programs. Prior programs move from physics to interpretation: they take the formalism and ask what it means. LRT moves from logic to physics: it takes the constitutive conditions on physical reality and reconstructs the formalism given established mathematical results. This reversal of grounding direction is what makes the dissolution of standing problems possible rather than merely rhetorical.
 
-LRT's original contribution is precisely located. The mathematical results imported — Masanes and Müller, Gleason, Stone, Debreu, Nachbin — are established. LRT's contribution is the grounding argument: showing that the inputs these theorems require follow from X rather than standing as independent postulates. The question that reconstruction programs leave open — why these axioms? — is what LRT answers.
+LRT's original contribution is precisely located. The mathematical results imported — Masanes and Müller, Gleason, Stone, Debreu, Nachbin, Chiribella-D'Ariano-Perinotti, Braunstein-Pati — are established. LRT's contribution is the grounding argument: showing that the inputs these theorems require follow from X rather than standing as independent postulates. The purification principle, which CDP postulates, is grounded in Boolean actualization and the No-Hiding Theorem (§3.2.1), providing an alternative $K = 2$ derivation with fewer ungrounded inputs. The question that reconstruction programs leave open — why these axioms? — is what LRT answers.
 
 One result has been retrodictively structurally selected: complex over real Hilbert space, grounded in local tomography derived from Determinate Identity and L₃, subsequently confirmed by Renou et al. (2021). Further predictions extend the program into black hole information (FC-2b) and await experimental access. The categorical falsifier — a completed physical record violating Boolean outcome structure — remains unobserved.
 
@@ -963,6 +990,8 @@ The program is open. The foundation is secure.
 -----
 
 ## References
+
+Braunstein, S. L. and Pati, A. K. (2007). Quantum information cannot be completely hidden in correlations: Implications for the black-hole information paradox. *Physical Review Letters*, 98(8), 080502. arXiv:quant-ph/0603046.
 
 Busch, P. (2003). Quantum states and generalized observables: A simple proof of Gleason's theorem. *Physical Review Letters*, 91(12), 120403.
 

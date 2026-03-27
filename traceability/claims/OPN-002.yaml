@@ -1,28 +1,33 @@
-# OPN-002: Bekenstein-Hawking Entropy Bridge
+# OPN-002: Continuity of Actualization
 id: OPN-002
-name: Bekenstein-Hawking Entropy Bridge
+name: Continuity of Actualization
 statement: |
-  Can the Bekenstein-Hawking entropy formula S = A/(4l_P²) be derived
-  or understood within LRT? Does I∞ provide a microstate basis for
-  black hole entropy?
+  Does the actualization operator A exhibit continuity or smoothness
+  properties? Can the discrete-to-continuous transition (Step 10)
+  be grounded in A's structure rather than imported via Debreu-Nachbin?
 
 role: open
 proof_status: open
 epistemic_status: open
 
 source_documents:
-  - doc: LRT-MASTER
-    section: "6.2"
+  - doc: LRT-OpenProblem2
+    section: "Full document"
+  - doc: 002-LRT-CORE-PHYSICS
+    section: "4.3"
 
 depends_on:
-  - claim_id: ONT-002
-    dependency_type: interpretive
-  - claim_id: OPN-001
+  - claim_id: PHY-002
+    dependency_type: logical
+  - claim_id: ACT-001
     dependency_type: logical
 
 risk_if_false: |
-  If LRT cannot connect to black hole thermodynamics, it misses
-  a major nexus of quantum gravity.
+  Without continuity derivation, the continuous time representation
+  depends on an external topological theorem (Debreu-Nachbin) rather
+  than emerging from LRT's own structure.
 
 notes: |
-  Highly speculative. Requires relativistic extension first.
+  Created 2026-03-27. See LRT_OpenProblem2_Continuity.md.
+  Medium priority. The Debreu-Nachbin import is legitimate but
+  a native continuity argument would strengthen the framework.
