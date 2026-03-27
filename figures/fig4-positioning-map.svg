@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="600" height="500">
+  <defs>
+    <!-- Subtle grid pattern for academic look -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e8e8e8" stroke-width="0.5"/>
+    </pattern>
+    <!-- Arrow marker for axes -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+    <!-- LRT highlight glow -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="500" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="300" y="32" font-family="Times New Roman, serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Information Ontology Landscape</text>
+  <text x="300" y="52" font-family="Times New Roman, serif" font-size="11" font-style="italic" text-anchor="middle" fill="#555">Positioning of Major Frameworks</text>
+
+  <!-- Plot area with grid -->
+  <rect x="80" y="70" width="440" height="360" fill="white" stroke="#ccc" stroke-width="1"/>
+  <rect x="80" y="70" width="440" height="360" fill="url(#grid)"/>
+
+  <!-- Quadrant shading (very subtle) -->
+  <rect x="80" y="70" width="220" height="180" fill="#f0f4f8" opacity="0.3"/>
+  <rect x="300" y="70" width="220" height="180" fill="#f8f4f0" opacity="0.3"/>
+  <rect x="80" y="250" width="220" height="180" fill="#f4f8f4" opacity="0.3"/>
+  <rect x="300" y="250" width="220" height="180" fill="#f8f0f4" opacity="0.3"/>
+
+  <!-- Quadrant labels (subtle) -->
+  <text x="145" y="95" font-family="Times New Roman, serif" font-size="9" fill="#888" font-style="italic">Epistemic-Informational</text>
+  <text x="385" y="95" font-family="Times New Roman, serif" font-size="9" fill="#888" font-style="italic">Ontic-Informational</text>
+  <text x="145" y="415" font-family="Times New Roman, serif" font-size="9" fill="#888" font-style="italic">Epistemic-Structural</text>
+  <text x="395" y="415" font-family="Times New Roman, serif" font-size="9" fill="#888" font-style="italic">Ontic-Structural</text>
+
+  <!-- X-axis -->
+  <line x1="80" y1="250" x2="520" y2="250" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="85" y="268" font-family="Times New Roman, serif" font-size="12" fill="#333">Epistemic</text>
+  <text x="480" y="268" font-family="Times New Roman, serif" font-size="12" fill="#333">Ontic</text>
+
+  <!-- Y-axis -->
+  <line x1="300" y1="430" x2="300" y2="70" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="300" y="450" font-family="Times New Roman, serif" font-size="12" text-anchor="middle" fill="#333">Structural</text>
+  <text x="300" y="85" font-family="Times New Roman, serif" font-size="12" text-anchor="middle" fill="#333">Informational</text>
+
+  <!-- Framework positions -->
+
+  <!-- QBism (far left, slightly above center - strongly epistemic) -->
+  <circle cx="120" cy="200" r="6" fill="#5c6bc0" stroke="#3949ab" stroke-width="1.5"/>
+  <text x="120" y="185" font-family="Times New Roman, serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#3949ab">QBism</text>
+  <text x="120" y="172" font-family="Times New Roman, serif" font-size="9" font-style="italic" text-anchor="middle" fill="#666">(Fuchs, Mermin)</text>
+
+  <!-- Copenhagen (upper left - epistemic, informational) -->
+  <circle cx="160" cy="140" r="6" fill="#7986cb" stroke="#5c6bc0" stroke-width="1.5"/>
+  <text x="160" y="125" font-family="Times New Roman, serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#5c6bc0">Copenhagen</text>
+  <text x="160" y="112" font-family="Times New Roman, serif" font-size="9" font-style="italic" text-anchor="middle" fill="#666">(Bohr, Heisenberg)</text>
+
+  <!-- Floridi (upper middle - moderate ontic, informational) -->
+  <circle cx="340" cy="130" r="6" fill="#4db6ac" stroke="#00897b" stroke-width="1.5"/>
+  <text x="340" y="115" font-family="Times New Roman, serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#00897b">Informational</text>
+  <text x="340" y="102" font-family="Times New Roman, serif" font-size="9" font-style="italic" text-anchor="middle" fill="#666">(Floridi)</text>
+
+  <!-- Wheeler "It from Bit" (upper right - ontic, informational) -->
+  <circle cx="440" cy="145" r="6" fill="#ff8a65" stroke="#f4511e" stroke-width="1.5"/>
+  <text x="440" y="130" font-family="Times New Roman, serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#f4511e">"It from Bit"</text>
+  <text x="440" y="117" font-family="Times New Roman, serif" font-size="9" font-style="italic" text-anchor="middle" fill="#666">(Wheeler)</text>
+
+  <!-- Tegmark MUH (lower right - ontic, structural) -->
+  <circle cx="460" cy="340" r="6" fill="#a1887f" stroke="#6d4c41" stroke-width="1.5"/>
+  <text x="460" y="360" font-family="Times New Roman, serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#6d4c41">MUH</text>
+  <text x="460" y="373" font-family="Times New Roman, serif" font-size="9" font-style="italic" text-anchor="middle" fill="#666">(Tegmark)</text>
+
+  <!-- LRT/TAB (highlighted - upper right, distinct from Wheeler, with logical grounding) -->
+  <rect x="395" y="175" width="70" height="40" rx="4" ry="4" fill="#c62828" stroke="#b71c1c" stroke-width="2" filter="url(#glow)"/>
+  <text x="430" y="193" font-family="Times New Roman, serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">LRT / TAB</text>
+  <text x="430" y="207" font-family="Times New Roman, serif" font-size="9" text-anchor="middle" fill="#ffcdd2">(This work)</text>
+
+  <!-- Connecting annotation for LRT distinction -->
+  <line x1="430" y1="215" x2="430" y2="235" stroke="#c62828" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="430" y="248" font-family="Times New Roman, serif" font-size="8" text-anchor="middle" fill="#c62828">Logical grounding via L</text>
+  <text x="430" y="258" font-family="Times New Roman, serif" font-size="8" text-anchor="middle" fill="#c62828">(non-arbitrary constraint)</text>
+
+  <!-- Legend box -->
+  <rect x="85" y="320" width="145" height="95" rx="3" ry="3" fill="white" stroke="#ccc" stroke-width="1"/>
+  <text x="157" y="337" font-family="Times New Roman, serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#333">Legend</text>
+
+  <!-- Legend items -->
+  <circle cx="100" cy="355" r="5" fill="#5c6bc0" stroke="#3949ab" stroke-width="1"/>
+  <text x="115" y="359" font-family="Times New Roman, serif" font-size="9" fill="#333">Epistemic frameworks</text>
+
+  <circle cx="100" cy="375" r="5" fill="#ff8a65" stroke="#f4511e" stroke-width="1"/>
+  <text x="115" y="379" font-family="Times New Roman, serif" font-size="9" fill="#333">Ontic-informational</text>
+
+  <circle cx="100" cy="395" r="5" fill="#a1887f" stroke="#6d4c41" stroke-width="1"/>
+  <text x="115" y="399" font-family="Times New Roman, serif" font-size="9" fill="#333">Ontic-structural</text>
+
+  <rect x="95" y="408" width="10" height="8" rx="1" ry="1" fill="#c62828" stroke="#b71c1c" stroke-width="1"/>
+  <text x="115" y="416" font-family="Times New Roman, serif" font-size="9" font-weight="bold" fill="#c62828">This work (LRT/TAB)</text>
+
+  <!-- Figure caption area -->
+  <text x="300" y="478" font-family="Times New Roman, serif" font-size="10" text-anchor="middle" fill="#444">
+    <tspan font-weight="bold">Fig. 4.</tspan> Positioning of LRT/TAB relative to major information ontology programs.
+  </text>
+  <text x="300" y="492" font-family="Times New Roman, serif" font-size="9" text-anchor="middle" fill="#666">
+    LRT distinguishes itself through non-arbitrary logical constraint (L) rather than phenomenological or mathematical stipulation.
+  </text>
+</svg>

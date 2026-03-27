@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 550" width="600" height="550">
+  <defs>
+    <!-- Subtle gradients for depth -->
+    <linearGradient id="gradL3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:0.25"/>
+    </linearGradient>
+    <linearGradient id="gradIinf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:0.25"/>
+    </linearGradient>
+    <linearGradient id="gradA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#b91c1c;stop-opacity:0.25"/>
+    </linearGradient>
+
+    <!-- Arrow marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#374151"/>
+    </marker>
+    <marker id="arrowhead-rev" markerWidth="10" markerHeight="7" refX="1" refY="3.5" orient="auto">
+      <polygon points="10 0, 0 3.5, 10 7" fill="#374151"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="550" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="300" y="35" font-family="Times New Roman, serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1f2937">
+    Mutual Constitution of TAB Primitives
+  </text>
+
+  <!-- Three overlapping circles arranged in equilateral triangle -->
+  <!-- Circle centers: top (300, 180), bottom-left (180, 360), bottom-right (420, 360) -->
+  <!-- Radius: 130 -->
+
+  <!-- L₃ circle (top - blue) -->
+  <circle cx="300" cy="175" r="130" fill="url(#gradL3)" stroke="#2563eb" stroke-width="2.5"/>
+
+  <!-- I∞ circle (bottom-left - green) -->
+  <circle cx="185" cy="340" r="130" fill="url(#gradIinf)" stroke="#059669" stroke-width="2.5"/>
+
+  <!-- A circle (bottom-right - red) -->
+  <circle cx="415" cy="340" r="130" fill="url(#gradA)" stroke="#dc2626" stroke-width="2.5"/>
+
+  <!-- Chi (χ) in center intersection -->
+  <text x="300" y="290" font-family="Times New Roman, serif" font-size="36" font-style="italic" text-anchor="middle" fill="#1f2937" font-weight="bold">
+    χ
+  </text>
+  <text x="300" y="310" font-family="Times New Roman, serif" font-size="11" text-anchor="middle" fill="#4b5563">
+    (actuality)
+  </text>
+
+  <!-- Primary labels inside circles -->
+  <!-- L₃ label -->
+  <text x="300" y="110" font-family="Times New Roman, serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    L₃
+  </text>
+  <text x="300" y="132" font-family="Times New Roman, serif" font-size="12" font-style="italic" text-anchor="middle" fill="#3b82f6">
+    Logical Constraint
+  </text>
+
+  <!-- I∞ label -->
+  <text x="130" y="355" font-family="Times New Roman, serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#047857">
+    I<tspan dy="5" font-size="20">∞</tspan>
+  </text>
+  <text x="130" y="377" font-family="Times New Roman, serif" font-size="12" font-style="italic" text-anchor="middle" fill="#10b981">
+    Informational Domain
+  </text>
+
+  <!-- A label -->
+  <text x="470" y="355" font-family="Times New Roman, serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#b91c1c">
+    A
+  </text>
+  <text x="470" y="377" font-family="Times New Roman, serif" font-size="12" font-style="italic" text-anchor="middle" fill="#ef4444">
+    Actualization
+  </text>
+
+  <!-- Role descriptions - positioned outside circles -->
+  <!-- L₃ role (top) -->
+  <text x="300" y="58" font-family="Times New Roman, serif" font-size="13" text-anchor="middle" fill="#1e40af">
+    "Prescriptive constraint"
+  </text>
+
+  <!-- I∞ role (bottom-left) -->
+  <text x="90" y="430" font-family="Times New Roman, serif" font-size="13" text-anchor="middle" fill="#047857">
+    "Possibility space"
+  </text>
+
+  <!-- A role (bottom-right) -->
+  <text x="510" y="430" font-family="Times New Roman, serif" font-size="13" text-anchor="middle" fill="#b91c1c">
+    "Obtaining marker"
+  </text>
+
+  <!-- Bidirectional dependency arrows (curved, outside the circles) -->
+
+  <!-- L₃ ↔ I∞ (left side) -->
+  <path d="M 195 120 Q 100 220, 110 290" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <path d="M 120 280 Q 110 210, 185 130" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- L₃ ↔ A (right side) -->
+  <path d="M 405 120 Q 500 220, 490 290" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <path d="M 480 280 Q 490 210, 415 130" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- I∞ ↔ A (bottom) -->
+  <path d="M 260 445 Q 300 490, 340 445" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <path d="M 350 455 Q 300 500, 250 455" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Co-constitution labels on arrows -->
+  <text x="75" y="210" font-family="Times New Roman, serif" font-size="10" fill="#6b7280" transform="rotate(-55 75 210)">
+    co-constitutes
+  </text>
+
+  <text x="495" y="195" font-family="Times New Roman, serif" font-size="10" fill="#6b7280" transform="rotate(55 495 195)">
+    co-constitutes
+  </text>
+
+  <text x="300" y="515" font-family="Times New Roman, serif" font-size="10" fill="#6b7280" text-anchor="middle">
+    co-constitutes
+  </text>
+
+  <!-- Figure caption area -->
+  <text x="300" y="540" font-family="Times New Roman, serif" font-size="11" text-anchor="middle" fill="#6b7280" font-style="italic">
+    Figure 2. The three TAB primitives mutually constitute one another; none is prior.
+  </text>
+</svg>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" width="800" height="620">
+  <defs>
+    <!-- Arrow marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4a5568"/>
+    </marker>
+    <!-- Rounded rectangle filter for subtle shadow -->
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="620" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" font-family="Times New Roman, Times, serif" font-size="18" font-weight="bold" fill="#1a202c">Figure 3: The Constraint Collapse Argument</text>
+
+  <!-- TOP BOX: Initial Question -->
+  <rect x="290" y="60" width="220" height="55" rx="8" ry="8" fill="#e8f4fd" stroke="#3182ce" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="400" y="93" text-anchor="middle" font-family="Times New Roman, Times, serif" font-size="15" font-weight="bold" fill="#2c5282">Constraint on A?</text>
+
+  <!-- Vertical line from top box splitting into two -->
+  <line x1="400" y1="115" x2="400" y2="145" stroke="#4a5568" stroke-width="1.5"/>
+
+  <!-- Horizontal line for branching -->
+  <line x1="200" y1="145" x2="600" y2="145" stroke="#4a5568" stroke-width="1.5"/>
+
+  <!-- LEFT BRANCH arrow down -->
+  <line x1="200" y1="145" x2="200" y2="170" stroke="#4a5568" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- RIGHT BRANCH arrow down -->
+  <line x1="600" y1="145" x2="600" y2="170" stroke="#4a5568" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Labels for branches -->
+  <text x="200" y="165" text-anchor="middle" font-family="Times New Roman, Times, serif" font-size="11" font-style="italic" fill="#718096">(i)</text>
+  <text x="600" y="165" text-anchor="middle" font-family="Times New Roman, Times, serif" font-size="11" font-style="italic" fill="#718096">(ii)</text>
+
+  <!-- LEFT BRANCH: Non-logical constraint -->
+  <rect x="70" y="180" width="260" height="52" rx="8" ry="8" fill="#f0f4f8" stroke="#718096" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="200" y="212" text-anchor="middle" font-family="Times New Roman, Times, serif" font-size="14" font-weight="bold" fill="#2d3748">Non-logical constraint</text>
+
+  <!-- Arrow down from non-logical -->
+  <line x1="200" y1="232" x2="200" y2="265" stroke="#4a5568" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Sub-branch: Requires distinguishability -->
+  <rect x="70" y="275" width="260" height="48" rx="6" ry="6" fill="#f7fafc" stroke="#a0aec0" stroke-width="1" filter="url(#shadow)"/>
+  <text x="200" y="305" text-anchor="middle" font-family="Times New Roman, Times, serif" font-size="13" fill="#4a5568">Requires distinguishability</text>
+
+  <!-- Arrow down -->
+  <line x1="200" y1="323" x2="200" y2="355" stroke="#4a5568" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Sub-branch: Distinguishability requires L3 -->
+  <rect x="70" y="365" width="260" height="48" rx="6" ry="6" fill="#f7fafc" stroke="#a0aec0" stroke-width="1" filter="url(#shadow)"/>
+  <text x="200" y="395" text-anchor="middle" font-family="Times New Roman, Times, serif" font-size="13" fill="#4a5568">Distinguishability requires L&#x2083;</text>
+
+  <!-- Arrow down -->
+  <line x1="200" y1="413" x2="200" y2="445" stroke="#4a5568" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Result: Collapses into L3 -->
+  <rect x="70" y="455" width="260" height="52" rx="8" ry="8" fill="#ebf8ff" stroke="#3182ce" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="200" y="487" text-anchor="middle" font-family="Times New Roman, Times, serif" font-size="14" font-style="italic" fill="#2b6cb0">Collapses into L&#x2083;</text>
+
+  <!-- RIGHT BRANCH: Physical/Causal constraint -->
+  <rect x="470" y="180" width="260" height="52" rx="8" ry="8" fill="#f0f4f8" stroke="#718096" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="600" y="212" text-anchor="middle" font-family="Times New Roman, Times, serif" font-size="14" font-weight="bold" fill="#2d3748">Physical/Causal constraint</text>
+
+  <!-- Arrow down from physical/causal -->
+  <line x1="600" y1="232" x2="600" y2="330" stroke="#4a5568" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Sub-branch: Presupposes actualization -->
+  <rect x="470" y="340" width="260" height="48" rx="6" ry="6" fill="#f7fafc" stroke="#a0aec0" stroke-width="1" filter="url(#shadow)"/>
+  <text x="600" y="370" text-anchor="middle" font-family="Times New Roman, Times, serif" font-size="13" fill="#4a5568">Presupposes actualization</text>
+
+  <!-- Arrow down -->
+  <line x1="600" y1="388" x2="600" y2="445" stroke="#4a5568" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Result: Circular -->
+  <rect x="470" y="455" width="260" height="52" rx="8" ry="8" fill="#fff5f5" stroke="#c53030" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="600" y="487" text-anchor="middle" font-family="Times New Roman, Times, serif" font-size="14" font-style="italic" fill="#c53030">Circular (presupposes A)</text>
+
+  <!-- Arrows from both results to conclusion -->
+  <line x1="200" y1="507" x2="200" y2="535" stroke="#4a5568" stroke-width="1.5"/>
+  <line x1="600" y1="507" x2="600" y2="535" stroke="#4a5568" stroke-width="1.5"/>
+
+  <!-- Horizontal line joining to conclusion -->
+  <line x1="200" y1="535" x2="600" y2="535" stroke="#4a5568" stroke-width="1.5"/>
+
+  <!-- Vertical line down to conclusion -->
+  <line x1="400" y1="535" x2="400" y2="560" stroke="#4a5568" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- BOTTOM CONCLUSION BOX -->
+  <rect x="210" y="570" width="380" height="42" rx="10" ry="10" fill="#2d3748" stroke="#1a202c" stroke-width="2" filter="url(#shadow)"/>
+  <text x="400" y="598" text-anchor="middle" font-family="Times New Roman, Times, serif" font-size="15" font-weight="bold" fill="#ffffff">No constraint independent of L&#x2083;</text>
+
+</svg>
