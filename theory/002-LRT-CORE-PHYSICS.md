@@ -475,7 +475,101 @@ This is the Schrödinger equation. It is not postulated in LRT. It is the equati
 
 H is self-adjoint by Stone's theorem. Its spectrum is real, ensuring real-valued energy eigenvalues. Its specific form — kinetic plus potential terms, or field-theoretic generalizations — is determined by the physical system, not by X. LRT reconstructs the existence and self-adjointness of H given Stone's theorem; it does not derive the Hamiltonian of any particular system. That is a feature, not a gap: particular Hamiltonians are empirical inputs describing specific physical domains. The framework reconstructed here is what constrains their form.
 
-### 5.7 Summary of Steps 8-13
+### 5.7 The Lagrangian Formulation and the Path Integral
+
+The Schrödinger equation, reconstructed at Step 13, is the Hamiltonian form of quantum dynamics. Standard physics admits a dual formulation: the Lagrangian or path-integral form. This section establishes that the dual formulation is available within LRT and, more significantly, that it admits a natural ontological reading in terms of X.
+
+#### 5.7.1 From the Hamiltonian to the Lagrangian
+
+Given the self-adjoint Hamiltonian $H$ from Stone's theorem, the classical Lagrangian is available via the Legendre transform:
+
+$$L(q, \dot{q}) = p\dot{q} - H(q, p)$$
+
+where $p = \partial L / \partial \dot{q}$ is the conjugate momentum. This is a standard mathematical construction — given $H$, $L$ follows by change of variables. The Legendre transform preserves the dynamical content: the Euler-Lagrange equations derived from $L$ are equivalent to Hamilton's equations derived from $H$. *[Epistemic status: ESTABLISHED — standard mathematical result, no new assumptions required.]*
+
+The action functional is the time integral of the Lagrangian over a path:
+
+$$S[\gamma] = \int_{t_i}^{t_f} L(q(t), \dot{q}(t)) \, dt$$
+
+The classical equations of motion follow from Hamilton's principle: the physical trajectory extremizes $S[\gamma]$ among paths with fixed endpoints.
+
+#### 5.7.2 The Path Integral and Its LRT Reading
+
+Feynman's path integral reformulates quantum mechanics as a sum over histories. The transition amplitude between configurations $q_i$ at time $t_i$ and $q_f$ at time $t_f$ is:
+
+$$\langle q_f, t_f \lvert q_i, t_i \rangle = \int \mathcal{D}[\gamma] \, e^{iS[\gamma]/\hbar}$$
+
+where the integral ranges over all paths $\gamma$ connecting the endpoints, and each path is weighted by the phase $e^{iS[\gamma]/\hbar}$.
+
+This formulation admits a direct ontological reading within LRT:
+
+1. **The path space is $I_\infty$ restricted to the boundary conditions.** The integral $\mathcal{D}[\gamma]$ ranges over all kinematically possible trajectories connecting $q_i$ to $q_f$. In LRT terms, these are the configurations in $I_\infty$ consistent with the specified initial and final states. The path space is not a mathematical fiction: it is the domain of possibility that $I_\infty$ provides.
+
+2. **The action weighting implements $L_3$ constraint.** Not all paths contribute equally. The phase $e^{iS[\gamma]/\hbar}$ ensures that paths far from the classical trajectory interfere destructively — their contributions cancel. Paths near the classical trajectory interfere constructively. This is $L_3$ operating on the informational domain: logical constraint selects which configurations in $I_\infty$ contribute coherently to the actual outcome. The action functional $S[\gamma]$ encodes the structure of that constraint for a given physical system.
+
+3. **Actualization selects one outcome.** The path integral yields a transition amplitude — a complex number whose squared modulus gives the Born probability. The actual detection event, where a definite outcome obtains, is $A$ operating on the resulting state. The path integral computes the dispositional structure; actualization resolves it.
+
+The correspondence is:
+
+$$I_\infty \xrightarrow{L_3 \text{ (action weighting)}} \text{coherent superposition} \xrightarrow{A} \text{definite outcome}$$
+
+This is not metaphor. The path integral literally sums over all possible histories (the informational domain), weights them by a constraint functional (logical structure encoded in the action), and the result is a state from which actualization selects a definite outcome. The three primitives of X map onto the three structural components of the path integral. *[Epistemic status: ARGUED — the structural correspondence is exact. The claim that the action functional emerges from $D$ on $I_\infty$ rather than being independently postulated is established in §5.7.3.]*
+
+#### 5.7.3 The Action Principle from X (OPN-007)
+
+The path integral reading raises a pointed question: can the action functional $S[\gamma]$ be derived from the structure of X, or must it be imported as an additional physical input? The answer is affirmative: both terms of the quantum action on state space are already present in the reconstruction.
+
+**The quantum action on $\mathbb{C}P(\mathcal{H})$.** The Dirac-Frenkel action functional on projective Hilbert space takes the form:
+
+$$S[\gamma] = \hbar\int_\gamma \mathcal{A}_{FS} - \int_{t_i}^{t_f} \langle H \rangle \, dt$$
+
+where $\mathcal{A}_{FS} = \text{Im}\langle\psi\lvert d\psi\rangle$ is the Fubini-Study connection (the symplectic potential on $\mathbb{C}P(\mathcal{H})$) and $\langle H \rangle = \langle\psi(t)\lvert H \lvert\psi(t)\rangle$ is the Hamiltonian expectation value. Hamilton's principle $\delta S = 0$ recovers the Schrödinger equation.
+
+Both terms trace to quantities already established in the reconstruction:
+
+**Term 1: The Fubini-Study connection from $D$.** The distinguishability metric $D$ on $I_\infty$ generates the Fubini-Study metric on $\mathbb{C}P(\mathcal{H})$. This identification follows from Wootters (1981): the statistical distance between quantum states under Born-rule measurement probabilities (Step 6) equals the Fubini-Study distance $d_{FS}(\psi_1, \psi_2) = \arccos\lvert\langle\psi_1\lvert\psi_2\rangle\rvert$. The Fubini-Study metric determines $\mathcal{A}_{FS}$ as its symplectic potential. No additional structure beyond what Steps 3-6 provide is required: the projective Hilbert space structure (Steps 3-4) and the Born rule (Step 6) jointly fix $D = d_{FS}$.
+
+**Term 2: The Hamiltonian from Stone.** The expectation value $\langle H \rangle$ involves the self-adjoint generator $H$ obtained from Stone's theorem (Step 10). This is already in the reconstruction.
+
+**The Anandan-Aharonov relation.** The instantaneous speed of a state $\lvert\psi(t)\rangle$ under the Fubini-Study metric is:
+
+$$v_D(t) = \frac{ds_{FS}}{dt} = \frac{\Delta E(t)}{\hbar}$$
+
+where $\Delta E = \sqrt{\langle H^2\rangle - \langle H\rangle^2}$ (Anandan and Aharonov, 1990). The rate at which a system traverses $I_\infty$ is governed by its energy uncertainty. The total Fubini-Study path length $\ell_D[\gamma] = \int_{t_i}^{t_f} \Delta E / \hbar \, dt$ is a geometric invariant measuring the total distinguishability traversed by the actualization process.
+
+**Circularity check.** The dependency graph is:
+
+$$D \text{ (Step 4)} \to d_{FS} \to \mathcal{A}_{FS} \quad\text{(first term)}$$
+$$\text{Stone (Step 10)} \to H \to \langle H \rangle \quad\text{(second term)}$$
+$$\mathcal{A}_{FS} + \langle H \rangle \to S[\gamma] \to \delta S = 0 \to \text{Schrödinger}$$
+
+The Schrödinger equation appears both as a consequence of $\delta S = 0$ and as a prior result from Stone's theorem. These are two independent derivation routes to the same equation: Stone derives it from continuous unitarity (Steps 7-10), while the action principle derives it from the variational condition. The convergence is a consistency check, not a circularity. Stone's theorem does not invoke the action functional. **The chain is acyclic.**
+
+**The LRT ontological reading.** The action decomposes into two contributions with distinct ontological sources:
+
+$$S = \underbrace{\hbar\int_\gamma \mathcal{A}_{FS}}_{\substack{\text{geometric potential} \\ \text{through } I_\infty}} - \underbrace{\int\langle H\rangle \, dt}_{\substack{\text{energy cost of} \\ \text{actualization}}}$$
+
+Actualization follows paths through $I_\infty$ where the accumulated geometric potential balances the energy cost. Neither term is independent of the ontology: the first encodes the geometry of distinguishable configurations, the second encodes the dynamical constraint imposed by continuous unitary evolution.
+
+**Scope limitation.** This derivation establishes the quantum action on *state space* $\mathbb{C}P(\mathcal{H})$. The classical configuration-space action $S = \int L(q, \dot{q}) \, dt$ requires additionally specifying a representation (position, momentum, or field), which is a physical input for any given system. The Legendre transform (§5.7.1) provides the formal passage between formulations once the representation is chosen.
+
+**Connection to OPN-001.** The energy-action relationship is now a corollary rather than an independent problem: energy is the rate of distinguishability change ($\Delta E / \hbar = v_D$), and the action integrates the symplectic potential along the path. The relationship is geometric, grounded in $D$.
+
+*[Epistemic status: ESTABLISHED — the quantum action on state space is fully determined by two quantities already present in the reconstruction: the Fubini-Study connection (from $D$ on $I_\infty$) and the Hamiltonian expectation value (from Stone's theorem). No additional postulate is required. OPN-007 is resolved for the quantum action; the configuration-space action requires representation-specific input.]*
+
+#### 5.7.4 The Stress-Energy Tensor
+
+The Lagrangian formulation opens a path to gravitational coupling that the Hamiltonian form does not provide directly. The stress-energy tensor $T^{\mu\nu}$, which sources the gravitational field in general relativity, is defined by variation of the matter Lagrangian density $\mathcal{L}_m$ with respect to the spacetime metric $g_{\mu\nu}$:
+
+$$T^{\mu\nu} = -\frac{2}{\sqrt{-g}} \frac{\delta(\sqrt{-g}\,\mathcal{L}_m)}{\delta g_{\mu\nu}}$$
+
+With the Lagrangian available from §5.7.1, this definition is accessible in principle. Specific computation requires specifying the matter content and the metric dependence of $\mathcal{L}_m$, which are physical inputs for any given system. But the formalism is now in place: LRT's reconstructed dynamics are compatible with the standard procedure for coupling matter to gravity.
+
+This is significant for the cosmological extension (Longmire, 2026b). Claims about dark energy, information circulation, or the stress-energy content of actualization residue require $T^{\mu\nu}$ to make contact with general relativity. The present section establishes that the formal machinery is available within 002's reconstruction; the specific cosmological application remains the province of the companion paper.
+
+*[Epistemic status: ESTABLISHED — $T^{\mu\nu}$ is a standard construction given $\mathcal{L}_m$. The availability claim is mathematical; the cosmological application is open.]*
+
+### 5.8 Summary of Steps 8-14
 
 |Step|Content                           |Status                        |
 |----|----------------------------------|------------------------------|
@@ -485,8 +579,9 @@ H is self-adjoint by Stone's theorem. Its spectrum is real, ensuring real-valued
 |11  |G-equivariance; U(t) unitary      |ARGUED                        |
 |12  |Stone's theorem; H self-adjoint   |ESTABLISHED                   |
 |13  |Schrödinger equation              |ESTABLISHED (given Steps 8-12)|
+|14  |Lagrangian and path integral      |ESTABLISHED (Legendre, quantum action from D + Stone); ARGUED (LRT ontological reading)|
 
-The full derivation chain from X to the Schrödinger equation is now in place. Of the thirteen steps, seven are ESTABLISHED and six are ARGUED. The ARGUED steps — 3, 5, 8, 10, 11 — are precisely where LRT's original contribution lives: grounding the inputs that the imported theorems require. Lean 4 formalization of these five steps is the primary remaining technical work, identified in Section 9.
+The full derivation chain from X to the Schrödinger equation is now in place, and the dual Lagrangian/path-integral formulation is established as a mathematical consequence. The quantum action on state space is derived from two quantities already in the reconstruction: the Fubini-Study connection (from $D$ on $I_\infty$) and the Hamiltonian (from Stone's theorem), resolving OPN-007. Of the fourteen steps, eight are ESTABLISHED and five are ARGUED. The ARGUED steps — 3, 5, 8, 10, 11 — are precisely where LRT's original contribution lives: grounding the inputs that the imported theorems require. Lean 4 formalization of the ARGUED steps is the primary remaining technical work, identified in Section 9.
 
 -----
 
@@ -817,17 +912,28 @@ Bekenstein-Hawking entropy S_BH = A/4G — where A is the horizon area and G is 
 
 Until this connection is established, the black hole information program within LRT is programmatic in a double sense: it makes a prediction (FC-2b) without a complete derivation from the hard core to the thermodynamic quantities the prediction involves.
 
-### 9.7 Cosmological Applications
+### 9.7 Action Principle from X (OPN-007) — Resolved
 
-The I∞/A_Ω framework has potential cosmological implications — the actualization primitive A operating at cosmological scales, the question of whether the universe as a whole is an element of A_Ω, the thermodynamic implications of deactualization — but none of these have been developed to the point of falsifiable prediction. Cosmological application is an open research direction. It is not a falsifiability criterion in the current state of the program.
+The quantum action on state space $\mathbb{C}P(\mathcal{H})$ is fully determined by two quantities already present in the reconstruction: the Fubini-Study connection $\mathcal{A}_{FS}$ (from the distinguishability metric $D$, Step 4) and the Hamiltonian expectation value $\langle H \rangle$ (from Stone's theorem, Step 10). The derivation is given in §5.7.3.
 
-### 9.8 Summary of Open Problems
+$$S[\gamma] = \hbar\int_\gamma \mathcal{A}_{FS} - \int_{t_i}^{t_f} \langle H \rangle \, dt$$
+
+Hamilton's principle ($\delta S = 0$) recovers the Schrödinger equation, providing a second derivation route consistent with Stone's theorem. The dependency chain is acyclic: $D$ is established at Step 4, $H$ at Step 10, and neither invokes the action functional. The Anandan-Aharonov relation identifies energy uncertainty as the rate of distinguishability change, making OPN-001 (Energy-Action) a corollary.
+
+**Remaining open:** The configuration-space action $S = \int L(q, \dot{q}) \, dt$ requires representation-specific input (position, momentum, or field content). Whether $L_3$ operating on specific subsystem configurations generates potential terms remains an open question, though the formal machinery (Legendre transform, §5.7.1) is in place.
+
+### 9.8 Cosmological Applications
+
+The I∞/A_Ω framework has potential cosmological implications — the actualization primitive A operating at cosmological scales, the question of whether the universe as a whole is an element of A_Ω, the thermodynamic implications of deactualization — but none of these have been developed to the point of falsifiable prediction. The Lagrangian formulation (§5.7) and stress-energy tensor (§5.7.4) provide the formal machinery needed to make contact with general relativity; the cosmological application of that machinery remains open. See Longmire (2026b) for the companion treatment.
+
+### 9.9 Summary of Open Problems
 
 |Problem                                        |Type                 |Priority                  |
-|-----------------------------------------------|---------------------|--------------------------| 
+|-----------------------------------------------|---------------------|--------------------------|
 |K=2 forcing (OPN-004)                          |Gap (derivation chain)|High                     |
 |Separation theorem (OPN-005)                   |Gap (derivation chain)|High                     |
 |D_sing connection to Bekenstein-Hawking entropy|Gap (companion paper)|High                      |
+|Action principle from X (OPN-007)              |**Resolved** (§5.7.3)|Quantum action derived    |
 |Relativistic extension / Lorentz covariance    |Extension            |Medium                    |
 |Quantum field theory within I∞/A_Ω             |Extension            |Long-range                |
 |Specific Hamiltonians from X                   |Extension            |Low (likely not derivable)|
@@ -840,9 +946,9 @@ The I∞/A_Ω framework has potential cosmological implications — the actualiz
 
 ## 10. Conclusion
 
-Logic Realism Theory begins with a single commitment: reality is logical, informational, and dynamic. Expressed formally as X ≡ [L₃ : I∞ : A], this commitment is not an axiom in the ordinary sense. It is the terminus of grounding chains — the condition that any coherent account of physical reality already presupposes. From X, through thirteen steps explicitly marked by epistemic status, the full structure of non-relativistic quantum mechanics is reconstructed given imported peer-reviewed mathematics: complex Hilbert space, projection-valued measures, the Born rule, continuous time, and the Schrödinger equation.
+Logic Realism Theory begins with a single commitment: reality is logical, informational, and dynamic. Expressed formally as X ≡ [L₃ : I∞ : A], this commitment is not an axiom in the ordinary sense. It is the terminus of grounding chains — the condition that any coherent account of physical reality already presupposes. From X, through fourteen steps explicitly marked by epistemic status, the full structure of non-relativistic quantum mechanics is reconstructed given imported peer-reviewed mathematics: complex Hilbert space, projection-valued measures, the Born rule, continuous time, the Schrödinger equation, and the Lagrangian/path-integral formulation.
 
-The derivation chain has been formalized in Lean 4 and verified (March 2026). Five steps remain ARGUED rather than ESTABLISHED in the epistemic sense: the Lean formalization verifies logical structure but does not convert transcendental claims (e.g., the Physical Proposition Criterion) into established mathematics. The relativistic extension, the connection to black hole thermodynamics, and the cosmological domain remain open. LRT is a research program with a secure hard core, a progressive protective belt, and a well-defined agenda of open problems.
+The derivation chain has been formalized in Lean 4 and verified (March 2026). Five steps remain ARGUED rather than ESTABLISHED in the epistemic sense: the Lean formalization verifies logical structure but does not convert transcendental claims (e.g., the Physical Proposition Criterion) into established mathematics. Step 14 introduces the Lagrangian/path-integral formulation as a mathematical consequence and derives the quantum action on state space from the Fubini-Study connection and Stone's Hamiltonian, resolving OPN-007 for the quantum action. The relativistic extension, the connection to black hole thermodynamics, and the cosmological domain remain open. LRT is a research program with a secure hard core, a progressive protective belt, and a well-defined agenda of open problems.
 
 What the derivation does establish is a reorientation of the explanatory order in quantum foundations. The standing problems — measurement, wave-particle duality, EPR, Schrödinger's cat, preferred basis, the observer — are not solved by new physical mechanisms. They are dissolved by showing that they arise from presuppositions LRT does not share. The measurement problem does not arise because actualization is a primitive, not a physical process. Wave-particle duality is not a puzzle about one thing's nature but a consequence of the I∞/A_Ω distinction. EPR nonlocality is structural, not causal. The observer has no constitutive role.
 
