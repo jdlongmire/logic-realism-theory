@@ -15,6 +15,13 @@ image: /assets/images/lrt-banner.png
   <p>Physical Foundations from Logical Constraints</p>
 </div>
 
+<div class="chatbot-callout" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #0f3460; border-radius: 8px; padding: 1.2em 1.5em; margin-bottom: 2em; text-align: center;">
+  <p style="margin: 0; color: #e0e0e0; font-size: 1.05em;">
+    <strong style="color: #00d4ff;">Ask the Theory</strong> — Explore LRT through an AI-powered research interface with full source traceability.<br/>
+    <a href="https://lrtchat.thinxai.net" style="color: #00d4ff; text-decoration: none; font-weight: bold;">lrtchat.thinxai.net &rarr;</a>
+  </p>
+</div>
+
 ## The Core Thesis
 
 **Logic Realism Theory (LRT)** proposes that the three classical logical laws—Determinate Identity, Non-Contradiction, and Excluded Middle (collectively $L_3$)—function as *ontological constraints on physical instantiation*, not merely rules of inference. This approach to the **logical foundations of physics** offers an alternative to ontic structural realism by grounding quantum structure in logical admissibility rather than primitive physical relations.
