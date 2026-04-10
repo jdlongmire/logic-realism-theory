@@ -43,6 +43,11 @@ IBM_Q_CRN.txt
 IBM_Q_Instance.png
 formalization/.lake
 
+# LRT Chatbot
+lrt_chatbot/chroma_db/
+lrt_chatbot/.env
+lrt_chatbot/logs/
+
 # Claude Code
 .claude/
 CLAUDE.md
