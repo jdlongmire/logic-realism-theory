@@ -5,7 +5,7 @@ ORCID: 0009-0009-1383-7698
 Northrop Grumman Fellow (unaffiliated research)
 Correspondence: jdlongmire@outlook.com
 
-**Version:** 1.0 (April 2026)
+**Version:** 1.1 (April 2026)
 **Status:** Working Draft
 **Related program:** Logic Realism Theory (Longmire, 2025a, 2025b, 2026a, 2026b). The TRM provides the primitive ontic architecture from which the LRT derivation chain proceeds. This paper develops the TRM as a self-standing foundational framework; the downstream derivations are pursued in the companion papers cited above.
 
@@ -13,7 +13,7 @@ Correspondence: jdlongmire@outlook.com
 
 ## Abstract
 
-Contemporary foundations of physics divides into two programs that address different questions and leave a third unanswered. Reconstruction programs derive quantum structure from operational axioms but do not explain why those axioms hold. Interpretational programs address what the quantum formalism describes but presuppose its mathematical structure. Neither program asks what the necessary conditions for any physically admissible theory are. This paper addresses that third question by proposing the Triadic Reality Model (TRM): the claim that any framework capable of coherently grounding physics must instantiate three irreducible co-primitives: L₃ (the classical laws of logic as an ontological constraint on actualized states), I∞ (an infinite configurability space of L₃-respecting informational structures), and A (a primitive actualization principle prior to and generative of temporal structure). The three are defended individually and shown to be irreducible: each pair without the third either fails to constitute a coherent formal object or fails specifically as a physical foundation. The TRM is not a rival dynamical theory but an ecumenical meta-framework: it provides the common meta-ontological backdrop that existing interpretations and reconstruction programs presuppose, specifying necessary conditions that any admissible physical theory must satisfy, represented as T ≡ ⟨L, S, D⟩ instantiating [L₃ : I∞ : A]. Classical mechanics and quantum mechanics are analyzed as triadic models. The double-slit experiment and Bell-type correlations are interpreted within the framework; analysis of the latter shows that all viable interpretations share the triadic structure. The primitives are defended at explicitly distinguished epistemic levels: L₃ and A are argued to be transcendentally necessary, their denials performatively self-undermining through distinct logical and ontic routes; I∞ is defended by pragmatic necessity and inference to best explanation, with its transcendental status left as an open problem. Falsifiability is addressed: the TRM excludes theories with actualized L₃-violations, unconstrained state spaces, and purely epistemic interpretations without ontic actualization. The bridge equation, $A_\Omega = L_3(I_\infty)$, is derived as a grounded characterization by decomposing it into an easy inclusion direction (actuality cannot violate logic) and a hard plenitude direction (no coherent non-logical constraint can exclude admissible configurations from the actualized domain).
+Contemporary foundations of physics divides into two programs that address different questions and leave a third unanswered. Reconstruction programs derive quantum structure from operational axioms but do not explain why those axioms hold. Interpretational programs address what the quantum formalism describes but presuppose its mathematical structure. Neither program asks what the necessary conditions for any physically admissible theory are. This paper addresses that third question by proposing the Triadic Reality Model (TRM): the claim that any framework capable of coherently grounding physics must instantiate three irreducible co-primitives: L₃ (the classical laws of logic as an ontological constraint on actualized states), I∞ (an infinite configurability space of L₃-respecting informational structures), and A (a primitive actualization principle prior to and generative of temporal structure). The three are defended individually and shown to be irreducible: each pair without the third either fails to constitute a coherent formal object or fails specifically as a physical foundation. The TRM is not a rival dynamical theory but an ecumenical meta-framework: it provides the common meta-ontological backdrop that existing interpretations and reconstruction programs presuppose, specifying necessary conditions that any admissible physical theory must satisfy, represented as T ≡ ⟨L, S, D⟩ instantiating [L₃ : I∞ : A]. Classical mechanics and quantum mechanics are analyzed as triadic models. The double-slit experiment and Bell-type correlations are interpreted within the framework; analysis of the latter shows that all viable interpretations share the triadic structure. The primitives are defended at explicitly distinguished epistemic levels: L₃ and A are argued to be transcendentally necessary, their denials performatively self-undermining through distinct logical and ontic routes; I∞ is defended by pragmatic necessity and inference to best explanation, with its transcendental status left as an open problem. Falsifiability is addressed: the TRM excludes theories with actualized L₃-violations, unconstrained state spaces, and purely epistemic interpretations without ontic actualization. The bridge equation, $A_\Omega = L_3(I_\infty)$, is decomposed into three explicitly distinguished claims: grounding (the primitive ontology constitutes actuality), characterization (actuality cannot violate logic), and plenitude identity (the actualized domain coincides with the logically admissible domain). The first two are nearly uncontroversial given the primitives; the third carries the substantive philosophical weight and is defended via the constraint collapse argument.
 
 **Keywords:** foundations of physics, logical realism, actualization, quantum reconstruction, philosophy of physics, triadic ontology, transcendental necessity, information
 
@@ -43,7 +43,7 @@ $$\chi \equiv [L_3 : I_\infty : A]$$
 
 **A**, the primitive actualization principle, marks the distinction between what is actual and what is merely possible or admissible within I∞. A is not defined as temporal process; temporal succession is derived from A, not prior to it. A is transcendentally necessary: the assertion that nothing is actual is either itself actual, in which case something is actual and A is instantiated, or it carries no force as a denial. The denial of A is unsayable without self-defeat.
 
-The three are irreducible co-primitives: none derives from the other two, and the removal of any one leaves the remaining pair insufficient as a physical foundation. The irreducibility argument proceeds through six pairwise-collapse cases, divided into two tiers: strict incoherence (the pair produces no coherent formal object) and physical vacuity (the pair produces a coherent formal object that cannot ground physics).
+The three are irreducible co-primitives: none derives from the other two, and the removal of any one leaves the remaining pair insufficient as a physical foundation. The irreducibility argument proceeds through six pairwise-collapse cases, divided into two tiers: Tier 1 (the pair cannot ground a physical framework because a constitutive element is missing) and Tier 2 (the pair produces a formally coherent object that cannot perform the required physical function).
 
 ### 1.3 Scope and Method
 
@@ -55,7 +55,7 @@ This paper is part of the Logic Realism Theory (LRT) program (Longmire, 2025a, 2
 
 ### 1.4 Structure of the Paper
 
-Section 2 defends each of the three axioms in turn (§§2.1-2.3), presents the complete triadic model with an explicit table of necessity levels claimed for each primitive (§2.4), and establishes irreducibility through the six pairwise-collapse cases (§2.5; full arguments in Appendix C). Section 3 shows how classical mechanics and quantum mechanics instantiate the triadic template. Section 4 interprets the double-slit experiment (§4.1) and Bell-type correlations (§4.2) within the framework, including an analysis of why all viable interpretations share the triadic structure (§4.2d). Section 5 addresses falsifiability. Section 6 derives the bridge equation, decomposing it into an easy direction ($A_\Omega \subseteq L_3(I_\infty)$) and a hard plenitude direction ($L_3(I_\infty) \subseteq A_\Omega$), and argues for its status as a grounded characterization rather than stipulative definition. References and appendices follow.
+Section 2 defends each of the three axioms in turn (§§2.1-2.3), presents the complete triadic model with an explicit table of necessity levels claimed for each primitive (§2.4), and establishes irreducibility through the six pairwise-collapse cases (§2.5; full arguments in Appendix C). Sections 3 and 4 are exemplifications: §3 shows how classical and quantum mechanics instantiate the triadic template; §4 interprets the double-slit experiment and Bell-type correlations within the framework, including an analysis of why all viable interpretations share the triadic structure. These sections demonstrate compatibility, not confirmation; the evidential weight rests on the transcendental arguments of §2 and the bridge argument of §6. Section 5 addresses falsifiability. Section 6 derives the bridge equation, decomposing it into three explicitly distinguished claims (grounding, characterization, and plenitude identity), and argues for its status as a grounded characterization rather than stipulative definition. References and appendices follow.
 
 ---
 
@@ -202,18 +202,7 @@ $$\chi \equiv [L_3 : I_\infty : A]$$
 
 where each component is axiomatic, irreducible, and mutually co-constitutive.
 
-**Axiom of Being (L₃).**
-Being in χ is governed by the classical triadic laws of thought: identity, non-contradiction, and excluded middle (collectively L₃). This axiom secures an ontological floor: whatever is actual in χ must be logically well-formed in this sense. It distinguishes genuine actualizations from incoherent or merely notional "states" that would violate L₃.
-
-**Axiom of Information (I∞).**
-Information in χ is immaterial in kind and admits, in principle, infinite configurability across L₃-respecting structures. I∞ treats informational structure as irreducible to any particular substrate, while remaining fully compatible with physical embodiment. It ensures that, within the constraints of L₃, there is an open-ended space of possible configurations from which actual states can be drawn.
-
-**Axiom of Action (A).**
-Action in χ is the primitive actualization principle by which L₃-structured informational configurations are selected from I∞ as actual. A is not defined in terms of temporal process; temporal succession is derived from A, not prior to it. A affirms that reality is not a merely static inventory of L₃-coherent and I∞-configurable possibilities, but a domain in which those possibilities are lawfully and irreducibly selected into actuality.
-
-**Co-primitivity of the triad.** The three axioms are irreducible co-primitives: none derives from the other two, and the removal of any one leaves the remaining pair insufficient as a physical foundation. The full argument is developed in §2.5. Each pair without the third either fails to produce any coherent formal object (Tier 1: strict incoherence) or produces a formally coherent object that cannot ground physics (Tier 2: physical vacuity). The triad is therefore the minimal sufficient primitive structure for grounding physics within χ.
-
-Taken together, these axioms present χ as a triadic structure in which L₃ constrains what can count as a coherent state of being, I∞ articulates the open-ended space of such states as informational configurations, and A governs their irreducible actualization. The rest of the theory develops how specific physical formalisms, empirical phenomena, and modal notions such as causation and possibility can be situated within this tripartite framework.
+The individual axioms have been defended in §§2.1-2.3. Their co-primitivity, that none derives from the other two and that the removal of any one leaves the remaining pair insufficient as a physical foundation, is established in §2.5 through six pairwise-collapse cases.
 
 **Necessity levels.** The three primitives are not defended at the same epistemic strength, and conflating their modal statuses would be a philosophical error. The following table makes the distinctions explicit.
 
@@ -235,14 +224,14 @@ The claim that L₃, I∞, and A are irreducible co-primitives requires more tha
 
 | Case | Pair | Tier | Failure Mode |
 |------|------|------|--------------|
-| 1 | L₃ without I∞ | Strict incoherence | No formal object: constraint with no domain |
-| 2 | A without I∞ | Strict incoherence | No formal object: selection with no candidates |
-| 3 | I∞ without L₃ | Physical vacuity | No admissibility: cannot distinguish physical from non-physical |
-| 4 | I∞ without A | Physical vacuity | No actuality: static modal space, no dynamics or observables |
-| 5 | L₃ without A | Physical vacuity | No selection among admissibles: candidacy without actuality |
-| 6 | A without L₃ | Physical vacuity | No principled constraint: actuals produced arbitrarily |
+| 1 | L₃ without I∞ | Tier 1: Cannot ground a physical framework | Constraint with no domain to range over |
+| 2 | A without I∞ | Tier 1: Cannot ground a physical framework | Selection with no candidates |
+| 3 | I∞ without L₃ | Tier 2: Cannot perform the required function | No admissibility: cannot distinguish physical from non-physical |
+| 4 | I∞ without A | Tier 2: Cannot perform the required function | No actuality: static modal space, no dynamics or observables |
+| 5 | L₃ without A | Tier 2: Cannot perform the required function | No selection among admissibles: candidacy without actuality |
+| 6 | A without L₃ | Tier 2: Cannot perform the required function | No principled constraint: actuals produced arbitrarily |
 
-The Tier 1 cases (Cases 1-2) show that I∞ is load-bearing for both L₃ and A: neither can be so much as stated without a domain. The Tier 2 cases (Cases 3-6) show that each primitive performs a distinct, non-redundant function: L₃ provides admissibility, I∞ provides the configuration domain, A provides actualization. No two together suffice to perform the third's work.
+The Tier 1 cases (Cases 1-2) show that I∞ is load-bearing for both L₃ and A: neither can ground a physical framework without a domain. A critic might object that constraint schemata or selection functions can be intensionally specified without a fully developed ontological domain; this is correct at the formal level, but the question is not whether a logician can write down a constraint without specifying its domain, but whether such a pairing can serve as a foundation for physics. It cannot: physics requires that constraints range over something determinately structured. The Tier 2 cases (Cases 3-6) show that each primitive performs a distinct, non-redundant function: L₃ provides admissibility, I∞ provides the configuration domain, A provides actualization. No two together suffice to perform the third's work.
 
 To illustrate the argument's force, consider the representative case. **Case 4: I∞ without A.** A constrained possibility space, I∞ filtered by L₃, is a coherent formal object: the space of L₃-admissible configurations. But without A, nothing in that space is actual. Every admissible configuration is equally a candidate and equally unactualized. The result is a static modal structure: rich in possibility, empty of actuality. Physics is not a theory of what could be actual; it is a theory of what is actual and how actuality unfolds. No actualization principle means no dynamics, no observables, no empirical content. The formal object is coherent; it simply has nothing to say about the physical world.
 
@@ -252,7 +241,11 @@ One further point deserves explicit statement. The irreducibility argument does 
 
 ---
 
-## 3.1 Physical Theories as Triadic Models in χ
+## 3. Physical Theories as Triadic Models in χ
+
+*Sections 3 and 4 are exemplifications, not confirmations. They show that existing physics is compatible with the triadic template and can be naturally redescribed within it. Compatibility is necessary for the TRM's credibility but does not by itself constitute evidence for the framework's necessity. The evidential weight comes from the transcendental arguments of §2 and the bridge argument of §6, not from the fact that known theories fit the template.*
+
+### 3.1 The Triadic Template
 
 **Epistemic Status:** ESTABLISHED (definitional template); ARGUED (claim that all admissible physical theories instantiate the template)
 
@@ -292,7 +285,7 @@ realizing χ ≡ [L₃ : I∞ : A].
 
 **Dynamics D_CM (instantiating A).** The dynamics are given by Hamilton's equations (or equivalently Lagrange's equations) specifying how a point in phase space evolves along a trajectory under the Hamiltonian H(q,p,t). For given initial data, these equations determine the actualization sequence, defining lawful ordering relations among configurations, an explicit formalization of A in χ. The flow on phase space, Liouville's theorem, and related structures encode how informational configurations are actualized and ordered under the theory's laws.
 
-Classical mechanics thus exemplifies the Triadic Reality Model: a strictly L₃-governed logical background, an I∞-like continuous state space of possible configurations, and an A-type actualization law that selects and orders states as trajectories.
+Classical mechanics exemplifies all three primitives: L₃-governed logic, I∞-like continuous state space, A-type actualization via Hamilton's equations.
 
 ---
 
@@ -312,11 +305,15 @@ within χ ≡ [L₃ : I∞ : A].
 
 **Dynamics D_QM (instantiating A).** Quantum dynamics is usually presented in two interconnected ways. Between measurements, the state evolves unitarily according to the Schrödinger equation (or its relativistic or field-theoretic counterparts), defining a continuous, law-governed actualization sequence on S_QM. At measurement, standard formulations introduce a stochastic transition rule, whether collapse, projection, or an effective update via decoherence and conditioning, that selects a definite outcome from among the available possibilities. Both aspects express A: they specify how informational configurations are lawfully ordered and how, under appropriate conditions, one configuration is actualized rather than another. Different interpretations of quantum mechanics vary in how they model this process, including branching worlds (Wallace, 2012), hidden variables, relational updates, and purely epistemic state changes, but on the present framework, they can all be read as competing accounts of how A operates over I∞ while preserving L₃-conformant outcomes.
 
-Thus quantum mechanics, no less than classical mechanics, fits naturally into χ. It differs not by abandoning L₃, but by enriching I∞ through Hilbert-space structure and by complicating A through superposition, entanglement, and probabilistic actualization.
+Quantum mechanics fits the triadic template. It differs from classical mechanics not by abandoning L₃ but by enriching I∞ (Hilbert-space structure) and complicating A (probabilistic actualization).
 
 ---
 
-## 4.1 The Double-Slit Experiment in χ
+## 4. Experimental Exemplifications
+
+*The analyses below show how the TRM redescribes key quantum phenomena. They are interpretive exemplifications: they demonstrate compatibility and illustrative power, not derivation or confirmation. A rival meta-ontology might redescribe these same phenomena equally well. The TRM's claim to superiority rests on the arguments of §§2 and 6, not on these exemplifications alone.*
+
+### 4.1 The Double-Slit Experiment in χ
 
 **Epistemic Status:** ARGUED
 
@@ -457,27 +454,35 @@ The claim is not that all admissible configurations are simultaneously actual in
 
 ### 6.2 Status of the Bridge Equation
 
-The bridge equation expresses two related claims that must be distinguished:
+The bridge equation compresses three distinct claims. Under pressure, they must be separated with precision, because a reader who accepts the first two may still resist the third, and the paper's argumentative integrity depends on knowing exactly where the weight falls.
 
-**Grounding:** $\chi \vdash A_\Omega$
+**Claim 1: Grounding.** $\chi \vdash A_\Omega$ *[Epistemic status: ARGUED]*
 
-The primitive ontology $\chi = [L_3 : I_\infty : A]$ grounds the actualized domain. This is the transcendental claim: actuality exists *in virtue of* the interaction of the three primitives. Without logical constraint, no admissibility conditions. Without the informational domain, nothing to constrain. Without actualization, no transition from possibility to obtaining. The grounding relation ($\vdash$) carries the metaphysical weight of the argument.
+The primitive ontology $\chi = [L_3 : I_\infty : A]$ grounds the actualized domain. This is the transcendental claim: actuality exists *in virtue of* the interaction of the three primitives. Without logical constraint, no admissibility conditions. Without the informational domain, nothing to constrain. Without actualization, no transition from possibility to obtaining. The turnstile ($\vdash$) signifies ontological grounding, not logical derivation: constitutive dependence, not deductive entailment.
 
-**Characterization:** $A_\Omega := L_3(I_\infty)$
+This claim is secured by §§2.1-2.5. A reader who grants the necessity of the three primitives and their irreducibility has already accepted it. The remaining question is what the grounded domain looks like.
 
-Given the primitives, the actualized domain is *characterized as* the $L_3$-admissible configurations of $I_\infty$. The $:=$ notation marks this as constitutive rather than as a discovery of identity between independently-specifiable entities. We are not claiming that $A_\Omega$ and $L_3(I_\infty)$ are two things that turn out to be identical (as with "Hesperus = Phosphorus"). We are specifying what $A_\Omega$ is, given the framework.
+**Claim 2: Characterization.** $A_\Omega \subseteq L_3(I_\infty)$ *[Epistemic status: ARGUED, nearly uncontroversial given Claim 1]*
 
-This two-step structure addresses a natural objection: "Isn't the equation trivially true by definition?" The answer is no. The *grounding* claim is not trivial: that the primitives interact to produce any actualized domain at all is the substantive transcendental result. The characterization makes explicit what structure that domain has.
+Whatever is actualized is $L_3$-admissible. This is the result of Direction 1 in §6.1: $A$ operates on $I_\infty$ (there is nothing else), $L_3$ constrains admissibility, and contradiction cannot obtain. Actuality cannot violate logic. A reader who grants the three primitives has, in effect, already accepted this: it says only that $A$ respects the sole constraint that governs it.
 
-A critic who holds that $A$ could systematically exclude some $L_3$-admissible configurations from the actualized domain occupies a coherent logical position, but an unmotivated one: such exclusion would require a further constraint on $A$ beyond $L_3$-admissibility, which would entail that $L_3$ is not the complete admissibility criterion, contradicting the result of §2. In the absence of any such additional constraint, and given the plenitude premise established in §6.1, the characterization holds. The characterization is forced: no non-trivial alternative mapping from $\chi$ to $A_\Omega$ is coherent, because any deviation from $L_3(I_\infty)$ requires a constraint that §6.2.2 shows cannot be specified.
+Characterization tells us the *form* of the actualized domain. It does not yet tell us its *extent*. A critic can accept both Claims 1 and 2 while maintaining that $A_\Omega$ is a proper subset of $L_3(I_\infty)$: actuality might be sparser than possibility.
+
+**Claim 3: Plenitude Identity.** $A_\Omega = L_3(I_\infty)$ *[Epistemic status: ARGUED, conditional on the Plenitude Principle]*
+
+The actualized domain coincides with the full set of $L_3$-admissible configurations. This is the substantive philosophical claim, and it is where the paper's argumentative burden concentrates. It adds Direction 2 (§6.1) to Direction 1: not only does actuality respect $L_3$, but $L_3$-admissibility exhausts the ground of actualization. What $L_3$ permits, $A$ does not selectively refuse.
+
+This claim depends on the **Plenitude Principle** defended in §6.2.1 and the **Constraint Collapse Argument** of §6.2.2. A critic who rejects plenitude while accepting Claims 1 and 2 retains a coherent position (sparse actualism), but one that requires positing either a further constraint on $A$ beyond $L_3$ or brute selectivity. §6.2.1 argues that neither option is available within $\chi$; §6.2.2 argues that no such constraint can be coherently specified at the level where $A$ operates.
+
+The claim is not that all admissible configurations are simultaneously actual in the sense of concurrent physical instantiation; $A$ selects, and temporal or modal structure may distribute actualizations. The claim is structural: $A_\Omega$ and $L_3(I_\infty)$ coincide as domains because the two characterizations pick out the same totality.
+
+**The three claims together.** Grounding explains *why* actuality exists. Characterization specifies *what constraints* actuality satisfies. Plenitude determines *how much* of the admissible domain is actualized. A reader who accepts all three arrives at the bridge equation $A_\Omega = L_3(I_\infty)$. A reader who accepts only Claims 1 and 2 retains the core framework minus plenitude, a position the paper takes seriously as a live alternative (§6.2.1) while arguing against it.
 
 The bridge equation is therefore:
 
-- **Not a stipulative definition:** We are not merely defining $A_\Omega$ to mean $L_3(I_\infty)$. The grounding claim ($\chi \vdash A_\Omega$) does substantive metaphysical work.
+- **Not a stipulative definition:** We are not merely defining $A_\Omega$ to mean $L_3(I_\infty)$. Claim 1 does substantive metaphysical work; Claims 2 and 3 follow from it under distinct argumentative pressures.
 - **Not a formal theorem:** The argument is transcendental, not axiomatic. Formal verification can establish the internal consistency of the derivation chain, but the metaphysical warrant comes from the transcendental arguments of §§2.1-2.3.
-- **A grounded characterization:** Given the primitives and their transcendental necessity, the structure of $A_\Omega$ is characterized as $L_3(I_\infty)$.
-
-The bridge equation is the core result of this paper. The grounding relation explains *why* actuality exists; the characterization specifies *what form* it takes. Everything else in Logic Realism Theory, the reconstruction of quantum mechanics, the interpretational implications, flows from this ground. *[Epistemic status: grounding ($\chi \vdash A_\Omega$) is ARGUED; characterization ($A_\Omega := L_3(I_\infty)$) is ARGUED, conditional on the plenitude premise of §6.1.]*
+- **A grounded characterization with a plenitude thesis:** Given the primitives and their transcendental necessity, the structure of $A_\Omega$ is characterized as $L_3(I_\infty)$, and its extent is argued to coincide with that characterization via plenitude.
 
 ### 6.2.1 Why Plenitude?
 
@@ -491,9 +496,9 @@ The answer turns on $A$'s primitive status. Suppose $A$ systematically excludes 
 
 Neither option is coherent with the framework. Therefore, if $A$ is primitive and $L_3$ is the complete logical constraint, no systematic exclusion of admissible configurations can be grounded. What $L_3$ permits, $A$ does not selectively refuse.
 
-A subtler version of the objection concedes both points but insists that $A$ might be *primitively selective*: not governed by a rule, not violating $L_3$, simply a brute fact that some admissibles obtain and others do not. This move treats selectivity as a feature of $A$'s primitive character rather than a constraint imposed on it. But a partition without distinguishing criteria is not a partition. If $A$ excludes configuration *k* without any property differentiating *k* from included configurations, then "excluded" and "included" fail to denote distinct categories: there is nothing in virtue of which *k* falls on one side rather than the other. Exclusion without differentiation is not a primitive fact; it is a contentless label. And differentiation, as §6.2.2 demonstrates, requires $L_3$-governed identity conditions, returning us to structured constraint. Primitive selectivity is therefore not a third option. It collapses into either structured constraint (option 2) or vacuous assertion.
+A subtler version of the objection concedes both points but insists that $A$ might be *primitively selective*: not governed by a rule, not violating $L_3$, simply a brute fact that some admissibles obtain and others do not. This move treats selectivity as a feature of $A$'s primitive character rather than a constraint imposed on it. The TRM's response is not that primitive selectivity is *incoherent* but that it is an *epistemic dead end*. A brute fact does not merely fail to explain; it terminates inquiry by fiat. Nothing follows from it, nothing can be tested against it, and it cannot constrain adjacent claims. If $A$ excludes configuration *k* without any property differentiating *k* from included configurations, the partition carries no structural information: there is nothing in virtue of which *k* falls on one side rather than the other. Differentiation, as §6.2.2 demonstrates, requires $L_3$-governed identity conditions, returning us to structured constraint. And structured constraint, within $\chi$, just is $L_3$. Primitive selectivity is therefore not a stable third option at the foundational level: it either acquires structure (collapsing into option 2) or remains a brute posit from which no downstream physical structure can be derived (see "Primitive modality" below).
 
-**Primitive modality as a live position.** A critic might stand at a different point entirely and insist on *primitive modal facts*: brute, ungrounded facts about which possibilities obtain and which do not, not governed by any constraint, not explicable by any principle, simply given. This is a coherent metaphysical position, and the TRM should engage it rather than treating it as obviously incoherent. The response is that primitive modal facts, at the level where $A$ operates, are explanatorily inert in a way that undermines their candidacy as foundations for physics. Physics seeks to explain regularities among actualized configurations. If the distribution of actualization is itself brute, then the regularity of physical law has no ground: the uniformity of nature becomes a cosmic coincidence rather than a consequence of structural constraint. The TRM does not prove that primitive modality is *impossible*; it argues that a framework with primitive modality at the base level cannot discharge the explanatory obligations that a foundation for physics must meet. Primitive modality purchases parsimony in the ontology at the cost of explanatory bankruptcy in the physics.
+**Primitive modality as a live position.** A critic might stand at a different point entirely and insist on *primitive modal facts*: brute, ungrounded facts about which possibilities obtain and which do not, not governed by any constraint, not explicable by any principle, simply given. This is a coherent metaphysical position. It is not self-contradictory, and a philosopher who holds it does not thereby commit any logical error. The TRM does not claim otherwise. The response operates at a different level: primitive modal facts are epistemic dead ends. They do not merely leave a question unanswered; they foreclose the possibility of answering it. Physics seeks to explain regularities among actualized configurations. If the distribution of actualization is itself brute, two consequences follow. First, the regularity of physical law has no ground: the uniformity of nature becomes a cosmic coincidence rather than a consequence of structural constraint. Second, no downstream structure can be derived, because a dead end generates no leverage for derivation. You cannot get from "it just is" to Hilbert space, Born rule, or dynamics. By contrast, the TRM's primitives are primitive but *generative*: the reconstruction chain from $\chi$ through $A_\Omega$ to quantum formalism runs through them precisely because they carry structural content rather than terminating it. Primitive modality is the right to stop explaining. The TRM argues that stopping here, before physical structure has been grounded, is stopping too early.
 
 This does not commit the TRM to modal realism in the Lewisian sense. Lewis posits the actual existence of spatiotemporally isolated concrete worlds. The TRM claims that actuality is coextensive with logical admissibility within a single unified domain: a structural identity, not a plurality of worlds. The contrast with modal realism is preserved precisely because $A_\Omega$ is not carved into disconnected totalities but constitutes the single actualized domain constrained by $L_3$.
 
@@ -545,7 +550,7 @@ The burden just stated identifies what the objector must *do*. It is equally imp
 
 In each case, rejection does not yield a leaner ontology. It yields the same explanatory burdens with strictly fewer resources to discharge them.
 
-**Result of §6:** The primitive ontology $\chi$ grounds the actualized domain ($\chi \vdash A_\Omega$), and the actualized domain is characterized as the $L_3$-admissible configurations of $I_\infty$ ($A_\Omega = L_3(I_\infty)$); this is a grounded characterization, not a stipulative definition.
+**Result of §6:** Three claims compose the bridge argument. (1) The primitive ontology $\chi$ grounds the actualized domain ($\chi \vdash A_\Omega$). (2) The actualized domain respects $L_3$ ($A_\Omega \subseteq L_3(I_\infty)$). (3) Under the Plenitude Principle, the actualized domain coincides with the $L_3$-admissible configurations ($A_\Omega = L_3(I_\infty)$). Claims 1 and 2 are nearly uncontroversial given §§2.1-2.5. Claim 3 carries the substantive philosophical weight and depends on the arguments of §§6.2.1-6.2.2. The result is a grounded characterization with a plenitude thesis, not a stipulative definition.
 
 ### 6.5 The Bridge Lemma
 
@@ -637,7 +642,7 @@ Wallace, D. (2012) *The Emergent Multiverse: Quantum Theory According to the Eve
 
 ---
 
-*All references flagged MEDIUM require verification against primary texts before journal submission. References flagged HIGH are primary author works. No third-party reference in this draft is cited at HIGH confidence. Citations in body text are working placeholders pending primary verification.*
+**Reference verification status.** All third-party references are flagged MEDIUM: standard attributions with publication details, but primary texts have not been directly accessed for this draft. No third-party reference is cited at HIGH confidence. Before journal submission, each reference must be verified against the primary text for: (1) accurate page numbers/DOIs, (2) correct characterization of the cited claim, and (3) no misattribution of paraphrased content as direct quotation. Self-references (Longmire) are HIGH. This verification pass is a submission prerequisite, not an optional polish step.
 
 ---
 
@@ -645,9 +650,9 @@ Wallace, D. (2012) *The Emergent Multiverse: Quantum Theory According to the Eve
 
 The six cases establishing the irreducibility of the triad (summarized in §2.5) are developed here in full.
 
-### Tier 1: Strict Incoherence
+### Tier 1: Cannot Ground a Physical Framework
 
-These pairs fail to produce any coherent formal object. The missing primitive is not merely useful; its absence leaves nothing to work with.
+These pairs lack a constitutive element required for any physical foundation. The missing primitive is not merely useful; its absence leaves the remaining pair unable to range over, constrain, or select from a structured domain.
 
 **Case 1: L₃ without I∞.**
 L₃ is a set of constraints: identity, non-contradiction, excluded middle. Constraints are constraints on something; they presuppose a domain over which they range. Without I∞, there is no domain of configurations for L₃ to govern. The result is not a restrictive logic operating over an empty set; it is a constraint relation with no relata. No formal object results. This is not physical vacuity: it is the absence of any object of discourse whatsoever.
@@ -655,9 +660,9 @@ L₃ is a set of constraints: identity, non-contradiction, excluded middle. Cons
 **Case 2: A without I∞.**
 A is the primitive actualization principle, the selection of configurations as actual. Selection is a relation between a selector and a domain of candidates. Without I∞, there are no candidates. A without I∞ is not selection over an empty set, which is at least a coherent formal operation; it is a selection primitive with no domain specification. The operation is undefined. Again, no coherent formal object results.
 
-### Tier 2: Formally Coherent but Physically Vacuous
+### Tier 2: Cannot Perform the Required Physical Function
 
-These pairs produce recognizable formal objects, objects that mathematicians and logicians can work with, but those objects cannot serve as foundations for physics. The failure is specific and precise.
+These pairs produce recognizable formal objects, objects that mathematicians and logicians can work with, but those objects cannot discharge the explanatory obligations a foundation for physics must meet. The failure is specific and precise.
 
 **Case 3: I∞ without L₃.**
 An unconstrained possibility space is a perfectly coherent formal object. Set theory, modal logic, and combinatorics all work with such spaces. The problem is that without L₃, there is no admissibility condition on I∞, no distinction between configurations that can be physically instantiated and those that cannot. Every configuration, including those that violate identity, non-contradiction, or excluded middle, is equally available. Physics requires that some configurations are inadmissible: that contradictory states are not actual, that a detector cannot simultaneously register and not register an event. Without L₃, that requirement has no ground. I∞ without L₃ is formally coherent but physically inert: it cannot distinguish physical from non-physical configurations, which is the first thing any foundation for physics must do.
