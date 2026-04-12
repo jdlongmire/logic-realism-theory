@@ -1,4 +1,4 @@
-# The Triadic Reality Model: χ ≡ [L₃ : I∞ : A]
+# The Triadic Reality Model: Irreducible Foundations for Physics
 
 **James (JD) Longmire**
 ORCID: 0009-0009-1383-7698
