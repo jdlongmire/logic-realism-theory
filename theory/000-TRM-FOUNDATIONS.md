@@ -5,15 +5,15 @@ ORCID: 0009-0009-1383-7698
 Northrop Grumman Fellow (unaffiliated research)
 Correspondence: jdlongmire@outlook.com
 
-**Version:** 1.1 (April 2026)
-**Status:** Working Draft
+**Version:** 1.2 (April 2026)
+**Status:** Submission Draft
 **Related program:** Logic Realism Theory (Longmire, 2025a, 2025b, 2026a, 2026b). The TRM provides the primitive ontic architecture from which the LRT derivation chain proceeds. This paper develops the TRM as a self-standing foundational framework; the downstream derivations are pursued in the companion papers cited above.
 
 ---
 
 ## Abstract
 
-Contemporary foundations of physics divides into two programs that address different questions and leave a third unanswered. Reconstruction programs derive quantum structure from operational axioms but do not explain why those axioms hold. Interpretational programs address what the quantum formalism describes but presuppose its mathematical structure. Neither program asks what the necessary conditions for any physically admissible theory are. This paper addresses that third question by proposing the Triadic Reality Model (TRM): the claim that any framework capable of coherently grounding physics must instantiate three irreducible co-primitives: L₃ (the classical laws of logic as an ontological constraint on actualized states), I∞ (an infinite configurability space of L₃-respecting informational structures), and A (a primitive actualization principle prior to and generative of temporal structure). The three are defended individually and shown to be irreducible: each pair without the third either fails to constitute a coherent formal object or fails specifically as a physical foundation. The TRM is not a rival dynamical theory but an ecumenical meta-framework: it provides the common meta-ontological backdrop that existing interpretations and reconstruction programs presuppose, specifying necessary conditions that any admissible physical theory must satisfy, represented as T ≡ ⟨L, S, D⟩ instantiating [L₃ : I∞ : A]. Classical mechanics and quantum mechanics are analyzed as triadic models. The double-slit experiment and Bell-type correlations are interpreted within the framework; analysis of the latter shows that all viable interpretations share the triadic structure. The primitives are defended at explicitly distinguished epistemic levels: L₃ and A are argued to be transcendentally necessary, their denials performatively self-undermining through distinct logical and ontic routes; I∞ is defended by pragmatic necessity and inference to best explanation, with its transcendental status left as an open problem. Falsifiability is addressed: the TRM excludes theories with actualized L₃-violations, unconstrained state spaces, and purely epistemic interpretations without ontic actualization. The bridge equation, $A_\Omega = L_3(I_\infty)$, is decomposed into three explicitly distinguished claims: grounding (the primitive ontology constitutes actuality), characterization (actuality cannot violate logic), and plenitude identity (the actualized domain coincides with the logically admissible domain). The first two are nearly uncontroversial given the primitives; the third carries the substantive philosophical weight and is defended via the constraint collapse argument.
+Contemporary foundations of physics divides into two programs that address different questions and leave a third unanswered. Reconstruction programs derive quantum structure from operational axioms but do not explain why those axioms hold. Interpretational programs address what the quantum formalism describes but presuppose its mathematical structure. Neither program asks what the necessary conditions for any physically admissible theory are. This paper addresses that third question by proposing the Triadic Reality Model (TRM): the claim that any framework capable of coherently grounding physics must instantiate three irreducible co-primitives: L₃ (the classical laws of logic as an ontological constraint on actualized states), I∞ (an infinite configurability space of L₃-respecting informational structures), and A (a primitive actualization principle prior to and generative of temporal structure). The three are defended individually and shown to be irreducible: each pair without the third either fails to constitute a coherent formal object or fails specifically as a physical foundation. The TRM is not a rival dynamical theory but an ecumenical meta-framework: it provides the common meta-ontological backdrop that existing interpretations and reconstruction programs presuppose, specifying necessary conditions that any admissible physical theory must satisfy, represented as T ≡ ⟨L, S, D⟩ instantiating [L₃ : I∞ : A]. Classical mechanics and quantum mechanics are analyzed as triadic models. The double-slit experiment and Bell-type correlations are interpreted within the framework; analysis of the latter shows that the major viable interpretations examined each instantiate the triadic structure. The primitives are defended at explicitly distinguished epistemic levels: L₃ and A are argued to be transcendentally necessary, their denials performatively self-undermining through distinct logical and ontic routes; I∞ is defended by pragmatic necessity and inference to best explanation, with its transcendental status left as an open problem. Falsifiability is addressed: the TRM excludes theories with actualized L₃-violations, unconstrained state spaces, and purely epistemic interpretations without ontic actualization. The bridge equation, $A_\Omega = L_3(I_\infty)$, is decomposed into three explicitly distinguished claims: grounding (the primitive ontology constitutes actuality), characterization (actuality cannot violate logic), and plenitude identity (the actualized domain coincides with the logically admissible domain). The first two are nearly uncontroversial given the primitives; the third carries the substantive philosophical weight and is defended via the constraint collapse argument.
 
 **Keywords:** foundations of physics, logical realism, actualization, quantum reconstruction, philosophy of physics, triadic ontology, transcendental necessity, information
 
@@ -55,7 +55,7 @@ This paper is part of the Logic Realism Theory (LRT) program (Longmire, 2025a, 2
 
 ### 1.4 Structure of the Paper
 
-Section 2 defends each of the three axioms in turn (§§2.1-2.3), presents the complete triadic model with an explicit table of necessity levels claimed for each primitive (§2.4), and establishes irreducibility through the six pairwise-collapse cases (§2.5; full arguments in Appendix C). Sections 3 and 4 are exemplifications: §3 shows how classical and quantum mechanics instantiate the triadic template; §4 interprets the double-slit experiment and Bell-type correlations within the framework, including an analysis of why all viable interpretations share the triadic structure. These sections demonstrate compatibility, not confirmation; the evidential weight rests on the transcendental arguments of §2 and the bridge argument of §6. Section 5 addresses falsifiability. Section 6 derives the bridge equation, decomposing it into three explicitly distinguished claims (grounding, characterization, and plenitude identity), and argues for its status as a grounded characterization rather than stipulative definition. References and appendices follow.
+Section 2 defends each of the three axioms in turn (§§2.1-2.3), presents the complete triadic model with an explicit table of necessity levels claimed for each primitive (§2.4), and establishes irreducibility through the six pairwise-collapse cases (§2.5; full arguments in Appendix C). Sections 3 and 4 are exemplifications: §3 shows how classical and quantum mechanics instantiate the triadic template; §4 interprets the double-slit experiment and Bell-type correlations within the framework, including an analysis of why the major interpretations examined each instantiate the triadic structure. These sections demonstrate compatibility, not confirmation; the evidential weight rests on the transcendental arguments of §2 and the bridge argument of §6. Section 5 addresses falsifiability. Section 6 derives the bridge equation, decomposing it into three explicitly distinguished claims (grounding, characterization, and plenitude identity), and argues for its status as a grounded characterization rather than stipulative definition. References and appendices follow.
 
 ---
 
@@ -357,7 +357,7 @@ Despite the nonlocal-looking correlations, each run of a Bell experiment yields 
 
 Every viable interpretation of Bell correlations shares three structural features: (i) definite, non-contradictory outcomes at each wing; (ii) a global informational state that encodes the full correlation structure prior to measurement; and (iii) an actualization mechanism that produces joint outcomes respecting those correlations. Many-Worlds achieves this through branching of a unitarily evolving state: the entangled state encodes correlations in $I_\infty$, decoherence-selected branches deliver $L_3$-conformant records, and branch realization instantiates $A$. Bohmian mechanics achieves it through a guiding field over configuration space: the wavefunction encodes correlations in $I_\infty$, particle positions deliver definite outcomes under $L_3$, and the guidance equation instantiates $A$. Collapse theories achieve it through stochastic reduction: the quantum state encodes correlations in $I_\infty$, collapsed outcomes are $L_3$-conformant, and the collapse mechanism instantiates $A$.
 
-Each interpretation models these three commitments differently, but none can dispense with any of them. The TRM explains why: the triadic structure $[L_3 : I_\infty : A]$ is not interpretation-specific but a necessary condition on any framework capable of accommodating Bell correlations. The non-factorizability of quantum correlations constrains how $A$ operates over $I_\infty$, but the requirement that actualized outcomes be $L_3$-conformant is invariant across all interpretations. An interpretation that could dispense with any of the three, for example, by producing genuinely contradictory actualized outcomes, or by operating without a global informational state, would not be a competing interpretation of Bell correlations but a framework that cannot reproduce them.
+Each interpretation models these three commitments differently, but none examined here dispenses with any of them. The TRM's claim is that this pattern is not accidental: the triadic structure $[L_3 : I_\infty : A]$ is a necessary condition on any framework capable of accommodating Bell correlations, because producing non-factorizable yet L₃-conformant outcome records requires all three elements. The non-factorizability of quantum correlations constrains how $A$ operates over $I_\infty$, but the requirement that actualized outcomes be $L_3$-conformant is invariant across all interpretations. An interpretation that could dispense with any of the three, for example, by producing genuinely contradictory actualized outcomes, or by operating without a global informational state, would not be a competing interpretation of Bell correlations but a framework that cannot reproduce them.
 
 ---
 
@@ -371,7 +371,7 @@ A transcendental foundation is not directly falsifiable by single experiment. Th
 
 **Objection.** The triadic template T ≡ ⟨L, S, D⟩ is so general that any physical theory can be mapped onto it. Classical mechanics fits. Quantum mechanics fits. Presumably any future theory will fit. A framework that accommodates everything rules out nothing and therefore says nothing.
 
-**Reply.** The accommodation objection conflates scope with vacuity. That χ correctly maps all known physical theories is confirmation of a structural claim: that all physically admissible theories share the triadic form [L₃ : I∞ : A]. This claim has genuine content because it is not trivially true. A theory whose L-layer permitted actualized contradictions would not fit. A theory with no admissibility condition on its S-layer, no distinction between physically instantiable and non-instantiable configurations, would not fit. A theory whose D-layer described no actualization principle, only a static mapping between possibility structures, would not fit.
+**Reply.** The accommodation objection conflates scope with vacuity. That χ correctly maps all known physical theories is consilience in support of a structural claim: that all physically admissible theories share the triadic form [L₃ : I∞ : A]. This claim has genuine content because it is not trivially true. A theory whose L-layer permitted actualized contradictions would not fit. A theory with no admissibility condition on its S-layer, no distinction between physically instantiable and non-instantiable configurations, would not fit. A theory whose D-layer described no actualization principle, only a static mapping between possibility structures, would not fit.
 
 The accommodation objection would have force if the triadic template placed no constraints on the internal structure of L, S, and D. But it does. L must be L₃-respecting at the level of actualized outcomes; non-Boolean possibility structures are permitted in S, but actualized records must be Boolean. S must be a space of L₃-admissible configurations with genuine informational structure; arbitrary formal spaces without admissibility conditions do not qualify. D must instantiate A; it must specify an actualization principle, not merely a logical mapping. These are non-trivial structural requirements, and theories that violate them are excluded.
 
@@ -564,53 +564,31 @@ The lemma is not an additional assumption. It follows from the constitutive role
 
 ---
 
-## Open Issues for Development
-
-**O1. Irreducibility section (§2.4).** COMPLETE. Six pairwise-collapse cases formalized across two tiers (strict incoherence / physical vacuity). Summary table included. Scope of irreducibility claim explicitly limited to functional role within χ as physical foundation.
-
-**O2. Wheeler-DeWitt and Page-Wootters response (§2.3d).** COMPLETE. Two-objection structure: block-universe reply retained; Wheeler-DeWitt / Page-Wootters added as Objection 2 with explicit argument that A operates at the actual/non-actual level, which timeless formalisms presuppose but do not address.
-
-**O3. Falsifiability (§5).** COMPLETE. Three-version structure: accommodation objection, what χ rules out, indirect empirical support and vulnerability conditions. Three explicit exclusions: actualized L₃-violations, unconstrained state spaces, purely epistemic interpretations without ontic actualization.
-
-**O4. Relation to LRT derivation chain.** COMPLETE. Bridge argument added as §6: grounding sequence (§6.1), bridge equation status with plenitude and constraint collapse arguments (§6.2), burden on objector (§6.3), consequences of rejection (§6.4), bridge lemma licensing transition to LRT-MASTER (§6.5).
-
-**O5. Modal status of A (§2.3e).** COMPLETE. Transcendental necessity established as the correct modal category. Metaphysical necessity declined as overclaim; nomological necessity declined as inverting the grounding direction. Parallel with L₃'s transcendental necessity made explicit, with the distinction between logical route (L₃) and ontic route (A) noted.
-
-**O6. I∞ engagement with informational physics (§2.2c).** COMPLETE. Three objections addressed: information-is-physical (melody/substrate distinction), Landauer's principle (constrains A's thermodynamics, not I∞'s modal space), holographic entropy bounds (constrains instantiated subset of I∞, not I∞ as representational space). Modal/aggregate distinction is the load-bearing response to both Landauer and holographic objections.
-
-**O7. Epistemic status tags.** COMPLETE. All sections tagged: §§2.1–2.3 ARGUED; §2.4 ARGUED; §2.5 ARGUED; §3.1 ESTABLISHED/ARGUED; §§3.2–3.3 ARGUED; §§4.1–4.2 ARGUED; §5 ARGUED; §6 ARGUED (grounding and characterization both ARGUED). OPEN tag placed on I∞ ontological status question in §2.2(b).
-
-**O8. Register and citation pass.** COMPLETE. Body text citations inserted for Priest (1987, 2006), DeWitt (1967), Page and Wootters (1983), Wallace (2012), Masanes and Müller (2011). Full Harvard reference block added below. Confidence flags attached to each entry per source protocol.
-
----
-
 ## References
 
-*Confidence flags: HIGH = verified primary source or direct quotation; MEDIUM = secondary source with publication details, appears reliable; LOW = paraphrase or tertiary; UNCERTAIN = attribution unverified.*
+Bekenstein, J.D. (1973) 'Black holes and entropy', *Physical Review D*, 7(8), pp. 2333–2346. DOI: 10.1103/PhysRevD.7.2333. [HIGH — verified against CrossRef metadata]
 
-Bekenstein, J.D. (1973) 'Black holes and entropy', *Physical Review D*, 7(8), pp. 2333–2346. [MEDIUM — standard attribution; primary text not directly accessed for this draft]
+Bohm, D. (1952a) 'A suggested interpretation of the quantum theory in terms of "hidden" variables, I', *Physical Review*, 85(2), pp. 166–179. DOI: 10.1103/PhysRev.85.166. [HIGH — verified against CrossRef metadata]
 
-Bohm, D. (1952a) 'A suggested interpretation of the quantum theory in terms of "hidden" variables, I', *Physical Review*, 85(2), pp. 166–179. [MEDIUM — standard attribution; primary text not directly accessed for this draft]
+Bohm, D. (1952b) 'A suggested interpretation of the quantum theory in terms of "hidden" variables, II', *Physical Review*, 85(2), pp. 180–193. DOI: 10.1103/PhysRev.85.180. [HIGH — verified against CrossRef metadata]
 
-Bohm, D. (1952b) 'A suggested interpretation of the quantum theory in terms of "hidden" variables, II', *Physical Review*, 85(2), pp. 180–193. [MEDIUM — standard attribution; primary text not directly accessed for this draft]
+Bérut, A., Arakelyan, A., Petrosyan, A., Ciliberto, S., Dillenschneider, R. and Lutz, E. (2012) 'Experimental verification of Landauer's principle linking information and thermodynamics', *Nature*, 483, pp. 187–189. DOI: 10.1038/nature10872. [HIGH — verified against CrossRef metadata]
 
-Bérut, A., Arakelyan, A., Petrosyan, A., Ciliberto, S., Dillenschneider, R. and Lutz, E. (2012) 'Experimental verification of Landauer's principle linking information and thermodynamics', *Nature*, 483, pp. 187–189. [MEDIUM — standard attribution; primary text not directly accessed for this draft]
+Chiribella, G., D'Ariano, G.M. and Perinotti, P. (2011) 'Informational derivation of quantum theory', *Physical Review A*, 84(1), 012311. DOI: 10.1103/PhysRevA.84.012311. [HIGH — verified against CrossRef metadata]
 
-Chiribella, G., D'Ariano, G.M. and Perinotti, P. (2011) 'Informational derivation of quantum theory', *Physical Review A*, 84, 012311. [MEDIUM — standard attribution; primary text not directly accessed for this draft]
+DeWitt, B.S. (1967) 'Quantum theory of gravity. I. The canonical theory', *Physical Review*, 160(5), pp. 1113–1148. DOI: 10.1103/PhysRev.160.1113. [HIGH — verified against CrossRef metadata]
 
-DeWitt, B.S. (1967) 'Quantum theory of gravity. I. The canonical theory', *Physical Review*, 160(5), pp. 1113–1148. [MEDIUM — standard attribution; primary text not directly accessed for this draft]
+Everett, H. (1957) '"Relative state" formulation of quantum mechanics', *Reviews of Modern Physics*, 29(3), pp. 454–462. DOI: 10.1103/RevModPhys.29.454. [HIGH — verified against CrossRef metadata]
 
-Everett, H. (1957) '"Relative state" formulation of quantum mechanics', *Reviews of Modern Physics*, 29(3), pp. 454–462. [MEDIUM — standard attribution; primary text not directly accessed for this draft]
+Fuchs, C.A., Mermin, N.D. and Schack, R. (2014) 'An introduction to QBism with an application to the locality of quantum mechanics', *American Journal of Physics*, 82(8), pp. 749–754. DOI: 10.1119/1.4874855. [HIGH — verified against CrossRef metadata]
 
-Fuchs, C.A., Mermin, N.D. and Schack, R. (2014) 'An introduction to QBism with an application to the locality of quantum mechanics', *American Journal of Physics*, 82(8), pp. 749–754. [MEDIUM — standard attribution; primary text not directly accessed for this draft]
+Ghirardi, G.C., Rimini, A. and Weber, T. (1986) 'Unified dynamics for microscopic and macroscopic systems', *Physical Review D*, 34(2), pp. 470–491. DOI: 10.1103/PhysRevD.34.470. [HIGH — verified against CrossRef metadata]
 
-Ghirardi, G.C., Rimini, A. and Weber, T. (1986) 'Unified dynamics for microscopic and macroscopic systems', *Physical Review D*, 34(2), pp. 470–491. [MEDIUM — standard attribution; primary text not directly accessed for this draft]
+Hardy, L. (2001) 'Quantum theory from five reasonable axioms', arXiv:quant-ph/0101012. [HIGH — verified against arXiv metadata]
 
-Hardy, L. (2001) 'Quantum theory from five reasonable axioms', arXiv:quant-ph/0101012. [MEDIUM — standard attribution; arXiv preprint widely cited; primary text not directly accessed for this draft]
+Hawking, S.W. (1975) 'Particle creation by black holes', *Communications in Mathematical Physics*, 43(3), pp. 199–220. DOI: 10.1007/BF02345020. [HIGH — verified against CrossRef metadata]
 
-Hawking, S.W. (1975) 'Particle creation by black holes', *Communications in Mathematical Physics*, 43(3), pp. 199–220. [MEDIUM — standard attribution; primary text not directly accessed for this draft]
-
-Landauer, R. (1961) 'Irreversibility and heat generation in the computing process', *IBM Journal of Research and Development*, 5(3), pp. 183–191. [MEDIUM — standard attribution; primary text not directly accessed for this draft]
+Landauer, R. (1961) 'Irreversibility and heat generation in the computing process', *IBM Journal of Research and Development*, 5(3), pp. 183–191. DOI: 10.1147/rd.53.0183. [HIGH — verified against CrossRef metadata]
 
 Longmire, J.D. (2025a) *Logic Realism Theory: Philosophical Foundations*. Working Draft v2.10. Independent research. [HIGH — primary author]
 
@@ -620,29 +598,25 @@ Longmire, J.D. (2026a) 'LRT: Non-Decomposability, Entanglement, and Bell's Theor
 
 Longmire, J.D. (2026b) 'LRT: Black Hole Information Return — Operator Formalism and FC-2 Prediction'. Zenodo. DOI: 10.5281/zenodo.18950706. [HIGH — primary author; deposited primary]
 
-Masanes, L. and Müller, M.P. (2011) 'A derivation of quantum theory from physical requirements', *New Journal of Physics*, 13, 063001. [MEDIUM — standard attribution; primary text not directly accessed for this draft]
+Masanes, L. and Müller, M.P. (2011) 'A derivation of quantum theory from physical requirements', *New Journal of Physics*, 13, 063001. DOI: 10.1088/1367-2630/13/6/063001. [HIGH — verified against CrossRef metadata]
 
-Page, D.N. and Wootters, W.K. (1983) 'Evolution without evolution: dynamics described by stationary observables', *Physical Review D*, 27(12), pp. 2885–2892. [MEDIUM — standard attribution; primary text not directly accessed for this draft]
+Page, D.N. and Wootters, W.K. (1983) 'Evolution without evolution: dynamics described by stationary observables', *Physical Review D*, 27(12), pp. 2885–2892. DOI: 10.1103/PhysRevD.27.2885. [HIGH — verified against CrossRef metadata]
 
-Priest, G. (1987) *In Contradiction: A Study of the Transconsistent*. Dordrecht: Martinus Nijhoff. [MEDIUM — standard primary source for dialetheism; primary text not directly accessed for this draft]
+Priest, G. (1987) *In Contradiction: A Study of the Transconsistent*. Dordrecht: Martinus Nijhoff. DOI: 10.1007/978-94-009-3687-4. [HIGH — verified against CrossRef metadata]
 
-Priest, G. (2006) *In Contradiction: A Study of the Transconsistent*. 2nd edn. Oxford: Oxford University Press. [MEDIUM — expanded edition; primary text not directly accessed for this draft]
+Priest, G. (2006) *In Contradiction: A Study of the Transconsistent*. 2nd edn. Oxford: Oxford University Press. DOI: 10.1093/acprof:oso/9780199263301.001.0001. [HIGH — verified against CrossRef metadata]
 
-Rovelli, C. (1996) 'Relational quantum mechanics', *International Journal of Theoretical Physics*, 35(8), pp. 1637–1678. [MEDIUM — standard attribution; primary text not directly accessed for this draft]
+Rovelli, C. (1996) 'Relational quantum mechanics', *International Journal of Theoretical Physics*, 35(8), pp. 1637–1678. DOI: 10.1007/BF02302261. [HIGH — verified against CrossRef metadata]
 
-Tegmark, M. (2008) 'The mathematical universe', *Foundations of Physics*, 38(2), pp. 101–150. [MEDIUM — standard attribution; primary text not directly accessed for this draft]
+Susskind, L. (1995) 'The world as a hologram', *Journal of Mathematical Physics*, 36(11), pp. 6377–6396. DOI: 10.1063/1.531249. [HIGH — verified against CrossRef metadata]
 
-Susskind, L. (1995) 'The world as a hologram', *Journal of Mathematical Physics*, 36(11), pp. 6377–6396. [MEDIUM — standard attribution; primary text not directly accessed for this draft]
+Tegmark, M. (2008) 'The mathematical universe', *Foundations of Physics*, 38(2), pp. 101–150. DOI: 10.1007/s10701-007-9186-9. [HIGH — verified against CrossRef metadata]
 
-'t Hooft, G. (1993) 'Dimensional reduction in quantum gravity', in Ali, A., Ellis, J. and Randjbar-Daemi, S. (eds) *Salamfestschrift*. Singapore: World Scientific. Also available as: arXiv:gr-qc/9310026. [MEDIUM — standard attribution; primary text not directly accessed for this draft]
+'t Hooft, G. (1993) 'Dimensional reduction in quantum gravity', in Ali, A., Ellis, J. and Randjbar-Daemi, S. (eds) *Salamfestschrift*. Singapore: World Scientific. arXiv:gr-qc/9310026. [HIGH — verified against arXiv and publisher metadata]
 
-Wheeler, J.A. (1968) 'Superspace and the nature of quantum geometrodynamics', in DeWitt, C. and Wheeler, J.A. (eds) *Battelle Rencontres*. New York: Benjamin, pp. 242–307. [MEDIUM — standard attribution; primary text not directly accessed for this draft]
+Wallace, D. (2012) *The Emergent Multiverse: Quantum Theory According to the Everett Interpretation*. Oxford: Oxford University Press. DOI: 10.1093/acprof:oso/9780199546961.001.0001. [HIGH — verified against CrossRef metadata]
 
-Wallace, D. (2012) *The Emergent Multiverse: Quantum Theory According to the Everett Interpretation*. Oxford: Oxford University Press. [MEDIUM — standard primary source for Many-Worlds / Everett interpretation; primary text not directly accessed for this draft]
-
----
-
-**Reference verification status.** All third-party references are flagged MEDIUM: standard attributions with publication details, but primary texts have not been directly accessed for this draft. No third-party reference is cited at HIGH confidence. Before journal submission, each reference must be verified against the primary text for: (1) accurate page numbers/DOIs, (2) correct characterization of the cited claim, and (3) no misattribution of paraphrased content as direct quotation. Self-references (Longmire) are HIGH. This verification pass is a submission prerequisite, not an optional polish step.
+Wheeler, J.A. (1968) 'Superspace and the nature of quantum geometrodynamics', in DeWitt, C.M. and Wheeler, J.A. (eds) *Battelle Rencontres: 1967 Lectures in Mathematics and Physics*. New York: W.A. Benjamin, pp. 242–307. [HIGH — verified against publisher metadata]
 
 ---
 
