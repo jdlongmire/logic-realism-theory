@@ -84,7 +84,7 @@ The claim is strong but precise: if you accept that physical reality must satisf
 
 Every physical theory, regardless of its domain or interpretation, exhibits three features simultaneously:
 
-1. **Logical structure.** The theory's predictions are self-consistent. Outcomes satisfy identity (a measurement result is what it is), non-contradiction (a photon is not simultaneously detected and not detected at the same location), and excluded middle (for any sharp observable, there is a fact of the matter). No successful physical theory violates these conditions.
+1. **Logical structure.** The theory's predictions are self-consistent. Outcomes satisfy identity (a measurement result is what it is), non-contradiction (a photon is not simultaneously detected and not detected at the same location), and excluded middle (for any actualized sharp outcome, either the outcome obtained or it did not). No successful physical theory permits actualized measurement records that violate these conditions.
 
 2. **Informational structure.** The theory posits a space of possible configurations — states that a system could occupy. Classical mechanics has phase space. Quantum mechanics has Hilbert space. Thermodynamics has macroscopic state space. The specific space varies; the existence of a configurational domain does not.
 
@@ -166,9 +166,9 @@ In TRM-LRT, local tomography follows from two conditions:
 
 - **Metaphysical supervenience (H1):** Because $L_3$ enforces determinate identity on all actualized configurations, the global state of a composite system supervenes on the determinate identities of its components. There is no "extra fact" about the whole that is not grounded in facts about the parts.
 
-- **Operational local tomography (H2):** Because $I_\infty$ has product structure over subsystems (the possible configurations of a composite system are built from the possible configurations of its parts), the informational domain supports local reconstruction.
+- **Operational local tomography (H2):** Because $I_\infty$ has product structure over subsystems — that is, the possible configurations of a composite system are built from the possible configurations of its parts — the informational domain supports local reconstruction. This product structure is not stipulated but argued as a structural consequence: if subsystems have independent identity conditions under $L_3$, then their joint possibility space is the product of their individual possibility spaces. A non-product structure would require "extra" joint configurations not traceable to the parts, violating the determinacy that $L_3$ enforces.
 
-These two conditions are not postulated; they are consequences of how $L_3$ and $I_\infty$ operate. The first follows from the constitutive role of logical constraint. The second follows from the compositional structure of the informational domain.
+These two conditions are not postulated; they are consequences of how $L_3$ and $I_\infty$ operate. The first follows from the constitutive role of logical constraint. The second follows from the compositional structure of the informational domain, argued above.
 
 ### 4.3 Complex Hilbert Space
 
@@ -181,6 +181,8 @@ This result is imported, not re-derived. The contribution of TRM-LRT is not to r
 The actualization principle $A$ operates as a binary selector: for any sharp event and any configuration, $A$ either actualizes it or does not. There is no middle ground — $L_3$ (specifically, excluded middle) forbids indeterminate actualization.
 
 This binary character has a direct mathematical consequence. When sharp events are represented as operators on Hilbert space, their spectrum must be $\{0, 1\}$. An operator with spectrum $\{0, 1\}$ is an idempotent, and a self-adjoint idempotent is a projection. A complete family of sharp events therefore constitutes a projection-valued measure (PVM).
+
+This derivation concerns *sharp* events — those for which $A$ delivers a determinate yes-or-no verdict. General measurements, including the positive operator-valued measures (POVMs) used in modern quantum information theory, are not derived here. They arise as coarse-grained or unsharp variants of the fundamental PVM structure, representing incomplete information about underlying sharp actualization events rather than a distinct ontological category.
 
 This is where the ontology does real mathematical work. Standard reconstruction programs assume or stipulate that measurement is represented by PVMs. In TRM-LRT, PVM structure is *derived* from the binary character of actualization under $L_3$ constraint.
 
@@ -196,7 +198,7 @@ Gleason's theorem is imported. But notice what has happened: the premises of Gle
 
 $\chi$ contains no temporal primitive. Time is not among the co-primitives. Instead, temporal structure emerges from the interaction of $A$ with $L_3$ and $I_\infty$:
 
-1. $A$ produces a sequence of actualized configurations. Each actualization event yields a determinate state. The binary character of $A$ under $L_3$ ensures that each state has a unique successor (the *Unique Next State* theorem).
+1. $A$ produces a sequence of actualized configurations. Each actualization event yields a determinate state. Under the additional assumption that $L_3$-admissibility and the binary character of $A$ jointly exclude ambiguous succession, each state has a unique successor (the *Unique Next State* theorem, proven in the companion formalization; see Longmire 2026b, Step 7).
 
 2. The sequence of actualized states is well-ordered. This gives ordinal time — discrete, directed, without gaps in the ordering.
 
@@ -294,7 +296,7 @@ The derivation chain is not a black box. It is a sequence of explicitly justifie
 
 **Objection:** The plenitude claim $A_\Omega = L_3(I_\infty)$ sounds like every outcome is fixed in advance — superdeterminism in metaphysical dress.
 
-**Response:** Superdeterminism claims that all events, including measurement choices, are predetermined by initial conditions, thereby denying statistical independence. TRM plenitude claims that the domain of actualizable configurations is exhaustive — everything $L_3$-admissible *can* be actualized — but $A$ operates freely within that domain. The plenitude claim is about the scope of what is possible, not about which possibilities are selected. It is an ontological claim about the menu, not a deterministic claim about the order. Statistical independence is preserved; Bell-type experiments retain their force.
+**Response:** Superdeterminism claims that all events, including measurement choices, are predetermined by initial conditions, thereby denying statistical independence. As noted in §3.4, the physics reconstruction requires only the characterization claim ($A_\Omega \subseteq L_3(I_\infty)$), not plenitude. Under characterization alone, $A$ selects from within the logically admissible domain without external constraint on which admissible configurations are actualized. Nothing in the framework predetermines measurement settings or correlates them with hidden variables. Statistical independence is preserved; Bell-type experiments retain their force.
 
 ### 6.5 "This Is Just Structural Realism With Extra Steps"
 
