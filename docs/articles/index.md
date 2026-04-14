@@ -19,6 +19,12 @@ image: /assets/images/lrt-banner.png
 
 <div class="paper-grid">
   <div class="paper-card featured">
+    <h3><a href="{{ site.baseurl }}/articles/universe-no-off-switch/">The Universe Has No Off Switch</a></h3>
+    <p>An accessible introduction to LRT cosmology: why the universe's ontological machinery — actualization, possibility, and logical constraint — forms a cycle that cannot run down.</p>
+    <div class="meta">April 2026 | Accessible Introduction</div>
+    <a href="{{ site.baseurl }}/articles/universe-no-off-switch/" class="card-link">Read Article →</a>
+  </div>
+  <div class="paper-card featured">
     <h3><a href="{{ site.baseurl }}/articles/subsumption-architecture/">The Subsumption Architecture: LRT as Operating System for Physics</a></h3>
     <p>How LRT functions as a structural "operating system" for physics, extracting the functional components of Copenhagen, Many-Worlds, Bohmian mechanics, and reconstruction programs while filtering out their ontological conflicts.</p>
     <div class="meta">March 2026 | Advanced</div>
