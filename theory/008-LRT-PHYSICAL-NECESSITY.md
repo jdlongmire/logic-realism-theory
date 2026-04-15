@@ -259,6 +259,14 @@ This recursive structure is the hallmark of transcendental arguments about truly
 
 The recursive structure also explains why PNFL cannot be formalized as a simple syllogism and then "accepted or rejected." Rejecting it requires conducting a counter-argument, which presupposes what is being denied. The argument does not merely have force; it has force that increases under opposition, because opposition deploys the very thing it contests.
 
+### 5.1 Objections as Instances, Not Counters
+
+Every articulated objection to PNFL aims to be a determinate, truth-evaluable claim that is not trivially self-contradictory. In doing so, it instantiates precisely the structure PNFL identifies as fundamental: the objection must be self-identical (Identity), must not both affirm and deny its own content in the same respect at the same time (Non-Contradiction), and must occupy a position in a space of truth and falsity (Excluded Middle). An "objection" that abandons these conditions ceases to be an objection in the relevant sense; it is not a defective counter-argument but a withdrawal from the practice of giving reasons. Hence objections to PNFL cannot undercut its claim that $L_3$ is constitutive of physical intelligibility; at best, they *instantiate* that claim in the very act of trying to deny it.
+
+A common response is to treat this dependence as merely *local*: perhaps objections to PNFL must observe $L_3$ within the contingent practice of argumentation, but this does not show that $L_3$ is constitutive of reality or of physics. This reply mislocates the point. The relevant practice is not an optional discourse game but the very activity of making determinate, truth-evaluable claims about what can obtain. If there is a "logic of reality" distinct from the logic of such claims, it must still allow determinate states of affairs that can be truly described, on pain of collapsing the notion of a physical fact; and PNFL's contention is that this determinacy *just is* $L_3$-structure. Thus the dependence is not parochial to a particular inferential practice but tracks the minimal conditions for there being objective states for physics, or any theory, to be about at all.
+
+Put differently: rhetorical ingenuity cannot overturn constitutive structure. Once we see that $L_3$ fixes the minimal conditions for physical intelligibility, sophistical maneuvers that trade on ambiguity or partial suspension of those conditions do not reveal "deeper possibilities"; they simply step outside the space where assertions can be true or false at all.
+
 ---
 
 ## 6. Constitutive vs. Instrumental: Why the Distinction Matters
@@ -322,6 +330,8 @@ The argument admits a compressed formulation that captures its recursive, self-s
 The argument is deductively valid. Its premises are defensible against the known objections (dialetheism, intuitionism, quantum logic, radical empiricism, inconceivability arguments). Its conclusion is strong: not that $L_3$ is useful for physics, or that physics as we know it happens to use $L_3$, but that no coherent conception of physics is possible without $L_3$.
 
 If the argument is sound, the relationship between logic and physics is settled. Logic is not a framework we chose. It is not one formal system among many that happens to work. It is the constitutive structure of determinacy, and determinacy is the constitutive structure of physical reality. Remove it and you do not get an alternative physics. You get the impossibility of physics.
+
+Any attempt to coherently deny PNFL must already exemplify the $L_3$-governed determinacy it contests, so objections do not escape its scope; they are further evidence that $L_3$ is constitutive of physical intelligibility rather than a tool contingently applied to it.
 
 ---
 
