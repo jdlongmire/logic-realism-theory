@@ -115,6 +115,8 @@ The partition into actualized and unactualized properties is not arbitrary. It i
 
 More precisely: an emission event actualizes the properties that are eigenvalues of operators commuting with $H_{\text{int}}$ and whose values are fixed by the conservation laws governing the interaction. A photon's frequency is actualized at emission because the atomic transition Hamiltonian fixes $\Delta E = h\nu$ via energy conservation. Position is not actualized because the emission Hamiltonian does not couple position to any conserved quantity of the emitting system. The remaining degrees of freedom continue their unitary evolution in $I_\infty$.
 
+A clarification on the role of irreversibility: "stable, irreversible record" is an *empirical marker* of scope-entry, not the metaphysical ground of actualization. The ground is $A$ itself, operating under $L_3$ constraint. Irreversibility is how we recognize that a degree of freedom has entered $A$'s scope; it is not what makes actualization occur. The distinction matters: the metaphysical primitive is $A$; the physical criterion tracks the conditions under which $A$ operates.
+
 This criterion is programmatic rather than fully derived. A complete derivation from $L_3$, $I_\infty$, and $A$ remains an open target (Section 9.1). But the criterion is not ad hoc: it tracks the physical structure of the interaction rather than being tailored to fit experimental outcomes after the fact.
 
 ### 3.3 Measurement as Completion of Actualization
@@ -247,9 +249,9 @@ In the quantum eraser (Scully and Druhl, 1982; Kim et al., 2000), which-path inf
 
 $$\lvert \Psi \rangle = \frac{1}{\sqrt{2}} \bigl( \lvert S_1 \rangle \lvert \text{mark}_1 \rangle + \lvert S_2 \rangle \lvert \text{mark}_2 \rangle \bigr)$$
 
-At this stage, which-path is potentially actualizable: measuring the ancilla in the $\{\lvert \text{mark}_1 \rangle, \lvert \text{mark}_2 \rangle\}$ basis would actualize which-path and destroy interference. Measuring the ancilla in a complementary basis (the "eraser" measurement) brings a different observable into the scope of $A$, one that does not distinguish paths. Post-selection on the eraser outcome recovers the interference subensemble because, for those particles, which-path was never actualized.
+At this stage, the entangled configuration remains in $I_\infty$ with a disposition toward multiple admissible actualizations under differing interaction contexts. Measuring the ancilla in the $\{\lvert \text{mark}_1 \rangle, \lvert \text{mark}_2 \rangle\}$ basis would bring which-path into the scope of $A$ and destroy interference. Measuring the ancilla in a complementary basis (the "eraser" measurement) brings a different observable into the scope of $A$, one that does not distinguish paths. Post-selection on the eraser outcome recovers the interference subensemble because, for those particles, which-path was never actualized.
 
-The "erasure" does not undo a fact. It prevents a fact from being established. No which-path information was actualized; it was merely *available for actualization* in $I_\infty$.
+The "erasure" does not undo a fact. It prevents a fact from being established. No which-path information was actualized; the configuration in $I_\infty$ retained its dispositional structure toward multiple admissible outcomes, and the eraser measurement resolved a different observable.
 
 ---
 
@@ -403,7 +405,7 @@ The measurement problem, as traditionally formulated, asks: how does a definite 
 
 LRT denies the presupposition. Superposition and definite outcome belong to different ontological domains: $I_\infty$ and $A_\Omega$, respectively. The transition between them is not a dynamical process but an ontological one: the completion of actualization under $A$. The measurement problem is rendered intelligible, not by producing a new dynamical mechanism, but by reclassifying the question: the remaining burden is not "how does collapse happen?" but "what is the lawful condition under which a degree of freedom enters the scope of $A$?"
 
-This is a genuine reclassification, not merely a relabeling. The distinction between dynamical collapse (a process within the Schrodinger evolution) and ontological transition (a change in the domain-membership of a property) is substantive: it eliminates the formal contradiction between unitary evolution and definite outcomes, which is the core of the measurement problem. What it does not yet eliminate is the need for a triggering condition. That residual burden is addressed in Section 9.1 as an open problem.
+The distinction between dynamical collapse (a process within the Schrodinger evolution) and ontological transition (a change in the domain-membership of a property) is substantive: collapse interrupts unitary evolution within a single domain, while actualization changes the domain-membership of a property and leaves unitary evolution intact. The formal contradiction between Schrodinger dynamics and definite outcomes, which is the core of the measurement problem, does not arise under this architecture. What does arise is a different question: what governs the scope of $A$? That residual burden is addressed in Section 9.1 as an open problem.
 
 ### 10.2 What LRT Does Not Achieve
 
@@ -428,6 +430,44 @@ The measurement problem has resisted solution for nearly a century because each 
 Partial actualization, the possibility that a configuration may be actualized with respect to some properties while remaining in $I_\infty$ with respect to others, provides a unified account of interference, which-path complementarity, delayed choice, and quantum erasure. Within the Hilbert-space framework imported from reconstruction theorems, the Born rule is grounded as the unique probability measure over PVMs via Gleason's theorem, ontologically motivated by $A$'s Boolean character. Unitarity is exact. The preferred basis is physically determined by the interaction Hamiltonian.
 
 The principal open problem is the actualization threshold: the lawful condition under which a degree of freedom enters the scope of $A$. Resolving this problem, whether by derivation from the primitives or by empirical determination, is the natural next step. Until it is resolved, LRT offers a coherent ontological interpretation of measurement rather than a completed dissolution. That is still a contribution: it reclassifies the remaining burden and renders the measurement problem intelligible within a realist framework that preserves exact unitarity.
+
+---
+
+## Appendix A. Formal Dependency Map
+
+This paper's claims rest on results established across the LRT paper series and the Lean 4 formalization. The following map identifies where each major claim originates.
+
+**Established in this paper (Paper V):**
+
+- Partial actualization framework (Section 3)
+- Application to double-slit, Stern-Gerlach, delayed choice (Sections 4-6)
+- Interpretive contrasts (Section 7)
+- Actualization threshold as open problem (Section 9.1)
+
+**Imported from Paper I (TAB v2.0):**
+
+- Ontological primitives $L_3$, $I_\infty$, $A$ and their mutual constitution
+- Bridge equation $\chi \vdash A_\Omega = L_3(I_\infty)$
+- Two-domain distinction ($I_\infty$ vs. $A_\Omega$)
+
+**Imported from Paper II (Core Physics) and Lean formalization:**
+
+- Boolean actualization $\to$ projection structure (Steps 4-5, Lean verified)
+- PVM structure $\to$ Born rule via Gleason (Step 6, Lean verified)
+- Unitary evolution and Schrodinger equation (Steps 7-10, Lean verified)
+
+**Imported from external reconstruction theorems (not derived by LRT):**
+
+- Complex Hilbert-space structure (Hardy 2001, Masanes-Muller 2011)
+- Local tomography (Hardy H1/H2, with LRT motivating derivation in Paper II Step 3)
+- Gleason's theorem (Gleason 1957)
+- Stone's theorem (mathematical, used in Paper II Step 10)
+
+**Open (not yet established):**
+
+- Actualization threshold / triggering condition (Section 9.1)
+- Complete derivation of Actualization Partition Rule from primitives (Section 3.2)
+- $K = 2$ forcing from Boolean structure (OPN-005)
 
 ---
 
