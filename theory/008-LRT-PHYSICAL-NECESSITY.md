@@ -304,7 +304,19 @@ This is the position of Logic Realism Theory. LRT derives what other programs as
 
 ---
 
-## 7. Relation to the LRT Corpus
+## 7. Novelty and Prior Art
+
+The argument for PNFL stands in continuity with classic transcendental strategies but sharpens and relocates them. Transcendental arguments from Kant through Cassam, Stern, and Stroud typically seek conditions of possibility for experience, knowledge, or meaning; they then debate whether such arguments yield merely epistemic or fully objective conclusions. PNFL adopts their constitutive-conditions template but applies it directly to *physical actuality* rather than to cognition, language, or justification.
+
+First, PNFL differs from standard indispensability or "no alternative" arguments about logic and mathematics. Those typically claim that we cannot *do* science without certain logical resources and then infer (often controversially) that such resources are in some sense objectively correct. PNFL's core claim is stronger and tighter: it does not say "we cannot dispense with $L_3$ in our theorizing," but that "whatever can obtain as a physical state at all must already satisfy $L_3$." It therefore aims at ontological necessity, not pragmatic or methodological indispensability.
+
+Second, PNFL's "no escape hatch" structure goes beyond the usual scope of transcendental arguments. The standing challenge is not merely that critics have not yet produced a coherent denial of $L_3$'s ontological necessity, but that they in principle cannot, because any such denial must be a determinate, truth-apt claim and so instantiate $L_3$ in the very act of contestation. This recursive feature turns what is often viewed as a vulnerability of transcendental arguments (their apparent circularity) into a positive confirmation: the inescapability of $L_3$ in reasoning is exactly what PNFL predicts if $L_3$ is constitutive of actuality.
+
+Third, PNFL locates this transcendental result inside an explicitly physical program. Logic Realism Theory uses PNFL to underwrite the bridge principle $A_\Omega = L_3(I_\infty)$ and thereby to ground core structural features of quantum theory: projection-valued measures, Born rule, Schrödinger dynamics, and non-decomposable entanglement. Quantum reconstruction programs typically start from informational or operational axioms and show that quantum theory follows; PNFL proposes that those axioms themselves are downstream of the necessity of $L_3$ for any physics-apt domain at all. PNFL is not an add-on to foundations of physics but a claim that the very possibility of a quantum (or any) physics presupposes, and can ultimately be explained by, the physical necessity of fundamental logic.
+
+---
+
+## 8. Relation to the LRT Corpus
 
 PNFL is not a new addition to Logic Realism Theory. It is the explicit statement of what TAB (Paper I) demonstrates and what every subsequent paper presupposes. Its relationship to the other papers is:
 
@@ -321,7 +333,7 @@ Extracting PNFL as a standalone paper serves two purposes: it makes the argument
 
 ---
 
-## 8. Compressed Formulation
+## 9. Compressed Formulation
 
 The argument admits maximum compression:
 
