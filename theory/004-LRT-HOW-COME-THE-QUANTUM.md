@@ -123,7 +123,15 @@ Consider the six possible reductions:
 
 Each failure follows from the constitutive roles of the primitives. This is not a proof that no reduction could ever succeed — it is an argument that the most natural attempted reductions fail for identifiable reasons.
 
-### 3.4 The Bridge
+### 3.4 The Reductio: What Remains Without L₃
+
+The irreducibility table above demonstrates that the primitives cannot absorb one another. A stronger result holds: removing $L_3$ entirely does not yield an alternative physics with different logical foundations. It yields the impossibility of physics altogether.
+
+Without the Law of Identity, no configuration is distinguishable from any other. If $A \neq A$ is permitted, then the predicate "system $S$ is in state $\psi$" carries no determinate content: the state is not itself, and there is nothing for a measurement to report. Without the Law of Non-Contradiction, a configuration could both obtain and not obtain simultaneously. This is not quantum superposition, which is a mathematically determinate element of Hilbert space with well-defined coefficients and interference structure. It is genuine ontological indeterminacy: the proposition "$S$ is in state $\psi$" is both true and false, and no formalism can represent a world in which truth values self-destruct. Without the Law of Excluded Middle, there exist ontological gaps where physical propositions have no truth value at all. The question "did the detector fire?" is neither answered affirmatively nor negatively; it occupies no logical space whatsoever.
+
+Stack all three removals. No distinguishable states entails no transitions between states. No transitions entails no temporal ordering. No temporal ordering entails no dynamics. No dynamics entails no physics. The cascade is total: each layer presupposes the one beneath it, and the foundation is $L_3$. Wheeler asked "how come the quantum?" The question presupposes that there is something for the quantum to describe, some domain of determinate facts from which the formalism can be reconstructed. Without $L_3$, there is no such domain. The question cannot even be posed, because posing it requires the identity of terms, the non-contradiction of propositions, and the determinacy of reference that $L_3$ supplies. The reductio is not that alternative logics yield alternative physics; it is that the denial of $L_3$ leaves no raw material from which any physics could be constructed. (For the full development of the transcendental argument, see TAB §2.4.0; Longmire 2026a.)
+
+### 3.5 The Bridge
 
 If $\chi$ constitutes physical reality, then it grounds an actualized domain $A_\Omega$ — the totality of what actually obtains. The relationship between the primitives and the actual world takes the form:
 
@@ -296,7 +304,7 @@ The derivation chain is not a black box. It is a sequence of explicitly justifie
 
 **Objection:** The plenitude claim $A_\Omega = L_3(I_\infty)$ sounds like every outcome is fixed in advance — superdeterminism in metaphysical dress.
 
-**Response:** Superdeterminism claims that all events, including measurement choices, are predetermined by initial conditions, thereby denying statistical independence. As noted in §3.4, the physics reconstruction requires only the characterization claim ($A_\Omega \subseteq L_3(I_\infty)$), not plenitude. Under characterization alone, $A$ selects from within the logically admissible domain without external constraint on which admissible configurations are actualized. Nothing in the framework predetermines measurement settings or correlates them with hidden variables. Statistical independence is preserved; Bell-type experiments retain their force.
+**Response:** Superdeterminism claims that all events, including measurement choices, are predetermined by initial conditions, thereby denying statistical independence. As noted in §3.5, the physics reconstruction requires only the characterization claim ($A_\Omega \subseteq L_3(I_\infty)$), not plenitude. Under characterization alone, $A$ selects from within the logically admissible domain without external constraint on which admissible configurations are actualized. Nothing in the framework predetermines measurement settings or correlates them with hidden variables. Statistical independence is preserved; Bell-type experiments retain their force.
 
 ### 6.5 "This Is Just Structural Realism With Extra Steps"
 

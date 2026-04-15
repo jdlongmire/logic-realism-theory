@@ -10,7 +10,7 @@ ORCID: 0009-0009-1383-7698
 
 ## Abstract
 
-The quantum measurement problem persists across interpretations because each presupposes that measurement is a physical process requiring a dynamical account within quantum mechanics itself. Logic Realism Theory (LRT) reframes the problem by locating measurement at the interface between two ontological domains: the information space $I_\infty$, where quantum states evolve unitarily as superpositions, and the actualized domain $A_\Omega$, where the action primitive $A$ selects determinate configurations subject to logical admissibility ($L_3$). Measurement is not collapse, branching, or epistemic update. It is the completion of actualization: the transition from partial to full determinacy under $A$. This paper develops the partial actualization framework, demonstrates its application to the double-slit experiment, Stern-Gerlach apparatus, and delayed-choice scenarios, and contrasts LRT's account with the Many-Worlds, Bohmian, spontaneous collapse, and QBist programs. Within the Hilbert-space framework imported from Hardy-Masanes-Muller reconstruction theorems, the formal machinery connecting Boolean actualization to projection-valued measures and the Born rule (established in Papers II and IV) supplies the quantitative backbone. We identify the actualization threshold, the lawful condition under which a degree of freedom enters the scope of $A$, as the principal open problem and propose avenues for experimental discrimination between LRT and competing accounts.
+The quantum measurement problem persists across interpretations because each presupposes that measurement is a physical process requiring a dynamical account within quantum mechanics itself. Logic Realism Theory (LRT) reframes the problem by locating measurement at the interface between two ontological domains: the information space $I_\infty$, where quantum states evolve unitarily as superpositions, and the actualized domain $A_\Omega$, where the action primitive $A$ selects determinate configurations subject to logical admissibility ($L_3$). Measurement is not collapse, branching, or epistemic update. It is the completion of actualization: the transition from partial to full determinacy under $A$. This paper develops the partial actualization framework, demonstrates its application to the double-slit experiment, Stern-Gerlach apparatus, and delayed-choice scenarios, and contrasts LRT's account with the Many-Worlds, Bohmian, spontaneous collapse, and QBist programs. Within the Hilbert-space framework imported from Hardy-Masanes-Muller reconstruction theorems, the formal machinery connecting Boolean actualization to projection-valued measures and the Born rule (established in Papers II and IV) supplies the quantitative backbone. We identify the actualization threshold as the pointer-basis stability condition determined by the system-environment interaction Hamiltonian $H_{SE}$: the decoherence timescale $\tau_D \sim \gamma_{SE}^{-1}$, calculable from coupling constants and environmental spectral density, fixes when a degree of freedom becomes $L_3$-evaluable. LRT contributes no free parameters to this determination: a feature, not a gap. We propose avenues for experimental discrimination between LRT and competing accounts.
 
 **Keywords:** measurement problem, quantum foundations, information ontology, logical realism, actualization, wave-function collapse, Born rule, partial actualization, quantum-classical interface
 
@@ -46,7 +46,7 @@ The measurement problem persists because every mainstream interpretation attempt
 - **GRW/CSL** modifies the Schrodinger equation with stochastic terms, introducing new constants ($\lambda_{\text{GRW}}$, $r_C$) that must be determined empirically.
 - **QBism** reinterprets probabilities as personal degrees of belief, dissolving the problem pragmatically but leaving the ontology of outcomes unaddressed.
 
-Each approach either relocates the problem or introduces elements whose justification is as puzzling as the original difficulty. LRT takes a different path: the measurement problem, as traditionally formulated, rests on a category error. It arises from attempting to account for the transition from possibility to actuality using only the resources available within the domain of possibility. The problem does not disappear. It is reclassified: the outstanding question is no longer "how does collapse happen?" but "what is the lawful condition under which a degree of freedom enters the scope of actualization?"
+Each approach either relocates the problem or introduces elements whose justification is as puzzling as the original difficulty. LRT takes a different path: the measurement problem, as traditionally formulated, rests on a category error. It arises from attempting to account for the transition from possibility to actuality using only the resources available within the domain of possibility. The problem does not disappear. It is reclassified: the outstanding question is no longer "how does collapse happen?" but "under what lawful condition does a degree of freedom enter the scope of actualization?", a question to which LRT provides a definite answer (Section 9.1)
 
 ---
 
@@ -117,7 +117,7 @@ More precisely: an emission event actualizes the properties that are eigenvalues
 
 A clarification on the role of irreversibility: "stable, irreversible record" is an *empirical marker* of scope-entry, not the metaphysical ground of actualization. The ground is $A$ itself, operating under $L_3$ constraint. Irreversibility is how we recognize that a degree of freedom has entered $A$'s scope; it is not what makes actualization occur. The distinction matters: the metaphysical primitive is $A$; the physical criterion tracks the conditions under which $A$ operates.
 
-This criterion is programmatic rather than fully derived. A complete derivation from $L_3$, $I_\infty$, and $A$ remains an open target (Section 9.1). But the criterion is not ad hoc: it tracks the physical structure of the interaction rather than being tailored to fit experimental outcomes after the fact.
+This criterion is not ad hoc: it tracks the physical structure of the interaction rather than being tailored to fit experimental outcomes after the fact. The quantitative content is supplied by standard decoherence theory: the interaction Hamiltonian $H_{SE}$ determines which basis is stable (the pointer basis), the decoherence timescale $\tau_D \sim \gamma_{SE}^{-1}$ determines when coherence is suppressed, and the coupling constants and environmental spectral density determine how irreversibly. LRT identifies this pointer-basis stability condition as the lawful condition under which a degree of freedom enters the scope of $A$ (Section 9.1).
 
 ### 3.3 Measurement as Completion of Actualization
 
@@ -259,13 +259,55 @@ The "erasure" does not undo a fact. It prevents a fact from being established. N
 
 ### 7.1 Many-Worlds Interpretation
 
-**MWI claim.** All outcomes occur; the universe branches at every measurement. There is no collapse.
+**MWI claim.** All outcomes occur; the universe branches at every measurement. There is no collapse. The universal wave function evolves unitarily forever, and what we experience as a definite outcome is the result of observers becoming entangled with one branch of a superposition.
 
 **LRT contrast.** LRT agrees that unitary evolution is not interrupted. But LRT denies that all branches are actualized. $A$ selects one outcome: the one that obtains in $A_\Omega$. The other branches remain as configurations in $I_\infty$, which is to say they remain as possibilities that were not actualized. LRT preserves the deterministic evolution of $\lvert \psi \rangle$ without the ontological extravagance of universal branching.
 
-MWI faces two problems that LRT does not:
-1. **The probability problem.** In a deterministic branching universe, the meaning of $p(a_k) = \lvert c_k \rvert^2$ is obscure. Decision-theoretic derivations (Deutsch, Wallace) require substantive assumptions about rational agents. LRT grounds the Born rule ontologically: within the admitted Hilbert-space framework, $A$'s Boolean character forces projection structure, and Gleason's theorem yields the Born rule as the unique measure (Paper II, Step 6), without invoking agents or decisions.
-2. **The preferred basis problem.** MWI typically appeals to decoherence to select the branching basis. But decoherence is a dynamical process within unitary evolution; it does not produce outcomes. LRT locates basis selection in the interaction Hamiltonian that determines which PVM enters the scope of $A$.
+The disagreement between MWI and LRT is not merely interpretive: it is grounded in a direct conflict with $L_3$ and in multiple independent problems that MWI has not resolved. Six distinct points of divergence follow.
+
+**Point 1: Direct conflict with $L_3$ as ontological constraint.**
+
+$L_3$ (the law of Excluded Middle) requires, as an ontological constraint rather than a logical convention, that for any well-formed event $E$, $A$ delivers a Boolean verdict: $A(E, c) \in \{1, 0\}$. For any specific measurement outcome $E_k$ (for example, "spin-up is detected"), either $E_k$ obtains or it does not. Non-Contradiction forbids that both $E_k$ and $\neg E_k$ obtain in the same respect at the same time.
+
+MWI asserts that both $E_k$ (spin-up) and $\neg E_k$ (spin-down) obtain in the actual world, differentiated only by being in distinct branches. The MWI branching is not a separation into a "real" and a "merely possible" domain; on MWI, every branch is equally real. Therefore MWI asserts:
+
+$$A(E_k, \text{world}) = 1 \quad \text{and} \quad A(\neg E_k, \text{world}) = 1$$
+
+This is precisely the conjunction that $L_3$'s Non-Contradiction forbids. MWI is not merely in tension with LRT; it is logically incompatible with $L_3$ understood as a constraint on what can obtain, not merely on what we say.
+
+**Point 2: MWI relativizes $L_3$ to a perspectival status, demoting it from ontological to epistemic.**
+
+The standard MWI response to Point 1 is that $L_3$ holds *within each branch*: relative to any observer in a branch, exactly one outcome obtained. On this view, Excluded Middle is observer-relative -- "E obtains, relative to this branch" -- not a constraint on the world as a whole.
+
+This response concedes exactly what LRT asserts is at stake. If Excluded Middle governs only *appearances within branches* rather than *what is the case*, then $L_3$ has been reduced from an ontological constraint to an epistemic one: it governs how things seem to observers, not what is. LRT's $L_3$ is constitutive of reality. An $L_3$ that is branch-relative is not the same constraint; it is a weaker, perspectival principle masquerading under the same name. Accepting the MWI response requires abandoning the claim that logic governs ontology, not merely epistemology.
+
+**Point 3: The probability problem.**
+
+In a deterministic branching universe where all outcomes obtain, the meaning of $p(a_k) = \lvert c_k \rvert^2$ is not obvious. If spin-up and spin-down both occur, in what sense does spin-up occur with probability $\lvert \alpha \rvert^2$? There are not more spin-up branches than spin-down branches; there are exactly two branches (for a two-outcome measurement), regardless of amplitudes.
+
+Decision-theoretic derivations (Deutsch 1999; Wallace 2012) attempt to recover Born statistics from rational-agent axioms applied within the Everett framework. These derivations are contested and require substantive assumptions about how rational agents should weight branches -- assumptions whose justification is circular if the goal is to *derive* the Born rule. The probability problem in MWI is unsolved.
+
+LRT has no probability problem. The Born rule is grounded as the unique probability measure over PVMs on the admitted Hilbert space, via Gleason's theorem, motivated by $A$'s Boolean character (Paper II, Step 6). The argument does not invoke agents, decisions, or branch-weighting. The probability $p(a_k) = \lvert \langle a_k \lvert \psi \rangle \rvert^2$ is the objective disposition of configuration $\psi$ in $I_\infty$ toward outcome $a_k$ under $A$'s Boolean selection. One outcome obtains; the Born weights are the measure over which one.
+
+**Point 4: The preferred basis problem.**
+
+Even granting that branches are real, MWI must explain in which basis the universe branches. The wave function of the universe does not come pre-branched in any preferred decomposition. Every state vector admits infinitely many decompositions; nothing in unitary evolution selects one.
+
+MWI typically appeals to decoherence: the environment selects a preferred pointer basis. But decoherence is a process entirely within unitary evolution. It suppresses off-diagonal terms in a particular basis but does not produce definite outcomes within that basis. Decoherence explains *apparent* classicality for observers within branches; it does not explain why there are branches rather than a single continuing superposition. The preferred basis problem for MWI is: decoherence narrows the options but does not complete the selection.
+
+LRT locates basis selection in the interaction Hamiltonian $H_{\text{int}}$ that determines which PVM enters the scope of $A$. The pointer basis is the physically determined eigenbasis of the observable that the apparatus interaction couples to macroscopic degrees of freedom. There is no underdetermination: the Hamiltonian specifies the basis, the decoherence timescale $\tau_D$ specifies when, and $A$ provides the Boolean selection that decoherence alone cannot.
+
+**Point 5: Ontological extravagance.**
+
+MWI posits an uncountably large branching multiverse as the cost of avoiding collapse. Every quantum event -- every particle interaction, every environmental perturbation of every degree of freedom in the universe -- produces new branches. The ontological posit is not merely "many worlds" but a continuous, vast ramification of actual physical reality, each branch as real as any other.
+
+LRT posits three primitives ($L_3$, $I_\infty$, $A$) and a two-domain distinction ($I_\infty$ vs. $A_\Omega$). The domain $I_\infty$ contains all logically admissible configurations as possibilities; the domain $A_\Omega$ contains one actual world. The configurations in $I_\infty$ that were not actualized are not additional actual worlds; they are possibilities that did not obtain. The ontological economy is substantial: one world governed by $\chi$, not an unlimited proliferation of equally actual branches. Parsimony favors LRT.
+
+**Point 6: Empirical inertness vs. LRT's falsifiability.**
+
+MWI makes no empirical prediction that distinguishes it from standard quantum mechanics without the many-worlds interpretation. No experiment can detect the other branches: they are, by construction, inaccessible to any observer in any branch. MWI is empirically inert -- not falsifiable, not confirmable by any physical measurement.
+
+LRT is falsifiable. It predicts that no spontaneous collapse event will ever be detected ($\lambda = 0$ exactly as a structural consequence of the ontology), directly testable against GRW/CSL (Section 10). LRT also makes discriminating predictions about basis selection relative to the interaction Hamiltonian (Section 9.2, Fork 2). The methodological contrast is significant: MWI purchases empirical immunity at the cost of testability, while LRT makes specific predictions that ongoing experiments address. A framework that can be falsified stands epistemically above one that cannot.
 
 ### 7.2 Bohmian Mechanics
 
@@ -281,7 +323,7 @@ Bohmian mechanics also faces the "surreal trajectories" problem (Englert, Scully
 
 **LRT contrast.** GRW/CSL modifies the fundamental dynamics. LRT does not. Unitary evolution is exact in LRT; the appearance of "collapse" is a feature of the $I_\infty \to A_\Omega$ interface, not a correction to the Schrodinger equation. LRT therefore predicts that no experiment will detect deviations from unitarity in isolated quantum systems, regardless of system size.
 
-GRW/CSL also introduces two free parameters ($\lambda_{\text{GRW}}$, $r_C$) whose values are chosen to match observation rather than derived from principle. LRT's quantitative predictions depend on identifying the actualization threshold (Section 9), but the qualitative account requires no free parameters: $A$ is Boolean, and the interaction Hamiltonian determines the PVM.
+GRW/CSL also introduces two free parameters ($\lambda_{\text{GRW}}$, $r_C$) whose values are chosen to match observation rather than derived from principle. LRT introduces no free parameters at all: $A$ is Boolean, the interaction Hamiltonian determines the PVM, and the actualization threshold is fixed by the pointer-basis stability condition (the decoherence timescale $\tau_D \sim \gamma_{SE}^{-1}$, calculable from the coupling constants and spectral density of the environment). The quantitative content is inherited from standard decoherence theory, not invented by LRT.
 
 ### 7.4 QBism
 
@@ -299,15 +341,17 @@ QBism dissolves the measurement problem by denying that there is an objective pr
 
 | Feature | Copenhagen | MWI | Bohm | GRW | QBism | **LRT** |
 |---------|-----------|-----|------|-----|-------|---------|
-| Definite outcomes | Postulated | All occur | Always (position) | Dynamical | Agent-relative | $A$-selected |
+| Definite outcomes | Postulated | All occur in branches | Always (position) | Dynamical | Agent-relative | $A$-selected (one obtains) |
 | Collapse | Postulated | None | None | Modified dynamics | Belief update | Ontological transition (thesis under evaluation) |
-| Preferred basis | Classical cut | Decoherence + environment | Position | Localization width | N/A | Interaction $H$ |
-| Born rule status | Postulate | Derived (debated) | Postulate | Approximately derived | Normative | Grounded (Gleason, given $\mathcal{H}$) |
-| Free parameters | Cut location | None (basis problem open) | None | $\lambda$, $r_C$ | None | Threshold (open) |
+| Preferred basis | Classical cut | Decoherence (partial) | Position | Localization width | N/A | Interaction $H$ (fully determined) |
+| Born rule status | Postulate | Derived (contested) | Postulate | Approximately derived | Normative | Grounded (Gleason, given $\mathcal{H}$) |
+| Free parameters | Cut location | None (basis problem open) | None | $\lambda$, $r_C$ | None | None ($\tau_D$ from $H_{SE}$) |
 | Unitarity | Approximate | Exact | Exact | Approximate | N/A | Exact |
-| Realist? | Ambiguous | Yes (branches) | Yes (particles) | Yes | No | Yes (configurations) |
+| $L_3$ status | Implicit | Perspectival (per branch) | Implicit | Implicit | N/A | Constitutive of reality |
+| Realist? | Ambiguous | Yes (all branches actual) | Yes (particles) | Yes | No | Yes (one actual world) |
+| Empirically falsifiable? | Limited | No | Limited | Yes | No | Yes ($\lambda = 0$) |
 
-*Table 1. Interpretive comparison. Each entry compresses substantial internal debate. "Grounded" for LRT's Born rule means: ontologically motivated within an imported Hilbert-space framework, not derived from LRT primitives alone. "Ontological transition" is LRT's thesis, not a settled result.*
+*Table 1. Interpretive comparison. Each entry compresses substantial internal debate. "Grounded" for LRT's Born rule means: ontologically motivated within an imported Hilbert-space framework, not derived from LRT primitives alone. "Ontological transition" is LRT's thesis, not a settled result. "$\tau_D$ from $H_{SE}$" indicates that LRT's actualization threshold is the pointer-basis stability condition, with no free parameters beyond those in the interaction Hamiltonian. "Perspectival (per branch)" for MWI reflects that MWI can only claim Excluded Middle holds relative to observers within branches, not as a global ontological constraint, which is what LRT requires.*
 
 ---
 
@@ -355,23 +399,25 @@ Unitarity is exact. $A$ does not interrupt or modify unitary evolution. The Schr
 
 ---
 
-## 9. Open Problems and Experimental Signatures
+## 9. The Actualization Threshold and Experimental Signatures
 
 ### 9.1 The Actualization Threshold
 
-The principal open problem in LRT's measurement account is quantitative: *what determines when a property enters the scope of $A$?*
+The actualization threshold is not an open parameter awaiting determination. It is the pointer-basis stability condition, fully determined by the system-environment interaction Hamiltonian $H_{SE}$.
 
-The qualitative answer is clear: the interaction Hamiltonian couples the quantum degree of freedom to macroscopic detector states, bringing the relevant observable into the domain where $A$ operates. But the threshold, if one exists, is not yet derived from the primitives.
+Standard decoherence theory establishes that $H_{SE}$ determines three things simultaneously: (1) *which* basis is stable (the pointer basis, selected by the commutativity condition $[H_{SE}, \hat{O}_{\text{pointer}}] \approx 0$ (Zurek's einselection)); (2) *when* coherence is suppressed — on the decoherence timescale $\tau_D \sim \gamma_{SE}^{-1}$, calculable from the coupling constants and spectral density of the environment; and (3) *how irreversibly* — determined by the number of environmental degrees of freedom that become correlated with the system. LRT identifies this condition as the lawful condition under which a degree of freedom enters the scope of $A$:
 
-**Candidate criteria:**
+**The Zero-Gap Identity.** There is no temporal gap between decoherence completing and $A$ acting. Being decohered *is* being $L_3$-evaluable. Once the interaction Hamiltonian has suppressed off-diagonal coherences in the pointer basis, the degree of freedom satisfies the preconditions for Boolean evaluation: it has a determinate value or it does not (Excluded Middle), and it cannot both obtain and not obtain (Non-Contradiction). Decoherence is the physical *condition*; logical resolution under $A$ is the *consequence*. The two are not synonymous (Everettians accept decoherence without selection), but they are not temporally separated. LRT's $A$ provides the selection that decoherence alone does not.
 
-1. **Entanglement threshold.** Actualization occurs when the entanglement entropy $S(\rho_{\text{sys}})$ between the quantum system and the measuring apparatus exceeds a critical value $S_c$. This would make actualization a function of the system-environment coupling strength.
+**$L_3$ as constitutive precondition.** The Zero-Gap Identity might suggest that $L_3$ plays an optional interpretive role: one could accept the decoherence machinery and simply decline to invoke logical constraints on actuality. A reductio shows otherwise. Suppose $L_3$ does not hold as an ontological constraint. Then Identity ($a = a$) is not guaranteed for physical configurations, and without Identity, no configuration is self-identical, which is to say, no configuration is determinately *that* configuration rather than some other. But a measurement outcome is, by definition, a determinate result: the pointer reads $a_k$, not an indeterminate smear across the eigenvalue spectrum. Without Identity, the predicate "measurement outcome $= a_k$" does not refer, because there is no fact of the matter about what $a_k$ is. Non-Contradiction and Excluded Middle fail in turn: if configurations lack determinate identity, neither "$a_k$ obtains and $a_k$ does not obtain" nor "$a_k$ obtains or $a_k$ does not obtain" are well-formed, since the referent of $a_k$ is indeterminate. The cascade is: no Identity $\to$ no distinguishable outcomes $\to$ no measurement $\to$ no physics. The term "measurement outcome" presupposes that there exist determinate, distinguishable states to be measured; $L_3$ is the minimal condition under which that presupposition holds.
 
-2. **Information-theoretic criterion.** Actualization occurs when the mutual information $I(\text{sys} : \text{env})$ becomes sufficient to distinguish outcomes at the macroscopic level.
+This is not a philosophical preference layered onto the physics. It is a transcendental condition on the intelligibility of measurement itself (cf. TAB $\S$2.4.0, where $L_3$ is established as constitutive of determinacy rather than descriptive of it). Every interpretation of quantum mechanics that produces definite outcomes tacitly relies on $L_3$: the eigenvalue $a_k$ returned by a PVM $\{P_k\}$ is a determinate value precisely because the projection operators $P_k$ are idempotent ($P_k^2 = P_k$, encoding Identity) and mutually orthogonal ($P_j P_k = \delta_{jk} P_k$, encoding Non-Contradiction and Excluded Middle). The formal structure of measurement already contains $L_3$. LRT makes this dependence explicit; other interpretations leave it implicit and therefore unexamined.
 
-3. **Irreversibility criterion.** Actualization occurs when the interaction has produced sufficient decoherence that the interference terms are suppressed below a threshold related to the precision of any feasible reversal operation.
+**The asymptotic objection and PPC.** Decoherence is technically asymptotic: off-diagonal terms approach zero but never strictly vanish. The Principle of Physical Completeness (PPC) handles this: once coherence is suppressed beyond the threshold of any operationally feasible detection — that is, below any measurement precision achievable by any physical apparatus, the property is functionally actualized. The residual coherence is not physically meaningful; the degree of freedom is in the scope of $A$. This is not a stipulation but a consequence of taking the operational content of $L_3$ seriously: a "superposition" that no physical interaction can distinguish from a definite state is not, in any $L_3$-relevant sense, a superposition.
 
-Each candidate must satisfy two constraints: (a) it must be derivable from or at least consistent with $L_3$, $I_\infty$, and $A$; (b) it must reproduce the empirically observed timescales of quantum-to-classical transition.
+**No free parameters.** LRT contributes no free parameters to the threshold determination. The coupling Hamiltonian $H_{SE}$ fixes the pointer basis, the timescale, and the irreversibility. The decoherence timescale $\tau_D$ is calculable from first principles for any given system-environment pair. This is a feature: LRT inherits the quantitative machinery of decoherence theory without adding adjustable constants.
+
+**Microscopic systems.** Even an isolated microscopic system (a photon in a double-slit experiment) reduces to this framework. The detector *is* the environment supplying the interaction variables. When the photon strikes the detection screen, $H_{SE}$ (the photon-detector coupling) determines the pointer basis (position), the decoherence timescale (effectively instantaneous for macroscopic detectors), and the irreversibility (the detector's $\sim 10^{23}$ degrees of freedom). There is no separate "measurement" process: every actualization is an instance of environment-induced pointer-basis stabilization followed by $A$'s Boolean selection.
 
 ### 9.2 Avenues for Experimental Discrimination
 
@@ -387,7 +433,7 @@ The preferred measurement basis is always determined by the physical interaction
 LRT expects Bell-inequality violations, Kochen-Specker contextuality, and Leggett-Garg inequality violations, since unactualized properties are genuinely indeterminate (not merely unknown). These results are consonant with LRT but not distinctly diagnostic of it: standard quantum mechanics without hidden variables produces the same expectations.
 
 **Consonance 2: State-dependent decoherence consistency.**
-If the actualization threshold is related to entanglement entropy, then the decoherence timescale $T_2$ should scale predictably with the system-environment coupling strength across different physical platforms (superconducting qubits, trapped ions, NV centers, molecular systems). Cross-platform consistency in the relationship between $T_2/T_1$ ratios and coupling parameters would support an information-theoretic actualization threshold. This is a research avenue, not yet a sharp discriminator.
+Since the actualization threshold is the pointer-basis stability condition, the decoherence timescale $\tau_D$ should scale predictably with the system-environment coupling strength across different physical platforms (superconducting qubits, trapped ions, NV centers, molecular systems). Cross-platform consistency in the relationship between $\tau_D$ and coupling parameters confirms that the actualization threshold tracks the physical interaction, not an LRT-specific constant. This is already well-supported by existing decoherence experiments.
 
 ### 9.3 Discriminating LRT from GRW/CSL
 
@@ -395,41 +441,114 @@ The sharpest experimental contrast is with spontaneous collapse models. GRW/CSL 
 
 LRT predicts none of these effects. If spontaneous collapse signatures are detected, LRT's measurement account is falsified. If they are not, GRW/CSL is increasingly constrained while LRT remains unaffected. This is a clean experimental fork.
 
+### 9.4 Discriminating LRT from MWI
+
+The contrast with GRW/CSL described in Section 9.3 represents a clean empirical fork: two theories predict opposite experimental outcomes, and experiments are actively probing the boundary. The contrast with MWI is structurally different.
+
+MWI makes no prediction that distinguishes it from standard quantum mechanics. Since all branches are equally real and no physical measurement can access other branches, every experimental result is compatible with MWI. This is not a feature; it is a methodological defect. A framework that accommodates every possible outcome predicts none, and a framework that predicts none cannot be tested.
+
+LRT is not empirically inert. Three distinct discriminating structures apply:
+
+**Structural asymmetry on the Born rule.** LRT grounds the Born rule without invoking agents or branch-weighting. MWI must derive Born statistics from rational-agent axioms, which requires substantive assumptions whose independence from what is to be derived is contested. The two derivational structures differ in character: LRT's follows from Gleason's theorem applied to PVM structure motivated by $A$'s Boolean character; MWI's requires additional axioms about rational preference. The debate over decision-theoretic derivations in MWI (Deutsch 1999; Wallace 2012) is an open dispute that the LRT derivation sidesteps entirely.
+
+**The ontological parsimony criterion.** While parsimony is not empirical in the strict sense, it is a methodological principle applied when theories are otherwise empirically equivalent. MWI posits an uncountably large multiverse of equally actual branches; LRT posits one actualized world governed by three primitives. If both are consistent with all observations, parsimony favors LRT's ontology.
+
+**Indirect discriminating structure: basis selection.** Fork 2 (Section 9.2) identifies an in-principle discriminating experiment: a regime where decoherence selects one basis but the interaction Hamiltonian selects another. Under LRT, outcomes follow the interaction Hamiltonian. Under standard decoherence-based accounts (including the decoherence-based branch selection in MWI), outcomes follow the decoherence basis. This distinction is at the edge of current experimental capability, but it identifies a structural difference between the two frameworks that a sufficiently refined experiment could, in principle, resolve.
+
+The methodological asymmetry is significant regardless of the experimental outcome. LRT can be falsified; MWI cannot. A realist framework that issues specific, falsifiable predictions stands epistemically above one that does not, even when both remain consistent with all current data.
+
 ---
 
-## 10. Discussion
+## 10. Falsifiability and Empirical Predictions
 
-### 10.1 What LRT Achieves
+A scientific framework's credibility rests not only on its explanatory coherence but on its capacity to be empirically distinguished from competitors. LRT makes a specific, falsifiable prediction that separates it from both the spontaneous collapse program (GRW/CSL) and the empirically inert interpretations (MWI/Everett, Copenhagen, QBism). This distinction is not incidental: it is a consequence of the ontological structure. Because LRT locates actualization in the interaction Hamiltonian and not in branching or stochastic modification of dynamics, its commitments are physically specific in ways that MWI's are not.
+
+### 10.1 The Null Prediction
+
+LRT predicts that no spontaneous collapse event will ever be detected. This prediction is not a contingent expectation but a structural consequence of the framework.
+
+In GRW/CSL, collapse is a modification of the Schrodinger equation: stochastic terms produce spontaneous localization at rate $\lambda_{\text{GRW}}$ per particle, with localization width $r_C$. These are free parameters, chosen to reproduce macroscopic definiteness while preserving microscopic coherence. The parameter space is a two-dimensional region ($\lambda$, $r_C$) within which values are constrained by experiment but not determined by theory.
+
+In LRT, no such parameter space exists. The actualization threshold is the pointer-basis stability condition, fully determined by the system-environment interaction Hamiltonian $H_{SE}$. The decoherence timescale $\tau_D \sim \gamma_{SE}^{-1}$ is calculable from the coupling constants and environmental spectral density. There are no free parameters to tune, no stochastic terms to add, and no collapse rate to measure. The GRW/CSL parameter space is not merely constrained by LRT; it is empty. Spontaneous collapse does not occur because actualization is not a dynamical modification of unitary evolution but an ontological transition governed entirely by the interaction variables that standard quantum mechanics already provides.
+
+### 10.2 Confirming Evidence from Null Results
+
+Every experimental bound that tightens the constraint on $\lambda_{\text{GRW}}$ is confirming evidence for LRT. Current bounds from LISA Pathfinder (Carlesso et al., 2022), underground radiation measurements (Donadi et al., 2021), and optomechanical oscillators (Vinante et al., 2020) have progressively excluded regions of the GRW/CSL parameter space. Under LRT, the entire parameter space is excluded in principle: $\lambda = 0$ exactly. Each null result is therefore not merely consistent with LRT but positively predicted by it.
+
+This asymmetry is significant. A framework that predicts $\lambda = 0$ is confirmed by every null result and falsified by any positive detection. A framework that permits a range of $\lambda$ values (GRW/CSL) is constrained but never confirmed by null results, since the true value might lie below current sensitivity. LRT's prediction is sharp: the spontaneous collapse rate is identically zero, not approximately zero, not below current detection thresholds, but zero as a structural feature of the ontology.
+
+### 10.3 Empirical Distinguishability and the MWI Contrast
+
+Not all interpretations of quantum mechanics are empirically distinguishable from one another. Many are empirically inert: they agree on all observable predictions while differing only in ontological commitments. LRT occupies a distinctive position in this landscape, with a particularly sharp contrast to MWI on both empirical and ontological grounds.
+
+**Table 2. Testability, falsifiability, and metaphysical commitment across interpretations.**
+
+| Feature | LRT | MWI (Everett) | GRW/CSL |
+|---------|-----|---------------|---------|
+| **Novel empirical prediction** | $\lambda = 0$ exactly; basis follows interaction $H$ | None beyond standard QM | Spontaneous collapse at rate $\lambda$, width $r_C$ |
+| **Falsifiable by** | Detection of any spontaneous collapse event; or basis selection contradicting $H_{\text{int}}$ | No known empirical test | Null results excluding full parameter space |
+| **Confirmed by** | Every tightened bound on $\lambda$; continued null results | N/A (every result compatible) | Detection of collapse signatures |
+| **Free parameters (measurement)** | Zero ($\tau_D$ from $H_{SE}$) | Zero (basis problem unresolved) | Two ($\lambda$, $r_C$) |
+| **Unitarity** | Exact | Exact | Approximate (modified dynamics) |
+| **$L_3$ as ontological constraint** | Yes -- constitutive of what obtains | No -- Excluded Middle holds per branch only | Not addressed |
+| **One actual world?** | Yes | No -- all branches equally actual | Yes |
+| **Born rule derivation** | Gleason (no agents required) | Decision-theoretic (contested, agents required) | Approximately derived |
+| **Metaphysical commitment** | Three primitives ($L_3$, $I_\infty$, $A$); one actualized world | Universal wave function; uncountably branching multiverse | Modified Schrodinger equation; stochastic ontology |
+| **Empirically distinguishable from standard QM?** | Yes (predicts $\lambda = 0$ against GRW/CSL; basis fork in principle) | No | Yes (predicts $\lambda > 0$) |
+
+*Table 2. The three-way partition among interpretations with respect to empirical content. GRW/CSL modifies quantum dynamics and is testable by searching for the modifications. MWI preserves quantum dynamics but makes no prediction that differs from standard quantum mechanics, and cannot be falsified by any physical experiment. LRT preserves quantum dynamics, makes a specific prediction ($\lambda = 0$ exactly, as a consequence of the ontology rather than as a default assumption) testable against GRW/CSL, and offers a basis-selection fork against decoherence-only accounts in principle. The "$L_3$ as ontological constraint" row marks the deepest divergence between LRT and MWI: MWI requires reducing Excluded Middle to a branch-relative principle, which LRT treats as an unacceptable demotion of logic from constitutive to perspectival status.*
+
+### 10.4 The Structure of LRT's Falsifiability
+
+LRT's measurement account would be falsified by any of the following:
+
+1. **Detection of spontaneous collapse.** Any confirmed observation of a collapse event not attributable to environmental decoherence would falsify LRT's claim that actualization is governed entirely by the interaction Hamiltonian.
+
+2. **Violation of exact unitarity in isolated systems.** LRT predicts that isolated quantum systems evolve unitarily without exception. Detection of non-unitary evolution in a verified isolated system would falsify this commitment.
+
+3. **Basis selection inconsistent with the interaction Hamiltonian.** If measurement outcomes were found to occur in a basis not determined by the physical interaction Hamiltonian (after accounting for all relevant environmental couplings), LRT's basis-selection mechanism would be falsified.
+
+4. **Demonstration that $L_3$ cannot function as an ontological constraint.** If a rigorous argument established that the Excluded Middle cannot coherently constrain what obtains (rather than merely what is knowable or sayable), the metaphysical foundation of the actualization account would require revision.
+
+These conditions are specific, experimentally addressable (in conditions 1-3), and independent of one another. LRT is not merely "consistent with" current data; it makes predictions that ongoing experiments are actively testing.
+
+The contrast with MWI on falsifiability is structural, not contingent. MWI is immune to experimental refutation because it accommodates every possible experimental result: whatever is observed in any branch is compatible with all branches being equally actual. LRT accepts experimental risk. A framework that can be falsified and has not been stands on stronger methodological footing than one that cannot be.
+
+---
+
+## 11. Discussion
+
+### 11.1 What LRT Achieves
 
 The measurement problem, as traditionally formulated, asks: how does a definite outcome emerge from a superposition? The question presupposes that the superposition and the outcome exist in the same ontological domain and that some dynamical process must connect them.
 
 LRT denies the presupposition. Superposition and definite outcome belong to different ontological domains: $I_\infty$ and $A_\Omega$, respectively. The transition between them is not a dynamical process but an ontological one: the completion of actualization under $A$. The measurement problem is rendered intelligible, not by producing a new dynamical mechanism, but by reclassifying the question: the remaining burden is not "how does collapse happen?" but "what is the lawful condition under which a degree of freedom enters the scope of $A$?"
 
-The distinction between dynamical collapse (a process within the Schrodinger evolution) and ontological transition (a change in the domain-membership of a property) is substantive: collapse interrupts unitary evolution within a single domain, while actualization changes the domain-membership of a property and leaves unitary evolution intact. The formal contradiction between Schrodinger dynamics and definite outcomes, which is the core of the measurement problem, does not arise under this architecture. What does arise is a different question: what governs the scope of $A$? That residual burden is addressed in Section 9.1 as an open problem.
+The distinction between dynamical collapse (a process within the Schrodinger evolution) and ontological transition (a change in the domain-membership of a property) is substantive: collapse interrupts unitary evolution within a single domain, while actualization changes the domain-membership of a property and leaves unitary evolution intact. The formal contradiction between Schrodinger dynamics and definite outcomes, which is the core of the measurement problem, does not arise under this architecture. The residual question (what governs the scope of $A$?) has a definite answer: the pointer-basis stability condition determined by the interaction Hamiltonian $H_{SE}$ (Section 9.1). Decoherence fixes when a degree of freedom becomes $L_3$-evaluable; $A$ provides the Boolean selection that decoherence alone does not.
 
-### 10.2 What LRT Does Not Achieve
+### 11.2 What LRT Does Not Achieve
 
 **The relabeling objection.** A critic will say: "You have not dissolved measurement. You have renamed collapse as actualization and relocated it into a metaphysical primitive." This objection has force, and the paper must answer it directly. The answer is that LRT's ontological transition differs from collapse in a specific structural way: collapse is a modification of the quantum state within a single domain (interrupting unitary evolution), while actualization is a change in domain-membership that leaves unitary evolution intact. The formal contradiction between Schrodinger dynamics and definite outcomes, which is the measurement problem proper, does not arise under LRT. What does arise is a new question: what governs the scope of $A$? That question is open. But it is a different question from the one the measurement problem poses, and its answer need not violate unitarity. Whether this structural difference is sufficient to count as more than relabeling is a judgment the community must make. This paper argues that it is.
 
-**The actualization threshold.** LRT does not yet specify the quantitative condition under which a degree of freedom enters the scope of $A$. The qualitative account is complete: partial actualization, interaction-determined PVMs, Boolean selection, Born-rule statistics. The quantitative account awaits either a derivation of the threshold from the primitives or an empirical determination that constrains the candidates (Section 9.1).
+**The actualization threshold.** The actualization threshold is identified with the pointer-basis stability condition (Section 9.1): $H_{SE}$ determines when coherence is suppressed and $A$ acts. What remains open is a *derivation* of this identification from the primitives alone, that is, a proof that $L_3$, $I_\infty$, and $A$ jointly entail that the scope of $A$ coincides with decoherence completion. The identification itself is physically well-motivated and yields correct timescales, but its derivation from metaphysical first principles is a target for future work.
 
 **Hilbert-space import.** LRT does not derive the specific Hilbert-space structure (complex field, dimensionality) from its primitives alone. These are imported from the Hardy-Masanes-Muller reconstruction theorems (Paper II, Step 4), which LRT grounds in the primitives but does not independently derive. Claims about the Born rule throughout this paper should be read accordingly: LRT supplies ontological grounding for why the relevant measure must be Born-type, given the admitted Hilbert-space framework.
 
-### 10.3 The Ontological Economy
+### 11.3 The Ontological Economy
 
 LRT introduces no new dynamical equations, no hidden variables, no additional physical constants, and no branching universes. It introduces three ontological primitives ($L_3$, $I_\infty$, $A$) and the distinction between two domains ($I_\infty$ and $A_\Omega$). Given the Hilbert-space framework imported from reconstruction theorems, the measurement formalism, including projection structure, the Born rule, and basis selection, follows from these primitives without further postulates specific to measurement.
 
-Whether this counts as more or less economical than the alternatives depends on one's tolerance for metaphysics. LRT trades a physics problem (the measurement problem as dynamical contradiction) for a metaphysical framework (the primitives) plus a new open problem (the actualization threshold). The framework is argued, not arbitrary (Paper I). Whether the trade is worth making is a question for the community.
+Whether this counts as more or less economical than the alternatives depends on one's tolerance for metaphysics. LRT trades a physics problem (the measurement problem as dynamical contradiction) for a metaphysical framework (the primitives) that inherits its quantitative content from standard decoherence theory without adding free parameters. The actualization threshold is not an additional postulate but the pointer-basis stability condition already calculable from $H_{SE}$. The framework is argued, not arbitrary (Paper I). Whether the trade is worth making is a question for the community.
 
 ---
 
-## 11. Conclusion
+## 12. Conclusion
 
 The measurement problem has resisted solution for nearly a century because each interpretation has sought a dynamical resolution within the quantum formalism itself. LRT reframes the problem by recognizing that measurement is not a dynamical process but an ontological transition: the completion of actualization under the Boolean action primitive $A$, mediated by the interaction Hamiltonian that determines the relevant projection-valued measure. This reframing eliminates the formal contradiction between unitary evolution and definite outcomes. It does not eliminate the need for a lawful account of when actualization occurs.
 
 Partial actualization, the possibility that a configuration may be actualized with respect to some properties while remaining in $I_\infty$ with respect to others, provides a unified account of interference, which-path complementarity, delayed choice, and quantum erasure. Within the Hilbert-space framework imported from reconstruction theorems, the Born rule is grounded as the unique probability measure over PVMs via Gleason's theorem, ontologically motivated by $A$'s Boolean character. Unitarity is exact. The preferred basis is physically determined by the interaction Hamiltonian.
 
-The principal open problem is the actualization threshold: the lawful condition under which a degree of freedom enters the scope of $A$. Resolving this problem, whether by derivation from the primitives or by empirical determination, is the natural next step. Until it is resolved, LRT offers a coherent ontological interpretation of measurement rather than a completed dissolution. That is still a contribution: it reclassifies the remaining burden and renders the measurement problem intelligible within a realist framework that preserves exact unitarity.
+The actualization threshold is the pointer-basis stability condition determined by the interaction Hamiltonian $H_{SE}$: the decoherence timescale $\tau_D \sim \gamma_{SE}^{-1}$ fixes when a degree of freedom becomes $L_3$-evaluable, and the Zero-Gap Identity ensures no temporal separation between decoherence completing and $A$ acting. LRT contributes no free parameters to this determination, inheriting the quantitative machinery of standard decoherence theory. What remains open is a derivation of this identification from the primitives alone. LRT renders the measurement problem intelligible within a realist framework that preserves exact unitarity and requires no adjustable constants beyond those already present in the interaction Hamiltonian.
 
 ---
 
@@ -441,8 +560,12 @@ This paper's claims rest on results established across the LRT paper series and 
 
 - Partial actualization framework (Section 3)
 - Application to double-slit, Stern-Gerlach, delayed choice (Sections 4-6)
-- Interpretive contrasts (Section 7)
-- Actualization threshold as open problem (Section 9.1)
+- Interpretive contrasts, including extended anti-MWI analysis (Section 7, especially 7.1)
+- Actualization threshold as pointer-basis stability condition, Zero-Gap Identity (Section 9.1)
+- Discriminating LRT from MWI: methodological and ontological asymmetries (Section 9.4)
+- Falsifiability analysis and null prediction against GRW/CSL (Section 10)
+- Four-way empirical distinguishability partition including MWI (Section 10.3, Table 2)
+- MWI falsifiability contrast in Section 10.4
 
 **Imported from Paper I (TAB v2.0):**
 
@@ -465,7 +588,7 @@ This paper's claims rest on results established across the LRT paper series and 
 
 **Open (not yet established):**
 
-- Actualization threshold / triggering condition (Section 9.1)
+- Derivation of threshold identification (scope of $A$ = decoherence completion) from primitives alone (Section 11.2)
 - Complete derivation of Actualization Partition Rule from primitives (Section 3.2)
 - $K = 2$ forcing from Boolean structure (OPN-005)
 
@@ -476,6 +599,8 @@ This paper's claims rest on results established across the LRT paper series and 
 Bennett, C.H. (2003). Notes on Landauer's principle, reversible computation, and Maxwell's Demon. *Studies in History and Philosophy of Modern Physics*, 34(3), 501-510.
 
 Bohm, D. (1952). A suggested interpretation of the quantum theory in terms of "hidden" variables. *Physical Review*, 85(2), 166-193.
+
+Carlesso, M., Donadi, S., Ferialdi, L., Paternostro, M., Ulbricht, H., and Bassi, A. (2022). Present status and future challenges of non-interferometric tests of collapse models. *Nature Physics*, 18, 243-250.
 
 Chiribella, G., D'Ariano, G.M., and Perinotti, P. (2011). Informational derivation of quantum theory. *Physical Review A*, 84(1), 012311.
 

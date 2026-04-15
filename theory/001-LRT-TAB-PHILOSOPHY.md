@@ -142,19 +142,37 @@ This is not a claim about the limits of thought but about the conditions for bei
 
 A critic might grant that L₃ is necessary for *our* understanding of reality while maintaining that reality itself might lack determinate structure. What would follow from denying determinacy?
 
-The consequences are severe:
+The question can be sharpened by examining each component of L₃ individually, then observing what happens when all three are removed simultaneously.
 
-1. **Truth conditions dissolve.** Without stable identity, there is no fact of the matter about what propositions are about. "The electron is spin-up" fails to pick out a determinate state of affairs. Truth-value assignments become arbitrary.
+#### Without Identity ($A = A$)
 
-2. **Lawlikeness collapses.** Physical laws describe regularities among determinate states. If states lack determinate identity, there is nothing for laws to relate. The very concept of a law presupposes that the relata are what they are.
+No configuration is self-identical. Nothing is distinguishable from anything else. This is not the familiar claim that "things look alike" or that differences are difficult to detect; it is the claim that there are no things. Differentiation requires that $x$ is $x$ and not $y$. Remove that requirement and "configuration" has no referent. The word persists, but it names nothing, because naming presupposes that the named is determinately itself.
 
-3. **Explanation becomes impossible.** Explanations proceed by citing determinate conditions that ground determinate outcomes. Without determinacy, there is nothing to explain and nothing to explain it with.
+#### Without Non-Contradiction ($\lnot(A \land \lnot A)$)
 
-4. **Measurement has no content.** A measurement outcome is a determinate fact about a system. If outcomes lack stable identity, "measurement" names nothing.
+A state could both obtain and not obtain. This is not the quantum-mechanical sense of superposition, which is a well-defined mathematical object with determinate properties (a vector in Hilbert space with a determinate norm, determinate expansion coefficients, and determinate evolution under the Schrödinger equation). It is the ontological sense: there is no fact of the matter about whether any predicate holds, because holding and not-holding are compatible. Determinacy is gone. Every property becomes its own negation. "Charged" and "uncharged" collapse into a single pseudo-predicate that asserts nothing.
 
-This is not a reductio ad absurdum showing that indeterminacy is *logically* impossible. A radically indeterminate "reality" is coherent in the sense that one can describe it without contradiction. The point is that such a reality cannot underwrite physics as practiced. Any framework that generates predictions, confirms theories, or explains phenomena presupposes the determinacy that L₃ articulates.
+#### Without Excluded Middle ($A \lor \lnot A$)
 
-The critic who denies determinacy occupies a coherent position, but it is explanatorily sterile. TAB claims not that determinacy is the only logical possibility, but that it is the condition for any physics capable of describing the world we investigate.
+Even if identity and non-contradiction are somehow recovered, there is no closure. There is no guarantee that every well-formed question about a configuration has a truth value. The domain of actuality has gaps; not epistemic gaps (things we cannot know) but ontological ones (things that are not either way). A configuration neither has nor lacks a given property. The universe is not merely unknown in some regions; it is incomplete in the way that a partial function is incomplete. Portions of reality simply fail to be determined.
+
+#### The Cascade: All Three Removed
+
+Stack all three removals and you do not get chaos. Chaos is differentiated; turbulent fluid still has distinguishable states at each instant. What remains is something prior to chaos, prior to structure, prior to time:
+
+- No distinguishable configurations $\rightarrow$ no states
+- No states $\rightarrow$ no transitions
+- No transitions $\rightarrow$ no time
+- No time $\rightarrow$ no dynamics
+- No dynamics $\rightarrow$ no physics
+
+"Timeless indistinguishable everything" is too generous a description. "Everything" implies a domain. Without L₃ there is no domain. $I_\infty$ without L₃ is not an infinite possibility space; it is an incoherent pseudo-object, like the set of all sets: formally expressible, ontologically vacuous. One can write the words, but they do not compose a referent.
+
+#### The Transcendental Conclusion
+
+This is the transcendental argument at its sharpest. The claim is not that reality is more tractable with logical structure, or that physics proceeds more smoothly when we assume determinacy. The claim is that without logical structure, "reality" does not refer. Remove L₃ and you do not get an alternative physics, a stranger physics, or a physics we cannot yet imagine. You get the impossibility of physics. The domain in which physical laws could hold does not exist, because domains require distinguishable members, and distinguishability requires L₃.
+
+The critic who denies L₃ occupies a position that is coherent as a formal exercise but explanatorily sterile; and not merely sterile in the way that an unhelpful theory is sterile, but sterile in the way that the absence of a language is sterile. There is nothing to say because there is nothing to be about. The denial does not open an alternative ontology. It closes ontology.
 
 ### 2.4.1 The Stroud Objection and LRT's Response
 
