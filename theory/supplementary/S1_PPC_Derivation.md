@@ -9,7 +9,7 @@
 
 ## Abstract
 
-The Physical Proposition Criterion (PPC) is the governing bridge principle of Logic Realism Theory. It states that a claim counts as a physical proposition if and only if its truth-value states are operationally distinguishable. This supplement derives the PPC from L<sub>3</sub>'s constitutive status, making explicit the inference that the master document presents but does not fully develop. The derivation proceeds through four stages: (1) the nature of L<sub>3</sub> as constitutive rather than regulative, (2) the content requirements each law imposes, (3) why those requirements entail operational distinguishability, and (4) the scope and limits of the result.
+The Physical Proposition Criterion (PPC) is the governing bridge principle of Logic Realism Theory. It states that a claim counts as a physical proposition if and only if its truth-value states are operationally distinguishable. This supplement derives the PPC from L<sub>3</sub>'s constitutive status via a two-step decomposition: first, that L<sub>3</sub>-satisfaction entails *informational* distinguishability (distinct configurations differ in at least one bit of informational content), and second, that informational distinguishability in the actualized domain A<sub>Ω</sub> entails *operational* distinguishability (actualized content produces physical consequence). The two-step structure isolates the precise point at which each objection makes contact, sharpening both the argument and the cost of denying it.
 
 ---
 
@@ -109,6 +109,8 @@ The question is what L<sub>3</sub>-satisfaction requires of the property P ascri
 
 ## 4. From Difference-Making to Operational Distinguishability
 
+The inference from L<sub>3</sub>-satisfaction to operational distinguishability is the load-bearing step of the PPC derivation. Previous versions of this supplement made the inference in a single move. This version decomposes it into two steps, each independently defensible, with a natural intermediate layer.
+
 ### 4.1 The Consolidated Requirement
 
 From Section 3, L<sub>3</sub>-satisfaction requires:
@@ -119,37 +121,85 @@ From Section 3, L<sub>3</sub>-satisfaction requires:
 
 All three converge on: **there is a difference between c-with-F and c-without-F**.
 
-### 4.2 The Operational Question
+The question is what "difference" means and how it connects to operational access. We proceed in two steps.
 
-The question now is: what does "difference" mean?
+### 4.2 Step 1: From Distinctness to Informational Distinguishability
 
-Here is where LRT's framework becomes load-bearing. I<sub>∞</sub> is defined as the space of all representable configurations, structured by distinguishability. The distinguishability metric D is:
+**Claim:** If $c_1 \neq c_2$ in $I_\infty$, then $c_1$ and $c_2$ differ in at least one informational respect.
 
-$$D(s_1, s_2) = \sup_M |P_M(s_1) - P_M(s_2)|_{TV}$$
+**Argument:** $I_\infty$ is the space of all possible information configurations. Its elements are individuated by their informational content: what properties they encode, what distinctions they carry, what queries they answer differently. This is not an additional assumption but a consequence of how $I_\infty$ is defined. A space of information configurations whose elements are not individuated by informational content is not a space of information configurations.
 
-where M ranges over all physically admissible measurements.
+Identity ($c = c$) requires that each $c \in I_\infty$ has determinate character. If $c_1 \neq c_2$, their characters differ. Since character in $I_\infty$ just is informational content, their informational content differs. There exists at least one query $E$ (an event in the LRT sense) such that $E(c_1) \neq E(c_2)$.
 
-Two configurations are distinct (D > 0) if and only if there exists a measurement M that yields different probability distributions for them. Two configurations are identical (D = 0) if no measurement distinguishes them.
+**What this step establishes:** Ontological distinctness (guaranteed by $L_3$) entails informational distinguishability (difference in at least one bit of informational content). This step does not invoke measurements, probability distributions, or physical interactions. It is a consequence of what it means to be a distinct element in a space structured by information.
 
-### 4.3 The Inference
+**What this step does not establish:** That the informational difference is physically accessible. Two elements of $I_\infty$ that are informationally distinct might, in principle, be physically indistinguishable if only some informational differences have physical consequences. Step 2 addresses this.
 
-**Premise 1:** L<sub>3</sub>-satisfaction requires that P-true and P-false are distinct states of affairs (from Section 3).
+### 4.3 Step 2: From Informational to Operational Distinguishability in $A_\Omega$
 
-**Premise 2:** States of affairs in A<sub>Ω</sub> are configurations in I<sub>∞</sub> (A<sub>Ω</sub> ⊆ I<sub>∞</sub>).
+**Claim:** For configurations in $A_\Omega$ (the actualized domain), informational distinguishability entails operational distinguishability.
 
-**Premise 3:** Configurations in I<sub>∞</sub> are distinct iff D > 0, i.e., iff some measurement distinguishes them.
+**Argument:** This step is specific to $A_\Omega$. It does not hold for $I_\infty$ in general.
 
-**Conclusion:** L<sub>3</sub>-satisfaction requires operational distinguishability. P is a physical proposition only if P-true and P-false are operationally distinguishable.
+Actualization is the process by which informational content becomes physically manifest. When $A$ selects a configuration $c$ for actualization, $c$ does not become actual in a ghost-like sense, present but without physical consequence. To be actualized is to *obtain*, and to obtain is to make a difference to the physical world. This is the content of what actualization means in LRT: $A$ is the operator that determines which informational configurations have physical standing.
 
-### 4.4 Why This Is Not Operationalism By Stipulation
+Now suppose two actualized configurations $c_1, c_2 \in A_\Omega$ are informationally distinct (Step 1: they differ in some event $E$) but operationally indistinguishable (no physically admissible measurement $M$ yields different statistics for $c_1$ and $c_2$). Then:
 
-The objection: "You've just defined configurations operationally and then claimed L<sub>3</sub> requires operational distinguishability. That's circular."
+1. $c_1$ and $c_2$ differ in informational content (by Step 1).
+2. Both are actualized: their informational content has physical standing (by membership in $A_\Omega$).
+3. No physical interaction distinguishes them (by assumption of operational indistinguishability).
 
-The response: The distinguishability metric D is not an arbitrary choice. It is what Identity requires. If two configurations were indistinguishable in every respect, Identity would make them the same configuration. The metric D is the formal expression of "differ in some respect." Operational distinguishability is not stipulated; it is derived from what "distinct" means when L<sub>3</sub> is constitutive.
+This combination is incoherent. Condition (2) says the informational difference has physical standing. Condition (3) says the informational difference produces no physical consequence. But "having physical standing" without "producing any physical consequence" empties the concept of actualization. A configuration that is actualized yet causally inert, whose informational content obtains yet makes no difference to any interaction, is not actualized in any meaningful sense. It is a metaphysical posit without physical content.
 
-The deeper point: measurements are not external probes that we apply to a pre-existing reality. Measurements are the physical interactions through which configurations manifest their distinctness. If no interaction could in principle distinguish c<sub>1</sub> from c<sub>2</sub>, then there is no respect in which c<sub>1</sub> and c<sub>2</sub> differ, and Identity makes them one configuration.
+The argument is not that we define actualization as "having operational consequences" by fiat. The argument is that the concept of actualization, as the operator that brings informational content from possibility ($I_\infty$) into physical reality ($A_\Omega$), requires that actualized content makes a physical difference. An actualization operator that selects configurations for "obtaining" while leaving them causally invisible does no work. It is $A$ in name only.
 
-This is why L<sub>3</sub>'s constitutive status is essential. If L<sub>3</sub> were merely regulative (a rule for reasoning), the objector could say: "The configurations are distinct in themselves, even if no measurement reveals the distinction." But if L<sub>3</sub> is constitutive (defining what counts as a configuration), the objector's position is incoherent: distinctness without any difference is not distinctness.
+**Formally:** For $c_1, c_2 \in A_\Omega$ with $c_1 \neq c_2$:
+
+$$\exists E: E(c_1) \neq E(c_2) \quad \text{(Step 1: informational distinguishability)}$$
+
+$$\implies \exists M: P_M(c_1) \neq P_M(c_2) \quad \text{(Step 2: operational distinguishability)}$$
+
+where $M$ ranges over physically admissible measurements. The distinguishability metric is:
+
+$$D(c_1, c_2) = \sup_M \lvert P_M(c_1) - P_M(c_2) \rvert_{TV}$$
+
+Step 2 establishes that $D(c_1, c_2) > 0$ for distinct actualized configurations.
+
+### 4.4 The Combined Inference
+
+**Premise 1:** $L_3$-satisfaction requires that P-true and P-false are distinct states of affairs (from Section 3).
+
+**Premise 2:** Distinct states in $I_\infty$ are informationally distinguishable (Step 1: from the informational structure of $I_\infty$).
+
+**Premise 3:** Informationally distinguishable states in $A_\Omega$ are operationally distinguishable (Step 2: from the nature of actualization).
+
+**Conclusion:** $L_3$-satisfaction of propositions about configurations in $A_\Omega$ requires operational distinguishability. P is a physical proposition only if P-true and P-false are operationally distinguishable.
+
+### 4.5 Why This Is Not Operationalism By Stipulation
+
+The objection: "You've just relocated the operational requirement from a definition of configurations to a definition of actualization. Either way, operational distinguishability is stipulated, not derived."
+
+The response has two parts, corresponding to the two steps:
+
+**Against Step 1:** The informational individuation of elements of $I_\infty$ is not stipulated. It follows from $I_\infty$'s role as the space of *information configurations*. A space of information configurations whose elements lack informational individuation is a contradiction in terms. Step 1 is analytic given the framework.
+
+**Against Step 2:** The claim that actualized content makes a physical difference is not a hidden operationalist premise. It is what separates $A_\Omega$ from $I_\infty$. Both spaces contain informationally distinct configurations. What actualization adds is *physical standing*: the informational content *obtains* in the physical world. If "obtaining" made no physical difference, $A_\Omega$ would be $I_\infty$ with a label. The distinction between possible and actual would be vacuous.
+
+The deeper point: the two-step structure exposes exactly where the physical content enters. Step 1 is purely informational and follows from the framework's definitions. Step 2 is where the physical claim lives: actualization produces physical consequence. This claim is not derived from $L_3$ alone; it is derived from $L_3$ together with the nature of $A$ as the operator that bridges possibility and actuality. A critic who denies Step 2 must explain what actualization does if not produce physical consequence. No such account has been offered.
+
+### 4.6 Where Each Objection Now Targets
+
+The two-step decomposition gives each objection a precise point of contact:
+
+| Objection | Targets | Denial Costs |
+|-----------|---------|--------------|
+| "Distinct states needn't be informationally different" | Step 1 | Denies that $I_\infty$ is an information space |
+| "Informational differences needn't be physical" | Step 2 | Denies that actualization has physical content |
+| "Operationalism is smuggled in" | Step 2 | Must provide a non-vacuous account of actualization without physical consequence |
+| "Bohmian positions are always definite" | Step 2 | Must show actualized-but-inaccessible is coherent |
+| "Structural realism allows non-local facts" | Step 2 | Must show actualized facts can be causally inert |
+
+The Bohmian case deserves specific attention (see §6.2). The short version: Bohmian mechanics does not actually deny Step 2. Bohmian positions *do* have operational consequences (they determine detection events). The Bohmian dispute is about whether positions are always determinate, not about whether determinate positions are operationally inert. LRT and Bohmian mechanics agree on Step 2; they disagree about the scope of determinacy, which is a different argument.
 
 ---
 
@@ -237,11 +287,11 @@ S1 provides the foundation for all downstream steps that invoke "determinate fac
 |------|---------|--------|
 | 1 | L<sub>3</sub> is constitutive, not regulative | Framework commitment |
 | 2 | L<sub>3</sub>-satisfaction requires distinct truth-value states | Derived from L<sub>3</sub>'s content |
-| 3 | Distinctness in I<sub>∞</sub> means D > 0 | From distinguishability metric |
-| 4 | D > 0 iff operationally distinguishable | Definition of D |
-| 5 | Therefore L<sub>3</sub>-satisfaction requires operational distinguishability | QED |
+| 3 | Distinct states in I<sub>∞</sub> are informationally distinguishable | Analytic (from informational structure of I<sub>∞</sub>) |
+| 4 | Informational distinguishability in A<sub>Ω</sub> entails operational distinguishability | From nature of actualization |
+| 5 | Therefore L<sub>3</sub>-satisfaction requires operational distinguishability | QED (via Steps 3 + 4) |
 
-The PPC is not a new axiom. It is what L<sub>3</sub>'s constitutive status entails when applied to the distinguishability structure of I<sub>∞</sub>. The derivation is not circular: it does not assume the PPC to prove the PPC. It derives the PPC from the more fundamental commitment that L<sub>3</sub> defines what counts as a configuration.
+The PPC is not a new axiom. It is what L<sub>3</sub>'s constitutive status entails when applied to the informational structure of I<sub>∞</sub> (Step 3) and the physical content of actualization (Step 4). The derivation is not circular: it does not assume the PPC to prove the PPC. It derives the PPC from two independently defensible claims, each grounded in a different primitive of the framework. The informational step follows from what I<sub>∞</sub> is. The operational step follows from what A does.
 
 ---
 

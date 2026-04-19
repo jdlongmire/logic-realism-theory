@@ -523,11 +523,13 @@ This transforms the plenitude argument. We are no longer claiming merely that A 
 
 The physics reconstruction in Part II requires a specific connection between the ontological primitives established here and the operational constraints that generate quantum structure. This connection is summarized as the **Bridge Lemma**:
 
-**Bridge Lemma.** *If A_Ω = L₃(I∞), then any proposition about a configuration c ∈ A_Ω satisfies L₃. Satisfying L₃ requires determinate content, which requires operational distinguishability. Therefore, every physical proposition is operationally distinguishable.*
+**Bridge Lemma.** *If A_Ω = L₃(I∞), then any proposition about a configuration c ∈ A_Ω satisfies L₃. Satisfying L₃ requires determinate content, which entails informational distinguishability (via I∞'s structure), which in turn entails operational distinguishability (via actualization's physical standing). Therefore, every physical proposition is operationally distinguishable.*
+
+The inference decomposes into two steps (developed fully in Supplement S1). **Step 1:** Distinct states in I∞ are informationally distinguishable — this is analytic given I∞'s role as an information space. **Step 2:** Informationally distinguishable states in A_Ω are operationally distinguishable — because actualization confers physical standing, and actualized content that makes no physical difference would render the distinction between A_Ω and I∞ vacuous. Each step has its own grounds and can be challenged independently, eliminating the appearance of a single unjustified jump from logical distinctness to operational access.
 
 This lemma licenses the transition from ontological grounding (TAB, Part I) to physics reconstruction (Part II). The Physical Proposition Criterion (PPC) stated in Part II is a direct consequence: a claim counts as a physical proposition if and only if it satisfies L₃, which requires that its truth-states be operationally distinguishable.
 
-The lemma is not an additional assumption. It follows from the constitutive role of L₃ established in Section 2. Because L₃ is not a constraint *on* propositions but the condition *under which* anything counts as a proposition, the connection to operational distinguishability is internal to the framework rather than externally imposed.
+The lemma is not an additional assumption. It follows from the constitutive role of L₃ established in Section 2 and the nature of actualization established in Section 4. Because L₃ is not a constraint *on* propositions but the condition *under which* anything counts as a proposition, and because actualization is not a label but a conferral of physical standing, the connection to operational distinguishability is internal to the framework rather than externally imposed.
 
 ---
 
