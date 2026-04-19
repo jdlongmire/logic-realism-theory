@@ -2,14 +2,14 @@
 
 **Status:** Exploratory quantitative model
 **Epistemic flag:** Toy model — parameterized, not derived from first principles
-**Dependencies:** 003-LRT-COSMOLOGY §5–6 (emission-absorption balance, $w = -1$ derivation)
+**Dependencies:** 300-LRT-COSMOLOGY §5–6 (emission-absorption balance, $w = -1$ derivation)
 **Issue:** #74
 
 ---
 
 ## 1. Motivation
 
-The strongest potential discriminant between LRT's actualization-residue picture of dark energy and $\Lambda$CDM is the equation of state as a function of redshift, $w(z)$. In §6 of 003-LRT-COSMOLOGY, we derived $w = -1$ exactly from L₃ incompressibility — but that derivation assumes perfect emission-absorption equilibrium. §5.4 already noted that this balance shifts across cosmic history:
+The strongest potential discriminant between LRT's actualization-residue picture of dark energy and $\Lambda$CDM is the equation of state as a function of redshift, $w(z)$. In §6 of 300-LRT-COSMOLOGY, we derived $w = -1$ exactly from L₃ incompressibility — but that derivation assumes perfect emission-absorption equilibrium. §5.4 already noted that this balance shifts across cosmic history:
 
 | Era | Emission $\Gamma_{\text{em}}$ | Absorption $\Gamma_{\text{abs}}$ | Net |
 |-----|------|------|-----|
@@ -71,7 +71,7 @@ $$w_0 = -1 + \alpha - \beta$$
 
 ### 3.1 Madau–Dickinson Star Formation Rate Density
 
-Stars are the dominant actualization factories (003-LRT-COSMOLOGY §3.1.1). The cosmic star formation rate density (SFRD) is well-measured and parameterized by Madau & Dickinson (2014):
+Stars are the dominant actualization factories (300-LRT-COSMOLOGY §3.1.1). The cosmic star formation rate density (SFRD) is well-measured and parameterized by Madau & Dickinson (2014):
 
 $$\psi_{\text{MD}}(z) = 0.015\,\frac{(1+z)^{2.7}}{1 + \left(\frac{1+z}{2.9}\right)^{5.6}} \quad [M_\odot\,\text{yr}^{-1}\,\text{Mpc}^{-3}]$$
 
@@ -103,7 +103,7 @@ The Madau–Dickinson SFRD captures stellar actualization only. At $z \gtrsim 6$
 
 ### 4.1 Black Hole Mass Assembly History
 
-In LRT, absorption (deactualization) is dominated by black holes (§5 of 003-LRT-COSMOLOGY). The cosmic supermassive black hole (SMBH) mass density grew over time as galaxies merged, AGN accreted, and stellar-mass BHs formed. At high $z$, few BHs existed; absorption capacity was low.
+In LRT, absorption (deactualization) is dominated by black holes (§5 of 300-LRT-COSMOLOGY). The cosmic supermassive black hole (SMBH) mass density grew over time as galaxies merged, AGN accreted, and stellar-mass BHs formed. At high $z$, few BHs existed; absorption capacity was low.
 
 The cumulative SMBH mass density at redshift $z$, normalized to the present, is parameterized as:
 
@@ -235,7 +235,7 @@ The free parameters $\alpha$ and $\beta$ encode unknown LRT microphysics — spe
 
 ### 7.2 Order-of-Magnitude Estimate
 
-From 003-LRT-COSMOLOGY §3.1.1, the cosmic actualization rate from stars alone is:
+From 300-LRT-COSMOLOGY §3.1.1, the cosmic actualization rate from stars alone is:
 
 $$\dot{N}_A \sim 10^{62} \text{ events/s} \quad (\text{present epoch})$$
 
@@ -339,4 +339,4 @@ with $\hat{\psi}_{\text{MD}}(z)$ from Madau & Dickinson (2014), $f_{\text{BH}}(z
 - Aird, J. et al. (2015). The evolution of the X-ray luminosity function of AGN. *Monthly Notices of the Royal Astronomical Society*, 451, 1892–1927.
 - Yu, Q. & Tremaine, S. (2002). Observational constraints on growth of massive black holes. *Monthly Notices of the Royal Astronomical Society*, 335, 965–976.
 - Kormendy, J. & Ho, L. C. (2013). Coevolution of supermassive black holes and host galaxies. *Annual Review of Astronomy and Astrophysics*, 51, 511–653.
-- Longmire, J. (2026). *LRT Cosmology: Speculative Extensions* (003-LRT-COSMOLOGY).
+- Longmire, J. (2026). *LRT Cosmology: Speculative Extensions* (300-LRT-COSMOLOGY).

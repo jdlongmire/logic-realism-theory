@@ -685,9 +685,9 @@ logic-realism-theory/
 │       ├── build.sh                  # Build with Mathlib cache
 │       └── clean.sh                  # Clean LRT artifacts only
 ├── theory/
-│   ├── 001-LRT-TAB-PHILOSOPHY.md     # Transcendental argument
-│   ├── 002-LRT-CORE-PHYSICS.md      # Physics reconstruction
-│   ├── 003-LRT-COSMOLOGY.md         # Dark energy extension
+│   ├── 002-LRT-TAB-PHILOSOPHY.md     # Transcendental argument
+│   ├── 100-LRT-CORE-PHYSICS.md      # Physics reconstruction
+│   ├── 300-LRT-COSMOLOGY.md         # Dark energy extension
 │   ├── 400-LRT-FORMALIZATION.md     # This document
 │   ├── 500-LRT-FORMALIZATION-STATUS.md  # Current status (living doc)
 │   └── supplementary/                # Technical supplements

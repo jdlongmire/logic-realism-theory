@@ -120,7 +120,7 @@ Each document follows a distinct format to signal its claim type to referees.
 
 ---
 
-#### 003-LRT-COSMOLOGY.md — Speculative Theoretical Physics
+#### 300-LRT-COSMOLOGY.md — Speculative Theoretical Physics
 
 **Format:** Introduction explicitly marks work as exploratory
 
@@ -390,8 +390,8 @@ axioms (QM-011, QM-012) replace one black-box axiom.
 
 ## LRT-MASTER Paper
 
-**File:** `002-LRT-CORE-PHYSICS.md`
-**PDF:** (regenerate from 002-LRT-CORE-PHYSICS.md when needed)
+**File:** `100-LRT-CORE-PHYSICS.md`
+**PDF:** (regenerate from 100-LRT-CORE-PHYSICS.md when needed)
 
 **Last update:** 2026-03-16
 - ToC removed from PDF generation
@@ -479,7 +479,7 @@ Route B is cleaner because it imports well-established results (no-hiding, CDP) 
 
 ## LRT Cosmology Development (2026-03-25)
 
-**File:** `theory/003-LRT-COSMOLOGY.md`
+**File:** `theory/300-LRT-COSMOLOGY.md`
 **Status:** Active development
 **GitHub Project:** https://github.com/users/jdlongmire/projects/4
 
@@ -1105,7 +1105,7 @@ cd traceability && python3 scripts/build.py --all
 - **Update Mathlib:** `cd formalization && ./scripts/update-mathlib.sh`
 - **Check for sorry:** `grep -r "sorry" formalization/LrtFormalization/ --include="*.lean" | grep -v "no sorry"`
 - **List axioms:** `grep -rh "^axiom" formalization/LrtFormalization/ --include="*.lean" | wc -l`
-- **Generate PDF:** `pandoc 002-LRT-CORE-PHYSICS.md -o 002-LRT-CORE-PHYSICS.pdf --pdf-engine=xelatex -V geometry:margin=1in`
+- **Generate PDF:** `pandoc 100-LRT-CORE-PHYSICS.md -o 100-LRT-CORE-PHYSICS.pdf --pdf-engine=xelatex -V geometry:margin=1in`
 - **Build traceability reports:** `cd traceability && python3 scripts/build.py --all`
 
 ### Quick Status Check

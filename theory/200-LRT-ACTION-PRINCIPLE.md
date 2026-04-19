@@ -6,11 +6,11 @@ orcid: "0009-0009-1383-7698"
 date: "April 2026"
 status: "Draft"
 series: "LRT Paper 005"
-upstream: "000-TRM-FOUNDATIONS, 001-LRT-TAB-PHILOSOPHY, 002-LRT-CORE-PHYSICS"
+upstream: "001-TRM-FOUNDATIONS, 002-LRT-TAB-PHILOSOPHY, 100-LRT-CORE-PHYSICS"
 abstract: |
   Logic Realism Theory (LRT) derives non-relativistic quantum mechanics from the primitive ontology
   χ ≡ [L₃ : I∞ : A] — the Three Laws of Logic as constitutive constraints, an infinite informational
-  possibility space, and a binary actualization primitive. The companion paper (002-LRT-CORE-PHYSICS)
+  possibility space, and a binary actualization primitive. The companion paper (100-LRT-CORE-PHYSICS)
   reconstructs the Schrödinger equation and notes, in §5.7, that the quantum action principle is
   available as a consequence. The present paper expands that compressed treatment into a full
   argument. We give careful proofs that the Wootters (1981) statistical distance identifies with the
@@ -27,7 +27,7 @@ abstract: |
 
 -----
 
-<!-- LRT-005 draft: April 2026. Upstream: 000, 001, 002. Downstream: 006 (gauge), cosmology companion. -->
+<!-- LRT-200 draft: April 2026. Upstream: 001, 002, 100. Downstream: 006 (gauge), cosmology companion. -->
 
 ## 1. Introduction and Motivation
 
@@ -889,13 +889,13 @@ Kibble, T. W. B. (1979). Geometrization of quantum mechanics. *Communications in
 Physics*, 65(2), 189–201. https://doi.org/10.1007/BF01225149
 
 Longmire, J. D. (2026a). *Logic Realism Theory: Transcendental Realist Metaphysics*
-(000-TRM-FOUNDATIONS). Zenodo. https://doi.org/10.5281/zenodo.19226396
+(001-TRM-FOUNDATIONS). Zenodo. https://doi.org/10.5281/zenodo.19226396
 
 Longmire, J. D. (2026b). *The Transcendental Argument for Being: Philosophical Foundations of LRT*
-(001-LRT-TAB-PHILOSOPHY). Zenodo. https://doi.org/10.5281/zenodo.19226396
+(002-LRT-TAB-PHILOSOPHY). Zenodo. https://doi.org/10.5281/zenodo.19226396
 
 Longmire, J. D. (2026c). *Logic Realism Theory: Grounding Reality as Logical, Informational, and
-Dynamic — Part II: Physics Reconstruction* (002-LRT-CORE-PHYSICS). Zenodo.
+Dynamic — Part II: Physics Reconstruction* (100-LRT-CORE-PHYSICS). Zenodo.
 https://doi.org/10.5281/zenodo.19226396
 
 Masanes, L., & Müller, M. P. (2011). A derivation of quantum theory from physical requirements.
@@ -914,4 +914,4 @@ https://doi.org/10.1103/PhysRevD.23.357
 
 -----
 
-<!-- End of 005-LRT-ACTION-PRINCIPLE.md — April 2026 draft -->
+<!-- End of 200-LRT-ACTION-PRINCIPLE.md — April 2026 draft -->

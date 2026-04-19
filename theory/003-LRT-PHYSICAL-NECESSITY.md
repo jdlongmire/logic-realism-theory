@@ -9,7 +9,7 @@ Correspondence: jdlongmire@outlook.com
 Date: April 2026
 Status: Draft
 Series: LRT Paper 008
-Upstream: 000-TRM-FOUNDATIONS, 001-LRT-TAB-PHILOSOPHY
+Upstream: 001-TRM-FOUNDATIONS, 002-LRT-TAB-PHILOSOPHY
 
 ---
 

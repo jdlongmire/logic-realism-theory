@@ -344,7 +344,7 @@ Formalization strategy supplements:
 
 ### 8.3 Master Document
 
-002-LRT-CORE-PHYSICS (theory/002-LRT-CORE-PHYSICS.md) provides the prose derivation chain that the formalization structures. Each step has an epistemic status tag (ESTABLISHED, ARGUED, OPEN) that corresponds to formalization completeness:
+100-LRT-CORE-PHYSICS (theory/100-LRT-CORE-PHYSICS.md) provides the prose derivation chain that the formalization structures. Each step has an epistemic status tag (ESTABLISHED, ARGUED, OPEN) that corresponds to formalization completeness:
 
 | Prose Status | Formalization Status |
 |--------------|----------------------|

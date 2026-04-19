@@ -1,6 +1,6 @@
 # LRT Theory Documents
 
-Active theory documents for Logic Realism Theory. The canonical unified source is **002-LRT-CORE-PHYSICS.md**.
+Active theory documents for Logic Realism Theory. The canonical unified source is **100-LRT-CORE-PHYSICS.md**.
 
 ---
 
@@ -24,8 +24,8 @@ Logic Realism Theory (LRT) proposes a single ground-level commitment: reality is
 
 | Document | Description |
 |----------|-------------|
-| **[001-LRT-TAB-PHILOSOPHY.md](001-LRT-TAB-PHILOSOPHY.md)** | Transcendental Argument for Being: metaphysical groundwork |
-| **[002-LRT-CORE-PHYSICS.md](002-LRT-CORE-PHYSICS.md)** | Canonical unified source: complete 14-step derivation (Steps 0-14) |
+| **[002-LRT-TAB-PHILOSOPHY.md](002-LRT-TAB-PHILOSOPHY.md)** | Transcendental Argument for Being: metaphysical groundwork |
+| **[100-LRT-CORE-PHYSICS.md](100-LRT-CORE-PHYSICS.md)** | Canonical unified source: complete 14-step derivation (Steps 0-14) |
 | **[400-LRT-FORMALIZATION.md](400-LRT-FORMALIZATION.md)** | Complete formalization reference (static) |
 | **[500-LRT-FORMALIZATION-STATUS.md](500-LRT-FORMALIZATION-STATUS.md)** | Current formalization status (living doc) |
 | **[lrt-memory.md](lrt-memory.md)** | Project memory for AI agents |
@@ -75,9 +75,9 @@ Located in `supplementary/`:
 
 ```
 theory/
-├── 001-LRT-TAB-PHILOSOPHY.md   # Philosophical foundation
-├── 002-LRT-CORE-PHYSICS.md    # Core physics derivation
-├── 003-LRT-COSMOLOGY.md       # Dark energy extension
+├── 002-LRT-TAB-PHILOSOPHY.md   # Philosophical foundation
+├── 100-LRT-CORE-PHYSICS.md    # Core physics derivation
+├── 300-LRT-COSMOLOGY.md       # Dark energy extension
 ├── 400-LRT-FORMALIZATION.md   # Complete formalization reference
 ├── 500-LRT-FORMALIZATION-STATUS.md  # Formalization status (living doc)
 ├── LRT-MEMORY.md               # Agent memory
