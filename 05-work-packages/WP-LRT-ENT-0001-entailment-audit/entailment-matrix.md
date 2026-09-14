@@ -1,6 +1,6 @@
 # LRT Entailment Audit Matrix
 
-Status: INITIAL BASELINE
+Status: ACTIVE
 Date: 2026-09-14
 Work package: WP-LRT-ENT-0001
 
@@ -34,32 +34,80 @@ Canonical public summary:
 
 The active core physics document additionally identifies the Physical Proposition Criterion (PPC) as the governing ontology-to-operational bridge. The audit therefore makes PPC explicit even where abbreviated summaries omit it.
 
-| # | Reconstruction step | Initial classification | Initial disposition | Audit focus |
+| # | Reconstruction step | Classification | Disposition | Audit finding |
 |---|---|---|---|---|
-| 0 | `X = [L3 : I∞ : A] -> AΩ = L3(I∞)` | ONTOLOGICAL | SURVIVES_CONDITIONALLY | Constitutive specification is internal to the ontology. Audit whether the notation is definition, grounding claim, or substantive entailment at each use. |
-| 1 | `AΩ -> Determinate Identity` | ONTOLOGICAL / BRIDGE | SURVIVES_CONDITIONALLY | Determine whether determinate identity follows from L3 alone or from an additional interpretation of physical propositionhood. |
-| 2 | `Determinate Identity -> PPC` | BRIDGE | SURVIVES_CONDITIONALLY | Central vulnerability. Separate logical distinctness, informational distinctness, and operational distinguishability. The active paper itself marks this bridge ARGUED rather than established. |
-| 3 | `PPC -> Local Tomography` | BRIDGE | SURVIVES_CONDITIONALLY | Test whether local access to all identity-making relations actually follows, or whether composite-state reconstruction/local accessibility is an extra operational axiom. |
-| 4 | `Local Tomography + reconstruction premises -> complex Hilbert space` | IMPORTED_THEOREM / BRIDGE | SURVIVES_CONDITIONALLY | Identify the full Masanes-Müller or related premise set. Determine which premises LRT independently grounds and which remain imported. |
-| 5 | `complex Hilbert space + Boolean action/event structure -> PVM` | BRIDGE / IMPORTED_THEOREM | SURVIVES_CONDITIONALLY | Test whether Boolean actual/nonactual valuation forces projection-valued event structure or whether the quantum event algebra has already entered through representation assumptions. |
-| 6 | `PVM + probability assumptions -> Born Rule` | IMPORTED_THEOREM / BRIDGE | SURVIVES_CONDITIONALLY | Audit Gleason premises, dimensional restrictions, noncontextuality/additivity assumptions, and whether any premise is equivalent to substantial Born-rule structure. |
-| 7 | `actualization/determinate succession -> Unique Next State` | ONTOLOGICAL / BRIDGE | SURVIVES_CONDITIONALLY | Determine whether uniqueness is ontologically forced and whether determinism at the state-update level is being introduced beyond observed quantum statistics. |
-| 8 | `Unique Next State -> ordered succession parameter t` | BRIDGE | SURVIVES_CONDITIONALLY | Distinguish an ordering parameter from physical time. Audit continuity, reversibility, homogeneity, and composition assumptions. |
-| 9 | `t + continuous unitary group -> self-adjoint generator` | IMPORTED_THEOREM | SURVIVES_CONDITIONALLY | Stone's theorem is legitimate once strong continuity and unitary one-parameter group structure are established. Main burden lies in where those premises come from. |
-| 10 | `self-adjoint generator -> Schrödinger equation` | IMPORTED_THEOREM | SURVIVES_CONDITIONALLY | Mathematical step is standard. The claim must be phrased as conditional on the prior unitary/continuity structure, not as derivation from L3 alone. |
+| 0 | `X = [L3 : I∞ : A] -> AΩ = L3(I∞)` | ONTOLOGICAL | SURVIVES_CONDITIONALLY | Constitutive specification internal to the ontology. Must remain distinguished from a mathematical derivation. |
+| 1 | `AΩ -> Determinate Identity` | ONTOLOGICAL | SURVIVES_CONDITIONALLY | Determinate identity is plausible as a constitutive consequence of Identity applied to actualized configurations. It does not by itself establish measurability or local accessibility. |
+| 2 | `Determinate Identity -> PPC` | BRIDGE | REQUIRES_NEW_PREMISE | Strict entailment fails. Logical or informational distinctness does not by itself entail operational distinguishability. The active paper concedes the inference is defensible but not logically compelled. Operational Determinacy must be exposed as an explicit constitutive/operational principle rather than treated as forced by L3 alone. |
+| 3 | `PPC -> Local Tomography` | BRIDGE | REQUIRES_NEW_PREMISE | Strict entailment fails. Even global operational distinguishability does not entail local tomographic accessibility. The historical H1->H2 bridge explicitly admits this gap and adds a locality/decomposability premise for relations. |
+| 4 | `Local Tomography + reconstruction premises -> complex Hilbert space` | IMPORTED_THEOREM / BRIDGE | SURVIVES_CONDITIONALLY | Pending full Masanes-Müller premise audit. Local tomography alone is insufficient; all reconstruction premises must be enumerated and independently sourced. |
+| 5 | `complex Hilbert space + Boolean action/event structure -> PVM` | BRIDGE / IMPORTED_THEOREM | SURVIVES_CONDITIONALLY | Pending audit of whether projection structure is genuinely forced by binary actualization or imported through operator/event representation. |
+| 6 | `PVM + probability assumptions -> Born Rule` | IMPORTED_THEOREM / BRIDGE | SURVIVES_CONDITIONALLY | Pending Gleason-premise audit, including dimension, additivity/noncontextuality and whether probability structure is already substantially assumed. |
+| 7 | `actualization/determinate succession -> Unique Next State` | ONTOLOGICAL / BRIDGE | SURVIVES_CONDITIONALLY | Pending. Must distinguish ontological actuality from deterministic state-update dynamics. |
+| 8 | `Unique Next State -> ordered succession parameter t` | BRIDGE | SURVIVES_CONDITIONALLY | Pending. An ordering relation does not automatically yield physical time, continuity, reversibility or homogeneity. |
+| 9 | `t + continuous unitary group -> self-adjoint generator` | IMPORTED_THEOREM | SURVIVES_CONDITIONALLY | Stone's theorem is legitimate once strong continuity and one-parameter unitarity are independently established. |
+| 10 | `self-adjoint generator -> Schrödinger equation` | IMPORTED_THEOREM | SURVIVES_CONDITIONALLY | Standard conditional mathematical step. Must never be presented as deriving Schrödinger dynamics from L3 alone. |
+
+## Step 2 finding: L3 to PPC
+
+The active core paper decomposes the PPC into:
+
+`L3-determinate content -> informational distinguishability -> operational distinguishability`.
+
+The first arrow can be defended within the stipulated nature of `I∞`: if configurations are informational configurations, distinct configurations must differ informationally. The second arrow is substantive. An informational distinction may be ontically real without being measurable unless LRT adds the principle that physical standing requires some possible operational consequence.
+
+The paper currently calls this Operational Determinacy and argues that an actualized informational difference with no physical consequence would make actualization vacuous. This is a coherent LRT commitment, but it is not forced by L3. It rules out ontologies containing physically real but in-principle operationally inaccessible distinctions.
+
+Disposition: preserve Operational Determinacy, but elevate it to an explicit bridge/constitutive principle with its own failure condition. Do not describe it as a theorem of L3.
+
+## Step 3 finding: PPC to local tomography
+
+The repository's own H1->H2 bridge document states that metaphysical supervenience does not automatically produce operational local tomography and that global correlations may supervene on subsystem facts while failing local accessibility.
+
+Even granting Operational Determinacy, the move to local tomography needs a further claim:
+
+> Every identity-relevant relation in a composite system is distinguishable by a measurement protocol decomposable into local subsystem measurements and classical correlation of their outcomes.
+
+Call this provisional principle **Local Operational Decomposability (LOD)**.
+
+`PPC` establishes, at most, that a physically real difference has some possible operational signature. `LOD` says that for composites the signature is reconstructible from local operations. These are different claims.
+
+Disposition: local tomography should be represented as conditional on `Operational Determinacy + LOD`, not as an entailment of Determinate Identity or L3 alone.
+
+## Architectural redirect under evaluation
+
+The reconstruction should provisionally be rewritten as:
+
+`TRT/LRT ontology`
+`-> Determinate Identity`
+`+ Operational Determinacy`
+`+ Local Operational Decomposability`
+`-> Local Tomography`
+`+ external reconstruction premises`
+`-> quantum formal structure`.
+
+This is weaker rhetorically and stronger methodologically. It exposes exactly where ontology ends and physics-facing bridge principles begin.
+
+A further possibility remains open: Operational Determinacy and/or LOD may belong in a separate **physics interface layer** rather than in LRT's hard ontological core. If so, LRT becomes a foundational ontology with multiple possible physical realizations, and the present quantum reconstruction becomes one descendant model rather than the unique physical consequence of LRT.
 
 ## Immediate findings
 
-1. The strongest current LRT claim is a grounding/reconstruction claim, not new mathematics. That is consistent with the active core paper's own statement of contribution.
-2. The PPC is the principal ontology-to-physics bridge. Machine verification downstream cannot establish the independent truth of PPC or of any other encoded bridge premise.
-3. The historical repository already contains an internal warning that "Deriving Schrödinger from 3FLL" is misleading when Stone's theorem and its premises are required. The current audit adopts that warning as a control.
-4. Claims that LRT predicted complex quantum mechanics before experiments published in 2021 are historically impossible for a framework formulated later. Such claims must be relabeled as structural selection, reconstruction, or retrodiction according to the exact chronology.
-5. A lack of novel empirical prediction does not by itself falsify LRT if LRT is scoped as a foundational ontology and reconstruction programme. It does prevent the reconstruction alone from being counted as corroborated novel physics.
+1. The strongest current LRT contribution remains a grounding/reconstruction claim, not new mathematics.
+2. PPC is not derivable from L3 alone. The current repository text already effectively concedes this.
+3. Local tomography requires more than PPC. A locality/decomposability premise is currently hidden in the bridge argument.
+4. Machine verification downstream cannot establish the independent truth of these bridge principles. Lean can prove consequences of encoded premises, not justify their ontological-to-physical interpretation.
+5. The historical repository warning that "Deriving Schrödinger from 3FLL" is misleading is correct and now adopted as a governing control.
+6. Claims that LRT predicted complex quantum mechanics before experiments published in 2021 are historically impossible for a later framework and require relabeling as reconstruction, structural selection, or retrodiction.
+7. A lack of novel empirical prediction does not by itself falsify LRT as a foundational ontology. It prevents the reconstruction alone from being counted as corroborated novel physics.
 
 ## Next audit increment
 
-The next pass will decompose Steps 2-4 in detail:
+Audit Step 4 in full. Enumerate every premise used to obtain complex Hilbert-space structure from local tomography and the selected reconstruction theorem(s). For each premise record whether it is:
 
-`L3 -> determinate content -> informational distinguishability -> operational distinguishability -> local tomography -> complex Hilbert-space selection`
+- independently grounded by LRT,
+- supplied by Operational Determinacy or LOD,
+- empirically motivated,
+- imported as a reconstruction axiom,
+- or mathematically definitional.
 
-For each sub-arrow, the audit will record exact canonical source text, formalized premise, external theorem dependency, counterexample class, and failure condition.
+The test remains: if complex quantum structure were unknown, would these premises independently force its discovery?
