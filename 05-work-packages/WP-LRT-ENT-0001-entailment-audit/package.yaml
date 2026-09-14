@@ -1,0 +1,74 @@
+id: WP-LRT-ENT-0001
+title: Audit the LRT reconstruction chain for genuine entailment
+status: in_progress
+commitment: stretch
+scope: >
+  Audit the canonical Logic Realism Theory reconstruction chain from the primitive
+  ontology X = [L3 : I∞ : A] through AΩ, Determinate Identity, Local Tomography,
+  complex Hilbert space, PVM structure, the Born rule, Unique Next State, time, and
+  Schrödinger dynamics. Classify every inferential step as LOGICAL, ONTOLOGICAL,
+  BRIDGE, IMPORTED_THEOREM, or EMPIRICAL_ASSUMPTION; identify all hidden premises,
+  circular dependencies, and points where known quantum structure may have been
+  imported rather than independently forced by the antecedent.
+
+  The governing question for each arrow is: if the consequent were unknown, would
+  the antecedent independently force a competent investigator to discover it?
+
+  Particular attention is required for the Physical Proposition Criterion (PPC),
+  the move from logical/informational distinctness to operational distinguishability,
+  local tomography, Boolean/PVM structure, probability measure assumptions, and the
+  continuity/unitarity premises used before Stone's theorem. The audit must separate
+  formal verification from substantive physical grounding: Lean correctness proves
+  consequences of encoded premises, not the independent truth or sufficiency of the
+  premises themselves.
+
+  The package also audits prediction language. Any claimed prediction must be
+  classified as novel prediction, retrodiction, reconstruction, explanatory
+  entailment, or compatibility result according to historical chronology and actual
+  discriminatory content. Claims that LRT predicted results already known before LRT
+  was formulated must be corrected.
+
+  Out of scope: changing the TRT hard core; manufacturing a novel prediction merely
+  to satisfy a philosophy-of-science criterion; publishing or submitting external
+  papers; altering established mathematics; or promoting confidence without a
+  completed adversarial review.
+authority_boundary: >
+  Work inside this package may proceed without re-asking for source inventory,
+  dependency tracing, axiom classification, theorem-premise audits, historical
+  chronology checks, internal red-team analysis, proposed wording corrections,
+  traceability updates, and a final disposition that preserves or lowers confidence.
+
+  This approval does not authorize publication, external communication, deletion of
+  historical artifacts, promotion of ARGUED claims to ESTABLISHED, or claims of novel
+  empirical prediction without documented chronology and a contrastive observation.
+actions:
+  - Inventory the canonical active LRT theory, formalization, traceability, and published-paper surfaces that state or depend on the reconstruction chain.
+  - Freeze the current reconstruction chain as the audit baseline and map every arrow to its exact source premises and imported theorem dependencies.
+  - Classify each arrow as LOGICAL, ONTOLOGICAL, BRIDGE, IMPORTED_THEOREM, or EMPIRICAL_ASSUMPTION; permit multiple labels where genuinely composite.
+  - Audit PPC separately, decomposing L3 -> informational distinctness -> operational distinguishability and identifying precisely which steps are argued rather than entailed.
+  - Audit the local-tomography step for whether it follows from Determinate Identity or requires an independent operational assumption.
+  - Audit complex-Hilbert-space selection for dependence on imported reconstruction axioms and distinguish structural selection from historically novel prediction.
+  - Audit PVM and Born-rule recovery for assumptions equivalent or near-equivalent to the target quantum structure.
+  - Audit Unique Next State, continuity, group structure, and Stone-theorem use for hidden dynamical assumptions.
+  - Build a claim-by-claim novelty ledger labeling each physics-facing claim as novel prediction, retrodiction, reconstruction, explanatory entailment, compatibility result, or unsupported overclaim.
+  - Correct active prose that describes post-2021 LRT work as having predicted earlier experimental results; preserve historical files as historical unless they are still presented as canonical.
+  - Produce an adversarial review asking whether X alone explains QM, or whether the actual result is X plus one or more bridge principles plus imported mathematics reconstructs QM.
+  - Record a final disposition for each reconstruction step: SURVIVES, SURVIVES_CONDITIONALLY, REQUIRES_NEW_PREMISE, REDESCRIPTION, or FAILS.
+verification: >
+  Completion requires a committed entailment matrix covering every canonical arrow
+  from X through Schrödinger dynamics, with source pointers, premise lists,
+  classification, epistemic status, circularity assessment, and failure condition.
+  The PPC must receive its own sub-audit. A prediction/retrodiction ledger must verify
+  chronology before any claim receives the label novel prediction. Canonical prose
+  must be reconciled so the README, active theory, papers, and traceability surfaces do
+  not make mutually inconsistent scope or novelty claims. Formalization status must be
+  reported separately from physical-grounding status.
+disposition: >
+  OPEN 2026-09-14. Triggered by repository review showing that TRT now correctly
+  presents itself as a foundational ontology/research programme while LRT still mixes
+  reconstruction, derivation, and prediction language. Initial concern: the central
+  physics reconstruction may be substantive, but its strength depends on whether the
+  ontology-to-operational bridge principles are independently warranted and whether
+  known QM structure is being recovered without circular import. No negative verdict
+  is prejudged; the purpose of this package is to determine exactly what LRT has
+  established and to state it at the strongest defensible level.
