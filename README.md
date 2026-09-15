@@ -85,7 +85,7 @@ See [docs/formalization/axiom-status.md](docs/formalization/axiom-status.md) for
 | Paper | DOI |
 |-------|-----|
 | [Position Paper](theory/20260109_Logic_Realism_Theory_Position_Paper.md) | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18202130.svg)](https://doi.org/10.5281/zenodo.18202130) |
-| [Philosophical Foundations](theory/20260109_Logic_Realism_Theory_Philosophical_Foundations.md) | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14581992.svg)](https://doi.org/10.5281/zenodo.14581992) |
+| [Philosophical Foundations](theory/20260109_Logic_Realism_Theory_Philosophical_Foundations.md) | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17779029.svg)](https://doi.org/10.5281/zenodo.17779029) |
 | [It From Bit, Bit From Fit](theory/20260109_It_From_Bit_Bit_From_Fit.md) | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17831883.svg)](https://doi.org/10.5281/zenodo.17831883) |
 
 ---
