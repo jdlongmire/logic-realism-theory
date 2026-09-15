@@ -421,7 +421,7 @@ The Born rule is not mysterious. It is the unique probability measure on the str
 
 Gleason, A. M. (1957). Measures on the closed subspaces of a Hilbert space. *Journal of Mathematics and Mechanics*, 6(6), 885-893.
 
-Longmire, J. D. (2025). Logic Realism Theory: Position Paper. Zenodo. https://doi.org/10.5281/zenodo.14581992
+Longmire, J. D. (2025). Logic Realism Theory: Position Paper. Zenodo. https://doi.org/10.5281/zenodo.18202130
 
 Longmire, J. D. (2025). Logic Realism Theory: Technical Foundations. Zenodo. https://doi.org/10.5281/zenodo.17831883
 
