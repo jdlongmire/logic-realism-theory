@@ -1,0 +1,72 @@
+id: WP-LRT-PRA-0001
+title: Formalize Pre-Actualization in LIA and Semantic Actualism
+status: in_progress
+commitment: research
+scope: >
+  Formalize the distinction between logically constrained informational specification
+  and actuality by introducing pχ as a derived pre-actualization construct within the
+  existing LIA ontology. Preserve the established primitive roles of L (logical
+  constraint), I (informational content), A (action), and χ (actualization), while
+  determining whether pχ ≡ (I|L) is coherent, necessary, and non-redundant.
+
+  The provisional relation is pχ ≡ (I|L), with χ ≡ A(pχ) ≡ A(I|L). The package must
+  determine the exact ontological status of pχ, including whether it denotes merely a
+  specification, an intentional state, an actualizable state, or requires subdivision
+  into weak and strong senses. It must preserve the categorical distinction pχ != χ
+  and test the claim that identical informational content can obtain across the
+  specification/actuality boundary without ontological identity.
+
+  The package also examines the relation to Semantic Actualism's representable,
+  logically admissible, actualizable, and actualized categories. It must distinguish
+  logical admissibility from genuine actualizability and determine whether determinate
+  pre-actualized information requires intentional grounding in a mind or agent rather
+  than existing as a free-floating abstract entity.
+
+  Out of scope: changing the LIA primitives without a separate justified decision;
+  treating pχ as an additional primitive by stipulation; importing ThinxUnity or other
+  software architecture concerns into the ontology; claiming causal efficacy for
+  specification alone; or promoting the construct to canonical theory before the
+  entailment and redundancy audits are complete.
+authority_boundary: >
+  Work inside this package may proceed without re-asking for formal definitions,
+  notation refinement, modal analysis, dependency mapping, countermodel construction,
+  redundancy testing, comparison with existing Semantic Actualism categories,
+  intentional-grounding analysis, internal red-team review, and proposed canonical
+  wording.
+
+  This approval does not authorize changing the LIA hard core, publication, external
+  communication, or promotion of pχ to an established primitive or canonical theorem
+  without a completed review and explicit disposition.
+actions:
+  - Freeze the provisional definition pχ ≡ (I|L) and χ ≡ A(pχ) ≡ A(I|L) as the research baseline.
+  - Define every symbol and operator precisely, including the semantic force of the conditioning notation I|L.
+  - Determine whether pχ is best typed as specification, state, intentional content, modal object, or another derived category.
+  - Test whether pχ adds explanatory or formal content beyond the existing representable/logically-admissible/actualizable distinctions.
+  - Formalize and test pχ != χ while permitting C(pχ) = C(χ), where C maps an object to its informational content.
+  - Audit the claim that A is not a constituent of pχ and that (I|L) alone does not entail χ.
+  - Distinguish weak pre-actualization from strong pre-actualization if logical admissibility and agent-relative actualizability require separate formal categories.
+  - Formalize the modal hierarchy actualized => actualizable => logically admissible => representable and construct counterexamples to invalid converse implications.
+  - Analyze intentional grounding: determine whether determinate pχ must be content of a mind/agent and how that claim relates to Semantic Actualism and LRT.
+  - Test causal asymmetry pχ --A--> χ and whether specification has any causal role independent of action.
+  - Build countermodels for incoherent, logically admissible but non-actualizable, actualizable but unactualized, and actualized specifications.
+  - Compare the construct against the existing LIA ontology and Semantic Actualism corpus to detect terminology collisions or hidden ontological commitments.
+  - Produce an adversarial review asking whether pre-actualization is a genuine theoretical contribution or merely a relabeling of existing modal structure.
+  - Draft a canonical Pre-Actualization Principle only after the redundancy, grounding, and modal audits are complete.
+verification: >
+  Completion requires a formal definition set, dependency map, modal hierarchy,
+  countermodel suite, redundancy analysis, intentional-grounding analysis, and an
+  adversarial review. The package must explicitly answer: (1) what pχ is, (2) whether
+  pχ exists independently of an intentional agent, (3) whether pχ is distinct from
+  logical admissibility and actualizability, (4) what A contributes that L and I do
+  not, (5) whether C(pχ) = C(χ) is coherent while pχ != χ, and (6) whether pχ should
+  remain a derived notation, become a defined theoretical object, or be rejected as
+  redundant. Any canonical update must preserve explicit symbol definitions.
+disposition: >
+  OPEN 2026-09-16. Triggered by the proposal to represent a pre-actualized condition
+  as pχ ≡ (I|L), containing logically constrained informational specification without
+  actualizing action, and to express actuality as χ ≡ A(pχ). Initial assessment: the
+  construct may expose an important distinction between specification and actuality
+  already implicit in LIA and Semantic Actualism, but its ontological status and
+  non-redundancy have not yet been established. The package is intentionally
+  falsification-sensitive: if pχ contributes no content beyond existing modal
+  categories, it should be redescribed or retired rather than preserved by terminology.
