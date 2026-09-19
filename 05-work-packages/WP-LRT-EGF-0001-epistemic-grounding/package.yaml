@@ -1,0 +1,56 @@
+id: WP-LRT-EGF-0001
+title: Formalize and test the Epistemic Grounding Framework
+status: in_progress
+commitment: stretch
+scope: >
+  Establish a typed epistemic framework distinguishing givens, evidence, premises,
+  hypotheses, presuppositions, inference, conclusions, validity, warrant, and
+  evidential grounding. Determine which conditions are constitutively necessary
+  for evidence and inference by deletion testing and dependency reduction.
+
+  The package must keep evidential availability, evidential relevance, inferential
+  admission, and formal consequence categorically distinct. Evidence is treated as
+  relational rather than as a synonym for any inferential input.
+
+  The governing research question is: what must obtain for evidence to be evidence,
+  and for inference to be inference, at all?
+
+  Candidate sets Gamma_E and Gamma_I are provisional. LRT ontology must not be
+  imported into the result by construction. Any bridge from the epistemic analysis
+  to LRT primitives must be earned by independent constitutive analysis.
+
+  Out of scope: using the framework as a proof of LRT before deletion testing is
+  complete; collapsing premises into evidence; restricting evidence to empirical
+  observation; or promoting provisional candidate necessities to established claims.
+authority_boundary: >
+  Work inside this package may proceed without re-asking for formal definition
+  refinement, deletion tests, counterexamples, dependency reduction, distinction
+  audits, adversarial analysis, and proposed integration into LRT theory.
+
+  This approval does not authorize publication, external communication, or promotion
+  of provisional constitutive claims to established LRT results without review.
+actions:
+  - Freeze the initial Epistemic Grounding Framework as the audit baseline.
+  - Test the distinction among given, evidence, premise, hypothesis, and presupposition.
+  - Formalize Evidence(G,H,S) as a relational predicate and stress-test BearsOn(G,H).
+  - Define warrant conditions for actuality-directed inference without conflating them with deductive validity.
+  - Apply the deletion test to every member of Gamma_E.
+  - Apply the deletion test to every member of Gamma_I.
+  - Build a dependency graph identifying primitive, derivative, redundant, and unsupported candidates.
+  - Test whether differentiation follows from identity, whether determinacy subsumes either, and whether information is primitive or derivative in this framework.
+  - Identify countermodels in which valid inference exists without evidential grounding.
+  - Identify whether truth-aptness is required for all evidence or only proposition-directed evidence.
+  - Record each candidate disposition as SURVIVES, DERIVATIVE, REQUIRES_QUALIFICATION, REDUNDANT, or FAILS.
+  - Only after the independent audit, evaluate correspondence with LRT primitives and ontology.
+verification: >
+  Completion requires a committed formal framework, deletion-test ledger for every
+  candidate in Gamma_E and Gamma_I, dependency graph, counterexample analysis, and
+  final disposition for each candidate. Any claimed bridge to LRT must explicitly
+  identify which epistemic necessities were independently established and which
+  remain assumptions or theory-specific interpretations.
+disposition: >
+  OPEN 2026-09-19. Initiated to formalize the evidence/inference branch as an
+  independent epistemic grounding programme within LRT. Initial formalization
+  distinguishes epistemic availability from evidence, evidence from premise,
+  hypothesis from presupposition, and formal validity from actuality-directed
+  warrant. No conclusion about correspondence to LRT ontology is prejudged.
