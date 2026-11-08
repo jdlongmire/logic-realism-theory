@@ -23,3 +23,6 @@ import LrtFormalization.Step4
 
 -- Eigenvalue Restriction (Step 5)
 import LrtFormalization.Step5.EigenvalueRestriction
+
+-- WP-LRT-ONTO-0001: independent infinite-domain semantic countermodel.
+import LrtFormalization.BridgeSelectionCountermodel
