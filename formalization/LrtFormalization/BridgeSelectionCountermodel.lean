@@ -1,3 +1,5 @@
+import Mathlib.Data.Set.Basic
+
 /-!
 # Bridge selection countermodel (WP-LRT-ONTO-0001)
 
@@ -8,7 +10,6 @@ configurations. It does not refute the LRT grounding ontology.
 
 No additional axioms or sorry are introduced.
 -/
-import Mathlib.Data.Set.Basic
 
 namespace LRT.BridgeSelectionCountermodel
 
