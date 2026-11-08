@@ -1,7 +1,8 @@
 /-
   Logic Realism Theory — Lean 4 Formalization
 
-  Main import file for the LRT formalization project.
+  Main import LrtFormalization.BridgeSelectionCountermodel
+import file for the LRT formalization project.
 
   Derivation Chain:
   X → A_Ω → Determinate Identity → Local Tomography → ℂℋ →
@@ -23,6 +24,3 @@ import LrtFormalization.Step4
 
 -- Eigenvalue Restriction (Step 5)
 import LrtFormalization.Step5.EigenvalueRestriction
-
--- WP-LRT-ONTO-0001: independent infinite-domain semantic countermodel.
-import LrtFormalization.BridgeSelectionCountermodel
