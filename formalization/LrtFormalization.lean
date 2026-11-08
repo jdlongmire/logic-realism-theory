@@ -1,8 +1,7 @@
 /-
   Logic Realism Theory — Lean 4 Formalization
 
-  Main import LrtFormalization.BridgeSelectionCountermodel
-import file for the LRT formalization project.
+  Main import file for the LRT formalization project.
 
   Derivation Chain:
   X → A_Ω → Determinate Identity → Local Tomography → ℂℋ →
@@ -11,6 +10,9 @@ import file for the LRT formalization project.
   Author: James D. Longmire
   Date: 2026-03-13
 -/
+
+-- WP-LRT-ONTO-0001: infinite-domain semantic countermodel
+import LrtFormalization.BridgeSelectionCountermodel
 
 -- Foundation (Steps 0-2)
 import LrtFormalization.Basic
