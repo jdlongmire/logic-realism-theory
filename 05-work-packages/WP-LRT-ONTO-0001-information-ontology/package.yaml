@@ -1,0 +1,46 @@
+id: WP-LRT-ONTO-0001
+title: Information ontology and actualization semantics
+status: in_progress
+commitment: stretch
+scope: >
+  Reconcile the LRT information ontology and typed actualization semantics with the
+  canonical prephysics argument, core physics bridge identity, existing entanglement
+  treatment, Lean Steps 0-2, and WP-LRT-ENT-0001. Distinguish logical coherence,
+  physical eligibility, and actual obtaining; audit the independence of the action
+  primitive and the assumptions required to infer physically meaningful structure.
+  Classify claims and produce a traceable recommendation on bridge semantics.
+authority_boundary: >
+  Internal analysis, countermodels, source inventories, traceability, and
+  proposed revisions are authorized. No silent changes to canonical equations,
+  Lean axioms/proofs, published papers, or established epistemic labels.
+  Owner acceptance required before promoting a proposed bridge interpretation.
+  Publication, external communication, and deletion are out of scope.
+actions:
+  - Freeze the canonical bridge and prephysics claims as a baseline.
+  - Inventory ontology and actualization definitions across prose and Lean.
+  - Compare actualization selection semantics against the equality AΩ = L3(I∞).
+  - Construct countermodels and classify what is assumed versus derived.
+  - Audit Step1 constitution and Step2 identity for dependence on A.
+  - Trace effects on existing entanglement theory and WP-LRT-ENT-0001.
+  - Recommend a consistent notation and owner decision.
+  - Validate internal references and record tests actually performed.
+verification:
+  - Source paths and quotations independently read from current master.
+  - Matrix entries have direct canonical paths and explicit epistemic status.
+  - No claim of Lean build unless toolchain execution actually performed.
+  - PR diff restricted to research/work-package artifacts until owner decision.
+dependencies:
+  - WP-LRT-ENT-0001
+  - docs/research/2026-11-information-ontology-and-nonlocal-coherence.md
+  - docs/research/2026-11-bridge-identity-nlc-reconciliation-audit.md
+  - docs/research/2026-11-typed-actualization-semantics.md
+deliverables:
+  - package.yaml
+  - baseline-and-claim-matrix.md
+  - initial-formalization-audit.md
+acceptance:
+  - Canonical bridge ambiguity is described with a minimal countermodel.
+  - Lean's actualization semantics are accurately distinguished from prose.
+  - Downstream entailment risks are classified.
+  - Recommendation is documented without premature canonical amendment.
+disposition: open
