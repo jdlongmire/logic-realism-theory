@@ -48,7 +48,10 @@ Required: independently specify K or stronger information-theoretic principles; 
 - Does the new vocabulary conflict with the canonical bridge identity A_Omega = L3(I_infinity), which may seem to identify coherence with actuality?
 
 ## Relationship to current canonical work
-This note **does not amend** the canonical theory. Compare [core physics](../../theory/002-LRT-CORE-PHYSICS.md), [philosophical foundation](../../theory/001-LRT-TAB-PHILOSOPHY.md), [reconstruction entailment audit](../../05-work-packages/WP-LRT-ENT-0001-entailment-audit/package.yaml), and [traceability](../../traceability/). Resolve the bridge-identity tension before promotion.
+This note **does not amend** the canonical theory. Compare [core physics](../../theory/100-LRT-CORE-PHYSICS.md), [philosophical foundation](../../theory/002-LRT-TAB-PHILOSOPHY.md), [reconstruction entailment audit](../../05-work-packages/WP-LRT-ENT-0001-entailment-audit/package.yaml), and [traceability](../../traceability/). Resolve the bridge-identity tension before promotion.
 
 ## Source and evidence status
 Conversation-derived author propositions: PRIMARY FOR AUTHOR INTENT, not primary scientific evidence. Standard QM formulae: well-established textbook results, independently cited primary sources still to be added. Proposed NLC explanatory claim: CONJECTURAL. No new theorem, empirical test, or prediction is claimed.
+
+
+See [bridge-identity and NLC reconciliation audit](2026-11-bridge-identity-nlc-reconciliation-audit.md) for comparison with the already-existing entanglement paper and prephysics distinction between admissibility and actuality.
