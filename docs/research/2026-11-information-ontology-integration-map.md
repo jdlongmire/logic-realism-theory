@@ -10,12 +10,12 @@ Legacy [ztype-physical-logic-framework](https://github.com/jdlongmire/ztype-phys
 ## Flat concept-to-artifact mapping
 | Concept | Current status | Primary target / dependency |
 |---|---|---|
-| Information as ordered substance | Author thesis; definition needs refinement | [working ontology](2026-11-information-ontology-and-nonlocal-coherence.md), then theory/001 |
-| Physical and nonphysical substance | Metaphysical proposal | theory/001; distinguish mathematics/logic from substance |
+| Information as ordered substance | Author thesis; definition needs refinement | [working ontology](2026-11-information-ontology-and-nonlocal-coherence.md), then theory/100 |
+| Physical and nonphysical substance | Metaphysical proposal | theory/100; distinguish mathematics/logic from substance |
 | Carrier underdetermination | Argument | working ontology; potential core definitions |
-| Conceptual vs coherent information | Taxonomy under revision | working ontology; theory/001 |
-| Actualizable ⊆ coherent | Ontological constraint | theory/002; reconcile A_Omega bridge |
-| L3 necessary for actuality | Foundational axiom | theory/001 and theory/002 |
+| Conceptual vs coherent information | Taxonomy under revision | working ontology; theory/100 |
+| Actualizable ⊆ coherent | Ontological constraint | theory/100; reconcile A_Omega bridge |
+| L3 necessary for actuality | Foundational axiom | theory/002 and theory/100 |
 | Logical reality vs Bell local realism | Interpretive distinction | working ontology; docs/papers after source audit |
 | NLC-1 | Conjectural principle | working ontology; separate research package if pursued |
 | CHSH / Tsirelson / no-signaling | Established benchmark, not LRT prediction | formalization and existing entailment audit |
@@ -31,3 +31,6 @@ Legacy [ztype-physical-logic-framework](https://github.com/jdlongmire/ztype-phys
 
 ## Acceptance
 Reviewed definitions; no contradictory canonical statements; source ledger with confidence; entailment dependencies identified; proposed formal tests with explicit failure conditions; all changes via governed PR.
+
+
+See [bridge-identity and NLC reconciliation audit](2026-11-bridge-identity-nlc-reconciliation-audit.md) for comparison with the already-existing entanglement paper and prephysics distinction between admissibility and actuality.
