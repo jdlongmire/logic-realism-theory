@@ -1,5 +1,5 @@
 # Logic Realism Theory: Grounding Reality as Logical, Informational, and Dynamic
-## Part II: Physics Reconstruction — From A_Ω = L₃(I∞) to the Schrödinger Equation
+## Part II: Physics Reconstruction — From Actualized Admissible Configurations to the Schrödinger Equation
 
 **Author:** James D. Longmire
 **Affiliation:** Northrop Grumman Fellow (unaffiliated research)
@@ -52,9 +52,9 @@ $$\chi \vdash A_\Omega$$
 
 X transcendentally constitutes the actualized domain. The turnstile (⊢) signifies ontological grounding, not logical derivation: A_Ω obtains *in virtue of* X. The second is a characterization:
 
-$$A_\Omega := L_3(I_\infty)$$
+$\mathcal C := L_3(I_\infty),\qquad A_\Omega := \{i\in\mathcal C\mid A(i)=\mathrm{actual}\}\subseteq\mathcal C.$
 
-where $A_\Omega$ is the actualized domain — the set of all configurations in $I_\infty$ that satisfy $L_3$. The `:=` marks constitutive specification rather than discovery of identity between independently-specifiable entities: given the primitives, the actualized domain has the structure of L₃-admissible configurations. Actualization is inclusion, not creation: $A_\Omega \subseteq I_\infty$. The grounding claim explains *why* actuality exists; the characterization specifies *what form* it takes. The relationship is grounding in the sense of Fine (2012) and Schaffer (2009), not causation. The full transcendental derivation of both results appears in Part I (Longmire, 2026c).
+Here $\mathcal C$ denotes the logically admissible configurations and $A_\Omega$ the configurations selected as obtaining by the primitive $A$. The expression $L_3(I_\infty)$ specifies admissibility, not actuality by itself. The grounding claim $\chi\vdash A_\Omega$ remains an ontological commitment rather than a mathematical consequence of $L_3$ alone. Actualization is selection, not creation. This distinction agrees with the existing Lean Step 1 definition of `A_Omega` and the prephysics claim that admissibility does not entail manifestation. The [ontology work package](../05-work-packages/WP-LRT-ONTO-0001-information-ontology/bridge-revision-proposal.md) documents the change and its outstanding physical entailment obligations.
 
 ### 1.3 The Status of L₃
 

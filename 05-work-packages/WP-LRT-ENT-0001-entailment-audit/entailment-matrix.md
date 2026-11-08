@@ -36,7 +36,7 @@ The active core physics document additionally identifies the Physical Propositio
 
 | # | Reconstruction step | Classification | Disposition | Audit finding |
 |---|---|---|---|---|
-| 0 | `X = [L3 : I∞ : A] -> AΩ = L3(I∞)` | ONTOLOGICAL | SURVIVES_CONDITIONALLY | Constitutive specification internal to the ontology. Must remain distinguished from a mathematical derivation. |
+| 0 | `X = [L3 : I∞ : A] -> C = L3(I∞); AΩ = {i ∈ C : A(i)=actual}` | ONTOLOGICAL / DEFINITIONAL | SURVIVES_CONDITIONALLY | Admissibility and obtaining are distinct. Selection is defined using primitive A; nonempty actuality is separately assumed by Lean bridge_principle. Neither physical eligibility nor selection dynamics follow from L3 alone. See WP-LRT-ONTO-0001. |
 | 1 | `AΩ -> Determinate Identity` | ONTOLOGICAL | SURVIVES_CONDITIONALLY | Determinate identity is plausible as a constitutive consequence of Identity applied to actualized configurations. It does not by itself establish measurability or local accessibility. |
 | 2 | `Determinate Identity -> PPC` | BRIDGE | REQUIRES_NEW_PREMISE | Strict entailment fails. Logical or informational distinctness does not by itself entail operational distinguishability. The active paper concedes the inference is defensible but not logically compelled. Operational Determinacy must be exposed as an explicit constitutive/operational principle rather than treated as forced by L3 alone. |
 | 3 | `PPC -> Local Tomography` | BRIDGE | REQUIRES_NEW_PREMISE | Strict entailment fails. Even global operational distinguishability does not entail local tomographic accessibility. The historical H1->H2 bridge explicitly admits this gap and adds a locality/decomposability premise for relations. |

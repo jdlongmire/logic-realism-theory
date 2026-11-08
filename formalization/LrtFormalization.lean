@@ -11,6 +11,9 @@
   Date: 2026-03-13
 -/
 
+-- WP-LRT-ONTO-0001: infinite-domain semantic countermodel
+import LrtFormalization.BridgeSelectionCountermodel
+
 -- Foundation (Steps 0-2)
 import LrtFormalization.Basic
 import LrtFormalization.Step0_Primitives
