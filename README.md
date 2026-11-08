@@ -18,11 +18,13 @@ These primitives form a co-constitutive unity:
 
 $$\chi \equiv [L_3 : I_\infty : A]$$
 
-Their interaction yields the **Bridge Identity**:
+Their interaction grounds the **actualization bridge**. Define the admissible domain and the actualized domain separately:
 
-$$A_\Omega = L_3(I_\infty)$$
+$\mathcal C := L_3(I_\infty)$
 
-Actuality coincides with the logically admissible informational configurations of the total possibility space.
+$A_\Omega := \{i \in \mathcal C \mid A(i)=\mathrm{actual}\}\subseteq\mathcal C$
+
+Logical admissibility constrains what may obtain; the primitive $A$ selects what does obtain. This is a constitutive ontological proposal, not a derivation of physical selection from classical logic alone. See [WP-LRT-ONTO-0001](05-work-packages/WP-LRT-ONTO-0001-information-ontology/bridge-revision-proposal.md) for the semantic audit.
 
 **Reconstruction Chain:**
 ```
