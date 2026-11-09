@@ -141,7 +141,7 @@ These inheritances are within the quantum mechanical domain. Extensions to cosmo
 
 ### 1.5 Scope and Limits
 
-This paper presents the complete derivation chain from X to the Schrödinger equation and develops its consequences for quantum foundations. It presupposes the ontological groundwork established in Part I (Longmire, 2026c). The transcendental arguments for the necessity of L₃, I∞, and A, and the derivation of the bridge identity A_Ω := L₃(I∞), are developed there. This paper imports that result and proceeds with physics reconstruction.
+This paper presents the complete derivation chain from X to the Schrödinger equation and develops its consequences for quantum foundations. It presupposes the ontological groundwork established in Part I (Longmire, 2026c). The transcendental arguments for the necessity of L₃, I∞, and A are developed there. The actualization bridge distinguishes the L₃-admissible domain from the subset selected by A; the selection is an ontological commitment, not a consequence of L₃ alone. This paper imports that result and proceeds with physics reconstruction.
 
 Each step in the derivation is marked with one of three epistemic statuses:
 
@@ -152,7 +152,7 @@ Each step in the derivation is marked with one of three epistemic statuses:
 No step is presented as more secure than its status warrants. A distinction between what LRT originates and what it imports is maintained throughout. The mathematical results of Masanes and Müller (2011), Gleason (1957), Stone (1930), Debreu (1954), and Nachbin (1965) are imported with citation. LRT's original contribution is the grounding argument: showing that the inputs these theorems require follow from X rather than standing as independent postulates. Steps marked ARGUED are where that original contribution lives. Lean 4 formalization of the argued steps is identified as the primary remaining work.
 
 **What this paper does:**
-- Reconstructs, given imported peer-reviewed mathematics, the structure of non-relativistic quantum mechanics from A_Ω = L₃(I∞)
+- Reconstructs, conditional on additional physical premises and imported mathematics, the structure of non-relativistic quantum mechanics from an A-selected admissible domain
 - Grounds the axioms of operational reconstruction programs
 - Dissolves (not merely reinterprets) standing problems in quantum foundations
 
@@ -163,7 +163,7 @@ No step is presented as more secure than its status warrants. A distinction betw
 
 The derivation chain is explicitly non-relativistic. Extensions to Lorentz covariance, QFT, and cosmology are identified in Section 9 as open research directions, not claimed achievements.
 
-The paper is structured as follows. Section 2 develops the move from X to actuality: transcendental constitution, the core equation A_Ω = L₃(I∞), and Determinate Identity. Section 3 reconstructs, given L₃'s constitutive framing and imported reconstruction theorems, the structure of quantum theory: local tomography, complex Hilbert space, and projection-valued measure structure. Section 4 reconstructs the Born rule via Gleason's theorem applied to the PVM structure established in Section 3. Section 5 reconstructs time and dynamics: the Unique Next State theorem, ordinal time, continuous time via Debreu-Nachbin, G-equivariance, Stone's theorem, and the Schrödinger equation.
+The paper is structured as follows. Section 2 develops the move from X to actuality: transcendental constitution, the distinction between admissibility and A-selected actuality, and Determinate Identity. Section 3 reconstructs, given L₃'s constitutive framing and imported reconstruction theorems, the structure of quantum theory: local tomography, complex Hilbert space, and projection-valued measure structure. Section 4 reconstructs the Born rule via Gleason's theorem applied to the PVM structure established in Section 3. Section 5 reconstructs time and dynamics: the Unique Next State theorem, ordinal time, continuous time via Debreu-Nachbin, G-equivariance, Stone's theorem, and the Schrödinger equation.
 
 Section 6 addresses the resolution of standing problems in quantum foundations — the measurement problem, wave-particle duality, EPR and nonlocality, Schrödinger's cat, the preferred basis problem, and the role of the observer — showing in each case that LRT dissolves rather than merely reinterprets the problem. Section 7 compares LRT systematically against the major interpretive positions: Copenhagen, Many-Worlds, Bohmian mechanics, GRW, Relational QM, and operational reconstruction programs. Section 8 addresses scientific status: Popperian falsifiability, the Lakatosian research program structure, the null hypothesis as standard QM, and the falsification hierarchy from categorical to empirical. Section 9 identifies open problems. Section 10 concludes. An appendix maps standard QM primitives to their LRT derivation origins for readers approaching from the physics side.
 
@@ -187,11 +187,11 @@ Why transcendental rather than merely logical or causal? Because X is the condit
 
 ### 2.2 The Core Equation
 
-From transcendental constitution, the characterization follows:
+The three primitives specify two distinct domains:
 
-$$A_\Omega := L_3(I_\infty)$$
+$\mathcal C := L_3(I_\infty),\qquad A_\Omega := \{i\in\mathcal C\mid A(i)=\mathrm{actual}\}\subseteq\mathcal C.$
 
-A_Ω is the actualized domain — the set of all configurations in I∞ that satisfy L₃. L₃ acts as an admissibility filter: configurations that violate Identity, Non-Contradiction, or Excluded Middle are not excluded from I∞ by an external rule. They are no-things. A contradiction is not a configuration that fails to be instantiated; it is the absence of any configuration at all. To be precise: configurations violating L₃ are formally representable in I∞ as surrogates — they can be written down — but they cannot be instantiated. A_Ω is exactly the L₃-admissible subset of I∞; the surrogates never enter it.
+The admissible domain $\mathcal C$ contains configurations satisfying L₃. The actualized domain $A_\Omega$ contains only those admissible configurations selected by the irreducible primitive $A$. L₃ constrains admissibility but does not select every admissible configuration for actuality. Representations of contradictory contents may occur as admissible representational vehicles; the contradictory contents themselves are not thereby instantiated. The claim that $A_\Omega$ obtains in virtue of $\mathbf X$ is ontological grounding, not a theorem of classical logic.
 
 Actualization is inclusion, not creation:
 
@@ -234,10 +234,10 @@ This operational grounding of I∞ is not empiricism by stipulation. It is a con
 |Step|Content                             |Status     |
 |----|------------------------------------|-----------|
 |0   |X ≡ [L₃ : I∞ : A]                   |ESTABLISHED|
-|1   |X ⊢ A_Ω; A_Ω := L₃(I∞)              |ESTABLISHED|
+|1   |X ⊢ A_Ω; C := L₃(I∞); A_Ω := {i ∈ C : A(i)=actual}|DEFINITIONAL / AXIOM-DEPENDENT|
 |2   |Determinate Identity for all c ∈ A_Ω|ESTABLISHED|
 
-The foundation is secure. Steps 0-2 carry no argued gaps. Everything downstream inherits from this base.
+The selection definition is explicit, while the grounding and nonempty-actuality commitments remain ontological premises. The inference from formal determinacy to operational distinguishability requires a further argument, and the subsequent local-tomography bridge is conditional on an operational-accessibility or locality premise. These obligations are tracked in WP-LRT-ENT-0001 and WP-LRT-ONTO-0001.
 
 -----
 
