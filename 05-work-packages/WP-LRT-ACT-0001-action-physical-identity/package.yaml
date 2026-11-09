@@ -1,0 +1,29 @@
+id: WP-LRT-ACT-0001
+title: Fundamental Action and Physical Identity
+status: in_progress
+commitment: research
+scope: >
+  Investigate whether ontic distinctions between admissible physical configurations
+  require differences in their Action-enabled possibilities, and whether any such
+  differences are operationally distinguishable. Keep fundamental Action ontologically
+  primitive and mathematics downstream from 3FLL.
+authority_boundary: >
+  Research artifacts, countermodels, conditional theorems and proposals only.
+  No canonical theory, Lean axioms, epistemic labels or published text changes
+  without owner approval.
+dependencies:
+  - WP-LRT-ONTO-0001
+  - WP-LRT-ENT-0001
+deliverables:
+  - package.yaml
+  - action-identity-research-baseline.md
+acceptance_criteria:
+  - Distinguish logical, ontic, dynamical and operational identity.
+  - State typed candidate principles and show which are independent axioms.
+  - Produce at least two countermodels or separating examples.
+  - Distinguish global Action separation from local tomography.
+  - Record falsifiers and formal proof obligations.
+verification:
+  - Research claims traced to explicit assumptions and countermodels.
+  - No Lean build claim without execution.
+  - Changes limited to this work package.
