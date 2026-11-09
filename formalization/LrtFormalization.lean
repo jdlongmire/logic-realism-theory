@@ -18,6 +18,8 @@ import LrtFormalization.BridgeSelectionCountermodel
 import LrtFormalization.Basic
 import LrtFormalization.Step0_Primitives
 import LrtFormalization.Step1_Constitution
+-- WP-LRT-ONTO-0001: native Step0/Step1 actualization witness
+import LrtFormalization.NativeBridgeWitness
 import LrtFormalization.Step2_DeterminateIdentity
 
 -- Tomography and Hilbert Space (Steps 3-4)
